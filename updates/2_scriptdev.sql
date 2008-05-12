@@ -1,3 +1,5 @@
+DELETE FROM `eventai_scripts` WHERE `creature_id` IN (16871,16907,16964,19422,19424,19440,19442,19457,19458,19459);
+
 INSERT INTO `eventai_scripts` (`id`, `creature_id` , `event_type` , `event_inverse_phase_mask` , `event_chance` ,`event_param1` , `event_param2` , `event_param3` , `action1_type` , `action1_param1` ,`action1_param2` , `action1_param3` , `action2_type` , `action2_param1` , `action2_param2` ,`action2_param3` , `action3_type` , `action3_param1` , `action3_param2` , `action3_param3` ,`comment`) VALUES
 
 
@@ -14,7 +16,7 @@ INSERT INTO `eventai_scripts` (`id`, `creature_id` , `event_type` , `event_inver
 
 ('1696402', '16964', '0', '0', '100', '8000', '7000', '0', '11', '11978', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'Warlord Morkh - Cast Kick'),
 
-('1696403', '16964', '4', '0', '100', '20', '0', '0', '11', '8599', '0', '1', '3', '1687101', '0', '0', '0', '0', '0', '0', 'Warlord Morkh - Enrage'),
+('1696403', '16964', '4', '0', '100', '20', '0', '0', '11', '8599', '0', '1', '3', '46', '0', '0', '0', '0', '0', '0', 'Warlord Morkh - Enrage'),
 
 ('1942201', '19422', '0', '0', '100', '15000', '15000', '0', '11', '34019', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bleeding Hollow Necrolyte - Raise Dead'),
 
@@ -54,9 +56,11 @@ INSERT INTO `eventai_scripts` (`id`, `creature_id` , `event_type` , `event_inver
 
 ('1945801', '19458', '4', '0', '100', '20', '0', '0', '25', '0', '0', '0', '3', '47', '0', '0', '0', '0', '0', '0', 'Ripp - Run Away in Fear'),
 
-('1945801', '19459', '4', '0', '100', '20', '0', '0', '25', '0', '0', '0', '3', '47', '0', '0', '0', '0', '0', '0', 'Feng - Run Away in Fear');
+('1945901', '19459', '4', '0', '100', '20', '0', '0', '25', '0', '0', '0', '3', '47', '0', '0', '0', '0', '0', '0', 'Feng - Run Away in Fear');
 
 
+
+DELETE FROM `localized_texts` WHERE `id` IN (46,47,48,187);
 
 INSERT INTO `localized_texts` (`id`, `locale_0`, `comment`) VALUES
 
