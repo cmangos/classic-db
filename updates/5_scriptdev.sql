@@ -1,3 +1,5 @@
+DELETE FROM `eventai_scripts` WHERE `creature_id` IN (6229, 7915, 7800,3586,643);
+
 INSERT INTO `eventai_scripts` (`id`, `creature_id` , `event_type` , `event_inverse_phase_mask` , `event_chance` ,`event_param1` , `event_param2` , `event_param3` , `action1_type` , `action1_param1` ,`action1_param2` , `action1_param3` , `action2_type` , `action2_param1` , `action2_param2` ,`action2_param3` , `action3_type` , `action3_param1` , `action3_param2` , `action3_param3` ,`comment`) VALUES
 
 
@@ -10,19 +12,19 @@ INSERT INTO `eventai_scripts` (`id`, `creature_id` , `event_type` , `event_inver
 
 ('780003','7800','6','0','100','0','0','0','2','188','0','0','4','5807','0','0','0','0','0','0','Mekgineer Thermaplugg - Aggro yell/sound'),
 
-('780004','7800','0','0','100','120000','50000','25000','2','189','0','0','4','5808','0','0','0','0','0','0','Mekgineer Thermaplugg - Combat yell/sound'),
+('780004','7800','0','0','100','40000','20000','25000','2','189','0','0','4','5808','0','0','0','0','0','0','Mekgineer Thermaplugg - Combat yell/sound'),
 
-('780005','7800','8','0','100','0','0','0','2','191','0','0','4','5810','0','0','0','0','0','0','Mekgineer Thermaplugg - Kill yell/sound'),
+('780005','7800','7','0','100','0','0','0','2','191','0','0','4','5810','0','0','0','0','0','0','Mekgineer Thermaplugg - Kill yell/sound'),
 
-('780006','7800','0','0','100','60000','50000','0','32','7915','4','2','32','7915','4','3','2','190','0','0','Mekgineer Thermaplugg - Summon and yell'),
+('780006','7800','0','0','100','30000','30000','0','32','7915','4','2','32','7915','4','3','2','190','0','0','Mekgineer Thermaplugg - Summon and yell'),
 
-('780007','7800','0','0','100','60000','50000','0','4','5809','0','0','0','0','0','0','0','0','0','0','Mekgineer Thermaplugg - Sound for yell on summon'),
+('780007','7800','0','0','100','30000','30000','0','4','5809','0','0','0','0','0','0','0','0','0','0','Mekgineer Thermaplugg - Sound for yell on summon'),
 
 
 
 -- Walking Bomb (Summoned in Mekgineer Thermaplugg's Script)
 
-('791501','7915','13','0','100','0','0','0','11','11504','0','0','0','0','0','0','0','0','0','0','Walking Bomb - Cast Walking Bomb Effect on spawn'),
+('791501','7915','1','0','100','15000','0','0','11','11504','0','0','0','0','0','0','0','0','0','0','Walking Bomb - Cast Walking Bomb Effect on spawn'),
 
 
 
@@ -48,7 +50,7 @@ INSERT INTO `eventai_scripts` (`id`, `creature_id` , `event_type` , `event_inver
 
 
 
-
+DELETE FROM `eventai_summons` WHERE `id` IN (2,3);
 
 INSERT INTO `eventai_summons` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `comment`) VALUES
 
@@ -57,6 +59,8 @@ INSERT INTO `eventai_summons` (`id`, `position_x`, `position_y`, `position_z`, `
 ('3','-535.318','649.987','-326.494','2.72','120000','7800');
 
 
+
+DELETE FROM `localized_texts` WHERE `id` IN (188,189,190,191);
 
 INSERT INTO `localized_texts` (`id`, `locale_0`, `comment`) VALUES
 
