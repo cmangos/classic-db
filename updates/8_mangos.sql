@@ -1,0 +1,1 @@
+UPDATE `creature_template` SET `ScriptName` = 'mob_eventai' WHERE `entry` in (17536, 17537);

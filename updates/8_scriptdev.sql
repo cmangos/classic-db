@@ -1,4 +1,4 @@
-DELETE FROM eventai_scripts WHERE creature_id IN (17536,17537,2018,20870,17975,19958,19964,19969,19962,19953);
+DELETE FROM eventai_scripts WHERE creature_id IN (17536,17537,2018,20870,17975,19958,19964,19969,19962,19953,17842);
 
 INSERT INTO `eventai_scripts` (`id`,`creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_param1`, `event_param2`, `event_param3`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
 
@@ -110,11 +110,39 @@ INSERT INTO `eventai_scripts` (`id`,`creature_id`, `event_type`, `event_inverse_
 
 
 
+-- Azgalor (Updated Script - Also Requires Mangos 5849+ for Doom Spell to function properly)
+
+('1784201','17842','6','0','100','0','0','0','2','117','0','0','4','10999','0','0','0','0','0','0','Azgalor - Yell and Sound on Aggro (After 8th Wave)'), 
+
+('1784202','17842','7','0','100','5000','0','0','7','118','120','122','9','11001','11047','11048','0','0','0','0','Azgalor - Random Yell and Sound on Player Kill'), 
+
+('1784203','17842','8','0','100','0','0','0','2','121','0','0','4','11002','0','0','0','0','0','0','Azgalor - Yell and Sound on Creature Death'), 
+
+('1784204','17842','0','0','100','20000','20000','15000','11','31340','4','0','0','0','0','0','0','0','0','0','Azgalor - Cast Rain of Fire'), 
+
+('1784205','17842','0','0','100','50000','50000','10000','11','31347','4','0','7','119','199','199','9','11046','11000','11000','Azgalor - Casts Doom with Random Yell and Sound'), 
+
+('1784206','17842','0','0','100','30000','30000','0','11','31344','0','0','0','0','0','0','0','0','0','0','Azgalor - Casts Howl of Azgalor'), 
+
+('1784207','17842','0','0','100','10000','10000','5000','11','31345','1','0','0','0','0','0','0','0','0','0','Azgalor - Casts Cleave'), 
+
 
 
 DELETE FROM localized_texts WHERE id IN (192,193,194,195,196,197,198,200,201,202);
 
 INSERT INTO `localized_texts` (`id`, `locale_0`, `comment`) VALUES
+
+('117', 'Abandon all hope! The legion has returned to finish what was begun so many years ago. This time there will be no escape!', '17842'),
+
+('118', 'Reesh, hokta!', '17842'),
+
+('119', 'Just a taste... of what awaits you', '17842'),
+
+('120', 'Don\'t fight it', '17842'),
+
+('121', 'Your time is almost... up', '17842'),
+
+('122', 'No one is going to save you', '17842'), 
 
 ('192','You have faced many challenges, pity they were all in vain. Soon your people will kneel to my lord!','17537'),
 
@@ -129,6 +157,8 @@ INSERT INTO `localized_texts` (`id`, `locale_0`, `comment`) VALUES
 ('197','Is there no one left to test me?!?','17537'),
 
 ('198','My lord will be the end you all...','17537'),
+
+('199','Suffer you despicable insect!','17842'),
 
 ('200','You will be easy prey, $C.','2018'),
 
