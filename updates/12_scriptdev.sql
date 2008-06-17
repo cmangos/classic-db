@@ -468,7 +468,7 @@ INSERT into `localized_texts` (`id`, `locale_0`, `comment`) VALUES
 
 
 
-UPDATE `db_version` SET `version` = 'ACID 0.0.2 - Update Pack r11';
+UPDATE `db_version` SET `version` = 'ACID 0.0.2 - Update Pack r12';
 
 
 
