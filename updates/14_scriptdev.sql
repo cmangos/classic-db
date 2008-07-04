@@ -350,6 +350,8 @@ INSERT into `eventai_summons` (`id`, `position_x`, `position_y`, `position_z`, `
 
 DROP TABLE IF EXISTS `db_version`;
 
+DROP TABLE IF EXISTS `sd2_db_version`;
+
 CREATE TABLE `sd2_db_version` (
 
 `version` varchar(255) NOT NULL default '' COMMENT 'Database version string'
@@ -358,4 +360,4 @@ CREATE TABLE `sd2_db_version` (
 
 
 
-UPDATE `sd2_db_version` SET `version` = 'ACID 0.0.2 - Update Pack r14';
+INSERT INTO `sd2_db_version` SET `version` = 'ACID 0.0.2 - Update Pack r14';

@@ -1,0 +1,1 @@
+UPDATE creature_template SET ScriptName='mob_eventai' WHERE entry IN (620,18113,18470,18292,22807);

@@ -398,7 +398,7 @@ INSERT INTO `eventai_scripts` (`id`,`creature_id`, `event_type`, `event_inverse_
 
 -- Lost Torranche
 
-('2280701','22807','4','0','100','15','0','0','25','0','0','0','3','0','0','0','0','0','0','0','Lost Torranche - Run Away in Fear'),
+('2280701','22807','4','0','100','15','0','0','25','0','0','0','3','42','0','0','0','0','0','0','Lost Torranche - Run Away in Fear'),
 
 
 
@@ -788,7 +788,7 @@ INSERT INTO `eventai_scripts` (`id`,`creature_id`, `event_type`, `event_inverse_
 
 -- Bonelasher
 
-('1847001','18470','0','0','100','170000','10000','5000','11','34363','1','0','1','0','0','0','0','0','0','0','Bonelasher - Cast Fevered Disease'),
+('1847001','18470','0','0','100','170000','10000','5000','11','34363','1','0','0','0','0','0','0','0','0','0','Bonelasher - Cast Fevered Disease'),
 
 
 
@@ -1838,7 +1838,7 @@ INSERT INTO `eventai_scripts` (`id`,`creature_id`, `event_type`, `event_inverse_
 
 -- Nagrand and Zangarmarsh Gossip and Actions
 
-('1829201','18292','2','0','100','60000','30000','120000','6','310','308','0','5','5','0','0','0','0','0','0','Bleeding Hollow Refugee - Gossip Speech and Emote'),
+('1829201','18292','2','0','100','60000','30000','120000','6','310','308','-1','5','5','0','0','0','0','0','0','Bleeding Hollow Refugee - Gossip Speech and Emote'),
 
 ('1829301','18293','2','0','100','60000','20000','120000','1','309','0','0','5','21','0','0','0','0','0','0','Sunspring Refugee - Gossip Speech and Emote'),
 
@@ -2158,7 +2158,7 @@ INSERT INTO `eventai_scripts` (`id`,`creature_id`, `event_type`, `event_inverse_
 
 ('1811402', '18114', '0', '0', '100', '6000', '2000', '0', '11', '38465', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Feralfen Mystic - Cast Lightning Bolt'),
 
-('1811301', '18113', '6', '0', '100', '0', '0', '0', '11', '32060', '1', '11', '12024', '1', '0', '0', '0', '0', '0', '0', 'Feralfen Hunter - Cast Summon Spore Bat and cast net '),
+('1811301', '18113', '6', '0', '100', '0', '0', '0', '11', '32060', '1', '0','11', '12024', '1', '0', '0', '0', '0', '0', 'Feralfen Hunter - Cast Summon Spore Bat and cast net '),
 
 ('1811302', '18113', '0', '0', '100', '6000', '1000', '0', '11', '6660', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Feralfen Hunter - Cast Shoot'),
 
