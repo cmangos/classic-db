@@ -1,4 +1,4 @@
-Acid 0.0.6 Release Help file
+Acid 0.0.8 Release Help file
 
 
 
