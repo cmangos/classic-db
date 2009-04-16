@@ -1,16 +1,20 @@
 =========================================
 
-Event AI documentation
+EventAI documentation
 
 =========================================
 
 
 
-Scriptdev2 Revision 220 introduces a new database defined AI named EventAI.
+EventAI allows users to create new creature scripts entierly within the database.
 
-This system allows users to create new creature scripts entierly within the Database.
 
-ScriptName must still be set to "mob_eventai" within the MaNGOS database creature_template.scriptname field.
+
+For the AI to be used, you must first make sure to set AIname for each creature that should use this AI.
+
+
+
+UPDATE creature_template SET AIName = 'EventAI' WHERE entry IN (...);
 
 
 
@@ -20,9 +24,9 @@ Basic Structure of EventAI
 
 =========================================
 
-Event AI follows a basic if (Event) then do {Action} format.
+EventAI follows a basic if (Event) then do (Action) format.
 
-Below is a the list of current fields within the Eventai_scripts table.
+Below is a the list of current fields within the creature_ai_scripts table.
 
 
 
@@ -82,11 +86,15 @@ action3_param3
 
 
 
-All params are signed 32 bit values (+/- 2147483647). If param specifies time then time is in milliseconds. If param specifies percentage then percentages are value/100 (ex: if param = 500 then that means 500%, -50 = -50%)
+All params are signed 32 bit values (+/- 2147483647). If param specifies time then time is in milliseconds.
+
+If param specifies percentage then percentages are value/100 (ex: if param = 500 then that means 500%, -50 = -50%)
 
 
 
-*Phase mask is a bit mask of which phases this event should not trigger in. Example: Phase mask value of 12 (1100) would mean that this event would trigger 0, 1 and all other phases except for 2 and 3 (0 counts as the first phase). 
+*Phase mask is a bit mask of which phases this event should not trigger in. Example: Phase mask value of 12 (1100)
+
+would mean that this event would trigger 0, 1 and all other phases except for 2 and 3 (0 counts as the first phase). 
 
 
 
@@ -102,7 +110,9 @@ Each event type has its own specific interpretation of the params that accompany
 
 Params are always read from Param1, then Param2, then Param3.
 
-Events will not repeat until the creature exits combat unless EFLAG_REPEATABLE is set. Some events such as EVENT_T_AGGRO, EVENT_T_DEATH, EVENT_T_SPAWNED, and EVENT_T_EVADE cannot repeat.
+Events will not repeat until the creature exits combat unless EFLAG_REPEATABLE is set.
+
+Some events such as EVENT_T_AGGRO, EVENT_T_DEATH, EVENT_T_SPAWNED, and EVENT_T_EVADE cannot repeat.
 
 
 
@@ -130,7 +140,7 @@ Events will not repeat until the creature exits combat unless EFLAG_REPEATABLE i
 
 9    EVENT_T_RANGE               MinDist, MaxDist, RepeatMin, RepeatMax                  Expires when the highest threat target distance is greater than (Param1) and less than (Param2). Will repeat every (Param3) and (Param4) .
 
-10   EVENT_T_OOC_LOS             NoHostile, NoFriendly, RepeatMin, RepeatMax             Expires when a Player moves within visible distance to creature. Does not expire for Hostile Players if (Param1) is not 0. Does not expire for Friendly Players if (Param2) is not 0. Will repeat every (Param3) and (Param4) . Does not expire for creatures or pet or when the creature is in combat.
+10   EVENT_T_OOC_LOS             Hostile-or-Not, MaxAllowedRange, RepeatMin, RepeatMax   Expires when a Unit moves within distance(MaxAllowedRange) to creature. If Param1=0 it will expire if Unit are Hostile. If Param1=1 it will only expire if Unit are not Hostile(generally determined by faction). Will repeat every (Param3) and (Param4). Does not expire when the creature is in combat.
 
 11   EVENT_T_SPAWNED             NONE                                                    Expires at initial spawn and at creature respawn (useful for setting ranged movement type)
 
@@ -149,6 +159,8 @@ Events will not repeat until the creature exits combat unless EFLAG_REPEATABLE i
 18   EVENT_T_TARGET_MANA         ManaMax%, ManaMin%, RepeatMin, RepeatMax
 
 21   EVENT_T_REACHED_HOME        NONE                                                    Expires when creature reach it's home(spawn) location after Evade.
+
+22   EVENT_T_RECEIVE_EMOTE       EmoteId, Condition, CondValue1, CondValue2              Expires when creature receive emote with text emote id(enum TextEmotes). Condition can be defined. If set, then most conditions has additional value (see enum ConditionType)
 
 
 
@@ -462,19 +474,19 @@ This Event is commonly used for NPC's who have Ranged Combat and will Throw/Shoo
 
 ---------------------
 
-Parameter 1: NoHostile - This Value is to Prevent this Action from Expiring When Caused by a Player/Creature Hostile to them (0 = Prevent Event from Expiring, 1 = Allow Event to Expire)
+Parameter 1: Hostile-or-Not   - This will expire if Unit are hostile. If Param1=1 it will only expire if Unit are not Hostile(generally determined by faction)
 
-Parameter 2: NoFriendly - This Value is to Prevent this Action from Expiring When Caused by a Player/Creature Friendly to them (0 = Prevent Event from Expiring, 1 = Allow Event to Expire)
+Parameter 2: MaxAllowedRange  - Expires when a Unit moves within this distance to creature
 
-Parameter 3: RepeatMin - Minimum Time used to calculate Random Repeat Expire
+Parameter 3: RepeatMin        - Minimum Time used to calculate Random Repeat Expire
 
-Parameter 4: RepeatMax - Maximum Time used to calculate Random Repeat Expire
+Parameter 4: RepeatMax        - Maximum Time used to calculate Random Repeat Expire
 
 
 
-OUT OF COMBAT ONLY! - Expires when a Player moves within visible distance to the NPC. Does not expire for Hostile Players if (Param1) is not 0. Does not expire for Friendly Players if (Param2) is not 0. Will repeat every (Param3) and (Param4). Does not expire for creatures or pets when they are in combat. 
+OUT OF COMBAT!
 
-This Event is commonly used for NPC's who Do Something or Say Something when you walk past them Out of Combat.
+This Event is commonly used for NPC's who do something or say something to you when you walk past them Out of Combat.
 
 
 
@@ -628,6 +640,44 @@ Most commonly used to cast spells that can not be casted in EVENT_T_EVADE and ot
 
 
 
+---------------------------
+
+22 = EVENT_T_RECEIVE_EMOTE:
+
+---------------------------
+
+Expires only when creature receive emote from player. Valid text emote id's are in Mangos source (enum TextEmotes)
+
+Event does not require any conditions to process, however many are ecpected to have condition.
+
+
+
+EventAI use conditions from available in Mangos (enum ConditionType)
+
+Current implemented conditions:
+
+CONDITION_NONE (0)            0            0
+
+CONDITION_AURA (1)            spell_id     effindex
+
+CONDITION_ITEM (2)            item_id      count
+
+CONDITION_ITEM_EQUIPPED (3)   item_id      count
+
+CONDITION_ZONEID (4)          zone_id      0
+
+CONDITION_REPUTATION_RANK (5) faction_id   min_rank
+
+CONDITION_TEAM (6)            player_team  0 (469-Alliance / 67-Horde)
+
+CONDITION_SKILL (7)           skill_id     min_skill_value
+
+CONDITION_QUESTREWARDED (8)   quest_id     0, if quest are rewarded
+
+CONDITION_QUESTTAKEN (9)      quest_id     0, while quest active(incomplete)
+
+CONDITION_ACTIVE_EVENT (12)   event_id     0, note this is id from dbc, also defined in Mangos source(enum HolidayIds) NOT id of game_event in database
+
 
 
 =========================================
@@ -660,7 +710,7 @@ Parameter 3: Optional, if Parameter 2 exist. In this case, eventAI will randomiz
 
 
 
-See Text-tables.txt for documentation of eventai_texts-table.
+Read at bottom for documentation of creature_ai_texts-table.
 
 
 
@@ -1050,7 +1100,9 @@ NOTE: All Param Values Are 0 for this Action.
 
 -------------------
 
-When activated, the creature will try to flee from combat. Currently this is done by it casting a fear-like spell on itself called "Run Away". A Better Flee system is in Development but will take time before it is implimented.
+When activated, the creature will try to flee from combat. Currently this is done by it casting a fear-like spell on itself called "Run Away".
+
+A Better Flee system is in Development.
 
 NOTE: All Param Values Are 0 for this Action.
 
@@ -1184,13 +1236,13 @@ Parameter 1: CreatureID - The creature template ID to be summoned. The value her
 
 Parameter 2: Target - The target type defining who the summoned creature will attack. The value in this field needs to be a valid target type as specified in the reference tables below. NOTE: Using target type 0 will cause the summoned creature to not attack anyone.
 
-Parameter 3: SummonID - The summon ID from the eventai_summons table controlling the position (and spawntime) where the summoned mob should be spawned at. 
+Parameter 3: SummonID - The summon ID from the creature_ai_summons table controlling the position (and spawntime) where the summoned mob should be spawned at. 
 
 
 
-Summons creature (param1) to attack target (param2) at location specified by EventAI_Summons (param3). 
+Summons creature (param1) to attack target (param2) at location specified by creature_ai_summons (param3). 
 
-NOTE: Param3 Value is the ID Value used for the entry used in EventAI_Summons for this action. You MUST have an EventAI_Summons entry to use this action.
+NOTE: Param3 Value is the ID Value used for the entry used in creature_ai_summons for this action. You MUST have an creature_ai_summons entry to use this action.
 
 This is commonly used for NPC's who need to Summon a creature at a specific location. (Normally used for complex events)
 
@@ -1230,9 +1282,7 @@ Parameter 2: Data - The value to put at that field index.
 
 Sets data for the instance. Note that this will only work when the creature is inside an instantiable zone that has a valid script (ScriptedInstance) assigned. 
 
-NOTE: Param1 Value is located in "def_<instance name>.h" SD2 File and Param2 value is generally found in the "sc_instance.h" file in SD2
-
-This is commonly used to link an ACID script with a SD2 C++ Script. You make make things happen like opening doors on specific events that happen. ACID Just triggers the C++ Script to function.
+This is commonly used to link an EventAI script with a existing Script Library C++ Script. You make make things happen like opening doors on specific events that happen.
 
 
 
@@ -1390,11 +1440,149 @@ Below is the list of current Event Flags that EventAI can handle. Event flags ar
 
 6       64
 
-7       128        EFLAG_DEBUG_ONLY              Prevents events from occuring on Release builds of ScriptDev2. Useful for testing new features.
+7       128        EFLAG_DEBUG_ONLY              Prevents events from occuring on Release builds. Useful for testing new features.
 
 
 
-NOTE: You can add the numbers in the decimal column to combine flags. 
+NOTE: You can add the numbers in the decimal column to combine flags.
 
 
+
+
+
+=========================================
+
+Basic Structure of creature_ai_texts
+
+=========================================
+
+Below is a the list of current fields within the texts tables.
+
+
+
+Field_Name            Description
+
+-----------------------------------------------------------
+
+entry                 This value is mearly an NEGATIVE identifier of the current text number. Required for sql queries. Valid range are -1 to -999999
+
+content_default       This is the actual text presented in the default language (English).
+
+
+
+content_loc1          This is the actual text presented in the Localization #1 Clients (Korean)
+
+content_loc2          This is the actual text presented in the Localization #2 Clients (French)
+
+content_loc3          This is the actual text presented in the Localization #3 Clients (German)
+
+content_loc4          This is the actual text presented in the Localization #4 Clients (Chinese)
+
+content_loc5          This is the actual text presented in the Localization #5 Clients (Taiwanese)
+
+content_loc6          This is the actual text presented in the Localization #6 Clients (Spanish)
+
+content_loc7          This is the actual text presented in the Localization #7 Clients (Spanish Mexico)
+
+content_loc8          This is the actual text presented in the Localization #8 Clients (Russian)
+
+
+
+sound                 This value is the Sound ID that corresponds to the actual text used.
+
+type                  Variables used to define type of text (Say/Yell/Textemote/Whisper).
+
+language              This value is the Language that the text is native in.
+
+emote                 Value from enum Emote. Only source of text will play this emote (not target, if target are defined in DoScriptText)
+
+comment               This is a comment regarding the text entry
+
+
+
+Note: Fields `content_loc1` to `content_loc8` are NULL values by default and are normally handled by seperate localization projects.
+
+
+
+=========================================
+
+Text Types (type)
+
+=========================================
+
+Below is the list of current Text types that texts tables can handle. These were previously seperate Actions in ACID.
+
+
+
+#    Internal Name                 Description
+
+-----------------------------------------------------------
+
+0    CHAT_TYPE_SAY                 This type sets the text to be displayed as a Say (Speech Bubble).
+
+1    CHAT_TYPE_YELL                This type sets the text to be displayed as a Yell (Red Speech Bubble) and usually has a matching Sound ID.
+
+2    CHAT_TYPE_TEXT_EMOTE          This type sets the text to be displayed as a text emote in orange in the chat log. 
+
+3    CHAT_TYPE_BOSS_EMOTE          This type sets the text to be displayed as a text emote in orange in the chat log (Used only for specific Bosses). 
+
+4    CHAT_TYPE_WHISPER             This type sets the text to be displayed as a whisper to the player in the chat log.
+
+5    CHAT_TYPE_BOSS_WHISPER        This type sets the text to be displayed as a whisper to the player in the chat log (Used only for specific Bosses).
+
+6    CHAT_TYPE_ZONE_YELL           Same as CHAT_TYPE_YELL but will display to all players in current zone.
+
+
+
+=========================================
+
+Language Types (language)
+
+=========================================
+
+Below is the list of current Language types that are allowed.
+
+This is the Race Language that the text is native to (So it will display properly)
+
+
+
+#    Internal Name                Description
+
+-----------------------------------------------------------                    
+
+0    UNIVERSAL                    Text in this language is understood by ALL Races.
+
+1    ORCISH                       Text in this language is understood ONLY by Horde Races.
+
+2    DARNASSIAN                   Text in this language is understood ONLY by the Night Elf Race.
+
+3    TAURAHE                      Text in this language is understood ONLY by the Tauren Race.
+
+6    DWARVISH                     Text in this language is understood ONLY by the Dwarf Race.
+
+7    COMMON                       Text in this language is understood ONLY by Alliance Races.
+
+8    DEMONIC                      Text in this language is understood ONLY by the Demon Race (Not Implimented).
+
+9    TITAN                        This language was used by Sargeras to speak with other Titians (Not Implemented).
+
+10   THALASSIAN                   Text in this language is understood ONLY by the Blood Elf Race.
+
+11   DRACONIC                     Text in this language is understood ONLY by the Dragon Race.
+
+12   KALIMAG                      Text will display as Kalimag (not readable by players, language of all elementals)
+
+13   GNOMISH                      Text in this language is understood ONLY by the Gnome Race.
+
+14   TROLL                        Text in this language is understood ONLY by the Troll Race.
+
+33   GUTTERSPEAK                  Text in this language is understood ONLY by the Undead Race.
+
+35   DRAENEI                      Text in this language is understood ONLY by the Draenai Race.
+
+36   ZOMBIE                       (not currently used?)
+
+37   GNOMISH BINARY               Binary language used by Alliance when drinking Binary Brew
+
+38   GOBLIN BINARY                Binary language used by Horce when drinking Binary Brew
 

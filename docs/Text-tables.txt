@@ -8,7 +8,7 @@ Texts Documentation
 
 Scriptdev2 Revision 695 introduces a new format for using texts in EventAI and SD2 Scripts.
 
-This information relates to the three *_texts tables located in the ScriptDev Database.
+This information relates to the *_texts tables located in the ScriptDev Database.
 
 
 
@@ -18,13 +18,13 @@ Custom scripters are adviced to store their text data in custom_texts.
 
 
 
-The three different tables has ranges of entries allowed for that table.
+The different tables has ranges of entries allowed for that table.
 
-eventai_texts: entry -1       -> -999999
+Reserved EventAI in Mangos     entry -1       -> -999999
 
-script_texts:  entry -1000000 -> -1999999
+script_texts:                  entry -1000000 -> -1999999
 
-custom_texts:  entry -2000000 -> -2999999
+custom_texts:                  entry -2000000 -> -2999999
 
 Any entry out of range for that table will display a startup error.
 
@@ -34,7 +34,7 @@ Any entry out of range for that table will display a startup error.
 
 =========================================
 
-Basic Structure of eventai_texts, script_texts and custom_texts
+Basic Structure of script_texts and custom_texts
 
 =========================================
 
@@ -114,7 +114,7 @@ Below is the list of current Text types that texts tables can handle. These were
 
 5    CHAT_TYPE_BOSS_WHISPER        This type sets the text to be displayed as a whisper to the player in the chat log (Used only for specific Bosses).
 
-
+6    CHAT_TYPE_ZONE_YELL           Same as CHAT_TYPE_YELL but will display to all players in current zone.
 
 
 
