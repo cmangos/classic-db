@@ -1,8 +1,16 @@
-Acid 0.0.9 Release Help file
+Acid Release Help file
 
 
 
-ACID is the encapsulation of database information for ScriptDev2. Currently ACID will only contain EventAI scripts but in the future we plan on adding opening events and all text sent to the client into ACID for localization support. to find out more look at http://forums.scriptdev2.com/index.php?showtopic=2057
+ACID is the encapsulation of database information for EventAI.
+
+Currently ACID will only contain EventAI scripts but in the future we plan on adding opening events and all text sent to the client into ACID for localization support. 
+
+To find out more look at http://forums.scriptdev2.com/index.php?showtopic=2057
+
+
+
+Further EventAI Documentation can be found in either Mangos or Trinity Core Repo's. All Information regarding scripting with EventAI is located in that file (EventAI.txt).
 
 
 
@@ -17,6 +25,18 @@ Acid SVN : https://sd2-acid.svn.sourceforge.net/svnroot/sd2-acid/
 Acid team : 
 
 X-Savior - Lead Acid Dev
+
+
+
+We are now introducing a new ACID Version Formatting. It is very simple to follow and previous releases will not be affected by this version system.
+
+
+
+3.X.X = WOTLK (3.x.x Client) ACID Releases
+
+2.X.X = TBC (2.4.3 Client) ACID Releases
+
+1.X.X = WoW (1.12.X Client) ACID Releases
 
 
 
