@@ -62,7 +62,13 @@ AFTER applying your Mangos and SD2 Updates apply the following ACID Packs
 
 
 
+--------------------------------------------------------------------------------------------------------------
+
+**THIS STEP NO LONGER REQUIRED FOR 3.X.X INSTALLATIONS - This is now for 1.12.1 and 2.4.3 Installations Only**
+
 AFTER YOU UPDATE YOUR ACID VERSION ALWAYS RE-APPLY THE "mangos_scriptname_full.sql" FROM THE VERSION OF SD2 YOU ARE USING TO PREVENT ANY POSSIBLE OVERLAP PROBLEMS.
+
+--------------------------------------------------------------------------------------------------------------
 
 
 
@@ -96,7 +102,13 @@ AFTER applying your Trinity Core and TDB Updates apply the following ACID Packs
 
 
 
+--------------------------------------------------------------------------------------------------------------
+
+**THIS STEP NO LONGER REQUIRED FOR 3.X.X INSTALLATIONS - This is now for 1.12.1 and 2.4.3 Installations Only**
+
 AFTER YOU UPDATE YOUR ACID VERSION ALWAYS RE-APPLY THE "world_scripts_full.sql" FROM THE VERSION OF TRINITY YOU ARE USING TO PREVENT ANY POSSIBLE OVERLAP PROBLEMS.
+
+--------------------------------------------------------------------------------------------------------------
 
 
 
