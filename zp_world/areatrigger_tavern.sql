@@ -37,6 +37,7 @@ LOCK TABLES `areatrigger_tavern` WRITE;
 /*!40000 ALTER TABLE `areatrigger_tavern` DISABLE KEYS */;
 INSERT INTO `areatrigger_tavern` VALUES
 (71,'Westfall - Sentinel Hill Inn'),
+(178,'Strahnbrad'),
 (562,'Elwynn Forest - Goldshire - Lion\'s Pride Inn'),
 (682,'Redridge Mountains - Lakeshire Inn'),
 (707,'Duskwood - Darkshire - Scarlet Raven Inn'),
@@ -62,6 +63,7 @@ INSERT INTO `areatrigger_tavern` VALUES
 (1023,'Tanaris '),
 (1024,'Feralas '),
 (1025,'Feralas '),
+(1042,'Wildhammer Keep'),
 (1606,'Badlands '),
 (1646,'Arathi Highlands '),
 (2266,'Desolace '),
@@ -70,14 +72,12 @@ INSERT INTO `areatrigger_tavern` VALUES
 (2287,'Winterspring '),
 (2610,'Ashenvale '),
 (2786,'Stormwind backup rest'),
-(178,'Strahnbrad'),
-(1042,'Wildhammer Keep'),
+(3547,'The Undercity'),
 (3690,'Revantusk Village'),
 (3886,'Grom\'gol Base Camp'),
-(4058,'Light\'s Hope Chapel'),
 (3985,'Cenarion Hold'),
-(4090,'Stonetalon Peak'),
-(3547,'The Undercity');
+(4058,'Light\'s Hope Chapel'),
+(4090,'Stonetalon Peak');
 /*!40000 ALTER TABLE `areatrigger_tavern` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -8,6 +8,7 @@
 
 ## Fri, Jan 22, 2010
 
+* Cleaned up various column values and sorted data.
 * Added MySQL Workbench 5.1 compatible database schema for zp_world.
 * Added databases for characters and realms.
 * Imported fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=68&t=626
