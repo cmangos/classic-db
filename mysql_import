@@ -29,6 +29,14 @@ function import ()
     echo " done"
 }
 
-for x in ./zpdb/*.sql; do
+for x in ./zp_characters/*.sql; do
+    import $x
+done
+
+for x in ./zp_realm/*.sql; do
+    import $x
+done
+
+for x in ./zp_world/*.sql; do
     import $x
 done
