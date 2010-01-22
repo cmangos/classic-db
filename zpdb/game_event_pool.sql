@@ -26,7 +26,7 @@ CREATE TABLE `game_event_pool` (
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Id of the pool',
   `event` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Put negatives values to remove during event',
   PRIMARY KEY (`pool_entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

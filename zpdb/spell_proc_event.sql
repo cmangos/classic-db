@@ -33,7 +33,7 @@ CREATE TABLE `spell_proc_event` (
   `ppmRate` float NOT NULL DEFAULT '0',
   `cooldown` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

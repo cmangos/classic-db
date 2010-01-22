@@ -24,24 +24,24 @@ DROP TABLE IF EXISTS `locales_npc_option`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `locales_npc_option` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `option_text_loc1` text,
-  `option_text_loc2` text,
-  `option_text_loc3` text,
-  `option_text_loc4` text,
-  `option_text_loc5` text,
-  `option_text_loc6` text,
-  `option_text_loc7` text,
-  `option_text_loc8` text,
-  `box_text_loc1` text,
-  `box_text_loc2` text,
-  `box_text_loc3` text,
-  `box_text_loc4` text,
-  `box_text_loc5` text,
-  `box_text_loc6` text,
-  `box_text_loc7` text,
-  `box_text_loc8` text,
+  `option_text_loc1` text COLLATE utf8_unicode_ci,
+  `option_text_loc2` text COLLATE utf8_unicode_ci,
+  `option_text_loc3` text COLLATE utf8_unicode_ci,
+  `option_text_loc4` text COLLATE utf8_unicode_ci,
+  `option_text_loc5` text COLLATE utf8_unicode_ci,
+  `option_text_loc6` text COLLATE utf8_unicode_ci,
+  `option_text_loc7` text COLLATE utf8_unicode_ci,
+  `option_text_loc8` text COLLATE utf8_unicode_ci,
+  `box_text_loc1` text COLLATE utf8_unicode_ci,
+  `box_text_loc2` text COLLATE utf8_unicode_ci,
+  `box_text_loc3` text COLLATE utf8_unicode_ci,
+  `box_text_loc4` text COLLATE utf8_unicode_ci,
+  `box_text_loc5` text COLLATE utf8_unicode_ci,
+  `box_text_loc6` text COLLATE utf8_unicode_ci,
+  `box_text_loc7` text COLLATE utf8_unicode_ci,
+  `box_text_loc8` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

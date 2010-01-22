@@ -30,8 +30,8 @@ CREATE TABLE `creature_template` (
   `modelid_A2` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `modelid_H` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `modelid_H2` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `name` char(100) NOT NULL DEFAULT '0',
-  `subname` char(100) DEFAULT NULL,
+  `name` char(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `subname` char(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `minlevel` tinyint(3) unsigned NOT NULL DEFAULT '1',
   `maxlevel` tinyint(3) unsigned NOT NULL DEFAULT '1',
   `minhealth` int(10) unsigned NOT NULL DEFAULT '0',
@@ -79,7 +79,7 @@ CREATE TABLE `creature_template` (
   `PetSpellDataId` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `mingold` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `maxgold` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `AIName` char(64) NOT NULL DEFAULT '',
+  `AIName` char(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `MovementType` tinyint(3) unsigned DEFAULT '0',
   `InhabitType` tinyint(3) unsigned NOT NULL DEFAULT '3',
   `unk16` float NOT NULL DEFAULT '1',
@@ -89,9 +89,9 @@ CREATE TABLE `creature_template` (
   `equipment_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `mechanic_immune_mask` int(10) unsigned NOT NULL DEFAULT '0',
   `flags_extra` int(10) unsigned NOT NULL DEFAULT '0',
-  `ScriptName` char(64) NOT NULL DEFAULT '',
+  `ScriptName` char(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Creature System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

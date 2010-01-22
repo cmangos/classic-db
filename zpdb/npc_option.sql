@@ -30,10 +30,10 @@ CREATE TABLE `npc_option` (
   `action` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `box_money` int(10) unsigned NOT NULL DEFAULT '0',
   `coded` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `option_text` text,
-  `box_text` text,
+  `option_text` text COLLATE utf8_unicode_ci,
+  `box_text` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

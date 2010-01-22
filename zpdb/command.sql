@@ -23,11 +23,11 @@ DROP TABLE IF EXISTS `command`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `command` (
-  `name` varchar(50) NOT NULL DEFAULT '',
+  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `security` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `help` longtext,
+  `help` longtext COLLATE utf8_unicode_ci,
   PRIMARY KEY (`name`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Chat System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Chat System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

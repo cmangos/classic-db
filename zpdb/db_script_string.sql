@@ -24,17 +24,17 @@ DROP TABLE IF EXISTS `db_script_string`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `db_script_string` (
   `entry` int(11) unsigned NOT NULL DEFAULT '0',
-  `content_default` text NOT NULL,
-  `content_loc1` text,
-  `content_loc2` text,
-  `content_loc3` text,
-  `content_loc4` text,
-  `content_loc5` text,
-  `content_loc6` text,
-  `content_loc7` text,
-  `content_loc8` text,
+  `content_default` text COLLATE utf8_unicode_ci NOT NULL,
+  `content_loc1` text COLLATE utf8_unicode_ci,
+  `content_loc2` text COLLATE utf8_unicode_ci,
+  `content_loc3` text COLLATE utf8_unicode_ci,
+  `content_loc4` text COLLATE utf8_unicode_ci,
+  `content_loc5` text COLLATE utf8_unicode_ci,
+  `content_loc6` text COLLATE utf8_unicode_ci,
+  `content_loc7` text COLLATE utf8_unicode_ci,
+  `content_loc8` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

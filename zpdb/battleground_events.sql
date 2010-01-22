@@ -26,9 +26,9 @@ CREATE TABLE `battleground_events` (
   `map` smallint(5) NOT NULL,
   `event1` tinyint(3) unsigned NOT NULL,
   `event2` tinyint(3) unsigned NOT NULL,
-  `description` varchar(255) NOT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`map`,`event1`,`event2`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

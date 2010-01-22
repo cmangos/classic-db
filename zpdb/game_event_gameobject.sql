@@ -26,7 +26,7 @@ CREATE TABLE `game_event_gameobject` (
   `guid` int(10) unsigned NOT NULL,
   `event` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Put negatives values to remove during event',
   PRIMARY KEY (`guid`,`event`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

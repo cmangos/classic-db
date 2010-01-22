@@ -24,9 +24,9 @@ DROP TABLE IF EXISTS `areatrigger_tavern`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `areatrigger_tavern` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
-  `name` text,
+  `name` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Trigger System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -38,7 +38,7 @@ CREATE TABLE `gameobject` (
   `animprogress` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `state` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`)
-) ENGINE=MyISAM AUTO_INCREMENT=230923 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gameobject System';
+) ENGINE=MyISAM AUTO_INCREMENT=230923 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Gameobject System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

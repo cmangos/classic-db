@@ -27,7 +27,7 @@ CREATE TABLE `spell_learn_spell` (
   `SpellID` smallint(5) unsigned NOT NULL DEFAULT '0',
   `Active` tinyint(3) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`entry`,`SpellID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Item System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

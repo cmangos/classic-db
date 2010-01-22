@@ -41,7 +41,7 @@ CREATE TABLE `creature_movement` (
   `model1` mediumint(9) NOT NULL DEFAULT '0',
   `model2` mediumint(9) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`point`)
-) ENGINE=MyISAM AUTO_INCREMENT=97109 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
+) ENGINE=MyISAM AUTO_INCREMENT=97109 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Creature System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

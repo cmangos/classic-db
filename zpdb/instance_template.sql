@@ -33,9 +33,9 @@ CREATE TABLE `instance_template` (
   `startLocY` float DEFAULT NULL,
   `startLocZ` float DEFAULT NULL,
   `startLocO` float DEFAULT NULL,
-  `script` varchar(128) NOT NULL DEFAULT '',
+  `script` varchar(128) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`map`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
