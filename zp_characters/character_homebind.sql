@@ -32,6 +32,17 @@ CREATE TABLE `character_homebind` (
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `character_homebind`
+--
+
+LOCK TABLES `character_homebind` WRITE;
+/*!40000 ALTER TABLE `character_homebind` DISABLE KEYS */;
+INSERT INTO `character_homebind` VALUES
+(1,1,141,10311.3,832.463,1326.41);
+/*!40000 ALTER TABLE `character_homebind` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

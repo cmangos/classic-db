@@ -30,6 +30,21 @@ CREATE TABLE `guild_rank` (
   PRIMARY KEY (`guildid`,`rid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Guild System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `guild_rank`
+--
+
+LOCK TABLES `guild_rank` WRITE;
+/*!40000 ALTER TABLE `guild_rank` DISABLE KEYS */;
+INSERT INTO `guild_rank` VALUES
+(1,0,'Guild Master',1044991),
+(1,1,'Officer',1044991),
+(1,2,'Veteran',67),
+(1,3,'Member',67),
+(1,4,'Initiate',67);
+/*!40000 ALTER TABLE `guild_rank` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

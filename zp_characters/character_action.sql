@@ -30,6 +30,22 @@ CREATE TABLE `character_action` (
   PRIMARY KEY (`guid`,`button`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `character_action`
+--
+
+LOCK TABLES `character_action` WRITE;
+/*!40000 ALTER TABLE `character_action` DISABLE KEYS */;
+INSERT INTO `character_action` VALUES
+(1,0,6603,0),
+(1,1,9912,0),
+(1,2,9889,0),
+(1,3,9858,0),
+(1,4,9841,0),
+(1,11,20580,0);
+/*!40000 ALTER TABLE `character_action` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

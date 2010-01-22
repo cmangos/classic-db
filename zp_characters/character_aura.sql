@@ -35,6 +35,19 @@ CREATE TABLE `character_aura` (
   PRIMARY KEY (`guid`,`spell`,`effect_index`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `character_aura`
+--
+
+LOCK TABLES `character_aura` WRITE;
+/*!40000 ALTER TABLE `character_aura` DISABLE KEYS */;
+INSERT INTO `character_aura` VALUES
+(1,1,9885,0,1,384,1800000,1422651,-1),
+(1,1,9885,1,1,16,1800000,1422651,-1),
+(1,1,9885,2,1,27,1800000,1422651,-1);
+/*!40000 ALTER TABLE `character_aura` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

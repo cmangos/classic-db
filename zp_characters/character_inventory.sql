@@ -32,6 +32,48 @@ CREATE TABLE `character_inventory` (
   KEY `idx_guid` (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `character_inventory`
+--
+
+LOCK TABLES `character_inventory` WRITE;
+/*!40000 ALTER TABLE `character_inventory` DISABLE KEYS */;
+INSERT INTO `character_inventory` VALUES
+(1,0,38,2,3661),
+(1,0,34,4,6123),
+(1,31,4,6,6124),
+(1,0,23,8,159),
+(1,0,24,10,4536),
+(1,0,25,12,6948),
+(1,0,26,15,13583),
+(1,0,27,16,7098),
+(1,0,28,17,117),
+(1,0,29,18,4865),
+(1,0,30,19,7073),
+(1,0,31,23,7074),
+(1,31,2,25,5394),
+(1,0,33,27,18902),
+(1,0,21,30,17966),
+(1,0,19,31,17966),
+(1,0,20,32,17966),
+(1,0,22,33,17966),
+(1,0,32,34,3173),
+(1,0,36,35,3169),
+(1,0,4,37,16706),
+(1,0,8,38,16714),
+(1,0,7,39,16715),
+(1,0,5,40,16716),
+(1,0,9,41,16717),
+(1,0,2,42,16718),
+(1,0,6,43,16719),
+(1,0,0,44,16720),
+(1,0,15,45,20258),
+(1,0,14,47,15138),
+(1,31,0,52,16608),
+(1,0,37,55,15826);
+/*!40000 ALTER TABLE `character_inventory` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
