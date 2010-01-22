@@ -8,6 +8,7 @@
 
 ## Fri, Jan 22, 2010
 
+* Applied MaNGOS database updates up to z101.
 * Added scriptdev database.
 * Cleaned up various column values and sorted data.
 * Added MySQL Workbench 5.1 compatible database schema for zp_world.

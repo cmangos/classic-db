@@ -181,7 +181,7 @@ INSERT INTO `command` VALUES
 ('modify mount',1,'Syntax: .modify mount #id #speedDisplay selected player as mounted at #id creature and set speed to #speed value.'),
 ('modify rage',1,'Syntax: .modify rage #newrageModify the rage of the selected player. If no player is selected, modify your rage.'),
 ('modify rep',2,'Syntax: .modify rep #repId (#repvalue | $rankname [#delta])Sets the selected players reputation with faction #repId to #repvalue or to $reprank.If the reputation rank name is provided, the resulting reputation will be the lowest reputation for that rank plus the delta amount, if specified.You can use \'.pinfo rep\' to list all known reputation ids, or use \'.lookup faction $name\' to locate a specific faction id.'),
-('modify scale',1,''),
+('modify scale',1,'Syntax: .modify scale #scale\r\n\r\nChange model scale for targeted player (util relogin) or creature (until respawn).'),
 ('modify speed',1,'Syntax: .modify speed #rate.speed #rateModify the running speed of the selected player to \normal base run speed\"\"*rate. If no player is selected, modify your speed. #rate may range from 0.1 to 10.\"'),
 ('modify spell',1,''),
 ('modify standstate',2,'Syntax: .modify standstate #emoteidChange the emote of your character while standing to #emoteid.'),
@@ -258,7 +258,7 @@ INSERT INTO `command` VALUES
 ('server restart cancel',3,'Syntax: .server restart cancelCancel the restart/shutdown timer if any.'),
 ('server set loglevel',4,'Syntax: .server set loglevel #levelSet server log level (0 - errors only, 1 - basic, 2 - detail, 3 - debug).'),
 ('server set motd',3,'Syntax: .server set motd $MOTDSet server Message of the day.'),
-('server shutdown',3,'Syntax: .server shutdown #delay [#exist_code]Shut the server down after #delay seconds. Use #exist_code or 0 as program exist code.'),
+('server shutdown',3,'Syntax: .server shutdown #delay [#exit_code]\r\n\r\nShut the server down after #delay seconds. Use #exit_code or 0 as program exit code.'),
 ('server shutdown cancel',3,'Syntax: .server shutdown cancelCancel the restart/shutdown timer if any.'),
 ('setskill',3,'Syntax: .setskill #skill #level [#max]Set a skill of id #skill with a current skill value of #level and a maximum value of #max (or equal current maximum if not provide) for the selected character. If no character is selected, you learn the skill.'),
 ('showarea',3,'Syntax: .showarea #areaidReveal the area of #areaid to the selected character. If no character is selected, reveal this area to you.'),
@@ -284,7 +284,8 @@ INSERT INTO `command` VALUES
 ('wp export',3,'Syntax: .wp export [#creature_guid or Select a Creature] $filename'),
 ('wp import',3,'Syntax: .wp import $filename'),
 ('wp modify',2,'Syntax: .wp modify [#creature_guid or Select a Creature]add - Add a waypoint after the selected visualwaittime $timeemote IDspell IDtext1| text2| text3| text4| text5 <text>model1 IDmodel2 IDmove(moves wp to player pos)del (deletes the wp)Only one parameter per time!'),
-('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]onfirstlastoffinfoFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!');
+('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]onfirstlastoffinfoFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!'),
+('quit',4,'Syntax: quit\r\n\r\nClose RA connection. Command must be typed fully (quit).');
 /*!40000 ALTER TABLE `command` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
