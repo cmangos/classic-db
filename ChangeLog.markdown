@@ -8,6 +8,10 @@
 
 ## Fri, Jan 22, 2010
 
+* Added missing tables.
+* Added required empty row to character db version.
+* Corrected dates for battleground holidays.
+* Fixed realmlist settings.
 * Applied MaNGOS database updates up to z101.
 * Added scriptdev database.
 * Cleaned up various column values and sorted data.

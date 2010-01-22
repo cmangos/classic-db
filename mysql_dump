@@ -201,6 +201,8 @@ dump_struc zp_world pool_gameobject
 dump_struc zp_world pool_pool
 dump_struc zp_world pool_template
 dump_struc zp_world reserved_name
+dump_struc zp_world skill_discovery_template
+dump_struc zp_world skill_extra_item_template
 dump_struc zp_world spell_area
 dump_struc zp_world spell_scripts
 
