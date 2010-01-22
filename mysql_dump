@@ -24,7 +24,7 @@ function dump_struc ()
 #
 # ZeroProject data tables: zp_characters
 #
-dump_struc zp_characters character_db_version
+dump_data zp_characters character_db_version
 
 #
 # ZeroProject data tables: zp_realm
