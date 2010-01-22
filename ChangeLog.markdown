@@ -8,6 +8,7 @@
 
 ## Fri, Jan 22, 2010
 
+* Imported fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=68&t=493
 * Imported fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=68&t=499
 * Imported fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=68&t=431
 * Changed all tables to charset utf8, collation ut8_unicode_ci.
