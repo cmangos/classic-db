@@ -1,0 +1,133 @@
+#!/bin/sh
+#
+# This script will dump the contents of the MySQL database to files.
+#
+
+. mysql_info
+
+function dump_data ()
+{
+    echo -n "Dumping contents of $1:$2 ..."
+    [ ! -d $1 ] && mkdir $1
+    mysqldump$OPTS -Q --skip-dump-date --add-drop-table $1 $2 >$1/$2.sql
+    echo " done"
+}
+
+function dump_struc ()
+{
+    echo -n "Dumping structure of $1:$2 ..."
+    [ ! -d $1 ] && mkdir $1
+    mysqldump$OPTS -Q --skip-dump-date --add-drop-table --no-data $1 $2 >$1/$2.sql
+    echo " done"
+}
+
+#
+# ZeroProject data tables: zpdb
+#
+dump_data zpdb areatrigger_involvedrelation
+dump_data zpdb areatrigger_scripts
+dump_data zpdb areatrigger_tavern
+dump_data zpdb areatrigger_teleport
+dump_data zpdb battleground_events
+dump_data zpdb battleground_template
+dump_data zpdb battlemaster_entry
+dump_data zpdb command
+dump_data zpdb creature
+dump_data zpdb creature_addon
+dump_data zpdb creature_ai_scripts
+dump_data zpdb creature_ai_summons
+dump_data zpdb creature_ai_texts
+dump_data zpdb creature_battleground
+dump_data zpdb creature_equip_template
+dump_data zpdb creature_involvedrelation
+dump_data zpdb creature_loot_template
+dump_data zpdb creature_model_info
+dump_data zpdb creature_movement
+dump_data zpdb creature_onkill_reputation
+dump_data zpdb creature_questrelation
+dump_data zpdb creature_template
+dump_data zpdb creature_template_addon
+dump_data zpdb db_script_string
+dump_data zpdb db_version
+dump_data zpdb disenchant_loot_template
+dump_data zpdb event_scripts
+dump_data zpdb exploration_basexp
+dump_data zpdb fishing_loot_template
+dump_data zpdb gameobject
+dump_data zpdb gameobject_battleground
+dump_data zpdb gameobject_involvedrelation
+dump_data zpdb gameobject_loot_template
+dump_data zpdb gameobject_questrelation
+dump_data zpdb gameobject_scripts
+dump_data zpdb gameobject_template
+dump_data zpdb game_event
+dump_data zpdb game_event_creature
+dump_data zpdb game_event_creature_quest
+dump_data zpdb game_event_gameobject
+dump_data zpdb game_event_model_equip
+dump_data zpdb game_graveyard_zone
+dump_data zpdb game_tele
+dump_data zpdb game_weather
+dump_data zpdb instance_template
+dump_data zpdb item_enchantment_template
+dump_data zpdb item_loot_template
+dump_data zpdb item_required_target
+dump_data zpdb item_template
+dump_data zpdb mail_loot_template
+dump_data zpdb mangos_string
+dump_data zpdb npc_gossip
+dump_data zpdb npc_option
+dump_data zpdb npc_text
+dump_data zpdb npc_trainer
+dump_data zpdb npc_vendor
+dump_data zpdb page_text
+dump_data zpdb petcreateinfo_spell
+dump_data zpdb pet_levelstats
+dump_data zpdb pet_name_generation
+dump_data zpdb pickpocketing_loot_template
+dump_data zpdb playercreateinfo
+dump_data zpdb playercreateinfo_action
+dump_data zpdb playercreateinfo_spell
+dump_data zpdb player_classlevelstats
+dump_data zpdb player_levelstats
+dump_data zpdb quest_end_scripts
+dump_data zpdb quest_start_scripts
+dump_data zpdb quest_template
+dump_data zpdb reference_loot_template
+dump_data zpdb skill_fishing_base_level
+dump_data zpdb skinning_loot_template
+dump_data zpdb spell_affect
+dump_data zpdb spell_chain
+dump_data zpdb spell_elixir
+dump_data zpdb spell_facing
+dump_data zpdb spell_learn_spell
+dump_data zpdb spell_pet_auras
+dump_data zpdb spell_proc_event
+dump_data zpdb spell_script_target
+dump_data zpdb spell_target_position
+dump_data zpdb spell_threat
+dump_data zpdb transports
+
+#
+# Empty ZeroProject tables: zpdb
+#
+dump_struc zpdb creature_respawn
+dump_struc zpdb game_event_pool
+dump_struc zpdb gameobject_respawn
+dump_struc zpdb locales_creature
+dump_struc zpdb locales_gameobject
+dump_struc zpdb locales_item
+dump_struc zpdb locales_npc_option
+dump_struc zpdb locales_npc_text
+dump_struc zpdb locales_page_text
+dump_struc zpdb locales_quest
+dump_struc zpdb npc_gossip_textid
+dump_struc zpdb playercreateinfo_item
+dump_struc zpdb pool_creature
+dump_struc zpdb pool_gameobject
+dump_struc zpdb pool_pool
+dump_struc zpdb pool_template
+dump_struc zpdb reserved_name
+dump_struc zpdb spell_area
+dump_struc zpdb spell_scripts
+
