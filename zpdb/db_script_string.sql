@@ -243,7 +243,8 @@ INSERT INTO `db_script_string` VALUES
 (2000005228,'I should have taken the translucent pill.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005229,'I don\'t get paid enough for this bull excrement!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005233,'Just sit right back and you\'ll hear a ta... *hic* a tai... *hic* a taiii *hic* Damnit!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000005234,'I can\'t take these taxes! F.I.C.A. me? F.I.C.A. YOU!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005234,'I can\'t take these taxes! F.I.C.A. me? F.I.C.A. YOU!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000000028,'The People of Westfall salute $N, a brave and valiant defender of freedom.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

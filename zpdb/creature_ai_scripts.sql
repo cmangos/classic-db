@@ -1992,7 +1992,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (71201,712,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Redridge Thrasher - Flee at 15% HP'),
 (81901,819,0,0,100,1,600,8800,27300,37300,11,8129,4,0,0,0,0,0,0,0,0,0,'Servant of Ilgalar - Cast Mana Burn'),
 (93101,931,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'Ariena Stormfeather - Summon Enraged Gryphons on Aggro'),
-(94701,947,1,0,100,0,1000,1000,0,0,11,2920,0,0,0,0,0,0,0,0,0,0,'Rohh the Silent - Cast Stealth on Spawn'),
+(94701,947,1,0,100,0,1000,1000,0,0,11,6920,0,0,0,0,0,0,0,0,0,0,'Rohh the Silent - Cast Stealth on Spawn'),
 (94702,947,0,0,100,1,2200,7400,30200,34100,11,744,1,32,0,0,0,0,0,0,0,0,'Rohh the Silent - Cast Poison'),
 (108301,1083,4,0,100,0,0,0,0,0,11,6268,0,0,0,0,0,0,0,0,0,0,'Murloc Shorestriker - Cast Rushing Charge on Aggro'),
 (108302,1083,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Murloc Shorestriker - Flee at 15% HP'),
@@ -4425,7 +4425,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (481001,4810,0,0,100,3,5000,9000,8000,12000,11,8374,1,0,0,0,0,0,0,0,0,0,'Twilight Reaver - Cast Arcing Smash'),
 (481002,4810,2,0,100,2,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Twilight Reaver - Flee at 15% HP'),
 (481101,4811,1,0,100,2,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Twilight Aquamancer - Prevent Combat Movement on Spawn'),
-(481102,4811,1,0,100,3,1000,1000,0,0,11,8372,0,1,0,0,0,0,0,0,0,0,'Twilight Aquamancer - Summon Aqua Guardian on Spawn'),
+(481102,4811,1,0,100,3,180000,180000,0,0,11,8372,0,1,0,0,0,0,0,0,0,0,'Twilight Aquamancer - Summon Aqua Guardian on Spawn'),
 (481103,4811,4,0,100,2,0,0,0,0,11,9672,1,0,23,1,0,0,0,0,0,0,'Twilight Aquamancer - Cast Frostbolt and Set Phase 1 on Aggro'),
 (481104,4811,9,13,100,3,0,40,2400,3800,11,9672,1,0,0,0,0,0,0,0,0,0,'Twilight Aquamancer - Cast Frostbolt (Phase 1)'),
 (481105,4811,3,13,100,2,15,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Twilight Aquamancer - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -7282,7 +7282,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (952101,9521,0,0,100,1,2000,5000,2000,5000,11,744,4,32,0,0,0,0,0,0,0,0,'Enraged Felbat - Cast Poison'),
 (952601,9526,0,0,100,1,3000,6000,12000,15000,11,18106,4,32,0,0,0,0,0,0,0,0,'Enraged Gryphon - Cast Rend'),
 (952701,9527,0,0,100,1,3000,6000,12000,15000,11,18106,4,32,0,0,0,0,0,0,0,0,'Enraged Hippogryph - Cast Rend'),
-(1292201,12922,0,0,100,1,1000,2000,2300,2800,11,20801,1,0,0,0,0,0,0,0,0,0,'Imp Minion - Cast Firebolt');
+(1292201,12922,0,0,100,1,1000,2000,2300,2800,11,20801,1,0,0,0,0,0,0,0,0,0,'Imp Minion - Cast Firebolt'),
+(345702,3457,1,0,100,0,1000,1000,0,0,11,6920,0,0,0,0,0,0,0,0,0,0,'Razormane Stalker - Cast Stealth on Spawn');
 /*!40000 ALTER TABLE `creature_ai_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
