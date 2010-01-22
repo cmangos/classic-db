@@ -8,6 +8,7 @@
 
 ## Fri, Jan 22, 2010
 
+* Added scriptdev database.
 * Cleaned up various column values and sorted data.
 * Added MySQL Workbench 5.1 compatible database schema for zp_world.
 * Added databases for characters and realms.

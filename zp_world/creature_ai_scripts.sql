@@ -47,7 +47,7 @@ CREATE TABLE `creature_ai_scripts` (
   `action3_param3` int(11) NOT NULL DEFAULT '0',
   `comment` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT 'Event Comment',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1720902 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
+) ENGINE=MyISAM AUTO_INCREMENT=1720917 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7283,7 +7283,22 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1686101,16861,0,0,90,3,0,0,8000,8000,11,28413,1,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Aura of Agony'),
 (1686102,16861,0,0,95,3,1000,1000,4000,4000,11,15284,1,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Cleave'),
 (1686103,16861,0,0,80,3,3000,3000,5000,5000,11,28412,4,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Death Coil'),
-(1720901,17209,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'William Kielar - Summon Enraged Gryphons on Aggro');
+(1720901,17209,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'William Kielar - Summon Enraged Gryphons on Aggro'),
+(1720902,3669,7,0,100,2,0,0,0,0,34,1,0,0,0,0,0,0,0,0,0,0,'Lord Cobrahn - Data Type 0 on Evade'),
+(1720903,3669,4,0,100,2,0,0,0,0,34,1,1,0,0,0,0,0,0,0,0,0,'Lord Cobrahn - Data Type 1 on Aggro'),
+(1720904,3669,6,0,100,2,0,0,0,0,34,1,3,0,0,0,0,0,0,0,0,0,'Lord Cobrahn - Data Type 2 on Death'),
+(1720905,3670,7,0,100,2,0,0,0,0,34,2,0,0,0,0,0,0,0,0,0,0,'Lord Pythas - Data Type 0 on Evade'),
+(1720906,3670,4,0,100,2,0,0,0,0,34,2,1,0,0,0,0,0,0,0,0,0,'Lord Pythas - Data Type 1 on Aggro'),
+(1720907,3670,6,0,100,2,0,0,0,0,34,2,3,0,0,0,0,0,0,0,0,0,'Lord Pythas - Data Type 2 on Death'),
+(1720908,3671,7,0,100,2,0,0,0,0,34,0,0,0,0,0,0,0,0,0,0,0,'Lady Anacondra - Data Type 0 on Evade'),
+(1720909,3671,4,0,100,2,0,0,0,0,34,0,1,0,0,0,0,0,0,0,0,0,'Lady Anacondra - Data Type 1 on Aggro'),
+(1720910,3671,6,0,100,2,0,0,0,0,34,0,3,0,0,0,0,0,0,0,0,0,'Lady Anacondra - Data Type 2 on Death'),
+(1720911,3673,7,0,100,2,0,0,0,0,34,3,0,0,0,0,0,0,0,0,0,0,'Lord Serpentis - Data Type 0 on Evade'),
+(1720912,3673,4,0,100,2,0,0,0,0,34,3,1,0,0,0,0,0,0,0,0,0,'Lord Serpentis - Data Type 1 on Aggro'),
+(1720913,3673,6,0,100,2,0,0,0,0,34,3,3,0,0,0,0,0,0,0,0,0,'Lord Serpentis - Data Type 2 on Death'),
+(1720914,3654,7,0,100,2,0,0,0,0,34,5,0,0,0,0,0,0,0,0,0,0,'Mutanous the Devourer - Data Type 0 on Evade'),
+(1720915,3654,4,0,100,2,0,0,0,0,34,5,1,0,0,0,0,0,0,0,0,0,'Mutanous the Devourer - Data Type 1 on Aggro'),
+(1720916,3654,6,0,100,2,0,0,0,0,34,5,3,0,0,0,0,0,0,0,0,0,'Mutanous the Devourer - Data Type 2 on Death');
 /*!40000 ALTER TABLE `creature_ai_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

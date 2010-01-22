@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_world
+-- Host: localhost    Database: zp_scripts
 -- ------------------------------------------------------
 -- Server version	5.1.36-log
 
@@ -16,31 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `areatrigger_scripts`
+-- Table structure for table `sd2_db_version`
 --
 
-DROP TABLE IF EXISTS `areatrigger_scripts`;
+DROP TABLE IF EXISTS `sd2_db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `areatrigger_scripts` (
-  `entry` mediumint(8) NOT NULL,
-  `ScriptName` char(64) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`entry`)
+CREATE TABLE `sd2_db_version` (
+  `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT 'Database version string'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `areatrigger_scripts`
+-- Dumping data for table `sd2_db_version`
 --
 
-LOCK TABLES `areatrigger_scripts` WRITE;
-/*!40000 ALTER TABLE `areatrigger_scripts` DISABLE KEYS */;
-INSERT INTO `areatrigger_scripts` VALUES
-(522,'at_twiggy_flathead'),
-(1526,'at_ring_of_law'),
-(3066,'at_ravenholdt'),
-(4016,'at_shade_of_eranikus');
-/*!40000 ALTER TABLE `areatrigger_scripts` ENABLE KEYS */;
+LOCK TABLES `sd2_db_version` WRITE;
+/*!40000 ALTER TABLE `sd2_db_version` DISABLE KEYS */;
+INSERT INTO `sd2_db_version` VALUES
+(' ScriptDevZero (for MangosZero rev. 0100+) '),
+('ScriptDevZero (for MangosZero rev. 0100+)');
+/*!40000 ALTER TABLE `sd2_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

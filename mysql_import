@@ -37,6 +37,10 @@ for x in ./zp_realm/*.sql; do
     import $x
 done
 
+for x in ./zp_scripts/*.sql; do
+    import $x
+done
+
 for x in ./zp_world/*.sql; do
     import $x
 done

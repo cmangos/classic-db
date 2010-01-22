@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_world
+-- Host: localhost    Database: zp_scripts
 -- ------------------------------------------------------
 -- Server version	5.1.36-log
 
@@ -16,31 +16,39 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `areatrigger_scripts`
+-- Table structure for table `custom_texts`
 --
 
-DROP TABLE IF EXISTS `areatrigger_scripts`;
+DROP TABLE IF EXISTS `custom_texts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `areatrigger_scripts` (
+CREATE TABLE `custom_texts` (
   `entry` mediumint(8) NOT NULL,
-  `ScriptName` char(64) COLLATE utf8_unicode_ci NOT NULL,
+  `content_default` text COLLATE utf8_unicode_ci NOT NULL,
+  `content_loc1` text COLLATE utf8_unicode_ci,
+  `content_loc2` text COLLATE utf8_unicode_ci,
+  `content_loc3` text COLLATE utf8_unicode_ci,
+  `content_loc4` text COLLATE utf8_unicode_ci,
+  `content_loc5` text COLLATE utf8_unicode_ci,
+  `content_loc6` text COLLATE utf8_unicode_ci,
+  `content_loc7` text COLLATE utf8_unicode_ci,
+  `content_loc8` text COLLATE utf8_unicode_ci,
+  `sound` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `language` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `emote` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `comment` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Custom Texts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `areatrigger_scripts`
+-- Dumping data for table `custom_texts`
 --
 
-LOCK TABLES `areatrigger_scripts` WRITE;
-/*!40000 ALTER TABLE `areatrigger_scripts` DISABLE KEYS */;
-INSERT INTO `areatrigger_scripts` VALUES
-(522,'at_twiggy_flathead'),
-(1526,'at_ring_of_law'),
-(3066,'at_ravenholdt'),
-(4016,'at_shade_of_eranikus');
-/*!40000 ALTER TABLE `areatrigger_scripts` ENABLE KEYS */;
+LOCK TABLES `custom_texts` WRITE;
+/*!40000 ALTER TABLE `custom_texts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `custom_texts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

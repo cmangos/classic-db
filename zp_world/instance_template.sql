@@ -53,7 +53,7 @@ INSERT INTO `instance_template` VALUES
 (48,0,24,32,10,7200,NULL,NULL,NULL,NULL,'instance_blackfathom_deeps'),
 (70,0,35,47,10,7200,NULL,NULL,NULL,NULL,''),
 (90,0,29,38,10,7200,NULL,NULL,NULL,NULL,''),
-(109,0,45,55,10,7200,NULL,NULL,NULL,NULL,''),
+(109,0,45,55,10,7200,NULL,NULL,NULL,NULL,'instance_sunken_temple'),
 (129,0,37,46,10,7200,NULL,NULL,NULL,NULL,''),
 (189,0,34,45,10,7200,NULL,NULL,NULL,NULL,'instance_scarlet_monastery'),
 (209,0,44,54,10,7200,NULL,NULL,NULL,NULL,''),
@@ -68,7 +68,7 @@ INSERT INTO `instance_template` VALUES
 (409,0,60,0,40,604800,NULL,NULL,NULL,NULL,'instance_molten_core'),
 (429,0,55,60,5,7200,NULL,NULL,NULL,NULL,''),
 (469,0,60,0,40,604800,NULL,NULL,NULL,NULL,''),
-(509,0,60,0,20,259200,NULL,NULL,NULL,NULL,''),
+(509,0,60,0,20,259200,NULL,NULL,NULL,NULL,'instance_ruins_of_ahnqiraj'),
 (531,0,60,0,40,604800,NULL,NULL,NULL,NULL,'instance_temple_of_ahnqiraj'),
 (533,0,60,0,40,604800,NULL,NULL,NULL,NULL,'instance_naxxramas');
 /*!40000 ALTER TABLE `instance_template` ENABLE KEYS */;
