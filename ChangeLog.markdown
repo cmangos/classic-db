@@ -8,6 +8,7 @@
 
 ## Sat, Jan 23, 2010
 
+* Fixed quest 7603, added required item id 18625.
 * Removed Brewfest.
 * Corrected game event starting dates and durations, and removed events
   that are post-vanilla added.
