@@ -45,7 +45,7 @@ CREATE TABLE `guild` (
 LOCK TABLES `guild` WRITE;
 /*!40000 ALTER TABLE `guild` DISABLE KEYS */;
 INSERT INTO `guild` VALUES
-(1,'Warriors of Time',1,0,0,0,0,0,'','No message set.',1264197386);
+(1,'Warriors of Time',1,0,0,0,0,0,'','Let\'s find some bugs and fix them.',1264197386);
 /*!40000 ALTER TABLE `guild` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

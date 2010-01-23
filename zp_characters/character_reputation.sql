@@ -90,7 +90,7 @@ INSERT INTO `character_reputation` VALUES
 (1,890,0,16),
 (1,891,0,24),
 (1,892,0,14),
-(1,909,0,16),
+(1,909,0,17),
 (1,910,0,2);
 /*!40000 ALTER TABLE `character_reputation` ENABLE KEYS */;
 UNLOCK TABLES;
