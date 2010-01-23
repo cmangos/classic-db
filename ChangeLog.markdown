@@ -8,6 +8,8 @@
 
 ## Sat, Jan 23, 2010
 
+* Corrected game event starting dates and durations, and removed events
+  that are post-vanilla added.
 * Fixed cleaning query.
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?p=2290#p2290
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=109&t=519
