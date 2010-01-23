@@ -2,14 +2,14 @@
 --
 -- INFO: this queries will clean your db
 -- from almost all useless or unreferenced
--- rows. 
+-- rows.
 --
--- CAUTIONS: 
--- 1) most of this queries has been 
--- build for ZeroProject DB and shouldn't be 
+-- CAUTIONS:
+-- 1) most of this queries has been
+-- build for ZeroProject DB and shouldn't be
 -- executed on other DBs.
--- 2) executing this file it will take 
--- different minutes ,  according to 
+-- 2) executing this file it will take
+-- different minutes ,  according to
 -- your computer performances
 --
 
@@ -30,14 +30,14 @@ DELETE FROM `petcreateinfo_spell` WHERE `entry` NOT IN (SELECT `entry` FROM `cre
 
 
 
--- ########################################## 
+-- ##########################################
 -- creature tables:
--- ########################################## 
+-- ##########################################
 
 DELETE FROM `creature` WHERE `id` NOT IN (SELECT `entry` FROM `creature_template`);
 
 DELETE FROM `creature_template_addon` WHERE `entry` NOT IN (SELECT `entry` FROM `creature_template`);
-DELETE FROM `creature_addon` WHERE `guid` NOT IN (SELECT `guid` FROM `creature`); 
+DELETE FROM `creature_addon` WHERE `guid` NOT IN (SELECT `guid` FROM `creature`);
 
 DELETE FROM `creature_questrelation` WHERE id NOT IN (SELECT `entry` FROM `creature_template`);
 DELETE FROM `creature_questrelation` WHERE `quest` NOT IN (SELECT `entry` FROM `quest_template`);
@@ -52,20 +52,20 @@ UPDATE `creature` SET `spawndist`=0 WHERE `MovementType`=0;
 UPDATE `creature`, `creature_template` SET `creature`.`curhealth`=`creature_template`.`minhealth`,`creature`.`curmana`=`creature_template`.`minmana` WHERE `creature`.`id`=`creature_template`.`entry` AND `creature_template`.`RegenHealth` = '1';
 
 
--- ########################################## 
+-- ##########################################
 -- NPC tables:
--- ########################################## 
+-- ##########################################
 
 DELETE FROM npc_vendor WHERE item NOT IN ( SELECT entry FROM item_template);
 DELETE FROM npc_vendor WHERE entry NOT IN (SELECT `entry` FROM `creature_template`);
-DELETE FROM npc_trainer WHERE entry NOT IN(SELECT entry FROM creature_template);  
+DELETE FROM npc_trainer WHERE entry NOT IN(SELECT entry FROM creature_template);
 
 DELETE FROM `npc_gossip` WHERE `npc_guid` NOT IN (SELECT `guid` FROM `creature`);
 
 
--- ########################################## 
+-- ##########################################
 -- loot tables:
--- ########################################## 
+-- ##########################################
 
 
 -- ------------------------------------------
@@ -77,8 +77,8 @@ DELIMITER $$
 DROP PROCEDURE IF EXISTS _reference_cleaning $$
 CREATE PROCEDURE _reference_cleaning()
 BEGIN
-   
-    DECLARE entries INT DEFAULT 0; 
+
+    DECLARE entries INT DEFAULT 0;
     DECLARE cnt INT DEFAULT 0;
     DECLARE i INT DEFAULT 0;
     DECLARE ok BOOL DEFAULT FALSE;
@@ -90,21 +90,21 @@ BEGIN
         WHERE `mincountorref`>0;
 
     -- rowcount to process the _while_ (must be the same of previous)
-    SET @cnt := ( SELECT COUNT(DISTINCT(`entry`)) FROM reference_loot_template WHERE mincountorref>0 ); 
+    SET @cnt := ( SELECT COUNT(DISTINCT(`entry`)) FROM reference_loot_template WHERE mincountorref>0 );
 
-    OPEN reference_loot; 
-    
-    WHILE (i<@cnt) DO 
-    
+    OPEN reference_loot;
+
+    WHILE (i<@cnt) DO
+
       SET ok = FALSE;
       SET @temp = 0;
-        
+
       FETCH NEXT
-      FROM reference_loot 
+      FROM reference_loot
       INTO  entries;
-      
+
       -- start to find entries[i] in all loot_tables ( also self )
-	     
+	
 	SET @temp := ( SELECT DISTINCT(`mincountorref`)  FROM `reference_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries );
 	
 	IF @temp<>0 THEN
@@ -165,18 +165,18 @@ BEGIN
 
      -- delete entry if not found
 
-	IF NOT ok THEN 
+	IF NOT ok THEN
 	 DELETE FROM `reference_loot_template` WHERE `entry`=-entries ;
-	END IF;   
+	END IF;
 
      -- next
 	SET i = i+1;
-	    
+	
   END WHILE;
 
   CLOSE reference_loot;
-      
-    
+
+
 END $$
 DELIMITER ;
 CALL _reference_cleaning();
@@ -238,7 +238,7 @@ DELETE FROM mail_loot_template WHERE ( item NOT IN ( SELECT entry FROM item_temp
 
 DELETE FROM `creature_loot_template` WHERE `item` NOT IN (SELECT `entry` FROM `item_template`) AND mincountOrRef>0;
 
--- Clean reference_loot_template 
+-- Clean reference_loot_template
 
 DELETE FROM `reference_loot_template` WHERE `item` NOT IN (SELECT `entry` FROM `item_template`) AND mincountOrRef>0;
 
@@ -266,8 +266,8 @@ DELETE FROM t1 USING `skinning_loot_template` t1 LEFT OUTER JOIN `item_template`
 
 UPDATE gameobject_template SET data1=0 WHERE data1 NOT IN ( SELECT entry FROM gameobject_loot_template) AND (`type`=3 OR `type`=25);
 UPDATE creature_template SET lootid=0 WHERE lootid NOT IN (SELECT entry FROM creature_loot_template);
-UPDATE creature_template SET skinloot=0 WHERE skinloot NOT IN (SELECT entry FROM skinning_loot_template);  
-UPDATE creature_template SET pickpocketloot=0 WHERE pickpocketloot NOT IN (SELECT entry FROM pickpocketing_loot_template); 
+UPDATE creature_template SET skinloot=0 WHERE skinloot NOT IN (SELECT entry FROM skinning_loot_template);
+UPDATE creature_template SET pickpocketloot=0 WHERE pickpocketloot NOT IN (SELECT entry FROM pickpocketing_loot_template);
 UPDATE quest_template SET RewMailTemplateId=0 WHERE RewMailTemplateId>0 AND RewMailTemplateId NOT IN ( SELECT entry FROM mail_loot_template);
 
 
@@ -276,16 +276,16 @@ UPDATE quest_template SET RewMailTemplateId=0 WHERE RewMailTemplateId>0 AND RewM
 DELETE FROM t1 USING `creature_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL;
 DELETE FROM t1 USING `gameobject_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL;
 DELETE FROM t1 USING `item_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL;
-DELETE FROM t1 USING `mail_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL; 
-DELETE FROM t1 USING `disenchant_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL; 
-DELETE FROM t1 USING `skinning_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL; 
-DELETE FROM t1 USING `pickpocketing_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL; 
-DELETE FROM t1 USING `fishing_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL; 
+DELETE FROM t1 USING `mail_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL;
+DELETE FROM t1 USING `disenchant_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL;
+DELETE FROM t1 USING `skinning_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL;
+DELETE FROM t1 USING `pickpocketing_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL;
+DELETE FROM t1 USING `fishing_loot_template` t1 LEFT OUTER JOIN `reference_loot_template` t2 ON t1.`mincountorref` = -t2.`entry` WHERE t1.`mincountorref` < 0 AND t2.`entry` IS NULL;
 
 
--- ########################################## 
+-- ##########################################
 -- gobject_tables:
--- ########################################## 
+-- ##########################################
 
 UPDATE `gameobject` SET `state` = 0 WHERE `id` IN (SELECT `entry` FROM `gameobject_template` WHERE `type` = 0 AND `data0` = 1);
 
@@ -296,32 +296,32 @@ DELETE FROM ge,go USING `game_event_gameobject` ge LEFT JOIN `gameobject` go ON 
 DELETE FROM `gameobject_scripts` WHERE `id` NOT IN (SELECT `guid` FROM `gameobject`);
 DELETE FROM `gameobject_scripts` WHERE `command` IN (11, 12) AND `datalong` NOT IN (SELECT `guid` FROM `gameobject`);
 
--- ########################################## 
+-- ##########################################
 -- instance tables:
--- ########################################## 
+-- ##########################################
 
 
 
 
--- ########################################## 
+-- ##########################################
 -- quest tables:
--- ########################################## 
+-- ##########################################
 
 DELETE FROM quest_start_scripts WHERE  id NOT IN ( SELECT startScript FROM quest_template ) AND id NOT IN ( SELECT completescript FROM quest_template );
 DELETE FROM quest_end_scripts WHERE  id NOT IN ( SELECT startScript FROM quest_template ) AND id NOT IN ( SELECT completescript FROM quest_template );
 
--- ########################################## 
+-- ##########################################
 -- game_event and eventai tables
--- ########################################## 
+-- ##########################################
 
-DELETE FROM `game_event_creature` WHERE `event` NOT IN (SELECT `entry` FROM `game_event`); 
+DELETE FROM `game_event_creature` WHERE `event` NOT IN (SELECT `entry` FROM `game_event`);
 DELETE FROM `game_event_creature` WHERE `guid` NOT IN (SELECT `guid` FROM `creature`);
 DELETE FROM `game_event_creature_quest` WHERE `event` NOT IN (SELECT `entry` FROM `game_event`);
-DELETE FROM `game_event_gameobject` WHERE `event` NOT IN (SELECT `entry` FROM `game_event`); 
+DELETE FROM `game_event_gameobject` WHERE `event` NOT IN (SELECT `entry` FROM `game_event`);
 
--- ########################################## 
+-- ##########################################
 -- various:
--- ########################################## 
+-- ##########################################
 
 
 DELETE FROM battlemaster_entry WHERE entry NOT IN (SELECT `entry` FROM `creature_template`);
@@ -339,18 +339,18 @@ AND entry NOT IN ( SELECT textid5 FROM creature_movement WHERE `textid5`<>0);
 DELETE FROM gameobject_battleground WHERE guid NOT IN (SELECT guid FROM gameobject);
 DELETE FROM creature_battleground WHERE guid NOT IN (SELECT guid FROM creature);
 
-DELETE FROM item_required_target 
+DELETE FROM item_required_target
 WHERE entry NOT IN (SELECT entry FROM item_template) OR targetEntry NOT IN (SELECT entry FROM creature_template) ;
 
 
-DELETE FROM spell_script_target 
+DELETE FROM spell_script_target
 WHERE ( (`type`=1 OR `type`=2) AND targetEntry NOT IN (SELECT entry FROM creature_template)  )
 OR    ( `type`=0 AND targetEntry NOT IN (SELECT entry FROM gameobject_template) );
 
 
--- ########################################## 
+-- ##########################################
 -- WAYPOINTS:
--- ########################################## 
+-- ##########################################
 
 
 DELETE FROM creature_movement WHERE id NOT IN (SELECT guid FROM creature);
