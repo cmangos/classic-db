@@ -8,6 +8,7 @@
 
 ## Sat, Jan 23, 2010
 
+* Added quest 8460, fixing missing quest chain starter.
 * Fixed quest 7737, set minimum rep to 0 for friendly, and maximum
   rep to 6000.
 * Fixed quest 7603, added required item id 18625.
