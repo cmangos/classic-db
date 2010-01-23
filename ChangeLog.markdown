@@ -8,6 +8,7 @@
 
 ## Sat, Jan 23, 2010
 
+* Creature template scale set to 1 where it was 0 to fix wrong sizes.
 * Creature template 3309 is no trainer, entries deleted.
 * Added quest 8460, fixing missing quest chain starter.
 * Fixed quest 7737, set minimum rep to 0 for friendly, and maximum
