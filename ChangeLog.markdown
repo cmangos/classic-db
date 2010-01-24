@@ -8,6 +8,7 @@
 
 ## Sat, Jan 23, 2010
 
+* Instance reset delay is recorded by day, not by seconds.
 * Test character equipped with Dungeon Set 2.
 * Creature template scale set to 1 where it was 0 to fix wrong sizes.
 * Creature template 3309 is no trainer, entries deleted.
