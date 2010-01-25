@@ -8,6 +8,7 @@
 
 ## Mon, Jan 25, 2010
 
+* Addex fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=72&t=506
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=72&t=640
 
 ## Sat, Jan 23, 2010
