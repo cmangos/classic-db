@@ -6,6 +6,10 @@
 > First they ignore you, then they laugh at you, then they fight you,
 > then you win. –- Mahatma Gandhi
 
+## Mon, Jan 25, 2010
+
+* Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=72&t=640
+
 ## Sat, Jan 23, 2010
 
 * Instance reset delay is recorded by day, not by seconds.
