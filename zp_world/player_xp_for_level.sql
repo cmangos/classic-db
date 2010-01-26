@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_characters
+-- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
 -- Server version	5.1.36-log
 
@@ -16,26 +16,86 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `character_db_version`
+-- Table structure for table `player_xp_for_level`
 --
 
-DROP TABLE IF EXISTS `character_db_version`;
+DROP TABLE IF EXISTS `player_xp_for_level`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `character_db_version` (
-  `required_z0114_xxx_02_characters` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
+CREATE TABLE `player_xp_for_level` (
+  `lvl` int(3) unsigned NOT NULL,
+  `xp_for_next_level` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`lvl`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `character_db_version`
+-- Dumping data for table `player_xp_for_level`
 --
 
-LOCK TABLES `character_db_version` WRITE;
-/*!40000 ALTER TABLE `character_db_version` DISABLE KEYS */;
-INSERT INTO `character_db_version` VALUES
-(NULL);
-/*!40000 ALTER TABLE `character_db_version` ENABLE KEYS */;
+LOCK TABLES `player_xp_for_level` WRITE;
+/*!40000 ALTER TABLE `player_xp_for_level` DISABLE KEYS */;
+INSERT INTO `player_xp_for_level` VALUES
+(1,400),
+(2,900),
+(3,1400),
+(4,2100),
+(5,2800),
+(6,3600),
+(7,4500),
+(8,5400),
+(9,6500),
+(10,7600),
+(11,8800),
+(12,10100),
+(13,11400),
+(14,12900),
+(15,14400),
+(16,16000),
+(17,17700),
+(18,19400),
+(19,21300),
+(20,23200),
+(21,25200),
+(22,27300),
+(23,29400),
+(24,31700),
+(25,34000),
+(26,36400),
+(27,38900),
+(28,41400),
+(29,44300),
+(30,47400),
+(31,50800),
+(32,54500),
+(33,58600),
+(34,62800),
+(35,67100),
+(36,71600),
+(37,76100),
+(38,80800),
+(39,85700),
+(40,90700),
+(41,95800),
+(42,101000),
+(43,106300),
+(44,111800),
+(45,117500),
+(46,123200),
+(47,129100),
+(48,135100),
+(49,141200),
+(50,147500),
+(51,153900),
+(52,160400),
+(53,167100),
+(54,173900),
+(55,180800),
+(56,187900),
+(57,195000),
+(58,202300),
+(59,209800);
+/*!40000 ALTER TABLE `player_xp_for_level` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

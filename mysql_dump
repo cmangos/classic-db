@@ -52,7 +52,7 @@ dump_data zp_realm realmlist
 #
 dump_data zp_scripts script_texts
 dump_data zp_scripts script_waypoint
-dump_data zp_scripts sd2_db_version
+dump_data zp_scripts sd0_db_version
 
 #
 # ZeroProject data tables: zp_world
@@ -123,6 +123,7 @@ dump_data zp_world playercreateinfo_action
 dump_data zp_world playercreateinfo_spell
 dump_data zp_world player_classlevelstats
 dump_data zp_world player_levelstats
+dump_data zp_world player_xp_for_level
 dump_data zp_world quest_end_scripts
 dump_data zp_world quest_start_scripts
 dump_data zp_world quest_template

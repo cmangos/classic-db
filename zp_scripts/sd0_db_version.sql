@@ -16,27 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `sd2_db_version`
+-- Table structure for table `sd0_db_version`
 --
 
-DROP TABLE IF EXISTS `sd2_db_version`;
+DROP TABLE IF EXISTS `sd0_db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `sd2_db_version` (
+CREATE TABLE `sd0_db_version` (
   `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT 'Database version string'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `sd2_db_version`
+-- Dumping data for table `sd0_db_version`
 --
 
-LOCK TABLES `sd2_db_version` WRITE;
-/*!40000 ALTER TABLE `sd2_db_version` DISABLE KEYS */;
-INSERT INTO `sd2_db_version` VALUES
-(' ScriptDevZero (for MangosZero rev. 0100+) '),
-('ScriptDevZero (for MangosZero rev. 0100+)');
-/*!40000 ALTER TABLE `sd2_db_version` ENABLE KEYS */;
+LOCK TABLES `sd0_db_version` WRITE;
+/*!40000 ALTER TABLE `sd0_db_version` DISABLE KEYS */;
+INSERT INTO `sd0_db_version` VALUES
+(' ScriptDevZero (for MangosZero rev. 0115+) ');
+/*!40000 ALTER TABLE `sd0_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
