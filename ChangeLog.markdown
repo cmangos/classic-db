@@ -6,6 +6,10 @@
 > First they ignore you, then they laugh at you, then they fight you,
 > then you win. –- Mahatma Gandhi
 
+## Wed, Jan 27, 2010
+
+* Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=72&t=651
+
 ## Mon, Jan 25, 2010
 
 * Addex fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=72&t=506
