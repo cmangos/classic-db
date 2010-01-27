@@ -63,7 +63,7 @@ INSERT INTO `character_reputation` VALUES
 (1,469,0,9),
 (1,470,0,0),
 (1,471,0,16),
-(1,509,0,16),
+(1,509,0,17),
 (1,510,0,2),
 (1,529,0,0),
 (1,530,0,6),
@@ -87,11 +87,11 @@ INSERT INTO `character_reputation` VALUES
 (1,789,0,16),
 (1,809,0,16),
 (1,889,0,6),
-(1,890,0,16),
+(1,890,0,17),
 (1,891,0,24),
 (1,892,0,14),
 (1,909,0,17),
-(1,910,0,2);
+(1,910,84000,3);
 /*!40000 ALTER TABLE `character_reputation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
