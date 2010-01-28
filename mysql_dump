@@ -3,7 +3,7 @@
 # This script will dump the contents of the MySQL database to files.
 #
 
-. mysql_info
+. ./mysql_info
 
 function dump_data ()
 {

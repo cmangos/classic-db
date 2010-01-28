@@ -3,7 +3,7 @@
 # This script will import the contents of the sql/ directory to the MySQL database.
 #
 
-. mysql_info
+. ./mysql_info
 
 # Table prefix
 PFX=

@@ -23,8 +23,8 @@ DROP TABLE IF EXISTS `spell_facing`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `spell_facing` (
-  `entry` double DEFAULT NULL,
-  `facingcasterflag` tinyint(1) DEFAULT NULL
+  `entry` int(11) NOT NULL DEFAULT '0' COMMENT 'Spell ID',
+  `facingcasterflag` tinyint(1) NOT NULL DEFAULT '1' COMMENT 'flag for facing state, usually 1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
