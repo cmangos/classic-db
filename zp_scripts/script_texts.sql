@@ -65,7 +65,8 @@ INSERT INTO `script_texts` VALUES
 (-1109001,'Be steadfast, champion. I know why it is that you are here and I know what it is that you seek. Eranikus will not give up the shard freely. He has been twisted... twisted by the same force that you seek to destroy.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'malfurion stormrge SAY_MALFURION1'),
 (-1109002,'Are you really surprised? Is it hard to believe that the power of an Old God could reach even inside the Dream? It is true - Eranikus, Tyrant of the Dream, wages a battle against us all. The Nightmare follows in his wake of destruction.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'malfurion stormrge SAY_MALFURION2'),
 (-1109003,'Understand this, Eranikus wants nothing more than to be brought to Azeroth from the Dream. Once he is out, he will stop at nothing to destroy my physical manifestation. This, however, is the only way in which you could recover the scepter shard.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'malfurion stormrge SAY_MAFLURION3'),
-(-1109004,'You will bring him back into this world, champion.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'malfurion Stormrge SAY_MALFURION4');
+(-1109004,'You will bring him back into this world, champion.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'malfurion Stormrge SAY_MALFURION4'),
+(-1000168,'Who dares awaken Aquementas?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'aquementas AGGRO_YELL_AQUE');
 /*!40000 ALTER TABLE `script_texts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
