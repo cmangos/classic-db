@@ -577,16 +577,7 @@ INSERT INTO `player_classlevelstats` VALUES
 (11,57,1346,1199),
 (11,58,1384,1214),
 (11,59,1433,1229),
-(11,60,1483,1244),
-(1,0,0,0),
-(2,0,0,0),
-(3,0,0,0),
-(4,0,0,0),
-(5,0,0,0),
-(7,0,0,0),
-(8,0,0,0),
-(9,0,0,0),
-(11,0,0,0);
+(11,60,1483,1244);
 /*!40000 ALTER TABLE `player_classlevelstats` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
