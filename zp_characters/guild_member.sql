@@ -40,8 +40,6 @@ CREATE TABLE `guild_member` (
 
 LOCK TABLES `guild_member` WRITE;
 /*!40000 ALTER TABLE `guild_member` DISABLE KEYS */;
-INSERT INTO `guild_member` VALUES
-(1,1,0,'','');
 /*!40000 ALTER TABLE `guild_member` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

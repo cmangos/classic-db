@@ -40,7 +40,7 @@ CREATE TABLE `character_homebind` (
 LOCK TABLES `character_homebind` WRITE;
 /*!40000 ALTER TABLE `character_homebind` DISABLE KEYS */;
 INSERT INTO `character_homebind` VALUES
-(1,1,141,10311.3,832.463,1326.41);
+(1,0,1,-6240.32,331.033,382.758);
 /*!40000 ALTER TABLE `character_homebind` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

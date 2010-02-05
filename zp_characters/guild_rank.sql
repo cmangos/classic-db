@@ -37,12 +37,6 @@ CREATE TABLE `guild_rank` (
 
 LOCK TABLES `guild_rank` WRITE;
 /*!40000 ALTER TABLE `guild_rank` DISABLE KEYS */;
-INSERT INTO `guild_rank` VALUES
-(1,0,'Guild Master',1044991),
-(1,1,'Officer',1044991),
-(1,2,'Veteran',67),
-(1,3,'Member',67),
-(1,4,'Initiate',67);
 /*!40000 ALTER TABLE `guild_rank` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

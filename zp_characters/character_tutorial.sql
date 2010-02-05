@@ -45,7 +45,7 @@ CREATE TABLE `character_tutorial` (
 LOCK TABLES `character_tutorial` WRITE;
 /*!40000 ALTER TABLE `character_tutorial` DISABLE KEYS */;
 INSERT INTO `character_tutorial` VALUES
-(1,1,3170417663,99047,0,0,0,0,0,0);
+(1,1,0,0,0,0,0,0,0,0);
 /*!40000 ALTER TABLE `character_tutorial` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
