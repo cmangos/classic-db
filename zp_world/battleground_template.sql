@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.36-log
+-- Server version	5.1.42
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -42,10 +42,7 @@ CREATE TABLE `battleground_template` (
 
 LOCK TABLES `battleground_template` WRITE;
 /*!40000 ALTER TABLE `battleground_template` DISABLE KEYS */;
-INSERT INTO `battleground_template` VALUES
-(1,20,40,51,60,611,2.72532,610,2.27452),
-(2,5,10,10,60,769,3.14159,770,3.14159),
-(3,8,15,20,60,890,3.40156,889,0.263892);
+INSERT INTO `battleground_template` VALUES (1,20,40,51,60,611,2.72532,610,2.27452),(2,5,10,10,60,769,3.14159,770,3.14159),(3,8,15,20,60,890,3.40156,889,0.263892);
 /*!40000 ALTER TABLE `battleground_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

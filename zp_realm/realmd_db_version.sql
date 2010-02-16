@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_realm
 -- ------------------------------------------------------
--- Server version	5.1.36-log
+-- Server version	5.1.42
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -33,8 +33,7 @@ CREATE TABLE `realmd_db_version` (
 
 LOCK TABLES `realmd_db_version` WRITE;
 /*!40000 ALTER TABLE `realmd_db_version` DISABLE KEYS */;
-INSERT INTO `realmd_db_version` VALUES
-(NULL);
+INSERT INTO `realmd_db_version` VALUES (NULL);
 /*!40000 ALTER TABLE `realmd_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -16,18 +16,15 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `bugreport`
+-- Table structure for table `saved_variables`
 --
 
-DROP TABLE IF EXISTS `bugreport`;
+DROP TABLE IF EXISTS `saved_variables`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `bugreport` (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
-  `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `content` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Debug System';
+CREATE TABLE `saved_variables` (
+  `NextMaintenanceDate` int(11) unsigned NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Variable Saves';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

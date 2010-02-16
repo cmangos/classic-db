@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.36-log
+-- Server version	5.1.42
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -35,34 +35,7 @@ CREATE TABLE `areatrigger_involvedrelation` (
 
 LOCK TABLES `areatrigger_involvedrelation` WRITE;
 /*!40000 ALTER TABLE `areatrigger_involvedrelation` DISABLE KEYS */;
-INSERT INTO `areatrigger_involvedrelation` VALUES
-(78,155),
-(87,76),
-(88,62),
-(98,201),
-(169,287),
-(175,455),
-(178,503),
-(196,578),
-(216,870),
-(225,944),
-(230,954),
-(231,984),
-(232,984),
-(235,984),
-(246,1149),
-(302,1265),
-(362,1448),
-(482,1699),
-(522,1719),
-(1205,2989),
-(1388,3505),
-(2327,4842),
-(2486,4811),
-(2926,25),
-(2946,6421),
-(3367,6025),
-(3986,8286);
+INSERT INTO `areatrigger_involvedrelation` VALUES (78,155),(87,76),(88,62),(98,201),(169,287),(175,455),(178,503),(196,578),(216,870),(225,944),(230,954),(231,984),(232,984),(235,984),(246,1149),(302,1265),(362,1448),(482,1699),(522,1719),(1205,2989),(1388,3505),(2327,4842),(2486,4811),(2926,25),(2946,6421),(3367,6025),(3986,8286);
 /*!40000 ALTER TABLE `areatrigger_involvedrelation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

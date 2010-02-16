@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.36-log
+-- Server version	5.1.42
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -37,17 +37,7 @@ CREATE TABLE `game_event_model_equip` (
 
 LOCK TABLES `game_event_model_equip` WRITE;
 /*!40000 ALTER TABLE `game_event_model_equip` DISABLE KEYS */;
-INSERT INTO `game_event_model_equip` VALUES
-(12088,0,504,27),
-(12093,0,504,27),
-(12095,0,504,27),
-(79670,0,504,27),
-(79675,0,504,27),
-(79676,0,504,27),
-(79690,0,504,27),
-(79792,0,504,27),
-(79807,0,504,27),
-(79814,0,504,27);
+INSERT INTO `game_event_model_equip` VALUES (12088,0,504,27),(12093,0,504,27),(12095,0,504,27),(79670,0,504,27),(79675,0,504,27),(79676,0,504,27),(79690,0,504,27),(79792,0,504,27),(79807,0,504,27),(79814,0,504,27);
 /*!40000 ALTER TABLE `game_event_model_equip` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

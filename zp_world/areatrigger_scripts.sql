@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.36-log
+-- Server version	5.1.42
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -35,11 +35,7 @@ CREATE TABLE `areatrigger_scripts` (
 
 LOCK TABLES `areatrigger_scripts` WRITE;
 /*!40000 ALTER TABLE `areatrigger_scripts` DISABLE KEYS */;
-INSERT INTO `areatrigger_scripts` VALUES
-(522,'at_twiggy_flathead'),
-(1526,'at_ring_of_law'),
-(3066,'at_ravenholdt'),
-(4016,'at_shade_of_eranikus');
+INSERT INTO `areatrigger_scripts` VALUES (522,'at_twiggy_flathead'),(1526,'at_ring_of_law'),(3066,'at_ravenholdt'),(4016,'at_shade_of_eranikus');
 /*!40000 ALTER TABLE `areatrigger_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

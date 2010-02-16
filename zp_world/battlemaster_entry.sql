@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.36-log
+-- Server version	5.1.42
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -35,31 +35,7 @@ CREATE TABLE `battlemaster_entry` (
 
 LOCK TABLES `battlemaster_entry` WRITE;
 /*!40000 ALTER TABLE `battlemaster_entry` DISABLE KEYS */;
-INSERT INTO `battlemaster_entry` VALUES
-(347,1),
-(857,3),
-(907,3),
-(2302,2),
-(2804,2),
-(3890,2),
-(5118,1),
-(7410,1),
-(7427,1),
-(10360,2),
-(12197,1),
-(12198,3),
-(14942,1),
-(14981,2),
-(14982,2),
-(14990,3),
-(14991,3),
-(15006,3),
-(15007,3),
-(15008,3),
-(15102,2),
-(15103,1),
-(15105,2),
-(15106,1);
+INSERT INTO `battlemaster_entry` VALUES (347,1),(857,3),(907,3),(2302,2),(2804,2),(3890,2),(5118,1),(7410,1),(7427,1),(10360,2),(12197,1),(12198,3),(14942,1),(14981,2),(14982,2),(14990,3),(14991,3),(15006,3),(15007,3),(15008,3),(15102,2),(15103,1),(15105,2),(15106,1);
 /*!40000 ALTER TABLE `battlemaster_entry` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

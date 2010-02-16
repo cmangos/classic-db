@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.36, for suse-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.36-log
+-- Server version	5.1.42
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -38,14 +38,7 @@ CREATE TABLE `petcreateinfo_spell` (
 
 LOCK TABLES `petcreateinfo_spell` WRITE;
 /*!40000 ALTER TABLE `petcreateinfo_spell` DISABLE KEYS */;
-INSERT INTO `petcreateinfo_spell` VALUES
-(416,3110,0,0,0),
-(417,19505,0,0,0),
-(510,6873,9672,0,0),
-(1860,3716,0,0,0),
-(1863,7814,0,0,0),
-(5807,17254,0,0,0),
-(15429,25163,0,0,0);
+INSERT INTO `petcreateinfo_spell` VALUES (416,3110,0,0,0),(417,19505,0,0,0),(510,6873,9672,0,0),(1860,3716,0,0,0),(1863,7814,0,0,0),(5807,17254,0,0,0),(15429,25163,0,0,0);
 /*!40000 ALTER TABLE `petcreateinfo_spell` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

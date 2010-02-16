@@ -173,6 +173,7 @@ dump_struc zp_characters petition_sign
 dump_struc zp_characters pet_aura
 dump_struc zp_characters pet_spell
 dump_struc zp_characters pet_spell_cooldown
+dump_struc zp_characters saved_variables
 
 #
 # Empty ZeroProject tables: zp_realm
@@ -206,4 +207,3 @@ dump_struc zp_world skill_discovery_template
 dump_struc zp_world skill_extra_item_template
 dump_struc zp_world spell_area
 dump_struc zp_world spell_scripts
-
