@@ -8,6 +8,7 @@
 
 ## Fri, Mar 12, 2010
 
+* Ran cleaning query.
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=113&t=770
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=113&t=787
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=113&t=789
