@@ -8,6 +8,7 @@
 
 ## Fri, Mar 12, 2010
 
+* Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=113&t=787
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=113&t=789
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=113&t=788
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=113&t=743
