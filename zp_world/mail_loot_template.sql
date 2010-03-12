@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.44, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.42
+-- Server version	5.1.44
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -42,7 +42,11 @@ CREATE TABLE `mail_loot_template` (
 
 LOCK TABLES `mail_loot_template` WRITE;
 /*!40000 ALTER TABLE `mail_loot_template` DISABLE KEYS */;
-INSERT INTO `mail_loot_template` VALUES (99,11423,100,0,1,1,0,0,0),(100,11423,100,0,1,1,0,0,0),(103,11422,100,0,1,1,0,0,0),(104,11422,100,0,1,1,0,0,0);
+INSERT INTO `mail_loot_template` VALUES
+(99,11423,100,0,1,1,0,0,0),
+(100,11423,100,0,1,1,0,0,0),
+(103,11422,100,0,1,1,0,0,0),
+(104,11422,100,0,1,1,0,0,0);
 /*!40000 ALTER TABLE `mail_loot_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.44, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.42
+-- Server version	5.1.44
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -36,7 +36,15 @@ CREATE TABLE `game_event_creature_quest` (
 
 LOCK TABLES `game_event_creature_quest` WRITE;
 /*!40000 ALTER TABLE `game_event_creature_quest` DISABLE KEYS */;
-INSERT INTO `game_event_creature_quest` VALUES (14451,172,10),(14450,1468,10),(6740,8356,12),(15708,8795,22),(5204,8980,8),(6741,8983,8),(279,9025,8),(6740,9027,8);
+INSERT INTO `game_event_creature_quest` VALUES
+(14451,172,10),
+(14450,1468,10),
+(6740,8356,12),
+(15708,8795,22),
+(5204,8980,8),
+(6741,8983,8),
+(279,9025,8),
+(6740,9027,8);
 /*!40000 ALTER TABLE `game_event_creature_quest` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

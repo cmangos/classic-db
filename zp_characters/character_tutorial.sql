@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.44, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_characters
 -- ------------------------------------------------------
--- Server version	5.1.42
+-- Server version	5.1.44
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -44,7 +44,8 @@ CREATE TABLE `character_tutorial` (
 
 LOCK TABLES `character_tutorial` WRITE;
 /*!40000 ALTER TABLE `character_tutorial` DISABLE KEYS */;
-INSERT INTO `character_tutorial` VALUES (1,1,0,0,0,0,0,0,0,0);
+INSERT INTO `character_tutorial` VALUES
+(1,1,0,0,0,0,0,0,0,0);
 /*!40000 ALTER TABLE `character_tutorial` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

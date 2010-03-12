@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.44, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_characters
 -- ------------------------------------------------------
--- Server version	5.1.42
+-- Server version	5.1.44
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -35,7 +35,15 @@ CREATE TABLE `instance_reset` (
 
 LOCK TABLES `instance_reset` WRITE;
 /*!40000 ALTER TABLE `instance_reset` DISABLE KEYS */;
-INSERT INTO `instance_reset` VALUES (229,1265428800),(249,1265774400),(309,1265601600),(409,1265947200),(469,1265947200),(509,1265601600),(531,1265947200),(533,1265947200);
+INSERT INTO `instance_reset` VALUES
+(229,1265428800),
+(249,1265774400),
+(309,1265601600),
+(409,1265947200),
+(469,1265947200),
+(509,1265601600),
+(531,1265947200),
+(533,1265947200);
 /*!40000 ALTER TABLE `instance_reset` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

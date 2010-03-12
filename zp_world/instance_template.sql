@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.42, for redhat-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.44, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.42
+-- Server version	5.1.44
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -44,7 +44,33 @@ CREATE TABLE `instance_template` (
 
 LOCK TABLES `instance_template` WRITE;
 /*!40000 ALTER TABLE `instance_template` DISABLE KEYS */;
-INSERT INTO `instance_template` VALUES (33,0,22,30,10,0,NULL,NULL,NULL,NULL,'instance_shadowfang_keep'),(34,0,24,32,10,0,NULL,NULL,NULL,NULL,''),(36,0,15,20,10,0,NULL,NULL,NULL,NULL,'instance_deadmines'),(43,0,15,21,10,0,NULL,NULL,NULL,NULL,'instance_wailing_caverns'),(47,0,29,38,10,0,NULL,NULL,NULL,NULL,''),(48,0,24,32,10,0,NULL,NULL,NULL,NULL,'instance_blackfathom_deeps'),(70,0,35,47,10,0,NULL,NULL,NULL,NULL,''),(90,0,29,38,10,0,NULL,NULL,NULL,NULL,''),(109,0,45,55,10,0,NULL,NULL,NULL,NULL,'instance_sunken_temple'),(129,0,37,46,10,0,NULL,NULL,NULL,NULL,''),(189,0,34,45,10,0,NULL,NULL,NULL,NULL,'instance_scarlet_monastery'),(209,0,44,54,10,0,NULL,NULL,NULL,NULL,''),(229,0,58,0,10,1,78.5083,-225.044,49.839,5.1,''),(230,0,52,0,5,0,NULL,NULL,NULL,NULL,'instance_blackrock_depths'),(249,0,60,0,40,5,NULL,NULL,NULL,NULL,''),(289,0,57,0,5,0,NULL,NULL,NULL,NULL,'instance_scholomance'),(309,0,60,0,20,3,NULL,NULL,NULL,NULL,'instance_zulgurub'),(329,0,58,60,5,0,NULL,NULL,NULL,NULL,'instance_stratholme'),(349,0,46,55,10,0,NULL,NULL,NULL,NULL,''),(389,0,13,18,10,0,NULL,NULL,NULL,NULL,''),(409,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_molten_core'),(429,0,55,60,5,0,NULL,NULL,NULL,NULL,''),(469,0,60,0,40,7,NULL,NULL,NULL,NULL,''),(509,0,60,0,20,3,NULL,NULL,NULL,NULL,'instance_ruins_of_ahnqiraj'),(531,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_temple_of_ahnqiraj'),(533,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_naxxramas');
+INSERT INTO `instance_template` VALUES
+(33,0,22,30,10,0,NULL,NULL,NULL,NULL,'instance_shadowfang_keep'),
+(34,0,24,32,10,0,NULL,NULL,NULL,NULL,''),
+(36,0,15,20,10,0,NULL,NULL,NULL,NULL,'instance_deadmines'),
+(43,0,15,21,10,0,NULL,NULL,NULL,NULL,'instance_wailing_caverns'),
+(47,0,29,38,10,0,NULL,NULL,NULL,NULL,''),
+(48,0,24,32,10,0,NULL,NULL,NULL,NULL,'instance_blackfathom_deeps'),
+(70,0,35,47,10,0,NULL,NULL,NULL,NULL,''),
+(90,0,29,38,10,0,NULL,NULL,NULL,NULL,''),
+(109,0,45,55,10,0,NULL,NULL,NULL,NULL,'instance_sunken_temple'),
+(129,0,37,46,10,0,NULL,NULL,NULL,NULL,''),
+(189,0,34,45,10,0,NULL,NULL,NULL,NULL,'instance_scarlet_monastery'),
+(209,0,44,54,10,0,NULL,NULL,NULL,NULL,''),
+(229,0,58,0,10,1,78.5083,-225.044,49.839,5.1,''),
+(230,0,52,0,5,0,NULL,NULL,NULL,NULL,'instance_blackrock_depths'),
+(249,0,60,0,40,5,NULL,NULL,NULL,NULL,''),
+(289,0,57,0,5,0,NULL,NULL,NULL,NULL,'instance_scholomance'),
+(309,0,60,0,20,3,NULL,NULL,NULL,NULL,'instance_zulgurub'),
+(329,0,58,60,5,0,NULL,NULL,NULL,NULL,'instance_stratholme'),
+(349,0,46,55,10,0,NULL,NULL,NULL,NULL,''),
+(389,0,13,18,10,0,NULL,NULL,NULL,NULL,''),
+(409,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_molten_core'),
+(429,0,55,60,5,0,NULL,NULL,NULL,NULL,''),
+(469,0,60,0,40,7,NULL,NULL,NULL,NULL,''),
+(509,0,60,0,20,3,NULL,NULL,NULL,NULL,'instance_ruins_of_ahnqiraj'),
+(531,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_temple_of_ahnqiraj'),
+(533,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_naxxramas');
 /*!40000 ALTER TABLE `instance_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
