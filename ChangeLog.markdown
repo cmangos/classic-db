@@ -8,6 +8,7 @@
 
 ## Fri, Mar 12, 2010
 
+* Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=72&t=628
 * Updated ScriptDevZero data to rev 0207.
 * Added fixes from http://udw.altervista.org/zeroproject/viewtopic.php?f=72&t=590
 
