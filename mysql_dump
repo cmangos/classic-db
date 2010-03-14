@@ -195,8 +195,10 @@ dump_struc zp_world locales_item
 dump_struc zp_world locales_npc_option
 dump_struc zp_world locales_npc_text
 dump_struc zp_world locales_page_text
+dump_struc zp_world locales_points_of_interest
 dump_struc zp_world locales_quest
 dump_struc zp_world npc_gossip_textid
+dump_struc zp_world points_of_interest
 dump_struc zp_world playercreateinfo_item
 dump_struc zp_world pool_creature
 dump_struc zp_world pool_gameobject
@@ -207,3 +209,4 @@ dump_struc zp_world skill_discovery_template
 dump_struc zp_world skill_extra_item_template
 dump_struc zp_world spell_area
 dump_struc zp_world spell_scripts
+

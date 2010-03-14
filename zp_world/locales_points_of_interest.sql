@@ -16,29 +16,25 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `db_version`
+-- Table structure for table `locales_points_of_interest`
 --
 
-DROP TABLE IF EXISTS `db_version`;
+DROP TABLE IF EXISTS `locales_points_of_interest`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `db_version` (
-  `version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `creature_ai_version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `required_z0271_084_02_mangos_locales_points_of_interest` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Used DB version notes';
+CREATE TABLE `locales_points_of_interest` (
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `icon_name_loc1` text,
+  `icon_name_loc2` text,
+  `icon_name_loc3` text,
+  `icon_name_loc4` text,
+  `icon_name_loc5` text,
+  `icon_name_loc6` text,
+  `icon_name_loc7` text,
+  `icon_name_loc8` text,
+  PRIMARY KEY (`entry`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `db_version`
---
-
-LOCK TABLES `db_version` WRITE;
-/*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES
-('Mangos default database.','Creature EventAI not provided.',NULL);
-/*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
