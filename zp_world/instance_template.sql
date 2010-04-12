@@ -67,7 +67,7 @@ INSERT INTO `instance_template` VALUES
 (389,0,13,18,10,0,NULL,NULL,NULL,NULL,''),
 (409,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_molten_core'),
 (429,0,55,60,5,0,NULL,NULL,NULL,NULL,''),
-(469,0,60,0,40,7,NULL,NULL,NULL,NULL,''),
+(469,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_blackwing_lair'),
 (509,0,60,0,20,3,NULL,NULL,NULL,NULL,'instance_ruins_of_ahnqiraj'),
 (531,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_temple_of_ahnqiraj'),
 (533,0,60,0,40,7,NULL,NULL,NULL,NULL,'instance_naxxramas');
