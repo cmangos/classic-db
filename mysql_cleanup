@@ -1,5 +1,8 @@
+#!/bin/bash
+#
 # Replace VALUES ( by VALUES\n(
 find ./ -name '*.sql' -type f -exec perl -pi -e 's/VALUES \(/VALUES\n\(/g' {} \; -print
- 
+
 # Replace huge insert by multi-line inserts
 find ./ -name '*.sql' -type f -exec perl -pi -e 's/\),\(/\),\n\(/g' {} \; -print
+

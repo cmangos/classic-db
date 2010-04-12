@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 #
 # This file contains login/password information for accessing the MySQL database
 # and is used by all the mysql_* scripts.
 #
 
 # Comment these out if you need no username & password
-USER=zpdb
+USER=zp
 PASS=zpdb
 HOST=localhost
 #SOCK=/var/lib/mysql/mysql.sock
@@ -15,3 +15,4 @@ OPTS=
 [ ! -z "$PASS" ] && OPTS="$OPTS -p$PASS"
 [ ! -z "$HOST" ] && OPTS="$OPTS -h$HOST"
 [ ! -z "$SOCK" ] && OPTS="$OPTS -S$SOCK"
+

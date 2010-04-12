@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # This script will import the contents of the sql/ directory to the MySQL database.
 #
@@ -44,3 +44,4 @@ done
 for x in ./zp_world/*.sql; do
     import $x
 done
+
