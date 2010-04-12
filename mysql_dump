@@ -101,6 +101,9 @@ dump_data zp_world game_event_model_equip
 dump_data zp_world game_graveyard_zone
 dump_data zp_world game_tele
 dump_data zp_world game_weather
+dump_data zp_world gossip_menu
+dump_data zp_world gossip_menu_option
+dump_data zp_world gossip_scripts
 dump_data zp_world instance_template
 dump_data zp_world item_enchantment_template
 dump_data zp_world item_loot_template

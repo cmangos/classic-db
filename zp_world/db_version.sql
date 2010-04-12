@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.44, for redhat-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.44
+-- Server version	5.1.41-3ubuntu11
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `db_version`;
 CREATE TABLE `db_version` (
   `version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
   `creature_ai_version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `required_z0271_084_02_mangos_locales_points_of_interest` bit(1) DEFAULT NULL
+  `required_z0405_101_01_mangos_mangos_string` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 

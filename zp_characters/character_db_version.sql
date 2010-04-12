@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.44, for redhat-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_characters
 -- ------------------------------------------------------
--- Server version	5.1.44
+-- Server version	5.1.41-3ubuntu11
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `character_db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `character_db_version` (
-  `required_z0212_xxx_01_characters_kill` bit(1) DEFAULT NULL
+  `required_z0378_097_01_characters` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
 /*!40101 SET character_set_client = @saved_cs_client */;
 

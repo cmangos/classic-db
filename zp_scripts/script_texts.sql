@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.44, for redhat-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: zp_scripts
 -- ------------------------------------------------------
--- Server version	5.1.44
+-- Server version	5.1.41-3ubuntu11
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -79,7 +79,25 @@ INSERT INTO `script_texts` VALUES
 (-1000150,'All life must be eradicated!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'kazzak SAY_SURPREME1'),
 (-1000149,'All mortals will perish!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'kazzak SAY_AGGRO2'),
 (-1000148,'The Legion will conquer all!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'kazzak SAY_AGGRO1'),
-(-1000147,'I remember well the sting of defeat at the conclusion of the Third War. I have waited far too long for my revenge. Now the shadow of the Legion falls over this world. It is only a matter of time until all of your failed creation... is undone.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'kazzak SAY_INTRO');
+(-1000147,'I remember well the sting of defeat at the conclusion of the Third War. I have waited far too long for my revenge. Now the shadow of the Legion falls over this world. It is only a matter of time until all of your failed creation... is undone.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'kazzak SAY_INTRO'),
+(-1533130,'%s summons forth Skeletal Warriors!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'noth EMOTE_WARRIOR'),
+(-1533131,'%s teleports to the balcony above!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'noth EMOTE_SKELETON'),
+(-1533132,'%s raises more skeletons!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'noth EMOTE_TELEPORT'),
+(-1533133,'%s teleports back into the battle!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'noth EMOTE_TELEPORT_RETURN'),
+(-1533134,'A Guardian of Icecrown enters the fight!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'kelthuzad EMOTE_GUARDIAN'),
+(-1533135,'%s strikes!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'kelthuzad EMOTE_PHASE2'),
+(-1533136,'%s teleports and begins to channel a spell!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'heigan EMOTE_TELEPORT'),
+(-1533137,'%s rushes to attack once more!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'heigan EMOTE_RETURN'),
+(-1533138,'%s teleports into the fray!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'gothik EMOTE_TO_FRAY'),
+(-1533139,'The central gate opens!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,3,0,0,'gothik EMOTE_GATE'),
+(-1533140,'Brazenly you have disregarded powers beyond your understanding.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'gothik SAY_SPEECH_2'),
+(-1533141,'You have fought hard to invade the realm of the harvester.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'gothik SAY_SPEECH_3'),
+(-1533142,'Now there is only one way out - to walk the lonely path of the damned.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'gothik SAY_SPEECH_4'),
+(-1000561,'My wounds are grave. Forgive my slow pace but my injuries won\'t allow me to walk any faster.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_CORPORAL_KEESHAN_1'),
+(-1000562,'Ah, fresh air, at last! I need a moment to rest.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_CORPORAL_KEESHAN_2'),
+(-1000563,'The Blackrock infestation is thick in these parts. I will do my best to keep the pace. Let\'s go!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_CORPORAL_KEESHAN_3'),
+(-1000564,'Marshal Marris, sir. Corporal Keeshan of the 12th Sabre Regiment returned from battle and reporting for duty!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_CORPORAL_KEESHAN_4'),
+(-1000565,'Brave adventurer, thank you for rescuing me! I am sure Marshal Marris will reward your kind deed.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_CORPORAL_KEESHAN_5');
 /*!40000 ALTER TABLE `script_texts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
