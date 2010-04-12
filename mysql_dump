@@ -112,7 +112,6 @@ dump_data zp_world item_template
 dump_data zp_world mail_loot_template
 dump_data zp_world mangos_string
 dump_data zp_world npc_gossip
-dump_data zp_world npc_option
 dump_data zp_world npc_text
 dump_data zp_world npc_trainer
 dump_data zp_world npc_vendor
