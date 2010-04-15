@@ -150,7 +150,7 @@ dump_data zp_world transports
 dump_data zp_scripts custom_texts
 
 #
-# Empty ZeroProject tables: zp_realm
+# Empty ZeroProject tables: zp_characters
 #
 dump_struc zp_characters auctionhouse
 dump_struc zp_characters bugreport
@@ -159,6 +159,7 @@ dump_struc zp_characters character_instance
 dump_struc zp_characters character_kill
 dump_struc zp_characters character_pet
 dump_struc zp_characters character_social
+dump_struc zp_characters character_stats
 dump_struc zp_characters character_spell_cooldown
 dump_struc zp_characters character_ticket
 dump_struc zp_characters corpse

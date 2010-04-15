@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_realm
 -- ------------------------------------------------------
--- Server version	5.1.41-3ubuntu11
+-- Server version	5.1.41-3ubuntu12
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `realmd_db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `realmd_db_version` (
-  `required_9010_01_realmd_realmlist` bit(1) DEFAULT NULL
+  `required_9748_01_realmd_realmlist` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
