@@ -52,7 +52,7 @@ CREATE TABLE `character_stats` (
   `attackPower` int(10) unsigned NOT NULL DEFAULT '0',
   `rangedAttackPower` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
