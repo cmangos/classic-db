@@ -68,7 +68,7 @@ INSERT INTO `gossip_menu_option` VALUES
 (0,0,0,'GOSSIP_OPTION_QUESTGIVER',2,2,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
 (0,12,0,'I\'d like to stable my pet here.',14,8192,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
 (0,13,1,'GOSSIP_OPTION_ARMORER',15,16384,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
-(0,14,2,'I wish to unlearn my talents.',16,16,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
+(0,14,0,'I wish to unlearn my talents.',16,16,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
 (0,15,2,'I wish to unlearn my pet\'s skills.',17,16,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
 (0,9,8,'I want to create a guild crest.',11,1024,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
 (83,0,4,'Return me to life.',6,32,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
