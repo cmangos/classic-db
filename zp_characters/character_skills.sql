@@ -16,26 +16,41 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `character_db_version`
+-- Table structure for table `character_skills`
 --
 
-DROP TABLE IF EXISTS `character_db_version`;
+DROP TABLE IF EXISTS `character_skills`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `character_db_version` (
-  `required_z0464_112_01_characters_character_skills` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
+CREATE TABLE `character_skills` (
+  `guid` int(11) unsigned NOT NULL COMMENT 'Global Unique Identifier',
+  `skill` mediumint(9) unsigned NOT NULL,
+  `value` mediumint(9) unsigned NOT NULL,
+  `max` mediumint(9) unsigned NOT NULL,
+  PRIMARY KEY (`guid`,`skill`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `character_db_version`
+-- Dumping data for table `character_skills`
 --
 
-LOCK TABLES `character_db_version` WRITE;
-/*!40000 ALTER TABLE `character_db_version` DISABLE KEYS */;
-INSERT INTO `character_db_version` VALUES
-(NULL);
-/*!40000 ALTER TABLE `character_db_version` ENABLE KEYS */;
+LOCK TABLES `character_skills` WRITE;
+/*!40000 ALTER TABLE `character_skills` DISABLE KEYS */;
+INSERT INTO `character_skills` VALUES
+(1,26,1,1),
+(1,44,1,5),
+(1,54,1,5),
+(1,95,1,5),
+(1,98,300,300),
+(1,111,300,300),
+(1,162,1,5),
+(1,172,1,5),
+(1,413,1,1),
+(1,414,1,1),
+(1,415,1,1),
+(1,433,1,1);
+/*!40000 ALTER TABLE `character_skills` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

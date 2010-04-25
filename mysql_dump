@@ -32,6 +32,7 @@ dump_data zp_characters character_homebind
 dump_data zp_characters character_inventory
 dump_data zp_characters character_queststatus
 dump_data zp_characters character_reputation
+dump_data zp_characters character_skills
 dump_data zp_characters character_spell
 dump_data zp_characters character_tutorial
 dump_data zp_characters guild
