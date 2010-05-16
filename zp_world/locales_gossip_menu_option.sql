@@ -16,29 +16,34 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `db_version`
+-- Table structure for table `locales_gossip_menu_option`
 --
 
-DROP TABLE IF EXISTS `db_version`;
+DROP TABLE IF EXISTS `locales_gossip_menu_option`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `db_version` (
-  `version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `creature_ai_version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `required_z0526_117_9886_02_mangos_command` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Used DB version notes';
+CREATE TABLE `locales_gossip_menu_option` (
+  `menu_id` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `id` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `option_text_loc1` text COLLATE utf8_unicode_ci,
+  `option_text_loc2` text COLLATE utf8_unicode_ci,
+  `option_text_loc3` text COLLATE utf8_unicode_ci,
+  `option_text_loc4` text COLLATE utf8_unicode_ci,
+  `option_text_loc5` text COLLATE utf8_unicode_ci,
+  `option_text_loc6` text COLLATE utf8_unicode_ci,
+  `option_text_loc7` text COLLATE utf8_unicode_ci,
+  `option_text_loc8` text COLLATE utf8_unicode_ci,
+  `box_text_loc1` text COLLATE utf8_unicode_ci,
+  `box_text_loc2` text COLLATE utf8_unicode_ci,
+  `box_text_loc3` text COLLATE utf8_unicode_ci,
+  `box_text_loc4` text COLLATE utf8_unicode_ci,
+  `box_text_loc5` text COLLATE utf8_unicode_ci,
+  `box_text_loc6` text COLLATE utf8_unicode_ci,
+  `box_text_loc7` text COLLATE utf8_unicode_ci,
+  `box_text_loc8` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`menu_id`,`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `db_version`
---
-
-LOCK TABLES `db_version` WRITE;
-/*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES
-('ZDB 0.2.0 (003) for MaNGOSZero 0380 with SD0 SQL for rev. 80','ACID 1.0.1 - Full Release for Mangos Zero (1.12.1 Client)',NULL);
-/*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

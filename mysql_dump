@@ -157,7 +157,6 @@ dump_struc zp_characters auctionhouse
 dump_struc zp_characters bugreport
 dump_struc zp_characters character_gifts
 dump_struc zp_characters character_instance
-dump_struc zp_characters character_kill
 dump_struc zp_characters character_pet
 dump_struc zp_characters character_social
 dump_struc zp_characters character_stats
@@ -195,13 +194,12 @@ dump_struc zp_world game_event_pool
 dump_struc zp_world gameobject_respawn
 dump_struc zp_world locales_creature
 dump_struc zp_world locales_gameobject
+dump_struc zp_world locales_gossip_menu_option
 dump_struc zp_world locales_item
-dump_struc zp_world locales_npc_option
 dump_struc zp_world locales_npc_text
 dump_struc zp_world locales_page_text
 dump_struc zp_world locales_points_of_interest
 dump_struc zp_world locales_quest
-dump_struc zp_world npc_gossip_textid
 dump_struc zp_world points_of_interest
 dump_struc zp_world playercreateinfo_item
 dump_struc zp_world pool_creature
