@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.41-3ubuntu12
+-- Server version	5.1.41-3ubuntu12.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -38,14 +38,15 @@ LOCK TABLES `command` WRITE;
 /*!40000 ALTER TABLE `command` DISABLE KEYS */;
 INSERT INTO `command` VALUES
 ('account',0,'Syntax: .accountDisplay the access level of your account.'),
+('account characters',3,'Syntax: .account characters [#accountId|$accountName]\r\n\r\nShow list all characters for account seelcted by provided #accountId or $accountName, or for selected player in game.'),
 ('account create',4,'Syntax: .account create $account $passwordCreate account and set password to it.'),
 ('account delete',4,'Syntax: .account delete $accountDelete account with all characters.'),
 ('account lock',0,'Syntax: .account lock [on|off]Allow login from account only from current used IP or remove this requirement.'),
 ('account onlinelist',4,'Syntax: .account onlinelistShow list of online accounts.'),
 ('account password',0,'Syntax: .account password $old_password $new_password $new_passwordChange your account password.'),
-('account set gmlevel',4,'Syntax: .account set gmlevel [#accountId|$accountName] #level\r\n\r\nSet the security level for targeted player (can\'t be used at self) or for #accountId or $accountName to a level of #level.\r\n\r\n#level may range from 0 to 3.'),
 ('account set addon',3,'Syntax: .account set addon [#accountId|$accountName] #addon\r\n\r\nSet user (possible targeted) expansion addon level allowed. Addon values: 0 - normal, 1 - tbc, 2 - wotlk.'),
-('account characters',3,'Syntax: .account characters [#accountId|$accountName]\r\n\r\nShow list all characters for account seelcted by provided #accountId or $accountName, or for selected player in game.'),
+('account set gmlevel',4,'Syntax: .account set gmlevel [#accountId|$accountName] #level\r\n\r\nSet the security level for targeted player (can\'t be used at self) or for #accountId or $accountName to a level of #level.\r\n\r\n#level may range from 0 to 3.'),
+('account set password',4,'Syntax: .account set password (#accountId|$accountName) $password $password\r\n\r\nSet password for account.'),
 ('additem',3,'Syntax: .additem #itemid/[#itemname]/#shift-click-item-link #itemcountAdds the specified number of items of id #itemid (or exact (!) name $itemname in brackets, or link created by shift-click at item in inventory or recipe) to your or selected character inventory. If #itemcount is omitted, only one item will be added..'),
 ('additemset',3,'Syntax: .additemset #itemsetidAdd items from itemset of id #itemsetid to your or selected character inventory. Will add by one example each item from itemset.'),
 ('announce',1,'Syntax: .announce $MessageToBroadcastSend a global message to all players online in chat log.'),
@@ -65,6 +66,10 @@ INSERT INTO `command` VALUES
 ('cast dist',3,'Syntax: .cast dist #spellid [#dist [triggered]]  You will cast spell to pint at distance #dist. If \'trigered\' or part provided then spell casted with triggered flag. Not all spells can be casted as area spells.'),
 ('cast self',3,'Syntax: .cast self #spellid [triggered]Cast #spellid by target at target itself. If \'trigered\' or part provided then spell casted with triggered flag.'),
 ('cast target',3,'Syntax: .cast target #spellid [triggered]  Selected target will cast #spellid to his victim. If \'trigered\' or part provided then spell casted with triggered flag.'),
+('character deleted delete',4,'Syntax: .character deleted delete #guid|$name\r\n\r\nCompletely deletes the selected characters.\r\nIf $name is supplied, only characters with that string in their name will be deleted, if #guid is supplied, only the character with that GUID will be deleted.'),
+('character deleted list',3,'Syntax: .character deleted list [#guid|$name]\r\n\r\nShows a list with all deleted characters.\r\nIf $name is supplied, only characters with that string in their name will be selected, if #guid is supplied, only the character with that GUID will be selected.'),
+('character deleted old',4,'Syntax: .character deleted old [#keepDays]\r\n\r\nCompletely deletes all characters with deleted time longer #keepDays. If #keepDays not provided the  used value from mangosd.conf option \'CharDelete.KeepDays\'. If referenced config option disabled (use 0 value) then command can\'t be used without #keepDays.'),
+('character deleted restore',3,'Syntax: .character deleted restore #guid|$name [$newname] [#new account]\r\n\r\nRestores deleted characters.\r\nIf $name is supplied, only characters with that string in their name will be restored, if $guid is supplied, only the character with that GUID will be restored.\r\nIf $newname is set, the character will be restored with that name instead of the original one. If #newaccount is set, the character will be restored to specific account character list. This works only with one character!'),
 ('character erase',4,'Syntax: .character erase $name\r\n\r\nDelete character $name. Character finally deleted in case any deleting options.'),
 ('character level',3,'Syntax: .character level [$playername] [#level]Set the level of character with $playername (or the selected if not name provided) by #numberoflevels Or +1 if no #numberoflevels provided). If #numberoflevels is omitted, the level will be increase by 1. If #numberoflevels is 0, the same level will be restarted. If no character is selected and name not provided, increase your level. Command can be used for offline character. All stats and dependent values recalculated. At level decrease talents can be reset if need. Also at level decrease equipped items with greater level requirement can be lost.'),
 ('character rename',2,'Syntax: .character rename [$name]Mark selected in game or by $name in command character for rename at next login.'),
@@ -149,7 +154,11 @@ INSERT INTO `command` VALUES
 ('list creature',3,'Syntax: .list creature #creature_id [#max_count]Output creatures with creature id #creature_id found in world. Output creature guids and coordinates sorted by distance from character. Will be output maximum #max_count creatures. If #max_count not provided use 10 as default value.'),
 ('list item',3,'Syntax: .list item #item_id [#max_count]Output items with item id #item_id found in all character inventories, mails, auctions, and guild banks. Output item guids, item owner guid, owner account and owner name (guild name and guid in case guild bank). Will be output maximum #max_count items. If #max_count not provided use 10 as default value.'),
 ('list object',3,'Syntax: .list object #gameobject_id [#max_count]Output gameobjects with gameobject id #gameobject_id found in world. Output gameobject guids and coordinates sorted by distance from character. Will be output maximum #max_count gameobject. If #max_count not provided use 10 as default value.'),
+('list talents',3,'Syntax: .list talents\r\n\r\nShow list all really known (as learned spells) talent rank spells for selected player or self.'),
 ('loadscripts',3,'Syntax: .loadscripts $scriptlibrarynameUnload current and load the script library $scriptlibraryname or reload current if $scriptlibraryname omitted, in case you changed it while the server was running.'),
+('lookup account email',2,'Syntax: .lookup account email $emailpart [#limit] \r\n\r\n Searchs accounts, which email including $emailpart with optional parametr #limit of results. If #limit not provided expected 100.'),
+('lookup account ip',2,'Syntax: lookup account ip $ippart [#limit] \r\n\r\n Searchs accounts, which last used ip inluding $ippart (textual) with optional parametr #$limit of results. If #limit not provided expected 100.'),
+('lookup account name',2,'Syntax: .lookup account name $accountpart [#limit] \r\n\r\n Searchs accounts, which username including $accountpart with optional parametr #limit of results. If #limit not provided expected 100.'),
 ('lookup area',1,'Syntax: .lookup area $namepartLooks up an area by $namepart, and returns all matches with their area ID\'s.'),
 ('lookup creature',3,'Syntax: .lookup creature $namepartLooks up a creature by $namepart, and returns all matches with their creature ID\'s.'),
 ('lookup event',2,'Syntax: .lookup event $nameAttempts to find the ID of the event with the provided $name.'),
@@ -157,8 +166,9 @@ INSERT INTO `command` VALUES
 ('lookup item',3,'Syntax: .lookup item $itemnameLooks up an item by $itemname, and returns all matches with their Item ID\'s.'),
 ('lookup itemset',3,'Syntax: .lookup itemset $itemnameLooks up an item set by $itemname, and returns all matches with their Item set ID\'s.'),
 ('lookup object',3,'Syntax: .lookup object $objnameLooks up an gameobject by $objname, and returns all matches with their Gameobject ID\'s.'),
-('lookup account ip',2,'Syntax: lookup account ip $ippart [#limit] \r\n\r\n Searchs accounts, which last used ip inluding $ippart (textual) with optional parametr #$limit of results. If #limit not provided expected 100.'),
-('lookup account email',2,'Syntax: .lookup account email $emailpart [#limit] \r\n\r\n Searchs accounts, which email including $emailpart with optional parametr #limit of results. If #limit not provided expected 100.'),
+('lookup player account',2,'Syntax: .lookup player account $accountpart [#limit] \r\n\r\n Searchs players, which account username including $accountpart with optional parametr #limit of results. If #limit not provided expected 100.'),
+('lookup player email',2,'Syntax: .lookup player email $emailpart [#limit] \r\n\r\n Searchs players, which account email including $emailpart with optional parametr #limit of results. If #limit not provided expected 100.'),
+('lookup player ip',2,'Syntax: .lookup player ip $ippart [#limit] \r\n\r\n Searchs players, which account last used ip inluding $ippart (textual) with optional parametr #limit of results. If #limit not provided expected 100.'),
 ('lookup quest',3,'Syntax: .lookup quest $namepartLooks up a quest by $namepart, and returns all matches with their quest ID\'s.'),
 ('lookup skill',3,'Syntax: .lookup skill $$namepartLooks up a skill by $namepart, and returns all matches with their skill ID\'s.'),
 ('lookup spell',3,'Syntax: .lookup spell $namepartLooks up a spell by $namepart, and returns all matches with their spell ID\'s.'),
@@ -291,17 +301,7 @@ INSERT INTO `command` VALUES
 ('wp export',3,'Syntax: .wp export [#creature_guid or Select a Creature] $filename'),
 ('wp import',3,'Syntax: .wp import $filename'),
 ('wp modify',2,'Syntax: .wp modify [#creature_guid or Select a Creature]add - Add a waypoint after the selected visualwaittime $timeemote IDspell IDtext1| text2| text3| text4| text5 <text>model1 IDmodel2 IDmove(moves wp to player pos)del (deletes the wp)Only one parameter per time!'),
-('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]onfirstlastoffinfoFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!'),
-('list talents',3,'Syntax: .list talents\r\n\r\nShow list all really known (as learned spells) talent rank spells for selected player or self.'),
-('character deleted old',4,'Syntax: .character deleted old [#keepDays]\r\n\r\nCompletely deletes all characters with deleted time longer #keepDays. If #keepDays not provided the  used value from mangosd.conf option \'CharDelete.KeepDays\'. If referenced config option disabled (use 0 value) then command can\'t be used without #keepDays.'),
-('character deleted delete',4,'Syntax: .character deleted delete #guid|$name\r\n\r\nCompletely deletes the selected characters.\r\nIf $name is supplied, only characters with that string in their name will be deleted, if #guid is supplied, only the character with that GUID will be deleted.'),
-('character deleted list',3,'Syntax: .character deleted list [#guid|$name]\r\n\r\nShows a list with all deleted characters.\r\nIf $name is supplied, only characters with that string in their name will be selected, if #guid is supplied, only the character with that GUID will be selected.'),
-('character deleted restore',3,'Syntax: .character deleted restore #guid|$name [$newname] [#new account]\r\n\r\nRestores deleted characters.\r\nIf $name is supplied, only characters with that string in their name will be restored, if $guid is supplied, only the character with that GUID will be restored.\r\nIf $newname is set, the character will be restored with that name instead of the original one. If #newaccount is set, the character will be restored to specific account character list. This works only with one character!'),
-('account set password',4,'Syntax: .account set password (#accountId|$accountName) $password $password\r\n\r\nSet password for account.'),
-('lookup account name',2,'Syntax: .lookup account name $accountpart [#limit] \r\n\r\n Searchs accounts, which username including $accountpart with optional parametr #limit of results. If #limit not provided expected 100.'),
-('lookup player account',2,'Syntax: .lookup player account $accountpart [#limit] \r\n\r\n Searchs players, which account username including $accountpart with optional parametr #limit of results. If #limit not provided expected 100.'),
-('lookup player email',2,'Syntax: .lookup player email $emailpart [#limit] \r\n\r\n Searchs players, which account email including $emailpart with optional parametr #limit of results. If #limit not provided expected 100.'),
-('lookup player ip',2,'Syntax: .lookup player ip $ippart [#limit] \r\n\r\n Searchs players, which account last used ip inluding $ippart (textual) with optional parametr #limit of results. If #limit not provided expected 100.');
+('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]onfirstlastoffinfoFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!');
 /*!40000 ALTER TABLE `command` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
