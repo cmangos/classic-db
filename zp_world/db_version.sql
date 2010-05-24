@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `db_version`;
 CREATE TABLE `db_version` (
   `version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
   `creature_ai_version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `required_z0526_117_9886_02_mangos_command` bit(1) DEFAULT NULL
+  `required_z0537_118_02_mangos_command` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
