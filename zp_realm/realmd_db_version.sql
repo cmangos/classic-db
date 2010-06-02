@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `realmd_db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `realmd_db_version` (
-  `required_9748_01_realmd_realmlist` bit(1) DEFAULT NULL
+  `required_10008_01_realmd_realmd_db_version` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
