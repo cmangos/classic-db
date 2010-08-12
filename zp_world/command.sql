@@ -23,11 +23,11 @@ DROP TABLE IF EXISTS `command`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `command` (
-  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(50) NOT NULL DEFAULT '',
   `security` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `help` longtext COLLATE utf8_unicode_ci,
+  `help` longtext,
   PRIMARY KEY (`name`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Chat System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Chat System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -50,6 +50,10 @@ INSERT INTO `command` VALUES
 ('additem',3,'Syntax: .additem #itemid/[#itemname]/#shift-click-item-link #itemcountAdds the specified number of items of id #itemid (or exact (!) name $itemname in brackets, or link created by shift-click at item in inventory or recipe) to your or selected character inventory. If #itemcount is omitted, only one item will be added..'),
 ('additemset',3,'Syntax: .additemset #itemsetidAdd items from itemset of id #itemsetid to your or selected character inventory. Will add by one example each item from itemset.'),
 ('announce',1,'Syntax: .announce $MessageToBroadcastSend a global message to all players online in chat log.'),
+('auction',3,'Syntax: .auction\r\n\r\nShow your team auction store.'),
+('auction alliance',3,'Syntax: .auction alliance\r\n\r\nShow alliance auction store independent from your team.'),
+('auction goblin',3,'Syntax: .auction goblin\r\n\r\nShow goblin auction store common for all teams.'),
+('auction horde',3,'Syntax: .auction horde\r\n\r\nShow horde auction store independent from your team.'),
 ('aura',3,'Syntax: .aura #spellidAdd the aura from spell #spellid to the selected Unit.'),
 ('ban account',3,'Syntax: .ban account $Name $bantime $reasonBan account kick player.$bantime: negative value leads to permban, otherwise use a timestring like 4d20h3s\"\".\"'),
 ('ban character',3,'Syntax: .ban character $Name $bantime $reasonBan account and kick player.$bantime: negative value leads to permban, otherwise use a timestring like 4d20h3s\"\".\"'),
@@ -102,10 +106,11 @@ INSERT INTO `command` VALUES
 ('gm ingame',0,'Syntax: .gm ingameDisplay a list of available in game Game Masters.'),
 ('gm list',3,'Syntax: .gm listDisplay a list of all Game Masters accounts and security levels.'),
 ('gm visible',1,'Syntax: .gm visible on/offOutput current visibility state or make GM visible(on) and invisible(off) for other players.'),
+('go',1,'Syntax: .go  [$playername|pointlink|#x #y #z [#mapid]]\r\nTeleport your character to point with coordinates of player $playername, or coordinates of one from shift-link types: player, tele, taxinode, creature/creature_entry, gameobject/gameobject_entry, or explicit #x #y #z #mapid coordinates.'),
 ('go creature',1,'Syntax: .go creature (#creature_guid|$creature_name|id #creature_id)\r\nTeleport your character to creature with guid #creature_guid, or teleport your character to creature with name including as part $creature_name substring, or teleport your character to a creature that was spawned from the template with this entry #creature_id.'),
 ('go graveyard',1,'Syntax: .go graveyard #graveyardId Teleport to graveyard with the graveyardId specified.'),
 ('go grid',1,'Syntax: .go grid #gridX #gridY [#mapId]Teleport the gm to center of grid with provided indexes at map #mapId (or current map if it not provided).'),
-('go',1,'Syntax: .go  [$playername|pointlink|#x #y #z [#mapid]]\r\nTeleport your character to point with coordinates of player $playername, or coordinates of one from shift-link types: player, tele, taxinode, creature/creature_entry, gameobject/gameobject_entry, or explicit #x #y #z #mapid coordinates.'),
+('go object',1,'Syntax: .go object (#gameobject_guid|$gameobject_name|id #gameobject_id)\r\nTeleport your character to gameobject with guid #gameobject_guid, or teleport your character to gameobject with name including as part $gameobject_name substring, or teleport your character to a gameobject that was spawned from the template with this entry #gameobject_id.'),
 ('go taxinode',1,'Syntax: .go taxinode #taxinodeTeleport player to taxinode coordinates. You can look up zone using .lookup taxinode $namepart'),
 ('go trigger',1,'Syntax: .go trigger (#trigger_id|$trigger_shift-link|$trigger_target_shift-link) [target]\r\n\r\nTeleport your character to areatrigger with id #trigger_id or trigger id associated with shift-link. If additional arg \"target\" provided then character will telported to areatrigger target point.'),
 ('go xy',1,'Syntax: .go xy #x #y [#mapid]Teleport player to point with (#x,#y) coordinates at ground(water) level at map #mapid or same map if #mapid not provided.'),
@@ -280,6 +285,7 @@ INSERT INTO `command` VALUES
 ('server shutdown cancel',3,'Syntax: .server shutdown cancelCancel the restart/shutdown timer if any.'),
 ('setskill',3,'Syntax: .setskill #skill #level [#max]Set a skill of id #skill with a current skill value of #level and a maximum value of #max (or equal current maximum if not provide) for the selected character. If no character is selected, you learn the skill.'),
 ('showarea',3,'Syntax: .showarea #areaidReveal the area of #areaid to the selected character. If no character is selected, reveal this area to you.'),
+('stable',3,'Syntax: .stable\r\n\r\nShow your pet stable.'),
 ('start',0,'Syntax: .startTeleport you to the starting area of your character.'),
 ('taxicheat',1,'Syntax: .taxicheat on/offTemporary grant access or remove to all taxi routes for the selected character. If no character is selected, hide or reveal all routes to you.Visited taxi nodes sill accessible after removing access.'),
 ('tele',1,'Syntax: .tele #locationTeleport player to a given location.'),
@@ -288,6 +294,9 @@ INSERT INTO `command` VALUES
 ('tele group',1,'Syntax: .tele group#locationTeleport a selected player and his group members to a given location.'),
 ('tele name',1,'Syntax: .tele name [#playername] #locationTeleport the given character to a given location. Character can be offline.'),
 ('ticket',2,'Syntax: .ticket on        .ticket off        .ticket #num        .ticket $character_nameon/off for GMs to show or not a new ticket directly, $character_name to show ticket of this character, #num to show ticket #num.'),
+('trigger',2,'Syntax: .trigger [#trigger_id|$trigger_shift-link|$trigger_target_shift-link]\r\n\r\nShow detail infor about areatrigger with id #trigger_id or trigger id associated with shift-link. If areatrigger id or shift-link not provided then selected nearest areatrigger at current map.'),
+('trigger active',2,'Syntax: .trigger active\r\n\r\nShow list of areatriggers wiht activation zone including current character position.'),
+('trigger near',2,'Syntax: .trigger near [#distance]\r\n\r\nOutput areatriggers at distance #distance from player. If #distance not provided use 10 as default value.'),
 ('unaura',3,'Syntax: .unaura #spellidRemove aura due to spell #spellid from the selected Unit.'),
 ('unban account',3,'Syntax: .unban account $NameUnban accounts for account name pattern.'),
 ('unban character',3,'Syntax: .unban character $NameUnban accounts for character name pattern.'),
@@ -297,20 +306,11 @@ INSERT INTO `command` VALUES
 ('waterwalk',2,'Syntax: .waterwalk on/offSet on/off waterwalk state for selected player.'),
 ('wchange',3,'Syntax: .wchange #weathertype #statusSet current weather to #weathertype with an intensity of #status.#weathertype can be 1 for rain, 2 for snow, and 3 for sand. #status can be 0 for disabled, and 1 for enabled.'),
 ('whispers',1,'Syntax: .whispers on|offEnable/disable accepting whispers by GM from players. By default use mangosd.conf setting.'),
-('stable',3,'Syntax: .stable\r\n\r\nShow your pet stable.'),
 ('wp add',2,'Syntax: .wp add [#creature_guid or Select a Creature]'),
 ('wp export',3,'Syntax: .wp export [#creature_guid or Select a Creature] $filename'),
 ('wp import',3,'Syntax: .wp import $filename'),
 ('wp modify',2,'Syntax: .wp modify [#creature_guid or Select a Creature]add - Add a waypoint after the selected visualwaittime $timeemote IDspell IDtext1| text2| text3| text4| text5 <text>model1 IDmodel2 IDmove(moves wp to player pos)del (deletes the wp)Only one parameter per time!'),
-('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]onfirstlastoffinfoFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!'),
-('go object',1,'Syntax: .go object (#gameobject_guid|$gameobject_name|id #gameobject_id)\r\nTeleport your character to gameobject with guid #gameobject_guid, or teleport your character to gameobject with name including as part $gameobject_name substring, or teleport your character to a gameobject that was spawned from the template with this entry #gameobject_id.'),
-('auction',3,'Syntax: .auction\r\n\r\nShow your team auction store.'),
-('auction alliance',3,'Syntax: .auction alliance\r\n\r\nShow alliance auction store independent from your team.'),
-('auction goblin',3,'Syntax: .auction goblin\r\n\r\nShow goblin auction store common for all teams.'),
-('auction horde',3,'Syntax: .auction horde\r\n\r\nShow horde auction store independent from your team.'),
-('trigger',2,'Syntax: .trigger [#trigger_id|$trigger_shift-link|$trigger_target_shift-link]\r\n\r\nShow detail infor about areatrigger with id #trigger_id or trigger id associated with shift-link. If areatrigger id or shift-link not provided then selected nearest areatrigger at current map.'),
-('trigger active',2,'Syntax: .trigger active\r\n\r\nShow list of areatriggers wiht activation zone including current character position.'),
-('trigger near',2,'Syntax: .trigger near [#distance]\r\n\r\nOutput areatriggers at distance #distance from player. If #distance not provided use 10 as default value.');
+('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]onfirstlastoffinfoFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!');
 /*!40000 ALTER TABLE `command` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

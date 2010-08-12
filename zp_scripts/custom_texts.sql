@@ -24,22 +24,22 @@ DROP TABLE IF EXISTS `custom_texts`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `custom_texts` (
   `entry` mediumint(8) NOT NULL,
-  `content_default` text COLLATE utf8_unicode_ci NOT NULL,
-  `content_loc1` text COLLATE utf8_unicode_ci,
-  `content_loc2` text COLLATE utf8_unicode_ci,
-  `content_loc3` text COLLATE utf8_unicode_ci,
-  `content_loc4` text COLLATE utf8_unicode_ci,
-  `content_loc5` text COLLATE utf8_unicode_ci,
-  `content_loc6` text COLLATE utf8_unicode_ci,
-  `content_loc7` text COLLATE utf8_unicode_ci,
-  `content_loc8` text COLLATE utf8_unicode_ci,
+  `content_default` text NOT NULL,
+  `content_loc1` text,
+  `content_loc2` text,
+  `content_loc3` text,
+  `content_loc4` text,
+  `content_loc5` text,
+  `content_loc6` text,
+  `content_loc7` text,
+  `content_loc8` text,
   `sound` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `language` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `emote` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `comment` text COLLATE utf8_unicode_ci,
+  `comment` text,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Custom Texts';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Custom Texts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -25,10 +25,10 @@ DROP TABLE IF EXISTS `item_instance`;
 CREATE TABLE `item_instance` (
   `guid` int(11) unsigned NOT NULL DEFAULT '0',
   `owner_guid` int(11) unsigned NOT NULL DEFAULT '0',
-  `data` longtext COLLATE utf8_unicode_ci,
+  `data` longtext,
   PRIMARY KEY (`guid`),
   KEY `idx_owner_guid` (`owner_guid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Item System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Item System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

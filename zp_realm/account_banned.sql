@@ -26,11 +26,11 @@ CREATE TABLE `account_banned` (
   `id` int(11) NOT NULL DEFAULT '0' COMMENT 'Account id',
   `bandate` bigint(40) NOT NULL DEFAULT '0',
   `unbandate` bigint(40) NOT NULL DEFAULT '0',
-  `bannedby` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `banreason` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `bannedby` varchar(50) NOT NULL,
+  `banreason` varchar(255) NOT NULL,
   `active` tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`,`bandate`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Ban List';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Ban List';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

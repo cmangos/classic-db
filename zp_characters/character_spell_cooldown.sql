@@ -28,7 +28,7 @@ CREATE TABLE `character_spell_cooldown` (
   `item` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Item Identifier',
   `time` bigint(20) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`spell`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

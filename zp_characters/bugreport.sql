@@ -24,10 +24,10 @@ DROP TABLE IF EXISTS `bugreport`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `bugreport` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
-  `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `content` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `type` varchar(255) NOT NULL DEFAULT '',
+  `content` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Debug System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Debug System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

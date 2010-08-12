@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `character_db_version`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `character_db_version` (
   `required_z0778_s0087_02_characters_pet_aura` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

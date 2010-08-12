@@ -26,7 +26,7 @@ CREATE TABLE `creature_involvedrelation` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier',
   PRIMARY KEY (`id`,`quest`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Creature System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

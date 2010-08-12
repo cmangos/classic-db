@@ -26,10 +26,10 @@ CREATE TABLE `pool_pool` (
   `pool_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `mother_pool` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `chance` float NOT NULL DEFAULT '0',
-  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(255) NOT NULL,
   PRIMARY KEY (`pool_id`),
   KEY `pool_idx` (`mother_pool`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

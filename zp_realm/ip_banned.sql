@@ -23,13 +23,13 @@ DROP TABLE IF EXISTS `ip_banned`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `ip_banned` (
-  `ip` varchar(32) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0.0.0.0',
+  `ip` varchar(32) NOT NULL DEFAULT '0.0.0.0',
   `bandate` bigint(40) NOT NULL,
   `unbandate` bigint(40) NOT NULL,
-  `bannedby` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '[Console]',
-  `banreason` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no reason',
+  `bannedby` varchar(50) NOT NULL DEFAULT '[Console]',
+  `banreason` varchar(255) NOT NULL DEFAULT 'no reason',
   PRIMARY KEY (`ip`,`bandate`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Banned IPs';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Banned IPs';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

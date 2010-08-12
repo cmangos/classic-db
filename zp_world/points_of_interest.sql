@@ -29,9 +29,9 @@ CREATE TABLE `points_of_interest` (
   `icon` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `flags` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `data` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `icon_name` text COLLATE utf8_unicode_ci NOT NULL,
+  `icon_name` text NOT NULL,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

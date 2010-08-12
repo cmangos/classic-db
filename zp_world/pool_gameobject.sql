@@ -26,10 +26,10 @@ CREATE TABLE `pool_gameobject` (
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `chance` float unsigned NOT NULL DEFAULT '0',
-  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(255) NOT NULL,
   PRIMARY KEY (`guid`),
   KEY `pool_idx` (`pool_entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

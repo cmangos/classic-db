@@ -24,9 +24,9 @@ DROP TABLE IF EXISTS `scripted_areatrigger`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `scripted_areatrigger` (
   `entry` mediumint(8) NOT NULL,
-  `ScriptName` char(64) COLLATE utf8_unicode_ci NOT NULL,
+  `ScriptName` char(64) NOT NULL,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -30,7 +30,7 @@ CREATE TABLE `character_inventory` (
   `item_template` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Item Identifier',
   PRIMARY KEY (`item`),
   KEY `idx_guid` (`guid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

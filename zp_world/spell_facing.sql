@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `spell_facing`;
 CREATE TABLE `spell_facing` (
   `entry` int(11) NOT NULL DEFAULT '0' COMMENT 'Spell ID',
   `facingcasterflag` tinyint(1) NOT NULL DEFAULT '1' COMMENT 'flag for facing state, usually 1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

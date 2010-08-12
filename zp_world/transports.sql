@@ -24,10 +24,10 @@ DROP TABLE IF EXISTS `transports`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `transports` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `name` text COLLATE utf8_unicode_ci,
+  `name` text,
   `period` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Transports';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Transports';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

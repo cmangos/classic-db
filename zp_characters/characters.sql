@@ -25,8 +25,8 @@ DROP TABLE IF EXISTS `characters`;
 CREATE TABLE `characters` (
   `guid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier',
   `account` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Account Identifier',
-  `data` longtext COLLATE utf8_unicode_ci,
-  `name` varchar(12) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `data` longtext,
+  `name` varchar(12) NOT NULL DEFAULT '',
   `race` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `class` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `gender` tinyint(3) unsigned NOT NULL DEFAULT '0',
@@ -41,7 +41,7 @@ CREATE TABLE `characters` (
   `position_z` float NOT NULL DEFAULT '0',
   `map` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier',
   `orientation` float NOT NULL DEFAULT '0',
-  `taximask` longtext COLLATE utf8_unicode_ci,
+  `taximask` longtext,
   `online` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `cinematic` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `totaltime` int(11) unsigned NOT NULL DEFAULT '0',
@@ -61,20 +61,20 @@ CREATE TABLE `characters` (
   `at_login` int(11) unsigned NOT NULL DEFAULT '0',
   `zone` int(11) unsigned NOT NULL DEFAULT '0',
   `death_expire_time` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `taxi_path` text COLLATE utf8_unicode_ci,
+  `taxi_path` text,
   `honor_highest_rank` int(11) unsigned NOT NULL DEFAULT '0',
   `honor_standing` int(11) unsigned NOT NULL DEFAULT '0',
   `stored_honor_rating` float NOT NULL DEFAULT '0',
   `stored_dishonorable_kills` int(11) NOT NULL DEFAULT '0',
   `stored_honorable_kills` float NOT NULL DEFAULT '0',
   `deleteInfos_Account` int(11) unsigned DEFAULT NULL,
-  `deleteInfos_Name` varchar(12) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `deleteInfos_Name` varchar(12) DEFAULT NULL,
   `deleteDate` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`guid`),
   KEY `idx_account` (`account`),
   KEY `idx_online` (`online`),
   KEY `idx_name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

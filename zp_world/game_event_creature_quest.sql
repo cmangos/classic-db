@@ -27,7 +27,7 @@ CREATE TABLE `game_event_creature_quest` (
   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `event` smallint(5) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`quest`,`event`,`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

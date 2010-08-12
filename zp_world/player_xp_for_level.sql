@@ -26,7 +26,7 @@ CREATE TABLE `player_xp_for_level` (
   `lvl` int(3) unsigned NOT NULL,
   `xp_for_next_level` int(10) unsigned NOT NULL,
   PRIMARY KEY (`lvl`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -23,8 +23,8 @@ DROP TABLE IF EXISTS `sd0_db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sd0_db_version` (
-  `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT 'Database version string'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `version` varchar(255) NOT NULL DEFAULT '' COMMENT 'Database version string'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

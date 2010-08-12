@@ -34,7 +34,7 @@ CREATE TABLE `creature_onkill_reputation` (
   `RewOnKillRepValue2` mediumint(9) NOT NULL DEFAULT '0',
   `TeamDependent` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`creature_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Creature OnKill Reputation gain';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Creature OnKill Reputation gain';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

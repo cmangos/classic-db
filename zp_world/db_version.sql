@@ -23,10 +23,10 @@ DROP TABLE IF EXISTS `db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `db_version` (
-  `version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `creature_ai_version` varchar(120) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `version` varchar(120) DEFAULT NULL,
+  `creature_ai_version` varchar(120) DEFAULT NULL,
   `required_z0783_s0091_02_mangos_command` bit(1) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Used DB version notes';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

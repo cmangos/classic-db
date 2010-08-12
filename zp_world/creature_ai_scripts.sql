@@ -45,9 +45,9 @@ CREATE TABLE `creature_ai_scripts` (
   `action3_param1` int(11) NOT NULL DEFAULT '0',
   `action3_param2` int(11) NOT NULL DEFAULT '0',
   `action3_param3` int(11) NOT NULL DEFAULT '0',
-  `comment` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT 'Event Comment',
+  `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Event Comment',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1720932 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
+) ENGINE=MyISAM AUTO_INCREMENT=1720932 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

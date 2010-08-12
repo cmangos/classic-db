@@ -41,7 +41,7 @@ CREATE TABLE `groups` (
   `isRaid` tinyint(1) unsigned NOT NULL,
   PRIMARY KEY (`groupId`),
   UNIQUE KEY `leaderGuid` (`leaderGuid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Groups';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Groups';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

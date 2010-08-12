@@ -31,7 +31,7 @@ CREATE TABLE `corpse` (
   `orientation` float NOT NULL DEFAULT '0',
   `zone` int(11) unsigned NOT NULL DEFAULT '38' COMMENT 'Zone Identifier',
   `map` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier',
-  `data` longtext COLLATE utf8_unicode_ci,
+  `data` longtext,
   `time` bigint(20) unsigned NOT NULL DEFAULT '0',
   `corpse_type` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `instance` int(11) unsigned NOT NULL DEFAULT '0',
@@ -40,7 +40,7 @@ CREATE TABLE `corpse` (
   KEY `instance` (`instance`),
   KEY `Idx_player` (`player`),
   KEY `Idx_time` (`time`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Death System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Death System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

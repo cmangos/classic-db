@@ -25,11 +25,11 @@ DROP TABLE IF EXISTS `uptime`;
 CREATE TABLE `uptime` (
   `realmid` int(11) unsigned NOT NULL,
   `starttime` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `startstring` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `startstring` varchar(64) NOT NULL DEFAULT '',
   `uptime` bigint(20) unsigned NOT NULL DEFAULT '0',
   `maxplayers` smallint(5) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`realmid`,`starttime`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Uptime system';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Uptime system';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

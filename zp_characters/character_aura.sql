@@ -33,7 +33,7 @@ CREATE TABLE `character_aura` (
   `remaintime` int(11) NOT NULL DEFAULT '0',
   `remaincharges` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`caster_guid`,`spell`,`effect_index`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

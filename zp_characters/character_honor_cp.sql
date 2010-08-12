@@ -16,29 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `character_gifts`
+-- Table structure for table `character_honor_cp`
 --
 
-DROP TABLE IF EXISTS `character_gifts`;
+DROP TABLE IF EXISTS `character_honor_cp`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `character_gifts` (
-  `guid` int(20) unsigned NOT NULL DEFAULT '0',
-  `item_guid` int(11) unsigned NOT NULL DEFAULT '0',
-  `entry` int(20) unsigned NOT NULL DEFAULT '0',
-  `flags` int(20) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`item_guid`),
+CREATE TABLE `character_honor_cp` (
+  `guid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier',
+  `victim_type` tinyint(3) unsigned NOT NULL DEFAULT '4',
+  `victim` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Creature / Player Identifier',
+  `honor` float NOT NULL DEFAULT '0',
+  `date` int(11) unsigned NOT NULL DEFAULT '0',
+  `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
   KEY `idx_guid` (`guid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `character_gifts`
+-- Dumping data for table `character_honor_cp`
 --
 
-LOCK TABLES `character_gifts` WRITE;
-/*!40000 ALTER TABLE `character_gifts` DISABLE KEYS */;
-/*!40000 ALTER TABLE `character_gifts` ENABLE KEYS */;
+LOCK TABLES `character_honor_cp` WRITE;
+/*!40000 ALTER TABLE `character_honor_cp` DISABLE KEYS */;
+/*!40000 ALTER TABLE `character_honor_cp` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

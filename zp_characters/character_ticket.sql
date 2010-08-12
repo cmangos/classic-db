@@ -25,10 +25,10 @@ DROP TABLE IF EXISTS `character_ticket`;
 CREATE TABLE `character_ticket` (
   `ticket_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `guid` int(11) unsigned NOT NULL DEFAULT '0',
-  `ticket_text` text COLLATE utf8_unicode_ci,
+  `ticket_text` text,
   `ticket_lastchange` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`ticket_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

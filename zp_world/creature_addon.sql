@@ -30,9 +30,9 @@ CREATE TABLE `creature_addon` (
   `bytes2` int(10) unsigned NOT NULL DEFAULT '0',
   `emote` int(10) unsigned NOT NULL DEFAULT '0',
   `moveflags` int(10) unsigned NOT NULL DEFAULT '0',
-  `auras` text COLLATE utf8_unicode_ci,
+  `auras` text,
   PRIMARY KEY (`guid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

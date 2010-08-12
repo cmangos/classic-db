@@ -26,11 +26,11 @@ CREATE TABLE `instance` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
   `map` int(11) unsigned NOT NULL DEFAULT '0',
   `resettime` bigint(40) NOT NULL DEFAULT '0',
-  `data` longtext COLLATE utf8_unicode_ci,
+  `data` longtext,
   PRIMARY KEY (`id`),
   KEY `map` (`map`),
   KEY `resettime` (`resettime`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

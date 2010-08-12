@@ -26,7 +26,7 @@ CREATE TABLE `gossip_menu_option` (
   `menu_id` smallint(6) unsigned NOT NULL DEFAULT '0',
   `id` smallint(6) unsigned NOT NULL DEFAULT '0',
   `option_icon` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `option_text` text COLLATE utf8_unicode_ci,
+  `option_text` text,
   `option_id` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `npc_option_npcflag` int(10) unsigned NOT NULL DEFAULT '0',
   `action_menu_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -34,7 +34,7 @@ CREATE TABLE `gossip_menu_option` (
   `action_script_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `box_coded` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `box_money` int(11) unsigned NOT NULL DEFAULT '0',
-  `box_text` text COLLATE utf8_unicode_ci,
+  `box_text` text,
   `cond_1` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `cond_1_val_1` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `cond_1_val_2` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -45,7 +45,7 @@ CREATE TABLE `gossip_menu_option` (
   `cond_3_val_1` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `cond_3_val_2` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`menu_id`,`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -34,7 +34,7 @@ CREATE TABLE `creature_equip_template` (
   `equipslot2` int(11) NOT NULL DEFAULT '0',
   `equipslot3` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Creature System (Equipment)';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Creature System (Equipment)';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

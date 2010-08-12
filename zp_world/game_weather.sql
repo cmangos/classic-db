@@ -37,7 +37,7 @@ CREATE TABLE `game_weather` (
   `winter_snow_chance` tinyint(3) unsigned NOT NULL DEFAULT '25',
   `winter_storm_chance` tinyint(3) unsigned NOT NULL DEFAULT '25',
   PRIMARY KEY (`zone`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Weather System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Weather System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

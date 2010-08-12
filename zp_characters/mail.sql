@@ -29,7 +29,7 @@ CREATE TABLE `mail` (
   `mailTemplateId` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `sender` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier',
   `receiver` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier',
-  `subject` longtext COLLATE utf8_unicode_ci,
+  `subject` longtext,
   `itemTextId` int(11) unsigned NOT NULL DEFAULT '0',
   `has_items` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `expire_time` bigint(40) NOT NULL DEFAULT '0',
@@ -39,7 +39,7 @@ CREATE TABLE `mail` (
   `checked` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `idx_receiver` (`receiver`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Mail System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Mail System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

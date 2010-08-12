@@ -26,7 +26,7 @@ CREATE TABLE `spell_threat` (
   `entry` mediumint(8) unsigned NOT NULL,
   `Threat` smallint(6) NOT NULL,
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -35,7 +35,7 @@ CREATE TABLE `character_pet` (
   `loyaltypoints` int(11) NOT NULL DEFAULT '0',
   `loyalty` int(11) unsigned NOT NULL DEFAULT '0',
   `trainpoint` int(11) NOT NULL DEFAULT '0',
-  `name` varchar(100) COLLATE utf8_unicode_ci DEFAULT 'Pet',
+  `name` varchar(100) DEFAULT 'Pet',
   `renamed` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `slot` int(11) unsigned NOT NULL DEFAULT '0',
   `curhealth` int(11) unsigned NOT NULL DEFAULT '1',
@@ -44,11 +44,11 @@ CREATE TABLE `character_pet` (
   `savetime` bigint(20) unsigned NOT NULL DEFAULT '0',
   `resettalents_cost` int(11) unsigned NOT NULL DEFAULT '0',
   `resettalents_time` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `abdata` longtext COLLATE utf8_unicode_ci,
-  `teachspelldata` longtext COLLATE utf8_unicode_ci,
+  `abdata` longtext,
+  `teachspelldata` longtext,
   PRIMARY KEY (`id`),
   KEY `owner` (`owner`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Pet System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Pet System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

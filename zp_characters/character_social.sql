@@ -31,7 +31,7 @@ CREATE TABLE `character_social` (
   KEY `friend` (`friend`),
   KEY `guid_flags` (`guid`,`flags`),
   KEY `friend_flags` (`friend`,`flags`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

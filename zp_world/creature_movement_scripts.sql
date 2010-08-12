@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_characters
+-- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
 -- Server version	5.1.41-3ubuntu12.6
 
@@ -16,29 +16,36 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `character_gifts`
+-- Table structure for table `creature_movement_scripts`
 --
 
-DROP TABLE IF EXISTS `character_gifts`;
+DROP TABLE IF EXISTS `creature_movement_scripts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `character_gifts` (
-  `guid` int(20) unsigned NOT NULL DEFAULT '0',
-  `item_guid` int(11) unsigned NOT NULL DEFAULT '0',
-  `entry` int(20) unsigned NOT NULL DEFAULT '0',
-  `flags` int(20) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`item_guid`),
-  KEY `idx_guid` (`guid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `creature_movement_scripts` (
+  `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `delay` int(10) unsigned NOT NULL DEFAULT '0',
+  `command` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `datalong` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `datalong2` int(10) unsigned NOT NULL DEFAULT '0',
+  `datalong3` int(10) unsigned NOT NULL DEFAULT '0',
+  `datalong4` int(10) unsigned NOT NULL DEFAULT '0',
+  `data_flags` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `dataint` int(11) NOT NULL DEFAULT '0',
+  `x` float NOT NULL DEFAULT '0',
+  `y` float NOT NULL DEFAULT '0',
+  `z` float NOT NULL DEFAULT '0',
+  `o` float NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `character_gifts`
+-- Dumping data for table `creature_movement_scripts`
 --
 
-LOCK TABLES `character_gifts` WRITE;
-/*!40000 ALTER TABLE `character_gifts` DISABLE KEYS */;
-/*!40000 ALTER TABLE `character_gifts` ENABLE KEYS */;
+LOCK TABLES `creature_movement_scripts` WRITE;
+/*!40000 ALTER TABLE `creature_movement_scripts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `creature_movement_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

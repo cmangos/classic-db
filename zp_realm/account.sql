@@ -24,15 +24,15 @@ DROP TABLE IF EXISTS `account`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `account` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
-  `username` varchar(32) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `sha_pass_hash` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `username` varchar(32) NOT NULL DEFAULT '',
+  `sha_pass_hash` varchar(40) NOT NULL DEFAULT '',
   `gmlevel` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `sessionkey` longtext COLLATE utf8_unicode_ci,
-  `v` longtext COLLATE utf8_unicode_ci,
-  `s` longtext COLLATE utf8_unicode_ci,
-  `email` text COLLATE utf8_unicode_ci,
+  `sessionkey` longtext,
+  `v` longtext,
+  `s` longtext,
+  `email` text,
   `joindate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `last_ip` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0.0.0.0',
+  `last_ip` varchar(30) NOT NULL DEFAULT '0.0.0.0',
   `failed_logins` int(11) unsigned NOT NULL DEFAULT '0',
   `locked` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `last_login` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -43,7 +43,7 @@ CREATE TABLE `account` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `idx_username` (`username`),
   KEY `idx_gmlevel` (`gmlevel`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Account System';
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Account System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

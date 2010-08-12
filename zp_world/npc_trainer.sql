@@ -30,7 +30,7 @@ CREATE TABLE `npc_trainer` (
   `reqskillvalue` smallint(5) unsigned NOT NULL DEFAULT '0',
   `reqlevel` tinyint(3) unsigned NOT NULL DEFAULT '0',
   UNIQUE KEY `entry_spell` (`entry`,`spell`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

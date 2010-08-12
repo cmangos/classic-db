@@ -38,7 +38,7 @@ CREATE TABLE `character_queststatus` (
   `itemcount3` int(11) unsigned NOT NULL DEFAULT '0',
   `itemcount4` int(11) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`quest`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

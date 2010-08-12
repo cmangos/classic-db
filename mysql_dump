@@ -30,6 +30,7 @@ dump_data zp_characters character_aura
 dump_data zp_characters character_db_version
 dump_data zp_characters character_gifts
 dump_data zp_characters character_homebind
+dump_data zp_characters character_honor_cp
 dump_data zp_characters character_inventory
 dump_data zp_characters character_pet
 dump_data zp_characters character_queststatus
@@ -89,6 +90,7 @@ dump_data zp_world creature_involvedrelation
 dump_data zp_world creature_loot_template
 dump_data zp_world creature_model_info
 dump_data zp_world creature_movement
+dump_data zp_world creature_movement_scripts
 dump_data zp_world creature_onkill_reputation
 dump_data zp_world creature_questrelation
 dump_data zp_world creature_template

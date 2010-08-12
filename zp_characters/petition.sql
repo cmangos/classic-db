@@ -25,10 +25,10 @@ DROP TABLE IF EXISTS `petition`;
 CREATE TABLE `petition` (
   `ownerguid` int(10) unsigned NOT NULL,
   `petitionguid` int(10) unsigned DEFAULT '0',
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`ownerguid`),
   UNIQUE KEY `index_ownerguid_petitionguid` (`ownerguid`,`petitionguid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Guild System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Guild System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

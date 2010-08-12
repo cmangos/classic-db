@@ -35,7 +35,7 @@ CREATE TABLE `character_tutorial` (
   `tut7` int(11) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`account`,`realmid`),
   KEY `acc_key` (`account`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

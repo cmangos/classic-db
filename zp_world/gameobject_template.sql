@@ -26,7 +26,7 @@ CREATE TABLE `gameobject_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `displayId` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(100) NOT NULL DEFAULT '',
   `faction` smallint(5) unsigned NOT NULL DEFAULT '0',
   `flags` int(10) unsigned NOT NULL DEFAULT '0',
   `size` float NOT NULL DEFAULT '1',
@@ -56,9 +56,9 @@ CREATE TABLE `gameobject_template` (
   `data23` int(10) unsigned NOT NULL DEFAULT '0',
   `mingold` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `maxgold` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `ScriptName` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `ScriptName` varchar(64) NOT NULL DEFAULT '',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Gameobject System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gameobject System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

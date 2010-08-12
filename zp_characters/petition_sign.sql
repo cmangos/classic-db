@@ -30,7 +30,7 @@ CREATE TABLE `petition_sign` (
   PRIMARY KEY (`petitionguid`,`playerguid`),
   KEY `Idx_playerguid` (`playerguid`),
   KEY `Idx_ownerguid` (`ownerguid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Guild System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Guild System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
