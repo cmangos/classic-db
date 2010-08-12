@@ -37,12 +37,6 @@ CREATE TABLE `character_action` (
 
 LOCK TABLES `character_action` WRITE;
 /*!40000 ALTER TABLE `character_action` DISABLE KEYS */;
-INSERT INTO `character_action` VALUES
-(1,72,6603,0),
-(1,73,78,0),
-(1,74,20594,0),
-(1,75,2481,0),
-(1,83,117,128);
 /*!40000 ALTER TABLE `character_action` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
