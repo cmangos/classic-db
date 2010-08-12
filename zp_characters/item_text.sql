@@ -28,6 +28,15 @@ CREATE TABLE `item_text` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED COMMENT='Item System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `item_text`
+--
+
+LOCK TABLES `item_text` WRITE;
+/*!40000 ALTER TABLE `item_text` DISABLE KEYS */;
+/*!40000 ALTER TABLE `item_text` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

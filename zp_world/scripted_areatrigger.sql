@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_characters
+-- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
 -- Server version	5.1.41-3ubuntu12.6
 
@@ -16,33 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `character_aura`
+-- Table structure for table `scripted_areatrigger`
 --
 
-DROP TABLE IF EXISTS `character_aura`;
+DROP TABLE IF EXISTS `scripted_areatrigger`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `character_aura` (
-  `guid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier',
-  `caster_guid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Full Global Unique Identifier',
-  `spell` int(11) unsigned NOT NULL DEFAULT '0',
-  `effect_index` int(11) unsigned NOT NULL DEFAULT '0',
-  `stackcount` int(11) NOT NULL DEFAULT '1',
-  `amount` int(11) NOT NULL DEFAULT '0',
-  `maxduration` int(11) NOT NULL DEFAULT '0',
-  `remaintime` int(11) NOT NULL DEFAULT '0',
-  `remaincharges` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`guid`,`caster_guid`,`spell`,`effect_index`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='Player System';
+CREATE TABLE `scripted_areatrigger` (
+  `entry` mediumint(8) NOT NULL,
+  `ScriptName` char(64) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`entry`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `character_aura`
+-- Dumping data for table `scripted_areatrigger`
 --
 
-LOCK TABLES `character_aura` WRITE;
-/*!40000 ALTER TABLE `character_aura` DISABLE KEYS */;
-/*!40000 ALTER TABLE `character_aura` ENABLE KEYS */;
+LOCK TABLES `scripted_areatrigger` WRITE;
+/*!40000 ALTER TABLE `scripted_areatrigger` DISABLE KEYS */;
+INSERT INTO `scripted_areatrigger` VALUES
+(522,'at_twiggy_flathead'),
+(1526,'at_ring_of_law'),
+(3066,'at_ravenholdt'),
+(4016,'at_shade_of_eranikus'),
+(4112,'at_naxxramas');
+/*!40000 ALTER TABLE `scripted_areatrigger` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

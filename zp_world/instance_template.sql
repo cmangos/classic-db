@@ -32,7 +32,7 @@ CREATE TABLE `instance_template` (
   `ghostEntranceMap` smallint(5) NOT NULL DEFAULT '-1',
   `ghostEntranceX` float NOT NULL DEFAULT '0',
   `ghostEntranceY` float NOT NULL DEFAULT '0',
-  `script` varchar(128) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `ScriptName` varchar(128) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`map`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;

@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_characters
+-- Host: localhost    Database: zp_scripts
 -- ------------------------------------------------------
 -- Server version	5.1.41-3ubuntu12.6
 
@@ -16,29 +16,36 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `auctionhouse`
+-- Table structure for table `gossip_texts`
 --
 
-DROP TABLE IF EXISTS `auctionhouse`;
+DROP TABLE IF EXISTS `gossip_texts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `auctionhouse` (
-  `id` int(11) unsigned NOT NULL DEFAULT '0',
-  `auctioneerguid` int(11) unsigned NOT NULL DEFAULT '0',
-  `itemguid` int(11) unsigned NOT NULL DEFAULT '0',
-  `item_template` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Item Identifier',
-  `itemowner` int(11) unsigned NOT NULL DEFAULT '0',
-  `buyoutprice` int(11) NOT NULL DEFAULT '0',
-  `time` bigint(40) NOT NULL DEFAULT '0',
-  `buyguid` int(11) unsigned NOT NULL DEFAULT '0',
-  `lastbid` int(11) NOT NULL DEFAULT '0',
-  `startbid` int(11) NOT NULL DEFAULT '0',
-  `deposit` int(11) NOT NULL DEFAULT '0',
-  `location` tinyint(3) unsigned NOT NULL DEFAULT '3',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `item_guid` (`itemguid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+CREATE TABLE `gossip_texts` (
+  `entry` mediumint(8) NOT NULL,
+  `content_default` text NOT NULL,
+  `content_loc1` text,
+  `content_loc2` text,
+  `content_loc3` text,
+  `content_loc4` text,
+  `content_loc5` text,
+  `content_loc6` text,
+  `content_loc7` text,
+  `content_loc8` text,
+  `comment` text,
+  PRIMARY KEY (`entry`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gossip Texts';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `gossip_texts`
+--
+
+LOCK TABLES `gossip_texts` WRITE;
+/*!40000 ALTER TABLE `gossip_texts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `gossip_texts` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
