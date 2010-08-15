@@ -231,7 +231,6 @@ INSERT INTO `playercreateinfo_action` VALUES
 (8,8,0,6603,0),
 (8,7,11,117,128),
 (8,7,10,159,128),
-(8,7,3,20544,0),
 (8,7,2,331,0),
 (8,7,1,403,0),
 (8,7,0,6603,0),
@@ -255,7 +254,6 @@ INSERT INTO `playercreateinfo_action` VALUES
 (8,1,72,6603,0),
 (8,5,10,159,128),
 (8,4,3,2764,0),
-(8,3,3,20544,0),
 (8,1,74,2764,0);
 /*!40000 ALTER TABLE `playercreateinfo_action` ENABLE KEYS */;
 UNLOCK TABLES;

@@ -34,8 +34,6 @@ CREATE TABLE `saved_variables` (
 
 LOCK TABLES `saved_variables` WRITE;
 /*!40000 ALTER TABLE `saved_variables` DISABLE KEYS */;
-INSERT INTO `saved_variables` VALUES
-(7209189,0);
 /*!40000 ALTER TABLE `saved_variables` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

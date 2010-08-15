@@ -186,7 +186,6 @@ INSERT INTO `command` VALUES
 ('modify drunk',1,'Syntax: .modify drunk #value Set drunk level to #value (0..100). Value 0 remove drunk state, 100 is max drunked state.'),
 ('modify energy',1,'Syntax: .modify energy #energyModify the energy of the selected player. If no player is selected, modify your energy.'),
 ('modify faction',1,'Syntax: .modify faction #factionid #flagid #npcflagid #dynamicflagidModify the faction and flags of the selected creature. Without arguments, display the faction and flags of the selected creature.'),
-('modify fly',1,'Syntax: .modify fly #rate\r\n\r\nModify the flying speed of the selected player to \"normal base fly speed\"*rate. If no player is selected, modify your fly.\r\n\r\n #rate may range from 0.1 to 10.'),
 ('modify gender',2,'Syntax: .modify gender male/femaleChange gender of selected player.'),
 ('modify honor',2,'Syntax: .modify honor $field $valueAdd $value to an honor $field (it\'s just for debug , values won\'t be saved at player logout)Field list: points / rank / todaykills / yesterdaykills / yesterdayhonor /thisweekkills / thisweekhonor / lastweekkills / lastweekhonor /lastweekstanding / lifetimedishonorablekills / lifetimehonorablekills '),
 ('modify hp',1,'Syntax: .modify hp #newhpModify the hp of the selected player. If no player is selected, modify your hp.'),
