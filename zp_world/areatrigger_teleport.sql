@@ -35,11 +35,7 @@ CREATE TABLE `areatrigger_teleport` (
   `target_position_y` float NOT NULL DEFAULT '0',
   `target_position_z` float NOT NULL DEFAULT '0',
   `target_orientation` float NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `fk_areatrigger_teleport_req_item1` (`required_item`),
-  KEY `fk_areatrigger_teleport_req_item2` (`required_item2`),
-  CONSTRAINT `fk_areatrigger_teleport_req_item1` FOREIGN KEY (`required_item`) REFERENCES `item_template` (`entry`) ON UPDATE CASCADE,
-  CONSTRAINT `fk_areatrigger_teleport_req_item2` FOREIGN KEY (`required_item2`) REFERENCES `item_template` (`entry`) ON UPDATE CASCADE
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 

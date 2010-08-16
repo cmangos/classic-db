@@ -31,9 +31,7 @@ CREATE TABLE `creature_addon` (
   `emote` int(10) unsigned NOT NULL DEFAULT '0',
   `moveflags` int(10) unsigned NOT NULL DEFAULT '0',
   `auras` text,
-  PRIMARY KEY (`guid`),
-  KEY `fk_creature_addon_guid` (`guid`),
-  CONSTRAINT `fk_creature_addon_guid` FOREIGN KEY (`guid`) REFERENCES `creature` (`guid`) ON UPDATE CASCADE
+  PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

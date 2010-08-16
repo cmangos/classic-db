@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `realmcharacters`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `realmcharacters` (
   `realmid` int(11) unsigned NOT NULL DEFAULT '0',
-  `acctid` bigint(20) unsigned NOT NULL,
+  `acctid` int(11) unsigned NOT NULL,
   `numchars` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`realmid`,`acctid`),
   KEY `acctid` (`acctid`)

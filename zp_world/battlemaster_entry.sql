@@ -25,11 +25,7 @@ DROP TABLE IF EXISTS `battlemaster_entry`;
 CREATE TABLE `battlemaster_entry` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Entry of a creature',
   `bg_template` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Battleground template id',
-  PRIMARY KEY (`entry`),
-  KEY `fk_battlemaster_entry` (`entry`),
-  KEY `fk_battlemaster_template` (`bg_template`),
-  CONSTRAINT `fk_battlemaster_entry` FOREIGN KEY (`entry`) REFERENCES `creature_template` (`entry`) ON UPDATE CASCADE,
-  CONSTRAINT `fk_battlemaster_template` FOREIGN KEY (`bg_template`) REFERENCES `battleground_template` (`id`) ON UPDATE CASCADE
+  PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -41,29 +37,29 @@ LOCK TABLES `battlemaster_entry` WRITE;
 /*!40000 ALTER TABLE `battlemaster_entry` DISABLE KEYS */;
 INSERT INTO `battlemaster_entry` VALUES
 (347,1),
-(5118,1),
-(7410,1),
-(7427,1),
-(12197,1),
-(14942,1),
-(15103,1),
-(15106,1),
+(857,3),
+(907,3),
 (2302,2),
 (2804,2),
 (3890,2),
+(5118,1),
+(7410,1),
+(7427,1),
 (10360,2),
+(12197,1),
+(12198,3),
+(14942,1),
 (14981,2),
 (14982,2),
-(15102,2),
-(15105,2),
-(857,3),
-(907,3),
-(12198,3),
 (14990,3),
 (14991,3),
 (15006,3),
 (15007,3),
-(15008,3);
+(15008,3),
+(15102,2),
+(15103,1),
+(15105,2),
+(15106,1);
 /*!40000 ALTER TABLE `battlemaster_entry` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
