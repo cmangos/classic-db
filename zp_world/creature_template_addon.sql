@@ -31,7 +31,9 @@ CREATE TABLE `creature_template_addon` (
   `emote` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `moveflags` int(10) unsigned NOT NULL DEFAULT '0',
   `auras` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`entry`),
+  KEY `fk_creature_template_addon_entry` (`entry`),
+  CONSTRAINT `fk_creature_template_addon_entry` FOREIGN KEY (`entry`) REFERENCES `creature_template` (`entry`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

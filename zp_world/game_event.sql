@@ -65,7 +65,8 @@ INSERT INTO `game_event` VALUES
 (29,'2006-01-23 23:00:00','2020-12-31 22:59:59',86400,21600,'Edge of Madness, Gri\'lek'),
 (30,'2006-01-06 23:00:00','2020-12-31 22:59:59',86400,21600,'Edge of Madness, Hazza\'rah'),
 (31,'2006-01-20 23:00:00','2020-12-31 22:59:59',86400,21600,'Edge of Madness, Renataki'),
-(32,'2006-01-04 23:00:00','2020-12-31 22:59:59',86400,21600,'Edge of Madness, Wushoolay');
+(32,'2006-01-04 23:00:00','2020-12-31 22:59:59',86400,21600,'Edge of Madness, Wushoolay'),
+(33,'2006-10-05 22:00:00','2020-10-05 22:00:00',525600,10080,'Harvest Festival');
 /*!40000 ALTER TABLE `game_event` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

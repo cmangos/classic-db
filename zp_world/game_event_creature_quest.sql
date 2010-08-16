@@ -39,6 +39,8 @@ LOCK TABLES `game_event_creature_quest` WRITE;
 INSERT INTO `game_event_creature_quest` VALUES
 (14451,172,10),
 (14450,1468,10),
+(15011,8149,33),
+(15012,8150,33),
 (6740,8356,12),
 (15708,8795,22),
 (5204,8980,8),

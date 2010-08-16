@@ -25,7 +25,9 @@ DROP TABLE IF EXISTS `areatrigger_involvedrelation`;
 CREATE TABLE `areatrigger_involvedrelation` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `fk_areatrigger_involvedrelation_quest` (`quest`),
+  CONSTRAINT `fk_areatrigger_involvedrelation_quest` FOREIGN KEY (`quest`) REFERENCES `quest_template` (`entry`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -36,9 +38,10 @@ CREATE TABLE `areatrigger_involvedrelation` (
 LOCK TABLES `areatrigger_involvedrelation` WRITE;
 /*!40000 ALTER TABLE `areatrigger_involvedrelation` DISABLE KEYS */;
 INSERT INTO `areatrigger_involvedrelation` VALUES
-(78,155),
-(87,76),
+(2926,25),
 (88,62),
+(87,76),
+(78,155),
 (98,201),
 (169,287),
 (175,455),
@@ -57,11 +60,10 @@ INSERT INTO `areatrigger_involvedrelation` VALUES
 (522,1719),
 (1205,2989),
 (1388,3505),
-(2327,4842),
 (2486,4811),
-(2926,25),
-(2946,6421),
+(2327,4842),
 (3367,6025),
+(2946,6421),
 (3986,8286);
 /*!40000 ALTER TABLE `areatrigger_involvedrelation` ENABLE KEYS */;
 UNLOCK TABLES;
