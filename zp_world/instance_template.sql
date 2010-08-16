@@ -34,7 +34,7 @@ CREATE TABLE `instance_template` (
   `ghostEntranceY` float NOT NULL DEFAULT '0',
   `ScriptName` varchar(128) NOT NULL DEFAULT '',
   PRIMARY KEY (`map`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

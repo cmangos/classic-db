@@ -29,7 +29,7 @@ CREATE TABLE `petcreateinfo_spell` (
   `Spell3` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `Spell4` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Pet Create Spells';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Pet Create Spells';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

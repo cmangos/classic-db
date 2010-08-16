@@ -28,7 +28,7 @@ CREATE TABLE `playercreateinfo_spell` (
   `Spell` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `Note` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`race`,`class`,`Spell`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -109,12 +109,12 @@ INSERT INTO `playercreateinfo_spell` VALUES
 (1,2,9078,'Cloth'),
 (1,2,9116,'Shield'),
 (1,2,9125,'Generic'),
-(1,2,21084,'Seal of Righteousness'),
 (1,2,20597,'Sword Specialization'),
 (1,2,20598,'The Human Spirit'),
 (1,2,20599,'Diplomacy'),
 (1,2,20600,'Perception'),
 (1,2,20864,'Mace Specialization'),
+(1,2,21084,'Seal of Righteousness'),
 (1,2,21651,'Opening'),
 (1,2,21652,'Closing'),
 (1,2,22027,'Remove Insignia'),
@@ -406,6 +406,7 @@ INSERT INTO `playercreateinfo_spell` VALUES
 (2,7,9078,'Cloth'),
 (2,7,9116,'Shield'),
 (2,7,9125,'Generic'),
+(2,7,20572,'Blood Fury'),
 (2,7,20573,'Hardiness'),
 (2,7,20574,'Axe Specialization'),
 (2,7,21563,'Command'),
@@ -414,7 +415,6 @@ INSERT INTO `playercreateinfo_spell` VALUES
 (2,7,22027,'Remove Insignia'),
 (2,7,22810,'Opening - No Text'),
 (2,7,27763,'Totem'),
-(2,7,20572,'Blood Fury'),
 (2,9,81,'Dodge'),
 (2,9,203,'Unarmed'),
 (2,9,204,'Defense'),
@@ -441,6 +441,7 @@ INSERT INTO `playercreateinfo_spell` VALUES
 (2,9,8386,'Attacking'),
 (2,9,9078,'Cloth'),
 (2,9,9125,'Generic'),
+(2,9,20572,'Blood Fury'),
 (2,9,20573,'Hardiness'),
 (2,9,20574,'Axe Specialization'),
 (2,9,20575,'Command'),
@@ -448,7 +449,6 @@ INSERT INTO `playercreateinfo_spell` VALUES
 (2,9,21652,'Closing'),
 (2,9,22027,'Remove Insignia'),
 (2,9,22810,'Opening - No Text'),
-(2,9,20572,'Blood Fury'),
 (3,1,78,'Heroic Strike'),
 (3,1,81,'Dodge'),
 (3,1,107,'Block'),
@@ -522,10 +522,10 @@ INSERT INTO `playercreateinfo_spell` VALUES
 (3,2,9078,'Cloth'),
 (3,2,9116,'Shield'),
 (3,2,9125,'Generic'),
-(3,2,21084,'Seal of Righteousness'),
 (3,2,20594,'Stoneform'),
 (3,2,20595,'Gun Specialization'),
 (3,2,20596,'Frost Resistance'),
+(3,2,21084,'Seal of Righteousness'),
 (3,2,21651,'Opening'),
 (3,2,21652,'Closing'),
 (3,2,22027,'Remove Insignia'),

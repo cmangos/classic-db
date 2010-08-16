@@ -26,7 +26,7 @@ CREATE TABLE `scripted_event_id` (
   `id` mediumint(8) NOT NULL,
   `ScriptName` char(64) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Script library scripted events';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Script library scripted events';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -28,7 +28,7 @@ CREATE TABLE `battleground_events` (
   `event2` tinyint(3) unsigned NOT NULL,
   `description` varchar(255) NOT NULL,
   PRIMARY KEY (`map`,`event1`,`event2`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,6 @@ CREATE TABLE `battleground_events` (
 LOCK TABLES `battleground_events` WRITE;
 /*!40000 ALTER TABLE `battleground_events` DISABLE KEYS */;
 INSERT INTO `battleground_events` VALUES
-(30,254,0,'Doors'),
 (30,0,0,'Firstaid Station - Alliance assaulted'),
 (30,0,1,'Firstaid Station - ALliance control'),
 (30,0,2,'Firstaid Station - Horde assaulted'),
@@ -175,6 +174,7 @@ INSERT INTO `battleground_events` VALUES
 (30,62,0,'Horde - Boss'),
 (30,63,0,'Alliance - Captain Dead'),
 (30,64,0,'Horde - Captain Dead'),
+(30,254,0,'Doors'),
 (489,0,0,'Alliance Flag'),
 (489,1,0,'Horde Flag'),
 (489,2,0,'Spirit Guides'),

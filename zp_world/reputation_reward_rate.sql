@@ -28,7 +28,7 @@ CREATE TABLE `reputation_reward_rate` (
   `creature_rate` float NOT NULL DEFAULT '1',
   `spell_rate` float NOT NULL DEFAULT '1',
   PRIMARY KEY (`faction`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -33,7 +33,7 @@ CREATE TABLE `fishing_loot_template` (
   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`item`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Loot System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Loot System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -53,8 +53,8 @@ INSERT INTO `fishing_loot_template` VALUES
 (300,16970,-20,0,1,1,0,0,0),
 (301,16969,-20,0,1,1,0,0,0),
 (367,11000,100,1,-11000,1,0,0,0),
-(382,11101,100,1,-11101,1,0,0,0),
 (382,6651,0.1,0,1,1,0,0,0),
+(382,11101,100,1,-11101,1,0,0,0),
 (386,11102,100,1,-11102,1,0,0,0),
 (387,11102,100,1,-11102,1,0,0,0),
 (388,11102,100,1,-11102,1,0,0,0),
