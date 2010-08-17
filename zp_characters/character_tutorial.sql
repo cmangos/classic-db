@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `character_tutorial`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `character_tutorial` (
-  `account` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Account Identifier',
+  `account` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Account Identifier',
   `realmid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Realm Identifier',
   `tut0` int(11) unsigned NOT NULL DEFAULT '0',
   `tut1` int(11) unsigned NOT NULL DEFAULT '0',

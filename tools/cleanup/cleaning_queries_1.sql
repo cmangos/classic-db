@@ -104,57 +104,57 @@ BEGIN
       INTO  entries;
 
       -- start to find entries[i] in all loot_tables ( also self )
-	
+
 	SET @temp := ( SELECT DISTINCT(`mincountorref`)  FROM `reference_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries );
-	
+
 	IF @temp<>0 THEN
 	 SET ok = TRUE;
 	END IF;
 
-	
+
 	IF NOT ok THEN
           SET @temp := ( SELECT DISTINCT(`mincountorref`) FROM `item_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries);
 	  IF @temp<>0 THEN
 	      SET ok = TRUE;
 	  END IF;
         END IF;
-	
-	
+
+
 	IF NOT ok THEN
           SET @temp := ( SELECT DISTINCT(`mincountorref`) FROM `creature_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries);
 	  IF @temp<>0 THEN
 	      SET ok = TRUE;
 	  END IF;
 	END IF;
-	
+
 	IF NOT ok THEN
           SET @temp := ( SELECT DISTINCT(`mincountorref`) FROM `gameobject_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries);
 	  IF @temp<>0 THEN
 	      SET ok = TRUE;
 	  END IF;
 	END IF;
-	
+
 	IF NOT ok THEN
           SET @temp := ( SELECT DISTINCT(`mincountorref`) FROM `disenchant_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries);
           IF @temp<>0 THEN
 	      SET ok = TRUE;
 	  END IF;
         END IF;
-	
+
 	IF NOT ok THEN
           SET @temp := ( SELECT DISTINCT(`mincountorref`) FROM `skinning_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries);
           IF @temp<>0 THEN
 	      SET ok = TRUE;
 	  END IF;
         END IF;
-	
+
 	IF NOT ok THEN
           SET @temp := ( SELECT DISTINCT(`mincountorref`) FROM `fishing_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries);
           IF @temp<>0 THEN
 	      SET ok = TRUE;
 	  END IF;
         END IF;
-	
+
 	IF NOT ok THEN
           SET @temp := ( SELECT DISTINCT(`mincountorref`) FROM `pickpocketing_loot_template` WHERE mincountorref<0 AND `mincountorref`=entries);
           IF @temp<>0 THEN
@@ -171,7 +171,7 @@ BEGIN
 
      -- next
 	SET i = i+1;
-	
+
   END WHILE;
 
   CLOSE reference_loot;
@@ -301,8 +301,6 @@ DELETE FROM `gameobject_scripts` WHERE `command` IN (11, 12) AND `datalong` NOT 
 -- ##########################################
 
 
-
-
 -- ##########################################
 -- quest tables:
 -- ##########################################
@@ -380,3 +378,4 @@ DELETE FROM `game_event_creature` WHERE `guid` NOT IN (SELECT `guid` FROM `creat
 DELETE FROM `creature_questrelation` WHERE `id` NOT IN (SELECT `entry` FROM `creature_template`);
 DELETE FROM `creature_onkill_reputation` WHERE `creature_id` NOT IN (SELECT `entry` FROM `creature_template`);
 UPDATE `creature_template` SET `npcflag`=`npcflag`|2 WHERE `entry` IN (SELECT `id` FROM `creature_questrelation` UNION SELECT `id` FROM `creature_involvedrelation`);
+
