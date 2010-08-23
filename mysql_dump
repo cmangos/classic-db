@@ -63,13 +63,6 @@ dump_data zp_realm realmd_db_version
 dump_data zp_realm realmlist
 
 #
-# ZeroProject data tables: zp_scripts
-#
-dump_data zp_scripts script_texts
-dump_data zp_scripts script_waypoint
-dump_data zp_scripts sd0_db_version
-
-#
 # ZeroProject data tables: zp_world
 #
 dump_data zp_world areatrigger_involvedrelation
@@ -149,6 +142,9 @@ dump_data zp_world reputation_reward_rate
 dump_data zp_world reputation_spillover_template
 dump_data zp_world scripted_areatrigger
 dump_data zp_world scripted_event_id
+dump_data zp_world script_texts
+dump_data zp_world script_waypoint
+dump_data zp_world sd0_db_version
 dump_data zp_world skill_fishing_base_level
 dump_data zp_world skinning_loot_template
 dump_data zp_world spell_affect
@@ -162,12 +158,6 @@ dump_data zp_world spell_script_target
 dump_data zp_world spell_target_position
 dump_data zp_world spell_threat
 dump_data zp_world transports
-
-#
-# Empty ZeroProject tables: zp_scripts
-#
-dump_data zp_scripts custom_texts
-dump_data zp_scripts gossip_texts
 
 #
 # Empty ZeroProject tables: zp_characters
@@ -196,7 +186,9 @@ dump_struc zp_realm uptime
 # Empty ZeroProject tables: zp_world
 #
 dump_struc zp_world creature_respawn
+dump_struc zp_world custom_texts
 dump_struc zp_world gameobject_respawn
+dump_struc zp_world gossip_texts
 dump_struc zp_world locales_creature
 dump_struc zp_world locales_gameobject
 dump_struc zp_world locales_gossip_menu_option

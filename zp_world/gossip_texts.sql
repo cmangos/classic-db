@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_scripts
+-- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
 -- Server version	5.1.41-3ubuntu12.6
 
@@ -16,27 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `sd0_db_version`
+-- Table structure for table `gossip_texts`
 --
 
-DROP TABLE IF EXISTS `sd0_db_version`;
+DROP TABLE IF EXISTS `gossip_texts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `sd0_db_version` (
-  `version` varchar(255) NOT NULL DEFAULT '' COMMENT 'Database version string'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `gossip_texts` (
+  `entry` mediumint(8) NOT NULL,
+  `content_default` text NOT NULL,
+  `content_loc1` text,
+  `content_loc2` text,
+  `content_loc3` text,
+  `content_loc4` text,
+  `content_loc5` text,
+  `content_loc6` text,
+  `content_loc7` text,
+  `content_loc8` text,
+  `comment` text,
+  PRIMARY KEY (`entry`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gossip Texts';
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `sd0_db_version`
---
-
-LOCK TABLES `sd0_db_version` WRITE;
-/*!40000 ALTER TABLE `sd0_db_version` DISABLE KEYS */;
-INSERT INTO `sd0_db_version` VALUES
-(' ScriptDevZero (for MangosZero rev. 0771+) ');
-/*!40000 ALTER TABLE `sd0_db_version` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

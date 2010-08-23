@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_scripts
+-- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
 -- Server version	5.1.41-3ubuntu12.6
 
@@ -16,39 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `custom_texts`
+-- Table structure for table `sd0_db_version`
 --
 
-DROP TABLE IF EXISTS `custom_texts`;
+DROP TABLE IF EXISTS `sd0_db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `custom_texts` (
-  `entry` mediumint(8) NOT NULL,
-  `content_default` text NOT NULL,
-  `content_loc1` text,
-  `content_loc2` text,
-  `content_loc3` text,
-  `content_loc4` text,
-  `content_loc5` text,
-  `content_loc6` text,
-  `content_loc7` text,
-  `content_loc8` text,
-  `sound` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `language` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `emote` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `comment` text,
-  PRIMARY KEY (`entry`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Custom Texts';
+CREATE TABLE `sd0_db_version` (
+  `version` varchar(255) NOT NULL DEFAULT '' COMMENT 'Database version string'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `custom_texts`
+-- Dumping data for table `sd0_db_version`
 --
 
-LOCK TABLES `custom_texts` WRITE;
-/*!40000 ALTER TABLE `custom_texts` DISABLE KEYS */;
-/*!40000 ALTER TABLE `custom_texts` ENABLE KEYS */;
+LOCK TABLES `sd0_db_version` WRITE;
+/*!40000 ALTER TABLE `sd0_db_version` DISABLE KEYS */;
+INSERT INTO `sd0_db_version` VALUES
+(' ScriptDevZero (for MangosZero rev. 0771+) ');
+/*!40000 ALTER TABLE `sd0_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
