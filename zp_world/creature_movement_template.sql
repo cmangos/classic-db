@@ -16,28 +16,42 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `db_version`
+-- Table structure for table `creature_movement_template`
 --
 
-DROP TABLE IF EXISTS `db_version`;
+DROP TABLE IF EXISTS `creature_movement_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `db_version` (
-  `version` varchar(120) DEFAULT NULL,
-  `creature_ai_version` varchar(120) DEFAULT NULL,
-  `required_z0817_xxxxx_01_mangos_game_event` bit(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
+CREATE TABLE `creature_movement_template` (
+  `entry` mediumint(8) unsigned NOT NULL COMMENT 'Creature entry',
+  `point` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `position_x` float NOT NULL DEFAULT '0',
+  `position_y` float NOT NULL DEFAULT '0',
+  `position_z` float NOT NULL DEFAULT '0',
+  `waittime` int(10) unsigned NOT NULL DEFAULT '0',
+  `script_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `textid1` int(11) NOT NULL DEFAULT '0',
+  `textid2` int(11) NOT NULL DEFAULT '0',
+  `textid3` int(11) NOT NULL DEFAULT '0',
+  `textid4` int(11) NOT NULL DEFAULT '0',
+  `textid5` int(11) NOT NULL DEFAULT '0',
+  `emote` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `spell` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `wpguid` int(11) NOT NULL DEFAULT '0',
+  `orientation` float NOT NULL DEFAULT '0',
+  `model1` mediumint(9) NOT NULL DEFAULT '0',
+  `model2` mediumint(9) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`entry`,`point`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature waypoint system';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `db_version`
+-- Dumping data for table `creature_movement_template`
 --
 
-LOCK TABLES `db_version` WRITE;
-/*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` VALUES
-('ZDB 0.2.0 (003) for MaNGOSZero 0380 with SD0 SQL for rev. 80','ACID 1.0.1 - Full Release for Mangos Zero (1.12.1 Client)',NULL);
-/*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
+LOCK TABLES `creature_movement_template` WRITE;
+/*!40000 ALTER TABLE `creature_movement_template` DISABLE KEYS */;
+/*!40000 ALTER TABLE `creature_movement_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

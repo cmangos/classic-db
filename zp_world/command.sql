@@ -293,7 +293,7 @@ INSERT INTO `command` VALUES
 ('tele del',3,'Syntax: .tele del $nameRemove location with name $name for .tele command locations list.'),
 ('tele group',1,'Syntax: .tele group#locationTeleport a selected player and his group members to a given location.'),
 ('tele name',1,'Syntax: .tele name [#playername] #locationTeleport the given character to a given location. Character can be offline.'),
-('ticket',2,'Syntax: .ticket on        .ticket off        .ticket #num        .ticket $character_nameon/off for GMs to show or not a new ticket directly, $character_name to show ticket of this character, #num to show ticket #num.'),
+('ticket',2,'Syntax: .ticket on\r\n        .ticket off\r\n        .ticket #num\r\n        .ticket $character_name\r\n        .ticket respond #num $response\r\n        .ticket respond $character_name $response\r\n\r\non/off for GMs to show or not a new ticket directly, $character_name to show ticket of this character, #num to show ticket #num.'),
 ('trigger',2,'Syntax: .trigger [#trigger_id|$trigger_shift-link|$trigger_target_shift-link]\r\n\r\nShow detail infor about areatrigger with id #trigger_id or trigger id associated with shift-link. If areatrigger id or shift-link not provided then selected nearest areatrigger at current map.'),
 ('trigger active',2,'Syntax: .trigger active\r\n\r\nShow list of areatriggers wiht activation zone including current character position.'),
 ('trigger near',2,'Syntax: .trigger near [#distance]\r\n\r\nOutput areatriggers at distance #distance from player. If #distance not provided use 10 as default value.'),

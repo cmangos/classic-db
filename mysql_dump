@@ -91,6 +91,7 @@ dump_data zp_world creature_loot_template
 dump_data zp_world creature_model_info
 dump_data zp_world creature_movement
 dump_data zp_world creature_movement_scripts
+dump_data zp_world creature_movement_template
 dump_data zp_world creature_onkill_reputation
 dump_data zp_world creature_questrelation
 dump_data zp_world creature_template
@@ -215,4 +216,3 @@ dump_struc zp_world skill_discovery_template
 dump_struc zp_world skill_extra_item_template
 dump_struc zp_world spell_area
 dump_struc zp_world spell_scripts
-
