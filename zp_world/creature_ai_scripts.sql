@@ -47,7 +47,7 @@ CREATE TABLE `creature_ai_scripts` (
   `action3_param3` int(11) NOT NULL DEFAULT '0',
   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Event Comment',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1720932 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
+) ENGINE=InnoDB AUTO_INCREMENT=4000015 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7298,7 +7298,11 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1720928,3673,6,0,100,2,0,0,0,0,34,3,3,0,0,0,0,0,0,0,0,0,'Lord Serpentis - Data Type 2 on Death'),
 (1720929,3654,7,0,100,2,0,0,0,0,34,5,0,0,0,0,0,0,0,0,0,0,'Mutanous the Devourer - Data Type 0 on Evade'),
 (1720930,3654,4,0,100,2,0,0,0,0,34,5,1,0,0,0,0,0,0,0,0,0,'Mutanous the Devourer - Data Type 1 on Aggro'),
-(1720931,3654,6,0,100,2,0,0,0,0,34,5,3,0,0,0,0,0,0,0,0,0,'Mutanous the Devourer - Data Type 2 on Death');
+(1720931,3654,6,0,100,2,0,0,0,0,34,5,3,0,0,0,0,0,0,0,0,0,'Mutanous the Devourer - Data Type 2 on Death'),
+(4000011,11737,0,0,100,1,3000,5000,45000,48000,11,5416,1,0,0,0,0,0,0,0,0,0,'Cast Dard venimeux sur master'),
+(4000012,11737,0,0,80,1,7000,11000,12000,22000,11,3391,1,0,0,0,0,0,0,0,0,0,'Cast Rosser sur master 80%'),
+(4000013,11739,0,0,100,1,2000,5000,32000,33000,11,744,1,0,0,0,0,0,0,0,0,0,'Cast Poison sur master'),
+(4000014,11739,0,0,50,0,500,1000,0,0,11,744,1,0,0,0,0,0,0,0,0,0,'Cast Rets 50% sur master');
 /*!40000 ALTER TABLE `creature_ai_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
