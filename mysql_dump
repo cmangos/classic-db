@@ -153,6 +153,7 @@ dump_data zp_world scripted_event_id
 dump_data zp_world skill_fishing_base_level
 dump_data zp_world skinning_loot_template
 dump_data zp_world spell_affect
+dump_data zp_world spell_bonus_data
 dump_data zp_world spell_chain
 dump_data zp_world spell_elixir
 dump_data zp_world spell_facing
@@ -173,7 +174,9 @@ dump_struc zp_characters character_instance
 dump_struc zp_characters character_social
 dump_struc zp_characters character_spell_cooldown
 dump_struc zp_characters character_ticket
+dump_struc zp_characters creature_respawn
 dump_struc zp_characters corpse
+dump_struc zp_characters gameobject_respawn
 dump_struc zp_characters groups
 dump_struc zp_characters group_instance
 dump_struc zp_characters group_member
@@ -196,7 +199,6 @@ dump_struc zp_scripts gossip_texts
 #
 # Empty ZeroProject tables: zp_world
 #
-dump_struc zp_world gameobject_respawn
 dump_struc zp_world locales_creature
 dump_struc zp_world locales_gameobject
 dump_struc zp_world locales_gossip_menu_option

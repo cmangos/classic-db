@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_characters
 -- ------------------------------------------------------
--- Server version	5.1.49-1ubuntu7
+-- Server version	5.1.49-1ubuntu8
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -67,6 +67,13 @@ CREATE TABLE `characters` (
   `stored_honor_rating` float NOT NULL DEFAULT '0',
   `stored_dishonorable_kills` int(11) NOT NULL DEFAULT '0',
   `stored_honorable_kills` float NOT NULL DEFAULT '0',
+  `bgid` int(10) unsigned NOT NULL DEFAULT '0',
+  `bgteam` int(10) unsigned NOT NULL DEFAULT '0',
+  `bgmap` int(10) unsigned NOT NULL DEFAULT '0',
+  `bgx` float NOT NULL DEFAULT '0',
+  `bgy` float NOT NULL DEFAULT '0',
+  `bgz` float NOT NULL DEFAULT '0',
+  `bgo` float NOT NULL DEFAULT '0',
   `deleteInfos_Account` int(11) unsigned DEFAULT NULL,
   `deleteInfos_Name` varchar(12) DEFAULT NULL,
   `deleteDate` bigint(20) DEFAULT NULL,
