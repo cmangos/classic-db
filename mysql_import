@@ -44,4 +44,3 @@ done
 for x in ./zp_world/*.sql; do
     import $x
 done
-
