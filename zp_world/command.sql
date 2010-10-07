@@ -38,7 +38,7 @@ LOCK TABLES `command` WRITE;
 /*!40000 ALTER TABLE `command` DISABLE KEYS */;
 INSERT INTO `command` VALUES
 ('account',0,'Syntax: .accountDisplay the access level of your account.'),
-('account characters',3,'Syntax: .account characters [#accountId|$accountName]\r\n\r\nShow list all characters for account seelcted by provided #accountId or $accountName, or for selected player in game.'),
+('account characters',3,'Syntax: .account characters [#accountId|$accountName]\r\n\r\nShow list all characters for account selected by provided #accountId or $accountName, or for selected player in game.'),
 ('account create',4,'Syntax: .account create $account $passwordCreate account and set password to it.'),
 ('account delete',4,'Syntax: .account delete $accountDelete account with all characters.'),
 ('account lock',0,'Syntax: .account lock [on|off]Allow login from account only from current used IP or remove this requirement.'),
