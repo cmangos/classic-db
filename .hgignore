@@ -1,1 +1,5 @@
+# Use "glob" syntax
+syntax: glob
+
 .mwb.bak
+.orig
