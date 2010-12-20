@@ -45,6 +45,7 @@ dump_data  zp_characters guild_member
 dump_data  zp_characters guild_rank
 dump_data  zp_characters instance_reset
 dump_data  zp_characters item_instance
+dump_data  zp_characters item_loot
 dump_data  zp_characters item_text
 dump_data  zp_characters mail
 dump_data  zp_characters mail_items
@@ -111,9 +112,9 @@ dump_data  zp_world gameobject_scripts
 dump_data  zp_world gameobject_template
 dump_data  zp_world game_event
 dump_data  zp_world game_event_creature
-dump_data  zp_world game_event_creature_quest
 dump_data  zp_world game_event_gameobject
 dump_data  zp_world game_event_model_equip
+dump_data  zp_world game_event_quest
 dump_data  zp_world game_graveyard_zone
 dump_data  zp_world game_tele
 dump_data  zp_world game_weather
@@ -130,7 +131,9 @@ dump_data  zp_world mangos_string
 dump_data  zp_world npc_gossip
 dump_data  zp_world npc_text
 dump_data  zp_world npc_trainer
+dump_data  zp_world npc_trainer_template
 dump_data  zp_world npc_vendor
+dump_data  zp_world npc_vendor_template
 dump_data  zp_world page_text
 dump_data  zp_world petcreateinfo_spell
 dump_data  zp_world pet_levelstats
@@ -160,6 +163,7 @@ dump_data  zp_world spell_facing
 dump_data  zp_world spell_learn_spell
 dump_data  zp_world spell_pet_auras
 dump_data  zp_world spell_proc_event
+dump_data  zp_world spell_proc_item_enchant
 dump_data  zp_world spell_script_target
 dump_data  zp_world spell_target_position
 dump_data  zp_world spell_threat

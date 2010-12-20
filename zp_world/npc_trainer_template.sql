@@ -16,26 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `scripted_event_id`
+-- Table structure for table `npc_trainer_template`
 --
 
-DROP TABLE IF EXISTS `scripted_event_id`;
+DROP TABLE IF EXISTS `npc_trainer_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `scripted_event_id` (
-  `id` mediumint(8) NOT NULL,
-  `ScriptName` char(64) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Script library scripted events';
+CREATE TABLE `npc_trainer_template` (
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `spell` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `spellcost` int(10) unsigned NOT NULL DEFAULT '0',
+  `reqskill` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `reqskillvalue` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `reqlevel` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  UNIQUE KEY `entry_spell` (`entry`,`spell`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `scripted_event_id`
+-- Dumping data for table `npc_trainer_template`
 --
 
-LOCK TABLES `scripted_event_id` WRITE;
-/*!40000 ALTER TABLE `scripted_event_id` DISABLE KEYS */;
-/*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
+LOCK TABLES `npc_trainer_template` WRITE;
+/*!40000 ALTER TABLE `npc_trainer_template` DISABLE KEYS */;
+/*!40000 ALTER TABLE `npc_trainer_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

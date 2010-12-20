@@ -16,26 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `scripted_event_id`
+-- Table structure for table `spell_proc_item_enchant`
 --
 
-DROP TABLE IF EXISTS `scripted_event_id`;
+DROP TABLE IF EXISTS `spell_proc_item_enchant`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `scripted_event_id` (
-  `id` mediumint(8) NOT NULL,
-  `ScriptName` char(64) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Script library scripted events';
+CREATE TABLE `spell_proc_item_enchant` (
+  `entry` mediumint(8) unsigned NOT NULL,
+  `ppmRate` float NOT NULL DEFAULT '0',
+  PRIMARY KEY (`entry`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `scripted_event_id`
+-- Dumping data for table `spell_proc_item_enchant`
 --
 
-LOCK TABLES `scripted_event_id` WRITE;
-/*!40000 ALTER TABLE `scripted_event_id` DISABLE KEYS */;
-/*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
+LOCK TABLES `spell_proc_item_enchant` WRITE;
+/*!40000 ALTER TABLE `spell_proc_item_enchant` DISABLE KEYS */;
+INSERT INTO `spell_proc_item_enchant` VALUES
+(8034,9);
+/*!40000 ALTER TABLE `spell_proc_item_enchant` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

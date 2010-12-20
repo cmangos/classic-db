@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_characters
 -- ------------------------------------------------------
--- Server version	5.1.49-1ubuntu8
+-- Server version	5.1.49-1ubuntu8.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `character_db_version`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `character_db_version` (
-  `required_z0889_s0224_02_characters_gameobject_respawn` bit(1) DEFAULT NULL
+  `required_z1014_s0386_01_characters_item_loot` bit(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
 /*!40101 SET character_set_client = @saved_cs_client */;
 

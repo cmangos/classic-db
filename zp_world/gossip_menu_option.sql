@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.49-1ubuntu8
+-- Server version	5.1.49-1ubuntu8.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,7 +29,7 @@ CREATE TABLE `gossip_menu_option` (
   `option_text` text,
   `option_id` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `npc_option_npcflag` int(10) unsigned NOT NULL DEFAULT '0',
-  `action_menu_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `action_menu_id` mediumint(8) NOT NULL DEFAULT '0',
   `action_poi_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `action_script_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `box_coded` tinyint(3) unsigned NOT NULL DEFAULT '0',

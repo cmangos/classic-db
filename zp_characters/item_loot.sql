@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.49, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_world
+-- Host: localhost    Database: zp_characters
 -- ------------------------------------------------------
 -- Server version	5.1.49-1ubuntu8.1
 
@@ -16,26 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `scripted_event_id`
+-- Table structure for table `item_loot`
 --
 
-DROP TABLE IF EXISTS `scripted_event_id`;
+DROP TABLE IF EXISTS `item_loot`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `scripted_event_id` (
-  `id` mediumint(8) NOT NULL,
-  `ScriptName` char(64) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Script library scripted events';
+CREATE TABLE `item_loot` (
+  `guid` int(11) unsigned NOT NULL DEFAULT '0',
+  `owner_guid` int(11) unsigned NOT NULL DEFAULT '0',
+  `itemid` int(11) unsigned NOT NULL DEFAULT '0',
+  `amount` int(11) unsigned NOT NULL DEFAULT '0',
+  `property` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`guid`,`itemid`),
+  KEY `idx_owner_guid` (`owner_guid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Item System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `scripted_event_id`
+-- Dumping data for table `item_loot`
 --
 
-LOCK TABLES `scripted_event_id` WRITE;
-/*!40000 ALTER TABLE `scripted_event_id` DISABLE KEYS */;
-/*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
+LOCK TABLES `item_loot` WRITE;
+/*!40000 ALTER TABLE `item_loot` DISABLE KEYS */;
+/*!40000 ALTER TABLE `item_loot` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

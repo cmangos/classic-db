@@ -16,26 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `scripted_event_id`
+-- Table structure for table `npc_vendor_template`
 --
 
-DROP TABLE IF EXISTS `scripted_event_id`;
+DROP TABLE IF EXISTS `npc_vendor_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `scripted_event_id` (
-  `id` mediumint(8) NOT NULL,
-  `ScriptName` char(64) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Script library scripted events';
+CREATE TABLE `npc_vendor_template` (
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `item` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `maxcount` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `incrtime` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`entry`,`item`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Npc System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `scripted_event_id`
+-- Dumping data for table `npc_vendor_template`
 --
 
-LOCK TABLES `scripted_event_id` WRITE;
-/*!40000 ALTER TABLE `scripted_event_id` DISABLE KEYS */;
-/*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
+LOCK TABLES `npc_vendor_template` WRITE;
+/*!40000 ALTER TABLE `npc_vendor_template` DISABLE KEYS */;
+/*!40000 ALTER TABLE `npc_vendor_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

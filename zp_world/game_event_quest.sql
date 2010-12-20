@@ -16,26 +16,37 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `scripted_event_id`
+-- Table structure for table `game_event_quest`
 --
 
-DROP TABLE IF EXISTS `scripted_event_id`;
+DROP TABLE IF EXISTS `game_event_quest`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `scripted_event_id` (
-  `id` mediumint(8) NOT NULL,
-  `ScriptName` char(64) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Script library scripted events';
+CREATE TABLE `game_event_quest` (
+  `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from quest_template',
+  `event` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from game_event',
+  PRIMARY KEY (`quest`,`event`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Game event system';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `scripted_event_id`
+-- Dumping data for table `game_event_quest`
 --
 
-LOCK TABLES `scripted_event_id` WRITE;
-/*!40000 ALTER TABLE `scripted_event_id` DISABLE KEYS */;
-/*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
+LOCK TABLES `game_event_quest` WRITE;
+/*!40000 ALTER TABLE `game_event_quest` DISABLE KEYS */;
+INSERT INTO `game_event_quest` VALUES
+(172,10),
+(1468,10),
+(8149,33),
+(8150,33),
+(8356,12),
+(8795,22),
+(8980,8),
+(8983,8),
+(9025,8),
+(9027,8);
+/*!40000 ALTER TABLE `game_event_quest` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

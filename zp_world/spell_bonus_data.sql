@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.49-1ubuntu8
+-- Server version	5.1.49-1ubuntu8.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -121,10 +121,6 @@ INSERT INTO `spell_bonus_data` VALUES
 (16344,0.1,0,0,'Shaman - Flametongue Weapon Proc Rank 6'),
 (8056,0.3858,0,0,'Shaman - Frost Shock'),
 (8034,0.1,0,0,'Shaman - Frostbrand Attack Rank 1'),
-(8037,0.1,0,0,'Shaman - Frostbrand Attack Rank 2'),
-(10458,0.1,0,0,'Shaman - Frostbrand Attack Rank 3'),
-(16352,0.1,0,0,'Shaman - Frostbrand Attack Rank 4'),
-(16353,0.1,0,0,'Shaman - Frostbrand Attack Rank 5'),
 (139,0,0.2,0,'Priest - Renew'),
 (8936,0.3,0.1,0,'Druid - Regrowth'),
 (403,0.7143,0,0,'Shaman - Lightning Bolt'),

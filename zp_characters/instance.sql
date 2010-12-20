@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_characters
 -- ------------------------------------------------------
--- Server version	5.1.49-1ubuntu8
+-- Server version	5.1.49-1ubuntu8.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;

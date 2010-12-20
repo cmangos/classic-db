@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.1.49-1ubuntu8
+-- Server version	5.1.49-1ubuntu8.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -207,7 +207,7 @@ INSERT INTO `command` VALUES
 ('neargrave',3,'Syntax: .neargrave [alliance|horde]Find nearest graveyard linked to zone (or only nearest from accepts alliance or horde faction ghosts).'),
 ('notify',1,'Syntax: .notify $MessageToBroadcastSend a global message to all players online in screen.'),
 ('npc add',2,'Syntax: .npc add #creatureidSpawn a creature by the given template id of #creatureid.'),
-('npc additem',2,'Syntax: .npc additem #itemId <#maxcount><#incrtime><#extendedcost>rAdd item #itemid to item list of selected vendor. Also optionally set max count item in vendor item list and time to item count restoring and items ExtendedCost.'),
+('npc additem',2,'Syntax: .npc additem #itemId <#maxcount><#incrtime>r\r\n\r\nAdd item #itemid to item list of selected vendor. Also optionally set max count item in vendor item list and time to item count restoring.'),
 ('npc addmove',2,'Syntax: .npc addmove #creature_guid [#waittime]Add your current location as a waypoint for creature with guid #creature_guid. And optional add wait time.'),
 ('npc addweapon',3,'Not yet implemented.'),
 ('npc allowmove',3,'Syntax: .npc allowmoveEnable or disable movement creatures in world. Not implemented.'),
