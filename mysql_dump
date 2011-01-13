@@ -39,6 +39,8 @@ dump_data  zp_characters character_skills
 dump_data  zp_characters character_spell
 dump_data  zp_characters character_stats
 dump_data  zp_characters character_tutorial
+dump_data  zp_characters game_event_status
+dump_data  zp_characters game_event_mail
 dump_data  zp_characters guild
 dump_data  zp_characters guild_eventlog
 dump_data  zp_characters guild_member

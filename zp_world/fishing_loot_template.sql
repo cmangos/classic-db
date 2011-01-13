@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `fishing_loot_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_loot_template` (
-  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'entry 0 used for junk loot at fishing fail (if allowed by config option)',
   `item` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `ChanceOrQuestChance` float NOT NULL DEFAULT '100',
   `groupid` tinyint(3) unsigned NOT NULL DEFAULT '0',
