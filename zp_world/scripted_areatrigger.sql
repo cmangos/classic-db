@@ -37,8 +37,17 @@ LOCK TABLES `scripted_areatrigger` WRITE;
 /*!40000 ALTER TABLE `scripted_areatrigger` DISABLE KEYS */;
 INSERT INTO `scripted_areatrigger` VALUES
 (522,'at_twiggy_flathead'),
+(1447,'at_zulfarrak'),
 (1526,'at_ring_of_law'),
+(2026,'at_blackrock_spire'),
+(2046,'at_blackrock_spire'),
 (3066,'at_ravenholdt'),
+(3546,'at_childrens_week_spot'),
+(3547,'at_childrens_week_spot'),
+(3548,'at_childrens_week_spot'),
+(3549,'at_childrens_week_spot'),
+(3550,'at_childrens_week_spot'),
+(3552,'at_childrens_week_spot'),
 (4016,'at_shade_of_eranikus'),
 (4112,'at_naxxramas');
 /*!40000 ALTER TABLE `scripted_areatrigger` ENABLE KEYS */;
