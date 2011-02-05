@@ -168,7 +168,8 @@ INSERT INTO `spell_bonus_data` VALUES
 (5672,0,0.045,0,'Shaman - Healing Stream Totem'),
 (331,0.8571,0,0,'Shaman - Healing Wave'),
 (8004,0.4286,0,0,'Shaman - Lesser Healing Wave'),
-(1454,0.8,0,0,'Warlock - Life Tap');
+(1454,0.8,0,0,'Warlock - Life Tap'),
+(18764,0,0,0,'Item - Fungal Regrowth');
 /*!40000 ALTER TABLE `spell_bonus_data` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
