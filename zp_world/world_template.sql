@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.49, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: zp_characters
+-- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
 -- Server version	5.1.49-1ubuntu8.1
 
@@ -16,26 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `character_db_version`
+-- Table structure for table `world_template`
 --
 
-DROP TABLE IF EXISTS `character_db_version`;
+DROP TABLE IF EXISTS `world_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `character_db_version` (
-  `required_z1363_s0817_02_characters_world` bit(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
+CREATE TABLE `world_template` (
+  `map` smallint(5) unsigned NOT NULL,
+  `ScriptName` varchar(128) NOT NULL DEFAULT '',
+  PRIMARY KEY (`map`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `character_db_version`
+-- Dumping data for table `world_template`
 --
 
-LOCK TABLES `character_db_version` WRITE;
-/*!40000 ALTER TABLE `character_db_version` DISABLE KEYS */;
-INSERT INTO `character_db_version` VALUES
-(NULL);
-/*!40000 ALTER TABLE `character_db_version` ENABLE KEYS */;
+LOCK TABLES `world_template` WRITE;
+/*!40000 ALTER TABLE `world_template` DISABLE KEYS */;
+/*!40000 ALTER TABLE `world_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

@@ -16,26 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `character_db_version`
+-- Table structure for table `world`
 --
 
-DROP TABLE IF EXISTS `character_db_version`;
+DROP TABLE IF EXISTS `world`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `character_db_version` (
-  `required_z1363_s0817_02_characters_world` bit(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Last applied sql update to DB';
+CREATE TABLE `world` (
+  `map` int(11) unsigned NOT NULL DEFAULT '0',
+  `data` longtext,
+  PRIMARY KEY (`map`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `character_db_version`
+-- Dumping data for table `world`
 --
 
-LOCK TABLES `character_db_version` WRITE;
-/*!40000 ALTER TABLE `character_db_version` DISABLE KEYS */;
-INSERT INTO `character_db_version` VALUES
-(NULL);
-/*!40000 ALTER TABLE `character_db_version` ENABLE KEYS */;
+LOCK TABLES `world` WRITE;
+/*!40000 ALTER TABLE `world` DISABLE KEYS */;
+/*!40000 ALTER TABLE `world` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

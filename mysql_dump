@@ -57,6 +57,7 @@ dump_data  zp_characters pet_aura
 dump_data  zp_characters pet_spell
 dump_data  zp_characters pet_spell_cooldown
 dump_data  zp_characters saved_variables
+dump_data  zp_characters world
 
 #
 # ZeroProject data tables: zp_realm
@@ -170,6 +171,7 @@ dump_data  zp_world spell_script_target
 dump_data  zp_world spell_target_position
 dump_data  zp_world spell_threat
 dump_data  zp_world transports
+dump_data  zp_world world_template
 
 #
 # Empty ZeroProject tables: zp_characters
