@@ -219,7 +219,9 @@ dump_struc zp_world locales_quest
 dump_struc zp_world points_of_interest
 dump_struc zp_world playercreateinfo_item
 dump_struc zp_world pool_creature
+dump_struc zp_world pool_creature_template
 dump_struc zp_world pool_gameobject
+dump_struc zp_world pool_gameobject_template
 dump_struc zp_world pool_pool
 dump_struc zp_world pool_template
 dump_struc zp_world reserved_name
