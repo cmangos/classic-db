@@ -4592,6 +4592,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (394604,3946,1,0,100,0,15000,15000,0,0,5,1,0,0,1,-660,0,0,0,0,0,0,'Velinde Starsong - Quest 1022 - Final Say'),
 (394701,3947,2,0,100,2,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Goblin Shipbuilder - Flee at 15% HP'),
 (395601,3956,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Harklan Moongrove - Flee at 15% HP');
+INSERT INTO `creature_ai_scripts` VALUES
 (396001,3960,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Ulthaan - Flee at 15% HP'),
 (396101,3961,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Maliynn - Flee at 15% HP'),
 (396201,3962,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Haljan Oakheart - Flee at 15% HP'),
@@ -9045,6 +9046,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (876304,8763,3,13,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Mistwing Rogue - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 (876305,8763,9,13,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Mistwing Rogue - Start Combat Movement at 35 Yards (Phase 1)'),
 (876306,8763,9,13,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Mistwing Rogue - Prevent Combat Movement at 15 Yards (Phase 1)');
+INSERT INTO `creature_ai_scripts` VALUES
 (876307,8763,9,13,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Mistwing Rogue - Start Combat Movement Below 5 Yards (Phase 1)'),
 (876308,8763,3,11,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Mistwing Rogue - Set Phase 1 when Mana is above 15% (Phase 2)'),
 (876309,8763,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Mistwing Rogue - Set Phase to 0 on Evade'),
