@@ -36,7 +36,7 @@ CREATE TABLE `db_version` (
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
 INSERT INTO `db_version` VALUES
-('ZDB 0.2.0 (003) for MaNGOSZero 0380 with SD0 SQL for rev. 80','ACID 1.0.1 - Full Release for Mangos Zero (1.12.1 Client)',NULL);
+('ZDB 0.2.0 (003) for MaNGOSZero 0380 with SD0 SQL for rev. 80','ACID 1.0.2 - Full Release for MaNGOS Zero (1.12.1 Client)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
