@@ -51,7 +51,7 @@ INSERT INTO `instance_template` VALUES
 (47,0,29,38,10,0,1,-4459.45,-1660.21,'instance_razorfen_kraul'),
 (48,0,24,32,10,0,1,4249.12,748.387,'instance_blackfathom_deeps'),
 (70,0,35,47,10,0,0,-6060.18,-2955,'instance_uldaman'),
-(90,0,29,38,10,0,0,-5162.66,931.599,''),
+(90,0,29,38,10,0,0,-5162.66,931.599,'instance_gnomeregan'),
 (109,0,45,55,10,0,0,-10170.1,-3995.97,'instance_sunken_temple'),
 (129,0,37,46,10,0,1,-4662.88,-2535.87,''),
 (189,0,34,45,10,0,0,2892.24,-811.264,'instance_scarlet_monastery'),
