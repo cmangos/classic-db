@@ -118,6 +118,7 @@ dump_data  zp_world game_event
 dump_data  zp_world game_event_creature
 dump_data  zp_world game_event_creature_data
 dump_data  zp_world game_event_gameobject
+dump_data  zp_world game_event_mail
 dump_data  zp_world game_event_quest
 dump_data  zp_world game_graveyard_zone
 dump_data  zp_world game_tele
