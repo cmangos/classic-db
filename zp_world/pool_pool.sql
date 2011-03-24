@@ -31,6 +31,15 @@ CREATE TABLE `pool_pool` (
   KEY `pool_idx` (`mother_pool`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pool_pool`
+--
+
+LOCK TABLES `pool_pool` WRITE;
+/*!40000 ALTER TABLE `pool_pool` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pool_pool` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

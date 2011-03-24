@@ -33,6 +33,15 @@ CREATE TABLE `points_of_interest` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `points_of_interest`
+--
+
+LOCK TABLES `points_of_interest` WRITE;
+/*!40000 ALTER TABLE `points_of_interest` DISABLE KEYS */;
+/*!40000 ALTER TABLE `points_of_interest` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

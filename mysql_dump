@@ -150,6 +150,13 @@ dump_data  zp_world playercreateinfo_spell
 dump_data  zp_world player_classlevelstats
 dump_data  zp_world player_levelstats
 dump_data  zp_world player_xp_for_level
+dump_data  zp_world points_of_interest
+dump_data  zp_world pool_creature
+dump_data  zp_world pool_creature_template
+dump_data  zp_world pool_gameobject
+dump_data  zp_world pool_gameobject_template
+dump_data  zp_world pool_pool
+dump_data  zp_world pool_template
 dump_data  zp_world quest_end_scripts
 dump_data  zp_world quest_start_scripts
 dump_data  zp_world quest_template
@@ -161,6 +168,7 @@ dump_data  zp_world scripted_event_id
 dump_data  zp_world skill_fishing_base_level
 dump_data  zp_world skinning_loot_template
 dump_data  zp_world spell_affect
+dump_data  zp_world spell_area
 dump_data  zp_world spell_bonus_data
 dump_data  zp_world spell_chain
 dump_data  zp_world spell_elixir
@@ -169,6 +177,7 @@ dump_data  zp_world spell_learn_spell
 dump_data  zp_world spell_pet_auras
 dump_data  zp_world spell_proc_event
 dump_data  zp_world spell_proc_item_enchant
+dump_data  zp_world spell_scripts
 dump_data  zp_world spell_script_target
 dump_data  zp_world spell_target_position
 dump_data  zp_world spell_threat
@@ -218,16 +227,7 @@ dump_struc zp_world locales_npc_text
 dump_struc zp_world locales_page_text
 dump_struc zp_world locales_points_of_interest
 dump_struc zp_world locales_quest
-dump_struc zp_world points_of_interest
 dump_struc zp_world playercreateinfo_item
-dump_struc zp_world pool_creature
-dump_struc zp_world pool_creature_template
-dump_struc zp_world pool_gameobject
-dump_struc zp_world pool_gameobject_template
-dump_struc zp_world pool_pool
-dump_struc zp_world pool_template
 dump_struc zp_world reserved_name
 dump_struc zp_world skill_discovery_template
 dump_struc zp_world skill_extra_item_template
-dump_struc zp_world spell_area
-dump_struc zp_world spell_scripts

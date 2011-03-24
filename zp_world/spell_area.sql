@@ -35,6 +35,15 @@ CREATE TABLE `spell_area` (
   PRIMARY KEY (`spell`,`area`,`quest_start`,`quest_start_active`,`aura_spell`,`racemask`,`gender`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `spell_area`
+--
+
+LOCK TABLES `spell_area` WRITE;
+/*!40000 ALTER TABLE `spell_area` DISABLE KEYS */;
+/*!40000 ALTER TABLE `spell_area` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

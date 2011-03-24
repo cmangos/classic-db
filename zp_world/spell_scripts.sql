@@ -42,6 +42,15 @@ CREATE TABLE `spell_scripts` (
   `comments` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `spell_scripts`
+--
+
+LOCK TABLES `spell_scripts` WRITE;
+/*!40000 ALTER TABLE `spell_scripts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `spell_scripts` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

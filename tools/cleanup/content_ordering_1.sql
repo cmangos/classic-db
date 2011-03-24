@@ -27,9 +27,9 @@ ALTER TABLE `event_scripts`  ORDER BY `id` ;
 ALTER TABLE `exploration_basexp`  ORDER BY `level` ;
 ALTER TABLE `fishing_loot_template`  ORDER BY `entry` ;
 ALTER TABLE `game_event_creature`  ORDER BY `guid` ;
-ALTER TABLE `game_event_creature_quest`  ORDER BY `id` ;
+ALTER TABLE `game_event_creature_data`  ORDER BY `guid` ;
 ALTER TABLE `game_event_gameobject`  ORDER BY `guid` ;
-ALTER TABLE `game_event_model_equip`  ORDER BY `guid` ;
+ALTER TABLE `game_event_quest`  ORDER BY `event` ;
 ALTER TABLE `game_event`  ORDER BY `entry` ;
 ALTER TABLE `game_graveyard_zone`  ORDER BY `id` ;
 ALTER TABLE `gameobject_battleground`  ORDER BY `guid` ;
@@ -91,4 +91,3 @@ ALTER TABLE `spell_script_target`  ORDER BY `entry` ;
 ALTER TABLE `spell_target_position`  ORDER BY `id` ;
 ALTER TABLE `spell_threat`  ORDER BY `entry` ;
 ALTER TABLE `transports`  ORDER BY `entry` ;
-
