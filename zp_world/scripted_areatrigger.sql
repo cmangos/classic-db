@@ -48,6 +48,8 @@ INSERT INTO `scripted_areatrigger` VALUES
 (3549,'at_childrens_week_spot'),
 (3550,'at_childrens_week_spot'),
 (3552,'at_childrens_week_spot'),
+(3958,'at_zulgurub'),
+(3960,'at_zulgurub'),
 (4016,'at_shade_of_eranikus'),
 (4112,'at_naxxramas');
 /*!40000 ALTER TABLE `scripted_areatrigger` ENABLE KEYS */;
