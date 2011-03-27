@@ -46,7 +46,7 @@ CREATE TABLE `areatrigger_teleport` (
 LOCK TABLES `areatrigger_teleport` WRITE;
 /*!40000 ALTER TABLE `areatrigger_teleport` DISABLE KEYS */;
 INSERT INTO `areatrigger_teleport` VALUES
-(45,'Scarlet Monastery - Graveyard (Entrance)',34,0,0,0,NULL,189,1688.99,1053.48,18.6775,0.00117),
+(45,'Scarlet Monastery - Graveyard (Entrance)',29,0,0,0,NULL,189,1688.99,1053.48,18.6775,0.00117),
 (78,'DeadMines Entrance',17,0,0,0,NULL,36,-16.4,-383.07,61.78,1.86),
 (101,'Stormwind Stockades Entrance',24,0,0,0,NULL,34,54.23,0.28,-18.34,6.26),
 (107,'Stormwind Vault Entrance',0,0,0,0,NULL,35,-0.91,40.57,-24.23,0),
@@ -79,7 +79,7 @@ INSERT INTO `areatrigger_teleport` VALUES
 (606,'Scarlet Monastery - Armory (Exit)',0,0,0,0,NULL,0,2884.45,-822.01,160.333,1.95268),
 (608,'Scarlet Monastery - Library (Exit)',0,0,0,0,NULL,0,2870.9,-820.164,160.333,0.387856),
 (610,'Scarlet Monastery - Cathedral (Entrance)',37,0,0,0,NULL,189,855.683,1321.5,18.6709,0.001747),
-(612,'Scarlet Monastery - Armory (Entrance)',34,0,0,0,NULL,189,1610.83,-323.433,18.6738,6.28022),
+(612,'Scarlet Monastery - Armory (Entrance)',35,0,0,0,NULL,189,1610.83,-323.433,18.6738,6.28022),
 (614,'Scarlet Monastery - Library (Entrance)',34,0,0,0,NULL,189,255.346,-209.09,18.6773,6.26656),
 (702,'Stormwind - Wizard Sanctum Room',0,0,0,0,NULL,0,-9015.97,875.318,148.617,0),
 (704,'Stormwind - Wizard Sanctum Tower Portal',0,0,0,0,NULL,0,-9019.16,887.596,29.6206,0),
