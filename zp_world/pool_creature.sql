@@ -38,6 +38,8 @@ CREATE TABLE `pool_creature` (
 
 LOCK TABLES `pool_creature` WRITE;
 /*!40000 ALTER TABLE `pool_creature` DISABLE KEYS */;
+INSERT INTO `pool_creature` VALUES
+(134380,1042,0,'Teremus the Devourer (7846) - Spawn 1');
 /*!40000 ALTER TABLE `pool_creature` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
