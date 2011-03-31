@@ -51,6 +51,12 @@ CREATE TABLE `creature_movement_template` (
 
 LOCK TABLES `creature_movement_template` WRITE;
 /*!40000 ALTER TABLE `creature_movement_template` DISABLE KEYS */;
+INSERT INTO `creature_movement_template` VALUES
+(12581,1,-9049.96,446.152,93.056,1500,0,0,0,0,0,0,0,0,0,0.365,0,0),
+(12581,2,-9059.62,431.933,93.0563,0,0,0,0,0,0,0,0,0,0,0,0,0),
+(12581,3,-9074.04,422.621,93.0563,500,0,0,0,0,0,0,0,0,0,0,0,0),
+(12581,4,-9083.23,422.767,92.5363,0,0,0,0,0,0,0,0,0,0,0,0,0),
+(12581,5,-9090.48,412.304,92.1038,4000,1258101,0,0,0,0,0,0,0,0,0,0,0);
 /*!40000 ALTER TABLE `creature_movement_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
