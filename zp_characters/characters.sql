@@ -65,7 +65,7 @@ CREATE TABLE `characters` (
   `honor_standing` int(11) unsigned NOT NULL DEFAULT '0',
   `stored_honor_rating` float NOT NULL DEFAULT '0',
   `stored_dishonorable_kills` int(11) NOT NULL DEFAULT '0',
-  `stored_honorable_kills` float NOT NULL DEFAULT '0',
+  `stored_honorable_kills` int(11) NOT NULL DEFAULT '0',
   `watchedFaction` int(10) unsigned NOT NULL DEFAULT '0',
   `drunk` smallint(5) unsigned NOT NULL DEFAULT '0',
   `health` int(10) unsigned NOT NULL DEFAULT '0',

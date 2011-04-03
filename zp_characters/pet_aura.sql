@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `pet_aura`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pet_aura` (
   `guid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier',
-  `caster_guid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Full Global Unique Identifier',
+  `caster_guid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Full Global Unique Identifier',
   `item_guid` int(11) unsigned NOT NULL DEFAULT '0',
   `spell` int(11) unsigned NOT NULL DEFAULT '0',
   `effect_index` int(11) unsigned NOT NULL DEFAULT '0',

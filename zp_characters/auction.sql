@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `auction`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `auction` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(11) unsigned NOT NULL DEFAULT '0',
   `houseid` int(11) unsigned NOT NULL DEFAULT '0',
   `itemguid` int(11) unsigned NOT NULL DEFAULT '0',
   `item_template` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Item Identifier',
