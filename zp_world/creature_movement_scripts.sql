@@ -49,6 +49,8 @@ CREATE TABLE `creature_movement_scripts` (
 
 LOCK TABLES `creature_movement_scripts` WRITE;
 /*!40000 ALTER TABLE `creature_movement_scripts` DISABLE KEYS */;
+INSERT INTO `creature_movement_scripts` VALUES
+(1258101,4,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
 /*!40000 ALTER TABLE `creature_movement_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
