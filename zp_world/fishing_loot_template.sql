@@ -33,7 +33,7 @@ CREATE TABLE `fishing_loot_template` (
   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`item`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Loot System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

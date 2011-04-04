@@ -24,14 +24,14 @@ DROP TABLE IF EXISTS `instance_template`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `instance_template` (
   `map` smallint(5) unsigned NOT NULL,
-  `parent` int(10) unsigned NOT NULL,
+  `parent` smallint(5) unsigned NOT NULL DEFAULT '0',
   `levelMin` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `levelMax` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `maxPlayers` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `reset_delay` int(10) unsigned NOT NULL DEFAULT '0',
-  `ghostEntranceMap` smallint(5) NOT NULL DEFAULT '-1',
-  `ghostEntranceX` float NOT NULL DEFAULT '0',
-  `ghostEntranceY` float NOT NULL DEFAULT '0',
+  `ghostEntranceMap` smallint(5) unsigned NOT NULL,
+  `ghostEntranceX` float NOT NULL,
+  `ghostEntranceY` float NOT NULL,
   `ScriptName` varchar(128) NOT NULL DEFAULT '',
   PRIMARY KEY (`map`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -69,7 +69,7 @@ INSERT INTO `instance_template` VALUES
 (469,0,60,0,40,7,0,-7663.41,-1218.67,'instance_blackwing_lair'),
 (509,0,60,0,20,3,1,-8114.46,1526.37,'instance_ruins_of_ahnqiraj'),
 (531,0,60,0,40,7,1,-8111.72,1526.79,'instance_temple_of_ahnqiraj'),
-(533,0,60,0,40,7,-1,0,0,'instance_naxxramas');
+(533,0,60,0,40,7,0,0,0,'instance_naxxramas');
 /*!40000 ALTER TABLE `instance_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
