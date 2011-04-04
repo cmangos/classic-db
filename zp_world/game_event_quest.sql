@@ -26,7 +26,7 @@ CREATE TABLE `game_event_quest` (
   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from quest_template',
   `event` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'entry from game_event',
   PRIMARY KEY (`quest`,`event`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Game event system';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Game event system';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
