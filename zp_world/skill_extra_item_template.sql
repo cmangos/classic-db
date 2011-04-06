@@ -30,6 +30,15 @@ CREATE TABLE `skill_extra_item_template` (
   PRIMARY KEY (`spellId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Skill Specialization System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `skill_extra_item_template`
+--
+
+LOCK TABLES `skill_extra_item_template` WRITE;
+/*!40000 ALTER TABLE `skill_extra_item_template` DISABLE KEYS */;
+/*!40000 ALTER TABLE `skill_extra_item_template` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

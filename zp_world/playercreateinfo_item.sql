@@ -30,6 +30,15 @@ CREATE TABLE `playercreateinfo_item` (
   KEY `playercreateinfo_race_class_index` (`race`,`class`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `playercreateinfo_item`
+--
+
+LOCK TABLES `playercreateinfo_item` WRITE;
+/*!40000 ALTER TABLE `playercreateinfo_item` DISABLE KEYS */;
+/*!40000 ALTER TABLE `playercreateinfo_item` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
