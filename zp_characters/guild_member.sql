@@ -33,15 +33,6 @@ CREATE TABLE `guild_member` (
   KEY `guildid_rank_key` (`guildid`,`rank`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Guild System';
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `guild_member`
---
-
-LOCK TABLES `guild_member` WRITE;
-/*!40000 ALTER TABLE `guild_member` DISABLE KEYS */;
-/*!40000 ALTER TABLE `guild_member` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

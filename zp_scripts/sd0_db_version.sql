@@ -34,7 +34,7 @@ CREATE TABLE `sd0_db_version` (
 LOCK TABLES `sd0_db_version` WRITE;
 /*!40000 ALTER TABLE `sd0_db_version` DISABLE KEYS */;
 INSERT INTO `sd0_db_version` VALUES
-('ScriptDevZero (for MangosZero rev. 1396+)');
+(' ScriptDevZero (for MangosZero rev. 1396+) ');
 /*!40000 ALTER TABLE `sd0_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
