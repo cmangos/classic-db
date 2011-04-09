@@ -6304,7 +6304,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 (525907,5259,9,13,100,2,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Atal\'ai Witch Doctor - Start Combat Movement Below 5 Yards'),
 (525908,5259,3,11,100,3,100,30,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Atal\'ai Witch Doctor - Set Phase 1 when Mana is above 30% (Phase 2)'),
 (525909,5259,0,0,100,3,4900,13100,13100,18400,11,12058,1,1,0,0,0,0,0,0,0,0,'Atal\'ai Witch Doctor - Cast Chain Lightning'),
-(525910,5259,0,0,100,3,10900,26100,17100,35100,11,11641,4,1,0,0,0,0,0,0,0,0,'Atal\'ai Witch Doctor - Cast Hex'),
 (525911,5259,14,0,100,3,1800,40,12700,23100,11,11986,6,1,0,0,0,0,0,0,0,0,'Atal\'ai Witch Doctor - Cast Healing Wave on Friendlies'),
 (525912,5259,2,0,100,2,15,0,0,0,22,3,0,0,0,0,0,0,0,0,0,0,'Atal\'ai Witch Doctor - Set Phase 3 at 15% HP'),
 (525913,5259,2,7,100,2,15,0,0,0,21,1,0,0,25,0,0,0,1,-47,0,0,'Atal\'ai Witch Doctor - Start Combat Movement and Flee at 15% HP (Phase 3)'),
