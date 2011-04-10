@@ -247,7 +247,15 @@ INSERT INTO `db_script_string` VALUES
 (2000005234,'I can\'t take these taxes! F.I.C.A. me? F.I.C.A. YOU!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005300,'The Stonewrought Dam has been saved! Three cheers for $N!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005301,'The boss wants all hands on high alert. The rusty anchor sinks tonight.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000005302,'Stonemasons. . .errr. . Defias be warned:  The rusty anchor sinks tonight.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005302,'Stonemasons. . .errr. . Defias be warned:  The rusty anchor sinks tonight.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005303,'begins to manipulate the Stone of Relu over the two fossils.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005304,'By the stars! A spirit has been summoned!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005305,'Who hath summoned forth Aman?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005306,'Ah, I see you toil with relics of the past.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005307,'Be warned that even your creators are fallible.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005308,'Digging too deep into your past might bring an abrupt end to your future.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005309,'dissipates before your eyes.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005310,'It\'s a mystery of the past indeed! But a key to our future!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
