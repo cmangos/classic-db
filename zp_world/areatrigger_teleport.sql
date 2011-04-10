@@ -143,7 +143,7 @@ INSERT INTO `areatrigger_teleport` VALUES
 (4008,'Ruins Of Ahn\'Qiraj (Outside)',60,0,0,0,NULL,509,-8429.74,1512.14,31.9074,0),
 (4010,'Ahn\'Qiraj Temple (Outside)',60,0,0,0,NULL,531,-8231.33,2010.6,129.861,0),
 (4012,'Ahn\'Qiraj Temple (Inside)',0,0,0,0,NULL,1,-8242.67,1992.06,129.072,0),
-(4055,'Naxxramas (Exit)',60,0,0,0,NULL,533,3005.87,-3435.01,293.882,0),
+(4055,'Naxxramas (Exit)',60,0,0,9122,NULL,533,3005.87,-3435.01,293.882,0),
 (4156,'Naxxramas (Entrance)',60,0,0,0,NULL,533,3498.28,-5349.9,144.968,1.31324);
 /*!40000 ALTER TABLE `areatrigger_teleport` ENABLE KEYS */;
 UNLOCK TABLES;
