@@ -2751,6 +2751,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (234612,2346,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Dun Garok Priest - Set Phase to 0 on Evade'),
 (234801,2348,0,0,100,1,3000,5500,31000,36000,11,3396,1,32,0,0,0,0,0,0,0,0,'Elder Moss Creeper - Cast Corrosive Poison'),
 (234901,2349,0,0,100,1,16400,30200,5200,36300,11,3396,1,32,0,0,0,0,0,0,0,0,'Giant Moss Creeper - Cast Corrosive Poison'),
+(235001,2350,0,0,100,7,3500,4000,8000,10000,11,3396,1,0,0,0,0,0,0,0,0,0,'Forest Moss Creeper - Cast Poison'),
 (235801,2358,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Dalaran Summoner - Prevent Combat Movement on Spawn'),
 (235802,2358,4,0,100,0,0,0,0,0,11,20815,1,0,22,6,0,0,0,0,0,0,'Dalaran Summoner - Cast Fireball and Set Phase 1 on Aggro'),
 (235803,2358,0,5,100,1,0,0,6200,6400,11,20815,1,0,0,0,0,0,0,0,0,0,'Dalaran Summoner - Cast Fireball (Phase 1)'),
