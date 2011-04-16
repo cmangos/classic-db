@@ -44,6 +44,7 @@ LOCK TABLES `fishing_loot_template` WRITE;
 /*!40000 ALTER TABLE `fishing_loot_template` DISABLE KEYS */;
 INSERT INTO `fishing_loot_template` VALUES
 (1,11000,100,1,-11000,1,0,0,0),
+(11,11004,100,1,-11004,1,0,0,0),
 (12,11000,100,1,-11000,1,0,0,0),
 (17,11003,100,1,-11003,1,0,0,0),
 (33,11006,100,1,-11006,1,0,0,0),
