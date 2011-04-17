@@ -255,7 +255,9 @@ INSERT INTO `db_script_string` VALUES
 (2000005307,'Be warned that even your creators are fallible.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005308,'Digging too deep into your past might bring an abrupt end to your future.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005309,'dissipates before your eyes.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000005310,'It\'s a mystery of the past indeed! But a key to our future!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005310,'It\'s a mystery of the past indeed! But a key to our future!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005311,'My, that Black Claw stout packs quite a punch!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005312,'I feel... dizzy. It\'s so hot... in... here...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
