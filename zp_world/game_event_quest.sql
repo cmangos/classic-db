@@ -36,6 +36,19 @@ CREATE TABLE `game_event_quest` (
 LOCK TABLES `game_event_quest` WRITE;
 /*!40000 ALTER TABLE `game_event_quest` DISABLE KEYS */;
 INSERT INTO `game_event_quest` VALUES
+(9319,1),
+(9322,1),
+(9323,1),
+(9324,1),
+(9325,1),
+(9326,1),
+(9330,1),
+(9331,1),
+(9332,1),
+(9339,1),
+(9365,1),
+(9368,1),
+(9386,1),
 (6961,2),
 (6962,2),
 (6963,2),
