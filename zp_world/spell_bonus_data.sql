@@ -100,6 +100,7 @@ INSERT INTO `spell_bonus_data` VALUES
 (10274,0.2857,0,0,'Mage - Arcane Missiles Triggered Spell Rank 7'),
 (10435,0.1667,0,0,'Shaman - Searing Totem Attack Rank 5'),
 (10436,0.1667,0,0,'Shaman - Searing Totem Attack Rank 6'),
+(10444,0,0,0,'Shaman - Flametongue Attack'),
 (10445,0.1,0,0,'Shaman - Flametongue Weapon Proc Rank 4'),
 (10582,0.1,0,0,'Shaman - Magma Totam Passive Rank 2'),
 (10583,0.1,0,0,'Shaman - Magma Totam Passive Rank 3'),
