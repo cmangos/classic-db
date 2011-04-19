@@ -619,6 +619,7 @@ INSERT INTO `script_texts` VALUES
 (-1000672,'Hey, what\'s going on over there? Sir, are you alright? Sir??',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'guard SAY_4'),
 (-1000673,'Something is wrong with the Highlord. Do something!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,'guard SAY_DO'),
 (-1000674,'NOOOOOOOOOOOO!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,15,'taelan YELL_NO'),
+(-1000675,'It\'s okay, boys. Back off. You\'ve done enough. I\'ll meet up with you later.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'dashel SAY_BEATEN'),
 (-1033000,'Follow me and I\'ll open the courtyard door for you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_FREE_AS'),
 (-1033001,'I have just the spell to get this door open. Too bad the cell doors weren\'t locked so haphazardly.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_OPEN_DOOR_AS'),
 (-1033002,'There it is! Wide open. Good luck to you conquering what lies beyond. I must report back to the Kirin Tor at once!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_POST_DOOR_AS'),
