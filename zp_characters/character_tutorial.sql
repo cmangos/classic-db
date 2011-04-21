@@ -24,7 +24,6 @@ DROP TABLE IF EXISTS `character_tutorial`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `character_tutorial` (
   `account` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Account Identifier',
-  `realmid` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Realm Identifier',
   `tut0` int(11) unsigned NOT NULL DEFAULT '0',
   `tut1` int(11) unsigned NOT NULL DEFAULT '0',
   `tut2` int(11) unsigned NOT NULL DEFAULT '0',
@@ -33,10 +32,18 @@ CREATE TABLE `character_tutorial` (
   `tut5` int(11) unsigned NOT NULL DEFAULT '0',
   `tut6` int(11) unsigned NOT NULL DEFAULT '0',
   `tut7` int(11) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`account`,`realmid`),
-  KEY `acc_key` (`account`)
+  PRIMARY KEY (`account`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Player System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `character_tutorial`
+--
+
+LOCK TABLES `character_tutorial` WRITE;
+/*!40000 ALTER TABLE `character_tutorial` DISABLE KEYS */;
+/*!40000 ALTER TABLE `character_tutorial` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
