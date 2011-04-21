@@ -38,17 +38,8 @@ CREATE TABLE `corpse` (
   KEY `instance` (`instance`),
   KEY `Idx_player` (`player`),
   KEY `Idx_time` (`time`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Death System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Death System';
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `corpse`
---
-
-LOCK TABLES `corpse` WRITE;
-/*!40000 ALTER TABLE `corpse` DISABLE KEYS */;
-/*!40000 ALTER TABLE `corpse` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

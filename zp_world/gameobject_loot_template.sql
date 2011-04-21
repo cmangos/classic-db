@@ -33,7 +33,7 @@ CREATE TABLE `gameobject_loot_template` (
   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`item`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -16512,9 +16512,9 @@ INSERT INTO `gameobject_loot_template` VALUES
 (177241,14610,-100,0,1,1,0,0,0),
 (177241,17114,-100,0,1,1,0,0,0),
 (181074,22305,38,1,1,1,0,0,0),
+(181074,22317,17,1,1,1,0,0,0),
 (181074,22318,26,1,1,1,0,0,0),
 (181074,22330,19,1,1,1,0,0,0),
-(181074,22317,17,1,1,1,0,0,0),
 (181366,12002,100,1,-12002,2,0,0,0),
 (181366,22691,0,2,1,1,0,0,0),
 (181366,22726,30,0,1,1,0,0,0),

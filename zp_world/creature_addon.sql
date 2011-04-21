@@ -31,7 +31,7 @@ CREATE TABLE `creature_addon` (
   `moveflags` int(10) unsigned NOT NULL DEFAULT '0',
   `auras` text,
   PRIMARY KEY (`guid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

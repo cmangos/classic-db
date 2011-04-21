@@ -30,7 +30,7 @@ CREATE TABLE `creature_model_info` (
   `modelid_other_gender` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `modelid_other_team` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`modelid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Model related info)';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Creature System (Model related info)';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

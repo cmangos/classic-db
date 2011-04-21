@@ -35,7 +35,7 @@ CREATE TABLE `spell_proc_event` (
   `CustomChance` float NOT NULL DEFAULT '0',
   `Cooldown` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -197,8 +197,8 @@ INSERT INTO `spell_proc_event` VALUES
 (29635,0,0,0,0,0,0,0,3,0,0),
 (29636,0,0,0,0,0,0,0,3,0,0),
 (29637,0,0,0,0,0,0,0,3,0,0),
-(30160,0,0,0,0,0,0,2,0,0,0),
 (30003,0,0,0,0,0,0,2048,0,0,0),
+(30160,0,0,0,0,0,0,2,0,0,0),
 (30802,0,0,0,0,0,0,2,0,0,0),
 (30808,0,0,0,0,0,0,2,0,0,0),
 (30809,0,0,0,0,0,0,2,0,0,0),

@@ -27,7 +27,7 @@ CREATE TABLE `spell_script_target` (
   `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `targetEntry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   UNIQUE KEY `entry_type_target` (`entry`,`type`,`targetEntry`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Spell System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Spell System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

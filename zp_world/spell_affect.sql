@@ -27,7 +27,7 @@ CREATE TABLE `spell_affect` (
   `effectId` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `SpellFamilyMask` bigint(20) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`effectId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

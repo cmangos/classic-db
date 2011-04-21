@@ -28,7 +28,7 @@ CREATE TABLE `creature_equip_template` (
   `equipentry2` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `equipentry3` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Equipment)';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Creature System (Equipment)';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

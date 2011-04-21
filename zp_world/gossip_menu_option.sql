@@ -45,7 +45,7 @@ CREATE TABLE `gossip_menu_option` (
   `cond_3_val_1` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `cond_3_val_2` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`menu_id`,`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

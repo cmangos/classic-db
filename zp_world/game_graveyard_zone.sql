@@ -27,7 +27,7 @@ CREATE TABLE `game_graveyard_zone` (
   `ghost_zone` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `faction` smallint(5) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`,`ghost_zone`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Trigger System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Trigger System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

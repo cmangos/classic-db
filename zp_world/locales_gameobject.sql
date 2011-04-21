@@ -33,7 +33,7 @@ CREATE TABLE `locales_gameobject` (
   `name_loc7` varchar(100) NOT NULL DEFAULT '',
   `name_loc8` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`entry`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

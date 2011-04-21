@@ -33,7 +33,7 @@ CREATE TABLE `spell_area` (
   `gender` tinyint(1) unsigned NOT NULL DEFAULT '2',
   `autocast` tinyint(1) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`spell`,`area`,`quest_start`,`quest_start_active`,`aura_spell`,`racemask`,`gender`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

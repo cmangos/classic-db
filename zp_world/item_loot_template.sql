@@ -33,7 +33,7 @@ CREATE TABLE `item_loot_template` (
   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`item`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2566,8 +2566,8 @@ INSERT INTO `item_loot_template` VALUES
 (12122,10242,0,1,1,1,0,0,0),
 (12122,10243,0,1,1,1,0,0,0),
 (12122,10245,0,1,1,1,0,0,0),
-(12339,12323,100,0,1,1,0,0,0),
 (12339,12300,100,0,1,1,0,0,0),
+(12339,12323,100,0,1,1,0,0,0),
 (12849,10377,66.7,0,1,1,0,0,0),
 (12849,10383,33.3,0,1,1,0,0,0),
 (13874,7974,9.1,0,1,1,0,0,0),

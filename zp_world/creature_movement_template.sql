@@ -42,7 +42,7 @@ CREATE TABLE `creature_movement_template` (
   `model1` mediumint(9) NOT NULL DEFAULT '0',
   `model2` mediumint(9) NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`point`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature waypoint system';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature waypoint system';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
