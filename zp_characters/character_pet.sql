@@ -50,6 +50,15 @@ CREATE TABLE `character_pet` (
   KEY `owner` (`owner`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Pet System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `character_pet`
+--
+
+LOCK TABLES `character_pet` WRITE;
+/*!40000 ALTER TABLE `character_pet` DISABLE KEYS */;
+/*!40000 ALTER TABLE `character_pet` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

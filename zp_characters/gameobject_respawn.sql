@@ -30,6 +30,15 @@ CREATE TABLE `gameobject_respawn` (
   KEY `instance` (`instance`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Grid Loading System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `gameobject_respawn`
+--
+
+LOCK TABLES `gameobject_respawn` WRITE;
+/*!40000 ALTER TABLE `gameobject_respawn` DISABLE KEYS */;
+/*!40000 ALTER TABLE `gameobject_respawn` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

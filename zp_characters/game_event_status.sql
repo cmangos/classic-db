@@ -25,8 +25,17 @@ DROP TABLE IF EXISTS `game_event_status`;
 CREATE TABLE `game_event_status` (
   `event` smallint(6) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`event`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Game event system';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Game event system';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `game_event_status`
+--
+
+LOCK TABLES `game_event_status` WRITE;
+/*!40000 ALTER TABLE `game_event_status` DISABLE KEYS */;
+/*!40000 ALTER TABLE `game_event_status` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -30,6 +30,15 @@ CREATE TABLE `item_instance` (
   KEY `idx_owner_guid` (`owner_guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Item System';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `item_instance`
+--
+
+LOCK TABLES `item_instance` WRITE;
+/*!40000 ALTER TABLE `item_instance` DISABLE KEYS */;
+/*!40000 ALTER TABLE `item_instance` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
