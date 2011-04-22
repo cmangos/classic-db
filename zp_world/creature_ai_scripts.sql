@@ -10579,6 +10579,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1114202,11142,9,0,100,3,5100,7700,4900,15400,11,7713,0,0,0,0,0,0,0,0,0,0,'Undead Postman - Cast Wailing Dead'),
 (1114203,11142,0,0,100,2,6900,11300,10400,17400,11,5137,1,1,0,0,0,0,0,0,0,0,'Undead Postman - Cast Call of the Grave on Death'),
 (1119601,11196,4,0,100,0,0,0,0,0,39,30,0,0,0,0,0,0,0,0,0,0,'Shatterspear Drummer - Call for Help on Aggro'),
+(1125601,11256,1,0,100,0,0,0,10000,10000,1,-203,0,0,0,0,0,0,0,0,0,0,'Manifestation of Water - Say after Spawn'),
 (1125701,11257,0,0,100,3,4100,14500,6600,19400,11,10833,1,1,0,0,0,0,0,0,0,0,'Scholomance Handler - Cast Arcane Blast'),
 (1125702,11257,0,0,100,3,4700,10800,10900,21200,11,17145,1,0,0,0,0,0,0,0,0,0,'Scholomance Handler - Cast Blast Wave'),
 (1125703,11257,0,0,100,3,3900,19400,10300,33800,11,15244,1,0,0,0,0,0,0,0,0,0,'Scholomance Handler - Cast Cone of Cold'),
