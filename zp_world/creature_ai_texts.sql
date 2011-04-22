@@ -348,6 +348,7 @@ INSERT INTO `creature_ai_texts` VALUES
 (-163,'Slay them, my brethren! For the Scourge!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5822,1,0,0,'7357'),
 (-162,'Mmm... I love my delicious Southshore stout.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'2440'),
 (-161,'A living $r... soon to be a dead like me.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Common Undead Text'),
+(-148,'Ma reth bromo zoln kilagrin dra ma zoern tu ko fraht ka tadrom Ma krin drinor zaln dirnor Ma krin kan aasrugel korsul',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'11256'),
 (-147,'His lieutenant, Ilkurd Magthrull possesses a tome which might indicate the location of the remaining soulgems.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'4509'),
 (-146,'He worried that his power weakened, that soon even we last of his precious soulgems would fade and die.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'4509'),
 (-145,'There were hundreds imprisoned by his spell. Now only a few remain in their prisons. He would speak to us sometimes.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'4509'),
