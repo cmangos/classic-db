@@ -50,6 +50,9 @@ CREATE TABLE `creature_movement_scripts` (
 LOCK TABLES `creature_movement_scripts` WRITE;
 /*!40000 ALTER TABLE `creature_movement_scripts` DISABLE KEYS */;
 INSERT INTO `creature_movement_scripts` VALUES
+(504301,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Set Run Mode On'),
+(504302,0,16,10836,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Open Cell Door Sound'),
+(504303,0,16,10837,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Close Cell Door Sound'),
 (1258101,4,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
 /*!40000 ALTER TABLE `creature_movement_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
