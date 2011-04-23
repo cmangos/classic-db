@@ -4529,7 +4529,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 (390011,3900,14,0,100,1,400,40,16000,21000,11,913,6,1,0,0,0,0,0,0,0,0,'Caedakar the Vicious - Cast Healing Wave on Friendlies'),
 (390012,3900,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caedakar the Vicious - Set Phase to 0 on Evade'),
 (390101,3901,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Illiyana - Flee at 15% HP'),
-(390201,3902,0,0,100,1,1000,1000,2200,2900,11,6350,1,0,0,0,0,0,0,0,0,0,'Searing Totem II - Cast Attack'),
 (391401,3914,0,0,100,3,1300,14600,14200,36000,11,7295,1,0,0,0,0,0,0,0,0,0,'Rethilgore - Cast Soul Drain'),
 (391402,3914,4,0,100,2,0,0,0,0,34,2,1,0,0,0,0,0,0,0,0,0,'Rethilgore - Set Instance Data on Aggro'),
 (391403,3914,6,0,100,2,0,0,0,0,34,2,3,0,0,0,0,0,0,0,0,0,'Rethilgore - Set Instance Data on Death'),
