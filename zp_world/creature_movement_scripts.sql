@@ -50,6 +50,9 @@ CREATE TABLE `creature_movement_scripts` (
 LOCK TABLES `creature_movement_scripts` WRITE;
 /*!40000 ALTER TABLE `creature_movement_scripts` DISABLE KEYS */;
 INSERT INTO `creature_movement_scripts` VALUES
+(1,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn self, this script is used by many creatures'),
+(41202,0,0,1,0,0,0,0,2000000161,2000000162,0,0,0,0,0,0,'stitchesyell'),
+(41203,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'stitchesidlemove'),
 (143301,1,0,0,0,0,0,0,2000000141,2000000142,0,0,0,0,0,0,'corbettwp1'),
 (143302,5,0,0,0,0,0,0,2000000143,2000000144,0,0,0,0,0,0,'corbettwp7'),
 (143303,0,0,0,1427,10,0,0x04,2000000145,2000000146,0,0,0,0,0,0,'corbettatharlan'),
@@ -61,10 +64,17 @@ INSERT INTO `creature_movement_scripts` VALUES
 (143304,10,0,0,0,0,0,0,2000000156,0,0,0,0,0,0,0,'corbettreply'),
 (143304,15,0,0,0,0,0,0,2000000157,0,0,0,0,0,0,0,'corbettthanks'),
 (143304,40,0,0,0,0,0,0,2000000158,0,0,0,0,0,0,0,'corbettgoeshome'),
-(143305,0,0 ,0,0,0,0,0,2000000159,0,0,0,0,0,0,0,'corbettisback'),
-(504301,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Set Run Mode On'),
-(504302,0,16,10836,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Open Cell Door Sound'),
-(504303,0,16,10837,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Close Cell Door Sound'),
+(143305,0,0,0,0,0,0,0,2000000159,0,0,0,0,0,0,0,'corbettisback'),
+(504301,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'DefiasRioter-SetRunModeOn'),
+(504302,0,16,10836,0,0,0,0,0,0,0,0,0,0,0,0,'DefiasRioter-OpenCellDoorSound'),
+(504303,0,16,10837,0,0,0,0,0,0,0,0,0,0,0,0,'DefiasRioter-CloseCellDoorSound'),
+(590101,0,10,11256,30000,0,0,0,0,0,0,0,-1346.59,-4076.39,-1.23,1.6,'Islensummon'),
+(590101,1,1,68,0,0,0,0,0,0,0,0,0,0,0,0,'Islenkneel'),
+(590101,5,0,0,11256,10,0,0x04,2000000057,0,0,0,0,0,0,0,'Islengreet'),
+(590101,10,0,0,11256,10,0,0x02,2000000160,0,0,0,0,0,0,0,'Manifestationreply'),
+(590101,15,1,26,0,0,0,0,0,0,0,0,0,0,0,0,'Islenstand'),
+(590101,15,0,0,11256,10,0,0x04,2000000058,0,0,0,0,0,0,0,'Islenthanks'),
+(590102,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'Islenidle'),
 (1258101,4,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
 /*!40000 ALTER TABLE `creature_movement_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
