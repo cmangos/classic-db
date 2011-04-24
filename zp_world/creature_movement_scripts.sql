@@ -50,6 +50,18 @@ CREATE TABLE `creature_movement_scripts` (
 LOCK TABLES `creature_movement_scripts` WRITE;
 /*!40000 ALTER TABLE `creature_movement_scripts` DISABLE KEYS */;
 INSERT INTO `creature_movement_scripts` VALUES
+(143301,1,0,0,0,0,0,0,2000000141,2000000142,0,0,0,0,0,0,'corbettwp1'),
+(143302,5,0,0,0,0,0,0,2000000143,2000000144,0,0,0,0,0,0,'corbettwp7'),
+(143303,0,0,0,1427,10,0,0x04,2000000145,2000000146,0,0,0,0,0,0,'corbettatharlan'),
+(143303,5,0,0,1427,10,0,0x02,2000000147,2000000148,0,0,0,0,0,0,'harlantalk'),
+(143303,10,0,0,0,0,0,0,2000000149,2000000150,0,0,0,0,0,0,'corbettleave'),
+(143303,40,0,0,0,0,0,0,2000000151,0,0,0,0,0,0,0,'corbetttocheese'),
+(143304,0,0,0,0,0,0,0,2000000152,2000000153,0,0,0,0,0,0,'corbettatcheese'),
+(143304,5,0,0,483,10,0,0x02,2000000154,2000000155,0,0,0,0,0,0,'cheeseladyreply'),
+(143304,10,0,0,0,0,0,0,2000000156,0,0,0,0,0,0,0,'corbettreply'),
+(143304,15,0,0,0,0,0,0,2000000157,0,0,0,0,0,0,0,'corbettthanks'),
+(143304,40,0,0,0,0,0,0,2000000158,0,0,0,0,0,0,0,'corbettgoeshome'),
+(143305,0,0 ,0,0,0,0,0,2000000159,0,0,0,0,0,0,0,'corbettisback'),
 (504301,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Set Run Mode On'),
 (504302,0,16,10836,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Open Cell Door Sound'),
 (504303,0,16,10837,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Close Cell Door Sound'),
