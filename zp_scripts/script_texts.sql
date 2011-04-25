@@ -491,7 +491,7 @@ INSERT INTO `script_texts` VALUES
 (-1043001,'I must make the nescessary preparations before the awakening ritual can begin. You must protect me!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_PREPARE'),
 (-1043000,'At last! Naralex can be awakened! Come aid me, brave adventurers!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,'Disciple of Naralex - SAY_INTRO'),
 (-1036001,'We\'re under attack! A vast, ye swabs! Repel the invaders!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5777,1,7,0,'smite INST_SAY_ALARM2'),
-(-1036000,'You there, check out that noise!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5775,1,7,0,'smite INST_SAY_ALARM1'),
+(-1036000,'You there, check out that noise.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5775,1,7,0,'smite INST_SAY_ALARM1'),
 (-1033019,'Release your rage!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5797,1,0,0,'boss_arugal SAY_COMBAT'),
 (-1033018,'Another Falls!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5795,1,0,0,'boss_arugal SAY_KILLED_PLAYER'),
 (-1033017,'You, too, shall serve!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5793,1,0,0,'boss_arugal SAY_AGGRO'),
