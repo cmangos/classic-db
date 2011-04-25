@@ -36,7 +36,10 @@ CREATE TABLE `spell_proc_item_enchant` (
 LOCK TABLES `spell_proc_item_enchant` WRITE;
 /*!40000 ALTER TABLE `spell_proc_item_enchant` DISABLE KEYS */;
 INSERT INTO `spell_proc_item_enchant` VALUES
-(8034,9);
+(8034,9),
+(13897,6),
+(20004,6),
+(20005,1.6);
 /*!40000 ALTER TABLE `spell_proc_item_enchant` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
