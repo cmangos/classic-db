@@ -991,8 +991,6 @@ INSERT INTO `script_texts` VALUES
 (-1000200,'As if we don\'t have enough problems, you go and create more!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_GUARD_SIL_AGGRO3'),
 (-1000199,'Please tell me that you didn\'t just do what I think you just did. Please tell me that I\'m not going to have to hurt you...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_GUARD_SIL_AGGRO2'),
 (-1000198,'Taste blade, mongrel!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_GUARD_SIL_AGGRO1'),
-(-1000197,'%s kneels down and pick up the amulet.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,1,0,'lady_sylvanas EMOTE_LAMENT_END'),
-(-1000196,'Belore...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,0,'lady_sylvanas SAY_LAMENT_END'),
 (-1000195,'I choose the third option: KILLING YOU!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'floon SAY_FLOON_ATTACK'),
 (-1000194,'I give up! Please don\'t kill me!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'unkor SAY_SUBMIT'),
 (-1000193,'Thank you, dear $C, you just saved my life.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,0,'stillblade SAY_HEAL'),
@@ -1085,7 +1083,9 @@ INSERT INTO `script_texts` VALUES
 (-1000003,'%s becomes enraged!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_ENRAGED'),
 (-1000002,'%s goes into a frenzy!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_FRENZY'),
 (-1000001,'%s goes into a killing frenzy!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_FRENZY_KILL'),
-(-1000000,'<ScriptDev2 Text Entry Missing!>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'DEFAULT_TEXT');
+(-1000000,'<ScriptDev2 Text Entry Missing!>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'DEFAULT_TEXT'),
+(-1036002,'You land lubbers are tougher than I thought! I\'ll have to improvise!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5778,0,0,21,'smite SAY_PHASE_2'),
+(-1036003,'D\'ah! Now you\'re making me angry!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5779,0,0,15,'smite SAY_PHASE_3');
 /*!40000 ALTER TABLE `script_texts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
