@@ -49,6 +49,9 @@ CREATE TABLE `gossip_scripts` (
 
 LOCK TABLES `gossip_scripts` WRITE;
 /*!40000 ALTER TABLE `gossip_scripts` DISABLE KEYS */;
+INSERT INTO `gossip_scripts` VALUES
+(125,2,26,0,0,0,0,0,0,0,0,0,0,0,0,0,'astor attack start'),
+(125,1,22,21,0,0,0,5,0,0,0,0,0,0,0,0,'astor change faction');
 /*!40000 ALTER TABLE `gossip_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

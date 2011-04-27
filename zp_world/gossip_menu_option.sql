@@ -72,6 +72,8 @@ INSERT INTO `gossip_menu_option` VALUES
 (0,14,0,'I wish to unlearn my talents.',16,16,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
 (0,15,2,'I wish to unlearn my pet\'s skills.',17,16,0,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
 (83,0,4,'Return me to life.',6,32,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
+(125,0,0,'You\'ve got something I need, Astor. And I\'ll be taking it now.',1,1,-1,0,125,0,0,'',0,0,0,0,0,0,0,0,0),
+(126,0,0,'You\'re Astor Hadren, right?',1,1,125,0,0,0,0,'',9,14420,0,24,7231,1,0,0,0),
 (342,0,0,'Trick or Treat!',1,1,0,0,0,0,0,'',12,12,0,11,24755,0,0,0,0),
 (342,2,5,'Make this inn my home.',8,128,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
 (342,3,1,'Let me browse your goods.',3,4,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
