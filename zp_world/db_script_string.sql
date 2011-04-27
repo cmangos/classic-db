@@ -283,7 +283,8 @@ INSERT INTO `db_script_string` VALUES
 (2000005309,'dissipates before your eyes.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005310,'It\'s a mystery of the past indeed! But a key to our future!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005311,'My, that Black Claw stout packs quite a punch!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000005312,'I feel... dizzy. It\'s so hot... in... here...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005312,'I feel... dizzy. It\'s so hot... in... here...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005313,'Into the box me pretties! Thas it. One by one ye go.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
