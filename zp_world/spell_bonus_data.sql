@@ -53,6 +53,7 @@ INSERT INTO `spell_bonus_data` VALUES
 (585,0.714,0,0,0,'Priest - Smite'),
 (603,0,2,0,0,'Warlock - Curse of Doom'),
 (686,0.8571,0,0,0,'Warlock - Shadow Bolt'),
+(703,0,0,0,0.03,'Rogue - Garrote'),
 (755,0,0.4485,0,0,'Warlock - Health Funnel'),
 (879,0.15,0,0.15,0,'Paladin - Exorcism'),
 (974,0.2857,0,0,0,'Shaman - Earth Shield'),
@@ -140,8 +141,7 @@ INSERT INTO `spell_bonus_data` VALUES
 (26573,0,0.04,0,0.04,'Paladin - Consecration'),
 (27803,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 4'),
 (27804,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 5'),
-(27805,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 6'),
-(703,0,0,0,0.03,'Rogue - Garrote');
+(27805,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 6');
 /*!40000 ALTER TABLE `spell_bonus_data` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
