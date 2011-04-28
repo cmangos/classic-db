@@ -490,6 +490,8 @@ INSERT INTO `script_texts` VALUES
 (-1043002,'These caverns were once a temple of promise for regrowth in the Barrens. Now, they are the halls of nightmares.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Disciple of Naralex - SAY_FIRST_CORNER'),
 (-1043001,'I must make the nescessary preparations before the awakening ritual can begin. You must protect me!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_PREPARE'),
 (-1043000,'At last! Naralex can be awakened! Come aid me, brave adventurers!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,'Disciple of Naralex - SAY_INTRO'),
+(-1036003,'D\'ah! Now you\'re making me angry!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5779,0,0,15,'smite SAY_PHASE_3'),
+(-1036002,'You land lubbers are tougher than I thought! I\'ll have to improvise!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5778,0,0,21,'smite SAY_PHASE_2'),
 (-1036001,'We\'re under attack! A vast, ye swabs! Repel the invaders!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5777,1,7,0,'smite INST_SAY_ALARM2'),
 (-1036000,'You there, check out that noise.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5775,1,7,0,'smite INST_SAY_ALARM1'),
 (-1033019,'Release your rage!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5797,1,0,0,'boss_arugal SAY_COMBAT'),
@@ -512,6 +514,21 @@ INSERT INTO `script_texts` VALUES
 (-1033002,'There it is! Wide open. Good luck to you conquering what lies beyond. I must report back to the Kirin Tor at once!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_POST_DOOR_AS'),
 (-1033001,'I have just the spell to get this door open. Too bad the cell doors weren\'t locked so haphazardly.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_OPEN_DOOR_AS'),
 (-1033000,'Follow me and I\'ll open the courtyard door for you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_FREE_AS'),
+(-1000693,'The Defias shall succeed! No meek adventurer will stop us!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_MARZON_2'),
+(-1000692,'That\'s it! That\'s what you were waiting for! KILL THEM!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'SAY_TYRION_2'),
+(-1000691,'Hmm, it could be that meddle Shaw. I will see what I can discover. Be off with you. I\'ll contact you again soon.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_LESCOVAR_4'),
+(-1000690,'VanCleef sends word that the plans are underway. But he\'s hear rumors about someone snooping about.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_MARZON_1'),
+(-1000689,'There you are. What news from Westfall?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_LESCOVAR_3'),
+(-1000688,'Yes, sir!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_GUARD_2'),
+(-1000687,'It\'s time for my meditation, leave me.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_LESCOVAR_2'),
+(-1000686,'I shall use the time wisely, milord. Thank you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_SPYBOT_4'),
+(-1000685,'Ah, thank you kindly. I will leave you to the library while I tend to this small matter.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_LESCOVAR_1'),
+(-1000684,'Milord, your guest has arrived. He awaits your presence.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_SPYBOT_3'),
+(-1000683,'Thank you. The Light be with you both.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_SPYBOT_2'),
+(-1000682,'Of course. He awaits you in the library.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_GUARD_1'),
+(-1000681,'Good day to you both. I would speak to Lord Lescovar.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_SPYBOT_1'),
+(-1000680,'Wait here. Spybot will make Lescovar come out as soon as possible. Be ready! Attack only after you\'ve overheard their conversation.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_TYRION_1'),
+(-1000679,'By your command!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_QUEST_ACCEPT_ATTACK'),
 (-1000678,'I\'m glad the commotions died down some around here. The last thing this place needs is another brawl.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'mikhail SAY'),
 (-1000677,'I have a few notes the job back at my place. I\'ll get them and then meet you back in the inn.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,'slim SAY_2'),
 (-1000676,'Okay, okay! No need to get all violent. I\'ll talk, I\'ll talk!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,20,'slim SAY_1'),
@@ -1083,9 +1100,7 @@ INSERT INTO `script_texts` VALUES
 (-1000003,'%s becomes enraged!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_ENRAGED'),
 (-1000002,'%s goes into a frenzy!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_FRENZY'),
 (-1000001,'%s goes into a killing frenzy!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_FRENZY_KILL'),
-(-1000000,'<ScriptDev2 Text Entry Missing!>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'DEFAULT_TEXT'),
-(-1036002,'You land lubbers are tougher than I thought! I\'ll have to improvise!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5778,0,0,21,'smite SAY_PHASE_2'),
-(-1036003,'D\'ah! Now you\'re making me angry!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5779,0,0,15,'smite SAY_PHASE_3');
+(-1000000,'<ScriptDev2 Text Entry Missing!>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'DEFAULT_TEXT');
 /*!40000 ALTER TABLE `script_texts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
