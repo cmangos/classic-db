@@ -46,6 +46,12 @@ INSERT INTO `scripted_event_id` VALUES
 (3099,'event_antalarion_statue_activation'),
 (3100,'event_antalarion_statue_activation'),
 (4884,'event_spell_altar_emberseer'),
+(5618,'event_spell_gandling_shadow_portal'),
+(5619,'event_spell_gandling_shadow_portal'),
+(5620,'event_spell_gandling_shadow_portal'),
+(5621,'event_spell_gandling_shadow_portal'),
+(5622,'event_spell_gandling_shadow_portal'),
+(5623,'event_spell_gandling_shadow_portal'),
 (8328,'npc_kroshius'),
 (8502,'event_avatar_of_hakkar');
 /*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
