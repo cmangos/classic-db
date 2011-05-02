@@ -12611,6 +12611,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1498101,14981,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Elfarran - Summon Stormwind City Guard on Hostile LOS'),
 (1500701,15007,10,0,100,0,0,15,0,0,12,7980,1,600000,0,0,0,0,0,0,0,0,'Sir Malory Wheeler - Summon Deathguard Elite on Hostile LOS'),
 (1500801,15008,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Lady Hoteshem - Summon Stormwind City Guard on Hostile LOS'),
+(1506801,15068,0,0,100,3,5500,5500,12000,19000,11,24187,1,0,0,0,0,0,0,0,0,0,'Zulian Guardian  - Cast Claw'),
 (1510101,15101,0,0,100,3,3000,5000,5000,7000,11,3391,0,0,0,0,0,0,0,0,0,0,'Zulian Prowler - Cast Thrash'),
 (1511101,15111,0,0,100,3,2000,5000,12000,12000,11,24612,1,0,0,0,0,0,0,0,0,0,'Mad Servant - Cast Flamestrike'),
 (1511102,15111,0,0,100,2,20000,20000,0,0,11,24621,0,11,0,0,0,0,0,0,0,0,'Mad Servant - Portal of Madness'),
