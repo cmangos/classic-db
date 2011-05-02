@@ -12636,6 +12636,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1512802,15128,0,0,100,1,6000,11000,19000,25000,11,11972,1,1,0,0,0,0,0,0,0,0,'Defiler Elite - Cast Shield Bash'),
 (1513001,15130,0,0,100,1,3000,5000,5000,7000,11,15284,1,0,0,0,0,0,0,0,0,0,'League of Arathor Elite - Cast Cleave'),
 (1513002,15130,9,0,100,1,0,5,13000,16000,11,11972,1,1,0,0,0,0,0,0,0,0,'League of Arathor Elite - Cast Shield Bash'),
+(1514601,15146,0,0,100,3,5500,5500,15000,15000,11,24614,1,0,0,0,0,0,0,0,0,0,'Mad Voidwalker - Cast Consuming Shadows'),
+(1514602,15146,0,0,100,3,5500,5500,8000,10000,11,24616,1,0,0,0,0,0,0,0,0,0,'Mad Voidwalker - Cast Shadow Shock'),
 (1517701,15177,4,0,100,0,0,0,0,0,12,9527,1,30000,12,9527,1,30000,1,-549,0,0,'Cloud Skydancer - Summon Enraged Hippogryphs on Aggro'),
 (1517801,15178,4,0,100,0,0,0,0,0,12,9297,1,30000,12,9297,1,30000,1,-548,0,0,'Runk Windtamer - Summon Enraged Wyverns and Yell on Aggro'),
 (1519501,15195,9,0,100,1,0,5,8000,12000,11,18368,1,0,0,0,0,0,0,0,0,0,'Wickerman Guardian - Cast Strike'),
