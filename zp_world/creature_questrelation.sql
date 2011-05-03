@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.10
+-- Server version   5.5.10
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -2592,7 +2592,6 @@ INSERT INTO `creature_questrelation` VALUES
 (11536,9228),
 (11548,5535),
 (11548,5536),
-(11554,6131),
 (11554,8460),
 (11554,8462),
 (11554,8466),
