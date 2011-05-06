@@ -67,7 +67,8 @@ INSERT INTO `game_event` VALUES
 (31,'2006-01-20 23:00:00','2020-12-31 22:59:59',86400,21600,0,'Edge of Madness, Renataki'),
 (32,'2006-01-04 23:00:00','2020-12-31 22:59:59',86400,21600,0,'Edge of Madness, Wushoolay'),
 (33,'2006-10-05 22:00:00','2020-10-05 22:00:00',525600,10080,321,'Harvest Festival'),
-(34,'2006-01-04 14:00:00','2020-12-30 23:00:00',10080,180,0,'Fishing Extravaganza Turn-in');
+(34,'2006-01-04 14:00:00','2020-12-30 23:00:00',10080,180,0,'Fishing Extravaganza Turn-in'),
+(61,'2010-12-31 23:58:00','2020-12-30 23:00:00',30,10,0,'Stormwind City - Stockades Jail Break');
 /*!40000 ALTER TABLE `game_event` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
