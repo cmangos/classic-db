@@ -226,7 +226,7 @@ INSERT INTO `script_texts` VALUES
 (-1509025,'Sands of the desert rise and block out the sun!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8598,1,0,0,'ossirian SAY_AGGRO'),
 (-1509024,'Tresspassers will be terminated.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8601,1,0,0,'ossirian SAY_RAND_INTRO4'),
 (-1509023,'To your posts. Defend the city.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8600,1,0,0,'ossirian SAY_RAND_INTRO3'),
-(-1509022,'The walls have been breached!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8599,1,0,0,'ossirian SAY_RAND_INTRO2'),
+(-1509022,'The walls have been breached!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8599,6,0,0,'ossirian SAY_RAND_INTRO2'),
 (-1509021,'Protect the city at all costs!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8597,1,0,0,'ossirian SAY_RAND_INTRO1'),
 (-1509020,'My powers return!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8596,1,0,0,'ossirian SAY_SURPREME3'),
 (-1509019,'My powers are renewed!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8595,1,0,0,'ossirian SAY_SURPREME2'),
