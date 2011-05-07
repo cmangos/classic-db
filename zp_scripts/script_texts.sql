@@ -280,6 +280,7 @@ INSERT INTO `script_texts` VALUES
 (-1469002,'REUSE ME',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'REUSE ME'),
 (-1469001,'Clever Mortals but I am not so easily lured away from my sanctum!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8287,1,0,0,'broodlord SAY_LEASH'),
 (-1469000,'None of your kind should be here! You\'ve doomed only yourselves!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8286,1,0,0,'broodlord SAY_AGGRO'),
+(-1429002,'At last... Freed from his cursed grasp!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,'old ironbark SAY_IRONBARK_REDEEM'),
 (-1429001,'Who dares disrupt the sanctity of Eldre\'Thalas? Face me, cowards!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,'prince tortheldrin SAY_KILL_IMMOLTHAR'),
 (-1429000,'The demon is loose! Quickly we must restrain him!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,'highborne summoner SAY_FREE_IMMOLTHAR'),
 (-1409024,'Impudent whelps! You\'ve rushed headlong to your own deaths! See now, the master stirs!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'majordomo SAY_SUMMON_1'),
