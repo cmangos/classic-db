@@ -49,6 +49,7 @@ CREATE TABLE `creature_ai_texts` (
 LOCK TABLES `creature_ai_texts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` VALUES
+(-1136,'I never thought that you could find me! Well, let\'s see what you can do...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Tyrande Whisperwind - Chance Say on Aggro'),
 (-1135,'None can stand against the serpent lords!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5786,1,0,0,'3671'),
 (-1119,'Kill $N!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,25,'15392'),
 (-1058,'%s seems to no longer be able to cast spells...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'7666'),
