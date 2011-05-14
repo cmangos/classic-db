@@ -12514,6 +12514,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1451102,14511,0,0,100,3,5000,7000,7000,12000,11,15245,0,0,0,0,0,0,0,0,0,0,'Shadowed Spirit - Cast Shadow Bolt Volley'),
 (1451103,14511,0,0,100,3,1000,3000,25000,55000,11,22417,0,0,0,0,0,0,0,0,0,0,'Shadowed Spirit - Cast Shadow Shield'),
 (1451104,14511,0,0,100,3,2000,7000,2000,9000,11,22575,1,0,0,0,0,0,0,0,0,0,'Shadowed Spirit - Cast Shadow Shock'),
+(1451201,14512,0,0,100,3,1000,1000,20000,30000,11,18376,1,0,0,0,0,0,0,0,0,0,'Corrupted Spirit - Cast Corruption'),
 (1452201,14522,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Ur\'dan - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (1452202,14522,1,0,100,1,1000,1000,0,0,11,11939,0,1,0,0,0,0,0,0,0,0,'Ur\'dan - Summon Imp on Spawn'),
 (1452203,14522,4,0,100,0,0,0,0,0,11,9613,1,0,23,1,0,0,0,0,0,0,'Ur\'dan - Cast Shadow Bolt and Set Phase 1 on Aggro'),
