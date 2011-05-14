@@ -10878,6 +10878,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1147605,11476,7,0,100,2,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Skeletal Highborne - Set Phase to 0 on Evade'),
 (1148001,11480,0,0,100,3,1000,1000,15000,15000,11,15979,0,0,0,0,0,0,0,0,0,0,'Arcane Aberration - Cast Arcane Bolt'),
 (1148002,11480,0,0,100,3,3000,3000,12000,16000,11,22936,1,0,0,0,0,0,0,0,0,0,'Arcane Aberration - Cast Mana Burn'),
+(1148301,11483,0,0,100,2,5500,5500,0,0,11,14514,0,0,0,0,0,0,0,0,0,0,'Mana Remnant - Cast Blink'),
+(1148302,11483,0,0,100,3,3000,5500,12000,13000,11,15659,1,0,0,0,0,0,0,0,0,0,'Mana Remnant - Cast Chain Lightning'),
 (1148401,11484,1,0,100,2,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Residual Monstrosity - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (1148402,11484,4,0,100,2,0,0,0,0,11,15230,4,0,23,1,0,0,0,0,0,0,'Residual Monstrosity - Cast Arcane Bolt and Set Phase 1 on Aggro'),
 (1148403,11484,9,5,100,3,0,40,2300,4600,11,15230,4,0,0,0,0,0,0,0,0,0,'Residual Monstrosity - Cast Arcane Bolt (Phase 1)'),
