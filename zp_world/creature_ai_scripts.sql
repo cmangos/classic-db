@@ -8560,7 +8560,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (799902,7999,0,0,100,1,5000,5000,17000,25000,11,20690,1,0,0,0,0,0,0,0,0,0,'Tyrande Whisperwind - Cast Moonfire'),
 (799903,7999,0,0,100,1,5000,5000,19000,30000,11,20688,4,0,0,0,0,0,0,0,0,0,'Tyrande Whisperwind - Cast Searing Arrow'),
 (799904,7999,0,0,100,1,5500,5500,22000,25000,11,20687,1,0,0,0,0,0,0,0,0,0,'Tyrande Whisperwind - Cast Starfall'),
-(799905,7999,4,0,100,0,0,0,0,0,1,-1135,0,0,0,0,0,0,0,0,0,0,'Tyrande Whisperwind - Chance Say on Aggro'),
+(799905,7999,4,0,100,0,0,0,0,0,1,-1136,0,0,0,0,0,0,0,0,0,0,'Tyrande Whisperwind - Chance Say on Aggro'),
 (801701,8017,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Sen\'jin Guardian - Flee at 15% HP'),
 (801801,8018,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'Guthrum Thunderfist - Summon Enraged Gryphons and Yell on Aggro'),
 (801901,8019,4,0,100,0,0,0,0,0,12,9527,1,30000,12,9527,1,30000,1,-549,0,0,'Fyldren Moonfeather - Summon Enraged Hippogryphs on Aggro'),
