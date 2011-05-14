@@ -9091,6 +9091,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (887701,8877,2,0,100,2,30,0,0,0,11,8599,0,0,1,-106,0,0,0,0,0,0,'Sandfury Zealot - Cast Enrage at 30% HP'),
 (888901,8889,0,0,100,3,5000,5000,14000,16000,11,15580,1,0,0,0,0,0,0,0,0,0,'Anvilrage Overseer - Cast Strike'),
 (888902,8889,4,0,100,2,0,0,0,0,11,13589,0,0,0,0,0,0,0,0,0,0,'Anvilrage Overseer - Cast Haste Aura'),
+(889001,8890,0,0,100,3,500,5000,12000,12000,11,14030,1,0,0,0,0,0,0,0,0,0,'Anvilrage Warden - Cast Hooked Net'),
+(889002,8890,0,0,100,3,5000,5000,15000,16000,11,11972,1,0,0,0,0,0,0,0,0,0,'Anvilrage Wardenr - Cast Shield Bash'),
 (890101,8901,1,0,100,2,0,0,0,0,21,0,0,0,20,0,0,0,23,1,0,0,'Anvilrage Reservist - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 (890102,8901,0,0,100,2,0,0,0,0,11,9128,0,1,0,0,0,0,0,0,0,0,'Anvilrage Reservist - Cast Battle Shout on Aggro'),
 (890103,8901,9,5,100,3,5,30,2200,3800,11,6660,1,0,40,2,0,0,0,0,0,0,'Anvilrage Reservist - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
