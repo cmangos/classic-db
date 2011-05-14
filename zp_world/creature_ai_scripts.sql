@@ -10876,6 +10876,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1147603,11476,24,5,100,3,21081,5,5000,5000,23,1,0,0,0,0,0,0,0,0,0,0,'Skeletal Highborne - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
 (1147604,11476,28,3,100,3,21081,1,5000,5000,23,-1,0,0,0,0,0,0,0,0,0,0,'Skeletal Highborne - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 (1147605,11476,7,0,100,2,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Skeletal Highborne - Set Phase to 0 on Evade'),
+(1148001,11480,0,0,100,3,1000,1000,15000,15000,11,15979,0,0,0,0,0,0,0,0,0,0,'Arcane Aberration - Cast Arcane Bolt'),
+(1148002,11480,0,0,100,3,3000,3000,12000,16000,11,22936,1,0,0,0,0,0,0,0,0,0,'Arcane Aberration - Cast Mana Burn'),
 (1148401,11484,1,0,100,2,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Residual Monstrosity - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (1148402,11484,4,0,100,2,0,0,0,0,11,15230,4,0,23,1,0,0,0,0,0,0,'Residual Monstrosity - Cast Arcane Bolt and Set Phase 1 on Aggro'),
 (1148403,11484,9,5,100,3,0,40,2300,4600,11,15230,4,0,0,0,0,0,0,0,0,0,'Residual Monstrosity - Cast Arcane Bolt (Phase 1)'),
