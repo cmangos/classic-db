@@ -8813,7 +8813,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (840909,8409,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase 1 when Mana is above 15% (Phase 2)'),
 (840910,8409,9,0,100,1,0,8,13000,16000,11,11831,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Nova'),
 (840911,8409,27,0,100,1,12544,1,15000,30000,11,12544,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Armor on Missing Buff'),
-(840912,8409,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase to 0 on Evade'),
+(840912,8409,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase to 0 on Evade');
+INSERT INTO `creature_ai_scripts` VALUES
 (843801,8438,11,0,100,2,0,0,0,0,11,7741,0,0,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Summoned Demon on Spawn'),
 (843802,8438,9,0,100,3,0,40,5000,8000,11,12471,0,1,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Cast Shadow Bolt'),
 (843803,8438,0,0,100,3,13000,17000,14000,20000,11,11671,4,33,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Cast Corruption'),
@@ -8837,8 +8838,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (850304,8503,9,13,100,1,0,40,0,1300,11,9532,1,0,0,0,0,0,0,0,0,0,'Gibblewilt - Cast Fireball (Phase 1)'),
 (850305,8503,3,13,100,0,15,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Gibblewilt - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 (850306,8503,9,13,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Gibblewilt - Start Combat Movement at 35 Yards (Phase 1)'),
-(850307,8503,9,13,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Gibblewilt - Prevent Combat Movement at 15 Yards (Phase 1)');
-INSERT INTO `creature_ai_scripts` VALUES
+(850307,8503,9,13,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Gibblewilt - Prevent Combat Movement at 15 Yards (Phase 1)'),
 (850308,8503,9,13,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Gibblewilt - Start Combat Movement Below 5 Yards'),
 (850309,8503,3,11,100,1,100,30,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Gibblewilt - Set Phase 1 when Mana is above 30% (Phase 2)'),
 (850310,8503,2,0,100,0,15,0,0,0,22,3,0,0,0,0,0,0,0,0,0,0,'Gibblewilt - Set Phase 3 at 15% HP'),
