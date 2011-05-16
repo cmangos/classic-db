@@ -9741,6 +9741,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (946402,9464,0,0,100,1,12000,18000,17000,21000,11,14100,0,1,0,0,0,0,0,0,0,0,'Overlord Ror - Cast Terrifying Roar'),
 (946403,9464,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Overlord Ror - Flee at 15% HP'),
 (946501,9465,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Golhine the Hooded - Flee at 15% HP'),
+(947601,9476,2,0,100,3,25,0,15300,22900,11,15504,0,0,0,0,0,0,0,0,0,0,'Watchman Doomgrip - Cast Drink Healing Potion When Below 25% HP'),
+(947602,9476,0,0,100,3,6000,6000,12000,12000,11,11971,1,0,0,0,0,0,0,0,0,0,'Watchman Doomgrip - Cast Sunder Armor'),
 (949601,9496,11,0,100,0,0,0,0,0,20,0,0,0,21,0,0,0,0,0,0,0,'Gorishi Egg - Prevent Combat Movement and attack'),
 (949602,9496,0,0,100,0,0,0,8000,8000,11,14206,0,0,0,0,0,0,0,0,0,0,'Gorishi Egg - Summon Gorishi Grub'),
 (949603,9496,0,0,100,0,0,0,9000,9000,11,7,0,1,0,0,0,0,0,0,0,0,'Gorishi Egg - Cast Suicide'),
