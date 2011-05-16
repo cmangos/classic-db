@@ -9607,6 +9607,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (937602,9376,0,0,100,1,5000,5000,10000,20000,11,17277,0,0,0,0,0,0,0,0,0,0,'Blazerunner - Cast Blast Wave'),
 (939701,9397,1,0,100,1,1000,1000,600000,600000,11,12550,0,1,0,0,0,0,0,0,0,0,'Living Storm - Cast Lightning Shield on Spawn'),
 (939702,9397,27,0,100,1,12550,1,5000,5000,11,12550,0,1,0,0,0,0,0,0,0,0,'Living Storm - Cast Lightning Shield on Missing Lightning Shield Aura Stack'),
+(939801,9398,0,0,100,3,5500,5500,15000,15000,11,3631,0,0,0,0,0,0,0,0,0,0,'Twilight\'s Hammer Executioner - Battle Fury'),
+(939802,9398,0,0,100,3,5500,5500,17000,19000,11,13459,1,0,0,0,0,0,0,0,0,0,'Twilight\'s Hammer Executioner - Decimate'),
 (943701,9437,1,0,100,2,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Dark Keeper Vorfalk - Prevent Combat Movement on Spawn'),
 (943702,9437,4,0,100,2,0,0,0,0,11,15234,1,0,23,1,0,0,0,0,0,0,'Dark Keeper Vorfalk - Cast Lighning Bolt and Set Phase 1 on Aggro'),
 (943703,9437,9,5,100,3,0,40,2400,3800,11,15234,1,0,0,0,0,0,0,0,0,0,'Dark Keeper Vorfalk - Cast Lighning Bolt (Phase 1)'),
