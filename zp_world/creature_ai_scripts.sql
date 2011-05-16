@@ -9597,7 +9597,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (926915,9269,7,0,100,2,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Smolderthorn Seer - Set Phase to 0 on Evade'),
 (929701,9297,11,0,100,0,0,0,0,0,11,7276,0,1,0,0,0,0,0,0,0,0,'Enraged Wyvern - Cast Poison Proc on Spawn'),
 (931801,9318,9,0,100,1,0,40,6000,9000,11,11985,1,1,0,0,0,0,0,0,0,0,'Incendosaur - Cast Fireball'),
-(931901,9319,4,0,100,6,0,0,0,0,1,-1138,0,0,0,0,0,0,0,0,0,0,Houndmaster Grebmar - Say on Aggro'),
+(931901,9319,4,0,100,6,0,0,0,0,1,-1138,0,0,0,0,0,0,0,0,0,0,'Houndmaster Grebmar - Say on Aggro'),
 (931902,9319,0,0,100,3,5000,5000,18000,18000,11,21049,0,1,0,0,0,0,0,0,0,0,'Houndmaster Grebmar - Cast Bloodlust'),
 (931903,9319,0,0,100,3,8000,8000,15000,15000,11,13730,0,0,0,0,0,0,0,0,0,0,'Houndmaster Grebmar - Cast Demoralizing Shout'),
 (931904,9319,0,0,100,3,2000,3000,12000,14000,11,15615,1,0,0,0,0,0,0,0,0,0,'Houndmaster Grebmar - Cast Pummel'),
