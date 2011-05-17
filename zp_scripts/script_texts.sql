@@ -249,11 +249,11 @@ INSERT INTO `script_texts` VALUES
 (-1509002,'%s sets eyes on $N!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'buru EMOTE_TARGET'),
 (-1509001,'%s bristles with energy!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'moan EMOTE_MANA_FULL'),
 (-1509000,'%s senses your fear.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'moam EMOTE_AGGRO'),
-(-1469030,'Forgive me $N, your death only adds to my failure.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8284,1,0,0,'vaelastrasz SAY_KILLTARGET'),
-(-1469029,'Nefarius\' hate has made me stronger than ever before. You should have fled, while you could, mortals! The fury of Blackrock courses through my veins!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8285,1,0,0,'vaelastrasz SAY_HALFLIFE'),
-(-1469028,'FLAME! DEATH! DESTRUCTION! COWER MORTALS BEFORE THE WRATH OF LORD....NO! I MUST FIGHT THIS!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8283,1,0,0,'vaelastrasz SAY_LINE3'),
-(-1469027,'I beg you Mortals, flee! Flee before I lose all control. The Black Fire rages within my heart. I must release it!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8282,1,0,0,'vaelastrasz SAY_LINE2'),
-(-1469026,'Too late...friends. Nefarius\' corruption has taken hold. I cannot...control myself.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8281,1,0,0,'vaelastrasz SAY_LINE1'),
+(-1469030,'Forgive me, $N! Your death only adds to my failure!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8284,1,0,0,'vaelastrasz SAY_KILLTARGET'),
+(-1469029,'Nefarius\' hate has made me stronger than ever before! You should have fled while you could, mortals! The fury of Blackrock courses through my veins!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8285,1,0,0,'vaelastrasz SAY_HALFLIFE'),
+(-1469028,'FLAME! DEATH! DESTRUCTION! Cower, mortals before the wrath of Lord...NO - I MUST fight this! Alexstrasza help me, I MUST fight it!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8283,1,0,0,'vaelastrasz SAY_LINE3'),
+(-1469027,'I beg you, mortals - FLEE! Flee before I lose all sense of control! The black fire rages within my heart! I MUST- release it!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8282,1,0,0,'vaelastrasz SAY_LINE2'),
+(-1469026,'Too late, friends! Nefarius\' corruption has taken hold...I cannot...control myself.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8281,1,0,0,'vaelastrasz SAY_LINE1'),
 (-1469025,'If I fall into the abyss I\'ll take all of you mortals with me...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8278,1,0,0,'razorgore SAY_DEATH'),
 (-1469024,'No! Not another one! I\'ll have your heads for this atrocity.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8277,1,0,0,'razorgore SAY_EGGS_BROKEN3'),
 (-1469023,'Fools! These eggs are more precious than you know.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8276,1,0,0,'razorgore SAY_EGGS_BROKEN2'),
@@ -267,13 +267,13 @@ INSERT INTO `script_texts` VALUES
 (-1469015,'Druids and your silly shapeshifting. Let\'s see it in action!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'nefarian SAY_DRUID'),
 (-1469014,'Warriors, I know you can hit harder than that! Let\'s see it!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'nefarian SAY_WARRIOR'),
 (-1469013,'Mages too? You should be more careful when you play with magic...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'nefarian SAY_MAGE'),
-(-1469012,'This cannot be! I am the Master here! You mortals are nothing to my kind! DO YOU HEAR? NOTHING!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8292,1,0,0,'nefarian SAY_DEATH'),
+(-1469012,'This cannot be!  I am the master here!  You mortals are nothing to my kind!  Do you hear me? Nothing!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8292,1,0,0,'nefarian SAY_DEATH'),
 (-1469011,'Worthless $N! Your friends will join you soon enough!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8293,1,0,0,'nefarian SAY_SLAY'),
 (-1469010,'Impossible! Rise my minions! Serve your master once more!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8291,1,0,0,'nefarian SAY_RAISE_SKELETONS'),
-(-1469009,'Burn, you wretches! Burn!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8290,1,0,0,'nefarian SAY_SHADOWFLAME'),
+(-1469009,'BURN! You wretches! BURN!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8290,1,0,0,'nefarian SAY_SHADOWFLAME'),
 (-1469008,'Enough! Now you vermin shall feel the force of my birthright, the fury of the earth itself.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8289,1,0,0,'nefarian SAY_XHEALTH'),
 (-1469007,'Well done, my minions. The mortals\' courage begins to wane! Now, let\'s see how they contend with the true Lord of Blackrock Spire!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8288,1,0,0,'nefarian SAY_AGGRO'),
-(-1469006,'Ah, the heroes. You are persistent, aren\'t you. Your allied attempted to match his power against mine, and had to pay the price. Now he shall serve me, by slaughtering you. Get up little red wyrm and destroy them!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8279,1,0,0,'victor_nefarius SAY_NEFARIUS_CORRUPT'),
+(-1469006,'Ah...the heroes. You are persistent, aren\'t you? Your ally here attempted to match his power against mine - and paid the price. Now he shall serve me...by slaughtering you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8279,1,0,0,'victor_nefarius SAY_NEFARIUS_CORRUPT'),
 (-1469005,'Let the games begin!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8280,1,0,0,'victor_nefarius SAY_GAMESBEGIN_2'),
 (-1469004,'In this world where time is your enemy, it is my greatest ally. This grand game of life that you think you play in fact plays you. To that I say...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'victor_nefarius SAY_GAMESBEGIN_1'),
 (-1469003,'%s flinches as its skin shimmers.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'chromaggus EMOTE_SHIMMER'),
@@ -1128,7 +1128,8 @@ INSERT INTO `script_texts` VALUES
 (-1000003,'%s becomes enraged!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_ENRAGED'),
 (-1000002,'%s goes into a frenzy!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_FRENZY'),
 (-1000001,'%s goes into a killing frenzy!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'EMOTE_GENERIC_FRENZY_KILL'),
-(-1000000,'<ScriptDev0 Text Entry Missing!>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'DEFAULT_TEXT');
+(-1000000,'<ScriptDev0 Text Entry Missing!>',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'DEFAULT_TEXT'),
+(-1469031,'Get up, little red wyrm...and destroy them!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'victor_nefarius SAY_NEFARIUS_CORRUPT_2');
 /*!40000 ALTER TABLE `script_texts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
