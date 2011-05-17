@@ -100,7 +100,9 @@ INSERT INTO `gossip_texts` VALUES
 (-3000103,'Thank you for your time, Lady Prestor.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'prestor GOSSIP_ITEM_4'),
 (-3000102,'Begging your pardon, Lady Prestor. That was not my intent.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'prestor GOSSIP_ITEM_3'),
 (-3000101,'My apologies, Lady Prestor.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'prestor GOSSIP_ITEM_2'),
-(-3000100,'Pardon the intrusion, Lady Prestor, but Highlord Bolvar suggested that I seek your advice.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'prestor GOSSIP_ITEM_1');
+(-3000100,'Pardon the intrusion, Lady Prestor, but Highlord Bolvar suggested that I seek your advice.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'prestor GOSSIP_ITEM_1'),
+(-3469003,'I cannot, Vaelastrasz! Surely something can be done to heal you!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'vaelastrasz GOSSIP_ITEM_VAEL_1'),
+(-3469004,'Vaelastrasz, no!!!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'vaelastrasz GOSSIP_ITEM_VAEL_2');
 /*!40000 ALTER TABLE `gossip_texts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
