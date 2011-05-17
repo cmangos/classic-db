@@ -110,11 +110,13 @@ INSERT INTO `spell_bonus_data` VALUES
 (11113,0.1357,0,0,0,'Mage - Blast Wave Rank'),
 (11310,0.2142,0,0,0,'Shaman - Fire Nova Totem Casted by Totem Rank 4'),
 (11311,0.2142,0,0,0,'Shaman - Fire Nova Totem Casted by Totem Rank 5'),
+(11538,0,0,0,0,'Item - Six Demon Bag - Frostbolt'),
 (11681,0.1428,0,0,0,'Warlock - Hellfire Effect on Enemy Rank 2'),
 (11682,0.1428,0,0,0,'Warlock - Hellfire Effect on Enemy Rank 3'),
 (14914,0.5711,0.024,0,0,'Priest - Holy Fire'),
 (15237,0.1606,0,0,0,'Priest - Holy Nova Damage'),
 (15407,0,0.19,0,0,'Priest - Mind Flay'),
+(15662,0,0,0,0,'Item - Six Demon Bag - Fireball'),
 (16343,0.1,0,0,0,'Shaman - Flametongue Weapon Proc Rank 5'),
 (16344,0.1,0,0,0,'Shaman - Flametongue Weapon Proc Rank 6'),
 (17712,0,0,0,0,'Item - Lifestone Healing'),
@@ -125,6 +127,7 @@ INSERT INTO `spell_bonus_data` VALUES
 (20167,0.25,0,0.16,0,'Paladin - Seal of Light Proc'),
 (20424,0.25,0,0.16,0,'Paladin - Seal of Command Proc'),
 (20925,0.09,0,0.056,0,'Paladin - Holy Shield'),
+(21179,0,0,0,0,'Item - Six Demon Bag - Chain Lightning'),
 (23455,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 1'),
 (23458,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 2'),
 (23459,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 3'),
@@ -141,10 +144,7 @@ INSERT INTO `spell_bonus_data` VALUES
 (26573,0,0.04,0,0.04,'Paladin - Consecration'),
 (27803,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 4'),
 (27804,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 5'),
-(27805,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 6'),
-(15662,0,0,0,0,'Item - Six Demon Bag - Fireball'),
-(11538,0,0,0,0,'Item - Six Demon Bag - Frostbolt'),
-(21179,0,0,0,0,'Item - Six Demon Bag - Chain Lightning');
+(27805,0.3035,0,0,0,'Priest - Holy Nova Heal Rank 6');
 /*!40000 ALTER TABLE `spell_bonus_data` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
