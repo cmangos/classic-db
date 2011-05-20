@@ -44,32 +44,32 @@ CREATE TABLE `instance_template` (
 LOCK TABLES `instance_template` WRITE;
 /*!40000 ALTER TABLE `instance_template` DISABLE KEYS */;
 INSERT INTO `instance_template` VALUES
-(33,0,22,30,10,0,0,-230.989,1571.57,'instance_shadowfang_keep'),
-(34,0,24,32,10,0,0,-8762.38,848.01,''),
-(36,0,15,20,10,0,0,-11207.8,1681.15,'instance_deadmines'),
-(43,0,15,21,10,0,1,-751.131,-2209.24,'instance_wailing_caverns'),
-(47,0,29,38,10,0,1,-4459.45,-1660.21,'instance_razorfen_kraul'),
-(48,0,24,32,10,0,1,4249.12,748.387,'instance_blackfathom_deeps'),
-(70,0,35,47,10,0,0,-6060.18,-2955,'instance_uldaman'),
-(90,0,29,38,10,0,0,-5162.66,931.599,'instance_gnomeregan'),
-(109,0,45,55,10,0,0,-10170.1,-3995.97,'instance_sunken_temple'),
-(129,0,37,46,10,0,1,-4662.88,-2535.87,''),
-(189,0,34,45,10,0,0,2892.24,-811.264,'instance_scarlet_monastery'),
-(209,0,44,54,10,0,1,-6790.58,-2891.28,'instance_zulfarrak'),
-(229,0,58,0,10,1,0,-7522.53,-1233.04,'instance_blackrock_spire'),
-(230,0,52,0,5,0,0,-7178.1,-928.639,'instance_blackrock_depths'),
-(249,0,60,0,40,5,1,-4753.31,-3752.42,''),
-(289,0,57,0,5,0,0,1274.78,-2552.56,'instance_scholomance'),
-(309,0,60,0,20,3,0,-11916.1,-1224.58,'instance_zulgurub'),
-(329,0,58,60,5,0,0,3392.32,-3378.48,'instance_stratholme'),
-(349,0,46,55,10,0,1,-1432.7,2924.98,''),
-(389,0,13,18,10,0,1,1816.76,-4423.37,''),
-(409,0,60,0,40,7,0,-7510.56,-1036.7,'instance_molten_core'),
-(429,0,55,60,5,0,1,-3908.03,1130,'instance_dire_maul'),
-(469,0,60,0,40,7,0,-7663.41,-1218.67,'instance_blackwing_lair'),
-(509,0,60,0,20,3,1,-8114.46,1526.37,'instance_ruins_of_ahnqiraj'),
-(531,0,60,0,40,7,1,-8111.72,1526.79,'instance_temple_of_ahnqiraj'),
-(533,0,60,0,40,7,0,0,0,'instance_naxxramas');
+(33,0,18,32,10,0,0,-230.989,1571.57,'instance_shadowfang_keep'),
+(34,0,22,34,10,0,0,-8762.38,848.01,''),-- instance_stormwind_stockade
+(36,0,15,28,10,0,0,-11207.8,1681.15,'instance_deadmines'),
+(43,0,15,28,10,0,1,-751.131,-2209.24,'instance_wailing_caverns'),
+(47,0,24,40,10,0,1,-4459.45,-1660.21,'instance_razorfen_kraul'),
+(48,0,20,34,10,0,1,4249.12,748.387,'instance_blackfathom_deeps'),
+(70,0,38,53,10,0,0,-6060.18,-2955,'instance_uldaman'),
+(90,0,24,40,10,0,0,-5162.66,931.599,'instance_gnomeregan'),
+(109,0,44,60,10,0,0,-10170.1,-3995.97,'instance_sunken_temple'),
+(129,0,33,47,10,0,1,-4662.88,-2535.87,''),-- instance_razorfen_downs
+(189,0,29,48,10,0,0,2892.24,-811.264,'instance_scarlet_monastery'),
+(209,0,43,54,10,0,1,-6790.58,-2891.28,'instance_zulfarrak'),
+(229,0,56,60,10,1,0,-7522.53,-1233.04,'instance_blackrock_spire'),
+(230,0,48,60,5,0,0,-7178.1,-928.639,'instance_blackrock_depths'),
+(249,0,60,60,40,5,1,-4753.31,-3752.42,''),-- instance_onyxias_lair
+(289,0,56,60,5,0,0,1274.78,-2552.56,'instance_scholomance'),
+(309,0,60,60,20,3,0,-11916.1,-1224.58,'instance_zulgurub'),
+(329,0,56,60,5,0,0,3392.32,-3378.48,'instance_stratholme'),
+(349,0,40,58,10,0,1,-1432.7,2924.98,''),-- instance_maraudon
+(389,0,13,22,10,0,1,1816.76,-4423.37,''),-- instance_ragefire_chasm
+(409,0,60,60,40,7,0,-7510.56,-1036.7,'instance_molten_core'),
+(429,0,54,60,5,0,1,-3908.03,1130,'instance_dire_maul'),
+(469,0,60,60,40,7,0,-7663.41,-1218.67,'instance_blackwing_lair'),
+(509,0,60,60,20,3,1,-8114.46,1526.37,'instance_ruins_of_ahnqiraj'),
+(531,0,60,60,40,7,1,-8111.72,1526.79,'instance_temple_of_ahnqiraj'),
+(533,0,60,60,40,7,0,0,0,'instance_naxxramas');
 /*!40000 ALTER TABLE `instance_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
