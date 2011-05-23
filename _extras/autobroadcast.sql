@@ -22,4 +22,5 @@ INSERT INTO `autobroadcast`(`id`,`text`,`next`) VALUES
 (4,'AutOBROADCAST - testovaci zprava 4, nasleduje 5.',5),
 (5,'AutOBROADCAST - testovaci zprava 5, nasleduje 1.',1);
 
+DELETE FROM `mangos_string` WHERE entry = 1300;
 INSERT INTO `mangos_string` VALUES (1300,'|c0000ff00[Broadcast]:|r %s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
