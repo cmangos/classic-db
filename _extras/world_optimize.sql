@@ -72,7 +72,7 @@ ALTER TABLE `npc_gossip`  ORDER BY `npc_guid` ASC;
 ALTER TABLE `npc_text`  ORDER BY `ID` ASC;
 ALTER TABLE `npc_trainer`  ORDER BY `entry` ASC;
 ALTER TABLE `npc_trainer_template`  ORDER BY `entry` ASC;
-ALTER TABLE `npc_vendor`  ORDER BY `entry` ASC;
+ALTER TABLE `npc_vendor`  ORDER BY `entry` ASC, `item` ASC;
 ALTER TABLE `npc_vendor_template`  ORDER BY `entry` ASC;
 ALTER TABLE `page_text`  ORDER BY `entry` ASC;
 ALTER TABLE `petcreateinfo_spell`  ORDER BY `entry` ASC;
