@@ -12848,7 +12848,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1494601,14946,0,0,100,3,3000,5000,6000,9000,11,15285,1,0,0,0,0,0,0,0,0,0,'Slidore\'s Gryphon - Cast Fireball Volley'),
 (1494602,14946,0,0,100,3,8000,11000,12000,17000,11,21188,4,1,11,23969,0,0,0,0,0,0,'Slidore\'s Gryphon - Cast Stun Bomb Attack and Throw Liquid Fire'),
 (1498101,14981,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Elfarran - Summon Stormwind City Guard on Hostile LOS'),
-(1498901,14989,11,0,100,2,0,0,0,0,11,24320,0,0,0,0,0,0,0,0,0,0,'Poisonous Cloud - Cast Poisonous Blood'),
+(1498901,14989,11,0,100,2,0,0,0,0,11,24320,0,0,0,0,0,0,0,0,0,0,'Poisonous Cloud - Cast Poisonous Blood on Spawn'),
 (1500701,15007,10,0,100,0,0,15,0,0,12,7980,1,600000,0,0,0,0,0,0,0,0,'Sir Malory Wheeler - Summon Deathguard Elite on Hostile LOS'),
 (1500801,15008,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Lady Hoteshem - Summon Stormwind City Guard on Hostile LOS'),
 (1504301,15043,0,0,100,3,5500,5500,12000,19000,11,13445,1,0,0,0,0,0,0,0,0,0,'Zulian Crocolisk - Cast Rend'),
