@@ -1,15 +1,12 @@
 -- Each instance listed here will be closed
-UPDATE areatrigger_teleport SET required_level = 61 WHERE id IN (
-2848, -- Onyxia's Lair
-2890, -- Molten Core
-3528,
-3529,
-3726, -- Blackwing Lair
--- 3928, -- Zul'Gurub
-4008, -- Ruins of Ahn'Qiraj
-4010, -- Temple of Ahn'Qiraj
-4156, -- Naxxramas
-4055
+UPDATE areatrigger_teleport SET required_level = 61 WHERE target_map IN (
+249, -- Onyxia's Lair
+-- 309, -- Zul'Gurub
+409, -- Molten Core
+469, -- Blackwing Lair
+509, -- Ruins of Ahn'Qiraj
+531, -- Temple of Ahn'Qiraj
+533, -- Naxxramas
 );
 
 -- Allow items listed here to be available to everybody
