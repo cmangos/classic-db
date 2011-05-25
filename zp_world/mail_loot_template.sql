@@ -43,6 +43,9 @@ CREATE TABLE `mail_loot_template` (
 LOCK TABLES `mail_loot_template` WRITE;
 /*!40000 ALTER TABLE `mail_loot_template` DISABLE KEYS */;
 INSERT INTO `mail_loot_template` VALUES
+(92,20469,100,0,1,1,0,0,0),
+(93,20469,100,0,1,1,0,0,0),
+(94,20469,100,0,1,1,0,0,0),
 (99,11423,100,0,1,1,0,0,0),
 (100,11423,100,0,1,1,0,0,0),
 (103,11422,100,0,1,1,0,0,0),
