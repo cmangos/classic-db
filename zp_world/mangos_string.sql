@@ -51,7 +51,7 @@ INSERT INTO `mangos_string` VALUES
 (5,'There is no help for that command',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (6,'There is no such command',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (7,'There is no such subcommand',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(8,'Command %s have subcommands:%s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(8,'Command %s have subcommands:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (9,'Commands available to you:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (10,'Incorrect syntax.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (11,'Your account level is: %i',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
