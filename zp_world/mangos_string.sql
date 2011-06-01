@@ -502,7 +502,7 @@ INSERT INTO `mangos_string` VALUES
 (536,'   Home movement used for player?!?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (537,'   Taxi flight',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (538,'   Unknown movement generator (%u)',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(539,'Player selected NPCGUID: %u.Faction: %u.npcFlags: %u.Entry: %u.DisplayID: %u (Native: %u).',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(539,'Player selected: %s.\nFaction: %u.\nnpcFlags: %u.\nEntry: %u.\nDisplayID: %u (Native: %u).',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (540,'Level: %u.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (541,'Health (base): %u. (max): %u. (current): %u.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (542,'Unit Flags: %u.\nDynamic Flags: %u.\nFaction Template: %u.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
