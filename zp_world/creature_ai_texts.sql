@@ -49,6 +49,7 @@ CREATE TABLE `creature_ai_texts` (
 LOCK TABLES `creature_ai_texts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` VALUES
+(-1139,'DIE, MORTALS!',null,null,null,null,null,null,null,null,5871,1,0,0,'8443'),
 (-1138,'Ahh, a new chew toy for my dogs!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,0,'Houndmaster Grebmar'),
 (-1137,'WHO IS BOTHERING ME?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Arch Druid Fandral'),
 (-1136,'I never thought that you could find me! Well, let\'s see what you can do...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Tyrande Whisperwind'),
