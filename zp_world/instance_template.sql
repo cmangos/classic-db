@@ -28,7 +28,7 @@ CREATE TABLE `instance_template` (
   `levelMin` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `levelMax` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `maxPlayers` tinyint(3) unsigned NOT NULL DEFAULT '0',
-  `reset_delay` int(10) unsigned NOT NULL DEFAULT '0',
+  `reset_delay` int(10) unsigned NOT NULL default '0' COMMENT 'Reset time in days',
   `ghostEntranceMap` smallint(5) unsigned NOT NULL,
   `ghostEntranceX` float NOT NULL,
   `ghostEntranceY` float NOT NULL,
@@ -58,7 +58,7 @@ INSERT INTO `instance_template` VALUES
 (209,0,43,54,10,0,1,-6790.58,-2891.28,'instance_zulfarrak'),
 (229,0,55,0,10,3,0,-7522.53,-1233.04,'instance_blackrock_spire'),
 (230,0,48,60,5,0,0,-7178.1,-928.639,'instance_blackrock_depths'),
-(249,0,60,60,40,5,1,-4753.31,-3752.42,''),-- instance_onyxias_lair
+(249,0,60,60,40,5,1,-4753.31,-3752.42,'instance_onyxias_lair'),
 (289,0,58,0,5,0,0,1274.78,-2552.56,'instance_scholomance'),
 (309,0,60,60,20,3,0,-11916.1,-1224.58,'instance_zulgurub'),
 (329,0,58,0,5,0,0,3392.32,-3378.48,'instance_stratholme'),
@@ -69,7 +69,7 @@ INSERT INTO `instance_template` VALUES
 (469,0,60,60,40,7,0,-7663.41,-1218.67,'instance_blackwing_lair'),
 (509,0,60,60,20,3,1,-8114.46,1526.37,'instance_ruins_of_ahnqiraj'),
 (531,0,60,60,40,7,1,-8111.72,1526.79,'instance_temple_of_ahnqiraj'),
-(533,0,60,60,40,7,0,0,0,'instance_naxxramas');
+(533,0,60,60,40,7,-1,0,0,'instance_naxxramas');
 /*!40000 ALTER TABLE `instance_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
