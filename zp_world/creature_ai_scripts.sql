@@ -12923,6 +12923,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1511109,15111,2,0,100,2,15,0,0,0,22,3,0,0,0,0,0,0,0,0,0,0,'Mad Servant - Set Phase 3 at 15% HP'),
 (1511110,15111,2,3,100,2,15,0,0,0,21,1,0,0,25,0,0,0,1,-47,0,0,'Mad Servant - Start Movement and Flee at 15% HP (Phase 3)'),
 (1511111,15111,7,0,100,2,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Mad Servant - On Evade set Phase to 0'),
+(1511112,15111,6,0,100,2,0,0,0,0,11,24622,0,7,0,0,0,0,0,0,0,0,'Mad Servant - Cast Summon Mad Voidwalkers on Death'),
 (1511501,15115,22,0,100,1,5,6,67,0,5,2,0,0,0,0,0,0,0,0,0,0,'Honored Ancestor - Bow Emote on Recieve Emote'),
 (1511502,15115,22,0,100,1,17,6,67,0,5,2,0,0,0,0,0,0,0,0,0,0,'Honored Ancestor - Bow Emote on Recieve Emote'),
 (1511503,15115,22,0,100,1,33,6,67,0,5,2,0,0,0,0,0,0,0,0,0,0,'Honored Ancestor - Bow Emote on Recieve Emote'),
