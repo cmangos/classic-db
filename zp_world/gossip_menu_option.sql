@@ -503,6 +503,8 @@ INSERT INTO `gossip_menu_option` VALUES
 (5962,0,1,'I wish to browse your wares.',3,4,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
 (6023,0,2,'I need a ride.',4,8,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
 (6162,0,2,'I need a ride.',4,8,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
+(6213,0,0,'The Darkmoon Faire has arrived, you say? And where is she now?',1,1,6222,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
+(6214,0,0,'When the Darkmoon Faire arrives, where will it be located?',1,1,6221,0,0,0,0,NULL,0,0,0,0,0,0,0,0,0),
 (6586,0,0,'And what do you say?',1,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
 (6587,0,0,'What do they say?',1,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
 (6588,0,0,'How do you know?',1,1,0,0,0,0,0,'',0,0,0,0,0,0,0,0,0),
