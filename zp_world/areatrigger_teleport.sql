@@ -85,7 +85,7 @@ INSERT INTO `areatrigger_teleport` VALUES
 (704,'Stormwind - Wizard Sanctum Tower Portal',0,0,0,0,NULL,0,-9019.16,887.596,29.6206,0),
 (882,'Uldaman Instance End',0,0,0,0,NULL,0,-6620.48,-3765.19,266.91,0),
 (902,'Uldaman Exit',38,0,0,0,NULL,70,-214.02,383.607,-38.7687,0.5),
-(922,'Zul\'Farrak Instance Start',0,0,0,0,NULL,1,-6796.49,-2890.77,8.88063,0),
+(922,'Zul\'Farrak Instance Start',0,0,0,0,NULL,1,-6796.49,-2890.77,8.88063,3.30496),
 (924,'Zul\'Farrak Entrance',43,0,0,0,NULL,209,1213.52,841.59,8.93,6.09),
 (943,'Leap of Faith - End of fall',0,0,0,0,NULL,1,-5187.47,-2804.32,-8.375,5.76),
 (1064,'Onyxia\'s Lair - Dustwallow Instance',0,0,0,0,NULL,1,-4747.17,-3753.27,49.8122,0.713271),
