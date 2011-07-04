@@ -47,7 +47,7 @@ CREATE TABLE `creature_ai_scripts` (
   `action3_param3` int(11) NOT NULL DEFAULT '0',
   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Event Comment',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4334033 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
+) ENGINE=MyISAM AUTO_INCREMENT=4334163 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -13491,7 +13491,12 @@ INSERT INTO `creature_ai_scripts` VALUES
 (4000012,11737,0,0,80,1,7000,11000,12000,22000,11,3391,1,0,0,0,0,0,0,0,0,0,'Cast Rosser sur master 80%'),
 (4000013,11739,0,0,100,1,2000,5000,32000,33000,11,744,1,0,0,0,0,0,0,0,0,0,'Cast Poison sur master'),
 (4000014,11739,0,0,50,0,500,1000,0,0,11,744,1,0,0,0,0,0,0,0,0,0,'Cast Rets 50% sur master'),
-(4334032,4334,4,0,100,0,0,0,0,0,11,9053,1,0,23,1,0,0,0,0,0,0,'Firemane Flamecaller - Cast Fireball and Set Phase 1 on Aggro');
+(4334032,4334,4,0,100,0,0,0,0,0,11,9053,1,0,23,1,0,0,0,0,0,0,'Firemane Flamecaller - Cast Fireball and Set Phase 1 on Aggro'),
+(4334158,15215,4,0,100,3,0,0,0,0,11,15326,0,0,0,0,0,0,0,0,0,0,'Mistress - Cast Blackout (rank5) on aggro'),
+(4334159,15215,0,0,100,3,5000,10000,18000,19000,11,11639,0,0,0,0,0,0,0,0,0,0,'Mistress - Cast Shadow Word: Pain'),
+(4334160,15215,0,0,100,3,8000,15000,10000,15000,11,13704,0,0,0,0,0,0,0,0,0,0,'Mistress - Cast Psychic Scream'),
+(4334161,15215,0,0,100,3,14000,15000,16000,17000,11,16568,0,0,0,0,0,0,0,0,0,0,'Mistress - Cast Mind Flay'),
+(4334162,15215,2,0,100,3,20,0,10000,15000,11,27527,0,0,0,0,0,0,0,0,0,0,'Mistress - Cast Healing Touch on less than 20% hp');
 /*!40000 ALTER TABLE `creature_ai_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

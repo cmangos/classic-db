@@ -213,6 +213,7 @@ INSERT INTO `command` VALUES
 ('npc additem',2,'Syntax: .npc additem #itemId <#maxcount><#incrtime>r\r\n\r\nAdd item #itemid to item list of selected vendor. Also optionally set max count item in vendor item list and time to item count restoring.'),
 ('npc addmove',2,'Syntax: .npc addmove #creature_guid [#waittime]Add your current location as a waypoint for creature with guid #creature_guid. And optional add wait time.'),
 ('npc addweapon',3,'Not yet implemented.'),
+('npc aiinfo',2,'Syntax: .npc npc aiinfo\r\n\r\nShow npc AI and script information.'),
 ('npc allowmove',3,'Syntax: .npc allowmoveEnable or disable movement creatures in world. Not implemented.'),
 ('npc changelevel',2,'Syntax: .npc changelevel #levelChange the level of the selected creature to #level.#level may range from 1 to 63.'),
 ('npc delete',2,'Syntax: .npc delete [#guid]Delete creature with guid #guid (or the selected if no guid is provided)'),
@@ -319,8 +320,7 @@ INSERT INTO `command` VALUES
 ('wp export',3,'Syntax: .wp export [#creature_guid or Select a Creature] $filename'),
 ('wp import',3,'Syntax: .wp import $filename'),
 ('wp modify',2,'Syntax: .wp modify [#creature_guid or Select a Creature]add - Add a waypoint after the selected visualwaittime $timeemote IDspell IDtext1| text2| text3| text4| text5 <text>model1 IDmodel2 IDmove(moves wp to player pos)del (deletes the wp)Only one parameter per time!'),
-('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]onfirstlastoffinfoFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!'),
-('npc aiinfo',2,'Syntax: .npc npc aiinfo\r\n\r\nShow npc AI and script information.');
+('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]onfirstlastoffinfoFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!');
 /*!40000 ALTER TABLE `command` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
