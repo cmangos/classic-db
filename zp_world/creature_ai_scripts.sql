@@ -2914,8 +2914,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 (243103,2431,0,0,100,1,11200,18300,11400,24800,11,12555,1,1,0,0,0,0,0,0,0,0,'Jailor Borhuin - Cast Pummel'),
 (243104,2431,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Jailor Borhuin - Flee at 15% HP'),
 (243201,2432,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'Darla Harris - Summon Enraged Gryphons and Yell on Aggro'),
-(243301,2433,11,0,100,0,0,0,0,0,1,-928,-929,-930,0,0,0,0,0,0,0,0,'Helcular\'s Remains - Yell on Spawn'),
-(243302,2433,4,0,100,0,0,0,0,0,1,-931,0,0,11,4950,0,0,0,0,0,0,'Helcular\'s Remains - Yell and Summon Helcular\'s Puppets on Aggro'),
 (243401,2434,11,0,100,0,0,0,0,0,11,1786,0,0,0,0,0,0,0,0,0,0,'Shadowy Assassin - Cast Stealth on Spawn'),
 (243501,2435,11,0,100,0,0,0,0,0,1,-932,0,0,0,0,0,0,0,0,0,0,'Southshore Crier - Yell on Spawn'),
 (243502,2435,1,0,100,0,120000,120000,0,0,1,-933,0,0,0,0,0,0,0,0,0,0,'Southshore Crier - Say 1 OOC'),
@@ -8814,10 +8812,10 @@ INSERT INTO `creature_ai_scripts` VALUES
 (840901,8409,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Caravan Master Tset - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (840902,8409,1,0,100,1,1000,1000,1800000,1800000,11,12544,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Armor on Spawn'),
 (840903,8409,4,0,100,0,0,0,0,0,11,9672,1,0,23,1,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt and Set Phase 1 on Aggro'),
-(840904,8409,9,5,100,1,0,40,3400,4800,11,9672,1,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt (Phase 1)');
-INSERT INTO `creature_ai_scripts` VALUES
+(840904,8409,9,5,100,1,0,40,3400,4800,11,9672,1,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt (Phase 1)'),
 (840905,8409,3,5,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-(840906,8409,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement at 35 Yards (Phase 1)'),
+(840906,8409,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement at 35 Yards (Phase 1)');
+INSERT INTO `creature_ai_scripts` VALUES
 (840907,8409,9,5,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Prevent Combat Movement at 15 Yards (Phase 1)'),
 (840908,8409,9,5,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement Below 5 Yards (Phase 1)'),
 (840909,8409,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase 1 when Mana is above 15% (Phase 2)'),
@@ -13485,6 +13483,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1686102,16861,0,0,95,3,1000,1000,4000,4000,11,15284,1,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Cleave'),
 (1686103,16861,0,0,80,3,3000,3000,5000,5000,11,28412,4,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Death Coil'),
 (1720901,17209,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'William Kielar - Summon Enraged Gryphons and Yell on Aggro'),
+(1720964,2433,0,0,100,0,3000,5000,5000,7000,11,4951,0,0,0,0,0,0,0,0,0,0,'Helcular\'s Puppets Passive - Chance on hit to spawn 3 puppets'),
 (1720965,9876,11,0,100,0,0,0,0,0,1,-442105,0,0,0,0,0,0,0,0,0,0,'Lochee - Says text when spawned'),
 (1780401,17804,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Squire Rowe - Summon Stormwind City Guard on Hostile LOS'),
 (4000011,11737,0,0,100,1,3000,5000,45000,48000,11,5416,1,0,0,0,0,0,0,0,0,0,'Cast Dard venimeux sur master'),
