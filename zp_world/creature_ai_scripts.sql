@@ -13483,6 +13483,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1686102,16861,0,0,95,3,1000,1000,4000,4000,11,15284,1,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Cleave'),
 (1686103,16861,0,0,80,3,3000,3000,5000,5000,11,28412,4,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Death Coil'),
 (1720901,17209,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'William Kielar - Summon Enraged Gryphons and Yell on Aggro'),
+(1720961,1421,11,0,100,0,0,0,0,0,1,-442104,0,0,2,32,0,0,0,0,0,0,'Private Merle - Says text when spawned and set faction neutral'),
 (1720964,2433,0,0,100,0,3000,5000,5000,7000,11,4951,0,0,0,0,0,0,0,0,0,0,'Helcular\'s Puppets Passive - Chance on hit to spawn 3 puppets'),
 (1720965,9876,11,0,100,0,0,0,0,0,1,-442105,0,0,0,0,0,0,0,0,0,0,'Lochee - Says text when spawned'),
 (1780401,17804,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Squire Rowe - Summon Stormwind City Guard on Hostile LOS'),
