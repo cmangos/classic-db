@@ -43,6 +43,7 @@ CREATE TABLE `gameobject_loot_template` (
 LOCK TABLES `gameobject_loot_template` WRITE;
 /*!40000 ALTER TABLE `gameobject_loot_template` DISABLE KEYS */;
 INSERT INTO `gameobject_loot_template` VALUES
+(2,11470,-100,0,1,1,0,0,0),
 (167,1349,-100,0,1,1,0,0,0),
 (404,1179,0,4,1,1,0,0,0),
 (404,1205,0,4,1,1,0,0,0),
