@@ -50,6 +50,7 @@ CREATE TABLE `gameobject_scripts` (
 LOCK TABLES `gameobject_scripts` WRITE;
 /*!40000 ALTER TABLE `gameobject_scripts` DISABLE KEYS */;
 INSERT INTO `gameobject_scripts` VALUES
+(4523,2,10,9136,300000,0,0,0,0,0,0,0,-7916.54,-2613.33,221.13,1.897467,''),
 (11881,0,11,11875,20,0,0,0,0,0,0,0,0,0,0,0,''),
 (11894,0,11,11876,300,0,0,0,0,0,0,0,0,0,0,0,''),
 (12148,0,11,30084,15,0,0,0,0,0,0,0,0,0,0,0,''),
