@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.10, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.13, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.10
+-- Server version	5.5.13-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -78,7 +78,7 @@ INSERT INTO `fishing_loot_template` VALUES
 (357,6311,0.1,1,1,1,0,0,0),
 (357,6363,0.1,1,1,1,0,0,0),
 (357,6364,0.01,1,1,1,0,0,0),
-(357,8365,0, 1,1,1,0,0,0),
+(357,8365,0,1,1,1,0,0,0),
 (357,8366,0.2,1,1,1,0,0,0),
 (361,11008,100,1,-11008,1,0,0,0),
 (367,11000,100,1,-11000,1,0,0,0),

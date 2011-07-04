@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.10, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.13, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.10
+-- Server version	5.5.13-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -69,7 +69,7 @@ INSERT INTO `areatrigger_teleport` VALUES
 (444,'Razorfen Downs Instance Start',0,0,0,0,NULL,1,-4658.12,-2526.35,82.9671,0),
 (446,'Altar of Atal\'Hakkar Entrance',44,0,0,0,NULL,109,-319.24,99.9,-131.85,3.19),
 (448,'Altar Of Atal\'Hakkar Instance Start',0,0,0,0,NULL,0,-10175.1,-3995.15,-112.9,0),
-(503,'Stockades Instance',0,0,0,0,NULL,0,-8764.83,846.075,87.4842,3.779335),
+(503,'Stockades Instance',0,0,0,0,NULL,0,-8764.83,846.075,87.4842,3.77934),
 (523,'Gnomeregan Train Depot Entrance',20,0,0,0,NULL,90,-736.51,2.71,-249.99,3.14),
 (525,'Gnomeregan Train Depot Instance',0,0,0,0,NULL,0,-4858.27,756.435,244.923,0),
 (527,'Teddrassil - Ruth Theran',0,0,0,0,NULL,1,8786.36,967.445,30.197,3.39632),

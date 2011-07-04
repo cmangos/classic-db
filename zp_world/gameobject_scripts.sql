@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.10, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.13, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.10
+-- Server version	5.5.13-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -50,7 +50,7 @@ CREATE TABLE `gameobject_scripts` (
 LOCK TABLES `gameobject_scripts` WRITE;
 /*!40000 ALTER TABLE `gameobject_scripts` DISABLE KEYS */;
 INSERT INTO `gameobject_scripts` VALUES
-(4523,2,10,9136,300000,0,0,0,0,0,0,0,-7916.54,-2613.33,221.13,1.897467,''),
+(4523,2,10,9136,300000,0,0,0,0,0,0,0,-7916.54,-2613.33,221.13,1.89747,''),
 (11881,0,11,11875,20,0,0,0,0,0,0,0,0,0,0,0,''),
 (11894,0,11,11876,300,0,0,0,0,0,0,0,0,0,0,0,''),
 (12148,0,11,30084,15,0,0,0,0,0,0,0,0,0,0,0,''),

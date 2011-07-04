@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.10, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.13, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.10
+-- Server version	5.5.13-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -8814,7 +8814,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (840901,8409,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Caravan Master Tset - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (840902,8409,1,0,100,1,1000,1000,1800000,1800000,11,12544,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Armor on Spawn'),
 (840903,8409,4,0,100,0,0,0,0,0,11,9672,1,0,23,1,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt and Set Phase 1 on Aggro'),
-(840904,8409,9,5,100,1,0,40,3400,4800,11,9672,1,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt (Phase 1)'),
+(840904,8409,9,5,100,1,0,40,3400,4800,11,9672,1,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt (Phase 1)');
+INSERT INTO `creature_ai_scripts` VALUES
 (840905,8409,3,5,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 (840906,8409,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement at 35 Yards (Phase 1)'),
 (840907,8409,9,5,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Prevent Combat Movement at 15 Yards (Phase 1)'),
@@ -8822,8 +8823,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (840909,8409,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase 1 when Mana is above 15% (Phase 2)'),
 (840910,8409,9,0,100,1,0,8,13000,16000,11,11831,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Nova'),
 (840911,8409,27,0,100,1,12544,1,15000,30000,11,12544,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Armor on Missing Buff'),
-(840912,8409,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase to 0 on Evade');
-INSERT INTO `creature_ai_scripts` VALUES
+(840912,8409,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase to 0 on Evade'),
 (843801,8438,11,0,100,2,0,0,0,0,11,7741,0,0,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Summoned Demon on Spawn'),
 (843802,8438,9,0,100,3,0,40,5000,8000,11,12471,0,1,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Cast Shadow Bolt'),
 (843803,8438,0,0,100,3,13000,17000,14000,20000,11,11671,4,33,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Cast Corruption'),
@@ -13201,9 +13201,9 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1547103,15471,0,0,100,3,8000,11000,12000,15000,11,25515,4,1,0,0,0,0,0,0,0,0,'Lieutenant General Andorov - Cast Bash'),
 (1547301,15473,9,0,100,3,0,5,5000,7000,11,26350,1,0,0,0,0,0,0,0,0,0,'Lieutenant General Andorov - Cast Cleave'),
 (1547302,15473,0,0,100,3,8000,11000,9000,13000,11,16856,4,1,0,0,0,0,0,0,0,0,'Lieutenant General Andorov - Cast Mortal Strike'),
-(1549101,15491,0,0,100,1,6000,12000,15000,20000,11,25586,0,0,0,0,0,0,0,0,0,0, 'Eranikus - cast Shadow bolt Volley'),
-(1549102,15491,0,0,100,1,8000,15000,14000,20000,11,24818,0,0,0,0,0,0,0,0,0,0, 'Eranikus - cast Noxious Breath'),
-(1549103,15491,0,0,100,1,11000,17000,16000,20000,11,24839,0,0,0,0,0,0,0,0,0,0, 'Eranikus - cast Acid Breath'),
+(1549101,15491,0,0,100,1,6000,12000,15000,20000,11,25586,0,0,0,0,0,0,0,0,0,0,'Eranikus - cast Shadow bolt Volley'),
+(1549102,15491,0,0,100,1,8000,15000,14000,20000,11,24818,0,0,0,0,0,0,0,0,0,0,'Eranikus - cast Noxious Breath'),
+(1549103,15491,0,0,100,1,11000,17000,16000,20000,11,24839,0,0,0,0,0,0,0,0,0,0,'Eranikus - cast Acid Breath'),
 (1550501,15505,9,0,100,3,0,5,5000,8000,11,12097,4,32,0,0,0,0,0,0,0,0,'Canal Frenzy - Cast Pierce Armor'),
 (1551401,15514,6,0,100,2,0,0,0,0,11,19593,0,7,11,1881,0,7,0,0,0,0,'Buru Egg - Cast Egg Explosion and Summon Hive\'Zara Hatchling on Death'),
 (1552701,15527,9,0,100,3,0,30,8000,11000,11,25679,0,0,0,0,0,0,0,0,0,0,'Mana Fiend - Cast Arcane Explosion'),
@@ -13214,8 +13214,8 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1553801,15538,9,0,100,3,0,5,5000,7000,11,26350,1,0,0,0,0,0,0,0,0,0,'Anubisath Swarmguard - Cast Cleave'),
 (1562101,15621,9,0,100,3,0,5,9000,13000,11,25788,4,0,0,0,0,0,0,0,0,0,'Yauj Brood - Cast Head Butt'),
 (1562102,15621,13,0,100,3,8000,10000,0,0,11,25788,6,1,0,0,0,0,0,0,0,0,'Yauj Brood - Cast Head Butt on Target Spell Casting'),
-(1562901,15629,4,0,100,0,0,0,0,0,11,21307,0,0,0,0,0,0,0,0,0,0, 'Nightmare Phantasm - cast Swell of Souls'),
-(1562902,15629,0,0,100,0,7000,14000,12000,18000,11,17228,0,0,0,0,0,0,0,0,0,0, 'Nightmare Phantasm - cast Shadowbolt Volley'),
+(1562901,15629,4,0,100,0,0,0,0,0,11,21307,0,0,0,0,0,0,0,0,0,0,'Nightmare Phantasm - cast Swell of Souls'),
+(1562902,15629,0,0,100,0,7000,14000,12000,18000,11,17228,0,0,0,0,0,0,0,0,0,0,'Nightmare Phantasm - cast Shadowbolt Volley'),
 (1563001,15630,0,0,100,2,20000,20000,0,0,11,26662,0,0,1,-106,0,0,0,0,0,0,'Spawn of Fankriss - Cast Berserk'),
 (1565901,15659,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Auctioneer Jaxon - Summon Stormwind City Guard on Hostile LOS'),
 (1567501,15675,10,0,100,0,0,15,0,0,12,7980,1,600000,0,0,0,0,0,0,0,0,'Auctioneer Stockton - Summon Deathguard Elite on Hostile LOS'),
