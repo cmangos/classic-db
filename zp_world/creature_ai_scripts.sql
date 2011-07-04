@@ -13492,6 +13492,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (4000013,11739,0,0,100,1,2000,5000,32000,33000,11,744,1,0,0,0,0,0,0,0,0,0,'Cast Poison sur master'),
 (4000014,11739,0,0,50,0,500,1000,0,0,11,744,1,0,0,0,0,0,0,0,0,0,'Cast Rets 50% sur master'),
 (4334032,4334,4,0,100,0,0,0,0,0,11,9053,1,0,23,1,0,0,0,0,0,0,'Firemane Flamecaller - Cast Fireball and Set Phase 1 on Aggro'),
+(4334156,12143,4,0,100,3,0,0,0,0,11,21857,0,0,0,0,0,0,0,0,0,0,'Son of Flame - cast Lava Shield - Mana Burn Aura '),
 (4334158,15215,4,0,100,3,0,0,0,0,11,15326,0,0,0,0,0,0,0,0,0,0,'Mistress - Cast Blackout (rank5) on aggro'),
 (4334159,15215,0,0,100,3,5000,10000,18000,19000,11,11639,0,0,0,0,0,0,0,0,0,0,'Mistress - Cast Shadow Word: Pain'),
 (4334160,15215,0,0,100,3,8000,15000,10000,15000,11,13704,0,0,0,0,0,0,0,0,0,0,'Mistress - Cast Psychic Scream'),
