@@ -6963,7 +6963,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (584402,5844,9,0,100,1,0,5,18000,21000,11,11977,1,0,0,0,0,0,0,0,0,0,'Dark Iron Slaver - Cast Rend'),
 (584403,5844,9,0,100,1,0,15,9000,14000,11,6533,1,1,0,0,0,0,0,0,0,0,'Dark Iron Slaver - Cast Net'),
 (584601,5846,0,0,100,1,1000,3000,10000,15000,11,5115,0,0,0,0,0,0,0,0,0,0,'Dark Iron Taskmaster - Cast Battle Command'),
-(584602,5846,6,0,100,0,0,0,0,0,11,12613,0,7,0,0,0,0,0,0,0,0,'Dark Iron Taskmaser - Cast Dark Iron Taskmaster Death On Death'),
+(584602,5846,6,0,100,0,0,0,0,0,11,12613,0,3,0,0,0,0,0,0,0,0,'Dark Iron Taskmaser - Cast Dark Iron Taskmaster Death On Death'),
 (584701,5847,1,0,100,0,0,0,0,0,21,0,0,0,20,0,0,0,23,1,0,0,'Heggin Stonewhisker - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 (584702,5847,9,5,100,1,5,30,2300,3900,11,6660,1,0,40,2,0,0,0,0,0,0,'Heggin Stonewhisker - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 (584703,5847,0,5,100,1,6000,12000,9000,14000,11,6979,4,1,40,1,0,0,0,0,0,0,'Heggin Stonewhisker - Cast Fire Shot and Set Ranged Weapon Model (Phase 1)'),
