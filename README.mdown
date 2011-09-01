@@ -1,0 +1,71 @@
+mangos-zero-database ![Project status](http://getmangos.com/assets/img/repository-status-maintained.png)
+====================
+A content database for [mangos-zero][10], and *World of Warcraft Client Patch
+1.12* - [_Drums of War_][50]. It is compatible with client 1.12.1 (build 5875),
+and 1.12.2 (build 6005).
+
+This database is an attempt to provide a readable structure, and a bit of more
+user-friendlyness to the [Vanilla database][20], created by UDW.  Content has
+been imported from the [UDW database repository][21], and is based on the
+*update pack 3*, and extended with patches from [zerodatabase][22].
+
+
+Compatibility
+-------------
+This database is compatible with *mangos-zero z1765*.
+
+
+Getting started
+---------------
+The basic principle behind this customized database repository is to keep the
+databases stored as individual tables, and all content rows stored as single
+lines to make changes more trackable for the user (that would be you).
+
+The repository is developed and maintained using the excellent [git-flow][100]
+extension for git, to provide a clear, and visible [workflow][101] to the user.
+
+
+Installing the database
+-----------------------
+By default MaNGOS Zero uses four databases:
+
+* `zp_characters`: where all character data is stored,
+* `zp_realm`: where user accounts, and realms are defined,
+* `zp_world`: where the world with creatures, items, objects, quests, etc. is defined,
+* `zp_scripts`: and the ScriptDevZero database.
+
+In order to use this database repository, you will have to edit `mysql_info`,
+and edit in the desired username, hostname, and password.
+
+Once you have the desired database user and rights configured in MySQL, you may
+use the `mysql_import` script to load the individual data tables into your
+databases.  Should your database user have wildcard rights, the script creates
+the database - if not existent - and then populates them.
+
+If you make changes to the database, either by adding/modifying content, or by
+making changes to the database structure, you may execute `mysql_dump` to save
+each table into the repository.  Should you add or remove tables, add `dump_data`,
+`dump_struc` commands to `mysql_dump`, or remove them as needed.
+
+
+And if something goes wrong?
+----------------------------
+... for now you will have to figure out on your own.  This repository currently
+is intended to test some structure, and help figure out some structural issues.
+
+_If_ you feel like submitting an issue, please do so *only* if you are willing
+to provide a detailed report, and are available to verify any solution to the
+issue provided by the developers of this repository.
+
+[10]: https://github.com/mangos-zero/server "mangos-zero"
+[11]: https://github.com/mangos-zero/scriptdev0 "mangos-zero scriptdev"
+[12]: https://github.com/mangos-zero/database "mangos-zero database"
+
+[20]: http://zeroproject.udworld.net/ "UDW ZeroProject"
+[21]: https://github.com/udb/zerodatabase "UDW ZeroProject database repository"
+[22]: https://github.com/zerodatabase/zerodatabase "zerodatabase repository"
+
+[50]: http://eu.blizzard.com/en-gb/games/wow/ "World of Warcraft"
+
+[100]: https://github.com/nvie/gitflow "git-flow"
+[101]: http://nvie.com/posts/a-successful-git-branching-model/ "A successful git branching model"
