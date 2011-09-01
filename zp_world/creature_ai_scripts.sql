@@ -11121,6 +11121,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1148903,11489,9,0,100,3,0,10,28700,33500,11,22916,4,1,0,0,0,0,0,0,0,0,'Tendris Warpwood - Cast Uppercut'),
 (1148904,11489,0,0,100,3,0,8,5900,17300,11,5568,0,0,0,0,0,0,0,0,0,0,'Tendris Warpwood - Cast Trample'),
 (1148905,11489,0,0,100,3,14500,14500,28600,32400,11,22924,0,0,0,0,0,0,0,0,0,0,'Tendris Warpwood - Cast Grasping Vines'),
+(1148906,11489,6,0,100,0,0,0,0,0,32,14566,0,16,0,0,0,0,0,0,0,0,'Tendris Warpwood - Summon Ancient Equine Spirit on Death'),
 (1149001,11490,0,0,100,3,4500,21600,12100,24100,11,22478,0,0,0,0,0,0,0,0,0,0,'Zevrim Thornhoof - Cast Intense Pain'),
 (1149002,11490,0,0,100,3,11200,20400,17200,24100,11,22651,4,0,0,0,0,0,0,0,0,0,'Zevrim Thornhoof - Cast Sacrifice'),
 (1149201,11492,4,0,100,2,0,0,0,0,11,22128,0,1,23,1,0,0,0,0,0,0,'Alzzin the Wildshaper - Cast Thorns and Set Phase 1 on Aggro'),
