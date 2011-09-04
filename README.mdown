@@ -4,15 +4,16 @@ A content database for [mangos-zero][10], and *World of Warcraft Client Patch
 1.12* - [_Drums of War_][50]. It is compatible with client 1.12.1 (build 5875),
 and 1.12.2 (build 6005).
 
-This database is an attempt to provide a readable structure, and a bit of more
-user-friendlyness to the [Vanilla database][20], created by UDW.  Content has
-been imported from the [UDW database repository][21], and is based on the
-*update pack 3*, and extended with patches from [zerodatabase][22].
+**mangos-zero-database** is released under the GPL v3.  The file (`LICENSE.mdown`)
+**must** be a part of any redistributable packages made from this software.  No
+licenses should be removed from this software if you are making redistributable
+copies.
 
 
 Compatibility
 -------------
-This database is compatible with *mangos-zero z1765*.
+The *mangos-zero* database is compatible with [mangos-zero revision 1765][10]
+and newer.
 
 
 Getting started
@@ -21,13 +22,13 @@ The basic principle behind this customized database repository is to keep the
 databases stored as individual tables, and all content rows stored as single
 lines to make changes more trackable for the user (that would be you).
 
-The repository is developed and maintained using the excellent [git-flow][100]
-extension for git, to provide a clear, and visible [workflow][101] to the user.
+The repository is developed and maintained using the excellent [git-flow][110]
+extension for git, to provide a clear, and visible [workflow][111] to the user.
 
 
-Installing the database
------------------------
-By default MaNGOS Zero uses four databases:
+Installation
+------------
+By default **mangos-zero** uses four databases:
 
 * `zp_characters`: where all character data is stored,
 * `zp_realm`: where user accounts, and realms are defined,
@@ -50,22 +51,21 @@ each table into the repository.  Should you add or remove tables, add `dump_data
 
 And if something goes wrong?
 ----------------------------
-... for now you will have to figure out on your own.  This repository currently
-is intended to test some structure, and help figure out some structural issues.
-
 _If_ you feel like submitting an issue, please do so *only* if you are willing
 to provide a detailed report, and are available to verify any solution to the
 issue provided by the developers of this repository.
 
-[10]: https://github.com/mangos-zero/server "mangos-zero"
-[11]: https://github.com/mangos-zero/scriptdev0 "mangos-zero scriptdev"
-[12]: https://github.com/mangos-zero/database "mangos-zero database"
 
-[20]: http://zeroproject.udworld.net/ "UDW ZeroProject"
-[21]: https://github.com/udb/zerodatabase "UDW ZeroProject database repository"
-[22]: https://github.com/zerodatabase/zerodatabase "zerodatabase repository"
+[1]: https://github.com/mangos-zero "mangos-zero"
+
+[10]: https://github.com/mangos-zero/server "mangos zero"
+[11]: https://github.com/mangos-zero/scriptdev0 "script bindings"
+[12]: https://github.com/mangos-zero/database "content database"
 
 [50]: http://eu.blizzard.com/en-gb/games/wow/ "World of Warcraft"
+[51]: http://www.wowpedia.org/Patch_1.12.0 "WoW 1.12.0 - Drums of War"
 
-[100]: https://github.com/nvie/gitflow "git-flow"
-[101]: http://nvie.com/posts/a-successful-git-branching-model/ "A successful git branching model"
+[101]: http://github.com/ "github - social coding"
+
+[110]: http://nvie.com/posts/a-successful-git-branching-model/ "git flow extension"
+[111]: http://yakiloo.com/getting-started-git-flow/ "git flow workflow"
