@@ -1,4 +1,5 @@
-## LEGAL
+LEGAL NOTICE
+------------
 
 **mangos-zero-database** is released under the GPL v3.
 
@@ -22,3 +23,9 @@ The terms and conditions of this license are described below:
 This file (`LICENSE.mdown`) **must** be apart of any redistributable packages
 made from this software.  No licenses should be removed from this software if
 you are making redistributable copies.
+
+
+CONTENT COPYRIGHT
+-----------------
+Game content is Copyright © 2004-2011 Blizzard Entertainment.  Other works in
+this repository is of authorship © 2005-2011 *mangos foundation*.
