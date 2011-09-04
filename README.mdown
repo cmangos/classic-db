@@ -13,7 +13,8 @@ copies.
 Compatibility
 -------------
 The *mangos-zero* database is compatible with [mangos-zero revision 1765][10]
-and newer.
+and newer.  It also requires [scriptdev0 revision 464][11] in order to be
+fully enjoyable.
 
 
 Getting started
