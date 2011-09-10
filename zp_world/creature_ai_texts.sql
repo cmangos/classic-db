@@ -49,8 +49,9 @@ CREATE TABLE `creature_ai_texts` (
 LOCK TABLES `creature_ai_texts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` VALUES
-(-1146,'Ach! Thank you so much I\'m free! Finally!','','','','','','','','',0,0,0,0,'Locheen text when spawned'),
-(-1145,'Curse you! One day, vengeance will be mine!','','','','','','','','',0,0,0,0,'Private Merle text'),
+(-1147,'%s \'s death cry has stirred the nearby silithid hive',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,2,0,'12178'),
+(-1146,'Ach! Thank you so much I\'m free! Finally!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Locheen text when spawned'),
+(-1145,'Curse you! One day, vengeance will be mine!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Private Merle Text'),
 (-1144,'Ach! Thank you so much I\'m free! Finally!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'9876'),
 (-1143,'You will not harm Emperor Thaurissan!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'10076'),
 (-1142,'I crush weaklings like you every day! Bring it on!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'16059'),
