@@ -8324,7 +8324,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (744601,7446,11,0,100,0,0,0,0,0,11,8876,0,0,0,0,0,0,0,0,0,0,'Rabid Shardtooth - Cast Thrash on Spawn'),
 (744602,7446,0,0,80,0,0,0,8000,8000,11,3150,4,32,0,0,0,0,0,0,0,0,'Rabid Shardtooth - Cast Rabies'),
 (744701,7447,0,0,100,1,4000,4000,10000,10000,11,16552,1,0,0,0,0,0,0,0,0,0,'Fledgling Chillwind - Cast Venom Spit'),
-(744801,7448,0,2,100,1,7500,7500,7500,8500,11,40420,1,1,0,0,0,0,0,0,0,0,'Chillwind Chimaerar - Cast Lightning Breath'),
+(744801,7448,0,2,100,1,7500,7500,7500,8500,11,15797,1,1,0,0,0,0,0,0,0,0,'Chillwind Chimaerar - Cast Lightning Breath'),
 (744901,7449,2,0,100,0,25,0,0,0,11,8599,0,0,1,-46,0,0,0,0,0,0,'Chillwind Ravager - Cast Enrage at 25% HP'),
 (758401,7584,14,0,100,1,1200,40,25000,31000,11,16561,6,1,0,0,0,0,0,0,0,0,'Wandering Forest Walker - Cast Regrowth on Friendlies'),
 (760301,7603,4,0,100,2,0,0,0,0,39,10,0,0,0,0,0,0,0,0,0,0,'Leprous Assistant - Call for Help on Aggro'),
