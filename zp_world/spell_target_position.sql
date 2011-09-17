@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.13, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.13-log
+-- Server version	5.5.16-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -240,7 +240,7 @@ INSERT INTO `spell_target_position` VALUES
 (24325,309,-11726.3,-1777.38,10.46,0.16),
 (24593,309,-11726.3,-1777.38,10.46,0.16),
 (25139,409,1096,-467,-104.6,3.64),
-(25182,1,-8124.41,1525.132,16.368,3.05),
+(25182,1,-8124.41,1525.13,16.368,3.05),
 (25725,509,-9717.2,1517.81,27.6,5.4),
 (29273,533,3498.28,-5349.9,144.968,1.31324);
 /*!40000 ALTER TABLE `spell_target_position` ENABLE KEYS */;
