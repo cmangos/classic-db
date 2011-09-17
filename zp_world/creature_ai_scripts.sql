@@ -47,7 +47,7 @@ CREATE TABLE `creature_ai_scripts` (
   `action3_param3` int(11) NOT NULL DEFAULT '0',
   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Event Comment',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4334163 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
+) ENGINE=MyISAM AUTO_INCREMENT=1720902 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -8808,14 +8808,14 @@ INSERT INTO `creature_ai_scripts` VALUES
 (840903,8409,4,0,100,0,0,0,0,0,11,9672,1,0,23,1,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt and Set Phase 1 on Aggro'),
 (840904,8409,9,5,100,1,0,40,3400,4800,11,9672,1,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt (Phase 1)'),
 (840905,8409,3,5,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-(840906,8409,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement at 35 Yards (Phase 1)');
-INSERT INTO `creature_ai_scripts` VALUES
+(840906,8409,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement at 35 Yards (Phase 1)'),
 (840907,8409,9,5,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Prevent Combat Movement at 15 Yards (Phase 1)'),
 (840908,8409,9,5,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement Below 5 Yards (Phase 1)'),
 (840909,8409,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase 1 when Mana is above 15% (Phase 2)'),
 (840910,8409,9,0,100,1,0,8,13000,16000,11,11831,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Nova'),
 (840911,8409,27,0,100,1,12544,1,15000,30000,11,12544,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Armor on Missing Buff'),
-(840912,8409,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase to 0 on Evade'),
+(840912,8409,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase to 0 on Evade');
+INSERT INTO `creature_ai_scripts` VALUES
 (843801,8438,11,0,100,2,0,0,0,0,11,7741,0,0,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Summoned Demon on Spawn'),
 (843802,8438,9,0,100,3,0,40,5000,8000,11,12471,0,1,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Cast Shadow Bolt'),
 (843803,8438,0,0,100,3,13000,17000,14000,20000,11,11671,4,33,0,0,0,0,0,0,0,0,'Hakkari Bloodkeeper - Cast Corruption'),
@@ -12729,9 +12729,10 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1448302,14483,0,0,100,3,9000,12000,7000,12000,11,18663,1,0,0,0,0,0,0,0,0,0,'Dread Guard - Cast Shadow Shock'),
 (1448701,14487,0,0,100,1,15600,15600,32000,35000,11,6306,1,0,0,0,0,0,0,0,0,0,'Gluggle - Cast Acid Splash'),
 (1448702,14487,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Gluggle - Flee at 15% HP'),
-(1448901,14489,11,0,100,0,0,0,0,0,21,0,0,0,20,0,0,0,0,0,0,0,'Scourge Archer - Prevent Combat Movement and Prevent Melee on Spawn'),
-(1448902,14489,9,0,100,1,5,60,2400,3700,11,23073,1,0,40,2,0,0,0,0,0,0,'Scourge Archer - Cast Shoot and Set Ranged Weapon Model'),
-(1448903,14489,9,0,100,1,60,100,1000,1100,24,0,0,0,0,0,0,0,0,0,0,0,'Scourge Archer - Evade when out of range'),
+(1448901,14489,1,0,100,0,0,0,0,0,21,0,0,0,20,0,0,0,0,0,0,0,'Scourge Archer - Prevent Combat Movement and Prevent Melee on Spawn'),
+(1448902,14489,4,0,100,0,0,0,0,0,11,6660,1,0,23,1,0,0,0,0,0,0,'Scourge Archer - Cast Shoot and Set Phase 1 on Aggro'),
+(1448903,14489,9,5,100,1,5,30,500,800,11,6660,1,0,40,2,0,0,0,0,0,0,'Scourge Archer - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+(1448904,14489,9,5,100,1,5,15,0,0,21,0,1,0,20,0,0,0,0,0,0,0,'Scourge Archer - Prevent Combat Movement and Prevent Melee at 15 Yards (Phase 1)'),
 (1449701,14497,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Shellene - Summon Stormwind City Guard on Hostile LOS'),
 (1450201,14502,4,0,100,2,0,0,0,0,11,16636,0,0,0,0,0,0,0,0,0,0,'Xorothian Dreadsteed - Cast Berserker Charge on Aggro'),
 (1450202,14502,0,0,100,3,4000,8000,20000,25000,11,22713,4,0,0,0,0,0,0,0,0,0,'Xorothian Dreadsteed - Cast Flame Buffet'),
