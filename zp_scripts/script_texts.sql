@@ -603,6 +603,7 @@ INSERT INTO `script_texts` VALUES
 (-1033002,'There it is! Wide open. Good luck to you conquering what lies beyond. I must report back to the Kirin Tor at once!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_POST_DOOR_AS'),
 (-1033001,'I have just the spell to get this door open. Too bad the cell doors weren\'t locked so haphazardly.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_OPEN_DOOR_AS'),
 (-1033000,'Follow me and I\'ll open the courtyard door for you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,7,1,'prisoner ashcrombe SAY_FREE_AS'),
+(-1000716,'To Nighthaven! Keep your army close, champion. ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'remulos SAY_REMULOS_INTRO_2'),
 (-1000695,'Your wicked souls shall feed my power!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'lethon SAY_LETHON_SHADE'),
 (-1000694,'I can sense the SHADOW on your hearts. There can be no rest for the wicked!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'lethon SAY_LETHON_AGGRO'),
 (-1000693,'The Defias shall succeed! No meek adventurer will stop us!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'SAY_MARZON_2'),
