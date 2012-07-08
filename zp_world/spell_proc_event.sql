@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.25a, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.16-log
+-- Server version	5.5.25a-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -205,7 +205,8 @@ INSERT INTO `spell_proc_event` VALUES
 (30808,0,0,0,0,0,0,2,0,0,0),
 (30809,0,0,0,0,0,0,2,0,0,0),
 (30810,0,0,0,0,0,0,2,0,0,0),
-(30811,0,0,0,0,0,0,2,0,0,0);
+(30811,0,0,0,0,0,0,2,0,0,0),
+(6346,127,0,0,0,0,0,256,0,0,0);
 /*!40000 ALTER TABLE `spell_proc_event` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
