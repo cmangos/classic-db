@@ -124,6 +124,7 @@ dump_data  zp_world creature_battleground
 dump_data  zp_world creature_equip_template
 dump_data  zp_world creature_equip_template_raw
 dump_data  zp_world creature_involvedrelation
+dump_data  zp_world creature_linking_template
 dump_data  zp_world creature_loot_template
 dump_data  zp_world creature_model_info
 dump_data  zp_world creature_movement

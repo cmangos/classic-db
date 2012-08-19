@@ -23,9 +23,9 @@ reports.
 
 Compatibility
 -------------
-The *mangos-zero* database is compatible with [mangos-zero revision 1765][10]
-and newer.  It also requires [scriptdev0 revision 464][11] in order to be
-fully enjoyable.
+The *mangos-zero* database is compatible with [mangos-zero commit 543f0ca46165c4590ee50125e34d0ada25249a89][10]
+and newer.  It also requires [scriptdev0 commit cd2f4366fe3c22249705c7753a444723a4146fe5][11]
+or newer in order to be fully enjoyable.
 
 
 Getting started
