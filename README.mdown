@@ -61,6 +61,20 @@ each table into the repository.  Should you add or remove tables, add `dump_data
 `dump_struc` commands to `mysql_dump`, or remove them as needed.
 
 
+Configuring you realm list
+--------------------------
+Connect to your MySQL server and execute the following command:
+
+    UPDATE
+        `zp_realm`.`realmlist`
+    SET
+        `address` = '192.168.2.101'
+    WHERE
+        `realmlist`.`id` = 1;
+
+Please replace `192.168.2.101` with your local IP address!
+
+
 And if something goes wrong?
 ----------------------------
 _If_ you feel like submitting an issue, please do so *only* if you are willing

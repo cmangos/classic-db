@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.25a, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.27, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.25a-log
+-- Server version	5.5.27-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
