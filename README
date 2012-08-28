@@ -1,0 +1,95 @@
+==================================================================
+====     ACID (Artificial Creature Intelligence Database)     ====
+==================================================================
+
+/* Copyright (C) 2008 - 2012 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version. 
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+
+=============
+What Is ACID?
+=============
+ACID is a Database project to provide filling for MaNGOS' EventAI scripting engine.
+
+ACID is the primary NPC Combat Scripting project that works hand-in-hand with ScriptDev2 Project to provide a full scripted solution for World of Warcraft.
+
+I think you should consider ACID as a part of SD2, instead of looking at ACID as a single standalone project.
+ACID will take care of most Creature/NPC simple combat spells casted. If a creature has some hard phases or some extraordinary event, it will be scripted in ScriptDev2 (C++).
+
+ACID = Relatively Easy, not very complex, generic NPC combat and some visual/quest based scripting.
+SD2 = Harder and more complex NPC/Boss/Event/Instance/Gameobject scripting.
+
+ACID is responsible for all Creatures (Trash Mobs, Bosses, Quest NPCs) that are ABLE to be properly scripted within the limitations of EventAI. 
+If a script cannot be written in ACID properly then it will be requested from the SD2 project and written in C++ to implement PROPERLY.
+
+
+=====================================================================
+What does ACID Stand For and what is the ACID Development Philosophy?
+=====================================================================
+ACID project stands for nothing else but absolute perfection. Our goal is to make the absolute most authentic World of Warcraft experience possible.
+
+The developers for this project go to great lengths to get the most accurate data possible and the scripting is done with care and love of the game.
+
+This project is specifically organized and based on working along side SD2 / UDB / MaNGOS Projects.
+
+ACID does not take short cuts, nor do we compromise to get things working faster. We take the time to DO IT RIGHT no matter how difficult it is or how long it takes.
+
+
+================================
+What are the ACID Project Goals?
+================================
+Our goal is to take care of ALL possible NPC Scripting that can be handled by EventAI using Official Data wherever possible.
+
+We currently support the following World fo Warcraft Clients: 1.12.1 / 2.4.3 / 3.3.5a / 4.3.4
+ 
+
+============================================
+What is the difference between ACID and SD2?
+============================================
+ACID and SD2 are not "Linked" together. They are completely separate projects and separate coding... but as Devs we work together. And Yes they do compliment each other also. 
+
+ACID and SD2 Projects are focused on working together to provide a combined All-In-One Scripting Solution.
+
+Generally SD2 handles special events/quests/encounters/Bosses while ACID will to all your regular old Trash Mobs and some Bosses who are simple and straight forward. 
+
+ACID also will handle some of the simple eye-candy stuff in the game also.
+
+EventAI is a Database Based Scripting Engine. ACID Project is the project to fill in the Database for this scripting engine.
+
+One thing to note, SD2 also handles Gameobject scripting as well. EventAI has NOTHING to do with Gameobject scripting AT ALL. This is one very large different between SD2 and EventAI. 
+
+SD2 is mainly designed to work as Boss / Instance / Gameobject Scripting.
+
+
+============================
+Where do I get ACID Support?
+============================
+The official ACID IRC channel is on server irc.rizon.net channel #aciddev
+
+For those that don't know what IRC is, it was the ORIGINAL instant messaging system. (look it up on wikipedia )
+
+http://www.mirc.com will get you started if you are a windows user.
+
+If anyone has questions regarding ACID or needs help with scripting with EventAI then feel free to come and join us. 
+This is a channel that will be dedicated to ACID and it's development and can provide support to members.
+If you require any help in general in getting a server up and running there are many people available to assist you in the ACID IRC Channel as well.
+
+Documentation is contained in the docs/  subdirectory.
+
+Support and more documentation is also available on the ACID Forums located on the SD2 website: 
+http://www.scriptdev2.com/forums/6-ACID-Development
+
+Thank you very much!
+X-Savior
