@@ -2,7 +2,7 @@
 -- ====     ACID RELEASE 1.0.4 - FULL RELEASE FOR CMANGOS 1.12.1 CLIENT    ====
 -- ============================================================================
 
-/* Copyright (C) 2008 - 2012 ScriptDev2/ACID <https://sd2-acid.svn.sourceforge.net/svnroot/sd2-acid/>
+/* Copyright (C) 2008 - 2012 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
@@ -18,8 +18,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
- 
- 
+
+
 -- =====================================================
 -- Clear Initial Creature_AI Table Data for ACID Tables
 -- =====================================================
