@@ -43,8 +43,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =================
 -- Alterac Mountains
 -- =================
--- Deer (883) - NSR    
--- Sheep (1933) - NSR    
+-- Deer (883) - NSR
+-- Sheep (1933) - NSR
 -- Treant (1964) - NSR
 -- Syndicate Footpad (3.1.1 Official Data)
 ('224001','2240','9','0','100','1','0','5','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Footpad - Cast Backstab'),
@@ -145,7 +145,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('230611','2306','2','0','100','0','15','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Baron Vardus - Set Phase 3 at 15% HP'),
 ('230612','2306','2','7','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Baron Vardus - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 ('230613','2306','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Baron Vardus - Set Phase to 0 on Evade'),
--- Gol'dir (2316) - NSR    
+-- Gol'dir (2316) - NSR
 -- Elysa (2317) - NSR
 -- Argus Shadow Mage (3.1.1 Official Data)
 ('231801','2318','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Argus Shadow Mage - Prevent Combat Movement on Spawn'),
@@ -173,7 +173,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('231911','2319','0','0','100','1','5000','9000','25000','35000','11','12824','5','1','0','0','0','0','0','0','0','0','Syndicate Wizard - Cast Polymorph'),
 ('231912','2319','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Syndicate Wizard - Cast Frost Armor on Missing Buff'),
 ('231913','2319','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Syndicate Wizard - Set Phase to 0 on Evade'),
--- Nagaz (2320) - NSR    
+-- Nagaz (2320) - NSR
 -- Henchman Valik (3.1.1 Official Data)
 ('233301','2333','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Henchman Valik - Flee at 15% HP'),
 -- Giant Moss Creeper (3.1.1 Official Data)
@@ -197,9 +197,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('235903','2359','2','0','100','0','25','0','0','0','11','3673','0','1','1','-473','0','0','0','0','0','0','Elemental Slave - Cast Reduced to Rubble at 25% HP'),
 -- Southshore Guard (2386) - NSR
 -- Tarren Mill Deathguard - ALREADY SCRIPTED IN ANOTHER ZONE
--- Mountain Lion (2406) - NSR    
--- Hulking Mountain Lion (2407) - NSR    
--- Snapjaw (2408) - NSR    
+-- Mountain Lion (2406) - NSR
+-- Hulking Mountain Lion (2407) - NSR
+-- Snapjaw (2408) - NSR
 -- Ricter (3.1.1 Official Data)
 ('241101','2411','2','0','100','0','15','0','0','0','25','0','0','0','0','0','0','0','0','0','0','0','Ricter - Flee at 15% HP'),
 -- Alina (3.1.1 Official Data)
@@ -282,17 +282,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('254313','2543','2','0','100','0','15','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Archmage Ansirem Runeweaver - Set Phase 3 at 15% HP'),
 ('254314','2543','2','7','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Archmage Ansirem Runeweaver - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 ('254315','2543','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Archmage Ansirem Runeweaver - Set Phase to 0 on Evade'),
--- Spirit of Old (2623) - NSR    
+-- Spirit of Old (2623) - NSR
 -- Dalaran Worker (3.1.1 Official Data)
 ('262801','2628','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dalaran Worker - Flee at 15% HP'),
--- Rizz Loosebolt (2684) - NSR        
+-- Rizz Loosebolt (2684) - NSR
 -- Nancy Vishas (3.1.1 Official Data)
 ('398401','3984','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Nancy Vishas - Flee at 15% HP'),
 -- Grandpa Vishas (3.1.1 Official Data)
 ('398501','3985','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grandpa Vishas - Flee at 15% HP'),
 -- Frostmaw (4504) - NSR
--- Lake Frenzy (6033) - NSR    
--- Bath'rah the Windwatcher (6176) - NEED TO CHECK AND SEE IF QUESTS WORK FROM THIS NPC    
+-- Lake Frenzy (6033) - NSR
+-- Bath'rah the Windwatcher (6176) - NEED TO CHECK AND SEE IF QUESTS WORK FROM THIS NPC
 -- Cyclonian (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
 ('623901','6239','0','0','100','1','6000','10000','8000','11000','11','17207','0','0','0','0','0','0','0','0','0','0','Cyclonian - Cast Whirlwind'),
 ('623902','6239','0','0','100','1','5000','5000','33000','33000','11','6982','0','1','0','0','0','0','0','0','0','0','Cyclonian - Cast Gust of Wind'),
@@ -329,7 +329,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1384102','13841','0','0','100','1','1000','4000','9000','14000','11','12169','1','1','0','0','0','0','0','0','0','0','Lieutenant Haggerdin - Cast Shield Block'),
 -- Gravis Slipknot (3.1.1 Official Data)
 ('1422101','14221','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gravis Slipknot - Flee at 15% HP'),
--- Araga (14222) - NSR    
+-- Araga (14222) - NSR
 -- Cranky Benj (14223) - NSR    
 -- Jimmy the Bleeder (3.1.1 Official Data)
 ('1428101','14281','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Jimmy the Bleeder - Flee at 15% HP'),
