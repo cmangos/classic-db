@@ -18681,7 +18681,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1105405','11054','9','1','100','3','11','45','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Crimson Rifleman - Prevent Combat Movement and Prevent Melee at 45 Yards (Phase 1)'),
 ('1105406','11054','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Crimson Rifleman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Fras Siabi (3.0.8 Official Data) - Need More Initial Cast Data
-('1105801','11058','4','0','100','2','0','0','0','0','1','-177','-178','-178','0','0','0','0','0','0','0','0','Fras Siabi - Random Say on Aggro'),
+('1105801','11058','4','0','100','2','0','0','0','0','1','-177','-178','-1310','0','0','0','0','0','0','0','0','Fras Siabi - Random Say on Aggro'),
 ('1105802','11058','0','0','100','3','7300','7300','12100','18200','11','7964','0','1','0','0','0','0','0','0','0','0','Fras Siabi - Cast Smoke Bomb'),
 ('1105803','11058','0','0','100','3','4900','4900','7500','21500','11','17294','1','0','0','0','0','0','0','0','0','0','Fras Siabi - Cast Flame Breath'),
 -- Stratholme Courier
@@ -22419,7 +22419,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1305','The light condemns all who harbor evil.  Now you will die!','0','0','0','Scarlet Monastery','0'),
 ('-1306','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','Scarlet Monastery','0'),
 ('-1307','There is no escape for you.  The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','Scarlet Monastery','0'),
-('-1308','The Scarlet Crusade shall smite the wicked and drive evil from these lands!','0','0','0','Scarlet Monastery','0');
+('-1308','The Scarlet Crusade shall smite the wicked and drive evil from these lands!','0','0','0','Scarlet Monastery','0'),
+-- Please Re-use -1309
+('-1310','Welcome to flavor country!','0','0','0','11058','0');
 
 
 
