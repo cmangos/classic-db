@@ -29,6 +29,7 @@ ALTER TABLE `creature_equip_template_raw`  ORDER BY `entry` ASC;
 ALTER TABLE `creature_involvedrelation`  ORDER BY `quest` ASC;
 ALTER TABLE `creature_loot_template`  ORDER BY `entry` ASC;
 ALTER TABLE `creature_model_info`  ORDER BY `modelid` ASC;
+ALTER TABLE `creature_linking_template`  ORDER BY `entry` ASC;
 ALTER TABLE `creature_movement`  ORDER BY `id` ASC;
 ALTER TABLE `creature_movement_scripts`  ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `creature_movement_template`  ORDER BY `entry` ASC;
