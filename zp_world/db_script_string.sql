@@ -78,7 +78,7 @@ INSERT INTO `db_script_string` VALUES
 (2000000056,'Hey there, Belm! Give me a mug of Thunder Ale, and one for my good friend $N.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000057,'Spirits of Water, I give you praise, and I beg of you a favour. You have heard $N\'s please, and I trust his inent is noble. Please, will you aid us?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000058,'Thank you great spirit. Thank you!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000000059,'You are Dismissed, $N',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000000059,'You are dismissed, $N',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000063,'Follow me, good $C. I\'ll have your barding done faster than I could down a Dwarven stout. Mmmm... stout.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000064,'Well, that should do it. Come now, back to the shop to finish our business!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000065,'We will suffer no demon\'s servant in our lands!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
