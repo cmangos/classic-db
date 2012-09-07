@@ -1740,9 +1740,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Skeletal Shocktrooper (16299) - NSR
 -- Spirit of the Damned (16379) - NSR
 -- Bone Witch (16380) - NSR
--- Void Zone
-('1669701','16697','0','0','100','3','3000','3000','3000','3000','11','46264','0','2','0','0','0','0','0','0','0','0','Void Zone - Cast Void Zone Effect'),
-('1669702','16697','1','0','100','3','3000','3000','3000','3000','11','46264','0','2','0','0','0','0','0','0','0','0','Void Zone - Cast Void Zone Effect'),
+-- Void Zone (16697) - Should Be Scripted in SD2
 -- Midsummer Celebrant (16781) - NSR
 
 
@@ -22709,9 +22707,6 @@ INSERT INTO `creature_ai_scripts` VALUES ('1081601','10816','0','0','75','1','10
 
 -- Remove Specific Scripts That Have No Pre-TBC Spell Equivelant (Damage Immunity: Arcane) - Could Not Find any Pre-TBC Comments - THIS MIGHT NEED TO BE HANDLED BY creature_template
 DELETE FROM `creature_ai_scripts` WHERE id IN (1020201,1066201,1066301,1066401);
-
--- Remove Specific Scripts That Have No Pre-TBC Spell Equivelant (Void Zone Effect) - Unsure What To Do About This
-DELETE FROM `creature_ai_scripts` WHERE id IN (1669701,1669702);
 
 -- Remove Specific Scripts That Have No Pre-TBC Spell Equivelant (Cry of the Dead) - Does Not Appear This Spell Was Used Prior to TBC
 DELETE FROM `creature_ai_scripts` WHERE id IN (1237701);
