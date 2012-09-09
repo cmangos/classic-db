@@ -108,6 +108,8 @@ INSERT INTO `db_script_string` VALUES
 (2000000160,'Ma reth bromo zoln kilagrin dra ma zoern tu ko fraht ka tadrom Ma krin drinor zaln dirnor Ma krin kan aasrugel korsul',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000161,'ROARRRRR!!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000000162,'DARKSHIRE... I HUNGER!!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000000168,'%s stares to the northwest and lets out a long, drawn out howl.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000000169,'%s lets forth a mighty howl.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005000,'Poor Dorius. If I ever get my hands on those Dark Irons, so help me...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005001,'Opus wants some Cuergo\'s Gold... with worm.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005002,'Bijou lost! SQUAWK! *cough',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
@@ -295,9 +297,7 @@ INSERT INTO `db_script_string` VALUES
 (2000005316,'Don\'t worry, I\'ll find a good home for ya.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005317,'Can anyone give my adorable, extra little kitty a home?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005318,'Will someone please give my little kitten a good home?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000005319,'Kitten for sale, looking for a good home.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000000168,'%s stares to the northwest and lets out a long, drawn out howl.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000000169,'%s lets forth a mighty howl.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005319,'Kitten for sale, looking for a good home.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
