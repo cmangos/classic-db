@@ -103,8 +103,6 @@ ALTER TABLE `reputation_spillover_template`  ORDER BY `faction` ASC;
 ALTER TABLE `reserved_name`  ORDER BY `name` ASC;
 ALTER TABLE `scripted_areatrigger`  ORDER BY `entry` ASC;
 ALTER TABLE `scripted_event_id`  ORDER BY `id` ASC;
-ALTER TABLE `skill_discovery_template`  ORDER BY `spellId` ASC;
-ALTER TABLE `skill_extra_item_template`  ORDER BY `spellId` ASC;
 ALTER TABLE `skill_fishing_base_level`  ORDER BY `entry` ASC;
 ALTER TABLE `skinning_loot_template`  ORDER BY `entry` ASC;
 ALTER TABLE `spell_affect`  ORDER BY `entry` ASC;
