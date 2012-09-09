@@ -75,7 +75,19 @@ INSERT INTO `creature_movement_scripts` VALUES
 (590101,15,1,26,0,0,0,0,0,0,0,0,0,0,0,0,'Islenstand'),
 (590101,15,0,0,11256,10,0,4,2000000058,0,0,0,0,0,0,0,'Islenthanks'),
 (590102,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'Islenidle'),
-(1258101,4,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
+(1258101,4,18,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(173701,0,20,1,1737,5,0,0,0,0,0,0,0,0,0,0,'Oliver movement changed to 1:random'),
+(173701,35,20,2,1737,5,0,0,0,0,0,0,0,0,0,0,'Oliver movement changed to 2:waypoint'),
+(173901,0,25,1,1739,5,0,0,0,0,0,0,0,0,0,0,'Phillip RUN ON'),
+(173902,0,25,0,1739,5,0,0,0,0,0,0,0,0,0,0,'Phillip RUN OFF'),
+(298301,2,0,2,0,0,0,0,2000000168,0,0,0,0,0,0,0,'The plains vision: say - text_emote'),
+(298302,2,0,2,0,0,0,0,2000000169,0,0,0,0,0,0,0,'The plains vision: say - text_emote'),
+(14241,1,1,35,0,0,0,0,0,0,0,0,0,0,0,0,'ironbark redeemed - emote'),
+(14241,6,1,35,0,0,0,0,0,0,0,0,0,0,0,0,'ironbark redeemed - emote'),
+(14241,9,11,632439,0,0,0,0,0,0,0,0,0,0,0,0,'ironbark redeemed - open door entry 176907'),
+(14241,14,28,7,0,0,0,0,0,0,0,0,0,0,0,0,'ironbark redeemed - fake dead'),
+(14241,25,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'ironbark redeemed - despawn self'),
+(14241,25,21,0,0,0,0,0,0,0,0,0,0,0,0,0,'ironbark redeemed - set not active');
 /*!40000 ALTER TABLE `creature_movement_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
