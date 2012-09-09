@@ -141,7 +141,7 @@ INSERT INTO `command` VALUES
 ('hidearea',3,'Syntax: .hidearea #areaidHide the area of #areaid to the selected character. If no character is selected, hide this area to you.'),
 ('honor add',2,'Syntax: .honor add $amountAdd a certain amount of honor (gained in lifetime) to the selected player.'),
 ('honor addkill',2,'Syntax: .honor addkikllAdd the targeted unit as one of your pvp kills today (you only get honor if it\'s a racial leader or a player)'),
-('honor show',1,'Syntax: .honor showDisplay the honor stats of the selected player'),
+('honor show',2,'Syntax: .honor showDisplay the honor stats of the selected player'),
 ('honor update',2,'Syntax: .honor updateForce honor to be update'),
 ('hover',3,'Syntax: .hover #flagEnable or disable hover mode for your character.Use a #flag of value 1 to enable, use a #flag value of 0 to disable hover.'),
 ('instance listbinds',3,'Syntax: .instance listbinds  Lists the binds of the selected player.'),
