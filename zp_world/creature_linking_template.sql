@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `creature_linking_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `creature_linking_template` (
-  `entry` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'creature_template.entry of the slave mob that is linked',
+  `entry` int(10) unsigned NOT NULL COMMENT 'creature_template.entry of the slave mob that is linked',
   `map` mediumint(8) unsigned NOT NULL COMMENT 'Id of map of the mobs',
   `master_entry` int(10) unsigned NOT NULL COMMENT 'master to trigger events',
   `flag` mediumint(8) unsigned NOT NULL COMMENT 'flag - describing what should happen when',
