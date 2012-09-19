@@ -298,7 +298,17 @@ INSERT INTO `db_script_string` VALUES
 (2000005317,'Can anyone give my adorable, extra little kitty a home?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005318,'Will someone please give my little kitten a good home?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (2000005319,'Kitten for sale, looking for a good home.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000005335,'And I am determined to find out more... So if you need my help again, you know where I\'ll be.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005335,'And I am determined to find out more... So if you need my help again, you know where I\'ll be.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005336,'Anaya...? Do my eyes deceive me? Is it really you?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005337,'The ages have been cruel to you and I, my love, but be assured, it is, and at long last we are reunited.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005338,'That the fates should be so cruel as to permit us only this after a thousand years apart...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005339,'Do you hate me, my love? That I was forced to destroy your living form, that your spirit be released from unhappy bondage.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005340,'Let it not trouble your heart, beloved. You have freed me from slavery, and for that I love you all the more.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005341,'Sadly, even this must be cut short... The ties that bind me to this world weaken, and pull me away...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005342,'No! Anaya... Anaya! Don\'t leave me! Please...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005343,'Farewell, Cerellean, until we are joined once again...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005344,'Anaya\'s soft voice trails away into the mists. \"Know that I love you always...\"',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(2000005345,'How, my love? How will I find the strength to face the ages of the world without you by my side...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
