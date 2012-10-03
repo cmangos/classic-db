@@ -47,7 +47,7 @@ CREATE TABLE `creature_ai_scripts` (
   `action3_param3` int(11) NOT NULL DEFAULT '0',
   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Event Comment',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
+) ENGINE=MyISAM AUTO_INCREMENT=1720902 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1798,7 +1798,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (175101,1751,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Mithras Ironhill - Summon Stormwind City Guard on Hostile LOS'),
 (175201,1752,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Caledra Dawnbreeze - Summon Stormwind City Guard on Hostile LOS'),
 (175301,1753,2,0,100,1,75,0,7000,14000,11,3243,1,1,0,0,0,0,0,0,0,0,'Maggot Eye - Cast Life Harvest at 75% HP'),
-(175302,1753,0,0,100,1,4000,9000,30000,45000,11,3237,0,0,0,0,0,0,0,0,0,0,'Maggot Eye - Cast Curse of Thule'),
+(175302,1753,0,0,100,1,4000,9000,30000,45000,11,3237,1,0,0,0,0,0,0,0,0,0,'Maggot Eye - Cast Curse of Thule'),
 (176301,1763,1,0,100,3,120000,120000,120000,120000,1,-408,-409,0,0,0,0,0,0,0,0,0,'Gilnid - Random Say OOC'),
 (176302,1763,0,0,100,3,2100,4800,23300,44900,11,5213,1,0,0,0,0,0,0,0,0,0,'Gilnid - Cast Molten Metal'),
 (176501,1765,0,0,100,1,4000,14000,34000,60000,11,24604,0,0,0,0,0,0,0,0,0,0,'Worgn - Cast Furious Howl'),
