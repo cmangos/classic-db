@@ -38,6 +38,11 @@ CREATE TABLE `pool_gameobject` (
 
 LOCK TABLES `pool_gameobject` WRITE;
 /*!40000 ALTER TABLE `pool_gameobject` DISABLE KEYS */;
+INSERT INTO `pool_gameobject` VALUES
+(31121,1501,25,'Q3741-hilarys necklace'),
+(20836,1501,25,'Q3741-hilarys necklace'),
+(110001,1501,25,'Q3741-hilarys necklace'),
+(110002,1501,25,'Q3741-hilarys necklace');
 /*!40000 ALTER TABLE `pool_gameobject` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
