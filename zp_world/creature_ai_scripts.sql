@@ -1723,7 +1723,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (167402,1674,0,0,100,1,7000,21000,30000,45000,11,3237,0,1,0,0,0,0,0,0,0,0,'Rot Hide Gnoll - Cast Curse of Thule'),
 (167403,1674,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Rot Hide Gnoll - Flee at 15% HP'),
 (167501,1675,4,0,15,0,0,0,0,0,1,-5,-6,0,0,0,0,0,0,0,0,0,'Rot Hide Mongrel - Random Say on Aggro'),
-(167502,1675,0,0,100,0,7000,14000,30000,45000,11,3237,0,1,0,0,0,0,0,0,0,0,'Rot Hide Mongrel - Cast Curse of Thule'),
+(167502,1675,0,0,100,1,7000,14000,30000,45000,11,3237,0,1,0,0,0,0,0,0,0,0,'Rot Hide Mongrel - Cast Curse of Thule'),
 (167901,1679,0,0,100,1,6000,8000,11000,15000,11,5588,1,0,0,0,0,0,0,0,0,0,'Avarus Kharag - Cast Hammer of Justice'),
 (167902,1679,2,0,100,1,30,0,20000,30000,11,1026,0,1,0,0,0,0,0,0,0,0,'Avarus Kharag - Cast Holy Light at 30% HP'),
 (168801,1688,11,0,100,0,0,0,0,0,11,11959,0,1,0,0,0,0,0,0,0,0,'Night Web Matriarch - Cast Poison Proc on Spawn'),
