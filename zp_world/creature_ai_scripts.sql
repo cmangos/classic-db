@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.27, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.28, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.27-log
+-- Server version	5.5.28-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -47,7 +47,7 @@ CREATE TABLE `creature_ai_scripts` (
   `action3_param3` int(11) NOT NULL DEFAULT '0',
   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Event Comment',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1720902 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

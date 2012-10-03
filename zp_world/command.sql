@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.27, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.28, for Linux (x86_64)
 --
 -- Host: localhost    Database: zp_world
 -- ------------------------------------------------------
--- Server version	5.5.27-log
+-- Server version	5.5.28-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -37,16 +37,16 @@ CREATE TABLE `command` (
 LOCK TABLES `command` WRITE;
 /*!40000 ALTER TABLE `command` DISABLE KEYS */;
 INSERT INTO `command` VALUES
-('account',0,'Syntax: .accountDisplay the access level of your account.'),
-('account characters',3,'Syntax: .account characters [#accountId|$accountName]\r\n\r\nShow list all characters for account selected by provided #accountId or $accountName, or for selected player in game.'),
-('account create',4,'Syntax: .account create $account $passwordCreate account and set password to it.'),
-('account delete',4,'Syntax: .account delete $accountDelete account with all characters.'),
-('account lock',0,'Syntax: .account lock [on|off]Allow login from account only from current used IP or remove this requirement.'),
-('account onlinelist',4,'Syntax: .account onlinelistShow list of online accounts.'),
-('account password',0,'Syntax: .account password $old_password $new_password $new_passwordChange your account password.'),
-('account set addon',3,'Syntax: .account set addon [#accountId|$accountName] #addon\r\n\r\nSet user (possible targeted) expansion addon level allowed. Addon values: 0 - normal, 1 - tbc, 2 - wotlk.'),
-('account set gmlevel',4,'Syntax: .account set gmlevel [#accountId|$accountName] #level\r\n\r\nSet the security level for targeted player (can\'t be used at self) or for #accountId or $accountName to a level of #level.\r\n\r\n#level may range from 0 to 3.'),
-('account set password',4,'Syntax: .account set password (#accountId|$accountName) $password $password\r\n\r\nSet password for account.'),
+('account',0,'Syntax: .account\r\n\r\nDisplay the access level of your account.'),
+('account characters',3,'Syntax: .account characters [#accountId|$accountName]\r\n\r\nDisplays a list of all characters for an account either by provided #accountId or $accountName, or the account of a selected player.'),
+('account create',4,'Syntax: .account create $username $password\r\n\r\nCreate an account with given $username and $password.'),
+('account delete',4,'Syntax: .account delete $username\r\n\r\nDelete the account with given $username.'),
+('account lock',0,'Syntax: .account lock [on|off]\r\n\r\nRestrict logins to an account from the current IP address, or remove the restriction if active.'),
+('account onlinelist',4,'Syntax: .account onlinelist\r\n\r\nDisplays a list of accounts currently active.'),
+('account password',0,'Syntax: .account password $old_password $new_password $new_password\n\nChange your accounts password from given $old_password to $new_password.'),
+('account set addon',3,'Syntax: .account set addon [#accountId|$accountName] #addon\r\n\r\nSet the allowed expansion for a given account ID, username or selected characters account. Allowed values are 0 for vanilla, 1 for The Burning Crusade, and 2 for Wrath of the Lich King.'),
+('account set gmlevel',4,'Syntax: .account set gmlevel [#accountId|$accountName] #level\r\n\r\nSet the access level for a given account ID, username or the account of a targeted character.\r\n\r\n#level may range from 0 to 3.'),
+('account set password',4,'Syntax: .account set password (#accountId|$accountName) $password $password\r\n\r\nChange the accounts password for an account ID or username to $password.'),
 ('additem',3,'Syntax: .additem #itemid/[#itemname]/#shift-click-item-link #itemcountAdds the specified number of items of id #itemid (or exact (!) name $itemname in brackets, or link created by shift-click at item in inventory or recipe) to your or selected character inventory. If #itemcount is omitted, only one item will be added..'),
 ('additemset',3,'Syntax: .additemset #itemsetidAdd items from itemset of id #itemsetid to your or selected character inventory. Will add by one example each item from itemset.'),
 ('announce',1,'Syntax: .announce $MessageToBroadcastSend a global message to all players online in chat log.'),
