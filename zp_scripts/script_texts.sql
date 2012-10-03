@@ -991,7 +991,7 @@ INSERT INTO `script_texts` VALUES
 (-1000383,'Naga attackers! Defend yourself!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'wilda SAY_WIL_AGGRO2'),
 (-1000382,'Watch out!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'wilda SAY_WIL_AGGRO1'),
 (-1000381,'I sense the tortured spirits, $n. They are this way, come quickly!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,'wilda SAY_WIL_START'),
-(-1000380,'Captain Brightsun, $N here has freed me! $N, i am certain the Captain will reward your bravery.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,66,'gilthares SAY_GIL_FREED'),
+(-1000380,'Captain Brightsun, $N here has freed me! $N, I am certain the Captain will reward your bravery.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,66,'gilthares SAY_GIL_FREED'),
 (-1000379,'Ah, the sweet salt air of Ratchet.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,0,'gilthares SAY_GIL_SWEET'),
 (-1000378,'Almost back to Ratchet! Let\'s keep up the pace...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,0,'gilthares SAY_GIL_ALMOST'),
 (-1000377,'Get this $C off of me!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,0,'gilthares SAY_GIL_AGGRO_4'),
