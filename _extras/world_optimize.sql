@@ -135,6 +135,7 @@ ALTER TABLE `spell_proc_item_enchant`  ORDER BY `entry` ASC;
 ALTER TABLE `spell_scripts`  ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `spell_script_target`  ORDER BY `entry` ASC;
 ALTER TABLE `spell_target_position`  ORDER BY `id` ASC;
+ALTER TABLE `spell_template`  ORDER BY `id` ASC;
 ALTER TABLE `spell_threat`  ORDER BY `entry` ASC;
 ALTER TABLE `transports`  ORDER BY `entry` ASC;
 ALTER TABLE `world_template`  ORDER BY `map` ASC;
