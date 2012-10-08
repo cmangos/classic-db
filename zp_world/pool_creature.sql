@@ -38,6 +38,9 @@ CREATE TABLE `pool_creature` (
 
 LOCK TABLES `pool_creature` WRITE;
 /*!40000 ALTER TABLE `pool_creature` DISABLE KEYS */;
+INSERT INTO `pool_creature` VALUES
+(12596,1503,0,'Q002518_lady_sathrah'),
+(73001,1503,0,'Q002518_lady_sathrah');
 /*!40000 ALTER TABLE `pool_creature` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

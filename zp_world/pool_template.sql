@@ -109,7 +109,8 @@ INSERT INTO `pool_template` VALUES
 (1070,1,'RARE Lord Condar - 14268'),
 (1071,1,'RARE Gnawbone - 14425'),
 (1072,1,'RARE Mirelow - 14424'),
-(1501,1,'Q3741 hilarys necklace');
+(1501,1,'Q3741 hilarys necklace'),
+(1503,1,'Q002518_lady_sathrah');
 /*!40000 ALTER TABLE `pool_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
