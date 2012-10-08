@@ -36,7 +36,7 @@ CREATE TABLE `db_version` (
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
 INSERT INTO `db_version` VALUES
-('mangos-zero database version 1.0.0 (development) / \"Happy Holidays\"','mangos-zero Artificial Creature Intelligence Database based on ACID 1.0.2',NULL);
+('mangos-zero database version 1.0.0 (release) / \"Happy Holidays\"','mangos-zero Artificial Creature Intelligence Database based on ACID 1.0.2',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
