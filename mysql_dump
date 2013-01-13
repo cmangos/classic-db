@@ -215,7 +215,6 @@ dump_data  zp_world spell_proc_item_enchant
 dump_data  zp_world spell_scripts
 dump_data  zp_world spell_script_target
 dump_data  zp_world spell_target_position
-dump_data  zp_world spell_template
 dump_data  zp_world spell_threat
 dump_data  zp_world transports
 dump_data  zp_world world_template
