@@ -33,7 +33,7 @@ CREATE TABLE `guild` (
   `BackgroundColor` int(5) NOT NULL DEFAULT '0',
   `info` text NOT NULL,
   `motd` varchar(255) NOT NULL DEFAULT '',
-  `createdate` bigint(20) NOT NULL DEFAULT '0',
+  `createdate` bigint(20) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guildid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Guild System';
 /*!40101 SET character_set_client = @saved_cs_client */;

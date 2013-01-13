@@ -31,7 +31,7 @@ CREATE TABLE `auction` (
   `item_randompropertyid` int(11) NOT NULL DEFAULT '0',
   `itemowner` int(11) unsigned NOT NULL DEFAULT '0',
   `buyoutprice` int(11) NOT NULL DEFAULT '0',
-  `time` bigint(40) NOT NULL DEFAULT '0',
+  `time` bigint(40) unsigned NOT NULL DEFAULT '0',
   `buyguid` int(11) unsigned NOT NULL DEFAULT '0',
   `lastbid` int(11) NOT NULL DEFAULT '0',
   `startbid` int(11) NOT NULL DEFAULT '0',

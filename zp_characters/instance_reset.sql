@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `instance_reset`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `instance_reset` (
   `mapid` int(11) unsigned NOT NULL DEFAULT '0',
-  `resettime` bigint(40) NOT NULL DEFAULT '0',
+  `resettime` bigint(40) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`mapid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;

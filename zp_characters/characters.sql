@@ -80,7 +80,7 @@ CREATE TABLE `characters` (
   `actionBars` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `deleteInfos_Account` int(11) unsigned DEFAULT NULL,
   `deleteInfos_Name` varchar(12) DEFAULT NULL,
-  `deleteDate` bigint(20) DEFAULT NULL,
+  `deleteDate` bigint(20) unsigned DEFAULT NULL,
   PRIMARY KEY (`guid`),
   KEY `idx_account` (`account`),
   KEY `idx_online` (`online`),
