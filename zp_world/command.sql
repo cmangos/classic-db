@@ -54,6 +54,7 @@ INSERT INTO `command` VALUES
 ('auction alliance',3,'Syntax: .auction alliance\r\n\r\nShow alliance auction store independent from your team.'),
 ('auction goblin',3,'Syntax: .auction goblin\r\n\r\nShow goblin auction store common for all teams.'),
 ('auction horde',3,'Syntax: .auction horde\r\n\r\nShow horde auction store independent from your team.'),
+('auction item',3,'Syntax: .auction item (alliance|horde|goblin) #itemid[:#itemcount] [[[#minbid] #buyout] [short|long|verylong]\r\n\r\nAdd new item (in many stackes if amount grater stack size) to specific auction house at short|long|verylogn perios similar same settings in auction in game dialog. Created auction not have owner.'),
 ('aura',3,'Syntax: .aura #spellidAdd the aura from spell #spellid to the selected Unit.'),
 ('ban account',3,'Syntax: .ban account $Name $bantime $reasonBan account kick player.$bantime: negative value leads to permban, otherwise use a timestring like 4d20h3s\"\".\"'),
 ('ban character',3,'Syntax: .ban character $Name $bantime $reasonBan account and kick player.$bantime: negative value leads to permban, otherwise use a timestring like 4d20h3s\"\".\"'),
