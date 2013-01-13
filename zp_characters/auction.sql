@@ -27,6 +27,8 @@ CREATE TABLE `auction` (
   `houseid` int(11) unsigned NOT NULL DEFAULT '0',
   `itemguid` int(11) unsigned NOT NULL DEFAULT '0',
   `item_template` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Item Identifier',
+  `item_count` int(11) unsigned NOT NULL DEFAULT '0',
+  `item_randompropertyid` int(11) NOT NULL DEFAULT '0',
   `itemowner` int(11) unsigned NOT NULL DEFAULT '0',
   `buyoutprice` int(11) NOT NULL DEFAULT '0',
   `time` bigint(40) NOT NULL DEFAULT '0',
@@ -34,8 +36,7 @@ CREATE TABLE `auction` (
   `lastbid` int(11) NOT NULL DEFAULT '0',
   `startbid` int(11) NOT NULL DEFAULT '0',
   `deposit` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `item_guid` (`itemguid`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
