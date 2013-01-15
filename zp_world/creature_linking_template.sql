@@ -23,10 +23,10 @@ DROP TABLE IF EXISTS `creature_linking_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE creature_linking_template (
-  `entry` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'creature_template.entry of the slave mob that is linked',
-  `map` MEDIUMINT(8) UNSIGNED NOT NULL COMMENT 'Id of map of the mobs',
-  `master_entry` INT(10) UNSIGNED NOT NULL COMMENT 'master to trigger events',
-  `flag` MEDIUMINT(8) UNSIGNED NOT NULL COMMENT 'flag - describing what should happen when',
+  `entry` mediumint(8) UNSIGNED NOT NULL DEFAULT 0 COMMENT 'creature_template.entry of the slave mob that is linked',
+  `map` SMALLINT(5) UNSIGNED NOT NULL DEFAULT 0 COMMENT 'Id of map of the mobs',
+  `master_entry` mediumint(8) UNSIGNED NOT NULL DEFAULT 0 COMMENT 'master to trigger events',
+  `flag` mediumint(8) UNSIGNED NOT NULL DEFAULT 0 COMMENT 'flag - describing what should happen when',
   PRIMARY KEY (entry, map)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature Linking System';
 /*!40101 SET character_set_client = @saved_cs_client */;
