@@ -518,8 +518,6 @@ INSERT INTO `mangos_string` VALUES
 (552,'%s has no more explored zones.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (553,'%s has explored all zones for you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (554,'%s has hidden all zones from you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(555,'Hover enabled',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(556,'Hover disabled',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (557,'%s level up you to (%i)',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (558,'%s level down you to (%i)',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (559,'%s reset your level progress.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),

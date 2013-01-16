@@ -159,7 +159,6 @@ INSERT INTO `command` VALUES
 ('honor addkill',2,'Syntax: .honor addkikllAdd the targeted unit as one of your pvp kills today (you only get honor if it\'s a racial leader or a player)'),
 ('honor show',2,'Syntax: .honor showDisplay the honor stats of the selected player'),
 ('honor update',2,'Syntax: .honor updateForce honor to be update'),
-('hover',3,'Syntax: .hover #flagEnable or disable hover mode for your character.Use a #flag of value 1 to enable, use a #flag value of 0 to disable hover.'),
 ('instance listbinds',3,'Syntax: .instance listbinds  Lists the binds of the selected player.'),
 ('instance savedata',3,'Syntax: .instance savedata  Save the InstanceData for the current player\'s map to the DB.'),
 ('instance stats',3,'Syntax: .instance stats  Shows statistics about instances.'),
