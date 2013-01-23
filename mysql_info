@@ -10,8 +10,8 @@
 #HOST=your.database.host
 
 # development (local)
-USER=zp
-PASS=zpdb
+USER=mangos
+PASS=mangos
 HOST=localhost
 
 OPTS=

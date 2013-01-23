@@ -31,60 +31,6 @@ function dump_struc ()
 # ------------------------------------------------------------------------------
 # Application tables with no data
 # ------------------------------------------------------------------------------
-dump_struc zp_characters auction
-dump_struc zp_characters bugreport
-dump_struc zp_characters characters
-dump_struc zp_characters character_action
-dump_struc zp_characters character_aura
-dump_struc zp_characters character_battleground_data
-dump_struc zp_characters character_gifts
-dump_struc zp_characters character_homebind
-dump_struc zp_characters character_honor_cp
-dump_struc zp_characters character_instance
-dump_struc zp_characters character_inventory
-dump_struc zp_characters character_pet
-dump_struc zp_characters character_queststatus
-dump_struc zp_characters character_reputation
-dump_struc zp_characters character_skills
-dump_struc zp_characters character_social
-dump_struc zp_characters character_spell
-dump_struc zp_characters character_spell_cooldown
-dump_struc zp_characters character_stats
-dump_struc zp_characters character_ticket
-dump_struc zp_characters character_tutorial
-dump_struc zp_characters corpse
-dump_struc zp_characters creature_respawn
-dump_struc zp_characters gameobject_respawn
-dump_struc zp_characters game_event_status
-dump_struc zp_characters groups
-dump_struc zp_characters group_instance
-dump_struc zp_characters group_member
-dump_struc zp_characters guild
-dump_struc zp_characters guild_eventlog
-dump_struc zp_characters guild_member
-dump_struc zp_characters guild_rank
-dump_struc zp_characters instance
-dump_struc zp_characters instance_reset
-dump_struc zp_characters item_instance
-dump_struc zp_characters item_loot
-dump_struc zp_characters item_text
-dump_struc zp_characters mail
-dump_struc zp_characters mail_items
-dump_struc zp_characters petition
-dump_struc zp_characters petition_sign
-dump_struc zp_characters pet_aura
-dump_struc zp_characters pet_spell
-dump_struc zp_characters pet_spell_cooldown
-dump_struc zp_characters saved_variables
-dump_struc zp_characters world
-
-dump_struc zp_realm account_banned
-dump_struc zp_realm ip_banned
-dump_struc zp_realm realmcharacters
-dump_struc zp_realm uptime
-
-dump_struc zp_scripts custom_texts
-
 dump_struc zp_world locales_creature
 dump_struc zp_world locales_gameobject
 dump_struc zp_world locales_gossip_menu_option
@@ -97,17 +43,6 @@ dump_struc zp_world locales_quest
 # ------------------------------------------------------------------------------
 # Application tables containing required data
 # ------------------------------------------------------------------------------
-dump_data  zp_characters character_db_version
-
-dump_data  zp_realm account
-dump_data  zp_realm realmd_db_version
-dump_data  zp_realm realmlist
-
-dump_data  zp_scripts gossip_texts
-dump_data  zp_scripts script_texts
-dump_data  zp_scripts script_waypoint
-dump_data  zp_scripts sd0_db_version
-
 dump_data  zp_world areatrigger_involvedrelation
 dump_data  zp_world areatrigger_tavern
 dump_data  zp_world areatrigger_teleport

@@ -1,7 +1,7 @@
 LEGAL NOTICE
 ------------
 
-**mangos-zero-database** is released under the GPL v3.
+**mangos-classic-database** is released under the GPL v3.
 
 The terms and conditions of this license are described below:
 
@@ -27,5 +27,5 @@ you are making redistributable copies.
 
 CONTENT COPYRIGHT
 -----------------
-Game content is Copyright © 2004-2011 Blizzard Entertainment.  Other works in
-this repository is of authorship © 2005-2011 *mangos foundation*.
+Game content is Copyright © 2004-2013 Blizzard Entertainment.  Other works in
+this repository is of authorship © 2005-2013 *mangos foundation* and other contributors.
