@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.27, for Linux (x86_64)
 --
--- Host: localhost    Database: zp_world
+-- Host: localhost    Database: mangos
 -- ------------------------------------------------------
 -- Server version   5.5.27-log
 

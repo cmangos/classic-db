@@ -36,10 +36,10 @@ function import ()
     echo " done"
 }
 
-for x in ./zp_world/*.sql; do
-    import $x
+for x in ./*_mangos_world.sql; do
+	import $x
 done
 
 for x in ./utilities/*_optimize.sql; do
-    import $x
+	import $x
 done
