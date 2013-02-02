@@ -40,6 +40,10 @@ for x in ./*_mangos_world.sql; do
 	import $x
 done
 
+for x in ./updates/[0-9]*.sql; do
+  import $x
+done
+
 for x in ./utilities/*_optimize.sql; do
 	import $x
 done
