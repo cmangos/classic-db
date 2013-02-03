@@ -4,8 +4,8 @@
 # into readable multi-line statements.
 
 # - Include common libraries and settings ------------------------------------
-source "libui"
-source "mysql_info"
+source "../libui"
+source "../mysql_info"
 
 # - Prepare required variables -----------------------------------------------
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

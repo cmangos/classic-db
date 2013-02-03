@@ -40,7 +40,7 @@ extension for git, to provide a clear, and visible [workflow][111] to the user.
 
 Installation
 ------------
-**mangos-classic** is the main content database: `zp_world` where the world is defined
+**mangos-classic** is the main content database: `mangos` where the world is defined
 with creatures, items, objects, quests, etc.
 
 In order to use this database repository, you will have to edit `mysql_info`,
@@ -50,12 +50,12 @@ configured your mysql server. Default values for MaNGOS are `username:mangos`,
 use different username and password.
 
 Once you have the desired database user and rights configured in MySQL, you may
-use the `mysql_import` script to load the individual data tables into your
+use the `install` script to load the individual data tables into your
 databases.  Should your database user have wildcard rights, the script creates
 the database - if not existent - and then populates them.
 
 If you make changes to the database, either by adding/modifying content, or by
-making changes to the database structure, you may execute `mysql_dump` to save
+making changes to the database structure, you may execute `mysql_dump` in the `utilities` directory to save
 each table into the repository.  Should you add or remove tables, add `dump_data`,
 `dump_struc` commands to `mysql_dump`, or remove them as needed.
 
