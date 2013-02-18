@@ -10,17 +10,6 @@ licenses should be removed from this software if you are making redistributable
 copies.
 
 
-Development
------------
-The **develop** branch is where the development of *mangos-classic database* is
-done. Any of the commits submitted here may or may not become part of the next
-release.
-
-It is recommended to use the **master** branch for stable systems, and only use
-the **develop** branch if you intend to test commits and submit issues and/or
-reports.
-
-
 Compatibility
 -------------
 The *mangos-classic* database is compatible with [mangos-classic commit 30215795ae038ae450972f9f772cb030566a748a][10]
@@ -30,9 +19,11 @@ or newer in order to be fully enjoyable.
 
 Getting started
 ---------------
-The basic principle behind this customized database repository is to keep the
-databases stored as individual tables, and all content rows stored as single
-lines to make changes more trackable for the user (that would be you).
+The basic principle behind this customized database repository is to have a single SQL file
+holding every table in the database. When something something is changed into the database
+the modification is done by adding a SQL update files placed into the `updates` directory.
+Every time an user (that would be you) wishes to change something into the database, he/she
+have to create and add the right SQL file. This helps tracking what changes are made and where.
 
 The repository is developed and maintained using the excellent [git-flow][110]
 extension for git, to provide a clear, and visible [workflow][111] to the user.
@@ -43,7 +34,12 @@ Installation
 **mangos-classic** is the main content database: `mangos` where the world is defined
 with creatures, items, objects, quests, etc.
 
-In order to use this database repository, you will have to edit `mysql_info`,
+If you used the default values when installing your mangos core, simply run into a shell
+the following command `./install`. It will install the `mangos` database with all the last
+updates. 
+
+If you have modified the default values for connecting to the database, in order to use 
+this database repository, you will have to edit `mysql_info`,
 and edit in the desired username, hostname, and password according to how you have 
 configured your mysql server. Default values for MaNGOS are `username:mangos`, 
 `password:mangos`, `hostname:localhost`. For security reasons, it is strongly advice to
@@ -67,11 +63,11 @@ to provide a detailed report, and are available to verify any solution to the
 issue provided by the developers of this repository.
 
 
-[1]: https://github.com/mangos-classic "mangos-classic"
+[1]: https://github.com/cmangos/mangos-classic "mangos-classic"
 
 [10]: https://github.com/cmangos/mangos-classic/ "mangos classic"
 [11]: https://github.com/scriptdev2/scriptdev2-classic/ "script bindings"
-[12]: https://github.com/cala/MaNGOS-zero-database/ "content database"
+[12]: https://github.com/cala/classic-database/ "content database"
 
 [50]: http://eu.blizzard.com/en-gb/games/wow/ "World of Warcraft"
 [51]: http://www.wowpedia.org/Patch_1.12.0 "WoW 1.12.0 - Drums of War"

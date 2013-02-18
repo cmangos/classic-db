@@ -6,21 +6,24 @@ LEGAL NOTICE
 The terms and conditions of this license are described below:
 
     Copyright (C) 2011-2012 mangos foundation <foundation@getmangos.com>
+    and
+    Copyright (C) 2008-2013 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
+     
     
-    mangos-zero-database is free software: you can redistribute it and/or modify
+    mangos-classic-database is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
     
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
     
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-This file (`LICENSE.mdown`) **must** be apart of any redistributable packages
+This file (`LICENSE.mdown`) **must** be a part of any redistributable packages
 made from this software.  No licenses should be removed from this software if
 you are making redistributable copies.
 
@@ -28,4 +31,5 @@ you are making redistributable copies.
 CONTENT COPYRIGHT
 -----------------
 Game content is Copyright © 2004-2013 Blizzard Entertainment.  Other works in
-this repository is of authorship © 2005-2013 *mangos foundation* and other contributors.
+this repository is of authorship © 2011-2012 *mangos foundation* and © 2008-2013
+ *ACID (Artificial Creature Intelligence Database)* and other contributors.
