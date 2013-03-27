@@ -19,7 +19,7 @@
 -- World cleanup
 --
 -- The purpose of this SQL file is to contain queries which help keeping content
--- in the mangos-zero world database in a clean state.
+-- in the mangos-classic world database in a clean state.
 
 
 -- Various cleanup and data correction queries
