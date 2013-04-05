@@ -21,50 +21,50 @@
 -- All creatures (except triggers/waypoints) were checked against wowhead, wowwiki for correct values of InhabitType and TBC-DB is indeed correct
 
 /*!40000 ALTER TABLE `creature_template` DISABLE KEYS */;
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (1, 'Waypoint (Only GM can see it)', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (1224, 'Young Threshadon', 2);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (2188, 'Deep Sea Threshadon', 2);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (2231, 'Pygmy Tide Crawler', 3);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (2630, 'Earthbind Totem', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (3527, 'Healing Stream Totem', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (3560, 'Healing Ward', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (3844, 'Healing Ward IV', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (3911, 'Stoneclaw Totem II', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (4068, 'Serpent Messenger', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (4397, 'Mudrock Spikeshell', 3);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (5185, 'Hammerhead Shark', 2);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (5434, 'Coral Shark', 2);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (5435, 'Sand Shark', 2);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (5919, 'Stoneskin Totem II', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (6250, 'Crawler', 3);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (7044, 'Black Drake', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (7045, 'Scalding Drake', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (7046, 'Searscale Drake', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (7769, 'Hazzali Parasite', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (8964, 'Blackrock Drake', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (9461, 'Frenzied Black Drake', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (10183, 'Moonflare Totem', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (10415, 'Ash\'ari Crystal', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (11368, 'Bloodseeker Bat', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (12053, 'Frostwolf Guardian', 3);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (12123, 'Reef Shark', 2);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (12124, 'Great Shark', 2);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (12125, 'Mammoth Shark', 2);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (12138, 'Lunaclaw', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (12144, 'Lunaclaw Spirit', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (14284, 'Stormpike Battleguard', 3);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (14388, 'Rogue Black Drake', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (14517, 'High Priestess Jeklik', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (14750, 'Gurubashi Bat Rider', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (14947, 'Ichman\'s Gryphon', 7);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (14965, 'Frenzied Bloodseeker Bat', 7);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (15041, 'Spawn of Mar\'li', 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (15185, 'Brood of Nozdormu', 7);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (15384, 'OLDWorld Trigger (DO NOT DELETE)', 5);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (15546, 'Hive\'Zara Swarmer', 7);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (15963, 'The Master\'s Eye', 7);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (16218, 'Tesla Coil', 7);
-REPLACE INTO `creature_template` (`entry`, `name`, `InhabitType`) VALUES (17066, 'Ribbon Pole Debug Target', 5);
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 1;	--  Waypoint (Only GM can see it)
+UPDATE `creature_template` SET `InhabitType` =  2 WHERE `entry` = 1224;	--  Young Threshadon
+UPDATE `creature_template` SET `InhabitType` =  2 WHERE `entry` = 2188;	--  Deep Sea Threshadon
+UPDATE `creature_template` SET `InhabitType` =  3 WHERE `entry` = 2231;	--  Pygmy Tide Crawler
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 2630;	--  Earthbind Totem
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 3527;	--  Healing Stream Totem
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 3560;	--  Healing Ward
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 3844;	--  Healing Ward IV
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 3911;	--  Stoneclaw Totem II
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 4068;	--  Serpent Messenger
+UPDATE `creature_template` SET `InhabitType` =  3 WHERE `entry` = 4397;	--  Mudrock Spikeshell
+UPDATE `creature_template` SET `InhabitType` =  2 WHERE `entry` = 5185;	--  Hammerhead Shark
+UPDATE `creature_template` SET `InhabitType` =  2 WHERE `entry` = 5434;	--  Coral Shark
+UPDATE `creature_template` SET `InhabitType` =  2 WHERE `entry` = 5435;	--  Sand Shark
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 5919;	--  Stoneskin Totem II
+UPDATE `creature_template` SET `InhabitType` =  3 WHERE `entry` = 6250;	--  Crawler
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 7044;	--  Black Drake
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 7045;	--  Scalding Drake
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 7046;	--  Searscale Drake
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 7769;	--  Hazzali Parasite
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 8964;	--  Blackrock Drake
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 9461;	--  Frenzied Black Drake
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 10183;	--  Moonflare Totem
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 10415;	--  Ash\ari Crystal
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 11368;	--  Bloodseeker Bat
+UPDATE `creature_template` SET `InhabitType` =  3 WHERE `entry` = 12053;	--  Frostwolf Guardian
+UPDATE `creature_template` SET `InhabitType` =  2 WHERE `entry` = 12123;	--  Reef Shark
+UPDATE `creature_template` SET `InhabitType` =  2 WHERE `entry` = 12124;	--  Great Shark
+UPDATE `creature_template` SET `InhabitType` =  2 WHERE `entry` = 12125;	--  Mammoth Shark
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 12138;	--  Lunaclaw
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 12144;	--  Lunaclaw Spirit
+UPDATE `creature_template` SET `InhabitType` =  3 WHERE `entry` = 14284;	--  Stormpike Battleguard
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 14388;	--  Rogue Black Drake
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 14517;	--  High Priestess Jeklik
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 14750;	--  Gurubashi Bat Rider
+UPDATE `creature_template` SET `InhabitType` =  7 WHERE `entry` = 14947;	--  Ichman\s Gryphon
+UPDATE `creature_template` SET `InhabitType` =  7 WHERE `entry` = 14965;	--  Frenzied Bloodseeker Bat
+UPDATE `creature_template` SET `InhabitType` =  1 WHERE `entry` = 15041;	--  Spawn of Mar\li
+UPDATE `creature_template` SET `InhabitType` =  7 WHERE `entry` = 15185;	--  Brood of Nozdormu
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 15384;	--  OLDWorld Trigger (DO NOT DELETE)
+UPDATE `creature_template` SET `InhabitType` =  7 WHERE `entry` = 15546;	--  Hive\Zara Swarmer
+UPDATE `creature_template` SET `InhabitType` =  7 WHERE `entry` = 15963;	--  The Master\s Eye
+UPDATE `creature_template` SET `InhabitType` =  7 WHERE `entry` = 16218;	--  Tesla Coil
+UPDATE `creature_template` SET `InhabitType` =  5 WHERE `entry` = 17066;	--  Ribbon Pole Debug Target
 /*!40000 ALTER TABLE `creature_template` ENABLE KEYS */;
 
 
