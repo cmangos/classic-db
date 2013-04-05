@@ -22,34 +22,34 @@
 -- These are Classic only creatures and should have same speed as in TBC and UDB (both share the same values)
 
 /*!40000 ALTER TABLE `creature_template` DISABLE KEYS */;
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (467, 'The Defias Traitor', 1, 0.892857);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (1840, 'Grand Inquisitor Isillien', 1.81, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (2630, 'Earthbind Totem', 1, 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (3520, 'Ol\' Emma', 1, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (3527, 'Healing Stream Totem', 1, 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (3903, 'Searing Totem III', 1.05, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (3939, 'Razormane Wolf', 1.2, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (5921, 'Strength of Earth Totem II', 1, 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (5925, 'Grounding Totem', 1, 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (6112, 'Windfury Totem', 1, 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (7484, 'Windfury Totem III', 1, 1);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (8317, 'Atal\'ai Deathwalker\'s Spirit', 0.8, 0.285714);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (8516, 'Belnistrasz', 1, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (9816, 'Pyroguard Emberseer', 1, 1.42857);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (11598, 'Risen Guardian', 0.888888, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (12126, 'Lord Tirion Fordring', 1.79, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (12128, 'Crimson Elite', 1.79, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (12222, 'Creeping Sludge', 1.2, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (12397, 'Lord Kazzak', 2.09, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (13017, 'Enthralled Deeprun Rat', 0.91, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (14461, 'Baron Charr', 3.54, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (14484, 'Injured Peasant', 1.21, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (14485, 'Plagued Peasant', 1.21, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (14486, 'Scourge Footsoldier', 1.25, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (15803, 'Tranquil Air Totem', 1, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (16047, 'Kormok Trigger', 1.25, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (17719, 'Ironforge Gryphon Rider', 1.125, 1.14286);
-REPLACE INTO `creature_template` (`entry`, `name`, `speed_walk`, `speed_run`) VALUES (17720, 'Orgrimmar Wyvern Rider', 1.125, 1.14286);
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  0.892857 WHERE `entry` = 467;	--  The Defias Traitor
+UPDATE `creature_template` SET `speed_walk` =  1.81, `speed_run` =  1.14286 WHERE `entry` = 1840;	--  Grand Inquisitor Isillien
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1 WHERE `entry` = 2630;	--  Earthbind Totem
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1.14286 WHERE `entry` = 3520;	--  Ol\ Emma
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1 WHERE `entry` = 3527;	--  Healing Stream Totem
+UPDATE `creature_template` SET `speed_walk` =  1.05, `speed_run` =  1.14286 WHERE `entry` = 3903;	--  Searing Totem III
+UPDATE `creature_template` SET `speed_walk` =  1.2, `speed_run` =  1.14286 WHERE `entry` = 3939;	--  Razormane Wolf
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1 WHERE `entry` = 5921;	--  Strength of Earth Totem II
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1 WHERE `entry` = 5925;	--  Grounding Totem
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1 WHERE `entry` = 6112;	--  Windfury Totem
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1 WHERE `entry` = 7484;	--  Windfury Totem III
+UPDATE `creature_template` SET `speed_walk` =  0.8, `speed_run` =  0.285714 WHERE `entry` = 8317;	--  Atal\ai Deathwalker\s Spirit
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1.14286 WHERE `entry` = 8516;	--  Belnistrasz
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1.42857 WHERE `entry` = 9816;	--  Pyroguard Emberseer
+UPDATE `creature_template` SET `speed_walk` =  0.888888, `speed_run` =  1.14286 WHERE `entry` = 11598;	--  Risen Guardian
+UPDATE `creature_template` SET `speed_walk` =  1.79, `speed_run` =  1.14286 WHERE `entry` = 12126;	--  Lord Tirion Fordring
+UPDATE `creature_template` SET `speed_walk` =  1.79, `speed_run` =  1.14286 WHERE `entry` = 12128;	--  Crimson Elite
+UPDATE `creature_template` SET `speed_walk` =  1.2, `speed_run` =  1.14286 WHERE `entry` = 12222;	--  Creeping Sludge
+UPDATE `creature_template` SET `speed_walk` =  2.09, `speed_run` =  1.14286 WHERE `entry` = 12397;	--  Lord Kazzak
+UPDATE `creature_template` SET `speed_walk` =  0.91, `speed_run` =  1.14286 WHERE `entry` = 13017;	--  Enthralled Deeprun Rat
+UPDATE `creature_template` SET `speed_walk` =  3.54, `speed_run` =  1.14286 WHERE `entry` = 14461;	--  Baron Charr
+UPDATE `creature_template` SET `speed_walk` =  1.21, `speed_run` =  1.14286 WHERE `entry` = 14484;	--  Injured Peasant
+UPDATE `creature_template` SET `speed_walk` =  1.21, `speed_run` =  1.14286 WHERE `entry` = 14485;	--  Plagued Peasant
+UPDATE `creature_template` SET `speed_walk` =  1.25, `speed_run` =  1.14286 WHERE `entry` = 14486;	--  Scourge Footsoldier
+UPDATE `creature_template` SET `speed_walk` =  1, `speed_run` =  1.14286 WHERE `entry` = 15803;	--  Tranquil Air Totem
+UPDATE `creature_template` SET `speed_walk` =  1.25, `speed_run` =  1.14286 WHERE `entry` = 16047;	--  Kormok Trigger
+UPDATE `creature_template` SET `speed_walk` =  1.125, `speed_run` =  1.14286 WHERE `entry` = 17719;	--  Ironforge Gryphon Rider
+UPDATE `creature_template` SET `speed_walk` =  1.125, `speed_run` =  1.14286 WHERE `entry` = 17720;	--  Orgrimmar Wyvern Rider
 /*!40000 ALTER TABLE `creature_template` ENABLE KEYS */;
 
 
