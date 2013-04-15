@@ -31,7 +31,7 @@ TRUNCATE creature_ai_texts;
 -- ===========================================
 -- Set Mangos ACID Release Version Information
 -- ===========================================
-UPDATE db_version SET `creature_ai_version` = 'ACID 1.0.4 \'Another Wild Adventure\' - Full Release for CMaNGOS (1.12.1 Client)';
+UPDATE db_version SET `creature_ai_version` = 'ACID 1.0.4 \'Another Wild Adventure\' - Full Release for CMaNGOS-CLASSIC (1.12.1 Client)';
 
 
 -- =======================
