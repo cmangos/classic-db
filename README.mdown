@@ -1,21 +1,18 @@
-mangos-classic-database ![Project status](http://getmangos.com/assets/img/repository-status-maintained.png)
-====================
+Classic DB for CMaNGOS/mangos-classic
+=====================================
 A content database for [mangos-classic][10], and *World of Warcraft Client Patch
-1.12* - [_Drums of War_][50]. It is compatible with client 1.12.1 (build 5875),
-and 1.12.2 (build 6005).
+1.12* - [_Drums of War_][50]. It is compatible with client 1.12.1 (build 5875), 1.12.2 (build 6005) and 1.12.3 (build 6141).
 
-**mangos-classic-database** is released under the GPL v3.  The file (`LICENSE.mdown`)
+**classic DB** is released under the GPL v3.  The file (`LICENSE.mdown`)
 **must** be a part of any redistributable packages made from this software.  No
 licenses should be removed from this software if you are making redistributable
 copies.
 
-
 Compatibility
 -------------
-The *mangos-classic* database is compatible with [mangos-classic commit 7e59a4c1efc86344f87b022dbad5cc0d3a21faa9][10]
+The *Classic DB* database is compatible with [mangos-classic commit 691e2c0ad7e2f1a203358262b626d344956df018][10]
 and newer.  It also requires [ScriptDev2 commit c265f6f55250a76611e69cebcc16757dc45412b7][11]
 or newer in order to be fully enjoyable.
-
 
 Getting started
 ---------------
@@ -27,10 +24,10 @@ have to create and add the right SQL file. This helps tracking what changes are 
 
 Installation
 ------------
-**mangos-classic** is the main content database: `mangos` where the world is defined
+**Classic DB** is the main content database: `mangos` where the world is defined
 with creatures, items, objects, quests, etc.
 
-It must be applied after creating the `mangos` database from your mangos core distribution.
+It must be applied after creating the `mangos` database from your mangos core distribution, usually [mangos-classic][10] from [CMaNGOS project].
 
 If you used the default values when installing your mangos core, simply run into a bash compatible shell 
 (like Bash Git for Windows) the following command `./InstallFullDB.sh`.
@@ -40,7 +37,7 @@ It will create a single file `InstallFullDB.config`.
 If you have modified the default values for connecting to the database, in order to use 
 this database repository, you will have to open `InstallFullDB.config`,
 and edit in the desired database, username and password according to how you have 
-configured your mysql server. Default values for MaNGOS are `username:mangos`, 
+configured your MySQL server. Default values for mangos core are `username:mangos`, 
 `password:mangos`, `database:mangos`. For security reasons, it is strongly adviced to
 use different username and password.
 
@@ -48,20 +45,22 @@ Once you have the desired database user and rights configured in MySQL, you may
 run again the `./InstallFullDB.sh` command to load the individual data tables into your
 database, populate them and apply all updates since the last milestone.
 
+For a full installation guide, please refer to [CMaNGOS installation instructions][14].
+
 And if something goes wrong?
 ----------------------------
-_If_ you feel like submitting an issue, please do so *only* if you are willing
-to provide a detailed report, and are available to verify any solution to the
-issue provided by the developers of this repository.
-
-The best way to submit an issue is to use the issue tracker on the GitHub repository of this database.
+The best way to submit an issue is to use the [issue tracker on the GitHub repository
+of this database][15].
 
 
 [1]: https://github.com/cmangos/mangos-classic "mangos-classic"
 
 [10]: https://github.com/cmangos/mangos-classic/ "mangos classic"
 [11]: https://github.com/scriptdev2/scriptdev2-classic/ "script bindings"
-[12]: https://github.com/cala/classic-database/ "content database"
+[12]: https://github.com/classicDB/database/ "content database"
+[13]: http://www.cmangos.net/ "CMaNGOS Project"
+[14]: https://github.com/cmangos/issues/wiki/Installation-Instructions "Installation Instructions"
+[15]: https://github.com/classicdb/database/issues "Classic DB issue tracker"
 
 [50]: http://eu.blizzard.com/en-gb/games/wow/ "World of Warcraft"
 [51]: http://www.wowpedia.org/Patch_1.12.0 "WoW 1.12.0 - Drums of War"
