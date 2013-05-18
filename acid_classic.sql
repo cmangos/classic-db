@@ -5690,7 +5690,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('69704','697','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Bloodscalp Shaman - Cast Enrage at 30% HP'),
 -- Bloodscalp Mystic
 ('70101','701','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Bloodscalp Mystic - Prevent Combat Movement on Spawn'),
-('70102','701','4','0','100','0','0','0','0','0','11','10277','1','0','23','1','0','0','0','0','0','0','Bloodscalp Mystic - Cast Lightning Bolt and Set Phase 1 on Aggro'),
+('70102','701','4','0','100','0','0','0','0','0','11','10277','6','0','23','1','0','0','0','0','0','0','Bloodscalp Mystic - Cast Lightning Bolt and Set Phase 1 on Aggro'),
 ('70103','701','9','13','100','1','0','40','1500','2500','11','10277','1','0','0','0','0','0','0','0','0','0','Bloodscalp Mystic - Cast Lightning Bolt (Phase 1)'),
 ('70104','701','3','13','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Bloodscalp Mystic - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 ('70105','701','9','13','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Bloodscalp Mystic - Start Combat Movement at 35 Yards (Phase 1)'),
@@ -5710,7 +5710,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('73101','731','2','0','100','0','50','0','0','0','11','8816','0','1','0','0','0','0','0','0','0','0','King Bangalsh - Summon Panthers at 50% HP'),
 -- Skullsplitter Mystic
 ('78001','780','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Skullsplitter Mystic - Prevent Combat Movement on Spawn'),
-('78002','780','4','0','100','0','0','0','0','0','11','9532','1','0','23','1','0','0','0','0','0','0','Skullsplitter Mystic - Cast Lightning Bolt and Set Phase 1 on Aggro'),
+('78002','780','4','0','100','0','0','0','0','0','11','9532','6','0','23','1','0','0','0','0','0','0','Skullsplitter Mystic - Cast Lightning Bolt and Set Phase 1 on Aggro'),
 ('78003','780','9','13','100','1','0','40','1500','2500','11','9532','1','0','0','0','0','0','0','0','0','0','Skullsplitter Mystic - Cast Lightning Bolt (Phase 1)'),
 ('78004','780','3','13','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Skullsplitter Mystic - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 ('78005','780','9','13','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Skullsplitter Mystic - Start Combat Movement at 35 Yards (Phase 1)'),
@@ -5747,7 +5747,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('94004','940','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kurzen Medicine Man - Flee at 15% HP'),
 -- Kurzen Headshrinker
 ('94101','941','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Kurzen Headshrinker - Prevent Combat Movement on Spawn'),
-('94102','941','4','0','100','0','0','0','0','0','11','9613','1','0','23','1','0','0','0','0','0','0','Kurzen Headshrinker - Cast Shadow Bolt and Set Phase 1 on Aggro'),
+('94102','941','4','0','100','0','0','0','0','0','11','9613','6','0','23','1','0','0','0','0','0','0','Kurzen Headshrinker - Cast Shadow Bolt and Set Phase 1 on Aggro'),
 ('94103','941','9','13','100','1','0','40','3500','4700','11','9613','1','0','0','0','0','0','0','0','0','0','Kurzen Headshrinker - Cast Shadow Bolt (Phase 1)'),
 ('94104','941','3','13','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Kurzen Headshrinker - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 ('94105','941','9','13','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Kurzen Headshrinker - Start Combat Movement at 35 Yards (Phase 1)'),
