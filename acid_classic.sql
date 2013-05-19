@@ -14585,7 +14585,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greater Thunderhawk
 ('324901','3249','0','0','80','1','32500','32500','15000','15000','11','8078','1','0','0','0','0','0','0','0','0','0','Greater Thunderhawk - Cast Thunderclap'),
 -- Silithid Creeper
-('325001','3250','0','0','100','1','17500','17500','10000','10000','11','6587','0','0','0','0','0','0','0','0','0','0','Silithid Creeper - Cast Silithid Creeper Egg'),
+('325001','3250','0','0','100','1','12000','18000','15000','23000','11','6587','0','0','1','-1317','0','0','0','0','0','0','Silithid Creeper - Cast Silithid Creeper Egg and Emote'),
 -- Silithid Grub
 ('325101','3251','9','0','100','1','35','40','1000','1000','11','7','0','0','0','0','0','0','0','0','0','0','Silithid Grub - Cast Suicide'),
 ('325102','3251','7','0','100','0','0','0','0','0','11','7','0','0','0','0','0','0','0','0','0','0','Silithid Grub - Cast Suicide'),
@@ -14816,9 +14816,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Devrak
 ('361501','3615','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Devrak - Summon Enraged Wyverns and Yell on Aggro'),
 -- Silithid Creeper Egg
-('578101','5781','0','0','100','1','7500','7500','3000','3000','11','6588','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Summon Silithid Grub'),
-('578102','5781','0','0','100','0','0','0','30000','30000','11','7','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Cast Suicide'),
-('578103','5781','0','0','100','1','0','0','100','100','21','0','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg'),
+('578101','5781','1','0','100','0','2000','2000','0','0','1','-1318','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Text Emote'),
+('578102','5781','1','0','100','0','4000','4000','0','0','1','-1319','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Text Emote'),
+('578103','5781','1','0','100','0','6000','6000','0','0','11','6588','0','0','41','1000','0','0','0','0','0','0','Silithid Creeper Egg - Summon Silithid Grub and Delayed Despawn'),
 -- Brontus
 ('582701','5827','4','0','100','0','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Brontus - Cast Rushing Charge On Aggro'),
 ('582702','5827','0','0','60','1','43500','43500','15000','15000','11','6016','1','0','0','0','0','0','0','0','0','0','Brontus - Cast Pierce Armor'),
@@ -14851,16 +14851,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Engineer Whirleygig
 ('583601','5836','4','0','100','0','0','0','0','0','11','7979','0','0','0','0','0','0','0','0','0','0','Engineer Whirleygig - Cast Compact Harvest Reaper'),
 ('583602','5836','0','0','100','1','6500','6500','10000','10000','11','8209','4','0','0','0','0','0','0','0','0','0','Engineer Whirleygig - Cast Explosive Sheep'),
--- Dark Iron Rifleman
-('583801','5838','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Dark Iron Rifleman - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
-('583802','5838','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Dark Iron Rifleman - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
-('583803','5838','9','5','100','1','30','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Dark Iron Rifleman - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
-('583804','5838','9','5','100','1','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Dark Iron Rifleman - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('583805','5838','9','5','100','1','11','25','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Dark Iron Rifleman - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
+-- Brokespear
+('583801','5838','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Brokespear - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('583802','5838','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Brokespear - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
+('583803','5838','9','5','100','1','30','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Brokespear - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
+('583804','5838','9','5','100','1','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Brokespear - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
+('583805','5838','9','5','100','1','11','25','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Brokespear - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
 ('583806','5838','0','0','100','1','6000','12000','9000','15000','11','7992','4','32','0','0','0','0','0','0','0','0','Brokespear - Cast Slowing Poison'),
-('583807','5838','2','0','100','0','15','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Rifleman - Set Phase 2 at 15% HP'),
-('583808','5838','2','3','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Dark Iron Rifleman - Start Combat Movement and Flee at 15% HP (Phase 2)'),
-('583809','5838','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dark Iron Rifleman - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('583807','5838','2','0','100','0','15','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Brokespear - Set Phase 2 at 15% HP'),
+('583808','5838','2','3','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Brokespear - Start Combat Movement and Flee at 15% HP (Phase 2)'),
+('583809','5838','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Brokespear - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Rocklance
 ('584101','5841','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Rocklance - Set Phase 1 on Aggro'),
 ('584102','5841','9','5','100','1','0','5','5000','9000','11','11971','1','0','0','0','0','0','0','0','0','0','Rocklance - Cast Sunder Armor (Phase 1)'),
@@ -22458,7 +22458,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1313','Can anyone give my adorable, extra little kitty a home?','0','0','0','8666','0'),
 ('-1314','What does allergic mean anyway? And what does it have to do with either of my kitties?','0','0','0','8666','0'),
 ('-1315','Will someone please give my little kitten a good home?','0','0','0','8666','0'),
-('-1316','Don\'t worry, I\'ll find a good home for ya.','0','0','0','8666','0');
+('-1316','Don\'t worry, I\'ll find a good home for ya.','0','0','0','8666','0'),
+('-1317','Silithid Creeper lays an egg!','2','0','0','3250','0'),
+('-1318','Silithid Creeper Egg begins to crack and open...','2','0','0','5781','0'),
+('-1319','Silithid Creeper Egg splits open!','2','0','0','5781','0');
 
 
 -- =======================================================
