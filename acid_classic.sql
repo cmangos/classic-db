@@ -5502,7 +5502,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('838301','8383','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Master Wood - Summon Stormwind City Guard on Hostile LOS'),
 -- Lil Timmy (NEEDS SNIFF RESEARCH TO FIND PROPER SUMMON SPELL FOR THE KITTEN AS THIS IS NOT THE CORRECT SPELL MOST LIKELY)
 -- ('866601','8666','1','0','100','1','4000','5000','10000','20000','11','10679','0','18','0','0','0','0','0','0','0','0','Lil Timmy - Spawn his White Kitten'),
-('866602','8666','32','0','100','1','0','0','180000','180000','1','-1311','-1312','-1313','1','-1314','-1315','-1316','0','0','0','0','Lil Timmy - Random Say OOC'),    
+('866602','8666','1','0','100','32','0','0','180000','180000','1','-1311','-1312','-1313','1','-1314','-1315','-1316','0','0','0','0','Lil Timmy - Random Say OOC'),    
 -- Auctioneer Chilton  
 ('867001','8670','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Auctioneer Chilton - Summon Stormwind City Guard on Hostile LOS'),
 -- Auctioneer Fitch  
