@@ -9065,8 +9065,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Burkrum (6028) - NSR
 -- Legion Hound (6071) - NSR
 -- Diathorus the Seeker (3.3.0 Official Data) - Exact % Values Are Unknown
-('607201','3987','2','0','100','1','75','0','22100','32600','11','18557','1','0','0','0','0','0','0','0','0','0','Diathorus the Seeker - Cast Drain Life at 75% HP'),
-('607202','3987','2','0','100','0','50','0','0','0','39','20','0','0','1','-551','0','0','0','0','0','0','Diathorus the Seeker - Call For Help and Emote at 50% HP'),
+('607201','6072','0','0','100','1','8000','12000','7000','13000','11','37624','1','0','0','0','0','0','0','0','0','0','Diathorus the Seeker - Cast Carrion Swarm'),
+('607202','6072','2','0','100','1','75','0','22100','32600','11','18557','1','0','0','0','0','0','0','0','0','0','Diathorus the Seeker - Cast Drain Life at 75% HP'),
+('607203','6072','2','0','100','0','50','0','0','0','39','20','0','0','1','-551','0','0','0','0','0','0','Diathorus the Seeker - Call For Help and Emote at 50% HP'),
 -- Searing Infernal (3.3.0 Official Data)
 ('607301','6073','1','0','100','1','1000','1000','600000','600000','11','18968','0','0','0','0','0','0','0','0','0','0','Searing Infernal - Cast Fire Shield on Spawn'),
 ('607302','6073','27','0','100','1','18968','1','15000','30000','11','18968','0','0','0','0','0','0','0','0','0','0','Searing Infernal - Cast Fire Shield on Missing Buff'),
