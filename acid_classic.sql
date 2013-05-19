@@ -8901,7 +8901,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('384501','3845','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Shindrell Swiftfire - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('384502','3845','9','1','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','Shindrell Swiftfire - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('384503','3845','9','1','100','1','0','15','8000','12000','11','23601','1','0','40','2','0','0','0','0','0','0','Shindrell Swiftfire - Cast Scatter Shot and Set Ranged Weapon Model (Phase 1)'),
-('384504','3845','9','1','100','1','0','5','3000','5000','11','32908','33','0','0','0','0','0','0','0','0','0','Shindrell Swiftfire - Cast Wing Clip (Phase 1)'),
+('384504','3845','9','1','100','1','0','5','3000','5000','11','32908','1','33','0','0','0','0','0','0','0','0','Shindrell Swiftfire - Cast Wing Clip (Phase 1)'),
 ('384505','3845','9','1','100','1','30','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Shindrell Swiftfire - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('384506','3845','9','1','100','1','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Shindrell Swiftfire - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
 ('384507','3845','9','1','100','1','11','25','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Shindrell Swiftfire - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
