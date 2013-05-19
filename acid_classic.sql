@@ -22459,9 +22459,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1314','What does allergic mean anyway? And what does it have to do with either of my kitties?','0','0','0','8666','0'),
 ('-1315','Will someone please give my little kitten a good home?','0','0','0','8666','0'),
 ('-1316','Don\'t worry, I\'ll find a good home for ya.','0','0','0','8666','0'),
-('-1317','Silithid Creeper lays an egg!','2','0','0','3250','0'),
-('-1318','Silithid Creeper Egg begins to crack and open...','2','0','0','5781','0'),
-('-1319','Silithid Creeper Egg splits open!','2','0','0','5781','0');
+('-1317','Silithid Creeper lays an egg!','0','2','0','3250','0'),
+('-1318','Silithid Creeper Egg begins to crack and open...','0','2','0','5781','0'),
+('-1319','Silithid Creeper Egg splits open!','0','2','0','5781','0');
 
 
 -- =======================================================
