@@ -5341,8 +5341,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('351802','3518','1','0','100','1','0','0','120000','180000','1','-204','-205','-142','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma 
 ('352001','3520','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ol\' Emma - Summon Stormwind City Guard on Hostile LOS'),
-('352002','3520','1','0','100','1','0','0','180000','180000','1','-423','-424','-425','0','0','0','0','0','0','0','0','Ol\' Emma - Random Say 1 OOC'),
-('352003','3520','1','0','100','1','60000','60000','180000','180000','1','-426','-427','-428','0','0','0','0','0','0','0','0','Ol\' Emma - Random Say 2 OOC'),
 -- Sewer Beast (3581) - NSR
 -- Jenn Langston  (HAS EMOTES TO SCRIPT) 
 ('362601','3626','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jenn Langston - Summon Stormwind City Guard on Hostile LOS'),
@@ -21754,12 +21752,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-420','Then put twice as much in next time!','0','0','0','28347','0'),
 ('-421','Only put half as much in next time.','0','0','0','28347','0'),
 ('-422','Remember, kid: You\'re always more wrong than you think you are. Double It!','0','0','0','28347','0'),
-('-423','Think I\'m starting to wear a rut in the paving stones.','0','0','0','3520','0'),
-('-424','Jack and Jill my wrinkled patoot! I do all the water luggin\' \'round here.','0','0','0','3520','0'),
-('-425','Seems like a hundred times a day I walk all the way to get more water. No respect for their elders I tell ya.','0','0','0','3520','0'),
-('-426','Where\'s the water Emma? Get the water Emma? If\'n it weren\'t fer me that lot wouldn\'t know what water looks like.','0','0','0','3520','0'),
-('-427','As if I don\'t have better things to do in my old age than carry buckets of water.','0','0','0','3520','0'),
-('-428','O\'ourse I\'m talking to myself. Only way to get a decent conversation in this city.','0','0','0','3520','0'),
+-- Please Re-Use 423 - 428
 ('-429','Are we there yet?','0','0','0','3504','0'),
 ('-430','My feet hurt.','0','0','0','3504','0'),
 ('-431','Is it true? Are there crocolisks in the canal?','0','0','0','3504','0'),
