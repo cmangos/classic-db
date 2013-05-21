@@ -5334,7 +5334,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Steven (3511) - NSR
 -- Jimmy (3512) - NSR
 -- Miss Danna  
-('351301','3513','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Miss Danna - Summon Stormwind City Guard on Hostile LOS'),     
+('351301','3513','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Miss Danna - Summon Stormwind City Guard on Hostile LOS'),
+('351302','3513','2','0','100','1','2','1','1000','1000','42','1','-1','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible'),      
 -- Thomas Miller 
 ('351801','3518','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Thomas Miller - Summon Stormwind City Guard on Hostile LOS'),
 ('351802','3518','1','0','100','1','0','0','180000','180000','1','-204','-205','0','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
