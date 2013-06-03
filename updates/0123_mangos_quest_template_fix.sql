@@ -1,0 +1,2 @@
+-- This fixes the text for quest 388 - QG refers to you incorrectly in completion text instead of "Mac" --
+UPDATE `quest_template` SET `OfferRewardText`='So these bandanas -- filthy tokens of corruption -- are what my Mac had to die for? Such a waste. Such a tragic sacrifice. $b$bBut alas, I cannot return to the past. Just know, $N, that you have brought my family justice through your deeds.' WHERE `entry`='388';
