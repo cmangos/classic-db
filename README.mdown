@@ -10,8 +10,8 @@ copies.
 
 Compatibility
 -------------
-The *Classic DB* database is compatible with [mangos-classic commit 691e2c0ad7e2f1a203358262b626d344956df018][10]
-and newer.  It also requires [ScriptDev2 commit c265f6f55250a76611e69cebcc16757dc45412b7][11]
+The *Classic DB* database is compatible with [mangos-classic commit 6764ab5f7efdf434140d72eeaec8b10382457e7c][10]
+and newer.  It also requires [ScriptDev2 commit 09e9472242a3c000db6122eb487653bad24e6382][11]
 or newer in order to be fully enjoyable.
 
 Getting started
@@ -59,8 +59,8 @@ of this database][15].
 [11]: https://github.com/scriptdev2/scriptdev2-classic/ "script bindings"
 [12]: https://github.com/classicDB/database/ "content database"
 [13]: http://www.cmangos.net/ "CMaNGOS Project"
-[14]: https://github.com/cmangos/issues/wiki/Installation-Instructions "Installation Instructions"
-[15]: https://github.com/classicdb/database/issues "Classic DB issue tracker"
+[14]: https://github.com/cmangos/issues/wiki/Installation-Instructions/ "Installation Instructions"
+[15]: https://github.com/classicdb/database/issues/ "Classic DB issue tracker"
 
 [50]: http://eu.blizzard.com/en-gb/games/wow/ "World of Warcraft"
 [51]: http://www.wowpedia.org/Patch_1.12.0 "WoW 1.12.0 - Drums of War"
