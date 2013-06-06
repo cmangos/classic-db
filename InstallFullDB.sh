@@ -104,8 +104,8 @@ done
 echo .
 
 ## Full Database
-echo "Process classic database v1.1"
-$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/classicDB_1_1_z2301.sql
+echo "Process classic database v1.1.1"
+$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/classicDB_1_1_1_z2388.sql
 [[ $? != 0 ]] && exit 1
 
 ## Updates
