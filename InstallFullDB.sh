@@ -123,10 +123,10 @@ else
 	echo "Updates applied"
 fi
 
-LAST_CORE_REV="z2284"
-LAST_SD2_REV="z2639"
+LAST_CORE_REV="2388"
+LAST_SD2_REV="2676"
 # process future release folders
-NEXT_MILESTONES="0.12.13 0.12.14"
+NEXT_MILESTONES="0.12.3 0.12.4"
 NEXT_SD2_MILESTONES="0.7 0.8"
 
 if [ "$CORE_PATH" != "" ]
@@ -150,7 +150,7 @@ then
     if [ -e ${CORE_PATH}/sql/updates/${NEXT_MILESTONE}/ ]
     then
       echo "Apply core updates from milestone $NEXT_MILESTONE"
-      for f in ${CORE_PATH}/sql/updates/${NEXT_MILESTONE}/*_*_mangos_*.sql
+      for f in ${CORE_PATH}/sql/updates/${NEXT_MILESTONE}/z*_*_*_*_mangos_*.sql
       do
         CUR_REV=`basename $f | sed 's/^\([0-9]*\)_.*/\1/' `
         if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
@@ -167,7 +167,7 @@ then
   # Apply remaining files from main folder
   for f in $CORE_PATH/sql/updates/*_*_mangos_*.sql
   do
-    CUR_REV=`basename $f | sed 's/^\([0-9]*\)_.*/\1/' `
+    CUR_REV=`basename $f | sed 's/^\z([0-9]*)_.*/\1/' `
     if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
     then
       # found a newer core update file
@@ -231,7 +231,7 @@ then
     exit 1
   fi
 
-  # Apply acid_wotlk.sql
+  # Apply acid_classic.sql
   echo "Applying $ACID_PATH/acid_classic.sql ..."
   $MYSQL_COMMAND < ${ACID_PATH}/acid_classic.sql
   [[ $? != 0 ]] && exit 1
