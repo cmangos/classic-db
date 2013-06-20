@@ -43,7 +43,7 @@ INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `posit
 -- Related movement script
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 153301;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(153301, 0, 20, 1, 0, 1533, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 1:random');
+(153301, 0, 20, 1, 0, 1533, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 1:random'),
 (153301, 175, 20, 2, 0, 1533, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 2:waypoint');
 
 -- Adds waypoint movement and script movement for creature 1655 (Nissa Agamand)
