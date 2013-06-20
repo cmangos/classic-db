@@ -11,12 +11,12 @@
 
 -- Creates conditions for each skill to allow trainers to know when to display gossip indicating players to move to a more skilled trainer
 
-SET @OFFSET := 360;
+SET @OFFSET := 390;
 SET @JOURNEYMAN := 50;
 SET @EXPERT := 125;
 SET @ARTISAN := 200;
 
-DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @OFFSET+1 AND @OFFSET+32;
+DELETE FROM `conditions` WHERE `condition_entry` BETWEEN @OFFSET+1 AND @OFFSET+5;
 INSERT INTO `conditions` VALUES
 -- (202, 7, 202, 1),                  -- Engineering Has skill
  (@OFFSET+1, 7, 202, @JOURNEYMAN),    -- Engineering Journeyman
