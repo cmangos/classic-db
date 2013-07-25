@@ -6,7 +6,7 @@ INSERT INTO `gameobject` VALUES (55530,1730,0,0.437117,-942.794,61.9384,-2.54818
 UPDATE `quest_template` SET `CompleteScript` = 524 WHERE `entry` = 524;
 DELETE FROM `dbscripts_on_quest_end` WHERE `id` = 524;
 INSERT INTO `dbscripts_on_quest_end` VALUES
-(524,1,9,30031,30,0,0,0,0,0,0,0,0,0,0,0,'Spawn Keg');
+(524,1,9,30031,30,0,0,0,0,0,0,0,0,0,0,0,'Spawn Keg'),
 (524,2,9,55530,30,0,0,0,0,0,0,0,0,0,0,0,'Spawn Keg Smoke'),
 (524,4,3,0,0,2284,15891,16,0,0,0,0,0.524,-944.41,61.93,1.66,'Move first'),
 (524,4,3,0,0,2284,15893,16,0,0,0,0,0.439,-940.84,61.93,4.94,'Move second'),
