@@ -10,8 +10,8 @@ copies.
 
 Compatibility
 -------------
-The *Classic DB* database is compatible with [mangos-classic commit 6764ab5f7efdf434140d72eeaec8b10382457e7c][10]
-and newer.  It also requires [ScriptDev2 commit 09e9472242a3c000db6122eb487653bad24e6382][11]
+The *Classic DB* database is compatible with [mangos-classic commit ce2527c0b2fdcc8b72d745371ab2f68c81728cc6][10]
+and newer.  It also requires [ScriptDev2 commit 674e5d2c6e6fe2283294d983f4cd6d11c04bfd44][11]
 or newer in order to be fully enjoyable.
 
 Getting started
@@ -27,7 +27,7 @@ Installation
 **Classic DB** is the main content database: `mangos` where the world is defined
 with creatures, items, objects, quests, etc.
 
-It must be applied after creating the `mangos` database from your mangos core distribution, usually [mangos-classic][10] from [CMaNGOS project].
+It must be applied after creating the `mangos` database from your mangos core distribution, usually [mangos-classic][10] from [CMaNGOS project][13].
 
 If you used the default values when installing your mangos core, simply run into a bash compatible shell 
 (like Bash Git for Windows) the following command `./InstallFullDB.sh`.
@@ -44,6 +44,9 @@ use different username and password.
 Once you have the desired database user and rights configured in MySQL, you may
 run again the `./InstallFullDB.sh` command to load the individual data tables into your
 database, populate them and apply all updates since the last milestone.
+
+Note: for low populated servers, after installing it is adviced to import into your database the file
+`utilities/pool_autoadjust_maxlimit.sql` to prevent a too low number of resources spawns (herbs and minerals) 
 
 For a full installation guide, please refer to [CMaNGOS installation instructions][14].
 
