@@ -1,0 +1,3 @@
+-- Removed equipment from creature 4789 (Fallenroot Rogue) as they should fight bare hand
+-- instead of wielding shotgun that they try to use in melee combat...
+UPDATE `creature_template` SET `equipment_id` = 0 WHERE `entry` = 4789;
