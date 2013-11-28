@@ -1,0 +1,3 @@
+-- Removed wrong gossip from creature 5637 (Roetten Stonehammer) because he was
+-- claiming that his Barren's wyverns were the fastest though he is a dwarf...
+UPDATE `creature_template` SET `gossip_menu_id` = 0, `npcflag` = 2 WHERE `entry` = 5637;
