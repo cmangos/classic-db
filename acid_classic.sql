@@ -31,7 +31,7 @@ TRUNCATE creature_ai_texts;
 -- ===========================================
 -- Set Mangos ACID Release Version Information
 -- ===========================================
-UPDATE db_version SET `creature_ai_version` = 'ACID 1.0.4 \'Another Wild Adventure\' - Full Release for CMaNGOS-CLASSIC (1.12.1 Client)';
+UPDATE db_version SET `creature_ai_version` = 'ACID 1.0.5 \'Getting Things Moving\' - Full Release for CMaNGOS-CLASSIC (1.12.1 Client)';
 
 
 -- =======================
@@ -5060,27 +5060,27 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==============
 -- Stormwind City Guard (68) - guard_stormwind 
 -- Roberto Pupellyverbos  
-('27701','277','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Roberto Pupellyverbos - Summon Stormwind City Guard on Hostile LOS'),    
+('27701','277','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Roberto Pupellyverbos - Summon Stormwind City Guard on Aggro'),    
 -- Morgan Pestle  
-('27901','279','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Morgan Pestle - Summon Stormwind City Guard on Hostile LOS'),
+('27901','279','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Morgan Pestle - Summon Stormwind City Guard on Aggro'),
 -- Caretaker Folsom  
-('29701','297','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Caretaker Folsom - Summon Stormwind City Guard on Hostile LOS'),
+('29701','297','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Caretaker Folsom - Summon Stormwind City Guard on Aggro'),
 -- Maginor Dumas  
-('33101','331','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Maginor Dumas - Summon Stormwind City Guard on Hostile LOS'),    
+('33101','331','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Maginor Dumas - Summon Stormwind City Guard on Aggro'),    
 -- Master Mathias Shaw  
-('33201','332','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Master Mathias Shaw - Summon Stormwind City Guard on Hostile LOS'), 
+('33201','332','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Master Mathias Shaw - Summon Stormwind City Guard on Aggro'), 
 -- Mazen Mac'Nadir  
-('33801','338','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Mazen Mac\'Nadir - Summon Stormwind City Guard on Hostile LOS'),   
+('33801','338','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Mazen Mac\'Nadir - Summon Stormwind City Guard on Aggro'),   
 -- Kendor Kabonka  
-('34001','340','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Kendor Kabonka - Summon Stormwind City Guard on Hostile LOS'),   
+('34001','340','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Kendor Kabonka - Summon Stormwind City Guard on Aggro'),   
 -- Dungar Longdrink
 ('35201','352','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Dungar Longdrink - Summon Enraged Gryphons and Yell on Aggro'),
 -- High Priestess Laurena  
-('37601','376','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','High Priestess Laurena - Summon Stormwind City Guard on Hostile LOS'),  
+('37601','376','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','High Priestess Laurena - Summon Stormwind City Guard on Aggro'),  
 -- Demisette Cloyce  
-('46101','461','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Demisette Cloyce - Summon Stormwind City Guard on Hostile LOS'),
+('46101','461','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Demisette Cloyce - Summon Stormwind City Guard on Aggro'),
 -- General Marcus Jonathan 
-('46601','466','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','General Marcus Jonathan - Summon Stormwind City Guard on Hostile LOS'),
+('46601','466','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','General Marcus Jonathan - Summon Stormwind City Guard on Aggro'),
 ('46602','466','22','0','100','1','78','6','469','0','5','66','0','0','0','0','0','0','0','0','0','0','General Marcus Jonathan - Receive Emote Salute Then Salute Back'),
 ('46603','466','22','0','100','1','101','6','469','0','1','-552','0','0','0','0','0','0','0','0','0','0','General Marcus Jonathan - Receive Emote Wave Then Say'),
 ('46604','466','22','0','100','1','5','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','General Marcus Jonathan - Bow Emote on Recieve Emote'),
@@ -5095,27 +5095,27 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('46613','466','22','0','100','1','110','6','469','0','5','1','0','0','0','0','0','0','0','0','0','0','General Marcus Jonathan - Talk Emote on Recieve Emote'),
 ('46614','466','22','0','100','1','72','6','469','0','5','25','0','0','0','0','0','0','0','0','0','0','General Marcus Jonathan - Point Emote on Recieve Emote'),
 -- Elling Trias  
-('48201','482','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Elling Trias - Summon Stormwind City Guard on Hostile LOS'),
+('48201','482','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Elling Trias - Summon Stormwind City Guard on Aggro'),
 -- Elaine Trias  
-('48301','483','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Elaine Trias - Summon Stormwind City Guard on Hostile LOS'),    
+('48301','483','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Elaine Trias - Summon Stormwind City Guard on Aggro'),    
 -- Wilder Thistlenettle  
-('65601','656','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Wilder Thistlenettle - Summon Stormwind City Guard on Hostile LOS'),  
+('65601','656','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Wilder Thistlenettle - Summon Stormwind City Guard on Aggro'),  
 -- Ander Germaine  
-('91401','914','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ander Germaine - Summon Stormwind City Guard on Hostile LOS'),
+('91401','914','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ander Germaine - Summon Stormwind City Guard on Aggro'),
 -- Osborne the Night Man (918) - npc_rogue_trainer 
 -- Lord Grayson Shadowbreaker 
-('92801','928','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lord Grayson Shadowbreaker - Summon Stormwind City Guard on Hostile LOS'),    
+('92801','928','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lord Grayson Shadowbreaker - Summon Stormwind City Guard on Aggro'),    
 ('92802','928','14','0','100','1','40','500','8000','12000','11','13952','6','0','0','0','0','0','0','0','0','0','Lord Grayson Shadowbreaker - Cast Holy Light on Friendlies'),
 -- Dane Lindgren  
-('95701','957','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Dane Lindgren - Summon Stormwind City Guard on Hostile LOS'),
+('95701','957','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Dane Lindgren - Summon Stormwind City Guard on Aggro'),
 -- Angus Stern  
-('114101','1141','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Angus Stern - Summon Stormwind City Guard on Hostile LOS'),
+('114101','1141','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Angus Stern - Summon Stormwind City Guard on Aggro'),
 -- Bishop Farthing  
-('121201','1212','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Bishop Farthing - Summon Stormwind City Guard on Hostile LOS'),
+('121201','1212','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Bishop Farthing - Summon Stormwind City Guard on Aggro'),
 -- Keldric Boucher  
-('125701','1257','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Keldric Boucher - Summon Stormwind City Guard on Hostile LOS'),
+('125701','1257','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Keldric Boucher - Summon Stormwind City Guard on Aggro'),
 -- Kyra Boucher  
-('127501','1275','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Kyra Boucher - Summon Stormwind City Guard on Hostile LOS'),
+('127501','1275','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Kyra Boucher - Summon Stormwind City Guard on Aggro'),
 -- Archbishop Benedictus
 ('128401','1284','4','0','100','0','0','0','0','0','4','5883','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Say on Aggro'),
 ('128402','1284','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Archbishop Benedictus - Prevent Combat Movement and Set Phase to 0 on Spawn'),
@@ -5131,198 +5131,198 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('128412','1284','0','0','100','1','12000','18000','35000','45000','11','20697','0','1','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Power Word: Shield'),
 ('128413','1284','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Set Phase to 0 on Evade'),
 -- Thurman Mullby  
-('128501','1285','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Thurman Mullby - Summon Stormwind City Guard on Hostile LOS'),
+('128501','1285','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Thurman Mullby - Summon Stormwind City Guard on Aggro'),
 -- Edna Mullby  
-('128601','1286','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Edna Mullby - Summon Stormwind City Guard on Hostile LOS'),     
+('128601','1286','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Edna Mullby - Summon Stormwind City Guard on Aggro'),     
 -- Marda Weller  
-('128701','1287','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Marda Weller - Summon Stormwind City Guard on Hostile LOS'),
+('128701','1287','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Marda Weller - Summon Stormwind City Guard on Aggro'),
 -- Gunther Weller  
-('128901','1289','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Gunther Weller - Summon Stormwind City Guard on Hostile LOS'),
+('128901','1289','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Gunther Weller - Summon Stormwind City Guard on Aggro'),
 -- Carla Granger  
-('129101','1291','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Carla Granger - Summon Stormwind City Guard on Hostile LOS'),
+('129101','1291','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Carla Granger - Summon Stormwind City Guard on Aggro'),
 -- Maris Granger  
-('129201','1292','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Maris Granger - Summon Stormwind City Guard on Hostile LOS'),
+('129201','1292','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Maris Granger - Summon Stormwind City Guard on Aggro'),
 -- Aldric Moore  
-('129401','1294','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Aldric Moore - Summon Stormwind City Guard on Hostile LOS'),
+('129401','1294','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Aldric Moore - Summon Stormwind City Guard on Aggro'),
 -- Lara Moore  
-('129501','1295','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lara Moore - Summon Stormwind City Guard on Hostile LOS'),
+('129501','1295','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lara Moore - Summon Stormwind City Guard on Aggro'),
 -- Lina Stover  
-('129701','1297','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lina Stover - Summon Stormwind City Guard on Hostile LOS'),
+('129701','1297','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lina Stover - Summon Stormwind City Guard on Aggro'),
 -- Frederick Stover  
-('129801','1298','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Frederick Stover - Summon Stormwind City Guard on Hostile LOS'),
+('129801','1298','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Frederick Stover - Summon Stormwind City Guard on Aggro'),
 -- Lisbeth Schneider  
-('129901','1299','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lisbeth Schneider - Summon Stormwind City Guard on Hostile LOS'),
+('129901','1299','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lisbeth Schneider - Summon Stormwind City Guard on Aggro'),
 -- Lawrence Schneider  
-('130001','1300','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lawrence Schneider - Summon Stormwind City Guard on Hostile LOS'),
+('130001','1300','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lawrence Schneider - Summon Stormwind City Guard on Aggro'),
 -- Julia Gallina  
-('130101','1301','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Julia Gallina - Summon Stormwind City Guard on Hostile LOS'),
+('130101','1301','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Julia Gallina - Summon Stormwind City Guard on Aggro'),
 -- Bernard Gump  
-('130201','1302','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Bernard Gump - Summon Stormwind City Guard on Hostile LOS'),
+('130201','1302','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Bernard Gump - Summon Stormwind City Guard on Aggro'),
 -- Felicia Gump  
-('130301','1303','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Felicia Gump - Summon Stormwind City Guard on Hostile LOS'),
+('130301','1303','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Felicia Gump - Summon Stormwind City Guard on Aggro'),
 -- Darian Singh  
-('130401','1304','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Darian Singh - Summon Stormwind City Guard on Hostile LOS'),
+('130401','1304','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Darian Singh - Summon Stormwind City Guard on Aggro'),
 -- Jarel Moor  
-('130501','1305','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jarel Moor - Summon Stormwind City Guard on Hostile LOS'),
+('130501','1305','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jarel Moor - Summon Stormwind City Guard on Aggro'),
 -- Charys Yserian  
-('130701','1307','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Charys Yserian - Summon Stormwind City Guard on Hostile LOS'),
+('130701','1307','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Charys Yserian - Summon Stormwind City Guard on Aggro'),
 -- Owen Vaughn  
-('130801','1308','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Owen Vaughn - Summon Stormwind City Guard on Hostile LOS'),
+('130801','1308','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Owen Vaughn - Summon Stormwind City Guard on Aggro'),
 -- Wynne Larson  
-('130901','1309','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Wynne Larson - Summon Stormwind City Guard on Hostile LOS'),
+('130901','1309','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Wynne Larson - Summon Stormwind City Guard on Aggro'),
 -- Evan Larson  
-('131001','1310','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Evan Larson - Summon Stormwind City Guard on Hostile LOS'),
+('131001','1310','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Evan Larson - Summon Stormwind City Guard on Aggro'),
 -- Joachim Brenlow  
-('131101','1311','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Joachim Brenlow - Summon Stormwind City Guard on Hostile LOS'),
+('131101','1311','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Joachim Brenlow - Summon Stormwind City Guard on Aggro'),
 -- Ardwyn Cailen  
-('131201','1312','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ardwyn Cailen - Summon Stormwind City Guard on Hostile LOS'),
+('131201','1312','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ardwyn Cailen - Summon Stormwind City Guard on Aggro'),
 -- Maria Lumere  
-('131301','1313','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Maria Lumere - Summon Stormwind City Guard on Hostile LOS'),
+('131301','1313','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Maria Lumere - Summon Stormwind City Guard on Aggro'),
 -- Duncan Cullen  
-('131401','1314','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Duncan Cullen - Summon Stormwind City Guard on Hostile LOS'),
+('131401','1314','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Duncan Cullen - Summon Stormwind City Guard on Aggro'),
 -- Allan Hafgan  
-('131501','1315','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Allan Hafgan - Summon Stormwind City Guard on Hostile LOS'),
+('131501','1315','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Allan Hafgan - Summon Stormwind City Guard on Aggro'),
 -- Adair Gilroy  
-('131601','1316','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Adair Gilroy - Summon Stormwind City Guard on Hostile LOS'),
+('131601','1316','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Adair Gilroy - Summon Stormwind City Guard on Aggro'),
 -- Lucan Cordell  
-('131701','1317','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lucan Cordell - Summon Stormwind City Guard on Hostile LOS'),
+('131701','1317','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lucan Cordell - Summon Stormwind City Guard on Aggro'),
 -- Jessara Cordell  
- ('131801','1318','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jessara Cordell - Summon Stormwind City Guard on Hostile LOS'),
+ ('131801','1318','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jessara Cordell - Summon Stormwind City Guard on Aggro'),
 -- Bryan Cross  
-('131901','1319','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Bryan Cross - Summon Stormwind City Guard on Hostile LOS'),
+('131901','1319','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Bryan Cross - Summon Stormwind City Guard on Aggro'),
 -- Seoman Griffith  
-('132001','1320','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Seoman Griffith - Summon Stormwind City Guard on Hostile LOS'),
+('132001','1320','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Seoman Griffith - Summon Stormwind City Guard on Aggro'),
 -- Alyssa Griffith  
-('132101','1321','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Alyssa Griffith - Summon Stormwind City Guard on Hostile LOS'),
+('132101','1321','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Alyssa Griffith - Summon Stormwind City Guard on Aggro'),
 -- Osric Strang  
-('132301','1323','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Osric Strang - Summon Stormwind City Guard on Hostile LOS'),
+('132301','1323','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Osric Strang - Summon Stormwind City Guard on Aggro'),
 -- Heinrich Stone  
-('132401','1324','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Heinrich Stone - Summon Stormwind City Guard on Hostile LOS'),
+('132401','1324','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Heinrich Stone - Summon Stormwind City Guard on Aggro'),
 -- Jasper Fel  
-('132501','1325','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jasper Fel - Summon Stormwind City Guard on Hostile LOS'),
+('132501','1325','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jasper Fel - Summon Stormwind City Guard on Aggro'),
 -- Sloan McCoy  
-('132601','1326','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Sloan McCoy - Summon Stormwind City Guard on Hostile LOS'),
+('132601','1326','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sloan McCoy - Summon Stormwind City Guard on Aggro'),
 -- Reese Langston  
-('132701','1327','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Reese Langston - Summon Stormwind City Guard on Hostile LOS'),
+('132701','1327','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Reese Langston - Summon Stormwind City Guard on Aggro'),
 -- Elly Langston  
-('132801','1328','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Elly Langston - Summon Stormwind City Guard on Hostile LOS'),
+('132801','1328','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Elly Langston - Summon Stormwind City Guard on Aggro'),
 -- Gerik Koen  
-('133301','1333','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Gerik Koen - Summon Stormwind City Guard on Hostile LOS'),
+('133301','1333','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Gerik Koen - Summon Stormwind City Guard on Aggro'),
 -- Mayda Thane  
-('133901','1339','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Mayda Thane - Summon Stormwind City Guard on Hostile LOS'),
+('133901','1339','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Mayda Thane - Summon Stormwind City Guard on Aggro'),
 -- Wilhelm Strang  
-('134101','1341','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Wilhelm Strang - Summon Stormwind City Guard on Hostile LOS'),
+('134101','1341','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Wilhelm Strang - Summon Stormwind City Guard on Aggro'),
 -- Georgio Bolero  
-('134601','1346','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Georgio Bolero - Summon Stormwind City Guard on Hostile LOS'),
+('134601','1346','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Georgio Bolero - Summon Stormwind City Guard on Aggro'),
 -- Alexandra Bolero  
-('134701','1347','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Alexandra Bolero - Summon Stormwind City Guard on Hostile LOS'),
+('134701','1347','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Alexandra Bolero - Summon Stormwind City Guard on Aggro'),
 -- Gregory Ardus  
-('134801','1348','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Gregory Ardus - Summon Stormwind City Guard on Hostile LOS'),
+('134801','1348','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Gregory Ardus - Summon Stormwind City Guard on Aggro'),
 -- Agustus Moulaine  
-('134901','1349','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Agustus Moulaine - Summon Stormwind City Guard on Hostile LOS'),
+('134901','1349','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Agustus Moulaine - Summon Stormwind City Guard on Aggro'),
 -- Theresa Moulaine  
-('135001','1350','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Theresa Moulaine - Summon Stormwind City Guard on Hostile LOS'),
+('135001','1350','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Theresa Moulaine - Summon Stormwind City Guard on Aggro'),
 -- Brother Cassius  
-('135101','1351','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Brother Cassius - Summon Stormwind City Guard on Hostile LOS'),
+('135101','1351','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Cassius - Summon Stormwind City Guard on Aggro'),
 -- Adam (1366) - NSR
 -- Billy (1367) - NSR 
 -- Justin (1368) - NSR
 -- Brandon (1370) - NSR
 -- Roman (1371) - NSR
 -- Ol' Beasley 
-('139501','1395','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ol\' Beasley - Summon Stormwind City Guard on Hostile LOS'),
+('139501','1395','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ol\' Beasley - Summon Stormwind City Guard on Aggro'),
 ('139502','1395','1','0','100','33','0','0','120000','180000','1','-411','-412','-413','1','-206','-207','-208','1','-411','-413','-208','Ol\' Beasley - Random Say OOC'),
 -- Topper McNabb 
-('140201','1402','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Topper McNabb - Summon Stormwind City Guard on Hostile LOS'),
+('140201','1402','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Topper McNabb - Summon Stormwind City Guard on Aggro'),
 ('140202','1402','1','0','100','33','0','0','120000','180000','1','-206','-207','-208','1','-411','-412','-413','1','-206','-208','-412','Topper McNabb - Random Say OOC'),
 -- Morris Lawry
-('140501','1405','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Morris Lawry - Summon Stormwind City Guard on Hostile LOS'),
+('140501','1405','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Morris Lawry - Summon Stormwind City Guard on Aggro'),
 ('140502','1405','1','0','100','33','0','0','120000','180000','1','-206','-207','-208','1','-411','-412','-413','1','-208','-411','-413','Morris Lawry - Random Say OOC'),
 -- Janey Anship  
-('141301','1413','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Janey Anship - Summon Stormwind City Guard on Hostile LOS'),
+('141301','1413','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Janey Anship - Summon Stormwind City Guard on Aggro'),
 -- Lisan Pierce  
-('141401','1414','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lisan Pierce - Summon Stormwind City Guard on Hostile LOS'),
+('141401','1414','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lisan Pierce - Summon Stormwind City Guard on Aggro'),
 -- Suzanne  
-('141501','1415','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Suzanne - Summon Stormwind City Guard on Hostile LOS'),
+('141501','1415','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Suzanne - Summon Stormwind City Guard on Aggro'),
 -- Grimand Elmore  
-('141601','1416','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Grimand Elmore - Summon Stormwind City Guard on Hostile LOS'),
+('141601','1416','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Grimand Elmore - Summon Stormwind City Guard on Aggro'),
 -- Fizzles  
-('141901','1419','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Fizzles - Summon Stormwind City Guard on Hostile LOS'),
+('141901','1419','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Fizzles - Summon Stormwind City Guard on Aggro'),
 -- Harlan Bagley  
-('142701','1427','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Harlan Bagley - Summon Stormwind City Guard on Hostile LOS'),
+('142701','1427','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Harlan Bagley - Summon Stormwind City Guard on Aggro'),
 -- Rema Schneider  
-('142801','1428','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Rema Schneider - Summon Stormwind City Guard on Hostile LOS'),
+('142801','1428','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Rema Schneider - Summon Stormwind City Guard on Aggro'),
 -- Thurman Schneider  
-('142901','1429','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Thurman Schneider - Summon Stormwind City Guard on Hostile LOS'),
+('142901','1429','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Thurman Schneider - Summon Stormwind City Guard on Aggro'),
 -- Suzetta Gallina  
-('143101','1431','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Suzetta Gallina - Summon Stormwind City Guard on Hostile LOS'),
+('143101','1431','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Suzetta Gallina - Summon Stormwind City Guard on Aggro'),
 -- Renato Gallina  
-('143201','1432','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Renato Gallina - Summon Stormwind City Guard on Hostile LOS'),
+('143201','1432','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Renato Gallina - Summon Stormwind City Guard on Aggro'),
 -- Corbett Schneider  
-('143301','1433','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Corbett Schneider - Summon Stormwind City Guard on Hostile LOS'),
+('143301','1433','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Corbett Schneider - Summon Stormwind City Guard on Aggro'),
 -- Zardeth of the Black Claw  
-('143501','1435','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Zardeth of the Black Claw - Summon Stormwind City Guard on Hostile LOS'),
+('143501','1435','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Zardeth of the Black Claw - Summon Stormwind City Guard on Aggro'),
 -- Lord Baurles K. Wishock  
-('143901','1439','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lord Baurles K. Wishock - Summon Stormwind City Guard on Hostile LOS'),
+('143901','1439','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lord Baurles K. Wishock - Summon Stormwind City Guard on Aggro'),
 -- Milton Sheaf  
-('144001','1440','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Milton Sheaf - Summon Stormwind City Guard on Hostile LOS'),
+('144001','1440','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Milton Sheaf - Summon Stormwind City Guard on Aggro'),
 -- Brother Kristoff  
-('144401','1444','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Brother Kristoff - Summon Stormwind City Guard on Hostile LOS'),
+('144401','1444','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Kristoff - Summon Stormwind City Guard on Aggro'),
 -- Morgg Stormshot  
-('147201','1472','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Morgg Stormshot - Summon Stormwind City Guard on Hostile LOS'),
+('147201','1472','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Morgg Stormshot - Summon Stormwind City Guard on Aggro'),
 -- Christoph Faral  (HAS SERIES IF SPEECH SAYS) 
-('147701','1477','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Christoph Faral - Summon Stormwind City Guard on Hostile LOS'),     
+('147701','1477','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Christoph Faral - Summon Stormwind City Guard on Aggro'),     
 -- Aedis Brom  (HAS SERIES IF SPEECH SAYS) 
-('147801','1478','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Aedis Brom - Summon Stormwind City Guard on Hostile LOS'), 
+('147801','1478','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Aedis Brom - Summon Stormwind City Guard on Aggro'), 
 -- Baros Alexston  
-('164601','1646','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Baros Alexston - Summon Stormwind City Guard on Hostile LOS'),
+('164601','1646','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Baros Alexston - Summon Stormwind City Guard on Aggro'),
 -- Defias Prisoner (1706) - ALREADY SCRIPTED IN STOCKADE   
 -- Warden Thelwater 
 ('171901','1719','1','0','100','1','0','0','6000','43000','1','-414','-415','-416','0','0','0','0','0','0','0','0','Warden Thelwater - Random Say OOC'),
 -- Nikova Raskol  
-('172101','1721','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Nikova Raskol - Summon Stormwind City Guard on Hostile LOS'),
+('172101','1721','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Nikova Raskol - Summon Stormwind City Guard on Aggro'),
 -- Zggi (1733) - NSR
 -- Anduin Wrynn  
-('174701','1747','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Anduin Wrynn - Summon Stormwind City Guard on Hostile LOS'),
+('174701','1747','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Anduin Wrynn - Summon Stormwind City Guard on Aggro'),
 -- Grand Admiral Jes-Tereth  
-('175001','1750','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Grand Admiral Jes-Tereth - Summon Stormwind City Guard on Hostile LOS'),
+('175001','1750','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Grand Admiral Jes-Tereth - Summon Stormwind City Guard on Aggro'),
 -- Mithras Ironhill  
-('175101','1751','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Mithras Ironhill - Summon Stormwind City Guard on Hostile LOS'),
+('175101','1751','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Mithras Ironhill - Summon Stormwind City Guard on Aggro'),
 -- Caledra Dawnbreeze  
-('175201','1752','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Caledra Dawnbreeze - Summon Stormwind City Guard on Hostile LOS'),
+('175201','1752','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Caledra Dawnbreeze - Summon Stormwind City Guard on Aggro'),
 -- Lord Gregor Lescovar (1754) - NSR
 -- Marzon the Silent Blade (1755) - NSR
 -- Stormwind Royal Guard (1756) - NSR
 -- Stormwind City Patroller (1976) - guard_stormwind
 -- Crier Goodman  
-('219801','2198','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Crier Goodman - Summon Stormwind City Guard on Hostile LOS'),
+('219801','2198','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Crier Goodman - Summon Stormwind City Guard on Aggro'),
 -- Count Remington Ridgewell  
-('228501','2285','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Count Remington Ridgewell - Summon Stormwind City Guard on Hostile LOS'),
+('228501','2285','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Count Remington Ridgewell - Summon Stormwind City Guard on Aggro'),
 -- Shaina Fuller  
-('232701','2327','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Shaina Fuller - Summon Stormwind City Guard on Hostile LOS'),
+('232701','2327','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Shaina Fuller - Summon Stormwind City Guard on Aggro'),
 -- Karlee Chaddis  
-('233001','2330','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Karlee Chaddis - Summon Stormwind City Guard on Hostile LOS'),
+('233001','2330','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Karlee Chaddis - Summon Stormwind City Guard on Aggro'),
 -- Paige Chaddis  
-('233101','2331','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Paige Chaddis - Summon Stormwind City Guard on Hostile LOS'),
+('233101','2331','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Paige Chaddis - Summon Stormwind City Guard on Aggro'),
 -- Major Samuelson  
-('243901','2439','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Major Samuelson - Summon Stormwind City Guard on Hostile LOS'),
+('243901','2439','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Major Samuelson - Summon Stormwind City Guard on Aggro'),
 -- Olivia Burnside  
-('245501','2455','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Olivia Burnside - Summon Stormwind City Guard on Hostile LOS'),
+('245501','2455','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Olivia Burnside - Summon Stormwind City Guard on Aggro'),
 -- Newton Burnside  
-('245601','2456','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Newton Burnside - Summon Stormwind City Guard on Hostile LOS'),
+('245601','2456','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Newton Burnside - Summon Stormwind City Guard on Aggro'),
 -- John Burnside  
-('245701','2457','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','John Burnside - Summon Stormwind City Guard on Hostile LOS'),
+('245701','2457','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','John Burnside - Summon Stormwind City Guard on Aggro'),
 -- Larimaine Purdue  
-('248501','2485','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Larimaine Purdue - Summon Stormwind City Guard on Hostile LOS'),     
+('248501','2485','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Larimaine Purdue - Summon Stormwind City Guard on Aggro'),     
 -- Donyal Tovald  
-('250401','2504','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Donyal Tovald - Summon Stormwind City Guard on Hostile LOS'),
+('250401','2504','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Donyal Tovald - Summon Stormwind City Guard on Aggro'),
 -- Donna (2532) - NSR
 -- William (2533) - NSR
 -- Archmage Malin (2708) - npc_archmage_malin 
 -- Lenny "Fingers" McCoy  
-('279501','2795','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lenny "Fingers" McCoy - Summon Stormwind City Guard on Hostile LOS'),
+('279501','2795','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lenny "Fingers" McCoy - Summon Stormwind City Guard on Aggro'),
 -- Karrina Mekenda  
-('287901','2879','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Karrina Mekenda - Summon Stormwind City Guard on Hostile LOS'),
+('287901','2879','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Karrina Mekenda - Summon Stormwind City Guard on Aggro'),
 -- Gil
 ('350401','3504','1','0','100','1','0','0','180000','180000','1','-429','-430','-431','0','0','0','0','0','0','0','0','Gil - Random Say 1 OOC'),
 ('350402','3504','1','0','100','1','60000','60000','180000','180000','1','-432','-433','-434','0','0','0','0','0','0','0','0','Gil - Random Say 2 OOC'),
@@ -5334,139 +5334,139 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Steven (3511) - NSR
 -- Jimmy (3512) - NSR
 -- Miss Danna  
-('351301','3513','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Miss Danna - Summon Stormwind City Guard on Hostile LOS'),
+('351301','3513','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Miss Danna - Summon Stormwind City Guard on Aggro'),
 ('351302','3513','2','0','100','1','2','1','1000','1000','42','1','-1','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible'),      
 -- Thomas Miller 
-('351801','3518','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Thomas Miller - Summon Stormwind City Guard on Hostile LOS'),
+('351801','3518','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Thomas Miller - Summon Stormwind City Guard on Aggro'),
 ('351802','3518','1','0','100','1','0','0','120000','180000','1','-204','-205','-142','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma 
-('352001','3520','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ol\' Emma - Summon Stormwind City Guard on Hostile LOS'),
+('352001','3520','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ol\' Emma - Summon Stormwind City Guard on Aggro'),
 -- Sewer Beast (3581) - NSR
 -- Jenn Langston  (HAS EMOTES TO SCRIPT) 
-('362601','3626','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jenn Langston - Summon Stormwind City Guard on Hostile LOS'),
+('362601','3626','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jenn Langston - Summon Stormwind City Guard on Aggro'),
 -- Erich Lohan  
-('362701','3627','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Erich Lohan - Summon Stormwind City Guard on Hostile LOS'),
+('362701','3627','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Erich Lohan - Summon Stormwind City Guard on Aggro'),
 -- Steven Lohan  
-('362801','3628','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Steven Lohan - Summon Stormwind City Guard on Hostile LOS'),
+('362801','3628','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Steven Lohan - Summon Stormwind City Guard on Aggro'),
 -- David Langston  
-('362901','3629','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','David Langston - Summon Stormwind City Guard on Hostile LOS'),
+('362901','3629','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','David Langston - Summon Stormwind City Guard on Aggro'),
 -- Collin Mauren  
-('407801','4078','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Collin Mauren - Summon Stormwind City Guard on Hostile LOS'),
+('407801','4078','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Collin Mauren - Summon Stormwind City Guard on Aggro'),
 -- Jorgen  
-('495901','4959','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jorgen - Summon Stormwind City Guard on Hostile LOS'),
+('495901','4959','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jorgen - Summon Stormwind City Guard on Aggro'),
 -- Bishop DeLavey  
-('496001','4960','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Bishop DeLavey - Summon Stormwind City Guard on Hostile LOS'),
+('496001','4960','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Bishop DeLavey - Summon Stormwind City Guard on Aggro'),
 -- Dashel Stonefist (4961) - npc_dashel_stonefist 
 -- Old Town Thug (4969) - NSR
 -- Aldwin Laughlin  
-('497401','4974','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Aldwin Laughlin - Summon Stormwind City Guard on Hostile LOS'),
+('497401','4974','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Aldwin Laughlin - Summon Stormwind City Guard on Aggro'),
 -- Ben Trias  
-('498101','4981','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ben Trias - Summon Stormwind City Guard on Hostile LOS'),
+('498101','4981','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ben Trias - Summon Stormwind City Guard on Aggro'),
 -- Thomas (4982) - NSR
 -- Argos Nightwhisper  
-('498401','4984','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Argos Nightwhisper - Summon Stormwind City Guard on Hostile LOS'),
+('498401','4984','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Argos Nightwhisper - Summon Stormwind City Guard on Aggro'),
 -- Stockade Guard (4995) - NSR
 -- Injured Stockade Guard (4996) - NSR
 -- Nurse Lillian (5042) - NSR
 -- Defias Rioter (5043) - NSR
 -- Connor Rivers  
-('508101','5081','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Connor Rivers - Summon Stormwind City Guard on Hostile LOS'),
+('508101','5081','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Connor Rivers - Summon Stormwind City Guard on Aggro'),
 -- Rebecca Laughlin  
-('519301','5193','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Rebecca Laughlin - Summon Stormwind City Guard on Hostile LOS'),
+('519301','5193','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Rebecca Laughlin - Summon Stormwind City Guard on Aggro'),
 -- Brohann Caskbelly  
-('538401','5384','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Brohann Caskbelly - Summon Stormwind City Guard on Hostile LOS'),
+('538401','5384','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brohann Caskbelly - Summon Stormwind City Guard on Aggro'),
 -- Acolyte Dellis  
-('538601','5386','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Acolyte Dellis - Summon Stormwind City Guard on Hostile LOS'),
+('538601','5386','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Acolyte Dellis - Summon Stormwind City Guard on Aggro'),
 -- Furen Longbeard  
-('541301','5413','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Furen Longbeard - Summon Stormwind City Guard on Hostile LOS'),
+('541301','5413','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Furen Longbeard - Summon Stormwind City Guard on Aggro'),
 -- Wu Shen  
-('547901','5479','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Wu Shen - Summon Stormwind City Guard on Hostile LOS'),
+('547901','5479','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Wu Shen - Summon Stormwind City Guard on Aggro'),
 -- Ilsa Corbin  
-('548001','5480','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ilsa Corbin - Summon Stormwind City Guard on Hostile LOS'),
+('548001','5480','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ilsa Corbin - Summon Stormwind City Guard on Aggro'),
 -- Stephen Ryback  
-('548201','5482','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Stephen Ryback - Summon Stormwind City Guard on Hostile LOS'),
+('548201','5482','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Stephen Ryback - Summon Stormwind City Guard on Aggro'),
 -- Erika Tate  
-('548301','5483','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Erika Tate - Summon Stormwind City Guard on Hostile LOS'),
+('548301','5483','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Erika Tate - Summon Stormwind City Guard on Aggro'),
 -- Brother Benjamin  
-('548401','5484','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Brother Benjamin - Summon Stormwind City Guard on Hostile LOS'),
+('548401','5484','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Benjamin - Summon Stormwind City Guard on Aggro'),
 -- Brother Joshua  
-('548901','5489','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Brother Joshua - Summon Stormwind City Guard on Hostile LOS'),
+('548901','5489','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Joshua - Summon Stormwind City Guard on Aggro'),
 -- Arthur the Faithful  
-('549101','5491','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Arthur the Faithful - Summon Stormwind City Guard on Hostile LOS'),
+('549101','5491','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Arthur the Faithful - Summon Stormwind City Guard on Aggro'),
 -- Katherine the Pure  
-('549201','5492','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Katherine the Pure - Summon Stormwind City Guard on Hostile LOS'),
+('549201','5492','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Katherine the Pure - Summon Stormwind City Guard on Aggro'),
 -- Arnold Leland  
-('549301','5493','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Arnold Leland - Summon Stormwind City Guard on Hostile LOS'),
+('549301','5493','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Arnold Leland - Summon Stormwind City Guard on Aggro'),
 -- Catherine Leland  
-('549401','5494','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Catherine Leland - Summon Stormwind City Guard on Hostile LOS'),
+('549401','5494','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Catherine Leland - Summon Stormwind City Guard on Aggro'),
 -- Ursula Deline  
-('549501','5495','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ursula Deline - Summon Stormwind City Guard on Hostile LOS'),
+('549501','5495','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ursula Deline - Summon Stormwind City Guard on Aggro'),
 -- Sandahl  
-('549601','5496','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Sandahl - Summon Stormwind City Guard on Hostile LOS'),
+('549601','5496','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sandahl - Summon Stormwind City Guard on Aggro'),
 -- Jennea Cannon  
-('549701','5497','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jennea Cannon - Summon Stormwind City Guard on Hostile LOS'),
+('549701','5497','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jennea Cannon - Summon Stormwind City Guard on Aggro'),
 -- Elsharin  
-('549801','5498','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Elsharin - Summon Stormwind City Guard on Hostile LOS'),
+('549801','5498','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Elsharin - Summon Stormwind City Guard on Aggro'),
 -- Lilyssia Nightbreeze  
-('549901','5499','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lilyssia Nightbreeze - Summon Stormwind City Guard on Hostile LOS'),
+('549901','5499','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lilyssia Nightbreeze - Summon Stormwind City Guard on Aggro'),
 -- Tel'Athir  
-('550001','5500','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Tel\'Athir - Summon Stormwind City Guard on Hostile LOS'),
+('550001','5500','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Tel\'Athir - Summon Stormwind City Guard on Aggro'),
 -- Shylamiir  
-('550201','5502','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Shylamiir - Summon Stormwind City Guard on Hostile LOS'),
+('550201','5502','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Shylamiir - Summon Stormwind City Guard on Aggro'),
 -- Eldraeith  
-('550301','5503','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Eldraeith - Summon Stormwind City Guard on Hostile LOS'),
+('550301','5503','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Eldraeith - Summon Stormwind City Guard on Aggro'),
 -- Sheldras Moontree  
-('550401','5504','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Sheldras Moontree - Summon Stormwind City Guard on Hostile LOS'),
+('550401','5504','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sheldras Moontree - Summon Stormwind City Guard on Aggro'),
 -- Theridran  
-('550501','5505','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Theridran - Summon Stormwind City Guard on Hostile LOS'),
+('550501','5505','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Theridran - Summon Stormwind City Guard on Aggro'),
 -- Maldryn  
-('550601','5506','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Maldryn - Summon Stormwind City Guard on Hostile LOS'),
+('550601','5506','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Maldryn - Summon Stormwind City Guard on Aggro'),
 -- Kathrum Axehand  
-('550901','5509','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Kathrum Axehand - Summon Stormwind City Guard on Hostile LOS'),
+('550901','5509','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Kathrum Axehand - Summon Stormwind City Guard on Aggro'),
 -- Thulman Flintcrag  
-('551001','5510','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Thulman Flintcrag - Summon Stormwind City Guard on Hostile LOS'),
+('551001','5510','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Thulman Flintcrag - Summon Stormwind City Guard on Aggro'),
 -- Therum Deepforge  
-('551101','5511','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Therum Deepforge - Summon Stormwind City Guard on Hostile LOS'),
+('551101','5511','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Therum Deepforge - Summon Stormwind City Guard on Aggro'),
 -- Kaita Deepforge  
-('551201','5512','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Kaita Deepforge - Summon Stormwind City Guard on Hostile LOS'),
+('551201','5512','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Kaita Deepforge - Summon Stormwind City Guard on Aggro'),
 -- Gelman Stonehand  
-('551301','5513','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Gelman Stonehand - Summon Stormwind City Guard on Hostile LOS'),
+('551301','5513','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Gelman Stonehand - Summon Stormwind City Guard on Aggro'),
 -- Brooke Stonebraid  
-('551401','5514','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Brooke Stonebraid - Summon Stormwind City Guard on Hostile LOS'),
+('551401','5514','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brooke Stonebraid - Summon Stormwind City Guard on Aggro'),
 -- Einris Brightspear  
-('551501','5515','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Einris Brightspear - Summon Stormwind City Guard on Hostile LOS'),
+('551501','5515','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Einris Brightspear - Summon Stormwind City Guard on Aggro'),
 -- Ulfir Ironbeard  
-('551601','5516','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ulfir Ironbeard - Summon Stormwind City Guard on Hostile LOS'),
+('551601','5516','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ulfir Ironbeard - Summon Stormwind City Guard on Aggro'),
 -- Thorfin Stoneshield  
-('551701','5517','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Thorfin Stoneshield - Summon Stormwind City Guard on Hostile LOS'),
+('551701','5517','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Thorfin Stoneshield - Summon Stormwind City Guard on Aggro'),
 -- Lilliam Sparkspindle  
-('551801','5518','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lilliam Sparkspindle - Summon Stormwind City Guard on Hostile LOS'),
+('551801','5518','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lilliam Sparkspindle - Summon Stormwind City Guard on Aggro'),
 -- Billibub Cogspinner  
-('551901','5519','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Billibub Cogspinner - Summon Stormwind City Guard on Hostile LOS'),
+('551901','5519','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Billibub Cogspinner - Summon Stormwind City Guard on Aggro'),
 -- Spackle Thornberry  
-('552001','5520','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Spackle Thornberry - Summon Stormwind City Guard on Hostile LOS'),
+('552001','5520','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Spackle Thornberry - Summon Stormwind City Guard on Aggro'),
 -- Simon Tanner  
-('556401','5564','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Simon Tanner - Summon Stormwind City Guard on Hostile LOS'),
+('556401','5564','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Simon Tanner - Summon Stormwind City Guard on Aggro'),
 -- Jillian Tanner  
-('556501','5565','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jillian Tanner - Summon Stormwind City Guard on Hostile LOS'),
+('556501','5565','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jillian Tanner - Summon Stormwind City Guard on Aggro'),
 -- Tannysa  
-('556601','5566','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Tannysa - Summon Stormwind City Guard on Hostile LOS'),
+('556601','5566','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Tannysa - Summon Stormwind City Guard on Aggro'),
 -- Sellandus  
-('556701','5567','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Sellandus - Summon Stormwind City Guard on Hostile LOS'),
+('556701','5567','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sellandus - Summon Stormwind City Guard on Aggro'),
 -- Summoned Voidwalker (5676) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- High Sorcerer Andromath  
-('569401','5694','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','High Sorcerer Andromath - Summon Stormwind City Guard on Hostile LOS'),
+('569401','5694','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','High Sorcerer Andromath - Summon Stormwind City Guard on Aggro'),
 -- Harry Burlguard  
-('608901','6089','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Harry Burlguard - Summon Stormwind City Guard on Hostile LOS'),
+('608901','6089','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Harry Burlguard - Summon Stormwind City Guard on Aggro'),
 -- Bartleby (6090) - npc_bartleby 
 -- Gakin the Darkbinder  
-('612201','6122','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Gakin the Darkbinder - Summon Stormwind City Guard on Hostile LOS'),
+('612201','6122','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Gakin the Darkbinder - Summon Stormwind City Guard on Aggro'),
 -- Duthorian Rall  
-('617101','6171','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Duthorian Rall - Summon Stormwind City Guard on Hostile LOS'),
+('617101','6171','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Duthorian Rall - Summon Stormwind City Guard on Aggro'),
 -- Gazin Tenorm  
-('617301','6173','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Gazin Tenorm - Summon Stormwind City Guard on Hostile LOS'),
+('617301','6173','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Gazin Tenorm - Summon Stormwind City Guard on Aggro'),
 -- Stephanie Turner  
-('617401','6174','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Stephanie Turner - Summon Stormwind City Guard on Hostile LOS'),
+('617401','6174','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Stephanie Turner - Summon Stormwind City Guard on Aggro'),
 -- Stockade Archer 
 ('623701','6237','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Stockade Archer - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('623702','6237','9','1','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Stockade Archer - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
@@ -5475,97 +5475,97 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('623705','6237','9','1','100','1','11','25','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Stockade Archer - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
 ('623706','6237','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','21','0','0','0','Stockade Archer - Set Phase to 1 and Set Melee Weapon Model and Prevent Combat Movement on Evade'),
 -- Acolyte Porena  
-('626701','6267','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Acolyte Porena - Summon Stormwind City Guard on Hostile LOS'),
+('626701','6267','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Acolyte Porena - Summon Stormwind City Guard on Aggro'),
 -- Shoni the Shilent  
-('657901','6579','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Shoni the Shilent - Summon Stormwind City Guard on Hostile LOS'),
+('657901','6579','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Shoni the Shilent - Summon Stormwind City Guard on Aggro'),
 -- Innkeeper Allison (6740) - npc_innkeeper 
 -- Renzik "The Shiv"  
-('694601','6946','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Renzik "The Shiv" - Summon Stormwind City Guard on Hostile LOS'),
+('694601','6946','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Renzik "The Shiv" - Summon Stormwind City Guard on Aggro'),
 -- Doc Mixilpixil  
-('720701','7207','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Doc Mixilpixil - Summon Stormwind City Guard on Hostile LOS'),
+('720701','7207','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Doc Mixilpixil - Summon Stormwind City Guard on Aggro'),
 -- Noarm (7208) - NSR     
 -- Borgus Steelhand  
-('723201','7232','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Borgus Steelhand - Summon Stormwind City Guard on Hostile LOS'),
+('723201','7232','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Borgus Steelhand - Summon Stormwind City Guard on Aggro'),
 -- Shailiea  
-('729501','7295','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Shailiea - Summon Stormwind City Guard on Hostile LOS'),
+('729501','7295','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Shailiea - Summon Stormwind City Guard on Aggro'),
 -- Thelman Slatefist (7410) - NSR
 -- Tyrion  
-('776601','7766','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Tyrion - Summon Stormwind City Guard on Hostile LOS'),
+('776601','7766','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Tyrion - Summon Stormwind City Guard on Aggro'),
 -- Hank the Hammer  
-('779801','7798','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Hank the Hammer - Summon Stormwind City Guard on Hostile LOS'),
+('779801','7798','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Hank the Hammer - Summon Stormwind City Guard on Aggro'),
 -- Brother Sarno  
-('791701','7917','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Brother Sarno - Summon Stormwind City Guard on Hostile LOS'),
+('791701','7917','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Sarno - Summon Stormwind City Guard on Aggro'),
 -- Lillian Singh  
-('811801','8118','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lillian Singh - Summon Stormwind City Guard on Hostile LOS'),
+('811801','8118','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lillian Singh - Summon Stormwind City Guard on Aggro'),
 -- Master Wood  (EMOTES NEED TO BE SCRIPTED) 
-('838301','8383','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Master Wood - Summon Stormwind City Guard on Hostile LOS'),
+('838301','8383','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Master Wood - Summon Stormwind City Guard on Aggro'),
 -- Lil Timmy (NEEDS SNIFF RESEARCH TO FIND PROPER SUMMON SPELL FOR THE KITTEN AS THIS IS NOT THE CORRECT SPELL MOST LIKELY)
 -- ('866601','8666','1','0','100','1','4000','5000','10000','20000','11','10679','0','18','0','0','0','0','0','0','0','0','Lil Timmy - Spawn his White Kitten'),
 ('866602','8666','1','0','100','32','0','0','180000','180000','1','-1311','-1312','-1313','1','-1314','-1315','-1316','0','0','0','0','Lil Timmy - Random Say OOC'),    
 -- Auctioneer Chilton  
-('867001','8670','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Auctioneer Chilton - Summon Stormwind City Guard on Hostile LOS'),
+('867001','8670','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Auctioneer Chilton - Summon Stormwind City Guard on Aggro'),
 -- Auctioneer Fitch  
-('871901','8719','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Auctioneer Fitch - Summon Stormwind City Guard on Hostile LOS'),
+('871901','8719','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Auctioneer Fitch - Summon Stormwind City Guard on Aggro'),
 -- Tyrion's Spybot (8856) - NSR     
 -- Jalane Ayrole  
-('958401','9584','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jalane Ayrole - Summon Stormwind City Guard on Hostile LOS'),
+('958401','9584','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jalane Ayrole - Summon Stormwind City Guard on Aggro'),
 -- Sylista  
-('997701','9977','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Sylista - Summon Stormwind City Guard on Hostile LOS'),
+('997701','9977','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sylista - Summon Stormwind City Guard on Aggro'),
 -- Royal Factor Bathrilor  
-('1078201','10782','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Royal Factor Bathrilor - Summon Stormwind City Guard on Hostile LOS'),
+('1078201','10782','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Royal Factor Bathrilor - Summon Stormwind City Guard on Aggro'),
 -- Sprite Jumpsprocket  
-('1102601','11026','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Sprite Jumpsprocket - Summon Stormwind City Guard on Hostile LOS'),
+('1102601','11026','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sprite Jumpsprocket - Summon Stormwind City Guard on Aggro'),
 -- Betty Quin  
-('1106801','11068','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Betty Quin - Summon Stormwind City Guard on Hostile LOS'),
+('1106801','11068','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Betty Quin - Summon Stormwind City Guard on Aggro'),
 -- Jenova Stoneshield  
-('1106901','11069','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Jenova Stoneshield - Summon Stormwind City Guard on Hostile LOS'),
+('1106901','11069','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jenova Stoneshield - Summon Stormwind City Guard on Aggro'),
 -- Randal Worth  
-('1109601','11096','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Randal Worth - Summon Stormwind City Guard on Hostile LOS'),
+('1109601','11096','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Randal Worth - Summon Stormwind City Guard on Aggro'),
 -- Nara Meideros  
-('1139701','11397','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Nara Meideros - Summon Stormwind City Guard on Hostile LOS'),
+('1139701','11397','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Nara Meideros - Summon Stormwind City Guard on Aggro'),
 -- Kimberly Grant  
-('1182701','11827','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Kimberly Grant - Summon Stormwind City Guard on Hostile LOS'),
+('1182701','11827','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Kimberly Grant - Summon Stormwind City Guard on Aggro'),
 -- Kelly Grant  
-('1182801','11828','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Kelly Grant - Summon Stormwind City Guard on Hostile LOS'),
+('1182801','11828','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Kelly Grant - Summon Stormwind City Guard on Aggro'),
 -- Woo Ping  
-('1186701','11867','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Woo Ping - Summon Stormwind City Guard on Hostile LOS'),
+('1186701','11867','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Woo Ping - Summon Stormwind City Guard on Aggro'),
 -- Imelda  
-('1191601','11916','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Imelda - Summon Stormwind City Guard on Hostile LOS'),
+('1191601','11916','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Imelda - Summon Stormwind City Guard on Aggro'),
 -- Brother Crowley  
-('1233601','12336','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Brother Crowley - Summon Stormwind City Guard on Hostile LOS'),
+('1233601','12336','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Crowley - Summon Stormwind City Guard on Aggro'),
 -- Melris Malagan  
-('1248001','12480','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Melris Malagan - Summon Stormwind City Guard on Hostile LOS'),
+('1248001','12480','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Melris Malagan - Summon Stormwind City Guard on Aggro'),
 -- Justine Demalier  
-('1248101','12481','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Justine Demalier - Summon Stormwind City Guard on Hostile LOS'),
+('1248101','12481','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Justine Demalier - Summon Stormwind City Guard on Aggro'),
 -- Lieutenant Rachel Vaccar  
-('1277801','12778','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lieutenant Rachel Vaccar - Summon Stormwind City Guard on Hostile LOS'),
+('1277801','12778','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lieutenant Rachel Vaccar - Summon Stormwind City Guard on Aggro'),
 -- Archmage Gaiman  
-('1277901','12779','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Archmage Gaiman - Summon Stormwind City Guard on Hostile LOS'),
+('1277901','12779','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Archmage Gaiman - Summon Stormwind City Guard on Aggro'),
 -- Sergeant Major Skyshadow  
-('1278001','12780','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Sergeant Major Skyshadow - Summon Stormwind City Guard on Hostile LOS'),
+('1278001','12780','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sergeant Major Skyshadow - Summon Stormwind City Guard on Aggro'),
 -- Master Sergeant Biggins  
-('1278101','12781','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Master Sergeant Biggins - Summon Stormwind City Guard on Hostile LOS'),
+('1278101','12781','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Master Sergeant Biggins - Summon Stormwind City Guard on Aggro'),
 -- Lieutenant Karter  
-('1278301','12783','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lieutenant Karter - Summon Stormwind City Guard on Hostile LOS'),
+('1278301','12783','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lieutenant Karter - Summon Stormwind City Guard on Aggro'),
 -- Lieutenant Jackspring  
-('1278401','12784','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lieutenant Jackspring - Summon Stormwind City Guard on Hostile LOS'),
+('1278401','12784','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lieutenant Jackspring - Summon Stormwind City Guard on Aggro'),
 -- Sergeant Major Clate  
-('1278501','12785','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Sergeant Major Clate - Summon Stormwind City Guard on Hostile LOS'),
+('1278501','12785','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sergeant Major Clate - Summon Stormwind City Guard on Aggro'),
 -- Guard Quine
 ('1278601','12786','0','0','100','1','6000','12000','12000','18000','11','12169','0','0','0','0','0','0','0','0','0','0','Guard Quine - Cast Shield Block'),
 ('1278602','12786','0','0','100','1','6200','7800','5800','13300','11','12170','1','1','0','0','0','0','0','0','0','0','Guard Quine - Cast Revenge'),
-('1278603','12786','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Guard Quine - Summon Stormwind City Guard on Hostile LOS'),
+('1278603','12786','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Guard Quine - Summon Stormwind City Guard on Aggro'),
 -- Guard Hammon
 ('1278701','12787','0','0','100','1','6000','12000','12000','18000','11','12169','0','0','0','0','0','0','0','0','0','0','Guard Hammon - Cast Shield Block'),
 ('1278702','12787','0','0','100','1','6200','7800','5800','13300','11','12170','1','1','0','0','0','0','0','0','0','0','Guard Hammon - Cast Revenge'),
-('1278703','12787','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Guard Hammon - Summon Stormwind City Guard on Hostile LOS'),
+('1278703','12787','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Guard Hammon - Summon Stormwind City Guard on Aggro'),
 -- Lord Tony Romano (13283) - npc_rogue_trainer 
 -- Khole Jinglepocket (13435) - NSR     
 -- Guchie Jinglepocket (13436) - NSR     
 -- Major Mattingly      
 ('1439401','14394','14','0','100','1','40','800','8000','12000','11','15493','6','0','0','0','0','0','0','0','0','0','Major Mattingly - Cast Holy Light on Friendlies'),
 -- Officer Jaxon
-('1442301','14423','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Officer Jaxon - Summon Stormwind City Guard on Hostile LOS'),
+('1442301','14423','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Officer Jaxon - Summon Stormwind City Guard on Aggro'),
 ('1442302','14423','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase 1 on Aggro'),
 ('1442303','14423','9','5','100','1','0','5','5000','9000','11','21081','1','0','0','0','0','0','0','0','0','0','Officer Jaxon - Cast Sunder Armor (Phase 1)'),
 ('1442304','14423','24','5','100','1','21081','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
@@ -5573,7 +5573,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1442306','14423','9','0','100','1','0','30','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Officer Jaxon - Cast Hooked Net'),
 ('1442307','14423','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase to 0 on Evade'),
 -- Officer Pomeroy
-('1443801','14438','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Officer Pomeroy - Summon Stormwind City Guard on Hostile LOS'),
+('1443801','14438','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Officer Pomeroy - Summon Stormwind City Guard on Aggro'),
 ('1443802','14438','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase 1 on Aggro'),
 ('1443803','14438','9','5','100','1','0','5','5000','9000','11','21081','1','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Cast Sunder Armor (Phase 1)'),
 ('1443804','14438','24','5','100','1','21081','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
@@ -5581,7 +5581,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1443806','14438','9','0','100','1','0','30','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Cast Hooked Net'),
 ('1443807','14438','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase to 0 on Evade'),
 -- Officer Brady
-('1443901','14439','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Officer Brady - Summon Stormwind City Guard on Hostile LOS'),
+('1443901','14439','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Officer Brady - Summon Stormwind City Guard on Aggro'),
 ('1443902','14439','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase 1 on Aggro'),
 ('1443903','14439','9','5','100','1','0','5','5000','9000','11','21081','1','0','0','0','0','0','0','0','0','0','Officer Brady - Cast Sunder Armor (Phase 1)'),
 ('1443904','14439','24','5','100','1','21081','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
@@ -5589,39 +5589,39 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1443906','14439','9','0','100','1','0','30','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Officer Brady - Cast Hooked Net'),
 ('1443907','14439','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase to 0 on Evade'),
 -- Orphan Matron Nightingale  
-('1445001','14450','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Orphan Matron Nightingale - Summon Stormwind City Guard on Hostile LOS'),
+('1445001','14450','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Orphan Matron Nightingale - Summon Stormwind City Guard on Aggro'),
 -- Emmithue Smails  
-('1448101','14481','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Emmithue Smails - Summon Stormwind City Guard on Hostile LOS'),
+('1448101','14481','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Emmithue Smails - Summon Stormwind City Guard on Aggro'),
 -- Stormwind Orphan (14496) - NSR
 -- Shellene  
-('1449701','14497','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Shellene - Summon Stormwind City Guard on Hostile LOS'),
+('1449701','14497','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Shellene - Summon Stormwind City Guard on Aggro'),
 -- Field Marshal Afrasiabi      
 ('1472101','14721','0','0','100','1','1000','3000','12000','16000','11','10967','0','0','0','0','0','0','0','0','0','0','Field Marshal Afrasiabi - Cast Echoing Roar'),
 -- Clavicus Knavingham  
-('1472201','14722','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Clavicus Knavingham - Summon Stormwind City Guard on Hostile LOS'),
+('1472201','14722','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Clavicus Knavingham - Summon Stormwind City Guard on Aggro'),
 -- Elfarran  
-('1498101','14981','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Elfarran - Summon Stormwind City Guard on Hostile LOS'),
+('1498101','14981','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Elfarran - Summon Stormwind City Guard on Aggro'),
 -- Lady Hoteshem  
-('1500801','15008','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lady Hoteshem - Summon Stormwind City Guard on Hostile LOS'),
+('1500801','15008','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lady Hoteshem - Summon Stormwind City Guard on Aggro'),
 -- Jesper (15310) - NSR
 -- Elder Hammershout (15562) - NSR
 -- Auctioneer Jaxon  
-('1565901','15659','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Auctioneer Jaxon - Summon Stormwind City Guard on Hostile LOS'),
+('1565901','15659','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Auctioneer Jaxon - Summon Stormwind City Guard on Aggro'),
 -- Master Sergeant Maclure  
-('1570801','15708','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Master Sergeant Maclure - Summon Stormwind City Guard on Hostile LOS'),
+('1570801','15708','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Master Sergeant Maclure - Summon Stormwind City Guard on Aggro'),
 -- Officer Maloof  
-('1576601','15766','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Officer Maloof - Summon Stormwind City Guard on Hostile LOS'),
+('1576601','15766','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Officer Maloof - Summon Stormwind City Guard on Aggro'),
 -- Lunar Festival Emissary (15892) - NSR
 -- Lunar Festival Harbinger (15895) - NSR
 -- Colara Dean
-('1600201','16002','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Colara Dean - Summon Stormwind City Guard on Hostile LOS'),
+('1600201','16002','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Colara Dean - Summon Stormwind City Guard on Aggro'),
 -- Lieutenant Jocryn Heldric  
-('1600501','16005','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Lieutenant Jocryn Heldric - Summon Stormwind City Guard on Hostile LOS'),
+('1600501','16005','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lieutenant Jocryn Heldric - Summon Stormwind City Guard on Aggro'),
 -- Kwee Q. Peddlefeet (16075) - NSR
 -- Aristan Mottar  
-('1610501','16105','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Aristan Mottar - Summon Stormwind City Guard on Hostile LOS'),
+('1610501','16105','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Aristan Mottar - Summon Stormwind City Guard on Aggro'),
 -- Evert Sorisam  
-('1610601','16106','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Evert Sorisam - Summon Stormwind City Guard on Hostile LOS'),
+('1610601','16106','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Evert Sorisam - Summon Stormwind City Guard on Aggro'),
 -- Argent Recruiter      
 ('1624101','16241','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Argent Recruiter - Random Laugh or Cry Emote'),
 ('1624102','16241','1','0','100','1','5000','25000','10000','30000','5','1','0','0','0','0','0','0','0','0','0','0','Argent Recruiter - Talk Emote OOC'),
@@ -5637,9 +5637,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lieutenant Orrin (16478) - NSR
 -- Argent Quartermaster (16786) - NSR
 -- Emissary Taluun  
-('1710301','17103','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Emissary Taluun - Summon Stormwind City Guard on Hostile LOS'),
+('1710301','17103','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Emissary Taluun - Summon Stormwind City Guard on Aggro'),
 -- Squire Rowe  
-('1780401','17804','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Squire Rowe - Summon Stormwind City Guard on Hostile LOS'),
+('1780401','17804','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Squire Rowe - Summon Stormwind City Guard on Aggro'),
 -- Human Commoner (18927) - NSR
 
 
@@ -7021,354 +7021,354 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Undercity
 -- =========
 -- Dan Golthas
-('22301','223','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Dan Golthas - Summon Deathguard Elite on Hostile LOS'),
+('22301','223','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Dan Golthas - Summon Deathguard Elite on Aggro'),
 -- Grizzle Halfmane
 ('34701','347','9','0','100','1','0','5','8000','11000','11','15284','1','0','0','0','0','0','0','0','0','0','Grizzle Halfmane - Cast Cleave'),
 ('34702','347','0','0','100','1','7000','11000','9000','12000','11','16856','4','1','0','0','0','0','0','0','0','0','Grizzle Halfmane - Cast Mortal Strike'),
 ('34703','347','0','0','100','1','10000','14000','7000','14000','11','13736','0','0','0','0','0','0','0','0','0','0','Grizzle Halfmane - Cast Whirlwind'),
 ('34704','347','0','0','100','1','15000','18000','18000','21000','11','19134','4','1','0','0','0','0','0','0','0','0','Grizzle Halfmane - Cast Frightening Shout'),
 -- Bethor Iceshard      
-('149801','1498','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Bethor Iceshard - Summon Deathguard Elite on Hostile LOS'),
+('149801','1498','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Bethor Iceshard - Summon Deathguard Elite on Aggro'),
 -- Raleigh Andrean      
-('205001','2050','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Raleigh Andrean - Summon Deathguard Elite on Hostile LOS'),
+('205001','2050','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Raleigh Andrean - Summon Deathguard Elite on Aggro'),
 -- Master Apothecary Faranell      
-('205501','2055','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Master Apothecary Faranell - Summon Deathguard Elite on Hostile LOS'),
+('205501','2055','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Master Apothecary Faranell - Summon Deathguard Elite on Aggro'),
 -- Sharlindra      
-('222701','2227','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Sharlindra - Summon Deathguard Elite on Hostile LOS'),
+('222701','2227','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sharlindra - Summon Deathguard Elite on Aggro'),
 -- Andrew Brownell      
-('230801','2308','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Andrew Brownell - Summon Deathguard Elite on Hostile LOS'),
+('230801','2308','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Andrew Brownell - Summon Deathguard Elite on Aggro'),
 -- Randolph Montague      
-('245801','2458','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Randolph Montague - Summon Deathguard Elite on Hostile LOS'),
+('245801','2458','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Randolph Montague - Summon Deathguard Elite on Aggro'),
 -- Mortimer Montague      
-('245901','2459','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Mortimer Montague - Summon Deathguard Elite on Hostile LOS'),
+('245901','2459','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Mortimer Montague - Summon Deathguard Elite on Aggro'),
 -- Lexington Mortaim      
-('249201','2492','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Lexington Mortaim - Summon Deathguard Elite on Hostile LOS'),
+('249201','2492','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Lexington Mortaim - Summon Deathguard Elite on Aggro'),
 -- Lucian Fenner      
-('279901','2799','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Lucian Fenner - Summon Deathguard Elite on Hostile LOS'),
+('279901','2799','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Lucian Fenner - Summon Deathguard Elite on Aggro'),
 -- Susan Tillinghast      
-('280201','2802','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Susan Tillinghast - Summon Deathguard Elite on Hostile LOS'),
+('280201','2802','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Susan Tillinghast - Summon Deathguard Elite on Aggro'),
 -- Kurden Bloodclaw
 ('280401','2804','9','0','100','1','0','5','8000','11000','11','15284','1','0','0','0','0','0','0','0','0','0','Kurden Bloodclaw - Cast Cleave'),
 ('280402','2804','0','0','100','1','7000','11000','9000','12000','11','16856','4','1','0','0','0','0','0','0','0','0','Kurden Bloodclaw - Cast Mortal Strike'),
 ('280403','2804','0','0','100','1','10000','14000','7000','14000','11','13736','0','0','0','0','0','0','0','0','0','0','Kurden Bloodclaw - Cast Whirlwind'),
 ('280404','2804','0','0','100','1','15000','18000','18000','21000','11','19134','4','1','0','0','0','0','0','0','0','0','Kurden Bloodclaw - Cast Frightening Shout'),
 -- Keeper Bel'dugur      
-('293401','2934','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Keeper Bel\'dugur - Summon Deathguard Elite on Hostile LOS'),
+('293401','2934','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Keeper Bel\'dugur - Summon Deathguard Elite on Aggro'),
 -- Lordaeron Citizen (3617) - NSR
 -- Genavie Callow      
-('448601','4486','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Genavie Callow - Summon Deathguard Elite on Hostile LOS'),
+('448601','4486','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Genavie Callow - Summon Deathguard Elite on Aggro'),
 -- Parqual Fintallas (4488) - npc_parqual_fintallas 
 -- William Montague      
-('454901','4549','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','William Montague - Summon Deathguard Elite on Hostile LOS'),
+('454901','4549','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','William Montague - Summon Deathguard Elite on Aggro'),
 -- Ophelia Montague      
-('455001','4550','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Ophelia Montague - Summon Deathguard Elite on Hostile LOS'),
+('455001','4550','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Ophelia Montague - Summon Deathguard Elite on Aggro'),
 -- Michael Garrett
 ('455101','4551','4','0','100','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Michael Garrett - Summon Enraged Felbat on Aggro'),
 -- Eunice Burch      
-('455201','4552','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Eunice Burch - Summon Deathguard Elite on Hostile LOS'),
+('455201','4552','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Eunice Burch - Summon Deathguard Elite on Aggro'),
 -- Ronald Burch      
-('455301','4553','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Ronald Burch - Summon Deathguard Elite on Hostile LOS'),
+('455301','4553','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Ronald Burch - Summon Deathguard Elite on Aggro'),
 -- Tawny Grisette      
-('455401','4554','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Tawny Grisette - Summon Deathguard Elite on Hostile LOS'),
+('455401','4554','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Tawny Grisette - Summon Deathguard Elite on Aggro'),
 -- Eleanor Rusk      
-('455501','4555','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Eleanor Rusk - Summon Deathguard Elite on Hostile LOS'),
+('455501','4555','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Eleanor Rusk - Summon Deathguard Elite on Aggro'),
 -- Gordon Wendham      
-('455601','4556','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Gordon Wendham - Summon Deathguard Elite on Hostile LOS'),
+('455601','4556','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gordon Wendham - Summon Deathguard Elite on Aggro'),
 -- Louis Warren      
-('455701','4557','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Louis Warren - Summon Deathguard Elite on Hostile LOS'),
+('455701','4557','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Louis Warren - Summon Deathguard Elite on Aggro'),
 -- Lauren Newcomb      
-('455801','4558','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Lauren Newcomb - Summon Deathguard Elite on Hostile LOS'),
+('455801','4558','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Lauren Newcomb - Summon Deathguard Elite on Aggro'),
 -- Timothy Weldon      
-('455901','4559','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Timothy Weldon - Summon Deathguard Elite on Hostile LOS'),
+('455901','4559','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Timothy Weldon - Summon Deathguard Elite on Aggro'),
 -- Walter Ellingson      
-('456001','4560','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Walter Ellingson - Summon Deathguard Elite on Hostile LOS'),
+('456001','4560','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Walter Ellingson - Summon Deathguard Elite on Aggro'),
 -- Daniel Bartlett      
-('456101','4561','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Daniel Bartlett - Summon Deathguard Elite on Hostile LOS'),
+('456101','4561','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Daniel Bartlett - Summon Deathguard Elite on Aggro'),
 -- Thomas Mordan      
-('456201','4562','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Thomas Mordan - Summon Deathguard Elite on Hostile LOS'),
+('456201','4562','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Thomas Mordan - Summon Deathguard Elite on Aggro'),
 -- Kaal Soulreaper      
-('456301','4563','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Kaal Soulreaper - Summon Deathguard Elite on Hostile LOS'),
+('456301','4563','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Kaal Soulreaper - Summon Deathguard Elite on Aggro'),
 -- Luther Pickman      
-('456401','4564','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Luther Pickman - Summon Deathguard Elite on Hostile LOS'),
+('456401','4564','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Luther Pickman - Summon Deathguard Elite on Aggro'),
 -- Richard Kerwin      
-('456501','4565','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Richard Kerwin - Summon Deathguard Elite on Hostile LOS'),
+('456501','4565','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Richard Kerwin - Summon Deathguard Elite on Aggro'),
 -- Kaelystia Hatebringer      
-('456601','4566','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Kaelystia Hatebringer - Summon Deathguard Elite on Hostile LOS'),
+('456601','4566','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Kaelystia Hatebringer - Summon Deathguard Elite on Aggro'),
 -- Pierce Shackleton      
-('456701','4567','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Pierce Shackleton - Summon Deathguard Elite on Hostile LOS'),
+('456701','4567','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Pierce Shackleton - Summon Deathguard Elite on Aggro'),
 -- Anastasia Hartwell      
-('456801','4568','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Anastasia Hartwell - Summon Deathguard Elite on Hostile LOS'),
+('456801','4568','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Anastasia Hartwell - Summon Deathguard Elite on Aggro'),
 -- Charles Seaton      
-('456901','4569','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Charles Seaton - Summon Deathguard Elite on Hostile LOS'),
+('456901','4569','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Charles Seaton - Summon Deathguard Elite on Aggro'),
 -- Sydney Upton      
-('457001','4570','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Sydney Upton - Summon Deathguard Elite on Hostile LOS'),
+('457001','4570','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sydney Upton - Summon Deathguard Elite on Aggro'),
 -- Morley Bates      
-('457101','4571','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Morley Bates - Summon Deathguard Elite on Hostile LOS'),
+('457101','4571','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Morley Bates - Summon Deathguard Elite on Aggro'),
 -- Silas Zimmer      
-('457201','4572','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Silas Zimmer - Summon Deathguard Elite on Hostile LOS'),
+('457201','4572','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Silas Zimmer - Summon Deathguard Elite on Aggro'),
 -- Armand Cromwell      
-('457301','4573','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Armand Cromwell - Summon Deathguard Elite on Hostile LOS'),
+('457301','4573','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Armand Cromwell - Summon Deathguard Elite on Aggro'),
 -- Lizbeth Cromwell      
-('457401','4574','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Lizbeth Cromwell - Summon Deathguard Elite on Hostile LOS'),
+('457401','4574','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Lizbeth Cromwell - Summon Deathguard Elite on Aggro'),
 -- Hannah Akeley      
-('457501','4575','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Hannah Akeley - Summon Deathguard Elite on Hostile LOS'),
+('457501','4575','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Hannah Akeley - Summon Deathguard Elite on Aggro'),
 -- Josef Gregorian      
-('457601','4576','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Josef Gregorian - Summon Deathguard Elite on Hostile LOS'),
+('457601','4576','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Josef Gregorian - Summon Deathguard Elite on Aggro'),
 -- Millie Gregorian      
-('457701','4577','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Millie Gregorian - Summon Deathguard Elite on Hostile LOS'),
+('457701','4577','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Millie Gregorian - Summon Deathguard Elite on Aggro'),
 -- Josephine Lister      
-('457801','4578','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Josephine Lister - Summon Deathguard Elite on Hostile LOS'),
+('457801','4578','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Josephine Lister - Summon Deathguard Elite on Aggro'),
 -- Lucille Castleton      
-('458001','4580','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Lucille Castleton - Summon Deathguard Elite on Hostile LOS'),
+('458001','4580','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Lucille Castleton - Summon Deathguard Elite on Aggro'),
 -- Salazar Bloch      
-('458101','4581','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Salazar Bloch - Summon Deathguard Elite on Hostile LOS'),
+('458101','4581','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Salazar Bloch - Summon Deathguard Elite on Aggro'),
 -- Carolyn Ward 
-('458201','4582','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Carolyn Ward - Summon Deathguard Elite on Hostile LOS'),
+('458201','4582','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Carolyn Ward - Summon Deathguard Elite on Aggro'),
 -- Miles Dexter (4583) - npc_rogue_trainer 
 -- Gregory Charles      
-('458401','4584','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Gregory Charles - Summon Deathguard Elite on Hostile LOS'),
+('458401','4584','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gregory Charles - Summon Deathguard Elite on Aggro'),
 -- Ezekiel Graves      
-('458501','4585','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Ezekiel Graves - Summon Deathguard Elite on Hostile LOS'),
+('458501','4585','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Ezekiel Graves - Summon Deathguard Elite on Aggro'),
 -- Graham Van Talen      
-('458601','4586','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Graham Van Talen - Summon Deathguard Elite on Hostile LOS'),
+('458601','4586','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Graham Van Talen - Summon Deathguard Elite on Aggro'),
 -- Elizabeth Van Talen      
-('458701','4587','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Elizabeth Van Talen - Summon Deathguard Elite on Hostile LOS'),
+('458701','4587','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Elizabeth Van Talen - Summon Deathguard Elite on Aggro'),
 -- Arthur Moore      
-('458801','4588','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Arthur Moore - Summon Deathguard Elite on Hostile LOS'),
+('458801','4588','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Arthur Moore - Summon Deathguard Elite on Aggro'),
 -- Joseph Moore      
-('458901','4589','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Joseph Moore - Summon Deathguard Elite on Hostile LOS'),
+('458901','4589','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Joseph Moore - Summon Deathguard Elite on Aggro'),
 -- Jonathan Chambers      
-('459001','4590','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Jonathan Chambers - Summon Deathguard Elite on Hostile LOS'),
+('459001','4590','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Jonathan Chambers - Summon Deathguard Elite on Aggro'),
 -- Mary Edras      
-('459101','4591','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Mary Edras - Summon Deathguard Elite on Hostile LOS'),
+('459101','4591','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Mary Edras - Summon Deathguard Elite on Aggro'),
 -- Nathaniel Steenwick      
-('459201','4592','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Nathaniel Steenwick - Summon Deathguard Elite on Hostile LOS'),
+('459201','4592','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Nathaniel Steenwick - Summon Deathguard Elite on Aggro'),
 -- Christoph Walker      
-('459301','4593','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Christoph Walker - Summon Deathguard Elite on Hostile LOS'),
+('459301','4593','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Christoph Walker - Summon Deathguard Elite on Aggro'),
 -- Angela Curthas      
-('459401','4594','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Angela Curthas - Summon Deathguard Elite on Hostile LOS'),
+('459401','4594','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Angela Curthas - Summon Deathguard Elite on Aggro'),
 -- Baltus Fowler      
-('459501','4595','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Baltus Fowler - Summon Deathguard Elite on Hostile LOS'),
+('459501','4595','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Baltus Fowler - Summon Deathguard Elite on Aggro'),
 -- James Van Brunt      
-('459601','4596','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','James Van Brunt - Summon Deathguard Elite on Hostile LOS'),
+('459601','4596','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','James Van Brunt - Summon Deathguard Elite on Aggro'),
 -- Samuel Van Brunt      
-('459701','4597','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Samuel Van Brunt - Summon Deathguard Elite on Hostile LOS'),
+('459701','4597','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Samuel Van Brunt - Summon Deathguard Elite on Aggro'),
 -- Brom Killian      
-('459801','4598','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Brom Killian - Summon Deathguard Elite on Hostile LOS'),
+('459801','4598','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Brom Killian - Summon Deathguard Elite on Aggro'),
 -- Sarah Killian      
-('459901','4599','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Sarah Killian - Summon Deathguard Elite on Hostile LOS'),
+('459901','4599','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sarah Killian - Summon Deathguard Elite on Aggro'),
 -- Geoffrey Hartwell      
-('460001','4600','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Geoffrey Hartwell - Summon Deathguard Elite on Hostile LOS'),
+('460001','4600','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Geoffrey Hartwell - Summon Deathguard Elite on Aggro'),
 -- Francis Eliot      
-('460101','4601','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Francis Eliot - Summon Deathguard Elite on Hostile LOS'),
+('460101','4601','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Francis Eliot - Summon Deathguard Elite on Aggro'),
 -- Benijah Fenner      
-('460201','4602','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Benijah Fenner - Summon Deathguard Elite on Hostile LOS'),
+('460201','4602','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Benijah Fenner - Summon Deathguard Elite on Aggro'),
 -- Nicholas Atwood      
-('460301','4603','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Nicholas Atwood - Summon Deathguard Elite on Hostile LOS'),
+('460301','4603','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Nicholas Atwood - Summon Deathguard Elite on Aggro'),
 -- Abigail Sawyer      
-('460401','4604','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Abigail Sawyer - Summon Deathguard Elite on Hostile LOS'),
+('460401','4604','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Abigail Sawyer - Summon Deathguard Elite on Aggro'),
 -- Basil Frye      
-('460501','4605','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Basil Frye - Summon Deathguard Elite on Hostile LOS'),
+('460501','4605','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Basil Frye - Summon Deathguard Elite on Aggro'),
 -- Aelthalyste      
-('460601','4606','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Aelthalyste - Summon Deathguard Elite on Hostile LOS'),
+('460601','4606','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Aelthalyste - Summon Deathguard Elite on Aggro'),
 -- Father Lankester      
-('460701','4607','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Father Lankester - Summon Deathguard Elite on Hostile LOS'),
+('460701','4607','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Father Lankester - Summon Deathguard Elite on Aggro'),
 -- Father Lazarus 4608 (HAS ABILITIES - BUT NOT A BOSS - UNKNOWN WHAT THIS NPC DOES)     
 -- Doctor Marsh      
-('460901','4609','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Doctor Marsh - Summon Deathguard Elite on Hostile LOS'),
+('460901','4609','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Doctor Marsh - Summon Deathguard Elite on Aggro'),
 -- Algernon      
-('461001','4610','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Algernon - Summon Deathguard Elite on Hostile LOS'),
+('461001','4610','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Algernon - Summon Deathguard Elite on Aggro'),
 -- Doctor Herbert Halsey      
-('461101','4611','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Doctor Herbert Halsey - Summon Deathguard Elite on Hostile LOS'),
+('461101','4611','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Doctor Herbert Halsey - Summon Deathguard Elite on Aggro'),
 -- Boyle      
-('461201','4612','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Boyle - Summon Deathguard Elite on Hostile LOS'),
+('461201','4612','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Boyle - Summon Deathguard Elite on Aggro'),
 -- Christopher Drakul      
-('461301','4613','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Christopher Drakul - Summon Deathguard Elite on Hostile LOS'),
+('461301','4613','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Christopher Drakul - Summon Deathguard Elite on Aggro'),
 -- Martha Alliestar      
-('461401','4614','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Martha Alliestar - Summon Deathguard Elite on Hostile LOS'),
+('461401','4614','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Martha Alliestar - Summon Deathguard Elite on Aggro'),
 -- Katrina Alliestar      
-('461501','4615','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Katrina Alliestar - Summon Deathguard Elite on Hostile LOS'),
+('461501','4615','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Katrina Alliestar - Summon Deathguard Elite on Aggro'),
 -- Lavinia Crowe      
-('461601','4616','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Lavinia Crowe - Summon Deathguard Elite on Hostile LOS'),
+('461601','4616','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Lavinia Crowe - Summon Deathguard Elite on Aggro'),
 -- Thaddeus Webb      
-('461701','4617','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Thaddeus Webb - Summon Deathguard Elite on Hostile LOS'),
+('461701','4617','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Thaddeus Webb - Summon Deathguard Elite on Aggro'),
 -- Felicia Doan      
-('477501','4775','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Felicia Doan - Summon Deathguard Elite on Hostile LOS'),
+('477501','4775','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Felicia Doan - Summon Deathguard Elite on Aggro'),
 -- Edward Remington      
-('505201','5052','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Edward Remington - Summon Deathguard Elite on Hostile LOS'),
+('505201','5052','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Edward Remington - Summon Deathguard Elite on Aggro'),
 -- Merill Pleasance      
-('519001','5190','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Merill Pleasance - Summon Deathguard Elite on Hostile LOS'),
+('519001','5190','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Merill Pleasance - Summon Deathguard Elite on Aggro'),
 -- Apothecary Zinge      
-('520401','5204','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Apothecary Zinge - Summon Deathguard Elite on Hostile LOS'),
+('520401','5204','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Apothecary Zinge - Summon Deathguard Elite on Aggro'),
 -- Undercity Guardian (5624) - guard_undercity 
 -- Patrick Garrett      
-('565101','5651','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Patrick Garrett - Summon Deathguard Elite on Hostile LOS'),
+('565101','5651','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Patrick Garrett - Summon Deathguard Elite on Aggro'),
 -- Undercity Practice Dummy (5652) - NSR
 -- Tyler (5653) - NSR
 -- Edward (5654) - NSR
 -- Robert Gossom      
-('565501','5655','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Robert Gossom - Summon Deathguard Elite on Hostile LOS'),
+('565501','5655','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Robert Gossom - Summon Deathguard Elite on Aggro'),
 ('565502','5655','1','0','100','1','1000','2000','2000','4000','10','4','21','22','0','0','0','0','0','0','0','0','Robert Gossom - OOC Random Emote'),
 -- Richard Van Brunt      
-('565601','5656','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Richard Van Brunt - Summon Deathguard Elite on Hostile LOS'),
+('565601','5656','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Richard Van Brunt - Summon Deathguard Elite on Aggro'),
 ('565602','5656','1','0','100','1','1000','2000','2000','4000','10','4','21','22','0','0','0','0','0','0','0','0','Richard Van Brunt - OOC Random Emote'),
 -- Marla Fowler      
-('565701','5657','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Marla Fowler - Summon Deathguard Elite on Hostile LOS'),
+('565701','5657','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Marla Fowler - Summon Deathguard Elite on Aggro'),
 ('565702','5657','1','0','100','1','1000','2000','2000','4000','10','4','21','22','0','0','0','0','0','0','0','0','Marla Fowler - OOC Random Emote'),
 -- Chloe Curthas      
-('565801','5658','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Chloe Curthas - Summon Deathguard Elite on Hostile LOS'),
+('565801','5658','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Chloe Curthas - Summon Deathguard Elite on Aggro'),
 ('565802','5658','1','0','100','1','1000','2000','2000','4000','10','4','21','22','0','0','0','0','0','0','0','0','Chloe Curthas - OOC Random Emote'),
 -- Andrew Hartwell      
-('565901','5659','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Andrew Hartwell - Summon Deathguard Elite on Hostile LOS'),
+('565901','5659','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Andrew Hartwell - Summon Deathguard Elite on Aggro'),
 ('565902','5659','1','0','100','1','1000','2000','2000','4000','10','4','21','22','0','0','0','0','0','0','0','0','Andrew Hartwell - OOC Random Emote'),
 -- Riley Walker      
-('566001','5660','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Riley Walker - Summon Deathguard Elite on Hostile LOS'),
+('566001','5660','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Riley Walker - Summon Deathguard Elite on Aggro'),
 ('566002','5660','1','0','100','1','1000','2000','2000','4000','10','4','21','22','0','0','0','0','0','0','0','0','Riley Walker - OOC Random Emote'),
 -- Brother Malach  (There is also random says with Tyler and Edward fighting) - MAY REQUIRE ADDITIONAL SCRIPTING AS IT IS A SEQUENCE OF PRACTICE FIGHTING
-('566101','5661','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Brother Malach - Summon Deathguard Elite on Hostile LOS'),
+('566101','5661','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Brother Malach - Summon Deathguard Elite on Aggro'),
 -- Sergeant Houser      
-('566201','5662','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Sergeant Houser - Summon Deathguard Elite on Hostile LOS'),
+('566201','5662','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sergeant Houser - Summon Deathguard Elite on Aggro'),
 -- Travist Bosk      
-('566301','5663','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Travist Bosk - Summon Deathguard Elite on Hostile LOS'),
+('566301','5663','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Travist Bosk - Summon Deathguard Elite on Aggro'),
 -- Eldin Partridge      
-('566401','5664','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Eldin Partridge - Summon Deathguard Elite on Hostile LOS'),
+('566401','5664','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Eldin Partridge - Summon Deathguard Elite on Aggro'),
 -- Alyssa Blaye      
-('566501','5665','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Alyssa Blaye - Summon Deathguard Elite on Hostile LOS'),
+('566501','5665','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Alyssa Blaye - Summon Deathguard Elite on Aggro'),
 -- Gunther's Visage      
-('566601','5666','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Gunther\'s Visage - Summon Deathguard Elite on Hostile LOS'),
+('566601','5666','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gunther\'s Visage - Summon Deathguard Elite on Aggro'),
 -- Mattie Alred      
-('566801','5668','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Mattie Alred - Summon Deathguard Elite on Hostile LOS'),
+('566801','5668','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Mattie Alred - Summon Deathguard Elite on Aggro'),
 -- Helena Atwood      
-('566901','5669','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Helena Atwood - Summon Deathguard Elite on Hostile LOS'),
+('566901','5669','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Helena Atwood - Summon Deathguard Elite on Aggro'),
 -- Edrick Killian      
-('567001','5670','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Edrick Killian - Summon Deathguard Elite on Hostile LOS'),
+('567001','5670','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Edrick Killian - Summon Deathguard Elite on Aggro'),
 -- Carendin Halgar      
-('567501','5675','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Carendin Halgar - Summon Deathguard Elite on Hostile LOS'),
+('567501','5675','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Carendin Halgar - Summon Deathguard Elite on Aggro'),
 -- Summoned Voidwalker (5676) - SCRIPTED IN ANOTHER ZONE   
 -- Summoned Succubus
 ('567701','5677','0','0','100','1','5000','11000','9000','15000','11','16583','1','0','0','0','0','0','0','0','0','0','Summoned Succubus - Cast Shadow Shock'),
 -- Lysta Bancroft      
-('567901','5679','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Lysta Bancroft - Summon Deathguard Elite on Hostile LOS'),
+('567901','5679','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Lysta Bancroft - Summon Deathguard Elite on Aggro'),
 -- Male Human Captive (5680) - NSR     
 -- Female Human Captive (5681) - NSR     
 -- Captive Ghoul (5685) - NSR     
 -- Captive Zombie (5686) - NSR     
 -- Captive Abomination (5687) - NSR     
 -- Godrick Farsan      
-('569301','5693','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Godrick Farsan - Summon Deathguard Elite on Hostile LOS'),
+('569301','5693','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Godrick Farsan - Summon Deathguard Elite on Aggro'),
 -- Gerard Abernathy      
-('569601','5696','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Gerard Abernathy - Summon Deathguard Elite on Hostile LOS'),
+('569601','5696','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gerard Abernathy - Summon Deathguard Elite on Aggro'),
 -- Theresa (5697) - NSR
 -- Joanna Whitehall      
-('569801','5698','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Joanna Whitehall - Summon Deathguard Elite on Hostile LOS'),
+('569801','5698','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Joanna Whitehall - Summon Deathguard Elite on Aggro'),
 -- Leona Tharpe      
-('569901','5699','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Leona Tharpe - Summon Deathguard Elite on Hostile LOS'),
+('569901','5699','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Leona Tharpe - Summon Deathguard Elite on Aggro'),
 -- Samantha Shackleton (Series of Random Says Need To Be Scripted)     
-('570001','5700','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Samantha Shackleton - Summon Deathguard Elite on Hostile LOS'),
+('570001','5700','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Samantha Shackleton - Summon Deathguard Elite on Aggro'),
 -- Selina Pickman      
-('570101','5701','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Selina Pickman - Summon Deathguard Elite on Hostile LOS'),
+('570101','5701','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Selina Pickman - Summon Deathguard Elite on Aggro'),
 -- Jezelle Pruitt      
-('570201','5702','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Jezelle Pruitt - Summon Deathguard Elite on Hostile LOS'),
+('570201','5702','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Jezelle Pruitt - Summon Deathguard Elite on Aggro'),
 -- Winifred Kerwin      
-('570301','5703','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Winifred Kerwin - Summon Deathguard Elite on Hostile LOS'),
+('570301','5703','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Winifred Kerwin - Summon Deathguard Elite on Aggro'),
 -- Adrian Bartlett      
-('570401','5704','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Adrian Bartlett - Summon Deathguard Elite on Hostile LOS'),
+('570401','5704','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Adrian Bartlett - Summon Deathguard Elite on Aggro'),
 -- Victor Bartholomew      
-('570501','5705','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Victor Bartholomew - Summon Deathguard Elite on Hostile LOS'),
+('570501','5705','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Victor Bartholomew - Summon Deathguard Elite on Aggro'),
 -- Davitt Hickson      
-('570601','5706','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Davitt Hickson - Summon Deathguard Elite on Hostile LOS'),
+('570601','5706','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Davitt Hickson - Summon Deathguard Elite on Aggro'),
 -- Reginald Grimsford 
-('570701','5707','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Reginald Grimsford - Summon Deathguard Elite on Hostile LOS'),
+('570701','5707','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Reginald Grimsford - Summon Deathguard Elite on Aggro'),
 -- Jezelle's Felhunter (5726) - NSR
 -- Jezelle's Felsteed (5727) - NSR
 -- Jezelle's Succubus (5728) - NSR
 -- Jezelle's Voidwalker (5729) - NSR
 -- Jezelle's Imp (5730) - NSR
 -- Apothecary Vallia      
-('573101','5731','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Apothecary Vallia - Summon Deathguard Elite on Hostile LOS'),
+('573101','5731','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Apothecary Vallia - Summon Deathguard Elite on Aggro'),
 -- Apothecary Katrina      
-('573201','5732','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Apothecary Katrina - Summon Deathguard Elite on Hostile LOS'),
+('573201','5732','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Apothecary Katrina - Summon Deathguard Elite on Aggro'),
 -- Apothecary Lycanus      
-('573301','5733','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Apothecary Lycanus - Summon Deathguard Elite on Hostile LOS'),
+('573301','5733','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Apothecary Lycanus - Summon Deathguard Elite on Aggro'),
 -- Apothecary Keever (Series of Random Says Need To Be Scripted)  
-('573401','5734','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Apothecary Keever - Summon Deathguard Elite on Hostile LOS'),
+('573401','5734','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Apothecary Keever - Summon Deathguard Elite on Aggro'),
 -- Caged Human Female - (COMMENTS HAVE EMOTES FOR Apothecary Keever)
 ('573501','5735','1','0','100','1','3000','8000','5000','10000','10','18','20','0','0','0','0','0','0','0','0','0','Caged Human Female - Random Emotes'),
 -- Caged Human Male (5736) - (COMMENTS HAVE EMOTES FOR Apothecary Keever)     
 -- Caged Dwarf Male (5738) - (COMMENTS HAVE EMOTES FOR Apothecary Keever)  
 -- Cedric Stumpel      
-('574401','5744','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Cedric Stumpel - Summon Deathguard Elite on Hostile LOS'),
+('574401','5744','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Cedric Stumpel - Summon Deathguard Elite on Aggro'),
 -- Hepzibah Sedgewick      
-('574701','5747','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Hepzibah Sedgewick - Summon Deathguard Elite on Hostile LOS'),
+('574701','5747','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Hepzibah Sedgewick - Summon Deathguard Elite on Aggro'),
 -- Martha Strain      
-('575301','5753','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Martha Strain - Summon Deathguard Elite on Hostile LOS'),
+('575301','5753','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Martha Strain - Summon Deathguard Elite on Aggro'),
 -- Zane Bradford      
-('575401','5754','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Zane Bradford - Summon Deathguard Elite on Hostile LOS'),
+('575401','5754','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Zane Bradford - Summon Deathguard Elite on Aggro'),
 -- Mirelle Tremayne      
-('581901','5819','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Mirelle Tremayne - Summon Deathguard Elite on Hostile LOS'),
+('581901','5819','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Mirelle Tremayne - Summon Deathguard Elite on Aggro'),
 -- Gillian Moore      
-('582001','5820','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Gillian Moore - Summon Deathguard Elite on Hostile LOS'),
+('582001','5820','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gillian Moore - Summon Deathguard Elite on Aggro'),
 -- Sheldon Von Croy      
-('582101','5821','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Sheldon Von Croy - Summon Deathguard Elite on Hostile LOS'),
+('582101','5821','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sheldon Von Croy - Summon Deathguard Elite on Aggro'),
 -- Jorah Annison      
-('629301','6293','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Jorah Annison - Summon Deathguard Elite on Hostile LOS'),
+('629301','6293','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Jorah Annison - Summon Deathguard Elite on Aggro'),
 -- Sergeant Rutger      
-('639501','6395','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Sergeant Rutger - Summon Deathguard Elite on Hostile LOS'),
+('639501','6395','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sergeant Rutger - Summon Deathguard Elite on Aggro'),
 -- Velora Nitely      
-('641101','6411','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Velora Nitely - Summon Deathguard Elite on Hostile LOS'),
+('641101','6411','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Velora Nitely - Summon Deathguard Elite on Aggro'),
 -- Mennet Carkad      
-('646701','6467','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Mennet Carkad - Summon Deathguard Elite on Hostile LOS'),
+('646701','6467','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Mennet Carkad - Summon Deathguard Elite on Aggro'),
 -- Spirit Healer (6491) - NSR     
 -- Rift Spawn (6492) - NSR     
 -- Andron Gant      
-('652201','6522','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Andron Gant - Summon Deathguard Elite on Hostile LOS'),
+('652201','6522','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Andron Gant - Summon Deathguard Elite on Aggro'),
 -- Estelle Gendry      
-('656601','6566','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Estelle Gendry - Summon Deathguard Elite on Hostile LOS'),
+('656601','6566','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Estelle Gendry - Summon Deathguard Elite on Aggro'),
 -- Innkeeper Norman (6741) - npc_innkeeper 
 -- Killian Hagey      
-('708701','7087','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Killian Hagey - Summon Deathguard Elite on Hostile LOS'),
+('708701','7087','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Killian Hagey - Summon Deathguard Elite on Aggro'),
 -- Gothard Winslow      
-('729701','7297','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Gothard Winslow - Summon Deathguard Elite on Hostile LOS'),
+('729701','7297','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gothard Winslow - Summon Deathguard Elite on Aggro'),
 -- Alessandro Luca      
-('768301','7683','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Alessandro Luca - Summon Deathguard Elite on Hostile LOS'),
+('768301','7683','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Alessandro Luca - Summon Deathguard Elite on Aggro'),
 -- Oran Snakewrithe      
-('782501','7825','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Oran Snakewrithe - Summon Deathguard Elite on Hostile LOS'),
+('782501','7825','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Oran Snakewrithe - Summon Deathguard Elite on Aggro'),
 -- Chemist Cuely      
-('839001','8390','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Chemist Cuely - Summon Deathguard Elite on Hostile LOS'),
+('839001','8390','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Chemist Cuely - Summon Deathguard Elite on Aggro'),
 -- Thersa Windsong (8393) - NSR     
 -- Jeremiah Payson      
-('840301','8403','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Jeremiah Payson - Summon Deathguard Elite on Hostile LOS'),
+('840301','8403','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Jeremiah Payson - Summon Deathguard Elite on Aggro'),
 -- Auctioneer Leeka      
-('867201','8672','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Auctioneer Leeka - Summon Deathguard Elite on Hostile LOS'),
+('867201','8672','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Leeka - Summon Deathguard Elite on Aggro'),
 -- Auctioneer Epitwee      
-('872101','8721','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Auctioneer Epitwee - Summon Deathguard Elite on Hostile LOS'),
+('872101','8721','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Epitwee - Summon Deathguard Elite on Aggro'),
 -- Enraged Felbat (9521) - SCRIPTED IN ANOTHER ZONE
 -- Anya Maulray      
-('1005301','10053','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Anya Maulray - Summon Deathguard Elite on Hostile LOS'),
+('1005301','10053','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Anya Maulray - Summon Deathguard Elite on Aggro'),
 -- Chemist Fuely      
-('1013601','10136','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Chemist Fuely - Summon Deathguard Elite on Hostile LOS'),
+('1013601','10136','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Chemist Fuely - Summon Deathguard Elite on Aggro'),
 -- Royal Overseer Bauhaus      
-('1078101','10781','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Royal Overseer Bauhaus - Summon Deathguard Elite on Hostile LOS'),
+('1078101','10781','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Royal Overseer Bauhaus - Summon Deathguard Elite on Aggro'),
 -- Harbinger Balthazad      
-('1087901','10879','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Harbinger Balthazad - Summon Deathguard Elite on Hostile LOS'),
+('1087901','10879','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Harbinger Balthazad - Summon Deathguard Elite on Aggro'),
 -- Summoned Water Elemental (10955) - NSR
 -- Franklin Lloyd      
-('1103101','11031','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Franklin Lloyd - Summon Deathguard Elite on Hostile LOS'),
+('1103101','11031','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Franklin Lloyd - Summon Deathguard Elite on Aggro'),
 -- Doctor Martin Felben      
-('1104401','11044','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Doctor Martin Felben - Summon Deathguard Elite on Hostile LOS'),
+('1104401','11044','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Doctor Martin Felben - Summon Deathguard Elite on Aggro'),
 -- Victor Ward      
-('1104801','11048','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Victor Ward - Summon Deathguard Elite on Hostile LOS'),
+('1104801','11048','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Victor Ward - Summon Deathguard Elite on Aggro'),
 -- Rhiannon Davis      
-('1104901','11049','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Rhiannon Davis - Summon Deathguard Elite on Hostile LOS'),
+('1104901','11049','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Rhiannon Davis - Summon Deathguard Elite on Aggro'),
 -- Malcomb Wynn      
-('1106701','11067','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Malcomb Wynn - Summon Deathguard Elite on Hostile LOS'),
+('1106701','11067','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Malcomb Wynn - Summon Deathguard Elite on Aggro'),
 -- Ganoosh      
-('1175001','11750','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Ganoosh - Summon Deathguard Elite on Hostile LOS'),
+('1175001','11750','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Ganoosh - Summon Deathguard Elite on Aggro'),
 -- Theodore Griffs (11835) - NSR
 -- Archibald      
-('1187001','11870','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Archibald - Summon Deathguard Elite on Hostile LOS'),
+('1187001','11870','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Archibald - Summon Deathguard Elite on Aggro'),
 -- Nardstrum Copperpinch      
-('1342901','13429','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Nardstrum Copperpinch - Summon Deathguard Elite on Hostile LOS'),
+('1342901','13429','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Nardstrum Copperpinch - Summon Deathguard Elite on Aggro'),
 -- Jaycrue Copperpinch (13430) - NSR
 -- Royal Dreadguard
 ('1383901','13839','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Royal Dreadguard - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
@@ -7381,35 +7381,35 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1383908','13839','13','0','100','1','8000','12000','0','0','11','11972','6','1','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Shield Bash on Target Spell Casting'),
 ('1383909','13839','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','21','0','0','0','Royal Dreadguard - Set Phase to 1 and Set Melee Weapon Model and Prevent Combat Movement on Evade'),
 -- Seeker Cromwell      
-('1440201','14402','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Seeker Cromwell - Summon Deathguard Elite on Hostile LOS'),
+('1440201','14402','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Seeker Cromwell - Summon Deathguard Elite on Aggro'),
 -- Seeker Nahr      
-('1440301','14403','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Seeker Nahr - Summon Deathguard Elite on Hostile LOS'),
+('1440301','14403','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Seeker Nahr - Summon Deathguard Elite on Aggro'),
 -- Seeker Thompson      
-('1440401','14404','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Seeker Thompson - Summon Deathguard Elite on Hostile LOS'),
+('1440401','14404','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Seeker Thompson - Summon Deathguard Elite on Aggro'),
 -- Ralston Farnsley      
-('1472901','14729','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Ralston Farnsley - Summon Deathguard Elite on Hostile LOS'),
+('1472901','14729','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Ralston Farnsley - Summon Deathguard Elite on Aggro'),
 -- Defilers Emissary (14990) - NSR     
 -- Sir Malory Wheeler      
-('1500701','15007','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Sir Malory Wheeler - Summon Deathguard Elite on Hostile LOS'),
+('1500701','15007','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sir Malory Wheeler - Summon Deathguard Elite on Aggro'),
 -- Warsong Emissary (15105) - NSR     
 -- Auctioneer Stockton      
-('1567501','15675','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Auctioneer Stockton - Summon Deathguard Elite on Hostile LOS'),
+('1567501','15675','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Stockton - Summon Deathguard Elite on Aggro'),
 -- Auctioneer Yarly      
-('1567601','15676','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Auctioneer Yarly - Summon Deathguard Elite on Hostile LOS'),
+('1567601','15676','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Yarly - Summon Deathguard Elite on Aggro'),
 -- Auctioneer Cain      
-('1568201','15682','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Auctioneer Cain - Summon Deathguard Elite on Hostile LOS'),
+('1568201','15682','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Cain - Summon Deathguard Elite on Aggro'),
 -- Auctioneer Naxxremis      
-('1568301','15683','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Auctioneer Naxxremis - Summon Deathguard Elite on Hostile LOS'),
+('1568301','15683','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Naxxremis - Summon Deathguard Elite on Aggro'),
 -- Auctioneer Tricket      
-('1568401','15684','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Auctioneer Tricket - Summon Deathguard Elite on Hostile LOS'),
+('1568401','15684','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Tricket - Summon Deathguard Elite on Aggro'),
 -- Auctioneer Rhyker      
-('1568601','15686','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Auctioneer Rhyker - Summon Deathguard Elite on Hostile LOS'),
+('1568601','15686','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Rhyker - Summon Deathguard Elite on Aggro'),
 -- Winter Reveler
 ('1576001','15760','22','0','100','1','58','0','0','0','11','26218','6','32','0','0','0','0','0','0','0','0','Winter Reveler - Cast Mistletoe on Receive Kiss Emote'),
 -- Ambassador Sunsorrow      
-('1628701','16287','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Ambassador Sunsorrow - Summon Deathguard Elite on Hostile LOS'),
+('1628701','16287','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Ambassador Sunsorrow - Summon Deathguard Elite on Aggro'),
 -- Forsaken Commoner      
-('1917801','19178','10','0','100','0','0','15','0','0','12','7980','1','600000','0','0','0','0','0','0','0','0','Forsaken Commoner - Summon Deathguard Elite on Hostile LOS'),
+('1917801','19178','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Forsaken Commoner - Summon Deathguard Elite on Aggro'),
 
 
 
