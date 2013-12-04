@@ -21504,7 +21504,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-170','And stay down!','5781','1','0','639','0'),
 ('-171','Lapdogs, all of you!','5782','1','0','639','0'),
 ('-172','Fools! Our cause is righteous!','5783','1','0','639','0'),
-('-173','The Brotherhood will prevail!','5784','1','0','639','0'),
+('-173','The Brotherhood shall prevail!','5784','1','0','639','0'),
 ('-174','We\'re under attack! Avast ya swabs! Repel the invaders!','5777','1','0','646','0'),
 ('-175','You land lovers are tougher then I thought! I will need to improvise','5778','0','0','646','0'),
 ('-176','D\'ah! Now you\'re making me angry!','5779','0','0','646','0'),
