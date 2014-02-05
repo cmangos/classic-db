@@ -28,14 +28,14 @@ SET @GUID := 88839;
 
 -- Corridor leading to Outer Ring
 -- First pack: 1 Tomb Horror, 4 Dread Creeper
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 1, @GUID + 2, @GUID + 3, @GUID + 4);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 1, @GUID + 2, @GUID + 3, @GUID + 4);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 1, 15974, 533, 0, 0, 3215.53, -3801.41, 273.951, 2.60437, 25, 0, 0, 46361, 0, 0, 0),
 (@GUID + 2, 15974, 533, 0, 0, 3219.6, -3794.29, 273.948, 1.94464, 25, 0, 0, 46361, 0, 0, 0),
 (@GUID + 3, 15974, 533, 0, 0, 3228.22, -3790.97, 273.838, 0.901626, 25, 0, 0, 46361, 0, 0, 0),
 (@GUID + 4, 15974, 533, 0, 0, 3234.6, -3797.04, 273.798, 0.901626, 25, 0, 0, 46361, 0, 0, 0);
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 3, @GUID + 4, @GUID + 4, @GUID + 1);
+DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 3, @GUID + 4, @GUID + 4, @GUID + 1);
 INSERT INTO `creature_linking` VALUES
 (@GUID + 3, 127981, 3),
 (@GUID + 4, 127981, 3),
@@ -43,12 +43,12 @@ INSERT INTO `creature_linking` VALUES
 (@GUID + 1, 127981, 3);
 
 -- Second pack: 1 Tomb Horror, 4 Dread Creeper (already 1 Tomb Horror and 2 Dread Creepers)
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 5, @GUID + 6);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 5, @GUID + 6);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 6, 15974, 533, 0, 0, 3174.24, -3803.11, 273.95, 2.4308, 25, 0, 0, 46361, 0, 0, 0),
 (@GUID + 5, 15974, 533, 0, 0, 3181.05, -3796.11, 273.951, 2.12921, 25, 0, 0, 46361, 0, 0, 0);
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (88620, @GUID + 6, @GUID + 5, 88621);
+DELETE FROM `creature_linking` WHERE `guid` IN (88620, @GUID + 6, @GUID + 5, 88621);
 INSERT INTO `creature_linking` VALUES
 (88620, 88779, 3),
 (@GUID + 6, 88779, 3),
@@ -56,13 +56,13 @@ INSERT INTO `creature_linking` VALUES
 (88621, 88779, 3);
 
 -- Third pack: 1 Tomb Horror, 4 Dread Creeper (already 2 Dread Creepers)
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 7, @GUID + 8, @GUID + 9);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 7, @GUID + 8, @GUID + 9);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 9, 15979, 533, 0, 0, 3186.84, -3806.01, 273.951, 1.54722, 25, 0, 0, 110040, 0, 0, 0),
 (@GUID + 7, 15974, 533, 0, 0, 3145.08, -3789.51, 273.949, 5.36505, 25, 0, 0, 46361, 0, 0, 0),
 (@GUID + 8, 15974, 533, 0, 0, 3130.78, -3787.18, 273.943, 4.18695, 25, 0, 0, 46361, 0, 0, 0);
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (88623, @GUID + 7, 88622, @GUID + 8);
+DELETE FROM `creature_linking` WHERE `guid` IN (88623, @GUID + 7, 88622, @GUID + 8);
 INSERT INTO `creature_linking` VALUES
 (88623, 127982, 3),
 (@GUID + 7, 127982, 3),
@@ -71,7 +71,7 @@ INSERT INTO `creature_linking` VALUES
 
 -- First ring (bottom)
 -- Spirit of Naxxramas and patrolling ghouls
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 10, @GUID + 11, @GUID + 12, @GUID + 13, @GUID + 14, @GUID + 15);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 10, @GUID + 11, @GUID + 12, @GUID + 13, @GUID + 14, @GUID + 15);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 10, 16447, 533, 0, 0, 3106.93, -3914.09, 267.594, 3.20331, 25, 0, 0, 93736, 0, 0, 0),
 (@GUID + 11, 16447, 533, 0, 0, 3106.67, -3910.21, 267.594, 3.53318, 25, 0, 0, 93736, 0, 0, 0),
@@ -79,13 +79,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `positio
 (@GUID + 13, 16447, 533, 0, 0, 3100.27, -3915.21, 267.594, 3.08786, 25, 0, 0, 93736, 0, 0, 0),
 (@GUID + 14, 16449, 533, 0, 0, 3101.95, -3883.86, 267.594, 3.08786, 25, 5, 0, 65845, 0, 0, 1);
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 10, @GUID + 11, @GUID + 13);
+DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 10, @GUID + 11, @GUID + 13);
 INSERT INTO `creature_linking` VALUES
 (@GUID + 10, @GUID + 12, 515),
 (@GUID + 11, @GUID + 12, 515),
 (@GUID + 13, @GUID + 12, 515);
 
--- DELETE FROM `creature_movement` WHERE `id` = @GUID + 12;
+DELETE FROM `creature_movement` WHERE `id` = @GUID + 12;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (@GUID + 12, 1, 3100.52, -3911.52, 267.594, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.0478, 0, 0),
 (@GUID + 12, 2, 3080.83, -3903.46, 267.592, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.62369, 0, 0),
@@ -98,19 +98,19 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- Second ring (top)
 -- 2 groups of patrolling Plagued Gargoyles
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 16, @GUID + 17, @GUID + 18, @GUID + 19);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 16, @GUID + 17, @GUID + 18, @GUID + 19);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 16, 16446, 533, 0, 0, 3228.61, -3857.19, 286.758, 3.15697, 25, 0, 0, 252533, 12000, 0, 2),
 (@GUID + 17, 16446, 533, 0, 0, 3229.28, -3907.97, 287.094, 3.06744, 25, 0, 0, 252533, 12000, 0, 2),
 (@GUID + 19, 16446, 533, 0, 0, 3249.28, -3894.02, 294.661, 1.49428, 25, 0, 0, 252533, 12000, 0, 2),
 (@GUID + 18, 16446, 533, 0, 0, 3249.23, -3870.64, 294.661, 4.62802, 25, 0, 0, 252533, 12000, 0, 2);
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 17, @GUID + 18);
+DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 17, @GUID + 18);
 INSERT INTO `creature_linking` VALUES
 (@GUID + 17, @GUID + 16, 3),
 (@GUID + 18, @GUID + 19, 3);
 
--- DELETE FROM `creature_movement` WHERE `id` IN (@GUID + 16, @GUID + 17, @GUID + 18, @GUID + 19);
+DELETE FROM `creature_movement` WHERE `id` IN (@GUID + 16, @GUID + 17, @GUID + 18, @GUID + 19);
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (@GUID + 16, 1, 3229.08, -3857.86, 286.997, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.98732, 0, 0),
 (@GUID + 16, 2, 3175.79, -3901.93, 267.593, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.86383, 0, 0),
@@ -122,7 +122,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@GUID + 18, 2, 3249.24, -3893.88, 294.661, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.34034, 0, 0);
 
 -- Spirit of Naxxramas and patrolling ghouls
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 20, @GUID + 21, @GUID + 22, @GUID + 23, @GUID + 24);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 20, @GUID + 21, @GUID + 22, @GUID + 23, @GUID + 24);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 20, 16447, 533, 0, 0, 3286.14, -3887.51, 294.66, 1.60221, 25, 0, 0, 93736, 0, 0, 0),
 (@GUID + 21, 16447, 533, 0, 0, 3281.92, -3887.01, 294.66, 1.80249, 25, 0, 0, 93736, 0, 0, 0),
@@ -130,13 +130,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `positio
 (@GUID + 23, 16447, 533, 0, 0, 3285.97, -3882.85, 294.66, 1.62106, 25, 0, 0, 93736, 0, 0, 2),
 (@GUID + 24, 16449, 533, 0, 0, 3310, -3882.32, 294.662, 4.73124, 25, 5, 0, 65845, 0, 0, 1);
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 20, @GUID + 21, @GUID + 22);
+DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 20, @GUID + 21, @GUID + 22);
 INSERT INTO `creature_linking` VALUES
 (@GUID + 20, @GUID + 23, 515),
 (@GUID + 21, @GUID + 23, 515),
 (@GUID + 22, @GUID + 23, 515);
 
--- DELETE FROM `creature_movement` WHERE `id` = @GUID + 23;
+DELETE FROM `creature_movement` WHERE `id` = @GUID + 23;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (@GUID + 23, 1, 3284.89, -3882.03, 294.66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.40115, 0, 0),
 (@GUID + 23, 2, 3292.01, -3864.25, 294.66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.929909, 0, 0),
@@ -149,7 +149,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- Third ring (top)
 -- Spirit of Naxxramas and patrolling ghouls
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 25, @GUID + 26, @GUID + 27, @GUID + 28);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 25, @GUID + 26, @GUID + 27, @GUID + 28);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 25, 16447, 533, 0, 0, 3475.74, -3750.32, 294.66, 4.25686, 25, 0, 0, 93736, 0, 0, 0),
 (@GUID + 26, 16447, 533, 0, 0, 3479.1, -3751.97, 294.66, 4.25686, 25, 0, 0, 93736, 0, 0, 0),
@@ -157,13 +157,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `positio
 (@GUID + 28, 16447, 533, 0, 0, 3473.84, -3754.28, 294.66, 4.1689, 25, 0, 0, 93736, 0, 0, 2),
 (@GUID + 15, 16449, 533, 0, 0, 3453.53, -3739.18, 294.662, 1.97259, 25, 5, 0, 65845, 0, 0, 1);
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 25, @GUID + 26, @GUID + 27);
+DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 25, @GUID + 26, @GUID + 27);
 INSERT INTO `creature_linking` VALUES
 (@GUID + 25, @GUID + 28, 515),
 (@GUID + 26, @GUID + 28, 515),
 (@GUID + 27, @GUID + 28, 515);
 
--- DELETE FROM `creature_movement` WHERE `id` = @GUID + 28;
+DELETE FROM `creature_movement` WHERE `id` = @GUID + 28;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (@GUID + 28, 1, 3473.9, -3754.6, 294.66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.04009, 0, 0),
 (@GUID + 28, 2, 3453.54, -3765.24, 294.66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.01122, 0, 0),
@@ -175,7 +175,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@GUID + 28, 8, 3478.65, -3739.75, 294.66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.78072, 0, 0);
 
 -- 3 Plagued Deathhound
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 29, @GUID + 30, @GUID + 31);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 29, @GUID + 30, @GUID + 31);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 29, 16448, 533, 0, 0, 3406.41, -3778.99, 294.661, 4.0071, 25, 0, 0, 19500, 12000, 0, 0),
 (@GUID + 30, 16448, 533, 0, 0, 3410.38, -3782.37, 294.661, 4.0071, 25, 0, 0, 19500, 12000, 0, 0),
@@ -184,7 +184,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `positio
 
 -- Fourth ring (bottom)
 -- Spirit of Naxxramas and patrolling ghouls
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 32, @GUID + 33, @GUID + 34, @GUID + 35, @GUID + 36);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 32, @GUID + 33, @GUID + 34, @GUID + 35, @GUID + 36);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 32, 16447, 533, 0, 0, 3425.76, -3537.69, 267.594, 1.9773, 25, 0, 0, 93736, 0, 0, 0),  -- Plagued Ghoul
 (@GUID + 33, 16447, 533, 0, 0, 3429.05, -3537.64, 267.594, 1.9553, 25, 0, 0, 93736, 0, 0, 0),
@@ -192,13 +192,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `positio
 (@GUID + 35, 16447, 533, 0, 0, 3424.03, -3532.38, 267.594, 1.65685, 25, 0, 0, 93736, 0, 0, 0),
 (@GUID + 36, 16449, 533, 0, 0, 3453.54, -3530.66, 267.594, 1.9985, 25, 5, 0, 65845, 0, 0, 1);  -- Spirit of Naxxramas
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 32, @GUID + 33, @GUID + 35);
+DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 32, @GUID + 33, @GUID + 35);
 INSERT INTO `creature_linking` VALUES
 (@GUID + 32, @GUID + 34, 515),
 (@GUID + 33, @GUID + 34, 515),
 (@GUID + 35, @GUID + 34, 515);
 
--- DELETE FROM `creature_movement` WHERE `id` = @GUID + 34;
+DELETE FROM `creature_movement` WHERE `id` = @GUID + 34;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (@GUID + 34, 1, 3428.35, -3532.03, 267.594, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.42438, 0, 0),
 (@GUID + 34, 2, 3434.26, -3511.54, 267.592, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.51881, 0, 0),
@@ -210,20 +210,20 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@GUID + 34, 8, 3435.53, -3547.83, 267.592, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.21685, 0, 0);
 
 -- 4 Necro Stalkers patrolling across the four rooms
--- DELETE FROM `creature` WHERE `guid` IN (@GUID + 37, @GUID + 38, @GUID + 39, @GUID + 40);
+DELETE FROM `creature` WHERE `guid` IN (@GUID + 37, @GUID + 38, @GUID + 39, @GUID + 40);
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@GUID + 37, 16453, 533, 0, 0, 3458.38, -3553.3, 267.592, 4.74583, 25, 0, 0, 81178, 0, 0, 0),
 (@GUID + 38, 16453, 533, 0, 0, 3450.29, -3553.57, 267.592, 4.74583, 25, 0, 0, 81178, 0, 0, 0),
 (@GUID + 39, 16453, 533, 0, 0, 3450.6, -3562.83, 267.592, 4.74583, 25, 0, 0, 81178, 0, 0, 0),
 (@GUID + 40, 16453, 533, 0, 0, 3458.41, -3562.57, 267.592, 4.74583, 25, 0, 0, 81178, 0, 0, 2);
 
--- DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 37, @GUID + 38, @GUID + 39);
+DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 37, @GUID + 38, @GUID + 39);
 INSERT INTO `creature_linking` VALUES
 (@GUID + 37, @GUID + 40, 515),
 (@GUID + 38, @GUID + 40, 515),
 (@GUID + 39, @GUID + 40, 515);
 
--- DELETE FROM `creature_movement` WHERE `id` = @GUID + 40;
+DELETE FROM `creature_movement` WHERE `id` = @GUID + 40;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (@GUID + 40, 1, 3458.37, -3562.06, 267.592, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.57618, 0, 0),
 (@GUID + 40, 2, 3458.47, -3673.69, 293.56, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.77096, 0, 0),
