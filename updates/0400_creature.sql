@@ -35,7 +35,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `positio
 (@GUID + 3, 15974, 533, 0, 0, 3228.22, -3790.97, 273.838, 0.901626, 25, 0, 0, 46361, 0, 0, 0),
 (@GUID + 4, 15974, 533, 0, 0, 3234.6, -3797.04, 273.798, 0.901626, 25, 0, 0, 46361, 0, 0, 0);
 
-DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 3, @GUID + 4, @GUID + 4, @GUID + 1);
+DELETE FROM `creature_linking` WHERE `guid` IN (@GUID + 3, @GUID + 4, @GUID + 2, @GUID + 1);
 INSERT INTO `creature_linking` VALUES
 (@GUID + 3, 127981, 3),
 (@GUID + 4, 127981, 3),
