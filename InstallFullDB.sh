@@ -104,8 +104,8 @@ done
 echo .
 
 ## Full Database
-echo "Process classic database v1.2.1"
-$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_2_1_z2401.sql
+echo "Process classic database v1.3"
+$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_3_z2436.sql
 [[ $? != 0 ]] && exit 1
 
 ## Updates
@@ -123,8 +123,8 @@ else
 	echo "Updates applied"
 fi
 
-LAST_CORE_REV="2401"
-LAST_SD2_REV="2683"
+LAST_CORE_REV="2436"
+LAST_SD2_REV="2689"
 # process future release folders
 NEXT_MILESTONES="0.12.3 0.12.4"
 NEXT_SD2_MILESTONES="0.8 0.9"

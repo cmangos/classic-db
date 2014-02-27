@@ -1,0 +1,515 @@
+---------------------------------------------------------------------
+VERSION 1.3 (INCLUDES CHANGES FROM v1.2.1)
+---------------------------------------------------------------------
+
+-------------
+RAIDS
+-------------
+AZUREGOS
+Added waypoints for creature 6109 (Azuregos)
+Added waypoints for creature 15481 (Spirit of Azuregos)
+Added gossip menus for creatures 6109 (Azuregos) and 15481 (Spirit of Azuregos). Including gossip menu options for quest 8575 (Azuregos's Magical Ledger) for the Scepter of the Shifting Sands quest line (AQ Gates opening)
+
+LORD KAZZAK
+Added missing world drops from loot table of creature 12397 (Lord Kazzak)
+Moved waypoints for creature 12397 (Lord Kazzak) from creature_movement to creature_movement_template as this creature is unique
+
+NAXXRAMAS
+Updated scale of creature 16030 (Maggot) as they were way too big
+Added waypoint movement and paths for 3 patrols in Naxxramas Military Quarter:
+- Waypoints for the Deathknight Captains in first room
+- Waypoints for Shade of Naxxramas and the two Necro Knights in the first room
+- Waypoints for Deathknight Captain and the two Death Touched Warriors in the second room
+Removed Mana Points from Poisonous Skitterer
+Added gossip menu gossip script to creature 16381 (Archmage Tarsis) in Naxxramas, made it lie on the ground
+Change weapon of creature 16156 (Dark Touched Warrior) from axe to bucket.
+Fixed creature 16024 (Embalming Slime) in Naxxramas Construction Wing: Added random movement, fixed size
+Fixed texts for quest 9238 (Glacial Wrists) as they were wrong (different from the 13 others). New texts copied from other similar quest in same quest chain
+Fixed quests available only after 9233 Omarions Handbook
+Added cloud disease ability to creature 16017 (Patchwork Golem) in Naxxramas
+Added cloud disease ability to creature 16029 (Sludge Belcher) in Naxxramas
+Updated Naxxramas Military Sub-Boss Trigger level from 80 to 60
+Fixed rank of creatures involved in Gothic Fight because they were missing their Elite rank
+Removed the whitespace in "Death Knight" for creatures 16125 & 16148 as it was introduced in WotLK
+Fixed respawn time of creature 16861 (Death Lord) in Naxxramas
+Improved waypoint movement of creature 15931 (Grobbulus) in Naxxramas to make it spawn three creatures 16375 (Sewage Slime) instead of one.
+Make the creature 16375 (Sewage Slime) moves randomly and fixes its size
+Removed wrong spawns of creature 16375 (Sewage Slime): they are summoned by the script above
+Fixed creature 16146 (Deathknight) in Naxxramas not wielding its shield
+Removed spawns of creature 16290 (Fallout Slime) as they are spawned during the Grobbulus encounter
+Removed creatures of the left of the sewage room in Construct Quarter because there were none in Classic version
+Removed duplicate Sludge Belcher in embalming room in Construct Quarter
+Added missing patrolling Bile Retcher along the slime in Patchwerk room instead
+Changed first Bile Retcher patrolling in Patchwerk room to Sludge Belcher
+Linked the first group of Patchwork Golems
+Linked the abominations in right side of sewage room
+Linked the second group of Patchwork Golems (back of sewage room)
+Added waypoint movement and patrol to creatures in Naxxramas Construct Wing
+- Bile Retcher patrolling across the entrance and sewage room
+- Bile Retcher patrolling only in sewage room
+- Sludge Belcher patrolling in the back of the sewage room and in embalming room
+- Sludge Belcher patrolling in the embalming room
+- Bile Retcher patrolling along the slime
+- Sludge Belcher in first alcolve
+- Bile Retcher in middle alcolve
+- Bile Retcher in last alcolve
+Added AI scripts to creature 16573 (Crypt Guard) in Anub'Rehkan encounter in Naxxramas
+Reduced damage of creature 16698 (Corpse Scarab) because their damage level was for WotLK (about 2k) instead of the 400 it should be in Classic
+Fixed creature 16027 (Living Poison) as they were level 61 in Classic and created AI script to explode when near player
+Adjusted creature 16027 (Living Poison): the creatures are spread along three lines marked from the falling green slime and they cross the walkway one after the other before teleporting back to the beginning of the line. Related waypoint path are added
+Fixed gameobject 181126 (Anub'Rekhan Door): set data0 to 0 and state to 1 as this object should be closed at spawn instead of open: players have to open it in order to engage Anub'Rehkan
+Fixed groups and patrol of creature 15977 (Poisonous Skitter) in Naxxramas Spider Quarter
+Updated speed of creature 15977 as they should move much faster than speed = 1
+Adjusted groups of creatures 15977 because in Classic they were spread differently than in WotLK. They had their own group of 10 spawns: 2 static groups in the first room, one patrolling group in the first room and in corridor leading to Anub'Rehkan.
+Removed all creature 15977 (Poisonous Skitter) inherited from WotLK backport and not relevant to Classic / TBC
+Added patrolling group of ten creature 15977 (Poisonous Skitter)
+Removed group of spiders in a WotLK configuration
+Added missing group of creature 15977 (Poisonous Skitter)
+Added patrolling group of ten creature 15977 (Poisonous Skitter)
+Removed creatures 16022 (Surgical Assistant) as they should only be spawned in Construct Wing
+Added groups of creatures 15980 (Naxxramas Cultist) and 15981 (Naxxramas Acolyte)
+Added gossip menu, npc_texts, menu options, conditions and scripts for creature 16365 (Master Craftman Omarion) in Naxxramas Military Wing
+Fixed spell Arcane Explosion for creature 15981 (Naxxramas Acolyte) in Naxxramas Spider Wing
+Fixed nature aura of creature 16034 (Plague Beast) in Naxxramas Plague Wing. The spell 30110 should be cast at spawn and not only when entering combat
+Linked groups of creatures 15980 (Naxxramas Cultist) and 15981 (Naxxramas Acolyte) in Naxxramas Spider Wing.
+Improved trash mobs in Outer Ring of Naxxramas (for each wing)
+- Revamp trash mobs in the outer ring of Naxxramas Spider Wing
+- Removed placeholders and spawns backported from WotLK version
+- Added missing groups and spawns in outer ring
+- Added patrols
+Improved scripts for creature 16061 (Instructor Razuvious) in Naxxramas Military Wing to make him "instruct" one of its trainee (creature 16803)
+Improved attitude of creatures 16146 (Deaathknight) and 16803 (Deathknight Understudy) by updating their addon to make them look ready to combat
+Added generic emotes script for Deathknight Captains training Deathknights in Naxxramas Military Wing.
+Added generic emotes script for Deathknight Captains discussing with Deathknights in Naxxramas Military Wing.
+Added movement script to creature 16061 (Instructor Razuvious) to trigger attack emote of its trainees
+Fixed creature 15928 (Thaddius) flags to make it unattackable until first part of encounter is complete
+Fixed position of creature 15928 (Thaddius) because it was standing to close of the edge of the plateform to allow correct raid positionning
+Added script to creature 16400 (Toxic Tunnel) in Naxxramas Construct Wing to make the tunnel leading to Gluth as stinky and dangerous as it should be also fixed level of creature 16400 because it was level 80 instead of 61 like it should be in Classic
+Fixed speed of creatures 16451 (Deathknight Vindicator) and 16452 (Necro Knight Guardian) in Naxxramas Outer Ring, because they were patrolling far too quickly
+ 
+TEMPLE OF AHN'QIRAJ
+Added missing Temple of Ahn'Qiraj graveyard linked to graveyard at AQ gates
+
+-------------
+DUNGEONS INSTANCES
+-------------
+BLACKFATHOM DEEPS
+Updated respawn time of quest gameobject 13949 (Pitted Iron Chest) in Blackfathom Deeps as it should not despawned
+Removed equipment from creature 4789 (Fallenroot Rogue) in Blackfathom Deeps as they should fight bare hand instead of wielding shotgun that they try to use in melee combat...
+Spawned missing NPC 6729 (Morridune) in Blackfathom Deeps
+Updated scale of creatures 4810 (Twilight Reaver), 4812 (Twilight Loreseeker) and 4814 (Twilight Elementalist) in Blackfathom Deeps as they were bigger than other NPCs in the area
+Added missing creature addon for creature 4789 (Fallenroot Rogue) in Blackfathom Deeps to grant them stealth aura
+Added missing gossip menu option and script to creature 6729 (Morridune). He can now teleport Alliance players from Blackfathom Deeps to Darnassus
+
+BLACKROCK SPIRE
+Fixed Blackrock Spire fall out teleport
+Added missing fires, bonfires (entry to Beast's room), chairs and other gameobjects in Blackrock Spire
+Added missing spider eggs gameobjects in Blackrock Spire
+Spawned missing gameobjects Bijou's belongings
+Added various missing gameobjects in Blackrock Spire: chests, Door in Darkkisath room
+Updated position of fifth and sixth mosharu tablets
+Updated runes in Dragonspire Hall
+Hall of Blackhand Unforged Runic Breastplate aligned to stand 
+Adjusted Iron Dwarves runes in Blackrock Spire (Pyroguard Emberseer room) and removed duplicate runes
+Fixed missing female version of Scarshield Legion creatures in Blackrock Spire
+Fixed creature 10221 (Bloodaxe Worg Pup) size as they are far too small
+Added missing critters creature 2110 (Black rat) & creature 4076 (Roach) in Blackrock Spire
+Added spawns for:
+- creature 9044 (Scarshield Sentry)
+- creature 9045 (Scarshield Acolyte)
+- creature 9097 (Scarshield Legionnaire)
+- creature 9098 (Scarshield Spellbinder)
+- creature 9197 (Spirestone Battle Mage)
+- creature 9199 (Spirestone Enforcer)
+- creature 9216 (Spirestone Warlord)
+- creature 9257 (Scarshield Warlock)
+- creature 9258 (Scarshield Raider)
+- creature 9416 (Scarshield Worg)
+- creature 9583 (Bloodaxe Veteran)
+- creature 9692 (Bloodaxe Raider)
+- creature 9693 (Bloodaxe Evoker)
+- creature 9696 (Bloodaxe Worg)
+- creature 10799 (Warosh)
+Linked patrol in Blackrock Spire - lower part and added pathway
+- Scarshield Legionnaire entrance
+- 2 x Scarshield Legionnaire entrance
+- 2 x Scarshield Legionnaire Hordemar City
+Added patrol to creature 10799 (Warosh) in Blackrock Spire
+Fixed unit_flag of creature 9816 (Pyroguard Emberseer) in Blackrock Spire as it was set to 'passive' and could not be engaged, breaking the whole event and dungeon
+Removed one Scarshield Acolyte on top of entrance bridge
+Added addons to make some of the Scarshield Legionnaire in Blackrock Spire entrance sit
+Adjusted Scarshield Infiltrator position and made it kneel at spawn
+Added gossip menu to creature 10296 (Vaelan) and made it kneel at spawn
+Updated creature 10296 (Vaelan) to display gossip and stand idle (no random movement)
+Fixed drop chance of item 12219 (Unadorned Seal of Ascension) in  Blackrock Spire as it should drop without players having the quest and even when they have complete it
+Fixed factions of creatures in Blackrock Spire, many of them were wrong and obviously manually updated
+Fixed missing female version of Bloodaxe Legion creatures in Blackrock Spire
+Fixed missing female version of Blackhand Legion creatures in Blackrock Spire
+Updated Blackwing lair / UBRS reload at respawn exit to Blackrock Spire entrance
+Fixed missing female version of Firebrand Legion creatures in Blackrock Spire
+Removed a lot of placeholders or summoned creatures
+Added creatures:
+- Rage Talon Dragonspawn
+- Blackhand Dreadweaver
+- Blackhand Summoner
+- Blackhand Veteran
+- Rage Talon Flamescale
+- Blackhand Elite
+- Blackhand Assassin
+- Blackhand Iron Guard
+- Rage Talon Dragon Guard
+- Rage Talon Captain
+- Rage Talon Fire Tongue
+Link patrol in Blackrock Spire - upper part
+Added creature addon for some Blackhand Elite/Assassin in Blackrock Spire
+Added spawn of creature 10509 (Jed Runewatcher) in Blackrock Spire
+Set to rare rank of creature 10509 (Jed Runewatcher) in Blackrock Spire, added waypoint movement and put in a pool
+Improved a few creatures movements in Blackrock Spire entrance
+Removed spawn of creature 10776 (Finkle Einhorn) as it is spawned by script
+
+DIRE MAUL
+Modified faction of creature 11470 (Eldreth Sorcerer) and 11469 (Eldreth Seether) as it was wrongly set to Darnassus instead of being hostile to players
+Added equipment and movement waypoints to creature 14327 (Lethtendris)
+Linked creature 14349 (Pimbig) to creature 14327 (Lethtendris) to follow her and share aggro
+Modified size of object 177221 (Doors) in Dire Maul West as they were too big even coming through the roof of the courtyard above
+Changed timer of Dire Maul entrance doors and torches to close/reset within 5 seconds as they were staying open/active far too long
+
+GNOMEREGAN
+Added waypoint movement to creature 6228 (Dark Iron Ambassador)
+Added mana to creature 6228 (Dark Iron Ambassador)
+Added missing Dark Iron Ambassador (creature 6228), rare elite in Gnomeregan
+Updated drop chance of item 9279 (White Punch Card) in Gnomeregan to make it a 10% drop chance (source: UDB) This item was previously a 100% drop chance QUEST item. But, this is not a 100% drop chance and NOT a quest item as Horde players could also drop it while the related quest is 100% Alliance
+Added missing world drop to the following boss creatures  in Gnomeregan:
+- 7361 (Grubbis)
+- 7800 (Mekgineer Thermaplugg)
+- 6228 (Dark Iron Ambassador)
+- 6229 (Crowd Pummeler 9-60)
+- 6235 (Electrocutioner 6000)
+- 7079 (Viscous Fallout)
+Set to rare rank of creature 6228 (Dark Iron Ambassador) in Gnomeregan
+Put creature 6228 (Dark Iron Ambassador) in pool as he is a rare creature and should not spawn all the time
+
+RAZORFEN DOWNS
+Set to rare rank of creature 7354 (Ragglesnout) in Razorfen Downs
+Put creature 7354 (Ragglesnout) in pool as he is a rare creature and should not spawn all the time
+
+RAZORFEN KRAUL
+Spawned missing creature 4842 (Earthcaller Halmgar) in Razorfen Kraul, fixed faction, mana and armor
+Fixed level of creature 4421 (Charlga Razorflank) in Razorfen Kraul as level was too high (37 instead of 33)
+Removed item 5876 (Blueleaf Tuber) from creature loot tables in Razorfen Kraul instance as it is looted from gameobject 20920 (Blueleaf Tuber)
+Linked boss creature 4428 (Death Speaker Jargba) to its two guards creatures
+Removed spawn of creatures 4528 (Stone Rumbler), 4526 (Wind Howler), 4535 (Tamed Battleboar), 4534 (Tamed Hyena) Because those creatures are summoned and already handled by ACID
+Switched waypoint movement patrol of one of the removed Stone Rumbler to its Quilboar summoner as they should use the same (the Stone Rumbler is the one summoned by this NPC)
+Updated radius and name of GO 300011 (Nearby Tubers) used in quest 1221 (Blueleaf Tubers)
+Removed wrong faction of GO 20920 (Blueleaf Tuber) as it was Undead only
+Added missing spell target GOs in Razorfen Kraul for spell 6918 (Summon Snufflenose)
+Changed number of charge of quest item 5880 (Crate With Holes) as it should only have 5 charges
+Set to rare rank of creatures 4842 (Earthcaller Halmgar), 4425 (Blind Hunter) & 4438 (Razorfen Spearhide)
+Put creatures 4842 (Earthcaller Halmgar), 4425 (Blind Hunter) in pools as they are rare creatures and should not spawn all the time
+Changed faction of creature 4625 (Death's Head Ward Keeper) to 154 (Quillboar Death's Head) as they should be hostile to players in Razorfen Kraul
+
+SCARLET MONASTERY
+Removed spawns of creature 575 (Fire Elemental) in Scarlet Monastery because they are summoned
+Sets spawntime of Mythology of the Titans to 50 seconds down from 5 minutes.
+
+-------------
+GAMEOBJECTS
+-------------
+Update the following GameObject's respawn timer: 271, 104564, 104569, 104574
+Rename Snake Bloom Firework to Snake Burst Firework
+Removed a duplicate 'The Park' sign in Stormwind
+Removed a duplicate Cooking Table in Razor Hill
+Removed duplicate GO 2098 (Cathedral Square) sign as it was duplicate
+Updated radius of gameobject 103661 (Witherbark Totem Bundle Trap) in order to fix quest 1984 (Items of Power) by allowing players to trigger it. This fixes the quest and make it completable. However, the quest is not blizzlike as the gameobject should cast or be targeted by spell 10387 (Lightning Surge) and then disappears when spell 9056 (Bolt Charge Bramble) is casted.
+Removed weird spawn of GO 186451 in Theramore
+Fixed size of gameobjects 73940 (Ooze Covered Silver Vein) and 105569 (Silver Vein) as they were twice the size of other veins
+Fixed mineral ores non spawning in Alterac Mountains, Arathi Highlands, Badlands, Blasted Lands and Burning Steppes
+Added gameobject 161557 (Milly's Harvest) in Elwynn Forest into a pool
+
+-------------
+ITEMS
+-------------
+Removed items 4100 (Crumpled Note), 4101 (Ripped Note), 4102 (Torn Note) and 4098 (Carefully Folded Note) from creatures loot table (especially creature 2560) as they should only drop from gameobject 2560 (Half-Buried Bottle)
+Removed items 5504 (Tangy Clam Meat) and 8364 (Mithril Head Trout) from loot table of creature 2560 (Highland Thrasher)
+Dramatically reduce the drop rate for Quest Item 5097: Cats Eye Emerald
+Reduced drop rate for quest item 4440 (Sigil of Strom)
+Reduce the drop rate for Quest Item: Bloodstone Amulet
+The Item: Immature Venom Sac will now rot (disappear) after 1 hour (real time)
+Removed the Quest Item: 6083 (Broken Tears) from dropping from creatures as it drops from gameobject
+Remove the Quest Item: Dinosaur Bone from Bloodpetal Trapper and Frenzied Pterrordax
+Corrected the drop rate of more than 100 Quest Items
+Updated ChanceOrQuestChance of quest item 3720 (Yeti Fur) as it was dropping all the time
+Updated ChanceOrQuestChance of quest item 3658 (Recovered Tome) as it was dropping all the time
+Updated ChanceOrQuestChance of quest item 2843 (Dirty Knucklebones) as it was dropping all the time
+Allowed Grime-Encrusted Ring to drop
+Fixed drop rate of item 4480 (Thundering Charm)
+ 
+-------------
+QUESTS
+-------------
+Enhanced end script for quest 963
+Added support from SD2 for quests 660, 1222 and 1270
+Added support from SD2 for quests 2118 (Plagued Lands) and 2904 (A Fine Mess)
+Added support from SD2/core for the summoning quests of the Wind Stones.
+Added quest completion script for quest 407 (Fields of Grief part 2)
+Added quest start script for quest 7029 & 7041 (Vyletongue Corruption)
+Allowed Warlocks to accept the Quest 8381 (Armaments of War)
+Correct the Min. Level requirement for Quests: A Visit to Gregan and Haze of Evil
+Correct the Min. Level requirement for the Quest: Reassignment
+Updated min level and quest level for Winter Veil quests
+Correct the Min. Level requirement for the Quest 3564 (Andron's Payment to Jediga)
+Changes to the Quest: Identifying the Brood (1169): Added this Quest to it's proper chain, dropped the Min. Level requirement for all Quests in this chain to 38, down from 39, Players must now obtain 15 items of each instead of 7
+Set Min. Level req. for quests "Sunken Treasure (665, 666, 668, 669, 670)" to 36
+Set the correct Min. Level requirement for the quest "Bring The Light" to 39
+Changed the Min. Level of the quest 'The Scepter of Celebras' to 41, down from 43.
+Set 'The Last Barov (5342)' to be Horde-only
+Change quest giver of quest 171 (A Warden of the Alliance) to creature 14305 (Human Orphan) instead of Watcher Callahan
+Added previous quest Id and next quest Id for all the quest in Alliance quest chain for Children's Week. Note that quest completion is not fixed yet (currently auto complete)
+Quest category for quest 8438 & 8384 should be Arathi Basin instead of Arathi Highlands
+Updated the quest end script for quest 771 Rite of vision
+Added movement for spawned NPC at completion of quest 772 (Rite of vision)
+Fixed quest level of quest 763 (Rites of the Earthmother) and MinLevel of quest 772 (Rites of Vision part 3)
+Fixed Rogue quest "Syndicate Emblems" - maximum Reputation restriction
+Fixed Priestess Josetta (Goldshire) offering invalid versions of Night Elf "Returning Home" quests.
+Updates level, exclusivegroup, nextquestid and reward text of all "Returning Home" quests for raciel NE priest quest
+Assigned various "Returning Home" quests to corresponding low level NPCs priest trainers in Teldrassil, Elwynn Forest, Stormwind (Park and Cathedral) and Ironforge (Hall of Mysteries)
+Fixed creature 3301 (Morgan Ladimore) for completion script of quest 231 (A Daughter's Love) as it had wrong faction was attackable and was missing its equipment
+Updated quest end script of quest 231
+Fixed minlevel and quest level of some quests in the Raene's Cleansing quest chain
+Added missing startScript for Quest 8305 (Long Forgotten Memories)
+Updated faction and flags of creatures involved in quest 8519 (A Pawn on the Eternal Board)
+Fixed gameobject 21227 (Crate with Holes), 21530 (Snufflenose Owner's Manual), and 68865 (Snufflenose Command Sticks) for quest 1221 (Blueleaf Tubers) as they were containing all the quest items insteadof only the ones they are related to
+Decreased drop chance of quest item 7273 (Witherbark Totem Stick) as it was dropping far too frequently. Drop rate guessed from comments (not exact value but still better that the actual 80%)
+Fixed scripts for quest 1022 (The Howling Vale) and quest 1043 (The Scythe of Elune)
+Removed AI script for creature 3946 (Velinde Starsong) because this NPC is spawned in two different quests and thus should not have the same script in both. The scripts are now handled by DB
+Fixed quest 9422 (Scouring the Desert - Horde) which was autocompleting
+- Added new creature (18199), data copied from Alliance equivalent creature
+- Added spell script target for spell Trace of Silithyst (29534) for both Alliance and Horde counters
+Fixed drop rate of item 4435 (Mote of Myzrael) in quest The Princess Trapped.
+Fixed drop rate of item 6246 (Hatefury Claw) & 6247 (Hatefury Horn) in quest 1458 (Reagents for Reclaimers Inc. part 1).
+Fixed drop rate of item 6248 (Scorpashi Venom) in quest 1459 (Reagents for Reclaimers Inc. part 2).
+Fixed drop rate of item 6067 (Centaur Ear) in quest 1387 (Centaur Bounty).
+Fixed quest 514 (Letter to Stormpike) which was available without having completed the previous quest in the quest chain
+Fixed texts in quest 193 (Panther Mastery 4)
+Removed wrong progress text in quest 191 (Panther Mastery 2) as it was using quest 193 progress text
+Fixed omitted quest  in the Missing Diplomat quest chain
+Fixed quest 1046 (Raene's Cleansing) which was not completable due to missing source item when accepting quest (item 5388 is provided)
+Fixed minlevel for Warlock class quest 1796 (Components for the Enchanted Gold Bloodrobe)
+Fixed quest 9259 (Traitor to the Bloodsail) that allowed to gain unlimited REP with Booty Bay easily
+Added missing quest requirement for quest 214 (Red Silk Bandanas) as it needs quest 155 (The Defias Brotherhood) to be completed before being available
+Fixed a few text emotes in DB scripts after chat system refactoring core side (cmangos classic revision 2425)
+- Quest 753 A Humble Task
+- Quest 771 Rite of Vision
+- Quest 993 A Lost Master
+- Quest 1713 The Summoning
+- Quest 950 Return to Onu
+- Quest 1064 Forsaken Aid
+- Quest 985 How Big a Threat?
+- Quest 970 The Tower of Althalaxx
+- Quest 943 The Absent Minded Prospector
+- Quest 963 For Love Eternal
+Fixed drop rate of item 4527 (Azure Agate) involved in quest Trelane's Defense
+Fixed drop chance of quest item 3923 (Water Elemental Bracer) in Stranglethorn Cape
+Fixed drop chance for item 1357 (Captain Sanders' Treasure Map) in Westfall because it previously was a 100% drop chance
+Fixed drop chance for item 5884 (Unpopped Darkmist Eye) in Dustwallow Marsh because it previously was a 100% drop chance
+Fixed drop chance for item 6245 (Karnitol's Satchel) in Desolace because it previously was a 100% drop chance
+
+-------------
+NPCS
+-------------
+Updated Darnall (7940) Vendor List: in classic he sold runecloth patterns
+Updated gossip_menu for hunter pets trainer since 1.7 they should use gossip 4783 and be able to untrain pets
+Updated health of creature 6729 (Morridune) spawn to match template
+Updated health of creature 3529 (Moonrage Armorer) spawn to match template
+Added stealth auras for creatures that were missing it.
+- Creatures 1713 (Elder Shadowmaw Panther)
+- 2246 (Syndicate Assassin)
+- 2926 (Silvermane Stalker)
+- 3279 (Witchwing Ambusher)
+- 3634 (Deviate Stalker)
+- 3770 (Bleakheart Shadowstalker)
+- 7110 (Jadefire Shadowstalker)
+- 7432 (Frostsaber Stalker)
+- 11723 (Hive'Ashi Sandstalker)
+- 11730 (Hive'Regal Ambusher)
+- 8538 (Unseen Servant)
+- 8539 (Eyeless Watcher)
+Added waypoints for creature 8976 (Hematos)
+Added gossip menu for creature 240 (Marshal Dughan)
+Added gossip menu to creature 9460 (Gadgetzan Bruiser)
+Spawned Fizzles in Stormwind
+Added missing points of interest for creatures 3084 and 5624 (Bluffwatcher & Undercity Guardian)
+Spawned Battlegrounds Emissaries in Orgrimmar
+Added waypoint path for creature 14404 (Seeker Thompson)
+Added civilian status to Barkeep Kelly, Micha Yance,  Nandar Branson, Sarah Raycroft & Magistrate Bluntnose
+Correct the Min/Max Level of the following creatures: 10506,16097, 2442, 385, 3619
+Correct the Min. Level requirement for the following Quests: 380, 381, 382, 383, 3902, 3901 & 120
+Add Mana Points to NPC 10506 (Kirtonos the Herald)
+Remove Mana Points from NPC 385 (Horse) and 6021 (Boar Spirit)
+Add roaming to the following NPCs:
+- Mountaineer Bludd, Mountaineer Fazgard, Mountaineer Haggil
+- Mountaineer Harn, Mountaineer Kamdar, Mountaineer Morlic
+- Mountaineer Roghan, Mountaineer Uthan
+Flag Ghost Saber as tameable
+Set Malgin Barleybrew <Bael'dun Morale Officer> faction as Ironforge
+Removed wrong elite rank to creatures 1802 (Hungering Wraith) and 1804 (Wailing Death)
+Changed NPC Anvilrage Reservist's respawn timer to 20 seconds
+Updated rank of creatures 14477 (Grubthor), 947 (Rohh the Silent) & 10077 (Deathmaw): they are rare but not elite
+Removed random movement from creature 6491 (Spirit Healer)
+Set Booty Bay Bruiser's rank to Normal
+Removed mana points from Doctor Gustaf VanHowzen
+Removed Mana Points from all Warriors Trainers
+Decreased the HP of creature 2337 (Darkstrand Voidcaller) as they were far too high
+Increased stats for creature 2058 (Deathstalker Faerleia) as she should be able to almost solo the quest The Pyrewood Ambush
+Changes to NPC Argent Sentry, Argent Rider, Argent Defender and Cenarion Hold Infantry:
+- Minimum Level and Maximum Level changed to 60 (Argent Sentry, Argent Rider)
+- Rank changed to Elite (Argent Sentry, Argent Rider)
+- unit_flags set to not be passive (for Argent Sentry, Argent Defender and Cenarion Hold Infantry. Argent Riders are only aggravated when hit
+ by AoE spells(requires additional information) or unless you have the weapon: Corrupted Ashbringer equipped)
+Changed MovementType of Argent Rider to Waypoint
+Added Invisibility and Stealth Detection aura to some Neutral guards
+Adjusted the Z axis of Mountaineer Cragg
+Adjusted the Z axis of Mountaineer Swarth
+Added randomized movement for the following NPCs:
+- Mountaineer Bludd
+- Mountaineer Fazgard
+- Mountaineer Haggil
+- Mountaineer Harn
+- Mountaineer Kamdar
+- Mountaineer Morlic
+- Mountaineer Roghan
+- Mountaineer Uthan
+- Mountaineer Cragg
+- Mountaineer Swarth
+The following Commanders and Lieutenants are now properly mounted:
+- Commander Mortimer
+- Lieutenant Spencer
+- Lieutenant Stouthandle
+- Lieutenant Mancuso
+- Lieutenant Stronghoof
+- Lieutenant Rugba
+- Lieutenant Greywand
+- Lieutenant Largent
+- Commander Malgor
+- Lieutenant Vol'talar
+- Lieutenant Lewis
+Mountaineer Boombellow is now passive towards players, unless attacked
+The Zeppelin Master, Hin Denburg, is not classified as Elite
+Linked missing npc text to Decedra Willham
+Linked missing npc text to Mupsi Shacklefridd
+Changed Monstrous Crawler's InhabitType to permit combat in the water
+Removed Lieutenant Doren's mount and passive flag
+Removed Mana Points from all Rogue Trainers.
+Removed Mana Points from all Auctioneers.
+Removed Mana Points from Cenarion Outrider
+Changes to Silverpine Deathguard: Removed Mana Points.
+Changes to Corporal Teeka Bloodsnarl: Changed level to 56 - 57, up from 54.
+Level of NPC Mor'Ladim (Duskwood) should be 35, not 38
+Added missing entries for items 4476 (Beastwalker Robe) & 4477 (Nefarious Buckler) in loot table of creature 534 (Nefaru)
+Recipe for Mighty Troll's Blood Elixir should be removed from Sylvanna Forestmoon, ordinary Expert Alchemist in Darnassus. This recipe is intended to be reward from NPC Henry Stern, who resides in Razorfen Dawns instance.
+Added missing entries for items 5753 (Ruffled Chaplet) & 5754 (Wolfpack Medallion) in loot table of creature 3792 (Terrowulf Packlord)
+Modified faction of creature 11470 (Eldreth Sorcerer) and 11469 (Eldreth Seether) as it was wrongly set to Darnassus instead of being hostile to players
+Faction Fix for Heartrazor (rare elite in Thousand Needles). He is neutral now, but should be hostile to players
+Added vendor items to Malgin Barleybrew
+Fixed faction and model of creature 13082 (Milton Beatings). This NPC is spawned near the chest in the passageway to Ravenholdt. He is neutral now and may appear female, but should be hostile male
+Fixed faction of creature 2638 (Syndicate Spectre), 13149 (Syndicate Brigand), 13150 (Syndicate Agent), 13151 (Syndicate Master Ryson), 14281 (Jimmy The Bleeder)
+Fixed model for creature 14281 (Jimmy The Bleeder) as it should not spawn as female
+Updated size of creature 2348 (Elder Moss Creeper) as it was bigger than other spiders around
+Removed equipment of creatures 1458 (Telurinon Moonshadow) and 1482 (Andrea Halloran) as they should not wear equipment
+Fixed various reputation requirements for faction vendor items
+- Silverwing Sentinels reputation for item sold by Illiyana Moonblaze
+- Warsong Outriders reputation for item sold by Kelm Hargunth
+- Stormpike Guard reputation for item sold by Gaelden Hammersmith
+- Frostwolf Clan reputation for item sold by Grunnda Wolfheart
+- Argent Dawn reputation for item sold by Argent Quartermaster Hasana
+- Thorium Brotherhood reputation for item sold by Lokhtos Darkbargainer
+- Timbermaw Hold reputation for item sold by Gorn One Eye
+Updated loot table of Lady Vespira (rare naga, Darkshore)
+Updated loot table of Skhowl (rare yeti, Alterac Mountains)
+Updated loot table of  Lo'Grosh (rare ogre, Alterac Mountains)
+Updated loot table of  Mosh'Ogg Butcher (rare elite ogre, Stranglethorn Vale)
+Fixed faction of creature 584 (Kazon): he will now attack players invading Render's Camp like every Blackrock orc should do instead of chasing critters like the wolf he previously believed he was
+Removed wrong gossip from creature 5637 (Roetten Stonehammer) because he was claiming that his Barren's wyverns were the fastest though he is a dwarf...
+Removed equipment for creature 3345 (Godan) as it should not wear any but currently wield a fishing pole
+Allowed creature 2612 (Lieutenant Valorcall) to follow waypoints 
+Added missing waypoints and movement to creature 10617 (Galak Messenger)
+Removed duplicate spawn of creature 2714 (Forsaken Courier)
+Removed duplicate spawn of creature 2721 (Forsaken Bodyguard)
+Linked bodyguards 2721 (Forsaken Bodyguard) to creature 2714 (Forsaken Courier)
+Allowed creature 2714 (Forsaken Courier) to follow waypoints
+Updated equipment and rank of creature 61 (Thuros Lightfingers) as it is rare but not elite
+Fixed model for creature 1160 (Captain Halyndor) as it was using Goblin pirate model as alternate value instead of being an udead pirate 100% of the time
+Fixed level and health of creature 14984 (Sergeant Maclear) in Arathi Highlands because she wrongly was level 1 with 64 hit points
+Changed InhabitType of creature 8236 (Muck Frenzy) from 1 (Ground only) to 2 (water only) because this creature is a fish and shouldn't walk and attack players on islands like they are currently doing
+Fixed faction and rank of creature 2606 (Nimar the Slayer <Warband Leader>) He is now a rare Witherbark troll instead of an elite rare wolf beast.
+Fixed model for creature 6546 (Tabetha) because she should not have an alternate model
+Fixed loot table of creatures:
+- 2108 (Garneg Charskull)
+- 2476 (Large Lock Crocolisk)
+- 596 (Brainwashed Noble)
+- 5928 (Sorrow Wing)
+- 771 (Commander Felstrom)
+- 7361 (Grubbis)
+Fixed rank of creature 3792 (Terrowulf Packlord) as it is not elite
+Fixed rank of creature 2604 (Molok The Crusher) as it is not elite
+and his faction is obviously Ogre, not Wolf...
+Fixed rank of creature 10647 (Prince Raze) as it is not elite
+Fixed rank of creature 2108 (Garneg Charskull) as it is not elite
+Fixed rank of creature 2476 (Large Loch Crocolisk) as it is not elite
+Fixed rank of creature 1037 (Dragonmaw Battlemaster) as it is not elite
+Fixed rank of creature 596 (Brainwashed Noble) as it is elite and rare
+Fixed rank of creature 10559 (Lady Vespia) as it is not elite
+Fixed rank of creature 14222 (Araga) as it is not elite
+Fixed rank of creature 12037 (Ursol'lok) as it is not elite
+Fixed rank of creature 5933 (Achellios the Banished) as it is not elite
+Fixed rank of creature 771 (Commander Felstrom) as it is not elite
+Fixed one of the creature 5595 (Ironforge Guard) wolking above the lava when patrolling in Ironforge.
+Added missing waypoints to creature 3937 (Kira Songshine) in Elwynn Forest.
+Removed loots from creature 6141 (Pridewing Soarer) as this is just a flavor creature. Also made it fly.
+Put all spawns of creature 10647 (Prince Raze) in a pool
+Added missing npc 5081 (Connor Rivers) in Stormwind's Blue Recluse Inn
+Fixed loot of creature 2600 (Singer) because she was missing her specific items
+Fixed rank of creature 2600 (Singer) because she is rare but not elite and changed faction to Syndicate
+Fixed missing blacksmithing plan (Rough Grinding stone) for creature 957 (Dane Lindgren)
+Fixed faction of creature 5644 (Dalinda Malem) to prevent her to being chained killed by surrounding NPCs on spawn which will greatly help players to find her because she is a quest giver
+Fixed model used by creatures 3501 (Horde Guard) and 12903 (Splintertree Guard) Two alternate model were wrong and genders models were mixed
+Fixed faction and rank of creature 14488 (Roloch) because he is rare but not elite and definely not a wolf. Only a ogre.
+Added missing equipment for creature 14488 (Roloch)
+Removed duplicate spawns of  creature 14488 (Roloch) and relocates the last one to the first waypoint of its path
+Removed drop from creature 8257 (Oozeling) in Sunken Temple because they are summoned and should not drop anything
+Fixed rank and faction of creature 2601 (Foulbelly) because it is a rare elite and an ogre and not wolf
+Added missing equipment for creature 2601 (Foulbelly)
+Fixed rank of creature 1531 (Lost Soul) in Tirisfal Glades because it is not elite, only rare
+Fixed rank of creature 10358 (Fellicent's Shade) because it is a rare and not elite
+Fixed rank of creature 763 (Lost One Chieftain) because it is a rare and not elite
+Fixed rankcreature 14226 (Kaskk) because it is a rare and not elite. Also fixed damage output because it was too high
+Fixed gossip and conditions for gossip of creature 4087 (Arias'ta Bladesinger) Warrior Trainer in Darnassus
+Fixed gossip of creature 384 (Katie Hunter) Human mount vendor in Elwynn Forest to adjust it to alliance player reputation
+Fixed gossip of creature 7312 (Dink) a mage trainer in Ironforge
+Fixed conditions for gossip of creature 1261 (Veron Amberstill) Dwarf mount vendor in Dun Morogh to adjust it to alliance player reputation and allow dwarves to buy their own racial mounts
+Fixed gossip menu of creature 4968 (Lady Jaina Proudmoore) because she was always using a gossip related to a quest
+Fixed damage of creature 10925 (Rotting Worm) that were too high
+Fixed faction of creatures 330 (Princess) and 390 (Porcine Entourage) in Elwynn Forest. Those creatures are neutral. Linked them together
+Fixed position of creature 1667 (Meven Korgal) in Tirisfal Glades
+Removed spawns of creature 4661 (Gelkis Rumbler) in Desolace because they are summoned
+Fixed rank and loot table of creature 599 (Marisa du'Paige)
+
+-------------
+EVENTS
+-------------
+Added event for Pyrewood Village: inhabitants of the village are human during day time (friendly to Alliance, hostile to Horde) and they turn to worgens at time (hostile to both factions)
+- Added missing worgen spawns
+- Added waypoints for worgens
+Fixed size of gameobjects 178667, 178668 & 178805 (Christmas trees medium size) used in Winter Veil event as they were too big.
+Removed item 21745 (Elder's Moonstone) from creature loot table as this item is only obtainable during Lunar Festival by visiting the Elders NPCs
+Removed duplicate creature 14865 (Felini) in Darkmoon Fair (Elwynn Forest)
+Updated gossip of creature 6148 (Silas Darkmoon) as it was using an actual player name (clem)
+Added missing creature template for creature 15118 (Master Angler Form) used in reward from Stranglethorn Fishing Extravaganza event.
+
+-------------
+MISCELLANEOUS
+-------------
+Improved the zoning coordinates into Blackwing Lair
+Fixed a few text typos
+Added and fixed more than 400 gossips
+Fixed reqskillvalue for Leatherworking spell 20653 "Thick Leather" and 10485 "Cured Thick Hide" spells
