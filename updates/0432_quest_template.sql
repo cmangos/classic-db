@@ -6,4 +6,4 @@
 
 -- -------------------------------------------------------------------------
 
-UPDATE `mangos`.`quest_template` SET `SpecialFlags`='1' WHERE `entry`='4973';
+UPDATE `quest_template` SET `SpecialFlags` = 1 WHERE `entry` = 4973;

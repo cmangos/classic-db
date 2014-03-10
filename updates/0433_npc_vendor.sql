@@ -6,4 +6,4 @@
 
 -- -------------------------------------------------------------------------
 
-DELETE FROM `mangos`.`npc_vendor` WHERE `entry`='10856' AND (`item`='13444' OR `item`='13446');
+DELETE FROM `npc_vendor` WHERE `entry` = 10856 AND (`item` = 13444 OR `item` = 13446);
