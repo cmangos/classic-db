@@ -351,7 +351,6 @@ UPDATE `creature_template` SET `rank` = 4 WHERE `entry` =  5400;     -- Zekkis
 
 -- The Deadmines:
 UPDATE `creature_template` SET `rank` = 4 WHERE `entry` =  596;      -- Brainwashed Noble, 
-UPDATE `creature_template` SET `rank` = 4 WHERE `entry` =  599;      -- Marisa du'Paige
 
 -- Wailing Caverns:
 UPDATE `creature_template` SET `rank` = 4 WHERE `entry` =  3672;     -- Boahn, 
