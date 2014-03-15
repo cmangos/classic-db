@@ -1037,12 +1037,12 @@ UPDATE `creature_template` SET `rank` = 4 WHERE `entry` = 1848;
 -- Scarlet Judge
 -- http://www.wowwiki.com/Scarlet_Judge
 -- http://web.archive.org/web/20050208010928/http://wow.allakhazam.com/db/mob.html?wmob=1837
-UPDATE `creature_template` SET `rank` = 4 WHERE `entry` = 1837;
+UPDATE `creature_template` SET `rank` = 2 WHERE `entry` = 1837;
 
 -- Scarlet Smith
 -- http://www.wowwiki.com/Scarlet_Smith
 -- http://web.archive.org/web/20050217110523/http://wow.allakhazam.com/db/mob.html?wmob=1885
-UPDATE `creature_template` SET `rank` = 4 WHERE `entry` = 1885;
+UPDATE `creature_template` SET `rank` = 2 WHERE `entry` = 1885;
 
 -- The Husk
 -- http://www.wowwiki.com/The_Husk
