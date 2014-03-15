@@ -957,6 +957,10 @@ UPDATE `creature_template` SET `rank` = 4 WHERE `entry` = 8218;
 UPDATE `creature_template` SET `rank` = 4 WHERE `entry` = 8219;
 
 -- Thousand Needles
+-- Achellios the Banished
+-- http://web.archive.org/web/20061128235041/http://wow.allakhazam.com/db/mob.html?wmob=5933
+UPDATE `creature_template` SET `rank` = 4 WHERE `entry` = 5933;
+
 -- Silithid Ravager
 -- http://www.wowwiki.com/Silithid_Ravager
 -- http://web.archive.org/web/20050221043133/http://wow.allakhazam.com/db/mob.html?wmob=4132
