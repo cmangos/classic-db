@@ -1,4 +1,5 @@
 -- add a third Obsidian Eradicator for later use
+DELETE FROM `creature` WHERE `guid` = 590012;
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES ('590012', '15262', '531', '0', '0', '-8271.91', '2107.50', '118.176', '0.261538', '3600', '0', '0', '170805', '24340', '0', '0');
 -- fix positioning of NPC after Prophet Skeram
 UPDATE `creature` SET `position_x`='-8496.217773', `position_y`='1932.542114', `position_z`='135.656693', `orientation`='1.191309' WHERE `guid`='87527';
