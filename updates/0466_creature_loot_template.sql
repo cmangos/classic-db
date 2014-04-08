@@ -75,7 +75,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 
 -- Kazon 584
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 75, `groupid` = 2 WHERE `item` = 3231;
-UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 25, `groupid` = 2 WHERE `item` = 4058;
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 25, `groupid` = 2 WHERE `item` = 2058;
 
 -- Rohh the Silent 947
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 20, `groupid` = 2 WHERE `item` = 4446;
