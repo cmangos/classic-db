@@ -23,11 +23,11 @@ UPDATE `creature_template` SET `MinLevelHealth` = 254720, `MaxLevelHealth` = 254
 UPDATE `creature` SET `curhealth` = 254720 WHERE `id` = 15252;
 
 -- Bug Trio
-UPDATE `creature_template` SET `SpeedWalk` = 7.5, `scale` = 0.85, `MinLevelHealth` = 413920, `MaxLevelHealth` = 413920 WHERE `entry` = 15544;
+UPDATE `creature_template` SET `SpeedWalk` = 7.5, `Scale` = 0.85, `MinLevelHealth` = 413920, `MaxLevelHealth` = 413920 WHERE `entry` = 15544;
 UPDATE `creature` SET `curhealth` = 413920 WHERE `id` = 15544;
-UPDATE `creature_template` SET `scale` = 1.35, `MinLevelHealth` = 254720, `MaxLevelHealth` = 254720, `MinLevelMana` = 0, `MaxLevelMana` = 0 WHERE `entry` = 15511;
+UPDATE `creature_template` SET `Scale` = 1.35, `MinLevelHealth` = 254720, `MaxLevelHealth` = 254720, `MinLevelMana` = 0, `MaxLevelMana` = 0 WHERE `entry` = 15511;
 UPDATE `creature` SET `curhealth` = 254720 WHERE `id` = 15511;
-UPDATE `creature_template` SET `scale` = 1.15, `MinLevelHealth` = 286560, `MaxLevelHealth` = 286560 WHERE `entry` = 15543;
+UPDATE `creature_template` SET `Scale` = 1.15, `MinLevelHealth` = 286560, `MaxLevelHealth` = 286560 WHERE `entry` = 15543;
 UPDATE `creature` SET `curhealth` = 286560 WHERE `id` = 15543;
 
 
