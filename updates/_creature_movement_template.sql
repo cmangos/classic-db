@@ -1,7 +1,4 @@
--- Added correct Waypoints to Lucifron(ID 12188)
-
-DELETE FROM creature_movement WHERE id = 56605; -- lucifron
-DELETE FROM creature_movement WHERE id = 56606 OR id = 56607; -- adds
+-- add correct waypoints for lucifron
 
 INSERT INTO creature_movement_template (entry,point,position_x,position_y,position_z,orientation,wpguid,waittime) VALUES 
 

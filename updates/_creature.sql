@@ -1,5 +1,6 @@
 -- correct spawnposition of lucifron & adds(ID 12118 & 12119)
--- SET @GUID := 80849;
+
+DELETE FROM `creature` where id = 12118 or id = 12119;
 
 INSERT INTO `creature` (`guid`,`id`,`map`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`) VALUES 
 (56605,12118,409,0,938,1068.86,-1007.76,-185.24,2.3,604800,5,0,351780,39300,0,2),
