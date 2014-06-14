@@ -1,11 +1,6 @@
 -- Fixed quest 4941 that was broken since a previous update. Thanks Scotty0100 for pointing
 -- This closes #473 
 
--- Added wrongly delete script to complete quest after speaking with creature 3144
-DELETE FROM `dbscripts_on_gossip` WHERE `id` = 2908;
-INSERT INTO `dbscripts_on_gossip` VALUES
-(2908, 0, 7, 4941, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Eitrigg\'s wisdom completion');
-
 -- Updated scripts id to proper formatting for creature 16365 (Master Craftsman Omarion)
 UPDATE `gossip_menu_option` SET `action_script_id` = 244001 WHERE `menu_id` = 24400 AND `id` = 1;
 UPDATE `dbscripts_on_gossip` SET `id` = 244001 WHERE `id` = 2901;
@@ -48,3 +43,8 @@ UPDATE `dbscripts_on_gossip` SET `id` = 244035 WHERE `id` = 2912;
 
 UPDATE `gossip_menu_option` SET `action_script_id` = 244036 WHERE `menu_id` = 24403 AND `id` = 6;
 UPDATE `dbscripts_on_gossip` SET `id` = 244036 WHERE `id` = 2913;
+
+-- Added wrongly delete script to complete quest after speaking with creature 3144
+DELETE FROM `dbscripts_on_gossip` WHERE `id` = 2908;
+INSERT INTO `dbscripts_on_gossip` VALUES
+(2908, 0, 7, 4941, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Eitrigg\'s wisdom completion');
