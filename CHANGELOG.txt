@@ -1,4 +1,496 @@
 ---------------------------------------------------------------------
+VERSION 1.4
+---------------------------------------------------------------------
+
+-------------
+RAIDS
+-------------
+MOLTEN CORE
+Changes to Firelord / Lava Annihilator
+    - added missing spawns
+    - pooled previously added and existing creatures
+    - fixed movement behaviour
+Corrected path for Lucifron & adds so adds follow closely
+Fixed speed of creature 12056 (Baron Geddon)
+Fixed spell used by creature 11669 (Flame Imp) and decreased spawn time to 7 min
+Fixed spawn time of trash mobs in Molten Core:
+    - Ancient Core Hound
+    - Lava Surger
+    - Molten Giant
+    - Molten Destroyer
+    - Firelord
+    - Lava Annihilator
+    - Core Hound
+    - Firewalker
+    - Flameguard
+    - Lava Reaver
+    - Lava Elemental
+Added various crowd control immunities to Gehennas adds (Flamewaker)
+Added various crowd control immunities to Lucifron adds (Flamewaker Protector)
+Added various crowd control immunities to Sulfuron adds (Flamewaker Priest)
+Added various crowd control immunities to Majordomo Executus adds (Flamewaker Elite)
+Added various crowd control immunities to Majordomo Executus adds (Flamewaker Healer)
+Added banish immunity to Firelords and their spawns
+Added banish immunity to Firewalker and Flameguard
+
+RUINS OF AHN'QIRAJ
+Added missing graveyard for all players when dying in Ruins of Ahn'Qiraj. They will now respawn in the graveyard near the Gates of Ahn'Qiraj instead of respawning where they died
+Removed duplicate entries of creature 15324 (Qiraji Gladiator) in Ruins of Ahn'Qiraj
+Changes to Qiraji Swarmguard
+    - Position
+    - Movement (running)
+    - Size, walk and run speed
+    - Linking to Kurinnaxx
+Ruins of Ahn'Qiraj - Changes to Obsidian Destroyer
+    - Added correct amount of spawns (9)
+    - Added movement
+    - Linked to Moam
+Changes to Anubisath Guardian
+    - Added correct amout of spawn (8)
+    - Added movement
+    - Linked to Ossirian
+    - Removed permanent minions (Anubisath Warrior & Swarmguard, will be summoned infight)
+Changes to Hive'Zara Stinger
+    - Fixed amount (10) and positioning
+    - Added movement
+    - Linked to Kurinnaxx
+Changes to Flesh Hunter
+    - Added correct number (5)
+    - Repositioned
+    - Added movement
+    - Linked to Moam and Buru  
+Changes to Hive'Zara Wasp
+    - Added correct numbers of groups
+    - Changed position
+    - Linked to Hive'Zara Stingers
+    - Removed Hive'Zara Hornets as a permanent spawn (Ayamiss encounter)
+Changes to Hive'Zara Stinger / Wasp
+    - Added correct number of groups (4)
+    - Added linking
+    - Added movement
+    - Pooled certain creatures
+Set rank of a few bosses to "raid bosses": Ossirian the Unscarred (15339), Moam (15340), General Rajaxx (15341), Doctor Weavil (15552)
+Changed min- & maxlevel of Qiraji Gladiator, Warrior, Swarmguard Needler, Captain Qeez and Major Yeggeth (source: Bestiary, wowhead, wowwiki ...)
+Changed scale, faction and movementtype of Vile Scarabs (source: retail)
+Linked Qiraji Gladiator
+Changes to Shrieker & Spitting Scarabs
+    - added needed creatures - overall 50 creatures in 5 groups
+    - linked them to their groups and to boss Moam
+    - changed their movementtype to random
+    - fixed scale 
+Changes to Hive'Zara Packs
+    - added 3 packs (2 drone, 2 collectors, 2 tail lasher)
+    - added linking
+Changes to Silicate Feeder
+    - Removed spwawn Hive'Zara Larva
+    - added 40 spawns Silicate Feeder
+    - updated template - should be neutral
+Added missing equipment for creature 15471 (Lieutenant General Andorov) and 15473 (Kaldorei Elite) in Ruins of Ahn'Qiraj and updated their flag to make them healable
+Fixed size of creature 15471 (Lieutenant General Andorov) who was too big
+Fixed visual effect of GO 180647 (Sand Trap) in Ruins of Ahn'Qiraj
+Fixed all epic quest idols in Ruins of Ahn'Qiraj which were only dropping for people with the quest while they should drop for everyone
+    
+TEMPLE OF AHN'QIRAJ
+Corrections to Prophet Skeram's area
+    - removed Small Obsidian Chunks
+    - added a third Obsidian Eradicator
+    - moved the three dragon NPCs
+    - corrected the scale of Andorgos
+    - added requirements for the quests dragon NPCs are giving
+Made creatures 15355 (Anubisath Guardian), 15338 (Obsidian Destroyer), 15264 (Anubisath Sentinel) spawn small obsidian chunk on death
+Made creatures 15340 (Moam), 15338 (Obsidian Destroyer), 15277 (Anubisath Defender) spawn large obsidian chunk on death
+Removed all spawns of creatures 15962 (Vekniss Hatchling) and 15630 (Spawn of Fankriss) because they are spawned during the encounter with Fankriss
+Fixed spawn time of creature 15229 (Vekniss Soldier) and 15300 (Vekniss Drone) In Temple of Ahn'Qiraj as they should respawn in 20 secs and not in minutes or hours
+Added patrol movement to creature 15509 (Princess Huhuran)
+Updated position of creature 15378 (Merithra of Dream), 15379 (Caelestrasz) and 15380 (Arygos) in Temple of Ahn'Qiraj to place them in the middle of the 3 gameobjects after C'Thun encounter
+Changes to Obsidian Eradicator
+    - Added movement
+    - Updated reputation reward
+    - Stats & Respawn
+    - Linking
+Changes to Anubisath Sentinel
+    - Position
+    - Reputation
+    - Stats, Level & Respawn
+    - Linking
+Changes to The Prophet Skeram
+    - Position
+    - Stats & Respawn
+Changes to Anubisath Warder
+    - Position
+    - Reputation
+    - Stats & Spawn
+Changes to Obsidian Nullifier
+    - Position
+    - Reputation
+    - Stats & Respawn
+    - Linking
+Changes to Qiraji Champion
+    - Position
+    - Reputation
+    - Movement
+    - Stats & Respawn
+Changes to Bug Trio
+    - Position
+    - Movement
+    - Stats, scale, Runspeed & Respawn
+    - Linking
+Changes to Battleguard Sartura
+    - Position
+    - Movement
+    - Stats, speed & respawn
+    - Linking
+Updated health and stats of creatures in Temple of Ahn'Qiraj
+    - Obsidian Eradicator
+    - Anubisath Sentinel
+    - The Prophet Skeram
+    - Anubisath Warder
+    - Obisdian Nullifier
+    - Qiraji Champion
+    - Bug Trio
+    - Battleguard Sartura and Guards
+Changes to Anubisath Defender
+    - Position
+    - Movement
+    - Respawn
+    - Linking
+Changes to Qiraji Slayer / Mindslayer
+    - Position (formation)
+    - Reputation
+    - Stats, Respawn
+    - Linking
+    - Pooling
+Changes to Vekniss Soldier
+    - Position
+    - Reputation
+    - Stats, runspeed, respawn
+    - Linking
+    - Movement
+Changed orientation, flags and loots of GOs in Temple of Ahn'Qiraj
+    - locked the large scarab coffers
+    - idols in coffers are now lootable without being on a certain quest
+    - corrected the rotation of doors and coffers 
+Changes to Vekniss Drone
+    - Positioning
+    - Amount
+    - Stats
+    - Respawn
+    - Linking
+    - Movement
+Fixed various model and scale in C'Thun encounter
+Changes to Vekniss Wasp-Packs
+    - Added correct number of packs (6)
+    - Changed reputation
+    - Added movement
+    - Linked to Huhuran
+    - Pooled certain creatures
+Added missing gossip menu and gossip menu options to creature 15502 (Andorgos) in Temple of Ahn'Qiraj. This allows player to be teleported to Twins Emperors' lair or Final Chamber near C'Thun, depending on which boss is defeated
+Fixed reputation awarded by the class epic set quests in Temple of Ahn'Qiraj. Those quests now grant 250 Brood of Nozdormu reputation.
+Fixed reputation awarded by many creatures
+Fixed faction for creatures 15316 (Qiraji Scorpion) and 15347 (Qiraji Scarab) in Temple of Ahn'Qiraj
+Added missing spawn of creatures 15316 (Qiraji Scorpion) and 15317 (Qiraji Scarab) in Temple of Ahn'Qiraj
+Added missing equipment to creatures 15502 (Andorgos), 15503 (Kandrostrasz) & 15504 (Vethsera) in Temple of Ahn'Qiraj
+
+
+-------------
+DUNGEONS INSTANCES
+-------------
+BLACKROCK DEPTHS
+Fixed spawn for the Spectral Chalice, but initially despawned. Talking to Gloom'rel with a 230+ miner that doesn't know "Dark Iron Smelting" should spawn the object.
+
+BLACKROCK SPIRE
+Added support for event in Blackrock Spire of Scarshield Infiltrator morphing into Vaelan
+
+DEADMINES
+Fixed spawn of creature 3586 (Miner Johnson) in Deadmines as it should not spawn 100% of the time.
+
+DIRE MAUL
+Makes creature 14566 (Ancient Equine Spirit) spawns after creature 11489 (Tendris Warpwood) is defeated in Dire Maul
+Added aggro link between creature 11459 (Ironbark Protector) and creature 11489 (Tendris Warpwood). Now players must clean every Ironbark Protector before engaging Tendris unless they want some 'company' during the fight as all Ironbark Protectors will now attack when Tendris Warpwood is engaged.
+Updated faction for creature 14364 (Shen'Dralar Spirit), 14358 (Shen'Dralar Ancient), 14361 (Shen'Dralar Wisp), 14371 (Shen'Dralar Provisioner), 14383 (Lorekeeper Kildrath, 14382 (Lorekeeper Mykos), 14381 (Lorekeeper Javon), 14368 (Lorekeeper Lydros) and 16032 (Falrin Treeshaper). They all should have the Shen'Dralar faction instead of the Wolf/Undercity/Creature they currently have.
+Fixed type of gameobject 179544 (Skeletal Remains of Kariel Winthalus) as it should be 2 because it is related to a quest 7482 (Eleven Legends).
+Fixed size of gameobject 177217 (Gordok Inner Door) as it is currently to small and don't stop players as intented
+Major revamp of Dire Maul East
+    - Added patrols and random movement
+    - Fixed spawns
+    - Improved linking
+    - Pool many creatures to make the experience different from one run to another
+    - And much, much more...
+    
+RAZORFEN DOWNS
+Fixed stats for creature 8516 (Belnistrasz) in Razorfen Downs because he was too weak preventing the players to defend him successfully in the quest "Extinguishing the Idol"
+
+SCHOLOMANCE
+Fixed mechanics of Alexei Barov encounter in Scholomance by adding missing linking to creature 10504 (Lord Alexei Barov) and its two guards 10489 (Risen Guard). They will also respawn when Alexei evades (like after a wipe).
+Updated loot table of bosses in Scholomance. Added missing items, updated drop rate, added reference tables.
+    - Lord Alexei Barov (10504): added missing entries, increased chance to drop rare item (blue item) to 100%
+    - Lady Illucia Barov (10502): added missing entries (some generic and some specific like dark rune)
+    - Jandice Barov (10503) : added missing entries, especially item 14543 (Darkshade Gloves)
+    - Ras Frostwhisper (10508): updated reference table as some element in it shouldn't be in (like Alanna's Embrace) added missing entries (mostly generic entries)
+    - Rattlegore (11622) : added missing item and reference table, updated drop chance of scourge stone to 100%
+    - Doctor Theolen Krastinov (11261) : added missing items and reference table
+    - Darkmaster Gandling (1853) : added/moved missing items and reference table and especially items 13937 (Headmaster's Charge) and 21525 (Winter Veil hat)
+    - Blood Stewart of Kirtonos (14861) : added missing items, reference table and increased drop chance of scourge stone to 100%
+    - Kirtonos the Herald (10506) : added missing items
+    - The Ravenian (10507) : added missing items and reference table
+    - Instructor Malicia (10505) : added missing items and reference table
+    - Lorekeeper Polkelt (10901) : added missing items and reference table and increased drop chance of scourge stone to 100%
+Linked creature 10432 (Vectus), 10433 (Marduk Blackpool) and 10475 (Scholomance Student) in Scholomance. Now, students will attack when Marduk is engaged and everyone will attack when Vectus is engaged.
+
+STRATHOLME
+Changes to Patchwork Horror
+    - Fixed position
+    - Fixed minlevel
+    - Fixed movement speed
+    - Added movement
+Changes to Plague Ghouls & Skul (living side)
+    - Added movement
+    - Fixed movement speed
+    - Removed not needed spawns (static spawns are untouched)
+Changes to Eye of Naxxramas
+    - Added 3 spawns
+    - Added movement
+    - Updated walking speed
+Added missing equipment for creature 10812 (Grand Crusader Dathrohan), 10811 (Archivist Galford), 11032 (Malor the Zealous) & 10997 (Cannon Master Willey) in Stratholme
+Changes to the Crimson Faction
+    - updated a few min and maxlevel based on the Bestiary (and other sources)
+    - updated the faction of every member to faction 67 (Scarlet Crusade)
+Removed spawns of creature 8477 (Skeletal Servant) as this is a summoned creature
+Baron Rivendare (10440): fixed min level, health, mana rare rank
+Rockwing Gargoyle / Rockwing Screecher
+    - added movement to (7 pats)
+    - pooled spawns (50/50 -> gargoyle / screecher)
+    - added creatures and movement for rare spawn Stonespine
+    
+ULDAMAN
+Updated drop conditions of item 7741 (The Shaft of Tsol) in Uldaman as the item was previously undroppable: its drop condition was having completed a quest the item is used for in order to complete so the condition could never be true
+Added missing areatrigger relation for quest 2240 (The Hidden Chamber) in Uldaman. The quest is now completable
+Fixed rank and loot of creature 7057 (Digmaster Shovelphlange) in Uldaman as it is a rare creature. Removed from reference table one loot (9382) specific to him
+Added missing loot item 9382 (Tromping Miner's Boots) to creature 7057 loot table
+Fixed respawn time of creatures in outer part of Uldaman
+Fixed quest giver and quest completionner of quests 2201 (Find the Gems) and 2204 (Restoring the Necklace) in Uldaman as it was wrongly set to NPC 6826 in Ironforge instead of GO 112877 (Talvash's Scrying Bowl)
+Fixed quest 3375 (Replacement Phial) which should not be available without losing the prerequired item of quest 2201
+Fixed spawn time of item 126260 (Ancient Chest) near Uldaman as it should not despawn when looted
+
+
+-------------
+GAMEOBJECTS
+-------------
+Players can now loot Lost Supplies (begins quest) from Scattered Crate (Swamp of Sorrow)
+Players can now loot Ensorcelled Parchment (starts quest) from Worn Wooden Chest (Alterac Mountains) 
+Added missing gameobjects related to weekly battleground events as the various faction banners of Arathi Bassin and Alterac Valley were hanging into thin air.
+
+
+-------------
+ITEMS
+-------------
+Removing random items from loot table of Small Barnacled Clam
+Setting Clam Meat (ID:5503) to drop 100%, instead of 99.8%
+Removed Bolts of Cloth from creature loot tables
+Added items 19054 & 19055 for iCoke chinese event
+Pattern: Runic Leather Headband was added to vendor Jase Farlane
+Scourge Warder had too high drop chance for Essence of Undeath
+Removed quest item called 'Shipment of Boots' from Stormwind City Guard 
+Duration of High Potency Radioactive Fallout is now 2 hours
+Everlook and Gadgetzan Transporters schematics are now be removed from goblin Buzzek Bracketswing (Gadgetzan)
+Removed quest item 7866 (Empty Thaumaturgy Vessel) from pickpocket loots
+Added equipment for creature 5399 (Veyzhak the Cannibal)
+Added equipment for creature 5400 (Zekkis)
+Added equipment for creature 9718 (Ghok Bashguud)
+Added missing "Dreamscale" (item 20381) skinning loot from four worldboss Dragons
+Fixed generic green dragon skinning template providing only 1 green scale while it should provide more
+Fixed too low drop chances, should be 100%: Lost Soul (Tirisfal Glades) - Wispy Cloak 20%, Tormented Spirit - Ghostly Bracers 15%
+Corrected loot of Stranglethorn Vale rare mobs
+    - Scale Belly (1552)
+    Iridescent Scale Leggings (4478) 80% (Delete From Reference)
+    Chromatic Sword (1604) 20% (Delete From Reference)
+    - Lord Sakrasis (2541)
+    Lord Sakrasis' Scepter (5028) 50% (Delete From Reference)
+    Talisman of the Naga Lord (5029) 50% (Delete From Reference)
+    - For the following NPCs only having a few reference loot templates and no unique loots:
+    Gluggle 14487
+    Roloch 14488
+    Rippa 14490
+    Kurmokk 14491
+    Verifonix 14492
+    Mosh'Ogg Butcher 723
+
+
+-------------
+QUESTS
+-------------
+Made quest 4973 (Counting Time Part 2) repeatable
+Fixed minlevel, repeatability and reputation reward of the various Craftman's Writ quests. They all should be available at level 55, be repeatable and reward 20 Argent Dawn reputation
+Fixed Argent Dawn Commission and Scourgestones quests: Horde and Alliance versions were mixed or missing, Argent Dawn Commission could be obtained without having completed the quest
+Fix XP, min. level and quest level for quests in Eastern Kingdoms: 
+    - Tirisfal Glades
+    - Deathknell
+    - Undercity
+    - Scarlet Monastery
+    - Western Plaguelands
+    - Scholomance
+    - Eastern Plaguelands
+    - Stratholme
+    - Silverpine Forest
+    - Shadowfang Keep
+    - Hillsbrad Foothills
+    - Alterac Mountains
+    - Arathi Highlands
+    - The Hinterlands
+    - Wetlands
+    - Loch Modan
+    - Dun Morogh
+    - Ironforge
+    - Gnomeregan
+    - Coldridge Valley
+    - Badlands
+    - Uldaman
+    - Searing Gorge
+    - Blackrock Mountain
+    - Blackrock Deeps
+    - Blackrock Spire
+    - Molten Core
+    - Blackwing Lair
+    - Burning Steppes
+    - Redridge Mountains
+    - Elwynn Forest
+    - Northshire
+    - Stormwind
+    - Westfall
+    - Deadmines
+    - Duskwood
+    - Swamp of Sorrows
+    - Blasted Lands
+    - Stranglethorn Vale
+    - Zul'Gurub
+Corrected drops of Pristine Yeti Hide (Alliance) and Perfect Yeti Hide (Horde) to 2.5%
+Fixed Glyph Chasing Quest: added missing gossips, options and scripts
+Corrected the Second Rebellion Quest Chain
+    - 203 The Second Rebellion
+    - 204 Bad Medicine
+    - 574 Special Forces
+    - 202 Colonel Kurzen
+Corrected quest chain in Booty Bay, Levels and Type:
+    - 606 L41 R30 Scaring Shaky
+    - 607 L41 R30 Return to MacKinley
+    - 609 L44 R30 Voodoo Dues
+    - 613 L44 R31 Cracking Maury's Foot  (GROUP)
+Added missing spell target for spell 12938 (Fel Curse) in quest Uniting the Shattered Amulet in Blasted Lands 
+Fixed quest chain sequencing of the Dreadsteed epic quest lines for warlocks: some quests where not available when needed or where missing their requirements
+Implemented script support for quest 3367
+Changes to quest_template
+    - updated gained experience of certain quests
+    - updated minimum level of certain quests
+    - updated a few questlevel
+Fixed quest 2118 (Plagued Lands) which had outdated required objectives (no longer in sync with SD2 script)
+Brood of Nozdormu - Changes to Quests - Rings / Qiraji Insigna
+    - added quests for rings to exclusive groups, you are only allowed to chose one
+    - added corrected descriptions
+    - fixed reputation and descriptions for qiraji insigna quests
+Fixed drop rate of items for quest 485 and 2766
+Added script for quest 434
+Fix missing fishing loot for quest 1580, "Electropellers".
+"The Monogrammed Sash" quest had wrong 'repeatable' flag
+Fixed drop rate of items related to "The Lost Fragments" quest (Badlands)
+Fixed quest 5096 (Scarlet Diversions) by adding missing gameobject entry for spell focus 'Scarlet Crusade Forward Camp'
+Fixed Captain Smotts (Booty Bay) having duplicate obsolete quest entry
+Fixed quest 6481 goggeroc
+Fixed auto completion of quest 660 (Hint of a New Plague?) which is now scripted in SD2
+Fixed a quest text using real player name instead of $N string in quest 716 (Stone is Better than Cloth)
+Fixed auto completion of quest 219 (Missing in Action) in Redrige Mountains
+Fixed drop rate of quest item 4612 (Black Drake's Heart) which was erroneously set to 100% instead of the awfully low drop rate it should have
+Fixed the number of items provided in quest 2203 (Badlands Reagent Run II)
+Fixed min level of quest 3788 (jonespyre's request) in Feathermoon Fortress
+Fixed NPC Sprogger (Booty Bay) having duplicate entry for quest "Facing Negolash"
+
+
+-------------
+NPCS
+-------------
+Removed items 13444 (Major Mana potion) and 13446 (Major Healing potion) from creature 10856 (Argent Quartermaster Hasana)
+Many rare creatures were not flagged as rare. This is fixed.
+Correcting dialogue of creature 3520 "Ol' Emma"
+Change rank of creatures 1837 (Scarlet Judge) and 1885 (Scarlet Smith) to rare elite as they are in Hearthglen with their elite siblings.
+Added waypoint movement to creature (7978) Bimble Longberry in Ironforge, Mystic Yard.
+Added waypoint movement to creature (9099) Sraaz in Ironforge, Great Forge.
+Fixed typo in creature 9099 gossip
+Fixed position of two creatures in the Barrens as they were stuck inside a cannon.
+Updated NPC Flag on Rivern Frostwind to make him able to display its gossip.
+Correcting loot of Rare Mobs in multiple zones
+    - Elwynn Forest
+    - Westfall
+    - Redridge Mountains
+    - Duskwood
+Fixed rank of creatures 4475 (Blighted Zombie), 1794 (Soulless Ghoul) & 1795 (Searing Ghoul) because they were wrongly stated as elite while they are normal
+Fixed conditions of gossip of creature 15498 (Windcaller Yessendra) in Cenarion Hold. Previously her gossip options allowed player to get back the epic quest rewards she provides without having complete the quests first
+Made creature 2474 (Kurdros) and 2473 (Granistad) in Hillsbrad Foothills roam to keep more efficiently the entrance of the Hinterlands 
+Lord Falconcrest and Otto (Stromgarde) had wrong 'Monster' faction
+War Master Voone (LBRS) did not drop 100-175 Flightblade Throwing Axes
+Defias Enchanter had wrong Elite rank
+Fire Roc (Tanaris) ca now cast Flamespit due to their new mana pool
+Fixed some water+ground creatures that cannot be enagaged into combat because of wrong InhabitType: Skittering/Snapping/Barbed Crustacean (BFD), Deepstrider Giant/Searcher (Desolace), Deep Dweller (Tanaris)
+Allowed Servants of Azora (Elwynn Forest) to be also female
+Fixed gossip of Thamarian (Auberdine) who was misdirecting players to Stormwind and Exodar due to WotLK gossip text
+Fixed creatures using visual blue/white box placeholder instead of their equipment when using throwing weapons
+Added Missing "Unseen" L49-51 creatures in Duskwood  
+Added specific invisible aura to creature 3049 (Unseen)
+Fixed modelid of creature 16119 (Bone Minion)
+Increased roaming of creature 573 (Foe Reaper 4000) in Westfall
+Updated spawn distance of a few creature in Lordamere Internment Camp
+Added Ruul Onestone's missing weapon
+Added Deathsworn Captain's missing weapon
+Added missing weapon to Gordok Captain
+Added missing weapon to King Gordok
+Added missing teleport spell for creature 4968 (Jaina Proudmoore), used when fighting her
+Added waypoint movement to creature 2754 (Anathemus) in the Badlands
+Fixed missing gossip text for creature 3936 (Shandris Feathermoon) in Feralas
+Fixed rank of creature 14445 (Captain Wyrmak) in Swamp of Sorrows as this creature is rare elite
+Added waypoint movement to creature 8215 (Grimungous) in the Hinterlands and fixed its rank to rare elite
+Added missing spawn of rare creatures 5400 (Zekkis) and 5399 (Veyzhak the Cannibal), Trigore the Lasher, Oozeworm, Lord Angler and Ghok Bashguud
+Fixed many rare creatures faction. Most of them are no longer neutral to player, as it was intended
+Added missing spawn, equipment and movement to creature 723 (Mosh'Ogg Butcher)
+Added missing waypoint movement of Azurous (elite Blue Drake, Winterspring)
+
+
+-------------
+EVENTS
+-------------
+Fixed missing gossip menu options for some of the Elders in Lunar Festival game event
+Improved start date of Lunar Festival event. Start date in 2006 was 01/27/2006 and not 02/12/2006.
+Added missing NPC & GO in Darnassus for Lunar Festival holiday event
+Fixed quest level of Lunar Festival quests because they should be
+  available to any player while they are currently flagged as lvl 70 or
+  with minlevel = 68, making them 100% unavailable in Classic
+ Fixed gossip of creature 15895 (Lunar Festival Harbinger) to make it
+  offer Lunar Festival Invitation
+Added script to create Lunar Festival Invitation
+ Fixed spells, NPCs and gameobjects for quest "Lunar Fireworks" :
+   Fixed some of the spell focus objects not working
+Fixed holiday teleports of Lunar Festival not working:
+    - Fixed class and spell charge of item 21711 (Lunar Invitation) which was previously a consumable while it is in fact an holiday item that should not disappear when used
+    - Fixed Lunar Invitation teleport not working (to Moonglade and back to
+    majors cities)
+    - Added missing spell focuses GO for spell 26373 (Lunar Invitation)
+    - Added target position to each teleport spell in Lunar Festival
+    - Added script to cast teleport spell on players
+    - Added script target for Lunar Invitation spell to trigger teleport script
+Removed duplicate spawns of some of the creatures 16781 (Midsummer Celebrant) in Midsummer Festival game event as they were spawned at the same place of another.
+Added missing Stormpike/Frostwolf Emissary for Alterac Weekly Battleground event
+Fixed HP of creature 15467 (Omen) in Lunar Festival
+
+-------------
+MISCELLANEOUS
+-------------
+Fix spell 6346 (Fear Ward)
+Removed quests, NPCs and gameobjects removed from Alterac Valley in Patch 1.10
+Fixed graveyard for Alliance players in Orgrimmar. They will now be ported to Durotar (Razor Hill) instead of Ashenvale
+Made Paladin's talent Benediction reduces mana cost of Seal of Crusader and Seal of Command
+Fixed respawn time of most of the raid bosses
+Fixed reqskillvalue for Leatherworking: Rugged Leather, Cured Rugged Hide, Rugged Armor Kit
+Fixed combat distance of many raid encounters. Tank were previously forced to tank those bosses by being "inside" them: Onyxia, Azuregos, Vaelastrasz, Nefarian, Taerar, Lethon, Emeriss, Ysondre, C'Thun, Eye of C'Thun, Sapphiron
+Removed some 'null' gossip option for Paladin/Shaman/Mage/Rogue trainers
+
+---------------------------------------------------------------------
 VERSION 1.3 (INCLUDES CHANGES FROM v1.2.1)
 ---------------------------------------------------------------------
 
