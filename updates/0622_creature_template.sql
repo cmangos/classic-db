@@ -20,7 +20,7 @@ UPDATE `creature_template` SET `HealthMultiplier`='65', `ManaMultiplier`='10', `
 
 -- Ossirian the Unscarred
 UPDATE `creature_template` SET `HealthMultiplier`='75', `ManaMultiplier`='50', `MinLevelHealth`='499650', `MaxLevelHealth`='499650', `MinMeleeDmg`='2372', `MaxMeleeDmg`='3145' WHERE `Entry`='15339';
-UPDATE `creature_template` SET `ResistanceHoly`='0' WHERE `Entry`='15339';
+UPDATE `creature_template` SET `ResistanceHoly`='0', `ResistanceArcane`='1000' WHERE `Entry`='15339';
 
 -- Qiraji Warrior
 UPDATE `creature_template` SET `HealthMultiplier`='5', `MinLevelHealth`='31440', `MaxLevelHealth`='31440', `MinMeleeDmg`='635', `MaxMeleeDmg`='842', `Armor`='4091' WHERE `Entry`='15387';
