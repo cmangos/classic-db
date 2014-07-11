@@ -60,7 +60,7 @@ UPDATE `creature_template` SET `MinLevel`='60' WHERE `Entry`='15521';
 
 -- Hive'Zara Larva
 UPDATE `creature_template` SET `HealthMultiplier`='0.5', `MinLevelHealth`='3052', `MaxLevelHealth`='3052', `MinMeleeDmg`='10', `MaxMeleeDmg`='14' WHERE `Entry`='15555';
-UPDATE `creature_template` SET `Rank`='0' WHERE `Entry`='15555';
+UPDATE `creature_template` SET `MinLevel`='60', `Rank`='0' WHERE `Entry`='15555';
 
 -- Hive'Zara Hornet
 UPDATE `creature_template` SET `HealthMultiplier`='7.5', `MinMeleeDmg`='741', `MaxMeleeDmg`='982' WHERE `Entry`='15934';
