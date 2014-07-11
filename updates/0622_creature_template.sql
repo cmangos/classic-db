@@ -1,5 +1,7 @@
 
--- BOSS ------------------
+-- -----------------------
+-- STATS
+-- -----------------------
 
 -- Kurinnaxx
 UPDATE `creature_template` SET `HealthMultiplier`='50', `ManaMultiplier`='10', `MinLevelHealth`='333100', `MaxLevelHealth`='333100', `MinMeleeDmg`='1757', `MaxMeleeDmg`='2330' WHERE `Entry`='15348';
@@ -19,9 +21,6 @@ UPDATE `creature_template` SET `HealthMultiplier`='65', `ManaMultiplier`='10', `
 -- Ossirian the Unscarred
 UPDATE `creature_template` SET `HealthMultiplier`='75', `ManaMultiplier`='50', `MinLevelHealth`='499650', `MaxLevelHealth`='499650', `MinMeleeDmg`='2372', `MaxMeleeDmg`='3145' WHERE `Entry`='15339';
 UPDATE `creature_template` SET `ResistanceHoly`='0' WHERE `Entry`='15339';
-
-
--- BOSS TRASH ------------
 
 -- Qiraji Warrior
 UPDATE `creature_template` SET `HealthMultiplier`='5', `MinLevelHealth`='31440', `MaxLevelHealth`='31440', `MinMeleeDmg`='635', `MaxMeleeDmg`='842', `Armor`='4091' WHERE `Entry`='15387';
@@ -69,8 +68,6 @@ UPDATE `creature_template` SET `Rank`='1' WHERE `Entry`='15934';
 -- Hive'Zara Swarmer
 UPDATE `creature_template` SET `HealthMultiplier`='0.05', `MinLevelHealth`='305', `MaxLevelHealth`='305', `MinMeleeDmg`='78', `MaxMeleeDmg`='103', `Armor`='3791' WHERE `Entry`='15546';
 UPDATE `creature_template` SET `MinLevel`='60' WHERE `Entry`='15546';
-
--- TRASH -----------------
 
 -- Qiraji Swarmguard
 UPDATE `creature_template` SET `HealthMultiplier`='4', `MinLevelHealth`='25152', `MaxLevelHealth`='25152', `MinMeleeDmg`='1587', `MaxMeleeDmg`='2105', `Armor`='4091' WHERE `Entry`='15343';
@@ -126,9 +123,6 @@ UPDATE `creature_template` SET `HealthMultiplier`='5', `MinLevelHealth`='31440',
 -- Canal Frenzy
 UPDATE `creature_template` SET `HealthMultiplier`='1.5', `MinLevelHealth`='9156', `MaxLevelHealth`='9156', `MinMeleeDmg`='249', `MaxMeleeDmg`='331' WHERE `Entry`='15505';
 
-
--- CRITTER ---------------
-
 -- Beetle
 UPDATE `creature_template` SET `HealthMultiplier`='0.2', `MinLevelHealth`='8.4', `MaxLevelHealth`='8.4', `Armor`='15' WHERE `Entry`='15475';
 
@@ -137,3 +131,118 @@ UPDATE `creature_template` SET `HealthMultiplier`='0.2', `MinLevelHealth`='8.4',
 
 -- Scorpion
 UPDATE `creature_template` SET `HealthMultiplier`='0.2', `MinLevelHealth`='8.4', `MaxLevelHealth`='8.4', `Armor`='15' WHERE `Entry`='15476';
+
+-- -----------------------
+-- Unit Class
+-- -----------------------
+
+-- Kurinnaxx
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15348';
+
+-- General Rajaxx
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15341';
+
+-- Buru the Gorger
+UPDATE `creature_template` SET `UnitClass`='2' WHERE `Entry`='15370';
+
+-- Ayamiss the Hunter
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15369';
+
+-- Moam
+UPDATE `creature_template` SET `UnitClass`='2' WHERE `Entry`='15340';
+
+-- Ossirian the Unscarred
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15339';
+
+-- Qiraji Warrior
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15387';
+
+-- Swarmguard Needler
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15344';
+
+-- Captain Qeez
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15391';
+
+-- Captain Tuubid
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15392';
+
+-- Captain Drenn
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15389';
+
+-- Captain Xurrem
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15390';
+
+-- Major Pakkon
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15388';
+
+-- Major Yeggeth
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15386';
+
+-- Colonel Zerran
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15385';
+
+-- Buru Egg
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15514';
+
+-- Hive'Zara Hatchling
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15521';
+
+-- Hive'Zara Larva
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15555';
+
+-- Hive'Zara Hornet
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15934';
+
+-- Hive'Zara Swarmer
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15546';
+
+-- Qiraji Swarmguard
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15343';
+
+-- Qiraji Gladiator
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15324';
+
+-- Hive'Zara Stinger
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15327';
+
+-- Hive'Zara Wasp
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15325';
+
+-- Vile Scarab
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15168';
+
+-- Obsidian Destroyer
+UPDATE `creature_template` SET `UnitClass`='2' WHERE `Entry`='15338';
+
+-- Shrieker Scarab
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15461';
+
+-- Spitting Scarab
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15462';
+
+-- Flesh Hunter
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15335';
+
+-- Anuibisath Guardian
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15355';
+
+-- Silicate Feeder
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15333';
+
+-- Hive'Zara Collector
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15319';
+
+-- Hive'Zara Drone
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15318';
+
+-- Hive'Zara Tail Lasher
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15336';
+
+-- Hive'Zara Sandstalker
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15323';
+
+-- Hive'Zara Soldier
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15320';
+
+-- Canal Frenzy
+UPDATE `creature_template` SET `UnitClass`='1' WHERE `Entry`='15505';
