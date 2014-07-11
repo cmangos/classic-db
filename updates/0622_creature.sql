@@ -73,6 +73,8 @@ UPDATE `creature` SET `curhealth`='3052' WHERE `id`='15555';
 -- Hive'Zara Hornet
 UPDATE `creature` SET `curhealth`='47160' WHERE `id`='15934';
 
+-- Hive'Zara Swarmer
+UPDATE `creature` SET `curhealth`='305' WHERE `id`='15546';
 
 -- TRASH -----------------
 

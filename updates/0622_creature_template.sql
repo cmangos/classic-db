@@ -66,6 +66,9 @@ UPDATE `creature_template` SET `MinLevel`='60', `Rank`='0' WHERE `Entry`='15555'
 UPDATE `creature_template` SET `HealthMultiplier`='7.5', `MinMeleeDmg`='741', `MaxMeleeDmg`='982' WHERE `Entry`='15934';
 UPDATE `creature_template` SET `Rank`='1' WHERE `Entry`='15934';
 
+-- Hive'Zara Swarmer
+UPDATE `creature_template` SET `HealthMultiplier`='0.05', `MinLevelHealth`='305', `MaxLevelHealth`='305', `MinMeleeDmg`='78', `MaxMeleeDmg`='103', `Armor`='3791' WHERE `Entry`='15546';
+UPDATE `creature_template` SET `MinLevel`='60' WHERE `Entry`='15546';
 
 -- TRASH -----------------
 
