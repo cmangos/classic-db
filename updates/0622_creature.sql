@@ -22,6 +22,7 @@ UPDATE `creature` SET `curhealth`='416375' WHERE `id`='15341';
 
 -- Buru the Gorger
 UPDATE `creature` SET `curhealth`='666250' WHERE `id`='15370';
+UPDATE `creature` SET `position_x`='-9235.976', `position_y`='1234.066', `position_z`='-63.65783', `spawndist`='3', `MovementType`='1' WHERE `id`='15370';
 
 -- Ayamiss the Hunter
 UPDATE `creature` SET `curhealth`='333100' WHERE `id`='15369';
