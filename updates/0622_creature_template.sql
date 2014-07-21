@@ -101,6 +101,12 @@ UPDATE `creature_template` SET `HealthMultiplier`='8', `MinLevelHealth`='51792',
 -- Anuibisath Guardian
 UPDATE `creature_template` SET `HealthMultiplier`='9.5', `MinLevelHealth`='61503', `MaxLevelHealth`='61503', `MinMeleeDmg`='1295', `MaxMeleeDmg`='1717' WHERE `Entry`='15355';
 
+-- Anubisath Warrior
+UPDATE `creature_template` SET `MinLevelHealth`='38844', `MaxLevelHealth`='38844', `MinMeleeDmg`='317', `MaxMeleeDmg`='421', `Armor`='4391' WHERE `Entry`='15537';
+
+-- Anubisath Swarmguard
+UPDATE `creature_template` SET `MinLevelHealth`='6474', `MaxLevelHealth`='6474', `MinMeleeDmg`='1032', `MaxMeleeDmg`='1368', `Armor`='4391'  WHERE `Entry`='15538';
+
 -- Silicate Feeder
 UPDATE `creature_template` SET `HealthMultiplier`='2', `MinLevelHealth`='5228', `MaxLevelHealth`='5228', `MinLevelMana`='0', `MaxLevelMana`='0', `MinMeleeDmg`='141', `MaxMeleeDmg`='187', `Armor`='3271' WHERE `Entry`='15333';
 UPDATE `creature_template` SET `Rank`='0' WHERE `Entry`='15333';
