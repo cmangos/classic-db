@@ -1,8 +1,8 @@
--- ======================================================================================
--- ====     ACID RELEASE 1.0.4 - FULL RELEASE FOR CMANGOS-CLASSIC (1.12.1 CLIENT)    ====
--- ======================================================================================
+-- =================================================================
+-- ====     ACID CLASSIC FOR CMANGOS-CLASSIC (1.12.X CLIENT)    ====
+-- =================================================================
 
-/* Copyright (C) 2008 - 2013 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
+/* Copyright (C) 2008 - 2014 ACID <http://www.cmangos.net>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
@@ -31,7 +31,7 @@ TRUNCATE creature_ai_texts;
 -- ===========================================
 -- Set Mangos ACID Release Version Information
 -- ===========================================
-UPDATE db_version SET `creature_ai_version` = 'ACID 1.0.5 \'Getting Things Moving\' - Full Release for CMaNGOS-CLASSIC (1.12.1 Client)';
+UPDATE db_version SET `creature_ai_version` = 'ACID 1.12.x (Classic) for CMaNGOS-CLASSIC (1.12.X Client)';
 
 
 -- =======================
