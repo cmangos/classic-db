@@ -5499,7 +5499,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('838301','8383','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Master Wood - Summon Stormwind City Guard on Aggro'),
 -- Lil Timmy (NEEDS SNIFF RESEARCH TO FIND PROPER SUMMON SPELL FOR THE KITTEN AS THIS IS NOT THE CORRECT SPELL MOST LIKELY)
 -- ('866601','8666','1','0','100','1','4000','5000','10000','20000','11','10679','0','18','0','0','0','0','0','0','0','0','Lil Timmy - Spawn his White Kitten'),
-('866602','8666','1','0','100','32','0','0','180000','180000','1','-1311','-1312','-1313','1','-1314','-1315','-1316','0','0','0','0','Lil Timmy - Random Say OOC'),    
+('866602','8666','1','0','100','32','0','0','180000','180000','1','-1312','-1313','0','1','-1314','-1315','-1316','0','0','0','0','Lil Timmy - Random Say OOC'),    
 -- Auctioneer Chilton  
 ('867001','8670','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Auctioneer Chilton - Summon Stormwind City Guard on Aggro'),
 -- Auctioneer Fitch  
@@ -9048,10 +9048,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Feero Ironhand (4484) - NSR 
 -- Sargath (4509) - NSR
 -- Geltharis
-('461901','4619','0','0','100','1','5000','9000','7000','12000','11','35913','1','0','0','0','0','0','0','0','0','0','Geltharis - Cast Fel Fireball'),
-('461902','4619','0','0','100','1','10000','15000','17000','21000','11','37628','1','0','0','0','0','0','0','0','0','0','Geltharis - Cast Fel Immolate'),
-('461903','4619','0','0','100','1','8000','14000','9000','16000','11','7098','4','33','0','0','0','0','0','0','0','0','Geltharis - Cast Curse of Mending'),
-('461904','4619','2','0','100','1','20','0','15000','25000','11','6925','0','1','0','0','0','0','0','0','0','0','Geltharis - Cast Gift of the Xavian at 20% HP'),
+('461901','4619','0','0','100','1','10000','15000','17000','21000','11','37628','1','0','0','0','0','0','0','0','0','0','Geltharis - Cast Fel Immolate'),
+('461902','4619','2','0','100','1','20','0','15000','25000','11','6925','0','1','0','0','0','0','0','0','0','0','Geltharis - Cast Gift of the Xavian at 20% HP'),
 -- Illusionary Nightmare (4785) - NSR
 -- Blackfathom Tide Priestess
 ('480201','4802','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Blackfathom Tide Priestess - Prevent Combat Movement and Set Phase to 0 on Spawn'),
@@ -9071,9 +9069,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Burkrum (6028) - NSR
 -- Legion Hound (6071) - NSR
 -- Diathorus the Seeker (3.3.0 Official Data) - Exact % Values Are Unknown
-('607201','6072','0','0','100','1','8000','12000','7000','13000','11','37624','1','0','0','0','0','0','0','0','0','0','Diathorus the Seeker - Cast Carrion Swarm'),
-('607202','6072','2','0','100','1','75','0','22100','32600','11','18557','1','0','0','0','0','0','0','0','0','0','Diathorus the Seeker - Cast Drain Life at 75% HP'),
-('607203','6072','2','0','100','0','50','0','0','0','39','20','0','0','1','-551','0','0','0','0','0','0','Diathorus the Seeker - Call For Help and Emote at 50% HP'),
+('607201','6072','2','0','100','1','75','0','22100','32600','11','18557','1','0','0','0','0','0','0','0','0','0','Diathorus the Seeker - Cast Drain Life at 75% HP'),
+('607202','6072','2','0','100','0','50','0','0','0','39','20','0','0','1','-551','0','0','0','0','0','0','Diathorus the Seeker - Call For Help and Emote at 50% HP'),
 -- Searing Infernal (3.3.0 Official Data)
 ('607301','6073','1','0','100','1','1000','1000','600000','600000','11','18968','0','0','0','0','0','0','0','0','0','0','Searing Infernal - Cast Fire Shield on Spawn'),
 ('607302','6073','27','0','100','1','18968','1','15000','30000','11','18968','0','0','0','0','0','0','0','0','0','0','Searing Infernal - Cast Fire Shield on Missing Buff'),
@@ -14665,7 +14662,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('327401','3274','4','0','100','0','0','0','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Kolkar Pack Runner - Cast Battle Shout on Aggro'),
 ('327402','3274','6','0','3','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Pack Runner - Chance Say and Summon Verog the Dervish on Death'),
 -- Kolkar Marauder
-('327501','3275','4','0','100','1','0','0','0','0','11','6268','6','1','0','0','0','0','0','0','0','0','Kolkar Marauder - Cast Charge on Aggro'),
+('327501','3275','4','0','100','0','0','0','0','0','11','6268','6','1','0','0','0','0','0','0','0','0','Kolkar Marauder - Cast Charge on Aggro'),
 ('327502','3275','0','0','100','1','5000','11000','7000','12000','11','11976','1','0','0','0','0','0','0','0','0','0','Kolkar Marauder - Cast Strike'),
 ('327503','3275','0','0','100','1','7000','15000','9000','14000','11','8014','4','33','0','0','0','0','0','0','0','0','Kolkar Marauder - Cast Tetanus'),
 ('327504','3275','6','0','3','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Marauder - Chance Say and Summon Verog the Dervish on Death'),
