@@ -4865,10 +4865,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodsnout Worg (1923) - NSR
 -- Moonrage Bloodhowler (4.0.1 Official Data)
 ('192401','1924','0','0','100','1','5800','22800','23100','27900','11','3264','0','1','0','0','0','0','0','0','0','0','Moonrage Bloodhowler - Cast Blood Howl'),
--- Apothecary Renferrel
-('193701','1937','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Apothecary Renferrel - Summon Silverpine Elite on Hostile LOS'),
--- Dalar Dawnweaver
-('193801','1938','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Dalar Dawnweaver - Summon Silverpine Elite on Hostile LOS'),
+-- Apothecary Renferrel (1937) - NSR
+-- Dalar Dawnweaver (1938) - NSR
 -- Rot Hide Brute (3.3.5a Official Data)
 ('193901','1939','4','0','15','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Rot Hide Brute - Random Say on Aggro'),
 ('193902','1939','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Rot Hide Brute - Set Phase 1 on Aggro'),
@@ -4898,8 +4896,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('194801','1948','0','0','100','1','7000','14000','8000','18000','11','3387','1','32','0','0','0','0','0','0','0','0','Snarlmane - Cast Rage of Thule'),
 -- Rane Yorick (1950) - NSR
 -- Quinn Yorick (1951) - NSR
--- High Executor Hadrec
-('195201','1952','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','High Executor Hadrec - Summon Silverpine Elite on Hostile LOS'),
+-- High Executor Hadrec (1952) - NSR
 -- Lake Skulker (3.3.5a Official Data)
 ('195301','1953','11','0','100','0','0','0','0','0','11','6867','0','1','0','0','0','0','0','0','0','0','Lake Skulker - Cast Moss Covered Hands Proc on Spawn'),
 -- Elder Lake Skulker (3.3.5a Official Data)
@@ -4960,10 +4957,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('212009','2120','0','0','100','1','4500','8600','3300','9700','11','512','1','32','0','0','0','0','0','0','0','0','Archmage Ataeric - Cast Chains of Ice'),
 ('212010','2120','0','0','100','1','7000','13000','35000','45000','11','118','5','1','0','0','0','0','0','0','0','0','Archmage Ataeric - Cast Polymorph'),
 ('212011','2120','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Archmage Ataeric - Set Phase to 0 on Evade'),
--- Shadow Priest Allister
-('212101','2121','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Shadow Priest Allister - Summon Silverpine Elite on Hostile LOS'),
--- Edwin Harly
-('214001','2140','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Edwin Harly - Summon Silverpine Elite on Hostile LOS'),
+-- Shadow Priest Allister (2121) - NSR
+-- Edwin Harly (2140) - NSR
 -- Reef Frenzy (2173) - NSR
 -- Karos Razok
 ('222601','2226','4','0','100','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Karos Razok - Summon Enraged Felbat on Aggro'),
@@ -4988,20 +4983,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pyrewood Leatherworker (3532) - NSR
 -- Moonrage Leatherworker (3533) - NSR
 -- Wallace the Blind (3534) - NSR
--- Patrice Dwyer
-('355101','3551','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Patrice Dwyer - Summon Silverpine Elite on Hostile LOS'),
--- Alexandre Lefevre
-('355201','3552','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Alexandre Lefevre - Summon Silverpine Elite on Hostile LOS'),
--- Sebastian Meloche
-('355301','3553','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Sebastian Meloche - Summon Silverpine Elite on Hostile LOS'),
--- Andrea Boynton
-('355401','3554','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Andrea Boynton - Summon Silverpine Elite on Hostile LOS'),
--- Johan Focht
-('355501','3555','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Johan Focht - Summon Silverpine Elite on Hostile LOS'),
--- Andrew Hilbert
-('355601','3556','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Andrew Hilbert - Summon Silverpine Elite on Hostile LOS'),
--- Guillaume Sorouy
-('355701','3557','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Guillaume Sorouy - Summon Silverpine Elite on Hostile LOS'),
+-- Patrice Dwyer (3551) - NSR
+-- Alexandre Lefevre (3552) - NSR
+-- Sebastian Meloche (3553) - NSR
+-- Andrea Boynton (3554) - NSR
+-- Johan Focht (3555) - NSR
+-- Andrew Hilbert (3556) - NSR
+-- Guillaume Sorouy (3557) - NSR
 -- Dalaran Brewmaster
 ('357701','3577','14','0','100','1','150','40','12000','18000','11','7638','6','1','0','0','0','0','0','0','0','0','Dalaran Brewmaster - Cast Potion Toss on Friendlies'),
 -- Dalaran Miner (3578) - NSR
@@ -5012,15 +5000,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Killian Sanatha (5748) - NSR
 -- Lilly (5757) - NSR
 -- Leo Sarn (5758) - NSR
--- Gwyn Farrow
-('588601','5886','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Gwyn Farrow - Summon Silverpine Elite on Hostile LOS'),
+-- Gwyn Farrow (5886) - NSR
 -- Corrupt Minor Manifestation of Water
 ('589401','5894','9','0','100','1','0','25','12000','18000','11','8056','1','0','0','0','0','0','0','0','0','0','Corrupt Minor Manifestation of Water - Cast Frost Shock'),
 ('589402','5894','0','0','100','1','12000','19000','18000','24000','11','122','0','1','0','0','0','0','0','0','0','0','Corrupt Minor Manifestation of Water - Cast Frost Nova'),
 -- Minor Manifestation of Water (5895) - NSR
 -- Lake Frenzy (6033) - NSR    
--- Deathguard Podrig
-('638901','6389','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Deathguard Podrig - Summon Silverpine Elite on Hostile LOS'),
+-- Deathguard Podrig (6389) - NSR
 -- Spirit Healer (6491) - NSR    
 -- Astor Hadren (6497) - npc_astor_hadren
 -- Fenwick Thatros
@@ -5028,13 +5014,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Innkeeper Bates (6739) - npc_innkeeper
 -- Tiev Mordune (7007) - NSR
 -- Silverpine Deathguard (7489) - NSR
--- Mura Runetotem
-('838501','8385','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Mura Runetotem - Summon Silverpine Elite on Hostile LOS'),
+-- Mura Runetotem (8385) - NSR
 -- Enraged Felbat (9521) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Nadia Vernon
-('955301','9553','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Nadia Vernon - Summon Silverpine Elite on Hostile LOS'),
--- Sarah Goode
-('997901','9979','10','0','100','0','0','15','0','0','12','15138','6','600000','0','0','0','0','0','0','0','0','Sarah Goode - Summon Silverpine Elite on Hostile LOS'),
+-- Nadia Vernon (9553) - NSR
+-- Sarah Goode (9979) - NSR
 -- Infected Squirrel (10779) - NSR    
 -- Infected Deer (10780) - NSR    
 -- Reef Shark (12123) - ALREADY SCRIPTED IN ANOTHER ZONE
@@ -5047,8 +5030,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1243302','12433','2','0','100','1','20','0','32100','38100','11','12040','0','1','0','0','0','0','0','0','0','0','Krethis Shadowspinner - Cast Shadow Shield at 20% HP'),
 -- Silverpine Elite (15138) - NSR
 -- Elder Obsidian (15561) - NSR
--- Advisor Sorrelon
-('1628801','16288','10','0','100','0','0','15','0','0','12','15138','1','600000','0','0','0','0','0','0','0','0','Advisor Sorrelon - Summon Silverpine Elite on Hostile LOS'),
+-- Advisor Sorrelon (16288) - NSR
 -- Midsummer Celebrant (16781) - NSR    
 
 
