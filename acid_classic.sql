@@ -7196,7 +7196,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('565901','5659','1','0','100','1','1000','2000','2000','4000','10','4','21','22','0','0','0','0','0','0','0','0','Andrew Hartwell - OOC Random Emote'),
 -- Riley Walker      
 ('566001','5660','1','0','100','1','1000','2000','2000','4000','10','4','21','22','0','0','0','0','0','0','0','0','Riley Walker - OOC Random Emote'),
--- Brother Malach  (There is also random says with Tyler and Edward fighting) - MAY REQUIRE ADDITIONAL SCRIPTING AS IT IS A SEQUENCE OF PRACTICE FIGHTING
+-- Brother Malach (5661) - (There is also random says with Tyler and Edward fighting) - MAY REQUIRE ADDITIONAL SCRIPTING AS IT IS A SEQUENCE OF PRACTICE FIGHTING
 -- Sergeant Houser      
 ('566201','5662','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sergeant Houser - Summon Deathguard Elite on Aggro'),
 -- Travist Bosk      
