@@ -4623,6 +4623,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Obsidion      
 ('840001','8400','9','0','100','1','0','5','15000','21000','11','10101','1','0','0','0','0','0','0','0','0','0','Obsidion - Cast Knock Away'),
 ('840002','8400','0','0','100','1','7000','11000','12000','16000','11','12734','0','0','0','0','0','0','0','0','0','0','Obsidion - Cast Knock Away'),
+('840003','8400','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Obsidion - Set Stand State to Stand on Aggro'),
 -- Enslaved Archaeologist (8402) - NSR
 -- Dying Archaeologist (8417) - NSR
 -- Twilight Idolater (8419) - NSR
