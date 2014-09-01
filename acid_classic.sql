@@ -5282,8 +5282,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('175101','1751','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Mithras Ironhill - Summon Stormwind City Guard on Aggro'),
 -- Caledra Dawnbreeze  
 ('175201','1752','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Caledra Dawnbreeze - Summon Stormwind City Guard on Aggro'),
--- Lord Gregor Lescovar (1754) - NSR
--- Marzon the Silent Blade (1755) - NSR
+-- Lord Gregor Lescovar
+('175401','1754','0','0','100','0','1000','1000','0','0','1','-144','0','0','0','0','0','0','0','0','0','0','Lord Gregor Lescovar - Say on Aggro'),
+-- Marzon the Silent Blade
+('175501','1755','0','0','100','0','1000','1000','0','0','1','-143','0','0','0','0','0','0','0','0','0','0','Marzon the Silent Blade - Say on Aggro'),
 -- Stormwind Royal Guard (1756) - NSR
 -- Stormwind City Patroller (1976) - guard_stormwind
 -- Crier Goodman  
@@ -21422,7 +21424,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-140','The coils of death... Will crush you.','5787','1','0','3670','0'),
 ('-141','Invaders! Sound the Alarm!','0','1','0','23586','0'),
 ('-142','Get it while it\'s hot!','0','0','0','3518','0'),
--- PLEASE REUSE -143 to -147 
+('-143','The Defias shall succeed! No meek adventurer will stop us!','0','0','0','1755','0'),
+('-144','What? How dare you!','0','0','0','1754','0'),
+-- PLEASE REUSE -145 to -147 
 ('-148','Woot! Thanks!','0','0','0','17681','0'),
 ('-149','%s becomes unstable and begins to disintegrate!','0','2','0','16876','0'),
 ('-150','Will you help me find my dog...?','11797','0','0','23618','0'),
