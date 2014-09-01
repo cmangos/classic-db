@@ -8884,8 +8884,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('389701','3897','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Krolg - Flee at 15% HP'),
 -- Illiyana (3.3.0 Official Data)
 ('390101','3901','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Illiyana - Flee at 15% HP'),
--- Searing Totem II (3.3.0 Official Data)
-('390201','3902','0','0','100','1','1000','1000','2200','2900','11','6350','1','0','0','0','0','0','0','0','0','0','Searing Totem II - Cast Attack'),
+-- Searing Totem II (3.3.0 Official Data) - TOTEMAI
 -- Dagri (3915) - NSR
 -- Shael'dryn (3916) - NSR
 -- Befouled Water Elemental (3.3.0 Official Data)
