@@ -18021,6 +18021,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('454204','4542','0','0','100','1','30000','30000','30000','30000','11','8399','0','0','0','0','0','0','0','0','0','0','High Inquisitor Fairbanks - Cast Sleep'),
 ('454205','4542','2','0','100','0','30','0','0','0','11','12039','0','1','0','0','0','0','0','0','0','0','High Inquisitor Fairbanks - Cast Heal at 30% HP'),
 ('454206','4542','2','0','100','0','25','0','0','0','11','11647','0','0','0','0','0','0','0','0','0','0','High Inquisitor Fairbanks - Cast Power Word: Shield at 25% HP'),
+('454207','4542','4','0','100','2','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','High Inquisitor Fairbanks - Set Stand State to Stand on Aggro'),
 -- Bloodmage Thalnos (3.0.3 and 4.3.4 Official Data) - (NOTE: 4.3.4 Official Data - Shadow Bolt Spell ID is now 20825 / Flame Shock Spell ID 23038)
 ('454301','4543','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Bloodmage Thalnos - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 ('454302','4543','4','0','100','0','0','0','0','0','1','-1202','0','0','0','0','0','0','0','0','0','0','Bloodmage Thalnos - Yell on Aggro'),
