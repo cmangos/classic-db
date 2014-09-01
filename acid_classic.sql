@@ -4617,6 +4617,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('828308','8283','2','3','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Slave Master Blackheart - Start Combat Movement and Flee at 15% HP (Phase 2)'),
 ('828309','8283','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Slave Master Blackheart - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Dorius Stonetender (8284) - NSR
+('842101','8421','1','0','100','0','1000','1000','0','0','1','-658','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
+('842102','8421','1','0','100','0','5000','5000','0','0','1','-659','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
+('842103','8421','1','0','100','0','8000','8000','0','0','1','-660','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
+('842104','8421','1','0','100','0','13000','13000','0','0','1','-661','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
+('842105','8421','1','0','100','0','18000','18000','0','0','1','-662','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
+('842106','8421','1','0','100','0','22000','22000','0','0','1','-663','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
+('842107','8421','1','0','100','0','23000','23000','0','0','36','8391','0','0','0','0','0','0','0','0','0','0','Dorius - update entry to Lathoric the Black on OOC timer'),
+('842108','8421','1','0','100','0','24000','24000','0','0','1','-664','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC Timer'),
+('842109','8421','1','0','100','0','28000','28000','0','0','1','-665','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC Timer'),
+('842110','8421','1','0','100','0','28000','28000','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Dorius - Remove unit flag OOC Not Attackable on OOC Timer'),
+('842111','8421','7','0','100','0','0','0','0','0','41','1000','0','0','0','0','0','0','0','0','0','0','Dorius - Despawn on Evade'),
 -- Dark Iron Steelshifter (8337) - NSR
 -- Dark Iron Marksman (8338) - NSR     
 -- Lathoric the Black (8391) - NSR
@@ -21942,7 +21953,15 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-655','Tell us!  Where does your leader hide?','0','0','0','16924','0'),
 ('-656','Please!  I must feed on something soon... A mana crystal.... a shard... anything!  The pain is unbearable!','0','0','0','16916','0'),
 ('-657','You\'re not getting anything until you speak, scum!','0','0','0','16924','0'),
--- Please Reuse 658 - 670
+('-658','Fools. I knew that if I played upon my brother\'s feeble emotions, he would send \'rescuers.\'','0','0','0','8421','0'),
+('-659','How easy it was to manipulate you into recovering the last Suntara stone from those imbeciles of the Twilight\'s Hammer..','0','0','0','8421','0'),
+('-660','When I stumbled upon the Suntara stones at the Grimesilt Digsite, the power of Ragnaros surged through my being. It was Ragnaros that gave me a purpose.','0','0','0','8421','0'),
+('-661','It was the will of Ragnaros that Obsidion be built. Obsidion will destroy the Blackrock orcs of Blackrock Spire, uniting us with our bretheren in the fiery depths.','0','0','0','8421','0'),
+('-662','And ultimately, it was Ragnaros that named me when I was reborn as an acolyte of fire: Lathoric... Lathoric the Black.','0','0','0','8421','0'),
+('-663','%s\'s laughter trails off..','0','2','0','8421','0'),
+('-664','Your task is complete. Prepare to meet your doom.','0','0','0','8391','0'),
+('-665','Obsidion, Rise and Serve your Master!','0','1','0','8391','0'),
+-- 666 - 670 PLEASE REUSE
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
 ('-672','This world is OURS!','0','0','1','Common Orc Say','0'),
 ('-673','You there!  Keep a close watch on these ramparts, intruders could approach at any time!','0','0','0','17264','0'),
