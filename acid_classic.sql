@@ -16342,6 +16342,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1026801','10268','2','0','100','1','20','0','30000','30000','11','8269','0','0','0','0','0','0','0','0','0','0','Gizrul the Slavener - Frenzy'),
 ('1026802','10268','0','0','100','1','10000','10000','10000','10000','11','16495','1','0','0','0','0','0','0','0','0','0','Gizrul the Slavener - Fatal Bite'),
 ('1026803','10268','0','0','100','1','15000','20000','10000','20000','11','16128','1','32','0','0','0','0','0','0','0','0','Gizrul the Slavener - Infected Bite'),
+-- Scarshield Infiltrator
+('1029901','10299','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Scarshield Infiltrator - set phase to 1 on spawn'),
+('1029902','10299','10','5','100','0','0','15','0','0','36','10296','0','0','11','16037','6','0','23','1','0','0','Scarshield Infiltrator - Morphs into Vaelan,casts Mind Probe and increase phase on LOS'),
+('1029903','10299','1','3','100','0','2000','2000','0','0','47','0','0','0','1','-666','0','0','5','1','0','0','Scarshield Infiltrator - stands and speech (Phase 2)'),
+('1029904','10299','1','3','100','0','8000','8000','0','0','1','-667','0','0','5','1','0','0','0','0','0','0','Scarshield Infiltrator - - speech (Phase 2)'),
 -- Blackhand Incarcerator
 ('1031601','10316','0','0','100','1','2000','12100','7900','21900','11','15580','1','0','0','0','0','0','0','0','0','0','Blackhand Incarcerator - Strike'),
 ('1031602','10316','0','0','100','1','10000','20000','30000','35000','11','16045','5','0','0','0','0','0','0','0','0','0','Blackhand Incarcerator - Encage'),
@@ -21939,7 +21944,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-663','%s\'s laughter trails off..','0','2','0','8421','0'),
 ('-664','Your task is complete. Prepare to meet your doom.','0','0','0','8391','0'),
 ('-665','Obsidion, Rise and Serve your Master!','0','1','0','8391','0'),
--- 666 - 670 PLEASE REUSE
+('-666','At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.','0','0','0','Vaelan greetings','0'),
+('-667','Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.','0','0','0','Vaelan greetings','0'),
+-- 668 - 670 PLEASE REUSE
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
 ('-672','This world is OURS!','0','0','1','Common Orc Say','0'),
 ('-673','You there!  Keep a close watch on these ramparts, intruders could approach at any time!','0','0','0','17264','0'),
