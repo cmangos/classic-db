@@ -3,7 +3,7 @@ SET @RESPAWN := '7200';
 
 SET @SOLIDCHEST1 := '153451'; -- Solid Chest 1
 SET @SOLIDCHEST2 := '153453'; -- Solid Chest 2
-SET @SOLIDCHEST3 := '153453'; -- Solid Chest 2
+SET @SOLIDCHEST3 := '153454'; -- Solid Chest 3
 
 SET @LARGESOLIDCHEST1 := '153462'; -- Large Solid Chest 1
 SET @LARGESOLIDCHEST2 := '153463'; -- Large Solid Chest 2
