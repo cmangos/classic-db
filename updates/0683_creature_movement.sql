@@ -8,7 +8,7 @@ DELETE FROM `creature_movement` WHERE `id` IN ('56656', '56657', '56658', '56659
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 00;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 00, '01', '1046.413', '-674.9515', '-169.5157', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 00, '01', '1046.413', '-674.9515', '-169.5157', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 00, '02', '1068.962', '-696.5590', '-157.7810', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 00, '03', '1053.966', '-737.0459', '-151.7794', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 00, '04', '1059.624', '-760.5685', '-151.5860', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -42,14 +42,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 02;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 02, '01', '1035.173', '-854.7958', '-158.8589', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 02, '01', '1035.173', '-854.7958', '-158.8589', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 02, '02', '995.0676', '-853.4235', '-165.4317', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 02, '03', '1035.173', '-854.7958', '-158.8589', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 02, '04', '1057.385', '-862.5274', '-159.6177', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 03;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 03, '01', '966.7530', '-899.8453', '-175.7252', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 03, '01', '966.7530', '-899.8453', '-175.7252', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 03, '02', '980.3823', '-904.3610', '-171.1376', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 03, '03', '1008.565', '-890.0919', '-165.3463', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 03, '04', '1028.491', '-908.0417', '-161.3687', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -66,7 +66,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 04;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 04, '01', '1001.684', '-886.9771', '-167.0547', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 04, '01', '1001.684', '-886.9771', '-167.0547', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 04, '02', '987.0620', '-893.2951', '-169.7379', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 04, '03', '962.8450', '-884.6795', '-173.6825', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 04, '04', '996.8139', '-897.9012', '-168.1947', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -81,7 +81,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 05;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 05, '01', '998.6928', '-609.5692', '-202.0619', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 05, '01', '998.6928', '-609.5692', '-202.0619', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 05, '02', '989.8893', '-595.9269', '-203.2261', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 05, '03', '975.5094', '-589.3787', '-203.7810', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 05, '04', '958.4057', '-595.7327', '-203.9931', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -92,7 +92,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 06;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 06, '01', '800.4368', '-665.5578', '-208.9407', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 06, '01', '800.4368', '-665.5578', '-208.9407', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 06, '02', '779.0322', '-680.1849', '-213.9095', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 06, '03', '759.9225', '-689.7131', '-212.5623', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 06, '04', '753.9745', '-704.1632', '-211.7530', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -109,7 +109,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 07;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 07, '01', '748.5151', '-725.4263', '-211.9395', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 07, '01', '748.5151', '-725.4263', '-211.9395', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 07, '02', '739.7422', '-763.3509', '-218.9724', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 07, '03', '737.3899', '-809.9995', '-225.6305', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 07, '04', '745.2436', '-850.8501', '-223.6281', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -120,7 +120,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 08;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 08, '01', '884.0205', '-803.6951', '-226.6926', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 08, '01', '884.0205', '-803.6951', '-226.6926', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 08, '02', '865.6118', '-779.7151', '-225.9819', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 08, '03', '865.0396', '-765.1099', '-224.7500', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 08, '04', '879.3519', '-761.3517', '-224.0491', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -149,7 +149,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 09;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 09, '01', '708.2625', '-692.8368', '-209.5175', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 09, '01', '708.2625', '-692.8368', '-209.5175', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 09, '02', '707.9111', '-711.0708', '-209.5187', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 09, '03', '686.1985', '-738.5436', '-209.2948', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 09, '04', '681.6021', '-776.7833', '-209.1657', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -175,7 +175,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 10;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 10, '01', '623.8442', '-1186.210', '-195.8348', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 10, '01', '623.8442', '-1186.210', '-195.8348', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 10, '02', '628.4896', '-1171.869', '-194.5435', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 10, '03', '628.3709', '-1151.011', '-197.0152', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 10, '04', '626.8060', '-1131.724', '-200.8709', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
@@ -190,7 +190,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM `creature_movement` WHERE `id`=@SURGER + 11;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
-(@SURGER + 11, '01', '736.2715', '-1211.634', '-118.8998', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(@SURGER + 11, '01', '736.2715', '-1211.634', '-118.8998', '0', (CONCAT(@SURGER, '01')), '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 11, '02', '717.1637', '-1193.438', '-118.9491', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 11, '03', '693.4008', '-1186.742', '-120.9137', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@SURGER + 11, '04', '666.1591', '-1162.693', '-126.0165', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
