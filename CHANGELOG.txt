@@ -1,4 +1,179 @@
 ---------------------------------------------------------------------
+VERSION 1.4.1
+---------------------------------------------------------------------
+
+-------------
+RAIDS
+-------------
+MOLTEN CORE
+Firelords, Lava Spawns, Firewalkers, Flameguards, Sons of Flame and Baron Geddon do fire instead of physical melee damage.
+Small fix of unitflags and ranks in MC
+Ancient Core Hounds do fire melee damage as well
+Updated health and armor values that did not match the Bestiary
+Updated damage output that did not match the Bestiary (-> trash does more, bosses less melee damage)
+Updated missing resistances (-> some mobs are resistant to fire, and vulnerable to frost damage)
+Updated a few MovementTypes (having no effect ingame)
+Updated the minimum level of Lava Spawns and Sons of Flame
+Updated a few spawn timers, matching the guides back from 2005 now
+Deleted the loot_table of following creatures in MC - Flame Imp, Core Hound, Lava Spawn, Firesworn, Core Rager, Son of Flame
+Fixed wrong equipment assigned to bosses and bosses adds in Molten Core
+Added fire immunity to creature 11668 (Firelord)
+All immunity masks were updated
+Added movement waypoint to creature 12264 (Shazzrah) in Molten Core
+Improved movement waypoints of creature 12056 (Baron Geddon)
+Firelord: The timer of Soul Burn was significantly reduced.
+Firelord: The timer of Incinerate was removed, it is now applied on melee attacks.
+Firelord: The timer of Summon Lava Spawn was slightly edited.
+Lava Spawn: Will now be immune to fire damage.
+Lava Spawn: Will now do a text-emote on split.
+Lava Spawn: The timer of Split was edited, both Splits will be casted.
+Gameobject 178188, a flame circle that covers Geddon's rune, was missing, both, as a template and spawn.
+12 Lava Surgers will now patrol in Molten Core, they will spawn and move like they do on the official servers
+	
+RUINS OF AHN'QIRAJ
+Locked the Scarab Coffer in AQ20, you should use a Scarab Coffer Key to open these.
+Updated the respawn timers at the front courtyard (matching retail now)
+Moved Kurinnaxx + added random movement (matching retail now)
+Updated health, mana, damage and amor of each creature type in AQ (matching Bestiary now)
+Updated healthmultiplier and manamultiplier (matching Bestiary and retail now)
+Fixed some minor mistakes (rank, etc.)
+Hive'Zara Larva are now non-elite and always level 60
+Updated missed out creature Hive'Zara Swarmer
+Added 1000 arcane resistance to Ossirian (matching Bestiary now)
+Moved Buru and added random movement (matching retail now)
+Reduced Canal Frenzy's respawn timer to 30 seconds (should be something between 30s and 1m) down from 1 hour
+Added 30 Canal Frenzy, 6 groups of 5 fishes
+Added more Scarab Coffers to AQ20 (now there are 10)
+Reduced the ridiculous drop chance of the Idols in AQ20 (prev. 10% for all of them),
+Added missing creatures (e.g. General Rajaxx' Lieutenants)
+Removed creatures that are not present in AQ20 or could also be somewhere else (e.g. Obsidian Eradicator, Qiraji Warrior)
+Reduced the ridiculous drop chance of the Scarabs in AQ20 and 40 (prev. 80% for all of them, although quest-dependant), should be matching retail now
+Added missing creatures
+Removed some entries (e.g. Qiraji Warrior, etc.)
+Edited missing template for Anubisath Warriors and Swarmguards, Health, Damage and Armor.
+Deleted the loot_table of following creatures in AQ20 - Canal Frenzy, Qiraji Warrior, Swarmguard Needler, Anubisath Swarmguard, Anubisath Warrior
+Fixed respawn time of three bosses in Ruins of Ahn'Qiraj
+    - Moam
+    - General Rajaxx
+    - Ossirian the Unscarred
+Shrieker Scarabs, Spitting Scarabs, Obsidian Destroyer and Flesh Hunter will respawn after 6 hours, up from 1.
+Buru Eggs' positions do now match the official servers.
+
+TEMPLE OF AHN'QIRAJ
+Changed the drop chance of the Idols in AQ40
+Added missing creatures
+Removed some entries (e.g. Qiraji Swarmguard etc. (AQ20)
+11 Large Scarab Coffers are now spawned in AQ40
+
+ZUL'GURUB
+3 description of quests from Rin'wosho have been updated. Previously, the RequestItemsText was missing and therefore, the player was never informed which items would be needed to hand in.
+
+
+-------------
+DUNGEONS INSTANCES
+-------------
+BLACKROCK DEPTHS
+Deleted a weird looking door just behind Ambassador Flamelash, there is no reason for this one to be here.
+Fixed equipment item for creature 8890 (Anvilrage Warden)
+The Core Fragment in BRD will no longer despawn
+The Behemost, a rare creature, will now patrol through the quarry.
+Overmaster Pyron had its waypoints reworked
+A few changed to Pyron's and Behemoth's template
+Chest of the Seven Incorrect position was corrected
+Panzor the Invincible, a rare elite in BRD will now spawn.
+Panzor the Invincible and the alternative War Golem had their waypoints reworked.
+
+DIRE MAUL
+Fixed NPC 11488 (Illyanna Ravenoak) who is spawned twice
+The creature 11501 (King Gordok guid 138183) in Dire Maul should not have any movements
+
+ULDAMAN
+The respawn timer of 'Staunevault Rockchewer' was changed to 2 hours up from 10 minutes (just the ones inside the dungeon), to match their nearby friends.
+'The Shaft of Tsol' no longer required the quest 'The hidden Chamber' to be taken or completed.
+Set respawn time of quest chest before Uldaman entrance to zero as the object should not despawn when used
+
+
+-------------
+GAMEOBJECTS
+-------------
+Removed wrong objective gameobject 186419 (Wrecked Row Boat) in Feralas.
+Fixed spawn time of gameobject 179487
+Lowered to 10 min the spawntime of gameobject 176785 (Ammo Crate) used in quest Ammo for Rumbleshot
+Several Solid Chests and Large Solid Chests were re-spawning way too fast, within 3 minutes (gold exploit). Their respawn was changed to 2 hours. I am sure there are even more out there.
+
+
+-------------
+ITEMS
+-------------
+Prevented item 5075 (Blood Shard) from dropping outside the Barrens
+	
+	
+-------------
+QUESTS
+-------------
+Corrected entries in creature_questrelation of all 3 Assisting Arch
+      Druid Staghelm quests, they were messed up. (2, SW and DA, starting in
+      IF ... etc.)
+The quest-chain 'Crown of the Earth' was updated by Blizzard back in 2006.
+      Quest 934 was replaced by 7383. (You should not get both)
+The quest 'The Captain's Chest' was updated by Blizzard somewhen during
+      Vanilla. Quest 614 was replaced by 8551. (Made the new quest accessible to
+      both factions.
+Updated a few level-requirements and rewards that have been forgotten
+Fixed movement of creature 1373 (Jarven Thunderbrew) in quest 308 (Distracting Jarven)
+Added missing gossip menu option to creature 6566 (Estelle Gendry) to fix quest 1999 (Tools of the Trade) The NPC will now give item 5060 (Thieves Tool) to player on the quest
+Corrected name tag in Progress Text for quest 263
+Improved scripted event 452 for quests 735 & 736 (The Star, the Hand and the Heart, Alliance / Horde) Now the NPC 2937 (Dagun) will spawn in the water and march toward players instead of spawning on top of them
+Added missing spawn of creature 12900 (Somnus) in Swamp of Sorrow Now Horde players will be able to complete that part of the Onyxia quest chain
+Fixed quest 4362 (The Fate of the Kingdom), set PrevQuestId to 4361
+fixed quest 9211 (The Ice Guard) + 9213 (The Shadow Guard) : made them repeatable
+Assigned each quest only one faction
+Fixed textes for quest 3115 (Tainted Memorandum) which were refering to actual player name
+The quest 'Avenging the Fallen' should not be repeatable
+Quest: Betrayed 1/4 - 4/4: fixed minimum level and XP
+Fix more requirements for various quests in Orgrimmar which have been forgotten in https://github.com/classicdb/database/commit/ac0beca
+Added missing emote on completion script of quests 166 (The Defias Brotherhood) and 283 (A Dark Threat Looms)  
+Made quests 9227 & 9228 not repeatable
+Fixed drop of quest items for quest 5064 (Grimtotem Spying) Players no longer have to find the three quest items in a specific order
+Improved movement of creature 1271 (Old Icebeard) in Dun Morogh for quest 312 (Tundra MacGrann's Stolen Stash): Added wait time and run ON/OFF
+Fixed creature 2149 (Dark Iron Raider) which was wrongly using a mount
+Fixed quest requirements for quest 214 (Red Silk Bandanas)
+
+
+-------------
+NPCS
+-------------
+Added the option to repair for Orgrimmar's NPC Kaja
+Added missing equipment to creature 2937 (Dagun the Ravenous)
+Fixed a few texts for NPC 3518 (Thomas Miller) in Stormwind
+Made weapon unsheath for creature 14363 (Thief Catcher Shadowdelve), 14365 (Thief Catcher Farmountain) and creature 14367 (Thief Catcher Thunderbrew) in Ironforge.
+Fixed patrolling Ironforge Guard having his weapon sheathed
+Added missing waypoints to several creatures 5595 (Ironforge Guard).
+Fixed equipment item for creature 10996 (Fallen Hero)
+Set proper unitclasses for summoned Warlock pets
+Prior to patch 3.3, Kobold Laborer, located in the Northshire, Valley were hostile.
+Fixed loot table of creature 1119 (Hammerspine)
+Fixed creature 8666 (Lil Timmy):
+    - removed the bottle he was holding. Time are tough in Stormwind, but not enough to let little boys drink
+    - added its creature companion 7386 (White Kitten) and made it follow Lil Timmy
+Added missing spawn of creature 1179 (Mo'grosh Enforcer) and creature 1181 (Mo'grosh Shaman) in Loch Modan
+Removed wrong AI scripts from various creatures and fixed random aggro text for others. They were previously claiming to be part of the Defias Brotherhood on aggro though obviously were not (kobolds, skeletal mages and such)
+Removed creatures spawned on TBC map
+
+
+-------------
+EVENTS
+-------------
+Added missing NPC and gameobjects for Warsong Gluch weekly battleground event
+Fixed quest level of the starting quests of the Festival of Fire as they should be available at all level
+Made patrolling guards (creature 68 - Stormwind City Guard and creature 1976 - Stormwind City Patroller) in Stormwind swap their equipment at nightfall. They will now wield a lantern instead of their sword.
+Removed creature addon as they were strictly equal to creature template addon
+Made creature 1976 (Stormwind City Patroller) use sword+shield equipment by default they were previously using lantern+shield
+Fixed current and added missing equipment data to make creature 1976 (Stormwind City Patroller) and wandering creatures 68 (Stormwind City Guard) use lanterns during the Night event. Static creatures 68 (Stormwind City Guard) still wield their sword
+Reworked Pyrewood Village event
+
+
+---------------------------------------------------------------------
 VERSION 1.4
 ---------------------------------------------------------------------
 
