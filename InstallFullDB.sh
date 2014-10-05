@@ -167,7 +167,7 @@ then
   # Apply remaining files from main folder
   for f in $CORE_PATH/sql/updates/*_*_mangos_*.sql
   do
-    CUR_REV=`basename $f | sed 's/^\z([0-9]*)_.*/\1/' `
+    CUR_REV=`basename $f | sed 's/^\z\([0-9]*\)_.*/\1/' `
     if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
     then
       # found a newer core update file
