@@ -18,6 +18,7 @@ USERNAME=""
 PASSWORD=""
 MYSQL=""
 CORE_PATH=""
+SD2_PATH=""
 SD2_UPDATES="1"
 
 function create_config {
@@ -31,6 +32,7 @@ cat >  $CONFIG_FILE << EOF
 #   USERNAME:     Your username
 #   PASSWORD:     Your password
 #   CORE_PATH:    Your path to core's directory (OPTIONAL: Use if you want to apply remaining core updates automatically)
+#   SD2_PATH:     Your path to SD2's directory (OPTIONAL: Use if you want to apply remaining SD2 updates automatically)
 #   ACID_PATH:    Your path to a git-clone of ACID (OPTIONAL: Use it if you want to install recent downloaded acid)
 #   SD2_UPDATES:  If you want to disable adding ScriptDev2 updates (Has only meaning if CORE_PATH above is set
 #   MYSQL:        Your mysql command (usually mysql)
@@ -49,6 +51,10 @@ PASSWORD="mangos"
 ## Define the path to your core's folder (This is optional)
 ##   If set the core updates located under sql/updates from this mangos-directory will be added automatically
 CORE_PATH=""
+
+## Define the path SD2 (This is optional and relative to core path)
+##   If set the SD2 updates located under sql/updates from this SD2-directory will be added automatically
+SD2_PATH=""
 
 ## Define the path to the folder into which you cloned ACID (This is optional)
 ##   If set the file acid_classic.sql will be applied from this folder
@@ -180,43 +186,54 @@ then
 #
 #               ScriptDev2 updates
 #
-  echo
-  echo "Applying additional ScriptDev2 updates from path $CORE_PATH/src/bindings/ScriptDev2"
-  echo
+  if [ "$SD2_PATH" != "" ]
+  then
+    SD2_PATH=$CORE_PATH/src/bindings/$SD2_PATH
 
-  for NEXT_SD2_MILESTONE in ${NEXT_SD_MILESTONES}
-  do
-    # A new milestone was released, apply additional updates
-    if [ -e ${CORE_PATH}/src/bindings/ScriptDev2/sql/updates/${NEXT_SD2_MILESTONE}/ ]
+    if [ ! -e $SD2_PATH ]
     then
-      echo "Apply SD2 updates from milestone $NEXT_SD2_MILESTONE"
-      for f in ${CORE_PATH}/src/bindings/ScriptDev2/sql/updates/${NEXT_SD2_MILESTONE}/r*_mangos.sql
-      do
-        CUR_REV=`basename $f | sed 's/^r\([0-9]*\)_mangos.sql/\1/' `
-        if [ "$CUR_REV" -gt "$LAST_SD2_REV" ]
-        then
-          # found a newer core update file
-          echo "Append SD2 update`basename $f` to database $DATABASE"
-          $MYSQL_COMMAND < $f
-          [[ $? != 0 ]] && exit 1
-        fi
-      done
+      echo "Path to SD2 provided, but directory not found! $SD2_PATH"
+      exit 1
     fi
-  done
 
-  # Apply remaining files from main folder
-  for f in $CORE_PATH/src/bindings/ScriptDev2/sql/updates/r*_mangos.sql
-  do
-    CUR_REV=`basename $f | sed 's/^r\([0-9]*\)_mangos.sql/\1/' `
-    if [ "$CUR_REV" -gt "$LAST_SD2_REV" ]
-    then
-      # found a newer core update file
-      echo "Append SD2 update`basename $f` to database $DATABASE"
-      $MYSQL_COMMAND < $f
-      [[ $? != 0 ]] && exit 1
-    fi
-  done
+    echo
+    echo "Applying additional ScriptDev2 updates from path $SD2_PATH"
+    echo
+
+    for NEXT_SD2_MILESTONE in ${NEXT_SD2_MILESTONES}
+    do
+      # A new milestone was released, apply additional updates
+      if [ -e $SD2_PATH/sql/updates/${NEXT_SD2_MILESTONE}/ ]
+      then
+        echo "Apply SD2 updates from milestone $NEXT_SD2_MILESTONE"
+        for f in $SD2_PATH/sql/updates/${NEXT_SD2_MILESTONE}/r*_mangos.sql
+        do
+          CUR_REV=`basename $f | sed 's/^r\([0-9]*\)_mangos.sql/\1/' `
+          if [ "$CUR_REV" -gt "$LAST_SD2_REV" ]
+          then
+            # found a newer core update file
+            echo "Append SD2 update`basename $f` to database $DATABASE"
+            $MYSQL_COMMAND < $f
+            [[ $? != 0 ]] && exit 1
+          fi
+        done
+      fi
+    done
+
+    # Apply remaining files from main folder
+    for f in $SD2_PATH/sql/updates/r*_mangos.sql
+    do
+      CUR_REV=`basename $f | sed 's/^r\([0-9]*\)_mangos.sql/\1/'`
+      if [ "$CUR_REV" -gt "$LAST_SD2_REV" ]
+      then
+        # found a newer core update file
+        echo "Append SD2 update`basename $f` to database $DATABASE"
+        $MYSQL_COMMAND < $f
+        [[ $? != 0 ]] && exit 1
+      fi
+    done
   echo "All SD2 updates applied"
+  fi
 fi
 
 #
