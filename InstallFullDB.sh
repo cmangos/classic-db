@@ -118,15 +118,15 @@ $MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_4_1_z2525.sql
 echo "Process database updates"
 if [ ! -e ${ADDITIONAL_PATH}updates/[0-9]*.sql ]
 then
-	echo "   No update to process"
+    echo "   No update to process"
 else
-	for UPDATE in ${ADDITIONAL_PATH}updates/[0-9]*.sql
-	do
-		echo "   process update $UPDATE"
-		$MYSQL_COMMAND < $UPDATE
-		[[ $? != 0 ]] && exit 1
-	done
-	echo "Updates applied"
+    for UPDATE in ${ADDITIONAL_PATH}updates/[0-9]*.sql
+    do
+        echo "   process update $UPDATE"
+        $MYSQL_COMMAND < $UPDATE
+        [[ $? != 0 ]] && exit 1
+    done
+    echo "Updates applied"
 fi
 
 LAST_CORE_REV="2525"
