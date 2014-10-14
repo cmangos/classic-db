@@ -6,7 +6,7 @@ SET @VALLIA := '5731'; -- Apothecary Vallia
 SET @GUID := (SELECT `guid` FROM `creature` WHERE `id`=@VALLIA);
 SET @POINT := '0';
 
-UPDATE `creature` SET `position_x`='1481.330', `position_y`='308.5229', `position_z`='-61.18631', `orientation`='4.155129', `MovementType`='0' WHERE `id`=@VALLIA;
+UPDATE `creature` SET `position_x`='1481.330', `position_y`='308.5229', `position_z`='-61.18631', `orientation`='4.155129', `MovementType`='2' WHERE `id`=@VALLIA;
 
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
 
