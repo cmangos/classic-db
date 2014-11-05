@@ -11,7 +11,7 @@ UPDATE `creature` SET `position_x`='-4715.607', `position_y`='-925.8232', `posit
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
 DELETE FROM `creature_movement_template` WHERE `entry`=@LONGBERRY;
 
-INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpLONGBERRY`, `orientation`, `model1`, `model2`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (@LONGBERRY, (@POINT := @POINT + 1), '-4707.845', '-907.0120', '501.6594', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@LONGBERRY, (@POINT := @POINT + 1), '-4688.098', '-902.9882', '501.6476', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 (@LONGBERRY, (@POINT := @POINT + 1), '-4671.588', '-914.5618', '501.6541', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
