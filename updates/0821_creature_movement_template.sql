@@ -7,8 +7,8 @@ INSERT INTO `creature_loot_template` VALUES (8876, 24041, 1, 1, -24041, 1, 0);
 UPDATE `creature_template` SET `LootId` = 8876 WHERE `Entry` = 8876;
 
 -- Fixed quest Divino-matic rod
-UPDATE `gossip_menu_option` SET `action_script_id` = 94101, `condition_id` = @CONDITION + 1 WHERE `menu_id` = 941 AND `id` = 0;
 SET @CONDITION := 408;
+UPDATE `gossip_menu_option` SET `action_script_id` = 94101, `condition_id` = @CONDITION + 1 WHERE `menu_id` = 941 AND `id` = 0;
 DELETE FROM `conditions` WHERE `condition_entry` IN (@CONDITION, @CONDITION + 1);
 INSERT INTO `conditions` VALUES
 (@CONDITION, 9, 2768, 0),
