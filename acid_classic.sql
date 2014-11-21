@@ -5797,6 +5797,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('115201','1152','0','0','100','1','11200','12000','11200','12000','11','3604','1','0','0','0','0','0','0','0','0','0','Snapjaw Crocolisk - Cast Tendon Rip'),
 -- Thysta
 ('138701','1387','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Thysta - Summon Enraged Wyverns and Yell on Aggro'),
+-- Enraged Silverback Gorilla
+('151101','1511','2','0','100','0','10','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Enraged Silverback Gorilla - Cast Enrage at 10% HP'),
 -- Thrashtail Basilisk
 ('155001','1550','0','0','75','1','5000','5000','18000','18000','11','6607','4','0','0','0','0','0','0','0','0','0','Thrashtail Basilisk - Cast Lash'),
 -- Ironjaw Basilisk
