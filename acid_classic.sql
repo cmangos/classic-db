@@ -18390,13 +18390,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stratholme
 -- ==========
 -- Ravaged Cadaver (3.0.8 Official Data)
-('1038101','10381','11','0','100','0','0','0','0','0','11','16142','0','0','0','0','0','0','0','0','0','0','Ravaged Cadaver - Cast Cadaver Worms on Spawn'),
-('1038102','10381','9','0','100','1','4400','10200','5800','13800','11','13446','1','0','0','0','0','0','0','0','0','0','Ravaged Cadaver - Cast Strike'),
-('1038103','10381','6','0','100','0','0','0','0','0','11','16324','0','7','1','-1054','0','0','0','0','0','0','Ravaged Cadaver - Summon Broken Cadaver and Emote on Death'),
+('1038101','10381','9','0','100','1','4400','10200','5800','13800','11','13446','1','0','0','0','0','0','0','0','0','0','Ravaged Cadaver - Cast Strike'),
+('1038102','10381','6','0','100','0','0','0','0','0','11','16324','0','7','1','-1054','0','0','0','0','0','0','Ravaged Cadaver - Summon Broken Cadaver and Emote on Death'),
 -- Mangled Cadaver (3.0.8 Official Data)
 ('1038201','10382','11','0','100','0','0','0','0','0','11','16142','0','0','0','0','0','0','0','0','0','0','Mangled Cadaver - Cast Cadaver Worms on Spawn'),
--- Broken Cadaver (3.0.8 Official Data)
-('1038301','10383','0','0','100','0','4000','8000','0','0','11','16141','0','0','0','0','0','0','0','0','0','0','Broken Cadaver - Cast Exploding Cadaver'),
+-- Broken Cadaver
+('1038301','10383','11','0','100','0','0','0','0','0','11','16310','0','2','11','16140','0','2','0','0','0','0','Broken Cadaver - Cadaver Stun + Exploding Cadaver'),
 -- Spectral Citizen (10384) - mobs_spectral_ghostly_citizen
 -- Ghostly Citizen (10385) - mobs_spectral_ghostly_citizen
 -- Vengeful Phantom
