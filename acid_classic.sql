@@ -2420,7 +2420,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('127002','1270','0','0','100','1','2200','18500','120200','125700','11','7102','4','0','0','0','0','0','0','0','0','0','Fetid Corpse - Cast Contagion of Rot'),
 -- Watcher Cutford (1436) - NSR
 -- Splinter Fist Enslaver (3.0.3 Official Data)
-('148701','1487','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Splinter Fist Enslaver - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('148701','1487','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Splinter Fist Enslaver - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('148702','1487','9','1','100','1','5','30','3400','5100','11','10277','1','0','40','2','0','0','0','0','0','0','Splinter Fist Enslaver - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('148703','1487','9','1','100','1','30','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Splinter Fist Enslaver - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('148704','1487','9','1','100','1','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Splinter Fist Enslaver - Start Combat Movement and Set Melee Weapon Model and Start Melee at 10 Yards (Phase 1)'),
