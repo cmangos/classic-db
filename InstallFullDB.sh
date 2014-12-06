@@ -130,7 +130,7 @@ else
 fi
 
 LAST_CORE_REV="2525"
-LAST_SD2_REV="2703"
+LAST_SD2_REV="2704"
 # process future release folders
 NEXT_MILESTONES="0.12.3 0.12.4"
 NEXT_SD2_MILESTONES="0.8 0.9"
