@@ -14660,8 +14660,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('337405','3374','0','0','100','1','1000','3000','180000','190000','11','7164','0','1','0','0','0','0','0','0','0','0','Bael\'dun Excavator - Cast Defensive Stance on Aggro'),
 ('337406','3374','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bael\'dun Excavator - Set Phase to 0 on Evade'),
 -- Bael'dun Foreman
-('337501','3375','0','0','100','0','100','100','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Bael\'dun Foreman - Set Ranged Combat'),
-('337502','3375','0','0','100','1','1000','2000','3000','4000','11','6257','4','0','0','0','0','0','0','0','0','0','Bael\'dun Foreman - Torch Toss'),
+('337501','3375','4','0','100','0','0','0','0','0','11','6257','1','0','0','0','0','0','0','0','0','0','Bael\'dun Foreman - Cast Torch Toss on Aggro'),
 -- Bael'dun Rifleman
 ('337701','3377','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Bael\'dun Rifleman - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('337702','3377','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Bael\'dun Rifleman - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
