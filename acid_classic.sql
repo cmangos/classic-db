@@ -5798,6 +5798,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('115201','1152','0','0','100','1','11200','12000','11200','12000','11','3604','1','0','0','0','0','0','0','0','0','0','Snapjaw Crocolisk - Cast Tendon Rip'),
 -- Thysta
 ('138701','1387','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Thysta - Summon Enraged Wyverns and Yell on Aggro'),
+-- Mok'Rash
+('149301','1493','1','0','100','33','350800','365800','175400','190400','1','-1206','-1207','-1208','1','-1209','-1210','-1213','1','-1211','-1212','-1213','Mok\'Rash - Random Yell'),
 -- Enraged Silverback Gorilla
 ('151101','1511','2','0','100','0','10','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Enraged Silverback Gorilla - Cast Enrage at 10% HP'),
 -- Thrashtail Basilisk
@@ -22425,7 +22427,15 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1203','No rest, for the angry dead.','5846','1','0','4543','0'),
 ('-1204','More... More souls.','5845','1','0','4543','0'),
 ('-1205','Release the hounds!','5841','1','0','3974','0'),
--- PLEASE RE-USE -1206 to -1220
+('-1206','SMOTTS, I HAVE YOUR LITTLE BELT....COME GET IT!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-1207','SMOTTS! HEY, SMOTTS! COME OUT AND PLAY!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-1208','DON\'T LET THIS STATUE BE MY ONLY COMPANY, COME OUT AND PLAY!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-1209','COME OUT TO JANEIRO\'S POINT. I\'M WAITING FOR YOU, SMOTTS...','0','1','0','Mok\'Rash - Random Yell','0'),
+('-1210','I PROMISE I WON\'T KILL YOUR CREW THIS TIME. HAH! BUT MY BROTHER MIGHT EAT THEM!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-1211','HAVE YOU RUN OUT OF SHIPS TO SEND? WHERE IS YOUR COURAGE?','0','1','0','Mok\'Rash - Random Yell','0'),
+('-1212','YOU WERE SUCH GOOD SPORT THE LAST TIME...COME OUT!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-1213','I HAVE YOUR LITTLE BELT TIED AROUND MY FINGER, SMOTTS. DON\'T YOU WANT IT BACK?','0','1','0','Mok\'Rash - Random Yell','0'),
+-- PLEASE RE-USE -1214 to -1220
 ('-1221','You\'ll never leave this place... alive.','5825','1','0','7358','0'),
 ('-1222','To me, my servants!','5828','1','0','7358','0'),
 ('-1223','Come, spirits, attend your master!','5829','1','0','7358','0'),
