@@ -129,7 +129,7 @@ else
     echo "Updates applied"
 fi
 
-LAST_CORE_REV="2525"
+LAST_CORE_REV="2559"
 LAST_SD2_REV="2715"
 # process future release folders
 NEXT_MILESTONES="0.12.3 0.12.4"
