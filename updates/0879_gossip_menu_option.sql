@@ -4,7 +4,7 @@
 -- Thanks at Neotmiren for pointing and researching. This closes #140
 -- Source: http://www.wowwiki.com/Schematic:_Discombobulator_Ray
 
-SET @CONDITION := 64;
+SET @CONDITION := 1142;
 
 DELETE FROM `gossip_menu_option` WHERE `menu_id` = 1050 AND `id` = 1;
 INSERT INTO `gossip_menu_option` VALUES
