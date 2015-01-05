@@ -8,7 +8,7 @@ SET @CONDITION := 1142;
 
 DELETE FROM `gossip_menu_option` WHERE `menu_id` = 1050 AND `id` = 1;
 INSERT INTO `gossip_menu_option` VALUES
-(1050, 1, 0, 'Use engineering to access hidden shematics!', 1, 1, -1, 0, 105002, 0, 0, NULL, @CONDITION + 2);
+(1050, 1, 0, 'Use engineering to access hidden schematics!', 1, 1, -1, 0, 105002, 0, 0, NULL, @CONDITION + 2);
 
 DELETE FROM `dbscripts_on_gossip` WHERE `id` = 105002;
 INSERT INTO `dbscripts_on_gossip` VALUES
