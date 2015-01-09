@@ -1,4 +1,280 @@
 ---------------------------------------------------------------------
+VERSION 1.4.2
+---------------------------------------------------------------------
+
+-------------
+RAIDS
+-------------
+BLACKWING LAIR
+Fixed faction of traps in Suppression Room of Blackwing Lair
+
+MOLTEN CORE
+The movement path of all 15 Ancient Core Hounds in Molten Core was reworked. Additionally, they were moved to their correct spawn location.
+Fixed gossip menu of creature 13278 (Duke Hydraxis) in Azshara. Now players will be able to get the required items to summon Majordomo Executus in Molten Core
+	
+NAXXRAMAS
+Fixed areatrigger prerequist
+Spawned missing NPCs in Naxxramas Construct Wing
+You should now be able to summon (and use) a portal to the area of Karazhan with Atiesh, Greatstaff of the Guardian
+
+TEMPLE OF AHN'QIRAJ
+Add missing script targets for Viscidus and Fankriss
+Add missing spell target positions for Viscidus
+Fixed respawn time of creature 15963 (The Master's Eye) which was respawning too fast (should not respawn for the instance duration).
+Complete script for Viscidus - AQ40
+
+
+-------------
+DUNGEONS INSTANCES
+-------------
+BLACKROCK SPIRE
+Added support for SD2 script of opening the UBRS door
+Fixed stats of NPC 9196 (Highlord Omorokk) in Blackrock Spire
+Fixed NPC 9198 (Spirestone Mystics) who were skinnable though being humanoids
+
+BLACKROCK DEPTHS
+Thunderbrew Lager Kegs are now spawned correctly
+
+DEADMINES
+The minimum level to enter the Deadmines is 10, the old value, 15, is just a recommendation
+
+DIRE MAUL
+Fixed GO 177219 (Gordok Courtyard Door) in Dire Maul North
+Fixed size of GO 179516 (Fengus Chest) in Dire Maul North
+Removed creature 14351 (Gordok Bushwacker) in Dire Maul North as this NPC is spawned by script
+Fixed quests 7481 & 7482 (Elven Legends - Alliance / Horde) by adding missing gossip_menu_options and missing DBscripts on gossip
+Fixed spawn time of NPC 11489 (Tendris Warpwood) in Dire Maul
+Guard Slip'Kik is now constatly moving through the Halls of Destruction and no longer easy to skip on your Tribute Run
+Cho'Rush the Observer was moved and will now assist the Ogre King.
+Guard Fengus will now move constantly around.
+The Broken Trap's size was increased.
+The Tribute and Fengus's Chest were moved.
+Lots of ogres and other creatures in the northern wing of Dire Maul had their faction changed
+Both, the Gordok Courtyard Key and the Gordok Inner Door Key are now bound to Diremaul and will be destroyed if their holders make it out of the dungeon alive.
+The Gordok Inner Door will now require the use of the Gordok Inner Door Key in order to be opened.
+Lots of doors in the western and northern wing of Diremaul had their size and opening animation fixed.
+Treasure of the Shen'dralar should only be usable if you are on certain quests (position fixed)
+Wandering Eyes of Kilrogg should remember their name, no one ever called them Idling Eyes of Kilrogg
+Mizzle the Crafty  used to be way shorter
+Ogres and other creatures located in Dire Maul: North had their attackspeed updated
+Fixed equipment of many creatures in Dire Maul North
+    - Gordok Brute
+    - Stomper Kreeg
+    - Guard Mol'dar
+    - Guard Fengus
+    - Guard Slip'kik
+    - Captain Kromcrush
+    - Cho'Rush the Observer
+Fixed equipment of creatures 11450 (Gordok Reaver) and 14351 (Gordok Bushwacker) in Dire Maul North
+Removed quest: 1318 that was probably replaced by quest 7703 (Unfinished Gordok Business)
+Felvine Shards are not available until you kill Alzzin and were slighty off position.
+Fixed Traps is now of the same size as Broken Traps
+Dire Maul: North was finally populated by Gordok Reavers
+Dire Maul: North - Carrion Swarmer were correctly added in Dire Maul
+
+GNOMEREGAN
+Fixed missing gossip_menu_option in Gnomeragan for engineers. Now Schematic: Discombobulator Ray will be available for Players with the right engineering level and the right access card
+
+MARAUDON
+Spirit of Veng is no longer a stationary unit
+
+SCARLET MONASTERY
+The Secret Door and the High Inquisitor's Door should not be targetable by common players
+
+STRATHOLME
+Added missing GO 175966 (Enchanted Scarlet Thread) in Stratholme
+Fixed respawntime of GO 177287 in Stratholme
+Hearthsinger Forresten will now spawn at different locations in Stratholme
+
+SUNKEN TEMPLE
+Despawns GO 148937 (Atal'ai Light BIG (DND)) and GO 148883 (Atal'ai Light SMALL (DND)) in Sunken Temple : they are spawned by script (SD2)
+Fixed faction of NPC 8440 (Shade of Hakkar) in Sunken Temple
+
+ULDAMAN
+Fixed end quest of Uldaman instance (The Platinum Discs) for both Alliance and Horde
+Spawned missing NPC 7172 (Lore Keeper of Norgannon) at quest start
+Fixed quest requirements
+
+WAILING CAVERNS
+Fixed drop chance of item 5339 (Serpent Bloom) in Wailing Caverns. Though a quest objective, it should be lootable by everyone and should have a 100% drop chance.
+
+ZUL'FARRAK
+Fixed a few issues in Zul'Farrak
+Added missing loot entry for creature 8876 (Sandfury Acolyte)
+Fixed quest Divino-matic rod
+Added waypoint movement to creature 7795 (Hydromancer Velratha) in Zul'Farrak. She will now move around the sacred pool.
+Fixed walk speed for creature 7273 (Gahz'rilla) in Zul'Farrak because it was moving way to quickly
+Fixed addon for creature 5648 (Sandfury Shadowcaster) because they were using an aura addon and an EventAI script to add the same spell 20798 (Demon Skin) resulting in the spell being self canceled
+Fixed loot table of bosses in Zul'Farrak
+Added missing rare spawns in Zul'Farrak
+Fixed faction of NPC 10080 (Sandarr Dunereaver) and 10081 (Dustwraith) in Zul'Farrak. They were previously friendly
+Fixed equipment of NPC 10081 & 10082
+
+
+-------------
+GAMEOBJECTS
+-------------
+Doors in the Stonewrought Pass can be opened with nearby levers.
+Added missing GO 12653 (cat figurine)
+Removed duplicate mailboxes in world (same entry, same coordinates)
+Added missing spawns of gameobject 175928 (Incendia Agave)
+Uniformised respawn time for all GO (10 min)
+Put them all into a pool
+Fixed Z position of GO 30856 (Atal'ai Artifact) in Swamp of Sorrows
+
+
+-------------
+ITEMS
+-------------
+Fixed drop chance of items 7809 and 6834 previously removed from creature loot table and now moved to proper gameobject loot table
+Fixed proc rate of item 10803 (Blade of the Wretched)
+Fixed creaturetype of a few totems which where wrongly set as 'unspecified' they should now behave like totems instead of mindless and harmless melee creatures
+Fixed proc rate of two weapons that were procing on every hit
+    - Ebon Hilt of Marduk
+    - Skullforge Reaver
+Item: Encrusted Tail Fin should only drop from Murlcos located in the Vile Reef
+Fixed drop chance of item 4892 (Durotar Tiger Fur) which was too low
+Added missing recipes/plans loots in item 20469 (Decoded True Believer
+Clippings)
+Fixed drop chance of item 20378 (Twilight Tablet Fragment) in Silithus
+
+
+-------------
+QUESTS
+-------------
+Removed no longer used completion script for quest 994 (Escape Through Force)
+Added completion script for quests 112 (Collecting Kelp) and 114 (The Escape)
+Improved end script of quest 2520 (Sathrah's Sacrifice)
+Trial of the Sea Lion
+    Objects:
+    Strange Lockbox - corrected
+    Bubbly Fissure - both missing added
+Fixed quest 2518 (Tears of the Moon) which was having another quest as prerequist while it does not have one
+Fixed quest 2954 (The Stone Watcher): the quest giver will now display its gossip menu
+The repeatable step for Stranglethorn Fever should not grant experience
+Fixed quest 8447 (Waking Legends) by adding end script
+Trek to Ashenvale (q.990) is now available: 'Sentinel Selarin' should appear after compl. q.994 or q.995
+Improved end script for quest 5541 'Ammo for Rumbleshot'
+Added missing script for quest 1126 (Hive in the Tower) Now, two NPCs 13301 (Hive'Ashi Ambusher) will spawn when looting the Hive'Ashi Pod
+Improved quest 308 (Distracting Jarven): now the unguarded barrel will spawn in the same place as the guarded one
+Fixed quest / gameobjects relation in Darkshore for the washed ashore quest line (Alliance only)
+Fixed quest text for quest 4727 (Beached Sea Turtle) which was using text from a similar quest instead
+Improved start script for quest 1064 (Forsaken Aid) : Added missing spell visual
+Alliance Cloth Quartermaster in Darnassus wasn't offering the elvish version of 'A Donation of Wool' and 'A Donation of Silk' because they weren't existing
+You had to complete the lower tiers of cloth donations to be allowed to donate runecloth for Capital Cities - Cloth Quartermasters
+Removed quest 9180 - not available in classic
+Improved completion script of quest 6661 (Deeprun round rat)
+Fixed quest 2882 (Cuergo's Gold) by adding script on GO use for GO 142189 (Inconspicuous Landmark)
+Improved script for quest 656 (Summoning the Princess) in Arathi Highlands. Now Myzrael has a speech and will engage players on spawn
+Fixed quest text of quest 348 (Stranglethorn Fever) because it was obviously manually added and wrong
+Badlands - Quest: Disharmony of Fire should not be available if you didn't complete 'Disharmony of Flame'.
+
+
+-------------
+NPCS
+-------------
+Removed aura from addon for NPC 1200 (Morbent Fel) in Duskwood because its aura is now handled in ACID script
+Fixed faction of creature 13017 (Enthralled Deeprun Rat)
+Fixed spawntime and movement of creature 14471 Setis in Silithus
+Twilight Prophets will not follow a certain path.
+Two Twilight Avengers will guard each Twilight Prophet.
+The re-spawn timer of Twilight Prophets was increased to 30 minutes, up from 10
+Fixed stats of creature 8208 (Murderous Blisterpaw) in Tanaris
+Fixed level range of creature 2070 (Monnstalker Runt) in Darshore
+Fixed stats of NPC 1511, 1514 and 1516 summoned in quest 349 (stranglethorn fever). They were previously overpowered even for a four men group of right level.
+Removed spawns of creature 3939 (Razormane Wolf) because this is a summoned NPC
+Put creature 10559 (Lady Vespia) into a pool because this is a rare and unique NPC
+Added missing targets for spell 5628 (Gnarlpine Vengeance) that was previously targeting players instead of nearby NPCs friendly to the spell caster
+Removed equipment of creatures 2177 & 2176 Writhing Highborne / Cursed Highbourne in Darkshore. Both of these creatures are weilding daggers, when they shouldn't.
+Added waypoint movement to creature 2417 (Grel'borg the Miser)
+Added waypoint movement for the only Ironforge Guard that was missing it.
+Nikova Raskol & Jenn Langston will now follow a circular path in Stormwind's Old Town.
+Added missing equipment for creature 14221 (Gravis Slipknot)
+Fixed position of NPC 3880 (Sentinel Frostshadow) and 3901 (Illiyana) in Ashenvale because they were located in Forest Song and were located elsewhere back in Classic
+Susan will not follow move on a circular path in Undercity's Rogue Quarter.
+Cedric Stumpel's obviously truncated path was corrected in Undercity
+Hepzibah Sedgewick will now move on a circular path in Undercity
+Apothecary Katrina will not move on a circular path in Undercity
+Fixed Apothecary Lycanus' truncated path in Undercity
+Apothecary Vallia's path has been corrected in Undercity
+Morley Bates will now move on a circular path in Undercity
+Tawny Grisette's path has been adjusted in Undercity
+Harbinger Balthazad's path was corrected in Undercity
+Helena Atwood will now shoot constantly at a Practice Target rather than walking around in Undercity
+Jezelle, a Warlock in Undercity, will now give lessons in summoning some minions. The event will start every 245 seconds
+Seekers Cromwell, Nahr & Thompson will now patrol through Undercity
+Roetten Stonehammer  will now move around in Ironforge
+Curator Thorius will now move on an improved path and will perform additional emote in Ironforge
+High Priest Rohan will now move around inside the Hall of Mysteries
+Bimble Longberry will now move on an updated path in the Mystic Ward
+John Turner will now move on an updated path in Ironforge and reminds nearby players of the orphans of Stormwind
+Golorn Frostbeard will now move around in Ironforge
+Sognar Cliffbeard's path was updated in Ironforge
+Protector Dorana in Westfall wasn't moving at all until now
+In Westfall a new path was assigned to Protector Korelor
+Fixed stats of creature 4196 (Silithid Swarm). This NPCs is summoned by various silithid NPCs and its stats change depending on how it is summoned
+Fixed stats of creature 7769 (Hazzali Parasite). This NPCs is summoned by various silithid NPCs at death and previously had too much HP
+Fixed gossip of creature 3691 Raene Wolfrunner
+Fixed faction of creature 12423 (Guards Roberts) so that he is not killed by wolwes
+Sand Sharks added: Mitch Buchannon will no longer recommend swimming at the beach of Tirisfal and Durotar. There might be sharks!
+Added missing NPC 12797 (Grunt Korf) and 12798 (Grunt Bek'rah) in Orgrimmar
+Added missing equipment to NPC 5124 (Sognar Cliffbeard) in Ironforge
+Fixed equipment of NPC 5669 (Helena Atwood ) in Undercity
+Fixed sheathed equipment for NPC 844 (Antonio Perrelli)
+Improved movement of NPCs in Ironforge:
+	- Thief Catchers Farmountain, Shadowdelve & Thunderbrew
+	- Sraaz
+	- Ironforge Guards
+Most of the guards close to the North Point Tower in Dustwallow Marshes were standing still. This was corrected.
+Most of the guards close to Sentry Point in Dustwallow Marshes were standing still. This was corrected
+Myra Tyrngaarde's movement path was updated in Ironforge
+Updated armor and health of the three Homing Robots. They previously had low life and 0 armor, making the quests more difficult to complete
+Removed duplicate addon for creature 5109 (Myra Tyrngaarde) in Ironforge preventing her from holding its bread, showing players how tasteful it is
+Improved Stitches script used at end of quest 252 (Translation to
+    Ello) to make it closer to what it was on retail:
+    - Stitches is now neutral at spawn and will no longer kill Abercrombrie
+    - Stitches turns hostile when reaching the road
+    - Stitches now attacks the Night Watch guards on its way to Darkshire
+    - Town Crier (creature 468) now has several yells to inform players of
+    Stitches progress toward Darkshire
+    - Prevented Stitches to spawn twice
+Removed wrong equipment for creature 5154 (Poranna Snowbraid) in Ironforge as she should wear none
+Improved gossip of NPC 9047 in Darnassus Jenal <Ditch Digger>
+Fixed rank of creature 8217 (Mith'rethis the Enchanter) in the Hinterlands because this NPC is rare and elite and added waypoint movement
+Added random movement to creature 1493 (Mok'Rash) near Booty Bay and set respawn time to 2h
+Linked NPCs 15542 (Twilight Marauder) and NPC 15541 (Twilight Marauder Morna): they will now engage with their master and respawn with her
+Set Run speed for creatures 15542 and 15541
+Adjust spawn time (4 minutes for master, followers are linked)
+Fixed model of NPC 15542 which had wrong alternate model similar to NPC 15541
+
+
+-------------
+EVENTS
+-------------
+Removing Noblegarden items from creature loot
+    - 6833 White Tuxedo Shirt
+    - 6834 Black Tuxedo Shirt
+    - 6835 Black Tuxedo Pants
+    - 7806 Lollipop
+    - 7807 Candy Bar
+    - 7808 Chocolate Square
+    - 7809 Easter Dress
+    - 19028 Elegant Dress
+Remove script for Sylvanas Windrunner	
+Removed spawns of NPC's that are spawned during the event Elemental Invasion
+Removed duplicate Midsummer bonefires in Ironforge. Also fixed the model used
+Added missing spawn of NPC 15197 (Darkcaller Yanka) and 15199 (Sergeant Hartman) during Hallow's End
+
+
+-------------
+MISCELLANEOUS
+-------------
+Add Shaman/Warrior flurry spell chains
+Fixed some Alliance graveyards in Horde territories
+Lots of conditions for mounts vendors were updated. Races that were introduced in TBC were removed, they were accidentally breaking stuff
+
+
+---------------------------------------------------------------------
 VERSION 1.4.1
 ---------------------------------------------------------------------
 

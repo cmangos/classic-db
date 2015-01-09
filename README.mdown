@@ -10,8 +10,8 @@ copies.
 
 Compatibility
 -------------
-The *Classic DB* database is compatible with [mangos-classic commit 3228d6f51585f3aad072f785f486276036fc9f25][10]
-and newer.  It also requires [ScriptDev2 commit af09e16b6ab5e256b245832c307f05d2231e6e6c][11]
+The *Classic DB* database is compatible with [mangos-classic rev 2583][10]
+and newer.  It also requires [ScriptDev2 rev 2715][11]
 or newer in order to be fully enjoyable.
 
 Getting started
