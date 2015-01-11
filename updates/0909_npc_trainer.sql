@@ -3,7 +3,7 @@
 
 -- ----------------------
 
-DELETE FROM `npc_trainer` WHERE `entry`='17938';
+DELETE FROM `npc_trainer` WHERE `spell`='17938';
 INSERT INTO `npc_trainer` (`entry`, `spell`, `spellcost`, `reqskill`, `reqskillvalue`, `reqlevel`) VALUES
 ('0461', '17938', '22000', '17862', '0', '56'),
 ('0906', '17938', '22000', '17862', '0', '56'),
