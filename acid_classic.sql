@@ -13367,8 +13367,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Warden Haro 15499     
 -- Keyl Swiftclaw 15500     
 -- Windcaller Kaldon 15540     
--- Twilight Marauder Morna 15541     
--- Twilight Marauder 15542     
+-- Twilight Marauder Morna
+('1554101','15541','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Twilight Marauder Morna - Dismount on Aggro'),
+('1554102','15541','0','0','100','1','5000','8000','9000','13000','11','16856','1','0','0','0','0','0','0','0','0','0','Twilight Marauder Morna - Cast Mortal Strike'),
+('1554103','15541','9','0','100','1','0','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Twilight Marauder Morna - Cast Sunder Armor'),
+('1554104','15541','0','0','100','1','9000','15000','14000','18000','11','23600','0','1','0','0','0','0','0','0','0','0','Twilight Marauder - Cast Piercing Howl'),    
+-- Twilight Marauder
+('1554201','15542','4','0','100','0','0','0','0','0','43','0','0','0','11','22911','1','0','0','0','0','0','Twilight Marauder - Dismount and Cast Charge on Aggro'),
+('1554202','15542','2','0','100','0','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Twilight Marauder - Cast Enrage at 20% HP'),
+('1554203','15542','0','0','100','1','9000','15000','14000','18000','11','23600','0','1','0','0','0','0','0','0','0','0','Twilight Marauder - Cast Piercing Howl'),   
 -- Cenarion Outrider 15545     
 -- Elder Primestone 15570     
 -- Elder Bladesing 15599     
