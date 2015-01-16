@@ -18116,9 +18116,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1047104','10471','0','0','100','3','2400','21700','11100','29900','11','17165','4','0','0','0','0','0','0','0','0','0','Scholomance Acolyte - Cast Mind Flay'),
 ('1047105','10471','0','0','100','3','5700','33800','15800','28600','11','11443','1','0','0','0','0','0','0','0','0','0','Scholomance Acolyte - Cast Cripple'),
 -- Scholomance Occultist (3.0.3 Official Data - Logs Only)
-('1047201','10472','0','0','100','3','4800','11700','32400','39700','11','16431','0','33','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Bone Armor and Increase Phase'),
-('1047202','10472','0','0','100','3','500','1000','6500','15600','11','17228','1','0','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Shadow Bolt Volley'),
-('1047203','10472','13','0','100','2','0','0','0','0','11','15122','1','1','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Counterspell is Target Cast a Spell'),
+('1047201','10472','4','3','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Scholomance Occultist - Set Phase 1 on Aggro'),
+('1047202','10472','0','5','100','3','4800','11700','32400','39700','11','16431','0','33','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Bone Armor (Phase 1)'),
+('1047203','10472','13','5','100','2','0','0','0','0','11','15122','1','1','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Counterspell is Target Cast a Spell (Phase 1)'),
+('1047204','10472','2','0','100','2','40','0','0','0','3','11284','0','0','22','2','0','0','0','0','0','0','Scholomance Occultist - Transform into Dark Shade and Set Phase 2 at 40% HP (Phase 1)'),
+('1047205','10472','0','3','100','3','500','1000','6500','15600','11','17228','1','0','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Shadow Bolt Volley (Phase 2)'),
 -- Scholomance Student (10475)
 -- Scholomance Necrolyte (3.0.3 Official Data - Logs Only)
 ('1047601','10476','1','0','100','2','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Scholomance Necrolyte - Prevent Combat Movement on Spawn'),
@@ -18139,8 +18141,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1047704','10477','2','0','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scholomance Necromancer - Flee at 15% HP'),
 -- Splintered Skeleton (10478)
 -- Unstable Corpse (3.0.3 Official Data - Logs Only)
-('1048001','10480','0','0','100','3','7000','11000','8000','14000','11','18270','1','0','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Dark Plague'),
-('1048002','10480','6','0','100','2','0','0','0','0','11','17689','0','3','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Disease Burst on Death'),
+('1048001','10480','0','0','100','3','7000','19000','18000','35000','11','18270','1','0','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Dark Plague'),
+('1048002','10480','6','0','100','2','0','0','0','0','11','17689','0','7','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Disease Burst on Death'),
 -- Reanimated Corpse (3.0.3 Official Data - Logs Only)
 ('1048101','10481','0','0','100','3','3600','17300','10300','18200','11','18270','1','32','0','0','0','0','0','0','0','0','Reanimated Corpse - Cast Dark Plague'),
 -- Risen Lackey (10482)
@@ -18172,7 +18174,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1049103','10491','0','0','100','3','12600','25200','16700','32300','11','17620','1','1','0','0','0','0','0','0','0','0','Risen Bonewarder - Cast Drain Life'),
 -- Diseased Ghoul (3.0.3 Official Data - Logs Only)
 ('1049501','10495','1','0','100','2','1000','1000','0','0','11','12627','0','1','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Disease Cloud on Spawn'),
-('1049502','10495','0','0','100','3','7100','12300','12300','40900','11','3436','4','32','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Wandering Plague'),
+('1049502','10495','4','0','100','2','0','0','0','0','11','8247','0','1','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Wandering Plague on Aggro'),
 ('1049503','10495','6','0','100','2','0','0','0','0','11','17742','0','7','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Cloud of Disease on Death'),
 -- Spectral Tutor (3.0.3 Official Data - Logs Only)
 ('1049801','10498','0','0','100','3','4200','19100','8600','26400','11','17630','1','0','0','0','0','0','0','0','0','0','Spectral Tutor - Cast Mana Burn'),
@@ -18193,7 +18195,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jandice Barov (10503) - boss_jandice_barov
 -- Lord Alexei Barov
 ('1050401','10504','11','0','100','2','0','0','0','0','11','17467','0','1','0','0','0','0','0','0','0','0','Alexei Barov - Cast Unholy Aura on Spawn'),
-('1050402','10504','0','0','100','3','8000','15000','12000','17000','11','17820','1','0','0','0','0','0','0','0','0','0','Alexei Barov - Cast Veil of Shadow'),
+('1050402','10504','0','0','100','3','8000','15000','15000','21000','11','17820','1','0','0','0','0','0','0','0','0','0','Alexei Barov - Cast Veil of Shadow'),
 -- Instructor Malicia
 ('1050501','10505','0','0','100','3','4000','9000','18000','26000','11','17831','4','32','0','0','0','0','0','0','0','0','Instructor Malicia - Cast Call of the Grave'),
 ('1050502','10505','0','0','100','3','7000','12000','11000','16000','11','18376','1','32','0','0','0','0','0','0','0','0','Instructor Malicia - Cast Corruption'),
