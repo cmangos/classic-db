@@ -1,6 +1,6 @@
 -- Linked NPC 11784 (Theradrim Guardian) with its small adds 11783 (Theradrim Shardling) in Maraudon
 -- The adds will engage along with their master and follow it
-DELETE FROM `creature_linking_template` WHERE `entry` = 13743;
+DELETE FROM `creature_linking_template` WHERE `entry` = 11783;
 INSERT `creature_linking_template` VALUES
 (11783, 349, 11784, 1 + 2 + 512, 15);
 
