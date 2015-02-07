@@ -18162,8 +18162,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Unstable Corpse (3.0.3 Official Data - Logs Only)
 ('1048001','10480','0','0','100','3','7000','19000','18000','35000','11','18270','1','0','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Dark Plague'),
 ('1048002','10480','6','0','100','2','0','0','0','0','11','17689','0','7','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Disease Burst on Death'),
--- Reanimated Corpse (3.0.3 Official Data - Logs Only)
-('1048101','10481','0','0','100','3','3600','17300','10300','18200','11','18270','1','32','0','0','0','0','0','0','0','0','Reanimated Corpse - Cast Dark Plague'),
+-- Reanimated Corpse
+('1048101','10481','4','0','100','2','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Invicibility at 1 HP on aggro (Phase 0)'),
+('1048102','10481','0','0','100','3','3600','17300','10300','18200','11','18270','1','32','0','0','0','0','0','0','0','0','Reanimated Corpse - Cast Dark Plague'),
+('1048103','10481','2','0','100','2','10','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Phase 1 below 10%HP (Phase 0)'),
+('1048104','10481','0','1','100','2','1000','1000','0','0','20','0','0','0','47','7','0','0','21','0','0','0','Reanimated Corpse - Stop combat movement, Lies Down and Stop Melee Combat (Phase 1)'),
+('1048105','10481','0','1','100','2','10000','11000','0','0','11','23965','0','2','21','1','1','0','47','0','0','0','Reanimated Corpse - Cast Instant Heal, Stands Up and Resumes Combat Movement (Phase 1)'),
+('1048106','10481','2','1','100','2','99','30','0','0','42','0','0','0','20','1','0','0','0','0','0','0','Reanimated Corpse - Removes Invicibility below 99%HP and Resume Melee Combat (Phase 1)'),
+('1048107','10481','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Phase to 0 on Evade'),
 -- Risen Lackey (10482)
 -- Risen Aberration (3.0.3 Official Data - Logs Only)
 ('1048501','10485','0','0','100','3','1500','8900','17300','33700','11','12021','1','0','0','0','0','0','0','0','0','0','Risen Aberration - Cast Fixate'),
@@ -18283,9 +18289,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1155101','11551','11','0','100','2','0','0','0','0','11','10022','0','1','0','0','0','0','0','0','0','0','Necrofiend - Cast Deadly Poison on Spawn'),
 ('1155102','11551','0','0','100','3','6500','13100','20700','33900','11','15474','0','0','0','0','0','0','0','0','0','0','Necrofiend - Cast Web Explosion'),
 -- Scholomance Dark Summoner (3.0.3 Official Data - Logs Only)
-('1158201','11582','4','0','100','2','0','0','0','0','1','-410','-311','-435','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Random Say on Aggro'),
-('1158202','11582','0','0','95','3','500','2800','1900','3700','11','17618','0','1','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Summon Risen Lackey'),
-('1158203','11582','0','0','100','3','0','500','38700','49300','11','12279','1','32','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Cast Curse of Blood'),
+('1158201','11582','1','0','100','2','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Prevent Combat Movement on Spawn'),
+('1158202','11582','1','0','100','3','1000','2500','30000','31000','11','16531','0','1','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Cast Frail Skeleton OOC'),
+('1158203','11582','1','0','100','35','16000','17500','30000','31000','1','-410','-311','-435','1','-1237','-1238','0','0','0','0','0','Scholomance Dark Summoner - Random Say OOC'),
+('1158204','11582','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Set Phase 1 on Aggro'),
+('1158205','11582','0','5','95','3','500','2800','1900','3700','11','17618','0','1','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Summon Risen Lackey (Phase 1)'),
+('1158206','11582','0','5','100','3','0','500','38700','49300','11','12279','1','32','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Cast Curse of Blood (Phase 1)'),
+('1158207','11582','3','5','100','3','15','0','1000','1000','21','1','0','0','23','1','0','0','0','0','0','0','Scholomance Dark Summoner - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('1158208','11582','9','5','100','3','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Start Combat Movement at 35 Yards (Phase 1)'),
+('1158209','11582','9','5','100','3','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('1158210','11582','9','5','100','3','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Start Combat Movement Below 5 Yards (Phase 1)'),
+('1158211','11582','9','0','100','3','0','5','1000','1000','29','10','150','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Ranged Movement at 5 Yards to Avoid Melee Combat'),
+('1158212','11582','3','3','100','3','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('1158213','11582','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Set Phase to 0 on Evade'),
 -- Risen Guardian (3.0.3 Official Data - Logs Only)
 ('1159801','11598','4','0','100','2','0','0','0','0','31','1','3','0','0','0','0','0','0','0','0','0','Risen Guardian - Random Phase on Aggro'),
 ('1159802','11598','0','0','100','3','37600','71200','14300','32700','11','7068','1','0','0','0','0','0','0','0','0','0','Risen Guardian - Cast Veil of Shadow'),
@@ -22439,7 +22455,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1134','We will find what the Master is looking for! Failure is not an option!','0','1','0','19354','0'),
 ('-1135','None can stand against the serpent lords!','5786','1','0','3671','0'),
 ('-1136','Speak, filthy refugee! What was your caravan doing in the Bone Wastes?','0','0','0','22378','0'),
--- 1137 and 1138 REUSE
+('-1237','Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.','0','0','0','Scholomance Dark Summoner','1'),
+('-1238','Wow, this one is just plain useless. Let me try again.','0','0','0','Scholomance Dark Summoner','1'),
 ('-1139','Come, $n. See what the Nightmare brings...','0','1','0','15625','0'),
 ('-1140','The Nightmare cannot be stopped!','0','1','0','15625','0'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','15625','0'),
