@@ -16784,11 +16784,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1149002','11490','0','0','100','1','11200','20400','17200','24100','11','22651','4','0','0','0','0','0','0','0','0','0','Zevrim Thornhoof - Cast Sacrifice'),
 -- Old Ironbark     11491 YELL: (At last... Freed from his cursed grasp!)
 -- Alzzin the Wildshaper (NOT ABLE TO USE LOG DATA ACCURATELY DUE TO FORM CHANGES AND ABILITY SWITCHS - VERY COMPLEX) - Scripted as best as possible based on all sources
-('1149201','11492','4','0','100','0','0','0','0','0','11','22128','0','1','23','1','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Thorns and Set Phase 1 on Aggro'),
+('1149201','11492','4','0','100','0','0','0','0','0','11','22128','0','1','23','1','0','0','48','0','0','0','Alzzin the Wildshaper - Cast Thorns, Set Phase 1 and Stop WP movement on Aggro'),
 ('1149202','11492','9','13','100','1','0','40','5000','10000','11','22662','4','32','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Wither (Phase 1 & 4)'),
 ('1149203','11492','0','13','100','1','8000','15000','9000','14000','11','7948','0','33','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Wild Regeneration (Phase 1 & 4)'),
-('1149204','11492','0','29','100','1','14000','17000','63000','66000','11','22660','0','1','22','2','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Dire Wolf Form and Set Phase 2 (Phase 1)'),
-('1149205','11492','0','29','100','1','39000','42000','63000','66000','11','22688','0','1','22','3','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Tree Form and Set Phase 3 (Phase 1)'),
+('1149204','11492','0','29','100','1','14000','17000','63000','66000','11','22660','0','7','22','2','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Dire Wolf Form and Set Phase 2 (Phase 1)'),
+('1149205','11492','0','29','100','1','39000','42000','63000','66000','11','22688','0','7','22','3','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Tree Form and Set Phase 3 (Phase 1)'),
 ('1149206','11492','9','27','100','1','0','5','8000','12000','11','19319','1','0','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Vicious Bite (Phase 2)'),
 ('1149207','11492','9','27','100','1','0','10','7000','13000','11','22689','4','33','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Mangle (Phase 2)'),
 ('1149208','11492','0','27','100','1','26000','29000','63000','66000','28','0','22660','0','22','1','0','0','0','0','0','0','Alzzin the Wildshaper - Remove Dire Wolf Form and Set Phase 1 (Phase 2)'),
@@ -16803,7 +16803,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1149217','11492','2','0','100','0','40','0','0','0','32','11460','1','9','32','11460','1','10','32','11460','1','11','Alzzin the Wildshaper - Summon 3 Alzzin\'s Minion\'s at 40% HP'),
 ('1149218','11492','2','0','100','0','40','0','0','0','32','11460','1','9','32','11460','1','10','32','11460','1','11','Alzzin the Wildshaper - Summon 3 Alzzin\'s Minion\'s at 40% HP'),
 ('1149219','11492','2','0','100','0','40','0','0','0','32','11460','1','9','32','11460','1','10','32','11460','1','11','Alzzin the Wildshaper - Summon 3 Alzzin\'s Minion\'s at 40% HP'),
-('1149220','11492','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Set Phase 0 on Evade'),
+('1149220','11492','7','0','100','0','0','0','0','0','22','0','0','0','48','2','0','0','0','0','0','0','Alzzin the Wildshaper - Set Phase 0 and Resume WP movement on Evade'),
 ('1149221','11492','6','0','100','0','0','0','0','0','34','0','3','0','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Set Instance Data on Death'),
 -- Immol'thar (3.3.3 Official Data) - Need More Data If Possible for Portal Spell
 ('1149601','11496','9','0','100','1','0','8','4800','14700','11','5568','0','0','0','0','0','0','0','0','0','0','Immol\'thar - Cast Trample'),
