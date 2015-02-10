@@ -14739,6 +14739,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('339409','3394','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Barak Kodobane - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Verog the Dervish
 ('339501','3395','11','0','100','0','0','0','0','0','1','-770','0','0','0','0','0','0','0','0','0','0','Verog the Dervish - Yell on Spawn'),
+('339502','3395','4','0','100','0','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Verog the Dervish - cast Rushing Charge on aggro'),
 -- Hezrul Bloodmark
 ('339601','3396','2','0','70','1','60','0','7500','7500','11','6958','1','0','0','0','0','0','0','0','0','0','Hezrul Bloodmark - Cast Blood Leech When Below 60% HP'),
 -- Kolkar Bloodcharger
