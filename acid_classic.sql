@@ -5198,6 +5198,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('132701','1327','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Reese Langston - Summon Stormwind City Guard on Aggro'),
 -- Elly Langston  
 ('132801','1328','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Elly Langston - Summon Stormwind City Guard on Aggro'),
+('132802','1328','22','0','100','1','41','6','469','0','5','11','0','0','0','0','0','0','0','0','0','0','Elly Langston - laugh on flex emote'),
+('132803','1328','22','0','100','1','34','6','469','0','5','94','0','0','0','0','0','0','0','0','0','0','Elly Langston - dance on dance emote'),
+('132804','1328','22','0','100','1','84','6','469','0','5','17','0','0','0','0','0','0','0','0','0','0','Elly Langston - blow a kiss on shy emote'),
+('132805','1328','22','0','100','1','17','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Elly Langston - bows on bow emote'),
+('132806','1328','22','0','100','1','58','6','469','0','5','24','0','0','0','0','0','0','0','0','0','0','Elly Langston - shy on kiss emote'),
+('132807','1328','22','0','100','1','77','6','469','0','1','-1214','0','0','5','14','0','0','0','0','0','0','Elly Langston - rude text on rude emote'),
+('132808','1328','22','0','100','33','101','6','469','0','1','-1215','-1216','-1220','1','-1218','-1219','0','0','0','0','0','Elly Langston - random text on wave emote'),
 -- Gerik Koen  
 ('133301','1333','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Gerik Koen - Summon Stormwind City Guard on Aggro'),
 -- Mayda Thane  
@@ -5336,8 +5343,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ol' Emma 
 ('352001','3520','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ol\' Emma - Summon Stormwind City Guard on Aggro'),
 -- Sewer Beast (3581) - NSR
--- Jenn Langston  (HAS EMOTES TO SCRIPT) 
+-- Jenn Langston 
 ('362601','3626','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jenn Langston - Summon Stormwind City Guard on Aggro'),
+('362602','3626','22','0','100','1','41','6','469','0','5','11','0','0','0','0','0','0','0','0','0','0','Jenn Langston - laugh on flex emote'),
+('362603','3626','22','0','100','1','34','6','469','0','5','94','0','0','0','0','0','0','0','0','0','0','Jenn Langston - dance on dance emote'),
+('362604','3626','22','0','100','1','84','6','469','0','5','17','0','0','0','0','0','0','0','0','0','0','Jenn Langston - blow a kiss on shy emote'),
+('362605','3626','22','0','100','1','17','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Jenn Langston - bows on bow emote'),
+('362606','3626','22','0','100','1','58','6','469','0','5','24','0','0','0','0','0','0','0','0','0','0','Jenn Langston - shy on kiss emote'),
+('362607','3626','22','0','100','1','77','6','469','0','1','-1214','0','0','5','14','0','0','0','0','0','0','Jenn Langston - rude text on rude emote'),
+('362608','3626','22','0','100','33','101','6','469','0','1','-1215','-1216','-1217','1','-1218','-1219','0','0','0','0','0','Jenn Langston - random text on wave emote'),
 -- Erich Lohan  
 ('362701','3627','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Erich Lohan - Summon Stormwind City Guard on Aggro'),
 -- Steven Lohan  
@@ -14725,6 +14739,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('339409','3394','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Barak Kodobane - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Verog the Dervish
 ('339501','3395','11','0','100','0','0','0','0','0','1','-770','0','0','0','0','0','0','0','0','0','0','Verog the Dervish - Yell on Spawn'),
+('339502','3395','4','0','100','0','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Verog the Dervish - cast Rushing Charge on aggro'),
 -- Hezrul Bloodmark
 ('339601','3396','2','0','70','1','60','0','7500','7500','11','6958','1','0','0','0','0','0','0','0','0','0','Hezrul Bloodmark - Cast Blood Leech When Below 60% HP'),
 -- Kolkar Bloodcharger
@@ -15727,7 +15742,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- 8908    Molten War Golem    55        
 -- 8909    Fireguard    52        
 -- 8910    Blazing Fireguard    52        
--- 8911    Fireguard Destroyer    54        
+-- Fireguard Destroyer
+('891101','8911','4','0','100','0','0','0','0','0','11','3417','0','2','0','0','0','0','0','0','0','0','Fireguard Destroyer - Cast Thrash on Aggro'),
+('891102','8911','0','0','100','1','8000','12000','8000','12000','11','15243','1','0','0','0','0','0','0','0','0','0','Fireguard Destroyer - Cast Fireball Volley'),
 -- 8912    Twilight's Hammer Torturer    51        
 -- 8913    Twilight Emissary    52        
 -- 8914    Twilight Bodyguard    52        
@@ -16420,7 +16437,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1043002','10430','0','0','100','1','23000','23000','20000','20000','11','14100','0','0','0','0','0','0','0','0','0','0','The Beast - Cast Terrifying Roar'),
 ('1043003','10430','0','0','100','1','20000','20000','10000','10000','11','16785','0','0','0','0','0','0','0','0','0','0','The Beast - Cast Flamebreak'),
 ('1043004','10430','0','0','100','1','2000','5000','8000','10000','11','16788','4','0','0','0','0','0','0','0','0','0','The Beast - Cast Fireball'),
-('1043005','10430','6','0','100','0','0','0','0','0','11','16710','0','2','0','0','0','0','0','0','0','0','The Beast - Cast Finkle is Einhorn on Death'),
 -- Chromatic Whelp
 ('1044201','10442','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Chromatic Whelp - Prevent Combat Movement on Spawn'),
 ('1044202','10442','4','0','100','0','0','0','0','0','11','16249','1','0','23','1','0','0','0','0','0','0','Chromatic Whelp - Cast Frostbolt and Set Phase 1 on Aggro'),
@@ -16784,11 +16800,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1149002','11490','0','0','100','1','11200','20400','17200','24100','11','22651','4','0','0','0','0','0','0','0','0','0','Zevrim Thornhoof - Cast Sacrifice'),
 -- Old Ironbark     11491 YELL: (At last... Freed from his cursed grasp!)
 -- Alzzin the Wildshaper (NOT ABLE TO USE LOG DATA ACCURATELY DUE TO FORM CHANGES AND ABILITY SWITCHS - VERY COMPLEX) - Scripted as best as possible based on all sources
-('1149201','11492','4','0','100','0','0','0','0','0','11','22128','0','1','23','1','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Thorns and Set Phase 1 on Aggro'),
+('1149201','11492','4','0','100','0','0','0','0','0','11','22128','0','1','23','1','0','0','48','0','0','0','Alzzin the Wildshaper - Cast Thorns, Set Phase 1 and Stop WP movement on Aggro'),
 ('1149202','11492','9','13','100','1','0','40','5000','10000','11','22662','4','32','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Wither (Phase 1 & 4)'),
 ('1149203','11492','0','13','100','1','8000','15000','9000','14000','11','7948','0','33','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Wild Regeneration (Phase 1 & 4)'),
-('1149204','11492','0','29','100','1','14000','17000','63000','66000','11','22660','0','1','22','2','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Dire Wolf Form and Set Phase 2 (Phase 1)'),
-('1149205','11492','0','29','100','1','39000','42000','63000','66000','11','22688','0','1','22','3','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Tree Form and Set Phase 3 (Phase 1)'),
+('1149204','11492','0','29','100','1','14000','17000','63000','66000','11','22660','0','7','22','2','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Dire Wolf Form and Set Phase 2 (Phase 1)'),
+('1149205','11492','0','29','100','1','39000','42000','63000','66000','11','22688','0','7','22','3','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Tree Form and Set Phase 3 (Phase 1)'),
 ('1149206','11492','9','27','100','1','0','5','8000','12000','11','19319','1','0','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Vicious Bite (Phase 2)'),
 ('1149207','11492','9','27','100','1','0','10','7000','13000','11','22689','4','33','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Mangle (Phase 2)'),
 ('1149208','11492','0','27','100','1','26000','29000','63000','66000','28','0','22660','0','22','1','0','0','0','0','0','0','Alzzin the Wildshaper - Remove Dire Wolf Form and Set Phase 1 (Phase 2)'),
@@ -16803,7 +16819,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1149217','11492','2','0','100','0','40','0','0','0','32','11460','1','9','32','11460','1','10','32','11460','1','11','Alzzin the Wildshaper - Summon 3 Alzzin\'s Minion\'s at 40% HP'),
 ('1149218','11492','2','0','100','0','40','0','0','0','32','11460','1','9','32','11460','1','10','32','11460','1','11','Alzzin the Wildshaper - Summon 3 Alzzin\'s Minion\'s at 40% HP'),
 ('1149219','11492','2','0','100','0','40','0','0','0','32','11460','1','9','32','11460','1','10','32','11460','1','11','Alzzin the Wildshaper - Summon 3 Alzzin\'s Minion\'s at 40% HP'),
-('1149220','11492','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Set Phase 0 on Evade'),
+('1149220','11492','7','0','100','0','0','0','0','0','22','0','0','0','48','2','0','0','0','0','0','0','Alzzin the Wildshaper - Set Phase 0 and Resume WP movement on Evade'),
 ('1149221','11492','6','0','100','0','0','0','0','0','34','0','3','0','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Set Instance Data on Death'),
 -- Immol'thar (3.3.3 Official Data) - Need More Data If Possible for Portal Spell
 ('1149601','11496','9','0','100','1','0','8','4800','14700','11','5568','0','0','0','0','0','0','0','0','0','0','Immol\'thar - Cast Trample'),
@@ -16972,7 +16988,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1435107','14351','0','0','100','1','15700','15700','14300','18900','11','13737','1','0','0','0','0','0','0','0','0','0','Gordok Bushwacker - Cast Mortal Strike'),
 ('1435108','14351','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Gordok Bushwacker - Set Phase to 0 on Evade'),
 -- Mizzle the Crafty     14353            
--- Pusillin (14354) - WILL BE SCRIPTED IN C++       
+-- Pusillin
+('1435401','14354','0','0','100','1','8000','15000','13000','17000','11','17145','0','1','0','0','0','0','0','0','0','0','Pusillin - Cast Blast Wave'),
+('1435402','14354','0','0','100','1','13000','16000','13000','16000','11','14145','4','1','0','0','0','0','0','0','0','0','Pusillin - Cast Fire Blast'),
+('1435403','14354','9','0','100','1','0','40','3400','4800','11','15242','1','0','0','0','0','0','0','0','0','0','Pusillin - Cast Fireball'),
 -- Shen'dralar Ancient     14358            
 -- Shen'dralar Wisp     14361            
 -- Shen'dralar Spirit     14364            
@@ -17246,8 +17265,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1179101','11791','11','0','100','0','0','0','0','0','11','3417','0','0','0','0','0','0','0','0','0','0','Putridus Trickster - Cast Thrash on Spawn'),
 ('1179102','11791','9','0','100','1','0','5','5000','8000','11','15657','1','0','0','0','0','0','0','0','0','0','Putridus Trickster - Cast Backstab'),
 -- Putridus Shadowstalker 
-('1179201','11792','9','0','100','1','0','5','12000','15000','11','9080','1','0','0','0','0','0','0','0','0','0','Putridus Shadowstalker - Cast Hamstring'),
-('1179202','11792','0','0','100','1','8000','16000','21000','30000','11','15087','0','1','0','0','0','0','0','0','0','0','Putridus Shadowstalker - Cast Evasion'),
+('1179201','11792','1','0','100','1','1000','1000','30000','30000','11','1785','0','32','0','0','0','0','0','0','0','0','Putridus Shadowstalker - Cast Stealth on Spawn'),
+('1179202','11792','9','0','100','1','0','5','12000','15000','11','9080','1','0','0','0','0','0','0','0','0','0','Putridus Shadowstalker - Cast Hamstring'),
+('1179203','11792','0','0','100','1','8000','16000','21000','30000','11','15087','0','1','0','0','0','0','0','0','0','0','Putridus Shadowstalker - Cast Evasion'),
 -- Celebrian Dryad 
 ('1179301','11793','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Celebrian Dryad - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('1179302','11793','9','1','100','1','5','30','2300','3900','11','16000','1','0','40','2','0','0','0','0','0','0','Celebrian Dryad - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
@@ -17317,7 +17337,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1222502','12225','0','0','100','1','7000','10000','15000','20000','11','12747','1','0','0','0','0','0','0','0','0','0','Celebras the Cursed - Cast Entangling Roots'),
 ('1222503','12225','0','0','100','1','15000','15000','20000','20000','11','21968','0','1','0','0','0','0','0','0','0','0','Celebras the Cursed - Cast Corrupt Forces of Nature'),
 ('1222504','12225','0','0','100','1','50000','60000','50000','60000','11','21793','0','0','0','0','0','0','0','0','0','0','Celebras the Cursed - Cast Twisted Tranquility'),
-('1222505','12225','6','0','100','0','0','0','0','0','12','13716','0','600000','0','0','0','0','0','0','0','0','Celebras the Cursed - Summon Celebras the Redeemed on Death'),
+('1222505','12225','6','0','100','0','0','0','0','0','32','13716','0','22','0','0','0','0','0','0','0','0','Celebras the Cursed - Summon Celebras the Redeemed on Death'),
 -- Lord Vyletongue
 ('1223601','12236','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Lord Vyletongue - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('1223602','12236','4','0','100','0','0','0','0','0','11','42459','0','0','0','0','0','0','0','0','0','0','Lord Vyletongue - Cast Dual Wield on Aggro'),
@@ -17332,7 +17352,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Meshlok the Harvester
 ('1223701','12237','9','0','100','1','0','5','7000','10000','11','13446','1','0','0','0','0','0','0','0','0','0','Meshlok the Harvester - Cast Strike'),
 ('1223702','12237','0','0','100','1','11000','16000','15000','21000','11','15593','0','1','0','0','0','0','0','0','0','0','Meshlok the Harvester - Cast War Stomp'),
--- Zaetar's Spirit (12238) - NSR
+-- Zaetar's Spirit
+('1223801','12238','1','0','100','0','0','0','0','0','11','21896','0','2','0','0','0','0','0','0','0','0','Zaetar\'s Spirit - Zaetar\'s Release on Spawn'),
 -- Spirit of Gelk
 ('1223901','12239','9','0','100','1','0','5','15000','21000','11','9080','1','1','0','0','0','0','0','0','0','0','Spirit of Gelk - Cast Hamstring'),
 ('1223902','12239','0','0','100','1','5000','9000','7000','11000','11','15284','1','0','0','0','0','0','0','0','0','0','Spirit of Gelk - Cast Cleave'),
@@ -18143,8 +18164,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Unstable Corpse (3.0.3 Official Data - Logs Only)
 ('1048001','10480','0','0','100','3','7000','19000','18000','35000','11','18270','1','0','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Dark Plague'),
 ('1048002','10480','6','0','100','2','0','0','0','0','11','17689','0','7','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Disease Burst on Death'),
--- Reanimated Corpse (3.0.3 Official Data - Logs Only)
-('1048101','10481','0','0','100','3','3600','17300','10300','18200','11','18270','1','32','0','0','0','0','0','0','0','0','Reanimated Corpse - Cast Dark Plague'),
+-- Reanimated Corpse
+('1048101','10481','4','0','100','2','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Invicibility at 1 HP on aggro (Phase 0)'),
+('1048102','10481','0','0','100','3','3600','17300','10300','18200','11','18270','1','32','0','0','0','0','0','0','0','0','Reanimated Corpse - Cast Dark Plague'),
+('1048103','10481','2','0','100','2','10','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Phase 1 below 10%HP (Phase 0)'),
+('1048104','10481','0','1','100','2','1000','1000','0','0','20','0','0','0','47','7','0','0','21','0','0','0','Reanimated Corpse - Stop combat movement, Lies Down and Stop Melee Combat (Phase 1)'),
+('1048105','10481','0','1','100','2','10000','11000','0','0','11','23965','0','2','21','1','1','0','47','0','0','0','Reanimated Corpse - Cast Instant Heal, Stands Up and Resumes Combat Movement (Phase 1)'),
+('1048106','10481','2','1','100','2','99','30','0','0','42','0','0','0','20','1','0','0','0','0','0','0','Reanimated Corpse - Removes Invicibility below 99%HP and Resume Melee Combat (Phase 1)'),
+('1048107','10481','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Phase to 0 on Evade'),
 -- Risen Lackey (10482)
 -- Risen Aberration (3.0.3 Official Data - Logs Only)
 ('1048501','10485','0','0','100','3','1500','8900','17300','33700','11','12021','1','0','0','0','0','0','0','0','0','0','Risen Aberration - Cast Fixate'),
@@ -18264,9 +18291,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1155101','11551','11','0','100','2','0','0','0','0','11','10022','0','1','0','0','0','0','0','0','0','0','Necrofiend - Cast Deadly Poison on Spawn'),
 ('1155102','11551','0','0','100','3','6500','13100','20700','33900','11','15474','0','0','0','0','0','0','0','0','0','0','Necrofiend - Cast Web Explosion'),
 -- Scholomance Dark Summoner (3.0.3 Official Data - Logs Only)
-('1158201','11582','4','0','100','2','0','0','0','0','1','-410','-311','-435','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Random Say on Aggro'),
-('1158202','11582','0','0','95','3','500','2800','1900','3700','11','17618','0','1','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Summon Risen Lackey'),
-('1158203','11582','0','0','100','3','0','500','38700','49300','11','12279','1','32','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Cast Curse of Blood'),
+('1158201','11582','1','0','100','2','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Prevent Combat Movement on Spawn'),
+('1158202','11582','1','0','100','3','1000','2500','30000','31000','11','16531','0','1','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Cast Frail Skeleton OOC'),
+('1158203','11582','1','0','100','35','16000','17500','30000','31000','1','-410','-311','-435','1','-1237','-1238','0','0','0','0','0','Scholomance Dark Summoner - Random Say OOC'),
+('1158204','11582','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Set Phase 1 on Aggro'),
+('1158205','11582','0','5','95','3','500','2800','1900','3700','11','17618','0','1','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Summon Risen Lackey (Phase 1)'),
+('1158206','11582','0','5','100','3','0','500','38700','49300','11','12279','1','32','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Cast Curse of Blood (Phase 1)'),
+('1158207','11582','3','5','100','3','15','0','1000','1000','21','1','0','0','23','1','0','0','0','0','0','0','Scholomance Dark Summoner - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('1158208','11582','9','5','100','3','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Start Combat Movement at 35 Yards (Phase 1)'),
+('1158209','11582','9','5','100','3','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('1158210','11582','9','5','100','3','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Start Combat Movement Below 5 Yards (Phase 1)'),
+('1158211','11582','9','0','100','3','0','5','1000','1000','29','10','150','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Ranged Movement at 5 Yards to Avoid Melee Combat'),
+('1158212','11582','3','3','100','3','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('1158213','11582','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Scholomance Dark Summoner - Set Phase to 0 on Evade'),
 -- Risen Guardian (3.0.3 Official Data - Logs Only)
 ('1159801','11598','4','0','100','2','0','0','0','0','31','1','3','0','0','0','0','0','0','0','0','0','Risen Guardian - Random Phase on Aggro'),
 ('1159802','11598','0','0','100','3','37600','71200','14300','32700','11','7068','1','0','0','0','0','0','0','0','0','0','Risen Guardian - Cast Veil of Shadow'),
@@ -19397,8 +19434,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deviate Stinglash
 ('363101','3631','0','0','100','1','4000','7000','12000','20000','11','6607','1','0','0','0','0','0','0','0','0','0','Deviate Stinglash - Cast Lash'),
 -- Deviate Creeper
-('363201','3632','11','0','100','0','0','0','0','0','11','30831','0','0','0','0','0','0','0','0','0','0','Deviate Creeper - Cast Stealth on Spawn'),
-('363202','3632','0','0','100','1','3000','5000','6000','10000','11','3427','1','32','0','0','0','0','0','0','0','0','Deviate Creeper - Cast Infected Wound'),
+('363201','3632','0','0','100','1','3000','5000','6000','10000','11','3427','1','32','0','0','0','0','0','0','0','0','Deviate Creeper - Cast Infected Wound'),
 -- Deviate Slayer
 ('363301','3633','2','0','100','1','40','0','9000','14000','11','7938','1','0','0','0','0','0','0','0','0','0','Deviate Slayer - Cast Fatal Bite'),
 -- Deviate Ravager
@@ -22420,7 +22456,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1134','We will find what the Master is looking for! Failure is not an option!','0','1','0','19354','0'),
 ('-1135','None can stand against the serpent lords!','5786','1','0','3671','0'),
 ('-1136','Speak, filthy refugee! What was your caravan doing in the Bone Wastes?','0','0','0','22378','0'),
--- 1137 and 1138 REUSE
+('-1237','Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.','0','0','0','Scholomance Dark Summoner','1'),
+('-1238','Wow, this one is just plain useless. Let me try again.','0','0','0','Scholomance Dark Summoner','1'),
 ('-1139','Come, $n. See what the Nightmare brings...','0','1','0','15625','0'),
 ('-1140','The Nightmare cannot be stopped!','0','1','0','15625','0'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','15625','0'),
@@ -22444,7 +22481,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1211','HAVE YOU RUN OUT OF SHIPS TO SEND? WHERE IS YOUR COURAGE?','0','1','0','Mok\'Rash - Random Yell','0'),
 ('-1212','YOU WERE SUCH GOOD SPORT THE LAST TIME...COME OUT!','0','1','0','Mok\'Rash - Random Yell','0'),
 ('-1213','I HAVE YOUR LITTLE BELT TIED AROUND MY FINGER, SMOTTS. DON\'T YOU WANT IT BACK?','0','1','0','Mok\'Rash - Random Yell','0'),
--- PLEASE RE-USE -1214 to -1220
+('-1214','%s returns the rude gesture to $n','0','2','0','Jenn/Elly Langston rude','0'),
+('-1215','Well hello, $n, what can I get you today?','0','0','0','Jenn/Elly Langston random text','0'),
+('-1216','Been a tough day? A nice ale should loosen those worries right up.','0','0','0','Jenn/Elly Langston random text','0'),
+('-1217','Do you think I need more pieces of flair?','0','0','0','Jenn Langston random text','0'),
+('-1218','What do you fancy, $G sir:miss;?','0','0','0','Jenn Langston random text','0'),
+('-1219','Hi, what would you like?','0','0','0','Jenn Langston random text','0'),
+('-1220','Look what the cat dragged in. What can I get you, $n?','0','0','0','Jenn Langston random text','0'),
 ('-1221','You\'ll never leave this place... alive.','5825','1','0','7358','0'),
 ('-1222','To me, my servants!','5828','1','0','7358','0'),
 ('-1223','Come, spirits, attend your master!','5829','1','0','7358','0'),
@@ -22496,7 +22539,8 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 ('14','1796.56','758.122','14.7124','5.03836','18000000','8138'),
 ('15','1783.90','745.005','16.1110','6.03896','18000000','8138'),
 ('20','-169.839203','-324.961395','64.401443','3.124724','300000','10268'),
-('21','28.067','61.875','-123.405','4.67','600000','12238');
+('21','28.067','61.875','-123.405','4.67','600000','12238'),
+('22','726.106','77.9764','-86.5913','6.00393','18000000','13716');
 
 
 -- =======================================================
