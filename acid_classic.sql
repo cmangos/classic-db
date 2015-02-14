@@ -18115,7 +18115,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1047103','10471','0','0','100','3','4500','26000','8400','26000','11','17615','4','0','0','0','0','0','0','0','0','0','Scholomance Acolyte - Cast Mana Burn'),
 ('1047104','10471','0','0','100','3','2400','21700','11100','29900','11','17165','4','0','0','0','0','0','0','0','0','0','Scholomance Acolyte - Cast Mind Flay'),
 ('1047105','10471','0','0','100','3','5700','33800','15800','28600','11','11443','1','0','0','0','0','0','0','0','0','0','Scholomance Acolyte - Cast Cripple'),
--- Scholomance Occultist (3.0.3 Official Data - Logs Only)
+-- Scholomance Occultist (3.0.3 Official Data - Logs Only) - 17674 Immunity
 ('1047201','10472','4','3','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Scholomance Occultist - Set Phase 1 on Aggro'),
 ('1047202','10472','0','5','100','3','4800','11700','32400','39700','11','16431','0','33','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Bone Armor (Phase 1)'),
 ('1047203','10472','13','5','100','2','0','0','0','0','11','15122','1','1','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Counterspell is Target Cast a Spell (Phase 1)'),
