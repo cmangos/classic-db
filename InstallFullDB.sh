@@ -20,6 +20,7 @@ MYSQL=""
 CORE_PATH=""
 SD2_PATH=""
 SD2_UPDATES="1"
+DEV_UPDATES="NO"
 
 function create_config {
 # Re(create) config file
@@ -67,6 +68,10 @@ SD2_UPDATES="1"
 
 ## Define your mysql programm if this differs
 MYSQL="mysql"
+
+## Define if the 'dev' directory for processing development SQL files needs to be used
+##   Set the variable to "YES" to use the dev directory 
+DEV_UPDATES="NO"
 
 # Enjoy using the tool
 EOF
@@ -253,6 +258,26 @@ then
   $MYSQL_COMMAND < ${ACID_PATH}/acid_classic.sql
   [[ $? != 0 ]] && exit 1
   echo "Recent state of ACID applied"
+fi
+
+#
+#    DEVELOPERS UPDATES
+#
+if [ "$DEV_UPDATES" == "YES" ]
+then
+  echo "Process development updates"
+  if [ ! -e ${ADDITIONAL_PATH}dev/*.sql ]
+  then
+      echo "   No development update to process"
+  else
+      for UPDATE in ${ADDITIONAL_PATH}dev/*.sql
+      do
+          echo "   process update $UPDATE"
+          $MYSQL_COMMAND < $UPDATE
+          [[ $? != 0 ]] && exit 1
+      done
+      echo "Development updates applied"
+  fi
 fi
 
 echo "Optimize tables"
