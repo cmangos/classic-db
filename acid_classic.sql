@@ -9702,8 +9702,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Joy Ar'nareth (11707) - NSR
 -- Coral Moongale (11708) - NSR
 -- Mammoth Shark (12125) - NSR
--- Spitelash Raider (12204) - mobs_spitelashes
--- Spitelash Witch (12205) - mobs_spitelashes
+-- Spitelash Raider
+('1220401','12204','0','0','100','1','40','1000','6500','9000','11','12545','1','33','0','0','0','0','0','0','0','0','Spitelash Raider - Cast Spitelash'),
+('1220402','12204','0','0','100','1','1000','2500','11000','15000','11','12548','1','0','0','0','0','0','0','0','0','0','Spitelash Raider - Cast Frost Shock'),
+-- Spitelash Witch
+('1220501','12205','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Spitelash Witch - Set Phase 1 on Spawn'),
+('1220502','12205','1','13','100','1','1000','1000','600000','600000','11','12550','0','1','0','0','0','0','0','0','0','0','Spitelash Witch - Cast Lightning Shield on OOC (Phase 1)'),
+('1220503','12205','9','13','100','1','0','40','3400','5400','11','9672','1','0','0','0','0','0','0','0','0','0','Spitelash Witch -  Cast Frostbolt (Phase 1)'),
+('1220504','12205','9','13','100','1','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Spitelash Witch - Start Combat Movement Below 5 Yards'),
+('1220505','12205','9','13','100','1','5','35','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Spitelash Witch - Prevent Combat Movement between 5 and 35 Yards (Phase 1)'),
+('1220506','12205','9','13','100','1','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Spitelash Witch - Start Combat Movement at 35 Yards (Phase 1)'),
+('1220507','12205','3','13','100','0','15','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Spitelash Witch - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('1220508','12205','3','11','100','1','100','30','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Spitelash Witch - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('1220509','12205','7','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Spitelash Witch - Set Phase to 1 on Evade'),
 -- Jarrodenus    
 ('1257701','12577','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Jarrodenus - Summon Enraged Hippogryphs on Aggro'),
 -- Blimo Gadgetspring (12957) - NSR
