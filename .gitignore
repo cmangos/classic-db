@@ -24,6 +24,7 @@
 *.vi
 *~
 *.sass-cache
+/dev/*.sql
 
 # OS or Editor folders
 .DS_Store
