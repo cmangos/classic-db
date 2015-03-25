@@ -1,0 +1,252 @@
+-- Fixed drop chance from bosses and dusty tomes in Dire Maul for class quest books
+-- and Foror's Compendium of Dragon Slaying (epic quest starting item)
+-- http://www.wowwiki.com/A_Dusty_Tome
+-- http://www.wowwiki.com/Royal_Seal_of_Eldre%27Thalas
+
+SET @DROPCHANCE := 2;
+
+DELETE FROM `creature_loot_template` WHERE `item` BETWEEN 18356 AND 18364 OR `item` = 18401;
+SET @ENTRY := 14354; -- Pusillin
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 13280; -- Hydrospawn
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 14327; -- Lethtendris
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11490; -- Zevrim Thornhoof
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11492; -- Alzzin the Wildshaper
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11489; -- Tendris Warpwood
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11488; -- Illyanna Ravenoak
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11467; -- Tsu'zee
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11487; -- Magister Kalendris
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11496; -- Immol'thar
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11486; -- Prince Tortheldrin
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 14326; -- Guard Mol'dar
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 14322; -- Stomper Kreeg
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 14321; -- Guard Fengus
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 14323; -- Guard Slip'kik
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 14325; -- Captain Kromcrush
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 14324; -- Cho'Rush the Observer
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+SET @ENTRY := 11501; -- King Gordok
+INSERT INTO `creature_loot_template` VALUES
+(@ENTRY, 18356, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18357, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18358, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18359, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18360, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18361, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18362, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18363, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18364, @DROPCHANCE, 0, 1, 1, 0),
+(@ENTRY, 18401, 0.5, 0, 1, 1, 0);
+
+-- http://www.wowwiki.com/A_Dusty_Tome
+DELETE FROM `gameobject_loot_template` WHERE `item` BETWEEN 18356 AND 18365 OR `item` = 18401 OR `entry` IN (16563, 16564);
+INSERT INTO `gameobject_loot_template` VALUES
+(16563, 18356, 0, 1, 1, 1, 0),
+(16563, 18357, 0, 1, 1, 1, 0),
+(16563, 18358, 0, 1, 1, 1, 0),
+(16563, 18359, 0, 1, 1, 1, 0),
+(16563, 18360, 0, 1, 1, 1, 0),
+(16563, 18361, 0, 1, 1, 1, 0),
+(16563, 18362, 0, 1, 1, 1, 0),
+(16563, 18363, 0, 1, 1, 1, 0),
+(16563, 18364, 0, 1, 1, 1, 0),
+(16563, 18365, 79, 1, 1, 1, 0),
+(16563, 18401, 0.5, 1, 1, 1, 0),
+(16563, 5263, 100, 0, 1, 1, 0),
+(16564, 18356, 0, 1, 1, 1, 0),
+(16564, 18357, 0, 1, 1, 1, 0),
+(16564, 18358, 0, 1, 1, 1, 0),
+(16564, 18359, 0, 1, 1, 1, 0),
+(16564, 18360, 0, 1, 1, 1, 0),
+(16564, 18361, 0, 1, 1, 1, 0),
+(16564, 18362, 0, 1, 1, 1, 0),
+(16564, 18363, 0, 1, 1, 1, 0),
+(16564, 18364, 0, 1, 1, 1, 0),
+(16564, 18365, 79, 1, 1, 1, 0),
+(16564, 18401, 0.5, 1, 1, 1, 0),
+(16564, 5263, 100, 0, 1, 1, 0);
