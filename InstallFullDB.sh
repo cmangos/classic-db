@@ -134,11 +134,11 @@ else
     echo "Updates applied"
 fi
 
-LAST_CORE_REV="2583"
-LAST_SD2_REV="2715"
+LAST_CORE_REV="2621"
+LAST_SD2_REV="2729"
 # process future release folders
 NEXT_MILESTONES="0.12.3 0.12.4"
-NEXT_SD2_MILESTONES="0.8 0.9"
+NEXT_SD2_MILESTONES="0.9 0.10"
 
 if [ "$CORE_PATH" != "" ]
 then
