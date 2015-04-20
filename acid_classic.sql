@@ -16044,7 +16044,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('993803','9938','2','0','100','1','51','0','8000','8000','11','15593','0','0','0','0','0','0','0','0','0','0','Magmus - Cast War Stomp'),
 -- 9956    Shadowforge Flame Keeper    55        
 -- 10043    Ribbly's Crony    52        
--- 10076    High Priestess of Thaurissan    55        
+-- High Priestess of Thaurissan
+('1007601','10076','11','0','100','2','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','High Priestess of Thaurissan - Prevent Combat Movement on Spawn'),
+('1007602','10076','0','0','100','3','0','1000','2000','3000','11','15537','1','0','0','0','0','0','0','0','0','0','High Priestess of Thaurissan - Cast Shadow Bolt'),
+('1007603','10076','0','0','100','3','2000','3000','8000','10000','11','15654','4','0','0','0','0','0','0','0','0','0','High Priestess of Thaurissan - Cast Shadow Word: Pain'),
+('1007604','10076','14','0','100','3','500','40','3000','6000','0','0','0','0','0','0','0','0','0','0','0','0','High Priestess of Thaurissan - Cast Renew on Friendly HP'),
+('1007605','10076','14','0','100','3','500','40','5000','10000','0','0','0','0','0','0','0','0','0','0','0','0','High Priestess of Thaurissan - Cast Heal on Friendly HP'),
+('1007606','10076','9','0','100','3','25','50','0','0','21','1','0','0','0','0','0','0','0','0','0','0','High Priestess of Thaurissan - Allow Combat Movement on Ranged Check'),
+('1007607','10076','9','0','100','3','0','22','0','0','21','0','0','0','0','0','0','0','0','0','0','0','High Priestess of Thaurissan - Prevent Combat Movement on Ranged Check'),
 -- High Justice Grimstone (10096) - npc_grimstone
 -- Slave
 ('1011601','10116','1','0','100','1','5000','25000','9000','14000','5','18','0','0','1','-704','-705','-706','0','0','0','0','Slave - Cry Emote and Random Emote Text OOC'),
