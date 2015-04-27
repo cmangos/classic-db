@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------
+VERSION 1.5.0
+---------------------------------------------------------------------
+
+This release mainly focuses on resources nodes and pools with thousands of fixes. Hundred of wrong nodes were removed: no more thorium in Elwynn Forest or peacebloom in Eastern Plaguelands or other herbs/ores that should not be where they were. Many nodes were also adjusted. All zones now use the pool system: Felwood, Un'Goro Crater, Tanaris and some other areas no longer have dozen on resource nodes every yards. A new cell system has been introduced that will now prevent all resource nodes in a zone to spawn at the same place, leaving the full zone empty except for this spot: resources nodes are now evenly set across each zone. Also, average values of nodes in a zone have been updated: no more empty zones like Mulgore that previously had 8 total herbs in the whole zone, or Westfall with hundreds of spawns on the map.
+These new settings may vary from zone to zone depending on how many nodes were originally sniffed and how many kinds of resources are available in a zone. Some zones are still more populated than others, some areas (usually few visited ones) are more empty but overall the gathering experience for players should be more enjoyable. The settings have been adjusted for a middle populated server. Many thanks for all the testers for their feedback.
+
+
+Many gossips, quests, items, NPCs, events, dungeons and raids were also fixed.
+
+---------------------------------------------------------------------
 VERSION 1.4.2
 ---------------------------------------------------------------------
 

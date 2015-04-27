@@ -115,8 +115,8 @@ done
 echo .
 
 ## Full Database
-echo "Process classic database v1.4.2 'High Elves, Thaurissan and Necromancers in a Swimming Pool.'"
-$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_4_2_z2583.sql
+echo "Process classic database v1.5.0 'The Great Swimming Pool.'"
+$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_5_z2656.sql
 [[ $? != 0 ]] && exit 1
 
 ## Updates
@@ -134,8 +134,8 @@ else
     echo "Updates applied"
 fi
 
-LAST_CORE_REV="2621"
-LAST_SD2_REV="2729"
+LAST_CORE_REV="2656"
+LAST_SD2_REV="2734"
 # process future release folders
 NEXT_MILESTONES="0.12.3 0.12.4"
 NEXT_SD2_MILESTONES="0.9 0.10"
@@ -279,10 +279,6 @@ then
       echo "Development updates applied"
   fi
 fi
-
-echo "Optimize tables"
-$MYSQL_COMMAND < ${ADDITIONAL_PATH}utilities/world_optimize.sql
-echo "Optimization done"
 
 echo
 echo "You have now a clean and recent classic DB database loaded into $DATABASE"
