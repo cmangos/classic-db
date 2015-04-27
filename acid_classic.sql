@@ -15754,8 +15754,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- 8909    Fireguard    52        
 -- 8910    Blazing Fireguard    52        
 -- Fireguard Destroyer
-('891101','8911','4','0','100','0','0','0','0','0','11','3417','0','2','0','0','0','0','0','0','0','0','Fireguard Destroyer - Cast Thrash on Aggro'),
-('891102','8911','0','0','100','1','8000','12000','8000','12000','11','15243','1','0','0','0','0','0','0','0','0','0','Fireguard Destroyer - Cast Fireball Volley'),
+('891101','8911','4','0','100','2','0','0','0','0','11','3417','0','2','0','0','0','0','0','0','0','0','Fireguard Destroyer - Cast Thrash on Aggro'),
+('891102','8911','0','0','100','3','8000','12000','8000','12000','11','15243','1','0','0','0','0','0','0','0','0','0','Fireguard Destroyer - Cast Fireball Volley'),
 -- 8912    Twilight's Hammer Torturer    51        
 -- 8913    Twilight Emissary    52        
 -- 8914    Twilight Bodyguard    52        
