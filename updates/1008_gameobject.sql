@@ -1,2 +1,2 @@
 
-UPDATE `gameobject` SET `animprogress`='100' WHERE `entry`='179365';
+UPDATE `gameobject` SET `animprogress`='100' WHERE `id`='179365';
