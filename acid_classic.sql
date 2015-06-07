@@ -18713,16 +18713,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1051602','10516','0','0','100','1','6800','10400','11500','14100','11','14907','0','0','0','0','0','0','0','0','0','0','The Unforgiven - Cast Frost Nova'),
 -- Plagued Maggot
 ('1053601','10536','9','0','100','1','0','5','6000','14000','11','16449','4','32','0','0','0','0','0','0','0','0','Plagued Maggot - Cast Maggot Slime'),
--- Hearthsinger
+-- Hearthsinger Forresten
 ('1055801','10558','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Hearthsinger Forresten - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
-('1055802','10558','9','1','100','1','5','30','2300','3900','11','16100','1','0','40','2','0','0','0','0','0','0','Hearthsinger Forresten - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('1055803','10558','0','1','100','1','9000','14000','9000','14000','11','14443','1','1','40','2','0','0','0','0','0','0','Hearthsinger Forresten - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
-('1055804','10558','9','1','100','1','30','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Hearthsinger Forresten - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
-('1055805','10558','9','1','100','1','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Hearthsinger Forresten - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('1055806','10558','9','1','100','1','11','25','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Hearthsinger Forresten - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('1055807','10558','0','0','100','1','3000','5000','12000','19000','11','16244','0','1','0','0','0','0','0','0','0','0','Hearthsinger Forresten - Cast Demoralizing Shout'),
-('1055808','10558','0','0','100','1','7000','9000','20000','25000','11','16798','5','1','0','0','0','0','0','0','0','0','Hearthsinger Forresten - Cast Enchanting Lullaby'),
-('1055809','10558','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Hearthsinger Forresten - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('1055802','10558','4','0','100','0','0','0','0','0','11','16331','0','2','0','0','0','0','0','0','0','0','Hearthsinger Forresten - Incorporal Defense'),
+('1055803','10558','9','1','100','1','5','30','2300','3900','11','16100','1','0','40','2','0','0','0','0','0','0','Hearthsinger Forresten - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1055804','10558','0','1','100','1','9000','14000','9000','14000','11','14443','1','1','40','2','0','0','0','0','0','0','Hearthsinger Forresten - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
+('1055805','10558','9','1','100','1','30','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Hearthsinger Forresten - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
+('1055806','10558','9','1','100','1','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Hearthsinger Forresten - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
+('1055807','10558','9','1','100','1','11','25','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Hearthsinger Forresten - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
+('1055808','10558','0','0','100','1','3000','5000','12000','19000','11','16244','0','1','0','0','0','0','0','0','0','0','Hearthsinger Forresten - Cast Demoralizing Shout'),
+('1055809','10558','0','0','100','1','7000','9000','20000','25000','11','16798','5','1','0','0','0','0','0','0','0','0','Hearthsinger Forresten - Cast Enchanting Lullaby'),
+('1055810','10558','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Hearthsinger Forresten - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bile Slime
 ('1069701','10697','0','0','100','1','1000','3000','12000','16000','11','7992','1','0','0','0','0','0','0','0','0','0','Bile Slime - Cast Slowing Poison'),
 ('1069702','10697','0','0','100','1','4000','7000','7000','12000','11','16866','1','0','0','0','0','0','0','0','0','0','Bile Slime - Cast Venom Spit'),
