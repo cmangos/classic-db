@@ -13686,6 +13686,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('405601','4056','9','0','100','1','0','30','14000','26000','11','8138','4','32','0','0','0','0','0','0','0','0','Mirkfallon Keeper - Cast Mirkfallon Fungus'),
 -- Son of Cenarius        
 ('405701','4057','11','0','100','0','0','0','0','0','11','7993','0','1','0','0','0','0','0','0','0','0','Son of Cenarius - Summon Treant Ally on Spawn'),
+-- Forest Spirit
+('405901','4059','1','0','100','0','7500','10500','0','0','48','2','0','0','0','0','0','0','0','0','0','0','Forest Spirit - Start WP movement after 7 sec'),
 -- Mirkfallon Dryad        
 ('406101','4061','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Mirkfallon Dryad - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('406102','4061','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Mirkfallon Dryad - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
