@@ -16115,6 +16115,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Highlord Omokk
 ('919601','9196','0','0','100','1','12000','12000','18000','18000','11','10101','1','0','0','0','0','0','0','0','0','0','Highlord Omokk - Cast Knock Away'),
 ('919602','9196','2','0','100','0','20','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Highlord Omokk - Cast Frenzy'),
+('919603','9196','0','0','100','1','1000','3000','15000','25000','1','-1321','-1322','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
+('919604','9196','5','0','100','1','0','0','0','0','1','-1323','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Unit Kill'),
 -- Spirestone Battle Mage
 ('919701','9197','0','0','100','1','4000','10000','5000','15000','11','15305','4','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Chain Lighting'),
 ('919702','9197','14','0','100','1','6000','40','20000','20000','11','16170','6','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Bloodlust'),
@@ -22538,7 +22540,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1317','Silithid Creeper lays an egg!','0','2','0','3250','0'),
 ('-1318','Silithid Creeper Egg begins to crack and open...','0','2','0','5781','0'),
 ('-1319','Silithid Creeper Egg splits open!','0','2','0','5781','0'),
-('-1320','%s splits into two new Lava Spawns!','0','2','0','Lava Spawn - Split Emote','0');
+('-1320','%s splits into two new Lava Spawns!','0','2','0','Lava Spawn - Split Emote','0'),
+('-1321','I\'ll crush you!','0','0','0','9196','0'),
+('-1322','Me smash! You die!','0','0','0','9196','0'),
+('-1323','Raaar!!! Me smash $R!','0','0','0','9196','1');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
