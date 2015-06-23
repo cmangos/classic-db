@@ -15400,21 +15400,55 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Brown Ram 4779     
 -- Arctic Riding Wolf 5198     
 -- Spirit Healer 6491 NSR   
--- Frostmaul Giant 7428     
--- Frostmaul Preserver 7429     
--- Frostsaber Cub 7430     
+-- Frostmaul Giant
+('742801','7428','9','0','100','1','0','5','4200','11800','11','18368','1','0','0','0','0','0','0','0','0','0','Frostmaul Giant - Cast Strike'),
+('742802','7428','9','0','100','1','0','8','6100','14100','11','18670','1','0','0','0','0','0','0','0','0','0','Frostmaul Giant - Cast Knock Away'),     
+-- Frostmaul Preserver
+('742901','7429','2','0','100','1','50','0','32000','45000','11','9616','0','1','0','0','0','0','0','0','0','0','Frostmaul Preserver - Cast Wild Regeneration at 50% HP'),   
+-- Frostsaber Cub
+('743001','7430','2','0','100','0','30','0','0','0','39','25','0','0','1','-551','0','0','0','0','0','0','Frostsaber Cub - Call for Help at 30% HP'),
+('743002','7430','6','0','100','0','0','0','0','0','45','0','50','0','0','0','0','0','0','0','0','0','Frostsaber Cub - Send AI Event on Death'),     
 -- Frostsaber 7431     
 -- Frostsaber Stalker 7432     
--- Frostsaber Huntress 7433     
--- Frostsaber Pride Watcher 7434     
+-- Frostsaber Huntress
+('743301','7433','2','0','100','1','50','0','120000','120000','11','15716','0','1','1','-106','0','0','0','0','0','0','Frostsaber Huntress - Cast Enrage at 50% HP'),
+('743302','7433','0','0','100','1','7000','9000','22000','27000','11','13443','1','0','0','0','0','0','0','0','0','0','Frostsaber Huntress - Cast Rend'),     
+-- Frostsaber Pride Watcher
+('743401','7434','30','0','100','0','0','7430','0','0','11','15716','0','0','1','-550','0','0','0','0','0','0','Frostsaber Pride Watcher - Cast Enrage on recieving Frostsaber cub death EventAI'),    
 -- Cobalt Wyrmkin 7435     
 -- Cobalt Scalebane 7436     
 -- Cobalt Mageweaver 7437     
--- Winterfall Ursa 7438     
--- Winterfall Shaman 7439     
--- Winterfall Den Watcher 7440     
--- Winterfall Totemic 7441     
--- Winterfall Pathfinder 7442     
+-- Winterfall Ursa
+('743801','7438','1','0','100','1','0','10000','1200000','1210000','11','17205','0','0','0','0','0','0','0','0','0','0','Winterfall Ursa - Cast Winterfall Firewater'),   
+-- Winterfall Shaman
+('743901','7439','2','0','100','0','25','0','0','0','11','11431','0','1','0','0','0','0','0','0','0','0','Winterfall Shaman - Cast Healing Touch When Below 25% HP'),
+('743902','7439','4','0','100','0','0','0','0','0','11','9532','1','0','22','1','0','0','0','0','0','0','Winterfall Shaman - Cast Lightning Bolt and Set Phase 1 on Aggro'),
+('743903','7439','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Winterfall Shaman - Prevent Combat Movement and Set Phase to 0 on Spawn'),
+('743904','7439','9','5','100','1','0','40','3400','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Winterfall Shaman - Cast Lightning Bolt (Phase 1)'),
+('743905','7439','3','5','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Winterfall Shaman - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('743906','7439','9','5','100','1','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Winterfall Shaman - Start Combat Movement at 35 Yards (Phase 1)'),
+('743907','7439','9','5','100','1','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Winterfall Shaman - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('743908','7439','9','5','100','1','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Winterfall Shaman - Start Combat Movement Below 5 Yards (Phase 1)'),
+('743909','7439','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Winterfall Shaman - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('743910','7439','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Winterfall Shaman - Set Phase to 0 on Evade'),
+('743911','7439','1','0','100','1','1000','1000','600000','600000','11','13585','0','1','0','0','0','0','0','0','0','0','Winterfall Shaman - Cast Lightning Shield on Spawn'),
+('743912','7439','27','0','100','1','13585','1','15000','30000','11','13585','0','1','0','0','0','0','0','0','0','0','Winterfall Shaman - Cast Lightning Shield on Missing Buff'),
+('743913','7439','1','0','100','1','0','10000','1200000','1210000','11','17205','0','0','0','0','0','0','0','0','0','0','Winterfall Shaman - Cast Winterfall Firewater'),    
+-- Winterfall Den Watcher
+('744001','7440','1','0','100','1','0','10000','1200000','1210000','11','17205','0','0','0','0','0','0','0','0','0','0','Winterfall Den Watcher - Cast Winterfall Firewater'),    
+-- Winterfall Totemic
+('744101','7441','0','0','100','1','7000','9000','55000','65000','11','15786','0','1','0','0','0','0','0','0','0','0','Winterfall Totemic - Summon Earthbind Totem'),
+('744102','7441','0','0','100','1','12000','14000','20000','30000','11','15787','0','1','0','0','0','0','0','0','0','0','Winterfall Totemic - Summon Moonflare Totem'),
+('744103','7441','1','0','100','1','0','10000','1200000','1210000','11','17205','0','0','0','0','0','0','0','0','0','0','Winterfall Totemic - Cast Winterfall Firewater'),    
+-- Winterfall Pathfinder
+('744201','7442','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','22','1','0','0','Winterfall Pathfinder - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('744202','7442','9','1','100','1','5','30','2300','2800','11','6660','1','0','40','2','0','0','0','0','0','0','Winterfall Pathfinder - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('744203','7442','9','1','100','1','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Winterfall Pathfinder - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
+('744204','7442','9','1','100','1','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Winterfall Pathfinder - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
+('744205','7442','9','1','100','1','11','25','1000','1000','21','0','1','0','20','0','0','0','0','0','0','0','Winterfall Pathfinder - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
+('744206','7442','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Winterfall Pathfinder - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('744207','7442','9','0','100','1','0','30','30000','35000','11','16498','4','0','0','0','0','0','0','0','0','0','Winterfall Pathfinder - Cast Faerie Fire'),
+('744208','7442','1','0','100','1','0','10000','1200000','1210000','11','17205','0','0','0','0','0','0','0','0','0','0','Winterfall Pathfinder - Cast Winterfall Firewater'),    
 -- Shardtooth Mauler
 ('744301','7443','0','0','60','1','8000','8000','12000','12000','11','15793','4','0','0','0','0','0','0','0','0','0','Shardtooth Mauler - Cast Maul'),
 -- Shardtooth Bear
@@ -15425,32 +15459,59 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('744601','7446','11','0','100','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Rabid Shardtooth - Cast Thrash on Spawn'),  
 ('744602','7446','0','0','80','0','0','0','8000','8000','11','3150','4','32','0','0','0','0','0','0','0','0','Rabid Shardtooth - Cast Rabies'),
 -- Fledgling Chillwind 7447     
--- Chillwind Chimaera 7448     
+-- Chillwind Chimaera
+('744801','7448','0','0','100','1','8000','13000','12000','15000','11','15797','4','1','0','0','0','0','0','0','0','0','Chillwind Chimaera - Cast Lightning Breath'),    
 -- Chillwind Ravager 7449     
--- Ragged Owlbeast 7450     
--- Raging Owlbeast 7451     
--- Crazed Owlbeast 7452     
--- Moontouched Owlbeast 7453     
--- Berserk Owlbeast 7454     
--- Winterspring Owl 7455     
--- Winterspring Screecher 7456     
--- Rogue Ice Thistle 7457     
--- Ice Thistle Yeti 7458     
--- Ice Thistle Matriarch 7459     
--- Ice Thistle Patriarch 7460     
+-- Ragged Owlbeast
+('745001','7450','0','0','50','1','8300','9900','8300','9900','11','15848','1','32','0','0','0','0','0','0','0','0','Ragged Owlbeast - Cast Festering Rash'),     
+-- Raging Owlbeast
+('745101','7451','9','0','100','1','0','5','21000','24000','11','13443','1','0','0','0','0','0','0','0','0','0','Raging Owlbeast - Cast Rend'),   
+-- Crazed Owlbeast
+('745201','7452','2','0','100','1','50','0','120000','120000','11','15716','0','1','1','-106','0','0','0','0','0','0','Crazed Owlbeast - Cast Enrage at 50% HP'), 
+-- Moontouched Owlbeast
+('745301','7453','0','0','100','1','7000','11000','15000','18000','11','15798','4','1','0','0','0','0','0','0','0','0','Moontouched Owlbeast - Cast Moonfire'),
+('745302','7453','2','0','100','1','50','0','18000','21000','11','12160','0','1','0','0','0','0','0','0','0','0','Moontouched Owlbeast - Cast Rejuvenation at 50% HP'),   
+-- Berserk Owlbeast
+('745401','7454','2','0','100','1','30','0','60000','65000','11','5915','0','0','0','0','0','0','0','0','0','0','Berserk Owlbeast - Cast Crazed at 30% HP'),     
+-- Winterspring Owl
+('745501','7455','0','0','100','1','8000','11000','10000','14000','11','16576','0','1','0','0','0','0','0','0','0','0','Winterspring Owl - Cast Piercing Screech'),     
+-- Winterspring Screecher
+('745601','7456','9','0','100','1','0','10','13000','16000','11','3589','1','0','0','0','0','0','0','0','0','0','Winterspring Screecher - Cast Deafening Screech'),     
+-- Rogue Ice Thistle
+('745701','7457','0','0','100','1','4000','4000','20000','20000','11','3604','1','0','0','0','0','0','0','0','0','0','Rogue Ice Thistle - Cast Tendon Rip'),     
+-- Ice Thistle Yeti
+('745801','7458','0','0','100','1','4000','4000','20000','20000','11','3604','1','0','0','0','0','0','0','0','0','0','Ice Thistle Yeti - Cast Tendon Rip'),
+('745802','7458','11','0','100','0','0','0','0','0','11','15876','0','1','0','0','0','0','0','0','0','0','Ice Thistle Yeti - Cast Ice Blast on Spawn'),    
+-- Ice Thistle Matriarch
+('745901','7459','9','0','100','0','0','15','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Ice Thistle Patriarch - Cast Rushing Charge on aggro'),
+('745902','7459','11','0','100','0','0','0','0','0','11','15876','0','1','0','0','0','0','0','0','0','0','Ice Thistle Patriarch - Cast Ice Blast on Spawn'),     
+-- Ice Thistle Patriarch
+('746001','7460','0','0','100','1','1500','7800','10800','20500','11','3131','1','1','0','0','0','0','0','0','0','0','Ice Thistle Patriarch - Cast Frost Breath'),
+('746002','7460','11','0','100','0','0','0','0','0','11','15876','0','1','0','0','0','0','0','0','0','0','Ice Thistle Patriarch - Cast Ice Blast on Spawn'),   
 -- Hederine Initiate 7461     
 -- Hederine Manastalker 7462     
 -- Hederine Slayer 7463     
--- Suffering Highborne 7523     
--- Anguished Highborne 7524     
+-- Suffering Highborne
+('752301','7523','9','0','100','1','0','30','13000','20000','11','14868','4','33','0','0','0','0','0','0','0','0','Suffering Highborne - Cast Curse of Agony'),     
+-- Anguished Highborne
+('752401','7524','9','0','100','1','0','30','3400','4800','11','13860','1','0','0','0','0','0','0','0','0','0','Anguished Highborne - Cast Mind Blast'),     
 -- Umbranse the Spiritspeaker 8588     
 -- Donova Snowden 9298     
 -- Enraged Hippogryph (9527) - SCRIPTED IN ANOTHER ZONE   
 -- Auctioneer Grizzlin 9857     
--- General Colbatann 10196     
--- Mezzir the Howler 10197     
--- Kashoch the Reaver 10198     
--- Grizzle Snowpaw 10199     
+-- General Colbatann
+('1019601','10196','0','0','100','1','2000','5000','13000','18000','11','9128','0','0','0','0','0','0','0','0','0','0','General Cobaltann - Cast Battle Shout'),
+('1019602','10196','9','0','100','1','0','5','5000','9000','11','11971','1','0','0','0','0','0','0','0','0','0','General Cobaltann - Cast Sunder Armor)'),     
+-- Mezzir the Howler
+('1019701','10197','0','0','60','1','4000','4000','33000','33000','11','15971','1','0','0','0','0','0','0','0','0','0','Mezzir the Howler - Cast Demoralizing Roar'),
+('1019702','10197','0','0','100','1','1500','7800','10800','20500','11','3131','1','1','0','0','0','0','0','0','0','0','Mezzir the Howler - Cast Frost Breath'),
+('1019703','10197','0','0','100','1','10000','10000','12000','20000','11','14100','0','0','0','0','0','0','0','0','0','0','Mezzir the Howler - Cast Terrifying Roar'),    
+-- Kashoch the Reaver
+('1019801','10198','0','0','100','1','4000','6000','6000','8000','11','15579','1','0','0','0','0','0','0','0','0','0','Kashoch the Reaver - Cast Cleave'),    
+-- Grizzle Snowpaw
+('1019901','10199','0','0','100','1','15000','25000','20000','25000','11','8364','4','1','0','0','0','0','0','0','0','0','Grizzle Snowpaw - Cast Blizzard'),
+('1019902','10199','0','0','100','1','1000','2500','11000','15000','11','12548','1','0','0','0','0','0','0','0','0','0','Grizzle Snowpaw - Cast Frost Shock'),
+('1019903','10199','9','0','60','1','8000','8000','12000','12000','11','15793','1','0','0','0','0','0','0','0','0','0','Grizzle Snowpaw - Cast Maul'),     
 -- Rak'shiri 10200     
 -- Lady Hederine 10201     
 -- Azurous
@@ -15482,10 +15543,21 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1073702','10737','0','0','100','1','7000','9000','22000','27000','11','13443','1','0','0','0','0','0','0','0','0','0','Shy-Rotam - Cast Rend'),
 ('1073703','10737','0','0','100','1','2000','3000','15000','20000','11','3604','1','0','0','0','0','0','0','0','0','0','Shy-Rotam - Cast Tendon Rip'),
 ('1073704','10737','2','0','100','0','50','0','0','0','32','10741','1','1','0','0','0','0','0','0','0','0','Shy-Rotam - Summons Sian-Rotam at 50% HP'),
--- High Chief Winterfall 10738     
--- Sian-Rotam 10741     
--- Ursius 10806     
--- Brumeran 10807     
+-- High Chief Winterfall
+('1073801','10738','0','0','100','1','15000','25000','20000','25000','11','8364','4','1','0','0','0','0','0','0','0','0','High Chief Winterfall - Cast Blizzard'),
+('1073802','10738','0','0','100','1','1000','2500','11000','15000','11','12548','1','0','0','0','0','0','0','0','0','0','High Chief Winterfall - Cast Frost Shock'),
+('1073803','10738','9','0','60','1','8000','8000','12000','12000','11','15793','1','0','0','0','0','0','0','0','0','0','High Chief Winterfall - Cast Maul'),   
+-- Sian-Rotam
+('1074101','10741','0','0','100','1','5000','5000','5000','10000','11','14100','1','0','0','0','0','0','0','0','0','0','Sian-Rotam - Cast Terrifying Roar'),
+('1074102','10741','0','0','100','1','7000','9000','22000','27000','11','13443','1','0','0','0','0','0','0','0','0','0','Sian-Rotam - Cast Rend'),
+('1074103','10741','0','0','100','1','2000','3000','15000','20000','11','3604','1','0','0','0','0','0','0','0','0','0','Sian-Rotam - Cast Tendon Rip'),   
+-- Ursius
+('1080601','10806','0','0','100','1','3000','5000','32000','38000','11','15971','0','1','0','0','0','0','0','0','0','0','Ursius - Cast Demoralizing Roar'),
+('1080602','10806','9','0','60','1','8000','8000','12000','12000','11','15793','1','0','0','0','0','0','0','0','0','0','Ursius - Cast Maul'),   
+-- Brumeran
+('1080701','10807','2','0','100','1','20','0','120000','120000','11','8599','0','1','1','-106','0','0','0','0','0','0','Brumeran - Cast Enrage at 20% HP'),
+('1080702','10807','0','0','100','1','8000','13000','12000','15000','11','15797','4','1','0','0','0','0','0','0','0','0','Brumeran - Cast Lightning Breath'),
+('1080703','10807','0','0','100','1','10000','10000','20000','55000','11','16552','4','1','0','0','0','0','0','0','0','0','Brumeran - Cast Venom Spit'),     
 -- Winterfall Runner 10916     
 -- Lorax 10918   npc_lorax 
 -- Haleh 10929     
@@ -15496,7 +15568,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Maethrya
 ('1113801','11138','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Maethrya - Summon Enraged Hippogryphs on Aggro'),
 -- Yugrek
-('1113901','11139','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Yugrek - Summon Enraged Wyverns and Yell on Aggro');
+('1113901','11139','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Yugrek - Summon Enraged Wyverns and Yell on Aggro'),
 -- Nixxrak 11182     
 -- Blixxrak 11183     
 -- Wixxrak 11184     
@@ -15513,7 +15585,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Salfa 11556     
 -- Jessica Redpath 11629     
 -- Chal Fairwind 11696     
--- Sar Browneye 11718     
+-- Sar Browneye 11718  (FLEE at 15% HP)   
 -- Rilan Howard 11751     
 -- Gogo 11753     
 -- Meggi Peppinrocker 11754     
@@ -15536,7 +15608,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Number Two 15554 0   
 -- Elder Stonespire 15574     
 -- Elder Brightspear 15606     
--- Xandivious 15623     
+-- Xandivious
+('1562301','15623','11','0','100','0','0','0','0','0','11','25818','0','1','0','0','0','0','0','0','0','0','Xandivious -  Cast Aura of Rot on Spawn'),
+('1562302','15623','0','0','100','1','3000','3500','15000','15000','11','11980','1','0','0','0','0','0','0','0','0','0','Xandivious - Cast Curse of Weakness'),
+('1562303','15623','0','0','100','1','5000','5500','14500','15500','11','11639','1','0','0','0','0','0','0','0','0','0','Xandivious - Cast Shadow Word: Pain'),
+('1562304','15623','0','0','100','1','7000','7500','9500','10500','11','16046','1','0','0','0','0','0','0','0','0','0','Xandivious - Cast cast Blast Wave'),
+('1562305','15623','2','0','100','0','50','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Xandivious - Cast Enrage at 50% HP'),
+('1562306','15623','6','0','100','0','0','0','0','0','11','25791','0','7','0','0','0','0','0','0','0','0','Xandivious - Cast Xandivious Demon Bag on Death');
 -- Vi'el 16015     
 -- Necrotic Shard 16136 NSR   
 -- Ghoul Berserker 16141 NSR   
@@ -15548,7 +15626,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit of the Damned 16379 NSR   
 -- Bone Witch 16380 NSR   
 -- Bronn Fitzwrench 16416     
--- Midsummer Celebrant 16781 NSR   
+-- Midsummer Celebrant 16781 NSR
 
 
 
