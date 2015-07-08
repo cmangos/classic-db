@@ -2675,7 +2675,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Carrion Devourer
 ('860501','8605','0','0','100','1','4000','7000','8000','12000','11','16449','4','32','0','0','0','0','0','0','0','0','Carrion Devourer - Cast Maggot Slime'),
 ('860502','8605','6','0','100','0','0','0','0','0','11','17197','0','7','0','0','0','0','0','0','0','0','Carrion Devourer - Cast Maggot Goo on Death'),
--- Living Decay (8606) - NSR
+-- Living Decay
+('860601','8606','4','0','100','0','0','0','0','0','11','11441','0','2','0','0','0','0','0','0','0','0','Living Decay - Withered Touch'),
 -- Rotting Sludge
 ('860701','8607','0','0','100','1','4000','7000','8000','12000','11','7279','4','32','0','0','0','0','0','0','0','0','Rotting Sludge - Cast Black Sludge'),
 -- Scarlet Warder
