@@ -18824,7 +18824,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1081103','10811','0','0','100','1','10000','17000','16000','21000','11','17293','4','0','0','0','0','0','0','0','0','0','Archivist Galford - Cast Burning Winds'),
 -- Grand Crusader Dathrohan (10812) - boss_dathrohan_balnazzar
 -- Balnazzar (10813) - boss_dathrohan_balnazzar
--- Undead Scarab (10876) - NSR
+-- Undead Scarab
+('1087601','10876','4','0','100','0','0','0','0','0','11','13299','0','2','0','0','0','0','0','0','0','0','Undead Scarab - Poison Proc'),
 -- Aurius
 ('1091701','10917','9','0','100','1','0','5','6000','9000','11','14517','1','0','0','0','0','0','0','0','0','0','Aurius - Cast Crusader Strike'),
 ('1091702','10917','0','0','100','1','6000','14000','8000','11000','11','17149','4','0','0','0','0','0','0','0','0','0','Aurius - Cast Exorcism'),
