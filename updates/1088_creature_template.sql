@@ -1,0 +1,5 @@
+
+UPDATE `creature_template` SET `UnitFlags`='64', `CreatureTypeFlags`='72', `MinMeleeDmg`='85.7', `MaxMeleeDmg`='115.9', `MinRangedDmg`='0', `MaxRangedDmg`='0', `MeleeAttackPower`='214', `RangedAttackPower`='21', `MeleeBaseAttackTime`='2000' WHERE `Entry`='1794';
+UPDATE `creature_template` SET `UnitFlags`='64', `CreatureTypeFlags`='72', `MinMeleeDmg`='87.5', `MaxMeleeDmg`='118.2', `MinRangedDmg`='0', `MaxRangedDmg`='0', `MeleeAttackPower`='220', `RangedAttackPower`='21', `MeleeBaseAttackTime`='2000' WHERE `Entry`='1795';
+UPDATE `creature_template` SET `UnitFlags`='64', `CreatureTypeFlags`='72', `MinMeleeDmg`='95.9', `MaxMeleeDmg`='132.4', `MeleeAttackPower`='242', `RangedAttackPower`='25', `MeleeBaseAttackTime`='2000' WHERE `Entry`='1802';
+UPDATE `creature_template` SET `UnitFlags`='64', `CreatureTypeFlags`='72', `MinMeleeDmg`='95.9', `MaxMeleeDmg`='129.9', `MinRangedDmg`='0', `MaxRangedDmg`='0', `MeleeAttackPower`='238', `RangedAttackPower`='24', `MeleeBaseAttackTime`='2000' WHERE `Entry`='1804';
