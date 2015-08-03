@@ -2754,6 +2754,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1081709','10817','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Duggan Wildhammer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Hed\'mush the Rotting
 ('1082101','10821','0','0','100','1','6000','9000','13000','18000','11','14099','1','0','0','0','0','0','0','0','0','0','Hed\'mush the Rotting - Cast Mighty Blow'),
+('1082102','10821','11','0','100','0','0','0','0','0','11','16577','0','0','0','0','0','0','0','0','0','0','Hed\'mush the Rotting - Cast Disease Cloud on Spawn'),
+('1082103','10821','2','0','100','1','30','0','120000','125000','11','8599','0','1','1','-106','0','0','0','0','0','0','Hed\'mush the Rotting - Cast Enrage at 30% HP'),
 -- Warlord Thresh'jin
 ('1082201','10822','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Warlord Thresh\'jin - Set Phase 1 on Aggro'),
 ('1082202','10822','9','5','100','1','0','5','5000','9000','11','11971','1','0','0','0','0','0','0','0','0','0','Warlord Thresh\'jin - Cast Sunder Armor (Phase 1)'),
@@ -2870,7 +2872,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Defender
 ('1128901','11289','0','0','100','1','3000','5000','5000','8000','11','11976','1','0','0','0','0','0','0','0','0','0','Spectral Defender - Cast Strike'),
 ('1128902','11289','0','0','100','1','5000','7000','7000','10000','11','12169','0','1','0','0','0','0','0','0','0','0','Spectral Defender - Cast Shield Block'),
--- Mossflayer Zombie (11290) - NSR
+-- Mossflayer Zombie
+('1129001','11290','9','0','100','1','0','5','9000','15000','11','3234','1','0','0','0','0','0','0','0','0','0','Mossflayer Zombie - Cast Disease Touch'),
 -- Unliving Mossflayer
 ('1129101','11291','0','0','100','1','4000','6000','9000','12000','11','4974','1','32','0','0','0','0','0','0','0','0','Unliving Mossflayer - Cast Wither Touch'),
 ('1129102','11291','9','0','100','1','0','5','8000','14000','11','11428','1','1','0','0','0','0','0','0','0','0','Unliving Mossflayer - Cast Knockdown'),
@@ -2991,7 +2994,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scarlet Inquisitor (15162) - NSR
 -- Elder Snowcrown (15566) - NSR
 -- Elder Windrun (15592) - NSR
--- Korfax','Champion of the Light (16112) - NSR
+-- Korfax','Champion of the Light
+('1611201','16112','9','0','100','1','0','5','5000','8000','11','11976','1','0','0','0','0','0','0','0','0','0','Korfax - Cast Strike'),
 -- Father Inigo Montoy (16113) - NSR
 -- Scarlet Commander Marjhan (16114) - Complex Storyline of Says Required
 -- Commander Eligor Dawnbringer (16115) - Complex Storyline of Says Required
@@ -7503,7 +7507,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Carrion Lurker
 ('182101','1821','11','0','100','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Carrion Lurker - Cast Poison Proc on Spawn'),
 ('182102','1821','9','0','100','1','0','20','12000','15000','11','745','1','1','0','0','0','0','0','0','0','0','Carrion Lurker - Cast Web'),
--- Venom Mist Lurker (1822) - NSR
+-- Venom Mist Lurker
+('182201','1822','11','0','100','0','0','0','0','0','11','10022','0','1','0','0','0','0','0','0','0','0','Venom Mist Lurker - Cast Deadly Poison on Spawn'),
 -- Plague Lurker (1824) - NSR
 -- Scarlet Mage
 ('182601','1826','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Scarlet Mage - Prevent Combat Movement on Spawn'),
@@ -7728,8 +7733,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Putrid Gargoyle (8534) - SCRIPTED IN ANOTHER ZONE   
 -- Plaguehound Runt (8596) - NSR
 -- Plaguebat (8600) - SCRIPTED IN ANOTHER ZONE 
--- Fetid Zombie  (Poison Aura on Spawn ???)   
+-- Fetid Zombie
 ('1058001','10580','1','0','100','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Fetid Zombie - Cast Birth on Spawn'),
+('1058002','10580','11','0','100','0','0','0','0','0','11','8713','0','0','0','0','0','0','0','0','0','0','Fetid Zombie - Cast Overwhelming Musk on Spawn'),
 -- Scarlet Medic      
 ('1060501','10605','14','0','100','1','1200','40','16000','19000','11','11640','6','0','0','0','0','0','0','0','0','0','Scarlet Medic - Cast Renew'),
 ('1060502','10605','14','0','100','1','2000','40','12000','15000','11','17137','6','1','0','0','0','0','0','0','0','0','Scarlet Medic - Cast Flash Heal'),
@@ -7753,6 +7759,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chromie (10667) - NSR
 -- Temporal Parasite      
 ('1071701','10717','0','0','100','1','2000','5000','10000','12000','11','11436','4','0','0','0','0','0','0','0','0','0','Temporal Parasite - Cast Slow'),
+('1071702','10717','6','0','40','0','0','0','0','0','11','16619','0','7','0','0','0','0','0','0','0','0','Temporal Parasite - Temporal Parasite Death Summon on Death'),
 -- Mulgris Deepriver (10739) - NSR
 -- Janice Felstone (10778) - NSR
 -- Infected Squirrel (10779) - NSR
