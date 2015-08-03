@@ -11955,7 +11955,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tenell Leafrunner (10923) - NSR
 -- Ivy Leafrunner (10924) - NSR
 -- Captured Arko'narin (11016) - NSR
--- Arko'narin (11018) - NSR
+-- Arko'narin
+('1101801','11018','0','0','100','3','5000','8000','9000','13000','11','16856','1','0','0','0','0','0','0','0','0','0','Arko\'narin - Cast Mortal Strike'),
+('1101802','11018','9','0','100','1','0','5','12000','15000','11','18819','1','1','0','0','0','0','0','0','0','0','Arko\'narin - Cast Holy Cleave'),
+('1101803','11018','1','0','100','1','0','5','1800000','1800000','11','18176','0','1','0','0','0','0','0','0','0','0','Arko\'narin - Cast Holy Fire on Spawn'),
 -- Jessir Moonbow (11019) - NSR
 -- Remains of Trey Lightforge (11020) - NSR
 -- Della (11024) - NSR
@@ -11984,13 +11987,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1190001','11900','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Brakkar - Summon Enraged Wyverns and Yell on Aggro'),
 -- Mishellena
 ('1257801','12578','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Mishellena - Summon Enraged Hippogryphs on Aggro'),
--- Death Howl (14339) - NSR
+-- Death Howl
+('1433901','14339','9','0','100','1','0','5','8000','14000','11','3427','1','32','0','0','0','0','0','0','0','0','Death Howl - Cast Infected Wound'),
+('1433902','14339','9','0','100','1','0','5','20000','24000','11','3604','1','1','0','0','0','0','0','0','0','0','Death Howl - Cast Tendon Rip'),
 -- Alshirr Banebreath (14340) - NSR
 -- Ragepaw (14342) - NSR
 -- Olm the Wise (14343) - NSR
 -- Mongress      
 ('1434401','14344','2','0','100','1','30','0','120000','120000','11','8599','0','0','1','-106','0','0','0','0','0','0','Mongress - Cast Enrage at 30% HP'),
--- The Ongar (14345) - NSR
+-- The Ongar
+('1434501','14345','9','0','100','1','0','5','180000','180000','11','3335','1','0','0','0','0','0','0','0','0','0','The Ongar - Cast Dark Sludge'),
 -- Kroshius (14467) - npc_kroshius
 -- Niby the Almighty (14469) - npc_niby_the_almighty 
 -- Impsy (14470) - NSR    
