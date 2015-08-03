@@ -16537,8 +16537,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spire Spider
 ('1037401','10374','0','0','100','1','15000','15000','15000','15000','11','16104','1','0','0','0','0','0','0','0','0','0','Spire Spider - Crystallize'),
 ('1037402','10374','6','0','100','0','0','0','0','0','11','16103','0','2','0','0','0','0','0','0','0','0','Spire Spider - Cast Summon Spire Spiderling on Death'),
--- Spire Spiderling
-('1037501','10375','1','0','100','1','10000','10000','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Spire Spiderling -  Die on Evade'),
+-- Spire Spiderling 10375 NSR
 -- Crystal Fang
 ('1037601','10376','0','0','100','1','5000','10000','5000','10000','12','10375','4','60000','0','0','0','0','0','0','0','0','Crystal Fang - Summon Spire Spiderling'),
 -- Warchief Rend Blackhand (SD2 Backport)
@@ -17746,8 +17745,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('735805','7358','2','0','100','0','66','0','0','0','11','12642','1','0','1','-1222','0','0','0','0','0','0','Amnennar the Coldbringer - Cast Summon Frost Spectres and Yell at 66%'),
 ('735806','7358','2','0','100','0','50','0','0','0','1','-1224','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Yell at 50%'),
 ('735807','7358','2','0','100','0','33','0','0','0','11','12642','1','0','1','-1223','0','0','0','0','0','0','Amnennar the Coldbringer - Cast Summon Frost Spectres and Yell at 33%'),
--- Skeletal Servant
-('847701','8477','1','0','100','0','5000','5000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Skeletal Servant - Despawn on Evade'),
+-- Skeletal Servant 8477 NSR
 -- Glutton
 ('856701','8567','1','0','100','0','1000','1000','0','0','11','12627','0','0','0','0','0','0','0','0','0','0','Glutton - Cast Diesease Cloud on Spawn'),
 ('856702','8567','2','0','100','0','50','0','0','0','11','12795','0','1','1','-539','0','0','0','0','0','0','Glutton - Cast Frenzy at 50% HP'),
