@@ -2754,6 +2754,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1081709','10817','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Duggan Wildhammer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Hed\'mush the Rotting
 ('1082101','10821','0','0','100','1','6000','9000','13000','18000','11','14099','1','0','0','0','0','0','0','0','0','0','Hed\'mush the Rotting - Cast Mighty Blow'),
+('1082102','10821','11','0','100','0','0','0','0','0','11','16577','0','0','0','0','0','0','0','0','0','0','Hed\'mush the Rotting - Cast Disease Cloud on Spawn'),
+('1082103','10821','2','0','100','1','30','0','120000','125000','11','8599','0','1','1','-106','0','0','0','0','0','0','Hed\'mush the Rotting - Cast Enrage at 30% HP'),
 -- Warlord Thresh'jin
 ('1082201','10822','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Warlord Thresh\'jin - Set Phase 1 on Aggro'),
 ('1082202','10822','9','5','100','1','0','5','5000','9000','11','11971','1','0','0','0','0','0','0','0','0','0','Warlord Thresh\'jin - Cast Sunder Armor (Phase 1)'),
@@ -2870,7 +2872,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Defender
 ('1128901','11289','0','0','100','1','3000','5000','5000','8000','11','11976','1','0','0','0','0','0','0','0','0','0','Spectral Defender - Cast Strike'),
 ('1128902','11289','0','0','100','1','5000','7000','7000','10000','11','12169','0','1','0','0','0','0','0','0','0','0','Spectral Defender - Cast Shield Block'),
--- Mossflayer Zombie (11290) - NSR
+-- Mossflayer Zombie
+('1129001','11290','9','0','100','1','0','5','9000','15000','11','3234','1','0','0','0','0','0','0','0','0','0','Mossflayer Zombie - Cast Disease Touch'),
 -- Unliving Mossflayer
 ('1129101','11291','0','0','100','1','4000','6000','9000','12000','11','4974','1','32','0','0','0','0','0','0','0','0','Unliving Mossflayer - Cast Wither Touch'),
 ('1129102','11291','9','0','100','1','0','5','8000','14000','11','11428','1','1','0','0','0','0','0','0','0','0','Unliving Mossflayer - Cast Knockdown'),
@@ -2991,7 +2994,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scarlet Inquisitor (15162) - NSR
 -- Elder Snowcrown (15566) - NSR
 -- Elder Windrun (15592) - NSR
--- Korfax','Champion of the Light (16112) - NSR
+-- Korfax','Champion of the Light
+('1611201','16112','9','0','100','1','0','5','5000','8000','11','11976','1','0','0','0','0','0','0','0','0','0','Korfax - Cast Strike'),
 -- Father Inigo Montoy (16113) - NSR
 -- Scarlet Commander Marjhan (16114) - Complex Storyline of Says Required
 -- Commander Eligor Dawnbringer (16115) - Complex Storyline of Says Required
@@ -7503,7 +7507,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Carrion Lurker
 ('182101','1821','11','0','100','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Carrion Lurker - Cast Poison Proc on Spawn'),
 ('182102','1821','9','0','100','1','0','20','12000','15000','11','745','1','1','0','0','0','0','0','0','0','0','Carrion Lurker - Cast Web'),
--- Venom Mist Lurker (1822) - NSR
+-- Venom Mist Lurker
+('182201','1822','11','0','100','0','0','0','0','0','11','10022','0','1','0','0','0','0','0','0','0','0','Venom Mist Lurker - Cast Deadly Poison on Spawn'),
 -- Plague Lurker (1824) - NSR
 -- Scarlet Mage
 ('182601','1826','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Scarlet Mage - Prevent Combat Movement on Spawn'),
@@ -7633,6 +7638,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('184811','1848','2','0','100','0','15','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Lord Maldazzar - Set Phase 3 at 15% HP'),
 ('184812','1848','2','7','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Lord Maldazzar - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 ('184813','1848','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Lord Maldazzar - Set Phase to 0 on Evade'),
+-- Dreadwhisper
+('184901','1849','11','0','100','0','0','0','0','0','11','12552','0','2','0','0','0','0','0','0','0','0','Dreadwhisper - Criple'),
+('184902','1849','0','0','100','1','15000','30000','30000','30000','11','17228','0','0','0','0','0','0','0','0','0','0','Dreadwhisper - Shadow Bolt Volley '),
+('184903','1849','0','0','100','1','5000','15000','15000','15000','11','7068','1','0','0','0','0','0','0','0','0','0','Dreadwhisper - Veil of Shadow'),
 -- Putridius      
 ('185001','1850','0','0','100','1','5000','9000','16000','21000','11','12946','0','1','0','0','0','0','0','0','0','0','Putridius - Cast Putrid Stench'),
 ('185002','1850','9','0','100','1','0','8','8000','12000','11','10966','1','0','0','0','0','0','0','0','0','0','Putridius - Cast Uppercut'),
@@ -7728,8 +7737,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Putrid Gargoyle (8534) - SCRIPTED IN ANOTHER ZONE   
 -- Plaguehound Runt (8596) - NSR
 -- Plaguebat (8600) - SCRIPTED IN ANOTHER ZONE 
--- Fetid Zombie  (Poison Aura on Spawn ???)   
+-- Fetid Zombie
 ('1058001','10580','1','0','100','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Fetid Zombie - Cast Birth on Spawn'),
+('1058002','10580','11','0','100','0','0','0','0','0','11','8713','0','0','0','0','0','0','0','0','0','0','Fetid Zombie - Cast Overwhelming Musk on Spawn'),
 -- Scarlet Medic      
 ('1060501','10605','14','0','100','1','1200','40','16000','19000','11','11640','6','0','0','0','0','0','0','0','0','0','Scarlet Medic - Cast Renew'),
 ('1060502','10605','14','0','100','1','2000','40','12000','15000','11','17137','6','1','0','0','0','0','0','0','0','0','Scarlet Medic - Cast Flash Heal'),
@@ -7753,6 +7763,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chromie (10667) - NSR
 -- Temporal Parasite      
 ('1071701','10717','0','0','100','1','2000','5000','10000','12000','11','11436','4','0','0','0','0','0','0','0','0','0','Temporal Parasite - Cast Slow'),
+('1071702','10717','6','0','40','0','0','0','0','0','11','16619','0','7','0','0','0','0','0','0','0','0','Temporal Parasite - Temporal Parasite Death Summon on Death'),
 -- Mulgris Deepriver (10739) - NSR
 -- Janice Felstone (10778) - NSR
 -- Infected Squirrel (10779) - NSR
@@ -11955,7 +11966,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tenell Leafrunner (10923) - NSR
 -- Ivy Leafrunner (10924) - NSR
 -- Captured Arko'narin (11016) - NSR
--- Arko'narin (11018) - NSR
+-- Arko'narin
+('1101801','11018','0','0','100','3','5000','8000','9000','13000','11','16856','1','0','0','0','0','0','0','0','0','0','Arko\'narin - Cast Mortal Strike'),
+('1101802','11018','9','0','100','1','0','5','12000','15000','11','18819','1','1','0','0','0','0','0','0','0','0','Arko\'narin - Cast Holy Cleave'),
+('1101803','11018','1','0','100','1','0','5','1800000','1800000','11','18176','0','1','0','0','0','0','0','0','0','0','Arko\'narin - Cast Holy Fire on Spawn'),
 -- Jessir Moonbow (11019) - NSR
 -- Remains of Trey Lightforge (11020) - NSR
 -- Della (11024) - NSR
@@ -11984,13 +11998,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1190001','11900','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Brakkar - Summon Enraged Wyverns and Yell on Aggro'),
 -- Mishellena
 ('1257801','12578','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Mishellena - Summon Enraged Hippogryphs on Aggro'),
--- Death Howl (14339) - NSR
+-- Death Howl
+('1433901','14339','9','0','100','1','0','5','8000','14000','11','3427','1','32','0','0','0','0','0','0','0','0','Death Howl - Cast Infected Wound'),
+('1433902','14339','9','0','100','1','0','5','20000','24000','11','3604','1','1','0','0','0','0','0','0','0','0','Death Howl - Cast Tendon Rip'),
 -- Alshirr Banebreath (14340) - NSR
 -- Ragepaw (14342) - NSR
 -- Olm the Wise (14343) - NSR
 -- Mongress      
 ('1434401','14344','2','0','100','1','30','0','120000','120000','11','8599','0','0','1','-106','0','0','0','0','0','0','Mongress - Cast Enrage at 30% HP'),
--- The Ongar (14345) - NSR
+-- The Ongar
+('1434501','14345','9','0','100','1','0','5','180000','180000','11','3335','1','0','0','0','0','0','0','0','0','0','The Ongar - Cast Dark Sludge'),
 -- Kroshius (14467) - npc_kroshius
 -- Niby the Almighty (14469) - npc_niby_the_almighty 
 -- Impsy (14470) - NSR    
@@ -16524,8 +16541,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spire Spider
 ('1037401','10374','0','0','100','1','15000','15000','15000','15000','11','16104','1','0','0','0','0','0','0','0','0','0','Spire Spider - Crystallize'),
 ('1037402','10374','6','0','100','0','0','0','0','0','11','16103','0','2','0','0','0','0','0','0','0','0','Spire Spider - Cast Summon Spire Spiderling on Death'),
--- Spire Spiderling
-('1037501','10375','1','0','100','1','10000','10000','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Spire Spiderling -  Die on Evade'),
+-- Spire Spiderling 10375 NSR
 -- Crystal Fang
 ('1037601','10376','0','0','100','1','5000','10000','5000','10000','12','10375','4','60000','0','0','0','0','0','0','0','0','Crystal Fang - Summon Spire Spiderling'),
 -- Warchief Rend Blackhand (SD2 Backport)
@@ -17733,8 +17749,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('735805','7358','2','0','100','0','66','0','0','0','11','12642','1','0','1','-1222','0','0','0','0','0','0','Amnennar the Coldbringer - Cast Summon Frost Spectres and Yell at 66%'),
 ('735806','7358','2','0','100','0','50','0','0','0','1','-1224','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Yell at 50%'),
 ('735807','7358','2','0','100','0','33','0','0','0','11','12642','1','0','1','-1223','0','0','0','0','0','0','Amnennar the Coldbringer - Cast Summon Frost Spectres and Yell at 33%'),
--- Skeletal Servant
-('847701','8477','1','0','100','0','5000','5000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Skeletal Servant - Despawn on Evade'),
+-- Skeletal Servant 8477 NSR
 -- Glutton
 ('856701','8567','1','0','100','0','1000','1000','0','0','11','12627','0','0','0','0','0','0','0','0','0','0','Glutton - Cast Diesease Cloud on Spawn'),
 ('856702','8567','2','0','100','0','50','0','0','0','11','12795','0','1','1','-539','0','0','0','0','0','0','Glutton - Cast Frenzy at 50% HP'),
