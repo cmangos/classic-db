@@ -1,0 +1,2 @@
+
+UPDATE `creature_template` SET `UnitFlags`='64', `SpeedWalk`='1', `Rank`='2', `HealthMultiplier`='3', `DamageMultiplier`='1.7', `ArmorMultiplier`='1', `MinLevelHealth`='1686', `MaxLevelHealth`='1686', `MinMeleeDmg`='32', `MaxMeleeDmg`='42.4', `MinRangedDmg`='0', `MaxRangedDmg`='0', `Armor`='922', `MeleeAttackPower`='78', `RangedAttackPower`='4', `MeleeBaseAttackTime`='2000', `RangedBaseAttackTime`='2000', `MovementType`='1' WHERE `Entry`='5864';
