@@ -8,7 +8,7 @@ INSERT INTO `creature_linking_template` VALUES
 (8900, 230, 8983, 1, 100), -- Doomforge Arcanasmith : not all of them, only those in The Manufactory, those in Halls of Crafting are not linked
 (8906, 230, 8920, 1, 12), -- Ragereaver Golem
 (8907, 230, 8983, 1, 0), -- Wrath Hammer Construct
-(8920, 230, 8983, 1, 0); -- Weapon Technician
+(8920, 230, 8983, 1, 100); -- Weapon Technician : not all of them, only those in The Manufactory, those in Shadowforge City are not linked
 
 DELETE FROM `creature_linking` WHERE `guid` = 45932;
 INSERT INTO `creature_linking` VALUES

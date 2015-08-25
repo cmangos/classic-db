@@ -157,7 +157,7 @@ INSERT INTO `creature` VALUES
 (@GUID + 44, @WEAP, 230, 0, 0, 762.349, 41.594, -53.7146, 3.9619, @TIME, 0, 0, 9298, 0, 0, 2),
 (@GUID + 45, @DOOM, 230, 0, 0, 782.138, -45.6668, -53.7721, 3.9619, @TIME, 0, 0, 9298, 0, 0, 2),
 (@GUID + 46, @WEAP, 230, 0, 0, 782.138, -45.6668, -53.7721, 3.9619, @TIME, 0, 0, 9298, 0, 0, 2),
-(@GUID + 47, @DOOM, 230, 0, 0, 782.138, -45.6668, -53.7721, 3.9619, @TIME, 0, 0, 9298, 0, 0, 2),
+(@GUID + 47, @DOOM, 230, 0, 0, 792.438, 45.7173, -53.7176, 3.9619, @TIME, 0, 0, 9298, 0, 0, 2),
 (@GUID + 48, @WEAP, 230, 0, 0, 792.438, 45.7173, -53.7176, 3.9619, @TIME, 0, 0, 9298, 0, 0, 2),
 (@GUID + 49, @WEAP, 230, 0, 0, 773.925, 3.11658, -53.7172, 3.9619, @TIME, 0, 0, 9298, 0, 0, 2),
 (@GUID + 50, @DOOM, 230, 0, 0, 811.87, -25.2166, -53.6904, 3.9619, @TIME, 0, 0, 9298, 0, 0, 2),
@@ -361,3 +361,7 @@ INSERT INTO `creature_movement` VALUES
 (@GUID + 51, 17, 791.093, -26.4291, -53.7006, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (@GUID + 51, 18, 795.717, -22.4336, -53.6528, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (@GUID + 51, 19, 812.793, -25.571, -53.6914, 45000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- Stats cleanup
+UPDATE creature, creature_template SET creature.curhealth = creature_template.MinLevelHealth, creature.curmana = creature_template.MinLevelMana WHERE creature.id = creature_template.entry AND creature_template.RegenerateStats & 1;
+
