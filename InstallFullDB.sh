@@ -137,7 +137,7 @@ fi
 LAST_CORE_REV="2677"
 LAST_SD2_REV="2747"
 # process future release folders
-NEXT_MILESTONES="0.12.3 0.12.4"
+NEXT_MILESTONES="0.12.4 0.12.5"
 NEXT_SD2_MILESTONES="0.9 0.10"
 
 if [ "$CORE_PATH" != "" ]
