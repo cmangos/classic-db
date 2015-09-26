@@ -161,7 +161,7 @@ then
     if [ -e ${CORE_PATH}/sql/updates/${NEXT_MILESTONE}/ ]
     then
       echo "Apply core updates from milestone $NEXT_MILESTONE"
-      for f in ${CORE_PATH}/sql/updates/${NEXT_MILESTONE}/z*_*_*_*_mangos_*.sql
+      for f in ${CORE_PATH}/sql/archives/${NEXT_MILESTONE}/z*_*_mangos_*.sql
       do
         CUR_REV=`basename $f | sed 's/^\([0-9]*\)_.*/\1/' `
         if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
@@ -176,7 +176,7 @@ then
   done
 
   # Apply remaining files from main folder
-  for f in $CORE_PATH/sql/updates/*_*_mangos_*.sql
+  for f in $CORE_PATH/sql/updates/mangos/z*_*_mangos_*.sql
   do
     CUR_REV=`basename $f | sed 's/^\z\([0-9]*\)_.*/\1/' `
     if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
