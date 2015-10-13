@@ -18,8 +18,6 @@ USERNAME=""
 PASSWORD=""
 MYSQL=""
 CORE_PATH=""
-SD2_PATH=""
-SD2_UPDATES="1"
 DEV_UPDATES="NO"
 
 function create_config {
@@ -106,8 +104,8 @@ done
 echo .
 
 ## Full Database
-echo "Process classic database v1.5.0 'The Great Swimming Pool.'"
-$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_5_z2656.sql
+echo "Process classic database v1.6.0 'Shadowforge City'."
+$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_6_z2683.sql
 [[ $? != 0 ]] && exit 1
 
 ## Updates

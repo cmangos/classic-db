@@ -1,2 +1,0 @@
-
-UPDATE `creature_template` SET `MinLevel`='41', `MaxLevel`='41', `Scale`='0', `UnitFlags`='64', `HealthMultiplier`='1.2', `ArmorMultiplier`='1', `MinLevelHealth`='1902', `MaxLevelHealth`='1902', `MinMeleeDmg`='58.7', `MaxMeleeDmg`='77.9', `MinRangedDmg`='0', `MaxRangedDmg`='0', `Armor`='2101', `MeleeAttackPower`='142', `RangedAttackPower`='15', `MeleeBaseAttackTime`='2000', `ResistanceFire`='0', `ResistanceNature`='0', `ResistanceFrost`='0', `ResistanceShadow`='0', `ResistanceArcane`='0', `MovementType`='1' WHERE `Entry`='14234';
