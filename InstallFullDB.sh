@@ -53,18 +53,9 @@ PASSWORD="mangos"
 ##   If set the core updates located under sql/updates from this mangos-directory will be added automatically
 CORE_PATH=""
 
-## Define the path SD2 (This is optional and relative to core path)
-##   If set the SD2 updates located under sql/updates from this SD2-directory will be added automatically
-SD2_PATH=""
-
 ## Define the path to the folder into which you cloned ACID (This is optional)
 ##   If set the file acid_classic.sql will be applied from this folder
 ACID_PATH=""
-
-## Include ScriptDev2 updates? (If set, the SD2-Updates are expected to be located in the place defined at CORE_PATH)
-##   NOTE: They are only applied if CORE_PATH is set!
-##   Set to 0 if you want core updates BUT no SD2-updates
-SD2_UPDATES="1"
 
 ## Define your mysql programm if this differs
 MYSQL="mysql"
@@ -134,11 +125,9 @@ else
     echo "Updates applied"
 fi
 
-LAST_CORE_REV="2681"
-LAST_SD2_REV="2747"
+LAST_CORE_REV="2683"
 # process future release folders
 NEXT_MILESTONES="0.12.4 0.12.5"
-NEXT_SD2_MILESTONES="0.9 0.10"
 
 if [ "$CORE_PATH" != "" ]
 then
@@ -188,57 +177,6 @@ then
     fi
   done
   echo "All core updates applied"
-#
-#               ScriptDev2 updates
-#
-  if [ "$SD2_PATH" != "" ]
-  then
-    SD2_PATH=$CORE_PATH/src/bindings/$SD2_PATH
-
-    if [ ! -e $SD2_PATH ]
-    then
-      echo "Path to SD2 provided, but directory not found! $SD2_PATH"
-      exit 1
-    fi
-
-    echo
-    echo "Applying additional ScriptDev2 updates from path $SD2_PATH"
-    echo
-
-    for NEXT_SD2_MILESTONE in ${NEXT_SD2_MILESTONES}
-    do
-      # A new milestone was released, apply additional updates
-      if [ -e $SD2_PATH/sql/updates/${NEXT_SD2_MILESTONE}/ ]
-      then
-        echo "Apply SD2 updates from milestone $NEXT_SD2_MILESTONE"
-        for f in $SD2_PATH/sql/updates/${NEXT_SD2_MILESTONE}/r*_mangos.sql
-        do
-          CUR_REV=`basename $f | sed 's/^r\([0-9]*\)_mangos.sql/\1/' `
-          if [ "$CUR_REV" -gt "$LAST_SD2_REV" ]
-          then
-            # found a newer core update file
-            echo "Append SD2 update`basename $f` to database $DATABASE"
-            $MYSQL_COMMAND < $f
-            [[ $? != 0 ]] && exit 1
-          fi
-        done
-      fi
-    done
-
-    # Apply remaining files from main folder
-    for f in $SD2_PATH/sql/updates/r*_mangos.sql
-    do
-      CUR_REV=`basename $f | sed 's/^r\([0-9]*\)_mangos.sql/\1/'`
-      if [ "$CUR_REV" -gt "$LAST_SD2_REV" ]
-      then
-        # found a newer core update file
-        echo "Append SD2 update`basename $f` to database $DATABASE"
-        $MYSQL_COMMAND < $f
-        [[ $? != 0 ]] && exit 1
-      fi
-    done
-  echo "All SD2 updates applied"
-  fi
 fi
 
 #

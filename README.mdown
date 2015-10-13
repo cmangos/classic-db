@@ -10,9 +10,8 @@ copies.
 
 Compatibility
 -------------
-The *Classic DB* database is compatible with [mangos-classic rev 2656][10]
-and newer.  It also requires [ScriptDev2 rev 2734][11]
-or newer in order to be fully enjoyable.
+The *Classic DB* database is compatible with [mangos-classic rev z2683][10]
+and newer.
 
 Getting started
 ---------------
@@ -64,7 +63,6 @@ But as this is a community project, the developers will always try to help you m
 [1]: https://github.com/cmangos/mangos-classic "mangos-classic"
 
 [10]: https://github.com/cmangos/mangos-classic/ "mangos classic"
-[11]: https://github.com/scriptdev2/scriptdev2-classic/ "script bindings"
 [12]: https://github.com/classicDB/database/ "content database"
 [13]: http://www.cmangos.net/ "CMaNGOS Project"
 [14]: https://github.com/cmangos/issues/wiki/Installation-Instructions/ "Installation Instructions"
