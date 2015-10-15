@@ -16085,9 +16085,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cave Creeper
 ('893301','8933','4','0','100','0','0','0','0','0','11','14532','0','1','0','0','0','0','0','0','0','0','Cave Creeper - Cast Creeper Venom on Aggro'),
 ('893302','8933','9','0','100','1','0','30','9000','13000','11','745','4','0','0','0','0','0','0','0','0','0','Cave Creeper - Cast Web'),
--- Ironhand Guardian
-('898201','8982','1','0','100','1','4000','8000','13000','18000','11','15529','0','0','0','0','0','0','0','0','0','0','Ironhand Guardian - Cast Gout of Flame OOC'),
-('898202','8982','0','0','100','1','4000','8000','13000','18000','11','15529','0','0','0','0','0','0','0','0','0','0','Ironhand Guardian - Cast Gout of Flame'),
+-- Ironhand Guardian (8982) - npc_ironhand_guardian
 -- Golem Lord Argelmach
 ('898301','8983','1','0','100','1','1000','1000','600000','600000','11','15507','0','1','0','0','0','0','0','0','0','0','Golem Lord Argelmach - Cast Lightning Shield on Spawn'),
 ('898302','8983','9','0','100','1','0','30','9000','13000','11','15305','1','0','0','0','0','0','0','0','0','0','Golem Lord Argelmach - Cast Chain Lightning'),
@@ -16322,14 +16320,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('947601','9476','11','0','100','0','0','0','0','0','1','-1325','0','0','0','0','0','0','0','0','0','0','Watchman Doomgrip - Say on Spawn'),
 ('947602','9476','9','0','100','1','0','5','5000','9000','11','11971','1','0','0','0','0','0','0','0','0','0','Watchman Doomgrip - Cast Sunder Armor'),
 ('947603','9476','0','0','100','1','25000','30000','35000','40000','11','15504','0','0','0','0','0','0','0','0','0','0','Watchman Doomgrip - Cast Drink Healing Potion'),
--- 9499    Plugger Spazzring    55        
--- 9500    Mistress Nagmara    54        
--- Phalanx (SD2 Backport)
-('950201','9502','0','0','100','1','12000','12000','10000','10000','11','15588','0','0','0','0','0','0','0','0','0','0','Phalanx - Cast Thunderclap'),
-('950202','9502','0','0','100','1','15000','15000','10000','10000','11','14099','1','0','0','0','0','0','0','0','0','0','Phalanx - Cast Mighty Blow'),
-('950203','9502','2','0','100','1','51','0','15000','15000','11','15285','0','0','0','0','0','0','0','0','0','0','Phalanx - Cast Fireball Volley'),
+-- Plugger Spazzring (9499) - boss_plugger-spazzring    
+-- Mistress Nagmara (9500) - npc_mistress_nagmara        
+-- Phalanx (9502) - npc_phalanx
 -- Private Rocknot (9503) - npc_rocknot
--- 9537    Hurley Blackbreath    55        
+-- Hurley Blackbreath (9537) - npc_hurley_blackbreath  
 -- Blackbreath Crony
 ('954101','9541','0','0','100','1','5000','7000','6000','9000','11','15581','1','0','0','0','0','0','0','0','0','0','Blackbreath Crony - Cast Sinister Strike'),
 -- Ribbly Screwspigot
