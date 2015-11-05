@@ -18561,10 +18561,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1049501','10495','1','0','100','2','1000','1000','0','0','11','12627','0','1','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Disease Cloud on Spawn'),
 ('1049502','10495','4','0','100','2','0','0','0','0','11','8247','0','1','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Wandering Plague on Aggro'),
 ('1049503','10495','6','0','100','2','0','0','0','0','11','17742','0','7','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Cloud of Disease on Death'),
--- Spectral Tutor (3.0.3 Official Data - Logs Only)
-('1049801','10498','0','0','100','3','4200','19100','8600','26400','11','17630','1','0','0','0','0','0','0','0','0','0','Spectral Tutor - Cast Mana Burn'),
-('1049802','10498','0','0','100','3','0','3300','12000','26300','11','12528','0','0','0','0','0','0','0','0','0','0','Spectral Tutor - Cast Silence'),
-('1049803','10498','0','0','100','3','11800','12700','17700','25300','11','17651','0','1','0','0','0','0','0','0','0','0','Spectral Tutor - Cast Image Projection'),
+-- Spectral Tutor (10498) - npc_spectral_tutor
 -- Spectral Researcher (3.0.3 Official Data - Logs Only)
 ('1049901','10499','0','0','100','3','2000','25700','7300','19400','11','17630','1','0','0','0','0','0','0','0','0','0','Spectral Researcher - Cast Mana Burn'),
 ('1049902','10499','0','0','100','3','1000','9400','9400','22800','11','17631','1','1','0','0','0','0','0','0','0','0','Spectral Researcher - Cast Wail of Souls'),
@@ -20277,6 +20274,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Corrupted Green Whelp (14023) - NSR
 -- Corrupted Blue Whelp (14024) - NSR
 -- Corrupted Bronze Whelp (14025) - NSR
+-- Demon Portal
+('1408101','14081','11','0','100','0','0','0','0','0','11','22391','0','2','0','0','0','0','0','0','0','0','Demon Portal - Demon Portal'),
 -- Enraged Felguard
 ('1410101','14101','9','0','100','1','0','5','5000','8000','11','15580','1','0','0','0','0','0','0','0','0','0','Enraged Felguard - Cast Strike'),
 ('1410102','14101','0','0','100','1','7000','11000','12000','15000','11','15548','0','1','0','0','0','0','0','0','0','0','Enraged Felguard - Cast Thunderclap'),
