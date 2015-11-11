@@ -18917,8 +18917,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1041403','10414','0','0','100','1','7700','14700','7300','15600','11','10101','4','0','0','0','0','0','0','0','0','0','Patchwork Horror - Cast Knock Away'),
 -- Bile Spewer
 ('1041601','10416','11','0','100','0','0','0','0','0','11','3417','0','2','0','0','0','0','0','0','0','0','Bile Spewer - Thrash'),
-('1041602','10416','0','0','100','1','5000','10000','20000','25000','11','16809','1','0','1','-1328','0','0','0','0','0','0','Bile Spewer - Spawn Bile Slime + Emote'),
-('1041603','10416','6','0','100','0','0','0','0','0','11','16865','0','2','1','-1329','0','0','0','0','0','0','Bile Spewer - Spawn Bile Slimes + Emote'),
+('1041602','10416','0','0','100','1','5000','10000','20000','25000','11','16809','1','0','1','-1389','0','0','0','0','0','0','Bile Spewer - Spawn Bile Slime + Emote'),
+('1041603','10416','6','0','100','0','0','0','0','0','11','16865','0','2','1','-1390','0','0','0','0','0','0','Bile Spewer - Spawn Bile Slimes + Emote'),
 -- Venom Belcher
 ('1041701','10417','9','0','100','1','0','30','4000','7000','11','16866','1','0','0','0','0','0','0','0','0','0','Venom Belcher - Cast Venom Spit'),
 ('1041702','10417','9','0','100','1','0','30','9000','15000','11','7992','4','33','0','0','0','0','0','0','0','0','Venom Belcher - Cast Slowing Poison'),
@@ -22888,8 +22888,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1325','What are you doing? Intruders!!','0','1','0','9476','0'),
 ('-1326','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
 ('-1327','%s gets really dizzy!','0','2','0','9554','0'),
-('-1328','%s belches out a disgusting Bile Slime!','0','2','0','0','Bile Spewer - Spawn Bile Slime'),
-('-1329','%s explodes and releases several Bile Slimes!','0','2','0','0','Bile Spewer - Spawn Bile Slimes');
+('-1389','%s belches out a disgusting Bile Slime!','0','2','0','0','0'),
+('-1390','%s explodes and releases several Bile Slimes!','0','2','0','0','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
