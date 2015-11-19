@@ -5,7 +5,7 @@ UPDATE creature_template SET DamageMultiplier=1.2, MinMeleeDmg=16, MaxMeleeDmg=2
 -- Defias Evoker
 UPDATE creature_template SET DamageMultiplier=1.7, MinMeleeDmg=18, MaxMeleeDmg=26, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=27, RangedAttackPower=13 WHERE Entry=1729;
 -- Defias Henchman
-UPDATE creature_template SET DamageMultiplier=1.0, MinMeleeDmg=22, MaxMeleeDmg=31, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=56, RangedAttackPower=2 WHERE Entry=594;
+UPDATE creature_template SET DamageMultiplier=1.7, MinMeleeDmg=22, MaxMeleeDmg=31, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=56, RangedAttackPower=2 WHERE Entry=594;
 -- Defias Magician
 UPDATE creature_template SET DamageMultiplier=1.2, MinMeleeDmg=22, MaxMeleeDmg=31, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=56, RangedAttackPower=2 WHERE Entry=1726;
 -- Defias Miner
@@ -23,7 +23,7 @@ UPDATE creature_template SET DamageMultiplier=1.0, MinMeleeDmg=26, MaxMeleeDmg=3
 -- Defias Taskmaster
 UPDATE creature_template SET MinLevel = 18, ArmorMultiplier=1, DamageMultiplier=1.7, MinMeleeDmg=26, MaxMeleeDmg=37, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=68, RangedAttackPower=3 WHERE Entry=4417;
 -- Defias Watchman
-UPDATE creature_template SET DamageMultiplier=1.0, MinMeleeDmg=23, MaxMeleeDmg=33, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=60, RangedAttackPower=2 WHERE Entry=1725;
+UPDATE creature_template SET DamageMultiplier=1.7, MinMeleeDmg=23, MaxMeleeDmg=33, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=60, RangedAttackPower=2 WHERE Entry=1725;
 -- Defias Wizard
 UPDATE creature_template SET MinLevel = 18, ArmorMultiplier=1, DamageMultiplier=2.0, MinMeleeDmg=18, MaxMeleeDmg=28, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=28, RangedAttackPower=13 WHERE Entry=4418;
 -- Defias Worker
