@@ -31,9 +31,8 @@ cat >  $CONFIG_FILE << EOF
 #   USERNAME:     Your username
 #   PASSWORD:     Your password
 #   CORE_PATH:    Your path to core's directory (OPTIONAL: Use if you want to apply remaining core updates automatically)
-#   SD2_PATH:     Your path to SD2's directory (OPTIONAL: Use if you want to apply remaining SD2 updates automatically)
+#   SD2_PATH:     Your path to SD2's directory (OPTIONAL: Use if you want to apply SD2 database automatically)
 #   ACID_PATH:    Your path to a git-clone of ACID (OPTIONAL: Use it if you want to install recent downloaded acid)
-#   SD2_UPDATES:  If you want to disable adding ScriptDev2 updates (Has only meaning if CORE_PATH above is set
 #   MYSQL:        Your mysql command (usually mysql)
 #
 ####################################################################################################
@@ -50,6 +49,10 @@ PASSWORD="mangos"
 ## Define the path to your core's folder (This is optional)
 ##   If set the core updates located under sql/updates from this mangos-directory will be added automatically
 CORE_PATH=""
+
+## Define the path to the folder into which the SD2 database is located (This is optional)
+##   If set the file scriptdev2.sql will be applied from this folder
+SD2_PATH=""
 
 ## Define the path to the folder into which you cloned ACID (This is optional)
 ##   If set the file acid_classic.sql will be applied from this folder
@@ -175,6 +178,25 @@ then
     fi
   done
   echo "All core updates applied"
+fi
+
+#
+#               SD2 Full DB file
+#
+
+if [ "$SD2_PATH" != "" ]
+then
+  if [ ! -e $SD2_PATH ]
+  then
+    echo "Path to SD2 database provided, but directory not found! $SD2_PATH"
+    exit 1
+  fi
+
+  # Apply scriptdev2.sql
+  echo "Applying $SD2_PATH/scriptdev2.sql ..."
+  $MYSQL_COMMAND < ${SD2_PATH}/scriptdev2.sql
+  [[ $? != 0 ]] && exit 1
+  echo "Recent state of ScriptDev2 applied"
 fi
 
 #
