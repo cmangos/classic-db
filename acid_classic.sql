@@ -7814,9 +7814,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1107502','11075','1','0','100','0','5000','5000','0','0','11','3417','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Thrash on Spawn'),
 ('1107503','11075','9','0','100','1','0','5','18000','22000','11','13445','1','1','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Rend'),
 ('1107504','11075','9','0','100','1','0','5','7000','12000','11','3427','4','33','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Infected Wound'),
+('1107505','11075','4','0','100','0','0','0','0','0','1','-1391','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Say on spawn'),
 -- Cauldron Lord Razarch      
 ('1107601','11076','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Cauldron Lord Razarch - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('1107602','11076','4','0','100','0','0','0','0','0','11','12471','1','0','23','1','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Shadow Bolt and Set Phase 1 on Aggro'),
+('1107602','11076','4','0','100','0','0','0','0','0','11','12471','1','0','23','1','0','0','1','-1392','0','0','Cauldron Lord Razarch - Cast Shadow Bolt, Set Phase 1 and Say on Aggro'),
 ('1107603','11076','9','5','100','1','0','40','3400','4800','11','12471','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Shadow Bolt (Phase 1)'),
 ('1107604','11076','3','5','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Cauldron Lord Razarch - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1107605','11076','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Start Combat Movement at 35 Yards (Phase 1)'),
@@ -7828,7 +7829,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1107611','11076','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Set Phase to 0 on Evade'),
 -- Cauldron Lord Malvinious      
 ('1107701','11077','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('1107702','11077','4','0','100','0','0','0','0','0','11','12471','1','0','23','1','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt and Set Phase 1 on Aggro'),
+('1107702','11077','4','0','100','0','0','0','0','0','11','12471','1','0','23','1','0','0','1','-1393','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt and Set Phase 1 on Aggro'),
 ('1107703','11077','9','5','100','1','0','40','3400','4800','11','12471','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt (Phase 1)'),
 ('1107704','11077','3','5','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Cauldron Lord Malvinious - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1107705','11077','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Start Combat Movement at 35 Yards (Phase 1)'),
@@ -7841,6 +7842,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cauldron Lord Soulwrath      
 ('1107801','11078','0','0','100','1','5000','8000','14000','19000','11','12946','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Putrid Stench'),
 ('1107802','11078','9','0','100','1','0','8','12000','15000','11','10966','1','1','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Uppercut'),
+('1107803','11078','4','0','100','0','0','0','0','0','1','-1394','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Say on spawn'),
 -- Argent Defender (11194) - NSR
 -- Eva Sarkhoff (11216) - NSR
 -- Lucien Sarkhoff (11217) - NSR
@@ -22889,7 +22891,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1326','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
 ('-1327','%s gets really dizzy!','0','2','0','9554','0'),
 ('-1389','%s belches out a disgusting Bile Slime!','0','2','0','0','0'),
-('-1390','%s explodes and releases several Bile Slimes!','0','2','0','0','0');
+('-1390','%s explodes and releases several Bile Slimes!','0','2','0','0','0'),
+('-1391','$r flesh... Must feed!','0','0','0','11075','0'),
+('-1392','The Scourge beckons you, foolish $r.','0','0','0','11076','0'),
+('-1393','Who dares approach this cauldron? Taste my dark blade!','0','0','0','11077','0'),
+('-1394','$c - I will consume your light!','0','0','0','11078','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
