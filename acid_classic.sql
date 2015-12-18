@@ -7814,9 +7814,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1107502','11075','1','0','100','0','5000','5000','0','0','11','3417','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Thrash on Spawn'),
 ('1107503','11075','9','0','100','1','0','5','18000','22000','11','13445','1','1','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Rend'),
 ('1107504','11075','9','0','100','1','0','5','7000','12000','11','3427','4','33','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Infected Wound'),
+('1107505','11075','4','0','100','0','0','0','0','0','1','-1391','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Say on spawn'),
 -- Cauldron Lord Razarch      
 ('1107601','11076','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Cauldron Lord Razarch - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('1107602','11076','4','0','100','0','0','0','0','0','11','12471','1','0','23','1','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Shadow Bolt and Set Phase 1 on Aggro'),
+('1107602','11076','4','0','100','0','0','0','0','0','11','12471','1','0','23','1','0','0','1','-1392','0','0','Cauldron Lord Razarch - Cast Shadow Bolt, Set Phase 1 and Say on Aggro'),
 ('1107603','11076','9','5','100','1','0','40','3400','4800','11','12471','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Shadow Bolt (Phase 1)'),
 ('1107604','11076','3','5','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Cauldron Lord Razarch - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1107605','11076','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Start Combat Movement at 35 Yards (Phase 1)'),
@@ -7828,7 +7829,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1107611','11076','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Set Phase to 0 on Evade'),
 -- Cauldron Lord Malvinious      
 ('1107701','11077','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('1107702','11077','4','0','100','0','0','0','0','0','11','12471','1','0','23','1','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt and Set Phase 1 on Aggro'),
+('1107702','11077','4','0','100','0','0','0','0','0','11','12471','1','0','23','1','0','0','1','-1393','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt and Set Phase 1 on Aggro'),
 ('1107703','11077','9','5','100','1','0','40','3400','4800','11','12471','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt (Phase 1)'),
 ('1107704','11077','3','5','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Cauldron Lord Malvinious - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1107705','11077','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Start Combat Movement at 35 Yards (Phase 1)'),
@@ -7841,6 +7842,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cauldron Lord Soulwrath      
 ('1107801','11078','0','0','100','1','5000','8000','14000','19000','11','12946','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Putrid Stench'),
 ('1107802','11078','9','0','100','1','0','8','12000','15000','11','10966','1','1','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Uppercut'),
+('1107803','11078','4','0','100','0','0','0','0','0','1','-1394','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Say on spawn'),
 -- Argent Defender (11194) - NSR
 -- Eva Sarkhoff (11216) - NSR
 -- Lucien Sarkhoff (11217) - NSR
@@ -19123,12 +19125,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1114202','11142','9','0','100','1','5100','7700','4900','15400','11','7713','0','0','0','0','0','0','0','0','0','0','Undead Postman - Cast Wailing Dead'),
 ('1114203','11142','0','0','100','0','6900','11300','10400','17400','11','5137','1','1','0','0','0','0','0','0','0','0','Undead Postman - Cast Call of the Grave on Death'),
 -- Postmaster Malown (SD2 Backport)
-('1114301','11143','4','0','100','0','0','0','0','0','1','-1195','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Yell on Aggro'),
-('1114302','11143','5','0','100','1','0','0','0','0','1','-1196','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Yell on Unit Kill'),
-('1114303','11143','0','0','100','1','5000','8000','5000','8000','11','6253','1','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Backhand'),
-('1114304','11143','0','0','100','1','15000','17000','15000','17000','11','12542','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Fear'),
-('1114305','11143','0','0','100','1','18000','20000','18000','20000','11','12741','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Curse of Weakness'),
-('1114306','11143','0','0','100','1','20000','23000','20000','23000','11','13338','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Curse of Tongues'),
+('1114301','11143','11','0','100','0','0','0','0','0','11','3417','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Thrash on Spawn'),
+('1114302','11143','4','0','100','0','0','0','0','0','1','-1195','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Yell on Aggro'),
+('1114303','11143','5','0','100','1','0','0','0','0','1','-1196','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Yell on Unit Kill'),
+('1114304','11143','0','0','100','1','5000','8000','5000','8000','11','6253','1','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Backhand'),
+('1114305','11143','0','0','100','1','15000','17000','15000','17000','11','12542','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Fear'),
+('1114306','11143','0','0','100','1','18000','20000','18000','20000','11','12741','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Curse of Weakness'),
+('1114307','11143','0','0','100','1','20000','23000','20000','23000','11','13338','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Curse of Tongues'),
 -- Mindless Skeleton (11197) - NSR
 -- Balzaphon (14684) - NSR
 -- Elder Farwhisper (15607) - NSR
@@ -22889,7 +22892,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1326','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
 ('-1327','%s gets really dizzy!','0','2','0','9554','0'),
 ('-1389','%s belches out a disgusting Bile Slime!','0','2','0','0','0'),
-('-1390','%s explodes and releases several Bile Slimes!','0','2','0','0','0');
+('-1390','%s explodes and releases several Bile Slimes!','0','2','0','0','0'),
+('-1391','$r flesh... Must feed!','0','0','0','11075','0'),
+('-1392','The Scourge beckons you, foolish $r.','0','0','0','11076','0'),
+('-1393','Who dares approach this cauldron? Taste my dark blade!','0','0','0','11077','0'),
+('-1394','$c - I will consume your light!','0','0','0','11078','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
