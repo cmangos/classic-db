@@ -20,11 +20,14 @@ UPDATE `creature_template` SET `FactionAlliance`='16', `FactionHorde`='16', `Cre
 -- Ironbark the Redeemed [58] [NOBESTIARY]
 UPDATE `creature_template` SET `SpeedWalk`=('2.5' / '2.5'), `MinMeleeDmg`='99.8', `MaxMeleeDmg`='132.4', `MinRangedDmg`='0', `MaxRangedDmg`='0', `MeleeAttackPower`='242', `RangedAttackPower`='25', `MeleeBaseAttackTime`='2000', `RangedBaseAttackTime`='2000' WHERE `Entry`='14241';
 
--- Isalien [60] [NOSNIFF]
-	-- TO DO
+-- Isalien [60]
+UPDATE `creature_template` SET `CreatureTypeFlags`='0', `SpeedWalk`=('2.5' / '2.5'), `DamageMultiplier`='6', `MinMeleeDmg`='125.8', `MaxMeleeDmg`='166.6', `MinRangedDmg`='0', `MaxRangedDmg`='0', `MeleeAttackPower`='238', `RangedAttackPower`='24', `MeleeBaseAttackTime`='2600', `RangedBaseAttackTime`='2600' WHERE `Entry`='16097';
 
 -- Isalien Trigger [60] [NOBESTIARY]
 UPDATE `creature_template` SET `MinLevel`='60', `MaxLevel`='60', `FactionAlliance`='114', `FactionHorde`='114', `HealthMultiplier`='1.35', `MinLevelHealth`='4496', `MaxLevelHealth`='4496', `MinMeleeDmg`='103.9', `MaxMeleeDmg`='137.9', `Armor`='3791', `MeleeAttackPower`='252', `RangedAttackPower`='26', `RangedBaseAttackTime`='2000' WHERE `Entry`='16045';
+
+-- Empyrean [60]
+UPDATE `creature_template` SET `CreatureTypeFlags`='72', `DamageMultiplier`='6', `MinMeleeDmg`='103.9', `MaxMeleeDmg`='137.9', `MeleeAttackPower`='252', `RangedAttackPower`='26' WHERE `Entry`='16098';
 
 -- Lethtendris [57]
 UPDATE `creature_template` SET `FactionAlliance`='16', `FactionHorde`='16', `CreatureTypeFlags`='72', `SpeedWalk`=('2.5' / '2.5'), `DamageMultiplier`='6', `MinMeleeDmg`='91.1', `MaxMeleeDmg`='120.7', `MinRangedDmg`='0', `MaxRangedDmg`='0', `MeleeAttackPower`='224', `RangedAttackPower`='22', `MeleeBaseAttackTime`='2000', `RangedBaseAttackTime`='2000' WHERE `Entry`='14327';
