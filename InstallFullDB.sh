@@ -107,8 +107,8 @@ done
 echo .
 
 ## Full Database
-echo "Process classic database v1.6.0 'Shadowforge City'."
-$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_6_z2683.sql
+echo "Process classic database v1.6.5 'The Wailing Pet, The MidSummer Joy and all that sort of things'."
+$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_6_5_z2683.sql
 [[ $? != 0 ]] && exit 1
 
 ## Updates
