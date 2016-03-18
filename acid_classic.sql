@@ -15800,7 +15800,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gelihast
 ('624301','6243','9','0','100','1','0','20','7000','10000','11','6533','1','0','0','0','0','0','0','0','0','0','Gelihast - Cast Net'),
 -- Morridune
-('672901','6729','1','0','100','0','1000','1000','0','0','1','-569','0','0','0','0','0','0','0','0','0','0','Morridune - Say on Spawn'),
+('672901','6729','1','0','100','0','1000','1000','0','0','1','-569','0','0','0','0','0','0','0','0','0','0','Morridune - Yell on Spawn'),
 -- Baron Aquanis
 ('1287601','12876','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Baron Aquanis - Prevent Combat Movement on Spawn'),
 ('1287602','12876','4','0','100','0','0','0','0','0','11','15043','1','0','23','1','0','0','0','0','0','0','Baron Aquanis - Cast Frostbolt and Set Phase 1 on Aggro'),
@@ -22258,7 +22258,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-566','Who dares disturb my meditation!','5802','1','0','4832','0'),
 ('-567','Sleep...','5804','1','0','4832','0'),
 ('-568','Just... Dust...','5803','1','0','4832','0'),
-('-569','Aku\'mai is dead! At last, I can leave this wretched place!','0','0','0','6729','0'),
+('-569','Aku\'mai is dead! At last, I can leave this wretched place!','0','1','0','6729','0'),
 ('-570','Cry for mercy! Your meaningless lives will soon be forfeit!','11015','1','0','17888','0'),
 ('-571','Your death will be a painful one.','11016','1','0','17888','0'),
 ('-572','You... are marked.','11052','1','0','17888','0'),
