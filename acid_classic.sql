@@ -23196,6 +23196,13 @@ UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '1' WHERE C
 
 -- Phase 2 Fixes
 UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '2' WHERE COMMENT LIKE '%Set Phase 2%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '2' WHERE COMMENT LIKE '%Set Phase 2%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '2' WHERE COMMENT LIKE '%Set Phase 2%' AND action3_type = '23';
+
+-- Phase 3 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '3' WHERE COMMENT LIKE '%Set Phase 3%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '3' WHERE COMMENT LIKE '%Set Phase 3%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '3' WHERE COMMENT LIKE '%Set Phase 3%' AND action3_type = '23';
 
 -- Fix Range Checks For Repeatable Checks
 UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '15', event_param2 = '0', event_param3 = '1000', event_param4 = '1000' WHERE event_type='3' AND event_param1='15' AND event_param2='0' AND event_param3='0' AND event_param4='0';
