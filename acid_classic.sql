@@ -23224,6 +23224,51 @@ UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '7' WHERE C
 UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '7' WHERE COMMENT LIKE '%Set Phase 7%' AND action2_type = '23';
 UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '7' WHERE COMMENT LIKE '%Set Phase 7%' AND action3_type = '23';
 
+-- Phase 8 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '8' WHERE COMMENT LIKE '%Set Phase 8%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '8' WHERE COMMENT LIKE '%Set Phase 8%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '8' WHERE COMMENT LIKE '%Set Phase 8%' AND action3_type = '23';
+
+-- Phase 9 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '9' WHERE COMMENT LIKE '%Set Phase 9%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '9' WHERE COMMENT LIKE '%Set Phase 9%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '9' WHERE COMMENT LIKE '%Set Phase 9%%' AND action3_type = '23';
+
+-- Phase 10 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '10' WHERE COMMENT LIKE '%Set Phase 10%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '10' WHERE COMMENT LIKE '%Set Phase 10%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '10' WHERE COMMENT LIKE '%Set Phase 10%' AND action3_type = '23';
+
+-- Phase 11 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '11' WHERE COMMENT LIKE '%Set Phase 11%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '11' WHERE COMMENT LIKE '%Set Phase 11%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '11' WHERE COMMENT LIKE '%Set Phase 11%' AND action3_type = '23';
+
+-- Phase 12 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '12' WHERE COMMENT LIKE '%Set Phase 12%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '12' WHERE COMMENT LIKE '%Set Phase 12%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '12' WHERE COMMENT LIKE '%Set Phase 12%' AND action3_type = '23';
+
+-- Phase 13 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '13' WHERE COMMENT LIKE '%Set Phase 13%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '13' WHERE COMMENT LIKE '%Set Phase 13%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '13' WHERE COMMENT LIKE '%Set Phase 13%' AND action3_type = '23';
+
+-- Phase 14 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '14' WHERE COMMENT LIKE '%Set Phase 14%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '14' WHERE COMMENT LIKE '%Set Phase 14%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '14' WHERE COMMENT LIKE '%Set Phase 14%' AND action3_type = '23';
+
+-- Phase 15 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '15' WHERE COMMENT LIKE '%Set Phase 15%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '15' WHERE COMMENT LIKE '%Set Phase 15%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '15' WHERE COMMENT LIKE '%Set Phase 15%' AND action3_type = '23';
+
+-- Phase 16 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '16' WHERE COMMENT LIKE '%Set Phase 16%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '16' WHERE COMMENT LIKE '%Set Phase 16%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '16' WHERE COMMENT LIKE '%Set Phase 16%' AND action3_type = '23';
+
 -- Fix Range Checks For Repeatable Checks
 UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '15', event_param2 = '0', event_param3 = '1000', event_param4 = '1000' WHERE event_type='3' AND event_param1='15' AND event_param2='0' AND event_param3='0' AND event_param4='0';
 UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '25', event_param2 = '80', event_param3 = '1000', event_param4 = '1000' WHERE event_type='9' AND event_param1='35' AND event_param2='80' AND event_param3='0' AND event_param4='0';
