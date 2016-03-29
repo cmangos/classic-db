@@ -22980,8 +22980,8 @@ UPDATE creature_ai_scripts SET `action3_param1` = '15' WHERE action3_type = 5 AN
 -- =========================================================================
 
 UPDATE creature_ai_scripts SET action1_param1=1 WHERE action1_type=21 AND action1_param1=0;
-UPDATE creature_ai_scripts SET action2_param1=1 WHERE action1_type=21 AND action1_param2=0;
-UPDATE creature_ai_scripts SET action3_param1=1 WHERE action1_type=21 AND action1_param3=0;
+UPDATE creature_ai_scripts SET action2_param1=1 WHERE action2_type=21 AND action2_param2=0;
+UPDATE creature_ai_scripts SET action3_param1=1 WHERE action3_type=21 AND action3_param3=0;
 
 
 /*
