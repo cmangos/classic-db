@@ -17427,7 +17427,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('640702','6407','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Holdout Technician - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('640703','6407','9','5','100','1','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Holdout Technician - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('640704','6407','9','5','100','1','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Holdout Technician - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('640705','6407','9','5','100','1','5000','8000','7000','13000','11','8858','1','0','40','2','0','0','0','0','0','0','Holdout Technician - Cast Bomb and Set Ranged Weapon Model (Phase 1)'),
+('640705','6407','0','5','100','1','5000','8000','7000','13000','11','8858','1','0','40','2','0','0','0','0','0','0','Holdout Technician - Cast Bomb and Set Ranged Weapon Model (Phase 1)'),
 ('640706','6407','2','0','100','0','15','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Holdout Technician - Set Phase 2 at 15% HP'),
 ('640707','6407','2','3','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Holdout Technician - Start Combat Movement and Flee at 15% HP (Phase 2)'),
 ('640708','6407','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Holdout Technician - Set Phase 1 and Set Melee Weapon Model on Evade'),
