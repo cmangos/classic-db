@@ -22971,12 +22971,12 @@ UPDATE creature_ai_scripts SET `action3_param1` = '15' WHERE action3_type = 5 AN
 -- HUGE WORKAROUND TEMP FIX FOR MAGE SCRIPTS, RANGE CHECKS AND PHASE CHANGES - WILL BE REMOVED WHEN NEW EVENTAI OVERHAUL WITH Creature_AI_Scripts_Template IS IMPLEMENTED
 -- =========================================================================
 
-UPDATE creature_ai_scripts SET action1_param1=1 WHERE action1_type=21 AND action1_param1=0;
-UPDATE creature_ai_scripts SET action2_param1=1 WHERE action2_type=21 AND action2_param2=0;
-UPDATE creature_ai_scripts SET action3_param1=1 WHERE action3_type=21 AND action3_param3=0;
+-- UPDATE creature_ai_scripts SET action1_param1=1 WHERE action1_type=21 AND action1_param1=0;
+-- UPDATE creature_ai_scripts SET action2_param1=1 WHERE action2_type=21 AND action2_param2=0;
+-- UPDATE creature_ai_scripts SET action3_param1=1 WHERE action3_type=21 AND action3_param3=0;
 
 
-/*
+
 -- Phase 1 Fixes
 UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '1' WHERE COMMENT LIKE '%Set Phase 1%' AND action1_type = '23';
 UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '1' WHERE COMMENT LIKE '%Set Phase 1%' AND action2_type = '23';
@@ -23058,11 +23058,25 @@ UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '16' WHERE 
 UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '16' WHERE COMMENT LIKE '%Set Phase 16%' AND action3_type = '23';
 
 -- Fix Range Checks For Repeatable Checks
-UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '15', event_param2 = '0', event_param3 = '1000', event_param4 = '1000' WHERE event_type='3' AND event_param1='15' AND event_param2='0' AND event_param3='0' AND event_param4='0';
-UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '25', event_param2 = '80', event_param3 = '1000', event_param4 = '1000' WHERE event_type='9' AND event_param1='35' AND event_param2='80' AND event_param3='0' AND event_param4='0';
-UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '5', event_param2 = '15', event_param3 = '1000', event_param4 = '1000' WHERE event_type='9' AND event_param1='5' AND event_param2='15' AND event_param3='0' AND event_param4='0';
-UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '0', event_param2 = '5', event_param3 = '1000', event_param4 = '1000' WHERE event_type='9' AND event_param1='0' AND event_param2='5' AND event_param3='0' AND event_param4='0';
-*/
+UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '15', event_param2 = '0', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='0' AND event_type='3' AND event_param1='15' AND event_param2='0' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '25', event_param2 = '80', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='0' AND event_type='9' AND event_param1='35' AND event_param2='80' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '5', event_param2 = '15', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='0' AND event_type='9' AND event_param1='5' AND event_param2='15' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '0', event_param2 = '5', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='0' AND event_type='9' AND event_param1='0' AND event_param2='5' AND event_param3='0' AND event_param4='0';
+
+UPDATE creature_ai_scripts SET event_flags = '3', event_param1 = '15', event_param2 = '0', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='2' AND event_type='3' AND event_param1='15' AND event_param2='0' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '3', event_param1 = '25', event_param2 = '80', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='2' AND event_type='9' AND event_param1='35' AND event_param2='80' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '3', event_param1 = '5', event_param2 = '15', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='2' AND event_type='9' AND event_param1='5' AND event_param2='15' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '3', event_param1 = '0', event_param2 = '5', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='2' AND event_type='9' AND event_param1='0' AND event_param2='5' AND event_param3='0' AND event_param4='0';
+
+UPDATE creature_ai_scripts SET event_flags = '5', event_param1 = '15', event_param2 = '0', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='4' AND event_type='3' AND event_param1='15' AND event_param2='0' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '5', event_param1 = '25', event_param2 = '80', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='4' AND event_type='9' AND event_param1='35' AND event_param2='80' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '5', event_param1 = '5', event_param2 = '15', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='4' AND event_type='9' AND event_param1='5' AND event_param2='15' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '5', event_param1 = '0', event_param2 = '5', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='4' AND event_type='9' AND event_param1='0' AND event_param2='5' AND event_param3='0' AND event_param4='0';
+
+UPDATE creature_ai_scripts SET event_flags = '7', event_param1 = '15', event_param2 = '0', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='6' AND event_type='3' AND event_param1='15' AND event_param2='0' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '7', event_param1 = '25', event_param2 = '80', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='6' AND event_type='9' AND event_param1='35' AND event_param2='80' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '7', event_param1 = '5', event_param2 = '15', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='6' AND event_type='9' AND event_param1='5' AND event_param2='15' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '7', event_param1 = '0', event_param2 = '5', event_param3 = '1000', event_param4 = '1000' WHERE event_flags='6' AND event_type='9' AND event_param1='0' AND event_param2='5' AND event_param3='0' AND event_param4='0';
 
 -- EOF
 
