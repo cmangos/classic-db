@@ -17460,7 +17460,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ========
--- Maraudon
+-- Maraudon - (Zone Script Revamp Complete)
 -- ========
 -- Snake (2914) - NSR
 -- School of Fish (6145) - NSR
@@ -17642,21 +17642,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =====================================
--- Ragefire Chasm (3.3.5a Official Data)
+-- Ragefire Chasm (3.3.5a Official Data) - (Zone Script Revamp Complete)
 -- =====================================
 -- Ragefire Trogg (3.3.5a Official Data)
 ('1131801','11318','0','0','100','1','6200','8100','5700','11900','11','11976','1','0','0','0','0','0','0','0','0','0','Ragefire Trogg - Cast Strike'),
 -- Ragefire Shaman (3.3.5a Official Data)
-('1131901','11319','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Prevent Combat Movement on Spawn'),
-('1131902','11319','4','0','100','0','0','0','0','0','11','9532','1','0','23','1','0','0','0','0','0','0','Ragefire Shaman - Cast Lightning Bolt and Set Phase 1 on Aggro'),
-('1131903','11319','9','5','100','1','0','40','9200','9800','11','9532','1','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Cast Lightning Bolt (Phase 1)'),
-('1131904','11319','3','5','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Ragefire Shaman - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
-('1131905','11319','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Start Combat Movement at 35 Yards (Phase 1)'),
-('1131906','11319','9','5','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('1131907','11319','9','5','100','0','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Start Combat Movement Below 5 Yards'),
-('1131908','11319','3','3','100','1','100','30','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Set Phase 1 when Mana is above 30% (Phase 2)'),
-('1131909','11319','14','0','100','0','330','40','23800','23800','11','11986','6','1','0','0','0','0','0','0','0','0','Ragefire Shaman - Cast Healing Wave on Friendlies'),
-('1131910','11319','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Set Phase to 0 on Evade'),
+('1131901','11319','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Set Phase 1 on Aggro'),
+('1131902','11319','9','5','100','1','0','40','3800','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Cast Lightning Bolt (Phase 1)'),
+('1131903','11319','9','5','100','1','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Start Combat Movement at 30 Yards (Phase 1)'),
+('1131904','11319','9','5','100','1','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Start Combat Movement at 14 Yards (Phase 1)'),
+('1131905','11319','3','5','100','0','15','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Ragefire Shaman - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('1131906','11319','3','3','100','1','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('1131907','11319','14','0','100','0','330','40','23800','23800','11','11986','6','1','0','0','0','0','0','0','0','0','Ragefire Shaman - Cast Healing Wave on Friendlies'),
+('1131908','11319','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ragefire Shaman - Set Phase to 0 on Evade'),
 -- Earthborer (3.3.5a Official Data)
 ('1132001','11320','0','0','100','1','2400','15800','5300','14300','11','18070','1','0','0','0','0','0','0','0','0','0','Earthborer - Cast Earthborer Acid'),
 -- Molten Elemental (3.3.5a Official Data)
@@ -17667,16 +17665,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Searing Blade Enforcer (3.3.5a Official Data)
 ('1132301','11323','0','0','100','1','6100','15300','7100','15200','11','8242','1','32','0','0','0','0','0','0','0','0','Searing Blade Enforcer - Cast Shield Slam'),
 -- Searing Blade Warlock (3.3.5a Official Data)
-('1132401','11324','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Prevent Combat Movement on Spawn'),
-('1132402','11324','1','0','100','0','1000','1000','0','0','11','12746','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Summon Voidwalker on Spawn'),
-('1132403','11324','4','0','100','0','0','0','0','0','11','20791','1','0','22','6','0','0','0','0','0','0','Searing Blade Warlock - Cast Shadow Bolt and Set Phase 1 on Aggro'),
-('1132404','11324','0','5','100','1','0','0','3300','4900','11','20791','1','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Cast Shadow Bolt (Phase 1)'),
-('1132405','11324','3','5','100','0','15','0','0','0','21','1','0','0','22','5','0','0','0','0','0','0','Searing Blade Warlock - Start Combat Movement and Set Phase 2 when Mana is at 15%'),
-('1132406','11324','9','5','100','1','25','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Start Combat Movement Beyond 25 Yards'),
-('1132407','11324','9','5','100','1','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Start Combat Movement Below 5 Yards'),
-('1132408','11324','9','5','100','1','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Prevent Combat Movement at 15 Yards'),
-('1132409','11324','3','3','100','1','100','30','1000','1000','22','6','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Set Phase 1 when Mana is above 30% (Phase 2)'),
-('1132410','11324','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Set Phase to 0 on Evade'),
+('1132401','11324','1','0','100','0','1000','1000','0','0','11','12746','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Summon Voidwalker on Spawn'),
+('1132402','11324','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Set Phase 1 on Aggro'),
+('1132403','11324','9','5','100','1','8','40','3300','4900','11','20791','1','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Cast Shadow Bolt (Phase 1)'),
+('1132404','11324','9','13','100','1','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Start Combat Movement at 30 Yards (Phase 1)'),
+('1132405','11324','9','13','100','1','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Start Combat Movement at 14 Yards (Phase 1)'),
+('1132406','11324','3','5','100','0','15','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Searing Blade Warlock - Start Combat Movement and Set Phase 2 when Mana is at 15%'),
+('1132407','11324','3','3','100','1','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('1132408','11324','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Searing Blade Warlock - Set Phase to 0 on Evade'),
 -- Oggleflint (3.3.5a Official Data)
 ('1151701','11517','0','0','100','1','8400','15900','5700','12100','11','40505','1','0','0','0','0','0','0','0','0','0','Oggleflint - Cast Cleave'),
 -- Jergosh the Invoker (3.3.5a Official Data)
