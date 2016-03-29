@@ -17293,16 +17293,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==========
--- Gnomeregan
+-- Gnomeregan - (Zone Script Revamp Complete)
 -- ==========
 -- Namdo Bizzfizzle
 ('268301','2683','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Namdo Bizzfizzle - Flee at 15% HP'),
 -- Caverndeep Burrower (3.3.5a Official Data)
-('620601','6206','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Set Phase 1 on Aggro'),
+('620601','6206','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Set Phase 1 on Aggro'),
 ('620602','6206','0','0','100','1','1100','4800','182900','184500','11','7164','0','1','0','0','0','0','0','0','0','0','Caverndeep Burrower - Cast Defensive Stance'),
 ('620603','6206','9','5','100','1','0','5','6100','9700','11','7405','1','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Cast Sunder Armor (Phase 1)'),
-('620604','6206','24','5','100','1','7405','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('620605','6206','28','3','100','1','7405','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
+('620604','6206','24','5','100','1','7405','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
+('620605','6206','28','3','100','1','7405','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('620606','6206','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Emote on Radiation Spellhit'),
 ('620607','6206','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Caverndeep Burrower - Flee at 15% HP'),
 ('620608','6206','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Set Phase to 0 on Evade'),
@@ -17335,16 +17335,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('622002','6220','0','0','100','1','15600','19300','9700','21700','11','8211','1','0','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Chain Burn'),
 -- Leprous Technician (3.3.5a Official Data) - OOC Tune Up Spell Casts are Rough Scripted
 ('622201','6222','1','0','100','1','10000','45000','30000','70000','11','10348','0','1','0','0','0','0','0','0','0','0','Leprous Technician - Cast Tune Up OOC'),
-('622202','6222','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Leprous Technician - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('622202','6222','1','0','100','0','0','0','0','0','20','0','0','0','22','1','0','0','0','0','0','0','Leprous Technician - Prevent Melee and Set Phase 1 on Spawn'),
 ('622203','6222','4','0','10','0','0','0','0','0','1','-188','-189','-190','1','-191','-188','-189','1','-190','-191','-188','Leprous Technician - Random Say on Aggro'),
 ('622204','6222','4','0','100','0','0','0','0','0','39','10','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Call For Help on Aggro'),
-('622205','6222','9','5','100','1','0','30','1200','2500','11','13398','1','0','40','2','0','0','0','0','0','0','Leprous Technician - Cast Throw Wrench and Set Ranged Weapon Model (Phase 1)'),
+('622205','6222','9','5','100','1','8','30','1200','2500','11','13398','1','0','40','2','0','0','0','0','0','0','Leprous Technician - Cast Throw Wrench and Set Ranged Weapon Model (Phase 1)'),
 ('622206','6222','9','5','100','1','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Leprous Technician - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('622207','6222','9','5','100','1','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Leprous Technician - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('622208','6222','9','5','100','1','11','25','1000','1000','21','0','1','0','20','0','0','0','0','0','0','0','Leprous Technician - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('622209','6222','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Emote on Radiation Spellhit'),
-('622210','6222','14','0','100','1','2000','15','28900','28900','11','10732','6','1','0','0','0','0','0','0','0','0','Leprous Technician - Cast Supercharge on Mechanical Friendlies'),
-('622211','6222','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Leprous Technician - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('622208','6222','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Emote on Radiation Spellhit'),
+('622209','6222','14','0','100','1','2000','15','28900','28900','11','10732','6','1','0','0','0','0','0','0','0','0','Leprous Technician - Cast Supercharge on Mechanical Friendlies'),
+('622210','6222','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Leprous Technician - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Leprous Defender (3.3.5a Official Data) - CURRENT MULTISHOT TIMERS ARE ROUGH SCRIPTED BASED ON STRANGE OFFICIAL DATA
 ('622301','6223','9','0','100','1','5','30','2000','2700','11','6660','1','0','40','2','0','0','0','0','0','0','Leprous Defender - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('622302','6223','9','0','100','1','5','30','30000','45000','11','14443','4','0','40','2','0','0','0','0','0','0','Leprous Defender - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
@@ -17353,22 +17352,20 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('622305','6223','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Leprous Defender - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Leprous Machinesmith (3.3.5a Official Data) - OOC Tune Up Spell Casts are Rough Scripted
 ('622401','6224','1','0','100','1','10000','45000','30000','70000','11','10348','0','1','0','0','0','0','0','0','0','0','Leprous Machinesmith - Cast Tune Up OOC'),
-('622402','6224','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Leprous Machinesmith - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('622402','6224','1','0','100','0','0','0','0','0','20','0','0','0','22','1','0','0','0','0','0','0','Leprous Machinesmith - Prevent Melee and Set Phase 1 on Spawn'),
 ('622403','6224','4','0','10','0','0','0','0','0','1','-188','-189','-190','1','-191','-188','-189','1','-190','-191','-188','Leprous Machinesmith - Random Say on Aggro'),
 ('622404','6224','4','0','100','0','0','0','0','0','39','10','0','0','0','0','0','0','0','0','0','0','Leprous Machinesmith - Call for Help on Aggro'),
-('622405','6224','9','5','100','1','0','30','1200','2500','11','13398','1','0','40','2','0','0','0','0','0','0','Leprous Machinesmith - Cast Throw Wrench and Set Ranged Weapon Model (Phase 1)'),
+('622405','6224','9','5','100','1','8','30','1200','2500','11','13398','1','0','40','2','0','0','0','0','0','0','Leprous Machinesmith - Cast Throw Wrench and Set Ranged Weapon Model (Phase 1)'),
 ('622406','6224','9','5','100','1','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Leprous Machinesmith - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('622407','6224','9','5','100','1','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Leprous Machinesmith - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('622408','6224','9','5','100','1','11','25','1000','1000','21','0','1','0','20','0','0','0','0','0','0','0','Leprous Machinesmith - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('622409','6224','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Machinesmith - Emote on Radiation Spellhit'),
-('622410','6224','14','0','100','1','2000','15','28900','28900','11','10732','6','1','0','0','0','0','0','0','0','0','Leprous Machinesmith - Cast Supercharge on Mechanical Friendlies'),
-('622411','6224','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Leprous Machinesmith - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('622408','6224','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Machinesmith - Emote on Radiation Spellhit'),
+('622409','6224','14','0','100','1','2000','15','28900','28900','11','10732','6','1','0','0','0','0','0','0','0','0','Leprous Machinesmith - Cast Supercharge on Mechanical Friendlies'),
+('622410','6224','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Leprous Machinesmith - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mechano-Tank (3.3.5a Offical Data)
-('622501','6225','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Mechano-Tank - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('622501','6225','1','0','100','0','0','0','0','0','20','0','0','0','22','1','0','0','0','0','0','0','Mechano-Tank - Prevent Melee and Set Phase 1 on Spawn'),
 ('622502','6225','9','5','100','1','5','30','1200','3700','11','10346','1','0','40','2','0','0','0','0','0','0','Mechano-Tank - Cast Machine Gun and Set Ranged Weapon Model (Phase 1)'),
 ('622503','6225','9','5','100','1','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Mechano-Tank - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('622504','6225','9','5','100','1','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Mechano-Tank - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('622505','6225','9','5','100','1','11','25','1000','1000','21','0','1','0','20','0','0','0','0','0','0','0','Mechano-Tank - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
 ('622506','6225','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mechano-Tank - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mechano-Flamewalker (3.3.5a Official Data)
 ('622601','6226','9','0','100','1','0','5','10900','20400','11','10733','1','0','0','0','0','0','0','0','0','0','Mechano-Flamewalker - Cast Flame Spray'),
@@ -17377,21 +17374,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('622701','6227','9','0','100','1','0','30','26700','30700','11','10737','0','0','0','0','0','0','0','0','0','0','Mechano-Frostwalker - Cast Hail Storm'),
 ('622702','6227','0','0','100','1','17100','17100','21100','34600','11','11264','0','1','0','0','0','0','0','0','0','0','Mechano-Frostwalker - Cast Ice Blast'),
 -- Dark Iron Ambassador (CURRENT DATA ALL ROUGH SCRIPTED) - REQUIRE OFFICIAL DATA
-('622801','6228','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Prevent Combat Movement on Spawn'),
-('622802','6228','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Cast Frost Armor on Spawn'),
-('622803','6228','4','0','100','0','0','0','0','0','11','9053','1','0','23','1','0','0','0','0','0','0','Dark Iron Ambassador - Cast Fireball and Set Phase 1 on Aggro'),
-('622804','6228','9','5','100','1','0','40','2400','3800','11','9053','1','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Cast Fireball (Phase 1)'),
-('622805','6228','3','5','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Dark Iron Ambassador - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
-('622806','6228','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Start Combat Movement at 35 Yards (Phase 1)'),
-('622807','6228','9','5','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('622808','6228','9','5','100','0','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Start Combat Movement Below 5 Yards'),
-('622809','6228','3','3','100','1','100','30','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Set Phase 1 when Mana is above 30% (Phase 2)'),
-('622810','6228','0','0','100','1','6000','11000','60000','65000','11','184','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambasadror - Cast Fire Shield II'),
-('622811','6228','0','0','100','0','2000','2000','0','0','11','10870','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Summon Burning Servant'),
-('622812','6228','0','0','100','0','3000','3000','0','0','11','10870','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Summon Burning Servant'),
-('622813','6228','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Cast Frost Armor on Missing Buff'),
-('622814','6228','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Emote on Radiation Spellhit'),
-('622815','6228','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Set Phase to 0 on Evade'),
+('622801','6228','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Cast Frost Armor on Spawn'),
+('622802','6228','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Set Phase 1 on Aggro'),
+('622803','6228','9','5','100','1','8','40','2400','3800','11','9053','1','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Cast Fireball (Phase 1)'),
+('622804','6228','9','5','100','1','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Start Combat Movement at 30 Yards (Phase 1)'),
+('622805','6228','9','5','100','1','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Start Combat Movement at 14 Yards (Phase 1)'),
+('622806','6228','3','5','100','0','15','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Dark Iron Ambassador - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('622807','6228','3','3','100','1','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('622808','6228','0','0','100','1','6000','11000','60000','65000','11','184','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambasadror - Cast Fire Shield II'),
+('622809','6228','0','0','100','0','2000','2000','0','0','11','10870','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Summon Burning Servant'),
+('622810','6228','0','0','100','0','3000','3000','0','0','11','10870','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Summon Burning Servant'),
+('622811','6228','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Cast Frost Armor on Missing Buff'),
+('622812','6228','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Emote on Radiation Spellhit'),
+('622813','6228','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Set Phase to 0 on Evade'),
 -- Crowd Pummeler 9-60 (3.3.5a Official Data)
 ('622901','6229','9','0','100','1','0','5','17200','33400','11','10887','4','1','0','0','0','0','0','0','0','0','Crowd Pummeler 9-60 - Cast Crowd Pummel'),
 ('622902','6229','0','0','100','1','9600','22900','16900','33700','11','5568','0','0','0','0','0','0','0','0','0','0','Crowd Pummeler 9-60 - Cast Trample'),
@@ -17428,15 +17423,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('639204','6392','14','0','100','1','1500','40','14000','21000','11','22167','6','1','0','0','0','0','0','0','0','0','Holdout Medic - Cast Heal on Friendlies'),
 ('639205','6392','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Holdout Medic - Flee at 15% HP'),
 -- Holdout Technician (Rough Scripted Data)
-('640701','6407','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Holdout Technician - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('640701','6407','1','0','100','0','0','0','0','0','20','0','0','0','22','1','0','0','0','0','0','0','Holdout Technician - Prevent Melee and Set Phase 1 on Spawn'),
 ('640702','6407','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Holdout Technician - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('640703','6407','9','5','100','1','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Holdout Technician - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('640704','6407','9','5','100','1','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Holdout Technician - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('640705','6407','9','5','100','1','11','25','1000','1000','21','0','1','0','20','0','0','0','0','0','0','0','Holdout Technician - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('640706','6407','9','5','100','1','5000','8000','7000','13000','11','8858','1','0','40','2','0','0','0','0','0','0','Holdout Technician - Cast Bomb and Set Ranged Weapon Model (Phase 1)'),
-('640707','6407','2','0','100','0','15','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Holdout Technician - Set Phase 2 at 15% HP'),
-('640708','6407','2','3','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Holdout Technician - Start Combat Movement and Flee at 15% HP (Phase 2)'),
-('640709','6407','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Holdout Technician - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('640705','6407','9','5','100','1','5000','8000','7000','13000','11','8858','1','0','40','2','0','0','0','0','0','0','Holdout Technician - Cast Bomb and Set Ranged Weapon Model (Phase 1)'),
+('640706','6407','2','0','100','0','15','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Holdout Technician - Set Phase 2 at 15% HP'),
+('640707','6407','2','3','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Holdout Technician - Start Combat Movement and Flee at 15% HP (Phase 2)'),
+('640708','6407','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Holdout Technician - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Viscous Fallout (7079) - NSR
 -- Ember (7266) - NSR
 -- Grubbis (7361) - NSR
@@ -17448,7 +17442,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('773801','7738','11','0','100','0','0','0','0','0','11','10869','0','1','0','0','0','0','0','0','0','0','Burning Servant - Summon Embers on Spawn'),
 -- Mekgineer Thermaplugg (7800) - boss_thermaplugg
 -- Mobile Alert System (3.3.5a Official Data)
-('784901','7849','11','0','100','0','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Mobile Alert System - Prevent Melee and Combat Movement on Spawn'),
+('784901','7849','11','0','100','0','0','0','0','0','20','0','0','0','0','0','0','0','0','0','0','0','Mobile Alert System - Prevent Melee on Spawn'),
 ('784902','7849','0','0','100','0','0','0','0','0','1','-33','0','0','4','5805','0','0','0','0','0','0','Mobile Alert System - Yell Alert and Sound'),
 ('784903','7849','0','0','100','0','2400','2400','0','0','1','-33','0','0','0','0','0','0','0','0','0','0','Mobile Alert System - Yell Alert'),
 ('784904','7849','0','0','100','0','4800','4800','0','0','1','-33','0','0','11','1543','0','1','0','0','0','0','Mobile Alert System - Yell Alert and Cast Flare'),
