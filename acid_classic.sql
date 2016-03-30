@@ -17793,7 +17793,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===================================================
 -- Scarlet Monastery - (3.0.3 and 4.3.4 Official Data) - (Final Zone Script Revamp Complete)
 -- ===================================================
--- Fire Elemental (575) - NSR
+-- Fire Elemental
+('57501','575','11','0','100','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Fire Elemental - Cast Elemental Spawn-in on Spawn'),
 -- Rabbit (721) - NSR
 -- Houndmaster Loksey (3.0.3 and 4.3.4 Official Data)
 ('397401','3974','4','0','100','0','0','0','0','0','1','-1205','0','0','0','0','0','0','0','0','0','0','Houndmaster Loksey - Yell on Aggro'),
