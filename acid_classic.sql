@@ -3009,7 +3009,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('10001','100','11','0','100','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Gruff Swiftbite - Cast Thrash on Spawn'),
 -- Garrick Padfoot (2.4.2 Official Data)
 ('10301','103','4','0','100','0','0','0','0','0','11','7164','0','0','0','0','0','0','0','0','0','0','Garrick Padfoot - Cast Defensive Stance on Aggro'),
-('10302','103','0','0','100','1000','1000','0','0','0','1','-1','0','0','0','0','0','0','0','0','0','0','Garrick Padfoot - Say on Aggro'),
+('10302','103','0','0','100','0','1000','1000','0','0','1','-1','0','0','0','0','0','0','0','0','0','0','Garrick Padfoot - Say on Aggro'),
 -- Stonetusk Boar (2.4.2 Official Data)
 ('11301','113','0','0','50','0','1000','1000','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Stonetusk Boar - Cast Rushing Charge on Aggro'),
 -- Defias Bandit (2.4.2 Official Data)
