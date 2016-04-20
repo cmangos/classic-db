@@ -1011,8 +1011,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blackrock Mountain
 -- ==================
 -- Bloodhound (8921) - ALREADY SCRIPTED IN BLACKROCK DEPTHS
+-- Scarshield Sentry
+('904401','9044','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Scarshield Sentry - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('904402','9044','9','0','100','3','5','35','2300','3900','11','6660','4','0','40','2','0','0','0','0','0','0','Scarshield Sentry - Cast Shoot and Set Ranged Weapon Model'),
+('904403','9044','9','0','100','3','7000','11000','11000','15000','11','14443','4','0','40','2','0','0','0','0','0','0','Scarshield Sentry - Cast Multi-Shot and Set Ranged Weapon Model'),
+('904404','9044','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Enable Dynamic Movement at 9-80 Yards'),
+('904405','9044','9','0','100','3','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Scarshield Sentry - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('904406','9044','0','0','100','3','7000','12000','10000','16000','11','14897','1','1','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Slowing Poison'),
+('904407','9044','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Set Melee Weapon Model on Evade'),
 -- Scarshield Legionnaire (9097) - ALREADY SCRIPTED IN BLACKROCK SPIRE
--- Rookery Whelp (10161) - NSR    
+-- Rookery Whelp (10161) - NSR
 -- Lava Spawn (12265) - ALREADY SCRIPTED IN MOLTEN CORE
 
 
