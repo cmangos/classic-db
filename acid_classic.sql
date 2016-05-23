@@ -1835,11 +1835,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('112411','1124','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Frostmane Shadowcaster - Flee at 15% HP (Phase 3)'),
 ('112412','1124','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Frostmane Shadowcaster - Set Phase to 0 on Evade'),
 -- Crag Boar (2.4.3 Official Data)
-('112501','1125','9','0','50','0','0','25','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Crag Boar - Cast Rushing Charge'),
+('112501','1125','9','0','50','0','0','25','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Crag Boar - Cast Rushing Charge'),
 -- Large Crag Boar (2.4.3 Official Data)
-('112601','1126','9','0','50','0','0','25','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Large Crag Boar - Cast Rushing Charge'),
+('112601','1126','9','0','50','0','0','25','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Large Crag Boar - Cast Rushing Charge'),
 -- Elder Crag Boar (2.4.3 Official Data)
-('112701','1127','9','0','50','0','0','25','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Elder Crag Boar - Cast Rushing Charge'),
+('112701','1127','9','0','50','0','0','25','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Elder Crag Boar - Cast Rushing Charge'),
 -- Young Black Bear (1128) - NSR
 -- Black Bear (1129) - NSR    
 -- Bjarn (2.4.3 Official Data)
@@ -1929,7 +1929,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('167901','1679','0','0','100','1','6000','8000','11000','15000','11','5588','1','0','0','0','0','0','0','0','0','0','Avarus Kharag - Cast Hammer of Justice'),
 ('167902','1679','2','0','100','1','30','0','20000','30000','11','1026','0','1','0','0','0','0','0','0','0','0','Avarus Kharag - Cast Holy Light at 30% HP'),
 -- Scarred Crag Boar (2.4.3 Official Data)
-('168901','1689','9','0','50','0','0','25','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Scarred Crag Boar - Cast Rushing Charge'),
+('168901','1689','9','0','50','0','0','25','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Scarred Crag Boar - Cast Rushing Charge'),
 -- Thrawn Boltar (1690) - NSR 
 -- Kreg Bilmn (1691) - NSR
 -- Golorn Frostbeard (1692) - NSR
@@ -2976,13 +2976,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('10301','103','4','0','100','0','0','0','0','0','11','7164','0','0','0','0','0','0','0','0','0','0','Garrick Padfoot - Cast Defensive Stance on Aggro'),
 ('10302','103','0','0','100','0','1000','1000','0','0','1','-1','0','0','0','0','0','0','0','0','0','0','Garrick Padfoot - Say on Aggro'),
 -- Stonetusk Boar (2.4.2 Official Data)
-('11301','113','0','0','50','0','1000','1000','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Stonetusk Boar - Cast Rushing Charge on Aggro'),
+('11301','113','0','0','50','0','1000','1000','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Stonetusk Boar - Cast Rushing Charge on Aggro'),
 -- Defias Bandit (2.4.2 Official Data)
 ('11601','116','4','0','25','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Bandit - Random Say on Aggro'),
 ('11602','116','0','0','65','1','4000','7000','5000','9000','11','8646','1','0','0','0','0','0','0','0','0','0','Defias Bandit - Cast Snap Kick'),
 -- Prowler (118) - NSR 
 -- Longsnout (2.4.2 Official Data)
-('11901','119','0','0','50','0','1000','1000','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Longsnout - Cast Rushing Charge on Aggro'),
+('11901','119','0','0','50','0','1000','1000','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Longsnout - Cast Rushing Charge on Aggro'),
 -- Brog Hamfist (151) - NSR
 -- Brother Danil (152) - NSR
 -- Dermot Johns (190) - NSR
@@ -3019,17 +3019,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('32702','327','2','0','100','0','20','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Goldtooth - Flee at 20% HP'),
 -- Zaldimar Wefhellt (328) - NSR
 -- Princess (2.4.2 Official Data)
-('33001','330','0','0','50','0','1000','1000','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Princess - Cast Rushing Charge on Aggro'),
+('33001','330','0','0','50','0','1000','1000','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Princess - Cast Rushing Charge on Aggro'),
 -- Priestess Anetta (375) - NSR
 -- Priestess Josetta (377) - NSR
 -- Jason Mathers (383) - NSR
 -- Katie Hunter (384) - npc_mount_vendor
 -- Porcine Entourage (2.4.2 Official Data)
-('39001','390','0','0','50','0','1000','1000','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Porcine Entourage - Cast Rushing Charge on Aggro'),
+('39001','390','0','0','50','0','1000','1000','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Porcine Entourage - Cast Rushing Charge on Aggro'),
 -- Markus (395) - NSR
 -- Hogger (2.4.2 Official Data)
 ('44801','448','4','0','75','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Hogger - Random Say on Aggro'),
-('44802','448','0','0','100','0','1000','1000','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Hogger - Cast Rushing Charge'),
+('44802','448','0','0','100','0','1000','1000','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Hogger - Cast Rushing Charge'),
 ('44803','448','0','0','100','1','4800','6000','46000','48000','11','6016','1','0','0','0','0','0','0','0','0','0','Hogger - Cast Armor Pierce'),
 ('44804','448','0','0','100','1','1300','3700','20000','29000','11','6730','1','0','0','0','0','0','0','0','0','0','Hogger - Cast Head Butt'),
 -- Drusilla La Salle (459) - NSR
@@ -3071,7 +3071,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('47802','478','4','0','20','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Riverpaw Outrunner - Random Say on Aggro'),
 -- Smith Argus (514) - NSR 
 -- Rockhide Boar (2.4.2 Official Data)
-('52401','524','0','0','50','0','1000','1000','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Rockhide Boar - Cast Rushing Charge on Aggro'),
+('52401','524','0','0','50','0','1000','1000','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Rockhide Boar - Cast Rushing Charge on Aggro'),
 -- Mangy Wolf (525) - NSR
 -- Defias Ambusher (2.4.2 Official Data)
 ('58301','583','4','0','20','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Ambusher - Random Say on Aggro'),
@@ -3979,11 +3979,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wood Lurker (2.4.3 Official Data)
 ('118501','1185','11','0','100','0','0','0','0','0','11','7276','0','1','0','0','0','0','0','0','0','0','Wood Lurker - Cast Poison Proc on Spawn'),
 -- Mountain Boar (2.4.3 Official Data)
-('119001','1190','9','0','50','0','5','15','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Mountain Boar - Cast Rushing Charge'),
+('119001','1190','9','0','50','0','5','15','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Mountain Boar - Cast Rushing Charge'),
 -- Mangy Mountain Boar (2.4.3 Official Data)
 ('119101','1191','9','0','50','0','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Mangy Mountain Boar - Cast Rushing Charge'),
 -- Elder Mountain Boar (2.4.3 Official Data)
-('119201','1192','9','0','50','0','5','15','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Elder Mountain Boar - Cast Rushing Charge'),
+('119201','1192','9','0','50','0','5','15','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Elder Mountain Boar - Cast Rushing Charge'),
 -- Mountain Buzzard (2.4.3 Official Data)
 ('119401','1194','0','0','100','0','7000','14400','35000','42000','11','8014','1','32','0','0','0','0','0','0','0','0','Mountain Buzzard - Cast Tetanus'),
 -- Forest Lurker (2.4.3 Official Data)
@@ -4065,7 +4065,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('33508','335','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Singe - Set Phase to 0 on Evade'),
 -- Bellygrub (2.4.3 Official Data)
 ('34501','345','0','0','100','1','3200','11900','11500','16100','11','5568','0','0','0','0','0','0','0','0','0','0','Bellygrub - Cast Trample'),
-('34502','345','4','0','100','0','0','0','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Bellygrub - Cast Rushing Charge'),
+('34502','345','4','0','100','0','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Bellygrub - Cast Rushing Charge'),
 -- Morganth (2.4.3 Official Data)
 ('39701','397','1','0','100','1','1000','1000','1800000','1800000','11','13787','0','1','0','0','0','0','0','0','0','0','Morganth - Cast Demon Armor on Spawn'),
 ('39702','397','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Morganth - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -7718,7 +7718,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Great Fleshripper (2.4.3 Official Data)
 ('15401','154','0','0','90','1','5900','16200','20300','28200','11','12166','1','0','0','0','0','0','0','0','0','0','Great Fleshripper - Cast Muscle Tear'),
 -- Goretusk (2.4.3 Official Data)
-('15701','157','9','0','50','0','6','15','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Goretusk - Cast Rushing Charge'),
+('15701','157','9','0','50','0','6','15','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Goretusk - Cast Rushing Charge'),
 -- Murloc Warrior (2.4.3 Official Data)
 ('17101','171','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murloc Warrior - Flee at 15% HP'),
 -- Old Murk-eye (2.4.3 Official Data)
@@ -7758,7 +7758,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('45309','453','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Riverpaw Mystic - Flee at 15% HP (Phase 3)'),
 ('45310','453','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Riverpaw Mystic - Set Phase to 0 on Evade'),
 -- Young Goretusk (2.4.3 Official Data)
-('45401','454','9','0','50','0','6','15','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Young Goretusk - Cast Rushing Charge'),
+('45401','454','9','0','50','0','6','15','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Young Goretusk - Cast Rushing Charge'),
 -- Murloc Minor Oracle (2.4.3 Official Data)
 ('45601','456','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Murloc Minor Oracle - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('45602','456','9','13','100','1','0','40','3600','5100','11','9532','1','0','0','0','0','0','0','0','0','0','Murloc Minor Oracle - Cast Lightning Bolt (Phase 1)'),
@@ -10656,9 +10656,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('312007','3120','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Kolkar Outrunner - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Durotar Tiger (3121) - NSR
 -- Bloodtalon Taillasher
-('312201','3122','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Bloodtalon Taillasher - Cast Rushing Charge'),
+('312201','3122','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Bloodtalon Taillasher - Cast Rushing Charge'),
 -- Bloodtalon Scythemaw
-('312301','3123','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Bloodtalon Scythemaw - Cast Rushing Charge'),
+('312301','3123','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Bloodtalon Scythemaw - Cast Rushing Charge'),
 -- Scorpid Worker
 ('312401','3124','11','0','100','0','0','0','0','0','11','6752','0','1','0','0','0','0','0','0','0','0','Scorpid Worker - Cast Weak Poison Proc on Spawn'),
 -- Clattering Scorpid
@@ -10667,7 +10667,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Venomtail Scorpid
 ('312701','3127','9','0','100','1','0','5','5000','14000','11','5416','1','32','0','0','0','0','0','0','0','0','Venomtail Scorpid - Cast Venom Sting'),
 -- Kul Tiras Sailor
-('312801','3128','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Kul Tiras Sailor - Cast Rushing Charge'),
+('312801','3128','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Kul Tiras Sailor - Cast Rushing Charge'),
 ('312802','3128','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kul Tiras Sailor - Flee at 15% HP'),
 -- Kul Tiras Marine
 ('312901','3129','9','0','100','1','0','5','16000','32000','11','11972','1','0','0','0','0','0','0','0','0','0','Kul Tiras Marine - Cast Shield Bash'),
@@ -10825,7 +10825,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Corrupted Scorpid
 ('322601','3226','9','0','100','1','0','5','30000','35000','11','5413','1','32','0','0','0','0','0','0','0','0','Corrupted Scorpid - Cast Noxious Catalyst'),
 -- Corrupted Bloodtalon Scythemaw
-('322701','3227','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Corrupted Bloodtalon Scythemaw - Cast Rushing Charge'),
+('322701','3227','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Corrupted Bloodtalon Scythemaw - Cast Rushing Charge'),
 -- Corrupted Surf Crawler
 ('322801','3228','0','0','100','1','5000','12000','7000','21000','11','6951','4','32','0','0','0','0','0','0','0','0','Corrupted Surf Crawler - Cast Decayed Strength'),
 -- Corrupted Dreadmaw Crocolisk
@@ -12513,7 +12513,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Taloned Swoop      
 ('297101','2971','9','0','100','1','0','5','15000','21000','11','5708','1','0','0','0','0','0','0','0','0','0','Taloned Swoop - Cast Swoop'),
 -- Kodo Calf      
-('297201','2972','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Kodo Calf - Cast Rushing Charge'),
+('297201','2972','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Kodo Calf - Cast Rushing Charge'),
 -- Kodo Bull      
 ('297301','2973','9','0','100','1','0','8','9000','14000','11','5568','0','0','0','0','0','0','0','0','0','0','Kodo Bull - Cast Trample'),
 -- Kodo Matriarch      
@@ -12583,7 +12583,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('306701','3067','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Pyall Silentstride - Flee at 15% HP'),
 -- Mazzranache      
 ('306801','3068','11','0','100','0','0','0','0','0','11','10022','0','1','0','0','0','0','0','0','0','0','Mazzranache - Cast Deadly Poison on Spawn'),
-('306802','3068','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Mazzranache - Cast Rushing Charge'),
+('306802','3068','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Mazzranache - Cast Rushing Charge'),
 -- Chaw Stronghide      
 ('306901','3069','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Chaw Stronghide - Flee at 15% HP'),
 -- Kawnie Softbreeze      
@@ -14281,14 +14281,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- The Barrens - (Final Zone Script Revamp Complete)
 -- ===========
 -- Lost Barrens Kodo
-('323401','3234','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Lost Barrens Kodo - Cast Rushing Charge'),
+('323401','3234','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Lost Barrens Kodo - Cast Rushing Charge'),
 ('323402','3234','0','0','100','1','7000','16000','9000','17000','11','6266','0','0','0','0','0','0','0','0','0','0','Lost Barrens Kodo - Cast Kodo Stomp'),
 -- Greater Barrens Kodo
-('323501','3235','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Greater Barrens Kodo - Cast Rushing Charge'),
+('323501','3235','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Greater Barrens Kodo - Cast Rushing Charge'),
 -- Barrens Kodo
 ('323601','3236','0','0','60','1','7000','16000','9000','17000','11','6266','0','0','0','0','0','0','0','0','0','0','Barrens Kodo - Cast Kodo Stomp'),
 -- Wooly Kodo
-('323701','3237','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Wooly Kodo - Cast Rushing Charge'),
+('323701','3237','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Wooly Kodo - Cast Rushing Charge'),
 -- Stormhide
 ('323801','3238','0','0','100','1','5000','11000','9000','16000','11','5401','4','0','0','0','0','0','0','0','0','0','Stormhide - Cast Lizard Bolt'),
 ('323802','3238','9','0','100','1','0','5','11000','17000','11','6730','1','1','0','0','0','0','0','0','0','0','Stormhide - Cast Head Butt'),
@@ -14489,7 +14489,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('339408','3394','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Barak Kodobane - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Verog the Dervish
 ('339501','3395','11','0','100','0','0','0','0','0','1','-770','0','0','0','0','0','0','0','0','0','0','Verog the Dervish - Yell on Spawn'),
-('339502','3395','9','0','100','0','5','20','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Verog the Dervish - Cast Rushing Charge'),
+('339502','3395','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Verog the Dervish - Cast Rushing Charge'),
 -- Hezrul Bloodmark
 ('339601','3396','2','0','70','1','60','0','7500','7500','11','6958','1','0','0','0','0','0','0','0','0','0','Hezrul Bloodmark - Cast Blood Leech When Below 60% HP'),
 -- Kolkar Bloodcharger
@@ -14561,7 +14561,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('578102','5781','1','0','100','0','4000','4000','0','0','1','-1319','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Text Emote'),
 ('578103','5781','1','0','100','0','6000','6000','0','0','11','6588','0','0','41','1000','0','0','0','0','0','0','Silithid Creeper Egg - Summon Silithid Grub and Delayed Despawn'),
 -- Brontus
-('582701','5827','9','0','100','0','5','20','0','0','11','6268','1','1','0','0','0','0','0','0','0','0','Brontus - Cast Rushing Charge'),
+('582701','5827','9','0','100','0','5','20','0','0','11','6268','0','1','0','0','0','0','0','0','0','0','Brontus - Cast Rushing Charge'),
 ('582702','5827','9','0','100','1','0','5','7000','15000','11','6016','1','32','0','0','0','0','0','0','0','0','Brontus - Cast Pierce Armor'),
 -- Humar the Pridelord
 ('582801','5828','9','0','100','1','0','5','6000','14000','11','3247','4','32','0','0','0','0','0','0','0','0','Humar the Pridelord - Cast Agonizing Pain'),
