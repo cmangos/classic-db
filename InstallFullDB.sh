@@ -13,6 +13,7 @@ CONFIG_FILE="InstallFullDB.config"
 ADDITIONAL_PATH=""
 
 #variables assigned and read from $CONFIG_FILE
+DB_HOST="localhost"
 DATABASE=""
 USERNAME=""
 PASSWORD=""
@@ -27,6 +28,7 @@ cat >  $CONFIG_FILE << EOF
 # This is the config file for the '$SCRIPT_FILE' script
 #
 # You need to insert
+#   DB_HOST:      Host on which the database resides
 #   DATABASE:     Your database
 #   USERNAME:     Your username
 #   PASSWORD:     Your password
@@ -36,6 +38,9 @@ cat >  $CONFIG_FILE << EOF
 #   MYSQL:        Your mysql command (usually mysql)
 #
 ####################################################################################################
+
+## Define the host on which the mangos database resides (typically localhost)
+DB_HOST="localhost"
 
 ## Define the database in which you want to add clean classic DB
 DATABASE="mangos"
@@ -89,7 +94,7 @@ fi
 
 . $CONFIG_FILE
 
-MYSQL_COMMAND="$MYSQL -u$USERNAME -p$PASSWORD $DATABASE"
+MYSQL_COMMAND="$MYSQL -h$DB_HOST -u$USERNAME -p$PASSWORD $DATABASE"
 
 ## Print header
 echo
