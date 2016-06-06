@@ -1,0 +1,2 @@
+
+UPDATE `creature_template` SET `MaxLevel`='40', `SpeedWalk`='1', `DamageMultiplier`='2', `ArmorMultiplier`='1', `MinMeleeDmg`='56.0', `MaxMeleeDmg`='74.3', `MinRangedDmg`='0', `MaxRangedDmg`='0', `Armor`='1964', `MeleeAttackPower`='136', `RangedAttackPower`='14', `MeleeBaseAttackTime`='2000', `RangedBaseAttackTime`='2000', `DamageSchool`='3', `MinLootGold`='0', `MaxLootGold`='0', `ResistanceFire`='0', `ResistanceNature`='0', `ResistanceFrost`='0', `ResistanceShadow`='0', `ResistanceArcane`='0' WHERE `Entry`='6239';
