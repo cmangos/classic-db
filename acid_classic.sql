@@ -2143,7 +2143,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sven Yorgen (311) - NSR
 -- Eliza (3.0.3 Official Data)
 ('31401','314','1','0','100','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Eliza - Cast Birth on Spawn'),
-('31402','314','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Eliza - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('31402','314','4','0','100','0','0','0','0','0','1','-460','-461','0','49','1','0','0','22','1','0','0','Eliza - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('31403','314','9','5','100','1','8','40','3400','5000','11','20819','1','0','0','0','0','0','0','0','0','0','Eliza - Cast Frostbolt (Phase 1)'),
 ('31404','314','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Eliza - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('31405','314','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Eliza - Disable Dynamic Movement at 0-8 Yards'),
@@ -4364,7 +4364,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Searing Lava Spider (5857) - NSR
 -- Greater Lava Spider
 ('585801','5858','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Greater Lava Spider - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('585802','5858','9','5','100','1','8','40','42000','5800','11','11985','1','0','0','0','0','0','0','0','0','0','Greater Lava Spider - Cast Fireball (Phase 1)'),
+('585802','5858','9','5','100','1','8','40','4200','5800','11','11985','1','0','0','0','0','0','0','0','0','0','Greater Lava Spider - Cast Fireball (Phase 1)'),
 ('585803','5858','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Greater Lava Spider - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('585804','5858','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Greater Lava Spider - Disable Dynamic Movement at 0-8 Yards'),
 ('585805','5858','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Greater Lava Spider - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -9196,7 +9196,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Xiggs Fuselighter's Flyingmachine (8446) - NSR
 -- Ag'tor Bloodfist (8576) - NSR
 -- Magus Rimtori
-('857801','8578','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Magus Rimtori - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('857801','8578','4','0','100','0','0','0','0','0','1','-983','0','0','49','1','0','0','22','1','0','0','Magus Rimtori - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('857802','8578','9','5','100','1','8','40','3400','4800','11','20823','1','0','0','0','0','0','0','0','0','0','Magus Rimtori - Cast Fireball (Phase 1)'),
 ('857803','8578','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Magus Rimtori - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('857804','8578','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Magus Rimtori - Disable Dynamic Movement at 0-8 Yards'),
