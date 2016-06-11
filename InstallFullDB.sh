@@ -135,7 +135,7 @@ do
     break
 done
 
-LAST_CORE_REV="2683"
+LAST_CORE_REV="2684"
 # process future release folders
 NEXT_MILESTONES="0.12.4 0.12.5"
 
