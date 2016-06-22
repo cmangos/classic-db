@@ -13788,7 +13788,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Minion of Sethir 6911     
 -- Ferocitas the Dream Eater
 ('723401','7234','11','0','100','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Ferocitas the Dream Eater - Cast Thrash on Spawn'),
--- Gnarlpine Mystic 7235     
+-- Gnarlpine Mystic
+('723501','7235','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Gnarlpine Mystic - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('723502','7235','9','13','100','1','8','40','3400','4800','11','9739','1','0','0','0','0','0','0','0','0','0','Gnarlpine Mystic - Cast Wrath (Phase 1)'),
+('723503','7235','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Gnarlpine Mystic - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('723504','7235','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Gnarlpine Mystic - Disable Dynamic Movement at 0-8 Yards'),
+('723505','7235','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Gnarlpine Mystic - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('723506','7235','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Gnarlpine Mystic - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('723507','7235','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Gnarlpine Mystic - Set Phase to 0 on Evade'), 
 -- Oben Rageclaw 7317     
 -- Rageclaw
 ('731801','7318','0','0','100','1','1000','1000','300000','300000','11','7090','0','1','0','0','0','0','0','0','0','0','Rageclaw - Cast Bear Form'),
