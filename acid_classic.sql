@@ -41,7 +41,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =================
--- Alterac Mountains - (Final Zone Script Revamp Complete)
+-- Alterac Mountains
 -- =================
 -- Deer (883) - NSR
 -- Sheep (1933) - NSR
@@ -325,7 +325,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ================
--- Arathi Highlands - (Final Zone Script Revamp Complete)
+-- Arathi Highlands
 -- ================
 -- Jannos Ironwill (1471) - NSR
 -- Cow (2442) - NSR    
@@ -771,7 +771,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ========
--- Badlands - (Final Zone Script Revamp Complete)
+-- Badlands
 -- ========
 -- Rock Elemental (92) - NSR
 -- Gorn (1068) - NSR
@@ -1026,7 +1026,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =============
--- Blasted Lands - (Final Zone Script Revamp Complete)
+-- Blasted Lands
 -- =============
 -- Bernie Heisten (3546) - NSR
 -- Watcher Mahar Ba (5385) - NSR
@@ -1360,7 +1360,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===============
--- Burning Steppes - (Final Zone Script Revamp Complete)
+-- Burning Steppes
 -- ===============
 -- Jade (1063) - Scripted In Another Zone
 -- Felder Stover (1296) - NSR
@@ -1730,7 +1730,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ============
--- Deeprun Tram - (Final Zone Script Revamp Complete)
+-- Deeprun Tram
 -- ============
 -- Basking Shark (5186) - NSR
 -- Nessy (10942) - NSR
@@ -1745,7 +1745,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==========
--- Dun Morogh - (Final Zone Script Revamp Complete)
+-- Dun Morogh
 -- ==========
 -- Alamar Grimm (460) - NSR
 -- Sten Stoutarm (658) - NSR
@@ -2071,7 +2071,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ========
--- Duskwood - (Final Zone Script Revamp Complete)
+-- Duskwood
 -- ========
 -- Flesh Eater (3) - NSR
 -- Skeletal Warrior (3.0.3 Official Data)
@@ -2381,7 +2381,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===================
--- Eastern Plaguelands - (Final Zone Script Revamp Complete)
+-- Eastern Plaguelands
 -- ===================
 -- Tirion Fordring (1855) - npc_tirion_fordring
 -- Suffering Victim (6547) - NSR 
@@ -2925,7 +2925,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =============
--- Elwynn Forest - (Final Zone Script Revamp Complete)
+-- Elwynn Forest
 -- =============
 -- Kobold Vermin (2.4.2 Official Data)
 ('601','6','4','0','30','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Vermin - Random Say on Aggro'),
@@ -3234,7 +3234,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===================
--- Hillsbrad Foothills - (Final Zone Script Revamp Complete)
+-- Hillsbrad Foothills
 -- ===================
 -- Farmer Ray (232) - NSR     
 -- Brown Horse (284) - NSR     
@@ -3859,7 +3859,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 
 -- ==========
--- Loch Modan - (Final Zone Script Revamp Complete)
+-- Loch Modan
 -- ==========
 -- Stonesplinter Trogg (2.4.3 Official Data)
 ('116101','1161','4','0','10','0','0','0','0','0','1','-213','-214','-215','0','0','0','0','0','0','0','0','Stonesplinter Trogg - Random Say on Aggro'),
@@ -4044,7 +4044,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==================
--- Redridge Mountains  - (Final Zone Script Revamp Complete)
+-- Redridge Mountains 
 -- ==================
 -- Gath'Ilzogg (2.4.3 Official Data)
 ('33401','334','0','0','100','1','1300','6500','194300','194300','11','7164','0','0','0','0','0','0','0','0','0','0','Gath\'Ilzogg - Cast Defensive Stance on Aggro'),
@@ -4316,7 +4316,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =============
--- Searing Gorge - (Final Zone Script Revamp Complete)
+-- Searing Gorge
 -- =============
 -- Lanie Reed
 ('294101','2941','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lanie Reed - Summon Enraged Gryphons and Yell on Aggro'),
@@ -4515,7 +4515,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =================
--- Silverpine Forest - (Final Zone Script Revamp Complete)
+-- Silverpine Forest
 -- =================
 -- Worg (1765) - NSR
 -- Mottled Worg (1766) - NSR
@@ -4822,7 +4822,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==============
--- Stormwind City - (Final Zone Script Revamp Complete)
+-- Stormwind City
 -- ==============
 -- Stormwind City Guard (68) - guard_stormwind 
 -- Roberto Pupellyverbos  
@@ -5734,7 +5734,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ================
--- Swamp of Sorrows - (Final Zone Script Revamp Complete)
+-- Swamp of Sorrows
 -- ================
 -- Adolescent Whelp
 ('74001','740','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Adolescent Whelp - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -5955,7 +5955,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===============
--- The Hinterlands - (Final Zone Script Revamp Complete)
+-- The Hinterlands
 -- ===============
 -- Saltwater Snapjaw (2505) - NSR
 -- Vilebranch Axe Thrower
@@ -6299,7 +6299,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===============
--- Tirisfal Glades - (Final Zone Script Revamp Complete)
+-- Tirisfal Glades
 -- ===============
 -- Chicken (620) - npc_chicken_cluck
 -- Rabbit (721) - NSR    
@@ -6688,7 +6688,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =========
--- Undercity - (Final Zone Script Revamp Complete)
+-- Undercity
 -- =========
 -- Dan Golthas
 ('22301','223','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Dan Golthas - Summon Deathguard Elite on Aggro'),
@@ -7079,7 +7079,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===================
--- Western Plaguelands - (Final Zone Script Revamp Complete)
+-- Western Plaguelands
 -- ===================
 -- Deer (883) - NSR
 -- Skeletal Flayer
@@ -7534,7 +7534,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ========
--- Westfall - (Final Zone Script Revamp Complete)
+-- Westfall
 -- ========
 -- Defias Smuggler (2.4.3 Official Data)
 ('9501','95','4','0','5','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Smuggler - Random Say on Aggro'),
@@ -8147,7 +8147,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 
 -- =========
--- Ashenvale - (Final Zone Script Revamp Complete)
+-- Ashenvale
 -- =========
 -- Deer (883) - NSR    
 -- Squirrel (1412) - NSR    
@@ -8900,7 +8900,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =======
--- Azshara - (Final Zone Script Revamp Complete)
+-- Azshara
 -- =======
 -- Blue Dragonspawn (193) - NSR
 -- Kurll (3621) - NSR
@@ -9262,7 +9262,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =========
--- Darkshore - (Final Zone Script Revamp Complete)
+-- Darkshore
 -- =========
 -- Deer (883) - NSR     
 -- Moonstalker (2069) - NSR
@@ -9704,7 +9704,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ========
--- Desolace - (Final Zone Script Revamp Complete)
+-- Desolace
 -- ========
 -- Brother Anton      
 ('118201','1182','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Brother Anton - Flee at 15% HP'),
@@ -10262,7 +10262,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =======
--- Durotar - (Final Zone Script Revamp Complete)
+-- Durotar
 -- =======
 -- Treant (1964) - NSR
 -- Mottled Boar (3098) - NSR
@@ -10683,7 +10683,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ================
--- Dustwallow Marsh - (Final Zone Script Revamp Complete)
+-- Dustwallow Marsh
 -- ================
 -- Chicken (620) - npc_chicken_cluck 
 -- Squirrel (1412) - NSR
@@ -11096,7 +11096,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =======
--- Felwood - (Final Zone Script Revamp Complete)
+-- Felwood
 -- =======
 -- Nalesette Wildbringer      
 ('54301','543','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Nalesette Wildbringer - Flee at 15% HP'),
@@ -11438,7 +11438,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =======
--- Feralas - (Final Zone Script Revamp Complete)
+-- Feralas
 -- =======
 -- Rendow      
 ('169501','1695','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Rendow - Flee at 15% HP'),
@@ -12025,7 +12025,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 
 -- =======
--- Mulgore - (Final Zone Script Revamp Complete)
+-- Mulgore
 -- =======
 -- Prairie Dog (2620) - NSR     
 -- Harken Windtotem
@@ -12814,7 +12814,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ====================
--- Stonetalon Mountains - (Final Zone Script Revamp Complete)
+-- Stonetalon Mountains
 -- ====================
 -- Rabbit (721) - NSR
 -- Deer (883) - NSR
@@ -13220,7 +13220,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =======
--- Tanaris - (Final Zone Script Revamp Complete)
+-- Tanaris
 -- =======
 -- Silithid Swarm (4196) - NSR
 -- Shreev (4708) - NSR
@@ -13571,7 +13571,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==========
--- Teldrassil - (Final Zone Script Revamp Complete)
+-- Teldrassil
 -- ==========
 -- Rabbit (721) - NSR   
 -- Deer (883) - NSR   
@@ -13827,7 +13827,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===========
--- The Barrens - (Final Zone Script Revamp Complete)
+-- The Barrens
 -- ===========
 -- Lost Barrens Kodo
 ('323401','3234','9','0','100','0','5','20','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Lost Barrens Kodo - Cast Rushing Charge'),
@@ -14258,7 +14258,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ================
--- Thousand Needles - (Final Zone Script Revamp Complete)
+-- Thousand Needles
 -- ================
 -- Galak Wrangler
 ('409301','4093','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Galak Wrangler - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
@@ -14528,7 +14528,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==============
--- Un'goro Crater - (Final Zone Script Revamp Complete)
+-- Un'goro Crater
 -- ==============
 -- Devilsaur
 ('649801','6498','0','0','100','1','5000','8000','9000','15000','11','14099','1','0','0','0','0','0','0','0','0','0','Devilsaur - Cast Mighty Blow'),
@@ -14649,7 +14649,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ============
--- Winterspring - (Final Zone Script Revamp Complete)
+-- Winterspring
 -- ============
 -- Natheril Raincaller 2084     
 -- Lyranne Feathersong 2303     
@@ -14902,7 +14902,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =================
--- Blackfathom Deeps - (Final Zone Script Revamp Complete)
+-- Blackfathom Deeps
 -- =================
 -- Argent Guard Thaelrid (4787) - NSR
 -- Fallenroot Shadowstalker
@@ -15589,7 +15589,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==============================================
--- Blackrock Spire (Updated with some 3.0.9 Data) - (Final Zone Script Revamp Complete)
+-- Blackrock Spire (Updated with some 3.0.9 Data)
 -- ==============================================
 -- Scarshield Grunt
 ('904301','9043','9','0','100','1','0','5','6000','9000','11','11976','1','0','0','0','0','0','0','0','0','0','Scarshield Grunt - Cast Strike'),
@@ -16517,7 +16517,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==========
--- Gnomeregan - (Final Zone Script Revamp Complete)
+-- Gnomeregan
 -- ==========
 -- Namdo Bizzfizzle
 ('268301','2683','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Namdo Bizzfizzle - Flee at 15% HP'),
@@ -16683,7 +16683,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ========
--- Maraudon - (Final Zone Script Revamp Complete)
+-- Maraudon
 -- ========
 -- Snake (2914) - NSR
 -- School of Fish (6145) - NSR
@@ -16881,7 +16881,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =====================================
--- Ragefire Chasm (3.3.5a Official Data) - (Final Zone Script Revamp Complete)
+-- Ragefire Chasm (3.3.5a Official Data)
 -- =====================================
 -- Ragefire Trogg (3.3.5a Official Data)
 ('1131801','11318','0','0','100','1','6200','8100','5700','11900','11','11976','1','0','0','0','0','0','0','0','0','0','Ragefire Trogg - Cast Strike'),
@@ -16927,7 +16927,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==============
--- Razorfen Downs - (Final Zone Script Revamp Complete)
+-- Razorfen Downs
 -- ==============
 -- Withered Warrior
 ('732701','7327','2','0','50','1','30','0','120000','125000','11','8599','0','1','1','-46','0','0','0','0','0','0','Withered Warrior - Cast Enrage at 30% HP'),
@@ -17060,7 +17060,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==============
--- Razorfen Kraul - (Final Zone Script Revamp Complete)
+-- Razorfen Kraul
 -- ==============
 -- Overlord Ramtusk
 ('442001','4420','11','0','100','0','0','0','0','0','11','7165','0','1','0','0','0','0','0','0','0','0','Overlord Ramtusk - Cast Battle Stance on Spawn'),
@@ -17254,7 +17254,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===================================================
--- Scarlet Monastery - (3.0.3 and 4.3.4 Official Data) - (Final Zone Script Revamp Complete)
+-- Scarlet Monastery - (3.0.3 and 4.3.4 Official Data)
 -- ===================================================
 -- Fire Elemental
 ('57501','575','11','0','100','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Fire Elemental - Cast Elemental Spawn-in on Spawn'),
@@ -17472,7 +17472,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===========
--- Scholomance - (Final Zone Script Revamp Complete)
+-- Scholomance
 -- ===========
 -- Darkmaster Gandling (1853) - boss_darkmaster_gandling
 -- Rat (4075)
@@ -17724,7 +17724,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===============
--- Shadowfang Keep - (Final Zone Script Revamp Complete)
+-- Shadowfang Keep
 -- ===============
 -- Son of Arugal (3.0.3 Official Data)
 ('252901','2529','0','0','100','1','11800','11800','9500','21400','11','7124','4','32','0','0','0','0','0','0','0','0','Son of Arugal - Cast Arugal\'s Gift'),
@@ -17803,7 +17803,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==========
--- Stratholme - (Final Zone Script Revamp Complete)
+-- Stratholme
 -- ==========
 -- Ravaged Cadaver (3.0.8 Official Data)
 ('1038101','10381','9','0','100','1','4400','10200','5800','13800','11','13446','1','0','0','0','0','0','0','0','0','0','Ravaged Cadaver - Cast Strike'),
@@ -18145,7 +18145,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =============
--- Sunken Temple - (Final Zone Script Revamp Complete)
+-- Sunken Temple
 -- =============
 -- Snake (2914) - NSR    
 -- Murk Worm (3.3.0 Official Data)
@@ -18341,7 +18341,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =============
--- The Deadmines - (Final Zone Script Revamp Complete)
+-- The Deadmines
 -- =============
 -- Defias Miner (3.0.8a Official Data)
 ('59801','598','0','0','100','1','1900','7900','34400','56000','11','6016','1','32','0','0','0','0','0','0','0','0','Defias Miner - Cast Pierce Armor'),
@@ -18465,7 +18465,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ============
--- The Stockade - (Final Zone Script Revamp Complete)
+-- The Stockade
 -- ============
 -- Dextren Ward (3.0.3 Official Data)
 ('166301','1663','11','0','100','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Dextren Ward - Cast Battle Stance on Spawn'),
@@ -18517,7 +18517,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =======
--- Uldaman - (Final Zone Script Revamp Complete)
+-- Uldaman
 -- =======
 -- Archaedas (2748) - boss_archaedas
 -- Shadowforge Relic Hunter (4.0.1 Official Data) - Shadow Word: Pain and Heal Spells were removed in 4.0.1
@@ -18723,7 +18723,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===============
--- Wailing Caverns - (Final Zone Script Revamp Complete)
+-- Wailing Caverns
 -- ===============
 -- Snake (2914) - NSR
 -- Deviate Stinglash
@@ -18863,7 +18863,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==========
--- Zul'Farrak - (Final Zone Script Revamp Complete) - NOTE: ( SELECT * FROM event_scripts WHERE id =2609; ) <-- Event Scripts for Complex Temple Fight Event
+-- Zul'Farrak - NOTE: ( SELECT * FROM event_scripts WHERE id =2609; ) <-- Event Scripts for Complex Temple Fight Event
 -- ==========
 -- Sandfury Shadowcaster (4.0.1 Official Data)
 ('564801','5648','1','0','100','1','1000','1000','1800000','1800000','11','20798','0','1','0','0','0','0','0','0','0','0','Sandfury Shadowcaster - Cast Demon Skin on Spawn'),
