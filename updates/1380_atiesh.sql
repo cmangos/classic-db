@@ -9,6 +9,8 @@
 -- http://wowwiki.wikia.com/wiki/Atiesh
 -- http://www.wowhead.com/npc=16387/atiesh#comments
 
+SET @ID := 2440;
+
 -- Fixed stats of creature 16387 (Atiesh)
 UPDATE creature_template SET SpeedWalk=1, MinLevel=63, MaxLevel=63, HealthMultiplier=75, ArmorMultiplier=1, DamageMultiplier=40, MinMeleeDmg=110, MaxMeleeDmg=146, MinRangedDmg=0, MaxRangedDmg=0, MeleeAttackPower=268, RangedAttackPower=32, MeleeBaseAttackTime=2000, RangedBaseAttackTime=2000, EquipmentTemplateId=@ID WHERE Entry = 16387;
 
