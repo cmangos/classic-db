@@ -1672,8 +1672,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deadwind Brute
 ('736901','7369','11','0','100','0','0','0','0','0','11','8876','0','1','0','0','0','0','0','0','0','0','Deadwind Brute - Cast Thrash on Spawn'),
 -- Restless Shade
-('737001','7370','0','0','100','1','1000','2000','30000','40000','11','18267','1','1','0','0','0','0','0','0','0','0','Restless Shade - Cast Curse of Weakness'),
-('737002','7370','0','0','100','1','4000','7000','9000','12000','11','12531','1','0','0','0','0','0','0','0','0','0','Restless Shade - Cast Chilling Touch'),
+('737001','7370','4','0','100','0','0','0','0','0','11','12529','0','0','0','0','0','0','0','0','0','0','Restless Shade - Cast Chilling Touch on Spawn'),
+('737002','7370','0','0','100','1','1000','2000','30000','40000','11','18267','1','1','0','0','0','0','0','0','0','0','Restless Shade - Cast Curse of Weakness'),
 -- Deadwind Mauler
 ('737101','7371','0','0','100','1','4000','7000','9000','12000','11','10966','1','1','0','0','0','0','0','0','0','0','Deadwind Mauler - Cast Uppercut'),
 -- Deadwind Warlock
@@ -17825,7 +17825,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vengeful Phantom
 ('1038701','10387','9','0','100','1','0','20','12000','16000','11','15089','4','0','0','0','0','0','0','0','0','0','Vengeful Phantom - Cast Frost Shock'),
 -- Spiteful Phantom
-('1038801','10388','9','0','100','1','0','30','8000','12000','11','12531','1','0','0','0','0','0','0','0','0','0','Spiteful Phantom - Cast Chilling Touch'),
+('1038801','10388','4','0','100','0','0','0','0','0','11','12529','0','0','0','0','0','0','0','0','0','0','Spiteful Phantom - Cast Chilling Touch on Spawn'),
 -- Wrath Phantom
 ('1038901','10389','9','0','100','1','0','5','7000','10000','11','7074','0','0','0','0','0','0','0','0','0','0','Wrath Phantom - Cast Screams of the Past'),
 -- Skeletal Guardian
