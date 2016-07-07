@@ -17823,7 +17823,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Citizen (10384) - mobs_spectral_ghostly_citizen
 -- Ghostly Citizen (10385) - mobs_spectral_ghostly_citizen
 -- Vengeful Phantom
-('1038701','10387','9','0','100','1','0','20','12000','16000','11','15089','4','0','0','0','0','0','0','0','0','0','Vengeful Phantom - Cast Frost Shock'),
+('1038701','10387','1','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Vengeful Phantom - Cast Stealth on Spawn'),
+('1038702','10387','9','0','100','1','0','20','12000','16000','11','15089','4','0','0','0','0','0','0','0','0','0','Vengeful Phantom - Cast Frost Shock'),
 -- Spiteful Phantom
 ('1038801','10388','4','0','100','0','0','0','0','0','11','12529','0','0','0','0','0','0','0','0','0','0','Spiteful Phantom - Cast Chilling Touch on Spawn'),
 -- Wrath Phantom
@@ -18039,9 +18040,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wailing Banshee
 ('1046401','10464','9','0','100','1','0','30','12000','15000','11','17105','4','32','0','0','0','0','0','0','0','0','Wailing Banshee - Cast Banshee Curse'),
 ('1046402','10464','0','0','100','1','4000','9000','20000','27000','11','19645','0','1','0','0','0','0','0','0','0','0','Wailing Banshee - Cast Anti-Magic Shield'),
--- The Unforgiven (3.0.8 Official Data)
-('1051601','10516','10','0','100','0','0','30','0','0','11','8822','0','0','0','0','0','0','0','0','0','0','The Unforgiven - Cast Stealth when Player Crosses LOS OOC'),
-('1051602','10516','0','0','100','1','6800','10400','11500','14100','11','14907','0','0','0','0','0','0','0','0','0','0','The Unforgiven - Cast Frost Nova'),
+-- The Unforgiven
+('1051601','10516','1','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','The Unforgiven - Cast Stealth on Spawn'),
+('1051602','10516','10','0','100','0','0','30','0','0','28','0','22766','0','11','8822','0','0','0','0','0','0','The Unforgiven - Remove Permanent Stealth and Cast Temporary Stealth when Player crosses LOS OOC'),
+('1051603','10516','0','0','100','1','6800','10400','11500','14100','11','14907','0','0','0','0','0','0','0','0','0','0','The Unforgiven - Cast Frost Nova'),
 -- Plagued Maggot
 ('1053601','10536','9','0','100','1','0','5','6000','14000','11','16449','4','32','0','0','0','0','0','0','0','0','Plagued Maggot - Cast Maggot Slime'),
 -- Hearthsinger Forresten
