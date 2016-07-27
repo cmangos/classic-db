@@ -6,4 +6,4 @@
 -- http://web.archive.org/web/20060612224057/http://wow.allakhazam.com/db/item.html?witem=18704
 -- http://wowwiki.wikia.com/wiki/Mature_Blue_Dragon_Sinew
 UPDATE creature_loot_template SET ChanceOrQuestChance = 0.1 WHERE item = 18704;                     -- Elite blue dragons
-UPDATE creature_loot_template SET ChanceOrQuestChance = 0.1 WHERE item = 18704 AND entry = 6109;    -- Azuregos
+UPDATE creature_loot_template SET ChanceOrQuestChance = 100 WHERE item = 18704 AND entry = 6109;    -- Azuregos
