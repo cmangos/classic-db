@@ -481,14 +481,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('258603','2586','0','0','100','1','1200','3400','2200','4200','11','15657','1','0','0','0','0','0','0','0','0','0','Syndicate Highwayman - Cast Backstab'),
 ('258604','2586','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Highwayman - Flee at 15% HP'),
 -- Syndicate Pathstalker (3.0.9 Official Data)
-('258701','2587','4','0','15','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Syndicate Pathstalker - Random Say on Aggro'),
-('258702','2587','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Syndicate Pathstalker - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('258703','2587','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Syndicate Pathstalker - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('258704','2587','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Syndicate Pathstalker - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('258705','2587','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Syndicate Pathstalker - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('258706','2587','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Syndicate Pathstalker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
-('258707','2587','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Pathstalker - Flee at 15% HP (Phase 2)'),
-('258708','2587','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Syndicate Pathstalker - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('258701','2587','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Syndicate Pathstalker - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('258702','2587','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Syndicate Pathstalker - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('258703','2587','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Syndicate Pathstalker - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('258704','2587','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Syndicate Pathstalker - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('258705','2587','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Syndicate Pathstalker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('258706','2587','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Pathstalker - Flee at 15% HP (Phase 2)'),
+('258707','2587','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Syndicate Pathstalker - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Syndicate Prowler (3.0.9 Official Data)
 ('258801','2588','1','0','100','0','0','0','0','0','11','22766','0','0','0','0','0','0','0','0','0','0','Syndicate Prowler - Cast Sneak when OOC'),
 ('258802','2588','4','0','100','0','0','0','0','0','28','0','22766','0','0','0','0','0','0','0','0','0','Syndicate Prowler - Removes Sneak on Aggro'),
@@ -4459,14 +4458,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dark Iron Sentry (8504) - NSR
 -- Squire Maltrake (8509) - NSR
 -- Dark Iron Lookout
-('856601','8566','4','0','15','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Dark Iron Lookout - Random Say on Aggro'),
-('856602','8566','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Dark Iron Lookout - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('856603','8566','9','5','100','1','5','30','1200','2400','11','6660','1','0','40','2','0','0','0','0','0','0','Dark Iron Lookout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('856604','8566','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Lookout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('856605','8566','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dark Iron Lookout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('856606','8566','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dark Iron Lookout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
-('856607','8566','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Lookout - Flee at 15% HP (Phase 2)'),
-('856608','8566','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dark Iron Lookout - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('856601','8566','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Dark Iron Lookout - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('856602','8566','9','5','100','1','5','30','1200','2400','11','6660','1','0','40','2','0','0','0','0','0','0','Dark Iron Lookout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('856603','8566','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Lookout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('856604','8566','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dark Iron Lookout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('856605','8566','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dark Iron Lookout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('856606','8566','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Lookout - Flee at 15% HP (Phase 2)'),
+('856607','8566','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dark Iron Lookout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Dark Iron Watchman
 ('863701','8637','9','0','100','1','0','5','5000','8000','11','11976','1','0','0','0','0','0','0','0','0','0','Dark Iron Watchman - Cast Strike'),
 -- Muck Splash (8837) - NSR
@@ -5560,15 +5558,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('109610','1096','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co Geologist - Flee at 15% HP (Phase 3)'),
 ('109611','1096','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co Geologist - Set Phase to 0 on Evade'),
 -- Venture Co Mechanic
-('109701','1097','4','0','10','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Venture Co Mechanic - Random Say on Aggro'),
-('109702','1097','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Venture Co Mechanic - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('109703','1097','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Venture Co Mechanic - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('109704','1097','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Venture Co Mechanic - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('109705','1097','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Venture Co Mechanic - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('109706','1097','9','0','100','1','5','30','6500','10000','11','14443','1','0','40','2','0','0','0','0','0','0','Venture Co Mechanic - Cast Multi-Shot'),
-('109707','1097','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Venture Co Mechanic - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
-('109708','1097','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co Mechanic - Flee at 15% HP (Phase 2)'),
-('109709','1097','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co Mechanic - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('109701','1097','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Venture Co Mechanic - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('109702','1097','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Venture Co Mechanic - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('109703','1097','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Venture Co Mechanic - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('109704','1097','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Venture Co Mechanic - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('109705','1097','9','0','100','1','5','30','6500','10000','11','14443','1','0','40','2','0','0','0','0','0','0','Venture Co Mechanic - Cast Multi-Shot'),
+('109706','1097','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Venture Co Mechanic - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('109707','1097','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co Mechanic - Flee at 15% HP (Phase 2)'),
+('109708','1097','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co Mechanic - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- River Crocolisk
 ('115001','1150','0','0','100','1','3000','8200','12900','24100','11','3604','1','0','0','0','0','0','0','0','0','0','River Crocolisk - Cast Tendon Rip'),
 -- Saltwater Crocolisk
@@ -7800,7 +7797,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fleshripper (2.4.3 Official Data)
 ('110901','1109','0','0','75','1','4000','13600','20300','24000','11','12166','1','0','0','0','0','0','0','0','0','0','Fleshripper - Cast Muscle Tear'),
 -- Kobold Digger (2.4.3 Official Data)
-('123601','1236','4','0','15','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Kobold Digger - Random Say on Aggro'),
+('123601','1236','4','0','15','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Digger - Random Say on Aggro'),
 ('123602','1236','0','0','100','1','6800','12600','46200','50100','11','6016','1','0','0','0','0','0','0','0','0','0','Kobold Digger - Cast Pierce Armor'),
 ('123603','1236','2','0','100','0','30','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kobold Digger - Flee at 30% HP'),
 -- Master Digger (2.4.3 Official Data)
