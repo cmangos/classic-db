@@ -10512,7 +10512,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('322801','3228','0','0','100','1','5000','12000','7000','21000','11','6951','4','32','0','0','0','0','0','0','0','0','Corrupted Surf Crawler - Cast Decayed Strength'),
 -- Corrupted Dreadmaw Crocolisk
 ('323101','3231','0','0','100','1','5000','12000','7000','21000','11','7901','4','32','0','0','0','0','0','0','0','0','Corrupted Dreadmaw Crocolisk - Cast Decayed Agility'),
--- Sarkoth (3281) - NSR
+-- Sarkoth
+('328101','3281','11','0','100','0','0','0','0','0','11','6752','0','1','0','0','0','0','0','0','0','0','Sarkoth - Cast Weak Poison Proc on Spawn'),
 -- Hana'zua (3287) - NSR
 -- Spirit of Minshina (3289) - NSR
 -- Rezlak (3293) - NSR
