@@ -4222,13 +4222,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('56807','568','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowhide Warrior - Flee at 15% HP'),
 ('56808','568','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowhide Warrior - Set Phase to 0 on Evade'),
 -- Murloc Scout (2.4.3 Official Data)
-('57801','578','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Murloc Scout - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('57802','578','9','5','100','1','5','30','2600','3700','11','6660','1','0','40','2','0','0','0','0','0','0','Murloc Scout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('57803','578','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Murloc Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('57804','578','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Murloc Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('57805','578','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Murloc Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
-('57806','578','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murloc Scout - Flee at 15% HP (Phase 2)'),
-('57807','578','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Murloc Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('57801','578','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murloc Scout - Flee at 15% HP'),
 -- Shadowhide Assassin (2.4.3 Official Data)
 ('57901','579','1','0','100','0','1000','1000','0','0','11','22766','0','0','11','3616','0','0','0','0','0','0','Shadowhide Assassin - Cast Stealth and Poison Proc on Spawn'),
 ('57902','579','0','0','100','1','3700','3700','3600','12400','11','2590','1','0','0','0','0','0','0','0','0','0','Shadowhide Assassin - Cast Backstab'),
