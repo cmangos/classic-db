@@ -15592,7 +15592,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lefty (16049)
 -- Rotfang (16050)
 -- Snokh Blackspine (16051)
--- Malgen Longspear (16052)
+-- Malgen Longspear
+('1605201','16052','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Malgen Longspear - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('1605202','16052','9','5','100','1','5','30','2200','4700','11','16100','1','0','40','2','0','0','0','0','0','0','Malgen Longspear - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1605203','16052','2','0','100','0','25','0','15300','22900','11','15503','0','0','0','0','0','0','0','0','0','0','Malgen Longspear - Cast Drink Healing Potion When Below 25% HP'),
+('1605204','16052','9','5','80','1','5','40','12000','16000','11','27632','4','1','40','2','0','0','0','0','0','0','Malgen Longspear - Cast Aimed Shot and Set Ranged Weapon Model (Phase 1)'),
+('1605205','16052','9','5','80','1','5','30','9000','13000','11','27634','4','1','40','2','0','0','0','0','0','0','Malgen Longspear - Cast Concussive Shot and Set Ranged Weapon Model (Phase 1)'),
+('1605206','16052','9','5','80','1','5','30','7000','12000','11','18651','4','1','40','2','0','0','0','0','0','0','Malgen Longspear - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
+('1605207','16052','9','0','80','1','0','5','7000','12000','11','27633','1','0','40','1','0','0','0','0','0','0','Malgen Longspear - Cast Wing Clip and Set Melee Weapon Model'),
+('1605208','16052','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Malgen Longspear - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1605209','16052','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Malgen Longspear - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1605210','16052','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Malgen Longspear - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1605211','16052','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Malgen Longspear - Flee at 15% HP (Phase 2)'),
+('1605212','16052','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Malgen Longspear - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Korv (16053)
 -- Rezznik (16054)
 -- Va'jashni (16055)
