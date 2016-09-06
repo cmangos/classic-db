@@ -249,6 +249,22 @@ then
     fi
     break
 done
+  for UPDATEFILE in ${ADDITIONAL_PATH}dev/*/*.sql
+  do
+    if [ -e "$UPDATEFILE" ]
+    then
+        for UPDATE in ${ADDITIONAL_PATH}dev/*/*.sql
+        do
+            echo "   process update $UPDATE"
+            $MYSQL_COMMAND < $UPDATE
+            [[ $? != 0 ]] && exit 1
+        done
+        echo "Development subupdates applied"
+    else
+        echo "   No development subupdate to process"
+    fi
+    break
+done
   
 fi
 
