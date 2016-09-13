@@ -6668,9 +6668,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1315801','13158','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lieutenant Sanders - Flee at 15% HP'),
 -- Purple Skeletal Warhorse (14558) - NSR
 -- Wickerman Guardian
-('1519501','15195','9','0','100','1','0','5','8000','12000','11','18368','1','0','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Strike'),
-('1519502','15195','0','0','100','1','8000','14000','9000','15000','11','19128','4','1','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Knockdown'),
-('1519503','15195','6','0','100','0','0','0','0','0','11','25007','0','7','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Wickerman Guardian Ember on Death'),
+('1519501','15195','11','0','100','0','0','0','0','0','11','12187','0','0','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Disease Cloud on Spawn'),
+('1519502','15195','9','0','100','1','0','5','8000','12000','11','18368','1','0','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Strike'),
+('1519503','15195','0','0','100','1','8000','14000','9000','15000','11','19128','4','1','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Knockdown'),
+('1519504','15195','6','0','100','0','0','0','0','0','11','25007','0','7','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Wickerman Guardian Ember on Death'),
 -- Darkcaller Yanka (15197) - NSR
 -- Wonderform Operator (15732) - NSR
 -- Steamwheedle Bruiser (16096) - ALREADY SCRIPTED IN ANOTHER ZONE
