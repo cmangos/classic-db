@@ -2,7 +2,7 @@
 
 SET @CONDITION := 162;
 
-DELETE FROM `conditions` WHERE `entry` = @CONDITION;
+DELETE FROM `conditions` WHERE `condition_entry` = @CONDITION;
 INSERT INTO `conditions` VALUES
 (@CONDITION, 12, 12, 0);
 
