@@ -13964,12 +13964,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('327310','3273','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Kolkar Stormer - Set Phase to 0 on Evade'),
 -- Kolkar Pack Runner
 ('327401','3274','4','0','100','0','0','0','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Kolkar Pack Runner - Cast Battle Shout on Aggro'),
-('327402','3274','6','0','3','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Pack Runner - Chance Say and Summon Verog the Dervish on Death'),
+('327402','3274','6','0','5','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Pack Runner - Chance Say and Summon Verog the Dervish on Death'),
 -- Kolkar Marauder
 ('327501','3275','4','0','100','0','0','0','0','0','11','6268','6','1','0','0','0','0','0','0','0','0','Kolkar Marauder - Cast Charge on Aggro'),
 ('327502','3275','0','0','100','1','5000','11000','7000','12000','11','11976','1','0','0','0','0','0','0','0','0','0','Kolkar Marauder - Cast Strike'),
 ('327503','3275','0','0','100','1','7000','15000','9000','14000','11','8014','4','33','0','0','0','0','0','0','0','0','Kolkar Marauder - Cast Tetanus'),
-('327504','3275','6','0','3','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Marauder - Chance Say and Summon Verog the Dervish on Death'),
+('327504','3275','6','0','5','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Marauder - Chance Say and Summon Verog the Dervish on Death'),
 -- Witchwing Roguefeather
 ('327701','3277','4','0','75','0','0','0','0','0','1','-494','0','0','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Say on Aggro'),
 ('327702','3277','0','0','100','1','4000','8000','12000','16000','11','7992','1','0','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Cast Slowing Poison'),
@@ -14053,7 +14053,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kolkar Bloodcharger
 ('339701','3397','0','0','100','1','15000','25000','15000','25000','11','6742','0','0','0','0','0','0','0','0','0','0','Kolkar Bloodcharger - Cast Bloodlust'),
 ('339702','3397','0','0','70','1','20000','20000','5000','5000','11','172','1','0','0','0','0','0','0','0','0','0','Kolkar Bloodcharger - Cast Corruption'),
-('339703','3397','6','0','3','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Bloodcharger - Chance Say and Summon Verog the Dervish on Death'),
+('339703','3397','6','0','5','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Bloodcharger - Chance Say and Summon Verog the Dervish on Death'),
 -- Savannah Matriarch
 ('341601','3416','0','0','60','0','0','0','14000','14000','11','6598','1','0','0','0','0','0','0','0','0','0','Savannah Matriarch - Cast Savannah Cub'),
 -- Thunderhawk Cloudscraper
