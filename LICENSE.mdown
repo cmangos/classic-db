@@ -1,16 +1,11 @@
 LEGAL NOTICE
 ------------
 
-**mangos-classic-database** is released under the GPL v3.
+**Classic DB** is released under the GPL v3.
 
 The terms and conditions of this license are described below:
 
-    Copyright (C) 2011-2012 mangos foundation <foundation@getmangos.com>
-    and
-    Copyright (C) 2008-2013 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
-     
-    
-    mangos-classic-database is free software: you can redistribute it and/or modify
+    Classic DB is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
@@ -30,6 +25,4 @@ you are making redistributable copies.
 
 CONTENT COPYRIGHT
 -----------------
-Game content is Copyright © 2004-2013 Blizzard Entertainment.  Other works in
-this repository is of authorship © 2011-2012 *mangos foundation* and © 2008-2013
- *ACID (Artificial Creature Intelligence Database)* and other contributors.
+Game content is Copyright © 2004-2016 Blizzard Entertainment

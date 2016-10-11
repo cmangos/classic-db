@@ -1,4 +1,4 @@
-This file contains authorship information related to the classic-database Project
+This file contains authorship information related to the Classic DB Project
 
 The code of classic-database is shipped as it is without any form of warranty,
 and - except for third party libraries - licensed under the GPL v3.0,
@@ -7,7 +7,8 @@ which you can read from the file "LICENSE.mdown"
 * The authors are assigned to by git commit authorship information,
  listed within the git commit messages, or if forgotten before mentioned in the github comments related to a commit.
 
-* The most recent history can be checked at https://github.com/cala/classic-database
+* The most recent history can be checked at https://github.com/cmangos/classic-db
+Previous state can be checked at https://github.com/classicdb/database
 
 * Initially the code for this project was written by Zero Project team and reworked by the MaNGOS Foundation team.
 

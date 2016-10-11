@@ -10,7 +10,7 @@ copies.
 
 Compatibility
 -------------
-The *Classic DB* database is compatible with [mangos-classic rev z2685][10]
+The *Classic DB* database is compatible with [mangos-classic rev z2687][10]
 and newer.
 
 Getting started
@@ -63,10 +63,10 @@ But as this is a community project, the developers will always try to help you m
 [1]: https://github.com/cmangos/mangos-classic "mangos-classic"
 
 [10]: https://github.com/cmangos/mangos-classic/ "mangos classic"
-[12]: https://github.com/classicDB/database/ "content database"
+[12]: https://github.com/cmangos/classic-db/ "content database"
 [13]: http://www.cmangos.net/ "CMaNGOS Project"
 [14]: https://github.com/cmangos/issues/wiki/Installation-Instructions/ "Installation Instructions"
-[15]: https://github.com/classicdb/database/issues/ "Classic DB issue tracker"
+[15]: https://github.com/cmangos/classic-db/issues/ "Classic DB issue tracker"
 [16]: https://github.com/cmangos/issues/wiki/mangosdb_struct
 [17]: https://help.github.com/articles/fork-a-repo/
 [18]: https://help.github.com/articles/creating-a-pull-request/

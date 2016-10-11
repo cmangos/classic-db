@@ -59,10 +59,6 @@ CORE_PATH=""
 ##   If set the file scriptdev2.sql will be applied from this folder
 SD2_PATH=""
 
-## Define the path to the folder into which you cloned ACID (This is optional)
-##   If set the file acid_classic.sql will be applied from this folder
-ACID_PATH=""
-
 ## Define your mysql programm if this differs
 MYSQL="mysql"
 
@@ -135,7 +131,7 @@ do
     break
 done
 
-LAST_CORE_REV="2685"
+LAST_CORE_REV="2687"
 # process future release folders
 NEXT_MILESTONES="0.12.4 0.12.5"
 
@@ -211,21 +207,11 @@ fi
 #
 #               ACID Full file
 #
-
-if [ "$ACID_PATH" != "" ]
-then
-  if [ ! -e $ACID_PATH ]
-  then
-    echo "Path to acid provided, but directory not found! $ACID_PATH"
-    exit 1
-  fi
-
   # Apply acid_classic.sql
-  echo "Applying $ACID_PATH/acid_classic.sql ..."
-  $MYSQL_COMMAND < ${ACID_PATH}/acid_classic.sql
+  echo "Applying ${ADDITIONAL_PATH}ACID/acid_classic.sql ..."
+  $MYSQL_COMMAND < ${ADDITIONAL_PATH}ACID/acid_classic.sql
   [[ $? != 0 ]] && exit 1
   echo "Recent state of ACID applied"
-fi
 
 #
 #    DEVELOPERS UPDATES
