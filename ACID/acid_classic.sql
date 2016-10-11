@@ -5411,8 +5411,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Dawn Champion (16434) - NSR
 -- Lieutenant Orrin (16478) - NSR
 -- Argent Quartermaster (16786) - NSR
--- Emissary Taluun
-('1710301','17103','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Emissary Taluun - Summon Stormwind City Guard on Aggro'),
 -- Squire Rowe
 ('1780401','17804','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Squire Rowe - Summon Stormwind City Guard on Aggro'),
 -- Human Commoner (18927) - NSR
@@ -6283,11 +6281,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Highpeak (15559) - NSR
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Ambassador Rualeth (17223) - NSR
--- Witch Doctor Mai'jin
-('1723501','17235','0','0','100','1','6000','8000','25000','28000','11','8190','0','0','0','0','0','0','0','0','0','0','Witch Doctor Mai\'jin - Cast Magma Totem'),
-('1723502','17235','0','0','100','1','15000','25000','30000','45000','11','5605','0','1','0','0','0','0','0','0','0','0','Witch Doctor Mai\'jin - Cast Healing Ward'),
--- Tcha'kaz
-('1723601','17236','6','0','100','0','0','0','0','0','11','11018','0','7','0','0','0','0','0','0','0','0','Tcha\'kaz - Summon Witherbark Bloodlings on Death'),
 -- Renn'az (17598) - NSR
 
 
@@ -7066,10 +7059,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1568601','15686','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Auctioneer Rhyker - Summon Deathguard Elite on Aggro'),
 -- Winter Reveler
 ('1576001','15760','22','0','100','1','58','0','0','0','11','26218','6','32','0','0','0','0','0','0','0','0','Winter Reveler - Cast Mistletoe on Receive Kiss Emote'),
--- Ambassador Sunsorrow
-('1628701','16287','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Ambassador Sunsorrow - Summon Deathguard Elite on Aggro'),
--- Forsaken Commoner
-('1917801','19178','4','0','100','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Forsaken Commoner - Summon Deathguard Elite on Aggro'),
 -- Midsummer Fireeater
 ('1705101','17051','1','0','100','1','15000','30000','15000','30000','11','29403','0','1','0','0','0','0','0','0','0','0','UC Fireeater Firebreath Cast'),
 
@@ -10252,9 +10241,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Accursed Slitherblade (14229) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
--- Crusty
-('1824101','18241','2','0','100','1','20','0','120000','120000','11','8599','0','1','1','-106','0','0','0','0','0','0','Crusty - Cast Enrage at 20% HP'),
-
 
 
 -- =======
@@ -11087,8 +11073,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1607203','16072','9','0','100','1','0','5','19000','22000','11','16509','4','1','0','0','0','0','0','0','0','0','Tidelord Rrurgaz - Cast Rend'),
 ('1607204','16072','9','0','100','1','0','8','14000','17000','11','15588','0','1','0','0','0','0','0','0','0','0','Tidelord Rrurgaz - Cast Thunderclap'),
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
--- Balandar Brightstar
-('1709501','17095','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Balandar Brightstar - Flee at 15% HP'),
 -- Ithania (17119) - NSR
 
 
@@ -16960,9 +16944,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1152001','11520','0','0','100','1','7200','12100','6700','16900','11','18072','1','0','0','0','0','0','0','0','0','0','Taragaman the Hungerer - Cast Uppercut'),
 ('1152002','11520','0','0','100','1','9200','14700','10400','18100','11','11970','0','0','0','0','0','0','0','0','0','0','Taragaman the Hungerer - Cast Fire Nova'),
 -- Maur Grimtotem (11834) - NSR
--- Zelemar the Wrathful
-('1783001','17830','4','0','100','0','0','0','0','0','1','-17','0','0','0','0','0','0','0','0','0','0','Zelemar the Wrathful - Yell on Aggro'),
-
 
 
 -- ==============
@@ -19273,7 +19254,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1166308','11663','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Set Phase to 0 on Evade'),
 -- Flamewaker Elite
 ('1166401','11664','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Flamewaker Elite - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1166402','11664','9','5','100','1','8','40','3400','4800','11','36711','1','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Fireball (Phase 1)'),
+('1166402','11664','9','5','100','1','8','40','3400','4800','11','20420','1','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Fireball (Phase 1)'),
 ('1166403','11664','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1166404','11664','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Disable Dynamic Movement at 0-8 Yards'),
 ('1166405','11664','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Flamewaker Elite - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -20515,11 +20496,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mulverick's War Rider (14945) - NSR
 -- Slidore's Gryphon
 ('1494601','14946','0','0','100','3','3000','5000','6000','9000','11','15285','1','0','0','0','0','0','0','0','0','0','Slidore\'s Gryphon - Cast Fireball Volley'),
-('1494602','14946','0','0','100','3','8000','11000','12000','17000','11','21188','4','1','11','23969','0','0','0','0','0','0','Slidore\'s Gryphon - Cast Stun Bomb Attack and Throw Liquid Fire'),
+('1494602','14946','0','0','100','3','8000','11000','12000','17000','11','21188','4','1','11','23969','0','0','0','0','0','0','Slidore\'s Gryphon - Cast Stun Bomb Attack and Throw Liquid Fire');
 -- Ichman's Gryphon (14947) - NSR
 -- Vipore's Gryphon (14948) - NSR
--- Horde Grunt
-('1793201','17932','0','0','100','3','2500','2500','10000','15000','11','31754','1','0','0','0','0','0','0','0','0','0','Horde Grunt - Cast Strike');
 
 
 
