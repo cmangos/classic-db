@@ -7465,6 +7465,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rory (11285) - NSR
 -- Magistrate Marduke (11286) - NSR
 -- Baker Masterson (11287) - NSR
+-- Darrowshire Poltergeist
+('1129601', '11296','11','0','100','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Darrowshire Poltergeist - Set Passive State on Spawn'),
+('1129602', '11296','11','0','100','32','0','0','0','0','1','-1474','-1475','-1476','1','-1477','-1478','-1479','1','-1480','0','0','Darrowshire Poltergeist - Random Say on Spawn'),
 -- Joseph Dirte (11316) - NSR
 -- Alexia Ironknife (11609) - NSR
 -- Kirsta Deepshadow (11610) - NSR
@@ -21785,7 +21788,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
-('-1473','Bawk,bawk,bawk! Happy Hallow\'s End, $n!','0','0','0','6741','0');
+('-1473','Bawk,bawk,bawk! Happy Hallow\'s End, $n!','0','0','0','6741','0'),
+('-1474','The Light must prevail!','0','0','0','11296','0'),
+('-1475','Captain Redpath! How could you forsake us?','0','0','0','11296','0'),
+('-1476','End our suffering!','0','0','0','11296','0'),
+('-1477','Oh, Darrowshire! I would give a thousand lives for you!','0','0','0','11296','0'),
+('-1478','You must save him!','0','0','0','11296','0'),
+('-1479','I was devoured by Horgus! I can still feel his teeth upon me!','0','0','0','11296','0'),
+('-1480','Beware Marduk! Beware, or your strength will wither.','0','0','0','11296','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
