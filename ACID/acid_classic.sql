@@ -16517,13 +16517,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Xorothian Dreadsteed
 ('1450201','14502','0','0','100','0','1000','1000','0','0','11','16636','1','0','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Cast Berserker Charge on Aggro'),
 ('1450202','14502','0','0','100','1','4000','8000','20000','25000','11','22713','4','0','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Cast Flame Buffet'),
-('1450203','14502','6','0','100','0','0','0','0','0','11','23159','0','7','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Summon Dreadsteed Spirit on Death'),
+('1450203','14502','2','0','100','2','50','0','0','0','12','14506','1','30000','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Summon Lord Hel''nurath at 50% HP'),
+('1450204','14502','6','0','100','2','0','0','0','0','11','23159','0','7','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Summon Dreadsteed Spirit on Death'),
 -- Dreadsteed Spirit (14504) - NSR
 -- Lord Hel'nurath
-('1450601','14506','0','0','100','1','5000','9000','22000','25000','11','17146','1','0','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Shadow Word: Pain'),
-('1450602','14506','0','0','100','1','11000','14000','14000','20000','11','23224','1','1','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Veil of Shadow'),
-('1450603','14506','0','0','100','1','4000','9000','9000','15000','11','18670','1','0','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Knock Away'),
-('1450604','14506','0','0','100','1','9000','13000','14000','17000','11','20989','5','1','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Sleep'),
+('1450601','14506','0','0','100','3','5000','9000','22000','25000','11','17146','1','0','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Shadow Word: Pain'),
+('1450602','14506','0','0','100','3','11000','14000','14000','20000','11','23224','1','1','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Veil of Shadow'),
+('1450603','14506','0','0','100','3','4000','9000','9000','15000','11','18670','1','0','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Knock Away'),
+('1450604','14506','0','0','100','3','9000','13000','14000','17000','11','20989','5','1','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Sleep'),
+('1450605','14506','4','0','100','2','0','0','0','0','1','-1461','0','0','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Yell on Aggro'),
 -- Ancient Equine Spirit     14566
 -- Spectral Stalker (16093) - NSR
 -- Falrin Treeshaper     16032
@@ -21785,6 +21787,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1395','Embrace the end!','0','0','0','Common Text','0'),
 ('-1396','Carnage!  May I spill blood in His name!','0','0','0','Common Text','0'),
 ('-1397','My death matters little... the Hammer will still fall!','0','0','0','Common Text','0'),
+('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','0','Lord Hel\'nurath - Yell on Aggro'),
 ('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
