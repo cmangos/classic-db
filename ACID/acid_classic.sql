@@ -1224,10 +1224,26 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('766712','7667','27','0','100','1','12544','1','15000','30000','11','12544','0','0','0','0','0','0','0','0','0','0','Lady Sevine - Cast Frost Armor on Missing Buff'),
 ('766713','7667','8','0','100','0','12938','-1','0','0','42','0','1','0','0','0','0','0','0','0','0','0','Lady Sevine - Remove Invincible on Fel Curse Spellhit'),
 ('766714','7667','7','0','100','0','0','0','0','0','42','1','1','0','22','0','0','0','0','0','0','0','Lady Sevine - Set Invincible at 1% HP and Set Phase 0 on Evade'),
--- Servant of Razelikh (7668) - Requires C++ Solution due to Unique Events (Once Quest Complete Not Killable) %s's physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!
--- Servant of Grol (7669) - Requires C++ Solution due to Unique Events (Once Quest Complete Not Killable) %s's physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!
--- Servant of Allistarj (7670) - Requires C++ Solution due to Unique Events (Once Quest Complete Not Killable) %s's physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!
--- Servant of Sevine (7671)- Requires C++ Solution due to Unique Events (Once Quest Complete Not Killable) %s's physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!
+-- Servant of Razelikh
+('766801','7668','4','0','100','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Razelikh - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('766802','7668','2','5','100','1','5','0','10000','10000','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Razelikh - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
+('766803','7668','8','5','100','0','10805','-1','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Razelikh - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('766804','7668','7','0','100','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Razelikh - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
+-- Servant of Grol
+('766901','7669','4','0','100','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Grol - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('766902','7669','2','5','100','0','5','0','10000','10000','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Grol - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
+('766903','7669','8','5','100','0','10834','-1','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Grol - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('766904','7669','7','0','100','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Grol - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
+-- Servant of Allistarj
+('767001','7670','4','0','100','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Allistarj - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('767002','7670','2','5','100','0','5','0','10000','10000','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Allistarj - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
+('767003','7670','8','5','100','0','10835','-1','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Allistarj - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('767004','7670','7','0','100','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Allistarj - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
+-- Servant of Sevine
+('767101','7671','4','0','100','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Sevine - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('767102','7671','2','5','100','0','5','0','10000','10000','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Sevine - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
+('767103','7671','8','5','100','0','10836','-1','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Sevine - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('767104','7671','7','0','100','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Sevine - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
 -- Kirith the Damned
 ('772801','7728','0','0','100','1','4000','6000','20000','26000','11','12097','1','0','0','0','0','0','0','0','0','0','Kirith the Damned - Cast Pierce Armor'),
 ('772802','7728','0','0','100','1','2000','4000','9000','13000','11','12745','4','1','0','0','0','0','0','0','0','0','Kirith the Damned - Cast Mana Burn'),
@@ -21798,7 +21814,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1477','Oh, Darrowshire! I would give a thousand lives for you!','0','0','0','11296','0'),
 ('-1478','You must save him!','0','0','0','11296','0'),
 ('-1479','I was devoured by Horgus! I can still feel his teeth upon me!','0','0','0','11296','0'),
-('-1480','Beware Marduk! Beware, or your strength will wither.','0','0','0','11296','0');
+('-1480','Beware Marduk! Beware, or your strength will wither.','0','0','0','11296','0'),
+('-1481','%s\'s physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!','0','2','0','2681','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
