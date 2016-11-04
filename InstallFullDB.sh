@@ -2,13 +2,19 @@
 
 ####################################################################################################
 #
-#   Simple helper script to insert clean classic DB
+#   Simple helper script to insert clean Classic-DB
 #
 ####################################################################################################
+
+# need to be changed on each official DB/CORE release
+FULLDB_FILE="ClassicDB_1_7_z2684.sql"
+DB_TITLE="v1.7 'The Scourge's Capital'"
+NEXT_MILESTONES="0.19 0.20"
 
 #internal use
 SCRIPT_FILE="InstallFullDB.sh"
 CONFIG_FILE="InstallFullDB.config"
+
 # testing only
 ADDITIONAL_PATH=""
 
@@ -20,6 +26,7 @@ PASSWORD=""
 MYSQL=""
 CORE_PATH=""
 DEV_UPDATES="NO"
+FORCE_WAIT="YES"
 
 function create_config {
 # Re(create) config file
@@ -33,8 +40,6 @@ cat >  $CONFIG_FILE << EOF
 #   USERNAME:     Your username
 #   PASSWORD:     Your password
 #   CORE_PATH:    Your path to core's directory (OPTIONAL: Use if you want to apply remaining core updates automatically)
-#   SD2_PATH:     Your path to SD2's directory (OPTIONAL: Use if you want to apply SD2 database automatically)
-#   ACID_PATH:    Your path to a git-clone of ACID (OPTIONAL: Use it if you want to install recent downloaded acid)
 #   MYSQL:        Your mysql command (usually mysql)
 #
 ####################################################################################################
@@ -42,7 +47,7 @@ cat >  $CONFIG_FILE << EOF
 ## Define the host on which the mangos database resides (typically localhost)
 DB_HOST="localhost"
 
-## Define the database in which you want to add clean classic DB
+## Define the database in which you want to add clean Classic-DB
 DATABASE="mangos"
 
 ## Define your username
@@ -55,15 +60,11 @@ PASSWORD="mangos"
 ##   If set the core updates located under sql/updates from this mangos-directory will be added automatically
 CORE_PATH=""
 
-## Define the path to the folder into which the SD2 database is located (This is optional)
-##   If set the file scriptdev2.sql will be applied from this folder
-SD2_PATH=""
-
 ## Define your mysql programm if this differs
 MYSQL="mysql"
 
 ## Define if the 'dev' directory for processing development SQL files needs to be used
-##   Set the variable to "YES" to use the dev directory 
+##   Set the variable to "YES" to use the dev directory
 DEV_UPDATES="NO"
 
 # Enjoy using the tool
@@ -72,7 +73,7 @@ EOF
 
 function display_help {
 echo
-echo "Welcome to the classic DB helper $SCRIPT_FILE"
+echo "Welcome to the Classic-DB helper $SCRIPT_FILE"
 echo
 echo "Run this tool from a bash compatible terminal (on windows like Git Bash)"
 echo
@@ -89,52 +90,96 @@ then
 fi
 
 . $CONFIG_FILE
-
-MYSQL_COMMAND="$MYSQL -h$DB_HOST -u$USERNAME -p$PASSWORD $DATABASE"
+export MYSQL_PWD="$PASSWORD"
+MYSQL_COMMAND="$MYSQL -h$DB_HOST -u$USERNAME $DATABASE"
 
 ## Print header
 echo
-echo "Welcome to the classic DB helper $SCRIPT_FILE"
+echo "Welcome to the Classic-DB helper $SCRIPT_FILE"
 echo
-echo "ATTENTION: Your database $DATABASE will be reset to classic DB!"
-echo "Please bring your repositories up-to-date!"
-echo "Press CTRL+C to exit"
-# show a mini progress bar
-for i in {1..19}
-do
- echo -ne .
- sleep 1
-done
-echo .
+
+if [ "$FORCE_WAIT" != "NO" ]
+then
+  echo "ATTENTION: Your database $DATABASE will be reset to Classic-DB!"
+  echo "Please bring your repositories up-to-date!"
+  echo "Press CTRL+C to exit"
+  # show a mini progress bar
+  for i in {1..19}
+  do
+   echo -ne .
+   sleep 1
+  done
+  echo .
+fi
 
 ## Full Database
-echo "Process classic database v1.7 'The Scourge's Capital'."
-$MYSQL_COMMAND < ${ADDITIONAL_PATH}Full_DB/ClassicDB_1_7_z2684.sql
-[[ $? != 0 ]] && exit 1
+echo "> Processing Classic database $DB_TITLE."
+$MYSQL_COMMAND < "${ADDITIONAL_PATH}Full_DB/$FULLDB_FILE"
+if [[ $? != 0 ]]
+then
+  echo "ERROR: cannot apply ${ADDITIONAL_PATH}Full_DB/$FULLDB_FILE"
+  exit 1
+fi
+echo "  $DB_TITLE is applied!"
+echo
+echo
 
 ## Updates
-echo "Process database updates"
-for UPDATEFILE in ${ADDITIONAL_PATH}updates/[0-9]*.sql
+echo "> Processing database updates ..."
+COUNT=0
+for UPDATE in "${ADDITIONAL_PATH}Updates/"[0-9]*.sql
 do
-    if [ -e "$UPDATEFILE" ]
+  if [ -e "$UPDATE" ]
+  then
+    echo "    Appending $UPDATE"
+    $MYSQL_COMMAND < "$UPDATE"
+    if [[ $? != 0 ]]
     then
-        for UPDATE in ${ADDITIONAL_PATH}updates/[0-9]*.sql
-        do
-            echo "   process update $UPDATE"
-            $MYSQL_COMMAND < $UPDATE
-            [[ $? != 0 ]] && exit 1
-        done
-        echo "Updates applied"
-    else
-        echo "   No update to process"
+      echo "ERROR: cannot apply $UPDATE"
+      exit 1
     fi
-    break
+    ((COUNT++))
+  fi
 done
+if [ "$COUNT" != 0 ]
+then
+  echo "  $COUNT DB updates applied successfully"
+else
+  echo "  Did not found any new DB update to apply"
+fi
+echo
+echo
 
-LAST_CORE_REV="2688"
+#
+#               Core updates
+#
+
+echo "> Trying to retrieve last core update packaged in database ..."
+LAST_CORE_REV=0
+CORE_REVS="$(grep -r "^.*required_z[0-9]*.* DEFAULT NULL" ${ADDITIONAL_PATH}Full_DB/* | sed 's/.*required_z\([0-9]*\).*/\1/') "
+CORE_REVS+=$(grep -ri '.*alter table.*required_z' ${ADDITIONAL_PATH}updates/* | sed 's/.*required_z\([0-9]*\).*required_z\([0-9]*\).*/\1 \2/')
+if [ "$CORE_REVS" != "" ]
+then
+  for rev in $CORE_REVS
+  do
+    if [ "$rev" -gt "$LAST_CORE_REV" ]
+    then
+      LAST_CORE_REV=$rev
+    fi
+  done
+fi
+
+if [ "$LAST_CORE_REV" -eq "0" ]
+then
+  echo "ERROR: cannot get last core revision in DB"
+  exit 1
+else
+  echo "  Found last core revision in DB is $LAST_CORE_REV"
+fi
+echo
+echo
+
 # process future release folders
-NEXT_MILESTONES="0.12.4 0.12.5"
-
 if [ "$CORE_PATH" != "" ]
 then
   if [ ! -e $CORE_PATH ]
@@ -142,119 +187,130 @@ then
     echo "Path to core provided, but directory not found! $CORE_PATH"
     exit 1
   fi
-#
-#               Core updates
-#
-  echo
-  echo
-  echo "Applying additional core updates from path $CORE_PATH"
-  echo
+  UPD_PROCESSED=0
+  UPD_FOUND=0
 
   for NEXT_MILESTONE in ${NEXT_MILESTONES};
   do
     # A new milestone was released, apply additional updates
     if [ -e ${CORE_PATH}/sql/updates/${NEXT_MILESTONE}/ ]
     then
-      echo "Apply core updates from milestone $NEXT_MILESTONE"
-      for f in ${CORE_PATH}/sql/archives/${NEXT_MILESTONE}/z*_*_mangos_*.sql
+      echo "> Trying to apply core updates from milestone $NEXT_MILESTONE ..."
+      for f in "${CORE_PATH}/sql/archives/${NEXT_MILESTONE}/z*_*_mangos_*.sql"
       do
-        CUR_REV=`basename $f | sed 's/^\([0-9]*\)_.*/\1/' `
+        CUR_REV=`basename $f | sed 's/^\z\([0-9]*\)_.*/\1/' `
         if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
         then
           # found a newer core update file
-          echo "Append core update `basename $f` to database $DATABASE"
+          echo "    Appending core update `basename $f` to database $DATABASE"
           $MYSQL_COMMAND < $f
-          [[ $? != 0 ]] && exit 1
+          if [[ $? != 0 ]]
+          then
+            echo "ERROR: cannot apply $f"
+            exit 1
+          fi
+          ((UPD_PROCESSED++))
+        else
+          ((UPD_FOUND++))
         fi
       done
     fi
   done
 
   # Apply remaining files from main folder
-  for f in $CORE_PATH/sql/updates/mangos/z*_*_mangos_*.sql
+  echo "> Trying to apply additional core updates from path $CORE_PATH ..."
+  for f in $CORE_UPD_FOLDER
   do
-    CUR_REV=`basename $f | sed 's/^\z\([0-9]*\)_.*/\1/' `
+    CUR_REV=$( echo $(basename "$f") | sed 's/^\z\([0-9]*\).*/\1/' )
     if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
     then
       # found a newer core update file
-      echo "Append core update `basename $f` to database $DATABASE"
+      echo "    Appending core update `basename $f` to database $DATABASE"
       $MYSQL_COMMAND < $f
-      [[ $? != 0 ]] && exit 1
+      if [[ $? != 0 ]]
+      then
+        echo "ERROR: cannot apply $f"
+        exit 1
+      fi
+      ((UPD_PROCESSED++))
+    else
+      ((UPD_FOUND++))
     fi
   done
-  echo "All core updates applied"
-fi
-
-#
-#               SD2 Full DB file
-#
-
-if [ "$SD2_PATH" != "" ]
-then
-  if [ ! -e $SD2_PATH ]
-  then
-    echo "Path to SD2 database provided, but directory not found! $SD2_PATH"
-    exit 1
-  fi
+  echo "  CORE UPDATE PROCESSED: $UPD_PROCESSED"
+  echo "  CORE UPDATE FOUND BUT ALREADY IN DB: $UPD_FOUND"
+  echo
+  echo
 
   # Apply scriptdev2.sql
-  echo "Applying $SD2_PATH/scriptdev2.sql ..."
-  $MYSQL_COMMAND < ${SD2_PATH}/scriptdev2.sql
-  [[ $? != 0 ]] && exit 1
-  echo "Recent state of ScriptDev2 applied"
+  echo "> Trying to apply $CORE_PATH/sql/scriptdev2/scriptdev2.sql ..."
+  $MYSQL_COMMAND < $CORE_PATH/sql/scriptdev2/scriptdev2.sql
+  if [[ $? != 0 ]]
+  then
+    echo "ERROR: cannot apply $CORE_PATH/sql/scriptdev2/scriptdev2.sql"
+    exit 1
+  fi
+  echo "  ScriptDev2 successfully applied"
+  echo
+  echo
 fi
 
 #
 #               ACID Full file
 #
-  # Apply acid_classic.sql
-  echo "Applying ${ADDITIONAL_PATH}ACID/acid_classic.sql ..."
-  $MYSQL_COMMAND < ${ADDITIONAL_PATH}ACID/acid_classic.sql
-  [[ $? != 0 ]] && exit 1
-  echo "Recent state of ACID applied"
+# Apply acid_classic.sql
+echo "> Trying to apply ${ADDITIONAL_PATH}ACID/acid_classic.sql ..."
+$MYSQL_COMMAND < ${ADDITIONAL_PATH}ACID/acid_classic.sql
+if [[ $? != 0 ]]
+then
+  echo "ERROR: cannot apply ${ADDITIONAL_PATH}ACID/acid_classic.sql"
+  exit 1
+fi
+echo "  ACID successfully applied"
+echo
+echo
 
 #
 #    DEVELOPERS UPDATES
 #
 if [ "$DEV_UPDATES" == "YES" ]
 then
-  echo "Process development updates"
+  echo "> Trying to apply development updates ..."
   for UPDATEFILE in ${ADDITIONAL_PATH}dev/*.sql
   do
     if [ -e "$UPDATEFILE" ]
     then
         for UPDATE in ${ADDITIONAL_PATH}dev/*.sql
         do
-            echo "   process update $UPDATE"
+            echo "    process update $UPDATE"
             $MYSQL_COMMAND < $UPDATE
             [[ $? != 0 ]] && exit 1
         done
-        echo "Development updates applied"
+        echo "  Development updates applied"
     else
-        echo "   No development update to process"
+        echo "  No development update to process"
     fi
     break
-done
+  done
   for UPDATEFILE in ${ADDITIONAL_PATH}dev/*/*.sql
   do
     if [ -e "$UPDATEFILE" ]
     then
         for UPDATE in ${ADDITIONAL_PATH}dev/*/*.sql
         do
-            echo "   process update $UPDATE"
+            echo "    process update $UPDATE"
             $MYSQL_COMMAND < $UPDATE
             [[ $? != 0 ]] && exit 1
         done
-        echo "Development subupdates applied"
+        echo "  Development subupdates applied"
     else
-        echo "   No development subupdate to process"
+        echo "  No development subupdate to process"
     fi
     break
-done
-  
+  done
+  echo
+  echo
 fi
-
-echo
-echo "You have now a clean and recent classic DB database loaded into $DATABASE"
-echo "Enjoy using classic DB"
+echo "You have now a clean and recent Classic-DB database loaded into $DATABASE"
+echo "Enjoy using Classic-DB"
 echo

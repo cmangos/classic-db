@@ -1,0 +1,108 @@
+# Specify version format
+version: "1.7.{build} 'The Scourge's Capital'"
+
+# specify custom environment variables
+environment:
+  SNAPSHOT_TAG      : "$(APPVEYOR_PROJECT_NAME)_PreBuild"
+  CORE_URL          : "https://github.com/cmangos/mangos-classic.git"
+  COMMIT_URL        : "https://github.com/cmangos/mangos-classic/commit/"
+  FINAL_SQL_NAME    : "Classic-DB.zip"
+  CORE_HASH         : "Not Set"
+  SEC_ACCESS_TOKEN  :
+    secure: GXsXxwHSSt1y+ae3C6A0csN+dCQxPW8w98SGwl8cqzqPDhKKbvFJ37eJCCDeNIm2
+
+services:
+  - mysql
+
+# scripts that are called at very beginning, before repo cloning
+init:
+    # This script will delete already existing tag with its release when it already exist.
+    # This should be done to correctly update tag details and to avoid mixed release under same tag (if one fail).
+    # The principle is to delete the tag and release whenever we found it and the commit hash is different than current.
+    # Do not modify this script for security reason
+  - ps: >-
+        function Delete-Github-Release($gitHubRepository, $releaseVersion, $commitHash, $token){
+            $baseReleaseUrl = "https://api.github.com/repos/$gitHubRepository/releases";
+            $ref_endpoint = "https://api.github.com/repos/$gitHubRepository/git/refs/tags"
+            $getReleaseId = @{Uri = "$baseReleaseUrl" + "?access_token=$token"; Method = "GET";}
+            $wr_error = 'True'; try {$result = Invoke-WebRequest @getReleaseId;} catch {$wr_error = 'False';}
+            if ($result.StatusCode -ne 200 -or $wr_error -eq 'False') {Write-Host "No release found so nothing to delete." -f Yellow; return;}
+            $releasesData = ConvertFrom-Json $result.Content; $releaseInfos = $null;
+            if ($releasesData -is [system.array] -and $releasesData.Count -ge "1") {foreach ($releaseItr in $releasesData) {if ($releaseItr.name -eq $releaseVersion) { $releaseInfos = $releaseItr; break;}}}
+            if ($releaseInfos -eq $null) {Write-Host "Release $releaseVersion is not found, nothing to delete." -f Yellow; return;}
+            if ($releaseInfos.target_commitish -ne $commitHash){
+                $id = $releaseInfos.id; $delBaseReleaseUrl = "$baseReleaseUrl/$id" + "?access_token=$token"
+                Write-Host "Deleting release $releaseVersion..." -f Yellow;
+                $delReleaseParams = @{Uri = $delBaseReleaseUrl; Method = "DELETE";}
+                $wr_error = 'True'; try { $delRelResult = Invoke-WebRequest @delReleaseParams; } catch { $wr_error = 'False'; }
+                if ($wr_error -eq 'False' -or $delRelResult.StatusCode -eq 204) {Write-Host "$releaseVersion release is deleted" -f Green;} else {Write-Host "ERROR cannot delete $releaseVersion" -f Red;}
+                Write-Host "Deleting release tag $releaseVersion..." -f Yellow;
+                $delTagBaseUrl = "$ref_endpoint/$releaseVersion" + "?access_token=$token";
+                $delTagParams = @{Uri = $delTagBaseUrl; Method = "DELETE";}
+                $wr_error = 'True'; try {$delTagResult = Invoke-WebRequest @delTagParams;} catch {$wr_error = 'False';}
+                if ($wr_error -eq 'False' -or $delTagResult.StatusCode -eq 204) {Write-Host "$releaseVersion tag is deleted" -f Green;} else {Write-Host "ERROR cannot delete $releaseVersion" -f Red;}}
+            else {Write-Host "Skipping tag delete because its same commit!" -f Yellow;}}
+
+# clone directory
+clone_folder: C:\projects\database
+clone_depth: 1
+
+# scripts to run before build
+test_script:
+  - ps: >-
+        if (!(Test-Path "C:\projects\database\$env:FINAL_SQL_NAME")) {
+            Write-Host "Cloning core repository ..." -f Yellow;
+            git clone --depth 1 -q $env:CORE_URL C:\projects\core;
+            cd C:\projects\core;
+            $env:CORE_HASH = git rev-parse --short HEAD;
+            $env:CORE_HASH = $env:COMMIT_URL + $env:CORE_HASH;
+            $env:Path += ";C:\Program Files\MySql\MySQL Server 5.7\bin";
+            Write-Host "Creating mangos DATABASE ..." -f Yellow;
+            $env:MYSQL_PWD="Password12!";
+            cmd /c 'mysql -u root < C:\projects\core\sql\create\db_create_mysql.sql';
+            cmd /c 'mysql -u root -Dmangos < C:\projects\core\sql\base\mangos.sql';
+            cd C:\projects\database;
+            $EOF = "`n";
+            $configs = 'DB_HOST="localhost"' + $EOF + 'DATABASE="mangos"' + $EOF;
+            $configs += 'USERNAME="mangos"' + $EOF + 'PASSWORD="mangos"' + $EOF;
+            $configs += 'CORE_PATH="C:/projects/core"' + $EOF;
+            $configs += 'MYSQL="mysql"' + $EOF + 'DEV_UPDATES="NO"' + $EOF;
+            $configs += 'FORCE_WAIT="NO"' + $EOF;
+            [System.IO.File]::WriteAllText("C:\projects\database\InstallFullDB.config", $configs);
+            Write-Host "Launching database install script ..." -f Yellow;
+            bash InstallFullDB.sh;
+            $env:MYSQL_PWD="Password12!";
+            if ($LastExitCode) { Write-Host "InstallFullDB.sh failed!"; throw "Build failed!"; }
+            Write-Host "Dumping database ..." -f Yellow;
+            cmd /c 'mysqldump -u root mangos > C:\projects\database\mangos.sql';
+            Write-Host "Packing dump into a zip file ..." -f Yellow;
+            7z a C:\projects\database\$env:FINAL_SQL_NAME C:\projects\database\mangos.sql;
+        }
+
+# Do not build on tags (GitHub only)
+skip_tags: true
+
+# Build settings
+build: off
+
+artifacts:
+  - path: $(FINAL_SQL_NAME)
+    name: FullDB
+    type: zip
+
+# scripts to run before deployment
+before_deploy:
+  - ps: Delete-Github-Release $env:APPVEYOR_REPO_NAME $env:SNAPSHOT_TAG $env:APPVEYOR_REPO_COMMIT "$env:SEC_ACCESS_TOKEN";
+
+# deploy settings
+deploy:
+  - provider: GitHub
+    auth_token: $(SEC_ACCESS_TOKEN)
+    release: $(SNAPSHOT_TAG)        # name of the tag used
+    description: '# Snapshot v$(APPVEYOR_BUILD_VERSION)\n\nSQL file contains all the latest database updates and all core updates up to and including -> $(CORE_HASH)\n\n## Last $(APPVEYOR_PROJECT_NAME) commit message:\n$(APPVEYOR_REPO_COMMIT)\n> $(APPVEYOR_REPO_COMMIT_MESSAGE)'
+    artifact: FullDB
+    draft: false
+    prerelease: true
+    on:
+      branch: master                # release from master branch only
+      appveyor_repo_tag: false      # deploy on tag push only
