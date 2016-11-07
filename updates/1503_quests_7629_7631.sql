@@ -4,8 +4,10 @@
 
 -- Cleanup for portals and Lord spawns
 
+DELETE FROM gameobject WHERE guid=99783;
 
 -- Spawn correct portals
+DELETE FROM gameobject WHERE guid IN (22269,22271,22272,22273,22286,22288,40145,89081,89082,89631,89632,89634,89635,92635,92636,92637,92638,93939,93940);
 INSERT INTO gameobject (guid,id,map,position_x,position_y,position_z,orientation,rotation0,rotation1,rotation2,rotation3,spawntimesecs,animprogress,state) VALUES
 (22269, 179681, 429,-39.3283, 812.609, -29.5358, -2.87979, 0, 0, 0, 0, -900, 0, 0),
 (22271, 179681, 429,-82.9582, 866.112, -28.6244, -0.872664, 0, 0, 0, 0, -900, 0, 0),
@@ -61,6 +63,7 @@ UPDATE creature_template SET UnitFlags=33554432, ModelId1=11686 WHERE entry=1450
 UPDATE creature_template SET UnitFlags=768 WHERE entry=14504;
 
 -- texts
+DELETE FROM db_script_string WHERE entry IN (2000005024, 2000005038, 2000005050, 2000005350, 2000005351);
 INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
 (2000005024, 'Ah, freedom! Although brief, so sweet it is...', 0, 1, 0, 0, 'J\'eevee yell on spawn'),
 (2000005038, 'Well duties call, yes? First, the bell... to give you vigor!', 0, 0, 0, 0, 'J\'eevee say 1'),
@@ -68,6 +71,7 @@ INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,co
 (2000005350, 'And finally the candle... to burn those who would thwart you!', 0, 0, 0, 0, 'J\'eevee say 3'),
 (2000005351, '$N, my duties are complete and I shall now take my leave. Luck to you my fellow, and remember to keep the Bell, Wheel and Candle working!', 0, 0, 0, 0, 'J\'eevee say 4');
 
+DELETE FROM creature_movement_template WHERE entry IN (14500);
 INSERT INTO creature_movement_template (entry,point,position_x,position_y,position_z,waittime,script_id,orientation) VALUES
 -- Scholomance movement
 (14500, 1, 38.784, 160.639, 83.545, 0, 0, 0), 
@@ -90,6 +94,7 @@ INSERT INTO creature_movement_template (entry,point,position_x,position_y,positi
 (14500, 17, -38.7195, 812.015, -29.5358, 60000, 1450017, 0);
 
 -- Main event script (safety check in SD2)
+DELETE FROM dbscripts_on_event WHERE id=8420;
 INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, x, y, z, o, comments) VALUES
 (8420, 0, 31, 14501, 100, 0, 0, 0, 0, 0, 0, 0, 0, 'terminate script if Warlock Mount Ritual Mob Type 3 is not found'),
 (8420, 23, 0, 0, 0, 14500, 50, 3, 2000005351, 0, 0, 0, 0, 'J\'eevee say 4'),
@@ -316,6 +321,7 @@ INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_e
 
 
 -- Intro script for J'eevees
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1450013,1450014,1450015,1450016,1450017);
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, comments) VALUES
 (1450013, 0, 0, 0, 0, 0, 0, 0, 2000005024,'J\'eevee yell on spawn'),
 (1450013, 0, 25, 1, 0, 0, 0, 0, 0, 'J\'eevee set run on'),
@@ -332,11 +338,13 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (1450017, 6, 18, 0, 0, 0, 0, 0, 0, 'J\'eevee despawn');
 
 -- Final Steed script (safety handled in SD2)
+DELETE FROM dbscripts_on_event WHERE id=8428;
 INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, x, y, z, o, comments) VALUES
 (8428, 0, 9, 22269, 10, 0, 0, 0, 0, 0, 0, 0, 'Respawn Dreadsteed Portal for 10 sec'),
 (8428, 10, 10, 14502, 0, 0, 0, 0, -32.2687, 808.172, -29.4525, -0.718391, 'spawn Xorothian Dreadsteed');
 
 -- Link imps and guards to the controller
+DELETE FROM creature_linking_template WHERE entry IN (14482,14483);
 INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
 (14482, 429, 14501, 8192, 0),
 (14483, 429, 14501, 8192, 0);
@@ -345,12 +353,14 @@ INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_ra
 UPDATE creature_template SET MovementType=2 WHERE entry IN (14483, 14482);
 
 -- Attackers should run to the middle after spawning
+DELETE FROM creature_movement_template WHERE entry IN (14483, 14482);
 INSERT INTO creature_movement_template (entry,point,position_x,position_y,position_z,waittime,script_id,orientation) VALUES
 (14483, 0, -38.48, 812.93, -29.535, 0, 0, 0),
 (14482, 0, -38.48, 812.93, -29.535, 0, 0, 0);
 
 -- Helper spells script
 -- Main event script (safety check in SD2)
+DELETE FROM dbscripts_on_go_template_use WHERE id IN (179674, 179673, 179672);
 INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, comments) VALUES
 (179674, 0, 15, 23117, 0, 14501, 40, 4, 'Cast Ritual Bell Aura on Warlock Mount Ritual Mob Type 3'),
 (179674, 30, 43, 0, 0, 0, 0, 0, 'reset Bell of Dethmoora'),
@@ -362,12 +372,39 @@ INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, datalong
 (179673, 30, 43, 0, 0, 0, 0, 0, 'reset Doomsday Candle'),
 (179673, 31, 9, 99785, 3600, 0, 0, 0, 'respawn Doomsday Candle');
 
+########################################
+# Quest: Ulathek the Traitor (7624)
+########################################
+
+UPDATE `creature_template` SET `FactionAlliance`=1434, `FactionHorde`=1434, `GossipMenuId`= 56000 WHERE `entry` = 14523;
+
+DELETE FROM `conditions` WHERE `condition_entry` = 115;
+INSERT INTO `conditions` (`condition_entry`,`type`,`value1`,`value2`) VALUES
+(115,9,7624,0);
+
+DELETE FROM `gossip_menu_option` WHERE `menu_id` IN (56000,56001,56002);
+INSERT INTO `gossip_menu_option` (`menu_id`,`id`,`option_icon`,`option_text`,`option_id`,`npc_option_npcflag`,`action_menu_id`,`action_poi_id`,`action_script_id`,`box_coded`,`box_money`,`box_text`,`condition_id`) VALUES 
+(56000,0,0,'Dreadlords? Perhaps you mean Lord Banehollow. He sends his regards, and has a message for you...',1,1,56001,0,0,0,0,NULL,115),
+(56001,0,0,'No, Ulathek. He knows your secret. He knows you plot with Lord Hel\'nurath of Xoroth.',1,1,56002,0,0,0,0,NULL,0),
+(56002,0,0,'It\'s no lie, traitor. Banehollow wants your heart, and I\'m going to get it for him.',1,1,0,0,56002,0,0,NULL,0);
+
+DELETE FROM `gossip_menu` WHERE `entry` IN (56000,56001,56002) AND `text_id` IN (7038,7039,7040);
+INSERT INTO `gossip_menu` (`entry`,`text_id`) VALUES
+(56000,7038),
+(56001,7039),
+(56002,7040);
+
+DELETE FROM `dbscripts_on_gossip` WHERE `id` = 56002;
+INSERT INTO `dbscripts_on_gossip` (`id`,`delay`,`command`,`datalong`,`datalong2`,`buddy_entry`,`search_radius`,`data_flags`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`x`,`y`,`z`,`o`,`comments`) VALUES
+(56002,0,14,23179,0,0,0,2,0,0,0,0,0,0,0,0,'Remove Taint of Shadow from player'),
+(56002,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,'Ulathek attack player');
 
 ########################################
 # Quest: Imp Delivery (7629)
 ########################################
 
 -- Event script
+DELETE FROM dbscripts_on_event WHERE id=8438;
 INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, x, y, z, o, comments) VALUES
 (8438, 0, 10, 14500, 180000, 0, 0, 0, 0, 38.4345, 156.9295, 83.545, 1.407458, 'Spawn J\'eevee'),
 (8438, 1, 0, 0, 0, 14500, 40, 0, 2000005352, 0, 0, 0, 0, 'J\'eevee say 1'),
@@ -375,16 +412,18 @@ INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_e
 (8438, 36, 8, 14500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J\'eevee give quest credit');
 
 -- Movement script
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1450002, 1450007, 1450012);
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, comments) VALUES
-(1450002, 3, 0, 0, 0, 0, 0, 0, 2000005353, 'J''eevee say 2 on reach wp 2'),
-(1450007, 4, 0, 0, 0, 0, 0, 0, 2000005178, 'J''eevee say 3 on reach wp 7'),
-(1450012, 4, 0, 0, 0, 0, 0, 0, 2000005179,  'J''eevee say 4 on reach wp 12'),
+(1450002, 3, 0, 0, 0, 0, 0, 0, 2000005353, 'J\'eevee say 2 on reach wp 2'),
+(1450007, 4, 0, 0, 0, 0, 0, 0, 2000005178, 'J\'eevee say 3 on reach wp 7'),
+(1450012, 4, 0, 0, 0, 0, 0, 0, 2000005179,  'J\'eevee say 4 on reach wp 12'),
 (1450012, 7, 15, 12980, 0, 0, 0, 0, 0, 'J\'eevee cast teleport on reach wp 12'),
 (1450012, 8, 18, 0, 0, 0, 0, 0, 0, 'J\'eevee despawn self on reach wp 12');
 
 -- Texts
+DELETE FROM db_script_string WHERE entry IN (2000005352,2000005353,2000005178,2000005179);
 INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
-(2000005352, 'Ah, here we are! Well let''s get to work, shall we...?', 0, 0, 0, 0, 'J\'eevee say 1 (Scholomance)'),
+(2000005352, 'Ah, here we are! Well let\'s get to work, shall we...?', 0, 0, 0, 0, 'J\'eevee say 1 (Scholomance)'),
 (2000005353, 'Oh, right! Over here now...', 0, 0, 0, 0, 'J\'eevee say 2 (Scholomance)'),
 (2000005178, 'And now... the final step!', 0, 0, 0, 0, 'J\'eevee say 3 (Scholomance)'),
-(2000005179, 'I''m finished. The parchment is made. Now, return to Gorzeeki...', 0, 0, 0, 0, 'J\'eevee say 4 (Scholomance)');
+(2000005179, 'I\'m finished. The parchment is made. Now, return to Gorzeeki...', 0, 0, 0, 0, 'J\'eevee say 4 (Scholomance)');
