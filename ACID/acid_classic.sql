@@ -16104,7 +16104,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gordok Mage-Lord (3.3.3 Official Data)
 ('1144401','11444','4','0','10','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Random Say on Aggro'),
 ('1144402','11444','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Gordok Mage-Lord - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1144403','11444','9','5','100','1','.','40','3500','4900','11','15530','1','0','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Cast Frostbolt (Phase 1)'),
+('1144403','11444','9','5','100','1','0','40','3500','4900','11','15530','1','0','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Cast Frostbolt (Phase 1)'),
 ('1144404','11444','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1144405','11444','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Disable Dynamic Movement at 0-8 Yards'),
 ('1144406','11444','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Gordok Mage-Lord - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
