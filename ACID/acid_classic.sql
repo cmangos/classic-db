@@ -21805,7 +21805,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1395','Embrace the end!','0','0','0','Common Text','0'),
 ('-1396','Carnage!  May I spill blood in His name!','0','0','0','Common Text','0'),
 ('-1397','My death matters little... the Hammer will still fall!','0','0','0','Common Text','0'),
-('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','0','Lord Hel\'nurath - Yell on Aggro'),
+('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','Lord Hel\'nurath - Yell on Aggro','0'),
 ('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
