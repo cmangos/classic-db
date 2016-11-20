@@ -22,12 +22,12 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (69113,16,624.023,-675.308,152.823, 0, 0,2.97344, 0, 0);
 -- 2nd spawn
 -- missing added - free guids reused
-DELETE FROM creature WHERE guid = 119583;;
-DELETE FROM creature_addon WHERE guid = 119583;;
-DELETE FROM creature_movement WHERE id = 119583;;
-DELETE FROM game_event_creature WHERE guid = 119583;;
-DELETE FROM game_event_creature_data WHERE guid = 119583;;
-DELETE FROM creature_battleground WHERE guid = 119583;;
+DELETE FROM creature WHERE guid = 119583;
+DELETE FROM creature_addon WHERE guid = 119583;
+DELETE FROM creature_movement WHERE id = 119583;
+DELETE FROM game_event_creature WHERE guid = 119583;
+DELETE FROM game_event_creature_data WHERE guid = 119583;
+DELETE FROM creature_battleground WHERE guid = 119583;
 DELETE FROM creature_linking WHERE guid = 119583 OR master_guid = 119583;
 INSERT INTO creature (guid, id, map, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (119583,2453,0,0,0,896.904,-547.316,142.524,3.53498,7200,0,0,1196,3075,0,0);
