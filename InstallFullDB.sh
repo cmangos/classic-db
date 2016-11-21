@@ -219,7 +219,7 @@ then
 
   # Apply remaining files from main folder
   echo "> Trying to apply additional core updates from path $CORE_PATH ..."
-  for f in $CORE_UPD_FOLDER
+  for f in "$CORE_PATH/sql/updates/mangos/"*_mangos_*.sql
   do
     CUR_REV=$( echo $(basename "$f") | sed 's/^\z\([0-9]*\).*/\1/' )
     if [ "$CUR_REV" -gt "$LAST_CORE_REV" ]
