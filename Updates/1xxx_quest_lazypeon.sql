@@ -1,3 +1,5 @@
+DELETE FROM creature_movement WHERE id IN (3345, 3346, 3347, 3348, 6523, 6524, 6525, 6526, 6527, 7372, 7373, 7374, 7375, 7376);
+
 -- Spawn points
 UPDATE creature SET position_x = -228.4774, position_y = -4283.625, position_z = 65.1967, orientation = 2.894468 WHERE guid = 3345;
 UPDATE creature SET position_x = -329.9962, position_y = -4433.717, position_z = 54.78109, orientation = 5.104826 WHERE guid = 3346;
