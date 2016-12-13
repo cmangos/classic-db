@@ -8480,7 +8480,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('384501','3845','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Shindrell Swiftfire - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('384502','3845','9','0','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','Shindrell Swiftfire - Cast Shoot and Set Ranged Weapon Model'),
 ('384503','3845','9','0','100','1','0','15','8000','12000','11','23601','1','0','40','2','0','0','0','0','0','0','Shindrell Swiftfire - Cast Scatter Shot and Set Ranged Weapon Model'),
-('384504','3845','9','0','100','1','0','5','3000','5000','11','32908','1','33','0','0','0','0','0','0','0','0','Shindrell Swiftfire - Cast Wing Clip'),
+('384504','3845','9','0','100','1','0','5','3000','5000','11','2974','1','33','0','0','0','0','0','0','0','0','Shindrell Swiftfire - Cast Wing Clip'),
 ('384505','3845','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shindrell Swiftfire - Enable Dynamic Movement at 9-80 Yards'),
 ('384506','3845','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Shindrell Swiftfire - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('384507','3845','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Shindrell Swiftfire - Set Melee Weapon Model on Evade'),
