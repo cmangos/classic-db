@@ -242,6 +242,37 @@ then
   echo
   echo
 
+  # Apply dbc folder
+  echo "> Trying to apply $CORE_PATH/sql/base/dbc/original_data ..."
+  for f in "$CORE_PATH/sql/base/dbc/original_data/"*.sql
+  do
+    echo "    Appending DBC file update `basename $f` to database $DATABASE"
+    $MYSQL_COMMAND < $f
+    if [[ $? != 0 ]]
+    then
+      echo "ERROR: cannot apply $f"
+      exit 1
+    fi
+  done
+  echo "  DBC datas successfully applied"
+  echo
+  echo
+  # Apply dbc changes (specific fixes to known wrong/missing data)
+  echo "> Trying to apply $CORE_PATH/sql/base/dbc/cmangos_fixes ..."
+  for f in "$CORE_PATH/sql/base/dbc/cmangos_fixes/"*.sql
+  do
+    echo "    Appending CMaNGOS DBC file fixes `basename $f` to database $DATABASE"
+    $MYSQL_COMMAND < $f
+    if [[ $? != 0 ]]
+    then
+      echo "ERROR: cannot apply $f"
+      exit 1
+    fi
+  done
+  echo "  DBC changes successfully applied"
+  echo
+  echo
+
   # Apply scriptdev2.sql
   echo "> Trying to apply $CORE_PATH/sql/scriptdev2/scriptdev2.sql ..."
   $MYSQL_COMMAND < $CORE_PATH/sql/scriptdev2/scriptdev2.sql
