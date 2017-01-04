@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="ClassicDB_1_7_z2684.sql"
-DB_TITLE="v1.7 'The Scourge's Capital'"
+FULLDB_FILE="ClassicDB_1_8_z2692.sql"
+DB_TITLE="v1.8 'Lunar Festival'"
 NEXT_MILESTONES="0.19 0.20"
 
 #internal use

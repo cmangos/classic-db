@@ -10,7 +10,7 @@ copies.
 
 Compatibility
 -------------
-The *Classic DB* database is compatible with [mangos-classic rev z2687][10]
+The *Classic DB* database is compatible with [mangos-classic rev z2692][10]
 and newer.
 
 Getting started
