@@ -14204,6 +14204,35 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Summoned Felhunter
 ('626801','6268','0','0','100','1','5000','11000','11000','17000','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn'),
 -- Polly (7167) - NSR
+-- Venture Co. Lookout
+('730701','7307','8','2','100','1','2098','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 1 hit and Move to Phase 1'),
+('730702','7307','8','2','100','1','6760','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 2 hit and Move to Phase 1'),
+('730703','7307','8','2','100','1','6761','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 3 hit and Move to Phase 1'),
+('730704','7307','8','2','100','1','6762','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 4 hit and Move to Phase 1'),
+('730705','7307','8','2','100','1','8623','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 5 hit and Move to Phase 1'),
+('730706','7307','8','2','100','1','8624','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 6 hit and Move to Phase 1'),
+('730707','7307','8','2','100','1','11299','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 7 hit and Move to Phase 1'),
+('730708','7307','8','2','100','1','11300','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 8 hit and Move to Phase 1'),
+('730709','7307','8','2','100','1','31016','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 9 hit and Move to Phase 1'),
+('730710','7307','8','2','100','1','26865','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 10 hit and Move to Phase 1'),
+('730711','7307','7','1','100','1','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Set Phase 0 on Evade in Phase 1'),
+-- Venture Co. Patroller
+('730801','7308','8','2','100','1','1943','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 1 hit and Move to Phase 1'),
+('730802','7308','8','2','100','1','8639','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 2 hit and Move to Phase 1'),
+('730803','7308','8','2','100','1','8640','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 3 hit and Move to Phase 1'),
+('730804','7308','8','2','100','1','11273','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 4 hit and Move to Phase 1'),
+('730805','7308','8','2','100','1','11274','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 5 hit and Move to Phase 1'),
+('730806','7308','8','2','100','1','11275','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 6 hit and Move to Phase 1'),
+('730807','7308','8','2','100','1','26867','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 7 hit and Move to Phase 1'),
+('730808','7308','7','1','100','1','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Set Phase 0 on Evade in Phase 1'),
+-- Mutated Venture Co. Drone
+('731001','7310','8','0','100','1','8676','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 1 hit'),
+('731002','7310','8','0','100','1','8724','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 2 hit'),
+('731003','7310','8','0','100','1','8725','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 3 hit'),
+('731004','7310','8','0','100','1','11267','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 4 hit'),
+('731005','7310','8','0','100','1','11268','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 5 hit'),
+('731006','7310','8','0','100','1','11269','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 6 hit'),
+('731007','7310','8','0','100','1','27441','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 7 hit'), 
 -- Death's Head Cultist
 ('787201','7872','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Death\'s Head Cultist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('787202','7872','9','5','100','1','0','40','3800','5200','11','9613','1','0','0','0','0','0','0','0','0','0','Death\'s Head Cultist - Cast Shadow Bolt (Phase 1)'),
