@@ -11052,6 +11052,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1032101','10321','9','0','100','1','0','5','8000','11000','11','15584','1','0','0','0','0','0','0','0','0','0','Emberstrife - Cast Cleave'),
 ('1032102','10321','0','0','100','1','7000','9000','10000','12000','11','9573','1','0','0','0','0','0','0','0','0','0','Emberstrife - Cast Flame Breath'),
 ('1032103','10321','2','0','100','1','30','0','120000','120000','11','8269','0','1','1','-106','0','0','0','0','0','0','Emberstrife - Cast Frenzy at 30% HP'),
+('1032104','10321','2','0','100','1','10','0','0','0','1','-1482','0','0','0','0','0','0','0','0','0','0','Emberstrife - Textemote at 10% HP'),
 -- Summoned Water Elemental (10955) - NSR
 -- Timothy Worthington
 ('1105201','11052','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Timothy Worthington - Flee at 15% HP'),
@@ -21846,7 +21847,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1478','You must save him!','0','0','0','11296','0'),
 ('-1479','I was devoured by Horgus! I can still feel his teeth upon me!','0','0','0','11296','0'),
 ('-1480','Beware Marduk! Beware, or your strength will wither.','0','0','0','11296','0'),
-('-1481','%s\'s physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!','0','2','0','2681','0');
+('-1481','%s\'s physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!','0','2','0','2681','0'),
+('-1482','%s\'s will falters.','0','2','0','10321','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
