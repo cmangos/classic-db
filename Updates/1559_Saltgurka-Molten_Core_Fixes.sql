@@ -29,24 +29,24 @@ UPDATE `creature_linking_template` SET `flag`=1543 WHERE `entry`=12099 AND `mast
 -- Pathing for Ancient Core Hound Entry: 11673 'TDB FORMAT' 
 -- Original had duplicate points
 SET @GUID := 56853;
-UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=1039.667,`position_y`=-791.0968,`position_z`=-151.0096 WHERE `guid`=@GUID;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID;
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`) VALUES
-(@GUID,1,1039.667,-791.0968,-151.0096,0),
-(@GUID,2,1026.315,-767.8003,-156.6493,0),
-(@GUID,3,1038.774,-761.6977,-152.658,0),
-(@GUID,4,1064.627,-748.9409,-151.7516,0),
+(@GUID,1,1040.764,-815.1115,-152.1656,0),
+(@GUID,2,1051.314,-799.6896,-151.9713,0),
+(@GUID,3,1039.667,-791.0968,-151.0096,0),
+(@GUID,4,1026.315,-767.8003,-156.6493,0),
 (@GUID,5,1038.774,-761.6977,-152.658,0),
-(@GUID,6,1024.332,-768.7155,-156.9002,0),
-(@GUID,7,1039.641,-791.0518,-150.9892,0),
-(@GUID,8,1051.314,-799.6896,-151.9713,0),
-(@GUID,9,1040.764,-815.1115,-152.1656,0),
+(@GUID,6,1064.627,-748.9409,-151.7516,0),
+(@GUID,7,1038.774,-761.6977,-152.658,0),
+(@GUID,8,1024.332,-768.7155,-156.9002,0),
+(@GUID,9,1039.641,-791.0518,-150.9892,0),
 (@GUID,10,1051.314,-799.6896,-151.9713,0);
 
 -- Pathing for Ancient Core Hound Entry: 11673 'TDB FORMAT' 
 -- Original one had some duplicate points
 SET @GUID := 56856;
-UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=706.5988,`position_y`=-608.756,`position_z`=-209.7862 WHERE `guid`=@GUID;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID;
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`) VALUES
 (@GUID,1,706.5988,-608.756,-209.7862,0),
@@ -62,7 +62,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 -- Pathing for Ancient Core Hound Entry: 11673 'TDB FORMAT' 
 -- At the second resting area it should be moving around "randomly" on the spot. It didn't on the old path.
 SET @GUID := 56851;
-UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=1144.05,`position_y`=-662.6844,`position_z`=-131.4626 WHERE `guid`=@GUID;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID;
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`) VALUES
 (@GUID,1,1144.05,-662.6844,-131.46260,0,0),
@@ -145,7 +145,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 UPDATE `creature_template` SET `SpeedWalk`=1, `SpeedRun`=2.28571;
 
 SET @ENTRY := 12056;
-UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=747.5466,`position_y`=-981.676,`position_z`=-178.401 WHERE `guid`=56655;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=56655;
 DELETE FROM `creature_movement_template` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`,`script_id`) VALUES
 (@ENTRY,1,747.5466,-981.676,-178.401,0,0,5665501),
