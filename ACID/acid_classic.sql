@@ -12661,7 +12661,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Layo Starstrike 13220
 -- Hive'Ashi Ambusher 13301
 -- Highlord Demitrian 14347   npc_highlord_demitrian
--- Prince Thunderaan 14435
+-- Prince Thunderaan
+('1443501','14435','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Prevent Combat Movement On Spawn'),
+('1443502','14435','4','0','100','0','0','0','0','0','1','-1309','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Yell on Aggro'),
+('1443503','14435','0','0','100','1','9000','13000','16000','20000','11','23009','0','1','0','0','0','0','0','0','0','0','Prince Thunderaan - Cast Tendrils of Air'),
+('1443504','14435','0','0','100','1','7500','8500','10000','15000','11','23011','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Cast Tears of the Wind Seeker'),
 -- The Windreaver 14454
 -- Whirling Invader 14455
 -- Setis 14471
@@ -21808,7 +21812,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1306','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','Scarlet Monastery','0'),
 ('-1307','There is no escape for you.  The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','Scarlet Monastery','0'),
 ('-1308','The Scarlet Crusade shall smite the wicked and drive evil from these lands!','0','0','0','Scarlet Monastery','0'),
--- Please Re-use -1309
+('-1309','My power is discombobulatingly devastating! It is ludicrous that these mortals even attempt to enter my realm!','0','1','0','Prince Thunderaan','0'),
 ('-1310','Welcome to flavor country!','0','0','0','11058','0'),
 ('-1312','I can\'t believe dad won\'t let me keep your sister.','0','0','0','8666','0'),
 ('-1313','Can anyone give my adorable, extra little kitty a home?','0','0','0','8666','0'),
