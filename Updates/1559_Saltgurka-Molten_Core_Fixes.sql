@@ -142,7 +142,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 
 -- Change his movement speed to the values from tbc-db
 -- Judging from my observations from retail he is always in runmode (you can see his animation is slightly different), and classic-db's SpeedRun=3,15 was too fast
-UPDATE `creature_template` SET `SpeedWalk`=1, `SpeedRun`=2.28571;
+UPDATE `creature_template` SET `SpeedWalk`=1, `SpeedRun`=2.28571 WHERE `entry`=12056;
 
 SET @ENTRY := 12056;
 UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=56655;
