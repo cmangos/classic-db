@@ -11,20 +11,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- Set animprogress to 100 for all runes. The fire spout animation doesn't play otherwise.
 UPDATE `gameobject` SET `animprogress`=100 WHERE `id` IN(176951,176952,176953,176954,176955,176956,176957);
 
--- Sulfuron Harbinger followers should not respawn while boss is dead
-UPDATE `creature_linking_template` SET `flag`=1031 WHERE `master_entry`=12098 AND `entry`=11662; -- Old flag: 7
-
--- Gehennas followers should not respawn while boss is dead
-UPDATE `creature_linking_template` SET `flag`=1031 WHERE `master_entry`=12259 AND `entry`=11661; -- Old flag: 7
-
 -- ************************
 -- Garr movement/linking fixup
 -- ************************
 UPDATE `creature` SET `spawndist`=10,`MovementType`=1 WHERE `guid`=56609; -- Garr
 UPDATE `creature` SET `position_x`=684.192,`position_y`=-506.928,`position_z`=-214.424,`orientation`=3.73863 WHERE `guid`=56627; -- Firesworn
-
--- Firesworn follows Garr. To be blizzlike they should remain in a perfect circle around him at all times, but that's not possible with the current linking system
-UPDATE `creature_linking_template` SET `flag`=1543 WHERE `entry`=12099 AND `master_entry`=12057; -- Old flag: 7
 
 -- ************************
 -- Core Hounds
@@ -121,9 +112,6 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position
 (@ENTRY,8,1000.203,-955.4069,-179.5825,0,0),
 (@ENTRY,9,1007.782,-958.0884,-180.174,0,0),
 (@ENTRY,10,1014.45,-978.5632,-181.1854,0,0);
-
--- The followers shouldn't respawn after Lucifron is killed
-UPDATE `creature_linking_template` SET `flag`=1543 WHERE `master_entry`=@ENTRY AND `entry`=12119; -- Old flag: 519
 
 -- ************************
 -- Molten Giants/Molten Destroyers
