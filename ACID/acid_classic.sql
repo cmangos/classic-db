@@ -4415,6 +4415,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Faulty War Golem (8279) - NSR
 -- Shleipnarr
 ('828001','8280','9','0','100','1','0','30','9000','15000','11','13321','4','0','0','0','0','0','0','0','0','0','Shleipnarr - Cast Mana Burn'),
+('828002','8280','0','0','100','1','5000','8000','9000','13000','11','7399','4','0','0','0','0','0','0','0','0','0','Shleipnarr - Cast Terrify'),
 -- Scald (8281) - NSR
 -- Highlord Mastrogonde
 ('828201','8282','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Highlord Mastrogonde - Enable Dynamic Movement and Set Phase 1 on Aggro'),
