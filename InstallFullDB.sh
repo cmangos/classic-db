@@ -50,7 +50,7 @@ cat >  $CONFIG_FILE << EOF
 DB_HOST="localhost"
 
 ## Define the port on which the mangos database is running (typically 3306)
-+DB_PORT="3306"
+DB_PORT="3306"
 
 ## Define the database in which you want to add clean Classic-DB
 DATABASE="mangos"
