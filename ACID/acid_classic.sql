@@ -9150,8 +9150,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lingering Highborne
 ('786401','7864','9','0','100','1','0','30','9000','18000','11','11963','4','32','0','0','0','0','0','0','0','0','Lingering Highborne - Cast Enfeeble'),
 -- Peter Galen (7866) - npc_prof_leather
--- Spitelash Battlemaster (7885) - mobs_spitelashes
--- Spitelash Enchantress (7886) - mobs_spitelashes
+-- Spitelash Battlemaster (7885) - NSR
+-- Spitelash Enchantress
+('788601','7886','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Spitelash Enchantress - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('788602','7886','0','5','100','1','1000','5000','21000','27000','11','3443','0','0','0','0','0','0','0','0','0','0','Spitelash Enchantress - Cast Enchanted Quickness (Phase 1)'),
+('788603','7886','9','5','100','1','8','20','5000','7000','11','12548','1','0','0','0','0','0','0','0','0','0','Spitelash Enchantress - Cast Frost Shock (Phase 1)'),
+('788604','7886','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Spitelash Enchantress - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('788605','7886','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Spitelash Enchantress - Disable Dynamic Movement at 0-8 Yards'),
+('788606','7886','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Spitelash Enchantress - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('788607','7886','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Spitelash Enchantress - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('788608','7886','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Spitelash Enchantress - Set Phase to 0 on Evade'),
 -- Alexandra Blazen
 ('837801','8378','1','0','100','1','1000','1000','1800000','1800000','11','1006','0','0','0','0','0','0','0','0','0','0','Alexandra Blazen - Cast Inner Fire'),
 ('837802','8378','14','0','100','1','1000','40','14000','18000','11','11640','6','1','0','0','0','0','0','0','0','0','Alexandra Blazen - Cast Renew on Friendlies'),
