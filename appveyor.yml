@@ -1,5 +1,5 @@
 # Specify version format
-version: "1.7.{build} 'The Scourge's Capital'"
+version: "1.8.{build} 'Lunar Festival'"
 
 # specify custom environment variables
 environment:
