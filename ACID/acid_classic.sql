@@ -12638,21 +12638,36 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Healer (6491) - NSR
 -- Hive'Ashi Stinger 11698
 -- Hive'Ashi Worker 11721
--- Hive'Ashi Defender 11722
+-- Hive'Ashi Defender
+('1172201','11722','0','0','100','1','2000','12000','36200','46300','11','6713','1','1','0','0','0','0','0','0','0','0','Hive\'Ashi Defender - Cast Disarm'),
 -- Hive'Ashi Sandstalker 11723
 -- Hive'Ashi Swarmer 11724
 -- Hive'Zora Waywatcher 11725
 -- Hive'Zora Tunneler 11726
--- Hive'Zora Wasp 11727
--- Hive'Zora Reaver 11728
--- Hive'Zora Hive Sister 11729
--- Hive'Regal Ambusher 11730
+-- Hive'Zora Wasp
+('1172701','11727','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Hive\'Zora Wasp - Set Phase 1 on Aggro'),
+('1172702','11727','9','5','100','1','0','5','7000','11000','11','19448','1','0','0','0','0','0','0','0','0','0','Hive\'Zora Wasp - Cast Poison (Phase 1)'),
+('1172703','11727','24','5','100','1','19448','10','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Hive\'Zora Wasp - Set Phase 2 on Target Max Poison Aura Stack (Phase 1)'),
+('1172704','11727','28','3','100','1','19448','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Hive\'Zora Wasp - Set Phase 1 on Target Missing Poison Aura Stack (Phase 2)'),
+('1172705','11727','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Hive\'Zora Wasp - Set Phase to 0 on Evade'),
+-- Hive'Zora Reaver
+('1172801','11728','0','0','100','1','8000','15000','11000','16000','11','16790','4','0','0','0','0','0','0','0','0','0','Hive\'Zora Reaver - Cast Knockdown'),
+('1172802','11728','0','0','100','1','13800','19200','8100','17800','11','15284','1','1','0','0','0','0','0','0','0','0','Hive\'Zora Reaver - Cast Cleave'),
+-- Hive'Zora Hive Sister
+('1172901','11729','9','0','100','1','0','30','4500','6000','11','7951','1','0','0','0','0','0','0','0','0','0','Hive\'Zora Hive Sister - Cast Toxic Spit'),
+-- Hive'Regal Ambusher
+('1173001','11730','11','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Hive\'Regal Ambusher - Cast Stealth on Spawn'),
+('1173002','11730','0','0','100','1','7000','14000','120000','125000','11','744','1','0','0','0','0','0','0','0','0','0','Hive\'Regal Ambusher - Cast Poison'),
+('1173003','11730','7','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Hive\'Regal Ambusher - Cast Stealth on Evade'),
 -- Hive'Regal Burrower 11731
--- Hive'Regal Spitfire 11732
+-- Hive'Regal Spitfire
+('1173201','11732','9','0','100','1','0','5','8000','17800','11','5708','1','0','0','0','0','0','0','0','0','0','Hive\'Regal Spitfire - Cast Swoop'),
+('1173202','11732','0','0','100','1','8000','17000','21000','28000','11','21047','4','32','0','0','0','0','0','0','0','0','Hive\'Regal Spitfire - Cast Corrosive Acid'),
 -- Hive'Regal Slavemaker
 ('1173301','11733','0','0','100','1','6000','12000','9000','20000','11','3584','1','32','0','0','0','0','0','0','0','0','Hive\'Regal Slavemaker - Cast Volatile Infection'),
 ('1173302','11733','0','0','100','1','10000','20000','30000','45000','11','19469','5','0','0','0','0','0','0','0','0','0','Hive\'Regal Slavemaker - Cast Poison Mind'),
--- Hive'Regal Hive Lord 11734
+-- Hive'Regal Hive Lord
+('1173401','11734','0','0','100','1','9000','12000','9000','12000','11','19471','4','0','0','0','0','0','0','0','0','0','Hive\'Regal Hive Lord - Cast Berserker Charge'),
 -- Stonelash Scorpid
 ('1173501','11735','0','0','100','1','3000','7000','14000','17000','11','5416','1','0','0','0','0','0','0','0','0','0','Stonelash Scorpid - Cast Venom Sting'),
 -- Stonelash Pincer
@@ -12682,12 +12697,40 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Desert Rager
 ('1174701','11747','0','0','75','1','18000','18000','5000','5000','11','13728','1','0','0','0','0','0','0','0','0','0','Desert Rager - Cast Earth Shock'),
 ('1174702','11747','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Desert Rager - Cast Enrage at 30% HP'),
--- Twilight Keeper Exeter 11803
--- Twilight Keeper Havunth 11804
+-- Twilight Keeper Exeter
+('1180301','11803','0','0','100','1','5000','8000','9000','13000','11','16856','1','0','0','0','0','0','0','0','0','0','Twilight Keeper Exeter - Cast Mortal Strike'),
+('1180302','11803','0','0','100','5','3500','3500','12000','16000','11','22427','5','1','0','0','0','0','0','0','0','0','Twilight Keeper Exeter - Cast Concussion Blow'),
+-- Twilight Keeper Havunth
+('1180401','11804','0','0','100','1','0','20','6000','12000','11','13339','1','0','0','0','0','0','0','0','0','0','Twilight Keeper Havunth - Cast Fire Blast'),
+('1180402','11804','9','0','100','1','0','8','10000','14000','11','17366','0','1','0','0','0','0','0','0','0','0','Twilight Keeper Havunth - Cast Fire Nova'),
 -- Jarund Stoutstrider 11805
--- Twilight Avenger 11880
--- Twilight Geolord 11881
--- Twilight Stonecaller 11882
+-- Twilight Avenger
+('1188001','11880','2','0','100','1','40','0','120000','120000','11','8599','0','1','1','-106','0','0','0','0','0','0','Twilight Avenger - Cast Enrage at 40% HP'),
+('1188002','11880','14','0','100','0','499','20','0','0','11','8602','0','1','1','-550','0','0','0','0','0','0','Twilight Avenger - Cast Vengeance on Friendly Low HP'),
+('1188003','11880','2','0','30','0','30','0','0','0','11','8602','0','1','0','0','0','0','0','0','0','0','Twilight Avenger - Cast Vengeance at 30% HP'),
+-- Twilight Geolord
+('1188101','11881','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Twilight Geolord - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1188102','11881','9','13','100','1','5','30','2300','5900','11','9483','1','0','0','0','0','0','0','0','0','0','Twilight Geolord - Cast Boulder (Phase 1)'),
+('1188103','11881','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Twilight Geolord - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1188104','11881','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Twilight Geolord - Disable Dynamic Movement at 0-8 Yards'),
+('1188105','11881','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Twilight Geolord - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1188106','11881','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Twilight Geolord - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1188107','11881','9','0','100','1','0','20','8000','14000','11','13728','4','1','0','0','0','0','0','0','0','0','Twilight Geolord - Cast Earth Shock'),
+('1188108','11881','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Twilight Geolord - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('1188109','11881','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Twilight Geolord - Flee at 15% HP (Phase 3)'),
+('1188110','11881','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Twilight Geolord - Set Phase to 0 on Evade'),
+-- Twilight Stonecaller
+('1188201','11882','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Twilight Stonecaller - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1188202','11882','9','13','100','1','8','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Twilight Stonecaller - Cast Fireball (Phase 1)'),
+('1188203','11882','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Twilight Stonecaller - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1188204','11882','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Twilight Stonecaller - Disable Dynamic Movement at 0-8 Yards'),
+('1188205','11882','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Twilight Stonecaller - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1188206','11882','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Twilight Stonecaller - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1188207','11882','9','0','100','1','0','5','15000','21000','11','11020','4','0','0','0','0','0','0','0','0','0','Twilight Stonecaller - Cast Petrify'),
+('1188208','11882','1','0','100','0','1000','1000','0','0','11','19704','0','1','0','0','0','0','0','0','0','0','Twilight Stonecaller - Summon Earth Elemental on Spawn'),
+('1188209','11882','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Twilight Stonecaller - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('1188210','11882','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Twilight Stonecaller - Flee at 15% HP (Phase 3)'),
+('1188211','11882','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Twilight Stonecaller - Set Phase to 0 on Evade'),
 -- Twilight Master 11883
 -- Tortured Druid
 ('1217801','12178','2','0','100','0','25','0','0','0','11','23381','0','1','0','0','0','0','0','0','0','0','Tortured Druid - Cast Healing Touch When Below 25% HP'),
@@ -12715,20 +12758,35 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1445406','14454','6','0','100','0','0','0','0','0','1','-1486','0','0','0','0','0','0','0','0','0','0','The Windreaver - Emote on Death'),
 -- Whirling Invader
 ('1445501','14455','0','0','100','1','6000','9000','8000','12000','11','17207','0','0','0','0','0','0','0','0','0','0','Whirling Invader - Cast Whirlwind'),
--- Setis 14471
+-- Setis
+('1447101','14471','0','0','100','1','15000','15000','15000','15000','11','10887','0','0','0','0','0','0','0','0','0','0','Setis - Cast Crowd Pummel'),
+('1447102','14471','0','0','100','1','12000','15000','17000','24000','11','16727','0','1','0','0','0','0','0','0','0','0','Setis - Cast War Stomp'),
 -- Gretheer
 ('1447201','14472','11','0','100','0','0','0','0','0','11','21788','0','1','0','0','0','0','0','0','0','0','Gretheer - Cast Deadly Poison on Spawn'),
 ('1447202','14472','9','0','100','1','0','30','9000','14000','11','745','1','0','0','0','0','0','0','0','0','0','Gretheer - Cast Web'),
--- Lapress 14473
--- Zora 14474
--- Rex Ashil 14475
+-- Lapress
+('1447301','14473','0','0','100','1','9000','13000','18000','34000','11','16509','1','0','0','0','0','0','0','0','0','0','Lapress - Cast Rend'),
+-- Zora
+('1447401','14474','9','0','100','1','0','30','5000','9000','11','21971','1','0','0','0','0','0','0','0','0','0','Zora - Cast Poison Bolt'),
+-- Rex Ashil
+('1447501','14475','0','0','100','1','5000','7000','12000','14000','11','6016','1','0','0','0','0','0','0','0','0','0','Rex Ashil - Cast Pierce Armor'),
 -- Krellack
 ('1447601','14476','2','0','100','0','15','0','0','0','11','17170','1','0','0','0','0','0','0','0','0','0','Krellack - Cast Fatal Sting at 15% HP'),
 -- Grubthor
 ('1447701','14477','0','0','100','1','5000','8000','9000','13000','11','5568','0','0','0','0','0','0','0','0','0','0','Grubthor - Cast Trample'),
 -- Huricanian
 ('1447801','14478','0','0','100','1','4000','10000','5000','15000','11','15659','4','0','0','0','0','0','0','0','0','0','Huricanian - Chain Lighting'),
--- Twilight Lord Everun 14479
+-- Twilight Lord Everun
+('1447901','14479','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Twilight Lord Everun - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1447902','14479','9','13','100','1','8','40','2400','3800','11','19816','1','0','0','0','0','0','0','0','0','0','Twilight Lord Everun - Cast Fireball (Phase 1)'),
+('1447903','14479','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Twilight Lord Everun - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1447904','14479','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Twilight Lord Everun - Disable Dynamic Movement at 0-8 Yards'),
+('1447905','14479','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Twilight Lord Everun - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1447906','14479','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Twilight Lord Everun - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1447907','14479','0','0','100','1','0','0','5400','25300','11','17439','1','1','0','0','0','0','0','0','0','0','Twilight Lord Everun - Cast Shadow Shock'),
+('1447908','14479','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Twilight Lord Everun - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('1447909','14479','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Twilight Lord Everun - Flee at 15% HP (Phase 3)'),
+('1447910','14479','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Twilight Lord Everun - Set Phase to 0 on Evade'),
 -- Solenor the Slayer 14530
 -- Nelson the Nice 14536
 -- Creeping Doom 14761
@@ -12758,9 +12816,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathclasp
 ('1519601','15196','0','0','100','1','8000','8000','15000','25000','11','3609','1','0','0','0','0','0','0','0','0','0','Deathclasp - Cast Paralyzing Poison'),
 ('1519602','15196','0','0','100','1','15000','15000','10000','20000','11','18670','1','0','0','0','0','0','0','0','0','0','Deathclasp - Cast Knock Away'),
--- Twilight Keeper Mayna 15200
--- Twilight Flamereaver 15201
--- Vyral the Vile 15202
+-- Twilight Keeper Mayna
+('1520001','15200','0','0','100','1','4000','15800','9700','19400','11','15654','1','32','0','0','0','0','0','0','0','0','Twilight Keeper Mayna - Cast Shadow Word: Pain'),
+('1520002','15200','0','0','100','1','15000','18000','15000','18000','11','17165','4','1','0','0','0','0','0','0','0','0','Twilight Keeper Mayna - Cast Mind Flay'),
+('1520003','15200','0','0','100','1','9000','11000','19000','24000','11','22884','0','0','0','0','0','0','0','0','0','0','Twilight Keeper Mayna - Cast Psychic Scream'),
+-- Twilight Flamereaver
+('1520101','15201','11','0','100','0','0','0','0','0','11','15733','0','1','0','0','0','0','0','0','0','0','Twilight Flamereaver - Cast Immolate on Spawn'),
+-- Vyral the Vile
+('1520201','15202','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Vyral the Vile - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1520202','15202','9','13','100','1','8','40','2400','3800','11','19816','1','0','0','0','0','0','0','0','0','0','Vyral the Vile - Cast Fireball (Phase 1)'),
+('1520203','15202','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Vyral the Vile - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1520204','15202','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Vyral the Vile - Disable Dynamic Movement at 0-8 Yards'),
+('1520205','15202','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Vyral the Vile - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1520206','15202','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Vyral the Vile - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1520207','15202','9','0','100','1','0','20','9000','12000','11','17439','4','1','0','0','0','0','0','0','0','0','Vyral the Vile - Cast Shadow Shock'),
+('1520208','15202','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Vyral the Vile - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('1520209','15202','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vyral the Vile - Flee at 15% HP (Phase 3)'),
+('1520210','15202','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Vyral the Vile - Set Phase to 0 on Evade'),
 -- Prince Skaldrenox 15203
 -- High Marshal Whirlaxis 15204
 -- Baron Kazum
@@ -12774,6 +12846,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Azure Templar 15211
 -- Hoary Templar 15212
 -- Twilight Overlord 15213
+-- Mistress Natalia Mar'alith
+('1521501','15215','11','0','100','0','0','0','0','0','11','15268','0','1','1','-1533','-1534','0','0','0','0','0','Mistress Natalia Mar\'alith - Cast Blackout on Spawn'),
+('1521502','15215','4','0','100','0','0','0','0','0','1','-1533','-1534','0','0','0','0','0','0','0','0','0','Mistress Natalia Mar\'alith - Random Say on Aggro'),
+('1521503','15215','0','0','100','1','5000','8000','12000','16000','11','11639','1','32','0','0','0','0','0','0','0','0','Mistress Natalia Mar\'alith - Cast Shadow Word: Pain'),
+('1521504','15215','0','0','100','1','11300','15900','22500','32600','11','13704','0','1','0','0','0','0','0','0','0','0','Mistress Natalia Mar\'alith - Cast Psychic Scream'),
+('1521505','15215','0','0','100','1','4000','7000','9000','12000','11','16568','1','0','0','0','0','0','0','0','0','0','Mistress Natalia Mar\'alith - Cast Mind Flay'),
+('1521506','15215','0','0','100','1','17000','23000','21000','26000','11','20740','4','0','0','0','0','0','0','0','0','0','Mistress Natalia Mar\'alith - Cast Dominate Mind'),
+('1521507','15215','2','0','100','1','50','0','16000','21000','11','10965','0','1','0','0','0','0','0','0','0','0','Mistress Natalia Mar\'alith - Cast Greater Heal at 50% HP'),
 -- The Duke of Zephyrs 15220
 -- Huum Wildmane 15270
 -- Aurel Goldleaf 15282
@@ -12784,7 +12864,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lord Skwol 15305
 -- Bor Wildmane 15306
 -- Earthen Templar 15307
--- Twilight Prophet 15308
+-- Twilight Prophet
+('1530801','15308','9','0','100','1','0','30','9000','13000','11','15305','1','0','0','0','0','0','0','0','0','0','Twilight Prophet - Cast Chain Lightning'),
+('1530802','15308','9','0','100','1','0','8','12000','15000','11','15531','0','0','0','0','0','0','0','0','0','0','Twilight Prophet - Cast Frost Nova'),
+('1530803','15308','9','0','100','1','0','8','10000','14000','11','17366','0','0','0','0','0','0','0','0','0','0','Twilight Prophet - Cast Fire Nova'),
+('1530804','15308','0','0','100','1','9000','11000','19000','24000','11','22884','0','0','0','0','0','0','0','0','0','0','Twilight Prophet - Cast Psychic Scream'),
 -- Merithra of the Dream 15378
 -- Caelestrasz 15379
 -- Arygos 15380
@@ -21994,7 +22078,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1529','Would-be interlopers, I\'m afraid.','0','1','0','16101 16102','0'),
 ('-1530','Shall we slay them for the impertinence of disturbing our sleep?','0','1','0','16101 16102','0'),
 ('-1531','Yes, we shall!','0','1','0','16101 16102','0'),
-('-1532','There\'ll be a new trade risin\' up round your carcass, $N. We\'ll call it \'flesh-craftin.\'','0','0','0','Trade Master Kovic','0');
+('-1532','There\'ll be a new trade risin\' up round your carcass, $N. We\'ll call it \'flesh-craftin.\'','0','0','0','Trade Master Kovic','0'),
+('-1533','You will make a fitting sacrifice!','0','0','0','Mistress Natalia Mar\'alith','0'),
+('-1534','C\'Thun will retake this world!','0','0','0','Mistress Natalia Mar\'alith','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
