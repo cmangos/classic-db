@@ -19503,7 +19503,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flamewaker Priest (11662) - mob_flamewaker_priest
 -- Flamewaker Healer
 ('1166301','11663','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Flamewaker Healer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1166302','11663','9','5','100','1','8','40','3400','4800','11','22677','1','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Cast Shadow Bolt (Phase 1)'),
+('1166302','11663','9','5','100','1','8','40','3400','4800','11','21077','1','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Cast Shadow Bolt (Phase 1)'),
 ('1166303','11663','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1166304','11663','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Disable Dynamic Movement at 0-8 Yards'),
 ('1166305','11663','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Flamewaker Healer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
