@@ -14752,7 +14752,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Un'Goro Stomper
 ('651301','6513','2','0','100','0','20','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Un\'Goro Stomper - Cast Enrage at 20% HP'),
 -- Un'Goro Thunderer
-('651601','6516','9','0','100','1','0','20','6000','12000','11','12553','1','0','0','0','0','0','0','0','0','0','Un\'Goro Thunderer - Cast Shock'),
+('651601','6516','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Un\'Goro Thunderer - Cast Set Stand State on Aggro'),
+('651602','6516','0','0','100','1','5000','5000','9000','15000','11','12553','1','0','0','0','0','0','0','0','0','0','Un\'Goro Thunderer - Cast Shock'),
 -- Tar Beas
 ('651701','6517','11','0','100','0','0','0','0','0','11','14178','0','1','0','0','0','0','0','0','0','0','Tar Beast - Cast Sticky Tar on Spawn'),
 -- Tar Lurker
@@ -14780,6 +14781,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('655502','6555','9','5','100','1','0','5','4000','6000','11','14120','1','0','0','0','0','0','0','0','0','0','Gorishi Tunneler - Cast Tunneler Acid (Phase 1)'),
 ('655503','6555','24','5','100','1','14120','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Gorishi Tunneler - Set Phase 2 on Target Max Tunneler Acid Aura Stack (Phase 1)'),
 ('655504','6555','28','3','100','1','14120','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Gorishi Tunneler - Set Phase 1 on Target Missing Tunneler Acid Aura Stack (Phase 2)'),
+-- Primal Ooze
+('655701','6557','2','0','100','0','10','0','0','0','11','14146','0','0','0','0','0','0','0','0','0','0','Primal Ooze - Cast Clone at 10% HP'),
+('655702','6557','30','0','100','1','5','10290','0','0','11','16032','0','16','36','9621','0','0','0','0','0','0','Primal Ooze - Cast Merging Oozes AND Transform into Gargantuan Ooze on Receive AI Event A'),
 -- Glutinous Ooze
 ('655901','6559','6','0','100','0','0','0','0','0','11','14147','0','7','0','0','0','0','0','0','0','0','Glutinous Ooze - Cast Acid Slime on Death'),
 -- Ravasaur Matriarch
@@ -14833,6 +14837,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1004002','10040','9','5','100','1','0','5','4000','6000','11','14120','1','0','0','0','0','0','0','0','0','0','Gorishi Hive Guard - Cast Tunneler Acid (Phase 1)'),
 ('1004003','10040','24','5','100','1','14120','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Gorishi Hive Guard - Set Phase 2 on Target Max Tunneler Acid Aura Stack (Phase 1)'),
 ('1004004','10040','28','3','100','1','14120','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Gorishi Hive Guard - Set Phase 1 on Target Missing Tunneler Acid Aura Stack (Phase 2)'),
+-- Captured Felwood Ooze
+('1029001','10290','29','0','100','0','1000','1000','0','0','45','5','40','0','41','2000','0','0','0','0','0','0','Captured Felwood Ooze - Send AI Event "A" AND Despawn self(Q.4642)'),
 -- Blazing Invader
 ('1446001','14460','9','0','100','1','0','8','11000','14000','11','23113','0','1','0','0','0','0','0','0','0','0','Blazing Invader - Cast Blast Wave'),
 -- Baron Charr
