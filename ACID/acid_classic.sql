@@ -14421,7 +14421,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('586501','5865','4','0','100','0','0','0','0','0','11','8210','0','1','0','0','0','0','0','0','0','0','Dishu - Cast Savannah Cubs on Aggro'),
 -- Summoned Felhunter
 ('626801','6268','0','0','100','1','5000','11000','11000','17000','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn'),
--- Polly (7167) - NSR
+-- Polly
+('716701','7167','11','0','100','0','0','0','0','0','1','-668','0','0','0','0','0','0','0','0','0','0','Polly - Say on Spawn'),
+-- Polly
+('716801','7168','11','0','100','0','0','0','0','0','1','-669','0','0','0','0','0','0','0','0','0','0','Polly - Say on Spawn'),
 -- Venture Co. Lookout
 ('730701','7307','8','2','100','1','2098','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 1 hit and Move to Phase 1'),
 ('730702','7307','8','2','100','1','6760','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 2 hit and Move to Phase 1'),
@@ -21580,7 +21583,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-665','Obsidion, Rise and Serve your Master!','0','1','0','8391','0'),
 ('-666','At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.','0','0','0','Vaelan greetings','0'),
 ('-667','Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.','0','0','0','Vaelan greetings','0'),
--- 668 - 670 PLEASE REUSE
+('-668','SQUAWK!','0','1','0','7167','0'),
+('-669','What the squawk??? Squawk, squawk, squawk? SQUAWK!','0','0','0','7168','0'),
+-- 670 PLEASE REUSE
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
 ('-672','This world is OURS!','0','0','1','Common Orc Say','0'),
 ('-673','You there!  Keep a close watch on these ramparts, intruders could approach at any time!','0','0','0','17264','0'),
