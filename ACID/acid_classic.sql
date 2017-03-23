@@ -19595,7 +19595,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1166305','11663','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Flamewaker Healer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1166306','11663','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1166307','11663','0','0','100','1','9000','14000','8000','12000','11','20603','0','1','0','0','0','0','0','0','0','0','Flamewaker Healer - Cast Shadow Shock'),
-('1166308','11663','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Set Phase to 0 on Evade'),
+('1166308','11663','7','0','100','0','0','0','0','0','22','0','0','0','28','0','21087','0','0','0','0','0','Flamewaker Healer - Set Phase to 0 and Remove Immunity to Polymorph on Evade'),
 -- Flamewaker Elite
 ('1166401','11664','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Flamewaker Elite - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1166402','11664','9','5','100','1','8','40','3400','4800','11','20420','1','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Fireball (Phase 1)'),
