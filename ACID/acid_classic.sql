@@ -2879,6 +2879,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1448504','14485','1','0','10','0','10000','15000','0','0','1','-1300','-1301','-1302','0','0','0','0','0','0','0','0','Plagued Peasant - Random Yell'),
 ('1448505','14485','8','0','25','32','23107','-1','0','0','1','-1296','-1297','-1298','1','-1296','-1298','-1299','1','-1297','-1298','-1299','Plagued Peasant - Random Yell on Spell Hit'),
 -- Scourge Footsoldier (14486) - NSR
+-- Scourge Archer
+('1448901','14489','4','0','100','0','0','0','0','0','20','0','0','0','40','2','0','0','21','0','0','0','Scourge Archer - Prevent Melee, Set Ranged Weapon Model and Prevent Combat Movement on Aggro'),
+('1448902','14489','9','0','100','1','5','29','2200','3800','11','6660','1','0','0','0','0','0','0','0','0','0','Scourge Archer - Cast Shoot'),
+('1448903','14489','9','0','100','0','30','100','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Scourge Archer - Evade'),
 -- Eris Havenfire (14494) - NSR
 -- The Cleaner (14503) - NSR
 -- Terrordale Spirit
