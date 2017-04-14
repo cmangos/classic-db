@@ -6464,7 +6464,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nissa Agamand (1655) - NSR
 -- Thurman Agamand (1656) - NSR
 -- Devilin Agamand
-('165701','1657','4','0','60','0','0','0','0','0','1','-1033','-1034','0','0','0','0','0','0','0','0','0','Devlin Agamand - Random Say on Aggro'),
+('165701','1657','4','0','60','0','0','0','0','0','1','-1033','-1034','-821','0','0','0','0','0','0','0','0','Devlin Agamand - Random Say on Aggro'),
 ('165702','1657','9','0','100','1','0','5','16000','30000','11','3148','1','0','0','0','0','0','0','0','0','0','Devilin Agamand  - Cast Head Crack'),
 -- Captain Dargol (1658) - NSR
 -- Scarlet Bodyguard
@@ -21738,7 +21738,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- PLEASE RE-USE -818
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','5721','0'),
 ('-820','You know not what you do! We must destroy you for your own good.','0','1','0','5721','0'),
--- PLEASE RE-USE -821
+('-821','Mother, oh mother. You should have listened to me...','0','0','0','1657','0'),
 ('-822','The Soulflayer comes!','5862','1','0','5721','0'),
 ('-823','Join us!','5864','1','0','5721','0'),
 ('-824','Hakkar shall live again!','5865','1','0','5721','0'),
