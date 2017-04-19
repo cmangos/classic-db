@@ -1,0 +1,5 @@
+-- Fixed a few texts for quests or items
+-- Thanks to @Lichery for pointing. This closes #50
+UPDATE page_text SET text='Solomon,$B$BThe carrier of this decree has been granted official status as an acting deputy of Stormwind. You may use $g him:her;' WHERE entry=1471;
+UPDATE quest_template SET OfferRewardText='Alright, $N. You want to earn your keep with the Horde? Well there\'s plenty to do here, so listen close and do what you\'re told.$B$B$GI see that look in your eyes, do not think I will tolerate any insolence. Thrall himself has declared the Hordes females to be on equal footing with you men. Disrespect me in the slightest, and you will know true pain.:I\'m happy to have met you. Thrall will be glad to know that more females like you and I are taking the initiative to push forward in the Barrens.;' WHERE entry=842;
+UPDATE quest_template SET RequestItemsText='Yes, what you be needin\', $gdad:mon;? I got many tings to be takin\' care of today, and you not be on me agenda as one of them. Pester me, and I make sure that changes.' WHERE entry=3541;
