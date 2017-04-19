@@ -16337,6 +16337,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1068304','10683','28','3','100','1','15572','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Rookery Hatcher - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1068305','10683','0','0','100','1','5000','7000','4000','6000','11','15580','1','0','0','0','0','0','0','0','0','0','Rookery Hatcher - Strike'),
 ('1068306','10683','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Rookery Hatcher - Set Phase to 0 on Evade'),
+-- Finkle Einhorn
+('1077601','10776','11','0','100','2','0','0','0','0','1','-1540','0','0','0','0','0','0','0','0','0','0','Finkle Einhorn - Say on Spawn'),
 -- Chromatic Elite Guard
 ('1081401','10814','0','0','100','1','5000','12800','13000','13000','11','15708','1','0','0','0','0','0','0','0','0','0','Chromatic Elite Guard - Cast Mortal Strike'),
 ('1081402','10814','0','0','100','1','5600','15400','11200','25700','11','16790','1','0','0','0','0','0','0','0','0','0','Chromatic Elite Guard - Cast Knockdown'),
@@ -22177,7 +22179,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1536','It is my duty and honor to die for the Abyssal Council!','0','0','0','Crimson Templar','0'),
 ('-1537','My lord will be outraged to learn of this ambush. Let us hope your death will appease him.','0','0','0','Crimson Templar','0'),
 ('-1538','The Abyssal Council does not tolerate deceit! Feel our wrath, little $r!','0','0','0','Crimson Templar','0'),
-('-1539','Your life is a fitting sacrifice for my master, $c.','0','0','0','Crimson Templar','0');
+('-1539','Your life is a fitting sacrifice for my master, $c.','0','0','0','Crimson Templar','0'),
+('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
