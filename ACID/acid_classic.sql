@@ -15515,8 +15515,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('890705','8907','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Wrath Hammer Construct - Enable Dynamic Movement at 9-80 Yards'),
 ('890706','8907','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Wrath Hammer Construct - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('890707','8907','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Wrath Hammer Construct - Set Melee Weapon Model on Evade'),
--- Molten War Golem
-('890801','8908','0','0','100','1','9000','11000','11000','18000','11','15570','4','33','0','0','0','0','0','0','0','0','Molten War Golem - Cast Immolate'),
+-- Molten War Golem (8908) - NSR
 -- Fireguard
 ('890901','8909','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Fireguard - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('890902','8909','9','5','100','1','0','40','3600','4900','11','14034','1','0','0','0','0','0','0','0','0','0','Fireguard - Cast Fireball (Phase 1)'),
