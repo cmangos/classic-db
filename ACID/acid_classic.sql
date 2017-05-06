@@ -19964,8 +19964,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vekniss Warrior
 ('1523001','15230','6','0','100','0','0','0','0','0','11','6122','0','7','0','0','0','0','0','0','0','0','Vekniss Warrior - Summon Vekniss Borer on Death'),
 -- Vekniss Guardian
-('1523301','15233','9','0','100','1','0','10','8000','11000','11','26025','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Cast Impale'),
-('1523302','15233','2','0','100','0','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Vekniss Guardian - Cast Enrage at 20% HP'),
+('1523301','15233','4','0','50','0','0','0','0','0','1','-1551','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Emote on Aggro'),
+('1523302','15233','9','0','100','1','0','10','8000','11000','11','26025','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Cast Impale'),
+('1523303','15233','2','0','100','0','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Vekniss Guardian - Cast Enrage at 20% HP'),
 -- Vekniss Stinger (15235) - NSR
 -- Vekniss Wasp
 ('1523601','15236','9','0','100','1','0','40','9000','12000','11','26077','4','0','0','0','0','0','0','0','0','0','Vekniss Wasp - Cast Itch'),
@@ -22176,7 +22177,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1537','My lord will be outraged to learn of this ambush. Let us hope your death will appease him.','0','0','0','Crimson Templar','0'),
 ('-1538','The Abyssal Council does not tolerate deceit! Feel our wrath, little $r!','0','0','0','Crimson Templar','0'),
 ('-1539','Your life is a fitting sacrifice for my master, $c.','0','0','0','Crimson Templar','0'),
-('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0');
+('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0'),
+('-1551','%s emits a strange noise.','0','2','0','15233 16168','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
