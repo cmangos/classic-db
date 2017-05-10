@@ -16197,7 +16197,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Halycon (SD2 Backport)
 ('1022001','10220','11','0','100','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Halycon - Cast Thrash on Spawn'),
 ('1022002','10220','0','0','100','1','8000','10000','12000','14000','11','13738','1','0','0','0','0','0','0','0','0','0','Halycon - Cast Rend'),
-('1022003','10220','6','0','100','0','0','0','0','0','32','10268','0','20','0','0','0','0','0','0','0','0','Halycon - Summon Gizrul the Slavener on Death'),
+('1022003','10220','6','0','100','0','0','0','0','0','1','-818','0','0','32','10268','0','20','0','0','0','0','Halycon - Say and Summon Gizrul the Slavener on Death'),
 -- Rookery Guardian
 ('1025801','10258','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Rookery Guardian - Set Phase 1 on Aggro'),
 ('1025802','10258','9','5','100','1','0','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Rookery Guardian - Cast Sunder Armor (Phase 1)'),
@@ -21745,7 +21745,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-815','This... is an unrecoverable... loss.','14507','1','0','29266','0'),
 ('-816','Never underestimate the other ethereal\'s greed.','0','0','0','19666','0'),
 ('-817','So or\'manley fi siame Dim fus siame yudo','5859','1','14','8580','0'),
--- PLEASE RE-USE -818
+('-818','%s lets loose a guttural growl as her body collapses. A horrifying howl can be heard echoing through the halls of Blackrock Spire. Something is very, very angry.','0','2','0','10220','0'),
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','5721','0'),
 ('-820','You know not what you do! We must destroy you for your own good.','0','1','0','5721','0'),
 ('-821','Mother, oh mother. You should have listened to me...','0','0','0','1657','0'),
@@ -22210,7 +22210,7 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 ('13','1824.58','747.281','21.1486','3.70162','18000000','8138'),
 ('14','1796.56','758.122','14.7124','5.03836','18000000','8138'),
 ('15','1783.90','745.005','16.1110','6.03896','18000000','8138'),
-('20','-169.839203','-324.961395','64.401443','3.124724','300000','10268'),
+('20','-167.538','-415.014','76.1469','1.56698','10800000','10268'),
 ('21','28.067','61.875','-123.405','4.67','600000','12238'),
 ('22','726.106','77.9764','-86.5913','6.00393','18000000','13716'),
 ('29','-16.8468','-454.377','-18.6442','2.91211','7200000','16080'),
