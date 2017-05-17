@@ -19959,7 +19959,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hive'Zara Swarmer (15546) - NSR
 -- Hive'Zara Larva (15555) - NSR
 -- Hive'Zara Hornet (15934) - NSR
--- Buru Egg Trigger (UNKNOWN IF THIS IS CORRECT IMPLIMENTATION OR NOT)
+-- Buru Egg Trigger
 ('1596401','15964','11','0','100','0','0','0','0','0','11','26646','0','0','0','0','0','0','0','0','0','0','Buru Egg Trigger - Cast Buru Egg Trigger Effect on Spawn'),
 
 
