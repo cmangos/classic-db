@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="ClassicDB_1_8_z2692.sql"
-DB_TITLE="v1.8 'Lunar Festival'"
+FULLDB_FILE="ClassicDB_1_8_5_z2697.sql"
+DB_TITLE="v1.8.5 'Below Blackrock Mountain'"
 NEXT_MILESTONES="0.19 0.20"
 
 #internal use

@@ -1,2 +1,0 @@
--- Fixed text for item 10022 (Proof of Deed): it was a blattant copy/paste from some DB website instead of using correct syntax for players name
-UPDATE page_text SET text="This proof of deed is to verify that $N slew Margol the Rager, scourge of the searing gorge.$B$BThe Ironforge museum recognizes this achievement and thanks the bearer for their generous contribution.$B$B-Head Curator Thorius Stonetender" WHERE entry=1231;
