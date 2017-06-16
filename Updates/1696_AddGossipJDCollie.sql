@@ -15,3 +15,23 @@ SET
 	action_menu_id = @entry + id
 WHERE
 	menu_id = 2184;
+
+-- The gossip thanking the player and pylon options should only be available after the first quest is handed in
+-- This is a logical continuation of the story
+INSERT INTO
+	`conditions` (`condition_entry`, `type`, `value1`)
+VALUES
+	(463, 8, 4284);
+UPDATE
+	`gossip_menu`
+SET
+	`condition_id` = 463
+WHERE
+	`entry` = 2184 AND
+	`text_id` = 2833;
+UPDATE
+	`gossip_menu_option`
+SET
+	`condition_id` = 463
+WHERE
+	`menu_id` = 2184;
