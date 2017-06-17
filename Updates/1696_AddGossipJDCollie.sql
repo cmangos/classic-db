@@ -16,27 +16,15 @@ SET
 WHERE
 	menu_id = 2184;
 
--- The gossip thanking the player should only be available after the first quest is handed in
--- This is a logical continuation of the story
-DELETE
-FROM
-	`conditions`
-WHERE
-	`condition_entry` = 463;
-INSERT INTO
-	`conditions` (`condition_entry`, `type`, `value1`)
-VALUES
-	(463, 8, 4284);
+-- The gossip thanking the player and the pylon options should only be available after completion of "Making Sense of It"
+-- This is a logical continuation of the story, see quest details
 UPDATE
 	`gossip_menu`
 SET
-	`condition_id` = 463
+	`condition_id` = 7
 WHERE
 	`entry` = 2184 AND
 	`text_id` = 2833;
-	
--- The pylon options should only be available after completion of "Making Sense of It"
--- This is a logical continuation of the story, see quest details
 UPDATE
 	`gossip_menu_option`
 SET
