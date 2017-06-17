@@ -16,7 +16,7 @@ SET
 WHERE
 	menu_id = 2184;
 
--- The gossip thanking the player and pylon options should only be available after the first quest is handed in
+-- The gossip thanking the player should only be available after the first quest is handed in
 -- This is a logical continuation of the story
 DELETE
 FROM
@@ -34,9 +34,12 @@ SET
 WHERE
 	`entry` = 2184 AND
 	`text_id` = 2833;
+	
+-- The pylon options should only be available after completion of "Making Sense of It"
+-- This is a logical continuation of the story, see quest details
 UPDATE
 	`gossip_menu_option`
 SET
-	`condition_id` = 463
+	`condition_id` = 7
 WHERE
 	`menu_id` = 2184;
