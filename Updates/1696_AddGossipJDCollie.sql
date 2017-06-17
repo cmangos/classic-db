@@ -18,6 +18,11 @@ WHERE
 
 -- The gossip thanking the player and pylon options should only be available after the first quest is handed in
 -- This is a logical continuation of the story
+DELETE
+FROM
+	`conditions`
+WHERE
+	`condition_entry` = 463;
 INSERT INTO
 	`conditions` (`condition_entry`, `type`, `value1`)
 VALUES
