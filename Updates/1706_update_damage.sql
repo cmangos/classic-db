@@ -1,0 +1,3 @@
+
+UPDATE `creature_template` SET `HealthMultiplier`='2', `ArmorMultiplier`='1', `MinLevelHealth`='5228', `MaxLevelHealth`='5228', `MinMeleeDmg`='94.00', `MaxMeleeDmg`='124.7', `MinRangedDmg`='0', `MaxRangedDmg`='0', `MeleeAttackPower`='228', `RangedAttackPower`='23' WHERE `Entry`='7980';
+UPDATE `creature_template` SET `HealthMultiplier`='2', `ArmorMultiplier`='1', `MinLevelHealth`='6104', `MaxLevelHealth`='6104', `MinMeleeDmg`='103.9', `MaxMeleeDmg`='137.9', `MinRangedDmg`='0', `MaxRangedDmg`='0', `MeleeAttackPower`='252', `RangedAttackPower`='26', `MeleeBaseAttackTime`='2000' WHERE `Entry`='14304';
