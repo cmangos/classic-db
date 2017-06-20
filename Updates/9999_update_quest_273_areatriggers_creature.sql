@@ -6,6 +6,5 @@ DELETE FROM scripted_areatrigger WHERE Entry = 171;
 INSERT INTO scripted_areatrigger VALUES ('171', 'at_huldar_miran');
 
 DELETE FROM areatrigger_involvedrelation WHERE id = 171;
-INSERT INTO areatrigger_involvedrelation VALUES ('171', '273');
 
 UPDATE quest_template SET SpecialFlags = 2 WHERE entry = 273;
