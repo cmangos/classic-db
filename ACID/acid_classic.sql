@@ -8486,7 +8486,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wildthorn Venomspitter (3.3.0 Official Data)
 ('382001','3820','9','0','100','1','0','30','3600','9900','11','6917','1','0','0','0','0','0','0','0','0','0','Wildthorn Venomspitter - Cast Venom Spit'),
 -- Wildthorn Lurker (3.3.0 Official Data)
-('382101','3821','11','0','100','0','0','0','0','0','11','6920','0','0','11','3616','0','0','0','0','0','0','Wildthorn Lurker - Cast Hide and Cast Poison Proc on Spawn'),
+('382101','3821','11','0','100','0','0','0','0','0','11','3616','0','0','0','0','0','0','0','0','0','0','Wildthorn Lurker - Cast Poison Proc on Spawn'),
+('382102','3821','1','0','100','0','0','0','0','0','11','6920','0','0','0','0','0','0','0','0','0','0','Wildthorn Lurker - Cast Hide on OOC'),
 -- Ghostpaw Runner (3.3.0 Official Data)
 ('382301','3823','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ghostpaw Runner - Flee at 15% HP'),
 -- Ghostpaw Howler (3.3.0 Official Data)
