@@ -20206,6 +20206,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1135701','11357','11','0','100','0','0','0','0','0','11','8876','0','1','0','0','0','0','0','0','0','0','Son of Hakkar - Cast Thrash on Spawn'),
 ('1135702','11357','0','0','100','1','8000','15000','11000','16000','11','16790','4','0','0','0','0','0','0','0','0','0','Son of Hakkar - Cast Knockdown'),
 ('1135703','11357','6','0','100','0','0','0','0','0','11','24319','0','7','0','0','0','0','0','0','0','0','Son of Hakkar - Summon Poison Cloud on Death'),
+-- Zulian Panther (11365) - npc_zulian_panther
 -- Bloodseeker Bat
 ('1136801','11368','4','0','100','0','0','0','0','0','11','24023','1','0','0','0','0','0','0','0','0','0','Bloodseeker Bat - Cast Charge on Aggro'),
 -- Razzashi Adder

@@ -6,3 +6,6 @@ UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_hakkari_blood_prie
 
 -- Give Zulian Prowler script npc_zulian_prowler
 UPDATE `creature_template` SET `ScriptName`='npc_zulian_prowler' WHERE `Entry`='15101';
+
+-- Set new SD2 AIs (Zulian Panther)
+UPDATE `creature_template` SET `ScriptName`='npc_zulian_panther' WHERE `Entry`='11365';
