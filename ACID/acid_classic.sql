@@ -20175,10 +20175,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =========
 -- Zul'Gurub
 -- =========
--- Hakkari Blood Priest
-('1134001','11340','0','0','85','1','5000','5000','15000','18000','11','24617','1','0','0','0','0','0','0','0','0','0','Hakkari Blood Priest - Cast Blood Funnel'),
-('1134002','11340','0','0','100','1','10000','10000','15000','15000','11','17201','0','0','0','0','0','0','0','0','0','0','Hakkari Blood Priest - Cast Dispel Magic'),
-('1134003','11340','2','0','100','1','30','0','10000','10000','11','24618','1','0','0','0','0','0','0','0','0','0','Hakkari Blood Priest - Cast Drain Life'),
+-- Hakkari Blood Priest (11340) - npc_hakkari_blood_priest
 -- Gurubashi Axe Thrower
 ('1135001','11350','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Gurubashi Axe Thrower - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1135002','11350','4','0','15','0','0','0','0','0','1','-229','0','0','0','0','0','0','0','0','0','0','Gurubashi Axe Thrower - Say text at Aggro (15%)'),
