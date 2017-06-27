@@ -9,3 +9,6 @@ UPDATE `creature_template` SET `ScriptName`='npc_zulian_prowler' WHERE `Entry`='
 
 -- Set new SD2 AIs (Zulian Panther)
 UPDATE `creature_template` SET `ScriptName`='npc_zulian_panther' WHERE `Entry`='11365';
+
+-- Remove Acid from Frenzied Bloodseeker Bat
+UPDATE `creature_template` SET `AIName`='' WHERE `Entry`='14965';
