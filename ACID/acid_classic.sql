@@ -20206,6 +20206,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1135701','11357','11','0','100','0','0','0','0','0','11','8876','0','1','0','0','0','0','0','0','0','0','Son of Hakkar - Cast Thrash on Spawn'),
 ('1135702','11357','0','0','100','1','8000','15000','11000','16000','11','16790','4','0','0','0','0','0','0','0','0','0','Son of Hakkar - Cast Knockdown'),
 ('1135703','11357','6','0','100','0','0','0','0','0','11','24319','0','7','0','0','0','0','0','0','0','0','Son of Hakkar - Summon Poison Cloud on Death'),
+-- Zulian Cub
+('1136001','11360','2','0','100','0','15','0','0','0','25','0','0','0','1','-145','0','0','0','0','0','0','Zulian Cub - Flee at 15% HP'),
 -- Zulian Panther (11365) - npc_zulian_panther
 -- Bloodseeker Bat
 ('1136801','11368','4','0','100','0','0','0','0','0','11','24023','1','0','0','0','0','0','0','0','0','0','Bloodseeker Bat - Cast Charge on Aggro'),
@@ -21110,7 +21112,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-142','Get it while it\'s hot!','0','0','0','3518','0'),
 ('-143','The Defias shall succeed! No meek adventurer will stop us!','0','0','0','1755','0'),
 ('-144','What? How dare you!','0','0','0','1754','0'),
--- PLEASE REUSE -145 to -147
+('-145','%s flees toward safety or another tiger.','0','2','0','Zulian Cub fleeing text','0'),
+-- PLEASE REUSE -146 to -147
 ('-148','Woot! Thanks!','0','0','0','17681','0'),
 ('-149','%s becomes unstable and begins to disintegrate!','0','2','0','16876','0'),
 ('-150','Will you help me find my dog...?','11797','0','0','23618','0'),
