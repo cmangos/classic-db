@@ -1,6 +1,6 @@
 -- Set the new ACID AIs 
--- (Gurubashi Blood Drinker, Gurubashi Warrior, Atal'ai Mistress, Zulian Stalker, Zulian Cub, Zulian Guardian, Zulian Crocolisk)
-UPDATE `creature_template` SET `AIName`='EventAI' WHERE `Entry` IN ('11353', '11355', '14882', '15067', '11360', '15068', '15043');
+-- (Gurubashi Blood Drinker, Gurubashi Warrior, Atal'ai Mistress, Zulian Stalker, Zulian Cub, Zulian Guardian, Zulian Crocolisk, Gurubashi Champion)
+UPDATE `creature_template` SET `AIName`='EventAI' WHERE `Entry` IN ('11353', '11355', '14882', '15067', '11360', '15068', '15043', '11356');
 
 -- Remove Acid from Hakkari Blood Priest and give script npc_hakkari_blood_priest
 UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_hakkari_blood_priest' WHERE `Entry`='11340';
