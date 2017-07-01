@@ -20176,6 +20176,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zul'Gurub
 -- =========
 -- Hakkari Blood Priest (11340) - npc_hakkari_blood_priest
+-- Hakkari Oracle (Outside ZG)
+('1134601','11346','0','0','75','1','1000','4000','6000','9000','11','16006','1','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Chain Lightning'),
+('1134602','11346','13','0','100','1','15000','20000','0','0','11','15501','1','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Earth Shock at enemy casting'),
+('1134603','11346','14','0','100','1','4500','30','15000','25000','11','15982','7','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Healing Wave on friendly lost about 70% health'),
 -- Gurubashi Axe Thrower
 ('1135001','11350','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Gurubashi Axe Thrower - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1135002','11350','4','0','15','0','0','0','0','0','1','-229','0','0','0','0','0','0','0','0','0','0','Gurubashi Axe Thrower - Say text at Aggro (15%)'),
