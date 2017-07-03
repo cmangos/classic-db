@@ -20175,6 +20175,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =========
 -- Zul'Gurub
 -- =========
+-- Hakkari Shadowcaster
+('1133801','11338','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Hakkari Shadowcaster - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1133802','11338','0','5','100','1','1000','2000','3500','4000','11','15232','1','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Shadow Bolt (Phase 1)'),
+('1133803','11338','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1133804','11338','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement at 0-8 Yards'),
+('1133805','11338','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1133806','11338','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1133807','11338','0','5','100','1','3000','7000','10000','20000','11','20741','1','1','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Shadow Bolt Volley (Phase 1)'),
+('1133808','11338','8','5','75','1','0','127','5000','8000','11','22947','6','1','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Mana Burn (Phase 1)'),
+('1133809','11338','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Set Phase to 0 on Evade'),
 -- Hakkari Blood Priest (11340) - npc_hakkari_blood_priest
 -- Hakkari Oracle (Outside ZG)
 ('1134601','11346','0','0','75','1','1000','4000','6000','9000','11','16006','1','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Chain Lightning'),
