@@ -20185,6 +20185,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1133807','11338','0','5','100','1','3000','7000','10000','20000','11','20741','1','1','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Shadow Bolt Volley (Phase 1)'),
 ('1133808','11338','8','5','75','1','0','127','5000','8000','11','22947','6','1','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Mana Burn (Phase 1)'),
 ('1133809','11338','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Set Phase to 0 on Evade'),
+-- Hakkari Shadow Hunter
+('1133901','11339','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('1133902','11339','9','0','100','1','5','30','1500','2000','11','16496','1','0','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Cast Shoot'),
+('1133903','11339','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Enable Dynamic Movement at 9-80 Yards'),
+('1133904','11339','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Hakkari Shadow Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1133905','11339','9','0','100','1','5','30','10000','15000','11','21390','1','1','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Cast Multi-Shot'),
+('1133906','11339','9','0','100','1','5','30','65000','85000','11','22908','1','1','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Cast Volley'),
+('1133907','11339','0','0','75','1','6000','12000','12000','24000','11','24335','1','32','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Cast Wyvern Sting'),
+('1133908','11339','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Set Melee Weapon Model on Evade'),
 -- Hakkari Blood Priest (11340) - npc_hakkari_blood_priest
 -- Hakkari Oracle (Outside ZG)
 ('1134601','11346','0','0','75','1','1000','4000','6000','9000','11','16006','1','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Chain Lightning'),
