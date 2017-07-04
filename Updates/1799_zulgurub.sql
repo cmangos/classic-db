@@ -6,11 +6,10 @@ UPDATE `creature_template` SET `AIName`='EventAI' WHERE `Entry` IN ('11353', '11
 -- Remove Acid from Hakkari Blood Priest and give script npc_hakkari_blood_priest
 UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_hakkari_blood_priest' WHERE `Entry`='11340';
 
--- Give Zulian Prowler script npc_zulian_prowler
+-- Set new SD2 AIs (Zulian Prowler, Zulian Panther, Soulflayer)
 UPDATE `creature_template` SET `ScriptName`='npc_zulian_prowler' WHERE `Entry`='15101';
-
--- Set new SD2 AIs (Zulian Panther)
 UPDATE `creature_template` SET `ScriptName`='npc_zulian_panther' WHERE `Entry`='11365';
+UPDATE `creature_template` SET `ScriptName`='npc_soulflayer' WHERE `Entry`='11359';
 
 -- Remove Acid from Frenzied Bloodseeker Bat
 UPDATE `creature_template` SET `AIName`='' WHERE `Entry`='14965';
@@ -21,4 +20,3 @@ UPDATE `creature_template_addon` SET `auras`='24051' WHERE `entry`='15009';
 -- Set for mobs with 100% certainty to have Thrash on spawn
 -- (Son of Hakkar, Razzashi Adder, Atal'ai Mistress, Zulian Prowler, Gahz'ranka)
 UPDATE `creature_template_addon` SET `auras`='8876' WHERE `entry` IN ('11357', '11372', '14882', '15101', '15114');
-
