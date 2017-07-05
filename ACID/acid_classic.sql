@@ -20272,6 +20272,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Razzashi Venombrood
 ('1453201','14532','0','0','100','1','1000','5000','20000','25000','11','24596','1','32','0','0','0','0','0','0','0','0','Razzashi Venombrood - Cast Intoxicating Venom'),
 -- Gurubashi Bat Rider (14750) - npc_gurubashi_bat_rider
+-- Razzashi Raptor
+('1482101','14821','0','0','100','1','1000','5000','20000','25000','11','24339','1','32','0','0','0','0','0','0','0','0','Razzashi Raptor - Cast Infected Bite'),
+('1482102','14821','2','0','100','0','30','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Razzashi Raptor - Cast Enrage at 30% HP'),
 -- Withered Mistress
 ('1482501','14825','0','0','100','1','1000','3000','15000','20000','11','24673','1','32','0','0','0','0','0','0','0','0','Withered Mistress - Cast Curse of Blood'),
 ('1482502','14825','0','0','100','1','3000','5000','12000','18000','11','24672','0','0','0','0','0','0','0','0','0','0','Withered Mistress - Cast Unholy Frenzy'),
