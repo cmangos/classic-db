@@ -19,12 +19,17 @@ UPDATE `creature_template` SET `ScriptName`='npc_soulflayer' WHERE `Entry`='1135
 -- Remove Acid from Frenzied Bloodseeker Bat
 UPDATE `creature_template` SET `AIName`='' WHERE `Entry`='14965';
 
--- Set for Voodoo Spirit the aura Spirit Burst
-UPDATE `creature_template_addon` SET `auras`='24051' WHERE `entry`='15009';
-
--- Set for Portal of Madness the aura Portal of Madness
-UPDATE `creature_template_addon` SET `auras`='24620' WHERE `entry`='15141';
-
 -- Set for mobs with 100% certainty to have Thrash on spawn
--- (Son of Hakkar, Razzashi Adder, Razzashi Raptor, Atal'ai Mistress, Zulian Prowler, Gahz'ranka)
-UPDATE `creature_template_addon` SET `auras`='8876' WHERE `entry` IN ('11357', '11372', '14821', '14882', '15101', '15114');
+-- (Son of Hakkar, Razzashi Adder, Razzashi Raptor, Atal'ai Mistress)
+UPDATE `creature_template_addon` SET `auras`='8876' WHERE `entry` IN ('11357', '11372', '14821', '14882');
+
+-- Set for Voodoo Spirit the aura Spirit Burst
+-- Set for Portal of Madness the aura Portal of Madness
+-- Set for Zulian Prowler and Gahz'ranka the aura Thrash
+INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`)
+VALUES
+    (15009,0,0,1,16,0,0,'24051'),
+    (15141,0,0,1,16,0,0,'24620'),
+    (15101,0,0,1,16,0,0,'8876'),
+    (15114,0,0,1,16,0,0,'8876');
+
