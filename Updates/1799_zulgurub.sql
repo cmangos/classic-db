@@ -8,6 +8,9 @@ UPDATE `creature_template` SET `AIName`='EventAI' WHERE `Entry` IN
 -- Remove Acid from Hakkari Blood Priest and give script npc_hakkari_blood_priest
 UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_hakkari_blood_priest' WHERE `Entry`='11340';
 
+-- Remove Acid from Razzashi Adder and give script npc_razzashi_adder
+UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_razzashi_adder' WHERE `Entry`='11372';
+
 -- Set new SD2 AIs (Zulian Prowler, Zulian Panther, Soulflayer)
 UPDATE `creature_template` SET `ScriptName`='npc_zulian_prowler' WHERE `Entry`='15101';
 UPDATE `creature_template` SET `ScriptName`='npc_zulian_panther' WHERE `Entry`='11365';
