@@ -20266,6 +20266,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1183103','11831','0','0','100','1','5000','15000','5000','10000','11','24054','1','32','0','0','0','0','0','0','0','0','Hakkari Witch Doctor - Cast Shrink'),
 ('1183104','11831','0','0','100','0','7500','12500','0','0','11','24058','0','0','0','0','0','0','0','0','0','0','Hakkari Witch Doctor - Cast Release Toads'),
 ('1183105','11831','6','0','100','0','0','0','0','0','11','24052','0','2','0','0','0','0','0','0','0','0','Hakkari Witch Doctor - Cast Summon Voodoo Spirit on Death'),
+-- Razzashi Venombrood
+('1453201','14532','0','0','100','1','1000','5000','20000','25000','11','24596','1','32','0','0','0','0','0','0','0','0','Razzashi Venombrood - Cast Intoxicating Venom'),
 -- Gurubashi Bat Rider (14750) - npc_gurubashi_bat_rider
 -- Withered Mistress
 ('1482501','14825','0','0','100','1','1000','3000','15000','20000','11','24673','1','32','0','0','0','0','0','0','0','0','Withered Mistress - Cast Curse of Blood'),
