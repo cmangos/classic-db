@@ -1,7 +1,7 @@
 -- Set the new ACID AIs 
--- (Gurubashi Blood Drinker, Gurubashi Warrior, Atal'ai Mistress, Zulian Stalker, Zulian Cub, Zulian Guardian, Zulian Crocolisk, Gurubashi Champion, Voodoo Spirit)
+-- (Gurubashi Blood Drinker, Gurubashi Warrior, Atal'ai Mistress, Zulian Stalker, Zulian Cub, Zulian Guardian, Zulian Crocolisk, Gurubashi Champion)
 -- (Withered Mistress, Hooktooth Frenzy, Hakkari Oracle, Hakkari Witch Doctor, Hakkari Shadowcaster, Hakkari Shadow Hunter)
-UPDATE `creature_template` SET `AIName`='EventAI' WHERE `Entry` IN ('11353', '11355', '14882', '15067', '11360', '15068', '15043', '11356', '15009', '14825', '11374', '11346', '11831', '11338', '11339');
+UPDATE `creature_template` SET `AIName`='EventAI' WHERE `Entry` IN ('11353', '11355', '14882', '15067', '11360', '15068', '15043', '11356', '14825', '11374', '11346', '11831', '11338', '11339');
 
 -- Remove Acid from Hakkari Blood Priest and give script npc_hakkari_blood_priest
 UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_hakkari_blood_priest' WHERE `Entry`='11340';
@@ -17,4 +17,8 @@ UPDATE `creature_template` SET `AIName`='' WHERE `Entry`='14965';
 
 -- Set for Voodoo Spirit the aura Spirit Burst
 UPDATE `creature_template_addon` SET `auras`='24051' WHERE `entry`='15009';
+
+-- Set for mobs with 100% certainty to have Thrash on spawn
+-- (Son of Hakkar, Razzashi Adder, Atal'ai Mistress, Zulian Prowler, Gahz'ranka)
+UPDATE `creature_template_addon` SET `auras`='8876' WHERE `entry` IN ('11357', '11372', '14882', '15101', '15114');
 
