@@ -20242,6 +20242,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zulian Panther (11365) - npc_zulian_panther
 -- Bloodseeker Bat
 ('1136801','11368','4','0','100','0','0','0','0','0','11','24023','1','0','0','0','0','0','0','0','0','0','Bloodseeker Bat - Cast Charge on Aggro'),
+-- Razzashi Broodwidow
+('1137001','11370','0','0','100','1','3000','6000','15000','20000','11','24600','1','32','0','0','0','0','0','0','0','0','Razzashi Broodwidow - Cast Web Spin'),
+('1137002','11370','6','0','100','0','0','0','0','0','11','24598','0','7','0','0','0','0','0','0','0','0','Razzashi Broodwidow - Cast Summon Razzashi Skitterer on Death'),
 -- Razzashi Adder
 ('1137201','11372','0','0','100','1','5000','9000','12000','18000','11','24011','4','32','0','0','0','0','0','0','0','0','Razzashi Adder - Cast Venom Spit'),
 ('1137202','11372','0','0','100','1','3000','3000','20000','20000','11','24016','1','0','0','0','0','0','0','0','0','0','Razzashi Adder - Cast Exploit Weakness'),
