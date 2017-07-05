@@ -17,6 +17,9 @@ UPDATE `creature_template` SET `AIName`='' WHERE `Entry`='14965';
 -- Set for Voodoo Spirit the aura Spirit Burst
 UPDATE `creature_template_addon` SET `auras`='24051' WHERE `entry`='15009';
 
+-- Set for Portal of Madness the aura Portal of Madness
+UPDATE `creature_template_addon` SET `auras`='24620' WHERE `entry`='15141';
+
 -- Set for mobs with 100% certainty to have Thrash on spawn
 -- (Son of Hakkar, Razzashi Adder, Atal'ai Mistress, Zulian Prowler, Gahz'ranka)
 UPDATE `creature_template_addon` SET `auras`='8876' WHERE `entry` IN ('11357', '11372', '14882', '15101', '15114');
