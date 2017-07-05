@@ -8499,8 +8499,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('383302','3833','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Cenarion Vindicator - Flee at 15% HP'),
 -- Crazed Ancient (3.3.0 Official Data)
 ('383401','3834','9','0','100','1','0','5','30500','80000','11','6909','1','32','0','0','0','0','0','0','0','0','Crazed Ancient - Cast Curse of Thorns'),
--- Healing Ward IV (3.3.0 Official Data)
-('384401','3844','11','0','100','0','0','0','0','0','11','6276','0','1','0','0','0','0','0','0','0','0','Healing Ward IV - Cast Healing Ward IV Passive on Spawn'),
+-- Healing Ward IV (3844) - NSR
 -- Shindrell Swiftfire
 ('384501','3845','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Shindrell Swiftfire - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('384502','3845','9','0','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','Shindrell Swiftfire - Cast Shoot and Set Ranged Weapon Model'),
