@@ -1,9 +1,9 @@
 -- Set the new ACID AIs 
 -- (Gurubashi Blood Drinker, Gurubashi Warrior, Atal'ai Mistress, Zulian Stalker, Zulian Cub, Zulian Guardian, Zulian Crocolisk, Gurubashi Champion)
 -- (Withered Mistress, Hooktooth Frenzy, Hakkari Oracle, Hakkari Witch Doctor, Hakkari Shadowcaster, Hakkari Shadow Hunter, Mad Servant, Mad Voidwalker)
--- (Razzashi Venombrood, Razzashi Broodwidow, Razzashi Raptor)
+-- (Razzashi Venombrood, Razzashi Broodwidow, Razzashi Raptor, Razzashi Serpent)
 UPDATE `creature_template` SET `AIName`='EventAI' WHERE `Entry` IN 
-('11353', '11355', '14882', '15067', '11360', '15068', '15043', '11356', '14825', '11374', '11346', '11831', '11338', '11339', '15111', '15146', '14532', '11370', '14821');
+('11353', '11355', '14882', '15067', '11360', '15068', '15043', '11356', '14825', '11374', '11346', '11831', '11338', '11339', '15111', '15146', '14532', '11370', '14821', '11371');
 
 -- Remove Acid from Hakkari Blood Priest and give script npc_hakkari_blood_priest
 UPDATE `creature_template` SET `AIName`='', `ScriptName`='npc_hakkari_blood_priest' WHERE `Entry`='11340';
