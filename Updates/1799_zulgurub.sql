@@ -36,3 +36,6 @@ VALUES
 -- Set UNIT_FLAG_NOT_SELECTABLE for Portal of Madness, Voodoo Spirit and Massive Geyser
 -- They all have unit flag 0x8000 already, so let hem keep that
 UPDATE `creature_template` SET `UnitFlags`='33587200' WHERE `Entry` IN ('15141', '15009', '14122');
+
+-- Set correct model for Portal of Madness (queried from official server)
+UPDATE `creature_template` SET `ModelId1`='9510' WHERE `Entry`='15141';
