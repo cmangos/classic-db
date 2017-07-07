@@ -16720,7 +16720,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1328003','13280','0','0','100','1','8400','9500','18100','29700','11','22421','4','1','0','0','0','0','0','0','0','0','Hydrospawn - Cast Massive Geyser'),
 ('1328004','13280','2','0','100','0','25','0','0','0','11','22714','0','1','0','0','0','0','0','0','0','0','Hydrospawn - Summon Hydroling at 25% HP'),
 -- Massive Geyser (3.3.3 Official Data)
-('1412201','14122','11','0','100','0','0','0','0','0','11','22422','0','0','0','0','0','0','0','0','0','0','Massive Geyser - Cast Water on Spawn'),
+('1412201','14122','11','0','100','0','0','0','0','0','11','22422','0','0','20','0','0','0','21','0','0','0','Massive Geyser - Cast Water, Disable movement and disable melee on Spawn'),
 -- Ironbark the Redeemed     14241 (As you wish...)
 -- Petrified Guardian (3.3.3 Official Data)
 ('1430301','14303','11','0','100','0','0','0','0','0','11','22696','0','1','0','0','0','0','0','0','0','0','Petrified Guardian - Cast Thorns on Spawn'),
