@@ -24,6 +24,12 @@ VALUES
 	(176, 23013, 100, 1, 1),
 	(177, 23016, 100, 1, 1);
 -- Add mail at start of event
+DELETE
+FROM
+	`game_event_mail`
+WHERE
+	`event` = 17 AND
+	`mailTemplateId` = 171;
 INSERT INTO
 	`game_event_mail` (`event`, `raceMask`, `quest`, `mailTemplateId`, `senderEntry`)
 VALUES
