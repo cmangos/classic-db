@@ -2,12 +2,12 @@
 -- Delete double mailbox during event 12
 DELETE
 FROM
-	game_event_gameobject
+	`game_event_gameobject`
 WHERE
-	guid = 38755;
+	`guid` = 38755;
 -- Delete double mailbox
 DELETE
 FROM
-	gameobject
+	`gameobject`
 WHERE
-	guid = 38755;
+	`guid` = 38755;
