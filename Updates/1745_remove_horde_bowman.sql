@@ -1,0 +1,4 @@
+
+DELETE FROM `creature` WHERE `guid` IN (53611, 53612, 53613);
+
+DELETE FROM `creature` WHERE `id` IN (14946, 14947, 14948, 13161) AND `map`=30;
