@@ -16,8 +16,7 @@ INSERT INTO game_event_mail (event, raceMask, quest, mailTemplateId, senderEntry
 (17, 255, 0, 171, 16285);
 
 -- Update quests to reward mail
--- UPDATE quest_template SET RewMailDelaySecs=518400 WHERE entry IN (9295, 9299, 9300, 9301, 9302, 9304);
-UPDATE quest_template SET RewMailDelaySecs=60 WHERE entry IN (9295, 9299, 9300, 9301, 9302, 9304);
+UPDATE quest_template SET RewMailDelaySecs=518400 WHERE entry IN (9295, 9299, 9300, 9301, 9302, 9304);
 UPDATE quest_template SET RewMailTemplateId=172 WHERE entry=9299;
 UPDATE quest_template SET RewMailTemplateId=173 WHERE entry=9295;
 UPDATE quest_template SET RewMailTemplateId=174 WHERE entry=9300;
