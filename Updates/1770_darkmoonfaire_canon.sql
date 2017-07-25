@@ -6,8 +6,8 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (12764, 5);
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES (12783, 180573, 1, -2199.4, -228.335, -14, 3.46558, 0, 0, 0.986908, -0.161286, 25, 25, 100, 1);
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (12783, 5);
 /* NPC */
-INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (52414, 15303, 1, 0, 15303, -1319.09, 79.5933, 129.62, 0.196173, 25, 25, 0, 0, 2016, 0, 0, 0);
-INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (52414, 5);
+INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (52413, 15303, 1, 0, 15303, -1319.09, 79.5933, 129.62, 0.196173, 25, 25, 0, 0, 2016, 0, 0, 0);
+INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (52413, 5);
 /* we need to correct ModelID of the mob used in the spell */
 UPDATE `mangos`.`creature_template` SET `ModelId1`='6908' WHERE  `Entry`=15214;
 /* Setting up the spells */
