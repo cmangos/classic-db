@@ -1,5 +1,5 @@
 
-DELETE FROM `reference_loot_template` WHERE `entry`='35019' and`item`='18520';
+DELETE FROM `reference_loot_template` WHERE `entry`='35019';
 
 DELETE FROM `creature_loot_template` WHERE `entry`='11501' and`item`='35019';
 
