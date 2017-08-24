@@ -15188,7 +15188,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Artorius the Doombringer 14535
 -- Lumbering Horror 14697 NSR
 -- Zap Farflinger 14742   npc_engineering_tele_trinket
--- Doctor Weavil 15552
+-- Doctor Weavil
+('1555201','15552','0','0','100','1','15000','15000','121000','121000','11','25772','1','0','0','0','0','0','0','0','0','0','Doctor Weavil - Cast Mental Domination'),
+('1555202','15552','0','0','100','1','15000','25000','25000','30000','11','25774','4','0','0','0','0','0','0','0','0','0','Doctor Weavil - Cast Mind Shatter'),
 -- Doctor Weavil's Flying Machine 15553
 -- Number Two 15554 0
 -- Elder Stonespire 15574
