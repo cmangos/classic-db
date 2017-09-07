@@ -47,16 +47,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sheep (1933) - NSR
 -- Treant (1964) - NSR
 -- Syndicate Footpad (3.1.1 Official Data)
-('224001','2240','9','0','100','1','0','5','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Footpad - Cast Backstab'),
+('224001','2240','33','0','100','1','0','0','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Footpad - Cast Backstab on Facing Target Back'),
 ('224002','2240','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Footpad - Flee at 15% HP'),
 -- Syndicate Thief (3.1.1 Official Data)
 ('224101','2241','11','0','100','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Poison Proc on Spawn'),
 ('224102','2241','0','0','100','1','2000','12000','36200','46300','11','6713','1','1','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Disarm'),
-('224103','2241','9','0','100','1','0','5','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Backstab'),
+('224103','2241','33','0','100','1','0','0','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Backstab on Facing Target Back'),
 ('224104','2241','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Thief - Flee at 15% HP'),
 -- Syndicate Spy (3.1.1 Official Data)
 ('224201','2242','11','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Syndicate Spy - Cast Sneak on Spawn'),
-('224202','2242','9','0','100','1','0','5','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Spy - Cast Backstab'),
+('224202','2242','33','0','100','1','0','0','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Spy - Cast Backstab on Facing Target Back'),
 ('224203','2242','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Spy - Flee at 15% HP'),
 -- Syndicate Sentry (3.1.1 Official Data)
 ('224301','2243','0','0','100','1','7000','12000','10700','28600','11','11972','1','0','0','0','0','0','0','0','0','0','Syndicate Sentry - Cast Shield Bash'),
@@ -478,7 +478,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Syndicate Highwayman (3.0.9 Official Data)
 ('258601','2586','1','0','100','0','0','0','0','0','11','22766','0','0','0','0','0','0','0','0','0','0','Syndicate Highwayman - Cast Sneak when OOC'),
 ('258602','2586','4','0','100','0','0','0','0','0','28','0','22766','0','0','0','0','0','0','0','0','0','Syndicate Highwayman - Removes Sneak on Aggro'),
-('258603','2586','0','0','100','1','1200','3400','2200','4200','11','15657','1','0','0','0','0','0','0','0','0','0','Syndicate Highwayman - Cast Backstab'),
+('258603','2586','33','0','100','1','0','0','2200','4200','11','15657','1','0','0','0','0','0','0','0','0','0','Syndicate Highwayman - Cast Backstab on Facing Target Back'),
 ('258604','2586','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Highwayman - Flee at 15% HP'),
 -- Syndicate Pathstalker (3.0.9 Official Data)
 ('258701','2587','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Syndicate Pathstalker - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
@@ -1425,7 +1425,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('703503','7035','0','0','100','1','10500','21500','16600','31500','11','13382','1','0','0','0','0','0','0','0','0','0','Firegut Brute - Cast Torch'),
 -- Thaurissan Spy (3.1.3 Official Data)
 ('703601','7036','11','0','100','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Thaurissan Spy - Cast Poison Proc on Spawn'),
-('703602','7036','0','0','100','1','1300','7300','4800','6100','11','7159','1','0','0','0','0','0','0','0','0','0','Thaurissan Spy - Cast Backstab'),
+('703602','7036','33','0','100','1','0','0','4800','6100','11','7159','1','0','0','0','0','0','0','0','0','0','Thaurissan Spy - Cast Backstab on Facing Target Back'),
 -- Thaurissan Firewalker (3.1.3 Official Data)
 ('703701','7037','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Thaurissan Firewalker - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('703702','7037','9','0','100','1','0','20','2400','4700','11','10452','1','0','0','0','0','0','0','0','0','0','Thaurissan Firewalker - Cast Flame Buffet'),
@@ -1804,7 +1804,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('111503','1115','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Rockjaw Skullthumper - Flee at 15% HP'),
 -- Rockjaw Ambusher (2.4.3 Official Data)
 ('111601','1116','4','0','15','0','0','0','0','0','1','-213','-214','-215','0','0','0','0','0','0','0','0','Rockjaw Ambusher - Random Say on Aggro'),
-('111602','1116','0','0','100','1','2000','4000','2100','5600','11','7159','1','0','0','0','0','0','0','0','0','0','Rockjaw Ambusher - Cast Backstab'),
+('111602','1116','33','0','100','1','0','0','2100','5600','11','7159','1','0','0','0','0','0','0','0','0','0','Rockjaw Ambusher - Cast Backstab on Facing Target Back'),
 ('111603','1116','2','0','100','0','20','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Rockjaw Ambusher - Flee at 20% HP'),
 -- Rockjaw Bonesnapper (2.4.3 Official Data)
 ('111701','1117','11','0','100','0','0','0','0','0','11','7095','0','1','0','0','0','0','0','0','0','0','Rockjaw Bonesnapper - Cast Knockdown Proc on Spawn'),
@@ -1821,7 +1821,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('112102','1121','9','0','100','1','0','20','4000','7000','11','6950','1','32','0','0','0','0','0','0','0','0','Frostmane Snowstrider - Cast Faerie Fire'),
 ('112103','1121','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Frostmane Snowstrider - Flee at 15% HP'),
 -- Frostmane Hideskinner (2.4.3 Official Data)
-('112201','1122','0','0','100','1','2000','4000','2000','4000','11','7159','1','0','0','0','0','0','0','0','0','0','Frostmane Hideskinner - Cast Backstab'),
+('112201','1122','33','0','100','1','0','0','2000','4000','11','7159','1','0','0','0','0','0','0','0','0','0','Frostmane Hideskinner - Cast Backstab on Facing Target Back'),
 ('112202','1122','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Frostmane Hideskinner - Flee at 15% HP'),
 -- Frostmane Headhunter (2.4.3 Official Data)
 ('112301','1123','4','0','10','0','0','0','0','0','1','-228','-229','-230','0','0','0','0','0','0','0','0','Frostmane Headhunter - Random Say on Aggro'),
@@ -2130,7 +2130,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Starving Dire Wolf (213) - NSR
 -- Defias Night Runner (3.0.3 Official Data)
 ('21501','215','1','0','100','0','1000','1000','0','0','11','22766','0','0','0','0','0','0','0','0','0','0','Defias Night Runner - Cast Sneak on Spawn'),
-('21502','215','0','0','80','1','3000','6000','5000','8000','11','2589','1','0','0','0','0','0','0','0','0','0','Defias Night Runner - Cast Backstab'),
+('21502','215','33','0','80','1','0','0','5000','8000','11','2589','1','0','0','0','0','0','0','0','0','0','Defias Night Runner - Cast Backstab on Facing Target Back'),
 ('21503','215','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Night Runner - Flee at 15% HP'),
 -- Venom Web Spider (3.0.3 Official Data)
 ('21701','217','11','0','100','0','0','0','0','0','11','7276','0','1','0','0','0','0','0','0','0','0','Venom Web Spider - Cast Poison Proc on Spawn'),
@@ -2283,7 +2283,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Defias Night Blade (3.0.3 Official Data)
 ('90901','909','11','0','100','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Defias Night Blade - Cast Poison Proc on Spawn'),
 ('90902','909','0','0','100','1','3200','15100','11700','44100','11','7992','1','0','0','0','0','0','0','0','0','0','Defias Night Blade - Cast Slowing Poison'),
-('90903','909','0','0','70','1','3900','12700','3900','12700','11','2589','4','0','0','0','0','0','0','0','0','0','Defias Night Blade - Cast Backstab'),
+('90903','909','33','0','70','1','0','0','3900','12700','11','2589','4','0','0','0','0','0','0','0','0','0','Defias Night Blade - Cast Backstab on Facing Target Back'),
 ('90904','909','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Night Blade - Flee at 15% HP'),
 -- Defias Enchanter (3.0.3 Official Data)
 ('91001','910','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Defias Enchanter - Cast Frost Armor on Spawn'),
@@ -2990,14 +2990,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kobold Labourer (2.4.2 Official Data)
 ('8001','80','4','0','30','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Labourer - Random Say on Aggro'),
 -- Defias Cutpurse (2.4.2 Official Data)
-('9401','94','0','0','100','1','1100','1100','2400','7900','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab'),
+('9401','94','33','0','100','1','0','0','2400','7900','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab on Facing Target Back'),
 -- Riverpaw Runt (2.4.2 Official Data)
 ('9701','97','4','0','30','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Riverpaw Runt - Random Say on Aggro'),
 ('9702','97','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Riverpaw Runt - Flee at 15% HP'),
 -- Morgaine the Sly (2.4.2 Official Data)
 ('9901','99','11','0','100','0','0','0','0','0','11','11959','0','1','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Poison Proc on Spawn'),
 ('9902','99','33','0','100','1','1','0','16300','16300','11','1776','1','0','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Gouge on Facing Target'),
-('9903','99','0','0','100','1','5500','5500','3400','5400','11','53','1','0','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Backstab'),
+('9903','99','33','0','100','1','0','0','3400','5400','11','53','1','0','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Backstab on Facing Target Back'),
 -- Gruff Swiftbite (2.4.2 Official Data)
 ('10001','100','11','0','100','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Gruff Swiftbite - Cast Thrash on Spawn'),
 -- Garrick Padfoot (2.4.2 Official Data)
@@ -3106,7 +3106,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chicken (620) - npc_chicken_cluck
 -- Rabbit (721) - NSR
 -- Murloc Lurker (2.4.2 Official Data)
-('73201','732','0','0','100','1','6000','9000','3900','6900','11','7159','1','0','0','0','0','0','0','0','0','0','Murloc Lurker - Cast Backstab'),
+('73201','732','33','0','100','1','0','0','3900','6900','11','7159','1','0','0','0','0','0','0','0','0','0','Murloc Lurker - Cast Backstab on Facing Target Back'),
 -- Murloc Streamrunner (735) - NSR
 -- Matt (794) - NSR
 -- Mark (795) - NSR
@@ -3209,7 +3209,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Defias Bodyguard (2.4.2 Official Data)
 ('686601','6866','4','0','40','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Bodyguard - Random Say on Aggro'),
 ('686602','6866','0','0','70','1','2900','5400','34000','38000','11','6713','1','0','0','0','0','0','0','0','0','0','Defias Bodyguard - Cast Disarm'),
-('686603','6866','0','0','80','1','5500','7800','5900','12900','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Bodyguard - Cast Backstab'),
+('686603','6866','33','0','80','1','0','0','5900','12900','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Bodyguard - Cast Backstab on Facing Target Back'),
 -- Defias Dockworker (2.4.2 Official Data)
 ('692701','6927','4','0','30','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Dockworker - Random Say on Aggro'),
 ('692702','6927','0','0','100','1','8500','10500','37100','42100','11','8646','1','0','0','0','0','0','0','0','0','0','Defias Dockworker - Cast Snap Kick'),
@@ -3298,11 +3298,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ferocious Yeti
 ('224901','2249','2','0','100','0','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Ferocious Yeti - Cast Enrage at 20% HP'),
 -- Syndicate Rogue
-('226001','2260','9','0','100','1','0','5','8000','12000','11','15657','1','0','0','0','0','0','0','0','0','0','Syndicate Rogue - Cast Backstab'),
+('226001','2260','933','0','100','1','0','0','8000','12000','11','15657','1','0','0','0','0','0','0','0','0','0','Syndicate Rogue - Cast Backstab on Facing Target Back'),
 -- Syndicate Watchman (2261) - NSR
 -- Marshal Redpath (2263) - NSR
 -- Hillsbrad Tailor
-('226401','2264','9','0','100','1','0','5','7000','9000','11','2590','1','0','0','0','0','0','0','0','0','0','Hillsbrad Tailor - Cast Backstab'),
+('226401','2264','33','0','100','1','0','0','7000','9000','11','2590','1','0','0','0','0','0','0','0','0','0','Hillsbrad Tailor - Cast Backstab on Facing Target Back'),
 ('226402','2264','9','0','100','1','0','5','7000','11000','11','101','1','1','0','0','0','0','0','0','0','0','Hillsbrad Tailor - Cast Trip'),
 ('226403','2264','2','0','100','0','30','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Hillsbrad Tailor - Flee at 30% HP'),
 -- Hillsbrad Apprentice Blacksmith
@@ -4266,7 +4266,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('57801','578','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murloc Scout - Flee at 15% HP'),
 -- Shadowhide Assassin (2.4.3 Official Data)
 ('57901','579','1','0','100','0','1000','1000','0','0','11','22766','0','0','11','3616','0','0','0','0','0','0','Shadowhide Assassin - Cast Stealth and Poison Proc on Spawn'),
-('57902','579','0','0','100','1','3700','3700','3600','12400','11','2590','1','0','0','0','0','0','0','0','0','0','Shadowhide Assassin - Cast Backstab'),
+('57902','579','33','0','100','1','0','0','3600','12400','11','2590','1','0','0','0','0','0','0','0','0','0','Shadowhide Assassin - Cast Backstab on Facing Target Back'),
 ('57903','579','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowhide Assassin - Flee at 15% HP'),
 -- Redridge Drudger (2.4.3 Official Data)
 ('58001','580','4','0','10','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Redridge Drudger - Random Say on Aggro'),
@@ -4730,7 +4730,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('195601','1956','11','0','100','0','0','0','0','0','11','6871','0','1','0','0','0','0','0','0','0','0','Elder Lake Creeper - Cast Moss Covered Feet Proc on Spawn'),
 ('195602','1956','0','0','100','1','4700','11200','24100','40100','11','11922','4','1','0','0','0','0','0','0','0','0','Elder Lake Skulker - Cast Entangling Roots'),
 -- Vile Fin Shorecreeper (3.3.5a Official Data)
-('195701','1957','9','0','100','0','0','5','0','0','11','7159','1','1','0','0','0','0','0','0','0','0','Vile Fin Shorecreeper - Cast Backstab'),
+('195701','1957','33','0','100','1','0','0','0','0','11','7159','1','1','0','0','0','0','0','0','0','0','Vile Fin Shorecreeper - Cast Backstab on Facing Target Back'),
 ('195702','1957','33','0','100','1','1','0','30800','38600','11','1776','1','0','0','0','0','0','0','0','0','0','Vile Fin Shorecreeper - Cast Gouge on Facing Target'),
 ('195703','1957','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vile Fin Shorecreeper - Flee at 15% HP'),
 -- Vile Fin Tidecaller (3.3.5a Official Data)
@@ -4793,11 +4793,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pyrewood Armorer (3528) - NSR
 -- Moonrage Armorer (3529) - NSR
 -- Pyrewood Tailor (4.0.1 Official Data) - Disarm Data is Rough Scripted
-('353001','3530','9','0','100','0','0','5','0','0','11','15657','1','1','0','0','0','0','0','0','0','0','Pyrewood Tailor - Cast Backstab'),
+('353001','3530','33','0','100','1','0','0','0','0','11','15657','1','1','0','0','0','0','0','0','0','0','Pyrewood Tailor - Cast Backstab on Facing Target Back'),
 ('353002','3530','0','0','100','1','12000','19000','21000','28000','11','6713','1','0','0','0','0','0','0','0','0','0','Pyrewood Tailor - Cast Disarm'),
 ('353003','3530','0','0','100','1','3800','8200','17800','34100','11','7140','1','1','0','0','0','0','0','0','0','0','Pyrewood Tailor - Cast Expose Weakness'),
 -- Moonrage Tailor (4.0.1 Official Data) - Disarm Data is Rough Scripted
-('353101','3531','9','0','100','0','0','5','0','0','11','15657','1','1','0','0','0','0','0','0','0','0','Moonrage Tailor - Cast Backstab'),
+('353101','3531','33','0','100','1','0','0','0','0','11','15657','1','1','0','0','0','0','0','0','0','0','Moonrage Tailor - Cast Backstab on Facing Target Back'),
 ('353102','3531','0','0','100','1','12000','19000','21000','28000','11','6713','1','0','0','0','0','0','0','0','0','0','Moonrage Tailor - Cast Disarm'),
 ('353103','3531','0','0','100','1','3800','8200','17800','34100','11','7140','1','1','0','0','0','0','0','0','0','0','Moonrage Tailor - Cast Expose Weakness'),
 -- Pyrewood Leatherworker (3532) - NSR
@@ -5550,7 +5550,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('93701','937','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kurzen Jungle Fighter - Flee at 15% HP'),
 -- Kurzen Commando
 ('93801','938','1','0','100','0','1000','1000','0','0','11','22766','0','0','0','0','0','0','0','0','0','0','Kurzen Commando - Cast Stealth on Spawn'),
-('93802','938','0','0','100','1','2400','4100','2400','4100','11','2591','1','0','0','0','0','0','0','0','0','0','Kurzen Commando - Cast Backstab'),
+('93802','938','33','0','100','1','0','0','2400','4100','11','2591','1','0','0','0','0','0','0','0','0','0','Kurzen Commando - Cast Backstab on Facing Target Back'),
 ('93803','938','2','0','100','0','15','0','0','0','11','7964','0','0','0','0','0','0','0','0','0','0','Kurzen Commando - Cast Smoke Bomb at 15% HP'),
 -- Kurzen Elite
 ('93901','939','0','0','100','1','7700','11000','8100','26200','11','15496','1','0','0','0','0','0','0','0','0','0','Kurzen Elite - Cast Cleave'),
@@ -5658,7 +5658,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('156411','1564','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bloodsail Warlock - Set Phase to 0 on Evade'),
 -- Bloodsail Sea Dog
 ('156501','1565','11','0','100','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Bloodsail Sea Dog - Cast Poison Proc on Spawn'),
-('156502','1565','0','0','100','1','2000','3500','6000','8500','11','15657','1','0','0','0','0','0','0','0','0','0','Bloodsail Sea Dog - Cast Backstab'),
+('156502','1565','33','0','100','1','0','0','6000','8500','11','15657','1','0','0','0','0','0','0','0','0','0','Bloodsail Sea Dog - Cast Backstab on Facing Target Back'),
 ('156503','1565','33','0','100','1','1','0','21100','24200','11','12540','1','1','0','0','0','0','0','0','0','0','Bloodsail Sea Dog - Cast Gouge on Facing Target'),
 ('156504','1565','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodsail Sea Dog - Flee at 15% HP'),
 -- Bloodsail Elder Magus
@@ -5824,7 +5824,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('75211','752','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Marsh Oracle - Flee at 15% HP (Phase 3)'),
 ('75212','752','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Marsh Oracle - Set Phase to 0 on Evade'),
 -- Lost One Mudlurker
-('75501','755','9','0','100','1','0','5','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Lost One Mudlurker - Cast Backstab'),
+('75501','755','33','0','100','1','0','0','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Lost One Mudlurker - Cast Backstab on Facing Target Back'),
 ('75502','755','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lost One Mudlurker - Flee at 15% HP'),
 -- Lost One Fisherman
 ('75701','757','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lost One Fisherman - Flee at 15% HP'),
@@ -6039,7 +6039,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('264301','2643','2','0','100','0','30','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Vilebranch Berserker - Cast Enrage at 30% HP'),
 ('264302','2643','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vilebranch Berserker - Flee at 15% HP'),
 -- Vilebranch Hideskinner
-('264401','2644','9','0','100','1','0','5','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Vilebranch Hideskinner - Cast Backstab'),
+('264401','2644','33','0','100','1','0','0','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Vilebranch Hideskinner - Cast Backstab on Facing Target Back'),
 ('264402','2644','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vilebranch Hideskinner - Flee at 15% HP'),
 -- Vilebranch Shadow Hunter
 ('264501','2645','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Vilebranch Shadow Hunter - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
@@ -6073,7 +6073,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Witherbark Zealot
 ('265001','2650','2','0','100','1','30','0','120000','125000','11','8599','0','1','1','-106','0','0','0','0','0','0','Witherbark Zealot - Cast Enrage at 30% HP'),
 -- Witherbark Hideskinner
-('265101','2651','9','0','100','1','0','5','5000','9000','11','8721','1','0','0','0','0','0','0','0','0','0','Witherbark Hideskinner - Cast Backstab'),
+('265101','2651','33','0','100','1','0','0','5000','9000','11','8721','1','0','0','0','0','0','0','0','0','0','Witherbark Hideskinner - Cast Backstab on Facing Target Back'),
 ('265102','2651','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Hideskinner - Flee at 15% HP'),
 -- Witherbark Venomblood
 ('265201','2652','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Venomblood - Flee at 15% HP'),
@@ -6243,7 +6243,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('821703','8217','9','0','100','1','5000','9000','12000','16000','11','11436','5','1','0','0','0','0','0','0','0','0','Mith\'rethis the Enchanter - Cast Slow'),
 -- Witherheart the Stalker
 ('821801','8218','11','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Witherheart the Stalker - Cast Sneak on Spawn'),
-('821802','8218','9','0','100','1','0','5','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Witherheart the Stalker - Cast Backstab'),
+('821802','8218','33','0','100','1','0','0','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Witherheart the Stalker - Cast Backstab on Facing Target Back'),
 -- Zul'arek Hatefowler
 ('821901','8219','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Zul\'arek Hatefowler - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('821902','8219','9','13','100','1','8','30','3400','4800','11','17228','1','0','0','0','0','0','0','0','0','0','Zul\'arek Hatefowler - Cast Shadow Bolt Volley (Phase 1)'),
@@ -6447,7 +6447,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('154411','1544','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vile Fin Minor Oracle - Flee at 15% HP (Phase 3)'),
 ('154412','1544','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Vile Fin Minor Oracle - Set Phase to 0 on Evade'),
 -- Vile Fin Muckdweller
-('154501','1545','9','0','100','1','3000','7000','7000','12000','11','7159','1','0','0','0','0','0','0','0','0','0','Vile Fin Muckdweller - Cast Backstab'),
+('154501','1545','33','0','100','1','0','0','7000','12000','11','7159','1','0','0','0','0','0','0','0','0','0','Vile Fin Muckdweller - Cast Backstab on Facing Target Back'),
 ('154502','1545','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vile Fin Muckdweller - Flee at 15% HP'),
 -- Decrepit Darkhound (1547) - NSR
 -- Cursed Darkhound (1548) - NSR
@@ -6688,7 +6688,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Alexi Barov
 ('1102201','11022','9','0','100','1','0','5','13000','18000','11','15583','1','1','0','0','0','0','0','0','0','0','Alexi Barov - Cast Rupture'),
 ('1102202','11022','0','0','100','1','5000','9000','9000','13000','11','14873','4','0','0','0','0','0','0','0','0','0','Alexi Barov - Cast Sinister Strike'),
-('1102203','11022','0','0','100','1','7000','12000','14000','21000','11','7159','1','0','0','0','0','0','0','0','0','0','Alexi Barov - Cast Backstab'),
+('1102203','11022','33','0','100','1','0','0','14000','21000','11','7159','1','0','0','0','0','0','0','0','0','0','Alexi Barov - Cast Backstab on Facing Target Back'),
 ('1102204','11022','13','0','100','1','6000','10000','0','0','11','15614','1','1','0','0','0','0','0','0','0','0','Alexi Barov - Cast Kick on Target Spell Casting'),
 -- Shadow Priestess Vandis (11055) - NSR
 -- Apothecary Dithers (11057) - npcs_dithers_and_arbington
@@ -7570,7 +7570,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('9503','95','9','5','100','1','5','30','3500','4100','11','10277','1','0','40','2','0','0','0','0','0','0','Defias Smuggler - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('9504','95','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Defias Smuggler - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('9505','95','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Defias Smuggler - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('9506','95','0','0','65','1','1300','7300','3800','6900','11','53','1','0','0','0','0','0','0','0','0','0','Defias Smuggler - Cast Backstab'),
+('9506','95','33','0','65','1','0','0','3800','6900','11','53','1','0','0','0','0','0','0','0','0','0','Defias Smuggler - Cast Backstab on Facing Target Back'),
 ('9507','95','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Defias Smuggler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('9508','95','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Smuggler - Flee at 15% HP (Phase 2)'),
 ('9509','95','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Defias Smuggler - Set Phase 1 and Set Melee Weapon Model on Evade'),
@@ -7585,12 +7585,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('11702','117','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Riverpaw Gnoll - Flee at 15% HP'),
 -- Defias Pathstalker (2.4.3 Official Data)
 ('12101','121','4','0','15','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Pathstalker - Random Say on Aggro'),
-('12102','121','0','0','65','1','1300','7300','4800','4900','11','53','1','0','0','0','0','0','0','0','0','0','Defias Pathstalker - Cast Backstab'),
+('12102','121','33','0','65','1','0','0','4800','4900','11','53','1','0','0','0','0','0','0','0','0','0','Defias Pathstalker - Cast Backstab on Facing Target Back'),
 ('12103','121','9','0','100','1','0','5','25200','39100','11','11972','1','0','0','0','0','0','0','0','0','0','Defias Pathstalker- Cast Shield Bash'),
 ('12104','121','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Pathstalker - Flee at 15% HP'),
 -- Defias Highwayman (2.4.3 Official Data)
 ('12201','122','4','0','15','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Highwayman - Random Say on Aggro'),
-('12202','122','0','0','100','1','1000','3000','1200','3600','11','53','1','0','0','0','0','0','0','0','0','0','Defias Highwayman - Cast Backstab'),
+('12202','122','33','0','100','1','0','0','1200','3600','11','53','1','0','0','0','0','0','0','0','0','0','Defias Highwayman - Cast Backstab on Facing Target Back'),
 ('12203','122','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Highwayman - Flee at 15% HP'),
 -- Riverpaw Mongrel (2.4.3 Official Data)
 ('12301','123','4','0','15','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Riverpaw Mongrel - Random Say on Aggro'),
@@ -7638,7 +7638,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('45011','450','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Defias Renegade Mage - Set Phase to 0 on Evade'),
 -- Riverpaw Bandit (2.4.3 Official Data)
 ('45201','452','4','0','8','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Riverpaw Bandit - Random Say on Aggro'),
-('45202','452','0','0','100','1','1200','3400','2800','13800','11','53','1','0','0','0','0','0','0','0','0','0','Riverpaw Bandit - Cast Backstab'),
+('45202','452','33','0','100','1','0','0','2800','13800','11','53','1','0','0','0','0','0','0','0','0','0','Riverpaw Bandit - Cast Backstab on Facing Target Back'),
 ('45203','452','0','0','85','1','2200','9600','16800','39400','11','7357','1','0','0','0','0','0','0','0','0','0','Riverpaw Bandit - Cast Poisonous Stab'),
 ('45204','452','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Riverpaw Bandit - Flee at 15% HP'),
 -- Riverpaw Mystic (2.4.3 Official Data)
@@ -7680,7 +7680,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('48001','480','0','0','100','1','7100','18600','22200','34500','11','8014','1','32','0','0','0','0','0','0','0','0','Rusty Harvest Golem - Cast Tetanus'),
 -- Defias Footpad (2.4.3 Official Data)
 ('48101','481','4','0','5','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Footpad - Random Say on Aggro'),
-('48102','481','0','0','100','1','5900','10200','8200','14100','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Footpad - Cast Backstab'),
+('48102','481','33','0','100','1','0','0','8200','14100','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Footpad - Cast Backstab on Facing Target Back'),
 ('48103','481','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Footpad - Flee at 15% HP'),
 -- Riverpaw Scout (2.4.3 Official Data)
 ('50001','500','4','0','15','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Riverpaw Scout - Random Say on Aggro'),
@@ -7700,7 +7700,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Defias Trapper (2.4.3 Official Data)
 ('50401','504','4','0','5','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Trapper - Random Say on Aggro'),
 ('50402','504','9','0','100','1','0','15','20500','31100','11','12024','1','1','0','0','0','0','0','0','0','0','Defias Trapper - Cast Net'),
-('50403','504','0','0','100','1','2300','4700','2400','7300','11','2589','1','0','0','0','0','0','0','0','0','0','Defias Trapper - Cast Backstab'),
+('50403','504','33','0','100','1','0','0','2400','7300','11','2589','1','0','0','0','0','0','0','0','0','0','Defias Trapper - Cast Backstab on Facing Target Back'),
 ('50404','504','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Trapper - Flee at 15% HP'),
 -- Sergeant Brashclaw (2.4.3 Official Data)
 ('50601','506','11','0','100','0','0','0','0','0','11','7095','0','1','0','0','0','0','0','0','0','0','Sergeant Brashclaw - Cast Knockdown Proc on Spawn'),
@@ -7761,7 +7761,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('58912','589','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Defias Pillager - Set Phase to 0 on Evade'),
 -- Defias Looter (2.4.3 Official Data)
 ('59001','590','4','0','15','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Looter - Random Say on Aggro'),
-('59002','590','0','0','100','1','3000','4500','2000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Looter - Cast Backstab'),
+('59002','590','33','0','100','1','0','0','2000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Looter - Cast Backstab on Facing Target Back'),
 ('59003','590','0','0','80','1','2000','6000','38100','48200','11','6713','1','1','0','0','0','0','0','0','0','0','Defias Looter - Cast Disarm'),
 ('59004','590','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Looter - Flee at 15% HP'),
 -- Defias Henchman (2.4.3 Official Data)
@@ -8143,7 +8143,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Slim's Friend
 ('497101','4971','11','0','100','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Slim\'s Friend - Cast Poison Proc on Spawn'),
 ('497102','4971','0','0','100','1','5000','8900','8400','15300','11','7992','1','32','0','0','0','0','0','0','0','0','Slim\'s Friend - Cast Slowing Poison'),
-('497103','4971','0','0','70','1','500','500','2100','5600','11','2589','1','0','0','0','0','0','0','0','0','0','Slim\'s Friend - Cast Backstab'),
+('497103','4971','33','0','70','1','0','0','2100','5600','11','2589','1','0','0','0','0','0','0','0','0','0','Slim\'s Friend - Cast Backstab on Facing Target Back'),
 -- Dark Iron Rifleman
 ('652301','6523','4','0','15','0','0','0','0','0','1','-357','-358','-406','0','0','0','0','0','0','0','0','Dark Iron Rifleman - Random Say on Aggro'),
 ('652302','6523','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Dark Iron Rifleman - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
@@ -8452,7 +8452,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('380301','3803','9','0','100','1','0','10','22600','39600','11','2691','1','0','0','0','0','0','0','0','0','0','Severed Keeper - Cast Mana Burn'),
 -- Forsaken Intruder
 ('380401','3804','11','0','100','0','0','0','0','0','11','8218','0','0','0','0','0','0','0','0','0','0','Forsaken Intruder - Cast Sneak on Spawn'),
-('380402','3804','9','0','100','1','0','5','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Forsaken Intruder - Cast Backstab'),
+('380402','3804','33','0','100','1','0','0','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Forsaken Intruder - Cast Backstab on Facing Target Back'),
 -- Forsaken Infiltrator
 ('380601','3806','11','0','100','0','0','0','0','0','11','8218','0','0','0','0','0','0','0','0','0','0','Forsaken Infiltrator - Cast Sneak on Spawn'),
 -- Forsaken Assassin
@@ -9051,7 +9051,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Legashi Satyr
 ('620001','6200','0','0','100','1','5000','8000','8000','13000','11','11981','4','0','0','0','0','0','0','0','0','0','Legashi Satyr - Cast Mana Burn'),
 -- Legashi Rogue
-('620101','6201','0','0','100','1','5000','8000','6000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Legashi Rogue - Cast Backstab'),
+('620101','6201','33','0','100','1','0','0','6000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Legashi Rogue - Cast Backstab on Facing Target Back'),
 ('620102','6201','33','0','100','1','1','0','9000','12000','11','12540','1','1','0','0','0','0','0','0','0','0','Legashi Rogue - Cast Gouge on Facing Target'),
 -- Legashi Hellcaller
 ('620201','6202','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Legashi Hellcaller - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -11176,7 +11176,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jadefire Satyr
 ('710501','7105','0','0','100','1','6000','9000','16000','19000','11','13578','0','0','0','0','0','0','0','0','0','0','Jadefire Satyr - Cast Jadefire'),
 -- Jadefire Rogue
-('710601','7106','9','0','100','1','0','5','6000','11000','11','7159','1','0','0','0','0','0','0','0','0','0','Jadefire Rogue - Cast Backstab'),
+('710601','7106','33','0','100','1','0','0','6000','11000','11','7159','1','0','0','0','0','0','0','0','0','0','Jadefire Rogue - Cast Backstab on Facing Target Back'),
 ('710602','7106','33','0','100','1','1','0','9000','12000','11','13579','1','1','0','0','0','0','0','0','0','0','Jadefire Rogue - Cast Gouge on Facing Target'),
 ('710603','7106','0','0','100','1','6000','9000','16000','19000','11','13578','0','0','0','0','0','0','0','0','0','0','Jadefire Rogue - Cast Jadefire'),
 -- Jadefire Trickster
@@ -13568,7 +13568,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Alchemist Pestlezugg (5594) - NSR
 -- Wastewander Rogue (4.0.3 Official Data)
 ('561501','5615','11','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Sneak on Spawn'),
-('561502','5615','9','0','100','1','0','5','11500','18900','11','8721','1','0','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Backstab'),
+('561502','5615','33','0','100','1','0','0','11500','18900','11','8721','1','0','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Backstab on Facing Target Back'),
 ('561503','5615','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Wastewander Rogue - Flee at 15% HP'),
 ('561504','5615','21','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Sneak on Return Home'),
 -- Wastewander Thief (4.0.3 Official Data)
@@ -13593,7 +13593,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('562302','5623','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Wastewander Assassin - Flee at 15% HP'),
 -- Sandfury Hideskinner (4.0.3 Official Data)
 ('564501','5645','11','0','100','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Sandfury Hideskinner - Cast Poison Proc on Spawn'),
-('564502','5645','9','0','100','1','0','5','6200','18300','11','7159','1','0','0','0','0','0','0','0','0','0','Sandfury Hideskinner - Cast Backstab'),
+('564502','5645','33','0','100','1','0','0','6200','18300','11','7159','1','0','0','0','0','0','0','0','0','0','Sandfury Hideskinner - Cast Backstab on Facing Target Back'),
 ('564503','5645','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sandfury Hideskinner - Flee at 15% HP'),
 -- Sandfury Axe Thrower (4.0.3 Official Data)
 ('564601','5646','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Sandfury Axe Thrower - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
@@ -15748,7 +15748,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('904004','9040','9','0','100','1','0','5','12000','16000','11','15583','1','1','0','0','0','0','0','0','0','0','Dope\'rel - Cast Rupture'),
 ('904005','9040','33','0','100','1','1','0','12000','17000','11','12540','4','1','0','0','0','0','0','0','0','0','Dope\'rel - Cast Gouge on Facing Target'),
 ('904006','9040','0','0','100','1','1000','5000','25000','35000','11','15087','0','1','0','0','0','0','0','0','0','0','Dope\'rel - Cast Evasion'),
-('904007','9040','0','0','100','1','3000','7000','5000','9000','11','15582','1','0','0','0','0','0','0','0','0','0','Dope\'rel - Cast Backstab'),
+('904007','9040','33','0','100','1','0','0','5000','9000','11','15582','1','0','0','0','0','0','0','0','0','0','Dope\'rel - Cast Backstab on Facing Target Back'),
 ('904008','9040','7','0','100','0','0','0','0','0','11','30991','0','1','18','256','0','0','0','0','0','0','Dope\'rel - Cast Stealth and Unitflag added on Evade'),
 ('904009','9040','21','0','100','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Dope\'rel - Set Instance Data on Reached Home'),
 -- Warder Stilgiss
@@ -16252,7 +16252,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1031802','10318','4','0','100','0','0','0','0','0','28','0','22766','0','0','0','0','0','0','0','0','0','Blackhand Assassin - Removes Sneak on Aggro'),
 ('1031803','10318','33','0','100','1','1','0','13200','22300','11','12540','1','0','0','0','0','0','0','0','0','0','Blackhand Assassin - Cast Gouge on Facing Target'),
 ('1031804','10318','0','0','100','1','9800','33100','60100','60100','11','6434','0','1','0','0','0','0','0','0','0','0','Blackhand Assassin - Cast Slice and Dice'),
-('1031805','10318','9','0','100','1','0','5','2100','4700','11','15582','1','0','0','0','0','0','0','0','0','0','Blackhand Assassin - Cast Backstab'),
+('1031805','10318','33','0','100','1','0','0','2100','4700','11','15582','1','0','0','0','0','0','0','0','0','0','Blackhand Assassin - Cast Backstab on Facing Target Back'),
 -- Blackhand Ironguard
 ('1031901','10319','9','0','100','1','0','5','6600','18200','11','15655','1','0','0','0','0','0','0','0','0','0','Blackhand Ironguard - Cast Shield Slam'),
 ('1031902','10319','2','0','100','0','10','0','0','0','11','15062','0','0','0','0','0','0','0','0','0','0','Blackhand Ironguard - Cast Shield Wall at 10% HP'),
@@ -16508,7 +16508,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wildspawn Shadowstalker (3.3.3 Official Data)
 ('1145601','11456','11','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Wildspawn Shadowstalker - Cast Sneak on Spawn'),
 ('1145602','11456','9','0','100','1','0','30','11600','16400','11','7992','4','33','0','0','0','0','0','0','0','0','Wildspawn Shadowstalker - Cast Slowing Poison'),
-('1145603','11456','9','0','100','1','0','5','7200','9200','11','22416','1','0','0','0','0','0','0','0','0','0','Wildspawn Shadowstalker - Cast Backstab'),
+('1145603','11456','33','0','100','1','0','0','7200','9200','11','22416','1','0','0','0','0','0','0','0','0','0','Wildspawn Shadowstalker - Cast Backstab on Facing Target Back'),
 ('1145604','11456','7','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Wildspawn Shadowstalker - Cast Sneak on Evade'),
 -- Wildspawn Hellcaller (3.3.3 Official Data)
 ('1145701','11457','11','0','100','0','0','0','0','0','11','13376','0','1','0','0','0','0','0','0','0','0','Wildspawn Hellcaller - Cast Fire Shield on Spawn'),
@@ -16908,7 +16908,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('620607','6206','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Caverndeep Burrower - Flee at 15% HP'),
 ('620608','6206','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Caverndeep Burrower - Set Phase to 0 on Evade'),
 -- Caverndeep Ambusher (3.3.5a Official Data)
-('620701','6207','9','0','100','0','0','5','0','0','11','2590','1','0','0','0','0','0','0','0','0','0','Caverndeep Ambusher - Cast Backstab'),
+('620701','6207','33','0','100','1','0','0','0','0','11','2590','1','0','0','0','0','0','0','0','0','0','Caverndeep Ambusher - Cast Backstab on Facing Target Back'),
 ('620702','6207','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Caverndeep Ambusher - Emote on Radiation Spellhit'),
 ('620703','6207','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Caverndeep Ambusher - Flee at 15% HP'),
 -- Caverndeep Reaver (3.3.5a Official Data)
@@ -17093,7 +17093,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1179002','11790','0','0','100','1','8000','15000','12000','15000','11','15667','1','1','0','0','0','0','0','0','0','0','Putridus Satyr - Cast Sinister Strike'),
 -- Putridus Trickster
 ('1179101','11791','11','0','100','0','0','0','0','0','11','3417','0','0','0','0','0','0','0','0','0','0','Putridus Trickster - Cast Thrash on Spawn'),
-('1179102','11791','9','0','100','1','0','5','5000','8000','11','15657','1','0','0','0','0','0','0','0','0','0','Putridus Trickster - Cast Backstab'),
+('1179102','11791','33','0','100','1','0','0','5000','8000','11','15657','1','0','0','0','0','0','0','0','0','0','Putridus Trickster - Cast Backstab on Facing Target Back'),
 -- Putridus Shadowstalker
 ('1179201','11792','1','0','100','1','1000','1000','30000','30000','11','1785','0','32','0','0','0','0','0','0','0','0','Putridus Shadowstalker - Cast Stealth on Spawn'),
 ('1179202','11792','9','0','100','1','0','5','12000','15000','11','9080','1','0','0','0','0','0','0','0','0','0','Putridus Shadowstalker - Cast Hamstring'),
@@ -17615,7 +17615,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('484211','4842','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Earthcaller Halmgar - Set Phase to 0 on Evade'),
 -- Boar Spirit (6021) - NSR
 -- Razorfen Stalker
-('603501','6035','9','0','100','1','0','5','5000','7000','11','7159','1','0','0','0','0','0','0','0','0','0','Razorfen Stalker - Cast Backstab'),
+('603501','6035','33','0','100','1','0','0','5000','7000','11','7159','1','0','0','0','0','0','0','0','0','0','Razorfen Stalker - Cast Backstab on Facing Target Back'),
 -- Roogug
 ('616801','6168','11','0','100','0','0','0','0','0','11','8270','0','1','0','0','0','0','0','0','0','0','Roogug - Summon Earth Rumbler on Spawn'),
 ('616802','6168','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Roogug - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -18877,7 +18877,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('170603','1706','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Prisoner - Flee at 15% HP'),
 ('170604','1706','11','0','100','0','1','34','0','0','2','17','0','0','0','0','0','0','0','0','0','0','Defias Prisoner - Turn Hostile Inside The Stockade'),
 -- Defias Captive (3.0.3 Official Data)
-('170701','1707','0','0','100','1','2100','4000','2200','7100','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Captive - Cast Backstab'),
+('170701','1707','33','0','100','1','0','0','2200','7100','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Captive - Cast Backstab on Facing Target Back'),
 ('170702','1707','0','0','100','1','1800','13500','1000','9500','11','3427','1','32','0','0','0','0','0','0','0','0','Defias Captive - Cast Infected Wound'),
 ('170703','1707','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Captive - Flee at 15% HP'),
 -- Defias Inmate (3.0.3 Official Data)
@@ -18933,7 +18933,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('484904','4849','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowforge Archaeologist - Flee at 15% HP'),
 -- Stonevault Cave Lurker (4.0.1 Official Data) - Backstab Was Removed in 4.0.1
 ('485001','4850','11','0','100','0','0','0','0','0','11','22766','0','0','11','10022','0','0','0','0','0','0','Stonevault Cave Lurker - Cast Sneak and Deadly Poison on Spawn'),
-('485002','4850','9','0','100','1','0','5','4800','16900','11','8721','1','0','0','0','0','0','0','0','0','0','Stonevault Cave Lurker - Cast Backstab'),
+('485002','4850','33','0','100','1','0','0','4800','16900','11','8721','1','0','0','0','0','0','0','0','0','0','Stonevault Cave Lurker - Cast Backstab on Facing Target Back'),
 ('485003','4850','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Stonevault Cave Lurker - Flee at 15% HP'),
 ('485004','4850','7','0','100','0','0','0','0','0','11','22766','0','1','0','0','0','0','0','0','0','0','Stonevault Cave Lurker - Cast Sneak on Evade'),
 -- Stonevault Rockchewer (3.1.1 Official Data)
@@ -19052,7 +19052,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('709104','7091','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowforge Ambusher - Flee at 15% HP'),
 -- Lore Keeper of Norgannon (7172) - NSR
 -- Stonevault Ambusher (3.3.5a Official Data)
-('717501','7175','9','0','100','0','0','5','0','0','11','8721','1','0','0','0','0','0','0','0','0','0','Stonevault Ambusher - Cast Backstab'),
+('717501','7175','33','0','100','1','0','0','0','0','11','8721','1','0','0','0','0','0','0','0','0','0','Stonevault Ambusher - Cast Backstab on Facing Target Back'),
 ('717502','7175','2','0','100','0','50','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Stonevault Ambusher - Cast Enrage at 50% HP'),
 -- Ancient Stone Keeper (4.0.1 Official Data)
 ('720601','7206','0','0','100','1','4300','7800','30100','45400','11','10132','0','0','0','0','0','0','0','0','0','0','Ancient Stone Keeper - Cast Sand Storms'),
@@ -19348,7 +19348,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('760501','7605','11','0','100','0','0','0','0','0','11','7276','0','1','0','0','0','0','0','0','0','0','Raven - Cast Poison Proc on Spawn'),
 ('760502','7605','4','0','100','0','0','0','0','0','11','674','0','0','0','0','0','0','0','0','0','0','Raven - Cast Dual Wield on Aggro'),
 ('760503','7605','33','0','100','1','1','0','8400','19300','11','12540','1','0','0','0','0','0','0','0','0','0','Raven - Cast Gouge on Facing Target'),
-('760504','7605','0','0','100','1','3000','6000','18000','21000','11','7159','1','0','0','0','0','0','0','0','0','0','Raven - Cast Backstab'),
+('760504','7605','33','0','100','1','0','0','18000','21000','11','7159','1','0','0','0','0','0','0','0','0','0','Raven - Cast Backstab on Facing Target Back'),
 -- Oro Eyegouge (4.0.1 Official Data) - Data is not complete but is as good as I could get after multiple runs on the Instance
 ('760601','7606','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Oro Eyegouge - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('760602','7606','9','5','100','1','0','40','3600','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Oro Eyegouge - Cast Shadow Bolt (Phase 1)'),
@@ -20462,7 +20462,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1167704','11677','2','0','100','1','30','0','30000','35000','11','16170','0','1','0','0','0','0','0','0','0','0','Taskmaster Snivvle - Cast Bloodlust at 30% HP'),
 -- Snowblind Ambusher
 ('1167801','11678','0','0','100','1','4900','14400','22500','41700','11','19472','1','0','0','0','0','0','0','0','0','0','Snowblind Ambusher - Cast Sinister Strike'),
-('1167802','11678','0','0','100','1','2000','4000','4000','6000','11','7159','1','1','0','0','0','0','0','0','0','0','Snowblind Ambusher - Cast Backstab'),
+('1167802','11678','33','0','100','1','0','0','4000','6000','11','7159','1','1','0','0','0','0','0','0','0','0','Snowblind Ambusher - Cast Backstab on Facing Target Back'),
 -- Wildpaw Shaman
 ('1183701','11837','0','0','100','1','6000','9000','16000','19000','11','12557','0','0','0','0','0','0','0','0','0','0','Wildpaw Shaman - Cast Cone of Cold'),
 ('1183702','11837','2','0','100','1','50','0','60000','65000','11','18975','0','1','0','0','0','0','0','0','0','0','Wildpaw Shaman - Summon Ice Totem at 50% HP'),
