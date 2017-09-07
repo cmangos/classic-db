@@ -2118,7 +2118,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('20308','203','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Skeletal Mage - Cast Frost Armor on Missing Buff'),
 ('20309','203','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Skeletal Mage - Set Phase to 0 on Evade'),
 -- Nightbane Dark Runner (3.0.3 Official Data)
-('20501','205','0','0','100','1','1700','3900','10000','21800','11','6595','1','0','0','0','0','0','0','0','0','0','Nightbane Dark Runner - Cast Exploit Weakness'),
+('20501','205','33','0','100','1','0','0','10000','21800','11','6595','1','0','0','0','0','0','0','0','0','0','Nightbane Dark Runner - Cast Exploit Weakness on Facing Target Back'),
 -- Nightbane Vile Fang (3.0.3 Official Data)
 ('20601','206','0','0','100','1','2000','16300','17800','34200','11','3427','1','32','0','0','0','0','0','0','0','0','Nightbane Vile Fang - Cast Infected Wound'),
 -- Bone Chewer (3.0.3 Official Data)
@@ -8349,7 +8349,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('375003','3750','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Foulweald Totemic - Flee at 15% HP'),
 -- Xavian Rogue (3.3.0 Official Data) - EXACT HP% FOR GIFT OF THE XAVIAN AND TIMER FOR EXPLOIT WEAKNESS IS UNKNOWN (Requires Player to Back to NPC to allow them to Cast Spell)
 ('375201','3752','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Xavian Rogue - Set Phase 1 on Aggro'),
-('375202','3752','9','0','100','1','0','5','10000','13000','11','6595','1','0','0','0','0','0','0','0','0','0','Xavian Rogue - Cast Exploit Weakness'),
+('375202','3752','33','0','100','1','0','0','10000','13000','11','6595','1','0','0','0','0','0','0','0','0','0','Xavian Rogue - Cast Exploit Weakness on Facing Target Back'),
 ('375203','3752','2','5','100','0','15','0','0','0','11','6925','0','1','22','2','0','0','0','0','0','0','Xavian Rogue - Cast Gift of the Xavian and Set Phase 2 at 15% HP'),
 ('375204','3752','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Xavian Rogue - Set Phase to 0 on Evade'),
 -- Xavian Betrayer (3.3.0 Official Data) - EXACT HP% FOR GIFT OF THE XAVIAN IS UNKNOWN
@@ -8378,7 +8378,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('375802','3758','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Felmusk Satyr - Flee at 15% HP'),
 -- Felmusk Rogue (3.3.0 Official Data) - TIMERS FOR EXPLOIT WEAKNESS UNKNOWN SINCE IT REQUIRES PLAYER TO PUT BACK TO NPC TO ALLOW CAST
 ('375901','3759','9','0','100','1','0','5','14500','23900','11','6942','1','0','0','0','0','0','0','0','0','0','Felmusk Rogue - Cast Overwhelming Stench'),
-('375902','3759','9','0','100','1','0','5','5000','8000','11','6595','1','0','0','0','0','0','0','0','0','0','Felmusk Rogue - Cast Exploit Weakness'),
+('375902','3759','33','0','100','1','0','0','5000','8000','11','6595','1','0','0','0','0','0','0','0','0','0','Felmusk Rogue - Cast Exploit Weakness on Facing Target Back'),
 ('375903','3759','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Felmusk Rogue - Flee at 15% HP'),
 -- Felmusk Felsworn (3.3.0 Official Data)
 ('376201','3762','9','0','100','1','0','5','14500','23900','11','6942','1','0','0','0','0','0','0','0','0','0','Felmusk Felsworn - Cast Overwhelming Stench'),
@@ -9482,7 +9482,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Raging Reef Crawler
 ('223601','2236','11','0','100','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Raging Reef Crawler - Cast Thrash on Spawn'),
 -- Moonstalker Sire
-('223701','2237','9','0','100','1','0','5','10000','14000','11','6595','1','0','0','0','0','0','0','0','0','0','Moonstalker Sire - Cast Exploit Weakness'),
+('223701','2237','33','0','100','1','0','0','10000','14000','11','6595','1','0','0','0','0','0','0','0','0','0','Moonstalker Sire - Cast Exploit Weakness on Facing Target Back'),
 -- Foreststrider Fledgling (2321) - NSR
 -- Foreststrider (2322) - NSR
 -- Giant Foreststrider (2323) - NSR
@@ -9929,7 +9929,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('467301','4673','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Hatefury Betrayer - Cast Enrage at 30% HP'),
 -- Hatefury Shadowstalker
 ('467401','4674','33','0','100','1','1','0','10000','15000','11','8629','1','0','0','0','0','0','0','0','0','0','Hatefury Shadowstalker - Cast Gouge on Facing Target'),
-('467402','4674','9','0','100','1','0','5','10000','14000','11','6595','1','0','0','0','0','0','0','0','0','0','Hatefury Shadowstalker - Cast Exploit Weakness'),
+('467402','4674','33','0','100','1','0','0','10000','14000','11','6595','1','0','0','0','0','0','0','0','0','0','Hatefury Shadowstalker - Cast Exploit Weakness on Facing Target Back'),
 ('467403','4674','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Hatefury Shadowstalker - Cast Enrage at 30% HP'),
 -- Hatefury Hellcaller
 ('467501','4675','0','0','100','1','6000','12000','15000','19000','11','1094','4','0','0','0','0','0','0','0','0','0','Hatefury Hellcaller - Cast Immolate'),
@@ -11725,7 +11725,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('536201','5362','14','0','100','1','1000','40','15000','20000','11','11014','6','0','0','0','0','0','0','0','0','0','Northspring Harpy - Cast Flow of the Northspring on Friendlies'),
 -- Northspring Roguefeather
 ('536301','5363','11','0','100','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Northspring Roguefeather - Cast Thrash on Spawn'),
-('536302','5363','9','0','100','1','0','5','10000','13000','11','6595','1','0','0','0','0','0','0','0','0','0','Northspring Roguefeather - Cast Exploit Weakness'),
+('536302','5363','33','0','100','1','0','0','10000','13000','11','6595','1','0','0','0','0','0','0','0','0','0','Northspring Roguefeather - Cast Exploit Weakness on Facing Target Back'),
 ('536303','5363','14','0','100','1','1000','40','15000','20000','11','11014','6','0','0','0','0','0','0','0','0','0','Northspring Roguefeather - Cast Flow of the Northspring on Friendlies'),
 -- Northspring Slayer
 ('536401','5364','12','0','100','0','20','0','0','0','11','7160','1','1','0','0','0','0','0','0','0','0','Northspring Slayer - Cast Execute at 20% Player HP'),
@@ -14208,7 +14208,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Witchwing Roguefeather
 ('327701','3277','4','0','75','0','0','0','0','0','1','-494','0','0','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Say on Aggro'),
 ('327702','3277','0','0','100','1','4000','8000','12000','16000','11','7992','1','0','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Cast Slowing Poison'),
-('327703','3277','0','0','100','1','7000','11000','9000','12000','11','6595','1','1','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Cast Exploit Weakness'),
+('327703','3277','33','0','100','1','0','0','9000','12000','11','6595','1','1','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Cast Exploit Weakness on Facing Target Back'),
 -- Venture Co. Mercenary
 ('328201','3282','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Venture Co Mercenary - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('328202','3282','9','0','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Venture Co Mercenary - Cast Shoot and Set Ranged Weapon Model'),
@@ -14576,7 +14576,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Screeching Harpy
 ('410001','4100','9','0','100','1','0','5','17000','25000','11','3589','1','0','0','0','0','0','0','0','0','0','Screeching Harpy - Cast Deafening Screech'),
 -- Screeching Roguefeather
-('410101','4101','0','0','100','1','2000','4000','10000','15000','11','6595','1','0','0','0','0','0','0','0','0','0','Screeching Roguefeather - Cast Exploit Weakness'),
+('410101','4101','33','0','100','1','0','0','10000','15000','11','6595','1','0','0','0','0','0','0','0','0','0','Screeching Roguefeather - Cast Exploit Weakness on Facing Target Back'),
 -- Screeching Windcaller
 ('410401','4104','0','0','100','1','4500','7500','35000','40000','11','6982','0','0','0','0','0','0','0','0','0','0','Screeching Windcaller - Cast Gust of Wind'),
 -- Highperch Wyvern
@@ -19583,7 +19583,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ebonroc (14601) - boss_ebonroc
 -- Bone Construct
 ('1460501','14605','11','0','100','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Bone Construct - Set in Combat with Zone on Spawned'),
-('1460502','14605','9','0','100','1','0','5','5000','8000','11','8355','1','0','0','0','0','0','0','0','0','0','Bone Construct - Cast Exploit Weakness'),
+('1460502','14605','33','0','100','1','0','0','5000','8000','11','8355','1','0','0','0','0','0','0','0','0','0','Bone Construct - Cast Exploit Weakness on Facing Target Back'),
 -- Corrupted Infernal
 ('1466801','14668','0','0','100','1','3000','6000','5000','8000','11','8355','4','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Inferno Effect'),
 
@@ -20259,7 +20259,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zulian Panther
 ('1136501','11365','28','0','100','1','24332','1','1000','3000','11','24332','1','0','0','0','0','0','0','0','0','0','Zulian Panther - Cast Rake on Missing Aura Rake'),
 ('1136502','11365','0','0','100','1','3000','3000','15000','20000','11','24333','1','0','0','0','0','0','0','0','0','0','Zulian Panther - Cast Ravage'),
-('1136503','11365','0','0','100','1','3000','3000','5000','12000','11','8355','1','0','0','0','0','0','0','0','0','0','Zulian Panther - Cast Exploit Weakness'),
+('1136503','11365','33','0','100','1','0','0','5000','12000','11','8355','1','0','0','0','0','0','0','0','0','0','Zulian Panther - Cast Exploit Weakness on Facing Target Back'),
 -- Bloodseeker Bat
 ('1136801','11368','4','0','100','0','0','0','0','0','11','24023','1','0','0','0','0','0','0','0','0','0','Bloodseeker Bat - Cast Charge on Aggro'),
 -- Razzashi Broodwidow
@@ -20271,7 +20271,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1137103','11371','0','0','100','1','7000','12000','15000','17000','11','20539','1','0','0','0','0','0','0','0','0','0','Razzashi Serpent - Cast Fatal Bite'),
 -- Razzashi Adder
 ('1137201','11372','0','0','100','1','3000','5000','5000','9000','11','24011','4','32','0','0','0','0','0','0','0','0','Razzashi Adder - Cast Venom Spit'),
-('1137202','11372','0','0','100','1','3000','3000','5000','12000','11','24016','1','0','0','0','0','0','0','0','0','0','Razzashi Adder - Cast Exploit Weakness'),
+('1137202','11372','33','0','100','1','0','0','5000','12000','11','24016','1','0','0','0','0','0','0','0','0','0','Razzashi Adder - Cast Exploit Weakness on Facing Target Back'),
 -- Razzashi Cobra
 ('1137301','11373','0','0','100','1','5000','8000','7000','11000','11','24097','1','0','0','0','0','0','0','0','0','0','Razzashi Cobra - Cast Poison'),
 ('1137302','11373','0','0','100','1','8000','13000','10000','15000','11','27919','4','0','0','0','0','0','0','0','0','0','Razzashi Cobra - Cast Spit'),
