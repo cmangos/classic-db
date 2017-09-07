@@ -16355,7 +16355,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1068105','10681','1','0','100','1','10000','10000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Summoned Blackhand Dreadweaver - Despawn on Evade'),
 -- Rookery Hatcher (10683) - handled in SD2
 -- Finkle Einhorn
-('1077601','10776','11','0','100','2','0','0','0','0','1','-1540','0','0','0','0','0','0','0','0','0','0','Finkle Einhorn - Say on Spawn'),
+('1077601','10776','11','0','100','0','0','0','0','0','1','-1540','0','0','0','0','0','0','0','0','0','0','Finkle Einhorn - Say on Spawn'),
 -- Chromatic Elite Guard
 ('1081401','10814','0','0','100','1','5000','12800','13000','13000','11','15708','1','0','0','0','0','0','0','0','0','0','Chromatic Elite Guard - Cast Mortal Strike'),
 ('1081402','10814','0','0','100','1','5600','15400','11200','25700','11','16790','1','0','0','0','0','0','0','0','0','0','Chromatic Elite Guard - Cast Knockdown'),
@@ -20184,24 +20184,24 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zul'Gurub
 -- =========
 -- Hakkari Shadowcaster
-('1133801','11338','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Hakkari Shadowcaster - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1133801','11338','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Hakkari Shadowcaster - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1133802','11338','0','5','100','1','1000','2000','3500','4000','11','15232','1','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Shadow Bolt (Phase 1)'),
-('1133803','11338','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('1133804','11338','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement at 0-8 Yards'),
-('1133805','11338','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('1133806','11338','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1133803','11338','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1133804','11338','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement at 0-8 Yards'),
+('1133805','11338','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1133806','11338','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1133807','11338','0','5','100','1','3000','7000','10000','20000','11','20741','1','1','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Shadow Bolt Volley (Phase 1)'),
 ('1133808','11338','8','5','75','1','0','127','5000','8000','11','22947','6','1','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Mana Burn (Phase 1)'),
-('1133809','11338','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Set Phase to 0 on Evade'),
+('1133809','11338','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Set Phase to 0 on Evade'),
 -- Hakkari Shadow Hunter
-('1133901','11339','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('1133901','11339','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1133902','11339','9','0','100','1','5','30','1500','2000','11','16496','1','0','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Cast Shoot'),
-('1133903','11339','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Enable Dynamic Movement at 9-80 Yards'),
+('1133903','11339','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Enable Dynamic Movement at 9-80 Yards'),
 ('1133904','11339','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Hakkari Shadow Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1133905','11339','9','0','100','1','5','30','10000','15000','11','21390','1','1','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Cast Multi-Shot'),
 ('1133906','11339','9','0','100','1','5','30','65000','85000','11','22908','1','1','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Cast Volley'),
 ('1133907','11339','0','0','75','1','6000','12000','12000','24000','11','24335','1','32','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Cast Wyvern Sting'),
-('1133908','11339','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Set Melee Weapon Model on Evade'),
+('1133908','11339','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadow Hunter - Set Melee Weapon Model on Evade'),
 -- Hakkari Blood Priest
 ('1134001','11340','15','0','100','1','1','30','15000','20000','11','17201','0','0','0','0','0','0','0','0','0','0','Hakkari Blood Priest - Cast Dispel Magic on Friendly CC'),
 ('1134002','11340','0','0','85','1','3000','3000','4000','6000','11','24618','1','0','0','0','0','0','0','0','0','0','Hakkari Blood Priest - Cast Drain Life'),
