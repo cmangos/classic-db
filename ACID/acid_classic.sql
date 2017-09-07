@@ -21002,6 +21002,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('520201','5202','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
 -- Earthgrab Totem
 ('606601','6066','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','11','8378','0','1','Earthgrab totem - Prevent Combat Movement and Prevent Melee and cast earthgrab on Spawn'),
+-- Eranikus the Chained
+('850601','8506','11','0','100','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
 -- Enraged Wyvern
 ('929701','9297','11','0','100','0','0','0','0','0','11','7276','0','1','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc on Spawn'),
 -- Enraged Gryphon
@@ -22312,7 +22314,18 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1538','The Abyssal Council does not tolerate deceit! Feel our wrath, little $r!','0','0','0','Crimson Templar','0'),
 ('-1539','Your life is a fitting sacrifice for my master, $c.','0','0','0','Crimson Templar','0'),
 ('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0'),
-('-1551','%s emits a strange noise.','0','2','0','15233 16168','0');
+('-1551','%s emits a strange noise.','0','2','0','15233 16168','0'),
+('-1552','It hurts so much... Itharius, my old friend... please help me...','0','4','0','8506','0'),
+('-1553','Will the nightmare ever end?! I cannot force myself awake!','0','4','0','8506','0'),
+('-1554','Torture me no more! Release me, mortal! The Swamp of Sorrows... mortal... please...','0','4','0','8506','0'),
+('-1555','My eyes! It burns... it burns...','0','4','0','8506','0'),
+('-1556','Foolish mortal, I will rend your soul in two once I am released!','0','4','0','8506','0'),
+('-1557','My charge to watch the temple has failed... my corrupted soul knows no peace...','0','4','0','8506','0'),
+('-1558','My soul is not a trinket! Mortal, you must release me from these chains!','0','4','0','8506','0'),
+('-1559','Foolish mortals you do not yet see the potential of that Artifact.','0','4','0','8506','0'),
+('-1560','You are an agent of their wicked god, fool. I will see you destroyed!','0','4','0','8506','0'),
+('-1561','I sense my grip on the Dream twisting into chaos.','0','4','0','8506','0');
+
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
