@@ -4565,12 +4565,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('176901','1769','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Moonrage Whitescalp - Cast Frost Armor on Spawn'),
 ('176902','1769','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Moonrage Whitescalp - Cast Frost Armor on Missing Buff'),
 -- Moonrage Darkrunner (1770) - NSR
--- Rot Hide Gladerunner (3.3.5a Official Data)
+-- Rot Hide Gladerunner
 ('177201','1772','4','0','15','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Rot Hide Gladerunner - Random Say on Aggro'),
 ('177202','1772','0','0','100','1','21400','34700','10100','45300','11','3237','0','0','0','0','0','0','0','0','0','0','Rot Hide Gladerunner - Cast Curse of Thule'),
--- Rot Hide Mystic (3.3.5a Official Data)
+('177203','1772','6','0','10','0','0','0','0','0','53','1','0','0','0','0','0','0','0','0','0','0','Rot Hide Gladerunner - START_RELAY_SCRIPT on Death (10% chance)'),
+-- Rot Hide Mystic
 ('177301','1773','0','0','100','1','7200','20900','35700','44500','11','3237','0','0','0','0','0','0','0','0','0','0','Rot Hide Mystic - Cast Curse of Thule'),
 ('177302','1773','14','0','100','1','150','40','24400','32900','11','332','6','1','0','0','0','0','0','0','0','0','Rot Hide Mystic - Cast Healing Wave on Friendlies'),
+('177303','1773','6','0','10','0','0','0','0','0','53','1','0','0','0','0','0','0','0','0','0','0','Rot Hide Mystic  - START_RELAY_SCRIPT on Death (10% chance)'),
 -- Ferocious Grizzled Bear (1778) - NSR
 -- Moonrage Glutton (3.3.5a Official Data)
 ('177901','1779','0','0','100','1','5700','10100','13100','21800','11','6958','4','0','0','0','0','0','0','0','0','0','Moonrage Glutton - Cast Blood Leech'),
@@ -4746,9 +4748,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('197401','1974','1','0','100','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Ravenclaw Drudger - Cast Birth on Spawn'),
 ('197402','1974','0','0','100','1','26400','26400','32500','44800','11','3269','0','1','0','0','0','0','0','0','0','0','Ravenclaw Drudger - Cast Blessing of Thule'),
 -- Deathstalker Erland (1978) - npc_deathstalker_erland
--- Nightlash (3.3.5a Official Data)
-('198301','1983','0','0','100','1','2700','8900','19100','32100','11','3485','1','0','0','0','0','0','0','0','0','0','Nightlash - Cast Wail of Nightlash'),
-('198302','1983','14','0','100','0','150','30','0','0','11','3477','6','1','0','0','0','0','0','0','0','0','Nightlash - Cast Spirit Steal on Friendlies'),
+-- Nightlash
+('198301','1983','11','0','100','0','0','0','0','0','54','-1562','0','0','0','0','0','0','0','0','0','0','Nightlash - Say on Spawn'),
+('198302','1983','0','0','100','1','2700','8900','19100','32100','11','3485','1','0','0','0','0','0','0','0','0','0','Nightlash - Cast Wail of Nightlash'),
+('198303','1983','14','0','100','0','150','30','0','0','11','3477','6','1','0','0','0','0','0','0','0','0','Nightlash - Cast Spirit Steal on Friendlies'),
+('198304','1983','29','0','100','0','299000','299000','0','0','54','-1563','0','0','0','0','0','0','0','0','0','0','Nightlash - Say on OOC Timer'),
 -- Haggard Refugee (4.0.1 Official Data)
 ('205301','2053','0','0','100','1','12600','26300','28100','36200','11','3261','1','0','0','0','0','0','0','0','0','0','Haggard Refugee - Cast Ignite'),
 -- Sickly Refugee (4.0.1 Official Data)
@@ -22324,8 +22328,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1558','My soul is not a trinket! Mortal, you must release me from these chains!','0','4','0','8506','0'),
 ('-1559','Foolish mortals you do not yet see the potential of that Artifact.','0','4','0','8506','0'),
 ('-1560','You are an agent of their wicked god, fool. I will see you destroyed!','0','4','0','8506','0'),
-('-1561','I sense my grip on the Dream twisting into chaos.','0','4','0','8506','0');
-
+('-1561','I sense my grip on the Dream twisting into chaos.','0','4','0','8506','0'),
+('-1562','%s lets out a high pitched screech, calling for help.','0','2','0','1983','0'),
+('-1563','I shall return in time..','0','0','0','1983','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
@@ -22371,12 +22376,6 @@ UPDATE creature_template SET ScriptName= '' WHERE ScriptName= 'generic_creature'
 -- Define ACID Full Release Script Creature Entries
 -- ================================================
 UPDATE creature_template INNER JOIN creature_ai_scripts ON creature_template.entry = creature_ai_scripts.creature_id SET AIName='EventAI';
-
-
--- ==========================
--- Remove unused Text Entries
--- ==========================
-DELETE FROM creature_ai_texts WHERE NOT entry IN (SELECT DISTINCT * FROM (SELECT action1_param1 FROM creature_ai_scripts WHERE action1_type = 1 AND action1_param1 != 0 UNION SELECT action1_param2 FROM creature_ai_scripts WHERE action1_type = 1 AND action1_param2 != 0 UNION SELECT action1_param3 FROM creature_ai_scripts WHERE action1_type = 1 AND action1_param3 != 0 UNION SELECT action2_param1 FROM creature_ai_scripts WHERE action2_type = 1 AND action2_param1 != 0 UNION SELECT action2_param2 FROM creature_ai_scripts WHERE action2_type = 1 AND action2_param2 != 0 UNION SELECT action2_param3 FROM creature_ai_scripts WHERE action2_type = 1 AND action2_param3 != 0 UNION SELECT action3_param1 FROM creature_ai_scripts WHERE action3_type = 1 AND action3_param1 != 0 UNION SELECT action3_param2 FROM creature_ai_scripts WHERE action3_type = 1 AND action3_param2 != 0 UNION SELECT action3_param3 FROM creature_ai_scripts WHERE action3_type = 1 AND action3_param3 != 0) AS t);
 
 
 -- EOF
