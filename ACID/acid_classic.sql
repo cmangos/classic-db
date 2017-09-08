@@ -4449,25 +4449,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('828306','8283','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Slave Master Blackheart - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('828307','8283','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Slave Master Blackheart - Flee at 15% HP (Phase 2)'),
 ('828308','8283','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Slave Master Blackheart - Set Phase 1 and Set Melee Weapon Model on Evade'),
--- Dorius Stonetender
-('842101','8421','1','0','100','0','1000','1000','0','0','1','-658','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
-('842102','8421','1','0','100','0','5000','5000','0','0','1','-659','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
-('842103','8421','1','0','100','0','8000','8000','0','0','1','-660','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
-('842104','8421','1','0','100','0','13000','13000','0','0','1','-661','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
-('842105','8421','1','0','100','0','18000','18000','0','0','1','-662','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
-('842106','8421','1','0','100','0','22000','22000','0','0','1','-663','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC timer'),
-('842107','8421','1','0','100','0','23000','23000','0','0','36','8391','0','0','0','0','0','0','0','0','0','0','Dorius - update entry to Lathoric the Black on OOC timer'),
-('842108','8421','1','0','100','0','24000','24000','0','0','1','-664','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC Timer'),
-('842109','8421','1','0','100','0','28000','28000','0','0','1','-665','0','0','0','0','0','0','0','0','0','0','Dorius - Say text on OOC Timer'),
-('842110','8421','1','0','100','0','28000','28000','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Dorius - Remove unit flag OOC Not Attackable on OOC Timer'),
-('842111','8421','7','0','100','0','0','0','0','0','41','1000','0','0','0','0','0','0','0','0','0','0','Dorius - Despawn on Evade'),
+-- Dorius Stonetender (8421) - NSR
 -- Dark Iron Steelshifter (8337) - NSR
 -- Dark Iron Marksman (8338) - NSR
--- Lathoric the Black (8391) - NSR
+-- Lathoric the Black
+('839101','8391','11','0','100','0','0','0','0','0','54','-665','0','0','0','0','0','0','0','0','0','0','Lathoric the Black - Yell on Spawn'),
+('839102','8391','21','0','100','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Lathoric the Black - Forced Despawn on Reached Home'),
 -- Obsidion
 ('840001','8400','9','0','100','1','0','5','15000','21000','11','10101','1','0','0','0','0','0','0','0','0','0','Obsidion - Cast Knock Away'),
 ('840002','8400','0','0','100','1','7000','11000','12000','16000','11','12734','0','0','0','0','0','0','0','0','0','0','Obsidion - Cast Knock Away'),
-('840003','8400','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Obsidion - Set Stand State to Stand on Aggro'),
+('840003','8400','7','0','100','0','0','0','0','0','18','256','0','0','0','0','0','0','0','0','0','0','Obsidion - Set UNIT_FLAG_IMMUNE_TO_PLAYER on Evade'),
 -- Enslaved Archaeologist (8402) - NSR
 -- Dying Archaeologist (8417) - NSR
 -- Twilight Idolater (8419) - NSR
@@ -21716,12 +21707,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-655','Tell us!  Where does your leader hide?','0','0','0','16924','0'),
 ('-656','Please!  I must feed on something soon... A mana crystal.... a shard... anything!  The pain is unbearable!','0','0','0','16916','0'),
 ('-657','You\'re not getting anything until you speak, scum!','0','0','0','16924','0'),
-('-658','Fools. I knew that if I played upon my brother\'s feeble emotions, he would send \'rescuers.\'','0','0','0','8421','0'),
-('-659','How easy it was to manipulate you into recovering the last Suntara stone from those imbeciles of the Twilight\'s Hammer..','0','0','0','8421','0'),
-('-660','When I stumbled upon the Suntara stones at the Grimesilt Digsite, the power of Ragnaros surged through my being. It was Ragnaros that gave me a purpose.','0','0','0','8421','0'),
-('-661','It was the will of Ragnaros that Obsidion be built. Obsidion will destroy the Blackrock orcs of Blackrock Spire, uniting us with our bretheren in the fiery depths.','0','0','0','8421','0'),
-('-662','And ultimately, it was Ragnaros that named me when I was reborn as an acolyte of fire: Lathoric... Lathoric the Black.','0','0','0','8421','0'),
-('-663','%s\'s laughter trails off..','0','2','0','8421','0'),
+-- PLEASE RE-USE -658 TO -663
 ('-664','Your task is complete. Prepare to meet your doom.','0','0','0','8391','0'),
 ('-665','Obsidion, Rise and Serve your Master!','0','1','0','8391','0'),
 ('-666','At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.','0','0','0','Vaelan greetings','0'),
