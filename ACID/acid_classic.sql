@@ -12980,7 +12980,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1554101','15541','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Twilight Marauder Morna - Dismount on Aggro'),
 ('1554102','15541','0','0','100','1','5000','8000','9000','13000','11','16856','1','0','0','0','0','0','0','0','0','0','Twilight Marauder Morna - Cast Mortal Strike'),
 ('1554103','15541','9','0','100','1','0','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Twilight Marauder Morna - Cast Sunder Armor'),
-('1554104','15541','0','0','100','1','9000','15000','14000','18000','11','23600','0','1','0','0','0','0','0','0','0','0','Twilight Marauder - Cast Piercing Howl'),
+('1554104','15541','0','0','100','1','9000','15000','14000','18000','11','23600','0','1','0','0','0','0','0','0','0','0','Twilight Marauder Morna - Cast Piercing Howl'),
 -- Twilight Marauder
 ('1554201','15542','4','0','100','0','0','0','0','0','43','0','0','0','11','22911','1','0','0','0','0','0','Twilight Marauder - Dismount and Cast Charge on Aggro'),
 ('1554202','15542','2','0','100','0','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Twilight Marauder - Cast Enrage at 20% HP'),
@@ -19519,12 +19519,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1246801','12468','9','0','100','1','0','30','11000','15000','11','22275','4','1','0','0','0','0','0','0','0','0','Death Talon Hatcher - Cast Flamestrike'),
 ('1246802','12468','0','0','100','1','1000','3000','4000','6000','11','22442','4','0','0','0','0','0','0','0','0','0','Death Talon Hatcher - Cast Growing Flames'),
 -- Grethok the Controller
-('1255701','12557','1','0','100','0','6000','6000','0','0','11','23018','0','0','0','0','0','0','0','0','0','0','Grethlok the Controller - Cast Use Dragon Orb when OOC'),
-('1255702','12557','4','0','100','0','0','0','0','0','1','-1294','0','0','0','0','0','0','0','0','0','0','Grethlok the Controller - Yell on Aggro'),
-('1255703','12557','9','0','100','1','0','30','5000','8000','11','22273','1','0','0','0','0','0','0','0','0','0','Grethlok the Controller - Cast Arcane Missiles'),
-('1255704','12557','0','0','100','1','8000','11000','20000','24000','11','22274','4','1','0','0','0','0','0','0','0','0','Grethlok the Controller - Cast Greater Polymorph'),
-('1255705','12557','0','0','100','1','11000','14000','16000','20000','11','14515','4','0','1','-1295','0','0','0','0','0','0','Grethlok the Controller - Cast Dominate Mind and Yell'),
-('1255706','12557','0','0','100','1','15000','21000','10000','17000','11','13747','4','0','0','0','0','0','0','0','0','0','Grethlok the Controller - Cast Slow'),
+('1255701','12557','1','0','100','0','6000','6000','0','0','11','23018','0','0','0','0','0','0','0','0','0','0','Grethok the Controller - Cast Use Dragon Orb when OOC'),
+('1255702','12557','4','0','100','0','0','0','0','0','1','-1294','0','0','0','0','0','0','0','0','0','0','Grethok the Controller - Yell on Aggro'),
+('1255703','12557','9','0','100','1','0','30','5000','8000','11','22273','1','0','0','0','0','0','0','0','0','0','Grethok the Controller - Cast Arcane Missiles'),
+('1255704','12557','0','0','100','1','8000','11000','20000','24000','11','22274','4','1','0','0','0','0','0','0','0','0','Grethok the Controller - Cast Greater Polymorph'),
+('1255705','12557','0','0','100','1','11000','14000','16000','20000','11','14515','4','0','1','-1295','0','0','0','0','0','0','Grethok the Controller - Cast Dominate Mind and Yell'),
+('1255706','12557','0','0','100','1','15000','21000','10000','17000','11','13747','4','0','0','0','0','0','0','0','0','0','Grethok the Controller - Cast Slow'),
+('1255707','12557','7','0','100','0','0','0','0','0','1','-1293','0','0','0','0','0','0','0','0','0','0','Grethok the Controller - Yell on Evade'),
 -- Vaelastrasz the Corrupt (13020) - boss_vaelastrasz
 -- Blackwing Technician
 ('1399601','13996','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Blackwing Technician - Enable Dynamic Movement and Prevent Melee on Aggro'),
@@ -21409,6 +21410,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1226','Oh now you\'ve gone and angered me! Time to see the true force of the Stone of Tides!','0','0','0','2624','0'),
 ('-1237','Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.','0','0','0','Scholomance Dark Summoner','1'),
 ('-1238','Wow, this one is just plain useless. Let me try again.','0','0','0','Scholomance Dark Summoner','1'),
+('-1293','I have regained control! Return to your posts!','8274','1','0','12557','0'),
 ('-1294','Intruders have breached the hatchery! Sound the alarm! Protect the eggs at all costs!','8272','1','0','12557','0'),
 ('-1295','Foolish mortal, you serve me now!','8273','1','0','12557','0'),
 ('-1296','The power of the light is truly great and merciful.','0','0','0','14484, 14485','0'),
