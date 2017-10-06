@@ -19493,8 +19493,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Death Talon Wyrmguard
 ('1246001','12460','0','0','100','1','5000','8000','8000','12000','11','24375','0','0','0','0','0','0','0','0','0','0','Death Talon Wyrmguard - Cast War Stomp'),
 -- Death Talon Overseer
-('1246101','12461','9','0','100','1','0','20','4000','7000','11','20623','4','0','0','0','0','0','0','0','0','0','Death Talon Overseer - Cast Fire Blast'),
-('1246102','12461','9','0','100','1','0','5','6000','9000','11','15284','1','1','0','0','0','0','0','0','0','0','Death Talon Overseer - Cast Cleave'),
+('1246101','12461','4','0','100','0','0','0','0','0','1','-1564','0','0','0','0','0','0','0','0','0','0','Death Talon Overseer - Say on Aggro'),
+('1246102','12461','9','0','100','1','0','20','4000','7000','11','20623','4','0','0','0','0','0','0','0','0','0','Death Talon Overseer - Cast Fire Blast'),
+('1246103','12461','9','0','100','1','0','5','6000','9000','11','15284','1','1','0','0','0','0','0','0','0','0','Death Talon Overseer - Cast Cleave'),
 -- Death Talon Flamescale
 ('1246301','12463','9','0','100','1','0','40','12000','17000','11','16636','4','1','0','0','0','0','0','0','0','0','Death Talon Flamescale - Cast Berserker Charge'),
 ('1246302','12463','9','0','100','1','0','20','5000','8000','11','22423','4','32','0','0','0','0','0','0','0','0','Death Talon Flamescale - Cast Flame Shock'),
@@ -21509,7 +21510,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1560','You are an agent of their wicked god, fool. I will see you destroyed!','0','4','0','8506','0'),
 ('-1561','I sense my grip on the Dream twisting into chaos.','0','4','0','8506','0'),
 ('-1562','%s lets out a high pitched screech, calling for help.','0','2','0','1983','0'),
-('-1563','I shall return in time..','0','0','0','1983','0');
+('-1563','I shall return in time..','0','0','0','1983','0'),
+('-1564','The blood samples must be protected! Destroy the intruders!','0','0','0','12461','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
