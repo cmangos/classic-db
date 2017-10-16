@@ -1,5 +1,5 @@
 -- Add condition for Loh'atu gossip. He should only mention you have been helping him after you complete his quests.
--- He should also only give you explanations about the zone after helping him.
+-- He should also only give you explanations about the zone after helping him. 
 
 -- Clear conditions with entries needed.
 DELETE
