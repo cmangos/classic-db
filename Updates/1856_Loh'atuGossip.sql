@@ -1,5 +1,5 @@
 -- Add condition for Loh'atu gossip. He should only mention you have been helping him after you complete his quests.
--- He should also only give you explanations about the zone after helping him. 
+-- He should also only give you explanations about the zone after helping him.
 
 -- Clear conditions with entries needed.
 DELETE
@@ -14,7 +14,7 @@ WHERE
 	
 -- Create condition for two quests he has to offer.
 INSERT INTO
-	`conditions`
+	`conditions` (`condition_entry`, `type`, `value1`, `value2`)
 VALUES
 	(11546, 8, 5535, 0),
 	(11547, 8, 5536, 0),
