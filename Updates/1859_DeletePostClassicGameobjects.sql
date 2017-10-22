@@ -7,7 +7,7 @@ DELETE
 FROM
 	`gameobject`
 WHERE
-	`entry` IN (
+	`id` IN (
 		186266,
 		186272,
 		186273,
