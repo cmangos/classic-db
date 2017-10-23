@@ -5949,7 +5949,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swamp Spirit (6932) - NSR
 -- Fallen Hero of the Horde (7572) - npc_fallen_hero_of_horde
 -- Dispatch Commander Ruag (7623) - NSR
--- Bengor (7643) - NSR
+-- Bengor
+('764301','7643','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Bengor - Set Stand State to Stand on Aggro'),
 -- Corporal Thund Splithoof (7750) - NSR
 -- Gharash (8176) - NSR
 -- Rartar (8177) - NSR
@@ -6309,7 +6310,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vilebranch Kidnapper
 ('1474801','14748','12','0','100','1','20','0','18000','26000','11','7160','1','0','0','0','0','0','0','0','0','0','Vilebranch Kidnapper - Cast Execute at 20% Target HP'),
 ('1474802','14748','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vilebranch Kidnapper - Flee at 15% HP'),
--- Elder Torntusk (14757) - NSR
+-- Elder Torntusk
+('1475701','14757','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Elder Torntusk - Set Stand State to Stand on Aggro'),
 -- Ysondre (14887) - boss_ysondre
 -- Lethon (14888) - boss_lethon
 -- Emeriss (14889) - boss_emeriss
@@ -8114,6 +8116,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('209102','2091','0','0','100','1','2300','7900','12100','16400','11','6192','0','32','0','0','0','0','0','0','0','0','Chieftain Nek\'rosh - Cast Battle Shout'),
 ('209103','2091','0','0','100','1','3800','9400','6400','9400','11','13730','0','0','0','0','0','0','0','0','0','0','Chieftain Nek\'rosh - Cast Demoralizing Shout'),
 ('209104','2091','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Chieftain Nek\'rosh - Flee at 15% HP'),
+-- Harlo Barnaby
+('209701','2097','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Harlo Barnaby - Set Stand State to Stand on Aggro'),
 -- Dragonmaw Grunt
 ('210201','2102','4','0','15','0','0','0','0','0','1','-101','-102','-105','0','0','0','0','0','0','0','0','Dragonmaw Grunt - Random Say on Aggro'),
 ('210202','2102','9','0','100','1','0','5','7300','20900','11','8242','1','0','0','0','0','0','0','0','0','0','Dragonmaw Grunt - Cast Shield Slam'),
@@ -8532,7 +8536,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Withered Ancient (3.3.0 Official Data)
 ('391901','3919','9','0','100','1','0','5','33700','77100','11','6909','1','32','0','0','0','0','0','0','0','0','Withered Ancient - Cast Curse of Thorns'),
 -- Anilia (3.3.0 Official Data)
-('392001','3920','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Anilia - Flee at 15% HP'),
+('392001','3920','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Anilia - Set Stand State to Stand on Aggro'),
+('392002','3920','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Anilia - Flee at 15% HP'),
 -- Thistlefur Ursa (3.3.0 Official Data)
 ('392101','3921','11','0','100','0','0','0','0','0','11','6813','0','0','0','0','0','0','0','0','0','0','Thistlefur Ursa - Cast Coat of Thistlefur on Spawn'),
 ('392102','3921','1','0','100','0','3000','3000','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Thistlefur Ursa - Cast Battle Stance on Spawn'),
@@ -11937,7 +11942,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1182601','11826','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kristy Grant - Flee at 15% HP'),
 -- Great Shark (12124) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Gordok Hyena
-('1241801','12418','9','0','100','1','0','5','17000','21000','11','13445','1','0','0','0','0','0','0','0','0','0','Gordok Hyena - Cast Rend'),
+('1241801','12418','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Gordok Hyena - Set Stand State to Stand on Aggro'),
+('1241802','12418','9','0','100','1','0','5','17000','21000','11','13445','1','0','0','0','0','0','0','0','0','0','Gordok Hyena - Cast Rend'),
 -- Dreamroarer
 ('1249701','12497','0','0','100','1','6000','9000','6000','11000','11','20667','4','0','0','0','0','0','0','0','0','0','Dreamroarer - Cast Corrosive Acid Breath'),
 ('1249702','12497','9','0','100','1','0','30','12000','16000','11','20668','5','1','0','0','0','0','0','0','0','0','Dreamroarer - Cast Sleepwalk'),
@@ -14428,6 +14434,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('586303','5863','2','0','70','1','20','0','27500','27500','11','2054','0','0','0','0','0','0','0','0','0','0','Geopriest Gukk\'rok - Cast Heal When Below 20% HP'),
 -- Dishu
 ('586501','5865','4','0','100','0','0','0','0','0','11','8210','0','1','0','0','0','0','0','0','0','0','Dishu - Cast Savannah Cubs on Aggro'),
+-- Grunt Dogran
+('590801','5908','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Grunt Dogran - Set Stand State to Stand on Aggro'),
 -- Summoned Felhunter
 ('626801','6268','0','0','100','1','5000','11000','11000','17000','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn'),
 -- Polly
@@ -17004,10 +17012,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('632904','6329','6','0','100','0','0','0','0','0','1','-30','0','0','11','9798','0','7','0','0','0','0','Irradiated Pillager - Emote and Cast Radiation on Death'),
 ('632905','6329','2','0','100','0','50','0','0','0','11','8269','0','1','1','-106','0','0','0','0','0','0','Irradiated Pillager - Cast Frenzy at 50% HP'),
 -- Holdout Warrior
-('639101','6391','9','0','100','1','0','5','7000','10000','11','11976','1','0','0','0','0','0','0','0','0','0','Holdout Warrior - Cast Strike'),
-('639102','6391','13','0','100','1','11000','15000','0','0','11','12555','1','1','0','0','0','0','0','0','0','0','Holdout Warrior - Cast Pummel on Target Spell Casting'),
-('639103','6391','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Holdout Warrior - Emote on Radiation Spellhit'),
-('639104','6391','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Holdout Warrior - Flee at 15% HP'),
+('639101','6391','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Holdout Warrior - Set Stand State to Stand on Aggro'),
+('639102','6391','9','0','100','1','0','5','7000','10000','11','11976','1','0','0','0','0','0','0','0','0','0','Holdout Warrior - Cast Strike'),
+('639103','6391','13','0','100','1','11000','15000','0','0','11','12555','1','1','0','0','0','0','0','0','0','0','Holdout Warrior - Cast Pummel on Target Spell Casting'),
+('639104','6391','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Holdout Warrior - Emote on Radiation Spellhit'),
+('639105','6391','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Holdout Warrior - Flee at 15% HP'),
 -- Holdout Medic (Rough Scripted Data)
 ('639201','6392','1','0','100','1','20000','35000','30000','50000','11','22167','0','0','0','0','0','0','0','0','0','0','Holdout Medic - Cast Heal OOC'),
 ('639202','6392','1','0','100','1','1000','1000','1800000','1800000','11','13864','0','1','0','0','0','0','0','0','0','0','Holdout Medic - Cast Power Word: Fortitude on Spawn'),
