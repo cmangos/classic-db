@@ -9194,7 +9194,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('838607','8386','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Horizon Scout Crewman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Pilot Xiggs Fuselighter (8392) - NSR
 -- Sanath Lim-yo (8395) - NSR
--- Sentinel Keldara Sunblade (8397) - NSR
+-- Sentinel Keldara Sunblade
+('839701','8397','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Sentinel Keldara Sunblade - Prevent Combat Movement and Prevent Melee on Spawn'),
 -- Nyrill (8399) - NSR
 -- Ogtinc (8405) - NSR
 -- Warlord Krellian
@@ -17641,7 +17642,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Herod (3975) - boss_herod (Whirlwind is on a Timer NOT HP% Triggered + Yell With Each Cast) (Enrage @ 50% HP and Yell + Going into Frenzy Emote)
 -- Scarlet Commander Mograine (3976) - boss_scarlet_commander_mograine
 -- High Inquisitor Whitemane (3977) - boss_high_inquisitor_whitemane
--- Vorrel Sengutz (3981) - NSR
+-- Vorrel Sengutz
+('398101','3981','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Vorrel Sengutz - Set Stand State to Stand on Aggro'),
 -- Interrogator Vishas (3.0.3 and 4.3.4 Official Data)
 ('398301','3983','11','0','100','0','0','0','0','0','11','8981','0','1','0','0','0','0','0','0','0','0','Interrogator Vishas - Cast Immolate on Spawn'),
 ('398302','3983','4','0','100','0','0','0','0','0','1','-1198','0','0','0','0','0','0','0','0','0','0','Interrogator Vishas - Yell on Aggro'),
@@ -17835,7 +17837,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('649002','6490','0','0','100','1','20000','20000','20000','20000','11','7399','1','0','0','0','0','0','0','0','0','0','Azshir the Sleepless - Cast Terrify'),
 ('649003','6490','2','0','100','1','50','0','20000','20000','11','9373','4','0','0','0','0','0','0','0','0','0','Azshir the Sleepless - Cast Soul Siphon'),
 -- Illusionary Phantasm (6493) - NSR
--- Suffering Victim (6547) - NSR
+-- Suffering Victim
+('654701','6547','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Suffering Victim - Set Stand State to Stand on Aggro'),
 -- Scarlet Trainee (6575) - mob_scarlet_trainee
 -- Scorn (SD2 Backport)
 ('1469301','14693','0','0','100','1','45000','45000','45000','45000','11','28873','1','0','0','0','0','0','0','0','0','0','Scorn - Cast Lich Slap'),
