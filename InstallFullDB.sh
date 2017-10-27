@@ -68,6 +68,9 @@ CORE_PATH=""
 ## Define your mysql programm if this differs
 MYSQL="mysql"
 
+## Define if you want to wait a bit before applying the full database
+FORCE_WAIT="YES"
+
 ## Define if the 'dev' directory for processing development SQL files needs to be used
 ##   Set the variable to "YES" to use the dev directory
 DEV_UPDATES="NO"
@@ -109,7 +112,7 @@ then
   echo "Please bring your repositories up-to-date!"
   echo "Press CTRL+C to exit"
   # show a mini progress bar
-  for i in {1..19}
+  for i in $(seq 1 10);
   do
    echo -ne .
    sleep 1
