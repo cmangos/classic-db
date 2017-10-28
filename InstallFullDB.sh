@@ -112,7 +112,7 @@ then
   echo "Please bring your repositories up-to-date!"
   echo "Press CTRL+C to exit"
   # show a mini progress bar
-  for i in $(seq 1 10);
+  for i in {1..10}
   do
    echo -ne .
    sleep 1
