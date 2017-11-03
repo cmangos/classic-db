@@ -1,0 +1,5 @@
+-- Adding Bouquest of Red Roses to loot tables, assuming 100% drop rate and in addition to normal loot
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES (11488, 22206, 100, 3, 1, 1, 500, ''); -- Ravenoak
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES (8929, 22206, 100, 2, 1, 1, 500, ''); -- Moira
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES (10811, 22206, 100, 2, 1, 1, 500, ''); -- Galford
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES (10901, 22206, 100, 2, 1, 1, 500, ''); -- Polkelt
