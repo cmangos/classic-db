@@ -1,33 +1,26 @@
 -- =========================================================================================================================================================
--- =================                    APPLY LATEST ITEM NAMES AND REFERENCE NAMES TO LOOT / REFERENCE / VENDOR TABLES                    ================= 
+-- =================                    APPLY LATEST ITEM NAMES AND REFERENCE NAMES TO LOOT / REFERENCE / VENDOR TABLES                    =================
 -- =========================================================================================================================================================
 UPDATE reference_loot_template SET comments='';
 UPDATE `reference_loot_template` ct JOIN `item_template` it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE `reference_loot_template` ct JOIN `reference_loot_template_names` rltn ON rltn.entry = ct.item AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
 
 UPDATE creature_loot_template SET comments='';
 UPDATE `creature_loot_template` ct JOIN `item_template` it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE `creature_loot_template` ct JOIN `reference_loot_template_names` rltn ON rltn.entry = ct.item AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
 
 UPDATE gameobject_loot_template SET comments='';
 UPDATE `gameobject_loot_template` ct JOIN `item_template` it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE `gameobject_loot_template` ct JOIN `reference_loot_template_names` rltn ON rltn.entry = ct.item AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
 
 UPDATE disenchant_loot_template SET comments='';
 UPDATE `disenchant_loot_template` ct JOIN `item_template` it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE `disenchant_loot_template` ct JOIN `reference_loot_template_names` rltn ON rltn.entry = ct.item AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
 
 UPDATE fishing_loot_template SET comments='';
 UPDATE `fishing_loot_template` ct JOIN `item_template` it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE `fishing_loot_template` ct JOIN `reference_loot_template_names` rltn ON rltn.entry = ct.item AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
 
 UPDATE item_loot_template SET comments='';
 UPDATE `item_loot_template` ct JOIN `item_template` it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE `item_loot_template` ct JOIN `reference_loot_template_names` rltn ON rltn.entry = ct.item AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
 
 UPDATE skinning_loot_template SET comments='';
 UPDATE `skinning_loot_template` ct JOIN `item_template` it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE `skinning_loot_template` ct JOIN `reference_loot_template_names` rltn ON rltn.entry = ct.item AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
 
 -- ==============================
 -- Populate Condition Comments
@@ -105,7 +98,7 @@ UPDATE conditions SET comments=CONCAT('Player is Dead OR NOT Within ',value2,'y 
 UPDATE conditions SET comments=CONCAT('All Players in Group are Dead OR NOT Within ',value2,'y of Source') WHERE type=36 AND value1=1 AND value2 !=0 AND comments IS NULL; -- CONDITION_DEAD_OR_AWAY
 UPDATE conditions SET comments=CONCAT('All Players in Instance are Dead OR NOT Within ',value2,'y of Source') WHERE type=36 AND value1=2 AND value2 !=0 AND comments IS NULL; -- CONDITION_DEAD_OR_AWAY
 UPDATE conditions SET comments=CONCAT('Creature Source is Dead') WHERE type=36 AND value1=3 AND comments IS NULL; -- CONDITION_DEAD_OR_AWAY
-UPDATE conditions SET comments=CONCAT('Creature of Entry ',value1,' Found Alive Within ',value2,'y of Source') WHERE type=37 AND comments IS NULL; 
+UPDATE conditions SET comments=CONCAT('Creature of Entry ',value1,' Found Alive Within ',value2,'y of Source') WHERE type=37 AND comments IS NULL;
 -- CONDITION_PVP_SCRIPT
 
 -- NOT, OR, AND (Run a few times to completely fill out the most complex conditions)
@@ -113,12 +106,12 @@ UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions)
    SET t.comments = CONCAT('NOT (',t1.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.comments IS NULL
    AND t.type = -3;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1, (SELECT DISTINCT condition_entry, comments FROM conditions) t2 -- CONDITION_OR
    SET t.comments = CONCAT('(',t1.comments,' OR ',t2.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.value2= t2.condition_entry AND t.comments IS NULL
    AND t.type = -2;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1, (SELECT DISTINCT condition_entry, comments FROM conditions) t2 -- CONDITION_AND
    SET t.comments = CONCAT('(',t1.comments,' AND ',t2.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.value2= t2.condition_entry AND t.comments IS NULL
@@ -128,42 +121,42 @@ UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions)
    SET t.comments = CONCAT('NOT (',t1.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.comments IS NULL
    AND t.type = -3;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1, (SELECT DISTINCT condition_entry, comments FROM conditions) t2 -- CONDITION_OR
    SET t.comments = CONCAT('(',t1.comments,' OR ',t2.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.value2= t2.condition_entry AND t.comments IS NULL
    AND t.type = -2;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1, (SELECT DISTINCT condition_entry, comments FROM conditions) t2 -- CONDITION_AND
    SET t.comments = CONCAT('(',t1.comments,' AND ',t2.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.value2= t2.condition_entry AND t.comments IS NULL
    AND t.type = -1;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1 -- CONDITION_NOT
    SET t.comments = CONCAT('NOT (',t1.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.comments IS NULL
    AND t.type = -3;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1, (SELECT DISTINCT condition_entry, comments FROM conditions) t2 -- CONDITION_OR
    SET t.comments = CONCAT('(',t1.comments,' OR ',t2.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.value2= t2.condition_entry AND t.comments IS NULL
    AND t.type = -2;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1, (SELECT DISTINCT condition_entry, comments FROM conditions) t2 -- CONDITION_AND
    SET t.comments = CONCAT('(',t1.comments,' AND ',t2.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.value2= t2.condition_entry AND t.comments IS NULL
    AND t.type = -1;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1 -- CONDITION_NOT
    SET t.comments = CONCAT('NOT (',t1.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.comments IS NULL
    AND t.type = -3;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1, (SELECT DISTINCT condition_entry, comments FROM conditions) t2 -- CONDITION_OR
    SET t.comments = CONCAT('(',t1.comments,' OR ',t2.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.value2= t2.condition_entry AND t.comments IS NULL
    AND t.type = -2;
-   
+
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1, (SELECT DISTINCT condition_entry, comments FROM conditions) t2 -- CONDITION_AND
    SET t.comments = CONCAT('(',t1.comments,' AND ',t2.comments,')')
  WHERE t.value1 = t1.condition_entry AND t.value2= t2.condition_entry AND t.comments IS NULL
