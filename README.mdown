@@ -10,7 +10,7 @@ copies.
 
 Compatibility
 -------------
-The *Classic DB* database is compatible with [mangos-classic rev z2698][10]
+The *Classic DB* database is compatible with [mangos-classic rev z2717][10]
 and newer.
 
 Getting started
@@ -28,15 +28,15 @@ with creatures, items, objects, quests, etc.
 
 It must be applied after creating the `mangos` database from your mangos core distribution, usually [mangos-classic][10] from [CMaNGOS project][13].
 
-If you used the default values when installing your mangos core, simply run into a bash compatible shell 
+If you used the default values when installing your mangos core, simply run into a bash compatible shell
 (like Bash Git for Windows) the following command `./InstallFullDB.sh`.
 
 It will create a single file `InstallFullDB.config`.
 
-If you have modified the default values for connecting to the database, in order to use 
+If you have modified the default values for connecting to the database, in order to use
 this database repository, you will have to open `InstallFullDB.config`,
-and edit in the desired database, username and password according to how you have 
-configured your MySQL server. Default values for mangos core are `username:mangos`, 
+and edit in the desired database, username and password according to how you have
+configured your MySQL server. Default values for mangos core are `username:mangos`,
 `password:mangos`, `database:mangos`. For security reasons, it is strongly adviced to
 use different username and password.
 
@@ -55,7 +55,7 @@ possible, how things currently are, how things should be instead. Example: "NPC 
 2. If you have SQL knowledge you can also open a ticket/issue and provide a fix, even partial. To help you to understand the DB structure, have a look a the [wiki page][16] or feel free to ask developers in the issue report. You can also try to fix currently open issues
 3. Make a pull request. If you feel like [cloning the database repository][17], you can test your own fixes and [do a pull request][18] that will be reviewed and discussed with you before merging
 
-Whenever possible, provide sources about the issue to help developers to get a better understanding of the issue (wowwiki, wowpedia, wowhead, official data...). Note that everything coming from private servers *is not* a reliable source. 
+Whenever possible, provide sources about the issue to help developers to get a better understanding of the issue (wowwiki, wowpedia, wowhead, official data...). Note that everything coming from private servers *is not* a reliable source.
 
 Note that the more complete your contribution is (i.e. close to a pull request), the quicker it will become part of the database.
 But as this is a community project, the developers will always try to help you move through the various stages of contributing!

@@ -1,3 +1,0 @@
--- Fixed texts for Sourge Letters quests in Scourge Invasion Event
-UPDATE quest_template SET RequestItemsText='Yes? What do you have there?', OfferRewardText='How tragic. These words, clearly meant for someone the soldier loved, never made it to their destination. The events detailed happened years ago; I\'m not sure if the intended recipient still lives.$B$BThere is hope yet, however. With the names and information he gives, I might be able to locate the family! It will take some research, but the librarian in Stormwind owes me a favor...$B$BThank you for bringing this to me. With your help, we may be able to grant someone peace of mind at least.' WHERE entry IN (9295, 9299, 9300, 9301, 9302, 9304);
-

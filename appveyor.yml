@@ -1,5 +1,5 @@
 # Specify version format
-version: "1.8.5.{build} 'Below Blackrock Mountain'"
+version: "1.9.0.{build} 'Below Blackrock Mountain'"
 
 # specify custom environment variables
 environment:

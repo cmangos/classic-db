@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="ClassicDB_1_8_5_z2697.sql"
-DB_TITLE="v1.8.5 'Below Blackrock Mountain'"
+FULLDB_FILE="ClassicDB_1_9_0_z2717.sql"
+DB_TITLE="v1.9.0 'The Black Dragonflight'"
 NEXT_MILESTONES="0.19 0.20"
 
 #internal use

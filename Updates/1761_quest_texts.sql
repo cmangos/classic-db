@@ -1,5 +1,0 @@
--- Fixed texts for quest 1144 & 8582
--- Thanks @ M2us and @Lichery for reporting.
--- Closes #102 and closes #103
-UPDATE quest_template SET Details="At last, help has arrived!$B$BYou have no clue how long I've been held prisoner here. I can't remember the last time I saw the outside of this place.$B$BYou see, I am an entrepreneur. Always out for a copper, as they say. I caught wind that Mebok Mizzyrix was paying well for Blueleaf Tuber from this here pig pen. I figured it would be an easy in, easy out kind of affair. As you can see, I was a bit wrong!$B$BAnyway, if you'd be so kind as to help me get out of here, I'll make it worth your while." WHERE entry=1144;
-UPDATE quest_template SET RequestItemsText="Returned already with the purple lotus that I have requested, $c? It is critical that you do so in as timely as fashion as possible lest all that I am attempting here come to naught." WHERE entry=8582;
