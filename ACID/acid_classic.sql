@@ -18047,6 +18047,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1126102','11261','0','0','100','1','9000','14000','9000','16000','11','18103','1','1','13','-75','1','0','0','0','0','0','Doctor Theolen Krastinov - Cast Backhand and Reduce Aggro on Target'),
 ('1126103','11261','2','0','100','1','30','0','120000','120000','11','8269','0','1','1','-106','0','0','0','0','0','0','Doctor Theolen Krastinov - Cast Frenzy and Emote at 30% HP'),
 -- Spectral Projection (11263)
+('1126301','11263','8','0','100','0','17652','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Spectral Projection - Self Kill on Spell Hit'),
 -- Dark Shade (11284)
 -- Illusion of Jandice Barov (SD2 Backport) (INCORRECT SPELL ID)
 ('1143901','11439','0','0','100','1','2000','8000','5000','8000','11','15284','1','0','0','0','0','0','0','0','0','0','Illusion of Jandice Barov - Cast Cleave'),
