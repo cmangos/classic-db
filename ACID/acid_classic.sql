@@ -12048,7 +12048,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Faustron
 ('1274001','12740','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Faustron - Summon Enraged Wyverns and Yell on Aggro'),
 -- Malfurion Stormrage (15362) - npc_malfurion_stormrage
--- Minion of Omen 15466
+-- Minion of Omen
+('1546601','15466','8','0','100','1','26636','-1','0','0','11','25495','0','1','0','0','0','0','0','0','0','0','Minion of Omen - Cast Firework Effect, Lunar Festival Minion on Spell Hit'),
 -- Omen 15467
 -- Eranikus, Tyrant of the Dream 15491
 -- Nighthaven Defender 15495
