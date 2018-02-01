@@ -353,7 +353,7 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 -- Tauren Civilian Female template - Gossip Menu + Options 
 
 -- Love Tokens
-INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12856, 8254, 0, 507);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12856, 8309, 0, 507);
 -- Adding vendor + token menu option (Vendor options will not show on non-vendor npcs)
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (12856, 0, 1, 'I want to browse your goods.', 3, 4, 0, 0, 0, 0, 0, NULL, 500);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (12856, 1, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 1285601, 0, 0, NULL, 517);
@@ -372,7 +372,7 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 -- Tauren Civilian Male template - Gossip Menu + Options 
 -- Love Tokens
-INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12857, 8254, 0, 507);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12857, 8309, 0, 507);
 -- Adding vendor + token menu option (Vendor options will not show on non-vendor npcs)
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (12857, 0, 1, 'I want to browse your goods.', 3, 4, 0, 0, 0, 0, 0, NULL, 500);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (12857, 1, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 1285701, 0, 0, NULL, 523);
@@ -487,9 +487,9 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 -- No Token Gossip
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12863, 8291, 0, 524);
 
--- Generic Horde Civilian Female template - Gossip Menu + Options
+-- Troll Civilian Female template - Gossip Menu + Options
 -- Love Tokens
-INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12872, 8245, 0, 507);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12872, 8310, 0, 507);
 -- Adding token menu option
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (12872, 1, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 1287201, 0, 0, NULL, 517);
 -- Heartbroken gossip
@@ -505,9 +505,9 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 -- No Token Gossip
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12872, 8291, 0, 524);
 
--- Generic Horde Civilian Male template - Gossip Menu + Options
+-- Troll Civilian Male template - Gossip Menu + Options
 -- Love Tokens
-INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12873, 8245, 0, 507);
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12873, 8310, 0, 507);
 -- Adding token menu option
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (12873, 1, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 1287301, 0, 0, NULL, 523);
 -- Heartbroken gossip
@@ -522,4 +522,40 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 
 -- No Token Gossip
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12873, 8291, 0, 524);
+
+-- Goblin Civilian Female template - Gossip Menu + Options
+-- Love Tokens
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12874, 8311, 0, 507);
+-- Adding token menu option
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (12874, 1, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 1287401, 0, 0, NULL, 517);
+-- Heartbroken gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12874, 8283, 0, 508);
+-- No Perfume gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12874, 8287, 0, 520);
+-- Already Adored Gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12874, 8296, 0, 518);
+-- Cast Valentine(27550) in response to receiving love token
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (1287401, 0, 15, 27549, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast valentine Horde Civilian on player');
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (1287401, 0, 14, 27741, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove Love is in the Air Aura');
+
+-- No Token Gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12874, 8291, 0, 524);
+
+-- Goblin Civilian Male template - Gossip Menu + Options
+-- Love Tokens
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12875, 8311, 0, 507);
+-- Adding token menu option
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (12875, 1, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 1287501, 0, 0, NULL, 523);
+-- Heartbroken gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12875, 8283, 0, 508);
+-- No Perfume gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12875, 8289, 0, 520);
+-- Already Adored Gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12875, 8296, 0, 518);
+-- Cast Valentine(27550) in response to receiving love token
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (1287501, 0, 15, 27549, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast valentine Horde Civilian on player');
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (1287501, 0, 14, 27741, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove Love is in the Air Aura');
+
+-- No Token Gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12875, 8291, 0, 524);
 

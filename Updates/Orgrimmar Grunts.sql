@@ -136,7 +136,6 @@ INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalon
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (27657, 0, 29, 1, 2, 0, 14377, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove Gossip from Tharr');
 UPDATE `creature_template` SET `GossipMenuId`= 12871 WHERE `Entry`= 14377;
 
-/* Handled in SD2
 
 -- Orgrimmar Grunt gossip + menu
 -- Changing standard gossip to display only outside of event
@@ -146,13 +145,17 @@ UPDATE `gossip_menu` SET `condition_id`= 501 WHERE `entry`= 1951 and `text_id`= 
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (1951, 8265, 0, 507);
 
 -- Adding token menu option
-INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (1951, 14, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 0, 0, 0, NULL, 528);
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (1951, 14, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 195101, 0, 0, NULL, 538);
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (1951, 15, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 195101, 0, 0, NULL, 539);
 
 -- Heartbroken gossip
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (1951, 8282, 0, 508);
 
--- No Perfume or Cologne gossip (Change/Remove this when gender check implemented)
-INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (1951, 8303, 0, 530);
+-- No Cologne gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (1951, 8287, 0, 541);
+
+-- No Perfume gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (1951, 8289, 0, 542);
 
 -- Cast Valentine(26663) in response to receiving love token
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (195101, 0, 15, 26663, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast valentine Orgrimmar Grunt on player');
@@ -164,6 +167,4 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 -- No Token Gossip
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (1951, 8291, 0, 524);
 
-UPDATE `gossip_menu_option` SET `action_script_id`= 195101 WHERE `menu_id`= 1951 AND `id`= 14;
 
-*/

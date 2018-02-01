@@ -80,26 +80,30 @@ INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalon
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (27657, 0, 29, 1, 2, 0, 14438, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove Gossip from Pomeroy');
 UPDATE `creature_template` SET `GossipMenuId`= 12864 WHERE `Entry`= 14438;
 
-/* Below handled in SD2 
+
 
 -- Adding gossip and conditions
 
 -- Changing standard gossip to display only outside of event
 UPDATE `gossip_menu` SET `condition_id`= 501 WHERE `entry`= 435 and `text_id`= 933;
 
--- Love Tokens(Normal Valentime Gossip)
+-- Love Tokens(Normal Valentine Gossip)
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (435, 8245, 0, 507);
 
--- Adding token menu option
-INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (435, 16, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 0, 0, 0, NULL, 528);
+-- Adding token menu options
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (435, 16, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 43501, 0, 0, NULL, 537); -- Female Guard
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES (435, 17, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 43501, 0, 0, NULL, 539); -- Male Guard
 
 -- Heartbroken gossip
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (435, 8282, 0, 508);
 
--- No Perfume or Cologne gossip (Need to change/remove this when gender check in place)
-INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (435, 8303, 0, 530);
+-- No Cologne gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (435, 8287, 0, 540);
 
--- Cast Valentine(26924) in response to receiving love token
+-- No Perfume gossip
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (435, 8289, 0, 542);
+
+-- Cast Valentine(27548) in response to receiving love token
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (43501, 0, 15, 27548, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast valentine Stormwind Guard on player');
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (43501, 0, 14, 27741, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove Love is in the Air Aura');
 
@@ -109,10 +113,7 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 -- No Token Gossip
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (435, 8291, 0, 524);
 
-UPDATE `gossip_menu_option` SET `action_script_id`= 43501 WHERE `menu_id`= 435 AND `id`= 16;
-
-
-
+/*
 -- SW Royal Guards (not implemented) INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES (79747, 0, 0, 0, 27654, 0, 8);
 INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES (10506, 0, 0, 0, 27654, 0, 8);
 INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES (10508, 0, 0, 0, 27654, 0, 8);

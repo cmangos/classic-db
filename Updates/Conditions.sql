@@ -73,3 +73,41 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES 
 -- To Not have perfume or cologne aura and Love is in the air active(530)
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (529, -3, 525, 0);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (530, -1, 500, 529);
+
+-- NPC Female (SW City Guard and Patrollers)
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (531, 40, 2, 0);
+
+-- NPC Female (Org Grunts and Bluffwatchers)
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (532, 40, 1, 0);
+
+-- NPC Male
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (533, 40, 0, 0);
+
+-- Condition Love is in the Air Active, player NOT heartbroken and Guard NPC Female (SW City Guard and Patrollers)
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (534, -1, 507, 531);
+
+-- Condition Love is in the Air Active, player NOT heartbroken and Guard NPC Female (Org Grunts and Bluffwatchers)
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (535, -1, 507, 532);
+
+-- Condition Love is in the Air Active, player NOT heartbroken and Guard NPC Male
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (536, -1, 507, 533);
+
+-- Conditon entry for love token gossip (cologne only) and Guard NPC Female (SW City Guard and Patrollers)
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (537, -1, 517, 531);
+
+-- Conditon entry for love token gossip (cologne only) and Guard NPC Female (Org Grunts and Bluffwatchers)
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (538, -1, 517, 532);
+
+-- Conditon entry for love token gossip (perfume only) and Guard NPC Male
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (539, -1, 523, 533);
+
+-- No Cologne Aura and Love is in the Air Active and Guard NPC Female (SW City Guard and Patrollers)
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (540, -1, 519, 531);
+
+-- No Cologne Aura and Love is in the Air Active and Guard NPC Female (Org Grunts and Bluffwatchers)
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (541, -1, 519, 532);
+
+-- No Perfume Aura and Love is in the Air Active and Guard NPC Male
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES (542, -1, 520, 533);
+
+
