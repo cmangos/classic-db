@@ -932,9 +932,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lucien Tosselwrench (2920) - NSR
 -- Lotwil Veriatus     (2921) - NSR
 -- Servo (3.1.1 Official Data)
-('292201','2922','1','0','100','0','1000','1000','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Servo - Set Phase 1 on Spawn'),
-('292202','2922','1','2','100','1','20000','40000','98000','132000','1','-192','-193','-194','23','1','0','0','0','0','0','0','Servo - Random Say OOC and Set Phase 2 (Phase 1)'),
-('292203','2922','1','2','100','1','49000','66000','98000','132000','1','-195','-196','-197','23','-1','0','0','0','0','0','0','Servo - Random Say OOC and Set Phase 1 (Phase 2)'),
+('292201','2922','1','0','100','0','1000','1000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Servo - Set Phase 1 on Spawn'),
+('292202','2922','1','5','100','1','20000','40000','98000','132000','1','-192','-193','-194','22','2','0','0','0','0','0','0','Servo - Random Say OOC and Set Phase 2 (Phase 1)'),
+('292203','2922','1','3','100','1','49000','66000','98000','132000','1','-195','-196','-197','22','1','0','0','0','0','0','0','Servo - Random Say OOC and Set Phase 1 (Phase 2)'),
 -- Zaricotl (3.1.1 Official Data)
 ('293101','2931','5','0','100','0','0','0','0','0','1','-405','0','0','0','0','0','0','0','0','0','0','Zaricotl - Text Emote on Player Kill'),
 -- Magregan Deepshadow (3.1.1 Official Data) - ADD TO SCRIPT TRACKING
@@ -1135,7 +1135,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('600302','6003','0','0','100','1','8000','11000','18000','21000','11','11977','1','0','0','0','0','0','0','0','0','0','Nethergarde Officer - Cast Rend'),
 -- Shadowsworn Cultist (4.0.3 Official Data)
 ('600401','6004','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Shadowsworn Cultist - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('600402','6004','9','1','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Shadowsworn Cultist - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
+('600402','6004','9','0','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Shadowsworn Cultist - Cast Throw and Set Ranged Weapon Model'),
 ('600403','6004','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shadowsworn Cultist - Enable Dynamic Movement at 9-80 Yards'),
 ('600404','6004','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Shadowsworn Cultist - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('600405','6004','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Shadowsworn Cultist - Set Melee Weapon Model on Evade'),
@@ -13941,10 +13941,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('203401','2034','9','0','100','1','0','5','10000','16000','11','12166','1','0','0','0','0','0','0','0','0','0','Feral Nightsaber - Cast Muscle Tear'),
 -- Lord Melenas
 ('203801','2038','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Lord Melenas - Set Phase 1 on Aggro'),
-('203802','2038','2','2','100','1','20','0','12000','18000','11','774','0','1','0','0','0','0','0','0','0','0','Lord Melenas - Cast Rejuvenation at 20% HP (Phase 1)'),
-('203803','2038','2','2','100','0','66','0','0','0','11','5759','0','1','22','2','0','0','0','0','0','0','Lord Melenas - Cast Cat Form and Set Phase 2 at 66% HP (Phase 1)'),
-('203804','2038','9','1','100','1','0','5','13000','18000','11','1822','1','0','0','0','0','0','0','0','0','0','Lord Melenas - Cast Rake (Phase 2)'),
-('203805','2038','2','1','100','0','33','0','0','0','28','0','5759','0','22','1','0','0','0','0','0','0','Lord Melenas - Remove Cat Form and Set Phase 1 at 33% HP (Phase 2)'),
+('203802','2038','2','5','100','1','20','0','12000','18000','11','774','0','1','0','0','0','0','0','0','0','0','Lord Melenas - Cast Rejuvenation at 20% HP (Phase 1)'),
+('203803','2038','2','5','100','0','66','0','0','0','11','5759','0','1','22','2','0','0','0','0','0','0','Lord Melenas - Cast Cat Form and Set Phase 2 at 66% HP (Phase 1)'),
+('203804','2038','9','3','100','1','0','5','13000','18000','11','1822','1','0','0','0','0','0','0','0','0','0','Lord Melenas - Cast Rake (Phase 2)'),
+('203805','2038','2','3','100','0','33','0','0','0','28','0','5759','0','22','1','0','0','0','0','0','0','Lord Melenas - Remove Cat Form and Set Phase 1 at 33% HP (Phase 2)'),
 -- Ursal the Mauler
 ('203901','2039','9','0','100','1','0','5','5000','8000','11','15793','1','0','0','0','0','0','0','0','0','0','Ursal the Mauler - Cast Maul'),
 -- Ancient Protector
@@ -16972,11 +16972,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('622209','6222','14','0','100','1','2000','15','28900','28900','11','10732','6','1','0','0','0','0','0','0','0','0','Leprous Technician - Cast Supercharge on Mechanical Friendlies'),
 ('622210','6222','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Leprous Technician - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Leprous Defender (3.3.5a Official Data) - CURRENT MULTISHOT TIMERS ARE ROUGH SCRIPTED BASED ON STRANGE OFFICIAL DATA
-('622301','6223','9','0','100','1','5','30','2000','2700','11','6660','1','0','40','2','0','0','0','0','0','0','Leprous Defender - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('622302','6223','9','0','100','1','5','30','30000','45000','11','14443','4','0','40','2','0','0','0','0','0','0','Leprous Defender - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
-('622303','6223','9','0','100','1','0','5','0','0','40','1','0','0','20','1','0','0','0','0','0','0','Leprous Defender - Set Melee Weapon Model and Start Melee Below 5 Yards (Phase 1)'),
-('622304','6223','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Defender - Emote on Radiation Spellhit'),
-('622305','6223','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Leprous Defender - Set Phase 0 and Set Melee Weapon Model on Evade'),
+('622301','6223','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Leprous Defender - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('622302','6223','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Leprous Defender - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('622303','6223','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Leprous Defender - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('622304','6223','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Leprous Defender - Set Phase 0 and Set Melee Weapon Model on Evade'),
+('622305','6223','9','5','100','1','5','30','2000','2700','11','6660','1','0','40','2','0','0','0','0','0','0','Leprous Defender - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('622306','6223','9','5','100','1','5','30','30000','45000','11','14443','4','0','40','2','0','0','0','0','0','0','Leprous Defender - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
+('622307','6223','8','0','100','0','9798','-1','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Defender - Emote on Radiation Spellhit'),
 -- Leprous Machinesmith (3.3.5a Official Data) - OOC Tune Up Spell Casts are Rough Scripted
 ('622401','6224','1','0','100','1','10000','45000','30000','70000','11','10348','0','1','0','0','0','0','0','0','0','0','Leprous Machinesmith - Cast Tune Up OOC'),
 ('622402','6224','1','0','100','0','0','0','0','0','20','0','0','0','22','1','0','0','0','0','0','0','Leprous Machinesmith - Prevent Melee and Set Phase 1 on Spawn'),
@@ -17266,7 +17268,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tinkerer Gizlock
 ('1360101','13601','4','0','100','0','0','0','0','0','1','-182','0','0','0','0','0','0','0','0','0','0','Tinkerer Gizlock - Yell on Aggro'),
 ('1360102','13601','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Tinkerer Gizlock - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('1360103','13601','9','0','100','1','5','30','2300','3900','11','16100','1','0','40','2','0','0','0','0','0','0','Tinkerer Gizlock - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1360103','13601','9','0','100','1','5','30','2300','3900','11','16100','1','0','40','2','0','0','0','0','0','0','Tinkerer Gizlock - Cast Shoot and Set Ranged Weapon Model'),
 ('1360104','13601','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Tinkerer Gizlock - Enable Dynamic Movement at 9-80 Yards'),
 ('1360105','13601','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Tinkerer Gizlock - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1360106','13601','0','0','100','1','6000','9000','16000','19000','11','21833','0','40','2','0','0','0','0','0','0','0','Tinkerer Gizlock - Cast Goblin Dragon Gun and Set Ranged Weapon Model'),
@@ -17918,7 +17920,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1047201','10472','4','3','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Scholomance Occultist - Set Phase 1 on Aggro'),
 ('1047202','10472','0','5','100','1','4800','11700','32400','39700','11','16431','0','33','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Bone Armor (Phase 1)'),
 ('1047203','10472','13','5','100','0','0','0','0','0','11','15122','1','1','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Counterspell is Target Cast a Spell (Phase 1)'),
-('1047204','10472','2','0','100','0','40','0','0','0','3','11284','0','0','22','2','0','0','0','0','0','0','Scholomance Occultist - Transform into Dark Shade and Set Phase 2 at 40% HP (Phase 1)'),
+('1047204','10472','2','0','100','0','40','0','0','0','3','11284','0','0','22','2','0','0','0','0','0','0','Scholomance Occultist - Transform into Dark Shade and Set Phase 2 at 40% HP'),
 ('1047205','10472','0','3','100','1','500','1000','6500','15600','11','17228','1','0','0','0','0','0','0','0','0','0','Scholomance Occultist - Cast Shadow Bolt Volley (Phase 2)'),
 -- Scholomance Student (10475)
 -- Scholomance Necrolyte (3.0.3 Official Data - Logs Only)
@@ -21053,6 +21055,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('606601','6066','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','11','8378','0','1','Earthgrab totem - Prevent Combat Movement and Prevent Melee and cast earthgrab on Spawn'),
 -- Eranikus the Chained
 ('850601','8506','11','0','100','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
+-- Battle Chicken 8836
+('883601','8836','0','0','70','1','5000','10000','15000','20000','11','13168','0','0','0','0','0','0','0','0','0','0','Battle Chicken - Cast Chicken Fury'),
+('883602','8836','0','2','18','1','8000','8000','8000','8000','11','23060','0','0','22','1','0','0','0','0','0','0','Battle Chicken - Cast Battle Squawk and Set Phase 1'),
 -- Enraged Wyvern
 ('929701','9297','11','0','100','0','0','0','0','0','11','7276','0','1','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc on Spawn'),
 -- Enraged Gryphon
