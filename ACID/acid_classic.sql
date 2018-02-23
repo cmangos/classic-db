@@ -6301,7 +6301,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gigget Zipcoil (12958) - NSR
 -- Revantusk Watcher (14730) - NSR
 -- Lard (14731) - npc_innkeeper
--- Revantusk Drummer (14734) - NSR
+-- Revantusk Drummer
+('1473401','14734','1','0','100','1','1200','1200','1200','1200','5','36','0','0','0','0','0','0','0','0','0','0','Revantusk Drummer - OneShotAttack1H Emote OOC'),
 -- Primal Torntusk (14736) - NSR
 -- Smith Slagtree (14737) - NSR
 -- Otho Moji'ko (14738) - NSR
