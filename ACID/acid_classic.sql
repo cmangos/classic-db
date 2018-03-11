@@ -5504,10 +5504,27 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('67206','672','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Skullsplitter Spiritchaser - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('67207','672','14','0','100','0','500','40','0','0','11','11986','6','1','0','0','0','0','0','0','0','0','Skullsplitter Spiritchaser - Cast Healing Wave on Friendlies'),
 ('67208','672','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Skullsplitter Spiritchaser - Set Phase to 0 on Evade'),
--- Venture Co. Strip Miner
+-- Venture Co. Strip Miner 674
 ('67401','674','4','0','100','0','0','0','0','0','11','7978','1','1','0','0','0','0','0','0','0','0','Venture Co. Strip Miner - Cast Throw Dynamite'),
 ('67402','674','0','0','100','1','8000','14000','12000','18000','11','8800','4','0','0','0','0','0','0','0','0','0','Venture Co. Strip Miner - Cast Dynamite'),
 ('67403','674','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Strip Miner - Flee at 15% HP'),
+-- Venture Co. Foreman 675
+('67501','675','1','0','100','1','1000','1000','240000','240000','11','8258','0','32','0','0','0','0','0','0','0','0','Venture Co. Foreman - Cast Devotion Aura OOC'),
+('67502','675','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Foreman - Flee at 15% HP'),
+-- Venture Co. Surveyor 676
+('67601','676','0','0','100','1','7000','11000','12000','20000','11','11969','0','0','0','0','0','0','0','0','0','0','Venture Co. Surveyor - Cast Fire Nova'),
+('67602','676','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Surveyor - Flee at 15% HP'),
+-- Venture Co. Tinkerer 677
+('67701','677','0','0','100','1','5000','9000','70000','85000','11','7979','0','0','0','0','0','0','0','0','0','0','Venture Co. Tinkerer - Cast Compact Harvest Reaper'),
+('67702','677','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Tinkerer - Flee at 15% HP'),
+-- Mosh'Ogg Mauler 678
+-- Mosh'Ogg Shaman 679
+-- Mosh'Ogg Lord 680
+-- Young Stranglethorn Tiger 681 - NSR
+-- Stranglethorn Tiger 682 - NSR
+-- Young Panther 683 - NSR
+-- Shadowmaw Panther 684 - NSR
+-- Stranglethorn Raptor 685 - NSR
 -- Lashtail Raptor
 ('68601','686','0','0','100','1','1200','8800','19700','24100','11','6607','1','0','0','0','0','0','0','0','0','0','Lashtail Raptor - Cast Lash'),
 -- Stone Maw Basilisk
