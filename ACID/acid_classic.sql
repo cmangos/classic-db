@@ -7563,6 +7563,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ========
 -- Westfall
 -- ========
+-- Harvest Golem
+('3601','36','0','0','100','1','7100','18600','22200','34500','11','8014','1','32','0','0','0','0','0','0','0','0','Harvest Golem - Cast Tetanus'),
 -- Defias Smuggler (2.4.3 Official Data)
 ('9501','95','4','0','5','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Smuggler - Random Say on Aggro'),
 ('9502','95','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Defias Smuggler - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
