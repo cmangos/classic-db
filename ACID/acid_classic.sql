@@ -5477,7 +5477,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('59701','597','2','0','100','0','30','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Bloodscalp Berserker - Cast Enrage at 30% HP'),
 ('59702','597','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodscalp Berserker - Flee at 15% HP'),
 -- Bloodscalp Witch Doctor 660
-('66001','660','0','0','100','1','6500','15300','80900','93900','11','5605','0','0','0','0','0','0','0','0','0','0','Bloodscalp Witch Doctor - Cast Healing Ward'),
+('66001','660','0','0','100','33','6500','15300','13300','21700','11','5605','0','0','11','8376','0','0','0','0','0','0','Bloodscalp Witch Doctor - Cast Healing Ward or Cast Earthgrab Totem'),
 ('66002','660','2','0','100','0','30','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Bloodscalp Witch Doctor - Cast Enrage at 30% HP'),
 -- Skullsplitter Warrior 667
 ('66701','667','13','0','100','1','15000','20000','0','0','11','11972','1','1','0','0','0','0','0','0','0','0','Skullsplitter Warrior - Cast Shield Bash on Target Spell Cast'),
@@ -5487,14 +5487,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('66902','669','0','0','100','1','5000','7000','23000','26000','11','3148','1','32','0','0','0','0','0','0','0','0','Skullsplitter Hunter - Cast Head Crack'),
 ('66903','669','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Skullsplitter Hunter - Despawn Guardians on Evade'),
 -- Skullsplitter Witch Doctor 670
-('67001','670','0','0','100','1','6500','15300','80900','93900','11','5605','0','0','0','0','0','0','0','0','0','0','Skullsplitter Witch Doctor - Cast Healing Ward'),
+('67001','670','0','0','100','33','6500','15300','13300','21700','11','5605','0','0','11','8376','0','0','0','0','0','0','Skullsplitter Witch Doctor - Cast Healing Ward or Cast Earthgrab Totem'),
 -- Bloodscalp Headhunter 671
 ('67101','671','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bloodscalp Headhunter - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('67102','671','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bloodscalp Headhunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('67103','671','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Bloodscalp Headhunter - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
 ('67104','671','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Bloodscalp Headhunter - Set Phase 0 and Set Melee Weapon Model on Evade'),
-('67105','671','9','13','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Bloodscalp Headhunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('67105','671','9','13','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Bloodscalp Headhunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('67106','671','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Bloodscalp Headhunter - Cast Enrage at 30% HP'),
+('67107','671','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bloodscalp Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('67108','671','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodscalp Headhunter - Flee at 15% HP (Phase 2)'),
 -- Skullsplitter Spiritchaser 672
 ('67201','672','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Skullsplitter Spiritchaser - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('67202','672','9','13','100','1','0','40','3200','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Skullsplitter Spiritchaser - Cast Lightning Bolt (Phase 1)'),
@@ -5505,8 +5507,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('67207','672','14','0','100','0','500','40','0','0','11','11986','6','1','0','0','0','0','0','0','0','0','Skullsplitter Spiritchaser - Cast Healing Wave on Friendlies'),
 ('67208','672','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Skullsplitter Spiritchaser - Set Phase to 0 on Evade'),
 -- Venture Co. Strip Miner 674
-('67401','674','4','0','100','0','0','0','0','0','11','7978','1','1','0','0','0','0','0','0','0','0','Venture Co. Strip Miner - Cast Throw Dynamite'),
-('67402','674','0','0','100','1','8000','14000','12000','18000','11','8800','4','0','0','0','0','0','0','0','0','0','Venture Co. Strip Miner - Cast Dynamite'),
+('67401','674','9','0','100','1','0','30','12000','15000','11','7978','1','0','0','0','0','0','0','0','0','0','Venture Co. Strip Miner - Cast Throw Dynamite'),
 ('67403','674','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Strip Miner - Flee at 15% HP'),
 -- Venture Co. Foreman 675
 ('67501','675','1','0','100','1','1000','1000','240000','240000','11','8258','0','32','0','0','0','0','0','0','0','0','Venture Co. Foreman - Cast Devotion Aura OOC'),
@@ -5515,11 +5516,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('67601','676','0','0','100','1','7000','11000','12000','20000','11','11969','0','0','0','0','0','0','0','0','0','0','Venture Co. Surveyor - Cast Fire Nova'),
 ('67602','676','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Surveyor - Flee at 15% HP'),
 -- Venture Co. Tinkerer 677
-('67701','677','0','0','100','1','5000','9000','70000','85000','11','7979','0','0','0','0','0','0','0','0','0','0','Venture Co. Tinkerer - Cast Compact Harvest Reaper'),
-('67702','677','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Tinkerer - Flee at 15% HP'),
+('67701','677','9','0','100','1','8','40','5000','10000','11','20823','1','0','0','0','0','0','0','0','0','0','Venture Co. Tinkerer - Cast Fireball'),
+('67702','677','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Venture Co. Tinkerer - Cast Frost Armor on Missing Buff'),
+('67703','677','0','0','100','1','5000','9000','70000','85000','11','7979','0','0','0','0','0','0','0','0','0','0','Venture Co. Tinkerer - Cast Compact Harvest Reaper'),
+('67704','677','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Tinkerer - Flee at 15% HP'),
 -- Mosh'Ogg Mauler 678
+('67801','678','0','0','50','1','4000','6000','11000','12000','11','5164','1','0','0','0','0','0','0','0','0','0','Mosh''Ogg Mauler - Cast Knockdown'),
 -- Mosh'Ogg Shaman 679
 -- Mosh'Ogg Lord 680
+('68001','680','0','0','100','3','1000','3000','30000','40000','11','9128','0','0','0','0','0','0','0','0','0','0','Mosh''Ogg Lord - Cast Battle Shout'),
 -- Young Stranglethorn Tiger 681 - NSR
 -- Stranglethorn Tiger 682 - NSR
 -- Young Panther 683 - NSR
@@ -5541,6 +5546,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('69405','694','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bloodscalp Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('69406','694','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodscalp Axe Thrower - Flee at 15% HP (Phase 2)'),
 ('69407','694','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Bloodscalp Axe Thrower - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('69408','694','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Bloodscalp Axe Thrower - Cast Enrage at 30% HP'),
 -- Skullsplitter Axe Thrower
 ('69601','696','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Skullsplitter Axe Thrower - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('69602','696','9','5','100','1','5','30','2200','3800','11','10277','1','0','40','2','0','0','0','0','0','0','Skullsplitter Axe Thrower - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
@@ -5555,7 +5561,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('69702','697','0','0','100','1','13200','29600','24800','37300','11','11969','0','2','0','0','0','0','0','0','0','0','Bloodscalp Shaman - Cast Fire Nova'),
 ('69703','697','27','0','100','1','8788','1','15000','30000','11','8788','0','1','0','0','0','0','0','0','0','0','Bloodscalp Shaman - Cast Lightning Shield on Missing Buff'),
 ('69704','697','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Bloodscalp Shaman - Cast Enrage at 30% HP'),
--- Bloodscalp Tiger 698 - NSR
+-- Bloodscalp Tiger 698
+('69801','698','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Bloodscalp Tiger - Cast Enrage at 30% HP'),
 -- Bloodscalp Beastmaster 699
 ('69901','699','1','0','100','0','5000','5000','0','0','11','3612','0','0','0','0','0','0','0','0','0','0','Bloodscalp Beastmaster - Cast Bloodscalp Pet OOC'),
 ('69902','699','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bloodscalp Beastmaster - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -5564,6 +5571,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('69905','699','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','56','0','0','0','Bloodscalp Beastmaster - Set Phase 0 and Set Melee Weapon Model and Despawn Guardians on Evade'),
 ('69906','699','9','13','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Bloodscalp Beastmaster - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('69907','699','2','0','100','0','30','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Bloodscalp Beastmaster - Cast Enrage at 30% HP'),
+('69908','699','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bloodscalp Beastmaster - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('69909','699','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodscalp Beastmaster - Flee at 15% HP (Phase 2)'),
 -- Bloodscalp Panther 700 - NSR
 -- Bloodscalp Mystic 701
 ('70101','701','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bloodscalp Mystic - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -5574,22 +5583,37 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('70106','701','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bloodscalp Mystic - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('70107','701','14','0','100','0','500','40','0','0','11','11986','6','1','0','0','0','0','0','0','0','0','Bloodscalp Mystic - Cast Healing Wave on Friendlies'),
 ('70108','701','0','0','100','1','3000','4000','25000','30000','11','4979','0','1','0','0','0','0','0','0','0','0','Bloodscalp Mystic - Cast Quick Flame Ward'),
-('70109','701','2','0','100','0','30','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Bloodscalp Mystic - Cast Enrage at 30% HP'),
+('70109','701','2','0','100','0','30','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Bloodscalp Mystic - Cast Enrage at 30% HP'),
 ('70110','701','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Bloodscalp Mystic - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('70111','701','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodscalp Mystic - Flee at 15% HP (Phase 3)'),
 ('70112','701','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bloodscalp Mystic - Set Phase to 0 on Evade'),
 -- Bloodscalp Scavenger 702
 ('70201','702','33','0','100','1','0','0','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Bloodscalp Scavenger - Cast Backstab on Facing Target Back'),
 ('70202','702','0','0','100','1','7000','14000','120000','125000','11','744','1','0','0','0','0','0','0','0','0','0','Bloodscalp Scavenger - Cast Poison'),
-('70203','702','2','0','100','0','30','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Bloodscalp Scavenger - Cast Enrage at 30% HP'),
+('70203','702','2','0','100','0','30','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Bloodscalp Scavenger - Cast Enrage at 30% HP'),
+-- Mosh'Ogg Warmonger 709
+('70901','709','0','0','100','1','2000','3000','10000','11000','11','8147','0','0','0','0','0','0','0','0','0','0','Mosh''Ogg Warmonger - Cast Thunderclap'),
+-- Mosh'Ogg Spellcrafter 710
+('71001','710','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Mosh''Ogg Spellcrafter - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('71002','710','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mosh''Ogg Spellcrafter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('71003','710','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Mosh''Ogg Spellcrafter - Disable Dynamic Movement at 0-8 Yards'),
+('71004','710','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Mosh''Ogg Spellcrafter - Set Phase 0 on Evade'),
+('71007','710','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Mosh''Ogg Spellcrafter - Cast Frost Armor on Missing Buff'),
+('71005','710','9','13','100','1','0','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Mosh''Ogg Spellcrafter - Cast Fireball (Phase 1)'),
+('71006','710','0','13','100','1','5000','9000','12000','15000','11','11829','1','0','0','0','0','0','0','0','0','0','Mosh''Ogg Spellcrafter - Cast Flamestrike (Phase 1)'),
 -- Bhag'thera
 ('72801','728','0','0','90','1','9000','9000','28000','28000','11','3147','1','0','0','0','0','0','0','0','0','0','Bhag\'thera - Cast Rend Flesh'),
 ('72802','728','0','0','100','1','2000','2000','32000','32000','11','6016','1','0','0','0','0','0','0','0','0','0','Bhag\'thera - Cast Pierce Armor'),
+-- Sin'Dall 729
+('72901','729','0','0','100','1','3000','4000','10000','10000','11','5164','1','0','0','0','0','0','0','0','0','0','Sin''Dall - Cast Knockdown'),
+-- Tethis 730
+('73001','730','0','0','100','1','0','5000','11000','14000','11','3604','1','0','0','0','0','0','0','0','0','0','Tethis - Cast Tendon Rip'),
 -- King Bangalsh
 ('73101','731','2','0','100','0','50','0','0','0','11','8816','0','1','0','0','0','0','0','0','0','0','King Bangalsh - Cast Summon Panthers at 50% HP'),
+-- Panther 736
 -- Skullsplitter Panther 756 - NSR
 -- Skullsplitter Tiger 758 - NSR
--- Skullsplitter Mystic
+-- Skullsplitter Mystic 780
 ('78001','780','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Skullsplitter Mystic - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('78002','780','9','13','100','1','8','40','3200','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Skullsplitter Mystic - Cast Lightning Bolt (Phase 1)'),
 ('78003','780','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Skullsplitter Mystic - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
@@ -5610,11 +5634,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('78107','781','0','0','100','1','1700','10700','18400','29800','11','6533','1','32','0','0','0','0','0','0','0','0','Skullsplitter Headhunter - Cast Net'),
 -- Skullsplitter Scout 782
 ('78201','782','0','0','100','1','5000','7000','23000','26000','11','3148','1','32','0','0','0','0','0','0','0','0','Skullsplitter Scout - Cast Head Crack'),
-('78202','782','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Skullsplitter Scout - Flee at 15% HP (Phase 3)'),
--- Skullsplitter Berserker
+-- Skullsplitter Berserker 783
 ('78301','783','0','0','100','1','5000','7000','23000','26000','11','3148','1','32','0','0','0','0','0','0','0','0','Skullsplitter Berserker - Cast Head Crack'),
 ('78302','783','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Skullsplitter Berserker - Flee at 15% HP'),
-('78303','783','2','0','100','0','30','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Skullsplitter Berserker - Cast Enrage at 30% HP'),
+('78303','783','2','0','100','0','30','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Skullsplitter Berserker - Cast Enrage at 30% HP'),
 -- Skullsplitter Beastmaster 784
 ('78401','784','1','0','100','0','5000','5000','0','0','11','3621','0','0','0','0','0','0','0','0','0','0','Skullsplitter Beastmaster - Cast Skullsplitter Pet'),
 ('78402','784','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Skullsplitter Beastmaster - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -5626,6 +5649,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sergeant Malthus
 ('81401','814','0','0','100','1','0','500','10900','18600','11','7068','1','32','0','0','0','0','0','0','0','0','Sergeant Malthus - Cast Veil of Shadow'),
 ('81402','814','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sergeant Malthus - Flee at 15% HP'),
+-- Mai'Zoth 818
+('81801','818','9','0','100','1','0','30','6000','12000','11','8398','1','0','0','0','0','0','0','0','0','0','Mai''Zoth - Cast Frostbolt Volley'),
+('81802','818','0','0','100','1','5000','9000','12000','15000','11','8814','1','0','0','0','0','0','0','0','0','0','Mai''Zoth - Cast Flame Spike'),
 -- Venture Co Lumberjack
 ('92101','921','0','0','100','1','5200','7500','5900','9800','11','15584','1','0','0','0','0','0','0','0','0','0','Venture Co Lumberjack - Cast Cleave'),
 ('92102','921','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co Lumberjack - Flee at 15% HP'),
@@ -5663,6 +5689,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('94301','943','0','0','100','1','1700','10700','18400','29800','11','6533','1','0','0','0','0','0','0','0','0','0','Kurzen Wrangler - Cast Net'),
 ('94302','943','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kurzen Wrangler - Flee at 15% HP'),
 -- Ana'thek the Cruel 1059
+('105901','1059','0','0','100','1','3000','6000','18000','20000','11','9791','1','0','0','0','0','0','0','0','0','0','Ana''thek the Cruel - Cast Head Crack'),
+-- Gan'zulah 1061
+('106101','1061','2','0','100','0','30','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Gan''zulah - Cast Enrage at 30% HP'),
+-- Nezzliok the Dire 1062
+('106201','1062','0','0','100','1','0','4000','5000','10000','11','421','1','0','11','2610','1','0','0','0','0','0','Nezzliok the Dire - Cast Chain Lightning or Cast Shock'),
 -- Elder Stranglethorn Tiger
 ('108501','1085','0','0','100','1','8600','8600','31300','31300','11','13443','1','0','0','0','0','0','0','0','0','0','Elder Stranglethorn Tiger - Cast Rend'),
 -- Venture Co. Miner 1094
@@ -5691,6 +5722,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('109706','1097','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Venture Co Mechanic - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('109707','1097','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co Mechanic - Flee at 15% HP (Phase 2)'),
 ('109708','1097','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co Mechanic - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Mosh'Ogg Witch Doctor 1144
+('114401','1144','0','0','100','1','1000','4000','7000','15000','11','11980','1','32','0','0','0','0','0','0','0','0','Mosh''Ogg Witch Doctor - Cast Curse of Weakness'),
+('114402','1144','0','0','100','0','4000','6000','0','0','11','3827','0','0','0','0','0','0','0','0','0','0','Mosh''Ogg Witch Doctor - Cast Ward of Laze'),
 -- River Crocolisk
 ('115001','1150','0','0','100','1','3000','8200','12900','24100','11','3604','1','0','0','0','0','0','0','0','0','0','River Crocolisk - Cast Tendon Rip'),
 -- Saltwater Crocolisk
@@ -5699,6 +5733,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('115201','1152','0','0','100','1','11200','12000','11200','12000','11','3604','1','0','0','0','0','0','0','0','0','0','Snapjaw Crocolisk - Cast Tendon Rip'),
 -- Thysta
 ('138701','1387','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Thysta - Summon Enraged Wyverns and Yell on Aggro'),
+-- Zanzil Zombie 1488
+('148801','1488','0','0','75','0','4000','8000','0','0','11','7102','1','32','0','0','0','0','0','0','0','0','Zanzil Zombie - Cast Contagion of Rot'),
+-- Zanzil Hunter 1489
+('148901','1489','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Zanzil Hunter - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('148902','1489','9','5','100','1','5','30','3500','4900','11','10277','1','0','40','2','0','0','0','0','0','0','Zanzil Hunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
+('148903','1489','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Zanzil Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('148904','1489','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Zanzil Hunter - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('148905','1489','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Zanzil Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('148906','1489','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Zanzil Hunter - Flee at 15% HP (Phase 2)'),
+('148907','1489','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Zanzil Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Zanzil Witch Doctor 1490
+('149001','1490','0','0','100','1','0','4000','5000','6000','11','9613','1','0','0','0','0','0','0','0','0','0','Zanzil Witch Doctor - Cast Shadow Bolt'),
+-- Zanzil Naga 1491
+('149101','1491','0','0','100','1','3000','6000','7000','8000','11','9080','1','32','0','0','0','0','0','0','0','0','Zanzil Naga - Cast Hamstring'),
+('149102','1491','13','0','100','1','11000','15000','0','0','11','12555','1','1','0','0','0','0','0','0','0','0','Zanzil Naga - Cast Pummel on Target Spell Cast'),
+-- Gorlash 1492
+('149201','1492','0','0','100','1','2600','3800','6000','10200','11','5568','0','0','0','0','0','0','0','0','0','0','Gorlash - Cast Trample'),
 -- Mok'Rash
 ('149301','1493','1','0','100','33','350800','365800','175400','190400','1','-1206','-1207','-1208','1','-1209','-1210','-1213','1','-1211','-1212','-1213','Mok\'Rash - Random Yell'),
 -- Enraged Silverback Gorilla
@@ -5709,6 +5760,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('155101','1551','0','0','85','1','8000','8000','30000','30000','11','5106','1','0','0','0','0','0','0','0','0','0','Ironjaw Basilisk - Cast Crystal Flash'),
 -- Scale Belly
 ('155201','1552','0','0','85','1','15000','15000','26000','26000','11','5106','1','0','0','0','0','0','0','0','0','0','Scale Belly - Cast Crystal Flash'),
+-- Silverback Patriarch 1558
+('155801','1558','0','0','80','1','1000','3600','6500','10800','11','6253','1','0','0','0','0','0','0','0','0','0','Silverback Patriarch - Cast Backhand'),
 -- King Mukla
 ('155901','1559','0','0','100','1','2600','3800','6000','10200','11','5568','0','0','0','0','0','0','0','0','0','0','King Mukla - Cast Trample'),
 -- Bloodsail Raider
@@ -5769,6 +5822,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('246404','2464','2','0','100','0','30','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Commander Aggro\'gosh - Cast Enrage at 30% HP'),
 -- Skymane Gorilla
 ('252101','2521','0','0','100','1','8600','8600','16500','27700','11','5568','0','0','0','0','0','0','0','0','0','0','Skymane Gorilla - Cast Trample'),
+-- Yenniku 2530 - mob_yenniku
+-- Zanzil the Outcast 2534
+('253401','2534','0','0','100','0','5000','10000','0','0','11','8832','0','0','0','0','0','0','0','0','0','0','Zanzil the Outcast - Cast Ward of Zanzil'),
+('253402','2534','0','0','100','1','3000','4000','5000','6000','11','9532','1','0','0','0','0','0','0','0','0','0','Zanzil the Outcast - Cast Lightning Bolt'),
 -- Fleet Master Firallon
 ('254601','2546','0','0','100','1','0','500','1400','4900','11','9128','0','32','0','0','0','0','0','0','0','0','Fleet Master Firallon - Cast Battle Shout'),
 -- Ironpatch
@@ -5844,6 +5901,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1448702','14487','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gluggle - Flee at 15% HP'),
 -- Roloch
 ('1448801','14488','0','0','100','1','7000','14000','7000','14000','11','15496','1','0','0','0','0','0','0','0','0','0','Roloch - Cleave'),
+-- Kurmokk 14491
+('1449101','14491','2','0','100','1','20','0','180000','180000','11','8599','0','0','54','-46','0','0','0','0','0','0','Kurmokk - Cast Enrage at 20% HP'),
 -- Steamwheedle Bruiser
 ('1609601','16096','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Steamwheedle Bruiser - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('1609602','16096','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Steamwheedle Bruiser - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
