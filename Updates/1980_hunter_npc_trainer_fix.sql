@@ -1,7 +1,9 @@
+/*
 --Thorgas Grimson, the Hunter trainer in Dun Morogh, only offers Parry (level 8, 2 silver) to new hunters.
 --Sources--
 --Abilities offered - https://classicdb.ch/?npc=895#teaches-ability
 --Hunter spells - https://classicdb.ch/?spells=7.3
+*/
 
 INSERT INTO `mangos`.`npc_trainer` (`entry`, `spell`, `spellcost`, `reqskill`, `reqskillvalue`, `reqlevel`, `condition_id`) VALUES ('895', '13164', '100', '0', '0', '4', '0');
 INSERT INTO `mangos`.`npc_trainer` (`entry`, `spell`, `spellcost`, `reqskill`, `reqskillvalue`, `reqlevel`, `condition_id`) VALUES ('895', '2003', '100', '0', '0', '4', '0');
