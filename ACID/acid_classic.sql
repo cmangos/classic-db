@@ -17547,9 +17547,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('735807','7358','2','0','100','0','33','0','0','0','11','12642','1','0','1','-1223','0','0','0','0','0','0','Amnennar the Coldbringer - Cast Summon Frost Spectres and Yell at 33%'),
 -- Skeletal Servant 8477 NSR
 -- Glutton
-('856701','8567','1','0','100','0','1000','1000','0','0','11','12627','0','0','0','0','0','0','0','0','0','0','Glutton - Cast Diesease Cloud on Spawn'),
+('856701','8567','1','0','100','0','1000','1000','0','0','11','12627','0','0','0','0','0','0','0','0','0','0','Glutton - Cast Disease Cloud on Spawn'),
 ('856702','8567','2','0','100','0','50','0','0','0','11','12795','0','1','1','-539','0','0','0','0','0','0','Glutton - Cast Frenzy at 50% HP'),
 ('856703','8567','2','0','100','0','15','0','0','0','11','12795','0','1','1','-540','0','0','0','0','0','0','Glutton - Cast Frenzy at 15% HP'),
+('856704','8567','4','0','100','0','0','0','0','0','1','-1565','-1566','0','0','0','0','0','0','0','0','0','Glutton - Yell on Aggro'),
 -- Frost Spectre
 ('858501','8585','7','0','100','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Frost Spectre - Despawn on Evade'),
 ('858502','8585','14','0','100','0','8700','100','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Frost Spectre - Despawn on Ammenars Death'),
@@ -18843,6 +18844,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('858001','8580','11','0','100','0','0','0','0','0','1','-817','0','0','0','0','0','0','0','0','0','0','Atal\'alarion - Yell on Spawn'),
 ('858002','8580','0','0','100','1','10700','14900','21600','41600','11','12887','1','0','0','0','0','0','0','0','0','0','Atal\'alarion - Cast Sweeping Slam'),
 ('858003','8580','0','0','100','1','9700','18900','20500','32200','11','6524','0','1','0','0','0','0','0','0','0','0','Atal\'alarion - Cast Ground Tremor'),
+('858004','8580','4','0','100','0','0','0','0','0','1','-1567','0','0','0','0','0','0','0','0','0','0','Atal\'alarion - Yell on Aggro'),
 -- Hukku's Voidwalker (8656) - NSR
 -- Hukku's Succubus (3.3.0 Official Data) - Seduction Spell Information Unknown (REQUIRES 2 PEOPLE IN FIGHT TO COLLECT DATA)
 ('865701','8657','9','0','100','1','0','5','12000','19500','11','11779','1','0','0','0','0','0','0','0','0','0','Hukku\'s Succubus - Cast Lash of Pain'),
@@ -21685,7 +21687,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1561','I sense my grip on the Dream twisting into chaos.','0','4','0','8506','0'),
 ('-1562','%s lets out a high pitched screech, calling for help.','0','2','0','1983','0'),
 ('-1563','I shall return in time..','0','0','0','1983','0'),
-('-1564','The blood samples must be protected! Destroy the intruders!','0','0','0','12461','0');
+('-1564','The blood samples must be protected! Destroy the intruders!','0','0','0','12461','0'),
+('-1565','Me smell stench of the living!','5823','1','0','8567','0'),
+('-1566','Me feast on you all!','5824','1','0','8567','0'),
+('-1567','I\'ll feast on your bones!','5860','1','0','8580','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
