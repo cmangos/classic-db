@@ -2387,8 +2387,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lethon (14888) - boss_lethon
 -- Emeriss (14889) - boss_emeriss
 -- Taerar (14890) - boss_taerar
--- Dream Fog - NEED MORE RESEARCH ON HOW THIS NPC WORKS (I SUSPECT CASTS 24780 ON SPAWN)
-('1522401','15224','11','0','100','0','0','0','0','0','11','24780','0','1','0','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog on Spawn'),
+-- Dream Fog
+('1522401','15224','29','0','100','0','1000','1000','0','0','11','24780','0','1','20','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog and Disable Combat Melee'),
+('1522402','15224','29','0','100','0','2000','2000','0','0','11','24777','0','1','0','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog'),
 -- Demented Druid Spirit (SD2 BACKPORT)
 ('1526001','15260','0','0','100','1','3000','3000','5000','5000','11','24957','4','0','0','0','0','0','0','0','0','0','Demented Druid Spirit - Cast Moonfire'),
 -- Spirit Shade (15261) - HAS ABILITIES THAT REQUIRES SCRIPTING
