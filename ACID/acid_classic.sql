@@ -2390,8 +2390,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dream Fog
 ('1522401','15224','29','0','100','0','1000','1000','0','0','11','24780','0','1','20','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog and Disable Combat Melee'),
 ('1522402','15224','29','0','100','0','2000','2000','0','0','11','24777','0','1','0','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog'),
--- Demented Druid Spirit (SD2 BACKPORT)
+-- Demented Druid Spirit
 ('1526001','15260','0','0','100','1','3000','3000','5000','5000','11','24957','4','0','0','0','0','0','0','0','0','0','Demented Druid Spirit - Cast Moonfire'),
+('1526002','15260','9','0','100','1','0','5','12000','21000','11','16247','1','32','0','0','0','0','0','0','0','0','Demented Druid Spirit - Cast Curse of Thorns'),
+('1526003','15260','0','0','100','1','5600','9700','20500','30100','11','6726','4','0','0','0','0','0','0','0','0','0','Demented Druid Spirit - Cast Silence'),
 -- Spirit Shade (15261) - HAS ABILITIES THAT REQUIRES SCRIPTING
 -- Shade of Taerar (SD2 BACKPORT)
 ('1530201','15302','0','0','100','1','8000','8000','30000','30000','11','24840','0','0','0','0','0','0','0','0','0','0','Shade of Taerar - Cast Poison Cloud'),
