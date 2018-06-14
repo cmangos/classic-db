@@ -7788,6 +7788,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('15701','157','9','0','50','0','6','15','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Goretusk - Cast Rushing Charge'),
 -- Murloc Warrior (2.4.3 Official Data)
 ('17101','171','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murloc Warrior - Flee at 15% HP'),
+-- Farmer Saldean 233
+('23301','233','1','0','100','1','1000','15000','150000','180000','1','-14','-15','-16','0','0','0','0','0','0','0','0','Farmer Saldean - Say OOC'),
 -- Old Murk-eye (2.4.3 Official Data)
 ('39101','391','0','0','100','1','1900','2200','2200','5200','11','3584','1','32','0','0','0','0','0','0','0','0','Old Murk-eye - Cast Volatile Infection'),
 ('39102','391','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Old Murk-eye - Flee at 15% HP'),
@@ -21423,6 +21425,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-6','Grrrr... fresh meat!','0','0','0','Common Gnoll Text','0'),
 ('-7','You no take candle!','0','0','0','Common Kobold Text','0'),
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
+('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
+('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
+('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
 ('-18','For Victory! For Agamaggan!','5812','1','0','4420','0'),
 ('-22','VanCleef pay big for you heads!','5774','1','0','644','0'),
 ('-28','You do not belong here!  Ancients, rise against these intruders!','0','1','0','11489','0'),
