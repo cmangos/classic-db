@@ -6032,6 +6032,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1440302','14403','28','0','100','1025','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1440303','14403','0','0','100','1025','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Hooked Net'),
 -- Seeker Thompson 14404
+('1440401','14404','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Invisibility and Stealth Detection OOC'),
 ('1440402','14404','28','0','100','1025','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1440403','14404','0','0','100','1025','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Hooked Net'),
 -- Ralston Farnsley 14729
