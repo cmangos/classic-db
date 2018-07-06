@@ -3695,6 +3695,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Milstaff Stormeye 2489
 -- Sara Balloo 2695
 -- Durtham Greldon 2737
+-- King Magni Bronzebeard 2784
+('278401','2784','4','0','100','0','0','0','0','0','4','5896','0','0','0','0','0','0','0','0','0','0','King Magni Bronzebeard - Play Sound 5896 on Aggro'),
+('278402','2784','0','0','100','1','5000','7000','25000','30000','11','19135','0','0','0','0','0','0','0','0','0','0','King Magni Bronzebeard - Cast Avatar'),
+('278403','2784','0','0','100','1','8000','10000','20000','30000','11','20686','1','0','0','0','0','0','0','0','0','0','King Magni Bronzebeard - Cast Knock Away'),
+('278404','2784','0','0','100','1','12000','15000','15000','20000','11','20685','4','0','0','0','0','0','0','0','0','0','King Magni Bronzebeard - Cast Storm Bolt'),
 -- Gerrig Bonegrip 2786
 -- Grand Mason Marblesten 2790
 -- Hammertoe's Spirit 2915
@@ -3803,6 +3808,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Demnul Farmountain 7298
 -- Dink 7312
 -- Lyon Mountainheart 7936
+-- High Tinker Mekkatorque 7937
+('793701','7937','4','0','100','0','0','0','0','0','4','5897','0','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Play Sound 5897 on Aggro'),
+('793702','7937','5','0','100','0','0','0','0','0','4','7255','0','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Play Sound 7255 on Player Kill'),
+('793703','7937','0','0','100','1','3000','5000','15000','18000','11','9143','5','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Cast Bomb'),
+('793704','7937','0','0','100','1','9000','11000','16000','19000','11','22739','0','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Cast Goblin Dragon Gun'),
+('793705','7937','0','0','100','1','6000','8000','20000','25000','11','22742','1','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Cast Super Shrink Ray'),
 -- Tinkmaster Overspark 7944
 -- Master Mechanic Castpipe 7950
 -- Thalgus Thunderfist 7976
@@ -4930,7 +4941,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kyra Boucher
 ('127501','1275','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Kyra Boucher - Summon Stormwind City Guard on Aggro'),
 -- Archbishop Benedictus
-('128401','1284','4','0','100','0','0','0','0','0','4','5883','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Say on Aggro'),
+('128401','1284','4','0','100','0','0','0','0','0','4','5883','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Play Sound 5883 on Aggro'),
 ('128402','1284','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Archbishop Benedictus - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('128403','1284','9','13','100','1','8','40','3400','4800','11','20695','1','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Smite (Phase 1)'),
 ('128404','1284','9','13','100','1','0','5','12000','19000','11','20694','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Nova (Phase 1)'),
@@ -11194,6 +11205,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Archmage Tervosh
 ('496701','4967','0','0','100','1','1000','1000','1800000','1800000','11','7120','0','1','0','0','0','0','0','0','0','0','Archmage Tervosh - Cast Proudmoore\'s Defense'),
 ('496702','4967','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Archmage Tervosh - Flee at 15% HP'),
+-- Lady Jaina Proudmoore 4968
+('496801','4968','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','4','5882','0','0','Lady Jaina Proudmoore - Enable Dynamic Movement and Set Phase 1 and Play Sound 5882 on Aggro'),
+('496802','4968','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('496803','4968','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Disable Dynamic Movement at 0-8 Yards'),
+('496804','4968','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Set Phase 0 on Evade'),
+('496805','4968','9','13','100','1','0','50','2000','3500','11','20692','1','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Fireball (Phase 1)'),
+('496806','4968','0','13','100','1','4000','5000','45000','55000','11','20681','0','1','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Summon Water Elementals (Phase 1)'),
+('496807','4968','0','13','100','1','5000','9000','15000','17000','11','20679','4','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Fire Blast (Phase 1)'),
+('496808','4968','0','13','100','1','8000','12000','25000','28000','11','20680','4','1','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Blizzard (Phase 1)'),
+('496809','4968','2','13','100','1','50','0','14000','21000','11','20682','4','1','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Teleport at 50% HP (Phase 1)'),
 -- Kagoro (4972) - NSR
 -- Guard Lasiter
 ('497301','4973','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Guard Lasiter - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
@@ -12732,6 +12753,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Xon'cha 9988
 -- Xao'tsu 10088
 -- Ug'thok 10266
+-- Vol'jin 10540
+('1054001','10540','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','4','5881','0','0','Vol''jin - Enable Dynamic Movement and Set Phase 1 and Play Sound 5881 on Aggro'),
+('1054002','10540','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Vol''jin - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1054003','10540','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Vol''jin - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('1054004','10540','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Vol''jin - Set Phase 0 and Set Melee Weapon Model on Evade'),
+('1054005','10540','9','13','100','1','5','30','2300','3900','11','20463','1','0','40','2','0','0','0','0','0','0','Vol''jin - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1054006','10540','0','13','100','1','12000','14000','22000','26000','11','17820','0','0','0','0','0','0','0','0','0','0','Vol''jin - Cast Veil of Shadow (Phase 1)'),
+('1054007','10540','0','13','100','1','3000','5000','14000','16000','11','17146','4','32','0','0','0','0','0','0','0','0','Vol''jin - Cast Shadow Word: Pain (Phase 1)'),
+('1054008','10540','0','13','100','1','6000','8000','8000','12000','11','17289','4','0','0','0','0','0','0','0','0','0','Vol''jin - Cast Shadow Shock (Phase 1)'),
+('1054009','10540','0','13','100','1','8000','12000','18000','22000','11','16097','0','0','0','0','0','0','0','0','0','0','Vol''jin - Cast Hex (Phase 1)'),
 -- Warcaller Gorlach 10880
 -- Roxxik 11017
 -- Whuut 11046
@@ -14195,6 +14226,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Keldas 3306
 -- Tenaron Stormgrip 3514
 -- Corithras Moonrage 3515
+-- Arch Druid Fandral Staghelm 3516
+('351601','3516','0','0','100','1','0','0','2000','3000','11','20698','1','0','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Wrath'),
+('351602','3516','0','0','100','1','3000','5000','25000','35000','11','20702','0','1','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Summon Treant Allies'),
+('351603','3516','0','0','100','1','8000','12000','26000','30000','11','20701','0','1','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Rejuvenation'),
+('351604','3516','0','0','100','1','5000','7000','17000','21000','11','20699','1','0','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Entangling Roots'),
 -- Sentinel Arynia Cloudsbreak 3519
 -- Blackmoss the Fetid 3535
 -- Tallonkai Swiftroot 3567
@@ -14266,6 +14302,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lady Sathrah 7319
 -- Daryn Lightwind 7907
 -- Erelas Ambersky 7916
+-- Tyrande Whisperwind 7999
+('799901','7999','4','0','100','2','0','0','0','0','4','5885','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Play Sound 5885 on Aggro'),
+('799902','7999','0','0','100','3','5000','7000','6000','8000','11','20691','1','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Cleave'),
+('799903','7999','0','0','100','3','6000','8000','16000','21000','11','20687','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Starfall'),
+('799904','7999','0','0','100','3','9000','12000','17000','22000','11','20690','4','34','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Moonfire'),
+('799905','7999','0','0','100','3','11000','14000','9000','12000','11','20688','4','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Searing Arrow'),
 -- Dirania Silvershine 8583
 -- Iverron 8584
 -- Seriadne 10051
