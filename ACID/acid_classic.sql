@@ -3496,8 +3496,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('238201','2382','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Darren Malvew - Flee at 15% HP'),
 -- Lindea Rabonne
 ('238301','2383','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lindea Rabonne - Flee at 15% HP'),
--- Starving Mountain Lion
-('238401','2384','11','0','100','0','0','0','0','0','11','24450','0','0','0','0','0','0','0','0','0','0','Starving Mountain Lion - Cast Prowl on Spawn'),
+-- Starving Mountain Lion 2384 - NSR
 -- Feral Mountain Lion (2385) - NSR
 -- Southshore Guard
 ('238601','2386','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Southshore Guard - Flee at 15% HP'),
@@ -3537,8 +3536,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('240401','2404','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Blacksmith Verringtan - Flee at 15% HP'),
 -- Tarren Mill Deathguard
 ('240501','2405','4','0','30','0','0','0','0','0','1','-927','0','0','0','0','0','0','0','0','0','0','Tarren Mill Deathguard - Say on Aggro'),
--- Mountain Lion
-('240601','2406','11','0','100','0','0','0','0','0','11','24450','0','0','0','0','0','0','0','0','0','0','Mountain Lion - Cast Prowl on Spawn'),
+-- Mountain Lion 2406 - NSR
 -- Snapjaw (2408) - NSR
 -- Magus Wordeen Voidglare (2410) - NSR
 -- Deathguard Samsa (2418) - NSR
