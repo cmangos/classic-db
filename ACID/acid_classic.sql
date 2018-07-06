@@ -3196,7 +3196,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pinto (5405) - NSR
 -- Palomino (5406) - NSR
 -- Clara Charles (2.4.2 Official Data)
-('591701','5917','10','0','100','0','1','15','0','0','32','583','6','7','0','0','0','0','0','0','0','0','Clara Charles - Summons Defias Ambusher on LOS'),
+('591701','5917','10','0','100','1','1','15','300000','300000','32','583','6','7','0','0','0','0','0','0','0','0','Clara Charles - Summons Defias Ambusher on LOS'),
 -- Dead-Tooth Jack (6093) - NSR
 -- Remen Marcot (6121) - NSR
 -- Henze Faulk (6172) - npc_henze_faulk
