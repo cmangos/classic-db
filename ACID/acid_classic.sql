@@ -2324,11 +2324,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Skeletal Raider (3.0.3 Official Data)
 ('111001','1110','0','0','100','1','500','4700','19100','34700','11','7992','1','32','0','0','0','0','0','0','0','0','Skeletal Raider - Cast Slowing Poison'),
 -- Morbent Fel (3.0.3 Official Data)
-('120001','1200','11','0','100','0','0','0','0','0','11','8909','0','1','0','0','0','0','0','0','0','0','Morbent Fel - Cast Unholy Shield on Spawn'),
-('120002','1200','27','0','100','1','8909','1','3000','3000','11','8909','0','1','0','0','0','0','0','0','0','0','Morbent Fel - Cast Unholy Shield on Missing Aura'),
+('120001','1200','1','0','100','0','0','0','0','0','11','8909','0','32','22','1','0','0','0','0','0','0','Morbent Fel - Cast Unholy Shield and Set Phase 1 OOC'),
+('120002','1200','27','5','100','1','8909','1','3000','3000','11','8909','0','1','0','0','0','0','0','0','0','0','Morbent Fel - Cast Unholy Shield on Missing Aura (Phase 1)'),
 ('120003','1200','0','0','100','1','0','0','3700','13300','11','3108','1','0','0','0','0','0','0','0','0','0','Morbent Fel - Cast Touch of Death'),
 ('120004','1200','0','0','100','1','0','0','24000','24000','11','3109','1','0','0','0','0','0','0','0','0','0','Morbent Fel - Cast Presence of Death'),
-('120005','1200','2','0','100','0','15','0','0','0','28','0','8909','0','0','0','0','0','0','0','0','0','Morbent Fel - Remove Unholy Aura at 15% HP'),
+('120005','1200','2','0','100','0','15','0','0','0','28','0','8909','0','22','2','0','0','0','0','0','0','Morbent Fel - Remove Unholy Shield and Set Phase 2 at 15% HP'),
 -- Watcher Sarys (1203) - NSR
 -- Watcher Corwin (1204) - NSR
 -- Splinter Fist Firemonger (3.0.3 Official Data)
