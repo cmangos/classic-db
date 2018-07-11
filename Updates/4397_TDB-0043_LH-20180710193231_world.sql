@@ -99,25 +99,28 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 -- (16884, 8926, 0, 4, 1, 1, ''),
 -- (16884, 5237, 0, 4, 1, 1, '');
 
+-- use double the % for Flash Powder and Blinding Powder.
 DELETE FROM `item_loot_template` WHERE `entry` = 16884;
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 (16884, 3928, 10, 0, 1, 1, 0, 'Superior Healing Potion'), -- 10% befor -> 10.7%/11.21% -> 10%
-(16884, 5140, 10.6, 0, 1, 5, 0, 'Flash Powder'), -- i think wowhead has an error here. with minmax, keeping old VALUES, not changing %
-(16884, 5530, 22.8, 0, 1, 6, 0, 'Blinding Powder'), -- converted to Worthless Blinding Powder in wrath
+(16884, 5140, 8, 0, 1, 5, 0, 'Flash Powder'), -- i think wowhead has an error here. with minmax, keeping old VALUES, not changing %
+(16884, 5530, 12, 0, 1, 6, 0, 'Blinding Powder'), -- converted to Worthless Blinding Powder in wrath
 
 (16884, 7909, 1, 0, 1, 1, 0, 'Aquamarine'), -- 0.9
 (16884, 7910, 1, 0, 1, 1, 0, 'Star Ruby'), -- 0.9
 
-(16884, 24281, 2.5, 0, 1, 1, 0, 'Carved Ivory Bone'), -- go with vmangos %
-(16884, 24231, 12, 0, 2, 3, 0, 'Coarse Snuff'),
-(16884, 24232, 3, 0, 2, 2, 0, 'Shabby Knot'),
-(16884, 24282, 1, 2, 1, 1, 0, 'Rogue''s Diary'),
-(16884, 24283, 0.01, 0, 1, 1, 0, ''),
+(16884, 24281, 6, 0, 1, 1, 0, 'Carved Ivory Bone'),
+(16884, 24231, 4, 0, 2, 3, 0, 'Coarse Snuff'),
+(16884, 24232, 5, 0, 2, 2, 0, 'Shabby Knot'),
+(16884, 24282, 1.5, 2, 1, 1, 0, 'Rogue''s Diary'),
+(16884, 24283, 0.01, 0, 1, 1, 0, 'An Antique Gun'),
+-- tbc+
+(16884, 27729, 0.8, 0, 1, 1, 0, 'Humanoid Skull'),
 
 -- refloot
-(16884, 1, 0.01, 1, -16884, 1, 0, ''), -- daggers
-(16884, 2, 1, 2, -16884, 1, 0, ''), -- rings & necklaces
-(16884, 3, 1, 3, -16884, 1, 0, ''), -- patterns
+(16884, 1, 0.1, 1, -16884, 1, 0, ''), -- daggers
+(16884, 2, 1.2, 2, -16884, 1, 0, ''), -- rings & necklaces
+(16884, 3, 1.2, 3, -16884, 1, 0, ''), -- patterns
 (16884, 4, 100, 4, -16884, 1, 0, ''); -- poison/poison materials
 
 

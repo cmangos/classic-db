@@ -100,21 +100,25 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 -- (16883, 6950, 0, 4, 1, 1, ''),
 -- (16883, 10918, 0, 4, 1, 1, '');
 
+-- use double the % for Flash Powder and Blinding Powder.
 DELETE FROM `item_loot_template` WHERE `entry` = 16883;
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 (16883, 1710, 10, 0, 1, 1, 0, 'Greater Healing Potion'), -- 9.7% befor -> 11.09% -> 10%
-(16883, 5140, 10, 0, 2, 5, 0, 'Flash Powder'),
-(16883, 5530, 20, 0, 2, 5, 0, 'Blinding Powder'), -- converted to Worthless Blinding Powder in wrath
+(16883, 5140, 6, 0, 2, 5, 0, 'Flash Powder'),
+(16883, 5530, 10, 0, 2, 5, 0, 'Blinding Powder'), -- converted to Worthless Blinding Powder in wrath
 
 (16883, 1529, 1, 1, 1, 1, 0, 'Jade'), -- 0.8
 (16883, 3864, 1, 1, 1, 1, 0, 'Citrine'), -- 1.1
 
 (16883, 24281, 5, 2, 1, 1, 0, 'Carved Ivory Bone'),
-(16883, 24231, 5, 2, 2, 3, 0, 'Coarse Snuff'),
+(16883, 24231, 3, 2, 2, 3, 0, 'Coarse Snuff'),
 (16883, 24232, 5, 2, 2, 2, 0, 'Shabby Knot'),
 (16883, 24282, 1, 2, 1, 1, 0, 'Rogue''s Diary'),
+-- tbc+
+(16883, 27729, 0.5, 0, 1, 1, 0, 'Humanoid Skull'),
+
 -- refloot
-(16883, 1, 0.01, 1, -16883, 1, 0, ''), -- daggers
+(16883, 1, 0.1, 1, -16883, 1, 0, ''), -- daggers
 (16883, 2, 1, 2, -16883, 1, 0, ''), -- rings
 (16883, 3, 1, 3, -16883, 1, 0, ''), -- patterns
 (16883, 4, 100, 4, -16883, 1, 0, ''); -- poison/poison materials

@@ -31,8 +31,8 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 (16882, 2236, 0, 1), -- https://www.wowhead.com/wotlk/item=2236/blackfang#comments
 (16882, 2567, 0, 1), -- https://www.wowhead.com/wotlk/item=2567/evocators-blade#comments
 (16882, 3413, 0, 1), -- https://www.wowhead.com/wotlk/item=3413/doomspike#comments:id=2640766
-(16882, 4446, 0, 1), -- https://www.wowhead.com/wotlk/item=4446/blackvenom-blade#comments:id=2646514
-(16882, 8006, 0, 1); -- https://www.wowhead.com/wotlk/item=8006/the-ziggler#comments:id=2720809
+(16882, 4446, 0, 1); -- https://www.wowhead.com/wotlk/item=4446/blackvenom-blade#comments:id=2646514
+-- (16882, 8006, 0, 1); -- https://www.wowhead.com/wotlk/item=8006/the-ziggler#comments:id=2720809
 
 DELETE FROM `reference_loot_template` WHERE `entry` = 16882;
 INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
@@ -100,13 +100,13 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 
 DELETE FROM `item_loot_template` WHERE `entry` = 16882;
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
-(16882, 929, 11, 0, 1, 1, 0, 'Healing Potion'), -- 10.1% befor -> 10.8% 49/516 -> 11% - https://youtu.be/mRHF06PIgLo?t=113 potion and pocket
+(16882, 929, 10, 0, 1, 1, 0, 'Healing Potion'), -- 10.1% befor -> 10.8% 49/516 -> 11% - https://youtu.be/mRHF06PIgLo?t=113 potion and pocket
 (16882, 5374, 11, 0, 1, 1, 0, 'Small Pocket Watch'), -- 10.8% befor -> 11.2% 58/516 -> 11% - https://youtu.be/mRHF06PIgLo?t=132 pocket + gem
 -- ~3% 13/516 (dont create refloot for this yet.)
 (16882, 1206, 1.3, 1, 1, 1, 0, 'Moss Agate'), -- 1.3 -> 2% 5/516
 (16882, 1705, 1.7, 1, 1, 1, 0, 'Lesser Moonstone'), -- 1.7 -> 1.3% ~ 2:3 8/516, together ~3%
 -- refloot
-(16882, 1, 0.01, 1, -16882, 1, 0, ''), -- daggers
+(16882, 1, 0.1, 1, -16882, 1, 0, ''), -- daggers
 (16882, 2, 1, 2, -16882, 1, 0, ''), -- rings (itemlevel 21-29)
 (16882, 3, 1, 3, -16882, 1, 0, ''); -- patterns (ilvel 21-38)
 -- wotlk+
