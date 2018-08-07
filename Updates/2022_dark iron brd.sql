@@ -59,5 +59,5 @@ REPLACE INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) V
 (@OGUID +  24, '25622', '0', 'BRD - Dark Iron Deposit'),
 (@OGUID +  25, '25622', '0', 'BRD - Dark Iron Deposit');
 
-REPLACE INTO `classicworld`.`pool_template` (`entry`, `max_limit`, `description`) VALUES
+REPLACE INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 ('25622', '9', 'BRD - Dark Iron Deposit');
