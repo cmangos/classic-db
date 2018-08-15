@@ -53,7 +53,7 @@ DB_HOST="localhost"
 DB_PORT="3306"
 
 ## Define the database in which you want to add clean Classic-DB
-DATABASE="mangos"
+DATABASE="classicmangos"
 
 ## Define your username
 USERNAME="mangos"
