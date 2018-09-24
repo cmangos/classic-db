@@ -1,0 +1,2 @@
+ALTER TABLE db_version CHANGE COLUMN required_z2725_01_mangos_trainer_greeting required_z2727_01_mangos_event_ai bit;
+
