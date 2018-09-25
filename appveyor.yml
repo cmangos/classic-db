@@ -60,10 +60,10 @@ test_script:
             Write-Host "Creating mangos DATABASE ..." -f Yellow;
             $env:MYSQL_PWD="Password12!";
             cmd /c 'mysql -u root < C:\projects\core\sql\create\db_create_mysql.sql';
-            cmd /c 'mysql -u root -Dmangos < C:\projects\core\sql\base\mangos.sql';
+            cmd /c 'mysql -u root -Dclassicmangos < C:\projects\core\sql\base\mangos.sql';
             cd C:\projects\database;
             $EOF = "`n";
-            $configs = 'DB_HOST="localhost"' + $EOF + 'DATABASE="mangos"' + $EOF;
+            $configs = 'DB_HOST="localhost"' + $EOF + 'DATABASE="classicmangos"' + $EOF;
             $configs += 'USERNAME="mangos"' + $EOF + 'PASSWORD="mangos"' + $EOF;
             $configs += 'CORE_PATH="C:/projects/core"' + $EOF;
             $configs += 'MYSQL="mysql"' + $EOF + 'DEV_UPDATES="NO"' + $EOF;
@@ -74,7 +74,7 @@ test_script:
             $env:MYSQL_PWD="Password12!";
             if ($LastExitCode) { Write-Host "InstallFullDB.sh failed!"; throw "Build failed!"; }
             Write-Host "Dumping database ..." -f Yellow;
-            cmd /c 'mysqldump -u root mangos > C:\projects\database\mangos.sql';
+            cmd /c 'mysqldump -u root classicmangos > C:\projects\database\mangos.sql';
             Write-Host "Packing dump into a zip file ..." -f Yellow;
             7z a C:\projects\database\$env:FINAL_SQL_NAME C:\projects\database\mangos.sql;
         }
