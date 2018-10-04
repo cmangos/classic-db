@@ -109,7 +109,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crushridge Warmonger (3.1.1 Official Data)
 ('228701','2287','4','0','10','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Crushridge Warmonger - Random Say on Aggro'),
 ('228702','2287','2','0','100','0','50','0','0','0','0','0','39','15','0','0','1','-551','0','0','0','0','0','0','Crushridge Warmonger - Call for Help at 50% HP'),
-('228703','2287','14','0','100','0','1495','15','0','0','0','0','11','8269','0','1','1','-550','0','0','1','-551','0','0','Crushridge Warmonger - Cast Frenzy and Text Emote on Friendly Death'),
+('228703','2287','14','0','100','0','1495','15','0','0','0','0','11','8269','0','1','1','-551','0','0','0','0','0','0','Crushridge Warmonger - Cast Frenzy and Text Emote on Friendly Death'),
 -- Baron Vardus 2306 (3.1.1 Official Data)
 ('230601','2306','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Baron Vardus - Enable Caster Mode on Aggro'),
 ('230602','2306','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Baron Vardus - Flee at 15% HP'),
@@ -1781,7 +1781,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sven Yorgen (311) - NSR
 -- Eliza 314 (3.0.3 Official Data)
 ('31401','314','29','0','100','0','4000','4000','0','0','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Eliza - Remove UnitFlags 256 on Generic Timer'),
-('31402','314','4','0','100','0','0','0','0','0','0','0','57','1','35','0','54','0','6','1','0','0','0','0','Eliza - Enable Caster Mode and Say on Aggro'),
+('31402','314','4','0','100','0','0','0','0','0','0','0','57','1','35','0','1','-460','-461','0','0','0','0','0','Eliza - Enable Caster Mode and Say on Aggro'),
 ('31403','314','0','0','100','1025','4100','6400','72300','72300','0','0','11','3107','0','0','0','0','0','0','0','0','0','0','Eliza - Cast Summon Eliza\'s Guard'),
 ('31404','314','0','0','100','1025','2100','2900','12500','36300','0','0','11','11831','17','1024','0','0','0','0','0','0','0','0','Eliza - Cast Frost Nova'),
 ('31405','314','9','0','100','1025','0','40','3400','5000','0','0','11','20819','1','256','0','0','0','0','0','0','0','0','Eliza - Cast Frostbolt'),
@@ -2383,13 +2383,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1448402','14484','1','0','20','1','2000','6000','4000','8000','0','0','11','23072','0','0','0','0','0','0','0','0','0','0','Injured Peasant - Cast Seething Plague'),
 ('1448403','14484','1','0','50','1','2000','6000','4000','8000','0','0','11','23127','0','0','0','0','0','0','0','0','0','0','Injured Peasant - Cast Death''s Door'),
 ('1448404','14484','1','0','10','0','10000','15000','0','0','0','0','1','-1300','-1301','-1302','0','0','0','0','0','0','0','0','Injured Peasant - Random Yell'),
-('1448405','14484','8','0','25','32','23107','-1','0','0','0','0','54','0','0','7','0','0','0','0','0','0','0','0','Injured Peasant - Random Yell on Spell Hit'),
+('1448405','14484','8','0','25','0','23107','-1','0','0','0','0','54','0','0','7','0','0','0','0','0','0','0','0','Injured Peasant - Random Yell on Spell Hit'),
 -- Plagued Peasant
 ('1448501','14485','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Plagued Peasant - Set Combat Movement False on Spawn'),
 ('1448502','14485','1','0','60','1','2000','6000','4000','8000','0','0','11','23127','0','0','0','0','0','0','0','0','0','0','Plagued Peasant - Cast Death''s Door'),
 ('1448503','14485','1','0','20','1','2000','6000','4000','8000','0','0','11','23072','0','0','0','0','0','0','0','0','0','0','Plagued Peasant - Cast Seething Plague'),
 ('1448504','14485','1','0','10','0','10000','15000','0','0','0','0','1','-1300','-1301','-1302','0','0','0','0','0','0','0','0','Plagued Peasant - Random Yell'),
-('1448505','14485','8','0','25','32','23107','-1','0','0','0','0','54','0','0','7','0','0','0','0','0','0','0','0','Plagued Peasant - Random Yell on Spell Hit'),
+('1448505','14485','8','0','25','0','23107','-1','0','0','0','0','54','0','0','7','0','0','0','0','0','0','0','0','Plagued Peasant - Random Yell on Spell Hit'),
 -- Scourge Footsoldier (14486) - NSR
 -- Scourge Archer
 ('1448901','14489','4','0','100','0','0','0','0','0','0','0','20','0','0','0','40','2','0','0','21','0','0','0','Scourge Archer - Prevent Melee, Set Ranged Weapon Model and Prevent Combat Movement on Aggro'),
@@ -18631,6 +18631,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1308','The Scarlet Crusade shall smite the wicked and drive evil from these lands!','0','0','0','Scarlet Monastery','0'),
 ('-1309','My power is discombobulatingly devastating! It is ludicrous that these mortals even attempt to enter my realm!','0','1','0','Prince Thunderaan','0'),
 ('-1310','Welcome to flavor country!','0','0','0','11058','0'),
+('-1311','Kitten for sale, looking for a good home.','0','0','0','8666','0'),
 ('-1312','I can\'t believe dad won\'t let me keep your sister.','0','0','0','8666','0'),
 ('-1313','Can anyone give my adorable, extra little kitty a home?','0','0','0','8666','0'),
 ('-1314','What does allergic mean anyway? And what does it have to do with either of my kitties?','0','0','0','8666','0'),
