@@ -18195,22 +18195,27 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- Archery Target
 ('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
--- Earthgrab Totem
+-- Earthgrab Totem 6066
 ('606601','6066','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','11','8378','0','1','Earthgrab totem - Prevent Combat Movement and Prevent Melee and cast earthgrab on Spawn'),
--- Eranikus the Chained
+-- Eranikus the Chained 8506
 ('850601','8506','11','0','100','0','0','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
 -- Battle Chicken 8836
 ('883601','8836','0','0','70','1','5000','10000','15000','20000','0','0','11','13168','0','0','0','0','0','0','0','0','0','0','Battle Chicken - Cast Chicken Fury'),
 ('883602','8836','0','2','18','1','8000','8000','8000','8000','0','0','11','23060','0','0','22','1','0','0','0','0','0','0','Battle Chicken - Cast Battle Squawk and Set Phase 1'),
--- Enraged Wyvern
+-- Enraged Wyvern 9297
 ('929701','9297','11','0','100','0','0','0','0','0','0','0','11','7276','0','1','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc on Spawn'),
--- Enraged Gryphon
+-- Enraged Gryphon 9526
 ('952601','9526','0','0','100','1','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Gryphon - Cast Rend'),
--- Doomguard
+-- Doomguard 11859
 ('1185901','11859','9','0','100','1','0','30','30100','34900','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
 -- Imp Minion 12922
 ('1292201','12922','4','0','100','0','0','0','0','0','0','0','57','1','25','0','0','0','0','0','0','0','0','0','Imp Minion - Enable Caster Mode on Aggro'),
 ('1292202','12922','0','0','100','1025','1000','2000','2300','2800','0','0','11','20801','1','256','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
+-- Tiny Snowman 15710
+('1571001','15710','22','0','100','1','34','0','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Dance on receive dance emote'),
+('1571002','15710','22','0','100','1','101','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Wave on receive wave emote'),
+('1571003','15710','22','0','100','1','93','0','0','0','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Talk on receive talk emote'),
+('1571004','15710','22','0','100','1','94','0','0','0','0','0','5','5','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Talk Exclamation on receive talkex emote'),
 -- Timbermaw Ancestor 15720
 ('1572001','15720','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Enable Caster Mode on Aggro'),
 ('1572002','15720','14','0','100','1025','1000','40','8000','10000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Healing Wave on Friendly Missing HP'),
