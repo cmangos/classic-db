@@ -13216,7 +13216,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('479902','4799','0','0','100','1025','12000','15000','15000','19000','0','0','11','8129','16','512','0','0','0','0','0','0','0','0','Fallenroot Hellcaller - Cast Mana Burn on Random Player Mana User'),
 ('479903','4799','9','0','100','1025','0','40','2400','3800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Fallenroot Hellcaller - Cast Shadow Bolt'),
 -- Blackfathom Oracle
-('480301','4803','14','0','100','1','400','40','19500','25500','0','0','11','11986','6','1','0','0','0','0','0','0','0','0','Blackfathom Oracle - Cast Healing Wave on Friendlies'),
+('480301','4803','14','0','100','1','400','40','19500','25500','0','0','11','11986','12','1','0','0','0','0','0','0','0','0','Blackfathom Oracle - Cast Healing Wave on Friendlies'),
 ('480302','4803','0','0','100','1','6200','13400','37400','97500','0','0','11','8363','4','32','0','0','0','0','0','0','0','0','Blackfathom Oracle - Cast Parasite'),
 -- Blackfathom Sea Witch 4805
 ('480501','4805','1','0','100','1','1000','1000','1800000','1800000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Blackfathom Sea Witch - Cast Frost Armor on Spawn'),
@@ -14286,9 +14286,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Eldreth Spectre 11473 (3.3.3 Official Data) - Dark Offering Data Unknown (Values seem logical based on logs reviewed so far)
 ('1147301','11473','1','0','100','0','0','0','0','0','0','0','11','16380','0','0','0','0','0','0','0','0','0','0','Eldreth Spectre - Cast Greater Invisibility OOC'),
 ('1147302','11473','4','0','100','0','0','0','0','0','0','0','28','0','16380','0','0','0','0','0','0','0','0','0','Eldreth Spectre - Remove Greater Invisibility on Aggro'),
-('1147303','11473','14','0','100','0','2000','10','0','0','0','0','11','7154','6','1','0','0','0','0','0','0','0','0','Eldreth Spectre - Cast Dark Offering On Friendlies (2000 Deficit)'),
-('1147304','11473','14','0','100','0','4000','10','0','0','0','0','11','7154','6','1','0','0','0','0','0','0','0','0','Eldreth Spectre - Cast Dark Offering On Friendlies (4000 Deficit)'),
-('1147305','11473','14','0','100','0','6000','10','0','0','0','0','11','7154','6','1','0','0','0','0','0','0','0','0','Eldreth Spectre - Cast Dark Offering On Friendlies (6000 Deficit)'),
+('1147303','11473','14','0','100','0','2000','10','0','0','0','0','11','7154','12','1','0','0','0','0','0','0','0','0','Eldreth Spectre - Cast Dark Offering On Friendlies (2000 Deficit)'),
+('1147304','11473','14','0','100','0','4000','10','0','0','0','0','11','7154','12','1','0','0','0','0','0','0','0','0','Eldreth Spectre - Cast Dark Offering On Friendlies (4000 Deficit)'),
+('1147305','11473','14','0','100','0','6000','10','0','0','0','0','11','7154','12','1','0','0','0','0','0','0','0','0','Eldreth Spectre - Cast Dark Offering On Friendlies (6000 Deficit)'),
 ('1147306','11473','0','0','100','1','12500','22100','15600','25300','0','0','11','17201','0','0','0','0','0','0','0','0','0','0','Eldreth Spectre - Cast Dispel Magic'),
 -- Eldreth Phantasm 11475 (3.3.3 Official Data)
 ('1147501','11475','9','0','100','1','0','5','15200','20100','0','0','11','17831','4','0','0','0','0','0','0','0','0','0','Eldreth Phantasm - Cast Call of the Grave'),
@@ -17520,7 +17520,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hakkari Oracle (Outside ZG)
 ('1134601','11346','0','0','75','1','1000','4000','6000','9000','0','0','11','16006','1','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Chain Lightning'),
 ('1134602','11346','13','0','100','1','15000','20000','0','0','0','0','11','15501','1','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Earth Shock at enemy casting'),
-('1134603','11346','14','0','100','1','4500','30','15000','25000','0','0','11','15982','7','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Healing Wave on friendly lost about 70% health'),
+('1134603','11346','14','0','100','1','4500','30','15000','25000','0','0','11','15982','12','0','0','0','0','0','0','0','0','0','Hakkari Oracle - Cast Healing Wave on friendly lost about 70% health'),
 -- Gurubashi Axe Thrower 11350
 ('1135001','11350','4','0','15','0','0','0','0','0','0','0','1','-229','0','0','0','0','0','0','0','0','0','0','Gurubashi Axe Thrower - Say on Aggro'),
 ('1135002','11350','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Gurubashi Axe Thrower - Enable Hunter Mode on Aggro'),
