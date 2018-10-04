@@ -14517,27 +14517,31 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lorekeeper Javon     14381
 -- Lorekeeper Mykos     14382
 -- Lorekeeper Kildrath     14383
--- Doomguard Minion (14385) - NSR
--- Wandering Eye of Kilrogg (%s senses your presence and opens a nether portal!) - NEED MORE DATA AS LOG DID NOT SHOW ANY SPELL CASTS
+-- Doomguard Minion 14385
+('1438501','14385','9','0','100','31','0','30','30100','34900','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard Minion - Cast Cripple'),
+('1438502','14385','0','0','100','1','5000','8000','18000','24000','0','0','11','16005','4','0','0','0','0','0','0','0','0','0','Doomguard Minion - Cast Rain of Fire'),
+('1438503','14385','0','0','100','1','7000','14000','17000','22000','0','0','11','15090','1','0','0','0','0','0','0','0','0','0','Doomguard Minion - Cast Dispel Magic'),
+('1438504','14385','0','0','100','1','12000','15000','20000','25000','0','0','11','16727','0','1','0','0','0','0','0','0','0','0','Doomguard Minion - Cast War Stomp'),
+-- Wandering Eye of Kilrogg 14386 (%s senses your presence and opens a nether portal!) - NEED MORE DATA AS LOG DID NOT SHOW ANY SPELL CASTS
 ('1438601','14386','0','0','100','1','1000','3000','12000','20000','0','0','11','22876','0','0','0','0','0','0','0','0','0','0','Wandering Eye of Kilrogg - Cast Summon Netherwalker'),
--- Netherwalker (3.3.3 Official Data)
+-- Netherwalker 14389 (3.3.3 Official Data)
 ('1438901','14389','9','0','100','1','0','30','7300','14200','0','0','11','22878','1','0','0','0','0','0','0','0','0','0','Netherwalker - Cast Shadow Bolt Volley'),
--- Eye of Immol'thar (3.3.3 Official Data)
+-- Eye of Immol'thar 14396 (3.3.3 Official Data)
 ('1439601','14396','9','0','100','1','0','5','5400','6600','0','0','11','22909','1','0','0','0','0','0','0','0','0','0','Eye of Immol''thar - Cast Eye of Immol''thar'),
--- Mana Burst (3.3.3 Official Data)
+-- Mana Burst 14397 (3.3.3 Official Data)
 ('1439701','14397','9','0','100','1','0','8','1100','2000','0','0','11','22938','0','0','0','0','0','0','0','0','0','0','Mana Burst - Cast Arcane Explosion'),
--- Eldreth Darter (3.3.3 Official Data)
+-- Eldreth Darter 14398 (3.3.3 Official Data)
 ('1439801','14398','0','0','100','1','6200','8200','8100','19300','0','0','11','22947','4','0','0','0','0','0','0','0','0','0','Eldreth Darter - Cast Mana Burn'),
 ('1439802','14398','0','0','100','1','3800','9700','18300','34300','0','0','11','17139','0','33','0','0','0','0','0','0','0','0','Eldreth Darter - Cast Power Word: Shield'),
--- Arcane Torrent (3.3.3 Official Data)
+-- Arcane Torrent 14399 (3.3.3 Official Data)
 ('1439901','14399','9','0','100','1','0','30','2200','8500','0','0','11','22945','1','0','0','0','0','0','0','0','0','0','Arcane Torrent - Cast Forked Lightning'),
 ('1439902','14399','0','0','100','1','7700','7700','19600','37200','0','0','11','22946','4','1','0','0','0','0','0','0','0','0','Arcane Torrent - Cast Lightning Cloud'),
--- Arcane Feedback (3.3.3 Official Data)
+-- Arcane Feedback 14400 (3.3.3 Official Data)
 ('1440001','14400','1','0','100','1','1000','1000','600000','600000','0','0','11','15507','0','0','0','0','0','0','0','0','0','0','Arcane Feedback - Cast Lightning Shield on Spawn'),
 ('1440002','14400','27','0','100','1','15507','1','15000','30000','0','0','11','15507','0','0','0','0','0','0','0','0','0','0','Arcane Feedback - Cast Lightning Shield on Missing Buff'),
--- Xorothian Imp
+-- Xorothian Imp 14482
 ('1448201','14482','30','0','100','0','5','14501','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0',' Xorothian Imp - Cast Simple Teleport on AI Event received'),
--- Dread Guard
+-- Dread Guard 14483
 ('1448301','14483','0','0','100','1','6000','10000','9000','12000','0','0','11','15284','1','1','0','0','0','0','0','0','0','0','Dread Guard - Cast Cleave'),
 ('1448302','14483','0','0','100','1','9000','12000','7000','12000','0','0','11','18663','1','0','0','0','0','0','0','0','0','0','Dread Guard - Cast Shadow Shock'),
 ('1448303','14483','30','0','100','0','5','14501','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Dread Guard - Cast Simple Teleport on AI Event received'),
