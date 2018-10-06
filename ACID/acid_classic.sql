@@ -2499,6 +2499,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('6002','60','0','0','100','1','4300','8200','45000','50000','0','0','11','6016','1','0','0','0','0','0','0','0','0','0','Ruklar the Trapper - Cast Pierce Armor'),
 -- Thuros Lightfingers (2.4.2 Official Data)
 ('6101','61','4','0','40','0','0','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Thuros Lightfingers - Random Say on Aggro'),
+('6102','61','33','0','100','1','0','0','3400','5400','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Thuros Lightfingers - Cast Backstab on Facing Target Back'),
 -- Tharynn Bouden (66) - NSR
 -- Stormwind City Guard (68) - guard_stormwind
 -- Diseased Timber Wolf
@@ -3857,7 +3858,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1463601','14636','11','0','100','0','0','0','0','0','0','0','1','-974','0','0','0','0','0','0','0','0','0','0','Chambermaid Pillaclencher - Yell on Spawn'),
 -- Elder Ironband (15567) - NSR
 -- Metzen the Reindeer (15664) - NSR
--- Dark Iron Kidnapper (15692) - NSR
+-- Dark Iron Kidnapper 15692
+('1569201','15692','4','0','25','0','0','0','0','0','0','0','54','-1580','0','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Say on Aggro'),
+('1569202','15692','0','0','100','1','4000','4000','9000','12000','0','0','11','6533','1','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Cast Net'),
+('1569203','15692','0','0','100','1','1900','10800','9200','17200','0','0','11','11977','1','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Cast Rend'),
 
 
 
@@ -5129,6 +5133,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1448801','14488','0','0','100','1','7000','14000','7000','14000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Roloch - Cleave'),
 -- Kurmokk 14491
 ('1449101','14491','2','0','100','1','20','0','180000','180000','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Kurmokk - Cast Enrage at 20% HP'),
+-- Verifonix 14492
+('1449201','14492','0','0','100','1','1900','7900','34400','56000','0','0','11','12097','1','32','0','0','0','0','0','0','0','0','Verifonix - Cast Pierce Armor'),
 -- Steamwheedle Bruiser 16096
 ('1609601','16096','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Enable Hunter Mode on Aggro'),
 ('1609602','16096','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Steamwheedle Bruiser - Flee at 15% HP'),
@@ -5271,6 +5277,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('522502','5225','9','0','100','1025','5','30','3400','4800','0','0','11','6917','1','256','0','0','0','0','0','0','0','0','Murk Spitter - Cast Venom Spit'),
 -- Mummified Atal'ai
 ('526301','5263','0','0','100','1','6000','11000','4000','10000','0','0','11','16186','4','32','0','0','0','0','0','0','0','0','Mummified Atal''ai - Cast Fevered Plague'),
+-- Dreamwatcher Forktongue 5348
+('534801','5348','0','0','100','0','4000','8000','0','0','0','0','11','15114','0','0','0','0','0','0','0','0','0','0','Dreamwatcher Forktongue - Cast Summon Illusionary Dreamwatchers'),
 -- Itharius (5353) - NSR
 -- Galen Goodward (5391) - NSR
 -- Infiltrator Marksen (5416) - NSR
@@ -6913,7 +6921,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Defias Raider (2.4.3 Official Data)
 ('618001','6180','11','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Defias Raider - Defias Raider - Cast Battle Stance on Spawn'),
 ('618002','6180','0','0','100','1','5000','7500','12500','15000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Defias Raider - Cast Heroic Strike'),
-
+-- Klaven Mortwake 7053
+('705301','7053','4','0','100','0','0','0','0','0','0','0','1','-11','0','0','0','0','0','0','0','0','0','0','Klaven Mortwake - Say on Aggro'),
 
 
 -- ==============================
@@ -11312,7 +11321,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scout Bloodfist 17081
 -- Rifleman Torrig 17082
 -- Alliance Silithyst Sentinel 17765
+('1776501','17765','4','0','100','0','0','30','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
+('1776502','17765','9','0','100','1','5','30','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Mortal Strike'),
+('1776503','17765','0','0','100','1','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Incapacitating Shout'),
+('1776504','17765','13','0','100','1','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel -  Cast Shield Bash on Target Casting'),
 -- Horde Silithyst Sentinel 17766
+('1776601','17766','4','0','100','0','0','30','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
+('1776602','17766','9','0','100','1','5','30','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Mortal Strike'),
+('1776603','17766','0','0','100','1','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Incapacitating Shout'),
+('1776604','17766','13','0','100','1','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel -  Cast Shield Bash on Target Casting'),
 
 
 
@@ -11915,7 +11932,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Ragetotem (15573) - NSR
 -- Elder Dreamseer (15586) - NSR
 -- Metzen the Reindeer (15664) - NSR
--- Southsea Kidnapper (15685) - NSR
+-- Southsea Kidnapper 15685
+('1568501','15685','0','0','100','1','6900','15400','7200','15400','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Southsea Kidnapper - Cast Disarm'),
 -- Wonderform Operator (15732) - NSR
 -- Qiraji Brigadier General (15753) - NSR
 -- Greater Anubisath Warbringer (15754) - NSR
@@ -12179,6 +12197,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Uruson
 ('1442801','14428','0','0','100','1','3000','6000','30000','38000','0','0','11','15971','0','0','0','0','0','0','0','0','0','0','Uruson - Cast Demoralizing Roar'),
 -- Grimmaw 14429
+('1442901','14429','9','0','100','1','0','5','8000','12000','0','0','11','19319','1','0','0','0','0','0','0','0','0','0','Grimmaw - Cast Vicious Bite'),
 -- Duskstalker
 ('1443001','14430','9','0','100','1','0','5','3000','5000','0','0','11','3604','1','32','0','0','0','0','0','0','0','0','Duskstalker - Cast Tendon Rip'),
 -- Fury Shelda
@@ -12571,6 +12590,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1286501','12865','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Ambassador Malcin - Enable Caster Mode on Aggro'),
 ('1286502','12865','0','0','100','1025','5000','9000','15000','25000','0','0','11','8282','1','32','0','0','0','0','0','0','0','0','Ambassador Malcin - Cast Curse of Blood'),
 ('1286503','12865','9','0','100','1025','0','40','3800','5200','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Ambassador Malcin - Cast Shadow Bolt'),
+-- Bragok 16227
+('1622701','16227','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Bragok - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 
 
 
@@ -12668,6 +12689,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('415101','4151','0','0','100','1','8000','14000','15000','18000','0','0','11','8129','4','0','0','0','0','0','0','0','0','0','Saltstone Crystalhide - Cast Mana Burn'),
 -- Nyse
 ('431701','4317','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Nyse - Summon Enraged Wyverns and Yell on Aggro'),
+-- Achellios the Banished 5933
+('593301','5933','4','0','100','0','0','0','0','0','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Achellios the Banished - Cast Battle Shout on Aggro'),
 -- Scalding Elemental
 ('1075601','10756','9','0','100','1','0','20','15000','18000','0','0','11','17276','4','1','0','0','0','0','0','0','0','0','Scalding Elemental - Cast Scald'),
 -- Boiling Elemental
@@ -12675,6 +12698,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grimtotem Geomancer 10760
 ('1076001','10760','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Grimtotem Geomancer - Enable Caster Mode on Aggro'),
 ('1076002','10760','9','0','100','1025','0','40','3400','4800','0','0','11','20811','1','256','0','0','0','0','0','0','0','0','Grimtotem Geomancer - Cast Fireball'),
+-- Gibblesnik 14427
+('1442701','14427','28','0','100','1','11971','5','5000','9000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Gibblesnik - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+-- Harb Foulmountain 14426
+('1442601','14426','4','0','100','0','0','0','0','0','0','0','11','3417','0','34','0','0','0','0','0','0','0','0','Harb Foulmountain - Cast Thrash on Aggro'),
+('1442602','14426','0','0','100','1','8000','12000','12000','18000','0','0','11','45','0','0','0','0','0','0','0','0','0','0','Harb Foulmountain - Cast War Stomp'),
+('1442603','14426','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Harb Foulmountain - Flee at 15% HP'),
 
 
 
@@ -13173,7 +13202,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Izzy Coppergrab 13917
 -- Earthcaller Franzahl 14348
 -- Winterfall Ambusher 14372
--- Princess Tempestria
+('1437201','14372','27','0','100','1','17205','1','60000','120000','0','0','11','17205','0','0','0','0','0','0','0','0','0','0','Winterfall Ambusher - Cast Winterfall Firewater on Missing Buff'),
 -- Princess Tempestria 14457 - Death Yell
 ('1445701','14457','11','0','100','0','0','0','0','0','0','0','1','-1483','0','0','0','0','0','0','0','0','0','0','Princess Tempestria - Random Yell on Spawn'),
 ('1445702','14457','1','0','100','1','10000','60000','300000','420000','0','0','1','-1484','0','0','0','0','0','0','0','0','0','0','Princess Tempestria - Random Yell OOC'),
@@ -18285,6 +18314,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-6','Grrrr... fresh meat!','0','0','0','Common Gnoll Text','0'),
 ('-7','You no take candle!','0','0','0','Common Kobold Text','0'),
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
+('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','Klaven Mortwake 7053','0'),
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
 ('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
 ('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
@@ -18753,7 +18783,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1564','The blood samples must be protected! Destroy the intruders!','0','0','0','12461','0'),
 ('-1565','Me smell stench of the living!','5823','1','0','8567','0'),
 ('-1566','Me feast on you all!','5824','1','0','8567','0'),
-('-1567','I\'ll feast on your bones!','5860','1','0','8580','0');
+('-1567','I\'ll feast on your bones!','5860','1','0','8580','0'),
+('-1568','Let me give you my regards for Greatfather Winter, scum.','0','0','0','15692','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
