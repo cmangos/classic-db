@@ -13211,6 +13211,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1445705','14457','0','0','100','1025','9000','14000','15000','19000','0','0','11','22746','1','0','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Cone of Cold'),
 ('1445706','14457','9','0','100','1025','0','5','11000','15000','0','0','11','10987','17','0','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Geyser'),
 ('1445707','14457','9','0','100','1025','0','40','9000','11000','0','0','11','23102','1','256','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Frostbolt'),
+('1445708','14457','6','0','100','0','0','0','0','0','0','0','1','-1492','0','0','0','0','0','0','0','0','0','0','Princess Tempestria - Yell on Death'),
 -- Watery Invader
 ('1445801','14458','0','0','100','1','15000','20000','16000','19000','0','0','11','19133','4','0','0','0','0','0','0','0','0','0','Watery Invader - Cast Frost Shock'),
 -- Artorius the Amiable 14531
@@ -18743,6 +18744,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1489','You have not seen the last of me fools! All will be consumed in the end!','0','6','0','Baron Charr','0'),
 ('-1490','Tiny mortals - me HERE! Doom you meet!','0','6','0','Avalanchion','0'),
 ('-1491','Where you hiding? Me find you!','0','6','0','Avalanchion','0'),
+('-1492','You will all pay dearly when I return from the depths!','0','6','0','Princess Tempestria','0'),
 ('-1517','Muahahahaha! What is this pathetic spectacle I see before me? Well, what are you waiting for? I hunger, and you look as if you may make for a passable appetizer!','0','1','0','16042','0'),
 ('-1518','I\'ve gone easy on you thus far, but now you bore me. Witness the magnificence of my power, and despair!','0','1','0','16042','0'),
 ('-1519','I will not die again! Not to the likes of you!!','0','1','0','16042','0'),
