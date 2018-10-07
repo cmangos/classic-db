@@ -10891,6 +10891,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Brown Wolf 14540
 -- Swift Gray Wolf 14541
 -- High Overlord Saurfang 14720
+('1472001','14720','11','0','100','0','0','0','0','0','0','0','11','26341','0','1','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Saurfang\'s Rage on Spawn'),
+('1472002','14720','4','0','100','0','0','0','0','0','0','0','11','9347','0','1','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Mortal Strike on Aggro'),
+('1472003','14720','9','0','100','1','8','25','25000','25000','0','0','11','15749','4','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Berserker Charge'),
+('1472004','14720','0','0','100','1','3000','9000','15000','15000','0','0','11','16508','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Intimidating Roar'),
+('1472005','14720','0','0','100','1','5000','8000','7000','7000','0','0','11','16044','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Cleave'),
+('1472006','14720','5','0','100','1','0','0','0','0','0','0','1','-13','0','0','0','0','0','0','0','0','0','0','Highlord Overlord Saurfang - Say on Unit Kill'),
+('1472007','14720','21','0','100','0','0','0','0','0','0','0','11','26341','0','1','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Saurfang\'s Rage on Reached Home'),
 -- Rashona Straglash 14726
 -- Vehena 14727
 -- Kruban Darkblade 14843
@@ -18333,6 +18340,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-7','You no take candle!','0','0','0','Common Kobold Text','0'),
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
 ('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','Klaven Mortwake 7053','0'),
+('-13','Is that the best you can do?','0','0','0','High Lord Saurfang','0'),
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
 ('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
 ('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
