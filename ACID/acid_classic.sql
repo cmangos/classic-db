@@ -3269,9 +3269,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greatfather Winter 13444
 -- Lieutenant Rotimer 13843
 -- Artilleryman Sheldonore 14183
--- Thief Catcher Shadowdelve 14363
--- Thief Catcher Farmountain 14365
--- Thief Catcher Thunderbrew 14367
+-- Thief Catcher Shadowdelve
+('1436301','14363','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Thief Catcher Shadowdelve - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1436302','14363','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Thief Catcher Shadowdelve - Cast Hooked Net'),
+-- Thief Catcher Farmountain
+('1436501','14365','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Thief Catcher Farmountain - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1436502','14365','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Thief Catcher Farmountain - Cast Hooked Net'),
+-- Thief Catcher Thunderbrew
+('1436701','14367','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Thief Catcher Thunderbrew - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1436702','14367','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Thief Catcher Thunderbrew - Cast Hooked Net'),
 -- Mistina Steelshield 14723
 -- Bubulo Acerbus 14724
 -- Melnan Darkstone 14842
@@ -6282,10 +6288,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1383905','13839','9','0','100','1025','5','30','2300','3900','0','0','11','16100','1','256','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Shoot'),
 -- Seeker Cromwell
 ('1440201','14402','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Seeker Cromwell - Summon Deathguard Elite on Aggro'),
+('1440202','14402','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Cromwell - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1440203','14402','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Cromwell - Cast Hooked Net'),
 -- Seeker Nahr
 ('1440301','14403','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Seeker Nahr - Summon Deathguard Elite on Aggro'),
+('1440302','14403','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1440303','14403','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Hooked Net'),
 -- Seeker Thompson
 ('1440401','14404','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Seeker Thompson - Summon Deathguard Elite on Aggro'),
+('1440402','14404','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1440403','14404','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Hooked Net'),
 -- Ralston Farnsley
 ('1472901','14729','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Ralston Farnsley - Summon Deathguard Elite on Aggro'),
 -- Defilers Emissary (14990) - NSR
@@ -12193,6 +12205,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Orenthil Whisperwind 11942
 -- Shadowglen Sentinel 12160
 -- Sentinel Shaya (12429) - npc_garments_of_quests
+-- Huntress Skymane
+('1437801','14378','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1437802','14378','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Hooked Net'),
+-- Huntress Ravenoak
+('1437901','14379','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1437902','14379','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Hooked Net'),
+-- Huntress Leafrunner
+('1438001','14380','28','0','100','1','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1438002','14380','0','0','100','1','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Hooked Net'),
 -- Uruson
 ('1442801','14428','0','0','100','1','3000','6000','30000','38000','0','0','11','15971','0','0','0','0','0','0','0','0','0','0','Uruson - Cast Demoralizing Roar'),
 -- Grimmaw 14429
