@@ -13013,7 +13013,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('651201','6512','11','0','100','0','0','0','0','0','0','0','11','14111','0','0','0','0','0','0','0','0','0','0','Bloodpetal Trapper - Cast Bloodpetal Poison on Spawn'),
 ('651202','6512','0','0','100','1','4000','7000','9000','14000','0','0','11','11922','1','0','0','0','0','0','0','0','0','0','Bloodpetal Trapper - Cast Entangling Roots'),
 -- Un'Goro Stomper 6513
-('651301','6513','2','0','100','0','20','0','0','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Un''Goro Stomper - Cast Enrage at 20% HP'),
+('651301','6513','2','0','100','0','50','0','0','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Un''Goro Stomper - Cast Enrage at 50% HP'),
+-- Un'Goro Gorilla 6514
+('651401','6514','2','0','100','0','25','0','0','0','0','0','39','20','0','0','1','-516','0','0','0','0','0','0','Gorishi Worker - Call for Help at 25% HP'),
 -- Un'Goro Thunderer 6516
 ('651601','6516','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Un''Goro Thunderer - Cast Set Stand State on Aggro'),
 ('651602','6516','0','0','100','1','5000','5000','9000','15000','0','0','11','12553','1','0','0','0','0','0','0','0','0','0','Un''Goro Thunderer - Cast Shock'),
@@ -18674,6 +18676,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-492','I sense danger up ahead.','0','0','0','12337','0'),
 ('-502','I presume you come with good news?','0','0','0','2597','0'),
 ('-503','Things are going as planned, Lord Falconcrest. I assure you, it is only a matter of time.','0','0','0','2599','0'),
+('-516','%s pounds his chest, calling for help!','0','2','0','6514','0'),
 ('-523','%s begins to summon in a Blackhand Dreadweaver!','0','2','0','9080','0'),
 ('-524','%s begins to summon in a Blackhand Veteran!','0','2','0','9080','0'),
 ('-525','%s summons a Blackhand Dreadweaver to his aid!','0','2','0','10680','0'),
