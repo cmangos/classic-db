@@ -18492,7 +18492,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Imp 416 - PetAI
 -- Archery Target
 ('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
--- Earthgrab Totem 6066 - TotemAI
+-- Earthgrab Totem 6066 -- Cannot use TotemAI due to the way this NPC is summoned
+('606601','6066','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','11','8378','0','33','Earthgrab totem - Prevent Combat Movement and Prevent Melee and Cast Earthgrab on Spawn'),
+('606602','6066','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Earthgrab totem - Despawn on Evade'),
 -- Eranikus the Chained 8506
 ('850601','8506','11','0','100','0','0','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
 -- Battle Chicken 8836
