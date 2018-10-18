@@ -3,10 +3,16 @@ Classic DB for CMaNGOS/mangos-classic
 A content database for [mangos-classic][10], and *World of Warcraft Client Patch
 1.12* - [_Drums of War_][50]. It is compatible with client 1.12.1 (build 5875), 1.12.2 (build 6005) and 1.12.3 (build 6141).
 
-**classic DB** is released under the GPL v3.  The file (`LICENSE.mdown`)
+**Classic DB** is released under the GPL v3. The file (`LICENSE.md`)
 **must** be a part of any redistributable packages made from this software.  No
 licenses should be removed from this software if you are making redistributable
 copies.
+
+**Classic DB** contains copyrighted materials that are not part of the GPL v3.
+Informations about copyrighted materials are located in the file (`COPYRIGHT.md`).
+
+World of Warcraft content and materials are trademarks and copyrights of Blizzard or its licensors. All rights reserved.
+**Classic DB** is part of CMaNGOS project and is not affiliated with Blizzard or its licensors.
 
 Compatibility
 -------------
