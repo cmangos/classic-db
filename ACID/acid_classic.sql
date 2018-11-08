@@ -5090,6 +5090,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Naga Explorer
 ('190701','1907','4','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Naga Explorer - Cast Battle Stance on Aggro'),
 ('190702','1907','0','0','100','1','6400','12600','18500','28700','0','0','11','6548','1','0','0','0','0','0','0','0','0','0','Naga Explorer - Cast Rend'),
+-- Ward of Laze 2667 -- Cannot use TotemAI due to the way this NPC is summoned
+('266701','2667','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','11','3825','0','33','Ward of Laze - Prevent Combat Movement and Prevent Melee and Cast Ward of Laze Passive on Spawn'),
+('266702','2667','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Ward of Laze - Despawn on Evade'),
 -- Commander Aggro'gosh
 ('246401','2464','0','0','100','1','18700','28500','18700','28500','0','0','11','6253','1','0','0','0','0','0','0','0','0','0','Commander Aggro''gosh - Cast Backhand'),
 ('246402','2464','0','0','100','1','21100','33900','21100','33900','0','0','11','19134','4','1','0','0','0','0','0','0','0','0','Commander Aggro''gosh - Cast Frightening Shout'),
