@@ -1,5 +1,5 @@
 -- Summon Enraged Felbat 14252, Summon Enraged Wyvern 14307, Summon Enraged Gryphon 14313, Summon Enraged Hippogryph 14329
-UPDATE creature_template SET SpeedRun=(30 / 7), SpeedWalk=(2.5 / 2.5), Rank=1, HealthMultiplier=3, PowerMultiplier=3, DamageMultiplier=2, ArmorMultiplier=1, MinLevelHealth=7842, MaxLevelHealth=7842, MinMeleeDmg=94, MaxMeleeDmg=125, MinRangedDmg=65, MaxRangedDmg=95, MeleeAttackPower=228, RangedAttackPower=23, MeleeBaseAttackTime=2000, RangedBaseAttackTime=2000, MovementType=0
+UPDATE creature_template SET SpeedRun=(30 / 7), SpeedWalk=(2.5 / 2.5), `Rank`=1, HealthMultiplier=3, PowerMultiplier=3, DamageMultiplier=2, ArmorMultiplier=1, MinLevelHealth=7842, MaxLevelHealth=7842, MinMeleeDmg=94, MaxMeleeDmg=125, MinRangedDmg=65, MaxRangedDmg=95, MeleeAttackPower=228, RangedAttackPower=23, MeleeBaseAttackTime=2000, RangedBaseAttackTime=2000, MovementType=0
 WHERE entry IN (
 9297, -- Enraged Wyvern
 9521, -- Enraged Felbat
