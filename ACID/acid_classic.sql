@@ -2614,7 +2614,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('52401','524','0','0','50','0','1000','1000','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Rockhide Boar - Cast Rushing Charge on Aggro'),
 -- Mangy Wolf (525) - NSR
 -- Defias Ambusher (2.4.2 Official Data)
-('58301','583','4','0','20','0','0','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Ambusher - Random Say on Aggro'),
+('58301','583','4','0','75','0','0','0','0','0','0','0','1','-2','-3','-4','0','0','0','0','0','0','0','0','Defias Ambusher - Random Say on Aggro'),
 -- Chicken (620) - npc_chicken_cluck
 -- Rabbit (721) - NSR
 -- Murloc Lurker (2.4.2 Official Data)
@@ -2694,8 +2694,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Riding White Stallion (5403) - NSR
 -- Pinto (5405) - NSR
 -- Palomino (5406) - NSR
--- Clara Charles (2.4.2 Official Data)
-('591701','5917','10','0','100','1','1','15','300000','300000','0','0','32','583','6','7','0','0','0','0','0','0','0','0','Clara Charles - Summons Defias Ambusher on LOS'),
+-- Clara Charles - NSR
 -- Dead-Tooth Jack (6093) - NSR
 -- Remen Marcot (6121) - NSR
 -- Henze Faulk (6172) - npc_henze_faulk
@@ -19063,7 +19062,7 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 ('4','-9967.55','-135.956','24.5909','0.170326','180000','6846'),
 ('5','-9958.49','-140.526','24.2409','4.0015','180000','6846'),
 ('6','-9964.59','-140.567','24.5105','0.741307','180000','6846'),
-('7','-9232.11','342.473','74.4399','4.31658','180000','5917'),
+-- PLEASE REUSE
 ('8','-1209.65','-2738.38','102.646','4.99352','300000','3395'),
 ('9','274.414520','-416.159271','-119.961769','4.861792','18000000','11460'),
 ('10','272.422424','-418.679291','-119.961769','4.760475','18000000','11460'),
