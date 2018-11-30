@@ -35,10 +35,10 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 
 -- POOL
 -- Req for quest credit
-DELETE FROM pool_template WHERE entry = 15007;
+DELETE FROM pool_template WHERE entry = 15015;
 INSERT INTO pool_template (entry, max_limit, description) VALUES 
-(15007,1,'Fire Plume Ridge Hot Spot - Pool');
+(15015,1,'Fire Plume Ridge Hot Spot - Pool');
 -- create pool
 DELETE FROM pool_creature WHERE guid = 23716;
 INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES 
-(23716, 15007, 100, 'Krakle\'s Thermometer - 10541 - Pool');
+(23716, 15015, 100, 'Krakle\'s Thermometer - 10541 - Pool');
