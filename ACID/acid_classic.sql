@@ -1870,7 +1870,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Watcher Keller (885) - NSR
 -- Watcher Hartin (886) - NSR
 -- Watcher Jordan (887) - NSR
--- Watcher Dodds (888) - NSR
+-- Watcher Dodds
+('88801','888','11','0','100','0','0','0','0','0','0','0','18','512','0','0','0','0','0','0','0','0','0','0','Watcher Dodds - Set UnitFlag IMMUNE_TO_NPC on Spawn'),
+('88802','888','21','0','100','0','0','0','0','0','0','0','18','512','0','0','0','0','0','0','0','0','0','0','Watcher Dodds - Restore UnitFlag IMMUNE_TO_NPC on Reached Home'),
 -- Splinter Fist Ogre (3.0.3 Official Data)
 ('88901','889','4','0','10','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Splinter Fist Ogre - Random Say on Aggro'),
 -- Splinter Fist Fire Weaver 891 (3.0.3 Official Data)
