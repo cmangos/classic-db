@@ -18941,7 +18941,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1222','To me, my servants!','5828','1','0','7358','0'),
 ('-1223','Come, spirits, attend your master!','5829','1','0','7358','0'),
 ('-1224','I am the hand of the Lich King!','5827','1','0','7358','0'),
-('-1225','Too easy!','5826','0','0','7358','0'),
+('-1225','Too easy.','5826','0','0','7358','0'),
 ('-1226','Oh now you\'ve gone and angered me! Time to see the true force of the Stone of Tides!','0','0','0','2624','0'),
 ('-1237','Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.','0','0','0','Scholomance Dark Summoner','1'),
 ('-1238','Wow, this one is just plain useless. Let me try again.','0','0','0','Scholomance Dark Summoner','1'),
