@@ -7,7 +7,7 @@
 UPDATE gameobject_template SET faction=14 WHERE entry=177672;
 
 -- Fix spawntime of spell focus GO
-UPDATE gameobject SET spawntimesecsmin=345, spawntimesecsmax=45 WHERE id=177668;
+UPDATE gameobject SET spawntimesecsmin=345, spawntimesecsmax=345 WHERE id=177668;
 
 -- Update script to also despawn GO 177668 (Mark of Detonation)
 UPDATE dbscripts_on_spell SET delay=1 WHERE id=19250 AND command=18;
