@@ -1523,7 +1523,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('126003','1260','2','0','100','1024','75','0','0','0','0','0','11','139','0','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Cast Renew when below 75% HP'),
 ('126004','1260','2','0','100','1024','20','0','0','0','0','0','11','2053','0','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Cast Lesser Heal when below 20% HP'),
 -- Veron Amberstill (1261)
--- Yarlyn Amberstill (1263) - NSR
+-- Yarlyn Amberstill 1263
+('126301','1263','1','0','100','1','1000','15000','30000','45000','0','0','54','0','0','23','0','0','0','0','0','0','0','0','Yarlyn Amberstill - Random Say OOC'),
 -- Rudra Amberstill (1265) - NSR
 -- Tundra MacGrann (1266) - NSR
 -- Ragnar Thunderbrew (1267) - NSR
@@ -1749,7 +1750,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chef Grual (272) - NSR
 -- Tavernkeep Smitts 273
 ('27301','273','1','0','100','1','45000','60000','150000','180000','0','0','1','82','0','0','0','0','0','0','0','0','0','0','Tavernkeep Smitts 273 - Say OOC'),
--- Barkeep Hann (274) - NSR
+-- Barkeep Hann 274
+('27401','274','1','0','100','1','1000','15000','150000','180000','0','0','1','80','81','0','0','0','0','0','0','0','0','0','Barkeep Hann - Say OOC'),
 -- Whit Wantmal (275) - NSR
 -- Viktori Prism'Antras (276) - NSR
 -- Jitters (3.0.3 Official Data)
@@ -6752,7 +6754,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Farmer Saldean 233
 ('23301','233','1','0','100','1','1000','15000','150000','180000','0','0','1','58','59','60','0','0','0','0','0','0','0','0','Farmer Saldean - Say OOC'),
 -- Gryan Stoutmantle 234
-('23401','234','1','0','50','1','120000','300000','1200000','1800000','0','0','54','0','0','21','0','0','0','0','0','0','0','0','Gryan Stoutmantle - Random Say OOC'),
+('23401','234','1','0','50','1','1000','15000','150000','180000','0','0','54','0','0','21','0','0','0','0','0','0','0','0','Gryan Stoutmantle - Random Say OOC'),
 -- Farmer Furlbrow 237
 ('23701','237','1','0','100','1','75000','90000','150000','180000','0','0','1','56','57','0','0','0','0','0','0','0','0','0','Farmer Furlbrow - Say OOC'),
 -- Verna Furlbrow 238
@@ -6802,6 +6804,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('48101','481','4','0','5','0','0','0','0','0','0','0','1','1866','1865','1867','0','0','0','0','0','0','0','0','Defias Footpad - Random Say on Aggro'),
 ('48102','481','33','0','100','1025','0','0','8200','14100','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Footpad - Cast Backstab on Facing Target Back'),
 ('48103','481','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Defias Footpad - Flee at 15% HP'),
+-- Protector Bialon 487
+('48701','487','1','0','100','1','75000','90000','150000','180000','0','0','1','42','0','0','0','0','0','0','0','0','0','0','Protector Bialon - Say OOC'),
+-- Protector Gariel 490
+('49001','490','1','0','100','1','30000','45000','150000','180000','0','0','1','41','0','0','0','0','0','0','0','0','0','0','Protector Gariel - Say OOC'),
 -- Riverpaw Scout 500 (2.4.3 Official Data)
 ('50001','500','4','0','15','0','0','0','0','0','0','0','1','1871','1870','0','0','0','0','0','0','0','0','0','Riverpaw Scout - Say on Aggro'),
 ('50002','500','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Riverpaw Scout - Enable Range Mode on Aggro'),
@@ -9304,7 +9310,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ================
 -- Dustwallow Marsh
 -- ================
--- Privateer Groy (2616) - NSR
+-- Privateer Groy 2616
+('261601','2616','1','0','100','1','1000','15000','150000','180000','0','0','1','737','738','739','0','0','0','0','0','0','0','0','Privateer Groy - Say OOC'),
 -- Dagun the Ravenous 2937
 ('293701','2937','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Dagun the Ravenous - Flee at 15% HP'),
 -- Baldruc 4321
@@ -10969,6 +10976,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Orphan Matron Battlewail 14451
 -- Alowicious Czervik 14480
 -- Tosamina 14498
+('1449801','14498','1','0','100','1','1000','15000','150000','180000','0','0','54','0','0','24','0','0','0','0','0','0','0','0','Tosamina - Random Say OOC'),
 -- Horde Orphan 14499
 -- Swift Timber Wolf 14539
 -- Swift Brown Wolf 14540
