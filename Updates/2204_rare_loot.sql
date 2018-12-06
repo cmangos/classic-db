@@ -213,8 +213,8 @@ UPDATE reference_loot_template SET ChanceOrQuestChance='25' WHERE entry='65142' 
 INSERT INTO reference_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES ('65172', '10553', '50', '1', '1', '1', '0', 'Foreman Vest');
 INSERT INTO reference_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES ('65172', '10554', '50', '1', '1', '1', '0', 'Foreman Pants');
 -- Move unique items to reference_loot_template
-DELETE FROM creature_loot_template WHERE entry='8503' anditem='10554';
-DELETE FROM creature_loot_template WHERE entry='8503' anditem='10553';
+DELETE FROM creature_loot_template WHERE entry='8503' AND item='10554';
+DELETE FROM creature_loot_template WHERE entry='8503' AND item='10553';
 INSERT INTO creature_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES ('8503', '65172', '100', '0', '-65172', '1', '0', 'NPC LOOT (Rare NPC Loot) - Gibblewilt - Special Items');
 
 -- (65174, 'NPC LOOT (Rare NPC Loot) - The Behemoth - Special Items'), 
