@@ -181,12 +181,12 @@ INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, datalong
 -- ---------------------------------------------
 
 -- Fix two NPC 636 (Defias Blackguard) position near Edwin Vancleef
-UPDATE creature SET position_x=-77.80708, position_y=-815.0969, position_y=40.01878, orientation=3.263766 WHERE guid=79369;
-UPDATE creature SET position_x=-78.27914, position_y=-824.784, position_y=40.00071, orientation=2.932153 WHERE guid=79368;
+UPDATE creature SET position_x=-77.80708, position_y=-815.0969, position_z=40.01878, orientation=3.263766 WHERE guid=79369;
+UPDATE creature SET position_x=-78.27914, position_y=-824.784, position_z=40.00071, orientation=2.932153 WHERE guid=79368;
 
 -- Fix two NPC 636 (Defias Blackguard) position near Mr. Smite
-UPDATE creature SET position_x=-0.314941, position_y=-783.811, position_y=10.09053, orientation=1.151917 WHERE guid=79345;
-UPDATE creature SET position_x=-5.206597, position_y=-778.9324, position_y=9.773645, orientation=0.8377581 WHERE guid=79346;
+UPDATE creature SET position_x=-0.314941, position_y=-783.811, position_z=10.09053, orientation=1.151917 WHERE guid=79345;
+UPDATE creature SET position_x=-5.206597, position_y=-778.9324, position_z=9.773645, orientation=0.8377581 WHERE guid=79346;
 
 -- Linked Aggro Between Defias Pirate and Defias Squallshaper Behind Mr. Smite
 UPDATE creature SET position_x=-22.056364, position_y=-809.104553, position_z=19.543686, orientation=1.330994 WHERE guid=79338;
