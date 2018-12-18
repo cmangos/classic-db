@@ -15965,7 +15965,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mangled Cadaver 10382 (3.0.8 Official Data)
 ('1038201','10382','11','0','100','0','0','0','0','0','0','0','11','16142','0','0','0','0','0','0','0','0','0','0','Mangled Cadaver - Cast Cadaver Worms on Spawn'),
 -- Broken Cadaver 10383
-('1038301','10383','11','0','100','0','0','0','0','0','0','0','11','16310','0','2','11','16140','0','2','0','0','0','0','Broken Cadaver - Cadaver Stun + Exploding Cadaver'),
+('1038301','10383','11','0','100','0','0','0','0','0','0','0','11','16310','0','34','11','16140','0','34','0','0','0','0','Broken Cadaver - Cast Cadaver Stun and Exploding Cadaver on Spawn'),
+('1038302','10383','1','0','100','0','1000','1000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Broken Cadaver - Zone Combat Pulse OOC'),
+('1038303','10383','0','0','100','0','2000','2000','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Broken Cadaver - Cast Invisibility and Stealth Detection'),
 -- Spectral Citizen (10384) - mobs_spectral_ghostly_citizen
 -- Ghostly Citizen (10385) - mobs_spectral_ghostly_citizen
 -- Vengeful Phantom 10387
