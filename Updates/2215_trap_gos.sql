@@ -1,0 +1,26 @@
+-- Add several missing trap gameobjects from Trinitycore DB
+INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `faction`, `size`, `Data0`, `Data1`, `Data2`, `Data3`, `Data4`, `Data5`) VALUES
+(4, 6, 0, 'Bonfire Damage', 14, 1, 0, 1, 3, 7902, 0, 0),
+(129, 6, 0, 'Naxx Teleporter trap', 0, 1, 0, 1, 0, 41232, 0, 0), -- 64446 is wotlk spell. Presumably 41232 is tbc equivalent so use that.
+(128972, 6, 327, 'Shallow Grave TRAP', 0, 1, 0, 0, 0, 10247, 0, 0),
+(160462, 6, 2770, 'Mystical Portal', 0, 1, 0, 1, 20, 13461, 0, 0),
+(160842, 6, 2770, 'Gor\'tesh\'s Lopped Off Head', 0, 1, 0, 0, 50, 13488, 0, 0),
+(175328, 6, 2770, 'Vaelan Spawn Node', 0, 0.5, 0, 50, 50, 10387, 0, 0),
+(175590, 6, 0, 'Spire Spider Egg Trap', 0, 1, 0, 0, 0, 16453, 0, 0),
+(176592, 6, 327, 'Shellfish Trap', 0, 1, 0, 0, 0, 17679, 0, 0),
+(176750, 6, 327, 'Kodo Bones', 0, 1, 0, 0, 0, 17960, 0, 0),
+(177493, 6, 327, 'Fire of Elune (Trap', 0, 1, 0, 0, 0, 18955, 0, 0),
+(177529, 6, 327, 'Altar of Elune (Trap', 0, 1, 0, 0, 0, 18993, 0, 0),
+(178124, 6, 327, 'Resonite Crystal (Trap', 0, 1, 0, 0, 5, 20492, 0, 0),
+(178248, 6, 327, 'Naga Brazier (trap', 0, 1, 0, 0, 0, 20863, 0, 0),
+(178644, 6, 0, 'Ryson\'s All Seeing Eye Trap', 0, 1, 95, 200, 0, 21546, 0, 0),
+(178673, 6, 5752, 'Consuming Flames Trap', 0, 1.2, 95, 60, 20, 21650, 0, 0),
+(178963, 6, 2770, 'Incantion of Celebras Trap', 0, 1, 0, 0, 0, 21917, 0, 0),
+(179527, 6, 391, 'Warpwood Pod - Root', 0, 0.75, 0, 0, 10, 22800, 0, 0),
+(179530, 6, 391, 'Warpwood Pod - Spore', 0, 0.75, 0, 0, 10, 22821, 0, 0),
+(179531, 6, 391, 'Warpwood Pod - Summon', 0, 0.75, 0, 0, 10, 22803, 0, 0),
+(180525, 6, 6424, 'Tonk Control Console Trap', 0, 1, 0, 0, 0, 24935, 0, 0),
+(181214, 6, 327, 'Necropolis critter spawner', 0, 1, 0, 0, 0, 27866, 0, 0),
+(181290, 6, 0, 'Midsummer Bonfire Spawn Trap', 0, 1, 0, 0, 0, 28784, 0, 0),
+(181375, 6, 0, 'Midsummer Bonfire Spawn Trap 2', 0, 1, 0, 0, 0, 29114, 0, 0),
+(181604, 6, 6771, 'TEST Ribbon Pole TRAP', 0, 1, 0, 0, 0, 29708, 0, 0);
