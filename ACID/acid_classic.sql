@@ -18726,7 +18726,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-409','Get those parts moving down to the ship!','0','0','0','1763','0'),
 ('-410','Hmmm, this one looks like something that would be better off as a windchime. Take notes class... This is NOT what you want to summon in the heat of battle.','0','0','0','11582','0'),
 ('-411','I will gladly pay you Tuesday for a hamburger today.','0','0','0','1395','0'),
-('-412','Spare some change for a poor blind man?...What do you mean I\'m not blind?...I\'M NOT BLIND! I CAN SEE! ITS A MIRACLE!','0','0','0','1395','0'),
+('-412','Spare some change for a poor blind man?...What do you mean I\'m not blind?...I\'M NOT BLIND! I CAN SEE! IT\'S A MIRACLE!','0','0','0','1395','0'),
 ('-413','It\'s all their fault, stupid Alliance army. Just had to build their towers right behind my farm.','0','0','0','1395','0'),
 ('-414','If the Captain finds out, it\'ll be the end of me.','0','0','0','1719','0'),
 ('-415','They must have had someone helping them.','0','0','0','1719','0'),

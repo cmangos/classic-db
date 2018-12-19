@@ -2,7 +2,6 @@
  
  -- Pathing for Razorfen Defender Entry: 4442
 SET @NPC := 87345;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2107.421, position_y=1597.128, position_z=81.6817 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -29,7 +28,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Razorfen Defender Entry: 4442
 SET @NPC := 87316;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2088.563, position_y=1550.666, position_z=81.383 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -46,7 +44,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Raging Agam'ar Entry: 4514
 SET @NPC := 87432;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2096.03, position_y=1786.564, position_z=51.27811 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -75,7 +72,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Agam'ar Entry: 4511
 SET @NPC := 87432;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2145.761, position_y=1839.933, position_z=48.77192 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -102,7 +98,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Raging Agam'ar Entry: 4514
 SET @NPC := 87392;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2139.96, position_y=1673.604, position_z=58.55344 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -133,7 +128,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Rotting Agam'ar Entry: 4512
 SET @NPC := 87436;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2063.36, position_y=1847.869, position_z=55.53937 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -158,7 +152,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Rotting Agam'ar Entry: 4512
 SET @NPC := 87416;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2052.472, position_y=1702.112, position_z=59.06878 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -195,7 +188,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Raging Agam'ar Entry: 4514
 SET @NPC := 87319;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2032.172, position_y=1754.218, position_z=60.4647 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -230,7 +222,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Raging Agam'ar Entry: 4514
 SET @NPC := 87315;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2066.079, position_y=1608.026, position_z=62.37017 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -253,7 +244,6 @@ UPDATE creature_movement SET waittime=1000 WHERE id=@PATH AND point=2;
 
 -- Pathing for Raging Agam'ar Entry: 4514
 SET @NPC := 87437;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2055.007, position_y=1845.796, position_z=55.89343 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -277,7 +267,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Death's Head Seer Entry: 4519
 SET @NPC := 87343;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2098.684, position_y=1540.76, position_z=85.16721 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -294,7 +283,6 @@ UPDATE creature_movement SET waittime=24000 WHERE id=@PATH AND point=6;
 
 -- Pathing for Death's Head Priest Entry: 4517
 SET @NPC := 87448;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2178.34, position_y=1855.082, position_z=58.19644 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -318,7 +306,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Death's Head Priest Entry: 4517
 SET @NPC := 87456;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2187.822, position_y=1834.436, position_z=60.13253 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -335,7 +322,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Razorfen Quilguard Entry: 4436
 SET @NPC := 87305;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2014.151, position_y=1647.922, position_z=80.97002 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -365,7 +351,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Greater Kraul Bat Entry: 4539
 SET @NPC := 87468;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2122.867, position_y=1989.361, position_z=64.2011 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -395,7 +380,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Blood of Agamaggan Entry: 4541
 SET @NPC := 87426;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2130.472, position_y=1848.927, position_z=49.23372 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -427,7 +411,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Blood of Agamaggan Entry: 4541
 SET @NPC := 87429;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2090.525, position_y=1707.353, position_z=56.40569 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -454,7 +437,6 @@ UPDATE creature_movement SET waittime=17000 WHERE id=@PATH AND point=14;
 
 -- Pathing for Blood of Agamaggan Entry: 4541
 SET @NPC := 87406;
-SET @PATH := @NPC * 10;
 DELETE FROM creature WHERE guid=@NPC;
 INSERT INTO creature (guid, id, map, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, currentwaypoint, DeathState, MovementType) VALUES
 (@NPC, 4541, 47, 2164.323, 1691.301, 56.84164, 2.93215, 7200, 7200, 0, 0, 0, 2);
@@ -479,7 +461,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Razorfen Stalker Entry: 6035
 SET @NPC := 87489;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2152.86, position_y=1926.615, position_z=66.59495 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -498,7 +479,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Quilguard Champion Entry: 4623
 SET @NPC := 87393;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2140.23, position_y=1634.293, position_z=81.90321 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -529,7 +509,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Death's Head Acolyte Entry: 4515
 SET @NPC := 87379;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2182.066, position_y=1536.653, position_z=71.79845 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
@@ -555,7 +534,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VA
 
 -- Pathing for Razorfen Warrior Entry: 4435
 SET @NPC := 87291;
-SET @PATH := @NPC * 10;
 UPDATE creature SET spawndist=0, MovementType=2, position_x=2004.841, position_y=1525.423, position_z=80.50848 WHERE guid=@NPC;
 DELETE FROM creature_movement WHERE id=@PATH;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z) VALUES
