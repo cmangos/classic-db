@@ -5462,6 +5462,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Green Sludge (2655) - NSR
 -- Jade Ooze 2656
 ('265601','2656','0','0','100','1','6800','8300','37900','46300','0','0','11','6907','1','32','0','0','0','0','0','0','0','0','Jade Ooze - Cast Diseased Slime'),
+('265602','2656','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Jade Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Trained Razorbeak
 ('265701','2657','9','0','100','1','0','5','15000','19000','0','0','11','3147','1','0','0','0','0','0','0','0','0','0','Trained Razorbeak - Cast Rend Flesh'),
 -- Razorbeak Gryphon (2658) - NSR
@@ -8142,6 +8143,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('876401','8764','9','0','100','1','0','30','14000','19000','0','0','11','8806','4','0','0','0','0','0','0','0','0','0','Mistwing Ravager - Cast Poisoned Shot'),
 -- Forest Ooze 8766
 ('876601','8766','9','0','100','1','0','5','12000','16000','0','0','11','6907','4','32','0','0','0','0','0','0','0','0','Forest Ooze - Cast Diseased Slime'),
+('876602','8766','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Forest Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Gruul Darkblade (10361) - NSR
 -- Azshara Sentinel (11276) - NSR
 -- Loh'atu (11548) - NSR
@@ -9727,13 +9729,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kaerbrus
 ('550101','5501','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kaerbrus - Flee at 15% HP'),
 -- Spirit Healer (6491) - NSR
--- Cursed Ooze (7086) - NSR
--- Tainted Ooze
+-- Cursed Ooze 7086
+('708601','7086','8','0','100','1','15698','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Cursed Ooze - Delayed Despawn on Filling Empty Jar (q.4512) Spellhit'),
+-- Tainted Ooze 7092
 ('709201','7092','9','0','100','1','0','5','180000','180000','0','0','11','3335','1','0','0','0','0','0','0','0','0','0','Tainted Ooze - Cast Dark Sludge'),
+('709202','7092','8','0','100','1','15699','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Tainted Ooze - Delayed Despawn on Filling Empty Jar (q.4512) Spellhit'),
 -- Vile Ooze 7093
 ('709301','7093','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Vile Ooze - Enable Caster Mode on Aggro'),
 ('709302','7093','9','0','100','1025','0','5','11000','14000','0','0','11','22595','1','0','0','0','0','0','0','0','0','0','Vile Ooze - Cast Poison Shock'),
 ('709303','7093','9','0','100','1025','5','30','3800','5200','0','0','11','21067','1','256','0','0','0','0','0','0','0','0','Vile Ooze - Cast Poison Bolt'),
+('709304','7093','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Vile Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Ironbeak Owl
 ('709701','7097','9','0','100','1','0','5','8000','11000','0','0','11','5708','1','0','0','0','0','0','0','0','0','0','Ironbeak Owl - Cast Swoop'),
 -- Ironbeak Screecher
@@ -13132,11 +13137,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('655503','6555','24','5','100','1','14120','5','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Gorishi Tunneler - Set Phase 2 on Target Max Tunneler Acid Aura Stack (Phase 1)'),
 ('655504','6555','28','3','100','1','14120','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Gorishi Tunneler - Set Phase 1 on Target Missing Tunneler Acid Aura Stack (Phase 2)'),
 ('655505','6555','0','0','100','1','10000','25000','12700','24800','0','0','11','8137','1','32','0','0','0','0','0','0','0','0','Gorishi Tunneler - Cast Silithid Pox'),
+-- Muculent Ooze 6556
+('655601','6556','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Muculent Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Primal Ooze 6557
 ('655701','6557','2','0','100','0','10','0','0','0','0','0','11','14146','0','0','0','0','0','0','0','0','0','0','Primal Ooze - Cast Clone at 10% HP'),
 ('655702','6557','30','0','100','1','5','10290','0','0','0','0','11','16032','0','16','36','9621','0','0','0','0','0','0','Primal Ooze - Cast Merging Oozes AND Transform into Gargantuan Ooze on Receive AI Event A'),
+('655703','6557','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Primal Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Glutinous Ooze 6559
 ('655901','6559','6','0','100','0','0','0','0','0','0','0','11','14147','0','7','0','0','0','0','0','0','0','0','Glutinous Ooze - Cast Acid Slime on Death'),
+('655902','6559','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Glutinous Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Ravasaur Matriarch 6581
 ('658101','6581','9','0','100','1','0','5','12000','18000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Ravasaur Matriarch - Cast Rend'),
 -- Clutchmother Zavas 6582
