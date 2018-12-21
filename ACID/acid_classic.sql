@@ -12530,7 +12530,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('339703','3397','6','0','5','0','0','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Bloodcharger - Chance Say and Summon Verog the Dervish on Death'),
 -- Savannah Huntress 3415 - NSR
 -- Savannah Matriarch 3416
-('341601','3416','0','0','60','1','0','0','14000','14000','0','0','11','6598','0','0','0','0','0','0','0','0','0','0','Savannah Matriarch - Cast Savannah Cub'),
+('341601','3416','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Savannah Matriarch - Despawn Guardians on OOC'),
+('341602','3416','1','0','100','0','2000','2000','0','0','0','0','11','6598','0','0','0','0','0','0','0','0','0','0','Savannah Matriarch - Cast Summon Savannah Cub on OOC'),
 -- Thunderhawk Cloudscraper 3424
 ('342401','3424','0','0','80','1','12000','21000','15000','25000','0','0','11','8078','0','0','0','0','0','0','0','0','0','0','Thunderhawk Cloudscraper - Cast Thunderclap'),
 -- Savannah Prowler 3425 - NSR
