@@ -17379,8 +17379,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1637501','16375','0','0','100','1','0','0','5000','5000','0','0','11','24244','0','16','0','0','0','0','0','0','0','0','Sewage Slime - Cast Growl'),
 -- Lightning Totem
 ('1638501','16385','0','0','100','1','0','0','1100','4800','0','0','11','28297','1','0','0','0','0','0','0','0','0','0','Lightning Totem - Cast Shock'),
--- Toxic Tunnel
-('1640001','16400','11','0','100','0','0','0','0','0','0','0','11','28370','0','16','0','0','0','0','0','0','0','0','Toxic Tunnel - Cast Toxic Gas on Spawn'),
+-- Toxic Tunnel 16400 - NSR
 -- Soldier of the Frozen Wastes
 ('1642701','16427','11','0','100','0','0','0','0','0','0','0','11','28458','0','2','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Dark Blast'),
 -- Plague Gargoyle
