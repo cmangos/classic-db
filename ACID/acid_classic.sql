@@ -6283,9 +6283,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('646701','6467','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Mennet Carkad - Summon Deathguard Elite on Aggro'),
 -- Spirit Healer (6491) - NSR
 -- Rift Spawn (6492)
-('649201','6492','11','0','100','0','0','0','0','0','0','0','11','9093','0','1','0','0','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Invisibility on Spawn'),
-('649202','6492','8','0','100','0','9095','-1','0','0','0','0','28','0','9093','0','2','16','1','0','13','100','1','0','Rift Spawn - Remove Rift Spawn Invisibility on Cantation of Manifestation Spellhit'),
-('649203','6492','21','0','100','0','0','0','0','0','0','0','11','9093','0','1','0','0','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Invisibility on Return Home'),
+('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Rift Spawn - Set Invincible at 1 HP and Set Phase 0 on Spawn'),
+('649202','6492','8','0','100','0','9095','-1','0','0','0','0','55','6','0','0','22','1','0','0','0','0','0','0','Rift Spawn - Attack Invoker and Set Phase 1 on Cantation of Manifestation Spellhit'),
+('649203','6492','4','6','100','0','0','0','0','0','0','0','11','9738','0','0','54','-988','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Becomes Visible and Text Emote on Aggro (Phase 0)'),
+('649204','6492','2','0','100','0','1','0','0','0','0','0','11','9032','0','0','18','33554432','0','0','22','2','0','0','Rift Spawn - Cast Self Stun - 30 seconds and Set NotSelectable and Set Phase 2 When Below 1% HP'),
+('649205','6492','29','3','100','0','29500','29500','0','0','0','0','54','-989','0','0','41','0','0','0','0','0','0','0','Rift Spawn - Text Emote and Despawn Self on Generic Timer (Phase 2)'),
+('649206','6492','21','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Set Phase 0 on Reached Home'),
+('649207','6492','8','0','100','0','9010','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Despawn Self on Create Filled Containment Coffer Spellhit'),
 -- Andron Gant
 ('652201','6522','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Andron Gant - Summon Deathguard Elite on Aggro'),
 -- Estelle Gendry
@@ -18875,6 +18879,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-986','You be too scared! Me find you!','0','0','0','14464','0'),
 ('-987','What? No you can\'t beat me! Me will return!','0','0','0','14464','0'),
 ('-990','Mommy!','0','0','0','Common Text','0'),
+('-988','%s is angered and attacks!','0','2','0','6492','0'),
+('-989','%s escapes into the void!','0','2','0','6492','0'),
 ('-1019','This will teach you to lay off the herb, $r.','0','0','0','11447','1'),
 ('-1020','Step right up! Step right up! Greetings my friend. I\'m Silas Darkmoon and I want to welcome you to the greatest show on Azeroth! It\'s the Darkmoon Faire friend, and it\'s your lucky day! Sparing no expense, we\'ve gathered wonders and treats from around the world for your delight. Whether you\'re young or old, rich or poor, the Darkmoon Faire has it all!','0','0','0','14823','1'),
 ('-1021','Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world! We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','14823','1'),
