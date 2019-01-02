@@ -850,7 +850,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('904403','9044','0','0','100','1025','7000','11000','11000','15000','0','0','11','14443','4','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Multi-Shot'),
 ('904404','9044','9','0','100','1025','5','35','2300','3900','0','0','11','6660','4','256','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Shoot'),
 -- Scarshield Legionnaire (9097) - ALREADY SCRIPTED IN BLACKROCK SPIRE
--- Rookery Whelp (10161) - NSR
+-- Rookery Whelp 10161
+('1016101','10161','29','0','100','0','0','0','0','0','0','0','11','15750','0','0','0','0','0','0','0','0','0','0','Rookery Whelp - Cast Rookery Whelp Spawn-in Spell on Spawn'),
 -- Lava Spawn (12265) - ALREADY SCRIPTED IN MOLTEN CORE
 
 
@@ -17436,6 +17437,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =================================
 -- Onyxia's Lair (Pre 3.2.2a Client)
 -- =================================
+-- Onyxia 10184 - boss_onyxia
+-- Onyxian Whelp
+('1126201','11262','29','0','100','0','0','0','0','0','0','0','11','15750','0','0','0','0','0','0','0','0','0','0','Onyxian Whelp - Cast Rookery Whelp Spawn-in Spell on Spawn'),
 -- Onyxia Warder
 ('1212901','12129','0','0','100','1','1000','1000','12000','12000','0','0','11','20203','0','0','0','0','0','0','0','0','0','0','Onyxia Warder - Cast Fire Nova'),
 ('1212902','12129','0','0','90','1','5000','5000','20000','20000','0','0','11','18958','1','0','0','0','0','0','0','0','0','0','Onyxia Warder - Cast Flame Lash'),
