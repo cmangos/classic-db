@@ -505,9 +505,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tor'gan 2706
 ('270601','2706','10','0','100','1','0','8','5000','5000','0','0','39','30','0','0','1','-551','0','0','0','0','0','0','Tor''gan - Call For Help OOC at 8 Yards LOS'),
 -- Quae (2712) - NSR
--- Kinelory (2713)
-('271301','2713','0','0','100','1','1000','3000','30000','38000','0','0','11','4948','0','0','0','0','0','0','0','0','0','0','Kinelory - Cast Kinelory''s Bear Form'),
-('271302','2713','14','0','100','0','800','40','0','0','0','0','11','3627','12','1','0','0','0','0','0','0','0','0','Kinelory - Cast Rejuvenation on Friendlies'),
+-- Kinelory 2713 - npc_kinelory
 -- Forsaken Courier (2714) - NSR
 -- Forsaken Bodyguard (2721) - NSR
 -- Apothecary Jorell (3.0.9 Official Data)
@@ -1339,8 +1337,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1439302','14393','9','0','100','1025','0','30','3100','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Expeditionary Priest - Cast Holy Smite'),
 -- Mor'zul Bloodbringer (14436) - NSR
 -- Gorzeeki Wildeyes (14437) - NSR
--- Franklin the Friendly
-('1452901','14529','9','0','100','1','0','20','10000','15000','0','0','11','23504','1','0','0','0','0','0','0','0','0','0','Franklin the Friendly - Cast Fool''s Plight'),
+-- Franklin the Friendly (14529) - npc_klinfran
 -- Klinfran the Crazed (14534) - NSR
 -- Lumbering Horror (14697) - NSR
 -- Elder Rumblerock (15557) - NSR
@@ -8857,8 +8854,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1155901','11559','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Outcast Necromancer - Enable Caster Mode on Aggro'),
 ('1155902','11559','0','0','100','1025','12000','18000','60000','75000','0','0','11','18166','0','0','0','0','0','0','0','0','0','0','Outcast Necromancer - Cast Summon Magram Ravager'),
 ('1155903','11559','9','0','100','1025','0','40','3400','4800','0','0','11','20298','1','256','0','0','0','0','0','0','0','0','Outcast Necromancer - Cast Shadow Bolt'),
--- Magrami Spectre
-('1156001','11560','0','0','100','1','5000','9000','15000','21000','0','0','11','18159','4','32','0','0','0','0','0','0','0','0','Magrami Spectre - Cast Curse of the Fallen Magram'),
+-- Magrami Spectre (11560) - npc_magrami_spectre
 -- Undead Ravager
 ('1156101','11561','13','0','100','1','7000','10000','0','0','0','0','11','11978','1','1','0','0','0','0','0','0','0','0','Undead Ravager - Cast Kick on Target Spell Casting'),
 -- Drysnap Crawler 11562
