@@ -16,7 +16,7 @@ World of Warcraft content and materials are trademarks and copyrights of Blizzar
 
 Compatibility
 -------------
-The *Classic DB* database is compatible with [mangos-classic rev z2717][10]
+The *Classic DB* database is compatible with [mangos-classic rev z2732][10]
 and newer.
 
 Getting started
