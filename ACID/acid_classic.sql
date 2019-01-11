@@ -1470,8 +1470,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('111702','1117','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Rockjaw Bonesnapper - Flee at 15% HP'),
 -- Rockjaw Backbreaker (2.4.3 Official Data)
 ('111801','1118','2','0','100','0','20','0','0','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Rockjaw Backbreaker - Cast Enrage at 20% HP'),
--- Hammerspine (2.4.3 Official Data)
-('111901','1119','4','0','70','0','0','0','0','0','0','0','1','-324','0','0','0','0','0','0','0','0','0','0','Hammerspine - Random Say on Aggro'),
+-- Hammerspine 1119 (2.4.3 Official Data)
+('111901','1119','4','0','70','0','0','0','0','0','0','0','1','-324','-212','0','0','0','0','0','0','0','0','0','Hammerspine - Random Say on Aggro'),
 ('111902','1119','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Hammerspine - Flee at 15% HP'),
 -- Frostmane Troll (2.4.3 Official Data)
 ('112001','1120','4','0','20','0','0','0','0','0','0','0','54','0','0','8','0','0','0','0','0','0','0','0','Frostmane Troll - Random Say on Aggro'),
@@ -18663,6 +18663,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-209','I have a special message for $n. And it says you must die!','0','0','0','Defias Messenger','0'),
 ('-210','I\'ll deliver you, weak $c, to the afterlife!','0','0','0','Defias Messenger','0'),
 ('-211','Die in the name of Edwin van Cleef!','0','0','0','Defias Messenger','0'),
+('-212','I smell a $R','0','0','0','1119','0'),
 ('-213','Crush!','0','0','0','Trogg Common Text','0'),
 ('-214','Kill!','0','0','0','Trogg Common Text','0'),
 ('-215','Destroy!','0','0','0','Trogg Common Text','0'),

@@ -5,7 +5,7 @@
 
 SET @COND := 552;
 
-DELETE FROM conditions WHERE condition_entry BETWEEN @COND AND @COND + ;
+DELETE FROM conditions WHERE condition_entry BETWEEN @COND AND @COND + 4;
 INSERT INTO conditions (condition_entry, type, value1, value2, comments) VALUES
 (@COND, 16, 5877, 1, 'Player Has Less Than 1 of Item ID 5877 in Inventory'),
 (@COND + 1, 8, 1147, 0, 'Quest ID 1147 Rewarded'),
