@@ -1849,8 +1849,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jonathan Carevin (661) - NSR
 -- Calor (663) - NSR
 -- Benjamin Carevin (664) - NSR
--- Commander Felstrom (3.0.3 Official Data)
+-- Commander Felstrom 771 (3.0.3 Official Data)
 ('77101','771','2','0','100','0','10','0','0','0','0','0','11','3488','0','0','0','0','0','0','0','0','0','0','Commander Felstrom - Cast Felstrom Resurrection at 10% HP'),
+('77102','771','8','0','100','1','3488','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Commander Felstrom - Despawn Self on Spell hit'),
 -- Skeletal Warder (3.0.3 Official Data)
 ('78501','785','0','0','20','1','20200','26200','30000','45000','0','0','11','4979','0','1','0','0','0','0','0','0','0','0','Skeletal Warder - Cast Quick Flame Ward'),
 ('78502','785','0','0','100','1','1000','9400','20100','44800','0','0','11','8699','0','0','0','0','0','0','0','0','0','0','Skeletal Warder - Cast Unholy Frenzy'),
