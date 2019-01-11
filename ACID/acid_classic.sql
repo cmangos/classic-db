@@ -12753,7 +12753,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1213801','12138','11','0','100','0','0','0','0','0','0','0','11','12787','0','1','0','0','0','0','0','0','0','0','Lunaclaw - Cast Thrash on Spawn'),
 ('1213802','12138','6','0','100','0','0','0','0','0','0','0','11','18986','0','7','0','0','0','0','0','0','0','0','Lunaclaw - Cast Lunaclaw Spirit on Death'),
 -- Burning Blade Toxicologist
-('1231901','12319','4','0','100','0','0','0','0','0','0','0','11','696','0','0','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Demon Skin on Aggro'),
+('1231901','12319','4','0','100','0','0','0','0','0','0','0','11','696','0','0','54','-991','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Demon Skin and Say on Aggro'),
 ('1231902','12319','0','0','100','1','5000','11000','14000','25000','0','0','11','11962','1','0','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Immolate'),
 ('1231903','12319','0','0','100','1','9000','15000','18000','30000','0','0','11','980','4','33','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Bane of Agony'),
 ('1231904','12319','2','0','100','1','50','0','13000','18000','0','0','11','689','1','0','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Drain Life at 50% HP'),
@@ -18875,6 +18875,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-986','You be too scared! Me find you!','0','0','0','14464','0'),
 ('-987','What? No you can\'t beat me! Me will return!','0','0','0','14464','0'),
 ('-990','Mommy!','0','0','0','Common Text','0'),
+('-991','You\'ve interfered with our plans for the last time, foolish $c!','0','0','0','12319','0'),
 ('-988','%s is angered and attacks!','0','2','0','6492','0'),
 ('-989','%s escapes into the void!','0','2','0','6492','0'),
 ('-1019','This will teach you to lay off the herb, $r.','0','0','0','11447','1'),
