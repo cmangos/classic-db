@@ -156,7 +156,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+226, @CGUID+41, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
 (@CGUID+244, @CGUID+41, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
 (@CGUID+75, @CGUID+41, 3), -- Atal'ai Corpse Eater -> Atal'ai Witch Doctor
-(@CGUID+85, @CGUID+41, 3), -- Unliving Atal'ai -> Atal'ai Witch Doctor
+(@CGUID+66, @CGUID+41, 3), -- Unliving Atal'ai -> Atal'ai Witch Doctor
 (@CGUID+224, @CGUID+49, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
 (@CGUID+225, @CGUID+49, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
 (@CGUID+236, @CGUID+49, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
