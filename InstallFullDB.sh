@@ -158,6 +158,32 @@ fi
 echo
 echo
 
+## Instances
+echo "> Processing instance files ..."
+COUNT=0
+for INSTANCE in "${ADDITIONAL_PATH}Updates/Instances/"[0-9]*.sql
+do
+  if [ -e "$INSTANCE" ]
+  then
+    echo "    Appending $INSTANCE"
+    $MYSQL_COMMAND < "$INSTANCE"
+    if [[ $? != 0 ]]
+    then
+      echo "ERROR: cannot apply $INSTANCE"
+      exit 1
+    fi
+    ((COUNT++))
+  fi
+done
+if [ "$COUNT" != 0 ]
+then
+  echo "  $COUNT Instance files applied successfully"
+else
+  echo "  Did not find any instance file to apply"
+fi
+echo
+echo
+
 #
 #               Core updates
 #
