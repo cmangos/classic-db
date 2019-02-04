@@ -7,7 +7,7 @@
 -- update spell_template set castingtimeindex = 1 where id = 1804;
 
 -- Worn Junkbox should contain a few copper.
-UPDATE `item_template` SET `minMoneyLoot`=5, `maxMoneyLoot`=15 WHERE `entry`=16883;
+UPDATE `item_template` SET `minMoneyLoot`=100, `maxMoneyLoot`=200 WHERE `entry`=16883;
 
 REPLACE INTO `reference_loot_template_names` (`entry`, `name`) VALUES
 (16883, 'Worn Junkbox (16883) - (Daggers, Rings, Patterns, Poisons)');

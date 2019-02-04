@@ -49,7 +49,7 @@ And one time I got a heavy junkbox with a Dragonscale Band... thought it was a b
 
 -- Loot for Heavy Junkbox.
 -- Heavy Junkbox should contain a few copper.
-UPDATE `item_template` SET `minMoneyLoot`=150, `maxMoneyLoot`=600 WHERE `entry`=16885;
+UPDATE `item_template` SET `minMoneyLoot`=300, `maxMoneyLoot`=600 WHERE `entry`=16885;
 
 REPLACE INTO `reference_loot_template_names` (`entry`, `name`) VALUES
 (16885, 'Heavy Junkbox (16885) - (Daggers, Jewellery, Patterns, Poisons)');
