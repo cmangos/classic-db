@@ -3668,8 +3668,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('71104','711','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ardo Dirtpaw - Flee at 15% HP'),
 -- Redridge Thrasher (2.4.3 Official Data)
 ('71201','712','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Redridge Thrasher - Flee at 15% HP'),
--- Servant of Ilgalar (2.4.3 Official Data)
-('81901','819','0','0','100','1','600','8800','27300','37300','0','0','11','8129','4','0','0','0','0','0','0','0','0','0','Servant of Ilgalar - Cast Mana Burn'),
+-- Servant of Ilgalar 819 (2.4.3 Official Data)
+('81901','819','0','0','100','1025','600','8800','27300','37300','0','0','11','8129','16','0','0','0','0','0','0','0','0','0','Servant of Ilgalar - Cast Mana Burn on Random Mana User'),
 -- Ariena Stormfeather (2.4.3 Official Data)
 ('93101','931','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Ariena Stormfeather - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Rohh the Silent (2.4.3 Official Data)
@@ -12860,7 +12860,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Redstone Basilisk 4150
 ('415001','4150','0','0','100','1','9000','14000','12000','16000','0','0','11','3635','1','0','0','0','0','0','0','0','0','0','Redstone Basilisk - Cast Crystal Gaze'),
 -- Saltstone Crystalhide 4151
-('415101','4151','0','0','100','1','8000','14000','15000','18000','0','0','11','8129','4','0','0','0','0','0','0','0','0','0','Saltstone Crystalhide - Cast Mana Burn'),
+('415101','4151','0','0','100','1025','8000','14000','15000','18000','0','0','11','8129','16','0','0','0','0','0','0','0','0','0','Saltstone Crystalhide - Cast Mana Burn on Random Mana User'),
 -- Salt Flats Scavenger 4154
 ('415401','4154','12','0','100','1','20','0','30000','30000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Salt Flats Scavenger - Cast Execute when Target HP below 20%'),
 -- Salt Flats Vulture 4158
