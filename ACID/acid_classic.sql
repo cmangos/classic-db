@@ -1991,11 +1991,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1530201','15302','0','0','100','1','8000','8000','30000','30000','0','0','11','24840','0','0','0','0','0','0','0','0','0','0','Shade of Taerar - Cast Poison Cloud'),
 ('1530202','15302','0','0','100','1','12000','12000','12000','12000','0','0','11','24839','0','0','0','0','0','0','0','0','0','0','Shade of Taerar - Cast Acid Breath'),
 -- Twilight Corrupter
-('1562501','15625','10','0','100','0','0','65','0','0','0','0','1','-1139','0','0','0','0','0','0','0','0','0','0','Twilight Corrupter - Yell on Hostile LOS 65 Yards'),
-('1562502','15625','4','0','100','0','0','0','0','0','0','0','1','-1140','0','0','0','0','0','0','0','0','0','0','Twilight Corrupter - Yell on Aggro'),
-('1562503','15625','0','0','100','1','9000','16000','5000','9000','0','0','11','25805','0','0','0','0','0','0','0','0','0','0','Twilight Corrupter - Cast Soul Corruption'),
-('1562504','15625','0','0','100','1','12000','18000','35000','45000','0','0','11','25806','5','1','0','0','0','0','0','0','0','0','Twilight Corrupter - Cast Creature of Nightmare'),
-('1562505','15625','5','0','100','1','0','0','1','0','0','0','1','-1141','0','0','11','21307','0','1','0','0','0','0','Twilight Corrupter - Yell and Cast Swell of Souls on Player Kill'),
+('1562501','15625','4','0','100','0','0','0','0','0','0','0','1','-1140','0','0','0','0','0','0','0','0','0','0','Twilight Corrupter - Say on Aggro'),
+('1562502','15625','0','0','100','1','9000','16000','5000','9000','0','0','11','25805','0','0','0','0','0','0','0','0','0','0','Twilight Corrupter - Cast Soul Corruption'),
+('1562503','15625','0','0','100','1','12000','18000','35000','45000','0','0','11','25806','5','1','0','0','0','0','0','0','0','0','Twilight Corrupter - Cast Creature of Nightmare'),
+('1562504','15625','5','0','100','1','0','0','1','0','0','0','1','-1141','0','0','11','21307','0','1','0','0','0','0','Twilight Corrupter - Yell and Cast Swell of Souls on Player Kill'),
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Plagued Deathhound (16448) - NSR
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
@@ -18917,8 +18916,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1058','%s seems to no longer be able to cast spells...','0','2','0','7666','0'),
 ('-1119','Kill $N!','0','1','0','15392','25'),
 ('-1135','None can stand against the serpent lords!','5786','1','0','3671','0'),
-('-1139','Come, $n. See what the Nightmare brings...','0','1','0','15625','0'),
-('-1140','The Nightmare cannot be stopped!','0','1','0','15625','0'),
+-- PLEASE REUSE -1136 to -1139
+('-1140','The Nightmare cannot be stopped!','0','0','0','15625','0'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','15625','0'),
 ('-1194','Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!','0','1','0','9938','0'),
 ('-1195','Prepare to be Malowned!','0','1','0','11143','0'),
