@@ -1,0 +1,1 @@
+UPDATE `creature_template` SET `ExtraFlags` = 130 WHERE `Entry` = 15214;
