@@ -1,0 +1,2 @@
+UPDATE `dbscript_string` SET `content_default` = 'This demonic entity is known as the Voidwalker. Its strength and endurance are significant, making it ideal for defense. Send it to attack your enemy, then use a shield while you use your spells and abilities to drain away your opponent\'s life.' WHERE `entry` = '2000005638';
+UPDATE `dbscript_string` SET `content_default` = 'Oooooo hot hot hot! If that won\'t put spring in your step, I don\'t know what will!' WHERE `entry` = '2000000046';
