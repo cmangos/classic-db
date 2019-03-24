@@ -11,4 +11,4 @@ UPDATE `dbscript_string` SET `content_default` = 'I don\'t think there\'s any fi
 UPDATE `dbscript_string` SET `content_default` = 'And that\'s how Lothar killed thirty six orcs with his bare hands!' WHERE `entry` = '2000005115';
 UPDATE `dbscript_string` SET `content_default` = 'I think I see something.' WHERE `entry` = '2000005118';
 UPDATE `dbscript_string` SET `content_default` = 'I think I see something.' WHERE `entry` = '2000005120';
-UPDATE `dbscript_string` SET `content_default` = 'The magical wards at that should be supported enough by the energy flux to certain the entity.' WHERE `entry` = '2000005151';
+UPDATE `dbscript_string` SET `content_default` = 'The magical wards at that point should be supported enough by the energy flux to certain the entity.' WHERE `entry` = '2000005151'; -- https://wow.gamepedia.com/Mage_Quarter
