@@ -1274,7 +1274,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Marshal Maxwell (9560) - NSR
 -- Jalinda Sprig (9561) - NSR
 -- Helendis Riverhorn (9562) - NSR
--- Ragged John (9563) - npc_ragged_john
+-- Ragged John (9563) - NSR
 -- Mayara Brightwing (9565) - NSR
 -- Hahk'Zor (9602) - NSR
 -- Gorgon'och (3.1.3 Official Data)
@@ -5346,7 +5346,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lost One Rift Traveler (6913) - NSR
 -- Innkeeper Karakul (6930) - npc_innkeeper
 -- Swamp Spirit (6932) - NSR
--- Fallen Hero of the Horde (7572) - npc_fallen_hero_of_horde
+-- Fallen Hero of the Horde (7572) - NSR
 -- Dispatch Commander Ruag (7623) - NSR
 -- Bengor
 ('764301','7643','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Bengor - Set Stand State to Stand on Aggro'),
@@ -10839,7 +10839,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zor Lonetree 4047
 -- Belgrom Rockmaul 4485
 -- Kildar 4752
--- Thrall (SD2 Backport)
+-- Thrall
 ('494901','4949','0','0','100','1','2000','2000','9000','9000','0','0','11','16033','1','0','0','0','0','0','0','0','0','0','Thrall - Cast Chain Lightning'),
 ('494902','4949','0','0','100','1','8000','8000','15000','15000','0','0','11','16034','1','0','0','0','0','0','0','0','0','0','Thrall - Cast Shock'),
 -- Garyl 5188
