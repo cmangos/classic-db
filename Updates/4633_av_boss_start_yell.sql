@@ -11,3 +11,7 @@ UPDATE `creature_template` SET `Faction` = 16, `Detection` = 24, `SpeedWalk` = (
 -- UPDATE `creature_template` SET `Expansion` = 0 WHERE `entry` = 13959; -- tbc+
 -- UPDATE `creature_template` SET `Expansion` = 1 WHERE `entry` = 22604; -- missing loot.
 
+-- Instance File
+DELETE FROM `pool_template` WHERE `entry` = 1801;
+DELETE FROM `pool_gameobject_template` WHERE `pool_entry` = 1801; -- other id in classic
+
