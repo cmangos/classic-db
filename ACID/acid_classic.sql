@@ -9458,7 +9458,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('437902','4379','9','0','100','1','0','30','9000','14000','0','0','11','745','1','0','0','0','0','0','0','0','0','0','Darkmist Silkspinner - Cast Web'),
 -- Withervine Rager
 ('438501','4385','2','0','100','1','30','0','120000','120000','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Withervine Rager - Cast Enrage at 30% HP'),
--- Withervine Bark Ripper (4386) - NSR
+-- Withervine Bark Ripper 4386
+('438601','4386','9','0','100','1','0','5','5000','8000','0','0','11','6016','1','0','0','0','0','0','0','0','0','0','Withervine Bark Ripper - Cast Pierce Armor'),
 -- Withervine Mire Beast
 ('438701','4387','9','0','100','1','0','5','11000','15000','0','0','11','5337','1','0','0','0','0','0','0','0','0','0','Withervine Mire Beast - Cast Wither Strike'),
 -- Young Murk Thresher (4388) - NSR
@@ -9940,7 +9941,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodvenom Post Brave (11180) - NSR
 -- Shi'alune (11181) - NSR
 -- Timbermaw Warder (11516) - NSR
--- Timbermaw Mystic (11552) - NSR
+-- Timbermaw Mystic 11552
+('1155201','11552','9','0','100','1','0','30','3000','6000','0','0','11','10946','1','0','0','0','0','0','0','0','0','0','Timbermaw Mystic - Cast Mind Blast'),
+('1155202','11552','9','0','100','1','0','30','4000','8000','0','0','11','10934','1','0','0','0','0','0','0','0','0','0','Timbermaw Mystic - Cast Smite'),
 -- Timbermaw Woodbender (11553) - NSR
 -- Grazle (11554) - NSR
 -- Gorn One Eye (11555) - NSR
