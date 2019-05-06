@@ -9475,7 +9475,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mudrock Spikeshell (4397) - NSR
 -- Muckshell Clacker
 ('440101','4401','9','0','100','1','0','5','20000','25000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Muckshell Clacker - Cast Tendon Rip'),
--- Muckshell Snapclaw (4402) - NSR
+-- Muckshell Snapclaw 4402
+('440201','4402','11','0','100','0','0','0','0','0','0','0','11','3616','0','34','0','0','0','0','0','0','0','0','Muckshell Snapclaw - Cast Poison Proc on Spawn'),
 -- Muckshell Pincer (4403) - NSR
 -- Muckshell Scrabbler 4404
 ('440401','4404','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Muckshell Scrabbler - Enable Range Mode on Aggro'),
