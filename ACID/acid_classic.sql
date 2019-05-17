@@ -7208,6 +7208,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('141802','1418','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bluegill Raider - Flee at 15% HP'),
 ('141803','1418','0','0','100','1025','11000','14300','16500','33300','0','0','11','12024','1','1024','0','0','0','0','0','0','0','0','Bluegill Raider - Cast Net'),
 ('141804','1418','9','0','100','1025','5','30','2700','3800','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Bluegill Raider - Cast Throw'),
+-- Hargin Mundar 1476
+('147601','1476','1','0','100','1','5000','30000','300000','600000','0','0','54','0','0','900','0','0','0','0','0','0','0','0','Hargin Mundar - Random Say OOC'),
 -- Shellei Brondir
 ('157101','1571','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Shellei Brondir - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Giant Wetlands Crocolisk
@@ -9469,7 +9471,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('439001','4390','11','0','100','0','0','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Elder Murk Thresher - Cast Thrash on Spawn'),
 -- Swamp Ooze (4391) - NSR
 -- Corrosive Swamp Ooze 4392
-('439201','4392','2','0','100','1','15','0','0','0','0','0','11','9461','0','0','0','0','0','0','0','0','0','0','Corrosive Swamp Ooze - Cast Summon Swamp Ooze at 15% HP'),
+('439201','4392','2','0','100','1025','15','0','0','0','0','0','11','9461','0','0','0','0','0','0','0','0','0','0','Corrosive Swamp Ooze - Cast Summon Swamp Ooze at 15% HP'),
 -- Acidic Swamp Ooze 4393 - NSR
 -- Bubbling Swamp Ooze  (4394) - NSR
 -- Mudrock Spikeshell (4397) - NSR
@@ -18612,6 +18614,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-17','%s senses your presence and opens a nether portal!','0','2','0','Wandering Eye of Kilrogg Emote','0'),
 ('-18','For Victory! For Agamaggan!','5812','1','0','4420','0'),
 ('-22','VanCleef pay big for you heads!','5774','1','0','644','0'),
+('-23','Stormy seas out there.  The sea spirits must be restless....hic!','0','0','6','Hargin Mundar 1476','0'),
+('-24','I saw a Sea Giant once.  It\'s not something I would care to see again.  Burp!','0','0','6','Hargin Mundar 1476','0'),
+('-25','I\'d go out and clear out some of those gnolls, but this leg has seen better days and I am afraid I\'d just wind up dead.','0','0','6','Hargin Mundar 1476','0'),
+('-26','Watch your step out there.  Many an adventure seeker has not returned from the marsh.  hic!','0','0','6','Hargin Mundar 1476','0'),
+-- PLEASE RE-USE 27
 ('-28','You do not belong here!  Ancients, rise against these intruders!','0','1','0','11489','0'),
 ('-29','You no challenge me, scrubs! I\'m da king now, and I stay king FOREVER!!!','0','0','0','11501','0'),
 ('-30','%s blood sprays into the air!','0','2','0','Common Gnomeregan Emote','0'),
