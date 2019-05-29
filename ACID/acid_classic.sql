@@ -6955,7 +6955,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('172605','1726','9','0','100','1025','0','40','3600','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Defias Magician - Cast Fireball'),
 -- Defias Worker (2.4.3 Official Data)
 ('172701','1727','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Defias Worker - Flee at 15% HP'),
--- Living Flame 3417 - NSR
+-- Living Flame 3417
+('341701','3417','11','0','100','0','0','0','0','0','0','0','11','5111','0','34','0','0','0','0','0','0','0','0','Living Flame - Cast Living Flame Passive on Spawn'),
 -- Defias Raider (2.4.3 Official Data)
 ('618001','6180','4','0','15','0','0','0','0','0','0','0','1','1866','1865','1867','0','0','0','0','0','0','0','0','Defias Raider - Random Say on Aggro'),
 ('618002','6180','11','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Defias Raider - Defias Raider - Cast Battle Stance on Spawn'),
