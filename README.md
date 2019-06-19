@@ -56,7 +56,7 @@ Contributing
 ------------
 You are welcome to contribute to this database project. There are three main ways of contributing. Choose the one fitting your skills.
 
-1. Open a ticket/issue on the [database issue tracker][15] on GitHub. Describe the issue as accurately as
+1. Open a ticket/issue on [CMaNGOS issue tracker][15] on GitHub. Describe the issue as accurately as
 possible, how things currently are, how things should be instead. Example: "NPC Mighty Skeleton in Western Plaguelands does not wield its weapon. It should have a sword.". You can improve your issue report by giving the ID/entry of the creature, object, quest, spell... it helps developers to find quickly where is the problem. In-game GM commands like `.guid`, `.lookup quest (or creature, spell, object)`, `.gobject near (or target)` are great to get those informations
 2. If you have SQL knowledge you can also open a ticket/issue and provide a fix, even partial. To help you to understand the DB structure, have a look a the [wiki page][16] or feel free to ask developers in the issue report. You can also try to fix currently open issues
 3. Make a pull request. If you feel like [cloning the database repository][17], you can test your own fixes and [do a pull request][18] that will be reviewed and discussed with you before merging
@@ -72,7 +72,7 @@ But as this is a community project, the developers will always try to help you m
 [12]: https://github.com/cmangos/classic-db/ "content database"
 [13]: http://www.cmangos.net/ "CMaNGOS Project"
 [14]: https://github.com/cmangos/issues/wiki/Installation-Instructions/ "Installation Instructions"
-[15]: https://github.com/cmangos/classic-db/issues/ "Classic DB issue tracker"
+[15]: https://github.com/cmangos/issues/issues/ "CMaNGOS issue tracker"
 [16]: https://github.com/cmangos/issues/wiki/mangosdb_struct
 [17]: https://help.github.com/articles/fork-a-repo/
 [18]: https://help.github.com/articles/creating-a-pull-request/
