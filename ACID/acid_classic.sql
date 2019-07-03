@@ -14450,7 +14450,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1144502','11445','0','0','100','1','4200','9600','6100','16300','0','0','11','22574','1','0','0','0','0','0','0','0','0','0','Gordok Captain - Cast Dark Strike'),
 ('1144503','11445','0','0','100','1','8700','9500','11100','20600','0','0','11','16244','0','1','0','0','0','0','0','0','0','0','Gordok Captain - Cast Demoralizing Shout'),
 ('1144504','11445','0','0','100','1','9000','15000','16000','21000','0','0','11','12096','5','1','0','0','0','0','0','0','0','0','Gordok Captain - Cast Fear'),
--- Gordok Spirit (11446) - NSR
+-- Gordok Spirit 11446 - should have NullAI + Invincible
+('1144601','11446','11','0','100','0','0','0','0','0','0','0','20','0','0','0','21','0','0','0','42','1','0','0','Gordok Spirit - Stop Melee and Combat Movement and Set Invincible on Spawn'),
 -- Mushgog (11447)
 -- Gordok Warlock 11448 (3.3.3 Official Data)
 ('1144801','11448','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Gordok Warlock - Despawn Guardians on OOC'),
@@ -18025,7 +18026,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1167501','11675','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Snowblind Windcaller - Enable Range Mode on Aggro'),
 ('1167502','11675','0','0','100','1025','5000','8000','12000','16000','0','0','11','6728','5','0','0','0','0','0','0','0','0','0','Snowblind Windcaller - Cast Enveloping Winds'),
 ('1167503','11675','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Snowblind Windcaller - Cast Lightning Bolt'),
--- Taskmaster Snivvle
+-- Taskmaster Snivvle 11677
 ('1167701','11677','11','0','100','0','0','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Taskmaster Snivvle - Cast Thrash on Spawn'),
 ('1167702','11677','4','0','100','0','0','0','0','0','0','0','1','-654','0','0','0','0','0','0','0','0','0','0','Taskmaster Snivvle - Say on Aggro'),
 ('1167703','11677','0','0','100','1','3000','6000','6000','9000','0','0','11','14516','1','0','0','0','0','0','0','0','0','0','Taskmaster Snivvle - Cast Strike'),
@@ -18253,14 +18254,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1343902','13439','0','0','100','1','9000','13000','18000','34000','0','0','11','16509','1','0','0','0','0','0','0','0','0','0','Wing Commander Vipore - Cast Rend'),
 -- Frostwolf Wolf Rider (13440) - NSR
 -- Frostwolf Wolf Rider Commander (13441) - NSR
--- Arch Druid Renferal
-('1344201','13442','0','0','100','1','2000','5000','5000','8000','0','0','11','22206','4','32','0','0','0','0','0','0','0','0','Arch Druid Renferal - Cast Moonfire'),
-('1344202','13442','0','0','100','1','7000','9000','10000','13000','0','0','11','22127','4','1','0','0','0','0','0','0','0','0','Arch Druid Renferal - Cast Entangling Roots'),
-('1344203','13442','2','0','100','1','50','0','12000','15000','0','0','11','15981','0','1','0','0','0','0','0','0','0','0','Arch Druid Renferal - Cast Rejuvenation'),
--- Druid of the Grove
-('1344301','13443','1','0','100','1','1000','1000','600000','600000','0','0','11','22128','0','1','0','0','0','0','0','0','0','0','Druid of the Grove - Cast Thorns on Spawn'),
-('1344302','13443','0','0','100','1','5000','8000','13000','17000','0','0','11','21668','4','0','0','0','0','0','0','0','0','0','Druid of the Grove - Cast Starfire'),
-('1344303','13443','0','0','100','1','7000','9000','10000','13000','0','0','11','22127','4','1','0','0','0','0','0','0','0','0','Druid of the Grove - Cast Entangling Roots'),
+-- Arch Druid Renferal 13442
+('1344201','13442','1','0','100','1','1000','1000','600000','600000','0','0','11','22128','0','32','0','0','0','0','0','0','0','0','Arch Druid Renferal - Cast Thorns OOC'),
+('1344202','13442','0','0','100','1025','2000','5000','5000','8000','0','0','11','22206','4','544','0','0','0','0','0','0','0','0','Arch Druid Renferal - Cast Moonfire'),
+('1344203','13442','0','0','100','1025','7000','9000','10000','13000','0','0','11','22127','4','544','0','0','0','0','0','0','0','0','Arch Druid Renferal - Cast Entangling Roots'),
+('1344204','13442','2','0','100','1025','50','0','12000','15000','0','0','11','15981','0','1','0','0','0','0','0','0','0','0','Arch Druid Renferal - Cast Rejuvenation'),
+-- Druid of the Grove 13443
+('1344301','13443','1','0','100','1','1000','1000','600000','600000','0','0','11','22128','0','32','0','0','0','0','0','0','0','0','Druid of the Grove - Cast Thorns OOC'),
+('1344302','13443','0','0','100','1025','5000','8000','13000','17000','0','0','11','21668','4','512','0','0','0','0','0','0','0','0','Druid of the Grove - Cast Starfire'),
+('1344303','13443','0','0','100','1025','7000','9000','10000','13000','0','0','11','22127','4','544','0','0','0','0','0','0','0','0','Druid of the Grove - Cast Entangling Roots'),
 -- Field Marshal Teravaine (13446) - NSR
 -- Corporal Noreg Stormpike
 ('1344701','13447','0','0','100','1','5000','8000','6000','12000','0','0','11','19130','1','0','0','0','0','0','0','0','0','0','Corporal Noreg Stormpike - Cast Revenge'),
@@ -18817,7 +18819,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-587','Kibler is being investigated by G.E.T.A.','0','0','0','10262','0'),
 ('-648','%s lets out a deep roar, alerting nearby allies and becoming enraged!','0','2','0','Dire Maul Guards','0'),
 ('-649','%s goes into a drunken rage!','0','2','0','14322','0'),
-('-654','Snivvle is here! Snivvle claims the Coldtooth Mine!','0','0','0','11677','0'),
+('-654','Snivvle is here!  Snivvle claims the Coldtooth mine!','0','1','0','11677','0'),
 ('-665','Obsidion, Rise and Serve your Master!','0','1','0','8391','0'),
 ('-666','At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.','0','0','0','Vaelan greetings','0'),
 ('-667','Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.','0','0','0','Vaelan greetings','0'),
