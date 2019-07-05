@@ -475,7 +475,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (54154, 1, 870.034, -329.385, -48.798, 0.279253, 1, 1179001),
 (54636, 1, 742.923, -127.961, -56.2506, 3.29867, 1, 1179101);
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1179101,1371601,1371602,1371603,1353301);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1179001, 1179101);
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (1179001, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Putridus Satyr - Cast Dark Channeling'),
 (1179101, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Putridus Trickster - Cast Dark Channeling');
