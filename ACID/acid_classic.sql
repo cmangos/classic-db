@@ -18175,12 +18175,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1323605','13236','0','0','100','1025','7000','8000','14000','17000','0','0','11','15616','4','512','0','0','0','0','0','0','0','0','Primalist Thurloga - Cast Flame Shock'),
 ('1323606','13236','9','0','100','1025','5','40','3400','4800','0','0','11','15234','1','256','0','0','0','0','0','0','0','0','Primalist Thurloga - Cast Lightning Bolt'),
 -- Lokholar the Ice Lord 13256 - No Main Spell in Melee Range
-('1325601','13256','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Enable Range Mode on Aggro'),
-('1325602','13256','5','0','100','0','0','0','1','0','0','0','11','21307','0','1','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Swell of Souls on Player Kill'),
-('1325603','13256','0','0','100','1025','15000','20000','16000','19000','0','0','11','19133','4','0','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Frost Shock'),
-('1325604','13256','0','0','100','1025','11000','16000','10000','14000','0','0','11','16869','5','0','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Ice Tomb'),
+('1325601','13256','11','0','100','0','0','0','0','0','0','0','57','2','35','0','54','-1136','0','0','0','0','0','0','Lokholar the Ice Lord - Enable Range Mode and Yell on Spawn'),
+('1325602','13256','5','0','100','0','0','0','1','0','0','0','11','21307','0','1','54','-1137','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Swell of Souls and Say on Player Kill'),
+('1325603','13256','0','0','100','1025','8000','15000','16000','19000','0','0','11','19133','1','0','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Frost Shock'),
+('1325604','13256','0','0','100','1025','11000','16000','10000','14000','0','0','11','16869','4','512','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Ice Tomb'),
 ('1325605','13256','0','0','100','1025','9000','14000','16000','19000','0','0','11','14907','17','0','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Frost Nova'),
-('1325606','13256','0','0','100','1025','4000','6000','3400','4800','0','0','11','21367','5','0','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Blizzard'),
+('1325606','13256','0','0','100','1025','4000','6000','5000','10000','0','0','11','21367','4','512','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Blizzard'),
 ('1325607','13256','9','0','100','1025','5','40','3400','4800','0','0','11','21369','1','256','0','0','0','0','0','0','0','0','Lokholar the Ice Lord - Cast Frostbolt'),
 -- Murgot Deepforge (13257) - Special Script Required (Unsure how it should work)
 -- Frostwolf Shaman
@@ -18236,7 +18236,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1339703','13397','24','5','100','1','15572','5','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Irondeep Peon - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
 ('1339704','13397','28','3','100','1','15572','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Irondeep Peon - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1339705','13397','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Irondeep Peon - Set Phase to 0 on Evade'),
--- Ivus the Forest Lord (13419) - NSR
+-- Ivus the Forest Lord 13419 - No Main Spell in Melee Range
+('1341901','13419','11','0','100','0','0','0','0','0','0','0','57','2','35','0','54','-1138','0','0','0','0','0','0','Ivus the Forest Lord - Enable Range Mode and Yell on Spawn'),
+('1341902','13419','5','0','100','0','0','0','1','0','0','0','11','21307','0','1','54','-1139','0','0','0','0','0','0','Ivus the Forest Lord - Cast Swell of Souls and Say on Player Kill'),
+('1341903','13419','0','0','100','1025','8000','15000','16000','19000','0','0','11','21670','1','0','0','0','0','0','0','0','0','0','Ivus the Forest Lord - Cast Faerie Fire'),
+('1341904','13419','0','0','100','1025','11000','16000','10000','14000','0','0','11','21669','4','512','0','0','0','0','0','0','0','0','Ivus the Forest Lord - Cast Moonfire'),
+('1341905','13419','0','0','100','1025','9000','14000','16000','19000','0','0','11','20654','17','0','0','0','0','0','0','0','0','0','Ivus the Forest Lord - Cast Entangling Roots'),
+('1341906','13419','0','0','100','1025','4000','6000','5000','10000','0','0','11','21668','4','512','0','0','0','0','0','0','0','0','Ivus the Forest Lord - Cast Starfire'),
+('1341907','13419','9','0','100','1025','5','40','3400','4800','0','0','11','21667','1','256','0','0','0','0','0','0','0','0','Ivus the Forest Lord - Cast Wrath'),
 -- Champion Guardian (13421) - NSR
 -- Champion Defender (13422) - NSR
 -- Champion Guardsman (13424) - NSR
@@ -18927,7 +18934,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1058','%s seems to no longer be able to cast spells...','0','2','0','7666','0'),
 ('-1119','Kill $N!','0','1','0','15392','25'),
 ('-1135','None can stand against the serpent lords!','5786','1','0','3671','0'),
--- PLEASE REUSE -1136 to -1139
+('-1136','WHO DARES SUMMON LOKHOLAR? The blood of a thousand Alliance soldiers I shall spill...none shall stand against the might of the Ice Lord!','0','1','0','Lokholar the Ice Lord 13256','0'),
+('-1137','I drink in your suffering, mortal. Let your essence congeal with Lokholar!','0','0','0','Lokholar the Ice Lord 13256','0'),
+('-1138','Wicked, wicked, mortals! The forest weeps. The elements recoil at the destruction. Ivus must purge you from this world!','0','1','0','Ivus the Forest Lord 13419','0'),
+('-1139','The forest weeps. The elements recoil at the destruction. Ivus must purge you from this world!','0','0','0','Ivus the Forest Lord 13419','0'),
 ('-1140','The Nightmare cannot be stopped!','0','0','0','15625','0'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','15625','0'),
 -- Classic PLEASE RE-USE 1142 - 1192
