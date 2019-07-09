@@ -20,8 +20,8 @@ UPDATE creature_template_addon SET auras='3284' WHERE entry=2271; -- Dalaran Shi
 UPDATE creature_template_addon SET auras='12787' WHERE entry=8718; -- Manahound
 
 -- Cast Defensive State (DND) 5301
-UPDATE creature_template_addon SET auras='13777' WHERE entry=13219; -- Sergeant Durgen Stormpike
-UPDATE creature_template_addon SET auras='13841' WHERE entry=13219; -- Lieutenant Haggerdin
+UPDATE creature_template_addon SET auras='5301' WHERE entry=13777; -- Sergeant Durgen Stormpike
+UPDATE creature_template_addon SET auras='5301' WHERE entry=13841; -- Lieutenant Haggerdin
 
 UPDATE creature_template_addon SET auras='8876 12627' WHERE entry=8567; -- Glutton
 

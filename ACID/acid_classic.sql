@@ -450,10 +450,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Singer
 ('260001','2600','0','0','100','1','4800','13100','30500','40900','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Singer - Cast Demoralizing Shout'),
 ('260002','2600','0','0','70','1','9100','12100','26100','34300','0','0','11','14515','5','0','0','0','0','0','0','0','0','0','Singer - Cast Dominate Mind'),
--- Foulbelly
-('260101','2601','1','0','100','0','1000','1000','0','0','0','0','11','3106','0','0','11','10022','0','0','0','0','0','0','Foulbelly - Cast Aura of Rot and Cast Deadly Poison on Spawn'),
-('260102','2601','0','0','100','1','1000','3000','12000','18000','0','0','11','7992','4','32','0','0','0','0','0','0','0','0','Foulbelly - Cast Slowing Poison'),
-('260103','2601','0','0','100','0','9000','17000','0','0','0','0','11','3256','1','0','0','0','0','0','0','0','0','0','Foulbelly - Cast Plague Cloud'),
+-- Foulbelly 2601
+('260101','2601','0','0','100','1024','9000','17000','0','0','0','0','11','3256','1','0','0','0','0','0','0','0','0','0','Foulbelly - Cast Plague Cloud'),
+('260102','2601','0','0','100','1025','4000','4000','3000','7000','0','0','11','3106','0','0','0','0','0','0','0','0','0','0','Foulbelly - Cast Aura of Rot'),
+('260103','2601','0','0','100','1025','1000','3000','12000','18000','0','0','11','7992','4','32','0','0','0','0','0','0','0','0','Foulbelly - Cast Slowing Poison'),
 -- Ruul Onestone
 ('260201','2602','0','0','75','1','4000','4000','14000','14000','0','0','11','6219','1','1','0','0','0','0','0','0','0','0','Ruul Onestone - Cast Rain of Fire'),
 ('260202','2602','0','0','90','1','1000','1000','33000','33000','0','0','11','6742','0','0','0','0','0','0','0','0','0','0','Ruul Onestone - Cast Bloodlust'),
@@ -1796,8 +1796,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hogan Ference (3.0.3 Official Data)
 ('32501','325','1','0','100','1','0','10000','120000','120000','0','0','1','-451','-452','-456','0','0','0','0','0','0','0','0','Hogan Ference - Random Say'),
 -- Cog Glitzspinner (374) - NSR
--- Stitches (3.0.3 Official Data)
-('41201','412','0','0','100','1','6900','12100','3500','11300','0','0','11','3106','1','0','0','0','0','0','0','0','0','0','Stitches - Cast Aura of Rot'),
+-- Stitches 412 (3.0.3 Official Data)
+('41201','412','0','0','100','1025','4000','4000','3000','7000','0','0','11','3106','1','0','0','0','0','0','0','0','0','0','Stitches - Cast Aura of Rot'),
 -- Town Crier (468)
 -- Watcher Bukouris (494) - NSR
 -- Watcher Keefer (495) - NSR
@@ -7182,10 +7182,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sarltooth
 ('135301','1353','11','0','100','0','0','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Sarltooth - Cast Thrash on Spawn'),
 ('135302','1353','0','0','100','1','6700','8800','11100','28000','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Sarltooth - Cast Infected Wound'),
--- Balgaras the Foul
+-- Balgaras the Foul 1364
 ('136401','1364','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Despawn Guardians on OOC'),
 ('136402','1364','1','0','100','0','2000','2000','0','0','0','0','11','12746','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Summon Voidwalker on OOC'),
-('136403','1364','4','0','70','0','0','0','0','0','0','0','1','-104','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Say on Aggro'),
+('136403','1364','4','0','100','0','0','0','0','0','0','0','1','-179','-180','-181','0','0','0','0','0','0','0','0','Balgaras the Foul - Say on Aggro'),
 ('136404','1364','0','0','100','1','4800','7700','21100','21100','0','0','11','9081','1','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Shadow Bolt Volley'),
 ('136405','1364','0','0','100','1','6400','12500','19600','38000','0','0','11','11831','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Frost Nova'),
 ('136406','1364','0','0','100','1','13400','16400','182200','182400','0','0','11','3586','1','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Volatile Infection'),
@@ -8954,8 +8954,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Mottled Boar
 ('310001','3100','9','0','100','0','0','20','0','0','0','0','11','3385','0','0','0','0','0','0','0','0','0','0','Elder Mottled Boar - Cast Boar Charge'),
 -- Vile Familiar 3101
-('310101','3101','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Vile Familiar - Enable Range Mode on Aggro'),
-('310102','3101','9','0','100','1025','0','40','3400','4800','0','0','11','11921','1','256','0','0','0','0','0','0','0','0','Vile Familiar - Cast Fireball'),
+('310101','3101','0','0','50','1025','5000','15000','5000','15000','0','0','11','11921','1','0','0','0','0','0','0','0','0','0','Vile Familiar - Cast Fireball'),
 -- Makrura Clacker
 ('310301','3103','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Makrura Clacker - Flee at 15% HP'),
 -- Makrura Shellhide
@@ -12886,7 +12885,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1076101','10761','0','0','100','1','5900','16200','12100','19200','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Grimtotem Reaver - Cast Strike'),
 ('1076102','10761','9','0','100','1','0','5','6000','9000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Grimtotem Reaver - Cast Cleave'),
 -- Arikara 10882
-('1088201','10882','11','0','100','0','0','0','0','0','0','0','11','3616','0','34','11','10389','0','0','0','0','0','0','Arikara - Cast Poison Proc and Spawn Smoke on Spawn'),
+('1088201','10882','11','0','100','0','0','0','0','0','0','0','11','10389','0','2','55','11','0','0','0','0','0','0','Arikara - Cast Spawn Smoke and Attack Spawner (Player) on Spawn'),
 ('1088202','10882','0','0','100','1024','10000','10000','0','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Arikara - Cast Enrage'),
 -- Arnak Grimtotem 10896
 ('1089601','10896','0','0','100','1','4000','7000','9000','12000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Arnak Grimtotem - Cast Uppercut'),
@@ -18613,7 +18612,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-101','For the Dragonmaw!','0','0','1','Common Dragonmaw Text','0'),
 ('-102','Long live the Dragonmaw! Die you worthless $r!','0','0','1','Common Dragonmaw Text','0'),
 ('-103','Brains...','0','0','0','1158','0'),
-('-104','This land belongs to the Dark Iron Dwarves. Prepare to see the afterlife, $c!','0','0','6','1364','0'),
+-- PLEASE RE-USE 104
 ('-105','Your bones will break under my boot, $r!','0','0','1','2108','0'),
 ('-106','%s goes into a frenzy!','0','2','0','Enrage Text','0'),
 ('-123','I am the serpent king! I can do anything.','5788','1','0','3673','0'),
@@ -18646,6 +18645,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-176','D\'ah! Now you\'re making me angry!','5779','0','0','646','0'),
 ('-177','I\'m going to wear your skin as a smoking jacket! The stogies? You\'ll have to pry them from my cold dead... er... RAWR!!!!','0','0','0','11058','0'),
 ('-178','Looking for these???? You\'ll never have em!','0','0','0','11058','0'),
+('-179','This land belongs to the Dark Iron Dwarves. Prepare to see the afterlife, $c!','0','0','6','Balgaras the Foul 1364','0'),
+('-180','$N!  Prepare to meet your doom!','0','0','6','Balgaras the Foul 1364','0'),
+('-181','I am Balgaras the Foul.  And you, $N, are about to become nothing more than ash and dust.','0','0','6','Balgaras the Foul 1364','0'),
 ('-182','Mine! Mine! Mine! Gizlock is the ruler of this domain! You shall never reveal my presence!','0','1','0','13601','0'),
 ('-183','What? Oh no. I don\'t care what you have to say. I just enjoy inflicting pain.','0','1','0','4306','0'),
 ('-184','You will talk eventually. You might as well spill it now.','0','0','0','4306','0'),
