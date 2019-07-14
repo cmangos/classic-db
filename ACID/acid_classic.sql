@@ -1005,25 +1005,25 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('766708','7667','0','11','100','1025','2000','5000','30000','45000','0','0','11','12741','0','0','0','0','0','0','0','0','0','0','Lady Sevine - Cast Curse of Weakness (Phase 2)'),
 ('766709','7667','9','11','100','1025','0','40','3400','4800','0','0','11','12739','1','256','0','0','0','0','0','0','0','0','Lady Sevine - Cast Shadow Bolt (Phase 2)'),
 -- Servant of Razelikh
-('766801','7668','4','0','100','0','0','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Razelikh - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('766801','7668','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Razelikh - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
 ('766802','7668','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Razelikh - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('766803','7668','8','5','100','0','10805','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Razelikh - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('766804','7668','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Razelikh - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
+('766803','7668','8','5','100','0','10805','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Razelikh - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('766804','7668','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Razelikh - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
 -- Servant of Grol
-('766901','7669','4','0','100','0','0','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Grol - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('766901','7669','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Grol - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
 ('766902','7669','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Grol - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('766903','7669','8','5','100','0','10834','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Grol - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('766904','7669','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Grol - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
+('766903','7669','8','5','100','0','10834','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Grol - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('766904','7669','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Grol - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
 -- Servant of Allistarj
-('767001','7670','4','0','100','0','0','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Allistarj - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('767001','7670','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Allistarj - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
 ('767002','7670','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Allistarj - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('767003','7670','8','5','100','0','10835','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Allistarj - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('767004','7670','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Allistarj - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
+('767003','7670','8','5','100','0','10835','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Allistarj - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('767004','7670','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Allistarj - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
 -- Servant of Sevine
-('767101','7671','4','0','100','0','0','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Sevine - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('767101','7671','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Sevine - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
 ('767102','7671','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Sevine - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('767103','7671','8','5','100','0','10836','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Sevine - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('767104','7671','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Sevine - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
+('767103','7671','8','5','100','0','10836','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Sevine - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('767104','7671','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Sevine - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
 -- Kirith the Damned
 ('772801','7728','0','0','100','1','4000','6000','20000','26000','0','0','11','12097','1','0','0','0','0','0','0','0','0','0','Kirith the Damned - Cast Pierce Armor'),
 ('772802','7728','0','0','100','1','2000','4000','9000','13000','0','0','11','12745','0','1','0','0','0','0','0','0','0','0','Kirith the Damned - Cast Mana Burn'),
@@ -9453,7 +9453,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('439001','4390','11','0','100','0','0','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Elder Murk Thresher - Cast Thrash on Spawn'),
 -- Swamp Ooze (4391) - NSR
 -- Corrosive Swamp Ooze 4392
-('439201','4392','2','0','100','1025','15','0','0','0','0','0','11','9461','0','0','0','0','0','0','0','0','0','0','Corrosive Swamp Ooze - Cast Summon Swamp Ooze at 15% HP'),
+('439201','4392','2','0','100','1024','15','0','0','0','0','0','11','9461','0','0','0','0','0','0','0','0','0','0','Corrosive Swamp Ooze - Cast Summon Swamp Ooze at 15% HP'),
 -- Acidic Swamp Ooze 4393 - NSR
 -- Bubbling Swamp Ooze  (4394) - NSR
 -- Mudrock Spikeshell (4397) - NSR
@@ -16377,7 +16377,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Oozeling (8257) - NSR
 -- Slime Maggot (8311) - NSR
 -- Atal'ai Deathwalker's Spirit
-('831701','8317','4','0','100','0','0','0','0','0','0','0','42','100','1','0','0','0','0','0','0','0','0','0','Atal''ai Deathwalker''s Spirit - Set Invinceable on Aggro'),
+('831701','8317','4','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Atal''ai Deathwalker''s Spirit - Set Invinceable on Aggro'),
 ('831702','8317','0','0','100','0','15000','15000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Atal''ai Deathwalker''s Spirit - Die after 15 Seconds'),
 -- Atal'ai Slave (8318) - NSR
 -- Nightmare Whelp (8319) - NSR
@@ -18061,7 +18061,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1194902','11949','2','0','100','1025','30','0','30000','40000','0','0','11','27619','0','1','0','0','0','0','0','0','0','0','Captain Balinda Stonehearth - Cast Ice Block at 30% HP'),
 ('1194903','11949','0','0','100','1025','10000','12000','50000','60000','0','0','11','17162','0','0','0','0','0','0','0','0','0','0','Captain Balinda Stonehearth - Cast Summon Water Elemental'),
 ('1194904','11949','0','0','100','1025','10000','19000','10000','19000','0','0','11','26192','17','0','0','0','0','0','0','0','0','0','Captain Balinda Stonehearth - Cast Arcane Explosion'),
-('1194905','11949','0','0','100','1025','10000','15000','12000','24000','0','0','11','27760','5','544','0','0','0','0','0','0','0','0','Captain Balinda Stonehearth - Cast Polymorph'),
+('1194905','11949','0','0','100','1025','10000','15000','12000','24000','0','0','11','27760','9','544','0','0','0','0','0','0','0','0','Captain Balinda Stonehearth - Cast Polymorph'),
 ('1194906','11949','0','0','100','1025','9000','14000','15000','19000','0','0','11','22746','15','0','0','0','0','0','0','0','0','0','Captain Balinda Stonehearth - Cast Cone of Cold'),
 ('1194907','11949','0','0','100','1025','12000','15000','9000','11000','0','0','11','17503','1','0','0','0','0','0','0','0','0','0','Captain Balinda Stonehearth - Cast Frostbolt'),
 ('1194908','11949','0','0','100','1025','2000','2000','3800','5200','0','0','11','17290','1','256','0','0','0','0','0','0','0','0','Captain Balinda Stonehearth - Cast Fireball'),
