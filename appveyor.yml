@@ -1,5 +1,5 @@
 # Specify version format
-version: "1.10.0.{build} 'Echoes of War'"
+version: "1.10.1.{build} 'The Shifting Sands'"
 
 # specify custom environment variables
 environment:

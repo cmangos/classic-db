@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="ClassicDB_1_10_0_z2732.sql"
-DB_TITLE="v1.10.0 'Echoes of War'"
+FULLDB_FILE="ClassicDB_1_10_1_z2742.sql"
+DB_TITLE="v1.10.1 'The Shifting Sands'"
 NEXT_MILESTONES="0.19 0.20"
 
 #internal use
