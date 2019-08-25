@@ -38,8 +38,6 @@ UPDATE db_version SET `creature_ai_version` = 'ACID 1.12.x (Classic) for CMaNGOS
 -- |   EASTERN KINGDOM   |
 -- =======================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
-
 -- =================
 -- Alterac Mountains
 -- =================
@@ -3342,7 +3340,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- ==========
 -- Loch Modan
 -- ==========
@@ -7258,7 +7255,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   KALIMDOR   |
 -- ================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- =========
 -- Ashenvale
 -- =========
@@ -10471,7 +10467,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- =======
 -- Mulgore
 -- =======
@@ -13472,9 +13467,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   DUNGEON INSTANCES   |
 -- =========================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
-
-
 -- =================
 -- Blackfathom Deeps
 -- =================
@@ -14046,8 +14038,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Highlord Omokk
 ('919601','9196','0','0','100','1','12000','12000','18000','18000','0','0','11','10101','1','0','0','0','0','0','0','0','0','0','Highlord Omokk - Cast Knock Away'),
 ('919602','9196','2','0','100','0','20','0','0','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Highlord Omokk - Cast Frenzy'),
-('919603','9196','0','0','100','1','1000','3000','15000','25000','0','0','1','-1321','-1322','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
-('919604','9196','5','0','100','1','0','0','1','0','0','0','1','-1323','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Unit Kill'),
+('919603','9196','0','0','100','1','1000','3000','15000','25000','0','0','1','-359','-360','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
+('919604','9196','5','0','100','1','0','0','1','0','0','0','1','-1323','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Player Kill'),
 -- Spirestone Battle Mage
 ('919701','9197','0','0','100','1','4000','10000','5000','15000','0','0','11','15305','4','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Chain Lighting'),
 ('919702','9197','14','0','100','1','6000','40','20000','20000','0','0','11','16170','12','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Bloodlust'),
@@ -16462,13 +16454,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('64501','645','0','0','100','1','2400','3700','57000','66200','0','0','11','6306','0','0','0','0','0','0','0','0','0','0','Cookie - Cast Acid Splash'),
 ('64502','645','2','0','100','1','50','0','22200','33900','0','0','11','5174','0','1','0','0','0','0','0','0','0','0','Cookie - Cast Cookie''s Cooking at 50% HP'),
 ('64503','645','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Cookie - Flee at 15% HP'),
--- Mr Smite (3.0.8a Official Data)
-('64601','646','11','0','100','0','0','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Mr Smite - Cast Thrash on Spawn'),
-('64602','646','4','0','100','0','0','0','0','0','0','0','1','-174','0','0','0','0','0','0','0','0','0','0','Mr Smite - Yell on Aggro'),
-('64603','646','0','0','85','1','9000','9000','11000','11000','0','0','11','6435','1','0','0','0','0','0','0','0','0','0','Mr Smite - Cast Smite Slam'),
-('64604','646','0','0','85','1','15500','16594','27300','60100','0','0','11','6264','0','0','0','0','0','0','0','0','0','0','Mr Smite - Cast Nimble Reflexes'),
-('64605','646','2','0','100','0','66','34','0','0','0','0','11','6432','0','0','1','-175','0','0','11','674','0','0','Mr Smite - Cast Smite Stomp then Yell then Cast Dual Wield at 66% HP'),
-('64606','646','2','0','100','0','33','0','0','0','0','0','11','6432','0','0','1','-176','0','0','0','0','0','0','Mr Smite - Cast Smite Stomp and Yell at 33% HP'),
+-- Mr Smite (646) - boss_mr_smite
 -- Captain Greenskin (3.0.8a Official Data)
 ('64701','647','0','0','100','1','6200','13400','37400','97500','0','0','11','5208','4','32','0','0','0','0','0','0','0','0','Captain Greenskin - Cast Poisoned Harpoon'),
 ('64702','647','0','0','100','1','5000','18000','17700','42600','0','0','11','15584','1','0','0','0','0','0','0','0','0','0','Captain Greenskin - Cast Cleave'),
@@ -17008,7 +16994,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Raid Instances   |
 -- ======================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- ==============
 -- Blackwing Lair
 -- ==============
@@ -17955,7 +17940,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Battlegrounds   |
 -- =====================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- ==============
 -- Alterac Valley
 -- ==============
@@ -18543,7 +18527,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Special Game Event Scripts   |
 -- ==================================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- Lunar Festival
 ('1588201','15882','1','0','100','0','0','0','0','0','0','0','11','26347','0','1','0','0','0','0','0','0','0','0','Pat''s Firework Guy - RED'),
 ('1588301','15883','1','0','100','0','0','0','0','0','0','0','11','26349','0','1','0','0','0','0','0','0','0','0','Pat''s Firework Guy - YELLOW'),
@@ -18587,7 +18570,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
 ('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','Klaven Mortwake 7053','0'),
 ('-12','%s is lured out into the open!','0','2','0','Gorishi Hive Queen 10041 on Spawn','0'),
-('-13','Is that the best you can do?','0','0','0','High Lord Saurfang','0'),
+('-13','Is that the best you can do?','0','0','0','High Overlord Saurfang','0'),
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
 ('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
 ('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
@@ -18606,7 +18589,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-32','Electric justice!','5811','1','0','6235','0'),
 ('-33','Warning! Warning! Intruder alert! Intruder alert!','0','1','0','7849','0'),
 ('-42','Time to join us, $c.','0','0','0','1157','0'),
-('-46','%s becomes enraged!','0','2','0','Common Text','0'),
+('-46','%s becomes enraged!','0','2','0','Enrage Text','0'),
 ('-47','%s attempts to run away in fear!','0','2','0','Common Text','0'),
 ('-73','So dark...','0','0','0','11936','1'),
 ('-74','Aaaaahhh! So close to escaping.','0','0','0','Common Gnome Text','0'),
@@ -18616,8 +18599,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-102','Long live the Dragonmaw! Die you worthless $r!','0','0','1','Common Dragonmaw Text','0'),
 ('-103','Brains...','0','0','0','1158','0'),
 -- PLEASE RE-USE 104
-('-105','Your bones will break under my boot, $r!','0','0','1','2108','0'),
-('-106','%s goes into a frenzy!','0','2','0','Enrage Text','0'),
+('-105','Your bones will break under my boot, $r!','0','0','1','Common Dragonmaw Text','0'),
+('-106','%s goes into a frenzy!','0','2','0','Frenzy Text','0'),
 ('-123','I am the serpent king! I can do anything.','5788','1','0','3673','0'),
 ('-133','Troublesome whelps. I\'ll teach you to interfere!','5813','1','0','4421','0'),
 ('-134','Our new allies  will avenge us!','5814','1','0','4421','0'),
@@ -18643,9 +18626,6 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-171','Lapdogs, all of you!','5782','1','0','639','0'),
 ('-172','Fools! Our cause is righteous!','5783','1','0','639','0'),
 ('-173','The Brotherhood shall prevail!','5784','1','0','639','0'),
-('-174','We\'re under attack! Avast ya swabs! Repel the invaders!','5777','1','0','646','0'),
-('-175','You land lovers are tougher then I thought! I will need to improvise','5778','0','0','646','0'),
-('-176','D\'ah! Now you\'re making me angry!','5779','0','0','646','0'),
 ('-177','I\'m going to wear your skin as a smoking jacket! The stogies? You\'ll have to pry them from my cold dead... er... RAWR!!!!','0','0','0','11058','0'),
 ('-178','Looking for these???? You\'ll never have em!','0','0','0','11058','0'),
 ('-179','This land belongs to the Dark Iron Dwarves. Prepare to see the afterlife, $c!','0','0','6','Balgaras the Foul 1364','0'),
@@ -18690,10 +18670,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-219','How dare you!','0','0','0','Nathanos Text','0'),
 ('-220','If you run now, you may live.','0','0','0','Nathanos Text','0'),
 ('-221','You merely prolong the inevitable. Succumb. She will free your misguided soul.','0','0','0','Nathanos Text','0'),
-('-228','I gonna make you into mojo!','0','0','0','Common Frostmane Troll Text','0'),
-('-229','Killing you be easy.','0','0','0','Common Frostmane Troll Text','0'),
-('-230','You be dead soon!','0','0','0','Common Frostmane Troll Text','0'),
-('-231','I\'ll cut you!','0','0','0','Common Frostmane Troll Text','0'),
+('-228','I gonna make you into mojo!','0','0','0','Common Troll Text','0'),
+('-229','Killing you be easy.','0','0','0','Common Troll Text','0'),
+('-230','You be dead soon!','0','0','0','Common Troll Text','0'),
+('-231','I\'ll cut you!','0','0','0','Leper Gnome Text','0'),
 ('-232','The Brotherhood will not be hampered by insects.','0','0','0','6846','0'),
 ('-233','So much to do, so much to do! Where does the time go?','0','0','0','295','0'),
 ('-234','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
@@ -18716,9 +18696,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-356','Weak $c! You are no match for the Stonesplinter Tribe!','0','0','0','1205 and 1399','0'),
 ('-357','Feel the power of the Dark Iron Dwarves!','0','0','0','1169','0'),
 ('-358','Time to die, $c!','0','0','0','1169','0'),
-('-359','I\'ll crush you!','0','0','0','Ogre Common Text','0'),
-('-360','Me smash! You die!','0','0','0','Ogre Common Text','0'),
-('-361','Raaar!!! Me smash $r!','0','0','0','Ogre Common Text','0'),
+('-359','I\'ll crush you!','0','0','0','Common Ogre Text','0'),
+('-360','Me smash! You die!','0','0','0','Common Ogre Text','0'),
+('-361','Raaar!!! Me smash $r!','0','0','0','Common Ogre Text','0'),
 ('-362','King Magni Bronzebeard is a fool and a charlatan!','0','0','0','1222','0'),
 ('-363','The Thandol Span fell to Ragnaros. So shall the Stonewrought Dam!','0','0','0','1222','0'),
 ('-364','Wahehe! I\'m taking you down with me!','0','0','0','1222','0'),
@@ -18771,8 +18751,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-457','Our cause falls on deaf ears beyond the thick, stone walls of Stormwind.','0','0','0','271','0'),
 ('-458','The people of Darkshire expect more from the Council.  We cannot let them suffer from this unholy wrath which plagues us.','0','0','0','269','0'),
 ('-459','Undead are crawling all over the land.  Where is the Stormwind Army?','0','0','0','263','0'),
-('-460','Wait...you are not my husband.  But he must have sent you.  And you...look..delicious!','0','0','0','314','0'),
-('-461','Aber?  Is that you...?  Oh...I\'m so hungry, Aber!  SO HUNGRY!!','0','0','0','314','0'),
+('-460','Wait...you are not my husband.  But he must have sent you.  And you...look..delicious!','0','0','7','314','0'),
+('-461','Aber?  Is that you...?  Oh...I\'m so hungry, Aber!  SO HUNGRY!!','0','0','7','314','0'),
 ('-462','The Council of Duskwood must take action.  Evil lingers in the air.','0','0','0','269','0'),
 ('-469','You will never stop the Forsaken, $r. The Dark Lady shall make you suffer.','0','0','0','2733','0'),
 ('-470','You have my word that I shall find a use for your body after I\'ve killed you, $r.','0','0','0','2733','0'),
@@ -18802,8 +18782,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-547','Unknown life forms detected....assessing...','0','0','0','14224','0'),
 ('-548','Arrrhhh...Guards!','0','1','1','Common Horde Flight Master','0'),
 ('-549','Guards!','0','1','7','Common Alliance Flight Master','0'),
-('-550','%s goes into a rage after seeing a friend fall in battle!','0','2','0','2287','0'),
-('-551','%s calls for help!','0','2','0','2287','0'),
+('-550','%s goes into a rage after seeing a friend fall in battle!','0','2','0','Common Emote','0'),
+('-551','%s calls for help!','0','2','0','Common Emote','0'),
 ('-552','Greetings citizen.','0','0','7','466','0'),
 ('-553','Who dares disrupt the sanctity of Eldre\'Thalas? Face me, cowards!','0','1','0','11486','0'),
 ('-554','Finally, my soul may rest... Oh, dearest Cerellean...','0','0','0','3667','0'),
@@ -18871,9 +18851,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-854','Time to die!','0','1','0','Varimathras 2425','0'),
 ('-855','None can oppose me.','0','1','0','Varimathras 2425','0'),
 ('-856','For Sylvanas!','0','1','0','Varimathras 2425','0'),
-('-895','There is no escape for you. The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','1535','0'),
-('-896','You carry the taint of the scourge. Prepare to enter the twisting nether.','0','0','0','1535','0'),
-('-897','The light condemns all who harbor evil. Now you will die!','0','0','0','1535','0'),
+('-895','There is no escape for you.  The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','Common Scarlet Text','0'),
+('-896','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','Common Scarlet Text','0'),
+('-897','The light condemns all who harbor evil.  Now you will die!','0','0','0','Common Scarlet Text','0'),
 ('-924','More agents of the Syndicate I\'ll wager! You\'ll never take back Alterac... Or Southshore!','0','0','7','2276','0'),
 ('-925','This orchard is now as barren and lifeless as my rotting shell. Once these trees bloomed with fruit but now there is only rot.','0','0','1','2396','0'),
 ('-926','I spent my whole life caring for these trees. Pruning and nurturing them... only fitting that they have joined me in death.','0','0','1','2396','0'),
@@ -18894,10 +18874,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-985','Mistress!! They seek to destroy your work!','0','0','0','8581','0'),
 ('-986','You be too scared! Me find you!','0','0','0','14464','0'),
 ('-987','What? No you can\'t beat me! Me will return!','0','0','0','14464','0'),
-('-990','Mommy!','0','0','0','Common Text','0'),
-('-991','You\'ve interfered with our plans for the last time, foolish $c!','0','0','0','12319','0'),
 ('-988','%s is angered and attacks!','0','2','0','6492','0'),
 ('-989','%s escapes into the void!','0','2','0','6492','0'),
+('-990','Mommy!','0','0','0','Common Text','0'),
+('-991','You\'ve interfered with our plans for the last time, foolish $c!','0','0','0','12319','0'),
 ('-1019','This will teach you to lay off the herb, $r.','0','0','0','11447','1'),
 ('-1020','Step right up! Step right up! Greetings my friend. I\'m Silas Darkmoon and I want to welcome you to the greatest show on Azeroth! It\'s the Darkmoon Faire friend, and it\'s your lucky day! Sparing no expense, we\'ve gathered wonders and treats from around the world for your delight. Whether you\'re young or old, rich or poor, the Darkmoon Faire has it all!','0','0','0','14823','1'),
 ('-1021','Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world! We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','14823','1'),
@@ -18909,7 +18889,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1027','For a limited time only, Crunchy Frog available exclusively here at the Darkmoon Faire.','0','0','0','14845','1'),
 ('-1028','The Scarlet Crusade shall smite the wicked and drive evil from these lands!','0','0','7','Common Scarlet Text','0'),
 ('-1029','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','7','Common Scarlet Text','0'),
-('-1030','The Scarlet Crusade shall not fail in it\'s mission!','0','0','7','1667','0'),
+('-1030','The Scarlet Crusade shall not fail in it\'s mission!','0','0','7','Common Scarlet Text','0'),
 ('-1031','These undead atrocities will be destroyed!','0','0','0','1667','0'),
 ('-1032','These lands shall be cleansed!','0','0','0','1667','0'),
 ('-1033','Here to visit the family? Die, fool!','0','0','0','1657','0'),
@@ -19002,8 +18982,6 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1318','Silithid Creeper Egg begins to crack and open...','0','2','0','5781','0'),
 ('-1319','Silithid Creeper Egg splits open!','0','2','0','5781','0'),
 ('-1320','%s splits into two new Lava Spawns!','0','2','0','Lava Spawn - Split Emote','0'),
-('-1321','I\'ll crush you!','0','0','0','9196','0'),
-('-1322','Me smash! You die!','0','0','0','9196','0'),
 ('-1323','Raaar!!! Me smash $R!','0','0','0','9196','1'),
 ('-1324','I cannot be destroyed! By the will of Ragnaros, I shall be reborn!','0','0','0','9017','0'),
 ('-1325','What are you doing? Intruders!!','0','1','0','9476','0'),
