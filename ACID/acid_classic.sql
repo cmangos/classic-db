@@ -18693,7 +18693,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-228','I gonna make you into mojo!','0','0','0','Common Frostmane Troll Text','0'),
 ('-229','Killing you be easy.','0','0','0','Common Frostmane Troll Text','0'),
 ('-230','You be dead soon!','0','0','0','Common Frostmane Troll Text','0'),
-('-231','I\'ll cut you!','0','0','0','Common Frostmane Troll Text','0'),
+('-231','I\'ll cut you!','0','0','0','Leper Gnome Text','0'),
 ('-232','The Brotherhood will not be hampered by insects.','0','0','0','6846','0'),
 ('-233','So much to do, so much to do! Where does the time go?','0','0','0','295','0'),
 ('-234','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
