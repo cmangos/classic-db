@@ -16,8 +16,8 @@ INSERT INTO gameobject (guid, id, map, position_x, position_y, position_z, orien
 UPDATE gameobject SET spawntimesecsmax=5, spawntimesecsmin=5, animprogress=255 WHERE id=154357;
 
 -- Update naming to match TBC-DB
-UPDATE pool_template SET descripiont='Glinting Mud (154357)' WHERE entry=1174;
-UPDATE pool_template SET descripiont='Lady Sathrah (7319)' WHERE entry=1175;
+UPDATE pool_template SET description='Glinting Mud (154357)' WHERE entry=1174;
+UPDATE pool_template SET description='Lady Sathrah (7319)' WHERE entry=1175;
 
 -- Move Lady Sathrah pool from pool_creature to pool_creature_template
 DELETE FROM pool_creature WHERE pool_entry=1175;
