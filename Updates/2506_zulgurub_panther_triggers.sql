@@ -1,0 +1,10 @@
+UPDATE creature SET position_x=-11518.54, position_y=-1652.9, position_z=41.38264, orientation=0.03490658 WHERE guid=49349;
+UPDATE creature SET position_x=-11518.46, position_y=-1651.542, position_z=41.38264, orientation=0.2617994 WHERE guid=49351;
+UPDATE creature SET position_x=-11518.37, position_y=-1650.731, position_z=41.38264, orientation=4.433136 WHERE guid=49352;
+UPDATE creature SET position_x=-11518.29, position_y=-1649.965, position_z=41.38264, orientation=5.131268 WHERE guid=49353;
+UPDATE creature SET position_x=-11518.51, position_y=-1649.303, position_z=41.38264, orientation=5.864306 WHERE guid=49354;
+UPDATE creature SET position_x=-11519.54, position_y=-1610.595, position_z=41.38264, orientation=2.565634 WHERE guid=49355;
+UPDATE creature SET position_x=-11516.83, position_y=-1607.481, position_z=41.38264, orientation=4.764749 WHERE guid=49356;
+UPDATE creature SET position_x=-11516.91, position_y=-1606.043, position_z=41.38264, orientation=6.248279 WHERE guid=49357;
+UPDATE creature SET position_x=-11516.86, position_y=-1604.25, position_z=41.38264, orientation=5.288348 WHERE guid=49358;
+UPDATE creature SET position_x=-11517.07, position_y=-1603.539, position_z=41.38264, orientation=2.059489 WHERE guid=51387;
