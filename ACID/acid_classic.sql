@@ -3381,8 +3381,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Huldar 2057
 ('205701','2057','4','0','100','0','0','0','0','0','0','0','17','147','0','0','0','0','0','0','0','0','0','0','Huldar - Remove NpCFlags on Aggro'),
 ('205702','2057','7','0','100','0','0','0','0','0','0','0','17','147','3','0','0','0','0','0','0','0','0','0','Huldar - Set NpCFlags on Evade'),
--- Dark Iron Raider (2.4.3 Official Data)
+-- Dark Iron Raider 2149
 ('214901','2149','4','0','100','0','0','0','0','0','0','0','1','1935','1935','1935','0','0','0','0','0','0','0','0','Dark Iron Raider - Random Say on Aggro (Could be more Says but not 100% Sure)'),
+('214902','2149','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Dark Iron Raider - Flee at 15% HP'),
 -- Large Loch Crocolisk (2.4.3 Official Data)
 ('247601','2476','0','0','85','1025','4100','13900','32200','46200','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Large Loch Crocolisk - Cast Infected Wound'),
 -- Greishan Ironstove 3291
