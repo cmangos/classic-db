@@ -7396,7 +7396,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('375404','3754','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Xavian Betrayer - Set Phase to 0 on Evade'),
 -- Xavian Felsworn (3.3.0 Official Data) - EXACT HP% FOR GIFT OF THE XAVIAN IS UNKNOWN
 ('375501','3755','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Xavian Felsworn - Set Phase 1 on Aggro'),
-('375502','3755','0','0','100','1','1000','2200','2300','6100','0','0','11','6223','1','32','0','0','0','0','0','0','0','0','Xavian Felsworn - Cast Corruption'),
+('375502','3755','0','0','100','1','1000','2200','2300','6100','0','0','11','6223','4','32','0','0','0','0','0','0','0','0','Xavian Felsworn - Cast Corruption'),
 ('375503','3755','2','0','100','0','15','0','0','0','0','0','11','6925','0','1','22','2','0','0','0','0','0','0','Xavian Felsworn - Cast Gift of the Xavian and Set Phase 2 at 15% HP'),
 ('375504','3755','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Xavian Felsworn - Set Phase to 0 on Evade'),
 -- Xavian Hellcaller 3757 (3.3.0 Official Data)
@@ -7404,7 +7404,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('375702','3757','2','0','50','1024','15','0','0','0','0','0','11','6925','0','1','0','0','0','0','0','0','0','0','Xavian Hellcaller - Cast Gift of the Xavian at 15% HP'),
 ('375703','3757','9','0','100','1025','0','40','4700','5800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Xavian Hellcaller - Cast Fireball'),
 -- Felmusk Satyr (3.3.0 Official Data)
-('375801','3758','9','0','100','1','0','5','14500','23900','0','0','11','6942','1','0','0','0','0','0','0','0','0','0','Felmusk Satyr - Cast Overwhelming Stench'),
+('375801','3758','9','0','100','1','0','5','14500','23900','0','0','11','6942','4','0','0','0','0','0','0','0','0','0','Felmusk Satyr - Cast Overwhelming Stench'),
 ('375802','3758','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Felmusk Satyr - Flee at 15% HP'),
 -- Felmusk Rogue (3.3.0 Official Data) - TIMERS FOR EXPLOIT WEAKNESS UNKNOWN SINCE IT REQUIRES PLAYER TO PUT BACK TO NPC TO ALLOW CAST
 ('375901','3759','9','0','100','1','0','5','14500','23900','0','0','11','6942','1','0','0','0','0','0','0','0','0','0','Felmusk Rogue - Cast Overwhelming Stench'),
@@ -11489,7 +11489,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sap Beast
 ('402001','4020','9','0','100','1','0','5','7000','16000','0','0','11','7997','4','32','0','0','0','0','0','0','0','0','Sap Beast - Cast Sap Might'),
 -- Corrosive Sap Beast
-('402101','4021','9','0','100','1','0','30','5000','11000','0','0','11','3396','4','32','0','0','0','0','0','0','0','0','Corrosive Sap Beast - Cast Corrosive Poison'),
+('402101','4021','9','0','100','1','0','30','6000','15000','0','0','11','3396','4','32','0','0','0','0','0','0','0','0','Corrosive Sap Beast - Cast Corrosive Poison'),
 -- Bloodfury Harpy 4022
 ('402201','4022','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodfury Harpy - Flee at 15% HP'),
 -- Bloodfury Roguefeather
@@ -11500,7 +11500,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodfury Ambusher
 ('402501','4025','9','0','100','1','0','20','8000','13000','0','0','11','2608','1','0','0','0','0','0','0','0','0','0','Bloodfury Ambusher - Cast Shock'),
 -- Bloodfury Windcaller
-('402601','4026','9','0','100','1','0','30','14000','20000','0','0','11','6728','1','0','0','0','0','0','0','0','0','0','Bloodfury Windcaller - Cast Enveloping Winds'),
+('402601','4026','9','0','100','1','0','30','14000','20000','0','0','11','6728','9','0','0','0','0','0','0','0','0','0','Bloodfury Windcaller - Cast Enveloping Winds'),
 -- Bloodfury Storm Witch 4027
 ('402701','4027','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Bloodfury Storm Witch - Enable Range Mode on Aggro'),
 ('402702','4027','0','0','100','1025','11000','16000','40000','45000','0','0','11','6535','4','0','0','0','0','0','0','0','0','0','Bloodfury Storm Witch - Cast Lightning Cloud'),
@@ -11603,7 +11603,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gerenzo Wrenchwhistle 4202
 ('420201','4202','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gerenzo Wrenchwhistle - Flee at 15% HP'),
 -- Deepmoss Hatchling
-('426301','4263','2','0','50','0','30','0','0','0','0','0','11','6536','0','0','1','-551','0','0','0','0','0','0','Deepmoss Hatchling - Cast Summon Deepmoss Matriarch at 30% HP'),
+('426301','4263','2','0','30','0','30','0','0','0','0','0','11','6536','0','0','1','-551','0','0','0','0','0','0','Deepmoss Hatchling - Cast Summon Deepmoss Matriarch at 30% HP'),
 -- Deepmoss Matriarch (4264) - NSR
 -- Piznik (4276) - NSR
 -- Tharm
@@ -12433,7 +12433,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Witchwing Windcaller 3280
 ('328001','3280','4','0','20','0','0','0','0','0','0','0','1','-200','-201','-202','0','0','0','0','0','0','0','0','Witchwing Windcaller - Say on Aggro'),
 ('328002','3280','2','0','100','0','15','0','0','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Witchwing Windcaller - Flee at 15% HP'),
-('328003','3280','0','0','100','1','4000','7000','12000','15000','0','0','11','6728','4','32','0','0','0','0','0','0','0','0','Witchwing Windcaller - Cast Enveloping Winds (Rank 1)'),
+('328003','3280','0','0','100','1','4000','7000','12000','15000','0','0','11','6728','5','32','0','0','0','0','0','0','0','0','Witchwing Windcaller - Cast Enveloping Winds (Rank 1)'),
 -- Venture Co. Mercenary 3282
 ('328201','3282','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Venture Co Mercenary - Enable Range Mode on Aggro'),
 ('328202','3282','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Venture Co Mercenary - Cast Shoot'),
@@ -12445,7 +12445,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Venture Co. Peon 3285
 ('328501','3285','2','0','100','0','25','0','0','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Venture Co. Peon - Flee at 25% HP'),
 -- Venture Co. Overseer 3286
-('328601','3286','2','0','100','1','20','0','5000','10000','0','0','11','9080','1','33','0','0','0','0','0','0','0','0','Venture Co Overseer - Cast Overseer''s Poison at 20% HP'),
+('328601','3286','2','0','100','1025','20','0','5000','10000','0','0','11','6531','1','32','1','-155','0','0','0','0','0','0','Venture Co. Overseer - Cast Overseer''s Poison and Emote at 20% HP'),
 -- Sludge Beast 3295
 ('329501','3295','9','0','100','1','0','5','9000','16000','0','0','11','7279','1','32','0','0','0','0','0','0','0','0','Sludge Beast - Cast Black Sludge'),
 -- Bael'dun Excavator 3374
@@ -12568,7 +12568,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Devrak 3615
 ('361501','3615','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Devrak - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Devouring Ectoplasm 3638
-('363801','3638','2','0','100','0','50','0','0','0','0','0','11','7952','0','0','0','0','0','0','0','0','0','0','Devouring Ectoplasm - Cast Clone at 50% HP'),
+('363801','3638','2','0','100','0','50','0','0','0','0','0','11','7952','0','0','1','-156','0','0','0','0','0','0','Devouring Ectoplasm - Cast Clone at 50% HP'),
 -- Razormane Wolf 3939 - NSR
 -- Minor Water Guardian 3950
 ('395001','3950','11','0','100','0','0','0','0','0','0','0','11','6488','0','34','11','6498','0','34','0','0','0','0','Minor Water Guardian - Cast Sarilus\'s Elementals Passive and Feed Sarilus Passive on Spawn'),
@@ -12766,7 +12766,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('409501','4095','0','0','100','1','1000','3000','32000','37000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Galak Mauler - Cast Demoralizing Shout'),
 ('409502','4095','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Galak Mauler - Flee at 15% HP'),
 -- Galak Windchaser
-('409601','4096','0','0','100','1','8000','15000','18000','26000','0','0','11','6728','4','0','0','0','0','0','0','0','0','0','Galak Windchaser - Cast Enveloping Winds'),
+('409601','4096','0','0','100','1','8000','15000','18000','26000','0','0','11','6728','5','0','0','0','0','0','0','0','0','0','Galak Windchaser - Cast Enveloping Winds'),
 ('409602','4096','14','0','100','0','300','40','0','0','0','0','11','939','12','1','0','0','0','0','0','0','0','0','Galak Windchaser - Cast Healing Wave on Friendlies'),
 ('409603','4096','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Galak Windchaser - Flee at 15% HP'),
 -- Galak Stormer 4097
@@ -12849,7 +12849,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Salt Flats Vulture 4158
 ('415801','4158','12','0','100','1','20','0','30000','30000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Salt Flats Vulture - Cast Execute when Target HP below 20%'),
 -- Pesterhide Snarler 4249
-('424901','4249','0','0','100','1','5000','10000','12000','16000','0','0','11','6576','1','0','0','0','0','0','0','0','0','0','Pesterhide Snarler - Cast Intimidating Growl'),
+('424901','4249','0','0','100','1','5000','10000','12000','16000','0','0','11','6576','5','0','0','0','0','0','0','0','0','0','Pesterhide Snarler - Cast Intimidating Growl'),
 -- Nyse 4317
 ('431701','4317','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Nyse - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Grenka Bloodscreech 4490
@@ -16755,7 +16755,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('363301','3633','2','0','100','1','40','0','9000','14000','0','0','11','7938','1','0','0','0','0','0','0','0','0','0','Deviate Slayer - Cast Fatal Bite'),
 -- Deviate Ravager
 ('363601','3636','11','0','100','0','0','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Deviate Ravager - Cast Thrash on Spawn'),
--- Deviate Guardian (3637) - NSR
+-- Deviate Guardian (3637)
+('363701','3637','2','0','100','0','30','0','0','0','0','0','39','40','0','0','1','-154','0','0','0','0','0','0','Deviate Guardian - Call for Help at 30% HP'),
 -- Evolving Ectoplasm (3640) - NSR
 -- Kresh (3653) - NSR
 -- Mutanus the Devourer
@@ -18629,6 +18630,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-144','What? How dare you!','0','0','0','1754','0'),
 ('-145','%s flees toward safety or another tiger.','0','2','0','Zulian Cub fleeing text','0'),
 ('-154','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
+('-155','%s grabs for his poisoned dagger!','0','2','0','3286','0'),
+('-156','%s begins to make a copy of itself!','0','2','0','Devouring Ectoplasm - Clone','0'),
+-- Classic PLEASE RE-USE 157 - 160
 ('-161','A living $r... soon to be a dead like me.','0','0','0','Common Undead Text','0'),
 ('-162','Mmm... I love my delicious Southshore stout.','0','0','0','2440','0'),
 ('-163','Slay them, my brethren! For the Scourge!','5822','1','0','7357','0'),
