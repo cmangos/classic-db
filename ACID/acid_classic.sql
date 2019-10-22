@@ -2477,8 +2477,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =============
 -- Elwynn Forest
 -- =============
--- Kobold Vermin (2.4.2 Official Data)
-('601','6','4','0','30','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Vermin - Random Say on Aggro'),
+-- Kobold Vermin 6 (2.4.2 Official Data)
+('601','6','4','0','10','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Vermin - Random Say on Aggro'),
 -- Forest Spider (2.4.2 Official Data)
 ('3001','30','11','0','100','0','0','0','0','0','0','0','11','11959','0','1','0','0','0','0','0','0','0','0','Forest Spider - Cast Poison Proc on Spawn'),
 -- Defias Thug (2.4.2 Official Data)
@@ -2506,8 +2506,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Narg the Taskmaster (2.4.2 Official Data)
 ('7901','79','4','0','30','0','0','0','0','0','0','0','1','-7','0','0','0','0','0','0','0','0','0','0','Narg the Taskmaster - Random Say on Aggro'),
 ('7902','79','0','0','100','1','2000','4000','18000','29000','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Narg the Taskmaster - Cast Battleshout'),
--- Kobold Labourer (2.4.2 Official Data)
-('8001','80','4','0','30','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Labourer - Random Say on Aggro'),
+-- Kobold Labourer 80 (2.4.2 Official Data)
+('8001','80','4','0','10','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Labourer - Random Say on Aggro'),
 -- Defias Cutpurse (2.4.2 Official Data)
 ('9401','94','33','0','100','1','0','0','2400','7900','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab on Facing Target Back'),
 -- Riverpaw Runt (2.4.2 Official Data)
@@ -2547,8 +2547,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tommy Joe Stonefield (252) - NSR
 -- William Pestle (253) - NSR
 -- Gerard Tiller (255) - NSR
--- Kobold Worker (2.4.2 Official Data)
-('25701','257','4','0','30','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Worker - Random Say on Aggro'),
+-- Kobold Worker 257 (2.4.2 Official Data)
+('25701','257','4','0','10','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Worker - Random Say on Aggro'),
 -- Joshua Maclure (258) - NSR
 -- Guard Thomas (261) - NSR
 -- Sara Timberlain (278) - NSR
@@ -17618,9 +17618,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1525204','15252','2','0','100','0','30','0','0','0','0','0','11','25164','0','0','1','-106','0','0','0','0','0','0','Qiraji Champion - Cast Vengeance at 30% HP'),
 -- Obsidian Eradicator 15262
 ('1526201','15262','1','0','100','0','0','0','0','0','0','0','17','23','0','0','0','0','0','0','0','0','0','0','Obsidian Eradicator - Set Mana to 0 OOC'),
-('1526202','15262','0','0','100','1','1000','3000','3000','5000','0','0','11','26559','17','0','0','0','0','0','0','0','0','0','Obsidian Eradicator - Cast Drain Mana on Random Player Mana User'),
-('1526203','15262','0','0','100','1','15000','30000','30000','45000','0','0','11','20223','0','1','0','0','0','0','0','0','0','0','Obsidian Eradicator - Cast Magic Reflection'),
-('1526204','15262','3','0','100','1','100','99','1000','1000','0','0','11','26458','0','1','0','0','0','0','0','0','0','0','Obsidian Eradicator - Cast Shockblast on 100% Mana'),
+('1526202','15262','3','0','100','1025','100','99','1000','1000','0','0','11','26458','0','0','0','0','0','0','0','0','0','0','Obsidian Eradicator - Cast Shockblast on 100% Mana'),
+('1526203','15262','0','0','100','1025','1000','3000','3000','5000','0','0','11','26559','17','0','0','0','0','0','0','0','0','0','Obsidian Eradicator - Cast Drain Mana'),
+('1526204','15262','0','0','100','1025','15000','30000','30000','45000','0','0','11','20223','0','0','0','0','0','0','0','0','0','0','Obsidian Eradicator - Cast Magic Reflection'),
 -- The Prophet Skeram (15263) - boss_skeram
 -- Anubisath Sentinel (15264) - mob_anubisath_sentinel
 -- Emperor Vek'nilash (15275) - boss_veknilash
@@ -17710,9 +17710,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1531111','15311','7','0','100','0','0','0','0','0','0','0','31','1','4','0','0','0','0','0','0','0','0','0','Anubisath Warder - Random Phase on Evade'),
 -- Obsidian Nullifier 15312
 ('1531201','15312','1','0','100','0','0','0','0','0','0','0','17','23','0','0','0','0','0','0','0','0','0','0','Obsidian Nullifier - Set Mana to 0 OOC'),
-('1531202','15312','0','0','100','1','1000','3000','3000','5000','0','0','11','26559','17','0','0','0','0','0','0','0','0','0','Obsidian Nullifier - Cast Manaburn'),
-('1531203','15312','9','0','100','1','0','5','5000','7000','0','0','11','15584','1','0','0','0','0','0','0','0','0','0','Obsidian Nullifier - Cast Cleave'),
-('1531204','15312','3','0','100','1','100','99','8000','8000','0','0','11','26552','0','1','0','0','0','0','0','0','0','0','Obsidian Nullifier - Cast Nullify on 100% mana'),
+('1531202','15312','3','0','100','1025','100','99','1000','1000','0','0','11','26552','0','0','0','0','0','0','0','0','0','0','Obsidian Nullifier - Cast Nullify on 100% Mana'),
+('1531203','15312','0','0','100','1025','1000','3000','3000','5000','0','0','11','26559','17','0','0','0','0','0','0','0','0','0','Obsidian Nullifier - Cast Drain Mana'),
+('1531204','15312','9','0','100','1025','0','5','5000','7000','0','0','11','40504','1','0','0','0','0','0','0','0','0','0','Obsidian Nullifier - Cast Cleave'),
 -- Qiraji Scarab
 ('1531601','15316','9','0','100','1','0','5','5000','9000','0','0','11','6016','4','32','0','0','0','0','0','0','0','0','Qiraji Scarab - Cast Pierce Armor'),
 ('1531602','15316','0','0','100','1','5000','9000','6000','12000','0','0','11','26050','4','1','0','0','0','0','0','0','0','0','Qiraji Scarab - Cast Acid Spit'),
@@ -18983,6 +18983,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1300','Should I live through this, I shall make it my life\'s sole ambition to destroy Arthas...','0','0','0','14484, 14485','0'),
 ('-1301','I won\'t make it... go... go on without me...','0','0','0','14484, 14485','0'),
 ('-1302','Death take me! I cannot go on! I have nothing left...','0','0','0','14484, 14485','0'),
+-- Classic PLEASE RE-USE 1303 - 1304
 ('-1305','The light condemns all who harbor evil.  Now you will die!','0','0','0','Scarlet Monastery','0'),
 ('-1306','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','Scarlet Monastery','0'),
 ('-1307','There is no escape for you.  The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','Scarlet Monastery','0'),
