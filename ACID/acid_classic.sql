@@ -4312,7 +4312,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('135101','1351','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Cassius - Summon Stormwind City Guard on Aggro'),
 -- Adam (1366) - NSR
 -- Billy (1367) - NSR
--- Justin (1368) - NSR
+-- Justin 1368
+('136801','1368','1','0','100','1','30000','60000','30000','60000','0','0','53','4','0','0','0','0','0','0','0','0','0','0','Justin - Start Relay Script OOC'),
 -- Brandon (1370) - NSR
 -- Roman (1371) - NSR
 -- Ol' Beasley
