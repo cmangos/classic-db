@@ -6695,12 +6695,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1105301','11053','16','0','100','0','10938','10','0','0','0','0','11','10938','12','1','0','0','0','0','0','0','0','0','High Priestess MacDonnell - Cast Power Word: Fortitude on Friendlies'),
 ('1105302','11053','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','High Priestess MacDonnell - Flee at 15% HP'),
 -- Alchemist Arbington (11056) - npcs_dithers_and_arbington
--- Cauldron Lord Bilemaw
-('1107501','11075','1','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Birth on Spawn'),
-('1107502','11075','1','0','100','0','5000','5000','0','0','0','0','11','3417','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Thrash on Spawn'),
-('1107503','11075','9','0','100','1','0','5','18000','22000','0','0','11','13445','1','1','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Rend'),
-('1107504','11075','9','0','100','1','0','5','7000','12000','0','0','11','3427','4','33','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Infected Wound'),
-('1107505','11075','4','0','100','0','0','0','0','0','0','0','1','-1391','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Say on spawn'),
+-- Cauldron Lord Bilemaw 11075
+('1107501','11075','11','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','1','-1388','0','0','Cauldron Lord Bilemaw - Cast Birth, Emote on Spawn'),
+('1107502','11075','4','0','100','0','0','0','0','0','0','0','1','-1391','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Say on Aggro'),
+('1107503','11075','1','0','100','0','1000','1000','0','0','0','0','11','3417','0','32','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Thrash OOC'),
+('1107504','11075','9','0','100','1','0','5','18000','22000','0','0','11','13445','1','1','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Rend'),
+('1107505','11075','9','0','100','1','0','5','7000','12000','0','0','11','3427','4','33','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Infected Wound'),
 -- Cauldron Lord Razarch 11076
 ('1107601','11076','4','0','100','0','0','0','0','0','0','0','57','2','35','0','1','-1392','0','0','0','0','0','0','Cauldron Lord Razarch - Enable Range Mode and Say on Aggro'),
 ('1107602','11076','0','0','100','1025','11000','15000','20000','25000','0','0','11','17204','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Summon Skeleton'),
@@ -19119,7 +19119,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1327','%s gets really dizzy!','0','2','0','9554','0'),
 -- Classic PLEASE RE-USE 1328 - 1353
 ('-1354','HELP! ASSASSINS HAVE COME TO KILL ME!','0','1','0','11023','0'),
--- Classic PLEASE RE-USE 1355 - 1388
+-- Classic PLEASE RE-USE 1355 - 1387
+('-1388','%s emerges from the shadows to defend the cauldron!','0','2','0','0','0'),
 ('-1389','%s belches out a disgusting Bile Slime!','0','2','0','0','0'),
 ('-1390','%s explodes and releases several Bile Slimes!','0','2','0','0','0'),
 ('-1391','$r flesh... Must feed!','0','0','0','11075','0'),
