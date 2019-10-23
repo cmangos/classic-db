@@ -10025,7 +10025,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gordunni Ogre 5229
 ('522901','5229','4','0','10','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Gordunni Ogre - Say on Aggro'),
 -- Gordunni Brute 5232
-('523201','5232','9','0','100','1','0','8','12000','17000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Gordunni Brute - Cast Uppercut'),
+('523201','5232','4','0','10','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Gordunni Brute - Say on Aggro'),
+('523202','5232','9','0','100','1025','0','8','12000','17000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Gordunni Brute - Cast Uppercut'),
 -- Gordunni Mauler 5234
 ('523401','5234','11','0','100','0','0','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Gordunni Brute - Cast Thrash on Spawn'),
 -- Gordunni Shaman 5236
@@ -10034,8 +10035,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('523603','5236','14','0','100','1','1200','40','14000','18000','0','0','11','8005','12','1','0','0','0','0','0','0','0','0','Gordunni Shaman - Cast Healing Wave on Friendlies'),
 -- Gordunni Ogre Mage 5237
 ('523701','5237','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Gordunni Ogre Mage - Enable Range Mode on Aggro'),
-('523702','5237','2','0','100','1024','30','0','0','0','0','0','11','6742','0','0','0','0','0','0','0','0','0','0','Gordunni Ogre Mage - Cast Bloodlust at 30% HP'),
-('523703','5237','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Gordunni Ogre Mage - Cast Lightning Bolt'),
+('523702','5237','4','0','10','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Gordunni Ogre Mage - Say on Aggro'),
+('523703','5237','2','0','100','1024','30','0','0','0','0','0','11','6742','0','0','0','0','0','0','0','0','0','0','Gordunni Ogre Mage - Cast Bloodlust at 30% HP'),
+('523704','5237','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Gordunni Ogre Mage - Cast Lightning Bolt'),
 -- Gordunni Battlemaster 5238
 ('523801','5238','0','0','100','1','3000','5000','12000','17000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Gordunni Battlemaster - Cast Demoralizing Shout'),
 -- Gordunni Mage-Lord 5239
@@ -10049,41 +10051,41 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('524003','5240','9','0','100','1025','0','40','3400','4800','0','0','11','20298','1','256','0','0','0','0','0','0','0','0','Gordunni Warlock - Cast Shadow Bolt'),
 -- Gordunni Warlord
 ('524101','5241','0','0','100','1','3000','8000','20000','26000','0','0','11','10967','0','0','0','0','0','0','0','0','0','0','Gordunni Warlord - Cast Echoing Roar'),
--- Zukk'ash Stinger (5244) - NSR
+-- Zukk'ash Stinger 5244 - SpellId guessed
+('524401','5244','2','0','100','1024','10','0','0','0','0','0','11','5416','1','0','1','-1322','0','0','0','0','0','0','Zukk''ash Stinger - Cast Venom Sting, Emote at 10% HP'),
 -- Zukk'ash Wasp
 ('524501','5245','11','0','100','0','0','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Zukk''ash Wasp - Cast Poison Proc on Spawn'),
 -- Zukk'ash Worker
 ('524601','5246','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Zukk''ash Worker - Flee at 15% HP'),
 -- Zukk'ash Tunneler
 ('524701','5247','9','0','100','1','0','5','45000','45000','0','0','11','6016','1','0','0','0','0','0','0','0','0','0','Zukk''ash Tunneler - Cast Pierce Armor'),
--- Woodpaw Mongrel
-('524901','5249','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Mongrel - Random Say on Aggro'),
-('524902','5249','9','0','100','1','0','5','120000','120000','0','0','11','7102','4','32','0','0','0','0','0','0','0','0','Woodpaw Mongrel - Cast Contagion of Rot'),
-('524903','5249','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Mongrel - Flee at 15% HP'),
+-- Woodpaw Mongrel 5249
+('524901','5249','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Mongrel - Say on Aggro'),
+('524902','5249','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Mongrel - Flee at 15% HP'),
+('524903','5249','9','0','100','1025','0','5','120000','120000','0','0','11','7102','4','32','0','0','0','0','0','0','0','0','Woodpaw Mongrel - Cast Contagion of Rot'),
 -- Woodpaw Trapper 5251
 ('525101','5251','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Trapper - Say on Aggro'),
 ('525102','5251','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Woodpaw Trapper - Enable Range Mode on Aggro'),
 ('525103','5251','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Trapper - Flee at 15% HP'),
 ('525104','5251','9','0','100','1025','0','20','9000','12000','0','0','11','6533','1','1024','0','0','0','0','0','0','0','0','Woodpaw Trapper - Cast Net'),
 ('525105','5251','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Woodpaw Trapper - Cast Shoot'),
--- Woodpaw Brute
-('525301','5253','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Brute - Random Say on Aggro'),
-('525302','5253','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Brute - Flee at 15% HP'),
+-- Woodpaw Brute 5253
+('525301','5253','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Brute - Say on Aggro'),
+('525302','5253','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Brute - Flee at 15% HP'),
 -- Woodpaw Mystic 5254
 ('525401','5254','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Mystic - Say on Aggro'),
 ('525402','5254','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Woodpaw Mystic - Enable Range Mode on Aggro'),
 ('525403','5254','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Mystic - Flee at 15% HP'),
 ('525404','5254','14','0','100','1025','1100','40','16000','21000','0','0','11','8005','12','0','0','0','0','0','0','0','0','0','Woodpaw Mystic - Cast Healing Wave on Friendly Missing HP'),
 ('525405','5254','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Woodpaw Mystic - Cast Lightning Bolt'),
--- Woodpaw Reaver
-('525501','5255','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Reaver - Random Say on Aggro'),
-('525502','5255','0','0','100','1','1000','3000','240000','245000','0','0','11','7366','0','1','0','0','0','0','0','0','0','0','Woodpaw Reaver - Cast Berserker Stance'),
-('525503','5255','9','0','100','1','0','5','7000','11000','0','0','11','7369','1','0','0','0','0','0','0','0','0','0','Woodpaw Reaver - Cast Cleave'),
-('525504','5255','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Reaver - Flee at 15% HP'),
--- Woodpaw Alpha
-('525801','5258','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Alpha - Random Say on Aggro'),
-('525802','5258','2','0','100','0','30','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Woodpaw Alpha - Cast Enrage at 30% HP'),
-('525803','5258','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Alpha - Flee at 15% HP'),
+-- Woodpaw Reaver 5255
+('525501','5255','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Reaver - Say on Aggro'),
+('525502','5255','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Reaver - Flee at 15% HP'),
+('525503','5255','0','0','100','1025','1000','3000','240000','245000','0','0','11','7366','0','1','0','0','0','0','0','0','0','0','Woodpaw Reaver - Cast Berserker Stance'),
+('525504','5255','9','0','100','1025','0','5','7000','11000','0','0','11','7369','1','0','0','0','0','0','0','0','0','0','Woodpaw Reaver - Cast Cleave'),
+-- Woodpaw Alpha 5258
+('525801','5258','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Woodpaw Alpha - Say on Aggro'),
+('525802','5258','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Woodpaw Alpha - Cast Enrage at 30% HP'),
 -- Groddoc Ape (5260) - NSR
 -- Groddoc Thunderer
 ('526201','5262','9','0','100','1','0','8','13000','19000','0','0','11','8078','0','0','0','0','0','0','0','0','0','0','Groddoc Thunderer - Cast Thunderclap'),
@@ -10233,10 +10235,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('657601','6576','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Brienna Starglow - Flee at 15% HP'),
 -- Wandering Forest Walker
 ('758401','7584','14','0','100','1','1200','40','25000','31000','0','0','11','16561','12','1','0','0','0','0','0','0','0','0','Wandering Forest Walker - Cast Regrowth on Friendlies'),
--- Grimtotem Raider
-('772501','7725','0','0','100','1','1000','1000','240000','240000','0','0','11','7366','0','1','0','0','0','0','0','0','0','0','Grimtotem Raider - Cast Berserker Stance'),
-('772502','7725','9','0','100','1','0','5','7000','10000','0','0','11','845','1','0','0','0','0','0','0','0','0','0','Grimtotem Raider - Cast Cleave'),
-('772503','7725','9','0','100','1','0','20','9000','11000','0','0','11','6533','1','1','0','0','0','0','0','0','0','0','Grimtotem Raider - Cast Net'),
+-- Grimtotem Raider 7725
+('772501','7725','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grimtotem Raider - Flee at 15% HP'),
+('772502','7725','0','0','100','1025','0','0','240000','240000','0','0','11','7366','0','0','0','0','0','0','0','0','0','0','Grimtotem Raider - Cast Berserker Stance'),
+('772503','7725','0','0','100','1025','10000','20000','9000','11000','0','0','11','6533','1','0','0','0','0','0','0','0','0','0','Grimtotem Raider - Cast Net'),
+('772504','7725','9','0','100','1025','0','5','7000','10000','0','0','11','845','1','0','0','0','0','0','0','0','0','0','Grimtotem Raider - Cast Cleave'),
 -- Grimtotem Naturalist 7726
 ('772601','7726','1','0','75','1','10000','10000','400000','400000','0','0','11','19030','0','0','22','1','0','0','0','0','0','0','Grimtotem Naturalist - Cast Bear Form and Set Phase 1 OOC'),
 ('772602','7726','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Grimtotem Naturalist - Enable Range Mode on Aggro'),
@@ -10246,9 +10249,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('772606','7726','9','1','100','1025','0','10','12000','19000','0','0','11','15727','0','0','0','0','0','0','0','0','0','0','Grimtotem Naturalist - Cast Demoralizing Roar (Phase 1)'),
 ('772607','7726','9','1','100','1025','0','5','5000','8000','0','0','11','12161','1','256','0','0','0','0','0','0','0','0','Grimtotem Naturalist - Cast Maul (Phase 1)'),
 ('772608','7726','9','0','100','1025','0','40','3400','4800','0','0','11','9739','1','256','0','0','0','0','0','0','0','0','Grimtotem Naturalist - Cast Wrath'),
--- Grimtotem Shaman
-('772701','7727','0','0','100','1','5000','9000','12000','15000','0','0','11','930','1','0','0','0','0','0','0','0','0','0','Grimtotem Shaman - Cast Chain Lightning'),
-('772702','7727','14','0','100','1','1200','40','14000','17000','0','0','11','8005','12','1','0','0','0','0','0','0','0','0','Grimtotem Shaman - Cast Healing Wave on Friendlies'),
+-- Grimtotem Shaman 7727
+('772701','7727','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grimtotem Shaman - Flee at 15% HP'),
+('772702','7727','14','0','100','1025','1200','40','14000','17000','0','0','11','8005','12','1','0','0','0','0','0','0','0','0','Grimtotem Shaman - Cast Healing Wave on Friendly Missing HP'),
+('772703','7727','0','0','100','1025','5000','9000','12000','15000','0','0','11','930','1','0','0','0','0','0','0','0','0','0','Grimtotem Shaman - Cast Chain Lightning'),
 -- Innkeeper Shyria (7736) - npc_innkeeper
 -- Innkeeper Greul (7737) - npc_innkeeper
 -- Troyas Moonbreeze (7764) - NSR
@@ -12606,7 +12610,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ratchet Bruiser 3502 - guard_contested
 ('350201','3502','0','0','100','1','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Cast Net'),
 -- Silithid Protector 3503
-('350301','3503','11','0','100','0','0','0','0','0','0','0','1','-1328','0','0','0','0','0','0','0','0','0','0','Silithid Protector - Emote on Spawn'),
+('350301','3503','11','0','100','0','0','0','0','0','0','0','1','-1321','0','0','0','0','0','0','0','0','0','0','Silithid Protector - Emote on Spawn'),
 -- Devrak 3615
 ('361501','3615','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Devrak - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Devouring Ectoplasm 3638
@@ -14085,7 +14089,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Highlord Omokk
 ('919601','9196','0','0','100','1','12000','12000','18000','18000','0','0','11','10101','1','0','0','0','0','0','0','0','0','0','Highlord Omokk - Cast Knock Away'),
 ('919602','9196','2','0','100','0','20','0','0','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Highlord Omokk - Cast Frenzy'),
-('919603','9196','0','0','100','1','1000','3000','15000','25000','0','0','1','-1321','-1322','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
+('919603','9196','0','0','100','1','1000','3000','15000','25000','0','0','1','-359','-360','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
 ('919604','9196','5','0','100','1','0','0','1','0','0','0','1','-1323','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Unit Kill'),
 -- Spirestone Battle Mage
 ('919701','9197','0','0','100','1','4000','10000','5000','15000','0','0','11','15305','4','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Chain Lighting'),
@@ -18746,19 +18750,24 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-232','The Brotherhood will not be hampered by insects.','0','0','0','6846','0'),
 ('-233','So much to do, so much to do! Where does the time go?','0','0','0','295','0'),
 ('-234','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
+-- Classic PLEASE RE-USE 235 - 273
 ('-274','%s looks weak enough to capture.','0','2','0','4351','0'),
+-- Classic PLEASE RE-USE 275 - 310
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','11582','0'),
+-- Classic PLEASE RE-USE 312 - 320
 ('-321','Iman m t\'ief fu Fus\'obeah italaf','0','0','0','Common Frostmane Troll Text','0'),
 ('-322','All you $R want is my weed.','0','0','14','Common Frostmane Troll Text','0'),
 ('-323','You dare defile Frostmane Hold, $r. Prepare to die!','0','0','14','1260','0'),
 ('-324','Time to bash!','0','0','0','1119','0'),
 ('-325','Oh, we are going to get along just fine, $N.','0','0','14','1260','0'),
+-- Classic PLEASE RE-USE 326 - 340
 ('-341','%s jumps out of the shadows!','0','2','0','636','0'),
 ('-342','%s calls more of his allies out of the shadows.','0','2','0','639','0'),
 ('-343','%s growls in your direction before taking time to sniff you.','0','2','0','3695','0'),
 ('-344','%s faces southeast and whimpers before looking back at you. ','0','2','0','3695','0'),
 ('-345','%s\'s death cry has stirred the nearby silithid hive.','0','2','0','Tortured Druid/Sentinel death','0'),
 ('-346','%s begins to summon in reinforcements!','0','2','0','Common Emote','0'),
+-- Classic PLEASE RE-USE 347 - 352
 ('-353','Me no run from $c like you!','0','0','0','Trogg Common Text','0'),
 ('-354','Yip! Me kill!','0','0','0','Trogg Common Text','0'),
 ('-355','The only good $r is a dead $r!','0','0','0','1205','0'),
@@ -18784,7 +18793,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-375','%s\'s eyes glow red as he lights his dynamite and begins to cackle madly!','0','2','0','1222','0'),
 ('-376','[Orcish] Ogg kaz ko zugas kil mog Tov\'nokaz Kagg','0','0','0','Orc Common Text','0'),
 ('-377','[Orcish] Tago mog regas gi mog Tov\'nokaz Kagg','0','0','0','Orc Common Text','0'),
+-- Classic PLEASE RE-USE 378 - 387
 ('-388','Hearty Kill!','5801','1','0','4831','0'),
+-- Classic PLEASE RE-USE 389 - 403
 ('-404','I cannot permit you to enter the temple! I must destroy you for your own good!','0','0','0','Common Green Dragon Text','0'),
 ('-405','%s seems much calmer now that it has eaten the remains of $N.','0','2','0','2931','0'),
 ('-406','Never cross a Dark Iron, $c.','0','0','0','1169','0'),
@@ -18798,6 +18809,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-414','If the Captain finds out, it\'ll be the end of me.','0','0','0','1719','0'),
 ('-415','They must have had someone helping them.','0','0','0','1719','0'),
 ('-416','All of a sudden they were everywhere.','0','0','0','1719','0'),
+-- Classic PLEASE RE-USE 417 - 428
 ('-429','Are we there yet?','0','0','0','3504','0'),
 ('-430','My feet hurt.','0','0','0','3504','0'),
 ('-431','Is it true? Are there crocolisks in the canal?','0','0','0','3504','0'),
@@ -19055,15 +19067,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1318','Silithid Creeper Egg begins to crack and open...','0','2','0','5781','0'),
 ('-1319','Silithid Creeper Egg splits open!','0','2','0','5781','0'),
 ('-1320','%s splits into two new Lava Spawns!','0','2','0','Lava Spawn - Split Emote','0'),
-('-1321','I\'ll crush you!','0','0','0','9196','0'),
-('-1322','Me smash! You die!','0','0','0','9196','0'),
+('-1321','%s digs its way out of the sand to protect its eggs.','0','2','0','Silithid Protector 3503'),
+('-1322','%s prepares to sting its victim as a last desperate move!','0','2','0','Zukk''ash Stinger 5244'),
 ('-1323','Raaar!!! Me smash $R!','0','0','0','9196','1'),
 ('-1324','I cannot be destroyed! By the will of Ragnaros, I shall be reborn!','0','0','0','9017','0'),
 ('-1325','What are you doing? Intruders!!','0','1','0','9476','0'),
 ('-1326','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
 ('-1327','%s gets really dizzy!','0','2','0','9554','0'),
-('-1328','%s digs its way out of the sand to protect its eggs.','0','2','0','Silithid Protector 3503','0'),
--- Classic PLEASE RE-USE 1329 - 1353
+-- Classic PLEASE RE-USE 1328 - 1353
 ('-1354','HELP! ASSASSINS HAVE COME TO KILL ME!','0','1','0','11023','0'),
 -- Classic PLEASE RE-USE 1355 - 1388
 ('-1389','%s belches out a disgusting Bile Slime!','0','2','0','0','0'),
