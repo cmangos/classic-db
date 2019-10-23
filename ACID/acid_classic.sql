@@ -9763,6 +9763,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Healer (6491) - NSR
 -- Cursed Ooze 7086
 ('708601','7086','8','0','100','1','15698','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Cursed Ooze - Delayed Despawn on Filling Empty Jar (q.4512) Spellhit'),
+('708602','7086','0','0','100','1025','10000','30000','120000','120000','0','0','11','4974','1','0','0','0','0','0','0','0','0','0','Cursed Ooze - Cast Wither Touch'),
 -- Tainted Ooze 7092
 ('709201','7092','9','0','100','1','0','5','180000','180000','0','0','11','3335','1','0','0','0','0','0','0','0','0','0','Tainted Ooze - Cast Dark Sludge'),
 ('709202','7092','8','0','100','1','15699','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Tainted Ooze - Delayed Despawn on Filling Empty Jar (q.4512) Spellhit'),
@@ -9943,9 +9944,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Prince Xavalis
 ('987701','9877','0','0','100','1','9000','13000','19000','22000','0','0','11','11962','1','1','0','0','0','0','0','0','0','0','Prince Xavalis - Cast Immolate'),
 ('987702','9877','0','0','100','1','6000','9000','16000','19000','0','0','11','13578','0','0','0','0','0','0','0','0','0','0','Prince Xavalis - Cast Jadefire'),
--- Entropic Beast
+-- Entropic Beast 9878
 ('987801','9878','9','0','100','1','0','30','25000','28000','0','0','11','15661','4','0','0','0','0','0','0','0','0','0','Entropic Beast - Cast Immolate'),
--- Entropic Horror (9879) - NSR
+('987801','9878','0','0','100','1025','8000','24000','25000','28000','0','0','11','15661','4','0','0','0','0','0','0','0','0','0','Entropic Beast - Cast Immolate'),
+-- Entropic Horror 9879 - SpellId guessed by dmg
+('987901','9879','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Entropic Horror - Cast Fire Shield on Spawn'),
 -- Winna Hazzard (9996) - NSR
 -- Tainted Rat (10016) - NSR
 -- Tainted Cockroach (10017) - NSR
@@ -13187,11 +13190,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Muculent Ooze 6556
 ('655601','6556','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Muculent Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Primal Ooze 6557
-('655701','6557','2','0','100','0','10','0','0','0','0','0','11','14146','0','0','0','0','0','0','0','0','0','0','Primal Ooze - Cast Clone at 10% HP'),
+('655701','6557','2','0','100','0','10','0','0','0','0','0','11','14146','0','0','1','-156','0','0','0','0','0','0','Primal Ooze - Cast Clone, Emote at 10% HP'),
 ('655702','6557','30','0','100','1','5','10290','0','0','0','0','11','16032','0','16','36','9621','0','0','0','0','0','0','Primal Ooze - Cast Merging Oozes AND Transform into Gargantuan Ooze on Receive AI Event A'),
 ('655703','6557','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Primal Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Glutinous Ooze 6559
-('655901','6559','6','0','100','0','0','0','0','0','0','0','11','14147','0','7','0','0','0','0','0','0','0','0','Glutinous Ooze - Cast Acid Slime on Death'),
+('655901','6559','6','0','100','0','0','0','0','0','0','0','11','14147','0','7','1','-157','0','0','0','0','0','0','Glutinous Ooze - Cast Acid Slime, Emote on Death'),
 ('655902','6559','8','0','100','1','15702','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Glutinous Ooze - Delayed Despawn on Filling Empty Jar (q.4513) Spellhit'),
 -- Ravasaur Matriarch 6581
 ('658101','6581','9','0','100','1','0','5','12000','18000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Ravasaur Matriarch - Cast Rend'),
@@ -18705,8 +18708,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-145','%s flees toward safety or another tiger.','0','2','0','Zulian Cub fleeing text','0'),
 ('-154','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
 ('-155','%s grabs for his poisoned dagger!','0','2','0','3286','0'),
-('-156','%s begins to make a copy of itself!','0','2','0','Devouring Ectoplasm - Clone','0'),
--- Classic PLEASE RE-USE 157 - 160
+('-156','%s begins to make a copy of itself!','0','2','0','3638,6557 - s.Clone','0'),
+('-157','%s explodes into chunks of acidic slime!','0','2','0','Glutinous Ooze 6559','0'),
+-- Classic PLEASE RE-USE 158 - 160
 ('-161','A living $r... soon to be a dead like me.','0','0','0','Common Undead Text','0'),
 ('-162','Mmm... I love my delicious Southshore stout.','0','0','0','2440','0'),
 ('-163','Slay them, my brethren! For the Scourge!','5822','1','0','7357','0'),
