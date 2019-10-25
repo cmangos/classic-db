@@ -17441,8 +17441,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1629701','16297','0','0','90','1','0','0','4000','4000','0','0','11','30109','0','0','0','0','0','0','0','0','0','0','Mutated Grub - Cast Slime Burst'),
 -- Zombie Chow
 ('1636001','16360','0','0','100','1','5000','9000','12000','17000','0','0','11','29306','1','0','0','0','0','0','0','0','0','0','Zombie Chow - Cast Infected Wound'),
--- Grobbulus Cloud
-('1636301','16363','11','0','100','0','0','0','0','0','0','0','21','0','0','0','11','28158','0','0','50','0','0','0','Grobbulus Cloud - Prevent Combat Movement, Cast Poison and Set Passive State on Spawn'),
+-- Grobbulus Cloud 16363
+('1636301','16363','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','28158','0','0','0','0','0','0','Grobbulus Cloud - Set Passive State and Cast Poison on Spawn'),
 -- Necropolis Acolyte
 ('1636801','16368','0','0','100','1','2000','2000','5000','5000','0','0','11','30096','0','0','0','0','0','0','0','0','0','0','Necropolis Acolyte - Cast Arcane Explosion'),
 ('1636802','16368','0','0','100','1','4000','4000','6000','6000','0','0','11','27646','1','0','0','0','0','0','0','0','0','0','Necropolis Acolyte - Cast Shadow Bolt Volley'),
