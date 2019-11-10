@@ -17648,8 +17648,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scorpion (15476) - NSR
 -- Canal Frenzy
 ('1550501','15505','9','0','100','1','0','5','5000','8000','0','0','11','12097','4','32','0','0','0','0','0','0','0','0','Canal Frenzy - Cast Pierce Armor'),
--- Buru Egg (15514) - SD2 REQUESTED SCRIPTS REMOVED
--- Hive'Zara Hatchling (15521) - NSR
+-- Buru Egg (15514) - npc_buru_egg
+-- Hive'Zara Hatchling 15521
+('1552101','15521','21','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Hive''Zara Hatchling - Forced Despawn on Reached Home'),
 -- Mana Fiend 15527
 ('1552701','15527','0','0','100','1025','8000','11000','8000','11000','0','0','11','25679','17','0','0','0','0','0','0','0','0','0','Mana Fiend - Cast Arcane Explosion'),
 ('1552702','15527','13','0','100','1025','6000','10000','0','0','0','0','11','15122','1','0','0','0','0','0','0','0','0','0','Mana Fiend - Cast Counterspell on Target Casting'),
