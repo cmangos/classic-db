@@ -17323,7 +17323,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lucifron (12118) - boss_lucifron
 -- Flamewaker Protector 12119
 ('1211901','12119','9','0','100','1025','0','5','6000','9000','0','0','11','20605','1','0','0','0','0','0','0','0','0','0','Flamewaker Protector - Cast Cleave'),
-('1211902','12119','0','0','100','1025','9000','12000','20000','26000','0','0','11','20604','5','512','0','0','0','0','0','0','0','0','Flamewaker Protector - Cast Dominate Mind'),
+('1211902','12119','0','0','100','1025','9000','12000','20000','26000','0','0','11','20604','1','512','0','0','0','0','0','0','0','0','Flamewaker Protector - Cast Dominate Mind'),
 -- Son of Flame 12143
 ('1214301','12143','11','0','100','0','0','0','0','0','0','0','11','19818','0','2','11','21857','0','2','0','0','0','0','Son of Flame - Cast Double Attack and Lava Shield on Spawn'),
 -- Gehennas (12259) - boss_gehennas
