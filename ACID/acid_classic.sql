@@ -787,7 +787,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('293101','2931','5','0','100','0','0','0','1','0','0','0','1','-405','0','0','0','0','0','0','0','0','0','0','Zaricotl - Text Emote on Player Kill'),
 -- Magregan Deepshadow (3.1.1 Official Data) - ADD TO SCRIPT TRACKING
 ('293201','2932','0','0','100','1','7600','18600','22500','31800','0','0','11','17207','0','0','0','0','0','0','0','0','0','0','Magregan Deepshadow - Cast Whirlwind'),
--- Boss Tho'grun (2944) - NSR
+-- Boss Tho'grun 2944
+('294401','2944','4','0','15','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Boss Tho''grun - Say on Aggro'),
 -- Murdaloc (3.1.1 Official Data)
 ('294501','2945','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murdaloc - Flee at 15% HP'),
 -- Martek the Exiled (4618) - NSR
@@ -5544,7 +5545,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Truk Wildbeard (4782) - NSR
 -- Atal'ai Exile (5598) - NSR
 -- Rhapsody Shindigger (5634) - NSR
--- Falstad Wildhammer (5635) - NSR
+-- Falstad Wildhammer 5635
+('563501','5635','4','0','100','0','0','0','0','0','0','0','1','-27','0','0','0','0','0','0','0','0','0','0','Falstad Wildhammer - Zone Yell on Aggro'),
 -- Gryphon Master Talonaxe (5636) - NSR
 -- Rothos
 ('571801','5718','0','0','100','1','5000','11000','7000','12000','0','0','11','20667','4','0','0','0','0','0','0','0','0','0','Rothos - Cast Corrosive Acid Breath'),
@@ -18710,7 +18712,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-24','I saw a Sea Giant once.  It\'s not something I would care to see again.  Burp!','0','0','6','Hargin Mundar 1476','0'),
 ('-25','I\'d go out and clear out some of those gnolls, but this leg has seen better days and I am afraid I\'d just wind up dead.','0','0','6','Hargin Mundar 1476','0'),
 ('-26','Watch your step out there.  Many an adventure seeker has not returned from the marsh.  hic!','0','0','6','Hargin Mundar 1476','0'),
--- PLEASE RE-USE 27
+('-27','Invaders! Invaders! We''re under attack, boys! Get''em!','0','6','0','Falstad Wildhammer 5635','0'),
 ('-28','You do not belong here!  Ancients, rise against these intruders!','0','1','0','11489','0'),
 ('-29','You no challenge me, scrubs! I\'m da king now, and I stay king FOREVER!!!','0','0','0','11501','0'),
 ('-30','%s blood sprays into the air!','0','2','0','Common Gnomeregan Emote','0'),
