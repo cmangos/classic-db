@@ -1008,26 +1008,26 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('766707','7667','0','11','100','1025','7000','9000','15000','25000','0','0','11','12740','0','0','0','0','0','0','0','0','0','0','Lady Sevine - Cast Summon Infernal Servant (Phase 2)'),
 ('766708','7667','0','11','100','1025','2000','5000','30000','45000','0','0','11','12741','0','0','0','0','0','0','0','0','0','0','Lady Sevine - Cast Curse of Weakness (Phase 2)'),
 ('766709','7667','9','11','100','1025','0','40','3400','4800','0','0','11','12739','1','256','0','0','0','0','0','0','0','0','Lady Sevine - Cast Shadow Bolt (Phase 2)'),
--- Servant of Razelikh
-('766801','7668','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Razelikh - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
-('766802','7668','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Razelikh - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('766803','7668','8','5','100','0','10805','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Razelikh - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('766804','7668','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Razelikh - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
--- Servant of Grol
-('766901','7669','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Grol - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
-('766902','7669','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Grol - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('766903','7669','8','5','100','0','10834','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Grol - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('766904','7669','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Grol - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
--- Servant of Allistarj
-('767001','7670','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Allistarj - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
-('767002','7670','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Allistarj - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('767003','7670','8','5','100','0','10835','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Allistarj - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('767004','7670','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Allistarj - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
--- Servant of Sevine
-('767101','7671','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Sevine - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
-('767102','7671','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Sevine - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('767103','7671','8','5','100','0','10836','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Sevine - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('767104','7671','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Sevine - Set Phase to 0 and Set Invicibility at 5% HP on Evade'),
+-- Servant of Razelikh 7668
+('766801','7668','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Servant of Razelikh - Set Invincible on Spawn'),
+('766802','7668','2','0','100','0','5','0','0','0','0','0','11','10794','0','0','1','-1481','0','0','0','0','0','0','Servant of Razelikh - Cast Spirit Shock and Emote at 5% HP'),
+('766803','7668','8','0','100','0','10805','-1','0','0','0','0','42','0','0','0','37','0','0','0','0','0','0','0','Servant of Razelikh - Remove Invincible, Die on Shackle Shatter Spellhit'),
+('766804','7668','6','0','33','0','0','0','0','0','0','0','54','0','0','904','0','0','0','0','0','0','0','0','Servant of Razelikh - Say on Death'),
+-- Servant of Grol 7669
+('766901','7669','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Servant of Grol - Set Invincible on Spawn'),
+('766902','7669','2','0','100','0','5','0','0','0','0','0','11','10794','0','0','1','-1481','0','0','0','0','0','0','Servant of Grol - Cast Spirit Shock and Emote at 5% HP'),
+('766903','7669','8','0','100','0','10834','-1','0','0','0','0','42','0','0','0','37','0','0','0','0','0','0','0','Servant of Grol - Remove Invincible, Die on Shackle Shatter Spellhit'),
+('766904','7669','6','0','33','0','0','0','0','0','0','0','54','0','0','904','0','0','0','0','0','0','0','0','Servant of Grol - Say on Death'),
+-- Servant of Allistarj 7670
+('767001','7670','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Servant of Allistarj - Set Invincible on Spawn'),
+('767002','7670','2','0','100','0','5','0','0','0','0','0','11','10794','0','0','1','-1481','0','0','0','0','0','0','Servant of Allistarj - Cast Spirit Shock and Emote at 5% HP'),
+('767003','7670','8','0','100','0','10835','-1','0','0','0','0','42','0','0','0','37','0','0','0','0','0','0','0','Servant of Allistarj - Remove Invincible, Die on Shackle Shatter Spellhit'),
+('767004','7670','6','0','33','0','0','0','0','0','0','0','54','0','0','904','0','0','0','0','0','0','0','0','Servant of Allistarj - Say on Death'),
+-- Servant of Sevine 7671
+('767101','7671','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Servant of Sevine - Set Invincible on Spawn'),
+('767102','7671','2','0','100','0','5','0','0','0','0','0','11','10794','0','0','1','-1481','0','0','0','0','0','0','Servant of Sevine - Cast Spirit Shock and Emote at 5% HP'),
+('767103','7671','8','0','100','0','10836','-1','0','0','0','0','42','0','0','0','37','0','0','0','0','0','0','0','Servant of Sevine - Remove Invincible, Die on Shackle Shatter Spellhit'),
+('767104','7671','6','0','33','0','0','0','0','0','0','0','54','0','0','904','0','0','0','0','0','0','0','0','Servant of Sevine - Say on Death'),
 -- Kirith the Damned
 ('772801','7728','0','0','100','1','4000','6000','20000','26000','0','0','11','12097','1','0','0','0','0','0','0','0','0','0','Kirith the Damned - Cast Pierce Armor'),
 ('772802','7728','0','0','100','1','2000','4000','9000','13000','0','0','11','12745','0','1','0','0','0','0','0','0','0','0','Kirith the Damned - Cast Mana Burn'),
@@ -19142,7 +19142,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1395','Embrace the end!','0','0','0','Common Text','0'),
 ('-1396','Carnage!  May I spill blood in His name!','0','0','0','Common Text','0'),
 ('-1397','My death matters little... the Hammer will still fall!','0','0','0','Common Text','0'),
+-- Classic PLEASE RE-USE 1398 - 1460
 ('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','Lord Hel\'nurath - Yell on Aggro','0'),
+-- Classic PLEASE RE-USE 1462 - 1465
+('-1466','Finally, the agony ceases....','0','0','0','7668,7669,7670,7671','0'),
+('-1467','Finally, released from his cursed grasp. Father, I come...','0','0','0','7668,7669,7670,7671','0'),
+('-1468','FREEEEEEEEEEDDOOOOMM!','0','0','0','7668,7669,7670,7671','0'),
+('-1469','The Defiler... must warn Thrall...','0','0','0','7668,7669,7670,7671','0'),
 ('-1470','Ooo,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
@@ -19154,7 +19160,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1478','You must save him!','0','0','0','11296','0'),
 ('-1479','I was devoured by Horgus! I can still feel his teeth upon me!','0','0','0','11296','0'),
 ('-1480','Beware Marduk! Beware, or your strength will wither.','0','0','0','11296','0'),
-('-1481','%s\'s physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!','0','2','0','2681','0'),
+('-1481','%s\'s physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!','0','2','0','7668,7669,7670,7671','0'),
 ('-1482','%s\'s will falters.','0','2','0','10321','0'),
 ('-1483','This frozen land shall suffice for a start. Come to me, mortals - and I shall give you a quick and painful death.','0','6','0','Princess Tempestria','0'),
 ('-1484','If you mortals are all so craven, this will be much easier than I thought!','0','6','0','Princess Tempestria','0'),
