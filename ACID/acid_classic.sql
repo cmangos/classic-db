@@ -9880,7 +9880,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('715601','7156','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Deadwood Den Watcher - Flee at 15% HP'),
 ('715602','7156','2','0','100','1024','50','0','0','0','0','0','39','25','0','0','1','-551','0','0','0','0','0','0','Deadwood Den Watcher - Call For Help, Emote at 50% HP'),
 ('715603','7156','0','0','100','1025','4000','11000','12000','15000','0','0','11','13583','4','33','0','0','0','0','0','0','0','0','Deadwood Den Watcher - Cast Curse of Deadwood'),
--- Deadwood Avenger - %s goes into a rage after seeing a friend fall in battle!
+-- Deadwood Avenger 7157 - %s goes into a rage after seeing a friend fall in battle!
 ('715701','7157','2','0','100','1025','30','0','120000','120000','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Deadwood Avenger - Cast Enrage at 30% HP'),
 ('715702','7157','0','0','100','1025','4000','11000','12000','15000','0','0','11','13583','4','33','0','0','0','0','0','0','0','0','Deadwood Avenger - Cast Curse of Deadwood'),
 -- Deadwood Shaman 7158
@@ -9910,7 +9910,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('945401','9454','9','0','100','1','0','5','21000','26000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Xavathras - Cast Rend'),
 ('945402','9454','2','0','100','1','30','0','120000','120000','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Xavathras - Cast Enrage at 30% HP'),
 -- Chieftain Bloodmaw 9462
-('946201','9462','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Chieftain Bloodmaw - Flee at 15% HP'),
+('946201','9462','2','0','100','1024','50','0','0','0','0','0','39','25','0','0','1','-551','0','0','0','0','0','0','Deadwood Den Watcher - Call For Help, Emote at 50% HP'),
 ('946202','9462','0','0','100','1025','4000','11000','12000','15000','0','0','11','13583','4','33','0','0','0','0','0','0','0','0','Chieftain Bloodmaw - Cast Curse of Deadwood'),
 -- Overlord Ror
 ('946401','9464','9','0','100','1','0','5','5000','8000','0','0','11','15793','1','0','0','0','0','0','0','0','0','0','Overlord Ror - Cast Maul'),
@@ -11207,6 +11207,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hive'Ashi Drone 13136
 -- Layo Starstrike 13220
 -- Hive'Ashi Ambusher 13301
+('1330101','13301','11','0','100','0','0','0','0','0','0','0','1','-347','0','0','0','0','0','0','0','0','0','0','Hive''Ashi Ambusher - Emote on Spawn'),
 -- Highlord Demitrian 14347   npc_highlord_demitrian
 -- Prince Thunderaan
 ('1443501','14435','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Prevent Combat Movement On Spawn'),
@@ -18823,7 +18824,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-344','%s faces southeast and whimpers before looking back at you. ','0','2','0','3695','0'),
 ('-345','%s\'s death cry has stirred the nearby silithid hive.','0','2','0','Tortured Druid/Sentinel death','0'),
 ('-346','%s begins to summon in reinforcements!','0','2','0','Common Emote','0'),
--- Classic PLEASE RE-USE 347 - 352
+('-347','%s springs forth to defend its hive!','0','2','0','13301','0'),
+-- Classic PLEASE RE-USE 348 - 352
 ('-353','Me no run from $c like you!','0','0','0','Trogg Common Text','0'),
 ('-354','Yip! Me kill!','0','0','0','Trogg Common Text','0'),
 ('-355','The only good $r is a dead $r!','0','0','0','1205','0'),
