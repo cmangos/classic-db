@@ -10372,7 +10372,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bronk
 ('815801','8158','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bronk - Flee at 15% HP'),
 -- Worb Strongstitch (8159) - NSR
--- Screecher Spirit (8612) - npc_screecher_spirit
+-- Screecher Spirit 8612
+('861201','8612','11','0','100','0','0','0','0','0','0','0','11','7741','15','0','0','0','0','0','0','0','0','0','Screecher Spirit - Cast Summoned Demon on Spawn'),
 -- Miblon Snarltooth (9467) - NSR
 -- Raschal the Courier (9546) - NSR
 -- Cawind Trueaim 9548
