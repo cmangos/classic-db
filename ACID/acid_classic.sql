@@ -6653,9 +6653,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1060805','10608','16','0','100','1025','13864','10','18000','36000','0','0','11','13864','12','0','0','0','0','0','0','0','0','0','Scarlet Priest - Cast Power Word: Fortitude on Friendly Missing Buff'),
 ('1060806','10608','9','0','100','1025','0','40','3400','4800','0','0','11','15498','1','256','0','0','0','0','0','0','0','0','Scarlet Priest - Cast Holy Smite'),
 -- Chromie (10667) - NSR
--- Temporal Parasite
-('1071701','10717','0','0','100','1','2000','5000','10000','12000','0','0','11','11436','4','0','0','0','0','0','0','0','0','0','Temporal Parasite - Cast Slow'),
-('1071702','10717','6','0','40','0','0','0','0','0','0','0','11','16619','0','7','0','0','0','0','0','0','0','0','Temporal Parasite - Temporal Parasite Death Summon on Death'),
+-- Temporal Parasite 10717 - Spawn-In Spell on Spawn
+('1071701','10717','11','0','0','0','0','0','0','0','0','0','1','-1387','0','0','0','0','0','0','0','0','0','0','Temporal Parasite - Emote on Spawn'),
+('1071702','10717','6','0','40','0','0','0','0','0','0','0','12','10717','0','600000','0','0','0','0','0','0','0','0','Temporal Parasite - Spawn Temporal Parasite on Death'),
+('1071703','10717','0','0','100','1025','2000','5000','10000','12000','0','0','11','11436','4','32','0','0','0','0','0','0','0','0','Temporal Parasite - Cast Slow'),
 -- Mulgris Deepriver (10739) - NSR
 -- Janice Felstone (10778) - NSR
 -- Infected Squirrel (10779) - NSR
@@ -19131,7 +19132,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1327','%s gets really dizzy!','0','2','0','9554','0'),
 -- Classic PLEASE RE-USE 1328 - 1353
 ('-1354','HELP! ASSASSINS HAVE COME TO KILL ME!','0','1','0','11023','0'),
--- Classic PLEASE RE-USE 1355 - 1387
+-- Classic PLEASE RE-USE 1355 - 1386
+('-1387','%s is summoned through a temporal rift!','0','2','0','Temporal Parasite 10717','0'),
 ('-1388','%s emerges from the shadows to defend the cauldron!','0','2','0','0','0'),
 ('-1389','%s belches out a disgusting Bile Slime!','0','2','0','0','0'),
 ('-1390','%s explodes and releases several Bile Slimes!','0','2','0','0','0'),
