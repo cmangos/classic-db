@@ -10533,8 +10533,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nighthaven Defender 15495
 -- Eranikus the Redeemed 15628
 -- Nightmare Phantasm
-('1562901','15629','0','0','100','1','15000','20000','15000','20000','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - cast Swell of Souls'),
-('1562902','15629','0','0','100','1','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - cast Shadowbolt Volley');
+('1562901','15629','0','0','100','1','15000','20000','15000','20000','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Swell of Souls'),
+('1562902','15629','0','0','100','1','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley');
 -- Tyrande 15633
 -- Stormwind Reveler 15694
 -- Thunder Bluff Reveler 15719
