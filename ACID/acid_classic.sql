@@ -744,7 +744,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('275901','2759','0','0','100','1','1400','3400','17300','30300','0','0','11','9574','1','32','0','0','0','0','0','0','0','0','Hematus - Cast Flame Buffet'),
 -- Theldurin the Lost (2785) - NSR
 -- Enraged Rock Elemental (3.1.1 Official Data)
-('279101','2791','2','0','100','0','50','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Enraged Rock Elemental - Cast Enrage at 50% HP'),
+('279101','2791','2','0','100','0','25','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Enraged Rock Elemental - Cast Enrage at 25% HP'),
 -- Rigglefuzz (2817) - NSR
 -- Starving Buzzard (2829) - NSR
 -- Buzzard (3.1.1 Official Data)
