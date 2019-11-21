@@ -767,7 +767,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('289303','2893','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Stonevault Bonesnapper - Flee at 15% HP'),
 -- Stonevault Shaman 2894 (3.1.1 Official Data)
 ('289401','2894','2','0','60','1024','80','0','0','0','0','0','11','5605','0','0','0','0','0','0','0','0','0','0','Stonevault Shaman - Cast Healing Ward at 80% HP'),
-('289402','2894','0','0','100','1024','4000','10000','15000','20000','0','0','11','8499','0','0','0','0','0','0','0','0','0','0','Stonevault Shaman - Cast Fire Nova Totem'),
+('289402','2894','0','0','100','1025','4000','10000','15000','20000','0','0','11','8499','0','0','0','0','0','0','0','0','0','0','Stonevault Shaman - Cast Fire Nova Totem'),
 -- Dustbelcher Warrior (3.1.1 Official Data)
 ('290601','2906','4','0','10','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Dustbelcher Warrior - Random Say on Aggro'),
 -- Dustbelcher Mystic 2907 (3.1.1 Official Data)
