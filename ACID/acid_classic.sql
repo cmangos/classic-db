@@ -743,8 +743,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hematus (3.1.1 Official Data)
 ('275901','2759','0','0','100','1','1400','3400','17300','30300','0','0','11','9574','1','32','0','0','0','0','0','0','0','0','Hematus - Cast Flame Buffet'),
 -- Theldurin the Lost (2785) - NSR
--- Enraged Rock Elemental (3.1.1 Official Data)
-('279101','2791','2','0','100','0','25','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Enraged Rock Elemental - Cast Enrage at 25% HP'),
+-- Enraged Rock Elemental 2791
+('279101','2791','2','0','100','1024','25','0','0','0','0','0','11','8599','0','2','1','-46','0','0','0','0','0','0','Enraged Rock Elemental - Cast Enrage at 25% HP'),
 -- Rigglefuzz (2817) - NSR
 -- Starving Buzzard (2829) - NSR
 -- Buzzard (3.1.1 Official Data)
@@ -7998,15 +7998,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spitelash Serpent Guard (6194) - mobs_spitelashes
 -- Spitelash Siren (6195) - mobs_spitelashes
 -- Spitelash Myrmidon (6196) - mobs_spitelashes
--- Blood Elf Surveyor
-('619801','6198','9','0','100','1','0','8','13000','16000','0','0','11','11969','0','0','0','0','0','0','0','0','0','0','Blood Elf Surveyor - Cast Fire Nova'),
-('619802','6198','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Blood Elf Surveyor - Flee at 15% HP'),
+-- Blood Elf Surveyor 6198
+('619801','6198','0','0','100','1025','5000','10000','13000','16000','0','0','11','11969','17','0','0','0','0','0','0','0','0','0','Blood Elf Surveyor - Cast Fire Nova'),
 -- Blood Elf Reclaimer 6199
 ('619901','6199','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Blood Elf Reclaimer - Enable Range Mode on Aggro'),
-('619902','6199','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Blood Elf Reclaimer - Flee at 15% HP'),
-('619903','6199','14','0','100','1025','1200','40','12000','17000','0','0','11','11640','12','0','0','0','0','0','0','0','0','0','Blood Elf Reclaimer - Cast Renew on Friendly Missing HP'),
-('619904','6199','2','0','100','1025','50','0','15000','21000','0','0','11','11642','0','0','0','0','0','0','0','0','0','0','Blood Elf Reclaimer - Cast Heal at 50% HP'),
-('619905','6199','9','0','100','1025','0','40','3400','4800','0','0','11','20823','1','256','0','0','0','0','0','0','0','0','Blood Elf Reclaimer - Cast Fireball'),
+('619902','6199','14','0','100','1025','1200','40','12000','17000','0','0','11','11640','12','0','0','0','0','0','0','0','0','0','Blood Elf Reclaimer - Cast Renew on Friendly Missing HP'),
+('619903','6199','2','0','100','1025','50','0','15000','21000','0','0','11','11642','0','0','0','0','0','0','0','0','0','0','Blood Elf Reclaimer - Cast Heal at 50% HP'),
+('619904','6199','9','0','100','1025','0','40','3400','4800','0','0','11','20823','1','256','0','0','0','0','0','0','0','0','Blood Elf Reclaimer - Cast Fireball'),
 -- Legashi Satyr
 ('620001','6200','0','0','100','1','5000','8000','8000','13000','0','0','11','11981','4','0','0','0','0','0','0','0','0','0','Legashi Satyr - Cast Mana Burn'),
 -- Legashi Rogue
@@ -9958,8 +9956,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Altsoba Ragetotem (10379) - NSR
 -- Xavaric (10648) - NSR
 -- Corrupted Cat (10657) - NSR
--- Winterfall Runner
-('1091601','10916','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Winterfall Runner - Flee at 15% HP'),
+-- Winterfall Runner 10916
+('1091601','10916','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Winterfall Runner - Set ReactState Defensive on Spawn'),
+('1091602','10916','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Winterfall Runner - Flee at 15% HP'),
 -- Kelek Skykeeper (10920) - NSR
 -- Taronn Redfeather (10921) - NSR
 -- Greta Mosshoof (10922) - NSR
