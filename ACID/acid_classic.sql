@@ -9383,7 +9383,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Toad (1420) - NSR
 -- Privateer Groy (2616) - NSR
 -- Snake (2914) - NSR
--- Dagun the Ravenous (2937) - NSR
+-- Dagun the Ravenous 2937
+('293701','2937','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dagun the Ravenous - Flee at 15% HP'),
 -- Baldruc
 ('432101','4321','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Baldruc - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Searing Hatchling (4323) - NSR
