@@ -10529,7 +10529,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Eranikus the Redeemed 15628
 -- Nightmare Phantasm
 ('1562901','15629','0','0','100','1','15000','20000','15000','20000','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Swell of Souls'),
-('1562902','15629','0','0','100','1','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley');
+('1562902','15629','0','0','100','1','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley'),
 -- Tyrande 15633
 -- Stormwind Reveler 15694
 -- Thunder Bluff Reveler 15719
@@ -10539,7 +10539,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fariel Starsong 15909
 -- Lunar Festival Sentinel 15961
 -- Malfurion Stormrage 17949
-('1794901','17949','11','0','100','0','0','0','0','0','0','0','11','17321','0','1','0','0','0','0','0','0','0','0','Malfurion Stormrage - Cast Spirit Spawn-in on Spawn'),
+('1794901','17949','11','0','100','0','0','0','0','0','0','0','11','17321','0','1','0','0','0','0','0','0','0','0','Malfurion Stormrage - Cast Spirit Spawn-in on Spawn');
 
 
 
