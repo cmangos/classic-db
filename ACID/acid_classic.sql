@@ -1100,7 +1100,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('871801','8718','9','0','100','1','0','5','21700','33900','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Manahound - Cast Tendon Rip'),
 ('871802','8718','0','0','100','1','2500','13700','6200','18100','0','0','11','20817','0','0','0','0','0','0','0','0','0','0','Manahound - Cast Mana Burn'),
 ('871803','8718','0','0','100','1','3400','8700','6100','20600','0','0','11','14331','1','0','0','0','0','0','0','0','0','0','Manahound - Cast Vicious Rend'),
--- Deathly Usher (8816) - npc_deathly_usher
+-- Deathly Usher (8816) - NSR
 -- Scarshield Quartermaster (9046) - NSR
 -- Enohar Thunderbrew (9540) - NSR
 -- Doomguard Commander
@@ -1550,7 +1550,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('126002','1260','4','0','80','0','0','0','0','0','0','0','1','-323','-325','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Random Say on Aggro'),
 ('126003','1260','2','0','100','0','75','0','0','0','0','0','11','139','0','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Cast Renew when below 75% HP'),
 ('126004','1260','2','0','100','0','20','0','0','0','0','0','11','2053','0','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Cast Lesser Heal when below 20% HP'),
--- Veron Amberstill (1261) - npc_mount_vendor
+-- Veron Amberstill (1261)
 -- Yarlyn Amberstill (1263) - NSR
 -- Rudra Amberstill (1265) - NSR
 -- Tundra MacGrann (1266) - NSR
@@ -1622,7 +1622,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dark Iron Spy (2.4.3 Official Data)
 ('612301','6123','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Spy - Flee at 15% HP'),
 -- Captain Beld (6124) - NSR
--- Narm Faulk (6177) - npc_narm_faulk
+-- Narm Faulk (6177) - npc_redemption_target
 -- Jordan Stilwell (6181) - NSR
 -- Caverndeep Invader (3.3.5a Official Data)
 ('620801','6208','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Caverndeep Invader - Emote on Radiation Spellhit'),
@@ -1660,7 +1660,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('784306','7843','0','0','100','1025','7000','9000','13000','16000','0','0','11','25712','1','0','0','0','0','0','0','0','0','0','Gnomeregan Evacuee - Cast Heroic Strike'),
 ('784307','7843','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Gnomeregan Evacuee - Cast Shoot'),
 -- Binjy Featherwhistle (7954) - NSR
--- Milli Featherwhistle (7955) - npc_mount_vendor
+-- Milli Featherwhistle (7955)
 -- Felix Whindlebolt (8416) - NSR
 -- Gibblewilt 8503 (2.4.3 Official Data)
 ('850301','8503','4','0','80','0','0','0','0','0','0','0','1','-231','0','0','0','0','0','0','0','0','0','0','Gibblewilt - Say on Aggro'),
@@ -2575,7 +2575,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Priestess Anetta (375) - NSR
 -- Priestess Josetta (377) - NSR
 -- Jason Mathers (383) - NSR
--- Katie Hunter (384) - npc_mount_vendor
+-- Katie Hunter (384)
 -- Porcine Entourage (2.4.2 Official Data)
 ('39001','390','0','0','50','0','1000','1000','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Porcine Entourage - Cast Rushing Charge on Aggro'),
 -- Markus (395) - NSR
@@ -2697,7 +2697,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Clara Charles - NSR
 -- Dead-Tooth Jack (6093) - NSR
 -- Remen Marcot (6121) - NSR
--- Henze Faulk (6172) - npc_henze_faulk
+-- Henze Faulk (6172) - npc_redemption_target
 -- Helene Peltskinner (6306) - NSR
 -- Donni Anthania (6367) - NSR
 -- Cat (6368) - NSR
@@ -2880,7 +2880,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Innkeeper Anderson (2352) - npc_innkeeper
 -- Vicious Gray Bear (2354) - NSR
 -- Elder Gray Bear (2356) - NSR
--- Merideth Carlson (2357) - npc_mount_vendor
+-- Merideth Carlson (2357)
 -- Hillsbrad Farmhand
 ('236001','2360','2','0','100','0','30','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Hillsbrad Farmhand - Flee at 30% HP'),
 -- Tamara Armstrong (2361) - NSR
@@ -3192,9 +3192,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tansy Puddlefizz 5162
 -- Burbik Gearspanner 5163
 -- Grumnus Steelshaper 5164   npc_prof_blacksmith
--- Hulfdan Blackbeard 5165   npc_rogue_trainer
+-- Hulfdan Blackbeard 5165
 -- Ormyr Flinteye 5166
--- Fenthwick 5167   npc_rogue_trainer
+-- Fenthwick 5167
 -- Tynnus Venomsprout 5169
 -- Hjoldir Stoneblade 5170
 -- Thistleheart 5171
@@ -3244,7 +3244,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Auctioneer Buckler 8671
 -- Outfitter Eric 8681
 -- Auctioneer Redmuse 8720
--- Royal Historian Archesonus 8879   npc_royal_historian_archesonus
+-- Royal Historian Archesonus 8879
 -- Sraaz 9099
 -- Laris Geardawdle 9616
 -- Auctioneer Lympkin 9859
@@ -4131,7 +4131,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lake Frenzy (6033) - NSR
 -- Deathguard Podrig (6389) - NSR
 -- Spirit Healer (6491) - NSR
--- Astor Hadren (6497) - npc_astor_hadren
+-- Astor Hadren (6497)
 -- Fenwick Thatros
 ('657001','6570','0','0','100','1','6000','13000','14000','19000','0','0','11','18072','1','0','0','0','0','0','0','0','0','0','Fenwick Thatros - Cast Uppercut'),
 -- Innkeeper Bates (6739) - npc_innkeeper
@@ -4204,7 +4204,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('65601','656','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Wilder Thistlenettle - Summon Stormwind City Guard on Aggro'),
 -- Ander Germaine
 ('91401','914','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ander Germaine - Summon Stormwind City Guard on Aggro'),
--- Osborne the Night Man (918) - npc_rogue_trainer
+-- Osborne the Night Man (918)
 -- Lord Grayson Shadowbreaker
 ('92801','928','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Lord Grayson Shadowbreaker - Summon Stormwind City Guard on Aggro'),
 ('92802','928','14','0','100','1','40','500','8000','12000','0','0','11','13952','12','0','0','0','0','0','0','0','0','0','Lord Grayson Shadowbreaker - Cast Holy Light on Friendlies'),
@@ -4668,7 +4668,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1278701','12787','0','0','100','1','6000','12000','12000','18000','0','0','11','12169','0','0','0','0','0','0','0','0','0','0','Guard Hammon - Cast Shield Block'),
 ('1278702','12787','0','0','100','1','6200','7800','5800','13300','0','0','11','12170','1','1','0','0','0','0','0','0','0','0','Guard Hammon - Cast Revenge'),
 ('1278703','12787','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Guard Hammon - Summon Stormwind City Guard on Aggro'),
--- Lord Tony Romano (13283) - npc_rogue_trainer
+-- Lord Tony Romano (13283)
 -- Khole Jinglepocket (13435) - NSR
 -- Guchie Jinglepocket (13436) - NSR
 -- Officer Jaxon
@@ -5930,7 +5930,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('428503','4285','14','0','100','1025','600','40','11000','15000','0','0','11','11642','12','0','0','0','0','0','0','0','0','0','Scarlet Disciple - Cast Heal on Friendly Missing HP'),
 ('428504','4285','14','0','100','1025','300','40','18000','21000','0','0','11','11640','12','0','0','0','0','0','0','0','0','0','Scarlet Disciple - Cast Renew on Friendly Missing HP'),
 ('428505','4285','9','0','100','1025','0','40','3400','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Scarlet Disciple - Cast Holy Smite'),
--- Zachariah Post (4731) - npc_mount_vendor
+-- Zachariah Post (4731)
 -- Velma Warnam (4773) - NSR
 -- Riding White Stallion (5403) - NSR
 -- Palomino (5406) - NSR
@@ -5946,7 +5946,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rand Rhobart (6289) - NSR
 -- Ulag the Cleaver (6390) - NSR
 -- Spirit Healer (6491) - NSR
--- Astor Hadren (6497) - npc_astor_hadren
+-- Astor Hadren (6497)
 -- Calvin Montague (6784) - npc_calvin_montague
 -- Ratslin Maime (6785) - NSR
 -- Deathguard Elite (7980) - NSR
@@ -6114,7 +6114,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('458101','4581','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Salazar Bloch - Summon Deathguard Elite on Aggro'),
 -- Carolyn Ward
 ('458201','4582','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Carolyn Ward - Summon Deathguard Elite on Aggro'),
--- Miles Dexter (4583) - npc_rogue_trainer
+-- Miles Dexter (4583)
 -- Gregory Charles
 ('458401','4584','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gregory Charles - Summon Deathguard Elite on Aggro'),
 -- Ezekiel Graves
@@ -9303,7 +9303,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Yelnagi Blackarm
 ('678701','6787','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Yelnagi Blackarm - Flee at 15% HP'),
 -- Innkeeper Grosk (6928) - npc_innkeeper
--- Zjolnir (7952) - npc_mount_vendor
+-- Zjolnir (7952)
 -- Xar'Ti
 ('795301','7953','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Xar''Ti - Flee at 15% HP'),
 -- Sen'jin Guardian
@@ -9539,7 +9539,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- "Stinky" Ignatz (4880) - NSR
 -- Krak (4883) - NSR
 -- Zulrg (4884) - NSR
--- Gregor MacVince (4885) - npc_mount_vendor
+-- Gregor MacVince (4885)
 -- Hans Weston
 ('488601','4886','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Hans Weston - Flee at 15% HP'),
 -- Marie Holdston
@@ -10721,7 +10721,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lorekeeper Raintotem
 ('323301','3233','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lorekeeper Raintotem - Flee at 15% HP'),
 -- Flatland Prowler (3566) - NSR
--- Harb Clawhoof (3685) - npc_mount_vendor
+-- Harb Clawhoof (3685)
 -- Reban Freerunner
 ('368801','3688','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Reban Freerunner - Flee at 15% HP'),
 -- Kar Stormsinger
@@ -10840,7 +10840,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mirket 3325
 -- Zevrost 3326
 -- Gest 3327
--- Ormok 3328   npc_rogue_trainer
+-- Ormok 3328
 -- Kor'jus 3329
 -- Muragus 3330
 -- Kareth 3331
@@ -10867,7 +10867,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kiro 3359
 -- Koru 3360
 -- Shoma 3361
--- Ogunaro Wolfrunner 3362   npc_mount_vendor
+-- Ogunaro Wolfrunner 3362
 -- Magar 3363
 -- Borya 3364
 -- Karolek 3365
