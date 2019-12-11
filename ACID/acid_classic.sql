@@ -5407,8 +5407,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 
-
-
 -- ===============
 -- The Hinterlands
 -- ===============
@@ -6403,6 +6401,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1705101','17051','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','UC Fireeater Firebreath Cast'),
 
 
+
 -- ===================
 -- Western Plaguelands
 -- ===================
@@ -6570,7 +6569,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('184805','1848','9','0','100','1025','0','40','3400','4800','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Lord Maldazzar - Cast Shadow Bolt'),
 -- Dreadwhisper
 ('184901','1849','11','0','100','0','0','0','0','0','0','0','11','12552','0','2','0','0','0','0','0','0','0','0','Dreadwhisper - Criple'),
-('184902','1849','0','0','100','1','15000','30000','30000','30000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Dreadwhisper - Shadow Bolt Volley '),
+('184902','1849','0','0','100','1','15000','30000','30000','30000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Dreadwhisper - Shadow Bolt Volley'),
 ('184903','1849','0','0','100','1','5000','15000','15000','15000','0','0','11','7068','1','0','0','0','0','0','0','0','0','0','Dreadwhisper - Veil of Shadow'),
 -- Putridius
 ('185001','1850','0','0','100','1','5000','9000','16000','21000','0','0','11','12946','0','1','0','0','0','0','0','0','0','0','Putridius - Cast Putrid Stench'),
@@ -7015,6 +7014,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('618002','6180','0','0','100','1','5000','7500','12500','15000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Defias Raider - Cast Heroic Strike'),
 -- Klaven Mortwake 7053
 ('705301','7053','4','0','100','0','0','0','0','0','0','0','1','-11','0','0','0','0','0','0','0','0','0','0','Klaven Mortwake - Say on Aggro'),
+
 
 
 -- ==============================
@@ -8200,7 +8200,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 
-
 -- =========
 -- Darkshore
 -- =========
@@ -8989,6 +8988,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Accursed Slitherblade (14229) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+
 
 
 -- =======
@@ -13128,6 +13128,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1705001','17050','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','TB Fireeater Firebreath Cast'),
 
 
+
 -- ==============
 -- Un'goro Crater
 -- ==============
@@ -13274,6 +13275,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1446103','14461','0','0','100','1','3700','24100','6000','18300','0','0','11','15285','1','0','0','0','0','0','0','0','0','0','Baron Charr - Fireball Volley'),
 ('1446104','14461','1','0','100','1','10000','60000','300000','420000','0','0','1','-1488','0','0','0','0','0','0','0','0','0','0','Baron Charr - Random Yell OOC'),
 ('1446105','14461','6','0','100','0','0','0','0','0','0','0','1','-1489','0','0','0','0','0','0','0','0','0','0','Baron Charr - Yell on Death'),
+
 
 
 -- ============
@@ -14506,6 +14508,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1608017','16080','6','0','100','0','0','0','0','0','0','0','1','-1524','0','0','0','0','0','0','0','0','0','0','Mor Grayhoof - Yell on Death'),
 
 
+
 -- =========
 -- Dire Maul - (Zone Script Revamp Complete)
 -- =========
@@ -15082,6 +15085,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('967601','9676','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Tink Sprocketwhistle - Flee at 15% HP'),
 
 
+
 -- ========
 -- Maraudon
 -- ========
@@ -15285,6 +15289,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1152001','11520','0','0','100','1','7200','12100','6700','16900','0','0','11','18072','1','0','0','0','0','0','0','0','0','0','Taragaman the Hungerer - Cast Uppercut'),
 ('1152002','11520','0','0','100','1','9200','14700','10400','18100','0','0','11','11970','0','0','0','0','0','0','0','0','0','0','Taragaman the Hungerer - Cast Fire Nova'),
 -- Maur Grimtotem (11834) - NSR
+
 
 
 -- ==============
@@ -19249,6 +19254,7 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 -- Set EventAI in Creature_Template and Final SQL Cleanups
 -- =======================================================
 
+
 -- ============================================================
 -- Remove All Creature Template Entries That Conflict With ACID
 -- ============================================================
@@ -19262,5 +19268,10 @@ UPDATE creature_template SET ScriptName= '' WHERE ScriptName= 'generic_creature'
 UPDATE creature_template INNER JOIN creature_ai_scripts ON creature_template.entry = creature_ai_scripts.creature_id SET AIName='EventAI';
 
 
+
+
+
+
 -- EOF
+
 
