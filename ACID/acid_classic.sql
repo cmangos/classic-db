@@ -18799,9 +18799,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-232','The Brotherhood will not be hampered by insects.','0','0','0','6846','0'),
 ('-233','So much to do, so much to do! Where does the time go?','0','0','0','295','0'),
 ('-234','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
--- Classic PLEASE RE-USE 235 - 273
-('-274','%s looks weak enough to capture.','0','2','0','4351','0'),
--- Classic PLEASE RE-USE 275 - 310
+-- Classic PLEASE RE-USE 235 - 310
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','11582','0'),
 -- Classic PLEASE RE-USE 312 - 320
 ('-321','Iman m t\'ief fu Fus\'obeah italaf','0','0','0','Common Frostmane Troll Text','0'),
