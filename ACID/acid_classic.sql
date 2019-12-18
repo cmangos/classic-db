@@ -11790,7 +11790,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =======
 -- Tanaris
 -- =======
--- Silithid Swarm (4196) - NSR
 -- Shreev (4708) - NSR
 -- Prospector Gunstan (5389) - NSR
 -- Riding White Stallion (5403) - NSR
@@ -12409,8 +12408,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('325101','3251','9','0','100','1','35','40','1000','1000','0','0','11','7','0','0','0','0','0','0','0','0','0','0','Silithid Grub - Cast Suicide'),
 ('325102','3251','7','0','100','0','0','0','0','0','0','0','11','7','0','0','0','0','0','0','0','0','0','0','Silithid Grub - Cast Suicide'),
 -- Silithid Swarmer 3252
-('325201','3252','0','0','100','1','7000','15000','8000','16000','0','0','11','6589','0','0','0','0','0','0','0','0','0','0','Silithid Swarmer - Cast Silithid Swarm'),
-('325202','3252','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarmer - Despawn Guardians on Evade'),
+('325201','3252','1','0','100','0','1000','1000','0','0','0','0','11','10722','0','0','0','0','0','0','0','0','0','0','Silithid Swarmer - Cast Silithid Swarm OOC'),
+('325202','3252','0','0','100','1025','7000','15000','1100','8500','0','0','11','6589','0','0','0','0','0','0','0','0','0','0','Silithid Swarmer - Cast Silithid Swarm'),
 -- Silithid Harvester 3253
 ('325301','3253','0','0','100','1','12000','18000','25000','35000','0','0','11','7278','0','0','0','0','0','0','0','0','0','0','Silithid Harvester - Cast Summon Harvester Swarm'),
 -- Sunscale Lashtail 3254
@@ -18600,6 +18599,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- Infernal 89 - NSR
 -- Imp 416 - PetAI
+-- Silithid Swarm 4196
+('419601','4196','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Set ReactState Defensive on Spawn'),
+('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
 -- Archery Target 5202
 ('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
 -- Earthgrab Totem 6066 -- Cannot use TotemAI due to the way this NPC is summoned
