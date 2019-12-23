@@ -17870,7 +17870,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vekniss Hatchling (15962) - NSR
 -- The Master's Eye
 ('1596301','15963','10','0','100','0','0','20','0','0','0','0','1','-1048','0','0','41','3000','0','0','0','0','0','0','The Master''s Eye - Emote and Delayed Despawn at 20 Yards LOS'),
--- Sartura's Royal Guard (15984) - mob_sartura_royal_guard
+-- Sartura's Royal Guard (15984)
+('1598401','15984','0','0','100','1','10000','15000','20000','30000','0','0','11','26038','15','0','0','0','0','0','0','0','0','0','Sartura''s Royal Guard - Cast Whirlwind'),
+('1598402','15984','0','0','100','1','15000','20000','20000','30000','0','0','11','26027','15','0','0','0','0','0','0','0','0','0','Sartura''s Royal Guard - Cast Knockback'),
 
 
 
