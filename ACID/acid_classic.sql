@@ -17851,12 +17851,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vekniss Borer (15622) - NSR
 -- Spawn of Fankriss
 ('1563001','15630','0','0','100','0','20000','20000','0','0','0','0','11','26662','0','0','1','-106','0','0','0','0','0','0','Spawn of Fankriss - Cast Berserk'),
--- Glob of Viscidus (15667) - THIS NPC IS PART OF Viscidus (15299) ENCOUNTER SO MAY ALSO REQUIRE SD2 SCRIPTING
--- Dirt Mound
--- Ouro Scarab
-('1571801','15718','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Ouro Scarab - Set In combat with Zone on Spawn'),
-('1571802','15718','9','0','100','1','60','120','5000','10000','0','0','11','20477','1','1','0','0','0','0','0','0','0','0','Ouro Scarab - Cast Summon Player at 60 Yards'),
-('1571803','15718','0','0','100','0','45000','45000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Ouro Scarab - Forced Despawn on timer'),
+-- Glob of Viscidus (15667) - npc_glob_of_viscidus
+-- Dirt Mound 15712 - cpp
+-- Ouro Scarab 15718 - npc_ouro_scarab
 -- Claw Tentacle (SD2 Backport)
 ('1572501','15725','11','0','100','0','0','0','0','0','0','0','21','0','0','0','11','26139','0','0','0','0','0','0','Claw Tentacle - Set Combat Movement false and Cast Ground Rupture on Spawn'),
 ('1572502','15725','0','0','100','1','2000','3000','5000','6000','0','0','11','26211','1','0','0','0','0','0','0','0','0','0','Claw Tentacle - Cast Hamstring'),
