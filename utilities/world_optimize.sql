@@ -56,7 +56,7 @@ ALTER TABLE `creature_questrelation`  ORDER BY `quest` ASC;
 ALTER TABLE `creature_template`  ORDER BY `entry` ASC;
 ALTER TABLE `creature_template_addon`  ORDER BY `entry` ASC;
 ALTER TABLE `creature_template_spells`  ORDER BY `entry` ASC;
-ALTER TABLE `db_script_string`  ORDER BY `entry` ASC;
+ALTER TABLE `dbscript_string`  ORDER BY `entry` ASC;
 ALTER TABLE `db_version`  ORDER BY `version` ASC;
 ALTER TABLE `disenchant_loot_template`  ORDER BY `entry` ASC;
 ALTER TABLE `dbscripts_on_event`  ORDER BY `id` ASC, `delay` ASC;
