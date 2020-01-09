@@ -12309,7 +12309,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Innkeeper Keldamyr (6736) - npc_innkeeper
 -- Porthannius 6780
 -- Melarith 6781
--- Sethir the Ancient 6909
+-- Sethir the Ancient 6909 - Find Summoning Spell which randomizes amount of adds spawned
+('690901','6909','4','0','100','0','0','0','0','0','0','0','12','6911','1','10000','12','6911','1','10000','12','6911','1','10000','Sethir the Ancient - Spawn Minion of Sethir on Aggro'),
 -- Minion of Sethir
 ('691101','6911','4','0','50','0','0','0','0','0','0','0','1','-234','0','0','0','0','0','0','0','0','0','0','Minion of Sethir - Say on Aggro'),
 -- Ferocitas the Dream Eater
