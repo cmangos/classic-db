@@ -4887,9 +4887,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('72901','729','0','0','100','1','3000','4000','10000','10000','0','0','11','5164','1','0','0','0','0','0','0','0','0','0','Sin''Dall - Cast Knockdown'),
 -- Tethis 730
 ('73001','730','0','0','100','1','0','5000','11000','14000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Tethis - Cast Tendon Rip'),
--- King Bangalsh 731 - CallForHelp on Aggro?
-('73101','731','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','King Bangalsh - Despawn Guardians on OOC'),
-('73102','731','2','0','100','0','50','0','0','0','0','0','11','8816','0','1','0','0','0','0','0','0','0','0','King Bangalsh - Summon Panthers at 50% HP'),
+-- King Bangalsh 731
+('73101','731','1','0','100','0','10000','30000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','King Bangalsh - Despawn Guardians OOC'),
+('73102','731','4','0','100','0','0','0','0','0','0','0','39','20','0','0','0','0','0','0','0','0','0','0','King Bangalsh - Call For Help on Aggro'),
+('73103','731','2','0','100','0','50','0','0','0','0','0','11','8816','0','2','1','-153','0','0','0','0','0','0','King Bangalsh - Cast Summon Panthers, Emote at 50% HP'),
 -- Panther 736 - NSR
 -- Skullsplitter Panther 756 - NSR
 -- Skullsplitter Tiger 758 - NSR
@@ -18730,7 +18731,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-144','What? How dare you!','0','0','0','1754','0'),
 ('-145','%s flees toward safety or another tiger.','0','2','0','Zulian Cub fleeing text','0'),
 ('-146','%s is demoralized and runs!','0','2','0','Affray Challenger 6240','0'),
--- Classic PLEASE RE-USE 147 - 153
+-- Classic PLEASE RE-USE 147 - 152
+('-153','%s lets out a massive roar, calling for aid!','0','2','0','Call For Help','0'),
 ('-154','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
 ('-155','%s grabs for his poisoned dagger!','0','2','0','3286','0'),
 ('-156','%s begins to make a copy of itself!','0','2','0','3638,6557 - s.Clone','0'),
