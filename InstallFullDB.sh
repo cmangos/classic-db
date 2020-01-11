@@ -310,6 +310,21 @@ echo
 echo
 
 #
+#               CMaNGOS custom updates file
+#
+# Apply cmangos_custom.sql
+echo "> Trying to apply ${ADDITIONAL_PATH}utilities/cmangos_custom.sql ..."
+$MYSQL_COMMAND < ${ADDITIONAL_PATH}utilities/cmangos_custom.sql
+if [[ $? != 0 ]]
+then
+  echo "ERROR: cannot apply ${ADDITIONAL_PATH}utilities/cmangos_custom.sql"
+  exit 1
+fi
+echo "  CMaNGOS custom updates successfully applied"
+echo
+echo
+
+#
 #    DEVELOPERS UPDATES
 #
 if [ "$DEV_UPDATES" == "YES" ]
