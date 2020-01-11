@@ -18948,7 +18948,6 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-668','SQUAWK!','0','1','0','7167','0'),
 ('-669','What the squawk??? Squawk, squawk, squawk? SQUAWK!','0','0','0','7168','0'),
 ('-694','%s chips and splinters!','0','2','0','7023','0'),
-('-701','Impudent fools! I will kill you myself!','8609','1','0','15341','0'),
 ('-702','Warriors! Captains! Continue the fight!','8613','1','0','15341','0'),
 ('-703','You are not worth my time, $n.','8614','1','0','15341','0'),
 ('-704','%s begs to be put out of his misery.','0','2','0','10117','0'),
