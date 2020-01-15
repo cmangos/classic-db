@@ -1,5 +1,5 @@
 -- Add missing classic creatures.
-INSERT INTO creature_template (Entry, ModelId1, ModelId2, ModelId3, ModelId4, Name, SubName, UnitClass, Rank, Family, CreatureType, CreatureTypeFlags, PetSpellDataId, HealthMultiplier, PowerMultiplier, MinLevel, MaxLevel, Faction, ArmorMultiplier) VALUES
+INSERT INTO creature_template (Entry, ModelId1, ModelId2, ModelId3, ModelId4, Name, SubName, UnitClass, `Rank`, Family, CreatureType, CreatureTypeFlags, PetSpellDataId, HealthMultiplier, PowerMultiplier, MinLevel, MaxLevel, Faction, ArmorMultiplier) VALUES
 (19, 6074, 0, 0, 0, 'Benny Questgiver', 'NPC', 1, 0, 0, 7, 0, 0, 1, 1, 20, 20, 35, -1),
 (29, 143, 0, 0, 0, 'Dragon Spawn', NULL, 1, 0, 0, 2, 0, 0, 1.02, 1, 1, 1, 14, -1),
 (31, 145, 0, 0, 0, 'Furbolg', NULL, 1, 0, 0, 0, 0, 0, 1, 1, 1, 2, 35, -1),
