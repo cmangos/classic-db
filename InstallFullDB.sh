@@ -262,7 +262,7 @@ then
       exit 1
     fi
   done
-  echo "  DBC datas successfully applied"
+  echo "  DBC data successfully applied"
   echo
   echo
   # Apply dbc changes (specific fixes to known wrong/missing data)
@@ -281,15 +281,19 @@ then
   echo
   echo
 
-  # Apply scriptdev2.sql
-  echo "> Trying to apply $CORE_PATH/sql/scriptdev2/scriptdev2.sql ..."
-  $MYSQL_COMMAND < $CORE_PATH/sql/scriptdev2/scriptdev2.sql
-  if [[ $? != 0 ]]
-  then
-    echo "ERROR: cannot apply $CORE_PATH/sql/scriptdev2/scriptdev2.sql"
-    exit 1
-  fi
-  echo "  ScriptDev2 successfully applied"
+  # Apply ScriptDev2 data
+  echo "> Trying to apply $CORE_PATH/sql/scriptdev2 ..."
+  for f in "$CORE_PATH/sql/scriptdev2/"*.sql
+  do
+    echo "    Appending SD2 file update `basename $f` to database $DATABASE"
+    $MYSQL_COMMAND < $f
+    if [[ $? != 0 ]]
+    then
+      echo "ERROR: cannot apply $f"
+      exit 1
+    fi
+  done
+  echo "  ScriptDev2 data successfully applied"
   echo
   echo
 fi
