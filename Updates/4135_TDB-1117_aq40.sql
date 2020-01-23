@@ -18,8 +18,8 @@ UPDATE creature_template SET UnitFlags=64,CreatureType=7 WHERE entry IN(15511);
 UPDATE creature_model_info SET bounding_radius=2.75,combat_reach=4.125 WHERE modelid IN(15583);
 UPDATE creature_model_info SET bounding_radius=1.75,combat_reach=2.625 WHERE modelid IN(15465);
  -- Fankriss the Unyielding
-UPDATE creature_template SET UnitFlags=(64+32768),CreatureType=1,Family=42 WHERE entry IN(15630);
-UPDATE creature_template SET UnitFlags=0,CreatureType=1,Family=41 WHERE entry IN(15962);
+UPDATE creature_template SET UnitFlags=(64+32768),CreatureType=1 WHERE entry IN(15630);
+UPDATE creature_template SET UnitFlags=0,CreatureType=1 WHERE entry IN(15962);
 UPDATE creature_model_info SET bounding_radius=3,combat_reach=3 WHERE modelid IN(15582);
 UPDATE creature_model_info SET bounding_radius=0.575,combat_reach=1.725 WHERE modelid IN(15362);
 UPDATE creature_template SET Detection=80 WHERE entry IN(15510);
@@ -28,7 +28,7 @@ UPDATE creature_model_info SET bounding_radius=1.5,combat_reach=12 WHERE modelid
 UPDATE creature_template SET UnitFlags=64,CreatureType=15,Family=0 WHERE entry IN(15962);
 UPDATE creature_template SET Leash=130 WHERE entry IN(15299);
  -- Princess Huhuran
-UPDATE creature_template SET UnitFlags=64,CreatureType=1,Family=41 WHERE entry IN(15962);
+UPDATE creature_template SET UnitFlags=64,CreatureType=1 WHERE entry IN(15962);
 UPDATE creature_model_info SET bounding_radius=1,combat_reach=3 WHERE modelid IN(15739);
 UPDATE creature_template SET Detection=80 WHERE entry IN(15509);
  -- Twin Emperors
@@ -36,9 +36,12 @@ UPDATE creature_template SET UnitFlags=64,CreatureType=7,Family=0 WHERE entry IN
 UPDATE creature_model_info SET bounding_radius=1.5,combat_reach=4.5 WHERE modelid IN(15761);
 UPDATE creature_model_info SET bounding_radius=1.5,combat_reach=4.5 WHERE modelid IN(15778);
  -- Ouro
-UPDATE creature_template SET UnitFlags=64,CreatureType=1,Family=42 WHERE entry IN(15517);
+UPDATE creature_template SET UnitFlags=64,CreatureType=1 WHERE entry IN(15517);
 UPDATE creature_model_info SET bounding_radius=7.5,combat_reach=18.75 WHERE modelid IN(15509);
 UPDATE creature_template SET UnitFlags=33554432,CreatureType=10,Family=0 WHERE entry IN(15957);
 UPDATE creature_template SET SpeedWalk=12/2.5,SpeedRun=12/7 WHERE entry IN(15712);
 UPDATE creature_template SET SpeedWalk=2.5/2.5,SpeedRun=15/7 WHERE entry IN(15718);
 
+-- 2022-12-16 18:02:18 Creature (Entry: 15517) has invalid creature family (42) in `family`
+-- 2022-12-16 18:02:18 Creature (Entry: 15630) has invalid creature family (42) in `family`
+-- 2022-12-16 18:02:18 Creature (Entry: 15962) has invalid creature family (41) in `family` - Vekniss Hatchling - Fankriss the Unyielding encounter.
