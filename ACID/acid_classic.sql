@@ -14873,6 +14873,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shen'dralar Ancient     14358
 -- Shen'dralar Wisp     14361
 -- Shen'dralar Spirit     14364
+-- Warpwood Spores 14366
+('1436601','14366','11','0','100','0','0','0','0','0','0','0','11','22802','0','0','50','0','0','0','41','11000','0','0','Warpwood Spores - Cast Choking Spores and Set ReactState Passive and Delayed Despawn on Spawn'),
 -- Lorekeeper Lydros     14368
 -- Shen'dralar Zealot     14369
 -- Cadaverous Worm (14370) - NSR
