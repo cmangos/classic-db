@@ -18596,7 +18596,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Unknown/Misc Zones   |
 -- ==========================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
--- Infernal 89 - NSR
+-- Infernal 89
+('8901','89','11','0','100','0','0','0','0','0','0','0','11','22707','0','2','0','0','0','0','0','0','0','0','Infernal - Cast Root on Spawn'),
 -- Imp 416 - PetAI
 -- Silithid Swarm 4196
 ('419601','4196','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Set ReactState Defensive on Spawn'),
