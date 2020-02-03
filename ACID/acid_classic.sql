@@ -19215,7 +19215,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1565','Me smell stench of the living!','5823','1','0','0','0','8567'),
 ('-1566','Me feast on you all!','5824','1','0','0','0','8567'),
 ('-1567','I''ll feast on your bones!','5860','1','0','0','0','8580'),
-('-1568','Let me give you my regards for Greatfather Winter, scum.','0','0','0','0','0','15692');
+('-1568','Let me give you my regards for Greatfather Winter, scum.','0','0','0','0','0','15692'),
+('-1569','Have you come to save the world? To cleanse it?','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1570','And so it begins...','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1571','Ashbringer...','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1572','Kneel! Kneel before the Ashbringer!','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1573','My $g Lord:Lady;, please allow me to live long enough to see you purge this world of the infidels.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1574','Take me with you, $g sir:miss;.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1575','I am unworthy, $g sir:miss;.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
