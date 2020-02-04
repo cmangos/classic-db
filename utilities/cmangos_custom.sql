@@ -62,7 +62,9 @@ UPDATE gameobject_template SET data8=1221 WHERE entry IN (68865, 21530, 21277);
 -- Creature custom changes
 -- -------------------------------
 
--- None
+-- Fix a few model IDs found in sniffs from patch 1.13 but not present in patch 1.12 DBCs
+UPDATE creature_template SET ModelId2=0 WHERE Entry IN (3651, 16979); -- [UNUSED] Kolkar Observer ; Midsummer Merchant
+UPDATE creature_template SET ModelId3=13132, ModelId4=0 WHERE Entry=11446;  -- Gordok Spirit
 
 -- -------------------------------
 -- Quest custom changes
