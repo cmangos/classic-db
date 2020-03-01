@@ -17497,8 +17497,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lightning Totem
 ('1638501','16385','0','0','100','1','0','0','1100','4800','0','0','11','28297','1','0','0','0','0','0','0','0','0','0','Lightning Totem - Cast Shock'),
 -- Toxic Tunnel 16400 - NSR
--- Soldier of the Frozen Wastes
-('1642701','16427','11','0','100','0','0','0','0','0','0','0','11','28458','0','2','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Dark Blast'),
+-- Soldier of the Frozen Wastes 16427
+('1642701','16427','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Set ReactState Passive on Spawn'),
+('1642702','16427','4','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Set ReactState Aggressive on Aggro'),
+('1642703','16427','10','0','100','1','0','20','2000','2000','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Set ReactState Aggressive at 20 Yards LOS'),
+-- Unstoppable Abomination 16428
+('1642801','16428','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Unstoppable Abomination - Set ReactState Passive on Spawn'),
+('1642802','16428','4','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Unstoppable Abomination - Set ReactState Aggressive on Aggro'),
+('1642803','16428','10','0','100','1','0','20','2000','2000','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Unstoppable Abomination - Set ReactState Aggressive at 20 Yards LOS'),
+('1642804','16428','0','0','100','7','900','2200','10000','12000','0','0','11','28467','4','0','0','0','0','0','0','0','0','0','Unstoppable Abomination - Cast Mortal Wound'),
+-- Soul Weaver 16429
+('1642901','16429','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Soul Weaver - Set ReactState Passive on Spawn'),
+('1642902','16429','4','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soul Weaver - Set ReactState Aggressive on Aggro'),
+('1642903','16429','10','0','100','1','0','20','2000','2000','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soul Weaver - Set ReactState Aggressive at 20 Yards LOS'),
 -- Plague Gargoyle
 ('1644601','16446','0','0','100','1','0','0','10000','10000','0','0','11','29325','0','0','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Acid Volley'),
 ('1644602','16446','2','0','75','1','50','0','30000','30000','0','0','11','28995','0','0','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Stoneskin'),
