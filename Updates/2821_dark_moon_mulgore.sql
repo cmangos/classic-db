@@ -1,5 +1,6 @@
 -- Darkmoon Faire Carnie 
 UPDATE creature_template_addon SET emote=0 WHERE entry=14849; -- 234
+DELETE FROM creature_addon WHERE guid IN (141207,141206,141205,141502,141505,141508,144013,144022);
 
 DELETE FROM gameobject WHERE guid IN (SELECT guid FROM game_event_gameobject WHERE event=5);
 DELETE FROM game_event_gameobject WHERE guid NOT IN (SELECT guid FROM gameobject) AND event=5;
