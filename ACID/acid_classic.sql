@@ -10801,7 +10801,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lhara (14846) - NSR
 -- Professor Thaddeus Paleo (14847) - NSR
 -- Darkmoon Faire Carnie (14849) - NSR
--- Flik (14860) - NSR
+-- FlikFlik 14860
+('1486001','14860','1','0','100','1','50000','90000','50000','300000','0','0','54','0','0','899','0','0','0','0','0','0','0','0','Flik - Random Say OOC'),
 -- Khaz Modan Ram (14864) - NSR
 -- Felinni (14865) - NSR
 -- Flik's Frog (14866) - NSR
@@ -19101,6 +19102,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1044','Fresh meat!','0','0','0','0','0','1716'),
 ('-1045','More of the Warden''s errand boys!','0','0','0','0','0','1716'),
 ('-1048','You are in the presence of a god!','0','2','0','0','0','15963'),
+('-1049','Get back here!','0','0','0','0','10147','14860'),
+('-1050','It''s getting away!','0','0','0','0','10146','14860'),
+('-1051','Hey, someone help me catch this thing!','0','0','0','0','10145','14860'),
+('-1052','Frogs and leather balls for sale!','0','0','0','0','10148','14860'),
+-- PLEASE RE-USE 1053
 ('-1054','%s collapses but the broken body rises again!','0','2','0','0','0','10381'),
 ('-1055','No tampering with the mail!','0','0','0','0','0','11142'),
 ('-1056','That''s our treasure, you lubber!','0','0','0','0','0','Treasure Hunting Common Text'),
