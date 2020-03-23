@@ -14968,9 +14968,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('621102','6211','9','0','100','1','0','5','1900','12100','0','0','11','8374','1','0','0','0','0','0','0','0','0','0','Caverndeep Reaver - Cast Arcing Smash'),
 ('621103','6211','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Caverndeep Reaver - Emote on Radiation Spellhit'),
 ('621104','6211','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Caverndeep Reaver - Flee at 15% HP'),
--- Dark Iron Agent (3.3.5a Official Data)
-('621201','6212','0','0','100','1','15700','24400','21300','34900','0','0','11','11802','1','0','0','0','0','0','0','0','0','0','Dark Iron Agent - Cast Dark Iron Land Mine'),
-('621202','6212','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Dark Iron Agent - Emote on Radiation Spellhit'),
+-- Dark Iron Agent 6212 (3.3.5a Official Data)
+('621201','6212','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Dark Iron Agent - Emote on Radiation Spellhit'),
+('621202','6212','0','0','100','1025','15700','24400','21300','34900','0','0','11','11802','0','0','0','0','0','0','0','0','0','0','Dark Iron Agent - Cast Dark Iron Land Mine'),
 -- Irradiated Invader (3.3.5a Official Data)
 ('621301','6213','11','0','100','0','0','0','0','0','0','0','11','21862','0','1','0','0','0','0','0','0','0','0','Irradiated Invader - Cast Radiation Visual on Spawn'),
 ('621302','6213','9','0','100','1','0','25','3600','7200','0','0','11','9771','1','0','0','0','0','0','0','0','0','0','Irradiated Invader - Cast Radiation Bolt'),
@@ -15086,8 +15086,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Alarm-a-bomb 2600 (7897) - NSR
 -- Walking Bomb (3.3.5a Official Data)
 ('791501','7915','9','0','100','0','0','5','0','0','0','0','11','11504','0','7','0','0','0','0','0','0','0','0','Walking Bomb - Cast Walking Bomb Effect'),
--- Blastmaster Emi Shortfuse (7998) - C++ Required for Escort Quest Event
--- Dark Iron Land Mine (8035) - NSR (Core Handles This as a Pet so Unable To Script Properly)
+-- Blastmaster Emi Shortfuse (7998) - npc_blastmaster_emi_shortfuse
+-- Dark Iron Land Mine 8035
+('803501','8035','11','0','100','0','0','0','0','0','0','0','11','11816','0','0','11','10831','0','0','50','0','0','0','Dark Iron Land Mine - Cast Land Mine Arming and Reflection Field and Set ReactState Passive on Spawn'),
+('803502','8035','29','0','100','0','0','0','0','0','0','0','1','-707','0','0','0','0','0','0','0','0','0','0','Dark Iron Land Mine - Emote on Generic Timer'),
+('803503','8035','29','0','100','0','5000','5000','0','0','0','0','1','-708','0','0','0','0','0','0','0','0','0','0','Dark Iron Land Mine - Emote on Generic Timer'),
+('803504','8035','29','0','100','0','10000','10000','0','0','0','0','1','-709','0','0','22','1','0','0','0','0','0','0','Dark Iron Land Mine - Emote and Set Phase 1 on Generic Timer'),
+('803505','8035','10','5','100','0','0','5','0','0','0','0','11','4043','15','0','41','10000','0','0','37','0','0','0','Dark Iron Land Mine - Cast Detonation and Delayed Despawn OOC LOS (Phase 1)'),
 -- Sprok (8320) - NSR
 -- Tink Sprocketwhistle (Rough Scripted Data)
 ('967601','9676','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Tink Sprocketwhistle - Flee at 15% HP'),
@@ -19015,6 +19020,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-704','%s begs to be put out of his misery.','0','2','0','0','0','10117'),
 ('-705','%s groans.','0','2','0','0','0','10117'),
 ('-706','%s weeps pitifully.','0','2','0','0','0','10117'),
+('-707','%s will be armed in 10 seconds!','0','2','0','0','0','8035'),
+('-708','%s will be armed in 5 seconds!','0','2','0','0','0','8035'),
+('-709','%s is now armed!','0','2','0','0','0','8035'),
 ('-710','Lunch has arrived, my beautiful children. Tear them to pieces!','0','1','0','0','0','8127'),
 ('-711','Rise and defend your master!','0','1','0','0','0','8127'),
 ('-712','The children of Sul will protect their master. Rise once more Sul''lithuz!','0','1','0','0','0','8127'),
