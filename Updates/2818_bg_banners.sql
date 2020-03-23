@@ -13,7 +13,7 @@ INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) VAL
 
 (24391,0,180102,0),
 (24391,0,180101,0),
-(24391,0,180100,0)
+(24391,0,180100,0),
 
 (24391,0,180087,0),
 (24391,0,180088,0),
