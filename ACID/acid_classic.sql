@@ -11825,6 +11825,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Surf Glider (5431) - NSR
 -- Hazzali Wasp (4.0.3 Official Data)
 ('544101','5441','11','0','100','0','0','0','0','0','0','0','11','3616','0','0','0','0','0','0','0','0','0','0','Hazzali Wasp - Cast Poison Proc on Spawn'),
+('544102','5441','6','0','100','0','100','0','0','0','0','0','11','11023','0','7','0','0','0','0','0','0','0','0','Hazzali Wasp - Cast Summon Hazzali Parasites on Death'),
 -- Hazzali Stinger (4.0.3 Official Data)
 ('545001','5450','0','0','100','1','14300','22900','16800','33700','0','0','11','5416','1','0','0','0','0','0','0','0','0','0','Hazzali Stinger - Cast Venom Sting'),
 ('545002','5450','6','0','100','0','100','0','0','0','0','0','11','11023','0','7','0','0','0','0','0','0','0','0','Hazzali Stinger - Cast Summon Hazzali Parasites on Death'),
