@@ -18655,9 +18655,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infernal 89
 ('8901','89','11','0','100','0','0','0','0','0','0','0','11','22707','0','2','0','0','0','0','0','0','0','0','Infernal - Cast Root on Spawn'),
 -- Imp 416 - PetAI
--- Advanced Target Dummy 2674
-('267401','2674','11','0','100','0','0','0','0','0','0','0','11','4507','0','0','50','0','0','0','0','0','0','0','Advanced Target Dummy - Cast Target Dummy Spawn Effect and Set ReactState Passive on Spawn'),
-('267402','2674','29','0','100','0','15000','15000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Advanced Target Dummy - Die on Generic Timer'),
+-- Advanced Target Dummy 2674 - npc_advanced_target_dummy
 -- Silithid Swarm 4196
 ('419601','4196','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Set ReactState Defensive on Spawn'),
 ('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
