@@ -14920,7 +14920,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1450603','14506','0','0','100','1','4000','9000','9000','15000','0','0','11','18670','1','0','0','0','0','0','0','0','0','0','Lord Hel''nurath - Cast Knock Away'),
 ('1450604','14506','0','0','100','1','9000','13000','14000','17000','0','0','11','20989','5','1','0','0','0','0','0','0','0','0','Lord Hel''nurath - Cast Sleep'),
 ('1450605','14506','4','0','100','0','0','0','0','0','0','0','1','-1461','0','0','0','0','0','0','0','0','0','0','Lord Hel''nurath - Yell on Aggro'),
--- Ancient Equine Spirit     14566
+-- Ancient Equine Spirit 14566
+('1456601','14566','11','0','100','0','0','0','0','0','0','0','1','-1462','0','0','0','0','0','0','0','0','0','0','Ancient Equine Spirit - Emote on Spawn'),
 -- Spectral Stalker (16093) - NSR
 -- Falrin Treeshaper     16032
 -- Spectral Stalker     16093
@@ -19229,7 +19230,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1397','My death matters little... the Hammer will still fall!','0','0','0','0','0','Common Text'),
 -- Classic PLEASE RE-USE 1398 - 1460
 ('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','0','0','Lord Hel''nurath - Yell on Aggro'),
--- Classic PLEASE RE-USE 1462 - 1465
+('-1462','%s breaks free of its spectral bonds with a tremendous crash of thunder!','0','7','0','0','0','Ancient Equine Spirit - Emote on Spawn'),
+-- Classic PLEASE RE-USE 1463 - 1465
 ('-1466','Finally, the agony ceases....','0','0','0','0','0','7668,7669,7670,7671'),
 ('-1467','Finally, released from his cursed grasp. Father, I come...','0','0','0','0','0','7668,7669,7670,7671'),
 ('-1468','FREEEEEEEEEEDDOOOOMM!','0','0','0','0','0','7668,7669,7670,7671'),
