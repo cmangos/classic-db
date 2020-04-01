@@ -1,12 +1,3 @@
-/*134802 => 134802
-153 => 134811
-161 => 134821
-164 => 134827
-165 => 134828
-169 => 134835
-
-SELECT * FROM tbcdb.creature WHERE guid IN (4290000+237);*/
-
 DELETE FROM creature WHERE guid=134805;
 
 DELETE FROM creature_movement WHERE id IN (134802, 134811, 134821, 134827, 134828, 134835);
@@ -130,10 +121,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (138276, 138275, 515), -- Gordok Mastiff -> Gordok Mastiff
 (138283, 134828, 515), -- Gordok Mastiff -> Gordok Brute
 (138284, 134828, 515); -- Gordok Mastiff -> Gordok Brute
-
-DELETE FROM creature_linking_template WHERE master_entry=13160;
-INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(13160, 429, 13160, 3, 50); -- Carrion Swarmer -> Carrion Swarmer
 
 UPDATE creature SET MovementType=2, spawndist=0 WHERE guid IN (134802, 134811, 134821, 134827, 134828, 134835);
 UPDATE creature SET position_x=387.2497, position_y=210.4741, position_z=11.21666 WHERE guid=134828;
