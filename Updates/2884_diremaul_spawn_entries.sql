@@ -85,8 +85,8 @@ UPDATE creature SET position_x=484.7899, position_y=192.5361, position_z=2.93626
 UPDATE creature SET position_x=357.1012, position_y=-105.2332, position_z=-3.803097, orientation=3.735005, spawndist=0, MovementType=0 WHERE 134820;
 UPDATE creature SET id=0, position_x=387.2497, position_y=210.4741, position_z=11.21666, orientation=3.16332, spawndist=0, MovementType=2 WHERE guid=134828;
 UPDATE creature SET id=0, position_x=378.439, position_y=136.1332, position_z=-2.500672, orientation=0.9250245, spawndist=0, MovementType=0 WHERE guid=134830;
-UPDATE creature SET position_x=325.9401, position_y=124.5112, position_z=-3.80362, orientation=1.884956, spawndist=0, MovementType=0 WHERE 134831;
-UPDATE creature SET position_x=338.8075, position_y=208.3373, position_z=11.2875, orientation=1.37881, spawndist=0, MovementType=0 WHERE 134836;
+UPDATE creature SET position_x=325.9401, position_y=124.5112, position_z=-3.80362, orientation=1.884956, spawndist=0, MovementType=0 WHERE guid=134831;
+UPDATE creature SET position_x=338.8075, position_y=208.3373, position_z=11.2875, orientation=1.37881, spawndist=0, MovementType=0 WHERE guid=134836;
 UPDATE creature SET id=0, position_x=278.2903, position_y=32.93099, position_z=-2.463458, orientation=0.05235988, spawndist=0, MovementType=0 WHERE guid=134838;
 UPDATE creature SET id=0, position_x=356.3083, position_y=27.84384, position_z=-24.9039, orientation=6.230825, spawndist=0, MovementType=0 WHERE guid=134839;
 UPDATE creature SET id=0, position_x=364.3454, position_y=17.36258, position_z=-25.50375, orientation=1.361357, spawndist=0, MovementType=0 WHERE guid=134840;
