@@ -890,8 +890,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Portal Seeker (5981) - NSR
 -- Black Slayer (3.3.0a Official Data)
 ('598201','5982','12','0','100','1','20','0','30000','35000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Black Slayer - Cast Execute at 20% Target HP'),
--- Bonepicker (3.3.0a Official Data)
-('598301','5983','12','0','100','1','20','0','6000','12000','0','0','11','8139','1','32','0','0','0','0','0','0','0','0','Bonepicker - Cast Fevered Fatigue'),
+-- Bonepicker 5983 - NSR
 -- Starving Snickerfang (5984) - NSR
 -- Snickerfang Hyena (5985) - NSR
 -- Scorpok Stinger (3.3.0a Official Data)
@@ -7954,7 +7953,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('613103','6131','9','0','100','1025','0','40','3400','4800','0','0','11','9672','1','256','0','0','0','0','0','0','0','0','Draconic Mageweaver - Cast Frostbolt'),
 -- Lord Arkkoroc (6134) - NSR
 -- Arkkoran Clacker (6135) - NSR
--- Arkkoran Muckdweller (6136) - NSR
+-- Arkkoran Muckdweller 6136 - NSR
 -- Arkkoran Pincer
 ('613701','6137','9','0','100','1','0','5','19000','23000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Arkkoran Pincer - Cast Rend'),
 -- Arkkoran Oracle
