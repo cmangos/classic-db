@@ -5,7 +5,7 @@ UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask&~8 WHERE entr
 UPDATE creature_template SET SkinningLootId=0 WHERE entry=9157; -- 100004
 -- 
 -- Set groupid to 1 so groupid 2 is separated (item=8167)
-UPDATE skinning_loot_template SET groupid=1 WHERE entry IN (4343,4323,4324,4328,4329,4331,4334,4339,4341,4342,4344,4345,4346,4347,4348,4352,4356,4357,4351,4355,4374,4388,4389,4390,4396,4397,4398,4399,4400,4422,4425,4841);
+UPDATE skinning_loot_template SET groupid=1 WHERE entry IN (4343,4323,4324,4328,4329,4331,4334,4339,4341,4342,4344,4345,4346,4347,4348,4352,4356,4357,4351,4355,4374,4388,4389,4390,4396,4397,4398,4399,4400,4425,4841);
 
 UPDATE skinning_loot_template SET ChanceOrQuestChance=78 WHERE entry=4343 AND item=4234;
 UPDATE skinning_loot_template SET ChanceOrQuestChance=3 WHERE entry=4343 AND item=4235;
