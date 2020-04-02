@@ -58,6 +58,9 @@ UPDATE gameobject_template SET data8=3602 WHERE entry IN (152620, 152621, 152622
 -- Link Crate with Holes, Snufflenose Command Stick and Snufflenose Owner's Manual GOs to quest 1221 so they are usable by players on the quest
 UPDATE gameobject_template SET data8=1221 WHERE entry IN (68865, 21530, 21277);
 
+-- Thaurissan Relic classic-db (and classic sniff) value 3702 - the quest which involves actually using this object is 3701
+UPDATE gameobject_template SET data1=3701 WHERE entry=153556;
+
 -- -------------------------------
 -- Creature custom changes
 -- -------------------------------
