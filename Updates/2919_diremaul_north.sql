@@ -35,7 +35,7 @@ INSERT INTO creature_linking VALUES
 (138719, 138712, 3), -- Carrion Swarmer -> Carrion Swarmer
 (138714, 138712, 3), -- Carrion Swarmer -> Carrion Swarmer
 (138717, 138712, 3), -- Carrion Swarmer -> Carrion Swarmer
-(138717, 138712, 3), -- Carrion Swarmer -> Carrion Swarmer
+(138712, 138712, 3), -- Carrion Swarmer -> Carrion Swarmer
 (@MAPINDEX+1065, @MAPINDEX+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
 (@MAPINDEX+1066, @MAPINDEX+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
 (@MAPINDEX+1067, @MAPINDEX+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
