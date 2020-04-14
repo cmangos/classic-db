@@ -1,5 +1,5 @@
 # Specify version format
-version: "1.10.1.{build} 'The Shifting Sands'"
+version: "1.11.{build} 'Into the Frozen Heart of Naxxramas'"
 
 # specify custom environment variables
 environment:

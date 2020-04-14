@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="ClassicDB_1_10_1_z2742.sql"
-DB_TITLE="v1.10.1 'The Shifting Sands'"
+FULLDB_FILE="ClassicDB_1_11_z2757.sql"
+DB_TITLE="v1.11 'Into the Frozen Heart of Naxxramas'"
 NEXT_MILESTONES="0.19 0.20"
 
 #internal use
