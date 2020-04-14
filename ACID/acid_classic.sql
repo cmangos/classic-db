@@ -14270,7 +14270,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('926907','9269','0','0','100','1537','0','0','5000','10000','0','0','11','15801','1','256','0','0','0','0','0','0','0','0','Smolderthorn Seer - Cast Lightning Bolt (Melee Mode)'),
 -- Overlord Wyrmthalak 9568 - boss_overlord_wyrmthalak
 -- Bloodaxe Veteran 9583
-('958301','9583','4','0','100','0','0','0','0','0','0','0','47','0','0','0','22','0','6606','0','0','0','0','0','Bloodaxe Veteran - Set Stand State and Remove Aura on Aggro'),
+('958301','9583','4','0','100','0','0','0','0','0','0','0','11','674','0','34','47','0','0','0','28','0','6606','0','Bloodaxe Veteran - Cast Dual Wield and Set Stand State and Remove Aura on Aggro'),
 ('958302','9583','0','0','80','1025','12000','12000','15000','15000','0','0','11','15618','1','0','0','0','0','0','0','0','0','0','Bloodaxe Veteran - Cast Snap Kick'),
 ('958303','9583','0','0','90','1025','5000','5000','9000','9000','0','0','11','15615','1','0','0','0','0','0','0','0','0','0','Bloodaxe Veteran - Cast Pummel'),
 -- Bannok Grimaxe 9596

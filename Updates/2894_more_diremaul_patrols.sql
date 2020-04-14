@@ -38,7 +38,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM creature_addon WHERE guid=134853;
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(134853, 0, 0, 0, 0, 400, 0, NULL);
+(134853, 0, 0, 0, 0, 10, 0, NULL);
 
 DELETE FROM creature_linking WHERE master_guid IN (4290148, 4290144) OR guid IN (134838, 134865);
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES

@@ -5,7 +5,7 @@ SET @CGUID := 5330000; -- creatures
 
 -- Spawn trigger GO in center of Kel'Thuzad Chamber
 DELETE FROM gameobject WHERE guid = @OGUID+202;
-INSERT INTO gameobject VALUES (@OGUID+201, 181444, 533, 3716.38, -5106.47, 134.99, 3.31536, 0, 0, -0.681998, 0.731354, 604800, 604800, 100, 1);
+INSERT INTO gameobject VALUES (@OGUID+202, 181444, 533, 3716.38, -5106.47, 134.99, 3.31536, 0, 0, -0.681998, 0.731354, 604800, 604800, 100, 1);
 
 -- Update visual trigger to proper size and flags
 UPDATE gameobject_template SET size=1.5, flags=4 WHERE entry=181444;
