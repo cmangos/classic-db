@@ -4445,7 +4445,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('351302','3513','2','0','100','1','2','1','1000','1000','0','0','42','1','-1','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible'),
 -- Thomas Miller
 ('351801','3518','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Thomas Miller - Summon Stormwind City Guard on Aggro'),
-('351802','3518','1','0','100','1','0','0','120000','180000','0','0','54','0','0','9','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
+('351802','3518','1','0','100','1','0','0','120000','180000','0','0','54','0','0','10','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma
 ('352001','3520','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ol'' Emma - Summon Stormwind City Guard on Aggro'),
 -- Sewer Beast (3581) - NSR
@@ -7221,7 +7221,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Balgaras the Foul 1364
 ('136401','1364','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Despawn Guardians on OOC'),
 ('136402','1364','1','0','100','0','2000','2000','0','0','0','0','11','12746','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Summon Voidwalker on OOC'),
-('136403','1364','4','0','100','0','0','0','0','0','0','0','1','-179','-180','-181','0','0','0','0','0','0','0','0','Balgaras the Foul - Say on Aggro'),
+('136403','1364','4','0','100','0','0','0','0','0','0','0','1','-174','-175','-176','0','0','0','0','0','0','0','0','Balgaras the Foul - Say on Aggro'),
 ('136404','1364','0','0','100','1','4800','7700','21100','21100','0','0','11','9081','1','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Shadow Bolt Volley'),
 ('136405','1364','0','0','100','1','6400','12500','19600','38000','0','0','11','11831','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Frost Nova'),
 ('136406','1364','0','0','100','1','13400','16400','182200','182400','0','0','11','3586','1','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Volatile Infection'),
@@ -10534,7 +10534,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Eranikus the Redeemed 15628
 -- Nightmare Phantasm
 ('1562901','15629','0','0','100','1','15000','20000','15000','20000','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Swell of Souls'),
-('1562902','15629','0','0','100','1','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley'),
+('1562902','15629','0','0','100','1','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley');
 -- Tyrande 15633
 -- Stormwind Reveler 15694
 -- Thunder Bluff Reveler 15719
@@ -10543,8 +10543,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Undercity Reveler 15907
 -- Fariel Starsong 15909
 -- Lunar Festival Sentinel 15961
--- Malfurion Stormrage 17949
-('1794901','17949','11','0','100','0','0','0','0','0','0','0','11','17321','0','1','0','0','0','0','0','0','0','0','Malfurion Stormrage - Cast Spirit Spawn-in on Spawn');
 
 
 
@@ -13964,7 +13962,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('903905','9039','0','0','100','1025','5000','8000','40000','45000','0','0','11','12493','4','0','0','0','0','0','0','0','0','0','Doom''rel - Cast Curse of Weakness'),
 -- Dope'rel 9040
 ('904001','9040','21','0','100','0','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Dope''rel - Set Instance Data on Reached Home'),
-('904002','9040','1','0','100','0','1000','1000','0','0','0','0','11','30991','0','32','0','0','0','0','0','0','0','0','Dope''rel - Cast Stealth OOC'),
+('904002','9040','1','0','100','0','1000','1000','0','0','0','0','11','22766','0','32','0','0','0','0','0','0','0','0','Dope''rel - Cast Stealth OOC'),
 ('904003','9040','4','0','100','0','0','0','0','0','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Dope''rel - Remove UnitFlag on Aggro'),
 ('904004','9040','0','0','100','1025','1000','5000','25000','35000','0','0','11','15087','0','0','0','0','0','0','0','0','0','0','Dope''rel - Cast Evasion'),
 ('904005','9040','0','0','100','1025','5000','10000','12000','16000','0','0','11','15583','1','0','0','0','0','0','0','0','0','0','Dope''rel - Cast Rupture'),
@@ -19006,8 +19004,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-492','I sense danger up ahead.','0','0','0','0','7596','12337'),
 ('-493','Assassins! Guards! Guards!','0','0','0','0','7595','12337'),
 -- Classic PLEASE RE-USE 494 - 501
-('-502','I presume you come with good news?','0','0','0','0','23460','2597'),
-('-503','Things are going as planned, Lord Falconcrest. I assure you, it is only a matter of time.','0','0','0','0','23459','2599'),
+('-502','I presume you come with good news?','0','0','0','0','0','2597'),   -- Broadcast text id 23460 ?
+('-503','Things are going as planned, Lord Falconcrest. I assure you, it is only a matter of time.','0','0','0','0','0','2599'),   -- Broadcast text id 23459 ?
 -- Classic PLEASE RE-USE 504 - 515
 ('-516','%s pounds his chest, calling for help!','0','2','0','0','4837','6514'),
 -- Classic PLEASE RE-USE 517 - 521
@@ -19047,7 +19045,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-578','Die! Die!','5854','1','0','0','6214','4854'),
 ('-579','No!  You must not do this!','0','1','0','0','4531','8497'),
 ('-580','DIE, MORTALS!','5871','1','0','0','4546','8443'),
-('-581','By the Light you will leave this tomb!','0','0','0','0','13611','1854'),
+('-581','By the Light you will leave this tomb!','0','0','0','0','0','1854'),   -- Broadcast text id 13611 ?
 ('-582','Bijou knows where treasures are hidden.','0','0','0','0','5542','10262'),
 ('-583','SQUAWK!! *cough* *cough* I need to quit smoking!','0','0','0','0','5539','10262'),
 ('-584','Ask Kibler about the treasure! SQUAWK!','0','0','0','0','5540','10262'),
@@ -19119,7 +19117,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-853','Vanquish the weak!','0','1','0','0','0','Varimathras 2425'),
 ('-854','Time to die!','0','1','0','0','0','Varimathras 2425'),
 ('-855','None can oppose me.','0','1','0','0','0','Varimathras 2425'),
-('-856','For Sylvanas!','0','1','0','0','47590','Varimathras 2425'),
+('-856','For Sylvanas!','0','1','0','0','0','Varimathras 2425'),   -- Broadcast text id 47590 ?
 -- Classic PLEASE RE-USE 857 - 894
 ('-895','There is no escape for you.  The Crusade shall destroy all who carry the scourge''s taint.','0','0','0','0','2626','Common Scarlet Text'),
 ('-896','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','0','2625','Common Scarlet Text'),
