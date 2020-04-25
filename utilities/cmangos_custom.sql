@@ -46,6 +46,9 @@ UPDATE gameobject_template SET data2=10 WHERE entry=109515;
 -- Set a 70 yards diameter for Ragnaros GO because because it needs to be triggered by SD2 script otherwise (and said script do not exist yet)
 UPDATE gameobject_template SET data2=70 WHERE entry=178088;
 
+-- Set 20 yards radius to Suppression Device GO and cooldown because it needs to be triggered by SD2 script otherwise (and said script does not exist yet because GO spell casting in not implemented)
+UPDATE gameobject_template SET data2=20 WHERE entry=179784;
+
 
 -- Currently the core cannot make a GO usable for a specific quest if the items it holds are not objectives of the quest
 
