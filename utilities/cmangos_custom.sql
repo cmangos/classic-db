@@ -68,6 +68,13 @@ UPDATE gameobject_template SET data1=3701 WHERE entry=153556;
 UPDATE gameobject_template SET data4=1 WHERE entry=181444;
 
 -- -------------------------------
+-- Item custom changes
+-- -------------------------------
+
+-- Mana Agate should have class=0 and subclass=3 like all other mana gems
+UPDATE item_template SET class=0, subclass=3 WHERE entry=5514;
+
+-- -------------------------------
 -- Creature custom changes
 -- -------------------------------
 
