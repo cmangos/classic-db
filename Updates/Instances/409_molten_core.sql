@@ -888,7 +888,14 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+59, 178194, 409, 765.562, -995.398, -197.221, 2.19912, 0, 0, 0, 1, 604800, 604800), -- Lava Crack
 (@OGUID+60, 179703, 409, 756.897, -1180.7, -118.596, 2.91469, 0, 0, 0, 1, -604800, -604800); -- Cache of the Firelord
 
--- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
+INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
+(@OGUID+41, 100, 0), -- Rune of Koro
+(@OGUID+42, 100, 0), -- Rune of Zeth
+(@OGUID+43, 100, 0), -- Rune of Mazj
+(@OGUID+44, 100, 0), -- Rune of Theri
+(@OGUID+45, 100, 0), -- Rune of Blaz
+(@OGUID+46, 100, 0), -- Rune of Kress
+(@OGUID+47, 100, 0); -- Rune of Mohn
 
 -- ======
 -- EVENTS
