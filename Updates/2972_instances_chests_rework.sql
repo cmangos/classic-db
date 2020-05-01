@@ -1217,7 +1217,7 @@ INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES
 (@OGUID+75, @PGUID+97, 0, 'Stratholme - Large Mithril Bound Chest (153469)');
 
 -- --------------------------------------
--- MARAUDON (MAP 329)
+-- MARAUDON (MAP 349)
 -- --------------------------------------
 
 -- No chests
@@ -1611,6 +1611,7 @@ INSERT INTO pool_pool (pool_id, mother_pool, chance, description) VALUES
 (@PGUID+98, @PGUID+97, 0, 'DM North - Large Solid Chest / Large Mithril Bound Chest - #1'),
 (@PGUID+99, @PGUID+97, 0, 'DM North - Large Solid Chest / Large Mithril Bound Chest - #2');
 
+DELETE FROM pool_template WHERE entry IN (25505, @PGUID+82);
 INSERT INTO pool_template (entry, max_limit, description) VALUES
 (@PGUID+17, 1, 'Dire Maul pod, 1603'),
 (@PGUID+18, 1, 'Dire Maul pod, 1604'),
