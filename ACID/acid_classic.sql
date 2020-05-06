@@ -14056,9 +14056,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jaz (9681)
 -- Marshal Reginald Windsor (9682)
 -- Magmus 9938
-('993801','9938','4','0','100','0','0','0','0','0','0','0','1','-1194','0','0','0','0','0','0','0','0','0','0','Magmus - Yell on Aggro'),
-('993802','9938','0','0','100','1','8000','8000','6000','6000','0','0','11','15668','1','0','0','0','0','0','0','0','0','0','Magmus - Cast Fiery Burst'),
-('993803','9938','2','0','100','1','51','0','8000','8000','0','0','11','15593','0','0','0','0','0','0','0','0','0','0','Magmus - Cast War Stomp'),
+('993801','9938','0','0','100','1','8000','8000','6000','6000','0','0','11','15668','1','0','0','0','0','0','0','0','0','0','Magmus - Cast Fiery Burst'),
+('993802','9938','2','0','100','1','51','0','8000','8000','0','0','11','15593','0','0','0','0','0','0','0','0','0','0','Magmus - Cast War Stomp'),
 -- Shadowforge Flame Keeper 9956
 ('995601','9956','4','0','100','0','0','0','0','0','0','0','57','2','25','0','11','9128','0','0','0','0','0','0','Shadowforge Flame Keeper - Enable Range Mode and Cast Battle Shout on Aggro'),
 ('995602','9956','9','0','100','1025','0','5','12000','15000','0','0','11','9080','1','0','0','0','0','0','0','0','0','0','Shadowforge Flame Keeper - Cast Hamstring'),
@@ -19208,7 +19207,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','0','11270','15625'),
 -- Classic PLEASE RE-USE 1142 - 1192
 ('-1193','Ramstein hunger for flesh!','0','1','0','0','6425','10439'),
-('-1194','Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!','0','1','0','0','5430','9938'),
+-- Classic PLEASE RE-USE 1194
 ('-1195','Prepare to be Malowned!','0','1','0','0','6504','11143'),
 ('-1196','You''ve been MALOWNED!','0','1','0','0','6530','11143'),
 ('-1197','TIMMY!','0','1','0','0','6150','10808'),
