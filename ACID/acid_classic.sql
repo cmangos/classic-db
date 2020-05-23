@@ -596,7 +596,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('406303','4063','9','0','100','1025','0','40','3800','4800','0','0','11','12466','1','256','0','0','0','0','0','0','0','0','Feeboz - Cast Fireball'),
 -- Rat (4075) - NSR
 -- Fardel Dabyrie 4479
-('447901','4479','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Fardel Dabyrie - Flee at 15% HP'),-- Kenata Dabyrie 4480
+('447901','4479','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Fardel Dabyrie - Flee at 15% HP'),
+-- Kenata Dabyrie 4480
 ('448001','4480','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kenata Dabyrie - Flee at 15% HP'),
 ('448002','4480','0','0','100','1025','2000','4000','6000','12000','0','0','11','8379','1','0','0','0','0','0','0','0','0','0','Kenata Dabyrie - Cast Disarm'),
 -- Marcel Dabyrie 4481
@@ -3938,7 +3939,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pyrewood Watcher 1891
 ('189101','1891','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Pyrewood Watcher - Enable Hunter on Aggro'),
 ('189102','1891','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Pyrewood Watcher - Flee at 15% HP'),
-('189103','1891','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Pyrewood Watcher - Cast Shoot'),-- Moonrage Watcher  1892
+('189103','1891','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Pyrewood Watcher - Cast Shoot'),
+-- Moonrage Watcher  1892
 ('189201','1892','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Moonrage Watcher - Flee at 15% HP'),
 -- Moonrage Sentry 1893
 ('189301','1893','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Moonrage Sentry - Flee at 15% HP'),
@@ -5203,8 +5205,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('636601','6366','14','0','100','1','825','40','15300','22900','0','0','11','11642','12','0','0','0','0','0','0','0','0','0','Kurzen Mindslave - Cast Heal on Friendly Missing HP'),
 ('636602','6366','2','0','100','0','15','0','0','0','0','0','11','7964','0','0','25','0','0','0','1','-47','0','0','Kurzen Mindslave - Cast Smoke Bomb and Flee at 15% HP'),
 -- High Priestess Hai'watna 11383
-('1138301','11383','14','0','100','1','1000','40','10000','20000','0','0','11','15982','6','0','0','0','0','0','0','0','0','0','High Priestess Hai\'watna - Cast Healing Wave on Friendly Missing HP'),
-('1138302','11383','0','0','100','1','0','10000','15000','30000','0','0','11','18503','4','0','0','0','0','0','0','0','0','0','High Priestess Hai\'watna - Cast Hex'),
+('1138301','11383','14','0','100','1','1000','40','10000','20000','0','0','11','15982','6','0','0','0','0','0','0','0','0','0','High Priestess Hai''watna - Cast Healing Wave on Friendly Missing HP'),
+('1138302','11383','0','0','100','1','0','10000','15000','30000','0','0','11','18503','4','0','0','0','0','0','0','0','0','0','High Priestess Hai''watna - Cast Hex'),
 -- Gluggle 14487
 ('1448701','14487','0','0','100','1','15600','15600','32000','35000','0','0','11','6306','0','0','0','0','0','0','0','0','0','0','Gluggle - Cast Acid Splash'),
 ('1448702','14487','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gluggle - Flee at 15% HP'),
@@ -8597,7 +8599,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('464102','4641','14','0','100','1025','700','40','17000','21000','0','0','11','959','12','0','0','0','0','0','0','0','0','0','Magram Windchaser - Cast Healing Wave on Friendly Missing HP'),
 ('464103','4641','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Magram Windchaser - Cast Lightning Bolt'),
 -- Magram Stormer 4642
- ('464201','4642','1','0','100','1','1000','1000','600000','600000','0','0','11','8788','0','1','0','0','0','0','0','0','0','0','Magram Stormer - Cast Lightning Shield on Spawn'),
+('464201','4642','1','0','100','1','1000','1000','600000','600000','0','0','11','8788','0','1','0','0','0','0','0','0','0','0','Magram Stormer - Cast Lightning Shield on Spawn'),
 ('464202','4642','0','0','100','1','7000','12000','40000','45000','0','0','11','6535','1','0','0','0','0','0','0','0','0','0','Magram Stormer - Cast Lightning Cloud'),
 ('464203','4642','27','0','100','1','8788','1','15000','30000','0','0','11','8788','0','1','0','0','0','0','0','0','0','0','Magram Stormer - Cast Lightning Shield on Missing Buff'),
 -- Magram Pack Runner (4643) - UNKNOWN SPELL ID TO SUMMON 2 MAGRAM BONEPAW PETS ON SPAWN
@@ -8633,12 +8635,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Maraudine Scout 4654
 ('465401','4654','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Maraudine Scout - Enable Range Mode on Aggro'),
 ('465402','4654','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Maraudine Scout - Flee at 15% HP'),
-('465403','4654','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Maraudine Scout - Cast Shoot'),-- Maraudine Wrangler 4655
+('465403','4654','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Maraudine Scout - Cast Shoot'),
+-- Maraudine Wrangler 4655
 ('465501','4655','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Maraudine Wrangler - Flee at 15% HP'),
 ('465502','4655','9','0','100','1025','0','20','6000','9000','0','0','11','6533','1','0','0','0','0','0','0','0','0','0','Maraudine Wrangler - Cast Net'),
 ('465503','4655','9','0','100','1025','0','5','12000','16000','0','0','11','8379','1','1','0','0','0','0','0','0','0','0','Maraudine Wrangler - Cast Disarm'),
 -- Maraudine Mauler 4656
-('465601','4656','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Maraudine Mauler - Flee at 15% HP'),-- -- Maraudine Windchaser 4657
+('465601','4656','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Maraudine Mauler - Flee at 15% HP'),
+-- Maraudine Windchaser 4657
 ('465701','4657','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Maraudine Windchaser - Enable Range Mode on Aggro'),
 ('465702','4657','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Maraudine Windchaser - Flee at 15% HP'),
 ('465703','4657','0','0','100','1025','7000','11000','15000','18000','0','0','11','6728','5','0','0','0','0','0','0','0','0','0','Maraudine Windchaser - Cast Enveloping Winds'),
@@ -11018,13 +11022,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Brown Wolf 14540
 -- Swift Gray Wolf 14541
 -- High Overlord Saurfang 14720
-('1472001','14720','11','0','100','0','0','0','0','0','0','0','11','26341','0','1','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Saurfang\'s Rage on Spawn'),
+('1472001','14720','11','0','100','0','0','0','0','0','0','0','11','26341','0','1','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Saurfang''s Rage on Spawn'),
 ('1472002','14720','4','0','100','0','0','0','0','0','0','0','11','9347','0','1','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Mortal Strike on Aggro'),
 ('1472003','14720','9','0','100','1','8','25','25000','25000','0','0','11','15749','4','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Berserker Charge'),
 ('1472004','14720','0','0','100','1','3000','9000','15000','15000','0','0','11','16508','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Intimidating Roar'),
 ('1472005','14720','0','0','100','1','5000','8000','7000','7000','0','0','11','16044','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Cleave'),
 ('1472006','14720','5','0','100','1','0','0','0','0','0','0','1','-13','0','0','0','0','0','0','0','0','0','0','Highlord Overlord Saurfang - Say on Unit Kill'),
-('1472007','14720','21','0','100','0','0','0','0','0','0','0','11','26341','0','1','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Saurfang\'s Rage on Reached Home'),
+('1472007','14720','21','0','100','0','0','0','0','0','0','0','11','26341','0','1','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Saurfang''s Rage on Reached Home'),
 -- Rashona Straglash 14726
 -- Vehena 14727
 -- Kruban Darkblade 14843
@@ -11243,8 +11247,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nelson the Nice 14536
 -- Creeping Doom 14761
 -- Emissary Roman'khan 14862
-('1486201','14862','0','0','100','1','4000','8000','7000','14000','0','0','11','23774','1','0','0','0','0','0','0','0','0','0','Emissary Roman\'khan - Cast System Shock'),
-('1486202','14862','0','0','100','1','0','0','3000','5000','0','0','11','23772','0','0','0','0','0','0','0','0','0','0','Emissary Roman\'khan - Cast Wilt'),
+('1486201','14862','0','0','100','1','4000','8000','7000','14000','0','0','11','23774','1','0','0','0','0','0','0','0','0','0','Emissary Roman''khan - Cast System Shock'),
+('1486202','14862','0','0','100','1','0','0','3000','5000','0','0','11','23772','0','0','0','0','0','0','0','0','0','0','Emissary Roman''khan - Cast Wilt'),
 -- Ralo'shan the Eternal Watcher 15169
 -- Rutgar Glyphshaper 15170   npcs_rutgar_and_frankal
 -- Frankal Stonebridge 15171   npcs_rutgar_and_frankal
@@ -12646,8 +12650,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('363801','3638','2','0','100','0','50','0','0','0','0','0','11','7952','0','0','1','-156','0','0','0','0','0','0','Devouring Ectoplasm - Cast Clone at 50% HP'),
 -- Razormane Wolf 3939 - NSR
 -- Minor Water Guardian 3950
-('395001','3950','11','0','100','0','0','0','0','0','0','0','11','6488','0','34','11','6498','0','34','0','0','0','0','Minor Water Guardian - Cast Sarilus\'s Elementals Passive and Feed Sarilus Passive on Spawn'),
-('395002','3950','7','0','100','0','0','0','0','0','0','0','11','6488','0','34','11','6498','0','34','0','0','0','0','Minor Water Guardian - Cast Sarilus\'s Elementals Passive and Feed Sarilus Passive on Evade'),
+('395001','3950','11','0','100','0','0','0','0','0','0','0','11','6488','0','34','11','6498','0','34','0','0','0','0','Minor Water Guardian - Cast Sarilus''s Elementals Passive and Feed Sarilus Passive on Spawn'),
+('395002','3950','7','0','100','0','0','0','0','0','0','0','11','6488','0','34','11','6498','0','34','0','0','0','0','Minor Water Guardian - Cast Sarilus''s Elementals Passive and Feed Sarilus Passive on Evade'),
 -- Sarilus Foulborne 3986
 ('398601','3986','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Sarilus Foulborne - Enable Range Mode on Aggro'),
 ('398602','3986','0','0','100','1025','8000','10000','25000','25000','0','0','11','6490','15','0','0','0','0','0','0','0','0','0','Sarilus Foulborne - Cast Sarilus''s Elementals'),
@@ -14278,7 +14282,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('969302','9693','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodaxe Evoker - Flee at 15% HP'),
 ('969303','9693','0','0','75','1025','12000','14000','25000','30000','0','0','11','15743','17','0','0','0','0','0','0','0','0','0','Bloodaxe Evoker - Cast Flamecrack'),
 ('969304','9693','0','0','80','1025','7000','9000','15000','20000','0','0','11','15744','17','0','0','0','0','0','0','0','0','0','Bloodaxe Evoker - Cast Blast Wave'),
-
 ('969305','9693','0','0','100','1281','0','0','1200','2400','0','0','11','13748','1','256','0','0','0','0','0','0','0','0','Bloodaxe Evoker - Cast Arcane Bolt (Range Mode)'),
 ('969306','9693','0','0','100','1537','0','0','5000','10000','0','0','11','13748','1','256','0','0','0','0','0','0','0','0','Bloodaxe Evoker - Cast Arcane Bolt (Melee Mode)'),
 -- Scarshield Portal 9707
@@ -17448,7 +17451,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1612701','16127','11','0','100','0','0','0','0','0','0','0','11','28749','0','1','0','0','0','0','0','0','0','0','Spectral Trainee - Cast Check Spectral Side on Spawn'),
 ('1612702','16127','0','0','100','3','3000','6000','7000','9000','0','0','11','27989','0','0','0','0','0','0','0','0','0','0','Spectral Trainee - Cast Arcane Explosion'),
 ('1612703','16127','8','0','100','1','28035','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Spectral Trainee - Despawn Self on Spell hit'),
-('1614801','16148','11','0','100','0','0','0','0','0','0','0','11','28749','0','1','0','0','0','0','0','0','0','0','Spectral Deathknight - Cast Check Spectral Side on Spawn'),
 -- Shadow Fissure
 ('1612901','16129','1','0','100','0','5000','5000','0','0','0','0','11','27812','0','0','0','0','0','0','0','0','0','0','Shadow Fissure - Void Blast'),
 -- Deathknight Captain
@@ -17457,6 +17459,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1614601','16146','0','0','100','1','0','0','8000','8000','0','0','11','19134','4','0','0','0','0','0','0','0','0','0','Deathknight - Cast Frightening Shout'),
 ('1614602','16146','0','0','100','1','0','0','7000','7000','0','0','11','28350','1','0','0','0','0','0','0','0','0','0','Deathknight - Cast Veil of Shadow'),
 -- Spectral Deathknight 16148
+('1614801','16148','11','0','100','0','0','0','0','0','0','0','11','28749','0','1','0','0','0','0','0','0','0','0','Spectral Deathknight - Cast Check Spectral Side on Spawn'),
 ('1614802','16148','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Spectral Deathknight - Set Phase 1 on Aggro'),
 ('1614803','16148','9','5','100','1','0','5','5000','9000','0','0','11','27991','1','0','0','0','0','0','0','0','0','0','Spectral Deathknight - Cast Sunder Armor (Phase 1)'),
 ('1614804','16148','24','5','100','1','27991','5','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Spectral Deathknight - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
@@ -18764,8 +18767,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==========================================================
 -- Current Complete Local Text Table for all Accepted Scripts
 -- ==========================================================
-INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`language`,`emote`,`broadcast_text_id`,`comment`) VALUES
+
 -- Classic IDs 0 - 9999
+INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`language`,`emote`,`broadcast_text_id`,`comment`) VALUES
 ('-1','I see those fools at the Abbey sent some fresh meat for us.','0','0','0','0','7133','103'),
 ('-2','The Brotherhood will not tolerate your actions.','0','0','0','0','1866','Common Defias Text'),
 ('-3','Ah, a chance to use this freshly sharpened blade.','0','0','0','0','1865','Common Defias Text'),
@@ -19002,8 +19006,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-492','I sense danger up ahead.','0','0','0','0','7596','12337'),
 ('-493','Assassins! Guards! Guards!','0','0','0','0','7595','12337'),
 -- Classic PLEASE RE-USE 494 - 501
-('-502','I presume you come with good news?','0','0','0','0','0','2597'),   -- Broadcast text id 23460 ?
-('-503','Things are going as planned, Lord Falconcrest. I assure you, it is only a matter of time.','0','0','0','0','0','2599'),   -- Broadcast text id 23459 ?
+('-502','I presume you come with good news?','0','0','0','0','0','2597'),
+('-503','Things are going as planned, Lord Falconcrest. I assure you, it is only a matter of time.','0','0','0','0','0','2599'),
 -- Classic PLEASE RE-USE 504 - 515
 ('-516','%s pounds his chest, calling for help!','0','2','0','0','4837','6514'),
 -- Classic PLEASE RE-USE 517 - 521
@@ -19043,7 +19047,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-578','Die! Die!','5854','1','0','0','6214','4854'),
 ('-579','No!  You must not do this!','0','1','0','0','4531','8497'),
 ('-580','DIE, MORTALS!','5871','1','0','0','4546','8443'),
-('-581','By the Light you will leave this tomb!','0','0','0','0','0','1854'),   -- Broadcast text id 13611 ?
+('-581','By the Light you will leave this tomb!','0','0','0','0','0','1854'),
 ('-582','Bijou knows where treasures are hidden.','0','0','0','0','5542','10262'),
 ('-583','SQUAWK!! *cough* *cough* I need to quit smoking!','0','0','0','0','5539','10262'),
 ('-584','Ask Kibler about the treasure! SQUAWK!','0','0','0','0','5540','10262'),
@@ -19115,7 +19119,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-853','Vanquish the weak!','0','1','0','0','0','Varimathras 2425'),
 ('-854','Time to die!','0','1','0','0','0','Varimathras 2425'),
 ('-855','None can oppose me.','0','1','0','0','0','Varimathras 2425'),
-('-856','For Sylvanas!','0','1','0','0','0','Varimathras 2425'),   -- Broadcast text id 47590 ?
+('-856','For Sylvanas!','0','1','0','0','0','Varimathras 2425'),
 -- Classic PLEASE RE-USE 857 - 894
 ('-895','There is no escape for you.  The Crusade shall destroy all who carry the scourge''s taint.','0','0','0','0','2626','Common Scarlet Text'),
 ('-896','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','0','2625','Common Scarlet Text'),
@@ -19189,17 +19193,17 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1055','No tampering with the mail!','0','0','0','0','6470','11142'),
 ('-1056','That''s our treasure, you lubber!','0','0','0','0','3932','Treasure Hunting Common Text'),
 ('-1057','Hey!  Get away from our treasure!','0','0','0','0','3931','Treasure Hunting Common Text'),
--- Classic PlEASE RE-USE 1058
+-- Classic PLEASE RE-USE 1058
 ('-1059','%s is now armed!','0','2','0','0','3543','15368'),
 ('-1060','%s will be armed in 3 seconds!','0','2','0','0','10894','15368'),
--- Classic PlEASE RE-USE 1061 - 1118
+-- Classic PLEASE RE-USE 1061 - 1118
 ('-1119','Kill $N!','0','1','0','25','11009','15392'),
 -- Classic PLEASE RE-USE 1120 - 1134
 ('-1135','None can stand against the serpent lords!','5786','1','0','0','6097','3671'),
 ('-1136','The blood of a thousand Alliance soldiers I shall spill... None shall stand against the might of the Ice Lord!','0','1','0','0','8617','Lokholar the Ice Lord 13256'),
 ('-1137','I drink in your suffering, mortal. Let your essence congeal with Lokholar!','0','0','0','0','8618','Lokholar the Ice Lord 13256'),
 ('-1138','Wicked, wicked, mortals! The forest weeps. The elements recoil at the destruction. Ivus must purge you from this world!','0','1','0','0','8736','Ivus the Forest Lord 13419'),
--- Classic PlEASE RE-USE 1139
+-- Classic PLEASE RE-USE 1139
 ('-1140','The Nightmare cannot be stopped!','0','0','0','0','11269','15625'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','0','11270','15625'),
 -- Classic PLEASE RE-USE 1142 - 1192
@@ -19347,7 +19351,6 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1540','Leaping leper gnomes! I''ve been stuck in there for months. Thanks, gang.','0','0','0','0','6066','10776'),
 -- Classic PLEASE RE-USE 1541 - 1550
 ('-1551','%s emits a strange noise.','0','2','0','0','10755','15233 16168'),
-
 ('-1552','It hurts so much... Itharius, my old friend... please help me...','0','4','0','0','4443','8506'),
 ('-1553','Will the nightmare ever end?!  I cannot force myself awake!','0','4','0','0','4444','8506'),
 ('-1554','Torture me no more!  Release me, mortal!  The Swamp of Sorrows... mortal... please...','0','4','0','0','4439','8506'),
@@ -19358,7 +19361,6 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1559','Foolish mortals you do not yet see the potential of that Artifact.','0','4','0','0','0','8506'),
 ('-1560','You are an agent of their wicked god, fool.  I will see you destroyed!','0','4','0','0','4441','8506'),
 ('-1561','I sense my grip on the Dream twisting into chaos.','0','4','0','0','0','8506'),
-
 ('-1562','%s lets out a high pitched screech, calling for help.','0','2','0','0','506','1983'),
 ('-1563','I shall return in time..','0','0','0','0','500','1983'),
 ('-1564','The blood samples must be protected!  Destroy the intruders!','0','0','0','0','9969','12461'),
@@ -19379,32 +19381,34 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Current Complete Summons Table for all Accepted Scripts
 -- =======================================================
 INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`comment` ) VALUES
-('1','8074.84','-3840','690.061','4.6','180000','10727'),
+('1','8074.84','-3840.0','690.061','4.6','180000','10727'),
 ('2','-482.9','42.4','-91.2','0.0301925','1080000','5721'),
 ('3','-506.6','54.6','-91.2','3.95326','1080000','5720'),
-('4','-9967.184','-136.4713','24.5857','6.143559','120000','6846'),
-('5','-9964.274','-140.0302','24.547','0.6806784','120000','6846'),
-('6','-9960.188','-143.9142','24.60698','1.675516','120000','6846'),
+('4','-9967.18','-136.471','24.5857','6.14356','120000','6846'),
+('5','-9964.27','-140.03','24.547','0.680678','120000','6846'),
+('6','-9960.19','-143.914','24.607','1.67552','120000','6846'),
 ('7','726.106','77.9764','-86.5913','6.00393','18000000','13716'),
 ('8','-1209.65','-2738.38','102.646','4.99352','300000','3395'),
-('9','274.414520','-416.159271','-119.961769','4.861792','18000000','11460'),
-('10','272.422424','-418.679291','-119.961769','4.760475','18000000','11460'),
-('11','268.910096','-417.026886','-119.961769','5.036935','18000000','11460'),
+('9','274.415','-416.159','-119.962','4.86179','18000000','11460'),
+('10','272.422','-418.679','-119.962','4.76048','18000000','11460'),
+('11','268.91','-417.027','-119.962','5.03693','18000000','11460'),
 ('12','1809.49','750.594','18.0475','4.56791','18000000','8138'),
 ('13','1824.58','747.281','21.1486','3.70162','18000000','8138'),
 ('14','1796.56','758.122','14.7124','5.03836','18000000','8138'),
-('15','1783.90','745.005','16.1110','6.03896','18000000','8138'),
+('15','1783.9','745.005','16.111','6.03896','18000000','8138'),
+-- Classic PLEASE RE-USE 16 - 19
 ('20','-167.538','-415.014','76.1469','1.56698','10800000','10268'),
 ('21','28.067','61.875','-123.405','4.67','600000','12238'),
-('22','1717.61','1006.29','53.66','0.90','10000','7787'),		-- xyz guessed
-('23','1717.61','1006.29','53.66','0.90','10000','7787'),		-- xyz guessed
-('24','1717.61','1006.29','53.66','0.90','10000','7787'),		-- xyz guessed
-('25','1717.61','1006.29','53.66','0.90','10000','7787'),		-- xyz guessed
+('22','1717.61','1006.29','53.66','0.9','10000','7787'),
+('23','1717.61','1006.29','53.66','0.9','10000','7787'),
+('24','1717.61','1006.29','53.66','0.9','10000','7787'),
+('25','1717.61','1006.29','53.66','0.9','10000','7787'),
+-- Classic PLEASE RE-USE 26 - 28
 ('29','-16.8468','-454.377','-18.6442','2.91211','7200000','16080'),
 ('30','261.076','-437.184','-119.962','4.6572','7200000','16097'),
 ('31','3425.85','-3054.75','136.498','3.33858','7200000','16102'),
 ('32','3421.2','-3056.52','136.498','0.343068','7200000','16101'),
-('33','-21.7459','141.394','83.925','0','7200000','16118'),
+('33','-21.7459','141.394','83.925','0.0','7200000','16118'),
 ('34','57.58','-537.266','110.935','3.1','7200000','16042');
 
 -- =======================================================
