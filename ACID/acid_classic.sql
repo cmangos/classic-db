@@ -17933,7 +17933,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1562102','15621','13','0','100','1025','8000','10000','0','0','0','0','11','25788','1','0','0','0','0','0','0','0','0','0','Yauj Brood - Cast Head Butt on Target Spell Casting'),
 -- Vekniss Borer (15622) - NSR
 -- Spawn of Fankriss
-('1563001','15630','0','0','100','1024','20000','20000','0','0','0','0','11','26662','0','0','1','-106','0','0','0','0','0','0','Spawn of Fankriss - Cast Berserk'),
+('1563001','15630','0','0','100','1024','30000','30000','0','0','0','0','11','26662','0','0','1','-106','0','0','0','0','0','0','Spawn of Fankriss - Cast Berserk'),
 -- Glob of Viscidus (15667) - npc_glob_of_viscidus
 -- Dirt Mound 15712 - cpp
 -- Ouro Scarab 15718 - npc_ouro_scarab
