@@ -1437,7 +1437,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Naga Siren (10956) - NSR
 -- Monty (12997) - NSR
 -- Nipsy (13018) - NSR
--- Haggle (14041) - NSR
+-- Haggle 14041
+('1404101','14041','1','0','100','1','1000','15000','60000','180000','0','0','54','0','0','1404101','0','0','0','0','0','0','0','0','Haggle - Random Say OOC'),
 -- Deeprun Diver (14121) - NSR
 
 
