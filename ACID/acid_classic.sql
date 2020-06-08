@@ -8235,12 +8235,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blackwood Pathfinder
 ('216701','2167','9','0','100','1025','0','5','7000','10000','0','0','11','3242','1','0','0','0','0','0','0','0','0','0','Blackwood Pathfinder - Cast Ravage'),
 ('216702','2167','9','0','100','1025','0','30','30000','35000','0','0','11','6950','1','32','0','0','0','0','0','0','0','0','Blackwood Pathfinder - Cast Faerie Fire'),
--- Blackwood Warrior
-('216801','2168','11','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Blackwood Warrior - Cast Battle Stance on Spawn'),
-('216802','2168','9','0','100','1025','0','8','16000','21000','0','0','11','8078','0','0','0','0','0','0','0','0','0','0','Blackwood Warrior - Cast Thunderclap'),
--- Blackwood Totemic
-('216901','2169','0','0','100','1025','6000','12000','30000','36000','0','0','11','5605','0','0','0','0','0','0','0','0','0','0','Blackwood Totemic - Cast Healing Ward'),
--- Blackwood Ursa
+-- Blackwood Warrior 2168 - npc_blackwood_warrior
+-- Blackwood Totemic 2169 - npc_blackwood_totemic
+-- Blackwood Ursa 2170
 ('217001','2170','14','0','100','1025','200','40','18000','21000','0','0','11','1058','12','0','0','0','0','0','0','0','0','0','Blackwood Ursa - Cast Rejuvenation on Friendlies'),
 -- Blackwood Shaman 2171
 ('217101','2171','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Blackwood Shaman - Enable Range Mode on Aggro'),
@@ -8513,10 +8510,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1032306','10323','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murkdeep - Flee at 15% HP'),
 ('1032307','10323','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Murkdeep - Set Phase to 0 on Evade'),
 -- Xabraxxis
-('1037301','10373','0','0','100','1025','3000','6000','20000','23000','0','0','11','11639','4','0','0','0','0','0','0','0','0','0','Xabraxxis - Cast Shadow Word: Pain'),
-('1037302','10373','0','0','100','1025','8000','12000','15000','20000','0','0','11','11980','1','32','0','0','0','0','0','0','0','0','Xabraxxis - Cast Curse of Weakness'),
-('1037303','10373','2','0','100','1025','30','0','120000','120000','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Xabraxxis - Cast Enrage at 30% HP'),
-('1037304','10373','6','0','100','0','0','0','0','0','0','0','11','19127','0','7','0','0','0','0','0','0','0','0','Xabraxxis - Cast Summon Xabraxxis Demon Bag on Death'),
+('1037301','10373','11','0','100','0','0','0','0','0','0','0','1','-9','0','0','11','7976','0','0','0','0','0','0','Xabraxxis - Yell and Cast Summon Party Bot - summon effect on Spawn'),
+('1037302','10373','0','0','100','1025','3000','6000','20000','23000','0','0','11','11639','4','0','0','0','0','0','0','0','0','0','Xabraxxis - Cast Shadow Word: Pain'),
+('1037303','10373','0','0','100','1025','8000','12000','15000','20000','0','0','11','11980','1','32','0','0','0','0','0','0','0','0','Xabraxxis - Cast Curse of Weakness'),
+('1037304','10373','2','0','100','1025','30','0','120000','120000','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Xabraxxis - Cast Enrage at 30% HP'),
+('1037305','10373','6','0','100','0','0','0','0','0','0','0','11','19127','0','7','0','0','0','0','0','0','0','0','Xabraxxis - Cast Summon Xabraxxis Demon Bag on Death'),
 -- Shatterspear Troll
 ('1091901','10919','4','0','100','0','0','0','0','0','0','0','39','30','0','0','0','0','0','0','0','0','0','0','Shatterspear Troll - Call for Help on Aggro'),
 -- Jenna Lemkenilli
@@ -18778,7 +18776,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-6','Grrrr... fresh meat!','0','0','0','0','1870','Common Gnoll Text'),
 ('-7','You no take candle!','0','0','0','0','1868','Common Kobold Text'),
 ('-8','Yiieeeee! Me run!','0','0','0','0','1864','Common Kobold Text'),
--- Classic PLEASE RE-USE 9 - 10
+('-9','What the... nobody cleanses a furbolg in MY camp!  Face the wrath of Xabraxxis!','0','1','0','0','5616','Xabraxxis spawn'),
+-- Classic PLEASE RE-USE 10
 ('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','0','3092','Klaven Mortwake 7053'),
 ('-12','%s is lured out into the open!','0','2','0','0','6874','Gorishi Hive Queen 10041 on Spawn'),
 ('-13','Is that the best you can do?','0','0','0','0','7237','High Overlord Saurfang'),
