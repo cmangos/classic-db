@@ -18709,6 +18709,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Imp Minion 12922
 ('1292201','12922','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Imp Minion - Enable Range Mode on Aggro'),
 ('1292202','12922','0','0','100','1025','1000','2000','2300','2800','0','0','11','20801','1','256','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
+-- Thornling 14362
+('1436201','14362','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','23973','0','0','0','0','0','0','Thornling - Set ReactState Passive and Cast Root Self on Spawn'),
+('1436202','14362','29','0','100','0','2000','2000','0','0','0','0','1','-19','0','0','11','22788','0','0','0','0','0','0','Thornling - Text Emote and Cast Grow on Generic Timer'),
+('1436203','14362','29','0','100','0','4000','4000','0','0','0','0','1','-20','0','0','11','22788','0','0','0','0','0','0','Thornling - Text Emote and Cast Grow on Generic Timer'),
+('1436204','14362','29','0','100','0','6000','6000','0','0','0','0','1','-21','0','0','11','22788','0','0','11','22781','0','1','Thornling - Text Emote, Cast Grow and Cast Thornling on Generic Timer'),
 -- Darkmoon Steam Tonk 15328
 ('1532801','15328','11','0','100','0','0','0','0','0','0','0','11','27749','0','2','11','24937','11','130','54','-1053','11','0','Darkmoon Steam Tonk - Cast Initialize Tank and Cast Using Control Console and Whisper Player on Spawn'),
 -- Tonk Mine 15368
@@ -18786,7 +18791,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-16','They might have run all the other farmers off, but the Saldean''s will never leave Westfall.','0','0','7','0','60','Farmer Saldean 233'),
 ('-17','%s senses your presence and opens a nether portal!','0','2','0','0','9489','Wandering Eye of Kilrogg Emote'),
 ('-18','Victory! For Agamaggan!','5812','1','0','0','6178','4420'),
--- Classic PLEASE RE-USE 19 - 21
+('-19','%s begins to grow!','0','2','0','0','9374','Thornling Emote'),
+('-20','%s continues to grow!','0','2','0','0','9375','Thornling Emote'),
+('-21','%s has grown to full size!','0','2','0','0','9376','Thornling Emote'),
 ('-22','VanCleef pay big for you heads!','5774','1','0','0','5619','644'),
 ('-23','Stormy seas out there.  The sea spirits must be restless....hic!','0','0','6','0','318','Hargin Mundar 1476'),
 ('-24','I saw a Sea Giant once.  It''s not something I would care to see again.  Burp!','0','0','6','0','319','Hargin Mundar 1476'),
