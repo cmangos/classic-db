@@ -17945,6 +17945,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Giant Claw Tentacle (15728) - mob_giant_claw_tentacle
 -- Flesh Tentacle (SD2 Backport)
 ('1580201','15802','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Flesh Tentacle - Set Combat Movement false on Spawn'),
+-- C'Thun Portal - 15896
+('1589601','15896','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','2','0','0','0','0','C''Thun Portal - Set React Passive on Spawn'),
 -- Toxic Cloud - 15933
 ('1593301','15933','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Toxic Cloud - Prevent Combat Movement and Prevent Melee on Spawn'),
 -- Vekniss Hatchling (15962) - NSR
