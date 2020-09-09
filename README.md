@@ -50,6 +50,8 @@ Once you have the desired database user and rights configured in MySQL, you may
 run again the `./InstallFullDB.sh` command to load the individual data tables into your
 database, populate them and apply all updates since the last milestone.
 
+There are also options that you can enable/disable in `InstallFullDB.config` to add SQL files related to bots, development updates or custom changes.
+
 For a full installation guide, please refer to [CMaNGOS installation instructions][14].
 
 Contributing

@@ -75,6 +75,10 @@ FORCE_WAIT="YES"
 ##   Set the variable to "YES" to use the dev directory
 DEV_UPDATES="NO"
 
+## Define if AHBot SQL updates need to be applied (by default, assume the core is built without AHBot)
+## Requires CORE_PATH to be set to a proper value. Set the variable to "YES" to import SQL updates.
+AHBOT="NO"
+
 # Enjoy using the tool
 EOF
 }
@@ -249,6 +253,25 @@ then
   echo "  CORE UPDATE FOUND BUT ALREADY IN DB: $UPD_FOUND"
   echo
   echo
+  
+  # Apply optional AHBot commands documentation
+  if [ "$AHBOT" == "YES" ]
+  then
+	  echo "> Trying to apply $CORE_PATH/sql/base/ahbot ..."
+	  for f in "$CORE_PATH/sql/base/ahbot/"*.sql
+	  do
+		echo "    Appending AHBot SQL file `basename $f` to database $DATABASE"
+		$MYSQL_COMMAND < $f
+		if [[ $? != 0 ]]
+		then
+		  echo "ERROR: cannot apply $f"
+		  exit 1
+		fi
+	  done
+	  echo "  AHBot SQL files successfully applied"
+	  echo
+	  echo  
+  fi
 
   # Apply dbc folder
   echo "> Trying to apply $CORE_PATH/sql/base/dbc/original_data ..."
