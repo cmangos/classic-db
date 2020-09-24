@@ -13392,6 +13392,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anguished Highborne 7524
 ('752401','7524','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Anguished Highborne - Enable Range Mode on Aggro'),
 ('752402','7524','9','0','100','1025','0','30','3400','4800','0','0','11','13860','1','256','0','0','0','0','0','0','0','0','Anguished Highborne - Cast Mind Blast'),
+-- Cloned Ooze 9477
+('947701','9477','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Clone Ooze - Forced Despawn on Evade'),
 -- Umbranse the Spiritspeaker 8588
 -- Donova Snowden 9298
 -- Auctioneer Grizzlin 9857
