@@ -8120,8 +8120,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pilot Xiggs Fuselighter (8392) - NSR
 -- Sanath Lim-yo (8395) - NSR
 -- Sentinel Keldara Sunblade 8397
-('839701','8397','11','0','100','0','0','0','0','0','0','0','50','1','0','0','17','159','7','0','0','0','0','0','Sentinel Keldara Sunblade - Set ReactState Defensive and UNIT_STAND_STATE_DEAD on Spawn'),
-('839702','8397','4','0','100','0','0','0','0','0','0','0','17','159','0','0','0','0','0','0','0','0','0','0','Sentinel Keldara Sunblade - Remove UNIT_STAND_STATE_DEAD on Aggro'),
+('839701','8397','11','0','100','0','0','0','0','0','0','0','50','1','0','0','47','7','0','0','0','0','0','0','Sentinel Keldara Sunblade - Set ReactState Defensive and UNIT_STAND_STATE_DEAD on Spawn'),
+('839702','8397','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Sentinel Keldara Sunblade - Remove UNIT_STAND_STATE_DEAD on Aggro'),
 -- Nyrill (8399) - NSR
 -- Ogtinc (8405) - NSR
 -- Makron the Corrupt 8407 - NSR
