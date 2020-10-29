@@ -22,7 +22,10 @@
 -- -------------------------------
 
 -- Make Moonwell GO server-side (visible by GM only)
-UPDATE gameobject_template SET data3=1 WHERE entry=177272; 
+UPDATE gameobject_template SET data3=1 WHERE entry=177272;
+
+-- Make Incantion of Celebras Trap only visible by GM
+UPDATE gameobject_template SET data8=1 WHERE entry=178963;
 
 -- Set radius of Supply Crate trap to zero to prevent trap from being triggered by nearby players (it should trigger on player usage of original GO)
 UPDATE gameobject_template SET data2=0 WHERE entry IN (175534, 175535, 175536, 175537);
@@ -30,7 +33,7 @@ UPDATE gameobject_template SET data2=0 WHERE entry IN (175534, 175535, 175536, 1
 -- Make Dawn's Gambit Trap only visible by GM
 UPDATE gameobject_template SET data2=5, data3=0, data8=0 WHERE entry=176110;
 -- Dawn's Gambit: add data from GO trap 176110 until we are able to trigger trap GOs without spells
-UPDATE gameobject_template SET data2=5, data3=18110, data4=1, data8=1 WHERE entry=177304; 
+UPDATE gameobject_template SET data2=5, data3=18110, data4=1, data8=1 WHERE entry=177304;
 
 -- The Demon Seed GO: make it despawnable on use with short autoclose value
 UPDATE gameobject_template SET data3=65536, data5=1 WHERE entry=3524;
@@ -53,7 +56,7 @@ UPDATE gameobject_template SET data2=20 WHERE entry=179784;
 -- Currently the core cannot make a GO usable for a specific quest if the items it holds are not objectives of the quest
 
 -- Link Hive'Ashi Pod GO to quest 1126 so it is usable by players on the quest
-UPDATE gameobject_template SET data8=1126 WHERE entry=178553; 
+UPDATE gameobject_template SET data8=1126 WHERE entry=178553;
 
 -- Link Azsharite GOs to quest 3602 so they are usable by players on the quest
 UPDATE gameobject_template SET data8=3602 WHERE entry IN (152620, 152621, 152622, 152631);
