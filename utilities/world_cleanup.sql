@@ -51,7 +51,7 @@ UPDATE npc_vendor ct JOIN item_template it ON it.entry = ct.item SET ct.comments
 -- Populate Condition Comments
 -- ==============================
 
-UPDATE conditions SET comments=NULL;
+UPDATE conditions SET comments=NULL WHERE comments='';
 -- CONDITION_NONE
 UPDATE conditions SET comments=CONCAT('Player Has Aura: ',value1, ', EffectIndex: ',value2) WHERE type=1 AND flags=0 AND comments IS NULL; -- CONDITION_AURA
 UPDATE conditions SET comments=CONCAT('NOT Player Has Aura: ',value1, ', EffectIndex: ',value2) WHERE type=1 AND flags&1 AND comments IS NULL; -- CONDITION_AURA &FLAG_REVERSE_RESULT
@@ -98,7 +98,7 @@ UPDATE conditions SET comments=CONCAT('Quest ID ',value1,' NOT Taken AND NOT Rew
 UPDATE conditions SET comments=CONCAT('Player Has ',value2,' or more of Item ID ',value1,' in Inventory/Bank') WHERE type=23 AND comments IS NULL; -- CONDITION_ITEM_WITH_BANK
 UPDATE conditions SET comments=CONCAT('Player Has Less Than ',value2,' of Item ID ',value1,' in Inventory/Bank') WHERE type=23 AND flags&1 AND comments IS NULL; -- CONDITION_ITEM_WITH_BANK &FLAG_REVERSE_RESULT
 UPDATE conditions SET comments=CONCAT('Holiday ',value1,' Active') WHERE type=26 AND comments IS NULL; -- CONDITION_ACTIVE_HOLIDAY
-UPDATE conditions SET comments=CONCAT('NOT Holiday ',value1,' Active') WHERE type=27 AND comments IS NULL; -- CONDITION_NOT_ACTIVE_HOLIDAY
+UPDATE conditions SET comments=CONCAT('Holiday ',value1,'NOT Active') WHERE type=26 AND flags&1 AND comments IS NULL; -- CONDITION_ACTIVE_HOLIDAY &FLAG_REVERSE_RESULT
 UPDATE conditions SET comments=CONCAT('Player can learn Ability from Spell ID: ',value1) WHERE type=28 AND value2=0 AND comments IS NULL; -- CONDITION_LEARNABLE_ABILITY
 UPDATE conditions SET comments=CONCAT('(Player can learn Ability from Spell ID ',value1,' AND NOT has Item ID ',value2,' in Inventory or Bank)') WHERE type=28 AND value2 !=0 AND comments IS NULL; -- CONDITION_LEARNABLE_ABILITY
 UPDATE conditions SET comments=CONCAT('Skill level of Skill ID ',value1,' Below level ',value2) WHERE type=29 AND comments IS NULL; -- CONDITION_SKILL_BELOW
