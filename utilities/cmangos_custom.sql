@@ -70,6 +70,9 @@ UPDATE gameobject_template SET data1=3701 WHERE entry=153556;
 -- Make object 181444 (Kel'Thuzad Trigger) despawnable on usage
 UPDATE gameobject_template SET data4=1 WHERE entry=181444;
 
+-- Disable a single spawn of GO (Black Lotus) as it is spawned under map and would break pooling in its zone
+UPDATE gameobject SET spawntimesecsmin=-3600, spawntimesecsmax=-3600 WHERE guid=86503;
+
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------

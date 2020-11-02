@@ -36,7 +36,7 @@ INSERT INTO pool_template VALUES
 (@POOLID, 1, 'MASTER Herbs Black Lotus - Dire Maul');
 
 -- Add missing spawns in Eastern Kingdoms
-DELETE FROM gameobject WHERE guid IN (138610, 138611);
+DELETE FROM gameobject WHERE guid IN (138613, 131395);
 INSERT INTO gameobject (guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
 (138613, 176589, 0, 2511.816, -5151.868, 74.3906, -2.44346, 0, 0, -0.9396925, 0.3420205, 3600, 3600, 100, 1), -- Eastern Plaguelands
 (131395, 176589, 0, 2917.39, -3692.225, 114.8027, 0.01745246, 0, 0, 0.999391, 0.0349043, 3600, 3600, 100, 1); -- Eastern Plaguelands
@@ -47,7 +47,7 @@ INSERT INTO pool_gameobject VALUES
 (131395, 946, 0, 'Black Lotus - Eastern Plaguelands');
 
 -- Add missing spawns in Kalimdor
-DELETE FROM gameobject WHERE guid IN (138610, 138611);
+DELETE FROM gameobject WHERE guid IN (131397, 132230, 131396);
 INSERT INTO gameobject (guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
 (131397, 176589, 1, -7925.228, 1849.406, 5.347952, 0.2268928, 0, 0, 0, 0, 3600, 3600, 100, 1), -- Silithus
 (132230, 176589, 1, 5487.68, -4936.528, 856.0865, -1.832596, 0, 0, 0, 0, 3600, 3600, 100, 1), -- Winterspring
