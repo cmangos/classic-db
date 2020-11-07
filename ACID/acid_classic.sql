@@ -6311,12 +6311,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Healer (6491) - NSR
 -- Rift Spawn (6492)
 ('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Rift Spawn - Set Invincible at 1 HP and Set Phase 0 on Spawn'),
-('649202','6492','8','0','100','0','9095','-1','0','0','0','0','55','6','0','0','22','1','0','0','0','0','0','0','Rift Spawn - Attack Invoker and Set Phase 1 on Cantation of Manifestation Spellhit'),
-('649203','6492','4','6','100','0','0','0','0','0','0','0','11','9738','0','0','54','-988','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Becomes Visible and Text Emote on Aggro (Phase 0)'),
+('649202','6492','8','0','100','0','9095','-1','0','0','0','0','55','6','0','0','22','1','0','0','54','-988','0','0','Rift Spawn - Attack Invoker and Set Phase 1 and Text Emote on Cantation of Manifestation Spellhit'),
+('649203','6492','0','13','100','0','1000','1000','0','0','0','0','11','9096','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Manifestation (Phase 1)'),
 ('649204','6492','2','0','100','1024','1','0','0','0','0','0','11','9032','0','0','18','33554432','0','0','22','2','0','0','Rift Spawn - Cast Self Stun - 30 seconds and Set NotSelectable and Set Phase 2 When Below 1% HP'),
-('649205','6492','29','3','100','0','29500','29500','0','0','0','0','54','-989','0','0','41','0','0','0','0','0','0','0','Rift Spawn - Text Emote and Despawn Self on Generic Timer (Phase 2)'),
-('649206','6492','21','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Set Phase 0 on Reached Home'),
-('649207','6492','8','0','100','0','9010','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Despawn Self on Create Filled Containment Coffer Spellhit'),
+('649205','6492','8','11','100','0','9012','-1','0','0','0','0','54','-992','0','0','22','3','0','0','0','0','0','0','Rift Spawn - Text Emote and Set Phase 3 on Attract Rift Spawn Spellhit (Phase 2)'),
+('649206','6492','29','11','100','0','29500','29500','0','0','0','0','54','-989','0','0','41','0','0','0','0','0','0','0','Rift Spawn - Text Emote and Despawn Self on Generic Timer (Phase 2)'),
+('649207','6492','29','7','100','0','3500','3500','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Despawn Self on Generic Timer (Phase 3)'),
+('649208','6492','21','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Set Phase 0 on Reached Home'),
 -- Andron Gant
 ('652201','6522','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Andron Gant - Summon Deathguard Elite on Aggro'),
 -- Estelle Gendry
@@ -19167,7 +19168,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-989','%s escapes into the void!','0','2','0','0','2564','6492'),
 ('-990','Mommy!','0','0','0','0','832','Common Text'),
 ('-991','You''ve interfered with our plans for the last time, foolish $c!','0','0','0','0','7579','12319'),
--- Classic PLEASE RE-USE 992 - 1018
+('-992','%s escapes into the void!','0','2','0','0','2553','6492'),
+-- Classic PLEASE RE-USE 993 - 1018
 ('-1019','That will teach you to lay off the herb, $r.','0','0','0','1','9500','11447'),
 ('-1020','Step right up! Step right up! Greetings my friend. I''m Silas Darkmoon and I want to welcome you to the greatest show on Azeroth! It''s the Darkmoon Faire friend, and it''s your lucky day! Sparing no expense, we''ve gathered wonders and treats from around the world for your delight. Whether you''re young or old, rich or poor, the Darkmoon Faire has it all!','0','0','0','1','0','14823'),
 ('-1021','Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world! We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','1','0','14823'),
