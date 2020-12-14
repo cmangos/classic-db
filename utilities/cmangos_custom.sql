@@ -76,6 +76,10 @@ UPDATE gameobject_template SET data4=1 WHERE entry=181444;
 -- Disable a single spawn of GO (Black Lotus) as it is spawned under map and would break pooling in its zone
 UPDATE gameobject SET spawntimesecsmin=-3600, spawntimesecsmax=-3600 WHERE guid=86503;
 
+-- Ritual Candle Aura
+UPDATE gameobject_template SET `data8`=1 WHERE entry=179688; -- add serverside attribute so that it's not visible to players
+UPDATE gameobject_template SET `faction`=1375 WHERE entry=179688; -- "Treasure" faction 1375 here is guessed based on when patch 1.4 was released, and the fact that it's hostile to Demon faction 90
+
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------
