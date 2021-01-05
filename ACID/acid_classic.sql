@@ -17946,6 +17946,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1572602','15726','0','0','100','1025','0','1000','11000','12000','0','0','11','26143','4','0','0','0','0','0','0','0','0','0','Eye Tentacle - Cast Mind Flay'),
 -- C'Thun (15727) - boss_cthun
 -- Giant Claw Tentacle (15728) - mob_giant_claw_tentacle
+-- Exit Trigger - 15800
+('1580001','15800','11','0','100','0','0','0','0','0','0','0','11','26271','0','0','0','0','0','0','0','0','0','0','Exit Trigger - Cast Rocky Ground Impact on Spawn'),
+('1580002','15800','0','0','100','0','2000','2000','0','0','0','0','11','26224','15','66','0','0','0','0','0','0','0','0','Exit Trigger - Cast Exit Stomach'),
 -- Flesh Tentacle (SD2 Backport)
 ('1580201','15802','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Flesh Tentacle - Set Combat Movement false on Spawn'),
 -- C'Thun Portal - 15896
