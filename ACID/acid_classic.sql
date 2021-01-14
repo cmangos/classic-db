@@ -11834,7 +11834,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gimblethorn (7799) - NSR
 -- Scorpid Duneburrower (4.0.3 Official Data)
 ('780301','7803','0','0','100','1025','6400','14700','20900','45800','0','0','11','5416','1','0','0','0','0','0','0','0','0','0','Scorpid Duneburrower - Cast Venom Sting'),
--- Trenton Lighthammer (7804) - NSR
+-- Trenton Lighthammer 7804
+('780401','7804','1','0','100','1','0','0','78000','78000','0','0','5','233','0','0','0','0','0','0','0','0','0','0','Trenton Lighthammer - Set EMOTE_STATE_WORK_NOSHEATHE_MINING OOC'),
+('780402','7804','1','0','100','1','50000','50000','78000','78000','0','0','5','0','0','0','0','0','0','0','0','0','0','0','Trenton Lighthammer - Set EMOTE_ONESHOT_NONE OOC'),
 -- Wastewander Scofflaw (7805) - NSR
 -- Bera Stonehammer
 ('782301','7823','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','4566','0','0','0','0','0','0','Bera Stonehammer - Cast Summon Enraged Gryphon and Yell on Aggro'),
@@ -13148,6 +13150,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Uhk'loc
 ('658501','6585','4','0','100','0','0','0','0','0','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Uhk''loc - Cast Battleshout on Aggro'),
 ('658502','6585','9','0','100','1025','0','5','8000','12000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Uhk''loc - Cast Uppercut'),
+-- Muigin 9119
+('911901','9119','1','0','100','1','10000','10000','360000','360000','0','0','53','9006','0','0','1','0','0','0','0','0','0','0','Muigin - Bloodpetal Pest Infestation Event OOC (dbscripts_on_relay)'),
+-- Bloodpetal Pest 9157
+('915701','9157','11','0','100','0','0','0','0','0','0','0','50','0','0','0','53','9007','0','0','0','0','0','0','Bloodpetal Pest - Set ReactState Passive, Bloodpetal Pest Infestation Event on Spawn (dbscripts_on_relay)'),
+('915702','9157','29','0','100','0','12000','12000','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Bloodpetal Pest - Set ReactState Aggressive on Generic Timer'),
 -- Young Diemetradon
 ('916201','9162','9','0','100','1025','0','5','16000','20000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Young Diemetradon - Cast Tendon Rip'),
 -- Diemetradon
