@@ -80,6 +80,9 @@ UPDATE gameobject SET spawntimesecsmin=-3600, spawntimesecsmax=-3600 WHERE guid=
 UPDATE gameobject_template SET `data8`=1 WHERE entry=179688; -- add serverside attribute so that it's not visible to players
 UPDATE gameobject_template SET `faction`=1375 WHERE entry=179688; -- "Treasure" faction 1375 here is guessed based on when patch 1.4 was released, and the fact that it's hostile to Demon faction 90
 
+-- Make PX-238 Winter Wondervolt TRAP GO server-side (visible by GM only)
+UPDATE gameobject_template SET `data8`=1 WHERE entry=180797;
+
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------
