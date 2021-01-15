@@ -15739,8 +15739,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('454205','4542','2','0','100','1024','30','0','0','0','0','0','11','12039','0','0','0','0','0','0','0','0','0','0','High Inquisitor Fairbanks - Cast Heal at 30% HP'),
 ('454206','4542','2','0','100','1024','25','0','0','0','0','0','11','11647','0','0','0','0','0','0','0','0','0','0','High Inquisitor Fairbanks - Cast Power Word: Shield at 25% HP'),
 ('454207','4542','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','High Inquisitor Fairbanks - Set Stand State to Stand on Aggro'),
-('454208','4542','8','0','100','0','28441','-1','0','0','0','0','53','9002','6','0','40','0','0','0','0','0','0','0','High Inquisitor Fairbanks - Start Relay Script and Set Sheath State on AB Effect 000 Spellhit'),
-('454209','4542','11','0','100','0','0','0','0','0','0','0','11','8278','0','1','11','8279','0','1','0','0','0','0','High Inquisitor Fairbanks - Cast Invisibility Detection and Cast Stealth Detection on Spawn'),
+('454208','4542','8','0','100','0','28441','-1','0','0','0','0','53','9002','6','0','40','0','0','0','47','0','0','0','High Inquisitor Fairbanks - Start Relay Script and Set Sheath State and Set Stand State on AB Effect 000 Spellhit'),
+('454209','4542','11','0','100','0','0','0','0','0','0','0','11','8278','0','1','11','8279','0','1','47','7','0','0','High Inquisitor Fairbanks - Cast Invisibility Detection and Cast Stealth Detection and Set Stand State Dead on Spawn'),
 -- Bloodmage Thalnos 4543
 ('454301','4543','4','0','100','0','0','0','0','0','0','0','1','-1202','0','0','0','0','0','0','0','0','0','0','Bloodmage Thalnos - Yell on Aggro'),
 ('454302','4543','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Bloodmage Thalnos - Enable Range Mode on Aggro'),
