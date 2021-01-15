@@ -18945,7 +18945,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Classic PLEASE RE-USE 235 - 310
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','0','5952','11582'),
 -- Classic PLEASE RE-USE 312 - 320
-('-321','Iman m t''ief fu Fus''obeah italaf','0','0','0','0','0','Common Frostmane Troll Text'),
+('-321','Have a taste of Frostmane magics.','0','0','14','0','1910','Common Frostmane Troll Text'),
 ('-322','All you $R want is my weed.','0','0','14','0','1911','Common Frostmane Troll Text'),
 ('-323','You dare defile Frostmane Hold, $r. Prepare to die!','0','0','14','0','1918','1260'),
 ('-324','Time to bash!','0','0','0','0','1917','1119'),
@@ -18980,12 +18980,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-371','Die, $R!  These lands belong to the Stonesplinter Tribe!','0','0','0','0','446','1399'),
 ('-372','The Loch belongs to the Stonesplinter Tribe now, $N!  Now die!','0','0','0','0','448','1399'),
 ('-373','Die in the name of Ragnaros!','0','0','0','0','434','1222'),
-('-374','[Dwarvish] Dum mos','0','0','0','0','0','2149'),
+('-374','Time to die, $C.','0','0','6','0','1935','2149'),
 ('-375','%s''s eyes glow red as he lights his dynamite and begins to cackle madly!','0','2','0','0','637','1222'),
 ('-376','[Orcish] Ogg kaz ko zugas kil mog Tov''nokaz Kagg','0','0','0','0','0','Orc Common Text'),
 ('-377','[Orcish] Tago mog regas gi mog Tov''nokaz Kagg','0','0','0','0','0','Orc Common Text'),
 -- Classic PLEASE RE-USE 378 - 387
-('-388','Hearty Kill!','5801','1','0','0','0','4831'),
+('-388','Paltry kill.','5801','1','0','0','6170','4831'),
 -- Classic PLEASE RE-USE 389 - 403
 ('-404','I cannot permit you to enter the Temple!  I must destroy you for your own good!','0','0','0','0','9589','Common Green Dragon Text'),
 ('-405','%s seems much calmer now that it has eaten the remains of $N.','0','2','0','0','907','2931'),
@@ -19135,7 +19135,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-808','No one get past me and threaten da king!  Ungh, take it!!','0','0','0','0','9418','14325'),
 ('-809','Help me crush these punys!','0','1','0','0','9478','14325'),
 -- Classic PLEASE RE-USE 810 - 816
-('-817','So or''manley fi siame Dim fus siame yudo','5859','1','14','0','0','8580'),
+('-817','My banishment is ended! Let the blood flow!','5859','1','14','0','4485','8580'),
 ('-818','%s lets loose a guttural growl as her body collapses. A horrifying howl can be heard echoing through the halls of Blackrock Spire. Something is very, very angry.','0','2','0','0','5548','10220'),
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','0','6220','5721'),
 ('-820','You know not what you do!  We must destroy you for your own good.','0','1','0','0','4364','5721'),
