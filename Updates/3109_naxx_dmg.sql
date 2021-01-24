@@ -1,0 +1,26 @@
+
+UPDATE `creature_template` SET `DamageMultiplier` = '50', `MinMeleeDmg` = '127.8', `MaxMeleeDmg` = '169.2', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '15990');
+UPDATE `creature_template` SET `DamageMultiplier` = '45', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '15929');
+UPDATE `creature_template` SET `DamageMultiplier` = '45', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '15930');
+UPDATE `creature_template` SET `DamageMultiplier` = '40', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '15954');
+UPDATE `creature_template` SET `DamageMultiplier` = '40', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '15936');
+UPDATE `creature_template` SET `DamageMultiplier` = '40', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '15952');
+UPDATE `creature_template` SET `DamageMultiplier` = '40', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '15953');
+UPDATE `creature_template` SET `DamageMultiplier` = '32', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '15931');
+UPDATE `creature_template` SET `DamageMultiplier` = '26', `MinMeleeDmg` = '181.9', `MaxMeleeDmg` = '241.3', `MeleeBaseAttackTime` = '3500', `RangedBaseAttackTime` = '3500' WHERE (`Entry` = '16803');
+UPDATE `creature_template` SET `DamageMultiplier` = '30', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16025');
+UPDATE `creature_template` SET `DamageMultiplier` = '30', `MinMeleeDmg` = '132.3', `MaxMeleeDmg` = '175.4', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16017');
+UPDATE `creature_template` SET `DamageMultiplier` = '28', `MinMeleeDmg` = '132.3', `MaxMeleeDmg` = '175.4', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16018');
+UPDATE `creature_template` SET `DamageMultiplier` = '25', `MinMeleeDmg` = '147.8', `MaxMeleeDmg` = '195.6', `MeleeBaseAttackTime` = '3000', `RangedBaseAttackTime` = '3000' WHERE (`Entry` = '16446');
+UPDATE `creature_template` SET `DamageMultiplier` = '24', `MinMeleeDmg` = '147.8', `MaxMeleeDmg` = '195.6', `MeleeBaseAttackTime` = '3000', `RangedBaseAttackTime` = '3000' WHERE (`Entry` = '16168');
+UPDATE `creature_template` SET `DamageMultiplier` = '28', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16065');
+UPDATE `creature_template` SET `DamageMultiplier` = '28', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16063');
+UPDATE `creature_template` SET `DamageMultiplier` = '20', `MinMeleeDmg` = '137.3', `MaxMeleeDmg` = '182.0', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16064');
+UPDATE `creature_template` SET `DamageMultiplier` = '32', `MinMeleeDmg` = '082.4', `MaxMeleeDmg` = '109.2', `MeleeBaseAttackTime` = '1500', `RangedBaseAttackTime` = '1500' WHERE (`Entry` = '16062');
+UPDATE `creature_template` SET `DamageMultiplier` = '44', `MinMeleeDmg` = '063.5', `MaxMeleeDmg` = '084.2', `MeleeBaseAttackTime` = '1200', `RangedBaseAttackTime` = '1200' WHERE (`Entry` = '16216');
+UPDATE `creature_template` SET `DamageMultiplier` = '25', `MinMeleeDmg` = '129.9', `MaxMeleeDmg` = '172.4', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16024');
+UPDATE `creature_template` SET `DamageMultiplier` = '22', `MinMeleeDmg` = '127.8', `MaxMeleeDmg` = '169.2', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16060');
+UPDATE `creature_template` SET `DamageMultiplier` = '22', `MinMeleeDmg` = '134.9', `MaxMeleeDmg` = '178.9', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16021');
+UPDATE `creature_template` SET `DamageMultiplier` = '12', `MinMeleeDmg` = '129.9', `MaxMeleeDmg` = '172.4', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16022');
+UPDATE `creature_template` SET `DamageMultiplier` = '12', `MinMeleeDmg` = '132.3', `MaxMeleeDmg` = '175.4', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16020');
+UPDATE `creature_template` SET `DamageMultiplier` = '10', `MinMeleeDmg` = '129.9', `MaxMeleeDmg` = '172.4', `MeleeBaseAttackTime` = '2500', `RangedBaseAttackTime` = '2500' WHERE (`Entry` = '16056');
