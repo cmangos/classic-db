@@ -12241,7 +12241,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Seriadne 10051
 -- Nessa Shadowsong 10118
 -- Huntress Nhemai 10604
+('1060401','10604','7','0','100','0','0','0','0','0','0','0','43','0','9991','0','0','0','0','0','0','0','0','0','Huntress Nhemai - Mount on Evade'),
 -- Huntress Yaeliura 10606
+('1060601','10606','7','0','100','0','0','0','0','0','0','0','43','0','9991','0','0','0','0','0','0','0','0','0','Huntress Yaeliura - Mount on Evade'),
 -- Gnarlpine Instigator 11690
 -- Orenthil Whisperwind 11942
 -- Shadowglen Sentinel 12160
