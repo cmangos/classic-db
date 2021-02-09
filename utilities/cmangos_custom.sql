@@ -83,6 +83,10 @@ UPDATE gameobject_template SET `faction`=1375 WHERE entry=179688; -- "Treasure" 
 -- Make PX-238 Winter Wondervolt TRAP GO server-side (visible by GM only)
 UPDATE gameobject_template SET `data8`=1 WHERE entry=180797;
 
+-- Andorhal Tower
+-- SpellFocus radius reduced to 5 (sync with eff1 from spell:17016 that activates target there = 5y)
+UPDATE gameobject_template SET data1 = 5 WHERE entry BETWEEN 176094 AND 176097;
+
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------
