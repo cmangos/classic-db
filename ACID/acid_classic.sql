@@ -6993,6 +6993,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('83401','834','1','0','10','1','30000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Coyote - Howl and Emote OOC'),
 -- Rotten Ghoul (2.4.3 Official Data)
 ('84601','846','11','0','100','0','0','0','0','0','0','0','11','11919','0','1','0','0','0','0','0','0','0','0','Rotten Ghoul - Cast Poison Proc on Spawn'),
+-- Scout Galiaan 878
+('87801','878','1','0','100','1','0','30000','240000','360000','0','0','54','-10','0','0','0','0','0','0','0','0','0','0','Scout Galiaan - Say on OOC Timer'),
 -- Riverpaw Shaman 1065 (2.4.3 Official Data)
 ('106501','1065','4','0','15','0','0','0','0','0','0','0','1','-5','-6','0','0','0','0','0','0','0','0','0','Riverpaw Shaman - Say on Aggro'),
 ('106502','1065','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Riverpaw Shaman - Enable Range Mode on Aggro'),
@@ -18836,7 +18838,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-7','You no take candle!','0','0','0','0','1868','Common Kobold Text'),
 ('-8','Yiieeeee! Me run!','0','0','0','0','1864','Common Kobold Text'),
 ('-9','What the... nobody cleanses a furbolg in MY camp!  Face the wrath of Xabraxxis!','0','1','0','0','5616','Xabraxxis spawn'),
--- Classic PLEASE RE-USE 10
+('-10','Lots of gnoll activity reported in the Gold Coast Quarry and the Jangolode Mine.','0','0','7','0','42','Scout Galiaan 878'),
 ('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','0','3092','Klaven Mortwake 7053'),
 ('-12','%s is lured out into the open!','0','2','0','0','6874','Gorishi Hive Queen 10041 on Spawn'),
 ('-13','Is that the best you can do?','0','0','0','0','7237','High Overlord Saurfang'),
