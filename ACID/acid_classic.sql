@@ -2712,8 +2712,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Helene Peltskinner (6306) - NSR
 -- Donni Anthania (6367) - NSR
 -- Cat (6368) - NSR
--- Dane Winslow (6373) - NSR
--- Cylina Darkheart
+-- Dane Winslow 6373
+('637301','6373','1','0','100','0','2000','2000','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Dane Winslow - Cast Summon Imp OOC'),
+('637302','6373','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Dane Winslow - Despawn Guardians on Evade'),
+-- Cylina Darkheart 6374
 ('637401','6374','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Cylina Darkheart - Despawn Guardians on OOC'),
 ('637402','6374','1','0','100','0','2000','2000','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Cylina Darkheart - Cast Summon Imp on OOC'),
 -- Summoned Voidwalker
