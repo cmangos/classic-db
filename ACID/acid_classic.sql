@@ -2693,7 +2693,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Eastvale Lumberjack (1975) - NSR
 -- Forlorn Spirit 2044 (2.4.2 Official Data)
 ('204401','2044','4','0','100','0','0','0','0','0','0','0','1','-449','-450','0','0','0','0','0','0','0','0','0','Forlorn Spirit - Random Say on Aggro'),
-('204402','2044','32','0','100','1025','5','30','18500','27000','0','0','11','118','12','32','0','0','0','0','0','0','0','0','Forlorn Spirit - Cast Polymorph in Range'),
+('204402','2044','0','0','100','1025','10000','15000','18500','27000','0','0','11','118','5','32','0','0','0','0','0','0','0','0','Forlorn Spirit - Cast Polymorph skip tank'),
 ('204403','2044','0','0','100','1025','2000','2000','2000','2000','0','0','11','3105','1','32','0','0','0','0','0','0','0','0','Forlorn Spirit - Cast Curse of Stalvan'),
 -- Andrew Krighton (2046) - NSR
 -- Michelle Belle (2329) - NSR
