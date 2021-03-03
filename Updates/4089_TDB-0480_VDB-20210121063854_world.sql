@@ -36,16 +36,16 @@ INSERT INTO `spell_threat` (`entry`, `Threat`, `multiplier`, `ap_bonus`) VALUES
 (25916, 60, 1, 0), -- Greater Blessing of Might (Rank 2)
 (25890, 60, 1, 0), -- Greater Blessing of Light (Rank 1)
 (25898, 60, 1, 0), -- Greater Blessing of Kings (confirmed tbcc)
-(25899, 60, 1, 0), -- Greater Blessing of Sanctuary (Rank 1)
+(25899, 60, 1, 0); -- Greater Blessing of Sanctuary (Rank 1)
 
 -- TBC+, guessed for most spells based on https://youtu.be/1Vl4OveOFwM?t=30
-(27147, 62, 1, 0), -- Blessing of Sacrifice (Rank 3)
-(27148, 70, 1, 0), -- Blessing of Sacrifice (Rank 4)
-(27140, 70, 1, 0), -- Blessing of Might (Rank 8)
-(27144, 70, 1, 0), -- Blessing of Light (Rank 4)
-(27168, 70, 1, 0), -- Blessing of Sanctuary (Rank 5)
-(27141, 70, 1, 0), -- Greater Blessing of Might (Rank 3) (134 with imp threat spell, not 144 so about 70-71) saying 20 increase from 114 to 134 not 144
-(27145, 70, 1, 0), -- Greater Blessing of Light (Rank 2)
-(27169, 70, 1, 0); -- Greater Blessing of Sanctuary (Rank 2)
+-- (27147, 62, 1, 0), -- Blessing of Sacrifice (Rank 3)
+-- (27148, 70, 1, 0), -- Blessing of Sacrifice (Rank 4)
+-- (27140, 70, 1, 0), -- Blessing of Might (Rank 8)
+-- (27144, 70, 1, 0), -- Blessing of Light (Rank 4)
+-- (27168, 70, 1, 0), -- Blessing of Sanctuary (Rank 5)
+-- (27141, 70, 1, 0), -- Greater Blessing of Might (Rank 3) (134 with imp threat spell, not 144 so about 70-71) saying 20 increase from 114 to 134 not 144
+-- (27145, 70, 1, 0), -- Greater Blessing of Light (Rank 2)
+-- (27169, 70, 1, 0); -- Greater Blessing of Sanctuary (Rank 2)
 -- End of migration.
 
