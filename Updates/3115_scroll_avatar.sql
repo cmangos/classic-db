@@ -21,7 +21,7 @@ INSERT INTO dbscripts_on_gossip (id, delay, priority, command, datalong, datalon
 (147001, 0, 0, 15, 12998, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Yeh''kinya - Create Yeh''kinya''s Scroll');
 
 DELETE FROM npc_text WHERE ID IN (4563, 4565);
-DELETE FROM npc_text_broadcast_text WHERE Id IN (4563, 4565);
+DELETE FROM npc_text_broadcast_text WHERE Id IN (2139, 2140);
 INSERT INTO npc_text_broadcast_text (Id, Prob0, Prob1, Prob2, Prob3, Prob4, Prob5, Prob6, Prob7, BroadcastTextId0, BroadcastTextId1, BroadcastTextId2, BroadcastTextId3, BroadcastTextId4, BroadcastTextId5, BroadcastTextId6, BroadcastTextId7) VALUES
 (2139, 1, 0, 0, 0, 0, 0, 0, 0, 4563, 0, 0, 0, 0, 0, 0, 0),
 (2140, 1, 0, 0, 0, 0, 0, 0, 0, 4565, 0, 0, 0, 0, 0, 0, 0);

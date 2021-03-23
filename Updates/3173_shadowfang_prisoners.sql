@@ -1,9 +1,12 @@
 -- Fix gossip menu used by the two prisoners in Shadowfang Keep
 -- Gossip entries are (still) placeholders
-DELETE FROM gossip_menu WHERE entry IN (50151, 50152);
+DELETE FROM gossip_menu WHERE entry IN (301, 302);
 INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
-(50151, 799, 0, 0),
-(50152, 798, 0, 0);
+(302, 799, 0, 0),
+(301, 798, 0, 0);
+
+UPDATE creature_template SET gossipMenuId=301 WHERE entry=3850;
+UPDATE creature_template SET gossipMenuId=302 WHERE entry=3849;
 
 DELETE FROM npc_text WHERE ID IN (798, 799);
 DELETE FROM npc_text_broadcast_text WHERE Id IN (798, 799);
