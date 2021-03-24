@@ -1,6 +1,6 @@
 
 DELETE FROM `creature` WHERE (`guid` IN ('13625', '13627', '13628'));
-DELETE FROM `creature_movement` WHERE (`guid` IN ('13625', '13627', '13628'));
+DELETE FROM `creature_movement` WHERE (`id` IN ('13625', '13627', '13628'));
 
 UPDATE `creature` SET `position_x` = '-4164.09814453125', `position_y` = '-2184.436767578125', `position_z` = '50.88274383544921875', `orientation` = '1.102995276451110839', `spawndist` = '2', `MovementType` = '1' WHERE (`guid` = '13632');
 
