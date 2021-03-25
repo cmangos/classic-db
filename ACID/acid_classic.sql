@@ -12982,6 +12982,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('424901','4249','0','0','100','1025','5000','10000','12000','16000','0','0','11','6576','5','0','0','0','0','0','0','0','0','0','Pesterhide Snarler - Cast Intimidating Growl'),
 -- Nyse 4317
 ('431701','4317','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Nyse - Cast Summon Enraged Wyvern and Yell on Aggro'),
+-- Goblin Pit Crewman 4429
+('442901','4429','30','0','100','1','5','4496','0','0','0','0','11','20436','0','0','0','0','0','0','0','0','0','0','Goblin Pit Crewman - Cast Drunken Pit Crew on Receive AI Event Custom A (q.1121)'),
+-- Gnome Pit Crewman 4430
+('443001','4430','30','0','100','1','5','4495','0','0','0','0','11','20436','0','0','0','0','0','0','0','0','0','0','Gnome Pit Crewman - Cast Drunken Pit Crew on Receive AI Event Custom A (q.1120)'),
 -- Grenka Bloodscreech 4490
 ('449001','4490','9','0','100','1025','0','5','12000','15000','0','0','11','3589','0','0','0','0','0','0','0','0','0','0','Grenka Bloodscreech - Cast Deafening Screech'),
 -- Minor Manifestation of Air 5902 - NSR
