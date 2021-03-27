@@ -61,7 +61,7 @@ USERNAME="mangos"
 ## Define your password (It is suggested to restrict read access to this file!)
 PASSWORD="mangos"
 
-## Define the path to your core's folder (This is optional)
+## Define the path to your core's folder
 ##   If set the core updates located under sql/updates from this mangos-directory will be added automatically
 CORE_PATH=""
 
