@@ -7,7 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="ClassicDB_1_11_z2757.sql"
+FULLDB_FILE_ZIP="ClassicDB_1_11_z2757.sql.gz"
+FULLDB_FILE=${FULLDB_FILE_ZIP%.gz}
 DB_TITLE="v1.11 'Into the Frozen Heart of Naxxramas'"
 NEXT_MILESTONES="0.19 0.20"
 
@@ -126,6 +127,15 @@ fi
 
 ## Full Database
 echo "> Processing Classic database $DB_TITLE."
+echo "  - Unziping $FULLDB_FILE_ZIP"
+gzip -kdf "${ADDITIONAL_PATH}Full_DB/$FULLDB_FILE_ZIP"
+if [[ $? != 0 ]]
+then
+  echo "ERROR: cannot unzip ${ADDITIONAL_PATH}Full_DB/$FULLDB_FILE_ZIP"
+  echo "GZIP 1.6 or greater should be installed"
+  exit 1
+fi
+echo "  - Applying $FULLDB_FILE"
 $MYSQL_COMMAND < "${ADDITIONAL_PATH}Full_DB/$FULLDB_FILE"
 if [[ $? != 0 ]]
 then
