@@ -16,8 +16,13 @@ UPDATE quest_template SET CompleteScript = 1371 WHERE entry = 1371;
 DELETE FROM dbscript_string WHERE entry BETWEEN 2000003254 AND 2000003256;
 INSERT INTO dbscript_string (entry, content_default, sound, type, language, emote, comment) VALUES
 (2000003254,'Hah!  Let us see the wooden human wave!',0,0,0,0,NULL),
-(2000003255,'%s laughs.',0,2,0,11,NULL),
+(2000003255,'%s laughs.',0,2,0,0,NULL),
 (2000003256,'Hahah!  That was funny!  Funny wooden human!',0,0,0,0,NULL);
 DELETE FROM creature_template_addon WHERE entry = 5723;
 INSERT INTO creature_template_addon VALUES
 (5723,0,0,1,0,0,0,'4048');
+
+-- Warug's Target Dummy 5723
+DELETE FROM dbscripts_on_creature_death WHERE id = 5723;
+INSERT INTO dbscripts_on_creature_death (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(5723,0,18,4000,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'despawn self');
