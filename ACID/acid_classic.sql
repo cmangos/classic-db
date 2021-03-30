@@ -8391,7 +8391,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sentinel Glynda Nal'Shea (2930) - NSR
 -- Barithras Moonshade (3583) - NSR
 -- Therylune (3584) - NSR
--- Onu (3616) - NSR
+-- Onu 3616
+('361601','3616','1','0','100','1','100','5000','40000','90000','0','0','4','6528','0','0','0','0','0','0','0','0','0','0','Onu - Play Sound on OOC Timer'),
 -- Ghost Saber (3619) - NSR
 -- Sentinel Tysha Moonblade (3639) - NSR
 -- Cerellean Whiteclaw (3644) - NSR
