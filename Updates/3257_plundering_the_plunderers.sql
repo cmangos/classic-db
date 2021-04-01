@@ -11,7 +11,8 @@ INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, d
 (2381,2110,0,0,0,0,7166,40,7,2000003312,0,0,0,0,0,0,0,'buddy: say'),
 (2381,4000,15,6668,0,0,7166,40,7,0,0,0,0,0,0,0,0,'buddy cast: Red Firework'),
 (2381,7010,15,6668,0,0,7166,40,7,0,0,0,0,0,0,0,0,'buddy cast: Red Firework'),
-(2381,9000,15,6668,0,0,7166,40,7,0,0,0,0,0,0,0,0,'buddy cast: Red Firework');
+(2381,9000,15,6668,0,0,7166,40,7,0,0,0,0,0,0,0,0,'buddy cast: Red Firework'),
+(2381,9100,21,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'unactive');
 UPDATE quest_template SET StartScript = 2381 WHERE entry = 2381;
 DELETE FROM dbscript_string WHERE entry BETWEEN 2000003310 AND 2000003312;
 INSERT INTO dbscript_string (entry, content_default, sound, type, language, emote, comment) VALUES
@@ -21,8 +22,8 @@ INSERT INTO dbscript_string (entry, content_default, sound, type, language, emot
 
 DELETE FROM gossip_menu_option WHERE menu_id IN(524,20011);
 INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, condition_id) VALUES
-(524,0,0,'Press the yellow button labeled \'Thieves\' Tools.\'',1,1,-1,0,52401,0,0,NULL,218),
-(524,1,0,'Press the red button labeled \'E.C.A.C.\'',1,1,-1,0,52402,0,0,NULL,218);
+(524,0,0,'Press the yellow button labeled \'Thieves\' Tools.\'',1,1,-1,0,52402,0,0,NULL,218),
+(524,1,0,'Press the red button labeled \'E.C.A.C.\'',1,1,-1,0,52401,0,0,NULL,218);
 UPDATE dbscripts_on_gossip SET id=52401 WHERE id=50041;
 UPDATE dbscripts_on_gossip SET id=52402 WHERE id=524;
 -- spells must be casted everytime Player req. (no cooldown)
