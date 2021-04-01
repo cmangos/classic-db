@@ -11725,7 +11725,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('420201','4202','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gerenzo Wrenchwhistle - Flee at 15% HP'),
 -- Deepmoss Hatchling
 ('426301','4263','2','0','30','1024','30','0','0','0','0','0','11','6536','0','0','1','-34','0','0','0','0','0','0','Deepmoss Hatchling - Cast Summon Deepmoss Matriarch, Emote at 30% HP'),
->>>>>>> 91bbc38f ([ACID] Fix emote for deepmoss hatchling):ACID/acid_tbc.sql
 -- Deepmoss Matriarch (4264) - NSR
 -- Piznik (4276) - NSR
 -- Tharm
