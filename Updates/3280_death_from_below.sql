@@ -2,30 +2,30 @@
 DELETE FROM dbscripts_on_quest_start WHERE id = 667;
 INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (667,0,0,0,0,0,0,0,0,2000005632,0,0,0,0,0,0,0,'say_protect_1'),
-(667,1000,34,944,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
-(667,1000,34,945,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
-(667,14000,34,944,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
-(667,14000,34,945,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
+(667,1000,34,317,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
+(667,1000,34,318,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
+(667,14000,34,317,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
+(667,14000,34,318,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
 (667,15000,10,2775,120000,1,0,0,0x08,1,0,0,0,-2158.06,-1925.64,4.07425,0,'summon 1st wave'),
 (667,18000,10,2775,120000,3,0,0,0x08,1,0,0,0,-2145.76,-1926.12,3.02982,0,'summon 1st wave'),
 (667,18000,10,2775,120000,4,0,0,0x08,1,0,0,0,-2166.72,-1918.18,3.82191,0,'summon 1st wave'),
-(667,54000,34,944,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
-(667,54000,34,945,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
+(667,54000,34,317,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
+(667,54000,34,318,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
 (667,55000,10,2775,120000,2,0,0,0x08,1,0,0,0,-2158.06,-1925.64,4.07425,0,'summon 2nd wave'),
 (667,58000,10,2775,120000,3,0,0,0x08,1,0,0,0,-2145.76,-1926.12,3.02982,0,'summon 2nd wave'),
 (667,58000,10,2775,120000,4,0,0,0x08,1,0,0,0,-2166.72,-1918.18,3.82191,0,'summon 2nd wave'),
 (667,65000,0,0,0,0,0,0,0,2000005633,0,0,0,0,0,0,0,'say_protect_2'),
-(667,100000,34,944,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
-(667,100000,34,945,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
+(667,100000,34,317,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
+(667,100000,34,318,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
 (667,110000,10,2775,120000,5,0,0,0x08,1,0,0,0,-2158.06,-1925.64,4.07425,0,'summon 3rd wave'),
 (667,130000,10,2775,120000,3,0,0,0x08,1,0,0,0,-2145.76,-1926.12,3.02982,0,'summon 3rd wave'),
 (667,130000,10,2775,120000,4,0,0,0x08,1,0,0,0,-2166.72,-1918.18,3.82191,0,'summon 3rd wave'),
-(667,190000,34,944,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
-(667,190000,34,945,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
+(667,190000,34,317,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
+(667,190000,34,318,667,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
 (667,195000,7,667,0,0,0,0,0,0,0,0,0,0,0,0,0,'quest complete');
 
 -- Daggerspine Marauder 2775
-UPDATE creature_template SET EquipmentTemplateId = 191, MovementType = 2 WHERE entry = 2775;
+UPDATE creature_template SET MovementType = 2 WHERE entry = 2775;
 DELETE FROM creature_movement_template WHERE entry = 2775;
 INSERT INTO creature_movement_template (entry, pathId, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 -- 1
@@ -133,7 +133,6 @@ INSERT INTO spell_target_position (id, target_map, target_position_x, target_pos
 (4170,0,-2145.03,-1985.22,11.8647,2);
 
 -- Shakes O'Breen 2610
-UPDATE creature_template SET EquipmentTemplateId = 4 WHERE entry = 2610;
 UPDATE creature SET spawntimesecsmin = 90, spawntimesecsmax = 90 WHERE id = 2610;
 DELETE FROM dbscripts_on_creature_death WHERE id = 2610;
 INSERT INTO dbscripts_on_creature_death (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
