@@ -544,7 +544,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Korin Fel (2772) - NSR
 -- Or'Kalar (2773) - NSR
 -- Doctor Draxlegauge (2774) - NSR
--- Daggerspine Marauder (2775) - NSR
+-- Daggerspine Marauder 2775
+ ('277501','2775','30','0','100','0','5','2610','0','0','0','0','41','1000','0','0','0','0','0','0','0','0','0','0','Daggerspine Marauder - Despawn on Receive AI Event Custom A'),
 -- Vengeful Surge (3.0.9 Official Data)
 ('277601','2776','0','0','100','1025','1400','7300','25600','32300','0','0','11','14907','0','0','0','0','0','0','0','0','0','0','Vengeful Surge - Cast Frost Nova'),
 -- Deckhand Moishe (2778) - NSR
