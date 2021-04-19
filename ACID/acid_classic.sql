@@ -17962,6 +17962,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1590401','15904','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','2','0','0','0','0','Tentacle Portal - Set React Passive on Spawn'),
 -- Giant Tentacle Portal - 15910
 ('1591001','15910','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','2','0','0','0','0','Giant Tentacle Portal - Set React Passive on Spawn'),
+-- Toxic Slime - 15925
+('1592501','15925','11','0','100','0','0','0','0','0','0','0','11','26575','0','0','21','0','0','0','20','0','0','0','Toxic Cloud - Cast Toxin, Prevent Combat Movement and Prevent Melee on Spawn on Spawn'),
 -- Toxic Cloud - 15933
 ('1593301','15933','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Toxic Cloud - Prevent Combat Movement and Prevent Melee on Spawn'),
 -- Vekniss Hatchling (15962) - NSR
