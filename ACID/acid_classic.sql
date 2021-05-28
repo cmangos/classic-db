@@ -6327,8 +6327,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('646701','6467','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Mennet Carkad - Summon Deathguard Elite on Aggro'),
 -- Spirit Healer (6491) - NSR
 -- Rift Spawn (6492)
-('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Rift Spawn - Set Invincible at 1 HP and Set Phase 0 on Spawn'),
-('649202','6492','8','0','100','0','9095','-1','0','0','0','0','55','6','0','0','22','1','0','0','54','-988','0','0','Rift Spawn - Attack Invoker and Set Phase 1 and Text Emote on Cantation of Manifestation Spellhit'),
+('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','50','0','0','0','Rift Spawn - Set Invincible at 1 HP, Set Phase 0 and Set ReactState Passive on Spawn'),
+('649202','6492','8','0','100','0','9095','-1','0','0','0','0','50','2','0','0','22','1','0','0','54','-988','0','0','Rift Spawn - Set ReactState Agressive and Set Phase 1 and Text Emote on Cantation of Manifestation Spellhit'),
 ('649203','6492','0','13','100','0','1000','1000','0','0','0','0','11','9096','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Manifestation (Phase 1)'),
 ('649204','6492','2','0','100','1024','1','0','0','0','0','0','11','9032','0','0','18','33554432','0','0','22','2','0','0','Rift Spawn - Cast Self Stun - 30 seconds and Set NotSelectable and Set Phase 2 When Below 1% HP'),
 ('649205','6492','8','11','100','0','9012','-1','0','0','0','0','54','-992','0','0','22','3','0','0','0','0','0','0','Rift Spawn - Text Emote and Set Phase 3 on Attract Rift Spawn Spellhit (Phase 2)'),
