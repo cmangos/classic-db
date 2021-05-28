@@ -9634,9 +9634,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Adjutant Tesoran
 ('494801','4948','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Adjutant Tesoran - Flee at 15% HP'),
 -- Spot (4950) - NSR
--- Theramore Practicing Guard
-('495101','4951','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Theramore Practicing Guard - Flee at 15% HP'),
--- Theramore Combat Dummy (4952) - NSR
+-- Theramore Practicing Guard 4951
+('495101','4951','11','0','100','0','0','0','0','0','0','0','18','512','0','0','0','0','0','0','0','0','0','0','Theramore Practicing Guard - Set Unitflags on Spawn'),
+('495102','4951','1','0','100','1','10000','40000','120000','180000','0','0','53','14','0','0','0','0','0','0','0','0','0','0','Theramore Practicing Guard - START_RELAY_SCRIPT on OOC Timer'),
+('495103','4951','30','0','100','1','5','4951','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Theramore Practicing Guard - Evade on Receive AI Event Custom A'),
+('495104','4951','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Theramore Practicing Guard - Flee at 15% HP'),
+-- Theramore Combat Dummy 4952
+('495201','4952','11','0','100','0','0','0','0','0','0','0','61','1','0','0','42','1','0','0','20','0','0','0','Theramore Combat Dummy - Set Immobilized State and Set Invincible and Prevent Melee on Spawn'),
+('495202','4952','30','0','100','1','5','4951','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Theramore Combat Dummy - Evade on Receive AI Event Custom A'),
 -- Commander Samaul
 ('496401','4964','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Commander Samaul - Flee at 15% HP'),
 -- Pained (4965) - NSR
