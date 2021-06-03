@@ -18701,6 +18701,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('8901','89','11','0','100','0','0','0','0','0','0','0','11','22707','0','2','0','0','0','0','0','0','0','0','Infernal - Cast Root on Spawn'),
 -- Imp 416 - PetAI
 -- Advanced Target Dummy 2674 - npc_advanced_target_dummy
+-- Explosive Sheep 2675
+('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
 -- Silithid Swarm 4196
 ('419601','4196','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Set ReactState Defensive on Spawn'),
 ('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
