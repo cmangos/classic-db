@@ -27,8 +27,17 @@ UPDATE gameobject_template SET data3=1 WHERE entry=177272;
 -- Make Incantion of Celebras Trap only visible by GM
 UPDATE gameobject_template SET data8=1 WHERE entry=178963;
 
--- Make Containment Coffer TRAP only visible by GM
-UPDATE gameobject_template SET data8=1 WHERE entry=103575;
+-- Make some trap GO only visible by GM
+UPDATE gameobject_template SET data8=1 WHERE entry=103575; -- Containment Coffer TRAP
+UPDATE gameobject_template SET data8=1 WHERE entry=128972; -- Shallow Grave TRAP
+UPDATE gameobject_template SET data8=1 WHERE entry=176592; -- Shellfish Trap
+UPDATE gameobject_template SET data8=1 WHERE entry=176750; -- Kodo Bones
+UPDATE gameobject_template SET data8=1 WHERE entry=177493; -- Fire of Elune (Trap
+UPDATE gameobject_template SET data8=1 WHERE entry=177529; -- Altar of Elune (Trap
+UPDATE gameobject_template SET data8=1 WHERE entry=178124; -- Resonite Crystal (Trap
+UPDATE gameobject_template SET data8=1 WHERE entry=178248; -- Naga Brazier (trap
+UPDATE gameobject_template SET data8=1 WHERE entry=171941; -- Blackrock Keg Trap
+UPDATE gameobject_template SET data8=1 WHERE entry=180391; -- Heart of Hakkar Spell Emitter
 
 -- Set radius of Supply Crate trap to zero to prevent trap from being triggered by nearby players (it should trigger on player usage of original GO)
 UPDATE gameobject_template SET data2=0 WHERE entry IN (175534, 175535, 175536, 175537);
