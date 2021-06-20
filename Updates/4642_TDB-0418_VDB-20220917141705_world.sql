@@ -32,72 +32,72 @@ UPDATE `quest_template` SET `RequestItemsText` = 'You made it. I\'m so glad.$b$b
 -- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Patrol 1
-DELETE FROM `spawn_group` WHERE id = 4;
+DELETE FROM `spawn_group` WHERE id = 19045;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(4,'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 000', 0, 0, 0, 0);
-DELETE FROM `spawn_group_formation` WHERE id = 4;
+(19045,'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 000', 0, 0, 0, 0);
+DELETE FROM `spawn_group_formation` WHERE id = 19045;
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(4, 1, 3, 0, 4, 2, 'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 000');
-DELETE FROM `spawn_group_spawn` WHERE id = 4;
+(19045, 1, 3, 0, 19045, 2, 'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 000');
+DELETE FROM `spawn_group_spawn` WHERE id = 19045;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(4, 92903, 0),
-(4, 92904, 1);
-DELETE FROM `waypoint_path_name` WHERE `PathId` = 4;
-INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES (4, 'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 000');
+(19045, 92903, 0),
+(19045, 92904, 1);
+DELETE FROM `waypoint_path_name` WHERE `PathId` = 19045;
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES (19045, 'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 000');
 DELETE FROM `creature_movement` WHERE `id` IN (92903,92904);
 UPDATE `creature` SET `position_x` = -560.477, `position_y` = -4602.34, `position_z` = 9.73491, `MovementType` = 0 WHERE `guid` IN (92903,92904);
-DELETE FROM `waypoint_path` WHERE `PathId` = 4;
+DELETE FROM `waypoint_path` WHERE `PathId` = 19045;
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
-(4, 1, -560.477, -4602.34, 9.73491, 100, 0, 0, ''),
-(4, 2, -555.676, -4584.8, 9.65229, 100, 0, 0, ''),
-(4, 3, -564.356, -4573.47, 9.47859, 100, 0, 0, ''),
-(4, 4, -584.895, -4564.14, 9.03952, 100, 0, 0, ''),
-(4, 5, -586.043, -4559.78, 9.10454, 100, 0, 0, ''),
-(4, 6, -581.104, -4560.61, 9.16501, 100, 0, 0, ''),
-(4, 7, -565.556, -4568.16, 9.41349, 100, 0, 0, ''),
-(4, 8, -558.513, -4557.34, 10.1069, 100, 0, 0, ''),
-(4, 9, -548.18, -4544.4, 9.76996, 100, 0, 0, ''),
-(4, 10, -537.815, -4539.63, 10.3619, 100, 0, 0, ''),
-(4, 11, -530.221, -4536.66, 10.8068, 100, 0, 0, ''),
-(4, 12, -527.343, -4539.12, 10.7366, 100, 0, 0, ''),
-(4, 13, -537.099, -4544.58, 10.2895, 100, 0, 0, ''),
-(4, 14, -550.885, -4553.08, 10.2612, 100, 0, 0, ''),
-(4, 15, -560.426, -4569.81, 9.58455, 100, 0, 0, ''),
-(4, 16, -556.762, -4579.83, 9.61527, 100, 0, 0, ''),
-(4, 17, -556.18, -4595.4, 9.56615, 100, 0, 0, ''),
-(4, 18, -558.644, -4604.46, 9.61982, 100, 0, 0, ''),
-(4, 19, -566.361, -4613.43, 9.74237, 100, 0, 0, ''),
-(4, 20, -576.789, -4615.38, 9.5312, 100, 0, 0, ''),
-(4, 21, -588.553, -4618.48, 9.37748, 100, 0, 0, ''),
-(4, 22, -599.79, -4630.89, 9.48897, 100, 0, 0, ''),
-(4, 23, -591.666, -4623.96, 9.46637, 100, 0, 0, ''),
-(4, 24, -583.448, -4616.84, 9.35752, 100, 0, 0, ''),
-(4, 25, -568.47, -4615.99, 9.65283, 100, 0, 0, '');
+(19045, 1, -560.477, -4602.34, 9.73491, 100, 0, 0, ''),
+(19045, 2, -555.676, -4584.8, 9.65229, 100, 0, 0, ''),
+(19045, 3, -564.356, -4573.47, 9.47859, 100, 0, 0, ''),
+(19045, 4, -584.895, -4564.14, 9.03952, 100, 0, 0, ''),
+(19045, 5, -586.043, -4559.78, 9.10454, 100, 0, 0, ''),
+(19045, 6, -581.104, -4560.61, 9.16501, 100, 0, 0, ''),
+(19045, 7, -565.556, -4568.16, 9.41349, 100, 0, 0, ''),
+(19045, 8, -558.513, -4557.34, 10.1069, 100, 0, 0, ''),
+(19045, 9, -548.18, -4544.4, 9.76996, 100, 0, 0, ''),
+(19045, 10, -537.815, -4539.63, 10.3619, 100, 0, 0, ''),
+(19045, 11, -530.221, -4536.66, 10.8068, 100, 0, 0, ''),
+(19045, 12, -527.343, -4539.12, 10.7366, 100, 0, 0, ''),
+(19045, 13, -537.099, -4544.58, 10.2895, 100, 0, 0, ''),
+(19045, 14, -550.885, -4553.08, 10.2612, 100, 0, 0, ''),
+(19045, 15, -560.426, -4569.81, 9.58455, 100, 0, 0, ''),
+(19045, 16, -556.762, -4579.83, 9.61527, 100, 0, 0, ''),
+(19045, 17, -556.18, -4595.4, 9.56615, 100, 0, 0, ''),
+(19045, 18, -558.644, -4604.46, 9.61982, 100, 0, 0, ''),
+(19045, 19, -566.361, -4613.43, 9.74237, 100, 0, 0, ''),
+(19045, 20, -576.789, -4615.38, 9.5312, 100, 0, 0, ''),
+(19045, 21, -588.553, -4618.48, 9.37748, 100, 0, 0, ''),
+(19045, 22, -599.79, -4630.89, 9.48897, 100, 0, 0, ''),
+(19045, 23, -591.666, -4623.96, 9.46637, 100, 0, 0, ''),
+(19045, 24, -583.448, -4616.84, 9.35752, 100, 0, 0, ''),
+(19045, 25, -568.47, -4615.99, 9.65283, 100, 0, 0, '');
 
 -- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Patrol 2
 -- https://www.youtube.com/watch?v=SJNNWCfaeO8&ab_channel=anti-gravity
-DELETE FROM `spawn_group` WHERE id = 5;
+DELETE FROM `spawn_group` WHERE id = 19046;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(5,'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 001', 0, 0, 0, 0);
-DELETE FROM `spawn_group_formation` WHERE id = 5;
+(19046,'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 001', 0, 0, 0, 0);
+DELETE FROM `spawn_group_formation` WHERE id = 19046;
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(5, 1, 3, 0, 5, 2, 'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 001');
-DELETE FROM `spawn_group_spawn` WHERE id = 5;
+(19046, 1, 3, 0, 19046, 2, 'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 001');
+DELETE FROM `spawn_group_spawn` WHERE id = 19046;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(5, 92898, 0),
-(5, 92899, 1);
-DELETE FROM `waypoint_path_name` WHERE `PathId` = 5;
-INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES (5, 'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 001');
+(19046, 92898, 0),
+(19046, 92899, 1);
+DELETE FROM `waypoint_path_name` WHERE `PathId` = 19046;
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES (19046, 'The Hinterlands (Revantusk Village) - Raventusk Watcher (2) Patrol 001');
 DELETE FROM `creature_movement` WHERE `id` IN (92898, 92899);
 UPDATE `creature` SET `position_x` = -634.003, `position_y` = -4693.88, `position_z` = 5.13052, `MovementType` = 0 WHERE `guid` IN (92898, 92899);
-DELETE FROM `waypoint_path` WHERE `PathId` = 5;
+DELETE FROM `waypoint_path` WHERE `PathId` = 19046;
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
-(5, 1, -634.003, -4693.88, 5.13052, 100, 0, 0, ''),
-(5, 2, -643.561, -4714.02, 5.1673, 100, 3000, 0, ''),
-(5, 3, -634.003, -4693.88, 5.13052, 100, 0, 0, ''),
-(5, 4, -614.562, -4654.46, 5.03842, 100, 3000, 0, '');
+(19046, 1, -634.003, -4693.88, 5.13052, 100, 0, 0, ''),
+(19046, 2, -643.561, -4714.02, 5.1673, 100, 3000, 0, ''),
+(19046, 3, -634.003, -4693.88, 5.13052, 100, 0, 0, ''),
+(19046, 4, -614.562, -4654.46, 5.03842, 100, 3000, 0, '');
 
 -- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
