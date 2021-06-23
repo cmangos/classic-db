@@ -16320,9 +16320,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1044002','10440','0','0','100','1025','12000','12000','10000','25000','0','0','11','15708','4','0','0','0','0','0','0','0','0','0','Baron Rivendare - Cast Mortal Strike'),
 ('1044003','10440','0','0','100','1025','8000','8000','7000','17000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Baron Rivendare - Cast Cleave'),
 ('1044004','10440','0','0','100','1025','5000','5000','10000','10000','0','0','11','17393','4','0','0','0','0','0','0','0','0','0','Baron Rivendare - Cast Shadowbolt'),
-('1044005','10440','0','0','100','1025','30000','30000','45000','45000','0','0','11','17473','0','2','0','0','0','0','0','0','0','0','Baron Rivendare - Cast Raise Dead'),
+('1044005','10440','0','0','100','1025','30000','30000','45000','45000','0','0','11','17473','0','2','1','-179','0','0','0','0','0','0','Baron Rivendare - Cast Raise Dead and Text Emote'),
 ('1044006','10440','8','0','100','1025','17473','-1','45000','45000','0','0','11','17475','0','2','11','17476','0','2','11','17477','0','2','Baron Rivendare - Cast Raise Dead on Raise Dead Spellhit (1,2,3)'),
 ('1044007','10440','8','0','100','1025','17473','-1','45000','45000','0','0','11','17478','0','2','11','17479','0','2','11','17480','0','2','Baron Rivendare - Cast Raise Dead on Raise Dead Spellhit (4,5,6)'),
+('1044008','10440','0','0','100','1025','42000','42000','45000','45000','0','0','1','-180','0','0','0','0','0','0','0','0','0','0','Baron Rivendare - Text Emote'),
 -- Plagued Rat 10441
 ('1044101','10441','9','0','100','1025','0','5','6000','14000','0','0','11','16448','4','32','0','0','0','0','0','0','0','0','Plagued Rat - Cast Black Rot'),
 -- Plagued Insect 10461
@@ -16382,6 +16383,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crimson Rifleman 11054
 ('1105401','11054','4','0','100','0','0','0','0','0','0','0','57','2','95','0','0','0','0','0','0','0','0','0','Crimson Rifleman - Enable Range Mode on Aggro'),
 ('1105402','11054','9','0','100','1025','5','100','2300','3900','0','0','11','17353','1','256','0','0','0','0','0','0','0','0','Crimson Rifleman - Cast Shoot'),
+('1105403','11054','8','0','100','0','17278','-1','0','0','0','0','11','7','0','0','0','0','0','0','0','0','0','0','Crimson Rifleman - Cast Suicide on Cannon Fire spellhit'),
 -- Fras Siabi (3.0.8 Official Data) - Need More Initial Cast Data
 ('1105801','11058','4','0','100','0','0','0','0','0','0','0','1','-177','-178','-1310','0','0','0','0','0','0','0','0','Fras Siabi - Random Say on Aggro'),
 ('1105802','11058','0','0','100','1025','7300','7300','12100','18200','0','0','11','7964','0','0','0','0','0','0','0','0','0','0','Fras Siabi - Cast Smoke Bomb'),
@@ -16410,7 +16412,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1114305','11143','0','0','100','1025','15000','17000','15000','17000','0','0','11','12542','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Fear'),
 ('1114306','11143','0','0','100','1025','18000','20000','18000','20000','0','0','11','12741','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Curse of Weakness'),
 ('1114307','11143','0','0','100','1025','20000','23000','20000','23000','0','0','11','13338','16','544','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Curse of Tongues on Random Player Mana User'),
--- Mindless Skeleton (11197) - NSR
+-- Mindless Skeleton 11197
+('1119701','11197','8','0','100','0','17471','-1','0','0','0','0','11','17472','0','0','0','0','0','0','0','0','0','0','Mindless Skeleton - Cast Death Pact on Death Pact spellhit'),
 -- Balzaphon (14684) - NSR
 -- Elder Farwhisper (15607) - NSR
 -- Ysida Harmon (16031) - NSR
@@ -18893,6 +18896,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-176','I am Balgaras the Foul.  And you, $N, are about to become nothing more than ash and dust.','0','0','6','0','456','Balgaras the Foul 1364'),
 ('-177','I''m going to wear your skin as a smoking jacket! The stogies? You''ll have to pry them from my cold dead... er... RAWR!!!!','0','0','0','0','6422','11058'),
 ('-178','Looking for these???? You''ll never have em!','0','0','0','0','6420','11058'),
+('-179','%s raises an undead servant back to life!','0','2','0','0','6511','Baron Rivendare'),
+('-180','%s attempts to casts Death Pact on his servants!','0','2','0','0','6512','Baron Rivendare'),
 -- Classic PLEASE RE-USE 179 - 181
 ('-182','Mine! Mine! Mine!  Gizlock is the ruler of this domain!  You shall never reveal my presence!','0','1','0','0','8852','13601'),
 ('-183','What?  Oh no, I don''t care what you have to say.  I just enjoy inflicting pain.','0','1','0','0','2571','4306'),
