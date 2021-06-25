@@ -103,6 +103,9 @@ UPDATE gameobject_template SET data2=0 WHERE entry IN (176150,176151);
 -- Cannonball: set radius to zero so it is only triggered through spell
 UPDATE gameobject_template SET data2=0 WHERE entry=176211;
 
+-- Drek'Thar's Scrolls 179004 - seemingly never used
+UPDATE gameobject_template SET data1=0 WHERE entry=179004;
+
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------
