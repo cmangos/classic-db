@@ -2285,7 +2285,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1095401','10954','0','0','100','1025','5000','7000','8000','12000','0','0','11','15583','1','0','0','0','0','0','0','0','0','0','Bloodletter - Cast Rupture'),
 ('1095402','10954','0','0','100','1025','14000','18000','20000','25000','0','0','11','15667','1','0','0','0','0','0','0','0','0','0','Bloodletter - Cast Sinister Strike'),
 -- Fallen Hero
-('1099601','10996','4','0','100','0','0','0','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Fallen Hero - Cast Dismounting Blast on Aggro'),
+('1099601','10996','4','0','100','0','0','0','0','0','0','0','11','18396','1','0','1','-1303','-1304','0','0','0','0','0','Fallen Hero - Cast Dismounting Blast on Aggro and Random Say'),
 ('1099602','10996','0','0','100','1025','4000','6000','7000','9000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Fallen Hero - Cast Mortal Strike'),
 ('1099603','10996','0','0','100','1025','1000','3000','9000','12000','0','0','11','18328','0','0','0','0','0','0','0','0','0','0','Fallen Hero - Cast Incapacitating Shout'),
 ('1099604','10996','9','0','100','1025','0','5','8000','14000','0','0','11','15618','1','0','0','0','0','0','0','0','0','0','Fallen Hero - Cast Snap Kick'),
@@ -5995,7 +5995,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- High Executor Derrington (10837) - NSR
 -- Argent Officer Garush (10839) - NSR
 -- Argent Quartermaster Hasana (10856) - NSR
--- Fallen Hero (10996) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Alexi Barov
 ('1102201','11022','9','0','100','1025','0','5','13000','18000','0','0','11','15583','1','0','0','0','0','0','0','0','0','0','Alexi Barov - Cast Rupture'),
 ('1102202','11022','0','0','100','1025','5000','9000','9000','13000','0','0','11','14873','4','0','0','0','0','0','0','0','0','0','Alexi Barov - Cast Sinister Strike'),
@@ -6708,7 +6707,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1094302','10943','9','0','100','1025','0','30','16000','24000','0','0','11','16333','4','0','0','0','0','0','0','0','0','0','Decrepit Guardian - Cast Debilitating Touch'),
 -- Jeziba (10976) - NSR
 -- Scarlet Hound (10979) - NSR
--- Fallen Hero (10996) - SCRIPTED IN ANOTHER ZONE
 -- Weldon Barov
 ('1102301','11023','0','0','100','1025','1000','5000','12000','18000','0','0','11','16244','0','0','0','0','0','0','0','0','0','0','Weldon Barov - Cast Demoralizing Shout'),
 ('1102302','11023','9','0','100','1025','0','5','6000','9000','0','0','11','15580','1','0','0','0','0','0','0','0','0','0','Weldon Barov - Cast Strike'),
@@ -19296,7 +19294,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1300','Should I live through this, I shall make it my life''s sole ambition to destroy Arthas...','0','0','0','0','9682','14484, 14485'),
 ('-1301','I won''t make it... go... go on without me...','0','0','0','0','9680','14484, 14485'),
 ('-1302','Death take me! I cannot go on! I have nothing left...','0','0','0','0','9683','14484, 14485'),
--- Classic PLEASE RE-USE 1303 - 1304
+('-1303','Be cleansed by blade, filth!','0','0','0','0','6375','Fallen Hero 10996'),
+('-1304','You dare defile this holy ground?','0','0','0','0','6374','Fallen Hero 10996'),
 ('-1305','The light condemns all who harbor evil.  Now you will die!','0','0','0','0','2627','Scarlet Monastery'),
 ('-1306','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','0','2625','Scarlet Monastery'),
 ('-1307','There is no escape for you.  The Crusade shall destroy all who carry the scourge''s taint.','0','0','0','0','2626','Scarlet Monastery'),
