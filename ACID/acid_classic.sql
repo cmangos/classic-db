@@ -2815,9 +2815,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cave Yeti (2248) - NSR
 -- Ferocious Yeti
 ('224901','2249','2','0','100','1024','20','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Ferocious Yeti - Cast Enrage at 20% HP'),
--- Syndicate Rogue
+-- Syndicate Rogue 2260
 ('226001','2260','33','0','100','1025','0','0','8000','12000','0','0','11','15657','1','0','0','0','0','0','0','0','0','0','Syndicate Rogue - Cast Backstab on Facing Target Back'),
--- Syndicate Watchman (2261) - NSR
+-- Syndicate Watchman 2261
+('226101','2261','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Watchman - Flee at 15% HP'),
 -- Marshal Redpath (2263) - NSR
 -- Hillsbrad Tailor
 ('226401','2264','33','0','100','1025','0','0','7000','9000','0','0','11','2590','1','0','0','0','0','0','0','0','0','0','Hillsbrad Tailor - Cast Backstab on Facing Target Back'),
@@ -2992,7 +2993,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Magus Wordeen Voidglare (2410) - NSR
 -- Deathguard Samsa (2418) - NSR
 -- Deathguard Humbert (2419) - NSR
--- Jailor Eston
+-- Jailor Eston 2427
 ('242701','2427','0','0','100','1025','7000','11000','21000','25000','0','0','11','3442','5','0','0','0','0','0','0','0','0','0','Jailor Eston - Cast Enslave'),
 -- Jailor Marlgen 2428
 ('242801','2428','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Jailor Marlgen - Enable Range Mode on Aggro'),
