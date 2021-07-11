@@ -1959,10 +1959,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('240901','2409','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Felicia Maline - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Flesh Eating Worm (2462) - NSR
 -- Watcher Fraizer (2470) - NSR
--- Sloth
-('247501','2475','0','0','100','1025','0','1200','4000','10000','0','0','11','3510','1','0','0','0','0','0','0','0','0','0','Sloth - Cast Sloth Effect'),
--- Sludge (3.0.3 Official Data)
-('247901','2479','0','0','100','1025','500','3100','3700','9900','0','0','11','3514','1','0','0','0','0','0','0','0','0','0','Sludge - Cast Sludge'),
+-- Sloth 2475 - NSR
+-- Sludge 2479 - NSR
 -- Bliztik (2481) - NSR
 -- Danielle Zipstitch (2668) - NSR
 -- Sheri Zipstitch (2669) - NSR
