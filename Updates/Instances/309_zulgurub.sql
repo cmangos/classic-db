@@ -435,7 +435,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (11357, 0, 0, 1, 0, 0, '8876'), -- Son of Hakkar
 (11359, 0, 0, 1, 0, 0, NULL), -- Soulflayer
 (11360, 0, 0, 1, 0, 0, NULL), -- Zulian Cub
-(11361, 0, 1536, 1, 0, 0, NULL), -- Zulian Tiger
+(11361, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
 (11365, 0, 0, 1, 0, 0, NULL), -- Zulian Panther
 (11368, 0, 0, 1, 0, 0, '18950'), -- Bloodseeker Bat
 (11370, 0, 0, 1, 0, 0, NULL), -- Razzashi Broodwidow
