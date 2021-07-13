@@ -1378,7 +1378,7 @@ UPDATE `creature_template` SET `Faction` = 370 WHERE `entry` IN (
 
 -- more stats sync between classicmangos and tbcmangos
 UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='14720'; -- High Overlord Saurfang (200H)(Damage Multiplier also wrong? tbc has 60)
-UPDATE `creature_template` SET `DamageMultiplier`='3', `SkinningLootId`='15414' WHERE `entry`='15414'; -- Qiraji Wasp (3.4H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3' WHERE `entry`='15414'; -- Qiraji Wasp (3.4H)(1P)(1D)(1A) - Table 'skinning_loot_template' entry 15414 (creature skinning id) not exist but used as loot id in DB.
 UPDATE `creature_template` SET `DamageMultiplier`='3' WHERE `entry`='15421'; -- Qiraji Drone (1.4H)(1P)(1D)(1A)
 UPDATE `creature_template` SET `DamageMultiplier`='3' WHERE `entry`='15422'; -- Qiraji Tank (4.4H)(1P)(1D)(1A)
 UPDATE `creature_template` SET `DamageMultiplier`='0.6' WHERE `entry`='15423'; -- Kaldorei Infantry (5.5H)(2P)(1D)(1A)
