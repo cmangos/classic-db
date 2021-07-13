@@ -24,7 +24,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (10717, 5758, 0.02, 0, 1, 1, 0, 'Mithril Lockbox'),
 (10717, 4500, 0.03, 0, 1, 1, 0, 'Traveler\'s Backpack'),
 (10717, 3914, 0.02, 0, 1, 1, 0, 'Journeyman\'s Backpack'),
-(10717, 20400, 0.01, 0, 1, 1, 162, 'Pumpkin Bag'),
+-- (10717, 20400, 0.01, 0, 1, 1, 162, 'Pumpkin Bag'), -- 0 cases in classicmangos
 (10717, 7989, 0.02, 0, 1, 1, 0, 'Plans: Mithril Spurs'),
 (10717, 8389, 0.02, 0, 1, 1, 0, 'Pattern: Big Voodoo Pants'),
 (10717, 8390, 0.02, 0, 1, 1, 0, 'Pattern: Big Voodoo Cloak'),
