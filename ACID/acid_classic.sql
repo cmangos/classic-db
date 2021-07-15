@@ -7546,10 +7546,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('380803','3808','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Forsaken Dark Stalker - Flee at 15% HP'),
 ('380804','3808','9','0','100','1025','5','30','2300','3900','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Forsaken Dark Stalker - Cast Throw'),
 -- Ashenvale Bear (3809) - NSR
--- Elder Ashenvale Bear (3.3.0 Official Data)
-('381001','3810','2','0','100','1024','10','0','0','0','0','0','11','4148','0','0','0','0','0','0','0','0','0','0','Elder Ashenvale Bear - Cast Growl of Fortitude at 10% HP'),
--- Giant Ashenvale Bear (3.3.0 Official Data)
-('381101','3811','2','0','100','1024','10','0','0','0','0','0','11','4148','0','0','0','0','0','0','0','0','0','0','Giant Ashenvale Bear - Cast Growl of Fortitude at 10% HP'),
+-- Elder Ashenvale Bear 3810 - NSR
+-- Giant Ashenvale Bear 3811 - NSR
 -- Clattering Crawler (3812) - NSR
 -- Spined Crawler (3814) - NSR
 -- Blink Dragon
