@@ -6675,9 +6675,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1060805','10608','16','0','100','1025','13864','10','18000','36000','0','0','11','13864','12','0','0','0','0','0','0','0','0','0','Scarlet Priest - Cast Power Word: Fortitude on Friendly Missing Buff'),
 ('1060806','10608','9','0','100','1025','0','40','3400','4800','0','0','11','15498','1','256','0','0','0','0','0','0','0','0','Scarlet Priest - Cast Holy Smite'),
 -- Chromie (10667) - NSR
--- Temporal Parasite 10717 - Spawn-In Spell on Spawn
-('1071701','10717','11','0','100','0','0','0','0','0','0','0','1','-1387','0','0','0','0','0','0','0','0','0','0','Temporal Parasite - Emote on Spawn'),
-('1071702','10717','6','0','40','0','0','0','0','0','0','0','12','10717','0','600000','0','0','0','0','0','0','0','0','Temporal Parasite - Spawn Temporal Parasite on Death'),
+-- Temporal Parasite 10717
+('1071701','10717','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','1','-1387','0','0','55','11','0','0','Temporal Parasite - Cast Simple Teleport, Emote, Attack Spawner (Player) on Spawn'),
+('1071702','10717','6','0','40','0','0','0','0','0','0','0','11','16619','15','0','0','0','0','0','0','0','0','0','Temporal Parasite - Cast Quest - Temporal Parasite Death Summon on Death'),
 ('1071703','10717','0','0','100','1025','2000','5000','10000','12000','0','0','11','11436','4','32','0','0','0','0','0','0','0','0','Temporal Parasite - Cast Slow'),
 -- Mulgris Deepriver (10739) - NSR
 -- Janice Felstone (10778) - NSR
