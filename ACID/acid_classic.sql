@@ -6701,8 +6701,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1092501','10925','11','0','100','0','0','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Rotting Worm - Cast Thrash on Spawn'),
 -- Marlene Redpath (10927) - NSR
 -- Joseph Redpath (10936) - NSR
--- Decrepit Guardian
-('1094301','10943','1','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Decrepit Guardian - Cast Birth on Spawn'),
+-- Decrepit Guardian 10943 - attack closest eligable target on spawn?
+('1094301','10943','11','0','100','0','0','0','0','0','0','0','11','26047','0','0','1','-187','0','0','0','0','0','0','Decrepit Guardian - Cast Birth, Say on Spawn'),
 ('1094302','10943','9','0','100','1025','0','30','16000','24000','0','0','11','16333','4','0','0','0','0','0','0','0','0','0','Decrepit Guardian - Cast Debilitating Touch'),
 -- Jeziba (10976) - NSR
 -- Scarlet Hound (10979) - NSR
@@ -18892,7 +18892,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-184','You will talk eventually.  You might as well spill it now.','0','0','0','0','2569','4306'),
 ('-185','Confess and we shall set you free.','0','0','0','0','2570','4306'),
 ('-186','The living are here!','6596','1','0','0','5773','10411'),
--- Classic PLEASE RE-USE 187
+('-187','You cannot save him!','0','0','0','0','6282','Decrepit Guardian 10943'),
 ('-188','A foul trogg if ever I saw one.  Die!','0','0','0','0','2425','Common Leprous Say'),
 ('-189','This sickness clouds my vision, but I know you must be a trogg.  Die foul invader!','0','0','0','0','2424','Common Leprous Say'),
 ('-190','No gnome will be left behind.','0','0','0','0','2422','Common Leprous Say'),
