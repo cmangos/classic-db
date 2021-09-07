@@ -4465,9 +4465,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Miss Danna
 ('351301','3513','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Miss Danna - Summon Stormwind City Guard on Aggro'),
 ('351302','3513','2','0','100','1','2','1','1000','1000','0','0','42','1','-1','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible'),
--- Thomas Miller
+-- Thomas Miller 3518
 ('351801','3518','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Thomas Miller - Summon Stormwind City Guard on Aggro'),
-('351802','3518','1','0','100','1','0','0','120000','180000','0','0','54','0','0','10','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
+('351802','3518','1','0','100','1','20000','45000','20000','45000','0','0','54','0','0','9','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma
 ('352001','3520','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ol'' Emma - Summon Stormwind City Guard on Aggro'),
 -- Sewer Beast (3581) - NSR
@@ -18858,8 +18858,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-137','I will be reborn, mortals! Incendius shall raise me from these ashes!','0','0','0','0','5059','9026'),
 -- Classic PLEASE RE-USE 138 - 139
 ('-140','The coils of death will crush you!','5787','1','0','0','6095','3670'),
-('-141','Rolls, buns and bread. Baked fresh!','0','0','0','0','1103','3518'),
-('-142','Warm, wholesome bread!','0','0','0','0','1102','3518'),
+('-141','Rolls, buns and bread. Baked fresh!','0','0','0','0','1103','Thomas Miller 3518'),
+('-142','Warm, wholesome bread!','0','0','0','0','1102','Thomas Miller 3518'),
 ('-143','The Defias shall succeed! No meek adventurer will stop us!','0','0','0','0','3936','1755'),
 ('-144','What?! How dare you!','0','0','0','0','3934','1754'),
 ('-145','%s flees toward the safety of another tiger.','0','2','0','0','10549','Zulian Cub fleeing text'),
@@ -18914,8 +18914,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-201','My talons will shred your puny body, $r.','0','0','0','0','2230','Common Harpy Text'),
 ('-202','A fine trophy your head will make, $r.','0','0','0','0','2229','Common Harpy Text'),
 ('-203','NO!!!  It puts the tannin in the basket, or it gets the mallet again!','0','1','0','0','9304','14351'),
-('-204','Fresh bread for sale!','0','0','0','0','1101','3518'),
-('-205','Freshly baked bread for sale!','0','0','0','0','1104','3518'),
+('-204','Fresh bread for sale!','0','0','0','0','1101','Thomas Miller 3518'),
+('-205','Freshly baked bread for sale!','0','0','0','0','1104','Thomas Miller 3518'),
 ('-206','Shine yer armor for a copper.','0','0','0','0','185','1402,1405'),
 ('-207','Help a poor bloke out?','0','0','0','0','183','1402,1405'),
 ('-208','Could ye spare some coin?','0','0','0','0','179','1402,1405'),
