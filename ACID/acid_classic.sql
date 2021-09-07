@@ -18731,6 +18731,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1436202','14362','29','0','100','0','2000','2000','0','0','0','0','1','-19','0','0','11','22788','0','0','0','0','0','0','Thornling - Text Emote and Cast Grow on Generic Timer'),
 ('1436203','14362','29','0','100','0','4000','4000','0','0','0','0','1','-20','0','0','11','22788','0','0','0','0','0','0','Thornling - Text Emote and Cast Grow on Generic Timer'),
 ('1436204','14362','29','0','100','0','6000','6000','0','0','0','0','1','-21','0','0','11','22788','0','0','11','22781','0','1','Thornling - Text Emote, Cast Grow and Cast Thornling on Generic Timer'),
+-- Alarm-o-Bot 14434
+('1443401','14434','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','23003','0','34','0','0','0','0','Alarm-o-Bot - Set ReactState Passive and Cast Alarm-o-bot on Spawn'),
 -- Darkmoon Steam Tonk 15328
 ('1532801','15328','11','0','100','0','0','0','0','0','0','0','11','27749','0','2','11','24937','11','130','54','-1053','11','0','Darkmoon Steam Tonk - Cast Initialize Tank and Cast Using Control Console and Whisper Player on Spawn'),
 -- Tonk Mine 15368
