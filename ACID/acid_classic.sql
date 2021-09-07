@@ -17119,7 +17119,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('727602','7276','6','0','100','0','0','0','0','0','0','0','11','10747','1','7','0','0','0','0','0','0','0','0','Zul''Farrak Dead Hero - Cast Announce Zul''Farrak Zombie on Death'),
 -- Zul'Farrak Zombie (4.0.,1 Offical Data)
 ('728601','7286','6','0','100','0','0','0','0','0','0','0','11','10747','1','7','0','0','0','0','0','0','0','0','Zul''Farrak Zombie - Cast Announce Zul''Farrak Zombie on Death'),
--- Goblin Land Mine (4.0.1 Official Data) - NOT WORKING CURRENTLY (REQUIRES DB OR CORE SUPPORT) - CLASSIFIED AS TOTEM IN CORE
 -- Sergeant Bly 7604
 ('760401','7604','0','0','100','1025','8000','10000','8000','10000','0','0','11','12170','1','0','0','0','0','0','0','0','0','0','Sergeant Bly - Cast Revenge'),
 ('760402','7604','0','0','100','1025','5000','8000','13000','15000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Sergeant Bly - Cast Shield Bash'),
@@ -18706,6 +18705,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Earthgrab Totem 6066 -- Cannot use TotemAI due to the way this NPC is summoned
 ('606601','6066','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','11','8378','0','33','Earthgrab totem - Prevent Combat Movement and Prevent Melee and Cast Earthgrab on Spawn'),
 ('606602','6066','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Earthgrab totem - Despawn on Evade'),
+-- Goblin Land Mine 7527 - s.4100,10837,21688
+('752701','7527','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Set ReactState Passive on Spawn'),
+('752702','7527','29','0','100','0','5000','5000','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Set Phase 1 on Generic Timer'),
+('752703','7527','10','1','100','0','0','8','0','0','0','0','11','4043','15','0','37','0','0','0','0','0','0','0','Goblin Land Mine - Cast Detonation and Die on Hostile LOS (8y) (Phase 1)'),
 -- Eranikus the Chained 8506
 ('850601','8506','11','0','100','0','0','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
 -- Battle Chicken 8836
