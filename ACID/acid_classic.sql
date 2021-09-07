@@ -16759,15 +16759,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('171503','1715','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Insurgent - Flee at 15% HP'),
 -- Bazil Thredd (3.0.3 Official Data)
 ('171601','1716','0','0','100','1024','0','0','0','0','0','0','11','674','0','0','0','0','0','0','0','0','0','0','Bazil Thredd - Cast Dual Wield on Aggro'),
-('171602','1716','0','0','100','32','1000','1000','0','0','0','0','1','-451','-1041','-1042','1','-1043','-1044','-1045','1','-1041','-1042','-1043','Bazil Thredd - Randomized Random Say on Aggro'),
+('171602','1716','0','0','100','32','1000','1000','0','0','0','0','1','-158','-159','-160','1','-1041','-1042','-1043','1','-1044','-1045','-1043','Bazil Thredd - Randomized Random Say on Aggro'),
 ('171603','1716','0','0','100','1025','8000','10700','15100','25900','0','0','11','7964','0','0','0','0','0','0','0','0','0','0','Bazil Thredd - Cast Smoke Bomb'),
 ('171604','1716','0','0','100','1025','8500','10200','26300','30500','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Bazil Thredd - Cast Battle Shout'),
 ('171605','1716','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bazil Thredd - Flee at 15% HP'),
 -- Hamhock (3.0.3 Official Data)
 ('171701','1717','0','0','100','1025','5800','9700','10500','10500','0','0','11','6742','0','32','0','0','0','0','0','0','0','0','Hamhock - Cast Bloodlust'),
 ('171702','1717','0','0','100','1025','5800','8100','12900','19400','0','0','11','421','1','0','0','0','0','0','0','0','0','0','Hamhock - Cast Chain Lightning'),
--- Bruegal Ironknuckle (3.0.3 Official Data)
-('172001','1720','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bruegal Ironknuckle - Flee at 15% HP'),
+-- Bruegal Ironknuckle 1720
+('172001','1720','0','0','100','0','1000','1000','0','0','0','0','1','-1041','-1043','-1044','1','-1041','-1043','-1045','0','0','0','0','Bruegal Ironknuckle - Random Say on Aggro'),
+('172002','1720','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bruegal Ironknuckle - Flee at 15% HP'),
 
 
 
@@ -18870,7 +18871,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-155','%s grabs for his poisoned dagger!','0','2','0','0','1385','3286'),
 ('-156','%s begins to make a copy of itself!','0','2','0','0','2082','3638,6557 - s.Clone'),
 ('-157','%s explodes into chunks of acidic slime!','0','2','0','0','4838','Glutinous Ooze 6559'),
--- Classic PLEASE RE-USE 158 - 160
+('-158','It\'ll be quick, but it won\'t be painless!','0','0','0','0','1392','The Stockade - Aggro Text'),
+('-159','Outsiders! Kill em all!','0','0','0','0','1388','The Stockade - Aggro Text'),
+('-160','Welcome to the Stockade!','0','0','0','0','1387','The Stockade - Aggro Text'),
 ('-161','A living $r... soon to be a dead like me.','0','0','0','0','1941','Common Undead Text'),
 ('-162','Mmm... I love my delicious Southshore stout.','0','0','0','0','605','2440'),
 ('-163','Slay them, my brethren! For the Scourge!','5822','1','0','0','6184','7357'),
@@ -18891,7 +18894,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-178','Looking for these???? You''ll never have em!','0','0','0','0','6420','11058'),
 ('-179','%s raises an undead servant back to life!','0','2','0','0','6511','Baron Rivendare'),
 ('-180','%s attempts to casts Death Pact on his servants!','0','2','0','0','6512','Baron Rivendare'),
--- Classic PLEASE RE-USE 179 - 181
+-- Classic PLEASE RE-USE 181
 ('-182','Mine! Mine! Mine!  Gizlock is the ruler of this domain!  You shall never reveal my presence!','0','1','0','0','8852','13601'),
 ('-183','What?  Oh no, I don''t care what you have to say.  I just enjoy inflicting pain.','0','1','0','0','2571','4306'),
 ('-184','You will talk eventually.  You might as well spill it now.','0','0','0','0','2569','4306'),
@@ -19210,11 +19213,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1038','Die, outlander!','5877','1','0','0','6226','7267'),
 ('-1039','Let the executions begin!','5874','1','0','0','6223','7274'),
 ('-1040','Justice is done!','5875','1','0','0','6224','7274'),
-('-1041','Tell the Warden this prison is ours now!','0','0','0','0','1391','1716'),
-('-1042','I''ll crush your skull beneath my boot!','0','0','0','0','1394','1716'),
-('-1043','Death to the Warden''s men!','0','0','0','0','1395','1716'),
-('-1044','Fresh meat!','0','0','0','0','1393','1716'),
-('-1045','More of the Warden''s errand boys!','0','0','0','0','1390','1716'),
+('-1041','Tell the Warden this prison is ours now!','0','0','0','0','1391','The Stockade - Aggro Text'),
+('-1042','I''ll crush your skull beneath my boot!','0','0','0','0','1394','The Stockade - Aggro Text'),
+('-1043','Death to the Warden''s men!','0','0','0','0','1395','The Stockade - Aggro Text'),
+('-1044','Fresh meat!','0','0','0','0','1393','The Stockade - Aggro Text'),
+('-1045','More of the Warden''s errand boys!','0','0','0','0','1390','The Stockade - Aggro Text'),
 ('-1046','%s emerges from the plant, allowing it to heal.','0','2','0','0','8915','13696'),
 ('-1047','%s attacks!','0','2','0','0','8916','13696'),
 ('-1048','You are in the presence of a god!','0','2','0','0','0','15963'),
