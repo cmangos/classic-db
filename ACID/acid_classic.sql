@@ -3517,6 +3517,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('214901','2149','4','0','100','0','0','0','0','0','0','0','1','-374','-374','-374','0','0','0','0','0','0','0','0','Dark Iron Raider - Random Say on Aggro (Could be more Says but not 100% Sure)'),
 -- Large Loch Crocolisk (2.4.3 Official Data)
 ('247601','2476','0','0','85','1025','4100','13900','32200','46200','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Large Loch Crocolisk - Cast Infected Wound'),
+-- Greishan Ironstove 3291
+('329101','3291','1','0','100','1','1000','1000','60000','60000','0','0','54','0','0','896','0','0','0','0','0','0','0','0','Greishan Ironstove - Random Say OOC'),
 -- Mountaineer Pebblebitty 3836 - npc_mountaineer_pebblebitty
 -- Shanda the Spinner
 ('1426601','14266','11','0','100','0','0','0','0','0','0','0','11','11919','0','2','0','0','0','0','0','0','0','0','Shanda the Spinner - Cast Poison Proc on Spawn'),
@@ -4467,7 +4469,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('351302','3513','2','0','100','1','2','1','1000','1000','0','0','42','1','-1','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible'),
 -- Thomas Miller 3518
 ('351801','3518','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Thomas Miller - Summon Stormwind City Guard on Aggro'),
-('351802','3518','1','0','100','1','20000','45000','20000','45000','0','0','54','0','0','9','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
+('351802','3518','1','0','100','1','20000','45000','20000','45000','0','0','54','0','0','10','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma
 ('352001','3520','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ol'' Emma - Summon Stormwind City Guard on Aggro'),
 -- Sewer Beast (3581) - NSR
@@ -18927,7 +18929,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-221','You merely prolong the inevitable, $r. Succumb. She will free your misguided soul.','0','0','0','0','7462','Nathanos Text'),
 ('-222','Intruders!  The Hammer shall fall upon you.','0','0','0','0','2407','Twilight Elementalist 4814'),
 ('-223','Your blood shall be the catalyst for the Old Gods'' return!','0','0','0','0','2409','Twilight Elementalist 4814'),
--- Classic PLEASE RE-USE 224 - 227
+('-224','Fresh Bread! Get your oven fresh bread here!','0','0','6','0','995','Greishan Ironstove 3291'),
+('-225','Get\'em while they are nice and fresh! Loaves of bread here!','0','0','6','0','996','Greishan Ironstove 3291'),
+('-226','All kinds of bread here! Made fresh today. Get\'em while they last!','0','0','6','0','997','Greishan Ironstove 3291'),
+('-227','Bread here! Loaves of your favorites! Nice and fresh!','0','0','6','0','998','Greishan Ironstove 3291'),
 ('-228','I gonna make you into mojo!','0','0','0','0','10435','Common Troll Text'),
 ('-229','Killing you be easy.','0','0','0','0','1909','Common Troll Text'),
 ('-230','You be dead soon!','0','0','0','0','10434','Common Troll Text'),
