@@ -7237,6 +7237,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('116001','1160','4','0','90','0','0','0','0','0','0','0','1','-42','-103','-161','0','0','0','0','0','0','0','0','Captain Halyndor - Say on Aggro'),
 ('116002','1160','0','0','100','1025','3600','4800','11000','23300','0','0','11','10651','4','0','11','3360','4','0','0','0','0','0','Captain Halyndor - Cast Curse of the Eye'),
 ('116003','1160','0','0','100','1025','7300','8300','11000','26400','0','0','11','3389','0','0','0','0','0','0','0','0','0','0','Captain Halyndor - Cast Ward of the Eye'),
+-- First Mate Fitzsimmons 1239
+('123901','1239','1','0','100','1','1000','15000','150000','180000','0','0','54','0','0','11','0','0','0','0','0','0','0','0','First Mate Fitzsimmons - Random Say OOC'),
 -- Gobbler
 ('125901','1259','0','0','100','1025','7300','22600','32600','37800','0','0','11','12097','1','0','0','0','0','0','0','0','0','0','Gobbler - Cast Pierce Armor'),
 ('125902','1259','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gobbler - Flee at 15% HP'),
@@ -18956,7 +18958,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-345','%s''s death wail has stirred the nearby silithid hive!','0','2','0','0','8619','Tortured Druid/Sentinel death'),
 ('-346','%s begins to summon in reinforcements!','0','2','0','0','741','Common Emote'),
 ('-347','%s springs forth to defend its hive!','0','2','0','0','8675','Hive''Ashi Ambusher 13301'),
--- Classic PLEASE RE-USE 348 - 352
+('-348','I''m cursed!  First my ship sinks, and now...I''m out of mead!','0','0','7','0','552','First Mate Fitzsimmons 1239'),
+('-349','Curse you, Halyndor!  You led us to our doom!','0','0','7','0','553','First Mate Fitzsimmons 1239'),
+('-350','Don''t mind me, or my smell...because I sure don''t!','0','0','7','0','554','First Mate Fitzsimmons 1239'),
+('-351','Ah, beautiful Menethil Harbor, with the best mead this side of Ironforge.','0','0','7','0','556','First Mate Fitzsimmons 1239'),
+('-352','Oh, my brothers!  May you find rest in your watery graves!','0','0','7','0','557','First Mate Fitzsimmons 1239'),
 ('-353','Me no run from $c like you!','0','0','0','0','1921','Trogg Common Text'),
 ('-354','Yip! Me kill!','0','0','0','0','1920','Trogg Common Text'),
 ('-355','The only good $r is a dead $r!','0','0','0','0','447','1205'),
