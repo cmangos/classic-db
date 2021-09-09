@@ -288,4 +288,3 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (1663, @PGUID+1, 0, 'The Stockade - Dextren Ward (1663)'),
 (1696, @PGUID+2, 0, 'The Stockade - Targorr the Dread (1696)');
-*/
