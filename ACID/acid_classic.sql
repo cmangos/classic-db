@@ -11485,7 +11485,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1561701','15617','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower - Enable Range Mode on Aggro'),
 ('1561702','15617','9','0','100','1025','5','30','2300','3900','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower - Cast Throw'),
 -- Hive'Regal Hunter-Killer 15620
--- Priestess of the Moon 15634
 -- Jonathan the Revelator 15693
 -- Squire Leoren Mal'derath 15722
 -- Colossus of Zora 15740
@@ -18741,6 +18740,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Disgusting Oozeling 15429 - MiniPet
 ('1542901','15429','11','0','100','0','0','0','0','0','0','0','11','25163','0','0','0','0','0','0','0','0','0','0','Disgusting Oozeling - Cast Oozeling''s Disgusting Aura on Spawn'),
 -- Earth Elemental Totem 15430 - TotemAI
+-- Priestess of the Moon 15634
+('156340201','15634','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Priestess of the Moon - Enable Range Mode on Aggro'),
+('1563402','15634','0','0','100','1025','6000','12000','20000','30000','0','0','11','25839','0','0','0','0','0','0','0','0','0','0','Priestess of the Moon - Cast Mass Healing'),
 -- Tiny Snowman 15710
 ('1571001','15710','22','0','100','1','34','0','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Dance on receive dance emote'),
 ('1571002','15710','22','0','100','1','101','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Wave on receive wave emote'),
