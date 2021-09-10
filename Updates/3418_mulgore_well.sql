@@ -10,7 +10,7 @@ UPDATE `creature` SET `position_x` = '-765.1107', `position_y` = '-165.6086', `p
 UPDATE `creature` SET `position_x` = '-738.9998', `position_y` = '-144.0654', `position_z` = '-27.46979', `orientation` = '0.4202285', `spawndist` = '0', `MovementType` = '2' WHERE (`guid` = '26488');
 UPDATE `creature` SET `position_x` = '-760.6789', `position_y` = '-153.5571', `position_z` = '-27.72813', `orientation` = '5.1364850', `spawndist` = '0', `MovementType` = '2' WHERE (`guid` = '26490');
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `orientation`) VALUES
 ('26488', '1', '-744.9912', '-135.3902', '-28.39794', '0', '0', '100'),
 ('26488', '2', '-756.1299', '-135.9466', '-29.10131', '0', '0', '100'),
 ('26488', '3', '-764.3948', '-143.2082', '-28.81274', '0', '0', '100'),
