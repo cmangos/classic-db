@@ -10565,13 +10565,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1546704','15467','0','5','100','1025','15000','15000','15000','16000','0','0','11','26540','4','0','0','0','0','0','0','0','0','0','Omen - Cast Starfall (Phase 1)'),
 ('1546705','15467','0','3','100','0','30000','30000','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Omen - Set Phase 1 (Phase 2)'),
 ('1546706','15467','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Omen - Set Phase 0 on Evade'),
--- Eranikus, Tyrant of the Dream 15491
--- Nighthaven Defender 15495
--- Eranikus the Redeemed 15628
--- Nightmare Phantasm
-('1562901','15629','0','0','100','1025','15000','20000','15000','20000','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Swell of Souls'),
+-- Eranikus, Tyrant of the Dream 15491 - boss_eranikus
+-- Nighthaven Defender 15495 - NSR
+-- Eranikus the Redeemed 15628 - NSR
+-- Nightmare Phantasm 15629
+('1562901','15629','5','0','100','1025','0','0','0','0','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Swell of Souls on kill'),
 ('1562902','15629','0','0','100','1025','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley');
--- Tyrande 15633
+-- Tyrande 15633 - NSR
 -- Stormwind Reveler 15694
 -- Thunder Bluff Reveler 15719
 -- Valadar Starsong 15864
