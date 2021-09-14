@@ -8340,7 +8340,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('223601','2236','11','0','100','0','0','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Raging Reef Crawler - Cast Thrash on Spawn'),
 -- Moonstalker Sire
 ('223701','2237','33','0','100','1025','0','0','10000','14000','0','0','11','6595','1','0','0','0','0','0','0','0','0','0','Moonstalker Sire - Cast Exploit Weakness on Facing Target Back'),
--- Foreststrider Fledgling (2321) - NSR
+-- Foreststrider Fledgling 2321
+('232101','2321','2','0','100','0','30','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Foreststrider Fledgling - Flee at 30% HP'),
 -- Foreststrider (2322) - NSR
 -- Giant Foreststrider (2323) - NSR
 -- Blackwood Windtalker
