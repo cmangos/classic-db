@@ -27,6 +27,7 @@ USERNAME=""
 PASSWORD=""
 MYSQL=""
 CORE_PATH=""
+LOCALES="YES"
 DEV_UPDATES="NO"
 FORCE_WAIT="YES"
 
@@ -71,6 +72,10 @@ MYSQL="mysql"
 
 ## Define if you want to wait a bit before applying the full database
 FORCE_WAIT="YES"
+
+## Define if the 'locales' directory for processing localization/multi-language SQL files needs to be used
+##   Set the variable to "YES" to use the locales directory
+LOCALES="YES"
 
 ## Define if the 'dev' directory for processing development SQL files needs to be used
 ##   Set the variable to "YES" to use the dev directory
@@ -360,6 +365,30 @@ fi
 echo "  CMaNGOS custom updates successfully applied"
 echo
 echo
+
+#
+#    LOCALES
+#
+if [ "$LOCALES" == "YES" ]
+then
+  echo "> Trying to apply locales data..."
+  for UPDATEFILE in ${ADDITIONAL_PATH}locales/*.sql
+  do
+    if [ -e "$UPDATEFILE" ]
+    then
+        for UPDATE in ${ADDITIONAL_PATH}locales/*.sql
+        do
+            echo "    process update $UPDATE"
+            $MYSQL_COMMAND < $UPDATE
+            [[ $? != 0 ]] && exit 1
+        done
+        echo "  Locales data applied"
+    else
+        echo "  No locales data to process"
+    fi
+    break
+  done
+fi
 
 #
 #    DEVELOPERS UPDATES
