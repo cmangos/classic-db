@@ -1,6 +1,6 @@
 -- Reinsert Vessel of Tainted Blood 179922 using wotlk-db guids and rotation (+8 spawns)
 DELETE FROM gameobject WHERE id=179922;
-INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
+INSERT INTO gameobject (guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
 (46256, 179922, 0, -688.901, -4020.53, 238.046, -0.191986, 0, 0, -0.0958456, 0.995396, 180, 180, 100, 1),
 (46304, 179922, 0, -668.155, -4047.74, 238.815, -1.97222, 0, 0, -0.833885, 0.551938, 180, 180, 100, 1),
 (46405, 179922, 0, -648.011, -4107.59, 238.428, 1.97222, 0, 0, 0.833885, 0.551938, 180, 180, 100, 1),
