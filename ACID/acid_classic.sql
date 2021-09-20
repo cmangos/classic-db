@@ -501,7 +501,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Prairie Dog (2620) - NSR
 -- Hammerfall Guardian (2621) - NSR
 -- Blackwater Deckhand (2636) - NSR
--- Foggy MacKreel (2696) - NSR
+-- Foggy MacKreel 2696
+('269601','2696','1','0','100','1','1000','15000','120000','150000','0','0','1','-138','-139','0','0','0','0','0','0','0','0','0','Foggy MacKreel - Say OOC'),
 -- Captain Nials (2700) - NSR
 -- Zengu (2703) - NSR
 -- Tor'gan 2706
@@ -3156,6 +3157,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mangorn Flinthammer 5107
 -- Raena Flinthammer 5108
 -- Myra Tyrngaarde 5109
+('510901','5109','1','0','100','1','1000','15000','40000','60000','0','0','1','-235','-236','-237','0','0','0','0','0','0','0','0','Myra Tyrngaarde - Say OOC'),
 -- Barim Jurgenstaad 5110
 -- Innkeeper Firebrew - npc_innkeeper
 ('511101','5111','22','0','100','1','22','544','0','0','0','0','5','19','0','0','15','8353','6','0','1','-1473','0','0','Innkeeper Firebrew - Emote and Gives Quest Credit on Received Emote'),
@@ -3251,6 +3253,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Master Mechanic Castpipe 7950
 -- Thalgus Thunderfist 7976
 -- Bimble Longberry 7978
+('797801','7978','1','0','100','1','0','30000','15000','45000','0','0','1','-43','-44','-45','0','0','0','0','0','0','0','0','Bimble Longberry - Say OOC'),
 -- Wizbang Booms 8117
 -- Curator Thorius 8256
 -- Tymor 8507
@@ -18833,7 +18836,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-34','%s chitters for help...','0','2','0','0','1414','4263'),
 -- Classic PLEASE RE-USE 35 - 41
 ('-42','Time to join us, $c.','0','0','0','0','1942','1157'),
--- Classic PLEASE RE-USE 43 - 45
+('-43','Juicy fruits for sale!','0','0','7','0','4019','Bimble Longberry 7978'),
+('-44','Sink your teeth into a fresh, ripe apple.','0','0','7','0','4020','Bimble Longberry 7978'),
+('-45','Straight from the lush forests of Elwynn, get your fresh fruit right here.','0','0','7','0','4021','Bimble Longberry 7978'),
 ('-46','%s becomes enraged!','0','2','0','0','2384','Enrage Text'),
 ('-47','%s attempts to run away in fear!','0','2','0','0','1150','Common Text'),
 -- Classic PLEASE RE-USE 48 - 72
@@ -18856,7 +18861,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-135','You outsiders will pay for encroaching on our land!','5815','1','0','0','6181','4421'),
 ('-136','Bah! My power rules here!','5816','1','0','0','6182','4421'),
 ('-137','I will be reborn, mortals! Incendius shall raise me from these ashes!','0','0','0','0','5059','9026'),
--- Classic PLEASE RE-USE 138 - 139
+('-138','Sure does seem like it''s been a long time since anyone has relieved me from my post.','0','0','7','0','790','Foggy MacKreel 2696'),
+('-139','Well, that''s what I get for oversleeping!','0','0','7','0','791','Foggy MacKreel 2696'),
 ('-140','The coils of death will crush you!','5787','1','0','0','6095','3670'),
 ('-141','Rolls, buns and bread. Baked fresh!','0','0','0','0','1103','Thomas Miller 3518'),
 ('-142','Warm, wholesome bread!','0','0','0','0','1102','Thomas Miller 3518'),
@@ -18947,7 +18953,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-232','The Brotherhood will not be hampered by insects.','0','0','0','0','2867','6846'),
 ('-233','So much to do, so much to do!  Where does the time go?','0','0','0','0','86','295'),
 ('-234','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','0','2983','6911'),
--- Classic PLEASE RE-USE 235 - 310
+('-235','Fresh bread for sale!','0','0','7','0','4013','Myra Tyrngaarde 5109'),
+('-236','Fresh bread, baked this very morning.','0','0','7','0','4014','Myra Tyrngaarde 5109'),
+('-237','Come get yer fresh bread!','0','0','7','0','4015','Myra Tyrngaarde 5109'),
+-- Classic PLEASE RE-USE 238 - 310
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','0','5952','11582'),
 -- Classic PLEASE RE-USE 312 - 320
 ('-321','Have a taste of Frostmane magics.','0','0','14','0','1910','Common Frostmane Troll Text'),
