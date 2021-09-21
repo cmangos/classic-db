@@ -228,7 +228,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('623901','6239','0','0','100','1025','6000','10000','8000','11000','0','0','11','17207','0','0','0','0','0','0','0','0','0','0','Cyclonian - Cast Whirlwind'),
 ('623902','6239','0','0','100','1025','5000','5000','33000','33000','0','0','11','6982','0','0','0','0','0','0','0','0','0','0','Cyclonian - Cast Gust of Wind'),
 ('623903','6239','0','0','100','1025','10000','12000','12000','15000','0','0','11','18670','1','0','0','0','0','0','0','0','0','0','Cyclonian - Cast Knock Away'),
--- Spirit Healer (6491) - NSR
 -- Fahrad (6707) - NSR
 -- Ravenholdt Guard (6766) - NSR
 -- Lord Jorach Ravenholdt (6768) - NSR
@@ -608,7 +607,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('448103','4481','0','0','100','1025','6000','11000','19000','25000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Marcel Dabyrie - Cast Shield Bash'),
 ('448104','4481','0','0','100','1025','15000','20000','20000','30000','0','0','11','15062','0','0','0','0','0','0','0','0','0','0','Marcel Dabyrie - Cast Shield Wall'),
 -- Uttnar (4954) - NSR
--- Spirit Healer (6491) - NSR
 -- Jun'ha (6574) - NSR
 -- Brumn Winterhoof (7869) - npc_prof_leather
 -- Innkeeper Adegwa (9501) - NSR
@@ -818,7 +816,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('485604','4856','9','0','100','1025','5','30','2800','4700','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Stonevault Cave Hunter - Cast Throw'),
 -- Neeka Bloodscar (5394) - NSR
 -- Wayward Buzzard (6013) - NSR
--- Spirit Healer (6491) - NSR
 -- Stonevault Basher (3.1.1 Official Data)
 ('673301','6733','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Stonevault Basher - Flee at 15% HP'),
 -- Jarkal Mossmeld (6868) - NSR
@@ -969,7 +966,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felhound (4.0.3 Official Data)
 ('601001','6010','0','0','100','1025','7800','12900','17100','29200','0','0','11','13321','1','0','0','0','0','0','0','0','0','0','Felhound - Cast Mana Burn'),
 -- Felguard Sentry (6011) - NSR
--- Spirit Healer (6491) - NSR
 -- Kum'isha the Collector (7363) - NSR
 -- Flawless Draenethyst Sphere (7364) - NSR
 -- Flawless Draenethyst Fragment (7365) - NSR
@@ -1162,7 +1158,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('229901','2299','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Borgus Stoutarm - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Gabrielle Chase (3298) - NSR
 -- Gruna (3708) - NSR
--- Spirit Healer (6491) - NSR
 -- Blackrock Soldier (3.1.3 Official Data)
 ('702501','7025','0','0','100','1025','6300','12300','6100','11700','0','0','11','12170','1','0','0','0','0','0','0','0','0','0','Blackrock Soldier - Cast Revenge'),
 ('702502','7025','0','0','100','1025','5200','13800','12200','26800','0','0','11','3248','0','0','0','0','0','0','0','0','0','0','Blackrock Soldier - Cast Improved Blocking'),
@@ -1377,7 +1372,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =============
 -- Deadwind Pass
 -- =============
--- Spirit Healer (6491) - NSR
 -- Deadwind Brute
 ('736901','7369','11','0','100','0','0','0','0','0','0','0','11','8876','0','1','0','0','0','0','0','0','0','0','Deadwind Brute - Cast Thrash on Spawn'),
 -- Restless Shade
@@ -1659,7 +1653,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dannie Fizzwizzle (6328) - NSR
 -- Wren Darkspring (6376) - NSR
 -- Holdout Warrior - EventAI (Already Scripted in Gnomeregan)
--- Spirit Healer (6491) - NSR
 -- Hands Springsprocket (6782) - NSR
 -- Tannok Frosthammer (6806) - NSR
 -- Onin MacHammar (6886) - NSR
@@ -1978,7 +1971,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gutspill (3.0.3 Official Data)
 ('617001','6170','11','0','100','0','0','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Gutspill - Cast Poison Proc on Spawn'),
 ('617002','6170','0','0','100','1025','17000','20400','21700','37500','0','0','11','3424','0','0','0','0','0','0','0','0','0','0','Gutspill - Cast Tainted Howl'),
--- Spirit Healer (6491) - NSR
 -- Innkeeper Trelayne (6790) - npc_innkeeper
 -- Watcher Wollpert (8310) - NSR
 -- Night Watch Guard (10038) - NSR
@@ -2722,7 +2714,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Summoned Voidwalker
 ('567601','5676','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Summoned Demon on Spawn'),
 ('567602','5676','2','0','100','1024','30','0','0','0','0','0','11','7750','0','0','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Consuming Rage at 30% HP'),
--- Spirit Healer (6491) - NSR
 -- Erma (6749) - NSR
 -- Falkhaan Isenstrider (6774) - NSR
 -- Melika Isenstrider (6778) - NSR
@@ -3060,7 +3051,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rat (4075) - NSR
 -- Hammerhead Shark (5185) - NSR
 -- Pinto (5405) - NSR
--- Spirit Healer (6491) - NSR
 -- Ravenholdt Guard (6766) - NSR
 -- Condemned Acolyte
 ('706801','7068','9','0','100','1025','0','5','21000','25000','0','0','11','15654','1','0','0','0','0','0','0','0','0','0','Condemned Acolyte - Cast Shadow Word: Pain'),
@@ -3791,7 +3781,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('586203','5862','0','0','100','1025','7000','13000','12000','15000','0','0','11','11436','5','0','0','0','0','0','0','0','0','0','Twilight Geomancer - Cast Slow'),
 ('586204','5862','9','0','100','1025','0','30','14000','21000','0','0','11','11990','4','0','0','0','0','0','0','0','0','0','Twilight Geomancer - Cast Rain of Fire'),
 ('586205','5862','9','0','100','1025','0','40','3400','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Twilight Geomancer - Cast Fireball'),
--- Spirit Healer (6491) - NSR
 -- Sarah Tanner (7868) - npc_prof_leather
 -- Rekk'tilac (8277) - NSR
 -- Smoldar
@@ -4159,7 +4148,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Minor Manifestation of Water (5895) - NSR
 -- Lake Frenzy (6033) - NSR
 -- Deathguard Podrig (6389) - NSR
--- Spirit Healer (6491) - NSR
 -- Astor Hadren (6497)
 -- Fenwick Thatros
 ('657001','6570','0','0','100','1025','6000','13000','14000','19000','0','0','11','18072','1','0','0','0','0','0','0','0','0','0','Fenwick Thatros - Cast Uppercut'),
@@ -5397,7 +5385,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ongeku (5622) - NSR
 -- Breyk
 ('602601','6026','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Breyk - Cast Summon Enraged Wyvern and Yell on Aggro'),
--- Spirit Healer (6491) - NSR
 -- Huge Toad (6653) - NSR
 -- Lost One Rift Traveler (6913) - NSR
 -- Innkeeper Karakul (6930) - npc_innkeeper
@@ -5577,7 +5564,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rothos
 ('571801','5718','0','0','100','1025','5000','11000','7000','12000','0','0','11','20667','4','0','0','0','0','0','0','0','0','0','Rothos - Cast Corrosive Acid Breath'),
 ('571802','5718','0','0','100','1025','12000','15000','13000','19000','0','0','11','20672','0','0','0','0','0','0','0','0','0','0','Rothos - Cast Fade'),
--- Spirit Healer (6491) - NSR
 -- Innkeeper Thulfram (7744) - npc_innkeeper
 -- Witherbark Felhunter 7767
 ('776701','7767','9','0','100','1025','0','10','8000','14000','0','0','11','2691','16','0','0','0','0','0','0','0','0','0','Witherbark Felhunter - Cast Mana Burn on Random Mana User'),
@@ -5976,7 +5962,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nurse Neela (5759) - NSR
 -- Rand Rhobart (6289) - NSR
 -- Ulag the Cleaver (6390) - NSR
--- Spirit Healer (6491) - NSR
 -- Astor Hadren (6497)
 -- Calvin Montague (6784) - npc_calvin_montague
 -- Ratslin Maime (6785) - NSR
@@ -6330,7 +6315,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('641101','6411','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Velora Nitely - Summon Deathguard Elite on Aggro'),
 -- Mennet Carkad
 ('646701','6467','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Mennet Carkad - Summon Deathguard Elite on Aggro'),
--- Spirit Healer (6491) - NSR
 -- Rift Spawn (6492)
 ('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','50','0','0','0','Rift Spawn - Set Invincible at 1 HP, Set Phase 0 and Set ReactState Passive on Spawn'),
 ('649202','6492','8','0','100','0','9095','-1','0','0','0','0','50','2','0','0','22','1','0','0','54','-988','0','0','Rift Spawn - Set ReactState Agressive and Set Phase 1 and Text Emote on Cantation of Manifestation Spellhit'),
@@ -6660,7 +6644,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('449404','4494','0','0','100','1025','7000','10000','14000','17000','0','0','11','11436','4','0','0','0','0','0','0','0','0','0','Scarlet Spellbinder - Cast Slow'),
 ('449405','4494','9','0','100','1025','0','40','3400','4800','0','0','11','20822','1','256','0','0','0','0','0','0','0','0','Scarlet Spellbinder - Cast Frostbolt'),
 -- Skeleton (6412) - NSR
--- Spirit Healer (6491) - NSR
 -- Oozeling (8257) - NSR
 -- Putrid Gargoyle (8534) - SCRIPTED IN ANOTHER ZONE
 -- Plaguehound Runt (8596) - NSR
@@ -7760,7 +7743,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('611501','6115','9','0','100','1025','0','5','8400','15500','0','0','11','11428','1','0','0','0','0','0','0','0','0','0','Roaming Felguard - Cast Knockdown'),
 -- School of Fish (6145) - NSR
 -- Jayla (6288) - NSR
--- Spirit Healer (6491) - NSR
 -- Harlown Darkweave (6731) - NSR
 -- Innkeeper Kimlya (6738) - npc_innkeeper
 -- Ashenvale Sentinel (8015) - NSR
@@ -8497,7 +8479,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('630001','6300','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Elisa Steelhand - Flee at 15% HP'),
 -- Gorbold Steelhand
 ('630101','6301','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gorbold Steelhand - Flee at 15% HP'),
--- Spirit Healer (6491) - NSR
 -- Gelkak Gyromast (6667) - NSR
 -- The Threshwackonator 4100 (6669) - npc_threshwackonator
 -- Innkeeper Shaussiy (6737) - npc_innkeeper
@@ -8888,7 +8869,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('607003','6070','14','0','100','1025','500','40','14000','18000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Maraudine Khan Advisor - Cast Healing Wave on Friendly Missing HP'),
 ('607004','6070','9','0','100','1025','5','20','3400','4800','0','0','11','12548','1','256','0','0','0','0','0','0','0','0','Maraudine Khan Advisor - Cast Frost Shock'),
 -- School of Fish (6145) - NSR
--- Spirit Healer (6491) - NSR
 -- Baritanas Skyriver
 ('670601','6706','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Baritanas Skyriver - Cast Summon Enraged Hippogryph on Aggro'),
 -- Thalon
@@ -9335,7 +9315,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- School of Fish (6145) - NSR
 -- Ula'elek
 ('640801','6408','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ula''elek - Flee at 15% HP'),
--- Spirit Healer (6491) - NSR
 -- Rokar Bladeshadow
 ('658601','6586','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Rokar Bladeshadow - Flee at 15% HP'),
 -- Harroc
@@ -9727,7 +9706,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Coral Shark 5434 - NSR
 -- School of Fish (6145) - NSR
 -- Innkeeper Janene (6272) - npc_innkeeper
--- Spirit Healer (6491) - NSR
 -- Tabetha (6546) - NSR
 -- Demon of the Orb (6549) - NSR
 -- Mana Surge 6550
@@ -9809,7 +9787,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Murk Spitter (5225) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Kaerbrus
 ('550101','5501','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kaerbrus - Flee at 15% HP'),
--- Spirit Healer (6491) - NSR
 -- Cursed Ooze 7086
 ('708601','7086','8','0','100','1','15698','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Cursed Ooze - Delayed Despawn on Filling Empty Jar (q.4512) Spellhit'),
 ('708602','7086','0','0','100','1025','10000','30000','120000','120000','0','0','11','4974','1','0','0','0','0','0','0','0','0','0','Cursed Ooze - Cast Wither Touch'),
@@ -10310,7 +10287,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('546202','5462','9','0','100','1025','0','5','11000','15000','0','0','11','10987','17','0','0','0','0','0','0','0','0','0','Sea Spray - Cast Geyser'),
 ('546203','5462','9','0','100','1025','0','40','3400','4800','0','0','11','11538','1','256','0','0','0','0','0','0','0','0','Sea Spray - Cast Frostbolt'),
 -- Cursed Sycamore (5881) - NSR
--- Spirit Healer (6491) - NSR
 -- Brienna Starglow
 ('657601','6576','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Brienna Starglow - Flee at 15% HP'),
 -- Wandering Forest Walker
@@ -10800,7 +10776,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('594001','5940','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Harn Longcast - Flee at 15% HP'),
 -- Yonn Deepcut
 ('629001','6290','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Yonn Deepcut - Flee at 15% HP'),
--- Spirit Healer (6491) - NSR
 -- Innkeeper Kauth (6747) - npc_innkeeper
 -- Antur Fallow
 ('677501','6775','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Antur Fallow - Flee at 15% HP'),
@@ -11160,7 +11135,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Silithus
 -- ========
 -- Earth Elemental 329
--- Spirit Healer (6491) - NSR
 -- Hive'Ashi Stinger 11698
 -- Hive'Ashi Worker 11721
 -- Hive'Ashi Defender
@@ -11781,7 +11755,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- School of Fish (6145) - NSR
 -- Chimaera Matriarch
 ('616701','6167','9','0','100','1025','0','30','7000','12000','0','0','11','3396','4','32','0','0','0','0','0','0','0','0','Chimaera Matriarch - Cast Corrosive Poison'),
--- Spirit Healer (6491) - NSR
 -- Stonetalon Grunt
 ('773001','7730','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Stonetalon Grunt - Cast Enrage at 30% HP'),
 ('773002','7730','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Stonetalon Grunt - Flee at 15% HP'),
@@ -11996,7 +11969,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Riding Wolf (5774) - NSR
 -- Tooga (5955) - npc_tooga
 -- Torta (6015) - NSR
--- Spirit Healer (6491) - NSR
 -- Vizzklick (6568) - NSR
 -- Chief Engineer Bilgewhizzle (7407) - NSR
 -- Spigot Operator Luglunket (7408) - NSR
@@ -12375,7 +12347,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vorlus Vilehoof 6128
 -- Zarrin 6286
 -- Radnaal Maneweaver 6287
--- Spirit Healer (6491) - NSR
 -- Innkeeper Salienne  - npc_innkeeper
 ('673501','6735','22','0','100','1','34','546','0','0','0','0','5','94','0','0','15','8357','6','0','1','-1472','0','0','Innkeeper Saelienne - Emote and Gives Quest Credit on Received Emote'),
 -- Innkeeper Keldamyr (6736) - npc_innkeeper
@@ -18707,6 +18678,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Earthgrab Totem 6066 -- Cannot use TotemAI due to the way this NPC is summoned
 ('606601','6066','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','11','8378','0','33','Earthgrab totem - Prevent Combat Movement and Prevent Melee and Cast Earthgrab on Spawn'),
 ('606602','6066','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Earthgrab totem - Despawn on Evade'),
+-- Spirit Healer 6491
+('649101','6491','11','0','100','0','0','0','0','0','0','0','11','10848','0','0','11','9036','0','0','0','0','0','0','Spirit Healer - Cast Shroud of Death and Cast Ghost on Spawn'),
 -- Goblin Land Mine 7527 - s.4100,10837,21688
 ('752701','7527','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Set ReactState Passive on Spawn'),
 ('752702','7527','29','0','100','0','5000','5000','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Set Phase 1 on Generic Timer'),
