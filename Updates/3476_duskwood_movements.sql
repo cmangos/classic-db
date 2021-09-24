@@ -15,6 +15,7 @@ UPDATE creature SET movementtype=1, spawndist=1 WHERE guid IN (5960, 4179, 4182,
 
 -- watcher keefer should roam not pathfind
 DELETE FROM creature_movement_template WHERE entry=495; -- Watcher Keefer
+UPDATE creature_template SET MovementType=1 WHERE Entry=495;
 UPDATE creature SET movementtype=1, spawndist=1 WHERE guid=5965; -- confirmed 1 rather then 4
 
 -- watcher backus correct path
