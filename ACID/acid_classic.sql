@@ -2964,8 +2964,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Christoph Jeffcoat (2393) - NSR
 -- Mallen Swain (2394) - NSR
 -- Vinna Wayne (2395) - NSR
--- Hans Zandin
-('239601','2396','1','0','100','1','60000','300000','30000','450000','0','0','1','-925','-926','0','0','0','0','0','0','0','0','0','Hans Zandin - Random Say OOC'),
+-- Hans Zandin 2396
+('239601','2396','1','0','100','1','60000','300000','30000','450000','0','0','1','-921','-922','-923','0','0','0','0','0','0','0','0','Hans Zandin - Random Say OOC'),
 -- Derak Nightfall (2397) - NSR
 -- Tara Coldgaze (2398) - NSR
 -- Daryl Stack (2399) - NSR
@@ -3024,8 +3024,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('250301','2503','0','0','100','1025','1000','3000','11000','15000','0','0','11','5115','0','0','0','0','0','0','0','0','0','0','Hillsbrad Foreman - Cast Battle Command'),
 ('250302','2503','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Hillsbrad Foreman - Flee at 15% HP'),
 -- George Candarte (2698) - NSR
--- Brewmeister Bilger
-('270501','2705','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Brewmeister Bilger - Flee at 15% HP'),
+-- Brewmeister Bilger 2705
+('270501','2705','1','0','100','1','10000','20000','60000','80000','0','0','1','-181','0','0','0','0','0','0','0','0','0','0','Brewmeister Bilger - Say OOC'),
+('270502','2705','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Brewmeister Bilger - Flee at 15% HP'),
 -- Phin Odelic
 ('271101','2711','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Phin Odelic - Flee at 15% HP'),
 -- Forsaken Courier (2714) - NSR
@@ -18879,7 +18880,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-178','Looking for these???? You''ll never have em!','0','0','0','0','6420','11058'),
 ('-179','%s raises an undead servant back to life!','0','2','0','0','6511','Baron Rivendare'),
 ('-180','%s attempts to casts Death Pact on his servants!','0','2','0','0','6512','Baron Rivendare'),
--- Classic PLEASE RE-USE 181
+('-181','Hiccup!','0','0','0','0','1953','Brewmeister Bilger 2705'),
 ('-182','Mine! Mine! Mine!  Gizlock is the ruler of this domain!  You shall never reveal my presence!','0','1','0','0','8852','13601'),
 ('-183','What?  Oh no, I don''t care what you have to say.  I just enjoy inflicting pain.','0','1','0','0','2571','4306'),
 ('-184','You will talk eventually.  You might as well spill it now.','0','0','0','0','2569','4306'),
@@ -19157,10 +19158,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-897','The light condemns all who harbor evil.  Now you will die!','0','0','0','0','2627','Common Scarlet Text'),
 ('-898','Thieves! I shall smelt your remains!','0','0','0','0','6448','Crimson Hammersmith 11120 on Spawn'),
 ('-899','Payment for those plans comes in bones - YOUR BONES!','0','0','0','0','6449','Black Guard Swordsmith 11121 on Spawn'),
--- Classic PLEASE RE-USE 900 - 923
+-- Classic PLEASE RE-USE 900 - 920
+('-921','My trees.... they have withered up and died just like me.','0','0','1','0','614','Hans Zandin 2396'),
+('-922','This orchard is now as barren and lifeless as my rotting shell. Once these trees bloomed with fruit but now there is only rot.','0','0','1','0','615','Hans Zandin 2396'),
+('-923','I spent my whole life caring for these trees. Pruning and nurturing them... only fitting that they have joined me in death.','0','0','1','0','616','Hans Zandin 2396'),
 ('-924','More agents of the Syndicate I''ll wager! You''ll never take back Alterac... Or Southshore!','0','0','7','0','629','2276'),
-('-925','This orchard is now as barren and lifeless as my rotting shell. Once these trees bloomed with fruit but now there is only rot.','0','0','1','0','615','2396'),
-('-926','I spent my whole life caring for these trees. Pruning and nurturing them... only fitting that they have joined me in death.','0','0','1','0','616','2396'),
+-- Classic PLEASE RE-USE 925 - 926
 ('-927','Intruders! Attack the intruders!','0','0','33','0','4484','2405'),
 ('-928','Southshore shall pay in blood!','0','1','0','1','604','2433'),
 ('-929','I have risen!','0','1','0','1','602','2433'),
