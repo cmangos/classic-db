@@ -1770,8 +1770,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Avette Fellwood (228) - NSR
 -- Lord Ello Ebonlocke (3.0.3 Official Data)
 ('26301','263','1','0','100','1','20000','30000','120000','120000','0','0','1','-459','0','0','0','0','0','0','0','0','0','0','Lord Ello Ebonlocke - Random Say'),
--- Commander Althea Ebonlocke (264) - NSR
--- Madame Eva (265) - NSR
+-- Commander Althea Ebonlocke 264
+('26401','264','1','0','100','1','1000','15000','150000','180000','0','0','1','-91','-92','0','0','0','0','0','0','0','0','0','Commander Althea Ebonlocke 264 - Say OOC'),
+-- Madame Eva 265
+('26501','265','1','0','100','1','1000','15000','150000','180000','0','0','54','0','0','12','0','0','0','0','0','0','0','0','Madame Eva 265 - Say OOC'),
 -- Clerk Daltry (267) - NSR
 -- Sirra Von'Indi (268) - NSR
 -- Role Dreuger (3.0.3 Official Data)
@@ -1781,7 +1783,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ambassador Berrybuck (3.0.3 Official Data)
 ('27101','271','1','0','100','1','60000','70000','120000','120000','0','0','1','-453','-457','0','0','0','0','0','0','0','0','0','Ambassador Berrybuck - Random Say'),
 -- Chef Grual (272) - NSR
--- Tavernkeep Smitts (273) - NSR
+-- Tavernkeep Smitts 273
+('27301','273','1','0','100','1','45000','60000','150000','180000','0','0','1','-90','0','0','0','0','0','0','0','0','0','0','Tavernkeep Smitts 273 - Say OOC'),
 -- Barkeep Hann (274) - NSR
 -- Whit Wantmal (275) - NSR
 -- Viktori Prism'Antras (276) - NSR
@@ -11708,9 +11711,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ken'zigla
 ('419701','4197','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ken''zigla - Flee at 15% HP'),
 -- Braelyn Firehand 4198
-('419801','4198','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Braelyn Firehand - Enable Range Mode on Aggro'),
-('419802','4198','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Braelyn Firehand - Flee at 15% HP'),
-('419803','4198','9','0','100','1025','0','40','3400','4800','0','0','11','20811','1','256','0','0','0','0','0','0','0','0','Braelyn Firehand - Cast Fireball'),
+('419801','4198','1','0','100','1','1000','15000','150000','180000','0','0','1','-97','-98','0','0','0','0','0','0','0','0','0','Braelyn Firehand - Say OOC'),
+('419802','4198','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Braelyn Firehand - Enable Range Mode on Aggro'),
+('419803','4198','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Braelyn Firehand - Flee at 15% HP'),
+('419804','4198','9','0','100','1025','0','40','3400','4800','0','0','11','20811','1','256','0','0','0','0','0','0','0','0','Braelyn Firehand - Cast Fireball'),
 -- Ziz Fizziks (4201) - NSR
 -- Gerenzo Wrenchwhistle 4202
 ('420201','4202','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gerenzo Wrenchwhistle - Flee at 15% HP'),
@@ -18825,7 +18829,16 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Classic PLEASE RE-USE 48 - 72
 ('-73','So dark...','0','0','0','1','7272','11936'),
 ('-74','Aaaaahhh! So close to escaping.','0','0','0','0','3829','Common Gnome Text'),
--- Classic PLEASE RE-USE 75 - 98
+-- Classic PLEASE RE-USE 75 - 89
+('-90','This dark taint is downright bad for business.','0','0','7','0','82','Tavernkeep Smitts 273'),
+('-91','Stay on the roads.  The forest is overrun with undead.','0','0','7','0','61','Commander Althea Ebonlocke 264'),
+('-92','Fear not.  The Night Watch will rid the land of this foul taint soon enough.','0','0','7','0','62','Commander Althea Ebonlocke 264'),
+('-93','I sense evil brewing. . . .','0','0','7','0','73','Madame Eva 265'),
+('-94','The stars speak to me.  They whisper of the horrors waiting in the night.','0','0','7','0','74','Madame Eva 265'),
+('-95','The future holds much death and uncertainty, not unlike the past.','0','0','7','0','75','Madame Eva 265'),
+('-96','The spirits whisper in my ear.  They are restless and full of angst.','0','0','7','0','76','Madame Eva 265'),
+('-97','The stars will be in perfect form tonight!','0','0','7','0','77','Braelyn Firehand 4198'),
+('-98','There is something greater than magic at work in the night sky.  One day they''ll listen to me. . . .','0','0','7','0','79','Braelyn Firehand 4198'),
 ('-99','You will never wake the dreamer!','5785','1','0','0','6094','3669'),
 ('-100','%s lets out a high pitched screech, calling for help!','0','2','0','0','2481','1021'),
 ('-101','For the Dragonmaw!','0','0','1','0','1937','Common Dragonmaw Text'),
@@ -19159,9 +19172,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-898','Thieves! I shall smelt your remains!','0','0','0','0','6448','Crimson Hammersmith 11120 on Spawn'),
 ('-899','Payment for those plans comes in bones - YOUR BONES!','0','0','0','0','6449','Black Guard Swordsmith 11121 on Spawn'),
 -- Classic PLEASE RE-USE 900 - 920
-('-921','My trees.... they have withered up and died just like me.','0','0','1','0','614','Hans Zandin 2396'),
-('-922','This orchard is now as barren and lifeless as my rotting shell. Once these trees bloomed with fruit but now there is only rot.','0','0','1','0','615','Hans Zandin 2396'),
-('-923','I spent my whole life caring for these trees. Pruning and nurturing them... only fitting that they have joined me in death.','0','0','1','0','616','Hans Zandin 2396'),
+('-921','My trees.... they have withered up and died just like me.','0','0','0','0','614','Hans Zandin 2396'),
+('-922','This orchard is now as barren and lifeless as my rotting shell. Once these trees bloomed with fruit but now there is only rot.','0','0','0','0','615','Hans Zandin 2396'),
+('-923','I spent my whole life caring for these trees. Pruning and nurturing them... only fitting that they have joined me in death.','0','0','0','0','616','Hans Zandin 2396'),
 ('-924','More agents of the Syndicate I''ll wager! You''ll never take back Alterac... Or Southshore!','0','0','7','0','629','2276'),
 -- Classic PLEASE RE-USE 925 - 926
 ('-927','Intruders! Attack the intruders!','0','0','33','0','4484','2405'),
