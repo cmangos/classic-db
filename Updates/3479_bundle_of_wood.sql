@@ -36,7 +36,7 @@ UPDATE gameobject SET spawntimesecsmin=90, spawntimesecsmax=180, animprogress=10
 
 DELETE FROM pool_gameobject WHERE pool_entry=16448; -- Elwynn Forest - Bundle of Wood Pool
 DELETE FROM pool_gameobject_template WHERE id=176793;
-INSERT INTO pool_gameobject_template (id, pool_entry, chance, description) VALUES (176793, 1815, 0, 'Azshara - Bundle of Wood (176793)');
+INSERT INTO pool_gameobject_template (id, pool_entry, chance, description) VALUES (176793, 1815, 0, 'Elwynn Forest - Bundle of Wood (176793)');
 
 DELETE FROM pool_template WHERE entry IN (1815,16448);
 INSERT INTO pool_template (entry, max_limit, description) VALUES (1815, 12, 'Elwynn Forest - Bundle of Wood (176793)'); -- 29 max
