@@ -2192,6 +2192,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('945202','9452','0','0','100','1025','7000','10000','18000','22000','0','0','11','15970','5','32','0','0','0','0','0','0','0','0','Scarlet Enchanter - Cast Sleep'),
 ('945203','9452','9','0','100','1025','0','40','3400','4800','0','0','11','25055','1','256','0','0','0','0','0','0','0','0','Scarlet Enchanter - Cast Arcane Bolt'),
 -- Aurora Skycaller (10304) - NSR
+-- Crypt Scarab 10577 - s.16424 seemingly does not work (die on autoattack, another dummy effect) from s.16423 -> delayed despawn && s.39487
+('1057701','10577','11','0','100','0','0','0','0','0','0','0','11','16420','0','34','11','16423','0','34','41','1500','0','0','Crypt Scarab - Cast Crypt Scarab Confuse, Crypt Scarab Suicide Passive on Spawn'),
 -- Summoned Zombie (10698) - NSR
 -- Carrion Scarab (10699) - NSR
 -- Duggan Wildhammer 10817
@@ -2471,11 +2473,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1613401','16134','1','0','100','1','30000','300000','600000','900000','0','0','53','85','0','0','0','0','0','0','0','0','0','0','Rimblat Earthshatter - START_RELAY_SCRIPT on OOC Timer'),
 -- Rayne 16135
 ('1613501','16135','30','0','100','0','5','16134','0','0','0','0','53','86','0','0','0','0','0','0','0','0','0','0','Rayne - START_RELAY_SCRIPT on Receive AI Event Custom A'),
--- Necrotic Shard (16136) - NSR
--- Damaged Necrotic Shard (16172) - NSR
--- Nerubian Overseer
-('1618401','16184','9','0','100','1025','0','20','10000','13000','0','0','11','15471','1','0','0','0','0','0','0','0','0','0','Nerubian Overseer - Cast Enveloping Web'),
-('1618402','16184','0','0','100','1025','5000','7000','7000','9000','0','0','11','16594','0','0','0','0','0','0','0','0','0','0','Nerubian Overseer - Cast Crypt Scarabs'),
+-- Nerubian Overseer 16184
+('1618401','16184','0','0','100','1025','8000','14000','10000','20000','0','0','11','15471','1','0','0','0','0','0','0','0','0','0','Nerubian Overseer - Cast Enveloping Web'),
+('1618402','16184','0','0','100','1025','1500','3000','1500','3000','0','0','11','16418','15','0','0','0','0','0','0','0','0','0','Nerubian Overseer - Cast Crypt Scarabs'),
 -- Dispatch Commander Metz (16212) - NSR
 -- Pack Mule (16225) - NSR
 -- Guard Didier
