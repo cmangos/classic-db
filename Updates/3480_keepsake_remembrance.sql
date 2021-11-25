@@ -2,6 +2,7 @@
 -- https://tbc.wowhead.com/object=176630/keepsake-of-remembrance#comments
 DELETE FROM gameobject WHERE id=176630;
 INSERT INTO gameobject (guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
+(16632, 176630, 0, -1799.12, -1511.33, 99.3942, -0.226893, 0, 0, -0.113203, 0.993572, 2, 2, 100, 1),
 (88337, 176630, 0, -1720.33, -1529, 55.8142, 0.331611, 0, 0, 0.165047, 0.986286, 300, 300, 255, 1),
 (89485, 176630, 0, -1680.13, -1562.57, 56.2585, -1.98967, 0, 0, -0.838669, 0.544641, 300, 300, 255, 1),
 -- NEW
