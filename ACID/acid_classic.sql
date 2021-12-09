@@ -3538,6 +3538,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bellygrub (2.4.3 Official Data)
 ('34501','345','0','0','100','1025','3200','11900','11500','16100','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Bellygrub - Cast Trample'),
 ('34502','345','4','0','100','0','0','0','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Bellygrub - Cast Rushing Charge'),
+-- Zem Leeward 348
+('34801','348','1','0','100','1','1000','15000','150000','180000','0','0','1','-84','-85','0','0','0','0','0','0','0','0','0','Zem Leeward - Say OOC'),
 -- Morganth 397 (2.4.3 Official Data)
 ('39701','397','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Morganth - Enable Range Mode on Aggro'),
 ('39702','397','27','0','100','1','13787','1','15000','30000','0','0','11','13787','0','0','0','0','0','0','0','0','0','0','Morganth - Cast Demon Armor on Missing Buff'),
@@ -3688,6 +3690,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('71201','712','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Redridge Thrasher - Flee at 15% HP'),
 -- Servant of Ilgalar 819 (2.4.3 Official Data)
 ('81901','819','0','0','100','1025','600','8800','27300','37300','0','0','11','8129','16','0','0','0','0','0','0','0','0','0','Servant of Ilgalar - Cast Mana Burn on Random Mana User'),
+-- Guard Howe 903
+('90301','903','1','0','100','1','25000','25000','180000','180000','0','0','1','-87','-88','-89','0','0','0','0','0','0','0','0','Guard Howe - Say OOC'),
 -- Ariena Stormfeather (2.4.3 Official Data)
 ('93101','931','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Ariena Stormfeather - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Rohh the Silent (2.4.3 Official Data)
@@ -3725,6 +3729,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('446403','4464','0','0','100','1025','3700','6400','18100','22800','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Blackrock Gladiator - Cast Disarm'),
 ('446404','4464','0','0','90','1025','4400','14800','15900','23400','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Blackrock Gladiator - Cast Enrage'),
 ('446405','4464','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Blackrock Gladiator - Flee at 15% HP'),
+-- Roger 5607
+('560701','5607','1','0','100','1','1000','15000','150000','180000','0','0','1','-86','0','0','53','15','0','0','0','0','0','0','Roger - Say OOC, Start Jamin 5608 Relay Script'),
+-- Jamin 5608 - NSR
+-- Seeker Aqualon 14269 - NSR
 -- Squiddic (2.4.3 Official Data)
 ('1427001','14270','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Squiddic - Flee at 15% HP'),
 -- Ribchaser (2.4.3 Official Data)
@@ -18833,7 +18841,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Classic PLEASE RE-USE 48 - 72
 ('-73','So dark...','0','0','0','1','7272','11936'),
 ('-74','Aaaaahhh! So close to escaping.','0','0','0','0','3829','Common Gnome Text'),
--- Classic PLEASE RE-USE 75 - 89
+-- Classic PLEASE RE-USE 75 - 83
+('-84','Nothing biting. . . .','0','0','7','0','45','Zem Leeward 348'),
+('-85','Here fishy fishy. . . come to papa.','0','0','7','0','46','Zem Leeward 348'),
+('-86','So what do you want to do today?','0','0','7','0','1922','Roger 5607'),
+('-87','Where are those reinforcements from Stormwind?  Heavy Blackrock activity has been reported in the East.','0','0','7','0','51','Guard Howe 903'),
+('-88','Still no sign of the 2nd Battalion from Stormwind.  Reports are coming in of Shadowhide movement in the Northeast.','0','0','7','0','52','Guard Howe 903'),
+('-89','Marshal Marris expects the reserve from Stormwind any time now. . . .','0','0','7','0','53','Guard Howe 903'),
 ('-90','This dark taint is downright bad for business.','0','0','7','0','82','Tavernkeep Smitts 273'),
 ('-91','Stay on the roads.  The forest is overrun with undead.','0','0','7','0','61','Commander Althea Ebonlocke 264'),
 ('-92','Fear not.  The Night Watch will rid the land of this foul taint soon enough.','0','0','7','0','62','Commander Althea Ebonlocke 264'),
