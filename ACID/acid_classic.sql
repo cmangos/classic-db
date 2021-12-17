@@ -6051,10 +6051,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Andrew Brownell
 ('230801','2308','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Andrew Brownell - Summon Deathguard Elite on Aggro'),
 -- Varimathras 2425
-('242501','2425','4','0','100','0','0','0','0','0','0','0','54','0','0','1003','0','0','0','0','0','0','0','0','Varimathras - Yell on Aggro'),
+('242501','2425','4','0','100','0','0','0','0','0','0','0','4','5887','0','0','0','0','0','0','0','0','0','0','Varimathras - Play Sound on Aggro'),
 ('242502','2425','0','0','100','1025','8000','8000','15000','15000','0','0','11','20740','4','512','0','0','0','0','0','0','0','0','Varimathras - Cast Dominate Mind'),
 ('242503','2425','9','0','100','1025','0','30','7000','9000','0','0','11','20741','17','0','0','0','0','0','0','0','0','0','Varimathras - Cast Shadow Bolt Volley'),
 ('242504','2425','0','0','100','1025','4000','4000','15000','15000','0','0','11','20743','17','0','0','0','0','0','0','0','0','0','Varimathras - Cast Drain Life'),
+('242505','2425','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','0','0','0','0','0','0','0','0','Varimathras - Cast Summoned Demon on Spawn'),
 -- Randolph Montague
 ('245801','2458','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Randolph Montague - Summon Deathguard Elite on Aggro'),
 -- Mortimer Montague
@@ -13695,7 +13696,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Twilight Lord Kelris
 ('483201','4832','4','0','100','0','0','0','0','0','0','0','1','-566','0','0','0','0','0','0','0','0','0','0','Twilight Lord Kelris - Yell on Aggro'),
 ('483202','4832','0','0','100','1025','2000','5000','7000','9000','0','0','11','15587','1','0','0','0','0','0','0','0','0','0','Twilight Lord Kelris - Cast Mind Blast'),
-('483203','4832','0','0','100','1025','9000','12000','15000','20000','0','0','11','8399','5','0','1','-567','0','0','0','0','0','0','Twilight Lord Kelris - Cast Sleep and Yell'),
+('483203','4832','0','0','100','1025','9000','12000','15000','20000','0','0','11','8399','5','0','4','5804','0','0','0','0','0','0','Twilight Lord Kelris - Cast Sleep and Play Sound'),
 ('483204','4832','6','0','100','0','0','0','0','0','0','0','1','-568','0','0','34','1','3','0','0','0','0','0','Twilight Lord Kelris - Yell and Set Instance Data on Death'),
 -- Ghamoo-ra
 ('488701','4887','0','0','100','1025','5000','8000','9000','13000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Ghamoo-ra - Cast Trample'),
@@ -19093,8 +19094,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-545','Scanning life forms....target not found','0','0','0','0','9091','14224'),
 ('-546','Target lost....resuming search patterns Delta','0','0','0','0','9093','14224'),
 ('-547','Unknown life forms detected....assessing...','0','0','0','0','9092','14224'),
-('-548','Arrrhhh...Guards!','0','1','1','0','0','Common Horde Flight Master'),
-('-549','Guards!','0','1','7','0','4561','Common Alliance Flight Master'),
+('-548','Guards!','0','1','1','0','4561','Common Horde Flight Master'),
+('-549','Guards! Help me!','0','1','7','0','4566','Common Alliance Flight Master'),
 ('-550','%s goes into a rage after seeing a friend fall in battle!','0','2','0','0','1151','Common Emote'),
 ('-551','%s calls for help!','0','2','0','0','1064','Common Emote'),
 ('-552','Greetings, citizen.','0','0','7','0','11389','466'),
@@ -19102,7 +19103,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-554','Finally, my soul may rest... Oh, dearest Cerellean...','0','0','0','0','1224','3667'),
 -- Classic PLEASE RE-USE 555 - 565
 ('-566','Who dares disturb my meditation?','5802','1','0','0','6171','4832'),
-('-567','Sleep...','5804','1','0','0','0','4832'),
+-- Classic PLEASE RE-USE 567
 ('-568','Dust to dust.','5803','1','0','0','6172','4832'),
 ('-569','Aku''mai is dead! At last, I can leave this wretched place.','0','1','0','0','2848','6729'),
 -- Classic PLEASE RE-USE 570 - 575
@@ -19179,12 +19180,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-827','No!  You cannot be stronger than the Foulweald!  No!!','0','0','0','0','8351','12918'),
 ('-828','%s attacks Karang''s Banner!','0','2','0','0','8398','12921'),
 ('-829','%s charges!','0','2','0','0','1254','Common Emote'),
--- Classic PLEASE RE-USE 830 - 852
-('-853','Vanquish the weak!','0','1','0','0','0','Varimathras 2425'),
-('-854','Time to die!','0','1','0','0','0','Varimathras 2425'),
-('-855','None can oppose me.','0','1','0','0','0','Varimathras 2425'),
-('-856','For Sylvanas!','0','1','0','0','0','Varimathras 2425'),
--- Classic PLEASE RE-USE 857 - 894
+-- Classic PLEASE RE-USE 830 - 894
 ('-895','There is no escape for you.  The Crusade shall destroy all who carry the scourge''s taint.','0','0','0','0','2626','Common Scarlet Text'),
 ('-896','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','0','2625','Common Scarlet Text'),
 ('-897','The light condemns all who harbor evil.  Now you will die!','0','0','0','0','2627','Common Scarlet Text'),
@@ -19222,10 +19218,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-992','%s escapes into the void!','0','2','0','0','2553','6492'),
 -- Classic PLEASE RE-USE 993 - 1018
 ('-1019','That will teach you to lay off the herb, $r.','0','0','0','1','9500','11447'),
-('-1020','Step right up! Step right up! Greetings my friend. I''m Silas Darkmoon and I want to welcome you to the greatest show on Azeroth! It''s the Darkmoon Faire friend, and it''s your lucky day! Sparing no expense, we''ve gathered wonders and treats from around the world for your delight. Whether you''re young or old, rich or poor, the Darkmoon Faire has it all!','0','0','0','1','0','14823'),
-('-1021','Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world! We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','1','0','14823'),
-('-1022','We have it all... delicious food, strong drink, exotic artifacts, fortunes read, amazing prizes and excitement without end!','0','0','0','1','0','14823'),
-('-1023','And, don''t forget to turn in your Darkmoon Faire Prize Tickets! All it takes is five or more and you''re on your way to the most wondrous prizes on all of Azeroth. Everybody is a winner!','0','0','0','1','0','14823'),
+('-1020','We''re back and better than ever!  It''s the Darkmoon Faire friend, and it''s your lucky day!  Sparing no expense, we''ve gathered wonders and treats from around the world for your delight.  Whether you''re young or old, rich or poor, the Darkmoon Faire has it all!  Be sure to turn in your Darkmoon Faire Prize Tickets to Gelvas Grimegate, and choose from several exotic and wondrous prizes!','0','0','0','1','10160','14823'),
+('-1021','Greetings my friend, and welcome to the greatest show on Azeroth!$B$BPlease, step right up and take in all we have to offer.  Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world!  We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','1','10033','14823'),
+('-1022','Welcome one and all to the Darkmoon Faire, the greatest event in all the world!  We have it all... delicious food, strong drink, exotic artifacts, fortunes read, amazing prizes and excitement without end!  Don''t forget to turn in your Darkmoon Faire Prize Tickets to Gelvas Grimegate!  All it takes is five or more and you''re on your way to the most wondrous prizes on all of Azeroth.  Everybody is a winner!','0','0','0','1','10155','14823'),
+('-1023','Welcome back to the greatest show on Azeroth, my friend!  It is truly a delight to see you once again.$B$BPlease, step right up and once more take in all we have to offer.  Be sure to check around, as we are always adding new and exciting things to the Darkmoon Faire!  Amaze at wonders old and new that we have uncovered!  We continue to spare no expense in bringing you excitement that children of all ages will delight in!','0','0','0','1','10034','14823'),
 ('-1024','Step right up!  Get your Red Hot Wings right here!','0','0','0','1','10133','14845'),
 ('-1025','You''ve got money and we''ve got food.  What are you waiting for?!','0','0','0','1','10135','14845'),
 ('-1026','Darkmoon Dogs fresh off the grill.  Come and get em while they''re hot!','0','0','0','1','10134','14845'),
@@ -19250,8 +19246,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1045','More of the Warden''s errand boys!','0','0','0','0','1390','The Stockade - Aggro Text'),
 ('-1046','%s emerges from the plant, allowing it to heal.','0','2','0','0','8915','13696'),
 ('-1047','%s attacks!','0','2','0','0','8916','13696'),
-('-1048','You are in the presence of a god!','0','2','0','0','0','15963'),
-('-1049','Get back here!','0','0','0','0','10147','14860'),
+('-1048','The massive floating eyeball in the center of the chamber turns its gaze upon you. You stand before a god.','0','2','0','0','11700','15963'),('-1049','Get back here!','0','0','0','0','10147','14860'),
 ('-1050','It''s getting away!','0','0','0','0','10146','14860'),
 ('-1051','Hey, someone help me catch this thing!','0','0','0','0','10145','14860'),
 ('-1052','Frogs and leather balls for sale!','0','0','0','0','10148','14860'),
@@ -19426,10 +19421,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1556','Foolish mortal, I will rend your soul in two once I am released!','0','4','0','0','4440','8506'),
 ('-1557','My charge to watch the temple has failed... my corrupted soul knows no peace...','0','4','0','0','4445','8506'),
 ('-1558','My soul is not a trinket!  Mortal, you must release me from these chains!','0','4','0','0','4442','8506'),
-('-1559','Foolish mortals you do not yet see the potential of that Artifact.','0','4','0','0','0','8506'),
-('-1560','You are an agent of their wicked god, fool.  I will see you destroyed!','0','4','0','0','4441','8506'),
-('-1561','I sense my grip on the Dream twisting into chaos.','0','4','0','0','0','8506'),
-('-1562','%s lets out a high pitched screech, calling for help.','0','2','0','0','506','1983'),
+ -- Classic PLEASE RE-USE 1559
+ ('-1560','You are an agent of their wicked god, fool.  I will see you destroyed!','0','4','0','0','4441','8506'),
+ -- Classic PLEASE RE-USE 1561
+ ('-1562','%s lets out a high pitched screech, calling for help.','0','2','0','0','506','1983'),
 ('-1563','I shall return in time..','0','0','0','0','500','1983'),
 ('-1564','The blood samples must be protected!  Destroy the intruders!','0','0','0','0','9969','12461'),
 ('-1565','Me smell stench of the living!','5823','1','0','0','6185','8567'),
