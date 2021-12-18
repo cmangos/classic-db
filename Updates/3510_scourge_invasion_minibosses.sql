@@ -17,14 +17,14 @@ INSERT INTO creature (guid, id, map, position_x, position_y, position_z, orienta
 (4700263, 14686, 129, 2583.18, 695.861, 56.8033, 1.8675, 604800, 604800, 0, 0, 0, 0), -- Lady Falther'ess
 (2890400, 14695, 289, 200.201, 150.839, 109.879, 5.06145, 604800, 604800, 0, 0, 0, 2), -- Lord Blackwood
 (3290598, 14684, 329, 3733.27, -3480.11, 131.04, 3.05433, 604800, 604800, 0, 0, 0, 0), -- Balzaphon
-(4290174, 14690, 429, -112.776, 583.823, -3.47887, 5.60251, 604800, 604800, 0, 0, 0, 0); -- Revanchion
+(4291074, 14690, 429, -112.776, 583.823, -3.47887, 5.60251, 604800, 604800, 0, 0, 0, 0); -- Revanchion
 
 INSERT INTO game_event_creature (guid, event) VALUES
 (3300145, 89), -- Sever
 (4700263, 89), -- Lady Falther'ess
 (2890400, 89), -- Lord Blackwood
 (3290598, 89), -- Balzaphon
-(4290174, 89); -- Revanchion
+(4291074, 89); -- Revanchion
 
 INSERT INTO creature_movement_template (entry, pathId, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 -- Lord Blackwood
