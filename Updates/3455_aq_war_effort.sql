@@ -325,7 +325,7 @@ REPLACE INTO game_event_creature (guid, event) VALUES
 
 -- Fix Horde Quests
 
-UPDATE quest_template SET SpecialFlags=1 WHERE ENTRY IN (8605, 8608, 8610, 8614, 8583, 8589, 8591, 8581, 8543, 8601, 8550, 8612, 8546, 8616, 8553);
+UPDATE quest_template SET SpecialFlags=1 WHERE ENTRY IN (8605, 8608, 8610, 8614, 8583, 8589, 8591, 8581, 8543, 8601, 8550, 8612, 8546, 8616, 8533);
 
 REPLACE INTO creature_questrelation (id, quest) VALUES
 (15738, 8817), -- All of these quests can't be turned in
