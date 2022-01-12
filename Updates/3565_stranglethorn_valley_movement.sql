@@ -255,7 +255,6 @@ INSERT INTO creature_movement_template (entry, point, position_x, position_y, po
 DELETE FROM dbscripts_on_creature_movement WHERE id=1491001;
 INSERT INTO dbscripts_on_creature_movement (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
 (1491001, 0, 0, 31, 14911, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Exzhal - Terminate Script If Zandalar Enforcer (14911) Is Not Found in Range'),
-(1491001, 0, 0, 31, 14911, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Exzhal - Terminate Script If Zandalar Enforcer (14911) Is Not Found in Range'),
 (1491001, 0, 1, 31, 14912, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Exzhal - Terminate Script If Captured Hakkari Zealot (14912) Is Not Found in Range'),
 (1491001, 0, 2, 29, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Exzhal - Remove UNIT_NPC_FLAG_GOSSIP, UNIT_NPC_FLAG_QUESTGIVER'),
 (1491001, 0, 3, 0, 0, 0, 0, 0, 0, 0, 10306, 0, 0, 0, 0, 0, 0, 0, 0, 'Exzhal - Say Text'),
