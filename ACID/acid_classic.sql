@@ -2568,7 +2568,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Murloc (285) - NSR
 -- Marshal Haggard (294) - NSR
 -- Innkeeper Farley (2.4.2 Official Data)
-('29501','295','1','0','40','1','30000','75000','600000','720000','0','0','1','86','0','0','0','0','0','0','0','0','0','0','Innkeeper Farley - Random OOC Say'),
+('29501','295','1','0','40','1','30000','75000','600000','720000','0','0','1','84','85','86','0','0','0','0','0','0','0','0','Innkeeper Farley - Random OOC Say'),
 -- Diseased Young Wolf (2.4.2 Official Data)
 ('29901','299','1','0','10','1','30000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Diseased Young Wolf - Howl and Emote OOC'),
 -- Pinto (307) - NSR
