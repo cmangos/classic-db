@@ -38,6 +38,10 @@ UPDATE gameobject_template SET data8=1 WHERE entry=178124; -- Resonite Crystal (
 UPDATE gameobject_template SET data8=1 WHERE entry=178248; -- Naga Brazier (trap
 UPDATE gameobject_template SET data8=1 WHERE entry=171941; -- Blackrock Keg Trap
 UPDATE gameobject_template SET data8=1 WHERE entry=180391; -- Heart of Hakkar Spell Emitter
+UPDATE gameobject_template SET data8=1 WHERE entry=181214; -- Necropolis critter spawner
+UPDATE gameobject_template SET data8=1 WHERE entry=179324; -- Frostwolf Landmine
+UPDATE gameobject_template SET data8=1 WHERE entry=179325; -- Stormpike Landmine
+UPDATE gameobject_template SET data8=1 WHERE entry=160842; -- Gor'tesh's Lopped Off Head
 
 -- Make Supply Crate trap GO only visible by GM
  UPDATE gameobject_template SET data8=1 WHERE entry IN (175534, 175535, 175536, 175537);
