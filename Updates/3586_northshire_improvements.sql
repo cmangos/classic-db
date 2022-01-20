@@ -395,7 +395,9 @@ DELETE FROM creature WHERE guid=100324; -- only one rabbit (100323)
 DELETE FROM pool_creature WHERE pool_entry=16021;
 DELETE FROM pool_template WHERE entry=16021;
 
--- Question: Does Cow 100877 exist?
+DELETE FROM creature WHERE guid IN (100875,100876,100877); -- no sign of groups of critters at this loaction
+DELETE FROM pool_creature WHERE pool_entry=16295;
+DELETE FROM pool_template WHERE entry=16295;
 
 UPDATE creature SET position_x=-9011.8662109375, position_y=-375.94818115234375, position_z=74.28177642822265625, spawndist=10, MovementType=1 WHERE guid=80227 AND id=883;
 UPDATE creature SET position_x=-8934.7197265625, position_y=-409.910369873046875, position_z=66.76636505126953125, spawndist=3, MovementType=1 WHERE guid=80232 AND id=721;
@@ -456,6 +458,40 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (80245, 16, -8587.267578125, -182.257156372070312, 90.8597869873046875, 1.047197580337524414, 15000, 0); -- spawn point
 
 -- Bonus: 6 Slot Bags
+DELETE FROM creature_loot_template WHERE entry=62; -- Gug Fatcandle introduced in 4.x
+UPDATE creature_template SET lootid=0 WHERE entry=62;
+
+-- 60400 and 60441 are the same
+UPDATE creature_loot_template SET item=60441, ChanceOrQuestChance=0.5, mincountOrRef=-60441 WHERE mincountOrRef=-60400; -- 
+UPDATE gameobject_loot_template SET item=60441, mincountOrRef=-60441, comments='NPC LOOT (White World Drop) - (Item Levels: 5 (6 Slot Bag)) - (NPC Levels: 1-10)' WHERE mincountOrRef=-60400; -- Tattered Chest 2845 / Battered Chest 106318
+UPDATE reference_loot_template_names SET name='NPC LOOT (White World Drop) - (Item Levels: 5 (6 Slot Bag)) - (NPC Levels: 1-10)' WHERE entry=60441;
+DELETE FROM reference_loot_template WHERE entry=60400;
+DELETE FROM reference_loot_template_names WHERE entry=60400;
+
+-- https://web.archive.org/web/20080502071220/http://wow.allakhazam.com/db/mob.html?wmob=1916 - not just black
+UPDATE creature_loot_template SET ChanceOrQuestChance=0.5 WHERE mincountOrRef=-60441; -- 1% befor (79 had 85 which is wrong, 99 already at 0.5 chances vary between ~0.3 and 1)
+DELETE FROM creature_loot_template WHERE item IN (805,828,4496,5571,5572); -- refloot 60441 contains these (old chance 0.25 per item)
+
+DELETE FROM creature_loot_template WHERE mincountOrRef=-60441 AND entry IN (30,38,69,103,113,118,119,299,330,704,705,706,707,708,724,808,946,1125,1126,1127,1128,1131,1133,1138,1190,1195,1199,1201,1501,1502,1504,1505,1506,1507,1508,1509,1512,1513,1547,1548,1549,1553,1554,1555,1667,1688,1718,1765,1890,1916,1917,1918,1919,1922,1984,1985,1986,1988,1989,1994,1995,1996,1997,1998,1999,2000,2001,2031,2032,2033,2034,2042,2043,2070,2231,2234,2952,2953,2954,2955,2956,2957,2958,2961,2966,2969,2970,2971,2972,2973,3035,3098,3099,3100,3101,3102,3107,3108,3110,3123,3124,3125,3126,3127,3183,3225,3226,3227,3229,3281,6789,8554,
+1211,3122,5826,199,481,834,1172,1173,1530,1532,1539,1540,1769,2014,2030,2176,2189,2965,3118,3131,3198,3199,3267,3268,3379); -- vmangos and legit
+INSERT INTO creature_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments)
+SELECT entry, 60441, 0.5, 0, -60441, 1, 0, 'NPC LOOT (White World Drop) - (Item Levels: 5 (6 Slot Bag)) - (NPC Levels: 1-10)' FROM creature_template WHERE entry IN (
+-- classic
+30,38,69,103,113,118,119,299,330,704,705,706,707,708,724,808,946,1125,1126,1127,1128,1131,1133,1138,1190,1195,1199,1201,1501,1502,1504,1505,1506,1507,1508,1509,1512,1513,1547,1548,1549,1553,1554,1555,1667,1688,1718,1765,1890,1916,1917,1918,1919,1922,1984,1985,1986,1988,1989,1994,1995,1996,1997,1998,1999,2000,2001,2031,2032,2033,2034,2042,2043,2070,2231,2234,2952,2953,2954,2955,2956,2957,2958,2961,2966,2969,2970,2971,2972,2973,3035,3098,3099,3100,3101,3102,3107,3108,3110,3123,3124,3125,3126,3127,3183,3225,3226,3227,3229,3281,6789,8554,
+-- vmangos additions (all level 10-11, except 1211,3122,5826)
+1211,3122,5826,199,481,834,1172,1173,1530,1532,1539,1540,1769,2014,2030,2176,2189,2965,3118,3131,3198,3199,3267,3268,3379);
+
+-- Slightly increased ChanceOrQuestChance for some mobs
+UPDATE creature_loot_template SET ChanceOrQuestChance=0.66 WHERE mincountOrRef=-60441 AND entry IN (6,80,257,6866,1124,808,724,1199,707,1718,1533,1890,1918,1501,1918,1935,2013,6911,3281);
+
+-- 2973,3225,3226 not strangly - https://web.archive.org/web/20080430135734/http://wow.allakhazam.com/db/mob.html?wmob=2973
+-- level 10-11 mobs seem to have both bag loots in tbc c.119,1765,2034,2070,2234,3110,3227,16350,17525
+UPDATE creature_loot_template SET ChanceOrQuestChance=0.75 WHERE mincountOrRef=-60441 AND entry IN (199,481,834,1172,1173,1530,1532,1539,1540,1769,2014,2030,2176,2189,2965,3118,3131,3198,3199,3267,3268,3379,119,1765,2034,2070,2234,3110,3199,3227,2973,3225,3226);
+UPDATE creature_loot_template SET ChanceOrQuestChance=0.25 WHERE mincountOrRef=-60442 AND entry IN (199,481,834,1172,1173,1530,1532,1539,1540,1769,2014,2030,2176,2189,2965,3118,3131,3198,3199,3267,3268,3379,119,1765,2034,2070,2234,3110,3199,3227,2973,3225,3226);
+
+-- Correct new Name
+UPDATE creature_loot_template SET comments='NPC LOOT (White World Drop) - (Item Levels: 5 (6 Slot Bag)) - (NPC Levels: 1-10)' WHERE mincountOrRef=-60441;
+
 -- Outside Northshire
 UPDATE creature SET spawndist=0, MovementType=0 WHERE guid IN (80391,80399,80403,80404) AND id=116;
 UPDATE creature SET position_x=-9952.3564453125, position_y=-132.7373046875, position_z=25.45180892944335937, orientation=3.473205089569091796 WHERE guid=80737 AND id=6846; -- most static waypoint
