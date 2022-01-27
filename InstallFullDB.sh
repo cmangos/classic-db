@@ -302,33 +302,6 @@ function try_set_mysql_path()
   IFS="$OLDIFS"
 }
 
-function display_help()
-{
-  clear
-  echo
-  echo "Welcome to the Classic-DB helper $SCRIPT_FILE"
-  echo
-  echo "New default $CONFIG_FILE as just been created!"
-  echo
-  if [ "$CORE_PATH" != "" ]
-  then
-    echo "Found core path : $CORE_PATH"
-  else
-    echo "Unable to autodetect $DEFAULT_CORE_FOLDER folder, please edit config file!"
-  fi
-
-  if [ "$MYSQL_PATH" != "" ]
-  then
-    echo "Found mysql path: $MYSQL_PATH"
-  else
-    echo "Unable to autodetect mysql folder, please edit config file!"
-  fi
-
-  echo
-  echo "Right after reviewing $CONFIG_FILE you can restart this script."
-  echo "Please check login credential, server address, server port, core path and mysql."
-}
-
 # print string and add underline to it.
 # (arg1 is string to print and arg2 is the char to use to for underline)
 print_underline()
@@ -467,7 +440,6 @@ function check_minimum_requierements()
 
   true
 }
-
 
 # execute sql command and print error if any
 # execute_sql_command "database" "sql" "message"(if empty no message is shown) return true if success
@@ -615,7 +587,7 @@ function get_current_db_version()
 # check_dbs_accessibility bool (if parameter is true the result is displayed)
 function check_dbs_accessibility()
 {
-  local showstatus="${1:false}"
+  local showstatus=${1:false}
   local current_error
   local UNAVAILABLE_DB=()
   ERRORS=()
@@ -1301,7 +1273,7 @@ function apply_content_db()
 
   ## Updates
   echo "> Trying to process ${EXPENSION}-DB updates"
-  COUNT=0
+  local COUNT=0
   for UPDATE in "${ADDITIONAL_PATH}Updates/"[0-9]*.sql
   do
     if [ -e "$UPDATE" ]; then
@@ -1314,6 +1286,35 @@ function apply_content_db()
   done
   echo "  $COUNT successfully added."
   echo
+
+  # install instance file if any
+  if [ ! -d "${ADDITIONAL_PATH}Updates/Instances" ]; then
+    true
+    return
+  fi
+
+  echo "> Trying to apply instance files ..."
+  COUNT=0
+  for INSTANCE in "${ADDITIONAL_PATH}Updates/Instances/"[0-9]*.sql
+  do
+    if [ -e "$INSTANCE" ]; then
+      local iName=$(basename "$INSTANCE")
+      if ! execute_sql_file "$WORLD_DB_NAME" "$INSTANCE" "  - Applying $iName"; then
+        false
+        return
+      fi
+      ((COUNT++))
+    fi
+  done
+  if [ "$COUNT" != 0 ]
+  then
+    echo "  $COUNT Instance files applied successfully"
+  else
+    echo "  Did not find any instance file to apply"
+  fi
+  echo
+  echo
+
   true
 }
 
@@ -1604,6 +1605,18 @@ function create_all_databases_and_user()
   fi
 
   if ! create_and_fill_logs_db; then
+    return
+  fi
+
+  check_dbs_accessibility
+  if ! apply_char_db_core_update;then
+    return
+  fi
+  if ! apply_realm_db_core_update;then
+    return
+  fi
+  if ! apply_logs_db_core_update;then
+
     return
   fi
 }
