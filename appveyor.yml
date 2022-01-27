@@ -57,20 +57,20 @@ test_script:
             $env:CORE_HASH = git rev-parse --short HEAD;
             $env:CORE_HASH = $env:COMMIT_URL + $env:CORE_HASH;
             $env:Path += ";C:\Program Files\MySql\MySQL Server 5.7\bin";
-            Write-Host "Creating mangos DATABASE ..." -f Yellow;
-            $env:MYSQL_PWD="Password12!";
-            cmd /c 'mysql -u root < C:\projects\core\sql\create\db_create_mysql.sql';
-            cmd /c 'mysql -u root -Dclassicmangos < C:\projects\core\sql\base\mangos.sql';
             cd C:\projects\database;
             $EOF = "`n";
-            $configs = 'DB_HOST="localhost"' + $EOF + 'DATABASE="classicmangos"' + $EOF;
-            $configs += 'USERNAME="mangos"' + $EOF + 'PASSWORD="mangos"' + $EOF;
+            $configs = 'MYSQL_HOST="localhost"' + $EOF + 'WORLD_DB_NAME="classicmangos"' + $EOF;
+            $configs += 'CHAR_DB_NAME="classiccharacters"$EOF';
+            $configs += 'REALM_DB_NAME="classicrealmd"$EOF';
+            $configs += 'LOGS_DB_NAME="classiclogs"$EOF';
+            $configs += 'MYSQL_USERNAME="mangos"' + $EOF + 'MYSQL_PASSWORD="mangos"' + $EOF;
             $configs += 'CORE_PATH="C:/projects/core"' + $EOF;
-            $configs += 'MYSQL="mysql"' + $EOF + 'DEV_UPDATES="NO"' + $EOF;
+            $configs += 'MYSQL_PATH="mysql"' + $EOF + 'DEV_UPDATES="NO"' + $EOF;
+            $configs += 'LOCALES="YES"' + $EOF;
             $configs += 'FORCE_WAIT="NO"' + $EOF;
             [System.IO.File]::WriteAllText("C:\projects\database\InstallFullDB.config", $configs);
             Write-Host "Launching database install script ..." -f Yellow;
-            bash InstallFullDB.sh;
+            bash InstallFullDB.sh -InstallAll root Password12! DeleteAll;
             $env:MYSQL_PWD="Password12!";
             if ($LastExitCode) { Write-Host "InstallFullDB.sh failed!"; throw "Build failed!"; }
             Write-Host "Dumping database ..." -f Yellow;

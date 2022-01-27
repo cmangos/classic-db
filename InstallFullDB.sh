@@ -2,7 +2,7 @@
 
 ####################################################################################################
 #
-#   Simple helper script to insert clean Classic-DB
+#   Helper script to install and manage CMaNGOS Classic-DB
 #
 ####################################################################################################
 
@@ -38,6 +38,7 @@ STATUS_WORLD_DB_FOUND=false
 STATUS_CHAR_DB_FOUND=false
 STATUS_REALM_DB_FOUND=false
 STATUS_LOGS_DB_FOUND=false
+STATUS_CONFIG_JUST_CREATED=false
 OLDIFS="$IFS"
 
 # testing only
@@ -121,8 +122,8 @@ function set_sql_queries
 # save current setting to $CONFIG_FILE
 function save_settings()
 {
-  declare -a allsettings
-  allsettings+=("####################################################################################################")
+  local allsettings=()
+  allsettings=("####################################################################################################")
   allsettings+=("# This is the config file for the '$SCRIPT_FILE' script")
   allsettings+=("#")
   allsettings+=("# You need to customize")
@@ -181,10 +182,26 @@ function save_settings()
   allsettings+=("# Enjoy using the tool")
 
   # save to file
-  for j in "${allsettings[@]}"
-  do
-  echo $j
+  for j in "${allsettings[@]}"; do
+    echo $j
   done > $CONFIG_FILE
+}
+
+# Give chance to break the script
+function force_wait()
+{
+  if [ "$FORCE_WAIT" != "NO" ];then
+    echo "ATTENTION: Your database will be reset to ${EXPENSION}-DB!"
+    echo "Please bring your repositories up-to-date!"
+    echo "Press CTRL+C to exit"
+    # show a mini progress bar
+    for i in {9..0}; do
+    echo -ne "$i"
+    echo -ne "\033[0K\r"
+    sleep 1
+    done
+    echo
+  fi
 }
 
 # some basic check to see if argument $1 is a cmangos core folder
@@ -669,14 +686,18 @@ function check_dbs_accessibility()
   if $showstatus; then
     if [[ "${#UNAVAILABLE_DB[@]}" > 0 ]]; then
       echo -ne "\033[0K\r"
+      echo -ne "                                                                    "
+      echo -ne "\033[0K\r"
       echo -ne ">>> Error: Found some inaccessible DB> "
       for mdb in "${UNAVAILABLE_DB[@]}";do
         echo -ne "'$mdb' "
       done
-      echo "                                                                  "
+      echo
       echo ">>> Either you want to create new DB or there is spelling problem."
     else
-      echo -ne "\033[0K\r                                                                              "
+      echo -ne "\033[0K\r"
+      echo -ne "                                                                    "
+      echo -ne "\033[0K\r"
     fi
   fi
 
@@ -876,12 +897,9 @@ function apply_world_db_core_update()
   echo "> Trying to process last world(mangos) CORE updates"
 
   if [[ "$STATUS_WORLD_DB_FOUND" == "false" ]] || [[ "$DB_WORLDDB_VERSION" == "0" ]]; then
-    check_dbs_accessibility
-    if [[ "$STATUS_WORLD_DB_FOUND" == "false" ]] || [[ "$DB_WORLDDB_VERSION" == "0" ]]; then
-      echo ">>> ERROR: cannot get last core revision in DB"
-      false
-      return
-    fi
+    echo ">>> ERROR: cannot get last core revision in DB"
+    false
+    return
   fi
 
   # ex: z2778_01_logs_anticheat
@@ -955,14 +973,10 @@ function apply_world_db_core_update()
 function apply_char_db_core_update()
 {
   echo "> Trying to process last Characters CORE updates"
-
   if [[ "$STATUS_CHAR_DB_FOUND" == "false" ]] || [[ "$DB_CHARDB_VERSION" == "0" ]]; then
-    check_dbs_accessibility
-    if [[ "$STATUS_CHAR_DB_FOUND" == "false" ]] || [[ "$DB_CHARDB_VERSION" == "0" ]]; then
-      echo ">>> ERROR: cannot get last core revision in DB"
-      false
-      return
-    fi
+    echo ">>> ERROR: cannot get last core revision in DB"
+    false
+    return
   fi
 
   # ex: z2778_01_logs_anticheat
@@ -1012,12 +1026,9 @@ function apply_realm_db_core_update()
   echo "> Trying to process last Realm CORE updates"
 
   if [[ "$STATUS_REALM_DB_FOUND" == "false" ]] || [[ "$DB_REALMDB_VERSION" == "0" ]]; then
-    check_dbs_accessibility
-    if [[ "$STATUS_REALM_DB_FOUND" == "false" ]] || [[ "$DB_REALMDB_VERSION" == "0" ]]; then
-      echo ">>> ERROR: cannot get last core revision in DB"
-      false
-      return
-    fi
+    echo ">>> ERROR: cannot get last core revision in DB"
+    false
+    return
   fi
 
   # ex: z2778_01_logs_anticheat
@@ -1067,12 +1078,9 @@ function apply_logs_db_core_update()
   echo "> Trying to process last Logs CORE updates"
 
   if [[ "$STATUS_LOGS_DB_FOUND" == "false" ]] || [[ "$DB_LOGSDB_VERSION" == "0" ]]; then
-    check_dbs_accessibility
-    if [[ "$STATUS_LOGS_DB_FOUND" == "false" ]] || [[ "$DB_LOGSDB_VERSION" == "0" ]]; then
-      echo ">>> ERROR: cannot get last core revision in DB"
-      false
-      return
-    fi
+    echo ">>> ERROR: cannot get last core revision in DB"
+    false
+    return
   fi
 
   # ex: z2778_01_logs_anticheat
@@ -1119,6 +1127,7 @@ function apply_logs_db_core_update()
 
 function apply_core_update()
 {
+  check_dbs_accessibility
   if ! apply_world_db_core_update;then
     false
     return
@@ -1323,6 +1332,7 @@ function apply_full_content_db()
     return
   fi
 
+  check_dbs_accessibility
   # apply core updates
   if ! apply_world_db_core_update; then
     false
@@ -1916,7 +1926,6 @@ function main_menu()
     echo "> 4) Full installation (create all DB and MySQL user, root required)"
     echo "> 5) Advanced DB management (root required)"
     echo "> 6) Manage realm list"
-
     echo "> 9) Quit"
     echo
     read -n 1 -e -p "Please enter your choice.....: " CHOICE
@@ -1934,6 +1943,110 @@ function main_menu()
 }
 
 ###############################################
+## Auto script ################################
+###############################################
+
+# install all db by deleting all previous data without prompting if "DeleteAll" is set as arg3
+# arg1: root username arg2: root password
+function auto_script_create_all()
+{
+  echo "Automatic install starting..."
+  ROOTUSERNAME="$1"
+  ROOTPASSWORD="$2"
+
+  show_mysql_settings
+
+  if [[ "$3" != "DeleteAll" ]]; then
+    if ! are_you_sure "DeleteAll"; then
+      false
+      return
+    fi
+  fi
+
+  force_wait
+
+  if ! set_try_root_connect_to_db; then
+    false
+    return
+  fi
+
+  if ! create_db_user_and_set_privileges; then
+    false
+    return
+  fi
+
+  if ! create_and_fill_world_db; then
+    false
+    return
+  fi
+
+  if ! create_and_fill_char_db; then
+    false
+    return
+  fi
+
+  if ! create_and_fill_realm_db; then
+    false
+    return
+  fi
+
+  if ! create_and_fill_logs_db; then
+    false
+    return
+  fi
+
+  if ! apply_core_update; then
+    false
+    return
+  fi
+
+  true
+}
+
+# install world db using config file settings and normal user
+function auto_script_install_world()
+{
+  if [[ "$STATUS_CONFIG_JUST_CREATED" = true ]]; then
+    echo
+    print_underline "$CONFIG_FILE just been created, please edit it and rerun this script to install ${EXPENSION}-DB"
+    false
+    return
+  fi
+
+  clear
+  print_underline "Welcome to ${EXPENSION}-DB installation"
+  echo
+  show_mysql_settings
+  echo
+
+  force_wait
+
+  if ! apply_full_content_db; then
+    false
+    return
+  fi
+
+  true
+}
+
+# display little help
+function show_help
+{
+  echo "${EXPENSION}-DB install script"
+  echo "$SCRIPT_FILE [options] [arg1 ... argn]"
+  echo "options:"
+  echo "   -?"
+  echo "    this help"
+  echo "   -Config"
+  echo "    Show current config"
+  echo "   -World"
+  echo "    Install world db only using none root user defined in $CONFIG_FILE"
+  echo "   -InstallAll"
+  echo "    Install all db by droping previous one and recreate them from scratch"
+  echo "    Require root access with arg1 as root username and arg2 as root password"
+}
+
+###############################################
 ## Main program ###############################
 ###############################################
 
@@ -1943,12 +2056,45 @@ then
   try_set_core_path
   try_set_mysql_path
   save_settings
+  STATUS_CONFIG_JUST_CREATED=true
 fi
 
 # load config file
 source "$CONFIG_FILE"
 
-#initialize sql queries
+# initialize sql queries
 set_sql_queries
 
+# check if user just want fast db installation
+if [[ "$1" == "-InstallAll" ]]; then
+  if ! auto_script_create_all $2 $3 $4; then
+    exit 1
+  fi
+
+  exit 0
+fi
+
+# check if user only want to install world db using config
+if [[ "$1" == "-World" ]]; then
+  if ! auto_script_install_world; then
+    exit 1
+  fi
+
+  exit 0
+fi
+
+# only show config
+if [[ "$1" == "-Config" ]]; then
+  show_mysql_settings
+
+  exit 0
+fi
+
+# check if user only want to install world db using config
+if [[ "$1" != "" ]]; then
+  show_help
+  exit 0
+fi
+
+# launch main menu
 main_menu
