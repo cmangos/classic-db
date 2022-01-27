@@ -58,25 +58,32 @@ test_script:
             $env:CORE_HASH = $env:COMMIT_URL + $env:CORE_HASH;
             $env:Path += ";C:\Program Files\MySql\MySQL Server 5.7\bin";
             cd C:\projects\database;
-            $EOF = "`n";
-            $configs = 'MYSQL_HOST="localhost"' + $EOF + 'WORLD_DB_NAME="classicmangos"' + $EOF;
-            $configs += 'CHAR_DB_NAME="classiccharacters"$EOF';
-            $configs += 'REALM_DB_NAME="classicrealmd"$EOF';
-            $configs += 'LOGS_DB_NAME="classiclogs"$EOF';
-            $configs += 'MYSQL_USERNAME="mangos"' + $EOF + 'MYSQL_PASSWORD="mangos"' + $EOF;
+            $EOF="`n";
+            $configs = 'MYSQL_HOST="localhost"' + $EOF;
+            $configs += 'WORLD_DB_NAME="classicmangos"' + $EOF;
+            $configs += 'CHAR_DB_NAME="classiccharacters"' + $EOF;
+            $configs += 'REALM_DB_NAME="classicrealmd"' + $EOF;
+            $configs += 'LOGS_DB_NAME="classiclogs"' + $EOF;
+            $configs += 'MYSQL_USERNAME="mangos"' + $EOF;
+            $configs += 'MYSQL_PASSWORD="mangos"' + $EOF;
             $configs += 'CORE_PATH="C:/projects/core"' + $EOF;
-            $configs += 'MYSQL_PATH="mysql"' + $EOF + 'DEV_UPDATES="NO"' + $EOF;
+            $configs += 'MYSQL_PATH="mysql"' + $EOF
+            $configs += 'DEV_UPDATES="NO"' + $EOF;
             $configs += 'LOCALES="YES"' + $EOF;
             $configs += 'FORCE_WAIT="NO"' + $EOF;
             [System.IO.File]::WriteAllText("C:\projects\database\InstallFullDB.config", $configs);
             Write-Host "Launching database install script ..." -f Yellow;
             bash InstallFullDB.sh -InstallAll root Password12! DeleteAll;
-            $env:MYSQL_PWD="Password12!";
             if ($LastExitCode) { Write-Host "InstallFullDB.sh failed!"; throw "Build failed!"; }
             Write-Host "Dumping database ..." -f Yellow;
-            cmd /c 'mysqldump -u root classicmangos > C:\projects\database\mangos.sql';
+            $env:MYSQL_PWD="Password12!";
+            md C:\projects\database\FullDB
+            cmd /c 'mysqldump -u root classicmangos > C:\projects\database\FullDB\mangos.sql';
+            cmd /c 'mysqldump -u root classiccharacters > C:\projects\database\FullDB\characters.sql';
+            cmd /c 'mysqldump -u root classicrealmd > C:\projects\database\FullDB\realmd.sql';
+            cmd /c 'mysqldump -u root classiclogs > C:\projects\database\FullDB\logs.sql';
             Write-Host "Packing dump into a zip file ..." -f Yellow;
-            7z a C:\projects\database\$env:FINAL_SQL_NAME C:\projects\database\mangos.sql;
+            7z a C:\projects\database\$env:FINAL_SQL_NAME C:\projects\database\FullDB\*;
         }
 
 # Do not build on tags (GitHub only)
