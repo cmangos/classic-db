@@ -10963,7 +10963,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Arnok 3373
 -- Zamja 3399
 -- Xen'to 3400
--- Shenthul 3401   npc_shenthul
+-- Shenthul 3401
+('340101', '3401', '22', '0', '100', '0', '78', '2460', '0', '0', '0', '0', '53', '3401', '0', '0', '15', '2460', '6', '0', '0', '0', '0', '0', 'Shenthul - OnReceive EMOTE_SALUTE - complete quest and start relay Script'),
 -- Zando'zan 3402
 -- Sian'tsu 3403
 -- Jandi 3404
