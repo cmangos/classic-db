@@ -15,7 +15,7 @@ NEXT_MILESTONES="0.19 0.20"
 # specific to this core
 EXPENSION="Classic" #warning only 'Classic' or 'TBC' or 'WoTLK' else acid filename will be wrong
 DATABASE_UPDATE_FILE_PREFIX="z"
-DATABASE_NAME_PREFIX="${EXPENSION,,}"
+EXPENSION_LC="$(tr [A-Z] [a-z] <<< "$EXPENSION")"
 
 # internal use
 SCRIPT_FILE="InstallFullDB.sh"
@@ -39,6 +39,7 @@ STATUS_CHAR_DB_FOUND=false
 STATUS_REALM_DB_FOUND=false
 STATUS_LOGS_DB_FOUND=false
 STATUS_CONFIG_JUST_CREATED=false
+STATUS_BASH_4_SUPPORT=false
 OLDIFS="$IFS"
 
 # testing only
@@ -50,10 +51,10 @@ MYSQL_PORT_DEFAULT="3306"
 MYSQL_USERNAME_DEFAULT="mangos"
 MYSQL_PASSWORD_DEFAULT="mangos"
 MYSQL_USERIP_DEFAULT="localhost"
-WORLD_DB_NAME_DEFAULT="${DATABASE_NAME_PREFIX}mangos"
-REALM_DB_NAME_DEFAULT="${DATABASE_NAME_PREFIX}realmd"
-CHAR_DB_NAME_DEFAULT="${DATABASE_NAME_PREFIX}characters"
-LOGS_DB_NAME_DEFAULT="${DATABASE_NAME_PREFIX}logs"
+WORLD_DB_NAME_DEFAULT="${EXPENSION_LC}mangos"
+REALM_DB_NAME_DEFAULT="${EXPENSION_LC}realmd"
+CHAR_DB_NAME_DEFAULT="${EXPENSION_LC}characters"
+LOGS_DB_NAME_DEFAULT="${EXPENSION_LC}logs"
 MYSQL_PATH_DEFAULT=""
 CORE_PATH_DEFAULT=""
 LOCALES_DEFAULT="YES"
@@ -79,7 +80,7 @@ AHBOT="${AHBOT_DEFAULT}"
 FORCE_WAIT="${FORCE_WAIT_DEFAULT}"
 
 #possible search folder for core path
-DEFAULT_CORE_FOLDER="${EXPENSION,,}"
+DEFAULT_CORE_FOLDER="$EXPENSION_LC"
 
 ## All SQLs used in this script
 function set_sql_queries
@@ -152,7 +153,7 @@ function save_settings()
   allsettings+=("## Define default mysql address binding(you can set \"%\" to be able to connect from any computer)")
   allsettings+=("MYSQL_USERIP=\"$MYSQL_USERIP\"")
   allsettings+=("")
-  allsettings+=("## Define the databases names (let them empty for default name '"$DATABASE_NAME_PREFIX"dbtype')")
+  allsettings+=("## Define the databases names (let them empty for default name '"$EXPENSION_LC"dbtype')")
   allsettings+=("WORLD_DB_NAME=\"$WORLD_DB_NAME\"")
   allsettings+=("REALM_DB_NAME=\"$REALM_DB_NAME\"")
   allsettings+=("CHAR_DB_NAME=\"$CHAR_DB_NAME\"")
@@ -467,18 +468,18 @@ function execute_sql_file()
 {
   local showstatus=true
   if [[ "$3" == "" ]]; then showstatus=false; fi
-  if $showstatus; then echo -n "$3 ... "; fi
+  if [[ "$showstatus" = true ]]; then echo -n "$3 ... "; fi
   export MYSQL_PWD="$MYSQL_PASSWORD"
   ERRORS=$("$MYSQL_PATH" -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -D "$1" < "$2" 2>&1)
   if [[ $? != 0 ]]; then
-    if $showstatus; then
+    if [[ "$showstatus" = true ]]; then
       echo "FAILED!"
       echo ">>> $ERRORS";
     fi
     false
     return
   else
-    if $showstatus; then echo "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo "SUCCESS"; fi
   fi
   true
 }
@@ -505,30 +506,83 @@ function show_mysql_settings()
   echo -e "AHBOT...................: $AHBOT"
 }
 
+# arg1 = arg2 (if arg2 is empty then arg1 = arg3, if arg3 is empty do nothing)
+function assign_new_value()
+{
+  local v="$1"
+  if [[ "$2" != "" ]]; then
+      eval "$v='${2}'"
+  else
+      if [[ "$3" != "" ]]; then
+        eval "$v='${3}'"
+      fi
+  fi
+}
+
 function change_db_name()
 {
-  read -e -p    "Enter world database name.......: " -i $WORLD_DB_NAME WORLD_DB_NAME
-  read -e -p    "Enter characters database name..: " -i $CHAR_DB_NAME CHAR_DB_NAME
-  read -e -p    "Enter realm database name.......: " -i $REALM_DB_NAME REALM_DB_NAME
-  read -e -p    "Enter log database name.........: " -i $LOGS_DB_NAME LOGS_DB_NAME
+  local nameSettings=( "$WORLD_DB_NAME" "$CHAR_DB_NAME" "$REALM_DB_NAME" "$LOGS_DB_NAME" )
+  if [[ $BASH_VERSION > 4 ]]; then
+    read -e -p    "Enter world database name.......: " -i $WORLD_DB_NAME WORLD_DB_NAME
+    read -e -p    "Enter characters database name..: " -i $CHAR_DB_NAME CHAR_DB_NAME
+    read -e -p    "Enter realm database name.......: " -i $REALM_DB_NAME REALM_DB_NAME
+    read -e -p    "Enter log database name.........: " -i $LOGS_DB_NAME LOGS_DB_NAME
+  else
+    read -e -p    "Enter world database name......current($WORLD_DB_NAME).: " wname
+    read -e -p    "Enter characters database name.current($CHAR_DB_NAME).: "  cname
+    read -e -p    "Enter realm database name......current($REALM_DB_NAME).: " rname
+    read -e -p    "Enter log database name........current($LOGS_DB_NAME).: "  lname
+
+    assign_new_value 'WORLD_DB_NAME' "${wname}"
+    assign_new_value 'CHAR_DB_NAME' "${cname}"
+    assign_new_value 'REALM_DB_NAME' "${rname}"
+    assign_new_value 'LOGS_DB_NAME' "${lname}"
+  fi
 }
 
 function change_mysql_settings()
 {
   print_header
-  read -e -p    "Enter MySQL host................: " -i $MYSQL_HOST MYSQL_HOST
-  read -e -p    "Enter MySQL port................: " -i $MYSQL_PORT MYSQL_PORT
-  read -e -p    "Enter MySQL user................: " -i $MYSQL_USERNAME MYSQL_USERNAME
-  read -e -s -p "Enter MySQL password............: " MYSQL_PASSWORD
-  echo "***********"
-  read -e -p    "MySQL user ip access............: " -i $MYSQL_USERIP MYSQL_USERIP
-  read -e -p    "Enter MySQL path................: " -i "$MYSQL_PATH" MYSQL_PATH
-  read -e -p    "Enter Core path.................: " -i "$CORE_PATH" CORE_PATH
-  change_db_name
-  echo -e "Choose YES or NO for following options"
-  read -e -p    "LOCALE(default:YES).............: " -i "$LOCALES" LOCALES
-  read -e -p    "DEV_UPDATES(default:NO).........: " -i "$DEV_UPDATES" DEV_UPDATES
-  read -e -p    "AHBOT(default:NO)...............: " -i "$AHBOT" AHBOT
+  if [[ $BASH_VERSION > 4 ]]; then
+    read -e -p    "Enter MySQL host................: " -i $MYSQL_HOST MYSQL_HOST
+    read -e -p    "Enter MySQL port................: " -i $MYSQL_PORT MYSQL_PORT
+    read -e -p    "Enter MySQL user................: " -i $MYSQL_USERNAME MYSQL_USERNAME
+    read -e -s -p "Enter MySQL password............: " MYSQL_PASSWORD
+    echo "***********"
+    read -e -p    "MySQL user ip access............: " -i $MYSQL_USERIP MYSQL_USERIP
+    read -e -p    "Enter MySQL path................: " -i "$MYSQL_PATH" MYSQL_PATH
+    read -e -p    "Enter Core path.................: " -i "$CORE_PATH" CORE_PATH
+    change_db_name
+    echo -e "Choose YES or NO for following options"
+    read -e -p    "LOCALE(default:YES).............: " -i "$LOCALES" LOCALES
+    read -e -p    "DEV_UPDATES(default:NO).........: " -i "$DEV_UPDATES" DEV_UPDATES
+    read -e -p    "AHBOT(default:NO)...............: " -i "$AHBOT" AHBOT
+  else
+    read -e -p    "Enter MySQL host...............current($MYSQL_HOST).: " mhost
+    read -e -p    "Enter MySQL port...............current($MYSQL_PORT).: " mport
+    read -e -p    "Enter MySQL user...............current($MYSQL_USERNAME).: " muser
+    read -e -s -p "Enter MySQL password............: " mpass
+    echo "***********"
+    read -e -p    "MySQL user ip access...........current($MYSQL_USERIP).: " musip
+    read -e -p    "Enter MySQL path...............current($MYSQL_PATH).: " mpath
+    read -e -p    "Enter Core path................current($CORE_PATH).: " cpath
+    change_db_name
+    echo -e "Choose YES or NO for following options"
+    read -e -p    "LOCALE(default:YES)............current($LOCALES).: " loc
+    read -e -p    "DEV_UPDATES(default:NO)........current($DEV_UPDATES).: " dev
+    read -e -p    "AHBOT(default:NO)..............current($AHBOT).: " ahb
+
+    assign_new_value 'MYSQL_HOST' "${mhost}"
+    assign_new_value 'MYSQL_PORT' "${mport}"
+    assign_new_value 'MYSQL_USERNAME' "${muser}"
+    assign_new_value 'MYSQL_PASSWORD' "${mpass}"
+    assign_new_value 'MYSQL_USERIP' "${musip}"
+    assign_new_value 'MYSQL_PATH' "${mpath}"
+    assign_new_value 'CORE_PATH' "${cpath}"
+    assign_new_value 'LOCALES' "${loc}"
+    assign_new_value 'DEV_UPDATES' "${dev}"
+    assign_new_value 'AHBOT' "${ahb}"
+  fi
 
   # some basic check
   if [[ "$MYSQL_HOST" == "" ]];then MYSQL_HOST="${MYSQL_HOST_DEFAULT}"; fi
@@ -540,9 +594,9 @@ function change_mysql_settings()
   if [[ "$CHAR_DB_NAME" == "" ]];then CHAR_DB_NAME="${CHAR_DB_NAME_DEFAULT}"; fi
   if [[ "$REALM_DB_NAME" == "" ]];then REALM_DB_NAME="${REALM_DB_NAME_DEFAULT}"; fi
   if [[ "$LOGS_DB_NAME" == "" ]];then LOGS_DB_NAME="${LOGS_DB_NAME_DEFAULT}"; fi
-  LOCALES="${LOCALES^^}"
-  DEV_UPDATES="${DEV_UPDATES^^}"
-  AHBOT="${AHBOT^^}"
+  LOCALES="$(tr [a-z] [A-Z] <<< "$LOCALES")"
+  DEV_UPDATES="$(tr [a-z] [A-Z] <<< "$DEV_UPDATES")"
+  AHBOT="$(tr [a-z] [A-Z] <<< "$AHBOT")"
 }
 
 function wait_key()
@@ -604,58 +658,58 @@ function check_dbs_accessibility()
     return
   fi
 
-  if $showstatus; then echo -ne "Checking '$WORLD_DB_NAME' db access, please wait..."; fi
+  if [[ "$showstatus" = true ]]; then echo -ne "Checking '$WORLD_DB_NAME' db access, please wait..."; fi
   ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$WORLD_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
   if [[ $? != 0 ]];  then
     DB_WORLDDB_VERSION="0"
     UNAVAILABLE_DB+=("$WORLD_DB_NAME")
   else
-    if $showstatus; then echo -ne "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$WORLD_DB_NAME" "db_version"
     DB_WORLDDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_WORLD_DB_FOUND=true
   fi
 
-  if $showstatus; then echo -ne "\033[0K\r"; echo -ne "Checking '$REALM_DB_NAME' db access, please wait...          "; fi
+  if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$REALM_DB_NAME' db access, please wait...          "; fi
   ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$REALM_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
   if [[ $? != 0 ]]
   then
     DB_REALMDB_VERSION="0"
     UNAVAILABLE_DB+=("$REALM_DB_NAME")
   else
-    if $showstatus; then echo -ne "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$REALM_DB_NAME" "realmd_db_version"
     DB_REALMDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_REALM_DB_FOUND=true
   fi
 
-  if $showstatus; then echo -ne "\033[0K\r"; echo -ne "Checking '$CHAR_DB_NAME' db access, please wait...          "; fi
+  if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$CHAR_DB_NAME' db access, please wait...          "; fi
   ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$CHAR_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
   if [[ $? != 0 ]]
   then
     DB_CHARDB_VERSION="0"
     UNAVAILABLE_DB+=("$CHAR_DB_NAME")
   else
-    if $showstatus; then echo -ne "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$CHAR_DB_NAME" "character_db_version"
     DB_CHARDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_CHAR_DB_FOUND=true
   fi
 
-  if $showstatus; then echo -ne "\033[0K\r"; echo -ne "Checking '$LOGS_DB_NAME' db access, please wait...          "; fi
+  if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$LOGS_DB_NAME' db access, please wait...          "; fi
   ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$LOGS_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
   if [[ $? != 0 ]]
   then
     DB_LOGSDB_VERSION="0"
     UNAVAILABLE_DB+=("$LOGS_DB_NAME")
   else
-    if $showstatus; then echo -ne "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$LOGS_DB_NAME" "logs_db_version"
     DB_LOGSDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_LOGS_DB_FOUND=true
   fi
 
-  if $showstatus; then
+  if [[ "$showstatus" = true ]]; then
     if [[ "${#UNAVAILABLE_DB[@]}" > 0 ]]; then
       echo -ne "\033[0K\r"
       echo -ne "                                                                    "
@@ -1179,7 +1233,7 @@ function apply_full_scriptdev2_data()
 # Apply full ACID file
 function apply_acid_data()
 {
-  if ! execute_sql_file "$WORLD_DB_NAME" "ACID/acid_${EXPENSION,,}.sql" "> Trying to apply ACID file"; then
+  if ! execute_sql_file "$WORLD_DB_NAME" "ACID/acid_${EXPENSION_LC}.sql" "> Trying to apply ACID file"; then
     false
     return
   fi
@@ -1203,16 +1257,10 @@ function apply_locales()
 {
   if [ "$LOCALES" == "YES" ]; then
     echo "> Trying to apply locales data (May take some minutes) ..."
-    for UPDATEFILE in ${ADDITIONAL_PATH}locales/*.sql
-    do
-      if [ -e "$UPDATEFILE" ]; then
-        for UPDATE in ${ADDITIONAL_PATH}locales/*.sql
-        do
-          if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATE" "  - Applying $UPDATE"; then
-            false
-            return
-          fi
-        done
+    for UPDATE in ${ADDITIONAL_PATH}locales/*.sql;do
+      if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATE" "  - Applying $UPDATE"; then
+        false
+        return
       fi
     done
   fi
@@ -1664,7 +1712,7 @@ function realm_edit()
     # split result so we can print them on specific places (result are separed using tab)
     IFS=$'\t';realmdata=($realmdata); IFS="$OLDIFS"
 
-    if [ ${realmdata[0]} = "$choice" ]; then
+    if [[ ${realmdata[0]} = "$choice" ]]; then
       found=true
       echo "found"
       break
@@ -1675,10 +1723,24 @@ function realm_edit()
     return
   fi
   local orival="$realmdata"
-  read -e -p "Enter realm id.....................: " -i "${realmdata[0]}" realmdata[0]
-  read -e -p "Enter realm name...................: " -i "${realmdata[1]}" realmdata[1]
-  read -e -p "Enter realm address................: " -i "${realmdata[2]}" realmdata[2]
-  read -e -p "Enter realm port...................: " -i "${realmdata[3]}" realmdata[3]
+  if [[ $BASH_VERSION > 4 ]]; then
+    read -e -p "Enter realm id.......................: " -i "${realmdata[0]}" realmdata[0]
+    read -e -p "Enter realm name.....................: " -i "${realmdata[1]}" realmdata[1]
+    read -e -p "Enter realm address..................: " -i "${realmdata[2]}" realmdata[2]
+    read -e -p "Enter realm port.....................: " -i "${realmdata[3]}" realmdata[3]
+  else
+    local newVal=()
+    read -e -p "Enter realm id.......................current(${realmdata[0]}).: " newVal[0]
+    read -e -p "Enter realm name.....................current(${realmdata[1]}).: " newVal[1]
+    read -e -p "Enter realm address..................current(${realmdata[2]}).: " newVal[2]
+    read -e -p "Enter realm port.....................current(${realmdata[3]}).: " newVal[3]
+
+    assign_new_value 'realmdata[0]' "${newVal[0]}"
+    assign_new_value 'realmdata[1]' "${newVal[1]}"
+    assign_new_value 'realmdata[2]' "${newVal[2]}"
+    assign_new_value 'realmdata[3]' "${newVal[3]}"
+  fi
+
   echo
   sql="$SQL_DELETE_REALM_ID'${realmdata[0]}'"
   if ! execute_sql_command "$REALM_DB_NAME" "$sql" "Apllying realm change"; then
@@ -1699,19 +1761,31 @@ function realm_edit()
 function realm_add()
 {
   clear
-  local realmdata
-  realmdata=("0" "CMaNGOS" "localhost" "8085")
-  read -e -p "Enter realm id (should be unique id).: " -i "${realmdata[0]}" realmdata[0]
-  read -e -p "Enter realm name.....................: " -i "${realmdata[1]}" realmdata[1]
-  read -e -p "Enter realm address..................: " -i "${realmdata[2]}" realmdata[2]
-  read -e -p "Enter realm port.....................: " -i "${realmdata[3]}" realmdata[3]
+  local realmdata_default=("1" "CMaNGOS ${EXPENSION} server" "localhost" "8085")
+  local realmdata="$realmdata_default"
+
+  if [[ $BASH_VERSION > 4 ]]; then
+    read -e -p "Enter realm id (should be unique id).: " -i "${realmdata_default[0]}" realmdata[0]
+    read -e -p "Enter realm name.....................: " -i "${realmdata_default[1]}" realmdata[1]
+    read -e -p "Enter realm address..................: " -i "${realmdata_default[2]}" realmdata[2]
+    read -e -p "Enter realm port.....................: " -i "${realmdata_default[3]}" realmdata[3]
+  else
+    local newVal=()
+    read -e -p "Enter realm id (should be unique id).current(${realmdata_default[0]}).: " newVal[0]
+    read -e -p "Enter realm name.....................current(${realmdata_default[1]}).: " newVal[1]
+    read -e -p "Enter realm address..................current(${realmdata_default[2]}).: " newVal[2]
+    read -e -p "Enter realm port.....................current(${realmdata_default[3]}).: " newVal[3]
+    assign_new_value 'realmdata[0]' "${newVal[0]}" "${realmdata_default[0]}"
+    assign_new_value 'realmdata[1]' "${newVal[1]}" "${realmdata_default[1]}"
+    assign_new_value 'realmdata[2]' "${newVal[2]}" "${realmdata_default[2]}"
+    assign_new_value 'realmdata[3]' "${newVal[3]}" "${realmdata_default[3]}"
+  fi
 
   local choice
   read -e -p "Is that correct [y/N]? " choice
   if [[ ! "$choice" =~ ^[Yy]$ ]]; then
       return
   fi
-
   sql="$SQL_INSERT_REALM_LIST('${realmdata[0]}','${realmdata[1]}','${realmdata[2]}','${realmdata[3]}');"
   execute_sql_command "$REALM_DB_NAME" "$sql" "Adding new realm to database"
 }

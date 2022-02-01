@@ -1,0 +1,216 @@
+name: Windows build
+
+on: [push]
+
+env:
+  CORE_REPO: cmangos/mangos-classic
+  CORE_FOLDER: "${{github.workspace}}\\core"
+  DB_FOLDER: "${{github.workspace}}\\db"
+  MYSQL_BIN_NAME: "mysql-8.0.28-winx64"
+  MYSQL_BASE_PREBUILD_ADR: "https://dev.mysql.com/get/Downloads/MySQL-8.0/"
+  MYSQL_BIN_EXT: ".zip"
+  MYSQL_FINAL_SERVER_FOLDER: "mysql-server"
+  MYSQL_DEFAULT_ROOT: "cmangos"
+  CACHED_FOLDER: "${{github.workspace}}\\CachedFolder"
+  WORK_FOLDER: "${{github.workspace}}\\WorkFolder"
+
+jobs:
+  build:
+
+    runs-on: windows-2019
+
+    steps:
+      - name: "Set environmental variables"
+        run: |
+          echo "MYSQL_BIN_ARCH=${{env.MYSQL_BIN_NAME}}${{env.MYSQL_BIN_EXT}}" >> $env:GITHUB_ENV
+          echo "MYSQL_PREBUILD_ADR=${{env.MYSQL_BASE_PREBUILD_ADR}}${{env.MYSQL_BIN_NAME}}${{env.MYSQL_BIN_EXT}}" >> $env:GITHUB_ENV
+          $projectNames = "${{github.repository}}".Split("/")[1]
+          $expension="${projectNames}".Split("-")[0]
+          echo "EXPENSION_NAME=${expension}" >> $env:GITHUB_ENV
+          echo "PROJECT_NAME=cmangos-${expension}" >> $env:GITHUB_ENV
+          echo "WORLD_DB_NAME=${expension}mangos" >> $env:GITHUB_ENV
+          echo "CHAR_DB_NAME=${expension}characters" >> $env:GITHUB_ENV
+          echo "REALM_DB_NAME=${expension}realmd" >> $env:GITHUB_ENV
+          echo "LOGS_DB_NAME=${expension}logs" >> $env:GITHUB_ENV
+          # create the work and cache folder
+          md -Force "${{env.CACHED_FOLDER}}"| Out-Null
+          md -Force "${{env.WORK_FOLDER}}"| Out-Null
+
+      - name: Checkout DB
+        uses: actions/checkout@v2
+        with:
+          path: ${{env.DB_FOLDER}}
+
+      - name: Checkout CORE
+        uses: actions/checkout@v2
+        with:
+          repository: ${{env.CORE_REPO}}
+          path: ${{env.CORE_FOLDER}}
+
+      - name: Cache MySQL official zip
+        uses: actions/cache@v2
+        id: cache-mysqldownload
+        with:
+          path: "${{env.CACHED_FOLDER}}"
+          key: ${{ runner.os }}-${{ hashFiles('.github/workflows/mysqlwindows.yml') }}
+
+      - if: steps.cache-mysqldownload.outputs.cache-hit != 'true'
+        name: Download official mysql prebuild server
+        run: |
+          # download file and put it in WORK_FOLDER if not exist
+          $MysqlArchive = Join-Path ${{env.CACHED_FOLDER}} ${{env.MYSQL_BIN_ARCH}}
+          if (-not(Test-Path -Path ${MysqlArchive} -PathType Leaf))
+          {
+              try
+              {
+                  (New-Object System.Net.WebClient).DownloadFile("${{env.MYSQL_PREBUILD_ADR}}", "${MysqlArchive}");
+              }
+              catch [Net.WebException]
+              {
+                Write-Host $_.Exception.ToString()
+                exit 1
+              }
+          }
+
+      - name: Extract MySQL archive
+        run: |
+          $MysqlArchive = Join-Path ${{env.CACHED_FOLDER}} ${{env.MYSQL_BIN_ARCH}}
+          Expand-Archive -LiteralPath "${MysqlArchive}" -DestinationPath "${{env.WORK_FOLDER}}" | Out-Null
+          Rename-Item "${{env.WORK_FOLDER}}\${{env.MYSQL_BIN_NAME}}" "${{env.WORK_FOLDER}}\${{env.MYSQL_FINAL_SERVER_FOLDER}}"
+
+      - name: Add default config files and batch file
+        run: |
+          $DefaultConfFile = "# For advice on how to change settings please see`n"
+          $DefaultConfFile +="# http://dev.mysql.com/doc/refman/8.0/en/server-configuration-defaults.html`n"
+          $DefaultConfFile +="`n"
+          $DefaultConfFile +="[mysqld]`n"
+          $DefaultConfFile +="`n"
+          $DefaultConfFile +="basedir                           = `"${{env.MYSQL_FINAL_SERVER_FOLDER}}`"`n"
+          $DefaultConfFile +="datadir                           = `"data`"`n"
+          $DefaultConfFile +="port                              = 3306`n"
+          $BatchFile ="@echo off`n"
+          $BatchFile +="COLOR F`n"
+          $BatchFile +="echo                     ***************************`n"
+          $BatchFile +="echo                     * MySQL for CMaNGOS cores *`n"
+          $BatchFile +="echo                     * PORT : 3306             *`n"
+          $BatchFile +="echo                     ***************************`n"
+          $BatchFile +="echo.`n"
+          $BatchFile +="echo MySQL for CMaNGOS is currently running.`n"
+          $BatchFile +="echo Do not close this windows before your CORE server!`n"
+          $BatchFile +="echo You can use '.server shutdown 1' on your server console for that.`n"
+          $BatchFile +="echo You can also close this windows by pressing CTRL + C.`n"
+          $BatchFile +="echo. `n"
+          $BatchFile +="echo.`n"
+          $BatchFile +="`n"
+          $BatchFile +="for /f %%i in ('dir /a /b ${{env.MYSQL_FINAL_SERVER_FOLDER}}\data') do goto notempty`n"
+          $BatchFile +="echo First run detected!`n"
+          $BatchFile +="echo Please wait while initilizing database for first use...`n"
+          $BatchFile +="${{env.MYSQL_FINAL_SERVER_FOLDER}}\bin\mysqld --defaults-file=${{env.MYSQL_FINAL_SERVER_FOLDER}}\my.ini --initialize-insecure`n"
+          $BatchFile +="echo !!! YOUR ATTENTION PLEASE !!!`n"
+          $BatchFile +="echo For your security you have to set a password for root user`n"
+          $BatchFile +="echo You can do it with the following command`n"
+          $BatchFile +="echo %CD%\${{env.MYSQL_FINAL_SERVER_FOLDER}}\bin\mysql -uroot -e `"SET PASSWORD = 'Your_Password';`"`n"
+          $BatchFile +="`n"
+          $BatchFile +="`n"
+          $BatchFile +=":notempty`n"
+          $BatchFile +="${{env.MYSQL_FINAL_SERVER_FOLDER}}\bin\mysqld --defaults-file=${{env.MYSQL_FINAL_SERVER_FOLDER}}\my.ini --standalone --console`n"
+          $BatchFile +="if errorlevel 1 goto errorstarting`n"
+          $BatchFile +="goto finish`n"
+          $BatchFile +="`n"
+          $BatchFile +=":errorstarting`n"
+          $BatchFile +="echo.`n"
+          $BatchFile +="echo ERROR: the MySQL service could not be started.`n"
+          $BatchFile +="echo Please check if no other MySQL server is running.`n"
+          $BatchFile +="pause`n"
+          $BatchFile +="exit 1`n"
+          $BatchFile +="`n"
+          $BatchFile +=":finish`n"
+          $BatchFile +="echo MySQL server is now stopped.`n"
+          $BatchFile +="pause`n"
+          $BatchFile +="exit 0`n"
+          $DefaultConfFile | Out-File -FilePath "${{env.WORK_FOLDER}}\${{env.MYSQL_FINAL_SERVER_FOLDER}}\my.ini" -Encoding ASCII
+          $BatchFile | Out-File -FilePath "${{env.WORK_FOLDER}}\start-server.bat" -Encoding ASCII
+
+      - name: Start mysql server
+        run: |
+          cd ${{env.WORK_FOLDER}}
+          $env:Path = "${{env.WORK_FOLDER}}\${{env.MYSQL_FINAL_SERVER_FOLDER}}\bin;$env:Path";
+          Start-Process cmd.exe "/c ${{env.WORK_FOLDER}}\start-server.bat"
+          $count = 0
+          while($true)
+          {
+            Start-Sleep -s 5
+            mysql -uroot --connect-timeout=2 -s -e';'
+            if ($LastExitCode -eq 0)
+            {
+              Write-Host "Success"
+              break 
+            }
+            else
+            {
+              if ($count -gt 30)
+              {
+                Write-Host "Fail"
+                exit 1
+              }
+            }
+            $count = $count + 1
+          }
+          mysql -uroot -e "SET PASSWORD = '${{env.MYSQL_DEFAULT_ROOT}}';"
+
+      - name: Building InstallFullDB config file
+        run: |
+          $corePath="${{env.CORE_FOLDER}}" -replace '\\','/'
+          $configs = "MYSQL_HOST=`"localhost`"`n"
+          $configs += "WORLD_DB_NAME=`"${{env.WORLD_DB_NAME}}`"`n"
+          $configs += "CHAR_DB_NAME=`"${{env.CHAR_DB_NAME}}`"`n"
+          $configs += "REALM_DB_NAME=`"${{env.REALM_DB_NAME}}`"`n"
+          $configs += "LOGS_DB_NAME=`"${{env.LOGS_DB_NAME}}`"`n"
+          $configs += "MYSQL_USERNAME=`"mangos`"`n"
+          $configs += "MYSQL_PASSWORD=`"mangos`"`n"
+          $configs += "CORE_PATH=`"${corePath}`"`n"
+          $configs += "MYSQL_PATH=`"mysql`"`n"
+          $configs += "DEV_UPDATES=`"NO`"`n"
+          $configs += "LOCALES=`"YES`"`n"
+          $configs += "FORCE_WAIT=`"NO`"`n"
+          $configs | Out-File -FilePath "${{env.DB_FOLDER}}\InstallFullDB.config" -Encoding ASCII
+
+      - name: Build ${{env.EXPENSION_NAME}}
+        run: |
+          cd ${{env.DB_FOLDER}}
+          bash InstallFullDB.sh -InstallAll root ${{env.MYSQL_DEFAULT_ROOT}} DeleteAll;
+
+      - name: Dumping all dbs
+        run: |
+          $env:Path = "${{env.WORK_FOLDER}}\${{env.MYSQL_FINAL_SERVER_FOLDER}}\bin;$env:Path";
+          $finalFullDBFolder="${{github.workspace}}\sql"
+          md -Force "${finalFullDBFolder}" | Out-Null
+          echo "FINAL_SQL_FOLDER=${finalFullDBFolder}" >> $env:GITHUB_ENV
+          $env:MYSQL_PWD="${{env.MYSQL_DEFAULT_ROOT}}";
+          mysqldump -u root ${{env.WORLD_DB_NAME}} > "${finalFullDBFolder}\${{env.WORLD_DB_NAME}}.sql";
+          mysqldump -u root ${{env.CHAR_DB_NAME}} > "${finalFullDBFolder}\${{env.CHAR_DB_NAME}}.sql";
+          mysqldump -u root ${{env.REALM_DB_NAME}} > "${finalFullDBFolder}\${{env.REALM_DB_NAME}}.sql";
+          mysqldump -u root ${{env.LOGS_DB_NAME}} > "${finalFullDBFolder}\${{env.LOGS_DB_NAME}}.sql";
+
+      - name: Stopping mysql server
+        run: |
+          Stop-Process -Name mysqld
+          Start-Sleep -s 10
+
+      - name: Upload mysql server artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{env.EXPENSION_NAME}}-db-server
+          path: "${{env.WORK_FOLDER}}"
+
+      - name: Upload world database sql artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{env.EXPENSION_NAME}}-db-world-sql
+          path: "${{env.FINAL_SQL_FOLDER}}\\${{env.WORLD_DB_NAME}}.sql"
+
+      - name: Upload all db sql artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{env.EXPENSION_NAME}}-db-all-sql
+          path: "${{env.FINAL_SQL_FOLDER}}\\*"
