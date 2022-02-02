@@ -10690,6 +10690,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- The Plains Vision (2983) - NSR
 -- Seer Wiserunner
 ('298401','2984','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Seer Wiserunner - Flee at 15% HP'),
+('298402','2984','10','0','100','1','1','20','120000','120000','0','772','1','947','0','0','0','0','0','0','0','0','0','0','Seer Wiserunner - SayText on Player in LoS'),
 -- Ruul Eagletalon
 ('298501','2985','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Ruul Eagletalon - Flee at 15% HP'),
 -- Morin Cloudstalker
