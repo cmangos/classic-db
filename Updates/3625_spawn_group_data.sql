@@ -15,16 +15,16 @@ REPLACE INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
 (1, 'EPL - Musty Tome - Annals of Darrowshire', 1, 0, 0, 0);
 
 REPLACE INTO spawn_group_spawn VALUES
-(1,45459),
-(1,45460),
-(1,45461),
-(1,45462),
-(1,45463),
-(1,45464),
-(1,45465),
-(1,45466),
-(1,45467),
-(1,45468);
+(1,45459,-1),
+(1,45460,-1),
+(1,45461,-1),
+(1,45462,-1),
+(1,45463,-1),
+(1,45464,-1),
+(1,45465,-1),
+(1,45466,-1),
+(1,45467,-1),
+(1,45468,-1);
 
 REPLACE INTO spawn_group_entry(Id, Entry, MaxCount, Chance) VALUES
 (1,176150,1,0),
