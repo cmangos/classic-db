@@ -1,3 +1,6 @@
+-- Drop previous script
+DELETE FROM dbscripts_on_creature_movement WHERE id=848001;
+
 DELETE FROM dbscripts_on_quest_start WHERE id='3463';
 INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, x, y, z, o, comments) VALUES 
 ('3463', '1000', '31', '8479', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0','Set Them Ablaze!: Abort Script if Kalaran Windblade is Not Spawned'),
@@ -30,7 +33,7 @@ UPDATE quest_template SET StartScript=3463 WHERE entry=3463;
 
 -- Add full waypoints for Kalaran the Deceiver.
 DELETE FROM creature_movement_template WHERE entry=8480;
-INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES 
+INSERT INTO creature_movement_template (Entry, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId) VALUES 
 (8480, 1, -6702.076172, -1193.132813, 241.639297, 100.000000, 0, 0),
 (8480, 2, -6712.509277, -1194.795532, 240.402237, 100.000000, 0, 0),
 (8480, 3, -6717.633301, -1195.880737, 240.402237, 100.000000, 0, 848003),
