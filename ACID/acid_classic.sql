@@ -5988,7 +5988,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ageron Kargal (5724) - NSR
 -- Deathguard Lundmark (5725) - guard_tirisfal
 -- Kayla Smithe (5749) - NSR
--- Gina Lang (5750) - NSR
+-- Gina Lang 5750
+('575001','5750','1','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Gina Lang - Despawn Guardians OOC'),
+('575002','5750','1','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Gina Lang - Cast Summon Imp OOC'),
 -- Nurse Neela (5759) - NSR
 -- Rand Rhobart (6289) - NSR
 -- Ulag the Cleaver (6390) - NSR
@@ -6010,7 +6012,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1035804','10358','9','0','100','1025','0','40','3400','4800','0','0','11','13901','1','256','0','0','0','0','0','0','0','0','Fellicent''s Shade - Cast Arcane Bolt'),
 -- Sri'skulk
 ('1035901','10359','11','0','100','0','0','0','0','0','0','0','11','10022','0','0','0','0','0','0','0','0','0','0','Sri''skulk - Cast Deadly Poison on Spawn'),
--- Junior Apothecary Holland (10665) - NSR
+-- Junior Apothecary Holland 10665
+('1066501','10665','1','0','100','1','10000','20000','40000','60000','0','0','54','0','0','16','5','5','0','0','0','0','0','0','Junior Apothecary Holland - Random Say, EMOTE_ONESHOT_EXCLAMATION OOC'),
 -- Gordo (10666) - NSR
 -- High Executor Derrington (10837) - NSR
 -- Argent Officer Garush (10839) - NSR
