@@ -19,7 +19,7 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 ('188704', '2000', '1', '173', '0', '0', 'Proof of Deed: Curator Thorius - Emote State Work No Sheathe'),
 ('188704', '12000', '1', '0', '0', '0', 'Proof of Deed: Curator Thorius - Stop Emoting'),
 ('188704', '14000', '0', '0', '0', '4307', 'Proof of Deed: Curator Thorius - Say Text'),
-('188704', '14000', '1', '4', '0', '4307', 'Proof of Deed: Curator Thorius - Emote Cheer'),
+('188704', '14000', '1', '4', '0', '0', 'Proof of Deed: Curator Thorius - Emote Cheer'),
 ('188704', '14000', '9', '55459', '60', '0', 'Proof of Deed: Curator Thorius - Respawn GameObject'),
 ('188704', '14000', '21', '0', '0', '0', 'Proof of Deed: Curator Thorius - Remove ActiveState'),
 ('188704', '22000', '20', '2', '0', '0', 'Proof of Deed: Curator Thorius - Start Waypoint Path 0');
