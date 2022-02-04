@@ -2,7 +2,7 @@
 UPDATE creature SET movementtype=2 WHERE id=3888;
 UPDATE creature_template_addon SET bytes1=0 WHERE entry=3888; -- UNIT_STAND_STATE_SLEEP
 DELETE FROM creature_movement_template WHERE entry=3888;
-INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
+INSERT INTO creature_movement_template (entry, point, positionx, positiony, positionz, orientation, waittime, scriptid) VALUES
 (3888, 1, 2768.44, -411.098, 111.463, 1.62316, 480000, 388803),
 (3888, 2, 2768.44, -411.098, 111.463, 100, 2000, 388801),
 (3888, 3, 2766.91, -407.248, 111.471, 100, 6000, 388802),
