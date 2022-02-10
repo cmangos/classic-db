@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS gameobject_template_addon;
 CREATE TABLE gameobject_template_addon(
 `Entry` INT UNSIGNED NOT NULL COMMENT 'gameobject_template',
 `Artkit0` INT NOT NULL DEFAULT 0,
