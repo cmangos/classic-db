@@ -778,10 +778,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fam'retor Guardian (2919) - NSR
 -- Lucien Tosselwrench (2920) - NSR
 -- Lotwil Veriatus     (2921) - NSR
--- Servo (3.1.1 Official Data)
-('292201','2922','1','0','100','0','1000','1000','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Servo - Set Phase 1 on Spawn'),
-('292202','2922','1','5','100','1','20000','40000','98000','132000','0','0','1','903','904','902','22','2','0','0','0','0','0','0','Servo - Random Say OOC and Set Phase 2 (Phase 1)'),
-('292203','2922','1','3','100','1','49000','66000','98000','132000','0','0','1','899','905','901','22','1','0','0','0','0','0','0','Servo - Random Say OOC and Set Phase 1 (Phase 2)'),
+-- Servo 2922 - NSR
 -- Zaricotl (3.1.1 Official Data)
 ('293101','2931','5','0','100','0','0','0','1','0','0','0','1','907','0','0','0','0','0','0','0','0','0','0','Zaricotl - Text Emote on Player Kill'),
 -- Magregan Deepshadow (3.1.1 Official Data) - ADD TO SCRIPT TRACKING
