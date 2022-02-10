@@ -5,12 +5,12 @@ UPDATE gameobject SET guid=6 WHERE guid=10079;
 DELETE FROM dbscripts_on_quest_start WHERE id='2992';
 INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, datalong3, data_flags, dataint, x, y, z, o, comments) VALUES 
 ('2992', '0', '21', '1', '0', '0', '0', '4', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Set ActiveObject'),
-('2992', '0', '29', '3', '2', '0', '0', '0', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Toggle Npc Flags'),
+('2992', '0', '29', '3', '0', '0', '0', '0', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Remove NPC Flags QUEST_GIVER and GOSSIP'),
 ('2992', '0', '0', '0', '0', '0', '0', '4126', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Say Text'),
 ('2992', '2000', '15', '5017', '0', '0', '4', '0', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Cast Spell Divining Trance'),
 ('2992', '8000', '0', '0', '0', '0', '0', '4128', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Say Text'),
 ('2992', '9000', '9', '10079', '120', '0', '0', '0', '0', '0', '0', '0', 'The Divination: Grimshade\'s Vision - Respawn GameObject'),
-('2992', '9000', '29', '3', '2', '0', '0', '0', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Toggle Npc Flags'),
+('2992', '9000', '29', '3', '1', '0', '0', '0', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Add NPC Flags QUEST_GIVER and GOSSIP'),
 ('2992', '10000', '7', '2992', '100', '0', '0', '0', '0', '0', '0', '0', 'The Divination: Player - Complete Quest'),
 ('2992', '10000', '21', '0', '0', '0', '0', '4', '0', '0', '0', '0', 'The Divination: Thadius Grimshade - Remove ActiveObject');
 

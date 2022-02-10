@@ -3,7 +3,7 @@ INSERT INTO dbscripts_on_quest_end (id, delay, command, datalong, datalong2, dat
 ('2204', '0', '21', '1', '0', '0', '0', '4', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Set ActiveObject'),
 ('2204', '0', '3', '0', '0', '0', '0', '0', '-4574.79', '-998.688', '503.657', '100', 'Restoring the Necklace: Talvash del Kissel - Move'),
 ('2204', '0', '0', '0', '0', '0', '0', '3121', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Say Text'),
-('2204', '0', '29', '3', '2', '0', '0', '0', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Remove Npc Flags'),
+('2204', '0', '29', '3', '0', '0', '0', '0', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Remove NPC Flags QUEST_GIVER and GOSSIP'),
 ('2204', '10000', '0', '0', '0', '0', '0', '3122', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Say Text'),
 ('2204', '13000', '1', '5', '0', '0', '0', '0', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Emote OneShotExclamation'),
 ('2204', '13000', '3', '0', '0', '0', '0', '0', '-4580.49', '-993.985', '503.657', '100', 'Restoring the Necklace: Talvash del Kissel - Move'),
@@ -13,7 +13,7 @@ INSERT INTO dbscripts_on_quest_end (id, delay, command, datalong, datalong2, dat
 ('2204', '21000', '0', '0', '0', '0', '0', '3124', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Say Text'),
 ('2204', '26000', '15', '9795', '0', '0', '4', '0', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Cast Spell Talvash\'s Necklace Repair'),
 ('2204', '34000', '1', '4', '0', '0', '0', '0', '0','0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Emote OneShotCheer'),
-('2204', '34000', '29', '3', '2', '0', '0', '0','0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Add Npc Flags'),
+('2204', '34000', '29', '3', '1', '0', '0', '0','0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Add NPC Flags QUEST_GIVER and GOSSIP'),
 ('2204', '34000', '0', '0', '0', '0', '0', '3125', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Say Text'),
 ('2204', '34000', '21', '0', '0', '0', '0', '4', '0', '0', '0', '0', 'Restoring the Necklace: Talvash del Kissel - Remove ActiveObject');
 
