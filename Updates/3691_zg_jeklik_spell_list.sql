@@ -6,7 +6,7 @@ REPLACE INTO creature_spell_list(Id, Position, SpellId, Flags, TargetId, ScriptI
 UPDATE creature_template SET SpellList=1451501 WHERE entry IN(14750);
 
 DELETE FROM creature_movement_template WHERE entry IN(14750);
-INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+INSERT INTO creature_movement_template (entry,pathId,point,positionx,positiony,positionz,waittime,scriptid,orientation) VALUES
 (14750,1,1,-12288.004,-1391.931,145.4913,0,0,100),
 (14750,1,2,-12268.26,-1407.0247,145.51915,0,0,100),
 (14750,1,3,-12283.021,-1428.5464,145.07469,0,0,100),
