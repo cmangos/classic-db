@@ -18060,6 +18060,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hooktooth Frenzy
 ('1137401','11374','0','0','75','1025','1000','3000','3000','5000','0','0','11','12097','1','32','0','0','0','0','0','0','0','0','Hooktooth Frenzy - Cast Pierce Armor'),
 -- Jin'do the Hexxer 11380 - boss_jindo
+-- Jin'do the Hexxer 11380
+('1138002','11380','4','0','15','0','0','0','0','0','0','0','1','10449','0','0','0','0','0','0','0','0','0','0','Jin''do the Hexxer - Say on Aggro'),
 -- Bloodlord Mandokir 11382 - boss_mandokir
 -- Witherbark Speaker 11388 - s.15801 confirmed, rest guessed from bestiary
 ('1138801','11388','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Witherbark Speaker - Enable Range Mode on Spawn'),
