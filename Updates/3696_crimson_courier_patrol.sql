@@ -19,8 +19,8 @@ INSERT INTO spawn_group_spawn (id, guid, slotid) VALUES
 
 -- INSERT INTO spawn_group_entry (id, entry, mincount, maxcount, chance) VALUES
 
-DELETE FROM spawn_group_formation WHERE spawngroupid=7;
-INSERT INTO spawn_group_formation (spawngroupid, formationtype, formationspread, formationoptions, movementid, movementtype, comment) VALUES
+DELETE FROM spawn_group_formation WHERE id=7;
+INSERT INTO spawn_group_formation (id, formationtype, formationspread, formationoptions, pathid, movementtype, comment) VALUES
 (7, 6, 3, 0x02, 92287, 2, 'Eastern Plaguelands - Crimson Courier (c.id 13118, 12337)'); -- SPAWN_GROUP_FORMATION_TYPE_CIRCLE_THE_LEADER, bit smaller formationspread normally i take 4 here 3 seems more adequate
 -- 0x02 SPAWN_GROUP_FORMATION_OPTION_KEEP_COMPACT doesnt seem to have any influence
 
@@ -30,5 +30,5 @@ DELETE FROM creature_linking WHERE master_guid BETWEEN 92287 AND 92291;
 DELETE FROM creature_linking_template WHERE entry IN (13118, 12337);
 DELETE FROM creature_linking_template WHERE master_entry IN (13118, 12337);
 
-REPLACE INTO waypoint_path (entry,point,positionx,positiony,positionz,orientation,scriptid,comment) SELECT id as entry, point, positionx, positiony, positionz, 100 as orientation, scriptid, comment FROM creature_movement where id=92287;
+REPLACE INTO waypoint_path (pathid,point,positionx,positiony,positionz,orientation,scriptid,comment) SELECT id as pathid, point, positionx, positiony, positionz, 100 as orientation, scriptid, comment FROM creature_movement where id=92287;
 DELETE FROM creature_movement WHERE id IN (SELECT guid FROM creature WHERE id IN (13118, 12337));
