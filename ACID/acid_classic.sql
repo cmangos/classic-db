@@ -18831,13 +18831,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Deathcharger 16513
 -- Argent Quartermaster 16786
 -- Argent Outfitter 16787
--- Argent Protector 19320
--- Argent Guardian 19322
--- Argent Bowman 19365
-('1936501','19365','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Argent Bowman - Enable Range Mode on Spawn'),
-('1936502','19365','9','0','100','1025','5','35','2300','3900','0','0','11','6660','4','256','0','0','0','0','0','0','0','0','Argent Bowman - Cast Shoot'),
--- Argent Hunter 19366
--- Argent Healer 27305
 -- Lumbering Horror 14697 - Recheck Timers
 ('1469701','14697','6','0','100','0','0','0','0','0','0','0','11','28032','15','2','0','0','0','0','0','0','0','0','Lumbering Horror - Cast Zap Crystal on Death'),
 ('1469702','14697','8','0','100','1','17680','-1','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Lumbering Horror - Delayed Despawn on Spirit Spawn-out Spellhit'),
