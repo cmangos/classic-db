@@ -18871,7 +18871,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flameshocker 16383 - Recheck Timers
 ('1638301','16383','29','0','100','1','0','0','10000','10000','0','0','45','5','75','0','0','0','0','0','0','0','0','0','Flameshocker - Send AI Event 5 on Generic Timer'),
 ('1638302','16383','11','0','100','0','0','0','0','0','0','0','11','28330','0','34','0','0','0','0','0','0','0','0','Flameshocker - Cast Flameshocker - Immolate Visual on Spawn'),
-('1638303','16383','6','0','100','0','0','0','0','0','0','0','11','28323','15','2','0','0','0','0','0','0','0','0','Flameshocker - Cast Flameshocker''s Revenge on Death'),
+('1638303','16383','6','0','100','0','0','0','0','0','0','0','11','28323','0','2','0','0','0','0','0','0','0','0','Flameshocker - Cast Flameshocker''s Revenge on Death'),
 ('1638304','16383','0','0','100','1025','5000','10000','10000','20000','0','0','11','28314','1','32','0','0','0','0','0','0','0','0','Flameshocker - Cast Flameshocker''s Touch'),
 -- Pallid Horror 16394 - Recheck Timers
 ('1639401','16394','29','0','100','1','0','0','10000','10000','0','0','45','5','75','0','0','0','0','0','0','0','0','0','Pallid Horror - Send AI Event 5 on Generic Timer'),
