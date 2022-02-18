@@ -158,6 +158,11 @@ function initialize()
     false
     return
   fi
+
+  if [[ $contentDBTittle =~ [\"\']$ ]]; then
+    contentDBTittle="${contentDBTittle%?}"
+  fi
+
   #echo "core db ver: $coreDBVer"
   #echo "db ver: $contentDBVer"
   #echo "db title: $contentDBTittle"
@@ -166,7 +171,7 @@ function initialize()
   DB_WORLDDB_VERSION="$coreDBVer"
   SOURCE_CONTENT_RELEASE_VERSION="$contentDBVer"
 
-  local versRegex="0+([0-9]+)"
+  local versRegex="0*([0-9]+)"
   IFS=$'\n'
   while IFS= read -r file;do
     local cVers=""
@@ -877,12 +882,15 @@ function show_installation_status()
   local db_need_update=()
   local db_need_create=()
   local pullNeeded=false
+  local allGood=true
 
   if [[ "$STATUS_USER_SUCCESS" = false ]]; then
-    echo "Info> MySQL is not able to connect with the current user, you can create it using option 5"
+    echo "Warning: MySQL is not able to connect with the current user!"
+    echo "         You can either create it (option 5) or change user in settings(option 1)"
   fi
 
   if [[ "$STATUS_USER_SUCCESS" = false ]] && [[ "$STATUS_ROOT_SUCCESS" = false ]]; then
+    echo "Warning: Unable to access your db!"
     return
   fi
 
@@ -935,23 +943,32 @@ function show_installation_status()
   fi
 
   if [ "$pullNeeded" = true ]; then
-    echo "Info> your local core have to be updated, use git pull in your core folder"
+    echo "Warning: your local core have to be updated, use git pull in your core folder"
+    allGood=false
   fi
 
   if [[ "${#db_need_update}" > 0 ]]; then
-    echo -ne "Info> Those DB need core update: "
+    echo -ne "Warning: Those DB need core update: "
     for nu in "${db_need_update[@]}"; do
       echo -ne "'$nu' "
     done
+    echo "         You can use option 3 to apply latest core update"
     echo
+    allGood=false
   fi
 
   if [[ "${#db_need_create}" > 0 ]]; then
-    echo -ne "Info> Create or made accessible those DB: "
+    echo -ne "Warning: Create or made accessible those DB: "
     for nc in "${db_need_create[@]}"; do
       echo -ne "'$nc' "
     done
+    echo "         You can create either create them(option 5) or adjust your settings(option 1)"
     echo
+    allGood=false
+  fi
+
+  if [ "$allGood" = true ]; then
+    echo "Info: Your db seem to be up to date with core revision."
   fi
 }
 
@@ -1573,10 +1590,19 @@ function create_db_user_and_set_privileges()
 {
   if [[ "$1" = true ]]; then
     clear
+
+    if [[ "$STATUS_USER_SUCCESS" = true ]]; then
+      echo "Warning: User already exist, you will reset all privileges to default!"
+    fi
+    if [ ! -z $DB_CHARDB_VERSION ] OR [ ! -z $DB_REALMDB_VERSION ] OR [ ! -z $DB_WORLDDB_VERSION ] OR [ ! -z $DB_LOGSDB_VERSION ];then
+      echo "Warning: At least one database contain some data you are about to reset them to default!"
+    fi
     if ! are_you_sure "CreateAll"; then
+      false
       return
     fi
   fi
+
   echo -n "> Creating $MYSQL_USERNAME user in database ... "
   local sqlcreate=("$SQL_DROP_DATABASE_USER")
   sqlcreate+=("$SQL_CREATE_DATABASE_USER")
@@ -1639,6 +1665,11 @@ function create_and_fill_world_db()
       return
     fi
   fi
+
+  if [ "${STATUS_WORLD_DB_FOUND}" -eq true ] AND [ ! -z $DB_WORLDDB_VERSION ]; then
+    backup_create "WORLD"
+  fi
+
   echo -n "> Creating $WORLD_DB_NAME database ... "
   local sqlcreate=("$SQL_DROP_WORLD_DB")
   sqlcreate+=("$SQL_CREATE_WORLD_DB")
@@ -1679,6 +1710,11 @@ function create_and_fill_char_db()
       return
     fi
   fi
+
+  if [ "${STATUS_CHAR_DB_FOUND}" -eq true ] AND [ ! -z $DB_CHARDB_VERSION ]; then
+    backup_create "CHAR"
+  fi
+
   echo -n "> Creating $CHAR_DB_NAME database ... "
   local sqlcreate=("$SQL_DROP_CHAR_DB")
   sqlcreate+=("$SQL_CREATE_CHAR_DB")
@@ -1713,6 +1749,11 @@ function create_and_fill_realm_db()
       return
     fi
   fi
+
+  if [ "${STATUS_REALM_DB_FOUND}" -eq true ] AND [ ! -z $DB_REALMDB_VERSION ]; then
+    backup_create "REALM"
+  fi
+
   echo -n "> Creating $REALM_DB_NAME database..."
   local sqlcreate=("$SQL_DROP_REALM_DB")
   sqlcreate+=("$SQL_CREATE_REALM_DB")
@@ -2096,6 +2137,7 @@ function download_latest_backup_file()
 {
   clear
   echo "not yet implemented"
+  wait_key
   true
 }
 
@@ -2465,21 +2507,11 @@ function main_menu()
     done
 
     print_header
+    echo "Source version     : [${SOURCE_CONTENT_RELEASE_VERSION}] $DB_RELEASE_TITLE"
+    echo "Last content update: [${SOURCE_LAST_CONTENT_VERSION_UPDATE}]"
     get_current_source_db_version
     check_dbs_accessibility
-
     echo
-    printf "%0.1s" "="{1..110};printf "\n"
-    printf "%-25s | %-40s | %-40s\n" "DATABASE NAME" "REQUIRED VERSION FOR THIS CORE" "YOUR CURRENT DB VERSION"
-    printf "%0.1s" "="{1..110};printf "\n"
-    printf "%-25.25s | %-40.40s | %-40.40s\n" "$WORLD_DB_NAME" "$SOURCE_WORLDDB_VER" "$DB_WORLDDB_VERSION"
-    printf "%0.1s" "-"{1..110};printf "\n"
-    printf "%-25.25s | %-40.40s | %-40.40s\n" "$CHAR_DB_NAME" "$SOURCE_CHARACTERDB_VER" "$DB_CHARDB_VERSION"
-    printf "%0.1s" "-"{1..110};printf "\n"
-    printf "%-25.25s | %-40.40s | %-40.40s\n" "$REALM_DB_NAME" "$SOURCE_REALMDB_VER" "$DB_REALMDB_VERSION"
-    printf "%0.1s" "-"{1..110};printf "\n"
-    printf "%-25.25s | %-40.40s | %-40.40s\n" "$LOGS_DB_NAME" "$SOURCE_LOGSDB_VER" "$DB_LOGSDB_VERSION"
-    printf "%0.1s" "-"{1..110};printf "\n"
     show_installation_status
     echo
     echo "> 1) Manage settings"
@@ -2594,6 +2626,17 @@ function auto_script_install_world()
   true
 }
 
+# do a backup
+function auto_script_backup()
+{
+  backup_create "WORLD"
+  if [[ "$1" = "full" ]];then
+    backup_create "CHAR"
+    backup_create "REALM"
+    backup_create "LOGS"
+  fi
+}
+
 # display little help
 function show_help
 {
@@ -2602,13 +2645,19 @@ function show_help
   echo "options:"
   echo "   -?"
   echo "    this help"
+  echo
   echo "   -Config"
   echo "    Show current config"
+  echo
   echo "   -World"
   echo "    Install world db only using none root user defined in $CONFIG_FILE"
-  echo "   -InstallAll"
+  echo
+  echo "   -InstallAll rootuser rootpass"
   echo "    Install all db by droping previous one and recreate them from scratch"
   echo "    Require root access with arg1 as root username and arg2 as root password"
+  echo
+  echo "   -Backup [full]"
+  echo "    Create a world database backup or a full backup if arg1 is set to full"
 }
 
 ###############################################
@@ -2658,6 +2707,10 @@ if [[ "$1" = "-Config" ]]; then
   show_mysql_settings
 
   exit 0
+fi
+
+if [[ "$1" = "-Backup" ]]; then
+  auto_script_backup $2
 fi
 
 # check if user only want to install world db using config
