@@ -10968,10 +10968,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grunt Komak 5597
 -- Grunt Mojka 5603
 -- Goma 5606
+('560601','5606','1','0','100','1','6000','8000','6000','8000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Goma - Play Emote Oneshot Talk on OOC'),
 -- Zazo 5609
+('560901','5609','1','0','100','1','6000','8000','6000','8000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Zazo - Play Emote Oneshot Talk on OOC'),
 -- Kozish 5610
 -- Barkeep Morag 5611
 -- Doyo'da 5613
+('561301','5613','1','0','100','1','120000','180000','120000','180000','0','0','53','18','0','0','0','0','0','0','0','0','0','0','Doyo''da - Start Relay Script on OOC'),
 -- Sarok 5614
 -- Craven Drok 5639
 -- Keldran 5640
