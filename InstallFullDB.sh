@@ -368,11 +368,15 @@ function check_core_folders()
 function try_set_core_path()
 {
   currentFolder=$(pwd)
-  IFS=$'\n'
 
+  if [[ "$CORE_PATH" != "" ]]; then
+    true
+    return
+  fi
+
+  IFS=$'\n'
   #avoid searchinig in entire root
-  while [[ "$currentFolder" != "/" ]] && [[ "$CORE_PATH" = "" ]]
-  do
+  while [[ "$currentFolder" != "/" ]]; do
     for foundfolder in $(find "$currentFolder" -mindepth 1 -maxdepth 5 -iname "*$DEFAULT_CORE_FOLDER*" -type d 2> /dev/null)
     do
       if [[ "$foundfolder" != "" ]]; then
@@ -385,6 +389,12 @@ function try_set_core_path()
     currentFolder=$(dirname "$currentFolder")
   done
   IFS="$OLDIFS"
+
+  if [[ "$CORE_PATH" != "" ]]; then
+    true
+    return
+  fi
+  false
 }
 
 # try to set MYSQL_PATH
@@ -392,6 +402,7 @@ function try_set_mysql_path()
 {
   if [[ $MYSQL_PATH != "" ]]
   then
+    true
     return
   fi
 
@@ -421,7 +432,10 @@ function try_set_mysql_path()
   if [[ $MYSQL_PATH != "" ]]; then
     local mysqldump=$(dirname "${MYSQL_PATH}")
     MYSQL_DUMP_PATH="${mysqldump}/mysqldump"
+    true
+    return
   fi
+  false
 }
 
 # print string and add underline to it.
@@ -1543,8 +1557,11 @@ function apply_full_content_db()
 {
   if [[ "$1" = true ]]; then
     clear
-    if ! are_you_sure "Install"; then
-      return
+    if [[ "$FORCE_WAIT" = "YES" ]]; then
+        if ! are_you_sure "Install"; then
+          echo "Aborting ..."
+          return
+        fi
     fi
   fi
 
@@ -2571,8 +2588,16 @@ function check_settings_menu()
       "1") change_mysql_settings; save_settings; set_sql_queries;;
       "2") set_try_root_connect_to_db true;;
       "3") ;;
-      "7") if [ "$mysql_ok" = false ]; then try_set_mysql_path; fi;;
-      "8") if [ "$core_path_ok" = false ]; then try_set_core_path; fi;;
+      "7") if [ "$mysql_ok" = false ]; then
+             if try_set_mysql_path; then
+               save_settings
+             fi
+           fi;;
+      "8") if [ "$core_path_ok" = false ]; then
+             if try_set_core_path; then
+               save_settings
+             fi
+           fi;;
       "9") if [ ${#current_errors[@]} = 0 ] || [ "$STATUS_ROOT_SUCCESS" = true ]; then return; else break; fi;;
       *) break;;
     esac
