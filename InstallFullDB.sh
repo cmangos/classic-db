@@ -2164,6 +2164,10 @@ function backup_restore_file()
   local dbname=""
   local dbtype=""
 
+  if [[ "$FORCE_WAIT" != "YES" ]]; then
+    warning=false
+  fi
+
   local regex="${EXPANSION_LC}-db_([A-Z]+)"
   if [[ "$1" =~ $regex ]]; then
     case ${BASH_REMATCH[1]} in
