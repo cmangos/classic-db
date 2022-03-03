@@ -74,3 +74,27 @@ DELETE FROM pool_gameobject WHERE guid=300275; -- 31311 Darkshore (Cliffspring F
 INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES
 (300275, 31311, 0, 'Darkshore (Cliffspring Falls) - Battered Chest (106319)');
 
+-- use creature_spell_list for healing as EAI is unsufficient due to not having separate init min/max and repeated min/max timers anymore with addition of a sperate health% bool
+
+-- Add remaining generic event_lost hp targets
+DELETE FROM creature_spell_targeting WHERE Id IN (201,202,203,204,205);
+INSERT INTO creature_spell_targeting (Id, Type, Param1, Param2, Param3, Comments) VALUES
+(201, 2, 50, 1, 1, 'Support - Missing 50% including self'), -- AI_EVENT_LOST_HEALTH including self
+(202, 2, 90, 1, 1, 'Support - Missing 90% including self'), -- AI_EVENT_CRITICAL_HEALTH including self
+(203, 2, 10, 1, 0, 'Support - Missing 10% excluding self'), -- AI_EVENT_LOST_SOME_HEALTH excluding self
+(204, 2, 50, 1, 0, 'Support - Missing 50% excluding self'), -- AI_EVENT_LOST_HEALTH excluding self
+(205, 2, 90, 1, 0, 'Support - Missing 90% excluding self'); -- AI_EVENT_CRITICAL_HEALTH excluding self
+
+-- Stormscale Siren 2180
+UPDATE creature_template SET SpellList=218001 WHERE entry=2180;
+REPLACE INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(218001, 'Darkshore - Stormscale Siren', 0, 0);
+REPLACE INTO creature_spell_list (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(218001, 0, 11642, 0, 201, 0, 100, 1, 4000, 12000, 18000, 25000, 'Darkshore - Stormscale Siren - Heal on Friendly Missing 50% including self');
+
+-- Stormscale Toxicologist 12321
+UPDATE creature_template SET SpellList=1232101 WHERE entry=12321;
+REPLACE INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1232101, 'Darkshore - Stormscale Toxicologist', 0, 0);
+REPLACE INTO creature_spell_list (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1232101, 0, 11642, 0, 201, 0, 100, 1, 4000, 12000, 18000, 25000, 'Darkshore - Stormscale Toxicologist - Heal on Friendly Missing 50% including self');
