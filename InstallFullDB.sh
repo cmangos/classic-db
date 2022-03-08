@@ -1730,7 +1730,8 @@ function create_and_fill_world_db()
 
   create_database "WORLD"
 
-  echo -ne "Executing world db base sql ..."
+  local fname=$(basename "$SQL_FILE_BASE_WORLD")
+  echo -ne "Applying $fname ..."
   if ! execute_sql_file "$WORLD_DB_NAME" "$SQL_FILE_BASE_WORLD"; then
     echo "FAILED!"
     echo ">>> $ERRORS"
