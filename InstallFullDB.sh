@@ -1724,8 +1724,10 @@ function create_and_fill_world_db()
     fi
   fi
 
-  if [ "${STATUS_WORLD_DB_FOUND}" -eq true ] AND [ ! -z $DB_WORLDDB_VERSION ]; then
-    backup_create "WORLD"
+  if [[ "${STATUS_WORLD_DB_FOUND}" = true ]]; then
+    if [ ! -z $DB_WORLDDB_VERSION ]; then
+      backup_create "WORLD"
+    fi
   fi
 
   create_database "WORLD"
