@@ -45,12 +45,12 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CREATURE_2, '5844');
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'Searing Gorge - Dark Iron Taskmaster | Dark Iron Slayer (3) Patrol 000', '0', '0', '0', '0');
+(@GROUP_ID, 'Searing Gorge - Dark Iron Taskmaster | Dark Iron Slaver (3) Patrol 000', '0', '0', '0', '0');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @CREATURE_0, '0'),
 (@GROUP_ID, @CREATURE_1, '1'),
-(@GROUP_ID, @CREATURE_1, '2');
+(@GROUP_ID, @CREATURE_2, '2');
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@GROUP_ID, '1', '3', '0', @PATH_ID, @PATH_TYPE, 'Searing Gorge - Dark Iron Taskmaster | Dark Iron Slayer (3) Patrol 000');
+(@GROUP_ID, '1', '3', '0', @PATH_ID, @PATH_TYPE, 'Searing Gorge - Dark Iron Taskmaster | Dark Iron Slaver (3) Patrol 000');
