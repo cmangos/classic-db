@@ -1430,33 +1430,25 @@ function apply_dev_content
   fi
 
   echo "> Trying to apply development updates"
-  for UPDATEFILE in "${ADDITIONAL_PATH}dev/*.sql"
-  do
+  for UPDATEFILE in ${ADDITIONAL_PATH}dev/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
-      for UPDATE in "${ADDITIONAL_PATH}dev/*.sql";do
-        local fName=$(basename "$f")
-        if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATE" "  - Applying $fName"; then
-          false
-          return
-        fi
-      done
+      local fName=$(basename "$UPDATEFILE")
+      if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
+        false
+        return
+      fi
     fi
-    break
   done
 
   # processing individual folder in dev folder
-  for UPDATEFILE in "${ADDITIONAL_PATH}dev/*/*.sql"
-  do
+  for UPDATEFILE in ${ADDITIONAL_PATH}dev/*/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
-      for UPDATE in "${ADDITIONAL_PATH}dev/*/*.sql";do
-        local fName=$(basename "$f")
-        if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATE" "  - Applying $fName"; then
-          false
-          return
-        fi
-      done
+      local fName=$(basename "$UPDATEFILE")
+      if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
+        false
+        return
+      fi
     fi
-    break
   done
   echo
   true
