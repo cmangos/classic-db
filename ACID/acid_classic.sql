@@ -4386,8 +4386,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('174701','1747','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Anduin Wrynn - Summon Stormwind City Guard on Aggro'),
 -- Highlord Bolvar Fordragon 1748
 ('174801','1748','11','0','100','0','0','0','0','0','0','0','11','8990','0','0','0','0','0','0','0','0','0','0','Highlord Bolvar Fordragon - Cast Retribution Aura on Spawn'),
-('174802','1748','0','0','100','1025','5000','15000','20000','40000','0','0','11','20683','17','0','0','0','0','0','0','0','0','0','Highlord Bolvar Fordragon - Cast Highlord''s Justice'),
-('174803','1748','0','0','100','1025','3000','9000','6000','12000','0','0','11','20684','1','0','0','0','0','0','0','0','0','0','Highlord Bolvar Fordragon - Cast Cleave'),
+('174802','1748','0','0','100','1025','15000','30000','60000','120000','0','0','11','15062','15','0','0','0','0','0','0','0','0','0','Highlord Bolvar Fordragon - Cast Shield Wall'),
+('174803','1748','0','0','100','1025','5000','15000','20000','40000','0','0','11','20683','17','0','0','0','0','0','0','0','0','0','Highlord Bolvar Fordragon - Cast Highlord''s Justice'),
+('174804','1748','0','0','100','1025','3000','9000','6000','12000','0','0','11','20684','1','0','0','0','0','0','0','0','0','0','Highlord Bolvar Fordragon - Cast Cleave'),
 -- Lady Katrana Prestor 1749 - npc_lady_katrana_prestor
 -- Grand Admiral Jes-Tereth
 ('175001','1750','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Grand Admiral Jes-Tereth - Summon Stormwind City Guard on Aggro'),
