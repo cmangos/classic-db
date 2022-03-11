@@ -2738,8 +2738,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Maxima Blastenheimer (15303) - NSR
 -- Elder Stormbrow (15565) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
--- Squire Rowe (17804) - NSR
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Squire Rowe (17804) - npc_squire_rowe
 
 
 
@@ -17453,7 +17453,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =====================
--- Naxxramas (PRE-WOTLK)
+-- Naxxramas (PRE-WOTLK) - REQUIRES HUGE CLEANUP and IMPROVEMENTS
 -- =====================
 -- Thaddius 15928 - boss_thaddius
 -- Stalagg 15929 - boss_stalagg
@@ -17473,7 +17473,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Venom Stalker 15976
 ('1597601','15976','0','0','100','1025','0','0','200','200','0','0','11','28431','1','0','0','0','0','0','0','0','0','0','Venom Stalker - Cast Poison Charge'),
 -- Infectious Skitterer 15977 - NSR
--- Crypt Reaver 15978 - Research pre wotlk
+-- Crypt Reaver 15978
+('1597801','15978','11','0','100','2','0','0','0','0','0','0','11','22413','0','34','0','0','0','0','0','0','0','0','Crypt Reaver - Cast Virulent Poison Proc on Spawn'),
+('1597802','15978','2','0','100','1025','50','0','120000','120000','0','0','11','8269','0','0','0','0','0','0','0','0','0','0','Crypt Reaver - Cast Enrage at 50% HP'),
+('1597803','15978','0','0','100','1025','2000','5000','6000','9000','0','0','11','15579','4','0','0','0','0','0','0','0','0','0','Crypt Reaver - Cast Cleave'),
 -- Tomb Horror 15979
 ('1597901','15979','0','0','75','1025','2000','2000','4000','4000','0','0','11','28614','4','0','0','0','0','0','0','0','0','0','Tomb Horror - Cast Point Spike'),
 ('1597902','15979','0','0','75','1025','5000','5000','8000','8000','0','0','11','28615','0','0','0','0','0','0','0','0','0','0','Tomb Horror - Cast Volley Spike'),
@@ -17517,6 +17520,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1603601','16036','0','0','100','1024','0','0','0','0','0','0','11','30112','1','0','0','0','0','0','0','0','0','0','Frenzied Bat - Cast Frenzied Dive'),
 -- Plagued Bat 16037
 ('1603701','16037','0','0','85','1025','9000','9000','40000','40000','0','0','11','30113','4','0','0','0','0','0','0','0','0','0','Plagued Bat - Cast Putrid Bite'),
+-- Diseased Maggot 16056
+-- Rotting Maggot 16057
 -- Gothik the Harvester 16060 - boss_gothik
 -- Highlord Mograine 16062 - boss_alexandros_mograine
 -- Sir Zeliek 16063 - boss_sir_zeliek
@@ -17524,6 +17529,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lady Blaumeux 16065 - boss_lady_blaumeux
 -- Skeletal Stead 16067
 ('1606701','16067','0','0','90','1025','2000','2000','5000','5000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Skeletal Stead - Cast Trample'),
+-- Larva 16068 - NSR
 -- Unrelenting Trainee 16124
 ('1612401','16124','11','0','100','0','0','0','0','0','0','0','11','29875','0','1','0','0','0','0','0','0','0','0','Unrelenting Trainee - Cast Check Unrelenting Side on Spawn'),
 ('1612402','16124','0','0','100','1025','1000','5000','10000','20000','0','0','11','30285','1','32','0','0','0','0','0','0','0','0','Unrelenting Trainee - Cast Eagle Claw'),
@@ -17543,7 +17549,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1612702','16127','0','0','100','1027','3000','6000','7000','9000','0','0','11','27989','0','0','0','0','0','0','0','0','0','0','Spectral Trainee - Cast Arcane Explosion'),
 ('1612703','16127','8','0','100','1','28035','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Spectral Trainee - Despawn Self on Spell hit'),
 -- Shadow Fissure 16129
-('1612901','16129','1','0','100','0','5000','5000','0','0','0','0','11','27812','0','0','0','0','0','0','0','0','0','0','Shadow Fissure - Void Blast'),
+('1612901','16129','1','0','100','0','5000','5000','0','0','0','0','11','27812','0','0','0','0','0','0','0','0','0','0','Shadow Fissure - Cast Void Blast'),
+-- Naxxramas Military Sub-Boss Trigger 16137 - spell_anchor
+-- Bile Sludge 16142
+('1614201','16142','2','0','100','1024','15','0','0','0','0','0','11','27890','0','0','0','0','0','0','0','0','0','0','Bile Sludge - Cast Clone at 15% HP'),
 -- Deathknight Captain 16145
 ('1614501','16145','0','0','100','1025','1000','1000','5000','5000','0','0','11','28335','0','0','0','0','0','0','0','0','0','0','Deathknight Captain - Whirlwind'),
 -- Deathknight 16146
@@ -17566,6 +17575,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1615002','16150','2','0','100','1027','50','0','18000','25000','0','0','11','27994','4','0','0','0','0','0','0','0','0','0','Spectral Rider - Cast Drain Life at 50% HP'),
 ('1615003','16150','2','0','100','1029','20','0','24000','27000','0','0','11','27995','0','0','0','0','0','0','0','0','0','0','Spectral Rider - Cast Unholy Frenzy at 20% HP'),
 ('1615004','16150','8','0','100','1','28035','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Spectral Rider - Despawn Self on Spell hit'),
+-- Risen Deathknight 16154
+-- Dark Touched Warrior 16156
+-- Doom Touched Warrior 16157
+-- Death Touched Warrior 16158
 -- Deathknight Cavalier 16163
 ('1616301','16163','0','0','90','1025','0','0','8000','8000','0','0','11','28413','1','0','0','0','0','0','0','0','0','0','Deathknight Cavalier - Cast Aura of Agony'),
 ('1616302','16163','0','0','95','1025','1000','1000','4000','4000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Deathknight Cavalier - Cast Cleave'),
@@ -17598,8 +17611,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1623602','16236','1','0','100','0','2000','30000','0','0','0','0','11','28819','0','1','0','0','0','0','0','0','0','0','Eye Stalk - Cast Submerge Visual OOC'),
 ('1623603','16236','0','0','85','1025','0','0','11000','11000','0','0','11','29407','1','0','0','0','0','0','0','0','0','0','Eye Stalk - Cast Mind Flay'),
 ('1623604','16236','9','0','100','1','36','90','2000','2000','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Eye Stalk - Evade'),
--- Bile Sludge 16142
-('1614201','16142','2','0','100','1024','15','0','0','0','0','0','11','27890','0','0','0','0','0','0','0','0','0','0','Bile Sludge - Cast Clone at 15% HP'),
 -- Plague Slime 16243
 ('1624301','16243','4','0','60','0','0','0','0','0','0','0','11','28988','0','16','0','0','0','0','0','0','0','0','Plague Slime - Cast Plague Slime (Blue)'),
 ('1624302','16243','4','0','60','0','0','0','0','0','0','0','11','28990','0','16','0','0','0','0','0','0','0','0','Plague Slime - Cast Plague Slime (Red)'),
@@ -17609,19 +17620,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1624403','16244','2','0','100','1024','30','0','0','0','0','0','11','24318','0','16','1','2384','0','0','0','0','0','0','Infectious Ghoul - Cast Enrage at 30% HP'),
 -- Spore 16286
 ('1628601','16286','6','0','100','0','0','0','0','0','0','0','11','29232','0','1','0','0','0','0','0','0','0','0','Spore - Cast Fungal Bloom on Death'),
+-- Fallout Slime 16290
 -- Mutated Grub 16297
 ('1629701','16297','0','0','90','1025','0','0','4000','4000','0','0','11','30109','0','0','0','0','0','0','0','0','0','0','Mutated Grub - Cast Slime Burst'),
 -- Zombie Chow 16360
 ('1636001','16360','0','0','100','1025','5000','9000','12000','17000','0','0','11','29306','1','0','0','0','0','0','0','0','0','0','Zombie Chow - Cast Infected Wound'),
 -- Grobbulus Cloud 16363
 ('1636301','16363','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','28158','0','0','0','0','0','0','Grobbulus Cloud - Set Passive State and Cast Poison on Spawn'),
+-- Master Craftsman Omarion 16365
 -- Necropolis Acolyte 16368
 ('1636801','16368','0','0','100','1025','2000','2000','5000','5000','0','0','11','30096','0','0','0','0','0','0','0','0','0','0','Necropolis Acolyte - Cast Arcane Explosion'),
 ('1636802','16368','0','0','100','1025','4000','4000','6000','6000','0','0','11','27646','1','0','0','0','0','0','0','0','0','0','Necropolis Acolyte - Cast Shadow Bolt Volley'),
 -- Sewage Slime 16375
 ('1637501','16375','0','0','100','1025','0','0','5000','5000','0','0','11','24244','0','16','0','0','0','0','0','0','0','0','Sewage Slime - Cast Grow'),
+-- Archmage Tarsis Kir-Moldir 16381
 -- Lightning Totem 16385
 ('1638501','16385','0','0','100','1025','0','0','1100','4800','0','0','11','28297','1','0','0','0','0','0','0','0','0','0','Lightning Totem - Cast Shock'),
+-- Deathchill Servant 16390
 -- Toxic Tunnel 16400
 ('1640001','16400','11','0','100','0','0','0','0','0','0','0','11','28370','0','34','50','0','0','0','0','0','0','0','Toxic Tunnel - Cast Toxic Gas on Spawn'),
 -- Soldier of the Frozen Wastes 16427
@@ -17634,6 +17649,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Soul Weaver 16429
 ('1642901','16429','4','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soul Weaver - Set ReactState Aggressive on Aggro'),
 ('1642902','16429','10','0','100','1','0','20','2000','2000','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soul Weaver - Set ReactState Aggressive at 20 Yards LOS'),
+-- Guardian of Icecrown 16441
 -- Plague Gargoyle 16446
 ('1644601','16446','0','0','100','1025','0','0','10000','10000','0','0','11','29325','0','0','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Acid Volley'),
 ('1644602','16446','2','0','75','1025','50','0','30000','30000','0','0','11','28995','0','0','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Stoneskin'),
@@ -17671,6 +17687,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1657305','16573','2','0','100','1025','50','0','120000','120000','0','0','11','8269','0','0','0','0','0','0','0','0','0','0','Crypt Guard - Cast Frenzy at 50% HP'),
 -- Void Zone 16697
 ('1669701','16697','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Void Zone - Set Passive State on Spawn'),
+-- Corpse Scarab 16698
 -- Spirit of Mograine 16775
 ('1677501','16775','11','0','100','0','0','0','0','0','0','0','21','0','0','0','38','0','0','0','0','0','0','0','Spirit of Mograine - Prevent Combat Movement and Zone Combat Pulse on Spawn'),
 ('1677502','16775','0','0','100','1025','20000','20000','12000','12000','0','0','11','28834','0','0','0','0','0','0','0','0','0','0','Spirit of Mograine - Cast Mark of Mograine'),
@@ -17683,6 +17700,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit of Korth'azz 16778
 ('1677801','16778','11','0','100','0','0','0','0','0','0','0','21','0','0','0','38','0','0','0','0','0','0','0','Spirit of Korth''azz - Prevent Combat Movement and Zone Combat Pulse on Spawn'),
 ('1677802','16778','0','0','100','1025','20000','20000','12000','12000','0','0','11','28832','0','0','0','0','0','0','0','0','0','0','Spirit of Korth''azz - Cast Mark of Korth''azz'),
+-- Deathknight Understudy 16803
 -- Death Lord 16861
 ('1686101','16861','0','0','90','1025','0','0','8000','8000','0','0','11','28413','1','0','0','0','0','0','0','0','0','0','Death Lord - Cast Aura of Agony'),
 ('1686102','16861','0','0','95','1025','1000','1000','4000','4000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Death Lord - Cast Cleave'),
@@ -17691,6 +17709,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Plagued Construct 16982 - creature_spell_list
 -- Plagued Champion 16983 - creature_spell_list
 -- Plagued Warrior 16984 - creature_spell_list
+-- Mr. Bigglesworth 16998 - EventAI
+-- Maexxna Spiderling 17055
 -- Garden Gas 17231
 ('1723101','17231','11','0','100','0','0','0','0','0','0','0','11','30074','0','32','50','0','0','0','0','0','0','0','Garden Gas - Cast Toxic Gas and Set React State Passive on Spawn'),
 
