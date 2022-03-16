@@ -21,8 +21,8 @@ INSERT INTO spawn_group_spawn (id, guid, slotid) VALUES
 
 DELETE FROM spawn_group_formation WHERE id=7;
 INSERT INTO spawn_group_formation (id, formationtype, formationspread, formationoptions, pathid, movementtype, comment) VALUES
-(7, 6, 3, 0x02, 92287, 2, 'Eastern Plaguelands - Crimson Courier (c.id 13118, 12337)'); -- SPAWN_GROUP_FORMATION_TYPE_CIRCLE_THE_LEADER, bit smaller formationspread normally i take 4 here 3 seems more adequate
--- 0x02 SPAWN_GROUP_FORMATION_OPTION_KEEP_COMPACT doesnt seem to have any influence
+(7, 6, 3, 0, 92287, 2, 'Eastern Plaguelands - Crimson Courier (c.id 13118, 12337)'); -- SPAWN_GROUP_FORMATION_TYPE_CIRCLE_THE_LEADER, bit smaller formationspread normally i take 4 here 3 seems more adequate
+-- 0x02 SPAWN_GROUP_FORMATION_OPTION_KEEP_COMPACT, makes all of them walk in the same spot and ignore formationspread
 
 DELETE FROM creature_linking WHERE guid BETWEEN 92287 AND 92291;
 DELETE FROM creature_linking WHERE master_guid BETWEEN 92287 AND 92291;
