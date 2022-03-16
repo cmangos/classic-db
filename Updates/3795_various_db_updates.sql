@@ -1,4 +1,4 @@
-- Revamp Kolkar Wrangler 3272 to use creature_spell_list
+-- Revamp Kolkar Wrangler 3272 to use creature_spell_list
 
 -- Kolkar Wrangler 3272
 UPDATE creature_template SET SpellList=327201 WHERE entry=3272;
