@@ -19,11 +19,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OBJECT_5, '0', '1', '1', '-6487.63867187500', '859.25781250000000', '17.68260383605957031', '3.717553615570068359', '0', '0', '-0.95881938934326171', '0.284016460180282592', '1800', '2700', '100', '1');
 
 INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
-(@OBJECT_1, '123309'), (@OBJECT_1, '123848'),
-(@OBJECT_2, '123309'), (@OBJECT_2, '123848'),
-(@OBJECT_3, '123309'), (@OBJECT_3, '123848'),
-(@OBJECT_4, '123309'), (@OBJECT_4, '123848'),
-(@OBJECT_5, '123309'), (@OBJECT_5, '123848');
+(@OBJECT_1, '123309'), (@OBJECT_1, '177388'),
+(@OBJECT_2, '123309'), (@OBJECT_2, '177388'),
+(@OBJECT_3, '123309'), (@OBJECT_3, '177388'),
+(@OBJECT_4, '123309'), (@OBJECT_4, '177388'),
+(@OBJECT_5, '123309'), (@OBJECT_5, '177388');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_1, '-1'),
@@ -33,7 +33,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_5, '-1');
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Thorium Vein (1) Ore 000', '1', '1', '0', '0');
+(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Rich Thorium Vein (1) Ore 000', '1', '1', '0', '0');
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -51,10 +51,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OBJECT_4, '0', '1', '1', '-6591.90087890625', '1132.6843261718750', '-46.9158668518066406', '1.867502212524414062', '0', '0', '0.803856849670410156', '0.594822824001312255', '1800', '2700', '100', '1');
 
 INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
-(@OBJECT_1, '123309'), (@OBJECT_1, '123848'),
-(@OBJECT_2, '123309'), (@OBJECT_2, '123848'),
-(@OBJECT_3, '123309'), (@OBJECT_3, '123848'),
-(@OBJECT_4, '123309'), (@OBJECT_4, '123848');
+(@OBJECT_1, '123309'), (@OBJECT_1, '177388'),
+(@OBJECT_2, '123309'), (@OBJECT_2, '177388'),
+(@OBJECT_3, '123309'), (@OBJECT_3, '177388'),
+(@OBJECT_4, '123309'), (@OBJECT_4, '177388');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_1, '-1'),
@@ -63,7 +63,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_4, '-1');
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Thorium Vein (1) Ore 001', '1', '1', '0', '0');
+(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Rich Thorium Vein (1) Ore 001', '1', '1', '0', '0');
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -83,11 +83,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OBJECT_5, '0', '1', '1', '-6525.89941406250', '803.90148925781250', '-42.7278251647949218', '3.839725255966186523', '0', '0', '-0.93969249725341796', '0.342020452022552490', '1800', '2700', '100', '1');
 
 INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
-(@OBJECT_1, '123309'), (@OBJECT_1, '123848'),
-(@OBJECT_2, '123309'), (@OBJECT_2, '123848'),
-(@OBJECT_3, '123309'), (@OBJECT_3, '123848'),
-(@OBJECT_4, '123309'), (@OBJECT_4, '123848'),
-(@OBJECT_5, '123309'), (@OBJECT_5, '123848');
+(@OBJECT_1, '123309'), (@OBJECT_1, '177388'),
+(@OBJECT_2, '123309'), (@OBJECT_2, '177388'),
+(@OBJECT_3, '123309'), (@OBJECT_3, '177388'),
+(@OBJECT_4, '123309'), (@OBJECT_4, '177388'),
+(@OBJECT_5, '123309'), (@OBJECT_5, '177388');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_1, '-1'),
@@ -97,7 +97,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_5, '-1');
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Thorium Vein (1) Ore 002', '1', '1', '0', '0');
+(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Rich Thorium Vein (1) Ore 002', '1', '1', '0', '0');
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -117,11 +117,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OBJECT_5, '0', '1', '1', '-6199.75341796875', '943.46215820312500', '-42.7940025329589843', '3.717553615570068359', '0', '0', '-0.95881938934326171', '0.284016460180282592', '1800', '2700', '100', '1');
 
 INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
-(@OBJECT_1, '123309'), (@OBJECT_1, '123848'),
-(@OBJECT_2, '123309'), (@OBJECT_2, '123848'),
-(@OBJECT_3, '123309'), (@OBJECT_3, '123848'),
-(@OBJECT_4, '123309'), (@OBJECT_4, '123848'),
-(@OBJECT_5, '123309'), (@OBJECT_5, '123848');
+(@OBJECT_1, '123309'), (@OBJECT_1, '177388'),
+(@OBJECT_2, '123309'), (@OBJECT_2, '177388'),
+(@OBJECT_3, '123309'), (@OBJECT_3, '177388'),
+(@OBJECT_4, '123309'), (@OBJECT_4, '177388'),
+(@OBJECT_5, '123309'), (@OBJECT_5, '177388');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_1, '-1'),
@@ -131,7 +131,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_5, '-1');
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Thorium Vein (1) Ore 003', '1', '1', '0', '0');
+(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Rich Thorium Vein (1) Ore 003', '1', '1', '0', '0');
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -151,11 +151,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OBJECT_5, '0', '1', '1', '-6257.53564453125', '1173.8433837890625', '-16.4656772613525390', '4.956737518310546875', '0', '0', '-0.61566066741943359', '0.788011372089385986', '1800', '2700', '100', '1');
 
 INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
-(@OBJECT_1, '123309'), (@OBJECT_1, '123848'),
-(@OBJECT_2, '123309'), (@OBJECT_2, '123848'),
-(@OBJECT_3, '123309'), (@OBJECT_3, '123848'),
-(@OBJECT_4, '123309'), (@OBJECT_4, '123848'),
-(@OBJECT_5, '123309'), (@OBJECT_5, '123848');
+(@OBJECT_1, '123309'), (@OBJECT_1, '177388'),
+(@OBJECT_2, '123309'), (@OBJECT_2, '177388'),
+(@OBJECT_3, '123309'), (@OBJECT_3, '177388'),
+(@OBJECT_4, '123309'), (@OBJECT_4, '177388'),
+(@OBJECT_5, '123309'), (@OBJECT_5, '177388');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_1, '-1'),
@@ -165,4 +165,4 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @OBJECT_5, '-1');
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Thorium Vein (1) Ore 004', '1', '1', '0', '0');
+(@GROUP_ID, 'Silithus - Hive\'Ashi - Ooze Covered Truesilver Deposit | Ooze Covered Rich Thorium Vein (1) Ore 004', '1', '1', '0', '0');
