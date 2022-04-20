@@ -2634,9 +2634,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cylina Darkheart 6374
 ('637401','6374','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Cylina Darkheart - Despawn Guardians on OOC'),
 ('637402','6374','1','0','100','0','2000','2000','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Cylina Darkheart - Cast Summon Imp on OOC'),
--- Summoned Voidwalker
-('567601','5676','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Summoned Demon on Spawn'),
-('567602','5676','2','0','100','1024','30','0','0','0','0','0','11','7750','0','0','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Consuming Rage at 30% HP'),
 -- Erma (6749) - NSR
 -- Falkhaan Isenstrider (6774) - NSR
 -- Melika Isenstrider (6778) - NSR
@@ -4500,7 +4497,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('556601','5566','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Tannysa - Summon Stormwind City Guard on Aggro'),
 -- Sellandus
 ('556701','5567','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Sellandus - Summon Stormwind City Guard on Aggro'),
--- Summoned Voidwalker (5676) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- High Sorcerer Andromath
 ('569401','5694','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','High Sorcerer Andromath - Summon Stormwind City Guard on Aggro'),
 -- Harry Burlguard
@@ -6171,9 +6167,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('567001','5670','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Edrick Killian - Summon Deathguard Elite on Aggro'),
 -- Carendin Halgar
 ('567501','5675','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Carendin Halgar - Summon Deathguard Elite on Aggro'),
--- Summoned Voidwalker (5676) - SCRIPTED IN ANOTHER ZONE
--- Summoned Succubus
-('567701','5677','0','0','100','1025','5000','11000','9000','15000','0','0','11','16583','1','0','0','0','0','0','0','0','0','0','Summoned Succubus - Cast Shadow Shock'),
 -- Lysta Bancroft
 -- Male Human Captive 5680
 ('568001','5680','11','0','100','0','0','0','0','0','0','0','11','7791','0','0','45','5','10','0','0','0','0','0','Male Human Captive - Cast Summon Visual and Send Custom AI event A on Spawn'),
@@ -10879,8 +10872,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sarok 5614
 -- Craven Drok 5639
 -- Keldran 5640
--- Summoned Voidwalker 5676 EventAI
--- Summoned Succubus 5677
 -- Kamari 5811
 -- Tumi 5812
 -- Kurgul 5815
@@ -18812,6 +18803,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
 -- Archery Target 5202
 ('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
+-- Summoned Voidwalker 5676
+('567601','5676','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','1','1987','0','0','0','0','0','0','Summoned Voidwalker - Cast Summoned Demon, Say on Spawn'),
+('567602','5676','29','0','100','0','1000','1000','0','0','0','0','2','14','0','0','55','11','0','0','0','0','0','0','Summoned Voidwalker - Set Faction Monster, Attack Spawner (Player) on Generic Timer'),
+('567603','5676','2','0','100','1024','30','0','0','0','0','0','11','7750','0','0','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Consuming Rage at 30% HP'),
+-- Summoned Succubus 5677
+('567701','5677','11','0','100','0','0','0','0','0','0','0','2','14','0','0','55','11','0','0','0','0','0','0','Summoned Succubus - Set Faction Monster, Attack Spawner (Player) on Spawn'),
+('567702','5677','0','0','100','1025','5000','11000','9000','15000','0','0','11','16583','1','0','0','0','0','0','0','0','0','0','Summoned Succubus - Cast Shadow Shock'),
 -- Guardian of Blizzard 5764 - npc_guardian
 -- Stoneskin Totem 5873 - TotemAI
 -- Strength of Earth Totem 5874 - TotemAI
@@ -18840,6 +18838,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('952601','9526','0','0','100','1025','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Gryphon - Cast Rend'),
 -- Enraged Hippogryph 9257
 ('952701','9527','0','0','100','1025','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Hippogryph - Cast Rend'),
+-- Crimson Cannon 11199
+('1119901','11199','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Crimson Cannon - Prevent Movement and Prevent Melee on Spawn'),
+('1119902','11199','9','0','100','1025','0','40','1000','1500','0','0','11','17501','1','0','0','0','0','0','0','0','0','0','Crimson Cannon - Cast Cannon Fire'),
 -- Doomguard 11859
 ('1185901','11859','0','0','100','1025','0','0','30000','30000','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
 -- Imp Minion 12922
