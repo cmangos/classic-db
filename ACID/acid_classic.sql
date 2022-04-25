@@ -1539,7 +1539,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grawn Thromwyn (1273) - NSR
 -- Fluffy (1352) - NSR
 -- Apprentice Soren (1354) - NSR
--- Cook Ghilm (1355) - NSR
+-- Cook Ghilm (1355)
+('135501','1355','1','0','100','1','20000','25000','20000','25000','0','0','53','25','0','0','0','0','0','0','0','0','0','0','Cook Ghilm - Start Relay Script on OOC'),
 -- Miner Grothor (1358) - NSR
 -- Miner Grumnal (1360) - NSR
 -- Jarven Thunderbrew (1373) - NSR
