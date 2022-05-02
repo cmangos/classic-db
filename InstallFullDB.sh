@@ -269,13 +269,13 @@ function save_settings()
   allsettings+=("## Define default mysql address binding(you can set \"%\" to be able to connect from any computer)")
   allsettings+=("MYSQL_USERIP=\"$MYSQL_USERIP\"")
   allsettings+=("")
-  allsettings+=("## Define the databases names (let them empty for default name '"$EXPANSION_LC"dbtype')")
+  allsettings+=("## Define the databases name (let them empty for default name '"$EXPANSION_LC"dbtype')")
   allsettings+=("WORLD_DB_NAME=\"$WORLD_DB_NAME\"")
   allsettings+=("REALM_DB_NAME=\"$REALM_DB_NAME\"")
   allsettings+=("CHAR_DB_NAME=\"$CHAR_DB_NAME\"")
   allsettings+=("LOGS_DB_NAME=\"$LOGS_DB_NAME\"")
   allsettings+=("")
-  allsettings+=("## Define your mysql programm if this differs")
+  allsettings+=("## Define your mysql program if this differs")
   allsettings+=("MYSQL_PATH=\"$MYSQL_PATH\"")
   allsettings+=("")
   allsettings+=("## Define the path to your mysql dump binary folder")
@@ -295,7 +295,7 @@ function save_settings()
   allsettings+=("##   Set the variable to \"YES\" to use the dev directory")
   allsettings+=("DEV_UPDATES=\"$DEV_UPDATES\"")
   allsettings+=("")
-  allsettings+=("## Define if AHBot SQL updates need to be applied (by default, assume the core is built without AHBot)")
+  allsettings+=("## Define if AHBot SQL updates need to be applied (by default, assumes the core is built without AHBot)")
   allsettings+=("## Set the variable to \"YES\" to import AHBot sql.")
   allsettings+=("AHBOT=\"$AHBOT\"")
   allsettings+=("")
@@ -329,7 +329,7 @@ function check_core_folders()
 {
   ERRORS=""
   if [[ "$1" = "" ]]; then
-    ERRORS="CORE_PATH is not set. please try (8) to autodetect it or manyally edit $CONFIG_FILE"
+    ERRORS="CORE_PATH is not set. Please try (8) to autodetect it or manually edit $CONFIG_FILE"
     false
     return
   fi
@@ -522,7 +522,7 @@ function check_mysql_binary()
   if [[ "$MYSQL_PATH" != "" ]]; then
     foundMysqlPath=$(type -P "$MYSQL_PATH" 2> /dev/null)
   else
-    ERRORS="MYSQL_PATH is not set! Please try (7) to autodetect it or manyally edit $CONFIG_FILE"
+    ERRORS="MYSQL_PATH is not set! Please try (7) to autodetect it or manually edit $CONFIG_FILE"
     false
     return
   fi
@@ -632,7 +632,7 @@ function show_mysql_settings()
   echo -e "Database host...........: $MYSQL_HOST"
   echo -e "Database port...........: $MYSQL_PORT"
   echo -e "MySQL user..............: $MYSQL_USERNAME (password is defined in $CONFIG_FILE)"
-  echo -e "MySQL user ip access....: $MYSQL_USERIP"
+  echo -e "MySQL user IP access....: $MYSQL_USERIP"
   echo -e "MySQL binary path.......: $MYSQL_PATH"
   echo -e "MySQL dump binary path..: $MYSQL_DUMP_PATH"
   echo -e "Core path...............: $CORE_PATH"
@@ -685,10 +685,10 @@ function change_mysql_settings()
     read -e -p    "Enter MySQL user................: " -i $MYSQL_USERNAME MYSQL_USERNAME
     read -e -s -p "Enter MySQL password............: " MYSQL_PASSWORD
     echo "***********"
-    read -e -p    "MySQL user ip access............: " -i $MYSQL_USERIP MYSQL_USERIP
+    read -e -p    "MySQL user IP access............: " -i $MYSQL_USERIP MYSQL_USERIP
     read -e -p    "Enter MySQL binary path.........: " -i "$MYSQL_PATH" MYSQL_PATH
     read -e -p    "Enter MySQL dump binary path....: " -i "$MYSQL_DUMP_PATH" MYSQL_DUMP_PATH
-    read -e -p    "Enter Core path.................: " -i "$CORE_PATH" CORE_PATH
+    read -e -p    "Enter core path.................: " -i "$CORE_PATH" CORE_PATH
     change_db_name
     echo -e "Choose YES or NO for following options"
     read -e -p    "LOCALE(default:YES).............: " -i "$LOCALES" LOCALES
@@ -700,10 +700,10 @@ function change_mysql_settings()
     read -e -p    "Enter MySQL user...............current($MYSQL_USERNAME).: " muser
     read -e -s -p "Enter MySQL password............: " mpass
     echo "***********"
-    read -e -p    "MySQL user ip access...........current($MYSQL_USERIP).: " musip
+    read -e -p    "MySQL user IP access...........current($MYSQL_USERIP).: " musip
     read -e -p    "Enter MySQL binary path........current($MYSQL_PATH).: " mpath
     read -e -p    "Enter MySQL dump binary path...current($MYSQL_DUMP_PATH).: " mdpath
-    read -e -p    "Enter Core path................current($CORE_PATH).: " cpath
+    read -e -p    "Enter core path................current($CORE_PATH).: " cpath
     change_db_name
     echo -e "Choose YES or NO for following options"
     read -e -p    "LOCALE(default:YES)............current($LOCALES).: " loc
@@ -723,7 +723,7 @@ function change_mysql_settings()
     assign_new_value 'AHBOT' "${ahb}"
   fi
 
-  # some basic check
+  # some basic checks
   if [[ "$MYSQL_HOST" = "" ]]; then MYSQL_HOST="${MYSQL_HOST_DEFAULT}"; fi
   if [[ "$MYSQL_PORT" = "" ]]; then MYSQL_PORT="${MYSQL_PORT_DEFAULT}"; fi
   if [[ "$MYSQL_USERNAME" = "" ]]; then MYSQL_USERNAME="${MYSQL_USERNAME_DEFAULT}"; fi
@@ -748,7 +748,7 @@ function print_mysql_connection_status()
 {
   echo -ne "Trying to connect to DATABASE: "
   if ! try_connect_to_db ; then
-    echo "Error, unable to connect to db"
+    echo "Error: unable to connect to db"
     echo "$ERRORS"
   else
     echo "CONNECTED"
@@ -783,7 +783,7 @@ function get_current_db_version()
   IFS="$OLDIFS"
 }
 
-# check if we can access dbs and retrieve their version
+# check if we can access DBs and retrieve their version
 # check_dbs_accessibility bool (if parameter is true the result is displayed)
 function check_dbs_accessibility()
 {
@@ -915,7 +915,7 @@ function show_installation_status()
 
   if [[ "$STATUS_USER_SUCCESS" = false ]]; then
     echo "Warning: MySQL is not able to connect with the current user!"
-    echo "         You can either create it (option 5) or change user in settings(option 1)"
+    echo "         You can either create it (option 5) or change user in settings (option 1)"
   fi
 
   if [[ "$STATUS_USER_SUCCESS" = false ]] && [[ "$STATUS_ROOT_SUCCESS" = false ]]; then
@@ -972,12 +972,12 @@ function show_installation_status()
   fi
 
   if [ "$pullNeeded" = true ]; then
-    echo "Warning: your local core have to be updated, use git pull in your core folder"
+    echo "Warning: your local core has to be updated, use git pull in your core folder"
     allGood=false
   fi
 
   if [[ "${#db_need_update}" > 0 ]]; then
-    echo -ne "Warning: Those DB need core update: "
+    echo -ne "Warning: These DBs need core update: "
     for nu in "${db_need_update[@]}"; do
       echo -ne "'$nu' "
     done
@@ -987,17 +987,17 @@ function show_installation_status()
   fi
 
   if [[ "${#db_need_create}" > 0 ]]; then
-    echo -ne "Warning: Create or made accessible those DB: "
+    echo -ne "Warning: Create or made accessible these DBs: "
     for nc in "${db_need_create[@]}"; do
       echo -ne "'$nc' "
     done
-    echo "         You can create either create them(option 5) or adjust your settings(option 1)"
+    echo "         You can create either create them (option 5) or adjust your settings (option 1)"
     echo
     allGood=false
   fi
 
   if [ "$allGood" = true ]; then
-    echo "Info: Your db seem to be up to date with core revision."
+    echo "Info: Your DBs seem to be up to date with core revision."
   fi
 }
 
@@ -1068,7 +1068,7 @@ function get_current_source_db_version()
 # Update world db using core update
 function apply_world_db_core_update()
 {
-  echo "> Trying to process last world(mangos) CORE updates"
+  echo "> Trying to process last world (mangos) CORE updates"
 
   if [[ "$STATUS_WORLD_DB_FOUND" = "false" ]] || [[ "$DB_WORLDDB_VERSION" = "0" ]]; then
     echo ">>> ERROR: cannot get last core revision in DB"
@@ -1350,7 +1350,7 @@ function apply_full_dbc_data()
       return
     fi
   done
-  echo "  Original DBC data were applyed successfully!"
+  echo "  Original DBC data were applied successfully!"
   echo
 
     # Apply dbc changes (specific fixes to known wrong/missing data)
@@ -1362,7 +1362,7 @@ function apply_full_dbc_data()
       return
     fi
   done
-  echo "  CMaNGOS fixes for DBC data were applyed successfully!"
+  echo "  CMaNGOS fixes for DBC data were applied successfully!"
   echo
   true
 }
@@ -1505,7 +1505,7 @@ function apply_content_db()
   fi
 
   sql+="ALTER TABLE db_version ADD COLUMN \`content_${SOURCE_LAST_CONTENT_VERSION_UPDATE}\` bit DEFAULT NULL;"
-  if ! execute_sql_command "$WORLD_DB_NAME" "$sql" "  - Apllying version changes"; then
+  if ! execute_sql_command "$WORLD_DB_NAME" "$sql" "  - Applying version changes"; then
     echo ">>> Failed to update content version!"
     false
     return
@@ -1557,14 +1557,14 @@ function apply_full_content_db()
     fi
   fi
 
-  # apply content db
+  # Apply content db
   if ! apply_content_db; then
     false
     return
   fi
 
   check_dbs_accessibility
-  # apply core updates
+  # Apply core updates
   if ! apply_world_db_core_update; then
     false
     return
@@ -1588,7 +1588,7 @@ function apply_full_content_db()
     return
   fi
 
-  # Apply apply acid data sql file
+  # Apply acid data sql file
   if ! apply_acid_data; then
     false
     return
@@ -1624,7 +1624,7 @@ function create_db_user_and_set_privileges()
       echo "Warning: User already exist, you will reset all privileges to default!"
     fi
     if [ ! -z $DB_CHARDB_VERSION ] OR [ ! -z $DB_REALMDB_VERSION ] OR [ ! -z $DB_WORLDDB_VERSION ] OR [ ! -z $DB_LOGSDB_VERSION ];then
-      echo "Warning: At least one database contain some data you are about to reset them to default!"
+      echo "Warning: At least one database contains some data that you are about to reset to default!"
     fi
     if ! are_you_sure "CreateAll"; then
       false
@@ -1934,7 +1934,7 @@ function realm_edit()
 
   echo
   sql="$SQL_DELETE_REALM_ID'${realmdata[0]}'"
-  if ! execute_sql_command "$REALM_DB_NAME" "$sql" "Apllying realm change"; then
+  if ! execute_sql_command "$REALM_DB_NAME" "$sql" "Applying realm change"; then
     echo "Aborting..."
     return
   fi
@@ -2332,7 +2332,7 @@ function backup_restore()
         return
       fi
     fi
-    echo "Invalid choice please retry."
+    echo "Invalid choice, please retry."
   done
   local filename=${filenames[$choice]}
   IFS="$OLDIFS"
@@ -2356,7 +2356,7 @@ function manage_realmlist_menu()
     echo
     print_realm_list
     echo
-    echo "> 1) Edit one realm"
+    echo "> 1) Edit a realm"
     echo "> 2) Add new realm"
     echo "> 3) Remove a realm"
     echo "> 4) Refresh realm list"
@@ -2850,7 +2850,7 @@ function show_help
   echo "    Install world db only using none root user defined in $CONFIG_FILE"
   echo
   echo "   -InstallAll rootuser rootpass"
-  echo "    Install all db by droping previous one and recreate them from scratch"
+  echo "    Install all db by droping previous ones and recreate them from scratch"
   echo "    Require root access with arg1 as root username and arg2 as root password"
   echo
   echo "   -CreateAllDBandUser rootuser rootpass"
