@@ -1491,7 +1491,7 @@ function apply_content_db()
     #echo "${row[0]}"
       *content_*)
         DB_LAST_CONTENT_VERSION_UPDATE=$(echo "${row[0]//[$'\n\r']}") # remove eventual carriage return
-        DB_LAST_CONTENT_VERSION_UPDATE=$(echo -n "${CURRENT_DB_VERSION//content_}") # remove "content_"
+        DB_LAST_CONTENT_VERSION_UPDATE=$(echo -n "${DB_LAST_CONTENT_VERSION_UPDATE//content_}") # remove "content_"
         ;;
      esac
   done < <("$MYSQL_PATH" -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -e"$sql")
