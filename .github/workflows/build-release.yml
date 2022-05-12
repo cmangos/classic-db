@@ -68,13 +68,13 @@ jobs:
             # :rescue_worker_helmet: Assets description
             - :computer: ${{env.EXPENSION_NAME}}-db-mysql-server.zip
               ***Ready to use ${{env.MYSQL_BIN_NAME}} for windows with db data already installed***
-              
+
             - :cd: ${{env.EXPENSION_NAME}}-all-backups.tar.gz
               ***Backup of all of databases that you can put in backups folder***
-              
+
             - :cd: ${{env.EXPENSION_NAME}}-world-db.zip
               ***Dump of world db only in sql form***
-              
+
             - :cd: ${{env.EXPENSION_NAME}}-all-db.zip
               ***Dump of all databases in sql form***
           token: ${{ secrets.PUSH_RELEASE_TOKEN }}
@@ -84,8 +84,7 @@ jobs:
           target_commitish: ${{ github.event.before }}
 
   build:
-    runs-on: windows-2019
-    needs: build-check
+    runs-on: windows-2022
 
     steps:
       - name: Set environmental variables
@@ -95,7 +94,7 @@ jobs:
           $projectNames = "${{github.repository}}".Split("/")[1]
           $expension="${projectNames}".Split("-")[0]
           echo "LAST_BACKUP_ADR=https://github.com/cmangos/${expension}-db/releases/download/latest/${expension}-all-backups.tar.gz" >> $env:GITHUB_ENV
-          echo "CORE_REPO=cmangos\mangos-${expension}" >> $env:GITHUB_ENV
+          echo "CORE_REPO=cmangos/mangos-${expension}" >> $env:GITHUB_ENV
           echo "CORE_FOLDER=${{github.workspace}}\mangos-${expension}" >> $env:GITHUB_ENV
           echo "DB_FOLDER=${{github.workspace}}\${expension}-db" >> $env:GITHUB_ENV
           echo "EXPENSION_NAME=${expension}" >> $env:GITHUB_ENV
@@ -111,6 +110,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: ${{env.DB_FOLDER}}
+
+      - name: Checkout CORE
+        uses: actions/checkout@v2
+        with:
+          repository: ${{env.CORE_REPO}}
+          path: ${{env.CORE_FOLDER}}
 
       - name: Cache MySQL official zip
         uses: actions/cache@v2
@@ -213,7 +218,7 @@ jobs:
               {
                 exit 1
               }
-              break 
+              break
             }
             else
             {
@@ -226,17 +231,10 @@ jobs:
             $count = $count + 1
           }
 
-      - name: Download last backup file
-        run: |
-          cd "${{env.DB_FOLDER}}\backups"
-          curl -L ${{env.LAST_BACKUP_ADR}} -o all-backups.tar.gz
-          tar -xzvf all-backups.tar.gz
-
       - name: Build ${{env.EXPENSION_NAME}}
         run: |
           cd "${{env.DB_FOLDER}}"
-          bash InstallFullDB.sh -CreateAllDBandUser root cmangos DeleteAll
-          bash InstallFullDB.sh -Restore all-databases false
+          bash InstallFullDB.sh -InstallAll root cmangos DeleteAll
 
       - name: Dumping all dbs
         run: |
@@ -271,18 +269,52 @@ jobs:
           overwrite: true
           file_glob: true
 
-  notify:
-    name: Discord Notification
+  notify-success:
+    name: Discord release successfully notification
     runs-on: ubuntu-20.04
     needs:
       - build-check
-    if: failure()
+      - build
 
     steps:
-      - name: Env
+      - name: Set environmental variables
         run: |
           echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
           echo "GIT_SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+          projectNames="${GITHUB_REPOSITORY#*/}"
+          expension="${projectNames%-*}"
+          echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
+
+      - name: Notify
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+          severity: info
+          username: ${{ github.event.repository.name }}
+          description: |
+            **${{env.EXPENSION_NAME}}-db prebuilt have just been released**
+          details: |
+            - **Branch:** ${{env.GIT_BRANCH}}
+            - **Commit:** [${{github.repository}}/${{env.GIT_SHORT_SHA}}](${{github.server_url}}/${{ github.repository }}/commit/${{github.sha}})
+            - **All exported sql (You can directly apply them to their respective DB):** [Latest sql file](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-all-db.zip)
+            - **World sql (You can directly apply it to world DB):** [Latest sql file](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-world-db.zip)
+            - **Ready to use mysql server (root password is cmangos, dont forget to change it):** [For windows x64](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-db-mysql-server.zip)
+          footer: Thank @${{github.event.pusher.name}}!
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
+          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+
+  notify-failure:
+    name: Discord Notification failure
+    runs-on: ubuntu-20.04
+    if: failure()
+
+    steps:
+      - name: Set environmental variables
+        run: |
+          echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          echo "GIT_SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+          projectNames="${GITHUB_REPOSITORY#*/}"
+          expension="${projectNames%-*}"
+          echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
 
       - name: Notify
         uses: rjstone/discord-webhook-notify@v1.0.4
