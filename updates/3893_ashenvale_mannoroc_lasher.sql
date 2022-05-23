@@ -1,6 +1,6 @@
 
 DELETE FROM `creature` WHERE (`guid` IN ('33142', '33143', '33144', '33145', '108863', '108864', '108865', '108868'));
-DELETE FROM `creature_movement` WHERE (`id` = '108865');
+DELETE FROM `creature_movement` WHERE (`id` = '108863');
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 ('33142', '0', '1', '1', '0', '0', '1583.8886718750', '-2851.2922363281', '184.6023712158', '6.230825424194340', '300', '300', '0', '0', '1', '0', '0', '0'),
