@@ -1,0 +1,84 @@
+name: Build check
+
+on:
+  push:
+    branches:
+      - "*"
+
+env:
+  MYSQL_BIN_NAME: "mysql-8.0.28-winx64"
+  MYSQL_BASE_PREBUILD_ADR: "https://dev.mysql.com/get/Downloads/MySQL-8.0/"
+  MYSQL_BIN_EXT: ".zip"
+  MYSQL_FINAL_SERVER_FOLDER: "mysql-server"
+  MYSQL_DEFAULT_ROOT: "cmangos"
+  CACHED_FOLDER: "${{github.workspace}}\\CachedFolder"
+  WORK_FOLDER: "${{github.workspace}}\\WorkFolder"
+
+jobs:
+  build-check:
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: read
+
+    steps:
+      - name: Setup environment variables
+        run: |
+          projectNames="${GITHUB_REPOSITORY#*/}"
+          expension="${projectNames%-*}"
+          echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
+          echo "CORE_REPO="cmangos/mangos-${expension} >> $GITHUB_ENV
+          echo "CORE_FOLDER="${{github.workspace}}/mangos-${expension} >> $GITHUB_ENV
+          echo "DB_FOLDER="${{github.workspace}}/${expension}-db >> $GITHUB_ENV
+
+      - name: Checkout DB
+        uses: actions/checkout@v2
+        with:
+          path: ${{env.DB_FOLDER}}
+
+      - name: Checkout CORE
+        uses: actions/checkout@v2
+        with:
+          repository: ${{env.CORE_REPO}}
+          path: ${{env.CORE_FOLDER}}
+
+      - name: Build ${{env.EXPENSION_NAME}}-db
+        run: |
+          sudo /etc/init.d/mysql start
+          cd ${{env.DB_FOLDER}}
+          ./InstallFullDB.sh -InstallAll root root DeleteAll
+          ./InstallFullDB.sh -Backup full
+          tar -czvf "${{github.workspace}}/${{env.EXPENSION_NAME}}-all-backups.tar.gz" -C backups --exclude=".gitignore" .
+          sudo /etc/init.d/mysql stop
+
+  notify-failure:
+    name: Discord Notification failure
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: none
+    if: failure()
+
+    steps:
+      - name: Set environmental variables
+        run: |
+          echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          echo "GIT_SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+          projectNames="${GITHUB_REPOSITORY#*/}"
+          expension="${projectNames%-*}"
+          echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
+
+      - name: Notify
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+          severity: error
+          username: ${{ github.event.repository.name }}
+          description: |
+            **${{env.EXPENSION_NAME}}-db buid failed**
+          details: |
+            - **Branch:** ${{env.GIT_BRANCH}}
+            - **Pusher:** ${{github.event.pusher.name}}
+            - **Author:** ${{github.event.head_commit.author.name}}
+            - **Commit:** [${{github.repository}}/${{env.GIT_SHORT_SHA}}](${{github.server_url}}/${{ github.repository }}/commit/${{github.sha}})
+            - **Build log:** [actions/runs/${{github.run_id}}](${{github.server_url}}/${{github.repository}}/actions/runs/${{github.run_id}})
+          footer: Try again @${{github.event.pusher.name}}!
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png

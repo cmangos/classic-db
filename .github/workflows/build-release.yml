@@ -1,9 +1,9 @@
-name: Build check
+name: Build Release
 
 on:
-  push:
-    branches:
-      - "*"
+  schedule:
+    # every day at 6am
+    - cron:  '0 6 * * *'
 
 env:
   MYSQL_BIN_NAME: "mysql-8.0.28-winx64"
@@ -15,76 +15,10 @@ env:
   WORK_FOLDER: "${{github.workspace}}\\WorkFolder"
 
 jobs:
-  build-check:
-    runs-on: ubuntu-20.04
-
-    steps:
-      - name: Setup environment variables
-        run: |
-          projectNames="${GITHUB_REPOSITORY#*/}"
-          expension="${projectNames%-*}"
-          echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
-          echo "CORE_REPO="cmangos/mangos-${expension} >> $GITHUB_ENV
-          echo "CORE_FOLDER="${{github.workspace}}/mangos-${expension} >> $GITHUB_ENV
-          echo "DB_FOLDER="${{github.workspace}}/${expension}-db >> $GITHUB_ENV
-
-      - name: Checkout DB
-        uses: actions/checkout@v2
-        with:
-          path: ${{env.DB_FOLDER}}
-
-      - name: Checkout CORE
-        uses: actions/checkout@v2
-        with:
-          repository: ${{env.CORE_REPO}}
-          path: ${{env.CORE_FOLDER}}
-
-      - name: Build ${{env.EXPENSION_NAME}}-db
-        run: |
-          sudo /etc/init.d/mysql start
-          cd ${{env.DB_FOLDER}}
-          ./InstallFullDB.sh -InstallAll root root DeleteAll
-          ./InstallFullDB.sh -Backup full
-          tar -czvf "${{github.workspace}}/${{env.EXPENSION_NAME}}-all-backups.tar.gz" -C backups --exclude=".gitignore" .
-          sudo /etc/init.d/mysql stop
-
-      - uses: dev-drprasad/delete-tag-and-release@v0.2.0
-        with:
-          delete_release: true # default: false
-          tag_name: latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_RELEASE_TOKEN }}
-
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d %H:%M')"
-
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        id: create_release
-        with:
-          name: Development Build(${{ steps.date.outputs.date }})
-          body: |
-            # :rescue_worker_helmet: Assets description
-            - :computer: ${{env.EXPENSION_NAME}}-db-mysql-server.zip
-              ***Ready to use ${{env.MYSQL_BIN_NAME}} for windows with db data already installed***
-
-            - :cd: ${{env.EXPENSION_NAME}}-all-backups.tar.gz
-              ***Backup of all of databases that you can put in backups folder***
-
-            - :cd: ${{env.EXPENSION_NAME}}-world-db.zip
-              ***Dump of world db only in sql form***
-
-            - :cd: ${{env.EXPENSION_NAME}}-all-db.zip
-              ***Dump of all databases in sql form***
-          token: ${{ secrets.PUSH_RELEASE_TOKEN }}
-          files: "${{github.workspace}}/${{env.EXPENSION_NAME}}-all-backups.tar.gz"
-          tag_name: latest
-          prerelease: true
-          target_commitish: ${{ github.event.before }}
-
   build:
     runs-on: windows-2022
+    permissions:
+      contents: write
 
     steps:
       - name: Set environmental variables
@@ -272,8 +206,10 @@ jobs:
   notify-success:
     name: Discord release successfully notification
     runs-on: ubuntu-20.04
+    permissions:
+      contents: none
+
     needs:
-      - build-check
       - build
 
     steps:
@@ -305,6 +241,8 @@ jobs:
   notify-failure:
     name: Discord Notification failure
     runs-on: ubuntu-20.04
+    permissions:
+      contents: none
     if: failure()
 
     steps:
