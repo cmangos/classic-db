@@ -11,7 +11,7 @@ SET @OBJECT_4 = 140083;
 SET @OBJECT_5 = 140084;
 SET @OBJECT_6 = 140085;
 
-SET @GROUP_ID = 41;
+SET @GROUP_ID = 42;
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OBJECT_1, '0', '0', '1', '2575.6420898437500', '-1595.9572753906250', '94.52051544189453125', '2.338739633560180664', '0', '0', '0.920504570007324218', '0.390731811523437500', '300', '600', '100', '1'),
@@ -49,7 +49,7 @@ SET @OBJECT_4 = 140093;
 SET @OBJECT_5 = 140094;
 SET @OBJECT_6 = 140095;
 
-SET @GROUP_ID = 42;
+SET @GROUP_ID = 43;
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OBJECT_1, '0', '0', '1', '1690.2348632812500', '-2477.8039550781250', '99.81735992431640625', '3.211419343948364257', '0', '0', '-0.99939060211181640', '0.034906134009361267', '300', '600', '100', '1'),
