@@ -564,7 +564,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+303, 1, -70.7889, 120.073, -89.6736, 0.785398, 1000, 367101), -- Lady Anacondra, Druid of the Fang
 (@CGUID+304, 1, 43.24, 183.35, -88.6997, 5.55015, 1000, 367101); -- Lady Anacondra, Druid of the Fang
 
-DELETE FROM `creature_movement_template` WHERE entry IN (3653);
+DELETE FROM `creature_movement_template` WHERE entry IN (3653, 3654, 3636, 5762, 5763);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (3653, 0, 1, -44.8007, 305.259, -106.417, 5.56568, 0, 0),
 (3653, 0, 2, -32.5041, 290.754, -106.417, 5.35127, 0, 0),
@@ -635,7 +635,120 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (3653, 0, 67, -72.0043, 352.597, -106.162, 4.49793, 0, 0),
 (3653, 0, 68, -77.3223, 330.255, -106.162, 5.07125, 0, 0),
 (3653, 0, 69, -73.4961, 323.783, -106.162, 5.64066, 0, 0),
-(3653, 0, 70, -66.2326, 318.345, -106.592, 5.80559, 0, 0);
+(3653, 0, 70, -66.2326, 318.345, -106.592, 5.80559, 0, 0),
+(3654, 1, 1, 116.24077, 246.37646, -96.07665, 100, 0, 0),
+(3654, 1, 2, 116.583, 246.34807, -96.08489, 100, 0, 0),
+(3654, 1, 3, 118.23712, 247.25517, -96.2352, 4.232990741729736328, 0, 0),
+(3636, 1, 1, -85.90598, 227.61963, -93.03453, 100, 0, 0),
+(3636, 1, 2, -102.71141, 230.54904, -90.739334, 100, 0, 0),
+(3636, 1, 3, -102.71141, 230.54904, -90.739334, 100, 0, 0),
+(3636, 2, 1, -81.29124, 221.22562, -93.76229, 100, 0, 0),
+(3636, 2, 2, -92.94477, 227.76524, -90.75813, 100, 0, 0),
+(3636, 2, 3, -102.23611, 230.12544, -90.6959, 100, 0, 0),
+(3636, 2, 4, -104.091354, 230.78859, -90.55948, 100, 0, 0),
+(3636, 2, 5, -104.091354, 230.78859, -90.55948, 100, 0, 0),
+(3636, 2, 6, -104.091354, 230.78859, -90.55948, 0.82534259557723999, 0, 0),
+(5762, 1, 1, 140.57259, 228.00058, -100.50621, 100, 0, 0),
+(5762, 1, 2, 112.98197, 247.17879, -96.04888, 100, 0, 0),
+(5762, 2, 1, 117.93607, 234.20607, -95.98726, 100, 0, 0),
+(5762, 2, 2, 112.86706, 245.81703, -96.04306, 100, 0, 0),
+(5762, 3, 1, 114.447685, 231.63597, -96.329506, 100, 0, 0),
+(5762, 3, 2, 113.38692, 245.56358, -96.03542, 100, 0, 0),
+(5763, 1, 1, 125.858055, 242.78287, -96.88654, 100, 0, 0),
+(5763, 1, 2, 122.73051, 238.40166, -96.29713, 3.229076623916625976, 0, 0),
+(5763, 2, 1, 119.62025, 172.64119, -105.66553, 100, 0, 0),
+(5763, 2, 2, 120.402145, 175.05247, -104.53792, 100, 0, 0),
+(5763, 2, 3, 123.54409, 180.22897, -103.616196, 100, 0, 0),
+(5763, 2, 4, 126.53016, 186.4192, -103.47013, 100, 0, 0),
+(5763, 2, 5, 128.87463, 191.66891, -103.18311, 100, 0, 0),
+(5763, 2, 6, 131.06654, 197.48012, -102.93855, 100, 0, 0),
+(5763, 2, 7, 133.31151, 204.56015, -102.519104, 100, 0, 0),
+(5763, 2, 8, 134.51147, 210.74326, -102.53473, 100, 0, 0),
+(5763, 2, 9, 134.96465, 217.04575, -102.03306, 100, 0, 0),
+(5763, 2, 10, 134.72386, 223.73077, -100.690636, 100, 0, 0),
+(5763, 2, 11, 133.46039, 229.81218, -99.31009, 100, 0, 0),
+(5763, 2, 12, 130.70819, 234.90285, -97.88196, 100, 0, 0),
+(5763, 2, 13, 127.35577, 238.79118, -97.01613, 100, 0, 0),
+(5763, 2, 14, 125.05799, 241.7561, -96.73998, 100, 0, 0),
+(5763, 2, 15, 126.59192, 241.25197, -96.910194, 3.436066865921020507, 0, 0),
+(5763, 3, 1, 86.81626, 276.71518, -103.9512, 100, 0, 0),
+(5763, 3, 2, 88.05574, 273.74298, -103.72609, 100, 0, 0),
+(5763, 3, 3, 91.78126, 268.84665, -104.02787, 100, 0, 0),
+(5763, 3, 4, 95.50262, 265.2172, -102.84226, 100, 0, 0),
+(5763, 3, 5, 152.47021, 218.18176, -104.24803, 100, 0, 0),
+(5763, 3, 6, 105.13917, 259.68387, -98.26407, 100, 0, 0),
+(5763, 3, 7, 109.050835, 255.97319, -97.09434, 100, 0, 0),
+(5763, 3, 8, 113.4123, 251.84914, -96.547325, 100, 0, 0),
+(5763, 3, 9, 117.79379, 247.71094, -96.242874, 100, 0, 0),
+(5763, 3, 10, 114.1736, 243.78004, -96.01644, 4.718718528747558593, 0, 0),
+(5763, 4, 1, 146.5148, 272.31738, -104.50855, 100, 0, 0),
+(5763, 4, 2, 145.701, 267.94543, -104.230965, 100, 0, 0),
+(5763, 4, 3, 145.48427, 261.7142, -103.67508, 100, 0, 0),
+(5763, 4, 4, 145.30661, 256.78445, -102.91765, 100, 0, 0),
+(5763, 4, 5, 144.6796, 250.19078, -101.97601, 100, 0, 0),
+(5763, 4, 6, 148.47914, 218.54915, -103.6273, 100, 0, 0),
+(5763, 4, 7, 145.11433, 220.02765, -102.91786, 100, 0, 0),
+(5763, 4, 8, 145.11021, 233.7701, -100.377396, 100, 0, 0),
+(5763, 4, 9, 140.31061, 230.63892, -100.05431, 100, 0, 0),
+(5763, 4, 10, 134.93867, 228.26114, -99.78053, 100, 0, 0),
+(5763, 4, 11, 136.03055, 234.19937, -98.7146, 100, 0, 0),
+(5763, 4, 12, 132.82394, 236.77248, -97.92519, 100, 0, 0),
+(5763, 4, 13, 130.46991, 238.63832, -97.56462, 100, 0, 0),
+(5763, 4, 14, 128.38785, 240.8256, -97.1112, 100, 0, 0),
+(5763, 4, 15, 125.93925, 242.70938, -96.893456, 100, 0, 0),
+(5763, 4, 16, 124.03222, 244.96562, -96.75486, 100, 0, 0),
+(5763, 4, 17, 126.065506, 242.83951, -96.91515, 100, 0, 0),
+(5763, 4, 18, 120.490555, 240.27303, -96.12171, 100, 0, 0),
+(5763, 5, 1, 156.98734, 192.56985, -107.434074, 100, 0, 0),
+(5763, 5, 2, 155.8213, 195.96317, -106.57868, 100, 0, 0),
+(5763, 5, 3, 158.1752, 217.64417, -104.754684, 100, 0, 0),
+(5763, 5, 4, 156.09776, 217.58621, -103.86361, 100, 0, 0),
+(5763, 5, 5, 152.47021, 218.18176, -104.24803, 100, 0, 0),
+(5763, 5, 6, 145.5708, 218.16516, -103.30797, 100, 0, 0),
+(5763, 5, 7, 143.09923, 223.12653, -102.1991, 100, 0, 0),
+(5763, 5, 8, 142.52711, 222.92523, -102.092, 100, 0, 0),
+(5763, 5, 9, 139.86267, 225.86348, -100.73727, 100, 0, 0),
+(5763, 5, 10, 137.30363, 228.93317, -99.890594, 100, 0, 0),
+(5763, 5, 11, 131.28745, 233.09811, -98.18175, 100, 0, 0),
+(5763, 5, 12, 130.04224, 236.10242, -97.72676, 100, 0, 0),
+(5763, 5, 13, 128.94788, 238.24597, -97.42485, 100, 0, 0),
+(5763, 5, 14, 130.46501, 235.30818, -97.827866, 100, 0, 0),
+(5763, 5, 15, 127.65557, 237.45241, -97.18103, 100, 0, 0),
+(5763, 5, 16, 124.98497, 240.98068, -96.69607, 100, 0, 0),
+(5763, 5, 17, 127.58026, 237.97755, -97.12617, 100, 0, 0),
+(5763, 5, 18, 121.04805, 237.84366, -96.156784, 1.075243234634399414, 0, 0),
+(5763, 6, 1, 151.28966, 219.12186, -103.98574, 100, 0, 0),
+(5763, 6, 2, 153.3386, 218.44113, -104.38471, 100, 0, 0),
+(5763, 6, 3, 158.1752, 217.64417, -104.754684, 100, 0, 0),
+(5763, 6, 4, 152.42044, 218.90128, -104.182755, 100, 0, 0),
+(5763, 6, 5, 150.31213, 220.28777, -103.6697, 100, 0, 0),
+(5763, 6, 6, 147.3595, 220.87784, -103.15318, 100, 0, 0),
+(5763, 6, 7, 143.57608, 222.95816, -102.29344, 100, 0, 0),
+(5763, 6, 8, 142.57188, 224.99023, -101.302055, 100, 0, 0),
+(5763, 6, 9, 139.44273, 228.22859, -100.28112, 100, 0, 0),
+(5763, 6, 10, 136.89784, 230.95126, -99.45712, 100, 0, 0),
+(5763, 6, 11, 133.84889, 231.842, -98.947395, 100, 0, 0),
+(5763, 6, 12, 131.6782, 234.00502, -98.04075, 100, 0, 0),
+(5763, 6, 13, 129.02019, 237.48233, -97.49597, 100, 0, 0),
+(5763, 6, 14, 120.897865, 236.36218, -96.14911, 100,  0, 0),
+(5763, 7, 1, 164.35057, 268.1334, -105.71179, 100, 0, 0),
+(5763, 7, 2, 162.23764, 263.60834, -104.8928, 100, 0, 0),
+(5763, 7, 3, 160.20921, 257.96268, -104.22527, 100, 0, 0),
+(5763, 7, 4, 158.20694, 253.46788, -103.699936, 100, 0, 0),
+(5763, 7, 5, 155.24565, 246.95665, -103.23309, 100, 0, 0),
+(5763, 7, 6, 152.1443, 241.52968, -102.73629, 100, 0, 0),
+(5763, 7, 7, 149.25285, 237.67703, -101.18963, 100, 0, 0),
+(5763, 7, 8, 146.34856, 232.05972, -100.919395, 100, 0, 0),
+(5763, 7, 9, 142.21779, 227.63333, -100.771454, 100, 0, 0),
+(5763, 7, 10, 135.60344, 228.25175, -99.8548, 100, 0, 0),
+(5763, 7, 11, 132.5878, 232.43553, -98.69165, 100, 0, 0),
+(5763, 7, 12, 130.15013, 235.89804, -97.75269, 100, 0, 0),
+(5763, 7, 13, 128.74797, 240.46518, -97.22051, 100, 0, 0),
+(5763, 7, 14, 131.17953, 238.13574, -97.66857, 100, 0, 0),
+(5763, 7, 15, 128.48396, 241.2323, -97.14712, 100, 0, 0),
+(5763, 7, 16, 126.47431, 242.76492, -96.963196, 100, 0, 0),
+(5763, 7, 17, 128.44044, 241.02643, -97.12677, 100, 0, 0),
+(5763, 7, 18, 125.30564, 240.25824, -96.703995, 3.381908416748046875, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+96, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
@@ -993,35 +1106,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+305, 0, 43, 10.1058, 289.975, -87.0198, 4.00662, 7200, 7200, 5, 0, 0, 1), -- Deviate Ravager, Deviate Guardian
 (@CGUID+306, 0, 43, 11.7688, 223.809, -84.1545, 4.75451, 7200, 7200, 5, 0, 0, 1); -- Deviate Ravager, Deviate Guardian
 
--- npc_disciple_of_naralexAI
-/*
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `auras`, `is_spawn`) VALUES (3636, 43, -67.8528, 203.787, -93.5733, 1.13446, '3417', 1);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `auras`, `is_spawn`) VALUES (3636, 43, -67.4478, 214.535, -93.4204, 3.54302, '3417', 1);
-
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5048, 43, -57.5453, 280.207, -92.7608, 5.07891);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5755, 43, -60.2539, 273.098, -92.7608, 0.401426);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5755, 43, -57.5453, 280.207, -92.7608, 5.07891);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5755, 43, -50.1238, 274.717, -92.7608, 3.03687);
-
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5762, 43, 121.4, 166.317, -105.541, 1.97222);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5762, 43, 135.416, 283.11, -104.525, 3.15905);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5762, 43, 171.395, 213.766, -105.507, 5.044);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5762, 43, 171.69, 213.234, -105.42, 1.62316);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5762, 43, 178.669, 262.253, -106.153, 1.32645);
-
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 82.065, 280.377, -103.297, 5.06145);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 96.7788, 283.762, -104.786, 3.82227);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 115.555, 168.228, -105.687, 2.30383);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 126.322, 282.248, -103.797, 0.942478);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 144.843, 278.079, -104.574, 4.43314);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 145.354, 219.346, -102.986, 5.74213);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 155.845, 186.688, -107.084, 0.0523599);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 162.067, 218.715, -105.362, 1.98968);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5763, 43, 164.627, 274.123, -107.298, 4.66003);
-
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (3654, 43, 150.943, 262.797, -103.903, 3.7001);
-
 -- not sure when these spawn yet
+/*
 INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 111.285, 242.52, -95.9905, 0.663225);
 INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 111.296, 238.501, -96.0623, 5.58505);
 INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 111.452, 241.298, -95.999, 0);
@@ -1272,7 +1358,91 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+DELETE FROM `waypoint_path` WHERE `PathId` IN (3678);
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+(3678, 1, -134.96526, 125.40187, -78.09446, 2.98006, 13000, 367801, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 2, -124.4064, 131.07953, -78.71027, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 3, -113.91917, 142.769, -80.91416, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 4, -111.16669, 153.64728, -80.55562, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 5, -110.97073, 165.60736, -79.444725, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 6, -109.30049, 181.25143, -79.76007, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 7, -110.1942, 190.9626, -80.42992, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 8, -109.58964, 199.15425, -81.23881, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 9, -110.56909, 206.86935, -82.88934, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 10, -110.30787, 216.23227, -85.9362, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 11, -108.06385, 227.87166, -89.92641, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 12, -104.28827, 234.40804, -91.64163, 1.124, 1000, 0, 'Wailing Caverns - Disciple of Naralex - Spawn 1 Wave'),
+(3678, 13, -104.28827, 234.40804, -91.64163, 5.742133140563964843, 3000, 367802, 'Wailing Caverns - Disciple of Naralex - After Spawn 1 Wave'),
+(3678, 14, -98.08711, 229.5188, -91.07548, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 15, -93.777916, 228.44995, -90.61347, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 16, -85.272385, 227.1592, -93.12241, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 17, -81.619774, 223.63588, -93.59701, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 18, -78.13694, 219.21017, -94.11092, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 19, -71.02429, 212.48766, -93.52012, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 20, -66.8499, 209.88943, -93.305, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 21, -61.41215, 207.00401, -93.55031, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 22, -49.681805, 204.15556, -95.96281, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 23, -41.188667, 204.99422, -96.51605, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 24, -35.381386, 212.98494, -96.097084, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 25, -33.46709, 223.27979, -95.67591, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 26, -31.895458, 231.73523, -94.46018, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 27, -33.1077, 240.3214, -93.595955, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 28, -38.079693, 250.99289, -93.11742, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 29, -43.072884, 259.32315, -92.84187, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 30, -54.713943, 273.85025, -92.84426, 100, 1000, 0, 'Wailing Caverns - Disciple of Naralex - Spawn 2 Wave'),
+(3678, 31, -50.375507, 279.56708, -92.84426, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 32, -48.92133, 284.29807, -92.84426, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 33, -49.880116, 287.8062, -92.245026, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 34, -50.754616, 291.34595, -91.38129, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 35, -47.99677, 295.32455, -90.81825, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 36, -44.49994, 299.743, -90.212395, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 37, -38.468487, 306.85004, -89.96176, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 38, -34.199474, 309.35944, -89.575645, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 39, -27.884659, 311.9566, -89.1139, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 40, -23.459465, 310.78976, -88.51482, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 41, -17.556763, 308.8638, -88.62951, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 42, -9.611309, 305.38797, -88.19709, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 43, -3.915017, 301.293, -86.81481, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 44, -0.235204, 294.51816, -85.46128, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 45, 3.204272, 288.31448, -85.4905, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 46, 6.725203, 282.79242, -85.65187, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 47, 10.753059, 278.38467, -85.8368, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 48, 16.977774, 273.39676, -86.238335, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 49, 25.977861, 264.6067, -86.788, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 50, 29.228964, 257.175, -87.57598, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 51, 30.13821, 248.86757, -87.37655, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 52, 34.11451, 244.73685, -87.19066, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 53, 38.86757, 240.09755, -87.61623, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 54, 43.998184, 234.17651, -88.02119, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 55, 48.403416, 229.11066, -88.38168, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 56, 49.750046, 222.36626, -88.75966, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 57, 54.5601, 210.85043, -89.80927, 100, 5000, 367803, 'Wailing Caverns - Disciple of Naralex - Stop 3'),
+(3678, 58, 67.69076, 205.52835, -92.56347, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 59, 71.46944, 206.84753, -93.10892, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 60, 77.15617, 209.72255, -93.07799, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 61, 80.431854, 214.86958, -93.177925, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 62, 83.29396, 220.0915, -93.72824, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 63, 86.2444, 225.64459, -94.54216, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 64, 89.99905, 229.58038, -95.01256, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 65, 94.13328, 232.7041, -95.36724, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 66, 99.00888, 233.9866, -95.57549, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 67, 104.59536, 233.409, -95.845955, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 68, 109.07845, 232.6175, -96.046, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 69, 112.8708, 233.57512, -96.32111, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 70, 114.51453, 235.30222, -96.1607, 100, 1000, 0, 'Wailing Caverns - Disciple of Naralex End Event'),
+(3678, 71, 127.385, 252.279, -90.07, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 72, 121.595, 264.488, -91.55, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 73, 115.472, 264.253, -91.5, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 74, 99.988, 252.79, -91.51, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 75, 96.347, 245.038, -90.34, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 76, 82.201, 216.273, -86.1, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 77, 75.112, 206.494, -84.8, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 78, 27.174, 201.064, -72.31, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex'),
+(3678, 79, -41.114, 204.149, -78.94, 100, 0, 0, 'Wailing Caverns - Disciple of Naralex');
+
+DELETE FROM `waypoint_path_name` WHERE `PathId` IN (3678);
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(3678, 'Wailing Caverns - Disciple of Naralex - Escort path'); -- npc_disciple_of_naralexAI
 
 -- =========
 -- DBSCRIPTS
@@ -1281,10 +1451,16 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (367101,384001);
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(367101, 0, 15, 13236, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Lady Anacondra - Cast Nature Channeling'),
-(384001, 0, 15, 13236, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Druid of the Fang - Cast Nature Channeling');
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (367101, 384001, 367801, 367802, 367803);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(367101, 0, 0, 15, 13236, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Lady Anacondra - Cast Nature Channeling'),
+(384001, 0, 0, 15, 13236, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Druid of the Fang - Cast Nature Channeling'),
+(367801, 10000, 0, 0, 0, 0, 0, 0, 0, 0, 1255, 0, 0, 0, 0, 0, 0, 0, 'Disiple of Naralex - Say Text'),
+(367801, 10000, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Disiple of Naralex - Emote Talk'),
+(367802, 0, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Disiple of Naralex - Emote Point'),
+(367802, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1257, 0, 0, 0, 0, 0, 0, 0, 'Disiple of Naralex - Say Text'),
+(367803, 0, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Disiple of Naralex - Emote Point'),
+(367803, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1263, 0, 0, 0, 0, 0, 0, 0, 'Disiple of Naralex - Say Text');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
