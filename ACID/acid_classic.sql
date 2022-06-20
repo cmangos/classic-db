@@ -6132,9 +6132,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Patrick Garrett
 ('565101','5651','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Patrick Garrett - Summon Deathguard Elite on Aggro'),
 -- Undercity Practice Dummy (5652) - NSR
--- Tyler (5653) - NSR
--- Edward (5654) - NSR
--- Robert Gossom
+-- Tyler 5653
+('565301','5653','30','0','100','1','5','5681','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Tyler - Start Attack invoker on Received AI event A'),
+('565302','5653','30','0','100','1','6','5685','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Tyler - Start Attack invoker on Received AI event B'),
+('565303','5653','30','0','100','1','8','5687','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Tyler - Start Attack invoker on Received AI event C'),
+-- Edward 5654
+('565401','5654','30','0','100','1','5','5680','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Edward - Start Attack invoker on Received AI event A'),
+('565402','5654','30','0','100','1','6','5686','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Edward - Start Attack invoker on Received AI event B'),
+('565403','5654','30','0','100','1','8','5687','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Edward - Start Attack invoker on Received AI event C'),
+-- Robert Gossom 5655
 ('565501','5655','1','0','100','1','1000','2000','2000','4000','0','0','10','4','21','22','0','0','0','0','0','0','0','0','Robert Gossom - OOC Random Emote'),
 -- Richard Van Brunt
 ('565601','5656','1','0','100','1','1000','2000','2000','4000','0','0','10','4','21','22','0','0','0','0','0','0','0','0','Richard Van Brunt - OOC Random Emote'),
@@ -6146,8 +6152,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('565901','5659','1','0','100','1','1000','2000','2000','4000','0','0','10','4','21','22','0','0','0','0','0','0','0','0','Andrew Hartwell - OOC Random Emote'),
 -- Riley Walker
 ('566001','5660','1','0','100','1','1000','2000','2000','4000','0','0','10','4','21','22','0','0','0','0','0','0','0','0','Riley Walker - OOC Random Emote'),
--- Brother Malach (5661) - (There is also random says with Tyler and Edward fighting) - MAY REQUIRE ADDITIONAL SCRIPTING AS IT IS A SEQUENCE OF PRACTICE FIGHTING
--- Sergeant Houser
+-- Brother Malach 5661
+('566101','5661','1','0','100','1','10000','60000','420000','660000','0','0','53','9004','0','0','0','0','0','0','0','0','0','0','Brother Malach - START_RELAY_SCRIPT on OOC Timer'),
+-- Sergeant Houser 5662
 ('566201','5662','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Sergeant Houser - Summon Deathguard Elite on Aggro'),
 -- Travist Bosk
 ('566301','5663','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Travist Bosk - Summon Deathguard Elite on Aggro'),
@@ -6169,14 +6176,24 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Summoned Succubus
 ('567701','5677','0','0','100','1025','5000','11000','9000','15000','0','0','11','16583','1','0','0','0','0','0','0','0','0','0','Summoned Succubus - Cast Shadow Shock'),
 -- Lysta Bancroft
--- Male Human Captive (5680) - NSR
--- Female Human Captive (5681) - NSR
--- Captive Ghoul (5685) - NSR
--- Captive Zombie (5686) - NSR
--- Captive Abomination (5687) - NSR
--- Godrick Farsan
+-- Male Human Captive 5680
+('568001','5680','11','0','100','0','0','0','0','0','0','0','11','7791','0','0','45','5','10','0','0','0','0','0','Male Human Captive - Cast Summon Visual and Send Custom AI event A on Spawn'),
+('568002','5680','6','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Male Human Captive - Despawn on Death.'),
+-- Female Human Captive 5681
+('568101','5681','11','0','100','0','0','0','0','0','0','0','11','7791','0','0','45','5','10','0','0','0','0','0','Female Human Captive - Cast Summon Visual and Send Custom AI event A on Spawn'),
+('568102','5681','6','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Female Human Captive - Despawn on Death.'),
+-- Captive Ghoul 5685
+('568501','5685','11','0','100','0','0','0','0','0','0','0','45','6','10','0','0','0','0','0','0','0','0','0','Captive Ghoul - Send Custom AI event B on Spawn'),
+('568502','5685','6','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Captive Ghoul - Despawn on Death.'),
+-- Captive Zombie 5686
+('568601','5686','11','0','100','0','0','0','0','0','0','0','11','7791','0','0','45','6','10','0','0','0','0','0','Captive Zombie - Cast Summon Visual and Send Custom AI event B on Spawn'),
+('568602','5686','6','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Captive Zombie - Despawn on Death.'),
+-- Captive Abomination 5687
+('568701','5687','11','0','100','0','0','0','0','0','0','0','11','7791','0','0','45','8','10','0','0','0','0','0','Captive Abomination - Cast Summon Visual and Send Custom AI event C on Spawn'),
+('568702','5687','6','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Captive Abomination - Despawn on Death.'),
+-- Godrick Farsan 5693
 ('569301','5693','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Godrick Farsan - Summon Deathguard Elite on Aggro'),
--- Gerard Abernathy
+-- Gerard Abernathy 5696
 ('569601','5696','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gerard Abernathy - Summon Deathguard Elite on Aggro'),
 -- Theresa (5697) - NSR
 -- Joanna Whitehall
