@@ -16,5 +16,5 @@ UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`&~16384 WHERE `entry` 
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|4096 WHERE `entry` IN (
 550, -- Defias Messenger (Path)
 12352, -- Scarlet Trooper (Path)
-12339, -- Demetria (Path)
+12339  -- Demetria (Path)
 );
