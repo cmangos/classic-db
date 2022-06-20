@@ -3409,10 +3409,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('247601','2476','0','0','85','1025','4100','13900','32200','46200','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Large Loch Crocolisk - Cast Infected Wound'),
 -- Greishan Ironstove 3291
 ('329101','3291','1','0','100','1','1000','1000','60000','60000','0','0','54','0','0','896','0','0','0','0','0','0','0','0','Greishan Ironstove - Random Say OOC'),
--- Mountaineer Pebblebitty 3836 - npc_mountaineer_pebblebitty
+-- Mountaineer Pebblebitty 3836
+('383601','3836','22','0','100','1','101','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Mountaineer Pebblebitty - Wave on Receive Emote Wave'),
+('383602','3836','22','0','100','1','78','0','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Mountaineer Pebblebitty - Salute Emote on Receive Salute Emote'),
+('383603','3836','22','0','100','1','77','0','0','0','0','0','1','1402','1403','1404','0','0','0','0','0','0','0','0','Mountaineer Pebblebitty - Random Say on Receive Rude Emote'),
+('383604','3836','22','0','100','1','41','0','0','0','0','0','1','1401','0','0','5','11','0','0','0','0','0','0','Mountaineer Pebblebitty - Say and Emote on Flex Emote'),
 -- Shanda the Spinner
 ('1426601','14266','11','0','100','0','0','0','0','0','0','0','11','11919','0','2','0','0','0','0','0','0','0','0','Shanda the Spinner - Cast Poison Proc on Spawn'),
--- Emogg the Crusher (2.4.3 Official Data)
+-- Emogg the Crusher 14267 (2.4.3 Official Data)
 ('1426701','14267','4','0','80','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Emogg the Crusher - Random Say on Aggro'),
 
 
