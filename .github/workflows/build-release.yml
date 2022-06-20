@@ -258,7 +258,7 @@ jobs:
         uses: rjstone/discord-webhook-notify@v1.0.4
         with:
           severity: error
-          username: ${{ github.event.repository.name }}
+          username: ${{env.EXPENSION_NAME}}-db
           description: |
             **${{env.EXPENSION_NAME}}-db buid failed**
           details: |
@@ -267,6 +267,6 @@ jobs:
             - **Author:** ${{github.event.head_commit.author.name}}
             - **Commit:** [${{github.repository}}/${{env.GIT_SHORT_SHA}}](${{github.server_url}}/${{ github.repository }}/commit/${{github.sha}})
             - **Build log:** [actions/runs/${{github.run_id}}](${{github.server_url}}/${{github.repository}}/actions/runs/${{github.run_id}})
-          footer: Try again @${{github.event.pusher.name}}!
+          footer: CMaNGOS police called!
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
           avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png

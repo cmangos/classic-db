@@ -70,7 +70,7 @@ jobs:
         uses: rjstone/discord-webhook-notify@v1.0.4
         with:
           severity: error
-          username: ${{ github.event.repository.name }}
+          username: ${{env.EXPENSION_NAME}}-core
           description: |
             **${{env.EXPENSION_NAME}}-db buid failed**
           details: |
