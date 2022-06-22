@@ -1,18 +1,18 @@
 -- Add missing Gossips from Vmangos - classic-db only
--- UPDATE creature_template SET GossipMenuId=6141 WHERE entry=14754; -- Kelm Hargunth
--- UPDATE creature_template SET GossipMenuId=6142 WHERE entry=14753; -- Illiyana Moonblaze
--- DELETE FROM gossip_menu WHERE entry IN (6141,6142);
--- INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES (6141, 7294, 0, 0),(6142, 7295, 0, 0);
--- DELETE FROM gossip_menu_option WHERE menu_id IN (6141,6142);
--- INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
--- (6141, 1, 1, 'What goods have I earned the right to purchase for use in Warsong Gulch?', 10021, 3, 4, 0, 0, 0, 0, 0, NULL, 0, 1524),
--- (6142, 1, 1, 'What goods have I earned the right to purchase for use in Warsong Gulch?', 10019, 3, 4, 0, 0, 0, 0, 0, NULL, 0, 1525);
--- DELETE FROM conditions WHERE condition_entry IN (1524 ,1525) AND value1 IN (889,890);
--- INSERT INTO conditions (condition_entry, type, value1, value2, value3, value4, flags, comments) VALUES
--- (1524 , 5, 889, 4, 0, 0, 0, 'Has Minimum Rank Friendly With Faction ID: 889'), -- Warsong Outriders
--- (1525, 5, 890, 4, 0, 0, 0, 'Has Minimum Rank Friendly With Faction ID: 890'); -- Silverwing Sentinels
--- UPDATE npc_vendor SET condition_id=1524  WHERE entry=14754;
--- UPDATE npc_vendor SET condition_id=1525 WHERE entry=14753;
+UPDATE creature_template SET GossipMenuId=6141 WHERE entry=14754; -- Kelm Hargunth
+UPDATE creature_template SET GossipMenuId=6142 WHERE entry=14753; -- Illiyana Moonblaze
+DELETE FROM gossip_menu WHERE entry IN (6141,6142);
+INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES (6141, 7294, 0, 0),(6142, 7295, 0, 0);
+DELETE FROM gossip_menu_option WHERE menu_id IN (6141,6142);
+INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
+(6141, 1, 1, 'What goods have I earned the right to purchase for use in Warsong Gulch?', 10021, 3, 4, 0, 0, 0, 0, 0, NULL, 0, 1524),
+(6142, 1, 1, 'What goods have I earned the right to purchase for use in Warsong Gulch?', 10019, 3, 4, 0, 0, 0, 0, 0, NULL, 0, 1525);
+DELETE FROM conditions WHERE condition_entry IN (1524 ,1525) AND value1 IN (889,890);
+INSERT INTO conditions (condition_entry, type, value1, value2, value3, value4, flags, comments) VALUES
+(1524 , 5, 889, 4, 0, 0, 0, 'Has Minimum Rank Friendly With Faction ID: 889'), -- Warsong Outriders
+(1525, 5, 890, 4, 0, 0, 0, 'Has Minimum Rank Friendly With Faction ID: 890'); -- Silverwing Sentinels
+UPDATE npc_vendor SET condition_id=1524  WHERE entry=14754;
+UPDATE npc_vendor SET condition_id=1525 WHERE entry=14753;
 
 -- https://tbc.wowhead.com/item=21565/rune-of-perfection - same as 21567
 -- https://tbc.wowhead.com/item=21566/rune-of-perfection same as 21568
