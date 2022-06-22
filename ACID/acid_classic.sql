@@ -6194,8 +6194,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Godrick Farsan 5693
 ('569301','5693','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Godrick Farsan - Summon Deathguard Elite on Aggro'),
 -- Gerard Abernathy 5696
-('569601','5696','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gerard Abernathy - Summon Deathguard Elite on Aggro'),
--- Theresa (5697) - NSR
+('569601','5696','30','0','100','1','6','5697','0','0','0','0','53','20604','0','0','0','0','0','0','0','0','0','0','Gerard Abernathy - START_RELAY_SCRIPT on Receive AI Event Custom B (RP EVENT)'),
+('569602','5696','30','0','100','1','8','5697','0','0','0','0','53','20605','0','0','0','0','0','0','0','0','0','0','Gerard Abernathy - START_RELAY_SCRIPT on Receive AI Event Custom C (RP EVENT)'),
+('569603','5696','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Gerard Abernathy - Summon Deathguard Elite on Aggro'),
+-- Theresa 5697
+('569701','5697','1','0','100','1','10000','60000','420000','720000','0','0','53','20603','0','0','0','0','0','0','0','0','0','0','Theresa - START_RELAY_SCRIPT on OOC Timer (RP EVENT)'),
 -- Joanna Whitehall
 ('569801','5698','4','0','100','0','0','0','0','0','0','0','12','7980','1','300000','0','0','0','0','0','0','0','0','Joanna Whitehall - Summon Deathguard Elite on Aggro'),
 -- Leona Tharpe
