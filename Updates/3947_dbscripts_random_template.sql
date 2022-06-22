@@ -1,4 +1,4 @@
-DELETE FROM dbscript_random_templates WHERE id IN (8, 20, 21, 22);
+DELETE FROM dbscript_random_templates WHERE id IN (8, 21, 22);
 INSERT INTO dbscript_random_templates (id, `type`, target_id, chance, comments) VALUES
 (8, 0, 10434, 0, 'Common Troll - Random Aggro Texts'),
 (8, 0, 1909, 0, 'Common Troll - Random Aggro Texts'),
