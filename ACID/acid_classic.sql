@@ -14993,9 +14993,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mechano-Flamewalker 6226 (3.3.5a Official Data)
 ('622601','6226','9','0','100','1025','0','5','10900','20400','0','0','11','10733','1','0','0','0','0','0','0','0','0','0','Mechano-Flamewalker - Cast Flame Spray'),
 ('622602','6226','0','0','100','1025','10200','18100','14400','25300','0','0','11','11970','17','0','0','0','0','0','0','0','0','0','Mechano-Flamewalker - Cast Fire Nova'),
--- Mechano-Frostwalker 6227 (3.3.5a Official Data)
-('622701','6227','0','0','100','1025','0','10000','26700','30700','0','0','11','10737','0','0','0','0','0','0','0','0','0','0','Mechano-Frostwalker - Cast Hail Storm'),
-('622702','6227','0','0','100','1025','17100','17100','21100','34600','0','0','11','11264','17','0','0','0','0','0','0','0','0','0','Mechano-Frostwalker - Cast Ice Blast'),
+-- Mechano-Frostwalker 6227 - creature_spell_list
 -- Dark Iron Ambassador 6228 (CURRENT DATA ALL ROUGH SCRIPTED) - REQUIRE OFFICIAL DATA
 ('622801','6228','8','0','100','0','9798','-1','0','0','0','0','1','3367','0','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Emote on Radiation Spellhit'),
 ('622802','6228','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Dark Iron Ambassador - Enable Range Mode on Aggro'),
