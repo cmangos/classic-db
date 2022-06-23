@@ -65,3 +65,35 @@ UPDATE creature_template SET VendorTemplateID=108 WHERE Entry IN (989, 1286, 222
 -- Remove broadcast_text use in script as the broadcast_text does not exist in Classic
 -- Let all other entries of the script as long as there is no proof this ones was added after Classic
 DELETE FROM dbscripts_on_creature_movement WHERE id=384801 AND delay=47000;
+
+-- Table gossip_menu_option for menu 697, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 7283, id 0 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12851, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12852, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12853, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12854, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12856, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12857, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12858, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12861, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12862, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12863, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12864, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12865, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12866, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12867, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12868, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12869, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12870, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12871, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12872, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12873, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Table gossip_menu_option for menu 12875, id 1 has `npc_option_npcflag` = 1 but creatures using this menu does not have corresponding `NpcFlags`. Option will not accessible in game.
+-- Fairbanks & Love is in the Air Event Gossips Errors
+UPDATE `creature_template` SET `NpcFlags` = 1 WHERE `entry` = 4542; -- High Inquisitor Fairbanks (tbc-db, mantis?)
+-- gossips have to be reworked anyways as the action_scripts dont seem to work (not removing token of love item not doing anything)
+UPDATE gossip_menu_option SET npc_option_npcflag = npc_option_npcflag&~1 where menu_id IN (697,12875) and npc_option_npcflag = 1;
+UPDATE gossip_menu_option SET npc_option_npcflag = npc_option_npcflag&~1 where menu_id between 12851 and 12854 and npc_option_npcflag = 1;
+UPDATE gossip_menu_option SET npc_option_npcflag = npc_option_npcflag&~1 where menu_id between 12856 and 12858 and npc_option_npcflag = 1;
+UPDATE gossip_menu_option SET npc_option_npcflag = npc_option_npcflag&~1 where menu_id between 12861 and 12873 and npc_option_npcflag = 1;
+
