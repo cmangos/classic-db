@@ -907,8 +907,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (14566, 0, 27, -18.00219, 278.0495, -8.436031, 100, 0, 0),
 (14566, 0, 29, -23.79626, 286.6538, -7.955163, 100, 100, 3); -- Waypoint Pause as incomplete
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+181, 0, 0, 0, 400, 0, NULL);
+-- TBC+
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+-- (@CGUID+181, 0, 0, 0, 400, 0, NULL); -- pretty sure this was in the sniff i checked! - come back
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (11441, 0, 0, 1, 0, 0, '19818'), -- Gordok Brute

@@ -764,16 +764,10 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- =========
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1043201);
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1450001,1450002,1450003);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1043201, 1000, 0, 0, 0, 0, 0, 0, 0, 7194, 0, 0, 0, 0, 0, 0, 0, ''),
 (1043201, 10000, 0, 0, 0, 0, 0, 0, 0, 7193, 0, 0, 0, 0, 0, 0, 0, ''),
-(1043201, 20000, 0, 0, 0, 0, 0, 0, 0, 7191, 0, 0, 0, 0, 0, 0, 0, ''),
-(1450001, 0, 0, 0, 0, 0, 0, 0, 0, 9770, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 2 on reach wp 2 (Scholomance)'),
-(1450002, 0, 0, 0, 0, 0, 0, 0, 0, 9771, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 3 on reach wp 7 (Scholomance)'),
-(1450003, 4000, 0, 0, 0, 0, 0, 0, 0, 9742, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 4 on reach wp 12 (Scholomance)'),
-(1450003, 7000, 15, 41232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee cast teleport on reach wp 12 (Scholomance)'),
-(1450003, 8000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee despawn self on reach wp 12 (Scholomance)');
+(1043201, 20000, 0, 0, 0, 0, 0, 0, 0, 7191, 0, 0, 0, 0, 0, 0, 0, '');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10503, 1000, 0, 0, 0, 0, 0, 0, 0, 11408, 0, 0, 0, 0, 0, 0, 0, ''),

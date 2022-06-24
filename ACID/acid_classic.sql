@@ -7655,7 +7655,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('461901','4619','2','0','100','1025','20','0','15000','25000','0','0','11','6925','0','0','0','0','0','0','0','0','0','0','Geltharis - Cast Gift of the Xavian at 20% HP'),
 -- Illusionary Nightmare (4785) - NSR
 -- Fallenroot Rogue 4789
-('478901','4789','33','0','100','1025','0','0','9000','12000','0','0','11','6595','1','0','0','0','0','0','0','0','0','0','Fallenroot Rogue - Cast Exploit Weakness on Facing Target Back'),
+('478901','4789','1','0','100','1','1000','1000','5000','5000','0','0','11','7939','0','34','11','22766','0','34','0','0','0','0','Fallenroot Rogue - Cast Stealth OOC'),
+('478902','4789','33','0','100','1025','0','0','9000','12000','0','0','11','6595','1','0','0','0','0','0','0','0','0','0','Fallenroot Rogue - Cast Exploit Weakness on Facing Target Back'),
 -- Blackfathom Tide Priestess 4802
 ('480201','4802','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Blackfathom Tide Priestess - Enable Range Mode on Aggro'),
 ('480202','4802','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Blackfathom Tide Priestess - Flee at 15% HP'),

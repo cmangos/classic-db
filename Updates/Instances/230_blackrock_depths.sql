@@ -829,7 +829,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (9037, 0, 0, 1, 0, 0, NULL), -- Gloom'rel
 (9038, 0, 0, 1, 0, 0, '12544'), -- Seeth'rel
 (9039, 0, 0, 1, 0, 0, '13787'), -- Doom'rel
-(9040, 0, 0, 1, 0, 0, '32199'), -- Dope'rel
+(9040, 0, 0, 1, 0, 0, NULL), -- Dope'rel
 (9041, 0, 0, 1, 0, 0, '12544'), -- Warder Stilgiss
 (9042, 0, 0, 1, 0, 0, '8876'), -- Verek
 (9056, 0, 0, 1, 0, 0, NULL), -- Fineous Darkvire
