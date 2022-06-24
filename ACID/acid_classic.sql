@@ -12018,6 +12018,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Derotain Mudsipper (14567) - NSR
 -- Jhordy Lapforge (14743) - npc_engineering_tele_trinket
 -- Haughty Modiste (15165) - NSR
+-- Anachronos 15192
+('1519201','15192','2','0','100','1024','20','0','0','0','0','0','1','10658','0','0','41','3000','0','0','0','0','0','0','Anachronos - Say, Delayed Despawn at 20% HP'),
 -- O'Reily (15520) - NSR
 -- Meridith the Mermaiden (15526) - NSR
 -- Elder Ragetotem (15573) - NSR

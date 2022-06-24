@@ -6,6 +6,3 @@
 -- https://classic.wowhead.com/npc=15192/anachronos#comments:id=2918259
 UPDATE `creature_template` SET `DamageMultiplier` = 35 WHERE `entry` = 15192; -- wotlk-db
 
--- Update Anachronos position to sniff
-UPDATE `creature` SET `position_x` = -8176.576660, `position_y` = -4722.568848, `position_z` = 28.078407, `orientation` = 1.759070 WHERE `id` = 15192;
-
