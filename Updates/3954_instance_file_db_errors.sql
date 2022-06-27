@@ -64,3 +64,16 @@ DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (
 
 -- 2022-06-24 02:22:47 Table `dbscripts_on_creature_movement` contain unused script, id 1614501.
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 1614501; -- was substituted by 1614602,1614603
+
+-- Move to range so it can be aligned across tbc/wotlk
+DELETE FROM `gameobject` WHERE `id` IN (19592,19601); -- gone wrong here https://github.com/cmangos/classic-db/commit/d8df9dc490711f622dd9447f6ba83d58f6048314
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
+-- (6000016, 137167, 0, 1, -11365.9, -2979.07, 0.413705, 2.02458, 0, 0, 0, 0, -1, -1, 100, 1); -- 3957_TBC-0237_wotlk_conflicts
+(198185, 19592, 1, 1, 1049.03, -442.099, 4.80105, 5.14872, 0, 0, -0.537299, 0.843392, -300, -300, 0, 0), -- https://classic.wowhead.com/spell=6626/set-ng-5-charge-blue
+(198186, 19601, 1, 1, 1168.32, 50.7767, 0.041739, 4.97862, 0, 0, 0.607002, -0.794701, -300, -300, 0, 0); -- https://classic.wowhead.com/item=5694/ng-5-explosives-red
+
+DELETE FROM `dbscripts_on_event` WHERE `id` IN (693,694);
+INSERT INTO `dbscripts_on_event` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
+(693, 0, 0, 9, 198185, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Set NG-5 Charge (Red) - Respawn GO NG5 Explosive (Red)'),
+(694, 0, 0, 9, 198186, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Set NG-5 Charge (Blue) - Respawn GO NG5 Explosive (Blue)');
+
