@@ -41,3 +41,4 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `dat
 ('1028', '0', '5', '9', @OGUID+5, '9', 'Raenes Cleansing - Respawn Gameobject');
 
 UPDATE `quest_template` SET `CompleteScript`='1028' WHERE `entry`='1028';
+
