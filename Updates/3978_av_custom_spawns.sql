@@ -1,0 +1,2 @@
+
+DELETE FROM `creature` WHERE (`guid` IN (51924, 51925, 53627, 53628, 53629, 53630));
