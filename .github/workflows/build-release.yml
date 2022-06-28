@@ -1,7 +1,6 @@
 name: Build Release
 
 on:
-  push:
   schedule:
     # every day at 6am
     - cron:  '0 6 * * *'
