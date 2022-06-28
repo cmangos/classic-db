@@ -1,6 +1,7 @@
 name: Build Release
 
 on:
+  push:
   schedule:
     # every day at 6am
     - cron:  '0 6 * * *'
@@ -190,18 +191,23 @@ jobs:
 
       - name: Preparing assets
         run: |
-          7z a -tzip "${{github.workspace}}\${{env.EXPENSION_NAME}}-db-mysql-server.zip" "${{env.WORK_FOLDER}}"
-          7z a -tzip "${{github.workspace}}\${{env.EXPENSION_NAME}}-world-db.zip" "${{env.FINAL_SQL_FOLDER}}\${{env.WORLD_DB_NAME}}.sql"
-          7z a -tzip "${{github.workspace}}\${{env.EXPENSION_NAME}}-all-db.zip" "${{env.FINAL_SQL_FOLDER}}\*.sql"
+          md -Force "${{github.workspace}}\releases"
+          7z a -tzip "${{github.workspace}}\releases\${{env.EXPENSION_NAME}}-db-mysql-server.zip" "${{env.WORK_FOLDER}}"
+          7z a -tzip "${{github.workspace}}\releases\${{env.EXPENSION_NAME}}-world-db.zip" "${{env.FINAL_SQL_FOLDER}}\${{env.WORLD_DB_NAME}}.sql"
+          7z a -tzip "${{github.workspace}}\releases\${{env.EXPENSION_NAME}}-all-db.zip" "${{env.FINAL_SQL_FOLDER}}\*.sql"
 
-      - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@2.2.1
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
+      - name: Upload snapshot
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: ${{ secrets.PUSH_RELEASE_TOKEN }}
-          file: "${{github.workspace}}\\*.zip"
-          tag: latest
-          overwrite: true
-          file_glob: true
+          repo_token: "${{ secrets.PUSH_RELEASE_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build(${{ steps.date.outputs.date }})"
+          files: releases
 
   notify-success:
     name: Discord release successfully notification
@@ -234,7 +240,7 @@ jobs:
             - **All exported sql (You can directly apply them to their respective DB):** [Latest sql file](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-all-db.zip)
             - **World sql (You can directly apply it to world DB):** [Latest sql file](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-world-db.zip)
             - **Ready to use mysql server (root password is cmangos, dont forget to change it):** [For windows x64](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-db-mysql-server.zip)
-          footer: Thank @${{github.event.pusher.name}}!
+          footer: By CMaNGOS team!
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
           avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
 
