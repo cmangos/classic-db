@@ -204,7 +204,7 @@ jobs:
         with:
           repo_token: "${{ secrets.PUSH_RELEASE_TOKEN }}"
           automatic_release_tag: "latest"
-          prerelease: true
+          prerelease: false
           title: "Development Build(${{ steps.date.outputs.date }})"
           files: releases
 
