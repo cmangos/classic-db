@@ -8,6 +8,7 @@ EndDBScriptData */
 SET @CGUID := 4700000; -- creatures
 SET @OGUID := 4700000; -- gameobjects
 SET @PGUID := 45400; -- pools
+SET @SGUID := 4700000; -- spawngroup
 
 -- =========
 -- CREATURES
@@ -779,18 +780,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+16, 2042, 47, 2039.44, 1700.29, 61.0109, -2.49582, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Fadeleaf
 (@OGUID+17, 2042, 47, 2143.84, 1501.71, 72.8711, 3.10665, 0, 0, 0.999847, 0.0174693, 86400, 86400, 100, 1), -- Fadeleaf
 (@OGUID+18, 2042, 47, 2207.17, 1846.86, 60.9423, 2.33874, 0, 0, 0.920505, 0.390732, 86400, 86400, 100, 1), -- Fadeleaf
--- 2042
-(@OGUID+21, 1734, 47, 2175.92, 1714.05, 55.2663, -1.81514, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Gold Vein
-(@OGUID+22, 1734, 47, 2111.859, 1703.266, 81.62446, 4.468043, 0, 0, -0.7880106, 0.6156617, 86400, 86400, 100, 1), -- Gold Vein
--- 1734
-(@OGUID+25, 1735, 47, 2097.83, 1864.54, 52.5586, 0.680678, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Iron Deposit
-(@OGUID+26, 1735, 47, 2128.49, 1922.27, 68.3568, -2.72271, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Iron Deposit
-(@OGUID+27, 1735, 47, 2166.68, 1998.86, 62.0029, -0.977384, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Iron Deposit
-(@OGUID+28, 1735, 47, 2170.717, 1882.292, 73.03286, 0.2712798, 0, 0, 0.1352243, 0.990815, 86400, 86400, 100, 1), -- Iron Deposit
-(@OGUID+29, 1735, 47, 2128.257, 2016.687, 65.90177, 5.707228, 0, 0, -0.2840147, 0.9588199, 86400, 86400, 100, 1), -- Iron Deposit
-(@OGUID+30, 1735, 47, 2120.08, 1781.03, 49.4096, 1.29154, 0, 0, 0.601814, 0.798636, 86400, 86400, 100, 1), -- Iron Deposit
-(@OGUID+31, 1735, 47, 2036.34, 1845.86, 56.4932, 5.16618, 0, 0, -0.529919, 0.848048, 86400, 86400, 100, 1), -- Iron Deposit
-(@OGUID+32, 1735, 47, 2170.38, 1883.71, 73.6948, 5.32326, 0, 0, -0.461748, 0.887011, 86400, 86400, 100, 1), -- Iron Deposit
 -- 1735
 (@OGUID+34, 11898, 47, 1734.57, 1372.33, 85.4053, 0.061086, 0, 0, 0, 0, 3600, 3600, 100, 1), -- Mesa Elevator
 (@OGUID+35, 11899, 47, 1729.23, 1350.39, -44.1443, -0.18326, 0, 0, 0, 0, 3600, 3600, 100, 1), -- Mesa Elevator
@@ -862,7 +851,28 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+104, 74447, 47, 2133.86, 1709.01, 80.5036, 4.0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Iron Bound Chest		// xyz guessed
 (@OGUID+105, 74448, 47, 2133.86, 1709.01, 80.5036, 4.0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Solid Chest		// xyz guessed
 (@OGUID+106, 74447, 47, 2193.35, 1985.04, 56.3458, -2.19912, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+107, 74448, 47, 2193.35, 1985.04, 56.3458, -2.19912, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Large Solid Chest
+(@OGUID+107, 74448, 47, 2193.35, 1985.04, 56.3458, -2.19912, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Solid Chest
+
+-- 1733 | 1734 | 1735
+(@OGUID + 110, 0, 47, 2041.6707763671875, 1541.7465820312500, 65.69308471679687500, 1.850048899650573730, 0, 0, 0.798635482788085937, 0.601815044879913330, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 111, 0, 47, 2120.0769042968750, 1781.0258789062500, 49.40962600708007812, 1.291541695594787597, 0, 0, 0.601814270019531250, 0.798636078834533691, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 112, 0, 47, 2024.3602294921875, 1721.4765625000000, 61.25605010986328125, 0.628316879272460937, 0, 0, 0.309016227722167968, 0.951056778430938720, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 113, 0, 47, 2175.9179687500000, 1714.0461425781250, 55.26628494262695312, 4.468043327331542968, 0, 0, -0.78801059722900390, 0.615661680698394775, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+
+(@OGUID + 120, 0, 47, 2036.3378906250000, 1845.8565673828125, 56.49320602416992187, 5.166176319122314453, 0, 0, -0.52991867065429687, 0.848048448562622070, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 121, 0, 47, 2045.9125976562500, 1882.2242431640625, 57.76100540161132812, 2.740161895751953125, 0, 0, 0.979924201965332031, 0.199370384216308593, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 122, 0, 47, 2131.6835937500000, 1863.8668212890625, 55.92829895019531250, 0.122172988951206207, 0, 0, 0.061048507690429687, 0.998134791851043701, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 123, 0, 47, 2097.8347167968750, 1864.5396728515625, 52.55863571166992187, 0.680676698684692382, 0, 0, 0.333806037902832031, 0.942641794681549072, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+
+(@OGUID + 130, 0, 47, 2128.4921875000000, 1922.2672119140625, 68.35682678222656250, 3.560472726821899414, 0, 0, -0.97814750671386718, 0.207912087440490722, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 131, 0, 47, 2137.6943359375000, 1906.0825195312500, 71.46797180175781250, 3.228858947753906250, 0, 0, -0.99904823303222656, 0.043619260191917419, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 132, 0, 47, 2106.1533203125000, 2016.0100097656250, 65.32147979736328125, 0.593410074710845947, 0, 0, 0.292370796203613281, 0.956305027008056640, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 133, 0, 47, 2170.3801269531250, 1883.7153320312500, 73.69483947753906250, 5.323255538940429687, 0, 0, -0.46174812316894531, 0.887011110782623291, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+
+(@OGUID + 140, 0, 47, 2128.2570800781250, 2016.6871337890625, 65.90177154541015625, 5.707228183746337890, 0, 0, -0.28401470184326171, 0.958819925785064697, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 141, 0, 47, 2166.6838378906250, 1998.8618164062500, 62.00290298461914062, 5.305802345275878906, 0, 0, -0.46947097778320312, 0.882947921752929687, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 142, 0, 47, 2194.7416992187500, 1990.3529052734375, 56.56264114379882812, 0.244345575571060180, 0, 0, 0.121869087219238281, 0.992546200752258300, 604800, 604800, 100, 1), -- Iron Deposit | Silver Vein | Gold Vein
+(@OGUID + 143, 0, 47, 2058.5822753906250, 1947.8632812500000, 61.66619873046875000, 1.692969322204589843, 0, 0, 0.748955726623535156, 0.662620067596435546, 604800, 604800, 100, 1); -- Iron Deposit | Silver Vein | Gold Vein
 
 -- ======
 -- EVENTS
@@ -890,8 +900,6 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 -- gameobjects
 (@PGUID+51, 6, 'Razorfen Kraul - Briarthorn (1621)'),
 (@PGUID+52, 2, 'Razorfen Kraul - Fadeleaf (2042)'),
-(@PGUID+61, 1, 'Razorfen Kraul - Gold Vein (1734)'),
-(@PGUID+62, 3, 'Razorfen Kraul - Iron Deposit (1735)'),
 (@PGUID+90, 2, 'Razorfen Kraul - Master Chest Pool'),
 (@PGUID+91, 1, 'Razorfen Kraul - Large Iron Bound/Solid Chest #1'),
 (@PGUID+92, 1, 'Razorfen Kraul - Large Iron Bound/Solid Chest #2'),
@@ -924,16 +932,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+16, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
 (@OGUID+17, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
 (@OGUID+18, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
-(@OGUID+21, @PGUID+61, 0, 'Razorfen Kraul - Gold Vein (1734)'),
-(@OGUID+22, @PGUID+61, 0, 'Razorfen Kraul - Gold Vein (1734)'),
-(@OGUID+25, @PGUID+62, 0, 'Razorfen Kraul - Iron Deposit (1735)'),
-(@OGUID+26, @PGUID+62, 0, 'Razorfen Kraul - Iron Deposit (1735)'),
-(@OGUID+27, @PGUID+62, 0, 'Razorfen Kraul - Iron Deposit (1735)'),
-(@OGUID+28, @PGUID+62, 0, 'Razorfen Kraul - Iron Deposit (1735)'),
-(@OGUID+29, @PGUID+62, 0, 'Razorfen Kraul - Iron Deposit (1735)'),
-(@OGUID+30, @PGUID+62, 0, 'Razorfen Kraul - Iron Deposit (1735)'),
-(@OGUID+31, @PGUID+62, 0, 'Razorfen Kraul - Iron Deposit (1735)'),
-(@OGUID+32, @PGUID+62, 0, 'Razorfen Kraul - Iron Deposit (1735)'),
 (@OGUID+96, @PGUID+91, 0, 'Razorfen Kraul - Large Iron Bound Chest (74447)'),
 (@OGUID+97, @PGUID+91, 0, 'Razorfen Kraul - Large Solid Chest (74448)'),
 (@OGUID+98, @PGUID+92, 0, 'Razorfen Kraul - Large Iron Bound Chest (74447)'),
@@ -948,6 +946,54 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+107, @PGUID+96, 0, 'Razorfen Kraul - Large Solid Chest (74448)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+
+-- ===========
+-- SPAWNGROUPS
+-- ===========
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGUID + 00, 'Razorfen Kraul - Iron Deposit | Silver Vein | Gold Vein (1) Ore 000', 1, 1, 0, 0),
+(@SGUID + 01, 'Razorfen Kraul - Iron Deposit | Silver Vein | Gold Vein (1) Ore 001', 1, 1, 0, 0),
+(@SGUID + 02, 'Razorfen Kraul - Iron Deposit | Silver Vein | Gold Vein (1) Ore 002', 1, 1, 0, 0),
+(@SGUID + 03, 'Razorfen Kraul - Iron Deposit | Silver Vein | Gold Vein (1) Ore 003', 1, 1, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGUID + 00, @OGUID + 110, -1),
+(@SGUID + 00, @OGUID + 111, -1),
+(@SGUID + 00, @OGUID + 112, -1),
+(@SGUID + 00, @OGUID + 113, -1),
+
+(@SGUID + 01, @OGUID + 120, -1),
+(@SGUID + 01, @OGUID + 121, -1),
+(@SGUID + 01, @OGUID + 122, -1),
+(@SGUID + 01, @OGUID + 123, -1),
+
+(@SGUID + 02, @OGUID + 130, -1),
+(@SGUID + 02, @OGUID + 131, -1),
+(@SGUID + 02, @OGUID + 132, -1),
+(@SGUID + 02, @OGUID + 133, -1),
+
+(@SGUID + 03, @OGUID + 140, -1),
+(@SGUID + 03, @OGUID + 141, -1),
+(@SGUID + 03, @OGUID + 142, -1),
+(@SGUID + 03, @OGUID + 143, -1);
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGUID + 00, 1733, 0, 0, 5),
+(@SGUID + 00, 1734, 0, 0, 5),
+(@SGUID + 00, 1735, 0, 0, 0),
+
+(@SGUID + 01, 1733, 0, 0, 5),
+(@SGUID + 01, 1734, 0, 0, 5),
+(@SGUID + 01, 1735, 0, 0, 0),
+
+(@SGUID + 02, 1733, 0, 0, 5),
+(@SGUID + 02, 1734, 0, 0, 5),
+(@SGUID + 02, 1735, 0, 0, 0),
+
+(@SGUID + 03, 1733, 0, 0, 5),
+(@SGUID + 03, 1734, 0, 0, 5),
+(@SGUID + 03, 1735, 0, 0, 0);
 
 -- =========
 -- DBSCRIPTS
@@ -964,5 +1010,3 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
-
-
