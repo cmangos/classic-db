@@ -764,11 +764,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
--- 1621
-(@OGUID+15, 2042, 47, 2035.23, 1525.38, 80.6839, 1.16937, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Fadeleaf
-(@OGUID+16, 2042, 47, 2039.44, 1700.29, 61.0109, -2.49582, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Fadeleaf
-(@OGUID+17, 2042, 47, 2143.84, 1501.71, 72.8711, 3.10665, 0, 0, 0.999847, 0.0174693, 86400, 86400, 100, 1), -- Fadeleaf
-(@OGUID+18, 2042, 47, 2207.17, 1846.86, 60.9423, 2.33874, 0, 0, 0.920505, 0.390732, 86400, 86400, 100, 1), -- Fadeleaf
 -- 1735
 (@OGUID+34, 11898, 47, 1734.57, 1372.33, 85.4053, 0.061086, 0, 0, 0, 0, 3600, 3600, 100, 1), -- Mesa Elevator
 (@OGUID+35, 11899, 47, 1729.23, 1350.39, -44.1443, -0.18326, 0, 0, 0, 0, 3600, 3600, 100, 1), -- Mesa Elevator
@@ -889,7 +884,17 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 
 (@OGUID + 220, 1621, 47, 2196.1613769531250, 1913.3197021484375, 70.94791412353515625, 5.358161926269531250, 0, 0, -0.44619750976562500, 0.894934535026550292, 604800, 604800, 100, 1), -- Briarthorn
 (@OGUID + 221, 1621, 47, 2174.5239257812500, 1893.2042236328125, 71.34118652343750000, 6.265733242034912109, 0, 0, -0.00872611999511718, 0.999961912631988525, 604800, 604800, 100, 1), -- Briarthorn
-(@OGUID + 222, 1621, 47, 2210.5559082031250, 1881.9587402343750, 71.26172637939453125, 3.909541368484497070, 0, 0, -0.92718315124511718, 0.374608308076858520, 604800, 604800, 100, 1); -- Briarthorn
+(@OGUID + 222, 1621, 47, 2210.5559082031250, 1881.9587402343750, 71.26172637939453125, 3.909541368484497070, 0, 0, -0.92718315124511718, 0.374608308076858520, 604800, 604800, 100, 1), -- Briarthorn
+
+-- 2042
+(@OGUID + 230, 2042, 47, 2143.8449707031250, 1501.7114257812500, 72.87105560302734375, 3.106652259826660156, 0, 0, 0.999847412109375000, 0.017469281330704689, 604800, 604800, 100, 1), -- Fadeleaf
+(@OGUID + 231, 2042, 47, 2129.7797851562500, 1435.7066650390625, 65.46332550048828125, 0.715584874153137207, 0, 0, 0.350207328796386718, 0.936672210693359375, 604800, 604800, 100, 1), -- Fadeleaf
+(@OGUID + 232, 2042, 47, 2039.4438476562500, 1700.2913818359375, 61.01087188720703125, 3.787367343902587890, 0, 0, -0.94832324981689453, 0.317305892705917358, 604800, 604800, 100, 1), -- Fadeleaf
+(@OGUID + 233, 2042, 47, 2178.9870605468750, 1803.0064697265625, 64.14132690429687500, 4.799657344818115234, 0, 0, -0.67558956146240234, 0.737277925014495849, 604800, 604800, 100, 1), -- Fadeleaf
+
+(@OGUID + 240, 2042, 47, 2035.2250976562500, 1525.3786621093750, 80.68386840820312500, 1.169368624687194824, 0, 0, 0.551936149597167968, 0.833886384963989257, 604800, 604800, 100, 1), -- Fadeleaf
+(@OGUID + 241, 2042, 47, 2207.1711425781250, 1846.8585205078125, 60.94226074218750000, 2.338739633560180664, 0, 0, 0.920504570007324218, 0.390731811523437500, 604800, 604800, 100, 1), -- Fadeleaf
+(@OGUID + 242, 2042, 47, 2207.0012207031250, 1594.4146728515625, 80.88671112060546875, 4.991643905639648437, 0, 0, -0.60181427001953125, 0.798636078834533691, 604800, 604800, 100, 1); -- Fadeleaf
 
 -- ======
 -- EVENTS
@@ -907,9 +912,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Razorfen Kraul - Earthcaller Halmgar (4842)'),
-(@PGUID+2, 1, 'Razorfen Kraul - Blind Hunter (4425)'),
--- gameobjects
-(@PGUID+52, 2, 'Razorfen Kraul - Fadeleaf (2042)');
+(@PGUID+2, 1, 'Razorfen Kraul - Blind Hunter (4425)');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+129, @PGUID+1, 70, 'Razorfen Kraul - Alternate creature to Halmgar (4842)'),
@@ -919,11 +922,7 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
-INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+15, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
-(@OGUID+16, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
-(@OGUID+17, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
-(@OGUID+18, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)');
+-- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
@@ -945,7 +944,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGUID + 08, 'Razorfen Kraul - Briarthorn (1) Herb 002', 1, 1, 0, 0),
 (@SGUID + 09, 'Razorfen Kraul - Briarthorn (1) Herb 003', 1, 1, 0, 0),
 (@SGUID + 10, 'Razorfen Kraul - Briarthorn (1) Herb 004', 1, 1, 0, 0),
-(@SGUID + 11, 'Razorfen Kraul - Briarthorn (1) Herb 005', 1, 1, 0, 0);
+(@SGUID + 11, 'Razorfen Kraul - Briarthorn (1) Herb 005', 1, 1, 0, 0),
+
+(@SGUID + 12, 'Razorfen Kraul - Fadeleaf (1) Herb 000', 1, 1, 0, 0),
+(@SGUID + 13, 'Razorfen Kraul - Fadeleaf (1) Herb 001', 1, 1, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGUID + 00, @OGUID + 110, -1), -- Iron Deposit | Silver Vein | Gold Vein
@@ -1004,7 +1006,16 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGUID + 11, @OGUID + 220, -1), -- Briarthorn
 (@SGUID + 11, @OGUID + 221, -1), -- Briarthorn
-(@SGUID + 11, @OGUID + 222, -1); -- Briarthorn
+(@SGUID + 11, @OGUID + 222, -1), -- Briarthorn
+
+(@SGUID + 12, @OGUID + 230, -1), -- Fadeleaf
+(@SGUID + 12, @OGUID + 231, -1), -- Fadeleaf
+(@SGUID + 12, @OGUID + 232, -1), -- Fadeleaf
+(@SGUID + 12, @OGUID + 233, -1), -- Fadeleaf
+
+(@SGUID + 13, @OGUID + 240, -1), -- Fadeleaf
+(@SGUID + 13, @OGUID + 241, -1), -- Fadeleaf
+(@SGUID + 13, @OGUID + 242, -1); -- Fadeleaf
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGUID + 00, 1733, 0, 0, 5), -- Silver Vein
