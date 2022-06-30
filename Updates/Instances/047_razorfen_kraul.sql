@@ -764,17 +764,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 1621, 47, 2073.56, 1600.3, 63.6955, -1.62316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+2, 1621, 47, 2096.28, 1557.81, 81.4785, -0.418879, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+3, 1621, 47, 2139.33, 1404.52, 73.725, 2.00713, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+4, 1621, 47, 2097.27, 1746.72, 78.7565, -1.93731, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+5, 1621, 47, 2026.93, 1858.32, 56.4944, 0.715585, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+6, 1621, 47, 2210.56, 1881.96, 71.2617, -2.37365, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+7, 1621, 47, 2030.7, 1554.6, 64.5662, 5.23599, 0, 0, -0.5, 0.866025, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+8, 1621, 47, 2009.76, 1657.79, 80.9566, 6.0912, 0, 0, -0.0958452, 0.995396, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+9, 1621, 47, 2055.53, 1735.47, 77.149, 3.94445, 0, 0, -0.920505, 0.390732, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+10, 1621, 47, 2137.35, 1791.76, 48.6783, 5.98648, 0, 0, -0.147809, 0.989016, 86400, 86400, 100, 1), -- Briarthorn
-(@OGUID+11, 1621, 47, 2174.52, 1893.2, 71.3412, 6.26573, 0, 0, -0.00872612, 0.999962, 86400, 86400, 100, 1), -- Briarthorn
 -- 1621
 (@OGUID+15, 2042, 47, 2035.23, 1525.38, 80.6839, 1.16937, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Fadeleaf
 (@OGUID+16, 2042, 47, 2039.44, 1700.29, 61.0109, -2.49582, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Fadeleaf
@@ -866,11 +855,41 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID + 150, 0, 47, 2134.2141113281250, 1710.1011962890625, 80.66573333740234375, 3.979354858398437500, 0, 0, -0.91354465484619140, 0.406738430261611938, 604800, 604800, 100, 1), -- Large Iron Bound Chest | Large Solid Chest
 (@OGUID + 151, 0, 47, 2111.4533691406250, 1613.8300781250000, 81.18890380859375000, 4.293513298034667968, 0, 0, -0.83866977691650390, 0.544640243053436279, 604800, 604800, 100, 1), -- Large Iron Bound Chest | Large Solid Chest
 (@OGUID + 152, 0, 47, 2202.0361328125000, 1807.3730468750000, 64.31261444091796875, 2.146752834320068359, 0, 0, 0.878816604614257812, 0.477159708738327026, 604800, 604800, 100, 1), -- Large Iron Bound Chest | Large Solid Chest
-(@OGUID + 153, 0, 47, 2090.2365722656250, 1465.264404296875, 73.867446899414062500, 5.009094715118408203, 0, 0, -0.59482288360595703, 0.803856790065765380, 604800, 604800, 100, 1), -- Large Iron Bound Chest | Large Solid Chest
+(@OGUID + 153, 0, 47, 2090.2365722656250, 1465.2644042968750, 73.86744689941406250, 5.009094715118408203, 0, 0, -0.59482288360595703, 0.803856790065765380, 604800, 604800, 100, 1), -- Large Iron Bound Chest | Large Solid Chest
 
 (@OGUID + 160, 0, 47, 2193.3520507812500, 1985.0421142578125, 56.34576416015625000, 4.084071159362792968, 0, 0, -0.89100646972656250, 0.453990638256072998, 604800, 604800, 100, 1), -- Large Iron Bound Chest | Large Solid Chest
 (@OGUID + 161, 0, 47, 2199.2236328125000, 1654.6453857421875, 86.15415191650390625, 4.904376029968261718, 0, 0, -0.63607788085937500, 0.771624863147735595, 604800, 604800, 100, 1), -- Large Iron Bound Chest | Large Solid Chest
-(@OGUID + 162, 0, 47, 2127.7285156250000, 1607.6392822265625, 81.47574615478515625, 1.308995485305786132, 0, 0, 0.608760833740234375, 0.793353796005249023, 604800, 604800, 100, 1); -- Large Iron Bound Chest | Large Solid Chest
+(@OGUID + 162, 0, 47, 2127.7285156250000, 1607.6392822265625, 81.47574615478515625, 1.308995485305786132, 0, 0, 0.608760833740234375, 0.793353796005249023, 604800, 604800, 100, 1), -- Large Iron Bound Chest | Large Solid Chest
+
+-- 1621
+(@OGUID + 170, 1621, 47, 2139.3317871093750, 1404.5207519531250, 73.72502899169921875, 2.007128477096557617, 0, 0, 0.843391418457031250, 0.537299633026123046, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 171, 1621, 47, 2122.3110351562500, 1497.2717285156250, 72.63242340087890625, 4.764749526977539062, 0, 0, -0.68835449218750000, 0.725374460220336914, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 172, 1621, 47, 2108.1967773437500, 1452.0278320312500, 73.83592987060546875, 0.383971005678176879, 0, 0, 0.190808296203613281, 0.981627285480499267, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 173, 1621, 47, 2160.3254394531250, 1434.6793212890625, 73.86994171142578125, 5.986480236053466796, 0, 0, -0.14780902862548828, 0.989015936851501464, 604800, 604800, 100, 1), -- Briarthorn
+
+(@OGUID + 180, 1621, 47, 2097.2744140625000, 1746.7209472656250, 78.75654602050781250, 4.345870018005371093, 0, 0, -0.82412624359130859, 0.566406130790710449, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 181, 1621, 47, 2139.1105957031250, 1704.6265869140625, 80.95877838134765625, 2.844882726669311523, 0, 0, 0.989015579223632812, 0.147811368107795715, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 182, 1621, 47, 2055.5344238281250, 1735.4737548828125, 77.14895629882812500, 3.944445848464965820, 0, 0, -0.92050457000732421, 0.390731811523437500, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 183, 1621, 47, 2127.3571777343750, 1625.1473388671875, 81.85197448730468750, 5.427974700927734375, 0, 0, -0.41469287872314453, 0.909961462020874023, 604800, 604800, 100, 1), -- Briarthorn
+
+(@OGUID + 190, 1621, 47, 2009.7583007812500, 1657.7873535156250, 80.95658111572265625, 6.091200351715087890, 0, 0, -0.09584522247314453, 0.995396256446838378, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 191, 1621, 47, 2096.2817382812500, 1557.8071289062500, 81.47847747802734375, 5.864306926727294921, 0, 0, -0.20791149139404296, 0.978147625923156738, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 192, 1621, 47, 2140.5944824218750, 1593.3665771484375, 81.66323852539062500, 0.907570242881774902, 0, 0, 0.438370704650878906, 0.898794233798980712, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 193, 1621, 47, 2096.3996582031250, 1593.9368896484375, 80.50411987304687500, 6.195919513702392578, 0, 0, -0.04361915588378906, 0.999048233032226562, 604800, 604800, 100, 1), -- Briarthorn
+
+(@OGUID + 200, 1621, 47, 2030.6964111328125, 1554.6051025390625, 64.56617736816406250, 5.235987663269042968, 0, 0, -0.50000000000000000, 0.866025388240814208, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 201, 1621, 47, 2159.0354003906250, 1735.2752685546875, 53.41864395141601562, 2.460912704467773437, 0, 0, 0.942641258239746093, 0.333807557821273803, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 202, 1621, 47, 2096.0402832031250, 1678.9782714843750, 59.68147659301757812, 4.939284324645996093, 0, 0, -0.62251377105712890, 0.782608807086944580, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 203, 1621, 47, 2073.5603027343750, 1600.2965087890625, 63.69552230834960937, 4.660029888153076171, 0, 0, -0.72537422180175781, 0.688354730606079101, 604800, 604800, 100, 1), -- Briarthorn
+
+(@OGUID + 210, 1621, 47, 2073.1176757812500, 1786.7517089843750, 56.03165817260742187, 2.216565132141113281, 0, 0, 0.894933700561523437, 0.446199178695678710, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 211, 1621, 47, 2026.9338378906250, 1858.3153076171875, 56.49441528320312500, 0.715584874153137207, 0, 0, 0.350207328796386718, 0.936672210693359375, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 212, 1621, 47, 2137.3527832031250, 1791.7569580078125, 48.67834091186523437, 5.986480236053466796, 0, 0, -0.14780902862548828, 0.989015936851501464, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 213, 1621, 47, 2179.8247070312500, 1819.1920166015625, 61.70612335205078125, 4.014260292053222656, 0, 0, -0.90630722045898437, 0.422619491815567016, 604800, 604800, 100, 1), -- Briarthorn
+
+(@OGUID + 220, 1621, 47, 2196.1613769531250, 1913.3197021484375, 70.94791412353515625, 5.358161926269531250, 0, 0, -0.44619750976562500, 0.894934535026550292, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 221, 1621, 47, 2174.5239257812500, 1893.2042236328125, 71.34118652343750000, 6.265733242034912109, 0, 0, -0.00872611999511718, 0.999961912631988525, 604800, 604800, 100, 1), -- Briarthorn
+(@OGUID + 222, 1621, 47, 2210.5559082031250, 1881.9587402343750, 71.26172637939453125, 3.909541368484497070, 0, 0, -0.92718315124511718, 0.374608308076858520, 604800, 604800, 100, 1); -- Briarthorn
 
 -- ======
 -- EVENTS
@@ -890,7 +909,6 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Razorfen Kraul - Earthcaller Halmgar (4842)'),
 (@PGUID+2, 1, 'Razorfen Kraul - Blind Hunter (4425)'),
 -- gameobjects
-(@PGUID+51, 6, 'Razorfen Kraul - Briarthorn (1621)'),
 (@PGUID+52, 2, 'Razorfen Kraul - Fadeleaf (2042)');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
@@ -902,17 +920,6 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+1, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+2, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+3, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+4, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+5, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+6, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+7, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+8, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+9, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+10, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
-(@OGUID+11, @PGUID+51, 0, 'Razorfen Kraul - Briarthorn (1621)'),
 (@OGUID+15, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
 (@OGUID+16, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
 (@OGUID+17, @PGUID+52, 0, 'Razorfen Kraul - Fadeleaf (2042)'),
@@ -931,60 +938,96 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGUID + 03, 'Razorfen Kraul - Iron Deposit | Silver Vein | Gold Vein (1) Ore 003', 1, 1, 0, 0),
 
 (@SGUID + 04, 'Razorfen Kraul - Large Iron Bound Chest | Large Solid Chest (1) Chest 000', 1, 1, 0, 0),
-(@SGUID + 05, 'Razorfen Kraul - Large Iron Bound Chest | Large Solid Chest (1) Chest 001', 1, 1, 0, 0);
+(@SGUID + 05, 'Razorfen Kraul - Large Iron Bound Chest | Large Solid Chest (1) Chest 001', 1, 1, 0, 0),
+
+(@SGUID + 06, 'Razorfen Kraul - Briarthorn (1) Herb 000', 1, 1, 0, 0),
+(@SGUID + 07, 'Razorfen Kraul - Briarthorn (1) Herb 001', 1, 1, 0, 0),
+(@SGUID + 08, 'Razorfen Kraul - Briarthorn (1) Herb 002', 1, 1, 0, 0),
+(@SGUID + 09, 'Razorfen Kraul - Briarthorn (1) Herb 003', 1, 1, 0, 0),
+(@SGUID + 10, 'Razorfen Kraul - Briarthorn (1) Herb 004', 1, 1, 0, 0),
+(@SGUID + 11, 'Razorfen Kraul - Briarthorn (1) Herb 005', 1, 1, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGUID + 00, @OGUID + 110, -1),
-(@SGUID + 00, @OGUID + 111, -1),
-(@SGUID + 00, @OGUID + 112, -1),
-(@SGUID + 00, @OGUID + 113, -1),
+(@SGUID + 00, @OGUID + 110, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 00, @OGUID + 111, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 00, @OGUID + 112, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 00, @OGUID + 113, -1), -- Iron Deposit | Silver Vein | Gold Vein
 
-(@SGUID + 01, @OGUID + 120, -1),
-(@SGUID + 01, @OGUID + 121, -1),
-(@SGUID + 01, @OGUID + 122, -1),
-(@SGUID + 01, @OGUID + 123, -1),
+(@SGUID + 01, @OGUID + 120, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 01, @OGUID + 121, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 01, @OGUID + 122, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 01, @OGUID + 123, -1), -- Iron Deposit | Silver Vein | Gold Vein
 
-(@SGUID + 02, @OGUID + 130, -1),
-(@SGUID + 02, @OGUID + 131, -1),
-(@SGUID + 02, @OGUID + 132, -1),
-(@SGUID + 02, @OGUID + 133, -1),
+(@SGUID + 02, @OGUID + 130, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 02, @OGUID + 131, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 02, @OGUID + 132, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 02, @OGUID + 133, -1), -- Iron Deposit | Silver Vein | Gold Vein
 
-(@SGUID + 03, @OGUID + 140, -1),
-(@SGUID + 03, @OGUID + 141, -1),
-(@SGUID + 03, @OGUID + 142, -1),
-(@SGUID + 03, @OGUID + 143, -1),
+(@SGUID + 03, @OGUID + 140, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 03, @OGUID + 141, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 03, @OGUID + 142, -1), -- Iron Deposit | Silver Vein | Gold Vein
+(@SGUID + 03, @OGUID + 143, -1), -- Iron Deposit | Silver Vein | Gold Vein
 
-(@SGUID + 04, @OGUID + 150, -1),
-(@SGUID + 04, @OGUID + 151, -1),
-(@SGUID + 04, @OGUID + 152, -1),
-(@SGUID + 04, @OGUID + 153, -1),
+(@SGUID + 04, @OGUID + 150, -1), -- Large Iron Bound Chest | Large Solid Chest
+(@SGUID + 04, @OGUID + 151, -1), -- Large Iron Bound Chest | Large Solid Chest
+(@SGUID + 04, @OGUID + 152, -1), -- Large Iron Bound Chest | Large Solid Chest
+(@SGUID + 04, @OGUID + 153, -1), -- Large Iron Bound Chest | Large Solid Chest
 
-(@SGUID + 05, @OGUID + 160, -1),
-(@SGUID + 05, @OGUID + 161, -1),
-(@SGUID + 05, @OGUID + 162, -1);
+(@SGUID + 05, @OGUID + 160, -1), -- Large Iron Bound Chest | Large Solid Chest
+(@SGUID + 05, @OGUID + 161, -1), -- Large Iron Bound Chest | Large Solid Chest
+(@SGUID + 05, @OGUID + 162, -1), -- Large Iron Bound Chest | Large Solid Chest
+
+(@SGUID + 06, @OGUID + 170, -1), -- Briarthorn
+(@SGUID + 06, @OGUID + 171, -1), -- Briarthorn
+(@SGUID + 06, @OGUID + 172, -1), -- Briarthorn
+(@SGUID + 06, @OGUID + 173, -1), -- Briarthorn
+
+(@SGUID + 07, @OGUID + 180, -1), -- Briarthorn
+(@SGUID + 07, @OGUID + 181, -1), -- Briarthorn
+(@SGUID + 07, @OGUID + 182, -1), -- Briarthorn
+(@SGUID + 07, @OGUID + 183, -1), -- Briarthorn
+
+(@SGUID + 08, @OGUID + 190, -1), -- Briarthorn
+(@SGUID + 08, @OGUID + 191, -1), -- Briarthorn
+(@SGUID + 08, @OGUID + 192, -1), -- Briarthorn
+(@SGUID + 08, @OGUID + 193, -1), -- Briarthorn
+
+(@SGUID + 09, @OGUID + 200, -1), -- Briarthorn
+(@SGUID + 09, @OGUID + 201, -1), -- Briarthorn
+(@SGUID + 09, @OGUID + 202, -1), -- Briarthorn
+(@SGUID + 09, @OGUID + 203, -1), -- Briarthorn
+
+(@SGUID + 10, @OGUID + 210, -1), -- Briarthorn
+(@SGUID + 10, @OGUID + 211, -1), -- Briarthorn
+(@SGUID + 10, @OGUID + 212, -1), -- Briarthorn
+(@SGUID + 10, @OGUID + 213, -1), -- Briarthorn
+
+(@SGUID + 11, @OGUID + 220, -1), -- Briarthorn
+(@SGUID + 11, @OGUID + 221, -1), -- Briarthorn
+(@SGUID + 11, @OGUID + 222, -1); -- Briarthorn
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGUID + 00, 1733, 0, 0, 5),
-(@SGUID + 00, 1734, 0, 0, 5),
-(@SGUID + 00, 1735, 0, 0, 0),
+(@SGUID + 00, 1733, 0, 0, 5), -- Silver Vein
+(@SGUID + 00, 1734, 0, 0, 5), -- Gold Vein
+(@SGUID + 00, 1735, 0, 0, 0), -- Iron Deposit
 
-(@SGUID + 01, 1733, 0, 0, 5),
-(@SGUID + 01, 1734, 0, 0, 5),
-(@SGUID + 01, 1735, 0, 0, 0),
+(@SGUID + 01, 1733, 0, 0, 5), -- Silver Vein
+(@SGUID + 01, 1734, 0, 0, 5), -- Gold Vein
+(@SGUID + 01, 1735, 0, 0, 0), -- Iron Deposit
 
-(@SGUID + 02, 1733, 0, 0, 5),
-(@SGUID + 02, 1734, 0, 0, 5),
-(@SGUID + 02, 1735, 0, 0, 0),
+(@SGUID + 02, 1733, 0, 0, 5), -- Silver Vein
+(@SGUID + 02, 1734, 0, 0, 5), -- Gold Vein
+(@SGUID + 02, 1735, 0, 0, 0), -- Iron Deposit
 
-(@SGUID + 03, 1733, 0, 0, 5),
-(@SGUID + 03, 1734, 0, 0, 5),
-(@SGUID + 03, 1735, 0, 0, 0),
+(@SGUID + 03, 1733, 0, 0, 5), -- Silver Vein
+(@SGUID + 03, 1734, 0, 0, 5), -- Gold Vein
+(@SGUID + 03, 1735, 0, 0, 0), -- Iron Deposit
 
-(@SGUID + 04, 74447, 0, 0, 0),
-(@SGUID + 04, 74448, 0, 0, 0),
+(@SGUID + 04, 74447, 0, 0, 0), -- Large Iron Bound Chest
+(@SGUID + 04, 74448, 0, 0, 0), -- Large Solid Chest
 
-(@SGUID + 05, 74447, 0, 0, 0),
-(@SGUID + 05, 74448, 0, 0, 0);
+(@SGUID + 05, 74447, 0, 0, 0), -- Large Iron Bound Chest
+(@SGUID + 05, 74448, 0, 0, 0); -- Large Solid Chest
 
 -- =========
 -- DBSCRIPTS
