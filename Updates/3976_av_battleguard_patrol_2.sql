@@ -5,8 +5,8 @@ SET @PATH_TYPE := 4;
 SET @GROUP_ID := 300001;
 
 SET @CREATURE_0 := 51949;
-SET @CREATURE_1 := 51950;
-SET @CREATURE_2 := 51951;
+SET @CREATURE_1 := 53886;
+SET @CREATURE_2 := 53887;
 
 DELETE FROM `creature` WHERE (`guid` IN (@CREATURE_0, @CREATURE_1, @CREATURE_2));
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES

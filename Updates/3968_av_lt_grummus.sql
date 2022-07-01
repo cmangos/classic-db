@@ -1,7 +1,7 @@
 
 DELETE FROM `creature` WHERE (`guid` IN ('53109'));
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
-('53109', '0', '30', '1', '0', '0', '-731.03643798828125', '-344.068267822265625', '66.6853179931640625', '0.0', '604800', '604800', '0', '0', '1', '0', '0', '4'); -- first wp, not his actual spawn position
+('53109', '0', '30', '1', '0', '0', '-579.183593750000000', '-308.314453125000000', '46.80273437500000000', '0.0', '604800', '604800', '0', '0', '1', '0', '0', '4'); -- first wp, not his actual spawn position
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 ('53109', '13145');

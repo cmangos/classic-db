@@ -5,8 +5,8 @@ SET @PATH_TYPE := 4;
 SET @GROUP_ID := 300000;
 
 SET @CREATURE_0 := 51946;
-SET @CREATURE_1 := 51947;
-SET @CREATURE_2 := 51948;
+SET @CREATURE_1 := 53884;
+SET @CREATURE_2 := 53885;
 
 UPDATE `creature_template` SET `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8.0 / 7.0) WHERE (`Entry` IN  ('14285', '14282'));
 
