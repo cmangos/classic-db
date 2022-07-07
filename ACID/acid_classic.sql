@@ -4052,16 +4052,24 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lilly (5757) - NSR
 -- Leo Sarn (5758) - NSR
 -- Gwyn Farrow (5886) - NSR
--- Corrupt Minor Manifestation of Water
-('589401','5894','9','0','100','1025','0','25','12000','18000','0','0','11','8056','1','0','0','0','0','0','0','0','0','0','Corrupt Minor Manifestation of Water - Cast Frost Shock'),
-('589402','5894','0','0','100','1025','12000','19000','18000','24000','0','0','11','122','0','0','0','0','0','0','0','0','0','0','Corrupt Minor Manifestation of Water - Cast Frost Nova'),
--- Minor Manifestation of Water (5895) - NSR
+-- Corrupt Minor Manifestation of Water 5894
+('589401','5894','0','0','100','1025','0','10000','12000','18000','0','0','11','8056','1','0','0','0','0','0','0','0','0','0','Corrupt Minor Manifestation of Water - Cast Frost Shock'),
+('589402','5894','0','0','100','1025','12000','19000','18000','24000','0','0','11','122','17','0','0','0','0','0','0','0','0','0','Corrupt Minor Manifestation of Water - Cast Frost Nova'),
+-- Minor Manifestation of Water 5895
+('589501','5895','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Minor Manifestation of Water - Set Phase 1 on Spawn'),
+('589502','5895','1','1','100','1','300000','300000','300000','300000','0','0','53','589501','0','0','0','0','0','0','0','0','0','0','Minor Manifestation of Water - Start RelayScript'),
+-- Corrupt Water Spirit 5897
+('589701','5897','30','0','100','0','5','0','0','0','0','0','53','589701','0','0','0','0','0','0','0','0','0','0','Corrupt Water Spirit - Start Relay Script'),
 -- Lake Frenzy (6033) - NSR
 -- Deathguard Podrig (6389) - NSR
 -- Astor Hadren (6497)
 -- Fenwick Thatros
 ('657001','6570','0','0','100','1025','6000','13000','14000','19000','0','0','11','18072','1','0','0','0','0','0','0','0','0','0','Fenwick Thatros - Cast Uppercut'),
 -- Innkeeper Bates (6739) - npc_innkeeper
+-- Water Spirit 6748
+('674801','6748','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Water Spirit - Set Phase 1 on Spawn'),
+('674802','6748','1','1','100','1','1000','1000','1000','1000','0','0','59','11','0','0','0','0','0','0','0','0','0','0','Water Spirit - Face Spawner'),
+('674803','6748','30','0','100','0','5','0','0','0','0','0','51','0','0','0','0','0','0','0','0','0','0','0','Water Spirit - Unpause Movement on RECEIVE_AI_EVENT'),
 -- Tiev Mordune (7007) - NSR
 -- Silverpine Deathguard (7489) - NSR
 -- Mura Runetotem (8385) - NSR
