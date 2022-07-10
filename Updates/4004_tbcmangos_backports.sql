@@ -44,5 +44,5 @@ UPDATE `areatrigger_teleport` SET `name` = 'Zul\'Gurub - Exiting' WHERE `id` = 3
 
 -- Mountaineer Boombellow is now passive towards players, unless attacked
 --  Source: http://old.wowhead.com/npc=13797#comments:id=327892
-UPDATE `creature_template` SET UnitFlags` = 64, `ExtraFlags` = `ExtraFlags`|2 WHERE `entry` = 13797; -- CREATURE_EXTRA_FLAG_NO_AGGRO_ON_SIGHT (UnitFlags 64)
+UPDATE `creature_template` SET `UnitFlags` = 64, `ExtraFlags` = `ExtraFlags`|2 WHERE `entry` = 13797; -- CREATURE_EXTRA_FLAG_NO_AGGRO_ON_SIGHT (UnitFlags 64)
 
