@@ -18834,7 +18834,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Searing Totem 2523 - TotemAI
 -- Earthbind Totem 2630 - TotemAI
 -- Ward of Laze 2667 - TotemAI
--- Advanced Target Dummy 2674 - npc_advanced_target_dummy
+-- Target Dummy 2673
+('267301','2673','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
+('267302','2673','11','0','100','0','0','0','0','0','0','0','11','4044','0','34','11','27791','0','34','0','0','0','0','Target Dummy - Cast Target Dummy Passive, Suicide on Spawn'),
+('267303','2673','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Target Dummy - Despawn 0 on Death'),
+-- Advanced Target Dummy 2674
+('267401','2674','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Advanced Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
+('267402','2674','11','0','100','0','0','0','0','0','0','0','11','4048','0','34','11','27791','0','34','0','0','0','0','Advanced Target Dummy - Cast Advanced Target Dummy Passive, Suicide on Spawn'),
+('267403','2674','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Advanced Target Dummy - Despawn 0 on Death'),
 -- Explosive Sheep 2675
 ('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
 -- Stoneclaw Totem II 3911 - TotemAI
@@ -18886,7 +18893,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1119902','11199','9','0','100','1025','0','40','1000','1500','0','0','11','17501','1','0','0','0','0','0','0','0','0','0','Crimson Cannon - Cast Cannon Fire'),
 -- Doomguard 11859
 ('1185901','11859','0','0','100','1025','0','0','30000','30000','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
--- Imp Minion 12922
+-- Reef Shark 12123
+('1212301','12123','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Reef Shark - Cast Thrash on Spawn'),
+-- Great Shark 12124
+('1212401','12124','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Great Shark - Cast Thrash on Spawn'),
+-- Mammoth Shark 12125
+('1212501','12125','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Mammoth Shark - Cast Thrash on Spawn'),
+-- Ice Totem 12141 - TotemAI
+-- Masterwork Target Dummy 12426
+('1242601','12426','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Masterwork Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
+('1242602','12426','11','0','100','0','0','0','0','0','0','0','11','19809','0','34','11','27791','0','34','0','0','0','0','Masterwork Target Dummy - Cast Masterwork Target Dummy Passive, Suicide on Spawn'),
+('1242603','12426','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Masterwork Target Dummy - Despawn 0 on Death'),
+-- Imp Minion 12922 - Aggro Texts
 ('1292201','12922','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Imp Minion - Enable Range Mode on Aggro'),
 ('1292202','12922','0','0','100','1025','1000','2000','2300','2800','0','0','11','20801','1','256','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
 -- Thornling 14362
