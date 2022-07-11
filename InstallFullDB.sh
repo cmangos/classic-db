@@ -790,6 +790,7 @@ function check_dbs_accessibility()
   local showstatus=${1:false}
   local current_error
   local UNAVAILABLE_DB=()
+  local sql=""
   ERRORS=()
   DB_WORLDDB_VERSION="0"
   DB_REALMDB_VERSION="0"
@@ -831,6 +832,21 @@ function check_dbs_accessibility()
         DB_CONTENT_RELEASE_VERSION=${BASH_REMATCH[1]}
       fi
     fi
+
+    # set DB_LAST_CONTENT_VERSION_UPDATE if found in db
+    sql="SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='$WORLD_DB_NAME' AND TABLE_NAME='db_version';"
+    #echo "$sql"
+    export MYSQL_PWD="$MYSQL_PASSWORD"
+    while read -a row
+    do
+      case "$row" in
+        *content_*)
+          #echo "data - ${row[0]}"
+          DB_LAST_CONTENT_VERSION_UPDATE=$(echo "${row[0]//[$'\n\r']}") # remove eventual carriage return
+          DB_LAST_CONTENT_VERSION_UPDATE=$(echo -n "${DB_LAST_CONTENT_VERSION_UPDATE//content_}") # remove "content_"
+          ;;
+       esac
+    done < <("$MYSQL_PATH" -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -e"$sql")
   fi
 
   if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$REALM_DB_NAME' db access, please wait...          "; fi
@@ -1481,21 +1497,6 @@ function apply_content_db()
   echo
 
   echo "> Trying to set last content update version in db"
-  DB_LAST_CONTENT_VERSION_UPDATE=""
-  local sql="SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='$WORLD_DB_NAME' AND TABLE_NAME='db_version';"
-  #echo "$sql"
-  export MYSQL_PWD="$MYSQL_PASSWORD"
-  while read -a row
-  do
-    case "$row" in
-    #echo "${row[0]}"
-      *content_*)
-        DB_LAST_CONTENT_VERSION_UPDATE=$(echo "${row[0]//[$'\n\r']}") # remove eventual carriage return
-        DB_LAST_CONTENT_VERSION_UPDATE=$(echo -n "${DB_LAST_CONTENT_VERSION_UPDATE//content_}") # remove "content_"
-        ;;
-     esac
-  done < <("$MYSQL_PATH" -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -e"$sql")
-
   sql=""
   if [[ "$DB_LAST_CONTENT_VERSION_UPDATE" = "" ]]; then
     DB_LAST_CONTENT_VERSION_UPDATE="$SOURCE_LAST_CONTENT_VERSION_UPDATE"
@@ -2619,10 +2620,11 @@ function main_menu()
     done
 
     print_header
-    echo "Source version     : [${SOURCE_CONTENT_RELEASE_VERSION}] $DB_RELEASE_TITLE"
-    echo "Last content update: [${SOURCE_LAST_CONTENT_VERSION_UPDATE}]"
+    echo "Source version            : [${SOURCE_CONTENT_RELEASE_VERSION}] $DB_RELEASE_TITLE"
+    echo "Last source content update: [${SOURCE_LAST_CONTENT_VERSION_UPDATE}]"
     get_current_source_db_version
     check_dbs_accessibility
+    echo "Database content version  : [${DB_LAST_CONTENT_VERSION_UPDATE}]"
     echo
     show_installation_status
     echo
