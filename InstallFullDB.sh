@@ -758,10 +758,12 @@ function print_mysql_connection_status()
 
 # Get current db version
 # get_current_db_version "database name" "table name"
-# result will be in CURRENT_DB_VERSION
+# result will be in CURRENT_DB_VERSION and in CURRENT_LAST_CONTENT_DB_VERSION
 function get_current_db_version()
 {
   CURRENT_DB_VERSION=""
+  CURRENT_LAST_CONTENT_DB_VERSION=""
+
   sql="SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='$1' AND TABLE_NAME='$2';"
   #echo "$sql"
   IFS=$'\n'
@@ -775,8 +777,8 @@ function get_current_db_version()
         ;;
 
       content_*)
-        DB_LAST_CONTENT_VERSION_UPDATE=$(echo "${row[0]//[$'\n\r']}") # remove eventual carriage return
-        DB_LAST_CONTENT_VERSION_UPDATE=$(echo -n "${DB_LAST_CONTENT_VERSION_UPDATE//content_}") # remove "content_"
+        CURRENT_LAST_CONTENT_DB_VERSION=$(echo "${row[0]//[$'\n\r']}") # remove eventual carriage return
+        CURRENT_LAST_CONTENT_DB_VERSION=$(echo -n "${CURRENT_LAST_CONTENT_DB_VERSION//content_}") # remove "content_"
         ;;
      esac
   done < <("$MYSQL_PATH" -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -e"$sql")
@@ -800,7 +802,6 @@ function check_dbs_accessibility()
   STATUS_CHAR_DB_FOUND=false
   STATUS_REALM_DB_FOUND=false
   STATUS_LOGS_DB_FOUND=false
-  DB_LAST_CONTENT_VERSION_UPDATE=""
   DB_CONTENT_RELEASE_VERSION=""
 
   if ! try_connect_to_db ; then
@@ -817,6 +818,7 @@ function check_dbs_accessibility()
     if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$WORLD_DB_NAME" "db_version"
     DB_WORLDDB_VERSION="$CURRENT_DB_VERSION"
+    DB_LAST_CONTENT_VERSION_UPDATE="$CURRENT_LAST_CONTENT_DB_VERSION"
     STATUS_WORLD_DB_FOUND=true
 
     #select version from db_version;
@@ -832,21 +834,6 @@ function check_dbs_accessibility()
         DB_CONTENT_RELEASE_VERSION=${BASH_REMATCH[1]}
       fi
     fi
-
-    # set DB_LAST_CONTENT_VERSION_UPDATE if found in db
-    sql="SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='$WORLD_DB_NAME' AND TABLE_NAME='db_version';"
-    #echo "$sql"
-    export MYSQL_PWD="$MYSQL_PASSWORD"
-    while read -a row
-    do
-      case "$row" in
-        *content_*)
-          #echo "data - ${row[0]}"
-          DB_LAST_CONTENT_VERSION_UPDATE=$(echo "${row[0]//[$'\n\r']}") # remove eventual carriage return
-          DB_LAST_CONTENT_VERSION_UPDATE=$(echo -n "${DB_LAST_CONTENT_VERSION_UPDATE//content_}") # remove "content_"
-          ;;
-       esac
-    done < <("$MYSQL_PATH" -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -e"$sql")
   fi
 
   if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$REALM_DB_NAME' db access, please wait...          "; fi
@@ -1498,6 +1485,12 @@ function apply_content_db()
 
   echo "> Trying to set last content update version in db"
   sql=""
+  # first update last content revision because it can be changed from previous updates
+  get_current_db_version "$WORLD_DB_NAME" "db_version"
+  DB_WORLDDB_VERSION="$CURRENT_DB_VERSION"
+  DB_LAST_CONTENT_VERSION_UPDATE="$CURRENT_LAST_CONTENT_DB_VERSION"
+
+  # if a previous content version is found delete it
   if [[ "$DB_LAST_CONTENT_VERSION_UPDATE" = "" ]]; then
     DB_LAST_CONTENT_VERSION_UPDATE="$SOURCE_LAST_CONTENT_VERSION_UPDATE"
   else
