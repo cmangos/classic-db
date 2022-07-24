@@ -129,8 +129,12 @@ UPDATE conditions SET comments=CONCAT('Player is Dead OR NOT Within ',value2,'y 
 UPDATE conditions SET comments=CONCAT('All Players in Group are Dead OR NOT Within ',value2,'y of Source') WHERE type=36 AND value1=1 AND value2 !=0 AND comments IS NULL; -- CONDITION_DEAD_OR_AWAY
 UPDATE conditions SET comments=CONCAT('All Players in Instance are Dead OR NOT Within ',value2,'y of Source') WHERE type=36 AND value1=2 AND value2 !=0 AND comments IS NULL; -- CONDITION_DEAD_OR_AWAY
 UPDATE conditions SET comments=CONCAT('Creature Source is Dead') WHERE type=36 AND value1=3 AND comments IS NULL; -- CONDITION_DEAD_OR_AWAY
-UPDATE conditions SET comments=CONCAT('Creature of Entry ',value1,' Found Alive Within ',value2,'y of Source') WHERE type=37 AND comments IS NULL; 
--- CONDITION_PVP_SCRIPT
+UPDATE conditions SET comments=CONCAT('Creature of Entry ',value1,' Found Alive Within ',value2,'y of Source') WHERE type=37 AND comments IS NULL; -- CONDITION_CREATURE_IN_RANGE
+UPDATE conditions SET comments=CONCAT('OutdoorPvP AreaID: ',value1,' IsConditionFulfilled Value: ',value2) WHERE type=38 AND comments IS NULL; -- CONDITION_PVP_SCRIPT
+UPDATE conditions SET comments=CONCAT('Equal or More than ',value2,' of Entry: ',value1) WHERE type=39 AND comments IS NULL; -- CONDITION_SPAWN_COUNT
+UPDATE conditions SET comments=CONCAT('WorldStateID: ',value1,' Event: ',value2) WHERE type=40 AND comments IS NULL; -- CONDITION_WORLD_SCRIPT
+-- CONDITION_UNUSED_7
+UPDATE conditions SET comments=CONCAT('WorldStateID: ',value1,' WorldStateConditionSign: ',value2,' otherOperand: ',value3) WHERE type=42 AND comments IS NULL; -- CONDITION_WORLDSTATE
 
 -- NOT, OR, AND (Run a few times to completely fill out the most complex conditions)
 UPDATE conditions t, (SELECT DISTINCT condition_entry, comments FROM conditions) t1 -- CONDITION_NOT
