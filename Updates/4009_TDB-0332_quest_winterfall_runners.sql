@@ -17,7 +17,7 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 (@PATH,0,3,6395.5728,-2536.7476,541.6417,100,0,0),
 (@PATH,0,4,6395.5728,-2536.7476,541.6417,2.426007747650146484,1000,929801);
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (929800, 929801, 1437200);
+DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (929800, 929801, 1437200, 1091600);
 INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 (929800,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Pause Waypoints'),
 (929800,0,1,0,0,0,0,0,0,0,6231,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Say EmoteText'),
@@ -32,7 +32,10 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (929800,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Remove Run'),
 (929801,2000,1,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Remove Active'),
 (929801,2000,2,29,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Add QuestFlags'),
-(1437200,2000,0,20,1,10,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,'Winterfall Ambusher - Start RandomMovement');
+(1437200,2000,0,20,1,10,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,'Winterfall Ambusher - Start RandomMovement'),
+(1091600,1000,0,18,0,0,0,10916,20,1,0,0,0,0,0,0,0,0,0,0,0,'Winterfall runner - Despawn friend'),
+(1091600,1000,1,18,0,0,0,10916,20,1,0,0,0,0,0,0,0,0,0,0,0,'Winterfall runner - Despawn friend'),
+(1091600,1000,2,18,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,'Winterfall runner - Despawn self');
 
 UPDATE `creature_template` SET `MovementType`='2' WHERE (`Entry`='14372');
 
@@ -57,13 +60,16 @@ UPDATE `creature` SET `position_x`='6898.7153', `position_y`='-2293.98', `positi
 -- Delete old Waypoints
 DELETE FROM creature_movement WHERE Id = '42250';
 
+-- delete old linking
+DELETE FROM creature_linking WHERE master_guid = 42250;
+
 -- Set creatures active all the time, to make sure their waypoints will always go threw
 UPDATE creature_template SET ExtraFlags = ExtraFlags + 4096 WHERE entry = 10916;
 
 -- Add them into spawn_group
 DELETE FROM `spawn_group` WHERE `Id` = '19004';
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES 
-('19004', 'Winterspring - Winterfall Runner', '0', '3', '0', '0');
+('19004', 'Winterspring - Winterfall Runner', '0', '3', '0', '3');
 
 DELETE FROM `spawn_group_formation` WHERE `Id` = '19004';
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES 
@@ -204,4 +210,4 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH,119,6737.143,-5214.222,764.9502,100,0,0),
 (@PATH,120,6727.2466,-5223.838,772.4213,100,0,0),
 (@PATH,121,6715.482,-5239.652,779.11346,100,0,0),
-(@PATH,122,6720.427,-5261.178,778.58417,100,2000,1);
+(@PATH,122,6720.427,-5261.178,778.58417,100,2000,1091600);
