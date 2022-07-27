@@ -90,7 +90,7 @@ UPDATE conditions SET comments=CONCAT('Player Level >= ',value1) WHERE type=15 A
 UPDATE conditions SET comments=CONCAT('Player Level <= ',value1) WHERE type=15 AND value2=2 AND comments IS NULL; -- CONDITION_LEVEL
 UPDATE conditions SET comments=CONCAT('Player Has Learned Spell: ',value1) WHERE type=17 AND value2=0 AND comments IS NULL; -- CONDITION_SPELL
 UPDATE conditions SET comments=CONCAT('NOT Player Has Learned Spell: ',value1) WHERE type=17 AND value2=1 AND comments IS NULL; -- CONDITION_SPELL
--- CONDITION_INSTANCE_SCRIPT
+UPDATE conditions SET comments=CONCAT('ScriptDev: InstanceConditionID Value: ',value1) WHERE type=18 AND comments IS NULL; -- CONDITION_INSTANCE_SCRIPT
 UPDATE conditions SET comments=CONCAT('Quest ID ',value1,' Available') WHERE type=19 AND comments IS NULL; -- CONDITION_QUESTAVAILABLE
 -- CONDITION_ACHIEVEMENT
 -- CONDITION_ACHIEVEMENT_REALM
