@@ -11202,6 +11202,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1517801','15178','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Runk Windtamer - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Mishta 15179
 -- Baristolth of the Shifting Sands 15180
+('1518001','15180','30','0','100','1','5','15183','0','0','0','0','53','20636','0','0','0','0','0','0','0','0','0','0','Baristolth of the Shifting Sands - START_RELAY_SCRIPT on Receive AI Event 5'),
 -- Commander Mar'alith 15181
 -- Vish Kozus 15182
 -- Geologist Larksbane 15183
