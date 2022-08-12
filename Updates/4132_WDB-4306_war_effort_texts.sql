@@ -1,0 +1,3 @@
+UPDATE broadcast_text SET ChatTypeID=7 WHERE Id IN(11427,11432,11425,11426,11424);
+UPDATE broadcast_text SET ChatTypeID=6 WHERE Id IN(11429);
+
