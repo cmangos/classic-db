@@ -11,4 +11,6 @@ INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
 (7254,1,10000),
 (7253,1,9999);
 
+-- Table `npc_text_broadcast_text` has record in `npc_text` (ID 7253) as well. Overwriting.
+DELETE FROM npc_text WHERE id=7253;
 
