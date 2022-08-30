@@ -979,6 +979,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (14381, 0, 0, 1, 69, 0, NULL), -- Lorekeeper Javon
 (14382, 0, 0, 1, 0, 0, NULL), -- Lorekeeper Mykos
 (14383, 0, 0, 1, 69, 0, NULL), -- Lorekeeper Kildrath
+(14385, 0, 0, 1, 0, 0, '19433'), -- Doomguard Minion
 (14386, 0, 0, 1, 0, 0, '18950'), -- Wandering Eye of Kilrogg
 (14398, 0, 0, 1, 0, 0, NULL), -- Eldreth Darter
 (14399, 0, 0, 1, 0, 0, NULL), -- Arcane Torrent
