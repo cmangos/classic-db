@@ -7,7 +7,7 @@
 -- The following table shows threat values associated with different Greater Blessing spells:
 -- All Greater Blessings (except Wisdom) generate threat for each player buffed by the spellcast. This threat is also affected by Righteous Fury. This effectively makes a spam casting Greater Blessings a viable threat generation ability for certain situations in which there's high class stacking.
 -- https://tbc.wowhead.com/guides/paladin-tank-burning-crusade-classic
-INSERT INTO `spell_threat` (`entry`, `Threat`, `multiplier`, `ap_bonus`) VALUES
+REPLACE INTO `spell_threat` (`entry`, `Threat`, `multiplier`, `ap_bonus`) VALUES
 (1022, 10, 1, 0), -- Blessing of Protection (Rank 1)
 (5599, 24, 1, 0), -- Blessing of Protection (Rank 2)
 (10278, 38, 1, 0), -- Blessing of Protection (Rank 3)
@@ -23,7 +23,7 @@ INSERT INTO `spell_threat` (`entry`, `Threat`, `multiplier`, `ap_bonus`) VALUES
 (19837, 42, 1, 0), -- Blessing of Might (Rank 5)
 (19838, 52, 1, 0), -- Blessing of Might (Rank 6)
 (25291, 60, 1, 0), -- Blessing of Might (Rank 7)
-(19742, 0, 0, 0), -- Blessing of Wisdom (Rank 1)
+-- (19742, 0, 0, 0), -- Blessing of Wisdom (Rank 1) - not needed, all 0s is same as no entry at all
 (19977, 40, 1, 0), -- Blessing of Light (Rank 1)
 (19978, 50, 1, 0), -- Blessing of Light (Rank 2)
 (19979, 60, 1, 0), -- Blessing of Light (Rank 3)
@@ -35,8 +35,9 @@ INSERT INTO `spell_threat` (`entry`, `Threat`, `multiplier`, `ap_bonus`) VALUES
 (25782, 52, 1, 0), -- Greater Blessing of Might (Rank 1)
 (25916, 60, 1, 0), -- Greater Blessing of Might (Rank 2)
 (25890, 60, 1, 0), -- Greater Blessing of Light (Rank 1)
-(25898, 60, 1, 0), -- Greater Blessing of Kings (confirmed tbcc)
+-- (25898, 60, 1, 0), -- Greater Blessing of Kings (confirmed tbcc) - Spell 25898 listed in `spell_threat` as custom rank has same data as Rank 1, so redundant -> 20217
 (25899, 60, 1, 0); -- Greater Blessing of Sanctuary (Rank 1)
+-- (25894, 0, 0, 0), -- Greater Blessing of Wisdom (Rank 1) - not needed, all 0s is same as no entry at all
 
 -- TBC+, guessed for most spells based on https://youtu.be/1Vl4OveOFwM?t=30
 -- (27147, 62, 1, 0), -- Blessing of Sacrifice (Rank 3)
@@ -48,4 +49,9 @@ INSERT INTO `spell_threat` (`entry`, `Threat`, `multiplier`, `ap_bonus`) VALUES
 -- (27145, 70, 1, 0), -- Greater Blessing of Light (Rank 2)
 -- (27169, 70, 1, 0); -- Greater Blessing of Sanctuary (Rank 2)
 -- End of migration.
+
+DELETE FROM `spell_threat` WHERE `entry` IN ( -- there is no Wisdom Entry in DB, but if 19742 gets added these errors pop?!
+27143, -- Spell 27143 listed in `spell_threat` as custom rank has same data as Rank 1, so redundant Greater Blessing of Wisdom (Rank 3) -> 25894!?
+25918 -- Spell 25918 listed in `spell_threat` as custom rank has same data as Rank 1, so redundant Greater Blessing of Wisdom (Rank 2) -> 25894!?
+);
 
