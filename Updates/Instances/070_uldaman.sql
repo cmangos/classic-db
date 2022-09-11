@@ -8,6 +8,7 @@ EndDBScriptData */
 SET @CGUID := 7000000; -- creatures
 SET @OGUID := 7000000; -- gameobjects
 SET @PGUID := 45600; -- pools
+SET @SGGUID:= 7000000;
 
 -- =========
 -- CREATURES
@@ -97,7 +98,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+116, 19, -94.7018, 350.589, -49.0758, 100, 0, 0),
 (@CGUID+116, 20, -107.367, 351.402, -47.2184, 100, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+(11073, 0, 1, -164.49715, 205.28552, -49.91232, 100, 0, 0),
+(11073, 0, 2, -164.49715, 205.28552, -49.91232, 100, 0, 0),
+(11073, 0, 3, -164.1184, 212.61917, -49.205986, 100, 1000, 3); -- GENERIC - Change Movement To 0 - Idle
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+4, 0, 0, 1, 0, 0, NULL), -- Shadowforge Relic Hunter
@@ -497,7 +501,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+321, 10120, 70, 51.9748, 243.765, -52.1147, 0.593412, 7200, 7200, 0, 0, 0, 0), -- Vault Warder
 (@CGUID+322, 10120, 70, 117.541, 244.48, -52.1213, 2.09439, 7200, 7200, 0, 0, 0, 0), -- Vault Warder
 (@CGUID+323, 10120, 70, 90.9648, 301.704, -52.1213, 5.28835, 7200, 7200, 0, 0, 0, 0), -- Vault Warder
-(@CGUID+324, 11073, 70, -159.803, 196.172, -49.5849, 1.74533, 7200, 7200, 0, 0, 0, 0), -- Annora
+(@CGUID+324, 11073, 70, -159.803, 196.172, -49.5849, 1.74533, 7200, 7200, 0, 0, 0, 2), -- Annora
 (@CGUID+325, 15384, 70, 150.307, 306.34, -52.1428, 5.79449, 7200, 7200, 0, 0, 0, 0); -- OLDWorld Trigger (DO NOT DELETE)
 
 -- ===========
@@ -746,6 +750,35 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+184, @PGUID+91, 0, 'Uldaman - Large Mithril Bound Chest (131978)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+
+-- ============
+-- SPAWN GROUPS
+-- ============
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+0, 'Uldaman - Cleft Scorpid (10) - Annora', '0', '10', '0', '3'),
+(@SGGUID+1, 'Uldaman - Annora (11073)', '0', '1', '12002', '0');
+
+-- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+0, @CGUID+200, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+201, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+202, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+203, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+204, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+205, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+206, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+207, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+208, '0'), -- Cleft Scorpid
+(@SGGUID+0, @CGUID+209, '0'), -- Cleft Scorpid
+(@SGGUID+1, @CGUID+324, '0'); -- Annora
+
+-- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+
+-- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+
+-- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 
 -- =========
 -- DBSCRIPTS
