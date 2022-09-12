@@ -1150,7 +1150,8 @@ UPDATE `broadcast_text` SET `ChatTypeID`='4' WHERE `Id`='29962'; -- Where to fir
 UPDATE `broadcast_text` SET `ChatTypeID`='4' WHERE `Id`='29963'; -- Your reputation precedes you, $n. This should be interesting.
 UPDATE `broadcast_text` SET `ChatTypeID`='4' WHERE `Id`='29964'; -- Shall we destabilize the shrine first or disable the enemy?
 -- More Diff
-UPDATE `broadcast_text` SET `ChatTypeID`='1' WHERE `Id`='7231'; -- I can smell your fear, $r. - Nathanos Blightcaller UNCLEAR
+UPDATE `broadcast_text` SET `ChatTypeID`='0' WHERE `Id`='7231'; -- I can smell your fear, $r. - Nathanos Blightcaller https://github.com/TrinityCore/TrinityCore/commit/6481434bfee3c36f463bce31fc09a685e06de8c0
+UPDATE `broadcast_text` SET `ChatTypeID`='1' WHERE `Id`='7462'; -- "You merely prolong the inevitable, $r. Succumb. She will free your misguided soul." - https://tbc.wowhead.com/npc=11878/nathanos-blightcaller
 UPDATE `broadcast_text` SET `ChatTypeID`='3' WHERE `Id`='7798'; -- %s becomes enraged!
 UPDATE `broadcast_text` SET `ChatTypeID`='3' WHERE `Id`='11694'; -- %s goes into a berserker rage!
 UPDATE `broadcast_text` SET `ChatTypeID`='3' WHERE `Id`='12156'; -- %s loses its link!
