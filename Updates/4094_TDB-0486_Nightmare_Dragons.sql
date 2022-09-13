@@ -9,3 +9,6 @@ UPDATE `creature_template` SET `Faction` = 50, `UnitFlags` = 64, `PowerMultiplie
 );
 UPDATE `creature_template_addon` SET `auras` = '19818 25041' WHERE `entry` IN (14887,14888,14889,14890); -- Mark of Nature is also present OOC
 
+-- Trigger mobs are visibile when they should NOT
+UPDATE `creature_template` SET `UnitFlags` = 33554432, `ExtraFlags` = 524352 WHERE `entry` = 15224; -- Dream Fog
+

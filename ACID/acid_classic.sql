@@ -1942,7 +1942,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Steven Black (10062) - NSR
 -- Guardian Felhunter (10656) - NSR
 -- Watcher Brownell (11040) - NSR
--- Dream Fog
+-- Dream Fog 15224 - uses s.24956 Dream Fog, maybe this aura kills itself after 60ses as the bosses seem to cast new ones every 60secs
 ('1522401','15224','29','0','100','0','1000','1000','0','0','0','0','11','24780','0','1','20','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog and Disable Combat Melee'),
 ('1522402','15224','29','0','100','0','2000','2000','0','0','0','0','11','24777','0','1','0','0','0','0','0','0','0','0','Dream Fog - Cast Dream Fog'),
 -- Demented Druid Spirit
