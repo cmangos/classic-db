@@ -14647,12 +14647,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1148903','11489','0','0','100','1025','0','10000','28700','33500','0','0','11','22916','4','0','0','0','0','0','0','0','0','0','Tendris Warpwood - Cast Uppercut'),
 ('1148904','11489','0','0','100','1025','0','8','5900','17300','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Tendris Warpwood - Cast Trample'),
 ('1148905','11489','0','0','100','1025','14500','14500','28600','32400','0','0','11','22924','0','0','0','0','0','0','0','0','0','0','Tendris Warpwood - Cast Grasping Vines'),
--- Zevrim Thornhoof (3.3.3 Official Data)
-('1149001','11490','0','0','100','1025','4500','21600','12100','24100','0','0','11','22478','0','0','0','0','0','0','0','0','0','0','Zevrim Thornhoof - Cast Intense Pain'),
-('1149002','11490','0','0','100','1025','11200','20400','17200','24100','0','0','11','22651','4','0','0','0','0','0','0','0','0','0','Zevrim Thornhoof - Cast Sacrifice'),
--- Old Ironbark     11491 YELL: (At last... Freed from his cursed grasp!)
--- Alzzin the Wildshaper (NOT ABLE TO USE LOG DATA ACCURATELY DUE TO FORM CHANGES AND ABILITY SWITCHS - VERY COMPLEX) - Scripted as best as possible based on all sources
-('1149201','11492','4','0','100','0','0','0','0','0','0','0','11','22128','0','1','23','1','0','0','48','0','0','0','Alzzin the Wildshaper - Cast Thorns, Set Phase 1 and Stop WP movement on Aggro'),
+-- Zevrim Thornhoof 11490
+('1149001','11490','0','0','100','1025','5000','10000','12000','18000','0','0','11','22478','0','0','0','0','0','0','0','0','0','0','Zevrim Thornhoof - Cast Intense Pain'),
+('1149002','11490','0','0','100','1025','8000','10000','16000','24000','0','0','11','22651','4','512','0','0','0','0','0','0','0','0','Zevrim Thornhoof - Cast Sacrifice'),
+-- Old Ironbark 11491 - YELL: (At last... Freed from his cursed grasp!)
+-- Alzzin the Wildshaper (NOT ABLE TO USE LOG DATA ACCURATELY DUE TO FORM CHANGES and ABILITY SWITCHS - VERY COMPLEX) - Scripted as best as possible based on all sources
+('1149201','11492','4','0','100','0','0','0','0','0','0','0','11','22128','0','1','22','1','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Thorns and Set Phase 1 on Aggro'),
 ('1149202','11492','9','13','100','1025','0','40','5000','10000','0','0','11','22662','4','32','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Wither (Phase 1 & 4)'),
 ('1149203','11492','0','13','100','1025','8000','15000','9000','14000','0','0','11','7948','0','32','0','0','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Wild Regeneration (Phase 1 & 4)'),
 ('1149204','11492','0','29','100','1025','14000','17000','63000','66000','0','0','11','22660','0','6','22','2','0','0','0','0','0','0','Alzzin the Wildshaper - Cast Dire Wolf Form and Set Phase 2 (Phase 1)'),
