@@ -5121,6 +5121,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Exzhal 14910 - NSR
 -- Zandalar Enforcer 14911 - NSR
 -- Captured Hakkari Zealot 14912 - NSR
+-- Booty Bay Reveler 15723
+('1572301','15723','1','0','100','1','15000','15000','15000','15000','0','0','10','1','4','11','0','0','0','0','0','0','0','0','Booty Bay Reveler - Random EMOTE_ONESHOT_TALK, EMOTE_ONESHOT_CHEER, EMOTE_ONESHOT_CHEER'),
+('1572302','15723','22','0','100','1','34','0','0','0','0','0','11','26035','6','0','5','94','0','0','0','0','0','0','Booty Bay Reveler - Cast Celebrate Good Times!, EMOTE_ONESHOT_DANCE on TEXTEMOTE_DANCE'),
+('1572303','15723','22','0','100','1','58','0','0','0','0','0','11','25947','6','0','5','24','0','0','0','0','0','0','Booty Bay Reveler - Cast Infatuation, EMOTE_ONESHOT_SHY on TEXTEMOTE_KISS'),
 -- Steamwheedle Bruiser 16096
 ('1609601','16096','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Enable Range Mode on Aggro'),
 ('1609602','16096','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Steamwheedle Bruiser - Flee at 15% HP'),
