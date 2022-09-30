@@ -1,5 +1,5 @@
 -- Add Game Event Condition to spawn_group
-UPDATE `spawn_group` SET `WorldState` = 6035 WHERE `Id` IN (
+UPDATE `spawn_group` SET `WorldState` = 6035, `Flags` = 0x08 WHERE `Id` IN (
 9001, -- Fishing - Stranglethorn Vale (Wild Shore & The Crystal Shore & Ruins of Aboraz) - School of Tastyfish (180248)
 9002, -- Fishing - Stranglethorn Vale (Southern Savage Coast) - School of Tastyfish (180248)
 9003, -- Fishing - Stranglethorn Vale (Bloodsail Compound) - School of Tastyfish (180248)
