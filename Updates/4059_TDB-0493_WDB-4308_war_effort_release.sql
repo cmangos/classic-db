@@ -15,18 +15,22 @@ ToDO despawn some guards in cities so they dont kill the mobs
 */
 
 -- Create Original Event, Add Debugging Events (Phase 1-5)
-
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (120, 0, 525600, 1, 0, 0, 'AQ War Effort Phase 1 Item collection');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (121, 0, 525600, 1, 0, 0, 'AQ War Effort Phase 2 Transportation');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (122, 0, 525600, 1, 0, 0, 'AQ War Effort Phase 3 Gong');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (123, 0, 525600, 1, 0, 0, 'AQ War Effort Phase 4 10 Hour War');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (124, 0, 525600, 1, 0, 0, 'AQ War Effort Phase 5 Done');
+-- `game_event_quest` game event id (125) not exist in `game_event`
+-- `game_event_quest` game event id (126) not exist in `game_event`
+-- `game_event_quest` game event id (127) not exist in `game_event`
+REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (125, 0, 525600, 0, 0, 0, 'AQ War Effort Ashi dead');
+REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (126, 0, 525600, 0, 0, 0, 'AQ War Effort Regal dead');
+REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (127, 0, 525600, 0, 0, 0, 'AQ War Effort Zora dead');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (131, 0, 525600, 1, 0, 0, 'AQ War Effort Resource Phase 1');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (132, 0, 525600, 1, 0, 0, 'AQ War Effort Resource Phase 2');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (133, 0, 525600, 1, 0, 0, 'AQ War Effort Resource Phase 3');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (134, 0, 525600, 1, 0, 0, 'AQ War Effort Resource Phase 4');
 REPLACE INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `description`) VALUES (135, 0, 525600, 1, 0, 0, 'AQ War Effort Resource Phase 5');
-
 
 DELETE FROM game_event_gameobject WHERE event IN(120,121,122,123,124,131,132,133,134,135);
 DELETE FROM game_event_creature WHERE event IN(120,121,122,123,124,131,132,133,134,135);
@@ -174,13 +178,13 @@ INSERT INTO `creature` (guid, id, map, position_x, position_y, position_z, orien
 (@CAGUID+29,15708,0,-8813.75,654.07,96.160,4.83456, 120, 120, 0, 0), -- Master Sergeant Maclure
 (@CAGUID+30,15709,1,9945.15, 2494.24, 1317.52, 4.20624, 120, 120, 0, 0), -- Master Sergeant Moonshadow
 -- TBC+
-(@CAGUID+31, 21156, 530, -3916.03, -11604.5, -138.361, 4.69494, 120, 120, 0, 0), -- badly guessed https://wowpedia.fandom.com/wiki/Master_Sergeant_Thelaana?file=Master_Sergeant_Thelaana.jpg
+-- (@CAGUID+31, 21156, 530, -3916.03, -11604.5, -138.361, 4.69494, 120, 120, 0, 0), -- badly guessed https://wowpedia.fandom.com/wiki/Master_Sergeant_Thelaana?file=Master_Sergeant_Thelaana.jpg
 
 (@CAGUID+32, 15762, 1, 9965.52, 2533.72, 1319, 0.471239, 120, 120, 0, 0), -- Officer Lunalight
 (@CAGUID+33, 15763, 0, -4811.98, -1264.85, 501.951, 3.05433, 120, 120, 0, 0), -- Officer Porterhouse
 (@CAGUID+34, 15764, 0, -4814.48, -1055.52, 502.267, 6.21337, 120, 120, 0, 0), -- Officer Ironbeard
-(@CAGUID+35, 15766, 0, -8859.14, 638.287, 96.3469, 1.81514, 120, 120, 0, 0), -- Officer Maloof
-(@CAGUID+36, 21971, 530, -3924.03, -11604.5, -138.361, 4.69494, 120, 120, 0, 0); -- Officer Khaluun
+(@CAGUID+35, 15766, 0, -8859.14, 638.287, 96.3469, 1.81514, 120, 120, 0, 0); -- Officer Maloof
+-- (@CAGUID+36, 21971, 530, -3924.03, -11604.5, -138.361, 4.69494, 120, 120, 0, 0); -- Officer Khaluun
 
 INSERT INTO `game_event_creature` SELECT `guid`, 120 FROM `creature` WHERE `guid` BETWEEN @CAGUID+0 AND @CAGUID+36; -- AQ War Effort Phase 1 Item collection
 -- Commendations
@@ -188,6 +192,7 @@ INSERT INTO `game_event_creature` SELECT `guid`, 121 FROM `creature` WHERE `guid
 INSERT INTO `game_event_creature` SELECT `guid`, 122 FROM `creature` WHERE `guid` BETWEEN @CAGUID+28 AND @CAGUID+36; -- AQ War Effort Phase 3 Gong
 INSERT INTO `game_event_creature` SELECT `guid`, 123 FROM `creature` WHERE `guid` BETWEEN @CAGUID+28 AND @CAGUID+36; -- AQ War Effort Phase 4 10 Hour War
 INSERT INTO `game_event_creature` SELECT `guid`, 124 FROM `creature` WHERE `guid` BETWEEN @CAGUID+32 AND @CAGUID+36; -- AQ War Effort Phase 5 Done
+DELETE FROM `game_event_creature` WHERE `guid` IN (@CAGUID+31,@CAGUID+36);
 
 UPDATE `creature_template` SET `NpcFlags` = `NpcFlags`|1, `GossipMenuId` = 6790, `Faction` = 104, `UnitFlags` = 0, `SpeedWalk` = 1, `SpeedRun` = 1.14286, `MeleeBaseAttackTime` = 2000 WHERE `entry` = 15702; -- Senior Sergeant Taiga
 UPDATE `creature_template` SET `NpcFlags` = `NpcFlags`|1, `GossipMenuId` = 6788, `Faction` = 68, `UnitFlags` = 0, `SpeedWalk` = 1, `SpeedRun` = 1.14286, `MeleeBaseAttackTime` = 2000 WHERE `entry` = 15703; -- Senior Sergeant Grimsford
@@ -250,13 +255,13 @@ INSERT INTO `creature` (guid, id, map, position_x, position_y, position_z, orien
 (@CHGUID+30,15702,1,-1209.58, 100.22, 134.661, 3.15905, 120, 120, 0, 0), -- Senior Sergeant Taiga
 
 -- TBC+
-(@CHGUID+31, 21155, 530, 9526.959961, -7189.979980, 16.211500, 1.535890, 120, 120, 0, 0), -- https://tbc.wowhead.com/npc=21155/senior-sergeant-eveningshade#screenshots:id=50349
+-- (@CHGUID+31, 21155, 530, 9526.959961, -7189.979980, 16.211500, 1.535890, 120, 120, 0, 0), -- https://tbc.wowhead.com/npc=21155/senior-sergeant-eveningshade#screenshots:id=50349
 -- Commendations
 (@CHGUID+32, 15761, 1, 1945.32, -4330.31, 22.1011, 3.50811, 120, 120, 0, 0), -- Officer Vu'Shalay
 (@CHGUID+33, 15765, 1, 1911.7, -4276.77, 31.6557, 4.88692, 120, 120, 0, 0), -- Officer Redblade
 (@CHGUID+34, 15767, 1, -1246.48, 74.2627, 128.368, 5.02655, 120, 120, 0, 0), -- Officer Thunderstrider
-(@CHGUID+35, 15768, 0, 1587.89, 279.28, -43.0193, 4.85202, 120, 120, 0, 0), -- Officer Gothena
-(@CHGUID+36, 21970, 530, 9523.96, -7189.98, 16.2115, 1.53589, 120, 120, 0, 0); -- Officer Dawning
+(@CHGUID+35, 15768, 0, 1587.89, 279.28, -43.0193, 4.85202, 120, 120, 0, 0); -- Officer Gothena
+-- (@CHGUID+36, 21970, 530, 9523.96, -7189.98, 16.2115, 1.53589, 120, 120, 0, 0); -- Officer Dawning
 
 INSERT INTO `game_event_creature` SELECT `guid`, 120 FROM `creature` WHERE `guid` BETWEEN @CHGUID+0 AND @CHGUID+36; -- AQ War Effort Phase 1 Item collection
 -- Commendations
@@ -264,6 +269,7 @@ INSERT INTO `game_event_creature` SELECT `guid`, 121 FROM `creature` WHERE `guid
 INSERT INTO `game_event_creature` SELECT `guid`, 122 FROM `creature` WHERE `guid` BETWEEN @CHGUID+28 AND @CHGUID+36; -- AQ War Effort Phase 3 Gong
 INSERT INTO `game_event_creature` SELECT `guid`, 123 FROM `creature` WHERE `guid` BETWEEN @CHGUID+28 AND @CHGUID+36; -- AQ War Effort Phase 4 10 Hour War
 INSERT INTO `game_event_creature` SELECT `guid`, 124 FROM `creature` WHERE `guid` BETWEEN @CHGUID+32 AND @CHGUID+36; -- AQ War Effort Phase 5 Done
+DELETE FROM `game_event_creature` WHERE `guid` IN (@CHGUID+31,@CHGUID+36);
 
 -- Fix Horde Quests
 
@@ -371,7 +377,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+40, 180810, 1, 1, -2349.8, -2383.47, 91.988, 0.296705, 0, 0, 0.147809, 0.989016, 7200, 7200, 100, 1),
 (@OGUID+41, 180810, 1, 1, -7419.87,  819.94, -3.50, 0, 0, 0, 0, 0, 7200, 7200, 100, 1);
 
-DELETE FROM `game_event_gameobject` WHERE `guid` BETWEEN @OGUID AND @OGUID+40;
+DELETE FROM `game_event_gameobject` WHERE `guid` BETWEEN @OGUID AND @OGUID+41;
 INSERT INTO game_event_gameobject SELECT guid, 123 FROM gameobject WHERE guid BETWEEN @CGUID + 1 AND @CGUID + 41; -- AQ War Effort Phase 4 10 Hour War
 
 SET @CGUID := 155200;
@@ -1776,6 +1782,57 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (15818, 10310, 10, 0, 1, 1, 0, 'Scroll of Strength IV'),
 (15818, 10306, 10, 0, 1, 1, 0, 'Scroll of Spirit IV'),
 (15818, 10309, 10, 0, 1, 1, 0, 'Scroll of Agility IV');
+
+DELETE FROM `reference_loot_template_names` WHERE `entry` = 50503;
+INSERT INTO `reference_loot_template_names` (`entry`, `name`) VALUES (50503, 'LOOT (World Drop) - (RequiredSkillRank: 20-130 (Profession Recipes)) - (NPC Levels ~10-20)');
+
+-- Table 'reference_loot_template' entry 50503 (reference id) not exist but used as loot id in DB.
+DELETE FROM `reference_loot_template` WHERE `entry` = 50503;
+INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
+(50503, 2406, 1, 1, 1, 1, 0, 'Pattern: Fine Leather Boots'),
+(50503, 2407, 1, 1, 1, 1, 0, 'Pattern: White Leather Jerkin'),
+(50503, 2408, 1, 1, 1, 1, 0, 'Pattern: Fine Leather Gloves'),
+(50503, 2553, 1, 1, 1, 1, 0, 'Recipe: Elixir of Minor Agility'),
+(50503, 2555, 1, 1, 1, 1, 0, 'Recipe: Swiftness Potion'),
+(50503, 2598, 1, 1, 1, 1, 0, 'Pattern: Red Linen Robe'),
+(50503, 3609, 1, 1, 1, 1, 0, 'Plans: Copper Chain Vest'),
+(50503, 3610, 1, 1, 1, 1, 0, 'Plans: Gemmed Copper Gauntlets'),
+(50503, 4408, 1, 1, 1, 1, 0, 'Schematic: Mechanical Squirrel'),
+(50503, 6271, 1, 1, 1, 1, 0, 'Pattern: Red Linen Vest'),
+(50503, 6342, 1, 1, 1, 1, 0, 'Formula: Enchant Chest - Minor Mana'),
+(50503, 7288, 1, 1, 1, 1, 0, 'Pattern: Rugged Leather Pants'),
+(50503, 2409, 0, 1, 1, 1, 0, 'Pattern: Dark Leather Tunic'),
+(50503, 2601, 0, 1, 1, 1, 0, 'Pattern: Gray Woolen Robe'),
+(50503, 2881, 0, 1, 1, 1, 0, 'Plans: Runed Copper Breastplate'),
+(50503, 2882, 0, 1, 1, 1, 0, 'Plans: Silvered Bronze Shoulders'),
+(50503, 2883, 0, 1, 1, 1, 0, 'Plans: Deadly Bronze Poniard'),
+(50503, 3393, 0, 1, 1, 1, 0, 'Recipe: Minor Magic Resistance Potion'),
+(50503, 3394, 0, 1, 1, 1, 0, 'Recipe: Potion of Curing'),
+(50503, 4292, 0, 1, 1, 1, 0, 'Pattern: Green Woolen Bag'),
+(50503, 4293, 0, 1, 1, 1, 0, 'Pattern: Hillman\'s Leather Vest'),
+(50503, 4294, 0, 1, 1, 1, 0, 'Pattern: Hillman\'s Belt'),
+(50503, 4345, 0, 1, 1, 1, 0, 'Pattern: Red Woolen Boots'),
+(50503, 4346, 0, 1, 1, 1, 0, 'Pattern: Heavy Woolen Cloak'),
+(50503, 4347, 0, 1, 1, 1, 0, 'Pattern: Reinforced Woolen Shoulders'),
+(50503, 4348, 0, 1, 1, 1, 0, 'Pattern: Phoenix Gloves'),
+(50503, 4349, 0, 1, 1, 1, 0, 'Pattern: Phoenix Pants'),
+(50503, 4409, 0, 1, 1, 1, 0, 'Schematic: Small Seaforium Charge'),
+(50503, 4410, 0, 1, 1, 1, 0, 'Schematic: Shadow Goggles'),
+(50503, 5578, 0, 1, 1, 1, 0, 'Plans: Silvered Bronze Breastplate'),
+(50503, 5972, 0, 1, 1, 1, 0, 'Pattern: Fine Leather Pants'),
+(50503, 6344, 0, 1, 1, 1, 0, 'Formula: Enchant Bracer - Minor Spirit'),
+(50503, 6347, 0, 1, 1, 1, 0, 'Formula: Enchant Bracer - Minor Strength'),
+(50503, 6348, 0, 1, 1, 1, 0, 'Formula: Enchant Weapon - Minor Beastslayer'),
+(50503, 6375, 0, 1, 1, 1, 0, 'Formula: Enchant Bracer - Lesser Spirit'),
+(50503, 6390, 0, 1, 1, 1, 0, 'Pattern: Stylish Blue Shirt'),
+(50503, 6391, 0, 1, 1, 1, 0, 'Pattern: Stylish Green Shirt'),
+(50503, 6663, 0, 1, 1, 1, 0, 'Recipe: Elixir of Giant Growth'),
+(50503, 6716, 0, 1, 1, 1, 0, 'Schematic: EZ-Thro Dynamite'),
+(50503, 7360, 0, 1, 1, 1, 0, 'Pattern: Dark Leather Gloves'),
+(50503, 10316, 0, 1, 1, 1, 0, 'Pattern: Colorful Kilt'),
+(50503, 11038, 0, 1, 1, 1, 0, 'Formula: Enchant 2H Weapon - Lesser Spirit'),
+(50503, 11039, 0, 1, 1, 1, 0, 'Formula: Enchant Cloak - Minor Agility'),
+(50503, 11081, 0, 1, 1, 1, 0, 'Formula: Enchant Shield - Lesser Protection');
 
 -- Supreme Silithid Flayer 15759 - LOOT
 -- Check Item 20384 https://tbc.wowhead.com/item=20384/silithid-carapace-fragment#dropped-by
