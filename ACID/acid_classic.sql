@@ -1412,9 +1412,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Burly Rockjaw Trogg (724) - NSR
 -- Ironforge Mountaineer (727) - guard_dunmorogh - s.6660 RangeMode
 -- Grelin Whitebeard (786) - NSR
--- Grik'nir the Cold (2.4.3 Official Data)
-('80801','808','4','0','100','0','0','0','0','0','0','0','11','6957','0','0','0','0','0','0','0','0','0','0','Grik''nir the Cold - Cast Frostmane Strength on Aggro'),
-('80802','808','0','0','100','1025','1000','3000','9700','12700','0','0','11','21030','1','0','0','0','0','0','0','0','0','0','Grik''nir the Cold - Cast Frost Shock'),
+-- Grik'nir the Cold 808
+('80801','808','0','0','100','1024','0','5000','0','0','0','0','11','6957','0','0','0','0','0','0','0','0','0','0','Grik''nir the Cold - Cast Frostmane Strength'),
+('80802','808','0','0','100','1025','0','10000','12000','24000','0','0','11','21030','1','0','0','0','0','0','0','0','0','0','Grik''nir the Cold - Cast Frost Shock'),
 -- Adlin Pridedrift (829) - NSR
 -- Durnan Furcutter (836) - NSR
 -- Branstock Khalder (837) - NSR
