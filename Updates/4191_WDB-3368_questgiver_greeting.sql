@@ -37,6 +37,5 @@ INSERT INTO `questgiver_greeting` (`Entry`, `Type`, `Text`, `EmoteId`, `EmoteDel
 REPLACE INTO `questgiver_greeting` (`Entry`, `Type`, `Text`, `EmoteId`, `EmoteDelay`) VALUES (11862, 0, ' ', 0, 0);
 INSERT INTO `questgiver_greeting` (`Entry`, `Type`, `Text`, `EmoteId`, `EmoteDelay`) VALUES
 (11864, 0, ' ', 0, 0),
-(14567, 0, 'These Mithril Order guys are sissies.', 0, 0),
-(16200, 0, ' ', 0, 0);
+(14567, 0, 'These Mithril Order guys are sissies.', 0, 0);
 

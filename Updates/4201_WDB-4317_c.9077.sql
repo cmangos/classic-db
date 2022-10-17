@@ -87,6 +87,12 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (907704,28000,36,1,0,0,9079,15,3,0,0,0,0,0,0,0,0,'reset orientation'),
 (907704,28001,36,1,0,0,9078,15,3,0,0,0,0,0,0,0,0,'reset orientation'),
 (907704,29000,21,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'unactive');
+
+-- Table `dbscripts_on_creature_movement` contain unused script, id 907711.
+-- Table `dbscripts_on_creature_movement` contain unused script, id 907716.
+-- Table `dbscripts_on_creature_movement` contain unused script, id 907718.
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (907711,907716,907718);
+
 -- texts
 UPDATE `broadcast_text` SET `ChatTypeID` = 2 WHERE `Id` IN (4664,4687,4669,4693,4695);
 
