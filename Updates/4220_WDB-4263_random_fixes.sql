@@ -96,7 +96,7 @@ INSERT INTO `questgiver_greeting` VALUES (11596, 0, 'My business plan never acco
 INSERT INTO `questgiver_greeting` VALUES (14567, 0, 'These Mithril Order guys are sissies.', 0, 0);
 
 -- Arazmodu
-INSERT INTO `questgiver_greeting` VALUES (19936, 0, ' ', 0, 0);
+-- INSERT INTO `questgiver_greeting` VALUES (19936, 0, ' ', 0, 0);
 
 UPDATE `questgiver_greeting` SET `Text` = ' ' WHERE `Text` = '';
 

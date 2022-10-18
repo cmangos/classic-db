@@ -31,3 +31,17 @@ INSERT INTO dbscripts_on_relay (`id`, `delay`, `command`, `datalong`, `datalong2
 (9998,11,0,0,0,0,0,0,0,6893,0,0,0,0,0,0,0,'Gordo - Text'),
 (9998,100,40,0,0,0,175566,5,1,0,0,0,0,0,0,0,0,'Gordo - Despawn Gloom Weed');
 
+-- DB-SCRIPTS: Process table `dbscripts_on_creature_movement` id 1067602, command 35 has buddy 10682 not found in range 20 of searcher Creature (Entry: 10676 Counter: 9010456) DBGuid: 3254 (data-flags 7), skipping.
+UPDATE `dbscripts_on_creature_movement` SET `priority` = 1 WHERE `id` = 1067602 AND `delay` IN (0,60000) AND `command` = 35;
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 1067602 AND `delay` IN (0,60000) AND `command` = 31;
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1067602,0,0,31,10682,20,0,0,0,0,0,0,0,0,0,0,0,0,'Raider Jhash (10676) - search for 10682'),
+(1067602,60000,0,31,10682,20,0,0,0,0,0,0,0,0,0,0,0,0,'Raider Jhash (10676) - search for 10682');
+
+-- DB-SCRIPTS: Process table `dbscripts_on_creature_movement` id 1067603, command 1 has buddy 10682 not found in range 20 of searcher Creature (Entry: 10676 Counter: 9010456) DBGuid: 3254 (data-flags 7), skipping.
+UPDATE `dbscripts_on_creature_movement` SET `priority` = 1 WHERE `id` = 1067603 AND `delay` = 1000 AND `command` = 1 AND `buddy_entry` = 0;
+UPDATE `dbscripts_on_creature_movement` SET `priority` = 2 WHERE `id` = 1067603 AND `delay` = 1000 AND `command` = 1 AND `buddy_entry` = 10682;
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 1067602 AND `delay` = 1000 AND `command` = 31;
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1067603,1000,0,31,10682,20,0,0,0,0,0,0,0,0,0,0,0,0,'Raider Jhash (10676) - search for 10682');
+
