@@ -18860,7 +18860,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('567602','5676','29','0','100','0','1000','1000','0','0','0','0','2','14','0','0','55','11','0','0','0','0','0','0','Summoned Voidwalker - Set Faction Monster, Attack Spawner (Player) on Generic Timer'),
 ('567603','5676','2','0','100','1024','30','0','0','0','0','0','11','7750','0','0','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Consuming Rage at 30% HP'),
 -- Summoned Succubus 5677
-('567701','5677','11','0','100','0','0','0','0','0','0','0','2','14','0','0','55','11','0','0','0','0','0','0','Summoned Succubus - Set Faction Monster, Attack Spawner (Player) on Spawn'),
+('567701','5677','11','0','100','0','0','0','0','0','0','0','2','14','0','0','55','11','0','0','1','1991','0','0','Summoned Succubus - Set Faction Monster, Attack Summoner AND Say on Spawn'),
 ('567702','5677','0','0','100','1025','5000','11000','9000','15000','0','0','11','16583','1','0','0','0','0','0','0','0','0','0','Summoned Succubus - Cast Shadow Shock'),
 -- Guardian of Blizzard 5764 - npc_guardian
 -- Stoneskin Totem 5873 - TotemAI
