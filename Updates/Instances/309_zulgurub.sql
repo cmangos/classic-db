@@ -6,7 +6,7 @@ DBComment:
 * Investigate Muddy Churning Waters (180369) pooling
 * Investigate Herb (180164,180165,180166,180167,180168) pooling
 * Edge of Madness 4x3 Mad Servant Patrols, out one run on, three others walk (Imp Patrols)
--- 180228/180229 50/50 go_spawn_grp?
+* @GROUP_ID+1001, 'Zul\'Gurub - Jinxed Hoodoo Pile (180228,180229) - mincount maxcount?
 EndDBScriptData */
 
 SET @CGUID := 3090000; -- creatures
@@ -1667,9 +1667,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+271, 180497, 309, -11501.8935546875, -1614.798828125, 44.57218170166015625, 1.57952284812927246, 0, 0, 0.710185348987579345, 0.704014778137207031, 600, 600, 100, 0), -- Forcefield
 (@OGUID+272, 180526, 309, -11569.19921875, -1627.87451171875, 41.27669906616210937, 0.008725880645215511, 0, 0, 0.004362926352769136, 0.999990463256835937, 600, 600, 100, 1); -- Gong of Bethekk
 
-INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 180228 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
-INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 180229 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
-
 -- ======
 -- EVENTS
 -- ======
@@ -1739,9 +1736,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002', '0', '0', '0', '1'),
 (@GROUP_ID+5, 'Zul\'Gurub - Mad Servant (3) Patrol 000', '0', '0', '0', '1'),
 (@GROUP_ID+6, 'Zul\'Gurub - Mad Servant (3) Patrol 001', '0', '0', '0', '1'),
-(@GROUP_ID+7, 'Zul\'Gurub - Gurubashi Berserker (1) Patrol 001', '0', '0', '0', '0');
+(@GROUP_ID+7, 'Zul\'Gurub - Gurubashi Berserker (1) Patrol 001', '0', '0', '0', '0'),
+-- gameobject
+(@GROUP_ID+1001, 'Zul\'Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '0', '0', '0');
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@GROUP_ID+1001, 180228, 0, 0, 66), -- Jinxed Hoodoo Pile (without trap)
+(@GROUP_ID+1001, 180229, 0, 0, 0); -- Jinxed Hoodoo Pile (s.24184)
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID+0, @CGUID+468, 0), -- Razzashi Serpent, Razzashi Adder
@@ -1760,6 +1761,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID+6, @CGUID+820, 1), -- Mad Servant
 (@GROUP_ID+6, @CGUID+821, 2), -- Mad Servant
 (@GROUP_ID+7, @CGUID+188, 0); -- Gurubashi Berserker
+
+INSERT INTO `spawn_group_spawn` (`guid`, `Id`) SELECT `guid`, @GROUP_ID+1001 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@GROUP_ID+0, '2', '2', '0', @PATH_ID+0, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
