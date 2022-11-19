@@ -1,39 +1,131 @@
 /* DBScriptData
 DBName: Sunken Temple
 DBScriptName: instance_sunken_temple
-DB%Complete: 80
+DB%Complete: 90
 DBComment:
-* probably movement missing e.g @CGUID+6, @CGUID+9, @CGUID+23, @CGUID+24, @CGUID+54, @CGUID+64, @CGUID+70, @CGUID+108
-* movement missing for entry 8580 in circle clockwise
+* Shade of Eranikus linking should be movementinform on pull, not linking
 EndDBScriptData */
 
 SET @CGUID := 1090000; -- creatures
 SET @OGUID := 1090000; -- gameobjects
 SET @PGUID := 45800; -- pools
+SET @SGGUID := 1090000;
 
 -- =========
 -- CREATURES
 -- =========
 
--- INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+(@CGUID+113, 1, -328.67, 133.21, -156.73, 100, 0, 0),
+(@CGUID+113, 2, -328.36, 152.75, -161.36, 100, 0, 0),
+(@CGUID+113, 3, -299.83, 157.31, -168.93, 100, 0, 0),
+(@CGUID+113, 4, -293.61, 141.61, -172.66, 100, 0, 0),
+(@CGUID+113, 5, -295.54, 103.58, -173.00, 100, 0, 0),
+(@CGUID+113, 6, -306.30, 95.83, -172.97, 100, 0, 0),
+(@CGUID+113, 7, -352.64, 95.65, -172.98, 100, 0, 0),
+(@CGUID+113, 8, -396.62, 93.80, -172.92, 100, 0, 0),
 
-DELETE FROM creature_movement_template WHERE entry IN (5708,5720,5721,5722,8497);
+(@CGUID+103, 1, -462.09012, 192.58849, -53.946342, 100, 0, 0),
+(@CGUID+103, 2, -415.59402, 178.83702, -53.946346, 100, 0, 0),
+(@CGUID+103, 3, -381.1253, 142.30183, -53.94633, 100, 0, 0),
+(@CGUID+103, 4, -368.27985, 94.29427, -53.946335, 100, 0, 0),
+(@CGUID+103, 5, -386.23, 39.22, -53.94, 100, 0, 0),
+(@CGUID+103, 6, -397.30, 30.30, -53.94, 100, 0, 0),
+
+(@CGUID+104, 1, -517.13, 178.58, -54.01, 100, 0, 0),
+(@CGUID+104, 2, -551.42755, 143.38374, -53.946335, 100, 0, 0),
+(@CGUID+104, 3, -565.0032, 96.16214, -53.946342, 100, 0, 0),
+(@CGUID+104, 4, -553.26215, 48.865673, -53.946335, 100, 0, 0),
+(@CGUID+104, 5, -514.6216, 8.191264, -53.946335, 100, 0, 0),
+(@CGUID+104, 6, -490.38928, 1.166865, -53.946335, 100, 0, 0),
+(@CGUID+104, 7, -472.87, -2.28, -53.94, 100, 0, 0),
+(@CGUID+104, 8, -415.71213, 10.293917, -53.946342, 100, 0, 0),
+
+(@CGUID+112, 1, -511.79694, 7.095397, -148.7575, 100, 0, 0),
+(@CGUID+112, 2, -489.61908, 0.809688, -148.8023, 100, 0, 0),
+(@CGUID+112, 3, -466.2499, -4.14599, -148.80228, 100, 0, 0),
+(@CGUID+112, 4, -443.99106, 2.16205, -148.80228, 100, 0, 0),
+(@CGUID+112, 5, -420.4861, 8.991586, -148.80228, 100, 0, 0),
+(@CGUID+112, 6, -401.70142, 25.408905, -148.80222, 100, 0, 0),
+(@CGUID+112, 7, -391.3712, 36.488087, -148.80225, 100, 0, 0),
+(@CGUID+112, 8, -380.0178, 49.009506, -148.80223, 100, 0, 0),
+(@CGUID+112, 9, -374.31363, 70.35868, -148.80226, 100, 0, 0),
+(@CGUID+112, 10, -369.71384, 99.89346, -148.80226, 100, 0, 0),
+(@CGUID+112, 11, -375.4226, 119.80998, -148.80278, 100, 0, 0),
+(@CGUID+112, 12, -381.3546, 143.5187, -148.80228, 100, 0, 0),
+(@CGUID+112, 13, -393.537, 156.71332, -148.80228, 100, 0, 0),
+
+(@CGUID+231, 1, -294.03775, 131.88365, -172.97614, 100, 0, 0),
+(@CGUID+231, 2, -297.1038, 95.70457, -172.99867, 100, 0, 0),
+(@CGUID+231, 3, -343.2543, 95.78342, -172.98145, 100, 0, 0),
+(@CGUID+231, 4, -388.32254, 94.67007, -172.93452, 100, 0, 0),
+
+(@CGUID+232, 1, -427.15152, 141.00255, -148.74489, 100, 0, 0),
+(@CGUID+232, 2, -407.7487, 146.33264, -148.80319, 100, 0, 0),
+(@CGUID+232, 3, -418.76752, 162.21004, -148.80318, 100, 0, 0),
+(@CGUID+232, 4, -410.77438, 172.26044, -148.80217, 100, 0, 0),
+(@CGUID+232, 5, -420.0072, 180.67345, -148.80228, 100, 0, 0),
+(@CGUID+232, 6, -445.68906, 187.70476, -148.86668, 100, 0, 0),
+(@CGUID+232, 7, -467.98215, 193.25748, -148.7999, 100, 0, 0),
+(@CGUID+232, 8, -504.30203, 183.55318, -148.80226, 100, 0, 0),
+(@CGUID+232, 9, -501.90164, 170.58093, -148.80234, 100, 0, 0),
+(@CGUID+232, 10, -486.44467, 172.72934, -148.80234, 100, 0, 0),
+(@CGUID+232, 11, -482.3424, 169.08914, -148.80237, 100, 0, 0),
+(@CGUID+232, 12, -491.2415, 152.90718, -148.7455, 100, 0, 0),
+
+(@CGUID+233, 1, -447.95065, 34.83019, -148.74529, 100, 0, 0),
+(@CGUID+233, 2, -453.0201, 18.014185, -148.59955, 100, 0, 0),
+(@CGUID+233, 3, -435.48334, 19.900177, -148.5969, 100, 0, 0),
+(@CGUID+233, 4, -432.00247, 8.933437, -148.80228, 100, 0, 0),
+(@CGUID+233, 5, -417.49808, 11.187869, -148.73653, 100, 0, 0),
+(@CGUID+233, 6, -400.58673, 25.444126, -148.80222, 100, 0, 0),
+(@CGUID+233, 7, -388.33487, 40.586475, -148.80223, 100, 0, 0),
+(@CGUID+233, 8, -378.4482, 52.440594, -148.80223, 100, 0, 0),
+(@CGUID+233, 9, -374.58856, 77.696205, -148.80226, 100, 0, 0),
+(@CGUID+233, 10, -381.2369, 87.049774, -148.72415, 100, 0, 0),
+(@CGUID+233, 11, -388.9024, 85.23623, -148.6637, 100, 0, 0),
+(@CGUID+233, 12, -392.9946, 70.49321, -148.84235, 100, 0, 0),
+(@CGUID+233, 13, -402.7899, 74.9437, -148.8426, 100, 0, 0),
+(@CGUID+233, 14, -407.1037, 88.146645, -148.74458, 100, 0, 0),
+
+(@CGUID+234, 1, -529.1784, 107.08019, -148.74513, 100, 0, 0),
+(@CGUID+234, 2, -542.0003, 121.65836, -148.80489, 100, 0, 0),
+(@CGUID+234, 3, -549.606, 105.13732, -148.80493, 100, 0, 0),
+(@CGUID+234, 4, -562.4124, 107.09592, -148.80226, 100, 0, 0),
+(@CGUID+234, 5, -567.04126, 93.79417, -148.80229, 100, 0, 0),
+(@CGUID+234, 6, -559.68005, 65.477905, -148.80229, 100, 0, 0),
+(@CGUID+234, 7, -551.6621, 43.954, -148.80228, 100, 0, 0),
+(@CGUID+234, 8, -536.8076, 29.818651, -148.80228, 100, 0, 0),
+(@CGUID+234, 9, -525.8675, 16.91861, -148.80228, 100, 0, 0),
+(@CGUID+234, 10, -515.741, 31.118464, -148.8023, 100, 0, 0),
+(@CGUID+234, 11, -527.8603, 43.441948, -148.80232, 100, 0, 0),
+(@CGUID+234, 12, -506.17346, 49.834156, -148.74477, 100, 0, 0),
+
+(@CGUID+235, 1, -432.0018, 132.04568, -173.45544, 100, 0, 0),
+(@CGUID+235, 2, -453.50278, 144.801, -173.40535, 100, 0, 0),
+(@CGUID+235, 3, -481.59683, 144.22247, -173.50494, 100, 0, 0),
+(@CGUID+235, 4, -502.9649, 131.76192, -173.52217, 100, 0, 0),
+(@CGUID+235, 5, -516.8309, 106.52399, -173.60704, 100, 0, 0),
+(@CGUID+235, 6, -516.8583, 82.457924, -173.60242, 100, 0, 0),
+(@CGUID+235, 7, -503.09317, 58.47254, -173.62561, 100, 0, 0),
+(@CGUID+235, 8, -481.44922, 45.506634, -173.56189, 100, 0, 0),
+(@CGUID+235, 9, -453.73175, 45.70061, -173.58266, 100, 0, 0),
+(@CGUID+235, 10, -432.7942, 57.642166, -173.56207, 100, 0, 0),
+(@CGUID+235, 11, -419.21143, 74.444275, -173.3671, 100, 0, 0);
+
+DELETE FROM creature_movement_template WHERE entry IN (5708,5720,5721,5722,8497,8580);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(5708, 0, 1, -369.26, 94.5071, -148.802, 100, 0, 0),
-(5708, 0, 2, -375.62, 119.789, -148.802, 100, 0, 0),
-(5708, 0, 3, -383.225, 143.882, -148.802, 100, 0, 0),
-(5708, 0, 4, -418.907, 179.624, -148.802, 100, 0, 0),
-(5708, 0, 5, -466.908, 193.609, -148.82, 100, 0, 0),
-(5708, 0, 6, -517.159, 180.646, -148.803, 100, 0, 0),
-(5708, 0, 7, -552.931, 144.953, -148.71, 100, 0, 0),
-(5708, 0, 8, -565.644, 96.3409, -148.802, 100, 0, 0),
-(5708, 0, 9, -552.367, 46.1019, -148.802, 100, 0, 0),
-(5708, 0, 10, -536.557, 28.4847, -148.802, 100, 0, 0),
-(5708, 0, 11, -517.331, 10.7796, -148.773, 100, 0, 0),
-(5708, 0, 12, -467.412, -2.85782, -148.802, 100, 0, 0),
-(5708, 0, 13, -418.226, 10.4559, -148.755, 100, 0, 0),
-(5708, 0, 14, -382.245, 46.9143, -148.802, 100, 0, 0),
-(5708, 0, 15, -374.001, 71.9398, -148.802, 100, 0, 0),
+(5708, 0, 1, -467.61713, -2.193203, -148.80229, 100, 0, 0),
+(5708, 0, 2, -491.36118, 3.230603, -148.8023, 100, 0, 0),
+(5708, 0, 3, -517.24396, 10.710662, -148.76266, 100, 0, 0),
+(5708, 0, 4, -534.9076, 27.864218, -148.80228, 100, 0, 0),
+(5708, 0, 5, -553.5042, 45.907948, -148.8023, 100, 0, 0),
+(5708, 0, 6, -564.61, 101.75, -148.80, 100, 0, 0),
+(5708, 0, 7, -552.37775, 144.81067, -148.70822, 100, 0, 0),
+(5708, 0, 8, -535.9217, 162.7805, -148.76518, 100, 0, 0),
+(5708, 0, 9, -516.72296, 180.52132, -148.80226, 100, 0, 0),
+(5708, 0, 10, -492.4098, 187.25166, -148.80222, 100, 0, 0),
+(5708, 0, 11, -467.6835, 193.48221, -148.80266, 100, 0, 0),
 -- Spline Mode: 1 (CatmullRom) - falling
 -- (5720, 0, 1, -413.70477, 125.85509, -66.66063, 100, 0, 0),
 -- (5720, 0, 2, -414.67508, 125.61317, -66.66063, 100, 0, 0),
@@ -84,29 +176,23 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (5721, 1, 10, -428.70865, 75.63319, -90.75833, 100, 0, 0),
 (5721, 1, 11, -443.8896, 64.24854, -91.11068, 100, 0, 0),
 (5721, 1, 12, -470.57764, 54.71567, -90.94792, 100, 0, 0),
-(5722, 0, 1, -649.6785, 131.59596, -90.82902, 100, 0, 0),
-(5722, 0, 2, -665.83405, 131.50317, -90.82939, 100, 0, 0),
-(5722, 0, 3, -673.3382, 107.93626, -90.83093, 100, 0, 0),
-(5722, 0, 4, -673.3691, 83.96611, -90.83232, 100, 0, 0),
-(5722, 0, 5, -665.69635, 60.20914, -90.83353, 100, 0, 0),
-(5722, 0, 6, -649.8461, 60.03304, -90.833176, 100, 0, 0),
-(5722, 0, 7, -641.7433, 84.016106, -90.834, 100, 0, 0),
-(5722, 0, 8, -641.6724, 107.88358, -90.82973, 100, 0, 0),
+
 (8497, 0, 1, -420.629, 276.682, -90.827, 3.1722, 0, 0),
 (8497, 0, 2, -446.197, 275.329, -90.674, 3.1722, 1000, 849701),
 (8497, 1, 1, -512.015, 276.134, -90.827, 6.2808, 0, 0),
-(8497, 1, 2, -489.960, 275.129, -90.751, 6.2808, 1000, 849701);
-
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(8497, 1, 2, -489.960, 275.129, -90.751, 6.2808, 1000, 849701),
+-- guessed
+(8580, 0, 1, -462.61, 94.66, -189.72966, 100, 0, 0),
+(8580, 0, 2, -476.38, 78.91, -189.72966, 100, 0, 0),
+(8580, 0, 3, -489.93, 94.60, -189.72966, 100, 0, 0),
+(8580, 0, 4, -476.37, 110.76, -189.7296, 100, 0, 0);
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (5226, 0, 0, 1, 0, 0, '8601'), -- Murk Worm
 (5228, 0, 0, 1, 0, 0, NULL), -- Saturated Ooze
 (5256, 0, 0, 1, 0, 0, NULL), -- Atal'ai Warrior
 (5259, 0, 0, 1, 0, 0, NULL), -- Atal'ai Witch Doctor
-(5263, 0, 0, 1, 0, 0, NULL), -- Mummified Atal'ai
 (5267, 0, 0, 1, 0, 0, '8247 8876'), -- Unliving Atal'ai
-(5269, 0, 0, 1, 0, 0, NULL), -- Atal'ai Priest
 (5270, 0, 0, 1, 0, 0, NULL), -- Atal'ai Corpse Eater
 (5271, 0, 0, 1, 0, 0, NULL), -- Atal'ai Deathwalker
 (5273, 0, 0, 1, 0, 0, NULL), -- Atal'ai High Priest
@@ -115,513 +201,585 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (5283, 0, 0, 1, 0, 0, NULL), -- Nightmare Wanderer
 (5291, 0, 0, 1, 0, 0, NULL), -- Hakkari Frostwing
 (5708, 0, 0, 1, 0, 0, NULL), -- Spawn of Hakkar
-(5709, 0, 0, 1, 0, 0, '8876'), -- Shade of Eranikus
+(5709, 0, 0, 1, 0, 0, '12535 8876'), -- Shade of Eranikus
 (5710, 0, 0, 1, 0, 0, '13540'), -- Jammal'an the Prophet
 (5711, 0, 0, 1, 0, 0, NULL), -- Ogom the Wretched
 (5712, 0, 0, 1, 0, 0, '13540'), -- Zolo
 (5713, 0, 0, 1, 0, 0, '13540'), -- Gasher
-(5714, 0, 0, 1, 0, 0, '9205 12782 13540'), -- Loro
+(5714, 0, 0, 1, 0, 0, '12782 9205 13540'), -- Loro
 (5715, 0, 0, 1, 0, 0, '13540'), -- Hukku
 (5716, 0, 0, 1, 0, 0, '13540'), -- Zul'Lor
 (5717, 0, 0, 1, 0, 0, '13540'), -- Mijan
 (5719, 0, 0, 1, 0, 0, NULL), -- Morphaz
 (5722, 0, 0, 1, 0, 0, NULL), -- Hazzas
+(8257, 0, 0, 1, 0, 0, NULL), -- Oozeling
 (8311, 0, 0, 1, 0, 0, NULL), -- Slime Maggot
+(8317, 0, 0, 1, 0, 0, NULL), -- Atal'ai Deathwalker's Spirit
 (8318, 0, 0, 1, 0, 0, NULL), -- Atal'ai Slave
 (8319, 0, 0, 1, 0, 0, NULL), -- Nightmare Whelp
+(8324, 0, 0, 1, 0, 0, NULL), -- Atal'ai Skeleton
+(8336, 0, 0, 1, 0, 0, NULL), -- Hakkari Sapper
 (8384, 0, 0, 1, 0, 0, NULL), -- Deep Lurker
+(8437, 0, 0, 1, 0, 0, NULL), -- Hakkari Minion
+(8438, 0, 0, 1, 0, 0, NULL), -- Hakkari Bloodkeeper
+(8440, 0, 0, 1, 0, 0, '9617'), -- Shade of Hakkar
+(8443, 0, 0, 1, 0, 0, NULL), -- Avatar of Hakkar
+(8497, 0, 0, 1, 0, 0, NULL), -- Nightmare Suppressor
+(8510, 0, 0, 1, 0, 0, NULL), -- Atal'ai Totem
+(8580, 0, 0, 1, 0, 0, NULL), -- Atal'alarion
+(8656, 0, 0, 1, 0, 0, NULL), -- Hukku's Voidwalker
+(8657, 0, 0, 1, 0, 0, NULL), -- Hukku's Succubus
+(8658, 0, 0, 1, 0, 0, NULL), -- Hukku's Imp
+(15362, 0, 0, 1, 0, 0, NULL), -- Malfurion Stormrage
 (15593, 0, 0, 1, 0, 0, '25824'); -- Elder Starsong
 
 INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
-(@CGUID+143, 1), -- Morphaz - SPAWN_FLAG_RUN_ON_SPAWN
-(@CGUID+144, 1); -- Hazzas - SPAWN_FLAG_RUN_ON_SPAWN
+(@CGUID+11, 1), -- Morphaz - SPAWN_FLAG_RUN_ON_SPAWN
+(@CGUID+12, 1), -- Hazzas - SPAWN_FLAG_RUN_ON_SPAWN
+(@CGUID+231, 1), -- Oozeling - SPAWN_FLAG_RUN_ON_SPAWN
+(@CGUID+232, 1), -- Oozeling - SPAWN_FLAG_RUN_ON_SPAWN
+(@CGUID+233, 1), -- Oozeling - SPAWN_FLAG_RUN_ON_SPAWN
+(@CGUID+234, 1), -- Oozeling - SPAWN_FLAG_RUN_ON_SPAWN
+(@CGUID+235, 1); -- Oozeling - SPAWN_FLAG_RUN_ON_SPAWN
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+113, @CGUID+103, 3), -- Nightmare Wyrmkin -> Nightmare Scalebane
-(@CGUID+118, @CGUID+103, 3), -- Nightmare Wanderer -> Nightmare Scalebane
-(@CGUID+265, @CGUID+103, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+261, @CGUID+260, 3), -- Nightmare Whelp -> Nightmare Whelp
-(@CGUID+262, @CGUID+260, 3), -- Nightmare Whelp -> Nightmare Whelp
-(@CGUID+263, @CGUID+260, 3), -- Nightmare Whelp -> Nightmare Whelp
-(@CGUID+264, @CGUID+260, 3), -- Nightmare Whelp -> Nightmare Whelp
-(@CGUID+283, @CGUID+108, 515), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+284, @CGUID+108, 515), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+285, @CGUID+124, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+286, @CGUID+124, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+268, @CGUID+106, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+269, @CGUID+106, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+274, @CGUID+106, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+275, @CGUID+106, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+121, @CGUID+106, 3), -- Nightmare Wanderer -> Nightmare Scalebane
-(@CGUID+270, @CGUID+119, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+271, @CGUID+119, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+272, @CGUID+119, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+273, @CGUID+119, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+279, @CGUID+122, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+280, @CGUID+122, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+281, @CGUID+122, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+282, @CGUID+122, 3), -- Nightmare Whelp -> Nightmare Wanderer
-(@CGUID+267, @CGUID+266, 3), -- Nightmare Whelp -> Nightmare Whelp
-(@CGUID+276, @CGUID+266, 3), -- Nightmare Whelp -> Nightmare Whelp
-(@CGUID+277, @CGUID+266, 3), -- Nightmare Whelp -> Nightmare Whelp
-(@CGUID+278, @CGUID+266, 3), -- Nightmare Whelp -> Nightmare Whelp
-(@CGUID+105, @CGUID+104, 3), -- Nightmare Scalebane -> Nightmare Scalebane
-(@CGUID+123, @CGUID+104, 3), -- Nightmare Wanderer -> Nightmare Scalebane
-(@CGUID+114, @CGUID+97, 3), -- Nightmare Wanderer -> Nightmare Scalebane
-(@CGUID+115, @CGUID+97, 3), -- Nightmare Wanderer -> Nightmare Scalebane
-(@CGUID+110, @CGUID+97, 3), -- Nightmare Wyrmkin -> Nightmare Scalebane
-(@CGUID+120, @CGUID+109, 515), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+125, @CGUID+109, 515), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+100, @CGUID+99, 3), -- Nightmare Scalebane -> Nightmare Scalebane
-(@CGUID+117, @CGUID+99, 3), -- Nightmare Wanderer -> Nightmare Scalebane
-(@CGUID+249, @CGUID+98, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+250, @CGUID+98, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+251, @CGUID+98, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+252, @CGUID+98, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+116, @CGUID+98, 3), -- Nightmare Wanderer -> Nightmare Scalebane
-(@CGUID+257, @CGUID+102, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+258, @CGUID+102, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+259, @CGUID+102, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+112, @CGUID+102, 3), -- Nightmare Wyrmkin -> Nightmare Scalebane
-(@CGUID+253, @CGUID+101, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+254, @CGUID+101, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+255, @CGUID+101, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+256, @CGUID+101, 3), -- Nightmare Whelp -> Nightmare Scalebane
-(@CGUID+111, @CGUID+101, 3), -- Nightmare Wyrmkin -> Nightmare Scalebane
-(@CGUID+87, @CGUID+55, 3), -- Atal'ai Deathwalker -> Mummified Atal'ai
-(@CGUID+88, @CGUID+55, 3), -- Atal'ai Deathwalker -> Mummified Atal'ai
-(@CGUID+83, @CGUID+57, 3), -- Atal'ai Deathwalker -> Mummified Atal'ai
-(@CGUID+84, @CGUID+57, 3), -- Atal'ai Deathwalker -> Mummified Atal'ai
--- (@CGUID+77, @CGUID+58, 3), -- Atal'ai Deathwalker -> Mummified Atal'ai
--- (@CGUID+78, @CGUID+58, 3), -- Atal'ai Deathwalker -> Mummified Atal'ai
--- (@CGUID+56, @CGUID+96, 3), -- Mummified Atal'ai -> Atal'ai High Priest
--- (@CGUID+60, @CGUID+96, 3), -- Mummified Atal'ai -> Atal'ai High Priest
--- (@CGUID+91, @CGUID+96, 3), -- Atal'ai Deathwalker -> Atal'ai High Priest
--- (@CGUID+86, @CGUID+96, 3), -- Atal'ai Deathwalker -> Atal'ai High Priest
--- (@CGUID+79, @CGUID+95, 3), -- Atal'ai Deathwalker -> Atal'ai High Priest
--- (@CGUID+89, @CGUID+95, 3), -- Atal'ai Deathwalker -> Atal'ai High Priest
--- (@CGUID+90, @CGUID+95, 3), -- Atal'ai Deathwalker -> Atal'ai High Priest
--- (@CGUID+82, @CGUID+69, 3), -- Atal'ai Deathwalker -> Atal'ai Priest
--- (@CGUID+92, @CGUID+69, 3), -- Atal'ai Deathwalker -> Atal'ai Priest
--- (@CGUID+93, @CGUID+69, 3), -- Atal'ai Deathwalker -> Atal'ai Priest
-(@CGUID+80, @CGUID+59, 3), -- Atal'ai Deathwalker -> Mummified Atal'ai
-(@CGUID+81, @CGUID+59, 3), -- Atal'ai Deathwalker -> Mummified Atal'ai
-(@CGUID+85, @CGUID+94, 3), -- Atal'ai Deathwalker -> Atal'ai Deathwalker
-(@CGUID+226, @CGUID+41, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+244, @CGUID+41, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+75, @CGUID+41, 3), -- Atal'ai Corpse Eater -> Atal'ai Witch Doctor
-(@CGUID+66, @CGUID+41, 3), -- Unliving Atal'ai -> Atal'ai Witch Doctor
-(@CGUID+224, @CGUID+49, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+225, @CGUID+49, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+236, @CGUID+49, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+237, @CGUID+49, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+68, @CGUID+49, 3), -- Unliving Atal'ai -> Atal'ai Witch Doctor
-(@CGUID+71, @CGUID+70, 3), -- Atal'ai Corpse Eater -> Atal'ai Corpse Eater
-(@CGUID+35, @CGUID+70, 3), -- Atal'ai Witch Doctor -> Atal'ai Corpse Eater
-(@CGUID+216, @CGUID+53, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+217, @CGUID+53, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+243, @CGUID+53, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+74, @CGUID+53, 3), -- Atal'ai Corpse Eater -> Atal'ai Witch Doctor
-(@CGUID+218, @CGUID+30, 3), -- Atal'ai Slave -> Atal'ai Warrior
-(@CGUID+219, @CGUID+30, 3), -- Atal'ai Slave -> Atal'ai Warrior
-(@CGUID+72, @CGUID+30, 3), -- Atal'ai Corpse Eater -> Atal'ai Warrior
-(@CGUID+73, @CGUID+30, 3), -- Atal'ai Corpse Eater -> Atal'ai Warrior
-(@CGUID+210, @CGUID+43, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+229, @CGUID+43, 3), -- Atal'ai Slave -> Atal'ai Witch Doctor
-(@CGUID+44, @CGUID+43, 3), -- Atal'ai Witch Doctor -> Atal'ai Witch Doctor
-(@CGUID+196, @CGUID+303, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+197, @CGUID+303, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+198, @CGUID+303, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+199, @CGUID+303, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+304, @CGUID+303, 3), -- Deep Lurker -> Deep Lurker
-(@CGUID+200, @CGUID+305, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+201, @CGUID+305, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+19, @CGUID+305, 3), -- Saturated Ooze -> Deep Lurker
-(@CGUID+145, @CGUID+287, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+147, @CGUID+287, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+170, @CGUID+287, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+146, @CGUID+1, 3), -- Slime Maggot -> Murk Worm
-(@CGUID+195, @CGUID+1, 3), -- Slime Maggot -> Murk Worm
-(@CGUID+11, @CGUID+1, 3), -- Murk Worm -> Murk Worm
-(@CGUID+153, @CGUID+290, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+154, @CGUID+290, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+155, @CGUID+290, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+156, @CGUID+290, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+291, @CGUID+290, 3), -- Deep Lurker -> Deep Lurker
-(@CGUID+151, @CGUID+288, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+152, @CGUID+288, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+289, @CGUID+288, 3), -- Deep Lurker -> Deep Lurker
-(@CGUID+159, @CGUID+292, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+160, @CGUID+292, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+161, @CGUID+292, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+162, @CGUID+292, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+163, @CGUID+292, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+157, @CGUID+2, 3), -- Slime Maggot -> Murk Worm
-(@CGUID+158, @CGUID+2, 3), -- Slime Maggot -> Murk Worm
-(@CGUID+3, @CGUID+2, 3), -- Murk Worm -> Murk Worm
-(@CGUID+164, @CGUID+293, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+165, @CGUID+293, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+166, @CGUID+293, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+167, @CGUID+293, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+168, @CGUID+293, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+14, @CGUID+13, 3), -- Saturated Ooze -> Deep Lurker
-(@CGUID+169, @CGUID+4, 3), -- Murk Worm -> Murk Worm
-(@CGUID+204, @CGUID+307, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+205, @CGUID+307, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+206, @CGUID+307, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+207, @CGUID+307, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+202, @CGUID+306, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+203, @CGUID+306, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+12, @CGUID+306, 3), -- Murk Worm -> Deep Lurker
-(@CGUID+171, @CGUID+5, 3), -- Slime Maggot -> Murk Worm
-(@CGUID+193, @CGUID+5, 3), -- Slime Maggot -> Murk Worm
-(@CGUID+194, @CGUID+5, 3), -- Slime Maggot -> Murk Worm
-(@CGUID+10, @CGUID+5, 3), -- Murk Worm -> Murk Worm
-(@CGUID+189, @CGUID+301, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+190, @CGUID+301, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+191, @CGUID+301, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+192, @CGUID+301, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+179, @CGUID+296, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+180, @CGUID+296, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+181, @CGUID+296, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+297, @CGUID+296, 3), -- Deep Lurker -> Deep Lurker
-(@CGUID+175, @CGUID+295, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+176, @CGUID+295, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+177, @CGUID+295, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+178, @CGUID+295, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+172, @CGUID+294, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+173, @CGUID+294, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+174, @CGUID+294, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+182, @CGUID+298, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+183, @CGUID+298, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+184, @CGUID+298, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+185, @CGUID+299, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+186, @CGUID+299, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+187, @CGUID+299, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+188, @CGUID+299, 3), -- Slime Maggot -> Deep Lurker
-(@CGUID+8, @CGUID+7, 3), -- Murk Worm -> Murk Worm
-(@CGUID+18, @CGUID+7, 3); -- Saturated Ooze -> Murk Worm
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
-REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
+INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (5277, 109, 5709, 1, 0), -- Nightmare Scalebane -> Shade of Eranikus
 (5280, 109, 5709, 1, 0), -- Nightmare Wyrmkin -> Shade of Eranikus
 (5283, 109, 5709, 1, 0), -- Nightmare Wanderer -> Shade of Eranikus
 (5720, 109, 5709, 1, 0), -- Weaver -> Shade of Eranikus
 (5721, 109, 5709, 1, 0), -- Dreamscythe -> Shade of Eranikus
 (5722, 109, 5709, 1, 0), -- Hazzas -> Shade of Eranikus
-(8319, 109, 5709, 1, 0), -- Nightmare Whelp -> Shade of Eranikus
-(5711, 109, 5710, 3, 0), -- Ogom the Wretched -> Jammal'an the Prophet
-(5719, 109, 5722, 515, 0); -- Morphaz -> Hazzas
+(8319, 109, 5709, 1, 0); -- Nightmare Whelp -> Shade of Eranikus
 
-INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
-(@CGUID+1, 5226, 109, -491.134, 141.045, -148.742, 2.54743, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+2, 5226, 109, -501.895, 52.2439, -148.744, 4.71197, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+3, 5226, 109, -491.895, 46.3545, -148.743, 3.41607, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+4, 5226, 109, -398.737, 33.2352, -148.802, 4.22267, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+5, 5226, 109, -286.726, 117.319, -173.003, 5.52842, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+6, 5226, 109, -328.677, 133.218, -156.731, 2.07267, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+7, 5226, 109, -463.148, 92.9039, -189.73, 0.109954, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+8, 5226, 109, -467.428, 96.7557, -189.73, 3.79191, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+9, 5226, 109, -306.301, 95.8346, -172.98, 3.15259, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+10, 5226, 109, -288.895, 108.466, -173.003, 2.81487, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+11, 5226, 109, -502.89, 134.435, -148.742, 0.854892, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+12, 5226, 109, -417.444, 88.5238, -148.743, 0.361671, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
-(@CGUID+13, 5228, 109, -434.107, 53.8109, -148.742, 4.15671, 7200, 7200, 0, 0, 0, 0), -- Saturated Ooze
-(@CGUID+14, 5228, 109, -446.256, 43.6092, -148.744, 5.58535, 7200, 7200, 0, 0, 0, 0), -- Saturated Ooze
-(@CGUID+15, 5228, 109, -494.243, 141.354, -172.939, 5.34383, 7200, 7200, 0, 0, 0, 0), -- Saturated Ooze
-(@CGUID+16, 5228, 109, -495.708, 51.8927, -173.313, 0.8922, 7200, 7200, 0, 0, 0, 0), -- Saturated Ooze
-(@CGUID+17, 5228, 109, -440.719, 53.7378, -173.655, 4.04951, 7200, 7200, 0, 0, 0, 0), -- Saturated Ooze
-(@CGUID+18, 5228, 109, -469.266, 104.372, -189.73, 2.66565, 7200, 7200, 0, 0, 0, 0), -- Saturated Ooze
-(@CGUID+19, 5228, 109, -442.549, 144.445, -148.743, 5.47225, 7200, 7200, 0, 0, 0, 0), -- Saturated Ooze
-(@CGUID+20, 5256, 109, -436.797, 2.26111, -53.9463, 0.797142, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+21, 5256, 109, -442.327, 5.6199, -53.9463, 0.0376612, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+22, 5256, 109, -553.639, 62.564, -53.9463, 4.97037, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+23, 5256, 109, -560.695, 109.257, -53.9463, 5.22798, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+24, 5256, 109, -412.033, 176.179, -53.9463, 5.23434, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+25, 5256, 109, -374.577, 108.976, -53.9463, 0.332726, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+26, 5256, 109, -483.288, 183.85, -53.9463, 1.3809, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+27, 5256, 109, -481.784, 193.587, -53.9463, 5.30475, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+28, 5256, 109, -550.794, 130.856, -53.9465, 1.49243, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+29, 5256, 109, -555.874, 82.1068, -53.9465, 3.32405, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+30, 5256, 109, -522.858, 9.78118, -53.9463, 1.44928, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Warrior
-(@CGUID+31, 5259, 109, -376.555, 5.47187, -148.677, 1.41801, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+32, 5259, 109, -366.303, 20.705, -148.657, 4.0923, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+33, 5259, 109, -367.58, 90.78, -131.849, 5.97881, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+34, 5259, 109, -397.505, 141.699, -131.857, 6.03913, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+35, 5259, 109, -394.658, 29.7623, -53.9463, 2.3483, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+36, 5259, 109, -432.846, 9.76502, -53.9463, 4.27489, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+37, 5259, 109, -552.984, 56.1326, -53.9463, 1.87433, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+38, 5259, 109, -559.291, 58.8837, -53.9463, 6.2812, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+39, 5259, 109, -446.649, 191.083, -53.9463, 5.62382, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+40, 5259, 109, -438.791, 185.074, -53.9463, 2.89071, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+41, 5259, 109, -350.239, 4.82687, -69.3923, 2.37323, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+42, 5259, 109, -606.221, 46.1259, -69.3528, 5.56428, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+43, 5259, 109, -329.324, 141.748, -69.4879, 2.60411, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+44, 5259, 109, -345.302, 145.317, -69.4879, 0.606829, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+45, 5259, 109, -394.009, 152.572, -53.9463, 6.06647, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+46, 5259, 109, -393.419, 159.956, -53.9463, 5.27019, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+47, 5259, 109, -475.607, 189.167, -53.9463, 0.63006, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+48, 5259, 109, -523.055, 172.089, -54.0949, 3.22816, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+49, 5259, 109, -570.254, 190.228, -69.4013, 4.66544, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+50, 5259, 109, -556.395, 140.93, -53.9465, 4.95453, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+51, 5259, 109, -558.828, 128.91, -53.9465, 0.650548, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+52, 5259, 109, -602.902, 55.1722, -69.3528, 5.53965, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+53, 5259, 109, -480.794, 4.1161, -53.9463, 3.61227, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+54, 5259, 109, -371.111, 73.6491, -53.9455, 1.95193, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Witch Doctor
-(@CGUID+55, 5263, 109, -492.77, -54.5658, -90.8275, 5.42032, 7200, 7200, 0, 0, 0, 0), -- Mummified Atal'ai
-(@CGUID+56, 5263, 109, -477.877, -93.8933, -90.8275, 0.220976, 7200, 7200, 0, 0, 0, 0), -- Mummified Atal'ai
-(@CGUID+57, 5263, 109, -482.958, -116.101, -90.8275, 2.75782, 7200, 7200, 0, 0, 0, 0), -- Mummified Atal'ai
-(@CGUID+58, 5263, 109, -467.583, -76.3734, -90.8275, 0.146237, 7200, 7200, 0, 0, 0, 0), -- Mummified Atal'ai
-(@CGUID+59, 5263, 109, -447.073, -52.2468, -90.8275, 5.03312, 7200, 7200, 0, 0, 0, 0), -- Mummified Atal'ai
-(@CGUID+60, 5263, 109, -466.663, -97.4965, -90.8275, 0.122803, 7200, 7200, 0, 0, 0, 0), -- Mummified Atal'ai
-(@CGUID+61, 5267, 109, -373.987, 8.44981, -148.719, 1.63792, 7200, 7200, 0, 0, 0, 0), -- Unliving Atal'ai
-(@CGUID+62, 5267, 109, -367.467, 83.5495, -131.849, 0.520293, 7200, 7200, 0, 0, 0, 0), -- Unliving Atal'ai
-(@CGUID+63, 5267, 109, -397.082, 144.273, -131.857, 5.92995, 7200, 7200, 0, 0, 0, 0), -- Unliving Atal'ai
-(@CGUID+64, 5267, 109, -380.837, 143.681, -53.9463, 4.85938, 7200, 7200, 0, 0, 0, 0), -- Unliving Atal'ai
-(@CGUID+65, 5267, 109, -442.403, 187.482, -53.9463, 3.01794, 7200, 7200, 0, 0, 0, 0), -- Unliving Atal'ai
-(@CGUID+66, 5267, 109, -362.514, 3.44433, -69.3923, 0.64142, 7200, 7200, 0, 0, 0, 0), -- Unliving Atal'ai
-(@CGUID+67, 5267, 109, -524.792, 175.692, -54.0949, 3.12527, 7200, 7200, 0, 0, 0, 0), -- Unliving Atal'ai
-(@CGUID+68, 5267, 109, -578.509, 184.885, -69.4013, 4.43217, 7200, 7200, 0, 0, 0, 0), -- Unliving Atal'ai
-(@CGUID+69, 5269, 109, -448.423, -91.5326, -90.8275, 5.98973, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Priest
-(@CGUID+70, 5270, 109, -400.084, 30.8435, -53.9463, 4.07932, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Corpse Eater
-(@CGUID+71, 5270, 109, -396.341, 35.9445, -53.9463, 4.07932, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Corpse Eater
-(@CGUID+72, 5270, 109, -530.902, 21.5278, -53.9463, 5.97527, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Corpse Eater
-(@CGUID+73, 5270, 109, -521.466, 22.2492, -53.9463, 4.55947, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Corpse Eater
-(@CGUID+74, 5270, 109, -475.277, 0.586998, -53.9463, 0.0261377, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Corpse Eater
-(@CGUID+75, 5270, 109, -359.358, 6.96094, -69.3923, 1.15946, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Corpse Eater
-(@CGUID+76, 5270, 109, -380.9, 48.948, -53.9455, 4.39688, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Corpse Eater
-(@CGUID+77, 5271, 109, -476.251, -80.8728, -90.8275, 0.275089, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+78, 5271, 109, -476.669, -74.2078, -90.8275, 0.0630307, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+79, 5271, 109, -459.757, -74.6776, -90.8275, 5.61186, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+80, 5271, 109, -442.985, -53.7109, -90.8275, 3.67469, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+81, 5271, 109, -449.691, -55.0559, -90.8275, 5.98769, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+82, 5271, 109, -448.944, -93.9112, -90.8275, 6.11177, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+83, 5271, 109, -488.346, -116.971, -90.8275, 0.749854, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+84, 5271, 109, -486.837, -112.27, -90.8275, 4.87075, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+85, 5271, 109, -440.499, -120.2, -90.8275, 2.34569, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+86, 5271, 109, -466.791, -92.1131, -90.8274, 6.26874, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+87, 5271, 109, -487.119, -54.2088, -90.8281, 3.87692, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+88, 5271, 109, -491.812, -61.1224, -90.8281, 1.33301, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+89, 5271, 109, -450.099, -74.562, -90.8274, 0.0975781, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+90, 5271, 109, -449.994, -79.4681, -90.8274, 0.0975781, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+91, 5271, 109, -477.84, -97.6526, -90.8275, 0.113043, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+92, 5271, 109, -457.172, -90.0466, -90.8275, 0.131107, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+93, 5271, 109, -457.244, -97.7436, -90.8275, 6.16061, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+94, 5271, 109, -444.604, -116.482, -90.8275, 2.26697, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Deathwalker
-(@CGUID+95, 5273, 109, -459.898, -77.7837, -90.8275, 6.26499, 7200, 7200, 0, 0, 0, 0), -- Atal'ai High Priest
-(@CGUID+96, 5273, 109, -466.5, -94.7733, -90.8275, 6.212, 7200, 7200, 0, 0, 0, 0), -- Atal'ai High Priest
-(@CGUID+97, 5277, 109, -502.226, 161.997, -90.8876, 5.24682, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+98, 5277, 109, -598.944, 99.2307, -90.8849, 1.0031, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+99, 5277, 109, -542.652, 94.2902, -90.8689, 0.0582671, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+100, 5277, 109, -543.298, 101.722, -90.8697, 0.0504134, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+101, 5277, 109, -543.934, -72.9843, -90.8326, 3.44334, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+102, 5277, 109, -529.762, 10.1713, -90.8782, 6.17628, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+103, 5277, 109, -293.655, 80.4138, -91.4671, 2.16369, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+104, 5277, 109, -422.242, 156.176, -90.8708, 4.17668, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+105, 5277, 109, -436.859, 164.875, -90.866, 4.16098, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+106, 5277, 109, -420.452, 15.5113, -90.8588, 2.17262, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+107, 5277, 109, -498.945, 37.5312, -90.9851, 0.39055, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+108, 5277, 109, -433.421, 127.433, -90.9162, 4.91028, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+109, 5277, 109, -511.852, 125.178, -91.3058, 4.54586, 7200, 7200, 0, 0, 0, 0), -- Nightmare Scalebane
-(@CGUID+110, 5280, 109, -511.836, 156.322, -90.8862, 5.19577, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wyrmkin
-(@CGUID+111, 5280, 109, -561.332, -66.583, -90.8419, 5.882, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wyrmkin
-(@CGUID+112, 5280, 109, -524.726, 16.4706, -90.8805, 4.6212, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wyrmkin
-(@CGUID+113, 5280, 109, -301.045, 77.3152, -91.4671, 0.365127, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wyrmkin
-(@CGUID+114, 5283, 109, -507.281, 159.062, -90.8874, 5.26646, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+115, 5283, 109, -497.614, 164.865, -90.8902, 5.23897, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+116, 5283, 109, -587.545, 92.7379, -90.8894, 3.17708, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+117, 5283, 109, -542.852, 86.9069, -90.8667, 0.0111437, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+118, 5283, 109, -293.544, 74.1209, -91.4671, 1.51573, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+119, 5283, 109, -459.465, 70.2193, -92.9899, 0.92493, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+120, 5283, 109, -502.888, 122.757, -90.6196, 5.14026, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+121, 5283, 109, -431.212, 8.95485, -90.8681, 1.28512, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+122, 5283, 109, -474.494, 130.007, -91.3932, 3.5884, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+123, 5283, 109, -431.411, 163.683, -90.8687, 4.19556, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+124, 5283, 109, -433.442, 73.5839, -90.9951, 2.69153, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+125, 5283, 109, -516.074, 124.92, -91.2108, 4.82409, 7200, 7200, 0, 0, 0, 0), -- Nightmare Wanderer
-(@CGUID+126, 5291, 109, -399.046, 209.403, -90.8796, 3.34538, 7200, 7200, 0, 0, 0, 0), -- Hakkari Frostwing
-(@CGUID+127, 5291, 109, -378.717, 251.202, -90.8439, 2.56862, 7200, 7200, 0, 0, 0, 0), -- Hakkari Frostwing
-(@CGUID+128, 5291, 109, -380.593, 270.517, -90.83, 3.83625, 7200, 7200, 0, 0, 0, 0), -- Hakkari Frostwing
-(@CGUID+129, 5291, 109, -488.499, 273.113, -90.7271, 5.83116, 7200, 7200, 0, 0, 0, 0), -- Hakkari Frostwing
-(@CGUID+130, 5291, 109, -471.309, 297.133, -90.6995, 5.01434, 7200, 7200, 0, 0, 0, 0), -- Hakkari Frostwing
-(@CGUID+131, 5291, 109, -555.544, 270.643, -90.8346, 5.27195, 7200, 7200, 0, 0, 0, 0), -- Hakkari Frostwing
-(@CGUID+132, 5291, 109, -535.628, 203.112, -90.9058, 1.4667, 7200, 7200, 0, 0, 0, 0), -- Hakkari Frostwing
-(@CGUID+133, 5708, 109, -369.819, 85.5733, -148.802, 3.21424, 1000000, 1000000, 0, 0, 0, 2), -- Spawn of Hakkar
-(@CGUID+134, 5709, 109, -658.379, -35.7623, -90.8352, 1.57592, 1000000, 1000000, 0, 0, 0, 0), -- Shade of Eranikus
-(@CGUID+135, 5710, 109, -425.894, -86.0747, -88.224, 3.11157, 1000000, 1000000, 0, 0, 0, 0), -- Jammal'an the Prophet
-(@CGUID+136, 5711, 109, -425.694, -93.5241, -88.224, 2.51817, 1000000, 1000000, 0, 0, 0, 0), -- Ogom the Wretched
-(@CGUID+137, 5712, 109, -528.646, 130.163, -66.7533, 5.66229, 1000000, 1000000, 0, 0, 0, 0), -- Zolo
-(@CGUID+138, 5713, 109, -527.969, 59.4516, -66.7188, 0.397759, 1000000, 1000000, 0, 0, 0, 0), -- Gasher
-(@CGUID+139, 5714, 109, -466.655, 24.4261, -66.7908, 1.5515, 1000000, 1000000, 0, 0, 0, 0), -- Loro
-(@CGUID+140, 5715, 109, -405.506, 60.4569, -67.0678, 2.57409, 1000000, 1000000, 0, 0, 0, 0), -- Hukku
-(@CGUID+141, 5716, 109, -467.396, 165.997, -66.7027, 4.7096, 1000000, 1000000, 0, 0, 0, 0), -- Zul'Lor
-(@CGUID+142, 5717, 109, -406.189, 131.068, -66.9138, 3.68072, 1000000, 1000000, 0, 0, 0, 0), -- Mijan
-(@CGUID+143, 5719, 109, -646.4796142578125, 122.121429443359375, -90.829498291015625, 1.896414637565612792, 86400, 86400, 0, 0, 0, 0), -- Morphaz
-(@CGUID+144, 5722, 109, -649.67852783203125, 131.5959625244140625, -90.8290176391601562, 1.896413564682006835, 86400, 86400, 0, 0, 0, 2), -- Hazzas
-(@CGUID+145, 8311, 109, -506.616, 183.867, -147.307, 1.93089, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+146, 8311, 109, -490.377, 149.741, -147.768, 3.69646, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+147, 8311, 109, -510.948, 181.021, -148.802, 6.10999, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+148, 8311, 109, -546.35, 151.003, -147.526, 4.48893, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+149, 8311, 109, -555.539, 131.459, -148.802, 0.993906, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+150, 8311, 109, -533.006, 115.369, -148.805, 2.70607, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+151, 8311, 109, -517.782, 98.4696, -148.742, 3.21658, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+152, 8311, 109, -524.655, 90.3218, -148.743, 1.44944, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+153, 8311, 109, -562.351, 101.242, -148.802, 1.35204, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+154, 8311, 109, -568.104, 106.208, -148.802, 5.94583, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+155, 8311, 109, -558.676, 107.74, -147.236, 2.93383, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+156, 8311, 109, -566.167, 104.666, -148.802, 0.725287, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+157, 8311, 109, -490.3, 42.7803, -148.744, 2.90556, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+158, 8311, 109, -499.616, 46.49, -148.744, 0.113466, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+159, 8311, 109, -520.316, 26.81, -148.802, 4.21953, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+160, 8311, 109, -519.67, 16.1979, -147.236, 2.69036, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+161, 8311, 109, -522.688, 18.6743, -148.802, 6.27964, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+162, 8311, 109, -527.713, 20.5194, -148.802, 1.79422, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+163, 8311, 109, -526.129, 15.5934, -148.802, 2.11938, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+164, 8311, 109, -434.003, 1.58256, -148.802, 0.782628, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+165, 8311, 109, -425.072, 9.87226, -148.802, 2.36521, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+166, 8311, 109, -431.558, 8.57298, -148.802, 0.821899, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+167, 8311, 109, -433.708, 7.27427, -148.802, 0.947562, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+168, 8311, 109, -426.633, 3.14311, -148.802, 2.9896, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+169, 8311, 109, -398.828, 26.548, -148.802, 3.30533, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+170, 8311, 109, -505.355, 180.341, -148.802, 1.9144, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+171, 8311, 109, -301.759, 115.811, -173.003, 0.450819, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+172, 8311, 109, -513.666, 120.161, -173.293, 0.628289, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+173, 8311, 109, -510.294, 114.76, -174.013, 0.925957, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+174, 8311, 109, -509.183, 125.616, -173.458, 3.47065, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+175, 8311, 109, -463.926, 156.711, -172.294, 4.63305, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+176, 8311, 109, -471.406, 150.717, -172.939, 5.11999, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+177, 8311, 109, -466.626, 145.242, -173.551, 3.13686, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+178, 8311, 109, -461.322, 145.554, -173.521, 2.12763, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+179, 8311, 109, -424.676, 122.525, -173.485, 0.439019, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+180, 8311, 109, -418.175, 120.787, -172.939, 2.04909, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+181, 8311, 109, -422.839, 117.392, -173.622, 1.20478, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+182, 8311, 109, -507.2, 67.0389, -173.854, 3.48009, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+183, 8311, 109, -513.006, 69.0376, -173.357, 1.54015, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+184, 8311, 109, -508.668, 61.9109, -173.368, 2.67427, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+185, 8311, 109, -474.082, 44.395, -173.589, 1.47105, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+186, 8311, 109, -478.183, 41.077, -173.081, 1.37051, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+187, 8311, 109, -484.906, 47.7435, -173.594, 4.62442, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+188, 8311, 109, -480.789, 47.3489, -173.862, 3.38742, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+189, 8311, 109, -402.951, 95.0555, -172.932, 4.60008, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+190, 8311, 109, -409.898, 94.0353, -172.938, 1.41765, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+191, 8311, 109, -404.685, 89.4919, -172.932, 2.41039, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+192, 8311, 109, -398.033, 93.8167, -172.932, 0.596907, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+193, 8311, 109, -295.638, 111.639, -173.003, 1.25585, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+194, 8311, 109, -301.55, 109.374, -173.003, 0.313375, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+195, 8311, 109, -498.664, 140.685, -148.743, 6.18775, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+196, 8311, 109, -413.007, 176.775, -148.802, 5.58064, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+197, 8311, 109, -407.55, 170.645, -147.236, 3.29984, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+198, 8311, 109, -404.538, 162.317, -148.802, 2.86159, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+199, 8311, 109, -406.115, 168.452, -148.802, 2.86159, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+200, 8311, 109, -444.126, 140.309, -148.741, 1.05361, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+201, 8311, 109, -439.041, 144.648, -147.602, 5.47225, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+202, 8311, 109, -415.212, 99.3122, -147.77, 5.45891, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+203, 8311, 109, -413.32, 91.8947, -148.742, 4.31616, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+204, 8311, 109, -376.929, 84.2918, -148.802, 4.8675, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+205, 8311, 109, -375.648, 85.2238, -148.802, 0.980567, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+206, 8311, 109, -372.954, 87.8929, -147.426, 5.07171, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+207, 8311, 109, -371.254, 81.8927, -147.738, 6.25452, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
-(@CGUID+208, 8318, 109, -367.639, 12.3524, -148.713, 1.81071, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+209, 8318, 109, -375.791, 12.885, -148.793, 1.31984, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+210, 8318, 109, -329.908, 149.089, -69.4878, 2.67134, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+211, 8318, 109, -378.075, 141.524, -53.9463, 4.75178, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+212, 8318, 109, -382.535, 141.908, -53.9463, 4.7832, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+213, 8318, 109, -381.674, 55.3761, -53.9463, 0.998201, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+214, 8318, 109, -438.797, 8.83912, -53.9463, 5.81977, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+215, 8318, 109, -430.725, 3.5262, -53.9463, 1.63673, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+216, 8318, 109, -481.333, -0.0372205, -53.9463, 0.266214, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+217, 8318, 109, -486.34, 6.38944, -53.9463, 3.60416, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+218, 8318, 109, -529.98, 24.9148, -53.9463, 5.97527, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+219, 8318, 109, -529.816, 18.2607, -53.9463, 2.16687, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+220, 8318, 109, -557.775, 61.763, -53.9463, 4.79208, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+221, 8318, 109, -557.19, 54.4363, -53.9463, 4.79208, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+222, 8318, 109, -438.18, 189.796, -53.9463, 3.10119, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+223, 8318, 109, -444.5, 185.774, -53.9463, 2.84594, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+224, 8318, 109, -578.458, 179.905, -69.4013, 3.89918, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+225, 8318, 109, -572.55, 187.132, -69.4013, 4.07982, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+226, 8318, 109, -356.844, 13.1748, -69.3923, 4.61004, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+227, 8318, 109, -601.994, 52.978, -69.3528, 5.3216, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+228, 8318, 109, -596.574, 44.2668, -69.3528, 2.95519, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+229, 8318, 109, -338.75, 143.612, -69.4879, 2.08416, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+230, 8318, 109, -388.048, 158.154, -53.9463, 5.62754, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+231, 8318, 109, -394.102, 156.187, -53.9463, 5.62754, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+232, 8318, 109, -478.726, 188.278, -53.9463, 3.33497, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+233, 8318, 109, -483.168, 189.219, -53.9463, 3.25722, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+234, 8318, 109, -521.721, 176.216, -54.0949, 3.62871, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+235, 8318, 109, -526.877, 167.686, -54.0949, 2.548, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+236, 8318, 109, -578.834, 193.659, -69.4013, 4.69292, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+237, 8318, 109, -574.913, 189.46, -69.4013, 4.64187, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+238, 8318, 109, -559.446, 136.579, -53.9465, 0.682749, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+239, 8318, 109, -552.025, 135.648, -53.9465, 0.792705, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+240, 8318, 109, -557.234, 133.695, -53.9465, 0.81234, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+241, 8318, 109, -596.048, 45.1776, -69.3528, 5.53965, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+242, 8318, 109, -603.445, 51.9793, -69.3528, 5.53965, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+243, 8318, 109, -481.459, -4.11243, -53.9463, 0.0402737, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+244, 8318, 109, -359.015, -3.4845, -69.3923, 1.82862, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+245, 8318, 109, -380.064, 43.3977, -53.9455, 4.25551, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+246, 8318, 109, -385.074, 49.8669, -53.9455, 4.25551, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+247, 8318, 109, -367.877, 78.0381, -53.9455, 1.95193, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+248, 8318, 109, -374.295, 77.534, -53.9455, 1.46891, 7200, 7200, 0, 0, 0, 0), -- Atal'ai Slave
-(@CGUID+249, 8319, 109, -599.345, 87.0457, -90.8871, 0.311951, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+250, 8319, 109, -605.791, 97.6143, -90.8848, 5.9676, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+251, 8319, 109, -597.511, 84.3774, -90.8899, 2.34299, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+252, 8319, 109, -588.77, 97.1348, -90.8871, 3.40642, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+253, 8319, 109, -541.35, -67.5494, -90.8367, 2.08617, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+254, 8319, 109, -556.189, -75.0474, -90.8371, 1.78458, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+255, 8319, 109, -561.843, -75.0713, -90.8384, 0.712507, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+256, 8319, 109, -556.717, -58.0294, -90.844, 5.50344, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+257, 8319, 109, -516.262, -5.21464, -90.8829, 2.1197, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+258, 8319, 109, -512.418, 4.69133, -90.8829, 4.82933, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+259, 8319, 109, -517.08, 8.97851, -90.8829, 0.603882, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+260, 8319, 109, -409.042, 87.9432, -91.1964, 0.466443, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+261, 8319, 109, -404.823, 98.7564, -91.0953, 2.43858, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+262, 8319, 109, -398.212, 91.0003, -90.9189, 2.43072, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+263, 8319, 109, -391.624, 98.5669, -90.8776, 0.33371, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+264, 8319, 109, -385.835, 91.1061, -90.8747, 3.69522, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+265, 8319, 109, -288.008, 76.4924, -91.4671, 2.98836, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+266, 8319, 109, -500.911, 57.4209, -91.417, 1.4378, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+267, 8319, 109, -504.523, 62.5946, -91.4398, 0.431703, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+268, 8319, 109, -425.666, 25.6628, -90.8678, 2.11245, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+269, 8319, 109, -414.779, 22.272, -90.8588, 2.42583, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+270, 8319, 109, -458.554, 77.423, -93.6562, 4.09951, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+271, 8319, 109, -452.109, 70.0397, -92.5483, 3.32589, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+272, 8319, 109, -457.126, 64.4411, -91.9397, 1.41031, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+273, 8319, 109, -464.338, 74.5981, -93.5441, 5.78026, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+274, 8319, 109, -436.735, 21.87, -90.8716, 2.18097, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+275, 8319, 109, -420.157, 33.1005, -90.8658, 2.14327, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+276, 8319, 109, -506.202, 65.4164, -91.4387, 4.70553, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+277, 8319, 109, -504.561, 76.132, -90.8308, 4.03873, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+278, 8319, 109, -496.09, 75.8476, -91.3849, 1.91344, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+279, 8319, 109, -472.142, 123.972, -92.615, 3.37247, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+280, 8319, 109, -481.148, 123.774, -91.8459, 2.99626, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+281, 8319, 109, -480.66, 129.907, -91.2338, 6.23525, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+282, 8319, 109, -472.985, 134.801, -91.024, 5.11055, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+283, 8319, 109, -423.83, 121.451, -91.4011, 3.00176, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+284, 8319, 109, -435.116, 117.833, -91.0713, 1.7412, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+285, 8319, 109, -438.66, 69.3605, -91.1803, 1.80403, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+286, 8319, 109, -431.067, 78.404, -91.0223, 2.7465, 7200, 7200, 0, 0, 0, 0), -- Nightmare Whelp
-(@CGUID+287, 8384, 109, -510.957, 186.878, -148.802, 5.14474, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+288, 8384, 109, -521.151, 90.4728, -148.741, 2.20734, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+289, 8384, 109, -521.044, 102.285, -148.743, 3.88653, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+290, 8384, 109, -569.687, 101.871, -148.802, 6.16495, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+291, 8384, 109, -563.259, 109.207, -148.802, 4.29571, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+292, 8384, 109, -527.568, 18.2762, -148.802, 0.469254, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+293, 8384, 109, -430.339, 4.36264, -148.802, 0.998612, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+294, 8384, 109, -515.758, 123.722, -172.939, 5.88575, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+295, 8384, 109, -468.431, 151.671, -172.939, 5.08858, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+296, 8384, 109, -415.387, 117.089, -172.939, 2.93816, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+297, 8384, 109, -421.219, 125.943, -172.939, 4.51681, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+298, 8384, 109, -516.026, 66.2658, -172.939, 0.0455403, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+299, 8384, 109, -466.495, 39.6715, -172.939, 4.24194, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+300, 8384, 109, -425.686, 88.5654, -176.075, 0.649529, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+301, 8384, 109, -405.939, 99.1431, -172.934, 5.87635, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+302, 8384, 109, -372.958, 90.3818, -172.937, 0.592196, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+303, 8384, 109, -412.017, 168.428, -148.802, 1.38111, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+304, 8384, 109, -418.784, 171.724, -148.802, 6.15084, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+305, 8384, 109, -434.538, 137.705, -148.742, 2.60241, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+306, 8384, 109, -411.052, 100.104, -148.743, 5.08113, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+307, 8384, 109, -373.072, 77.3239, -148.802, 1.41254, 7200, 7200, 0, 0, 0, 0), -- Deep Lurker
-(@CGUID+308, 15593, 109, -415.042, 7.16811, -90.854, 2.2162, 25, 25, 0, 0, 0, 0); -- Elder Starsong
+INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
+(@CGUID+1, 5708, 109, -467.61713, -2.193203, -148.80229, 0, 86400, 86400, 0, 4), -- Spawn of Hakkar
+(@CGUID+2, 5709, 109, -659.9942626953125, -34.033050537109375, -90.7518081665039062, 1.570796370506286621, 86400, 86400, 0, 0), -- Shade of Eranikus
+(@CGUID+3, 5710, 109, -426.677490234375, -85.7375717163085937, -88.140716552734375, 3.211405754089355468, 86400, 86400, 0, 0), -- Jammal'an the Prophet
+(@CGUID+4, 5711, 109, -422.357635498046875, -90.3028335571289062, -88.1407394409179687, 2.670353651046752929, 86400, 86400, 0, 0), -- Ogom the Wretched
+(@CGUID+5, 0, 109, -526.17608642578125, 129.13665771484375, -66.993560791015625, 5.777040004730224609, 86400, 86400, 0, 0), -- Atal\'ai Defender
+(@CGUID+6, 0, 109, -528.550537109375, 60.40182113647460937, -66.9935531616210937, 0.523598790168762207, 86400, 86400, 0, 0), -- Atal\'ai Defender
+(@CGUID+7, 0, 109, -467.177581787109375, 26.31117439270019531, -66.983245849609375, 1.570796370506286621, 86400, 86400, 0, 0), -- Atal\'ai Defender
+(@CGUID+8, 0, 109, -406.055572509765625, 60.26487350463867187, -66.98443603515625, 2.600540637969970703, 86400, 86400, 0, 0), -- Atal\'ai Defender
+(@CGUID+9, 0, 109, -467.23248291015625, 166.5507965087890625, -67.0174789428710937, 4.729842185974121093, 86400, 86400, 0, 0), -- Atal\'ai Defender
+(@CGUID+10, 0, 109, -406.189727783203125, 131.40863037109375, -67.229888916015625, 3.665191411972045898, 86400, 86400, 0, 0), -- Atal\'ai Defender
+(@CGUID+11, 5719, 109, -646.4796142578125, 122.121429443359375, -90.829498291015625, 1.896414637565612792, 86400, 86400, 0, 0), -- Morphaz
+(@CGUID+12, 5722, 109, -649.67852783203125, 131.5959625244140625, -90.8290176391601562, 1.896413564682006835, 86400, 86400, 0, 0), -- Hazzas
+
+(@CGUID+13, 5259, 109, -369.316741943359375, 90.961639404296875, -131.765380859375, 1.902408838272094726, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+14, 5267, 109, -370.235, 84.833, -131.766, 0, 7200, 7200, 2, 1), -- Unliving Atal'ai
+
+(@CGUID+15, 5259, 109, -401.815093994140625, 144.61883544921875, -131.772384643554687, 2.862339973449707031, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+16, 5267, 109, -397.082, 144.273, -131.857, 0, 7200, 7200, 2, 1), -- Unliving Atal'ai
+
+(@CGUID+17, 5259, 109, -347.92926025390625, 136.094879150390625, -148.855682373046875, 1.814140796661376953, 3600, 3600, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+18, 0, 109, -348.426605224609375, 138.043304443359375, -148.856155395507812, 1.807478666305541992, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+19, 8318, 109, -346.0498046875, 135.5235748291015625, -148.836761474609375, 1.791351079940795898, 3600, 3600, 0, 0), -- Atal'ai Slave
+(@CGUID+20, 8318, 109, -349.389556884765625, 134.72210693359375, -148.879058837890625, 1.806034088134765625, 3600, 3600, 0, 0), -- Atal'ai Slave
+
+(@CGUID+21, 5259, 109, -370.990692138671875, 14.64993476867675781, -148.76580810546875, 0.791304469108581542, 3600, 3600, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+22, 0, 109, -369.565948486328125, 16.07137680053710937, -148.766159057617187, 0.796074986457824707, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+23, 8318, 109, -370.502105712890625, 12.78006267547607421, -148.7464599609375, 0.767770349979400634, 3600, 3600, 0, 0), -- Atal'ai Slave
+(@CGUID+24, 8318, 109, -372.8955078125, 15.18656444549560546, -148.788314819335937, 0.791309654712677001, 3600, 3600, 0, 0), -- Atal'ai Slave
+
+(@CGUID+25, 5259, 109, -555.01794, 14.333408, -89.08648, 0, 3600, 3600, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+26, 0, 109, -555.01794, 14.333408, -89.08648, 0, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+27, 8318, 109, -555.01794, 14.333408, -89.08648, 0, 3600, 3600, 0, 0), -- Atal'ai Slave
+(@CGUID+28, 8318, 109, -555.01794, 14.333408, -89.08648, 0, 3600, 3600, 0, 0), -- Atal'ai Slave
+
+(@CGUID+29, 5259, 109, -579.6525, 130.31882, -89.13575, 0, 3600, 3600, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+30, 0, 109, -579.6525, 130.31882, -89.13575, 0, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+31, 8318, 109, -579.6525, 130.31882, -89.13575, 0, 3600, 3600, 0, 0), -- Atal'ai Slave
+(@CGUID+32, 8318, 109, -579.6525, 130.31882, -89.13575, 0, 3600, 3600, 0, 0), -- Atal'ai Slave
+
+(@CGUID+33, 0, 109, -599.1420, 41.6943, -69.3527, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+34, 0, 109, -600.8230, 35.6455, -69.2695, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+35, 0, 109, -592.3450, 41.8161, -69.3527, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+36, 0, 109, -604.1221, 46.6091, -69.3527, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+37, 0, 109, -574.4740, 176.0760, -69.4013, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+38, 0, 109, -578.2130, 181.5650, -69.4013, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+39, 0, 109, -584.4310, 181.2780, -69.4013, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+40, 0, 109, -577.3610, 188.4330, -69.4013, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+41, 0, 109, -355.4809, 3.7342, -69.3923, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+42, 0, 109, -355.3210, 11.4361, -69.3923, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+43, 0, 109, -347.7250, 9.3149, -69.3923, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+44, 0, 109, -362.5190, 18.5377, -69.3923, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+45, 0, 109, -330.609, 145.104, -69.4879, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+46, 0, 109, -341.080, 147.802, -69.4045, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+47, 0, 109, -336.24, 148.934, -69.4879, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+48, 0, 109, -332.630, 152.879, -69.4879, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+49, 5259, 109, -366.68572998046875, 82.06537628173828125, -53.863006591796875, 6.056292533874511718, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+50, 0, 109, -370.5499, 79.1475, -53.8629, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+51, 8318, 109, -366.434, 86.7675, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+52, 8318, 109, -371.371, 83.7292, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+53, 8318, 109, -368.222, 76.4324, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+
+(@CGUID+54, 5259, 109, -373.429595947265625, 52.7826995849609375, -53.863006591796875, 0.314159274101257324, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+55, 0, 109, -378.4870, 55.0848, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+56, 0, 109, -378.6950, 49.0712, -53.8629, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+
+(@CGUID+57, 5259, 109, -453.2801513671875, -4.44215297698974609, -53.8630104064941406, 4.852015495300292968, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+58, 0, 109, -448.5650, -1.2599, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+59, 0, 109, -453.8320, 1.82662, -53.8629, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+60, 8318, 109, -456.627, -2.0853, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+61, 8318, 109, -450.072, 2.70060, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+
+(@CGUID+62, 5259, 109, -482.5186767578125, 5.46272897720336914, -53.863006591796875, 1.308996915817260742, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+63, 0, 109, -480.0840, 0.93567, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+64, 8318, 109, -484.606, 1.9543, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+65, 8318, 109, -477.465, 3.27038, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+
+(@CGUID+66, 0, 109, -516.7219, 13.3375, -53.9464, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+67, 0, 109, -521.1480, 11.8514, -53.8629, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+68, 0, 109, -521.9760, 19.2430, -53.9464, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+69, 0, 109, -527.544, 18.0609, -53.9464, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+70, 0, 109, -527.287, 24.074, -53.9464, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+71, 0, 109, -533.195, 24.7842, -53.8629, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+72, 0, 109, -531.181, 29.721, -53.9464, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+73, 5259, 109, -552.7900390625, 60.9998779296875, -53.8630104064941406, 0.314159274101257324, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+74, 5259, 109, -560.43975830078125, 63.74696731567382812, -53.8630142211914062, 2.932153224945068359, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+75, 0, 109, -556.627, 58.946, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+76, 0, 109, -556.7860, 66.6208, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+77, 8318, 109, -556.869, 61.5967, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+
+(@CGUID+78, 5259, 109, -558.5009765625, 136.833038330078125, -53.863006591796875, 2.862339973449707031, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+79, 0, 109, -553.450, 132.542, -53.8629, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+80, 8318, 109, -556.240, 140.151, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+81, 8318, 109, -557.164, 132.868, -53.8629, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+82, 8318, 109, -550.289, 134.104, -53.8629, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+83, 8318, 109, -553.393, 139.7059, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+
+(@CGUID+84, 5259, 109, -482.39410400390625, 192.411346435546875, -53.863006591796875, 1.553343057632446289, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+85, 5259, 109, -479.92620849609375, 185.7464599609375, -53.8630104064941406, 5.235987663269042968, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+86, 0, 109, -486.6000, 187.0760, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+87, 0, 109, -476.0910, 191.6330, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+88, 8318, 109, -480.577, 188.755, -53.8629, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+
+(@CGUID+89, 0, 109, -447.8850, 186.046, -53.9463, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+90, 0, 109, -447.0290, 190.5480, -53.9463, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+91, 0, 109, -433.3420, 187.082, -53.9463, 0, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+92, 0, 109, -439.5700, 186.5360, -53.8629, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+93, 0, 109, -429.9050, 181.531, -53.8629, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+94, 0, 109, -424.177, 179.156, -53.8629, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+95, 0, 109, -425.4780, 185.969, -53.9463, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+96, 5259, 109, -394.74688720703125, 151.8083343505859375, -53.8630104064941406, 4.398229598999023437, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+97, 5259, 109, -392.57891845703125, 160.2821044921875, -53.8630104064941406, 1.274090290069580078, 7200, 7200, 0, 0), -- Atal'ai Witch Doctor
+(@CGUID+98, 0, 109, -396.254, 157.007, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+99, 0, 109, -389.513, 153.655, -53.9463, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+100, 8318, 109, -389.0320, 157.828, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+101, 8318, 109, -392.4179, 156.041, -53.8629, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+(@CGUID+102, 8318, 109, -398.1570, 160.9650, -53.9463, 0, 7200, 7200, 2, 1), -- Atal'ai Slave
+
+-- patrols/single spawns
+(@CGUID+103, 5256, 109, -462.09012, 192.58849, -53.946342, 0, 3600, 3600, 0, 4), -- Atal'ai Warrior
+(@CGUID+104, 5256, 109, -517.13, 178.58, -54.01, 0, 3600, 3600, 0, 4), -- Atal'ai Warrior
+(@CGUID+105, 5256, 109, -387.2680, 40.1045, -53.9463, 0, 7200, 7200, 5, 1), -- Atal'ai Warrior (single?)
+
+(@CGUID+106, 0, 109, -421.896, 68.6089, -173.2969, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+107, 0, 109, -442.062, 51.4995, -173.451, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+108, 0, 109, -494.561, 51.2065, -173.309, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+109, 0, 109, -494.225, 139.759, -172.938, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+110, 0, 109, -372.994, 95.1077, -172.937, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+111, 0, 109, -293.511, 132.160, -172.975, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+112, 0, 109, -511.796, 7.09539, -148.7575, 0, 3600, 3600, 0, 4), -- creature_spawn_entry
+(@CGUID+113, 0, 109, -328.677, 133.218, -156.731, 0, 3600, 3600, 0, 4), -- creature_spawn_entry
+
+(@CGUID+114, 8311, 109, -553.014, 46.1982, -148.719, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+115, 8311, 109, -562.012, 78.8758, -148.719, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+116, 8311, 109, -553.986, 143.046, -148.710, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+117, 8311, 109, -533.411, 164.812, -148.708, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+118, 8311, 109, -464.891, 193.406, -148.798, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+119, 8311, 109, -443.852, 189.208, -148.750, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+120, 8311, 109, -386.591, 150.447, -148.802, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+121, 8311, 109, -377.099, 127.252, -148.720, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+122, 8311, 109, -380.655, 48.4231, -148.718, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+123, 8311, 109, -405.984, 21.3571, -148.719, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+124, 8311, 109, -468.060, -2.9662, -148.719, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+125, 8311, 109, -492.206, 3.12004, -148.802, 0, 7200, 7200, 2, 1), -- Slime Maggot
+-- #1
+(@CGUID+126, 0, 109, -521.151, 90.4728, -148.741, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+127, 0, 109, -520.807, 99.6601, -148.658, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+-- #2
+(@CGUID+128, 0, 109, -413.789, 91.2845, -148.658, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+129, 0, 109, -411.052, 100.104, -148.743, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+-- #3
+(@CGUID+130, 0, 109, -488.089, 140.947, -148.742, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+131, 0, 109, -503.738, 140.815, -148.744, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+132, 8311, 109, -491.416, 146.548, -148.744, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+133, 8311, 109, -497.466, 142.926, -148.744, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+134, 8311, 109, -497.946, 136.467, -148.7429, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+135, 8311, 109, -491.668, 139.736, -148.7429, 0, 7200, 7200, 2, 1), -- Slime Maggot
+-- #4
+(@CGUID+136, 0, 109, -499.285, 47.751, -148.660, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+137, 0, 109, -491.119, 43.6584, -148.744, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+138, 8311, 109, -495.963, 44.676, -148.744, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+139, 8311, 109, -486.716, 48.601, -148.742, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+140, 8311, 109, -499.308, 53.424, -148.743, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+141, 8311, 109, -490.660, 50.756, -148.743, 0, 7200, 7200, 2, 1), -- Slime Maggot
+-- #5
+(@CGUID+142, 0, 109, -446.487, 143.729, -148.742, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+143, 0, 109, -437.552, 141.229, -148.7440, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+-- #6
+(@CGUID+144, 0, 109, -436.048, 54.4828, -148.742, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+145, 0, 109, -444.575, 40.4067, -148.744, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+146, 8311, 109, -435.282, 46.159, -148.744, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+147, 8311, 109, -444.763, 47.798, -148.742, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+148, 8311, 109, -441.924, 49.992, -148.742, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+149, 8311, 109, -440.218, 51.331, -148.742, 0, 7200, 7200, 2, 1), -- Slime Maggot
+-- 1.1
+(@CGUID+150, 0, 109, -302.311, 117.101, -172.919, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+151, 0, 109, -286.726, 117.319, -173.003, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+152, 0, 109, -288.355, 109.814, -173.003, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+153, 8311, 109, -293.253, 114.173, -173.003, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+154, 8311, 109, -295.751, 105.558, -172.919, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+155, 8311, 109, -298.288, 109.872, -173.003, 0, 7200, 7200, 2, 1), -- Slime Maggot
+-- 1.2
+(@CGUID+156, 0, 109, -418.876, 88.7907, -173.689, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+157, 0, 109, -405.939, 99.1431, -172.934, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+158, 8311, 109, -417.403, 100.72, -173.444, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+159, 8311, 109, -404.573, 90.913, -172.848, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+160, 8311, 109, -411.087, 94.993, -172.939, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+161, 8311, 109, -414.782, 93.582, -172.939, 0, 7200, 7200, 2, 1), -- Slime Maggot
+-- 1.3
+(@CGUID+162, 0, 109, -482.261, 92.6297, -189.7299, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+163, 0, 109, -470.996, 104.446, -189.645, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+164, 0, 109, -471.237, 86.3546, -189.729, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+-- 1.4
+(@CGUID+165, 0, 109, -423.023, 115.357, -173.6900, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+166, 0, 109, -421.216, 127.762, -172.9389, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+167, 8311, 109, -427.172, 124.545, -173.640, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+168, 8311, 109, -419.596, 112.156, -173.605, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+169, 8311, 109, -418.175, 120.787, -172.939, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+170, 8311, 109, -424.931, 120.831, -173.548, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+171, 0, 109, -468.056, 153.897, -172.2109, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+172, 0, 109, -473.212, 143.356, -173.7880, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+173, 8311, 109, -461.4079, 145.1719, -173.5619, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+174, 8311, 109, -466.6040, 144.5690, -173.6360, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+175, 8311, 109, -463.7019, 151.0359, -172.9389, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+176, 8311, 109, -473.1919, 149.9199, -172.8549, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+177, 0, 109, -518.015, 118.080, -172.9389, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+178, 0, 109, -515.226, 111.706, -173.6625, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+179, 8311, 109, -510.9830, 120.0820, -173.60693, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+180, 8311, 109, -512.3590, 115.5840, -173.7370, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+181, 8311, 109, -507.8439, 124.3840, -173.6860, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+182, 8311, 109, -514.2650, 126.4339, -172.9389, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+183, 0, 109, -510.515, 69.0047, -173.6150, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+184, 0, 109, -512.965, 61.5341, -172.9389, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+185, 8311, 109, -507.2900, 64.7009, -173.6900, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+186, 8311, 109, -518.1929, 69.9589, -172.9389, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+187, 8311, 109, -511.6390, 74.0903, -173.8139, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+188, 8311, 109, -515.7199, 76.5313, -173.5299, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+189, 0, 109, -472.712, 39.0863, -172.9389, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+190, 0, 109, -461.500, 40.0497, -172.8549, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+191, 8311, 109, -473.4360, 44.2556, -173.5639, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+192, 8311, 109, -467.2479, 41.0292, -172.9389, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+193, 8311, 109, -469.4760, 44.4146, -173.5800, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+194, 8311, 109, -463.1409, 44.9467, -173.6410, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+195, 0, 109, -567.445, 105.789, -148.802, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+196, 0, 109, -565.351, 111.280, -148.719, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+197, 8311, 109, -562.9639, 104.8590, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+198, 8311, 109, -558.9010, 107.0869, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+199, 8311, 109, -560.3579, 111.0339, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+200, 8311, 109, -563.7139, 113.7060, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+201, 0, 109, -510.621, 182.779, -148.802, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+202, 0, 109, -497.113, 187.812, -148.802, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+203, 8311, 109, -506.5840, 185.7539, -148.7189, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+204, 8311, 109, -499.9259, 183.2019, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+205, 8311, 109, -504.5950, 178.8840, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+206, 8311, 109, -501.4690, 187.7380, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+207, 0, 109, -412.017, 168.428, -148.802, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+208, 0, 109, -417.062, 175.664, -148.8020, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+209, 8311, 109, -412.9819, 180.2039, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+210, 8311, 109, -406.9849, 173.3170, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+211, 8311, 109, -398.999, 162.239, -148.802, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+212, 8311, 109, -406.1109, 167.0570, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+213, 0, 109, -371.359, 77.3172, -148.8020, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+214, 0, 109, -367.716, 93.1960, -148.8020, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+215, 8311, 109, -376.4299, 80.6484, -148.7189, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+216, 8311, 109, -382.5369, 85.3490, -148.6940, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+217, 8311, 109, -373.0429, 88.5296, -148.7189, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+218, 8311, 109, -371.0780, 82.8330, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+219, 0, 109, -425.832, 4.90064, -148.8020, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+220, 0, 109, -438.135, 1.98536, -148.8020, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+221, 8311, 109, -432.9710, 13.15300, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+222, 8311, 109, -426.8819, 10.33780, -148.7189, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+223, 8311, 109, -421.5460, 7.954520, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+224, 8311, 109, -436.6400, 7.728200, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+225, 0, 109, -521.617, 10.3077, -148.7190, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+226, 0, 109, -533.849, 24.1597, -148.8020, 0, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+227, 8311, 109, -518.9060, 25.86220, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+228, 8311, 109, -524.0440, 17.41250, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+229, 8311, 109, -523.8569, 22.40110, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+(@CGUID+230, 8311, 109, -529.4359, 21.13769, -148.8020, 0, 7200, 7200, 2, 1), -- Slime Maggot
+
+(@CGUID+231, 8257, 109, -294.03775, 131.88365, -172.97614, 0, 600, 1800, 0, 4), -- Oozeling
+(@CGUID+232, 8257, 109, -427.15152, 141.00255, -148.74489, 0, 600, 1800, 0, 4), -- Oozeling
+(@CGUID+233, 8257, 109, -447.95065, 34.83019, -148.74529, 0, 600, 1800, 0, 4), -- Oozeling
+(@CGUID+234, 8257, 109, -529.1784, 107.08019, -148.74513, 0, 600, 1800, 0, 4), -- Oozeling
+(@CGUID+235, 8257, 109, -432.0018, 132.04568, -173.45544, 0, 600, 1800, 0, 4), -- Oozeling
+
+(@CGUID+236, 0, 109, -509.098419189453125, 148.959503173828125, -90.8747406005859375, 1.972222089767456054, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+237, 0, 109, -498.173614501953125, 154.402099609375, -90.8939971923828125, 2.042035102844238281, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+238, 0, 109, -503.997283935546875, 151.996551513671875, -90.8726119995117187, 2.007128715515136718, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+239, 0, 109, -492.80072021484375, 158.28936767578125, -90.876312255859375, 2.094395160675048828, 7200, 7200, 0, 0), -- spawn_group_entry
+
+(@CGUID+240, 0, 109, -426.138885498046875, 149.1496124267578125, -90.8659210205078125, 1.029744267463684082, 7200, 7200, 0, 0), -- spawn_group_entry o=0
+(@CGUID+241, 0, 109, -441.19183349609375, 158.192962646484375, -90.8604888916015625, 1.029744267463684082, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+242, 0, 109, -436.662506103515625, 155.508056640625, -90.8612899780273437, 1.029744267463684082, 7200, 7200, 0, 0), -- spawn_group_entry o=0
+(@CGUID+243, 0, 109, -431.376617431640625, 151.9989471435546875, -90.8708648681640625, 1.029744267463684082, 7200, 7200, 0, 0), -- spawn_group_entry o=0
+
+(@CGUID+244, 0, 109, -533.94085693359375, 91.71701812744140625, -90.875244140625, 0.03490658476948738, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+245, 0, 109, -534.23583984375, 98.6093902587890625, -90.8673095703125, 0, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+246, 0, 109, -534.65740966796875, 85.74468231201171875, -90.8562240600585937, 0.087266460061073303, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+247, 0, 109, -535.0506591796875, 104.6449737548828125, -90.8455352783203125, 6.230825424194335937, 7200, 7200, 0, 0), -- spawn_group_entry
+
+(@CGUID+248, 0, 109, -293.426, 72.3822, -91.4671, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+249, 0, 109, -288.008, 76.4924, -91.4671, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+250, 0, 109, -294.191, 83.1415, -91.3836, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+251, 0, 109, -301.045, 77.3152, -91.4671, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+252, 0, 109, -295.370, 90.8286, -91.4671, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+253, 0, 109, -300.318, 96.6043, -91.3840, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+254, 0, 109, -392.167, 97.2049, -90.8761, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+255, 0, 109, -398.212, 91.0003, -90.9189, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+256, 0, 109, -404.823, 98.7564, -91.0953, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+257, 0, 109, -410.503, 92.9623, -91.2041, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+258, 0, 109, -411.226, 103.886, -91.2283, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+259, 0, 109, -417.227, 97.9247, -91.3673, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+260, 0, 109, -428.049, 61.2042, -91.3031, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+261, 0, 109, -433.442, 73.5839, -90.9951, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+262, 0, 109, -440.338, 72.1324, -91.3993, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+263, 0, 109, -445.561, 81.5822, -92.9940, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+264, 0, 109, -448.430, 66.7210, -91.4504, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+265, 0, 109, -455.378, 76.5158, -93.3827, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+266, 0, 109, -423.351, 34.8571, -90.8662, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+267, 0, 109, -433.470, 31.3752, -90.8254, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+268, 0, 109, -425.812, 23.7439, -90.8699, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+269, 0, 109, -434.012, 18.9409, -90.8737, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+270, 0, 109, -416.114, 18.8951, -90.8658, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+271, 0, 109, -425.346, 5.2289, -90.8702, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+272, 0, 109, -482.623, 56.0260, -90.8534, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+273, 0, 109, -478.360, 40.4348, -91.2629, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+274, 0, 109, -487.466, 35.6445, -91.0716, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+275, 0, 109, -492.175, 50.9049, -91.3340, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+276, 0, 109, -501.086, 51.0202, -91.2289, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+277, 0, 109, -494.510, 62.4464, -90.8238, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+278, 0, 109, -498.592, 102.575, -91.9207, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+279, 0, 109, -487.972, 102.395, -93.4232, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+280, 0, 109, -512.756, 111.669, -91.4461, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+281, 0, 109, -511.390, 123.684, -91.3202, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+282, 0, 109, -490.811, 109.933, -92.7058, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+283, 0, 109, -499.551, 115.221, -91.1323, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+284, 0, 109, -462.070, 122.943, -92.7337, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+285, 0, 109, -468.911, 129.927, -91.3993, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+286, 0, 109, -460.668, 136.057, -90.9272, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+287, 0, 109, -470.475, 138.520, -90.7375, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+288, 0, 109, -468.410, 152.491, -91.1959, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+289, 0, 109, -462.040, 156.803, -91.0787, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+290, 0, 109, -577.958, 87.628, -90.8914, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+291, 0, 109, -578.062, 101.681, -90.8028, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+292, 0, 109, -587.527, 92.408, -90.8899, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+293, 0, 109, -597.446, 96.360, -90.8861, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+294, 0, 109, -602.728, 103.921, -90.8825, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+295, 0, 109, -609.684, 91.921, -90.8835, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+296, 0, 109, -509.412, 9.703, -90.8835, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+297, 0, 109, -525.291, 14.978, -90.7968, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+298, 0, 109, -520.002, 5.714, -90.8839, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+299, 0, 109, -529.987, 6.324, -90.8841, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+300, 0, 109, -519.008, -3.377, -90.8842, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+301, 0, 109, -527.172, -6.273, -90.8789, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+302, 0, 109, -558.480, -59.2342, -90.8405, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+303, 0, 109, -549.084, -62.9176, -90.8405, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+304, 0, 109, -557.341, -74.2185, -90.8365, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+305, 0, 109, -542.582, -75.2660, -90.8379, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+306, 0, 109, -550.011, -84.2668, -90.8346, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+(@CGUID+307, 0, 109, -562.241, -84.5890, -90.8330, 0, 7200, 7200, 2, 1), -- spawn_group_entry
+
+(@CGUID+308, 0, 109, -395.884, 217.710, -90.8765, 0, 7200, 7200, 8, 1), -- creature_spawn_entry
+(@CGUID+309, 0, 109, -381.586, 270.069, -90.7493, 0, 7200, 7200, 8, 1), -- creature_spawn_entry
+(@CGUID+310, 0, 109, -450.794, 287.435, -90.7368, 0, 7200, 7200, 8, 1), -- creature_spawn_entry
+(@CGUID+311, 0, 109, -485.651, 260.638, -90.7441, 0, 7200, 7200, 8, 1), -- creature_spawn_entry
+(@CGUID+312, 0, 109, -553.619, 273.580, -90.7463, 0, 7200, 7200, 8, 1), -- creature_spawn_entry
+(@CGUID+313, 0, 109, -539.337, 214.907, -90.8109, 0, 7200, 7200, 8, 1), -- creature_spawn_entry
+
+(@CGUID+314, 5271, 109, -485.286, -56.896, -90.8274, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+(@CGUID+315, 5271, 109, -488.171, -60.063, -90.8274, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+
+(@CGUID+316, 5271, 109, -492.843, -107.825, -90.7441, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+(@CGUID+317, 5271, 109, -489.735, -111.379, -90.8274, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+(@CGUID+318, 5271, 109, -487.465, -114.483, -90.8274, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+
+(@CGUID+319, 5270, 109, -477.2413330078125, -92.83416748046875, -90.7441253662109375, 0.157079637050628662, 7200, 7200, 0, 0), -- Atal'ai Corpse Eater
+(@CGUID+320, 5273, 109, -477.17926025390625, -95.2697067260742187, -90.7441253662109375, 0.226892799139022827, 7200, 7200, 0, 0), -- Atal'ai High Priest
+(@CGUID+321, 5271, 109, -480.514, -89.803, -90.7441, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+
+(@CGUID+322, 5270, 109, -467.20611572265625, -78.2681045532226562, -90.7441329956054687, 6.126105785369873046, 7200, 7200, 0, 0), -- Atal'ai Corpse Eater
+(@CGUID+323, 5273, 109, -466.795257568359375, -75.154632568359375, -90.7441329956054687, 6.038839340209960937, 7200, 7200, 0, 0), -- Atal'ai High Priest
+(@CGUID+324, 5270, 109, -459.4097900390625, -77.0373687744140625, -90.744140625, 6.126105785369873046, 7200, 7200, 0, 0), -- Atal'ai Corpse Eater
+(@CGUID+325, 5271, 109, -464.378, -72.223, -90.8274, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+
+(@CGUID+326, 5273, 109, -447.609954833984375, -92.3828659057617187, -90.7441558837890625, 0.314159274101257324, 7200, 7200, 0, 0), -- Atal'ai High Priest
+(@CGUID+327, 5270, 109, -447.81695556640625, -95.5640945434570312, -90.7441558837890625, 0.471238881349563598, 7200, 7200, 0, 0), -- Atal'ai Corpse Eater
+(@CGUID+328, 5271, 109, -444.896, -98.127, -90.8274, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+
+(@CGUID+329, 5271, 109, -456.086, -114.302, -90.8275, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+(@CGUID+330, 5271, 109, -452.268, -116.592, -90.8275, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+(@CGUID+331, 5271, 109, -448.790, -115.722, -90.8275, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+
+(@CGUID+332, 5271, 109, -439.546, -62.908, -90.7442, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+(@CGUID+333, 5271, 109, -443.661, -61.707, -90.8274, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+(@CGUID+334, 5271, 109, -447.487, -58.757, -90.8274, 0, 7200, 7200, 1, 1), -- Atal'ai Deathwalker
+-- critters
+(@CGUID+335, 2914, 109, -335.18157958984375, 90.67110443115234375, -131.846588134765625, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+336, 2914, 109, -333.375274658203125, 109.6251754760742187, -131.847564697265625, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+337, 2914, 109, -374.043, 78.5498, -131.766, 0, 900, 900, 3, 1), -- Snake
+(@CGUID+338, 2914, 109, -387.785, 137.735, -131.772, 0, 900, 900, 3, 1), -- Snake
+(@CGUID+339, 2914, 109, -351.531, 135.771, -148.901, 0, 900, 900, 3, 1), -- Snake
+(@CGUID+340, 2914, 109, -340.032, 148.240, -69.4879, 0, 900, 900, 3, 1), -- Snake
+(@CGUID+341, 2914, 109, -558.344, 175.272, -148.735, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+342, 2914, 109, -596.109, 41.8670, -69.2695, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+343, 2914, 109, -576.256, 177.845, -69.3181, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+344, 2914, 109, -354.689, 13.3023, -69.3923, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+345, 2914, 109, -408.819, 17.8168, -53.8629, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+346, 2914, 109, -562.921, 80.0252, -53.9463, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+347, 2914, 109, -371.209, 108.536, -53.8629, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+348, 2914, 109, -527.302, 170.760, -54.0954, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+349, 2914, 109, -295.496, 84.5015, -91.4671, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+350, 2914, 109, -387.650, 95.9411, -90.7907, 0, 900, 900, 5, 1), -- Snake
+(@CGUID+351, 2914, 109, -430.394, 94.6625, -91.2484, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+352, 2914, 109, -463.913, 62.4040, -91.4567, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+353, 2914, 109, -420.689, 16.8251, -90.8678, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+354, 2914, 109, -514.604, 95.3995, -91.4248, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+355, 2914, 109, -476.809, 142.344, -91.4022, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+356, 2914, 109, -435.167, 120.043, -90.9893, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+357, 2914, 109, -548.767, -49.842, -90.8481, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+358, 2914, 109, -470.322, -85.182, -90.7441, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+359, 2914, 109, -383.145, 239.681, -90.8478, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+360, 2914, 109, -550.389, 241.608, -90.8479, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+361, 2914, 109, -584.695, 96.1076, -90.8886, 0, 900, 900, 10, 1), -- Snake
+(@CGUID+362, 2914, 109, -659.263, 92.4591, -90.8315, 0, 900, 900, 20, 1), -- Snake
+(@CGUID+363, 4075, 109, -400.68157958984375, 114.9562225341796875, -90.888946533203125, 5.410520553588867187, 900, 900, 0, 0), -- Rat (Out of Bounds)
+(@CGUID+364, 15593, 109, -414.836, 5.38781, -90.772, 2.11185, 25, 25, 0, 0), -- Elder Starsong
+-- privat server eyecandies
+(@CGUID+365, 5256, 109, -374.57, 108.97, -53.9463, 0.3327, 7200, 7200, 0, 0), -- Atal'ai Warrior
+(@CGUID+366, 5256, 109, -557.05, 82.51, -53.9463, 3.4008, 7200, 7200, 0, 0), -- Atal'ai Warrior
+(@CGUID+367, 5256, 109, -523.87, 164.98, -54.09, 2.2737, 7200, 7200, 0, 0), -- Atal'ai Warrior
+(@CGUID+368, 5256, 109, -411.95, 21.68, -53.95, 5.5449, 7200, 7200, 0, 0); -- Atal'ai Warrior
+
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+13, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+15, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+49, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+54, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+57, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+62, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+73, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+74, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+78, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+84, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+85, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+96, 0, 8, 1, 0, 0, '12380'), -- Atal'ai Witch Doctor
+(@CGUID+97, 0, 8, 1, 0, 0, '12380'); -- Atal'ai Witch Doctor
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+18, 5259),(@CGUID+18, 5267), -- Atal'ai Witch Doctor, Unliving Atal'ai
+(@CGUID+22, 5259),(@CGUID+22, 5267), -- Atal'ai Witch Doctor, Unliving Atal'ai
+(@CGUID+26, 5259),(@CGUID+26, 5267), -- Atal'ai Witch Doctor, Unliving Atal'ai
+(@CGUID+30, 5259),(@CGUID+30, 5267), -- Atal'ai Witch Doctor, Unliving Atal'ai
+(@CGUID+50, 5256),(@CGUID+50, 5267),(@CGUID+50, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+55, 5256),(@CGUID+55, 5267),(@CGUID+55, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+56, 5256),(@CGUID+56, 5267),(@CGUID+56, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+58, 5256),(@CGUID+58, 5267),(@CGUID+58, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+59, 5256),(@CGUID+59, 5267),(@CGUID+59, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+63, 5256),(@CGUID+63, 5267),(@CGUID+63, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+75, 5256),(@CGUID+75, 5267),(@CGUID+75, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+76, 5256),(@CGUID+76, 5267),(@CGUID+76, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+79, 5256),(@CGUID+79, 5267),(@CGUID+79, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+86, 5256),(@CGUID+86, 5267),(@CGUID+86, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+87, 5256),(@CGUID+87, 5267),(@CGUID+87, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+98, 5256),(@CGUID+98, 5267),(@CGUID+98, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+99, 5256),(@CGUID+99, 5267),(@CGUID+99, 5270), -- Atal'ai Warrior, Unliving Atal'ai, Atal'ai Corpse Eater
+(@CGUID+106, 5228),(@CGUID+106, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+107, 5228),(@CGUID+107, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+108, 5228),(@CGUID+108, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+109, 5228),(@CGUID+109, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+110, 5228),(@CGUID+110, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+111, 5226),(@CGUID+111, 5228),(@CGUID+111, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+112, 5226),(@CGUID+112, 5228),(@CGUID+112, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+113, 5226),(@CGUID+113, 5228),(@CGUID+113, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+126, 5228),(@CGUID+126, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+127, 5228),(@CGUID+127, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+128, 5226),(@CGUID+128, 5228),(@CGUID+128, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+129, 5228),(@CGUID+129, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+130, 5226),(@CGUID+130, 5228),(@CGUID+130, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+131, 5226),(@CGUID+131, 5228),(@CGUID+131, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+136, 5226),(@CGUID+136, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+137, 5226),(@CGUID+137, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+142, 5226),(@CGUID+142, 5228),(@CGUID+142, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+143, 5228),(@CGUID+143, 8384), -- Saturated Ooze, Deep Lurker
+(@CGUID+144, 5226),(@CGUID+144, 5228),(@CGUID+144, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+145, 5226),(@CGUID+145, 5228),(@CGUID+145, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+150, 5226),(@CGUID+150, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+151, 5226),(@CGUID+151, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+152, 5226),(@CGUID+152, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+156, 5226),(@CGUID+156, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+157, 5226),(@CGUID+157, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+162, 5226),(@CGUID+162, 5228),(@CGUID+162, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+163, 5226),(@CGUID+163, 5228),(@CGUID+163, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+164, 5226),(@CGUID+164, 5228),(@CGUID+164, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+165, 5226),(@CGUID+165, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+166, 5226),(@CGUID+166, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+171, 5226),(@CGUID+171, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+172, 5226),(@CGUID+172, 5228),(@CGUID+172, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+177, 5226),(@CGUID+177, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+178, 5226),(@CGUID+178, 5228),(@CGUID+178, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+183, 5226),(@CGUID+183, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+184, 5228),(@CGUID+184, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+189, 5226),(@CGUID+189, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+190, 5226),(@CGUID+190, 5228),(@CGUID+190, 8384), -- Murk Worm, Saturated Ooze, Deep Lurker
+(@CGUID+195, 5226),(@CGUID+195, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+196, 5226),(@CGUID+196, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+201, 5226),(@CGUID+201, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+202, 5226),(@CGUID+202, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+207, 5226),(@CGUID+207, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+208, 5226),(@CGUID+208, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+213, 5226),(@CGUID+213, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+214, 5226),(@CGUID+214, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+219, 5226),(@CGUID+219, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+220, 5226),(@CGUID+220, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+225, 5226),(@CGUID+225, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+226, 5226),(@CGUID+226, 8384), -- Murk Worm, Deep Lurker
+(@CGUID+308, 5291),(@CGUID+308, 8336), -- Hakkari Frostwing, Hakkari Sapper
+(@CGUID+309, 5291),(@CGUID+309, 8336), -- Hakkari Frostwing, Hakkari Sapper
+(@CGUID+310, 5291),(@CGUID+310, 8336), -- Hakkari Frostwing, Hakkari Sapper
+(@CGUID+311, 5291),(@CGUID+311, 8336), -- Hakkari Frostwing, Hakkari Sapper
+(@CGUID+312, 5291),(@CGUID+312, 8336), -- Hakkari Frostwing, Hakkari Sapper
+(@CGUID+313, 5291),(@CGUID+313, 8336); -- Hakkari Frostwing, Hakkari Sapper
 
 -- ===========
 -- GAMEOBJECTS
@@ -636,31 +794,31 @@ INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
 (@OGUID+43, 177484), (@OGUID+43, 177485), (@OGUID+43, 148837); -- Atal'ai Statue
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 148418, 109, -435.417, 248.872, -90.8275, 2.40799, 0, 0, 0.933479, 0.358632, 180, 180, 100, 1), -- Eternal Flame
-(@OGUID+2, 148419, 109, -499.066, 248.605, -90.8275, 0.659252, 0, 0, 0.323689, 0.946163, 180, 180, 100, 1), -- Eternal Flame
-(@OGUID+3, 148420, 109, -499.108, 303.472, -90.8275, 5.535, 0, 0, 0.365427, -0.93084, 180, 180, 100, 1), -- Eternal Flame
-(@OGUID+4, 148421, 109, -434.857, 303.821, -90.8264, 3.84954, 0, 0, 0.938003, -0.346627, 180, 180, 100, 1), -- Eternal Flame
-(@OGUID+5, 148512, 109, -634.352, -51.915, -90.8352, 2.11185, 0, 0, 0.870356, 0.492424, 120, 120, 0, 1), -- Essence Font
-(@OGUID+6, 148830, 109, -515.553, 95.2582, -148.74, -1.50098, 0, 0, 0.681998, -0.731354, 180, 180, 100, 1), -- Atal'ai Statue
-(@OGUID+7, 148831, 109, -419.849, 94.4837, -148.74, 1.53589, 0, 0, 0.694658, 0.71934, 180, 180, 100, 1), -- Atal'ai Statue
-(@OGUID+8, 148832, 109, -491.4, 135.97, -148.74, -2.68781, 0, 0, 0.97437, -0.224951, 180, 180, 100, 1), -- Atal'ai Statue
-(@OGUID+9, 148833, 109, -491.491, 53.4818, -148.74, -0.610865, 0, 0, 0.300706, -0.953717, 180, 180, 100, 1), -- Atal'ai Statue
-(@OGUID+10, 148834, 109, -443.855, 136.101, -148.74, 2.53073, 0, 0, 0.953717, 0.300706, 180, 180, 100, 1), -- Atal'ai Statue
-(@OGUID+11, 148835, 109, -443.417, 53.8312, -148.74, 0.471239, 0, 0, 0.233445, 0.97237, 180, 180, 100, 1), -- Atal'ai Statue
-(@OGUID+12, 148836, 109, -420.848, 94.7487, -174.196, 3.14159, 0, 0, 1, 0, 120, 120, 0, 1), -- Altar of Hakkar
-(@OGUID+13, 148838, 109, -476.2693, 94.41199, -189.7297, 1.588249, 0, 0, 0, 0, -43200, -43200, 0, 1), -- Idol of Hakkar
-(@OGUID+14, 148883, 109, -515.68, 95.1875, -148.74, -0.139624, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
-(@OGUID+15, 148883, 109, -419.627, 94.2566, -148.74, 2.04204, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
-(@OGUID+16, 148883, 109, -491.417, 136.021, -148.74, 0.872664, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
-(@OGUID+17, 148883, 109, -491.569, 53.2322, -148.74, -2.33874, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
-(@OGUID+18, 148883, 109, -443.952, 136.128, -148.74, 0.209439, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
-(@OGUID+19, 148883, 109, -443.355, 53.7631, -148.74, 2.37364, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
-(@OGUID+20, 148937, 109, -491.682, 52.1352, -173.66, -2.426, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
-(@OGUID+21, 148937, 109, -414.995, 94.9034, -172.939, -0.139624, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
-(@OGUID+22, 148937, 109, -443.315, 137.201, -173.656, 0.209439, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
-(@OGUID+23, 148937, 109, -492.192, 137.129, -173.643, -2.33874, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
-(@OGUID+24, 148937, 109, -516.554, 94.296, -173.651, -2.426, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
-(@OGUID+25, 148937, 109, -442.858, 52.5523, -173.662, 2.04204, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
+(@OGUID+1, 148418, 109, -435.975341796875, 249.3750762939453125, -90.8274993896484375, 1.221729278564453125, 0, 0, 0.573575973510742187, 0.819152355194091796, 180, 180, 100, 1), -- Eternal Flame
+(@OGUID+2, 148419, 109, -498.728851318359375, 250.43316650390625, -90.82745361328125, -3.10665225982666015, 0, 0, -0.999847412109375, 0.017469281330704689, 180, 180, 100, 1), -- Eternal Flame
+(@OGUID+3, 148420, 109, -498.091461181640625, 302.457855224609375, -90.8274688720703125, 3.071766138076782226, 0, 0, 0.999390602111816406, 0.034906134009361267, 180, 180, 100, 1), -- Eternal Flame
+(@OGUID+4, 148421, 109, -435.404052734375, 302.006103515625, -90.8275070190429687, 2.792518377304077148, 0, 0, 0.984807014465332031, 0.173652306199073791, 180, 180, 100, 1), -- Eternal Flame
+(@OGUID+5, 148512, 109, -634.35247802734375, -51.9149551391601562, -90.8351516723632812, 2.111848115921020507, 0, 0, 0.870355606079101562, 0.492423713207244873, 120, 120, 0, 1), -- Essence Font
+(@OGUID+6, 148830, 109, -515.552978515625, 95.258209228515625, -148.740158081054687, -1.50098288059234619, 0, 0, -0.68199825286865234, 0.731353819370269775, 180, 180, 100, 1), -- Atal'ai Statue
+(@OGUID+7, 148831, 109, -419.848663330078125, 94.48368072509765625, -148.740325927734375, 1.535889506340026855, 0, 0, 0.694658279418945312, 0.719339847564697265, 180, 180, 100, 1), -- Atal'ai Statue
+(@OGUID+8, 148832, 109, -491.400299072265625, 135.969757080078125, -148.7401123046875, -2.6878066062927246, 0, 0, -0.97437000274658203, 0.224951311945915222, 180, 180, 100, 1), -- Atal'ai Statue
+(@OGUID+9, 148833, 109, -491.490936279296875, 53.48179244995117187, -148.740386962890625, -0.61086350679397583, 0, 0, -0.3007049560546875, 0.953717231750488281, 180, 180, 100, 1), -- Atal'ai Statue
+(@OGUID+10, 148834, 109, -443.854888916015625, 136.1006622314453125, -148.740249633789062, 2.530723094940185546, 0, 0, 0.953716278076171875, 0.300707906484603881, 180, 180, 100, 1), -- Atal'ai Statue
+(@OGUID+11, 148835, 109, -443.417083740234375, 53.83123779296875, -148.740310668945312, 0.471238493919372558, 0, 0, 0.233445167541503906, 0.972369968891143798, 180, 180, 100, 1), -- Atal'ai Statue
+(@OGUID+12, 148836, 109, -420.84844970703125, 94.74871063232421875, -174.19647216796875, 3.141592741012573242, 0, 0, -1, 0, 120, 120, 0, 1), -- Altar of Hakkar
+(@OGUID+13, 148838, 109, -476.269317626953125, 94.4119873046875, -189.729660034179687, 1.588248729705810546, 0, 0, 0.713250160217285156, 0.700909554958343505, -43200, -43200, 0, 1), -- Idol of Hakkar
+(@OGUID+14, 148883, 109, -515.67999267578125, 95.18753814697265625, -148.740188598632812, -0.13962449133396148, 0, 0, -0.06975555419921875, 0.997564136981964111, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
+(@OGUID+15, 148883, 109, -419.62664794921875, 94.256561279296875, -148.74041748046875, 2.042035102844238281, 0, 0, 0.852640151977539062, 0.522498607635498046, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
+(@OGUID+16, 148883, 109, -491.417144775390625, 136.0208587646484375, -148.740127563476562, 0.872663915157318115, 0, 0, 0.422617912292480468, 0.906307935714721679, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
+(@OGUID+17, 148883, 109, -491.56878662109375, 53.23223114013671875, -148.740463256835937, -2.33873963356018066, 0, 0, -0.92050457000732421, 0.3907318115234375, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
+(@OGUID+18, 148883, 109, -443.952056884765625, 136.1280670166015625, -148.740234375, 0.209439441561698913, 0, 0, 0.104528427124023437, 0.994521915912628173, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
+(@OGUID+19, 148883, 109, -443.355072021484375, 53.76313018798828125, -148.740325927734375, 2.373644113540649414, 0, 0, 0.927183151245117187, 0.37460830807685852, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
+(@OGUID+20, 148937, 109, -491.68157958984375, 52.13518142700195312, -173.659698486328125, -2.42600250244140625, 0, 0, -0.93667125701904296, 0.350209832191467285, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
+(@OGUID+21, 148937, 109, -414.995330810546875, 94.9033966064453125, -172.938705444335937, -0.13962449133396148, 0, 0, -0.06975555419921875, 0.997564136981964111, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
+(@OGUID+22, 148937, 109, -443.31512451171875, 137.2013092041015625, -173.655502319335937, 0.209439441561698913, 0, 0, 0.104528427124023437, 0.994521915912628173, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
+(@OGUID+23, 148937, 109, -492.1923828125, 137.129364013671875, -173.64312744140625, -2.33873963356018066, 0, 0, -0.92050457000732421, 0.3907318115234375, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
+(@OGUID+24, 148937, 109, -516.554443359375, 94.29604339599609375, -173.651260375976562, -2.42600250244140625, 0, 0, -0.93667125701904296, 0.350209832191467285, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
+(@OGUID+25, 148937, 109, -442.858306884765625, 52.55228042602539062, -173.661819458007812, 2.042035102844238281, 0, 0, 0.852640151977539062, 0.522498607635498046, -43200, -43200, 255, 1), -- Atal'ai Light BIG (DND)
 (@OGUID+26, 148998, 109, -451.389, 272.707, -90.8275, 2.49582, 0, 0, 0, 1, -1800, -1800, 255, 1), -- Evil God Summoning Circle
 (@OGUID+27, 148998, 109, -467.622, 290.573, -90.8275, 0.523598, 0, 0, 0, 1, -1800, -1800, 255, 1), -- Evil God Summoning Circle
 (@OGUID+28, 148998, 109, -477.915, 285.49, -90.8275, -1.97222, 0, 0, 0, 1, -1800, -1800, 255, 1), -- Evil God Summoning Circle
@@ -669,9 +827,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+31, 148998, 109, -456.914, 286.912, -90.8275, 1.09956, 0, 0, 0, 1, -1800, -1800, 255, 1), -- Evil God Summoning Circle
 (@OGUID+32, 148998, 109, -482.814, 271.267, -90.8275, -0.017452, 0, 0, 0, 1, -1800, -1800, 255, 1), -- Evil God Summoning Circle
 (@OGUID+33, 148998, 109, -476.698, 260.68, -90.8275, -1.23918, 0, 0, 0, 1, -1800, -1800, 255, 1), -- Evil God Summoning Circle
-(@OGUID+34, 149431, 109, -518.154, -85.2353, -74.488, 3.14159, 0, 0, 1, 0, 180, 180, 255, 1), -- forcefield
-(@OGUID+35, 149432, 109, -518.381, 276.621, -90.8977, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- DOOR1
-(@OGUID+36, 149433, 109, -415.713, 276.621, -90.8977, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- DOOR2
+(@OGUID+34, 149431, 109, -518.15423583984375, -85.2353134155273437, -74.488006591796875, -3.13883042335510253, 0, 0, -0.99999904632568359, 0.001381067908369004, 180, 180, 255, 1), -- forcefield
+(@OGUID+35, 149432, 109, -518.38067626953125, 276.62078857421875, -90.8976516723632812, 3.141592741012573242, 0, 0, -1, 0, 180, 180, 100, 0), -- DOOR1
+(@OGUID+36, 149433, 109, -415.712677001953125, 276.62078857421875, -90.8976516723632812, 3.141592741012573242, 0, 0, -1, 0, 180, 180, 100, 0), -- DOOR2
 (@OGUID+37, 148422, 109, -467.09, 276.58, -90.47, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Evil God Spell Focus (DND)
 (@OGUID+38, 0, 109, -515.04571533203125, 95.14713287353515625, -148.740005493164062, 2.740161895751953125, 0, 0, 0.979924201965332031, 0.199370384216308593, 180, 180, 255, 1), -- Atal'ai Statue
 (@OGUID+39, 0, 109, -420.155487060546875, 94.37311553955078125, -148.740234375, -2.32128691673278808, 0, 0, -0.91705989837646484, 0.398749500513076782, 180, 180, 255, 1), -- Atal'ai Statue
@@ -679,67 +837,723 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+41, 0, 109, -491.39642333984375, 53.57865142822265625, -148.7403564453125, -0.47123849391937255, 0, 0, -0.2334451675415039, 0.972369968891143798, 180, 180, 255, 1), -- Atal'ai Statue
 (@OGUID+42, 0, 109, -444.448211669921875, 136.1064300537109375, -148.740158081054687, 0.331610709428787231, 0, 0, 0.16504669189453125, 0.986285746097564697, 180, 180, 255, 1), -- Atal'ai Statue
 (@OGUID+43, 0, 109, -443.54998779296875, 53.92429733276367187, -148.740249633789062, 0.907570242881774902, 0, 0, 0.438370704650878906, 0.898794233798980712, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+44, 37099, 109, -590.276, 53.4409, -69.3528, 3.76991, 0, 0, -0.951056, 0.309017, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+45, 37099, 109, -585.906, 188.365, -69.4014, 5.46288, 0, 0, -0.398748, 0.91706, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+46, 37099, 109, -583.927, 69.2769, -148.601, 3.78737, 0, 0, -0.948323, 0.317306, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+47, 37099, 109, -578.523, 46.9005, -106.908, 4.46804, 0, 0, -0.788011, 0.615662, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+48, 37099, 109, -577.409, 165.478, -108.99, 4.46804, 0, 0, -0.788011, 0.615662, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+49, 37099, 109, -570.776, 119.907, -126.777, 1.71042, 0, 0, 0.754709, 0.656059, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+50, 37099, 109, -557.521, 9.70738, -126.737, 1.48353, 0, 0, 0.67559, 0.737278, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+51, 37099, 109, -549.985, 9.30037, -87.0857, 1.79769, 0, 0, 0.782608, 0.622515, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+52, 37099, 109, -547.305, 183.819, -148.65, 3.194, 0, 0, -0.999657, 0.0262017, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+53, 37099, 109, -534.25, 99.083, -148.744, 2.23402, 0, 0, 0.898793, 0.438373, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+54, 37099, 109, -531.942, 302.219, -88.2248, 0.087266, 0, 0, 0.0436192, 0.999048, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+55, 37099, 109, -523.658, 76.2831, -172.939, 2.54818, 0, 0, 0.956305, 0.292372, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+56, 37099, 109, -503.776, 150.692, -148.745, 4.34587, 0, 0, -0.824126, 0.566406, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+57, 37099, 109, -502.805, -4.15319, -90.8701, 3.31614, 0, 0, -0.996194, 0.087165, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+58, 37099, 109, -490.689, 149.079, -172.939, 5.32326, 0, 0, -0.461748, 0.887011, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+59, 37099, 109, -486.417, 10.0704, -52.8439, 1.53589, 0, 0, 0.694658, 0.71934, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+60, 37099, 109, -484.216, 35.7172, -148.745, 2.04204, 0, 0, 0.85264, 0.522499, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+61, 37099, 109, -475.412, 163.7, -90.843, 5.23599, 0, 0, -0.5, 0.866025, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+62, 37099, 109, -468.021, -9.47424, -147.576, 1.5708, 0, 0, 0.707107, 0.707107, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+63, 37099, 109, -426.643, 41.3277, -148.745, 2.94959, 0, 0, 0.995396, 0.0958512, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+64, 37099, 109, -424.793, 174.483, -147.576, 2.47837, 0, 0, 0.945518, 0.325568, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+65, 37099, 109, -423.546, 174.254, -52.814, 2.65289, 0, 0, 0.970295, 0.241925, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+66, 37099, 109, -406.957, 126.944, -90.106, 3.87463, 0, 0, -0.93358, 0.358368, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+67, 37099, 109, -400.783, 105.583, -148.744, 0.383971, 0, 0, 0.190808, 0.981627, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+68, 37099, 109, -396.752, 77.0496, -90.8448, 3.01941, 0, 0, 0.998135, 0.0610518, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+69, 37099, 109, -383.566, 154.874, -128.892, 0.802851, 0, 0, 0.390731, 0.920505, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+70, 37099, 109, -383.352, 1.71788, -148.687, 4.15388, 0, 0, -0.874619, 0.48481, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+71, 37099, 109, -381.556, 168.785, -89.2412, 2.68781, 0, 0, 0.97437, 0.224951, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+72, 37099, 109, -375.578, 56.7683, -87.1112, 6.16101, 0, 0, -0.0610485, 0.998135, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+73, 37099, 109, -362.301, 243.166, -90.8326, 4.24115, 0, 0, -0.85264, 0.522499, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+74, 37099, 109, -360.427, 59.1012, -128.814, 5.18363, 0, 0, -0.522498, 0.852641, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+75, 37099, 109, -354.166, 150.352, -67.6015, 4.93928, 0, 0, -0.622514, 0.782609, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+76, 37099, 109, -351.316, 76.8959, -130.942, 0.261798, 0, 0, 0.130526, 0.991445, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+77, 37099, 109, -344.04, 119.619, -148.781, 4.71239, 0, 0, -0.707107, 0.707107, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+78, 37099, 109, -340.648, 162.695, -107.085, 3.6652, 0, 0, -0.965925, 0.258821, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+79, 37099, 109, -335.893, 118.901, -49.023, 2.54818, 0, 0, 0.956305, 0.292372, 3600, 4800, 100, 1), -- Atal'ai Tablet	//out of bounds
-(@OGUID+80, 37099, 109, -335.355, 15.4481, -69.3923, 4.11898, 0, 0, -0.882947, 0.469473, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+81, 37099, 109, -307.398, 121.213, -170.13, 5.46288, 0, 0, -0.398748, 0.91706, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+82, 37099, 109, -290.904, 90.1863, -170.107, 2.67035, 0, 0, 0.972369, 0.233448, 3600, 4800, 100, 1), -- Atal'ai Tablet
-(@OGUID+83, 37099, 109, -279.371, 85.9247, -88.5831, 4.45059, 0, 0, -0.793353, 0.608762, 3600, 4800, 100, 1); -- Atal'ai Tablet
+(@OGUID+44, 37099, 109, -590.27545166015625, 53.44089508056640625, -69.3528289794921875, -2.51327395439147949, 0, 0, -0.95105648040771484, 0.309017121791839599, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+45, 37099, 109, -585.90557861328125, 188.3650665283203125, -69.401397705078125, -0.82030326128005981, 0, 0, -0.39874839782714843, 0.917060375213623046, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+46, 37099, 109, -583.9268798828125, 69.27693939208984375, -148.60101318359375, -2.49581813812255859, 0, 0, -0.94832324981689453, 0.317305892705917358, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+47, 37099, 109, -578.52288818359375, 46.900543212890625, -106.907737731933593, -1.81514191627502441, 0, 0, -0.7880105972290039, 0.615661680698394775, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+48, 37099, 109, -577.40863037109375, 165.4783935546875, -108.98980712890625, -1.81514191627502441, 0, 0, -0.7880105972290039, 0.615661680698394775, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+49, 37099, 109, -570.7762451171875, 119.9065780639648437, -126.777450561523437, 1.710421681404113769, 0, 0, 0.754709243774414062, 0.656059443950653076, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+50, 37099, 109, -557.52081298828125, 9.707379341125488281, -126.737396240234375, 1.48352813720703125, 0, 0, 0.675589561462402343, 0.737277925014495849, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+51, 37099, 109, -549.98468017578125, 9.300374031066894531, -87.0857391357421875, 1.797688722610473632, 0, 0, 0.7826080322265625, 0.622514784336090087, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+52, 37099, 109, -547.30450439453125, 183.8194122314453125, -148.650161743164062, -3.08918333053588867, 0, 0, -0.99965667724609375, 0.026201646775007247, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+53, 37099, 109, -534.24945068359375, 99.08298492431640625, -148.744430541992187, 2.234017610549926757, 0, 0, 0.898793220520019531, 0.438372820615768432, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+54, 37099, 109, -531.9415283203125, 302.218902587890625, -88.2248077392578125, 0.08726600557565689, 0, 0, 0.043619155883789062, 0.999048233032226562, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+55, 37099, 109, -523.6578369140625, 76.28310394287109375, -172.938674926757812, 2.548179388046264648, 0, 0, 0.956304550170898437, 0.292372345924377441, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+56, 37099, 109, -503.776519775390625, 150.6919403076171875, -148.744476318359375, -1.93731570243835449, 0, 0, -0.82412624359130859, 0.566406130790710449, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+57, 37099, 109, -502.804840087890625, -4.15319395065307617, -90.8700714111328125, -2.967041015625, 0, 0, -0.99619388580322265, 0.087165042757987976, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+58, 37099, 109, -490.6890869140625, 149.0785675048828125, -172.938674926757812, -0.95993000268936157, 0, 0, -0.46174812316894531, 0.887011110782623291, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+59, 37099, 109, -486.417388916015625, 10.0704355239868164, -52.8438568115234375, 1.535889506340026855, 0, 0, 0.694658279418945312, 0.719339847564697265, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+60, 37099, 109, -484.215728759765625, 35.71715545654296875, -148.745010375976562, 2.042035102844238281, 0, 0, 0.852640151977539062, 0.522498607635498046, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+61, 37099, 109, -475.412322998046875, 163.699951171875, -90.8429794311523437, -1.04719758033752441, 0, 0, -0.5, 0.866025388240814208, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+62, 37099, 109, -468.020782470703125, -9.4742441177368164, -147.575881958007812, 1.570795774459838867, 0, 0, 0.707106590270996093, 0.707106947898864746, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+63, 37099, 109, -426.643218994140625, 41.32765960693359375, -148.744644165039062, 2.949595451354980468, 0, 0, 0.995395660400390625, 0.095851235091686248, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+64, 37099, 109, -424.792877197265625, 174.4827728271484375, -147.575851440429687, 2.478367090225219726, 0, 0, 0.94551849365234375, 0.325568377971649169, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+65, 37099, 109, -423.545806884765625, 174.253814697265625, -52.8139686584472656, 2.652894020080566406, 0, 0, 0.970294952392578125, 0.241925001144409179, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+66, 37099, 109, -406.956695556640625, 126.9437103271484375, -90.1060104370117187, -2.4085543155670166, 0, 0, -0.93358039855957031, 0.358368009328842163, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+67, 37099, 109, -400.782928466796875, 105.582916259765625, -148.744384765625, 0.383971005678176879, 0, 0, 0.190808296203613281, 0.981627285480499267, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+68, 37099, 109, -396.751861572265625, 77.04962921142578125, -90.8448104858398437, 3.019413232803344726, 0, 0, 0.998134613037109375, 0.061051756143569946, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+69, 37099, 109, -383.565887451171875, 154.8736114501953125, -128.892333984375, 0.802850902080535888, 0, 0, 0.390730857849121093, 0.920504987239837646, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+70, 37099, 109, -383.3519287109375, 1.717875003814697265, -148.687026977539062, -2.12930059432983398, 0, 0, -0.8746194839477539, 0.484810054302215576, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+71, 37099, 109, -381.555694580078125, 168.7849884033203125, -89.2411880493164062, 2.687806606292724609, 0, 0, 0.974370002746582031, 0.224951311945915222, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+72, 37099, 109, -375.578277587890625, 56.76832199096679687, -87.1112442016601562, -0.1221729889512062, 0, 0, -0.06104850769042968, 0.998134791851043701, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+73, 37099, 109, -362.300689697265625, 243.16607666015625, -90.8326187133789062, -2.04203510284423828, 0, 0, -0.85264015197753906, 0.522498607635498046, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+74, 37099, 109, -360.426605224609375, 59.10120391845703125, -128.814041137695312, -1.09955644607543945, 0, 0, -0.52249813079833984, 0.852640450000762939, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+75, 37099, 109, -354.165679931640625, 150.3518829345703125, -67.6014785766601562, -1.34390127658843994, 0, 0, -0.6225137710571289, 0.78260880708694458, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+76, 37099, 109, -351.316375732421875, 76.8958892822265625, -130.942291259765625, 0.261798173189163208, 0, 0, 0.130525588989257812, 0.991444945335388183, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+77, 37099, 109, -344.040069580078125, 119.6187362670898437, -148.781097412109375, -1.57079577445983886, 0, 0, -0.70710659027099609, 0.707106947898864746, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+78, 37099, 109, -340.648468017578125, 162.695098876953125, -107.084877014160156, -2.61798930168151855, 0, 0, -0.96592521667480468, 0.258821308612823486, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+79, 37099, 109, -335.893218994140625, 118.9009628295898437, -49.0229682922363281, 2.548179388046264648, 0, 0, 0.956304550170898437, 0.292372345924377441, 3600, 4800, 100, 1), -- Atal'ai Tablet //out of bounds
+(@OGUID+80, 37099, 109, -335.354736328125, 15.44809818267822265, -69.3923110961914062, -2.16420578956604003, 0, 0, -0.88294696807861328, 0.469472706317901611, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+81, 37099, 109, -307.398101806640625, 121.2128829956054687, -170.13018798828125, -0.82030326128005981, 0, 0, -0.39874839782714843, 0.917060375213623046, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+82, 37099, 109, -290.904022216796875, 90.18634796142578125, -170.10723876953125, 2.67034769058227539, 0, 0, 0.972369194030761718, 0.233448356389999389, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+83, 37099, 109, -279.370513916015625, 85.9246826171875, -88.5831222534179687, -1.83259487152099609, 0, 0, -0.79335308074951171, 0.608761727809906005, 3600, 4800, 100, 1); -- Atal'ai Tablet
 
 -- ======
 -- EVENTS
 -- ======
 
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
-(@CGUID+308, 7); -- Elder Starsong (Lunar Festival)
+(@CGUID+364, 7); -- Elder Starsong (Lunar Festival)
 
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
--- =======
--- POOLING
--- =======
+-- ============
+-- SPAWN GROUPS
+-- ============
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
--- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
--- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+1, 'Sunken Temple - Atal\'ai Defenders (5712,5713,5714,5715,5716,5717)', 0, 0, 0, 0),
+(@SGGUID+2, 'Sunken Temple - Ogom the Wretched 5711 & Jammal\'an the Prophet 5710', 0, 0, 0, 1),
+(@SGGUID+3, 'Sunken Temple - Morphaz 5719 & Hazzas 5722', 0, 0, 0, 0),
+(@SGGUID+4, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 000', 0, 0, 0, 2),
+(@SGGUID+5, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 001', 0, 0, 0, 2),
+(@SGGUID+6, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 002', 0, 0, 0, 2),
+(@SGGUID+7, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 003', 0, 0, 0, 2),
+(@SGGUID+8, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4)', 0, 0, 0, 1),
+(@SGGUID+9, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4)', 0, 0, 0, 1),
+(@SGGUID+10, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4)', 0, 0, 0, 1),
+(@SGGUID+11, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4)', 0, 0, 0, 1),
+(@SGGUID+12, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (7)', 0, 0, 0, 1),
+(@SGGUID+13, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (7)', 0, 0, 0, 1),
+(@SGGUID+14, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer (4)', 0, 0, 0, 1),
+(@SGGUID+15, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer (4)', 0, 0, 0, 1),
+(@SGGUID+16, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer (4)', 0, 0, 0, 1),
+(@SGGUID+17, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+18, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+19, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+20, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+21, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+22, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+23, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+24, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+25, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+26, 'Sunken Temple - Nightmare Scalebane | Nightmare Wyrmkin | Nightmare Wanderer | Nightmare Whelp (6)', 0, 0, 0, 1),
+(@SGGUID+27, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai (2)', 0, 0, 0, 1),
+(@SGGUID+28, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai (2)', 0, 0, 0, 1),
+(@SGGUID+29, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (5)', 0, 0, 0, 1),
+(@SGGUID+30, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater (3)', 0, 0, 0, 1),
+(@SGGUID+31, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (5)', 0, 0, 0, 1),
+(@SGGUID+32, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (4)', 0, 0, 0, 1),
+(@SGGUID+33, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (5)', 0, 0, 0, 1),
+(@SGGUID+34, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (6)', 0, 0, 0, 1),
+(@SGGUID+35, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (5)', 0, 0, 0, 1),
+(@SGGUID+36, 'Sunken Temple - Atal\'ai Warrior | Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Corpse Eater | Atal\'ai Slave (7)', 0, 0, 0, 1),
+(@SGGUID+37, 'Sunken Temple - Saturated Ooze | Deep Lurker (2)', 0, 0, 0, 1),
+(@SGGUID+38, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker (2)', 0, 0, 0, 1),
+(@SGGUID+39, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+40, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+41, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker (2)', 0, 0, 0, 1),
+(@SGGUID+42, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+43, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+44, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+45, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker (2)', 0, 0, 0, 1),
+(@SGGUID+46, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+47, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+48, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+49, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+50, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+51, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+52, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+53, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+54, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+55, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+56, 'Sunken Temple - Murk Worm | Saturated Ooze | Deep Lurker | Slime Maggot (6)', 0, 0, 0, 1),
+(@SGGUID+57, 'Sunken Temple - Atal\'ai Deathwalker (2)', 0, 0, 0, 1),
+(@SGGUID+58, 'Sunken Temple - Atal\'ai Deathwalker (3)', 0, 0, 0, 1),
+(@SGGUID+59, 'Sunken Temple - Atal\'ai Deathwalker | Atal\'ai Corpse Eater | Atal\'ai High Priest (3)', 0, 0, 0, 1),
+(@SGGUID+60, 'Sunken Temple - Atal\'ai Deathwalker | Atal\'ai Corpse Eater | Atal\'ai High Priest (4)', 0, 0, 0, 1),
+(@SGGUID+61, 'Sunken Temple - Atal\'ai Deathwalker | Atal\'ai Corpse Eater | Atal\'ai High Priest (3)', 0, 0, 0, 1),
+(@SGGUID+62, 'Sunken Temple - Atal\'ai Deathwalker (3)', 0, 0, 0, 1),
+(@SGGUID+63, 'Sunken Temple - Atal\'ai Deathwalker (3)', 0, 0, 0, 1);
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+1, 5712, 1, 1, 0),
+(@SGGUID+1, 5713, 1, 1, 0),
+(@SGGUID+1, 5714, 1, 1, 0),
+(@SGGUID+1, 5715, 1, 1, 0),
+(@SGGUID+1, 5716, 1, 1, 0),
+(@SGGUID+1, 5717, 1, 1, 0),
+
+(@SGGUID+8, 8318, 2, 2, 0),
+(@SGGUID+8, 5259, 1, 2, 0),
+(@SGGUID+8, 5267, 0, 1, 0),
+
+(@SGGUID+9, 8318, 2, 2, 0),
+(@SGGUID+9, 5259, 1, 2, 0),
+(@SGGUID+9, 5267, 0, 1, 0),
+
+(@SGGUID+10, 8318, 2, 2, 0),
+(@SGGUID+10, 5259, 1, 2, 0),
+(@SGGUID+10, 5267, 0, 1, 0),
+
+(@SGGUID+11, 8318, 2, 2, 0),
+(@SGGUID+11, 5259, 1, 2, 0),
+(@SGGUID+11, 5267, 0, 1, 0),
+
+(@SGGUID+12, 5256, 1, 1, 0), -- 10
+(@SGGUID+12, 5259, 1, 2, 0), -- 14
+(@SGGUID+12, 5267, 0, 1, 0), -- 9
+(@SGGUID+12, 5270, 0, 1, 0), -- 7
+(@SGGUID+12, 8318, 3, 3, 0), -- 47
+
+(@SGGUID+13, 5256, 1, 1, 0), -- 8
+(@SGGUID+13, 5259, 1, 2, 0), -- 15
+(@SGGUID+13, 5267, 0, 1, 0), -- 12
+(@SGGUID+13, 5270, 0, 1, 0), -- 5
+(@SGGUID+13, 8318, 3, 3, 0), -- 41
+
+(@SGGUID+14, 5277, 0, 2, 0), -- 10
+(@SGGUID+14, 5280, 0, 2, 0), -- 4
+(@SGGUID+14, 5283, 0, 2, 0), -- 5
+
+(@SGGUID+15, 5277, 0, 2, 0), -- 10
+(@SGGUID+15, 5280, 0, 2, 0), -- 10
+(@SGGUID+15, 5283, 0, 2, 0), -- 11
+
+(@SGGUID+16, 5277, 0, 2, 0), -- 9
+(@SGGUID+16, 5280, 0, 2, 0), -- 8
+(@SGGUID+16, 5283, 0, 2, 0), -- 13
+
+(@SGGUID+17, 5277, 0, 1, 0), -- 5
+(@SGGUID+17, 5280, 0, 1, 0), -- 8
+(@SGGUID+17, 5283, 0, 1, 0), -- 1
+(@SGGUID+17, 8319, 3, 4, 0), -- 34
+
+(@SGGUID+18, 5277, 0, 1, 0), -- 8
+(@SGGUID+18, 5280, 0, 1, 0), -- 2
+(@SGGUID+18, 5283, 0, 1, 0), -- 5
+(@SGGUID+18, 8319, 3, 4, 0), -- 32
+
+(@SGGUID+19, 5277, 0, 1, 0),
+(@SGGUID+19, 5280, 0, 1, 0),
+(@SGGUID+19, 5283, 0, 1, 0),
+(@SGGUID+19, 8319, 3, 4, 0),
+
+(@SGGUID+20, 5277, 0, 1, 0),
+(@SGGUID+20, 5280, 0, 1, 0),
+(@SGGUID+20, 5283, 0, 1, 0),
+(@SGGUID+20, 8319, 3, 4, 0),
+
+(@SGGUID+21, 5277, 0, 1, 0),
+(@SGGUID+21, 5280, 0, 1, 0),
+(@SGGUID+21, 5283, 0, 1, 0),
+(@SGGUID+21, 8319, 3, 4, 0),
+
+(@SGGUID+22, 5277, 0, 1, 0),
+(@SGGUID+22, 5280, 0, 1, 0),
+(@SGGUID+22, 5283, 0, 1, 0),
+(@SGGUID+22, 8319, 3, 4, 0),
+
+(@SGGUID+23, 5277, 0, 1, 0),
+(@SGGUID+23, 5280, 0, 1, 0),
+(@SGGUID+23, 5283, 0, 1, 0),
+(@SGGUID+23, 8319, 3, 4, 0),
+
+(@SGGUID+24, 5277, 0, 1, 0),
+(@SGGUID+24, 5280, 0, 1, 0),
+(@SGGUID+24, 5283, 0, 1, 0),
+(@SGGUID+24, 8319, 3, 4, 0),
+
+(@SGGUID+25, 5277, 0, 1, 0),
+(@SGGUID+25, 5280, 0, 1, 0),
+(@SGGUID+25, 5283, 0, 1, 0),
+(@SGGUID+25, 8319, 3, 4, 0),
+
+(@SGGUID+26, 5277, 0, 1, 0),
+(@SGGUID+26, 5280, 0, 1, 0),
+(@SGGUID+26, 5283, 0, 1, 0),
+(@SGGUID+26, 8319, 3, 4, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, @CGUID+5, -1),
+(@SGGUID+1, @CGUID+6, -1),
+(@SGGUID+1, @CGUID+7, -1),
+(@SGGUID+1, @CGUID+8, -1),
+(@SGGUID+1, @CGUID+9, -1),
+(@SGGUID+1, @CGUID+10, -1),
+
+(@SGGUID+2, @CGUID+3, -1),
+(@SGGUID+2, @CGUID+4, -1),
+
+(@SGGUID+3, @CGUID+12, 0),
+(@SGGUID+3, @CGUID+11, 1),
+
+(@SGGUID+4, @CGUID+17, 0),
+(@SGGUID+4, @CGUID+18, 1),
+(@SGGUID+4, @CGUID+19, 2),
+(@SGGUID+4, @CGUID+20, 3),
+
+(@SGGUID+5, @CGUID+21, 0),
+(@SGGUID+5, @CGUID+22, 1),
+(@SGGUID+5, @CGUID+23, 2),
+(@SGGUID+5, @CGUID+24, 3),
+
+(@SGGUID+6, @CGUID+25, 0),
+(@SGGUID+6, @CGUID+26, 1),
+(@SGGUID+6, @CGUID+27, 2),
+(@SGGUID+6, @CGUID+28, 3),
+
+(@SGGUID+7, @CGUID+29, 0),
+(@SGGUID+7, @CGUID+30, 1),
+(@SGGUID+7, @CGUID+31, 2),
+(@SGGUID+7, @CGUID+32, 3),
+
+(@SGGUID+8, @CGUID+33, -1),
+(@SGGUID+8, @CGUID+34, -1),
+(@SGGUID+8, @CGUID+35, -1),
+(@SGGUID+8, @CGUID+36, -1),
+
+(@SGGUID+9, @CGUID+37, -1),
+(@SGGUID+9, @CGUID+38, -1),
+(@SGGUID+9, @CGUID+39, -1),
+(@SGGUID+9, @CGUID+40, -1),
+
+(@SGGUID+10, @CGUID+41, -1),
+(@SGGUID+10, @CGUID+42, -1),
+(@SGGUID+10, @CGUID+43, -1),
+(@SGGUID+10, @CGUID+44, -1),
+
+(@SGGUID+11, @CGUID+45, -1),
+(@SGGUID+11, @CGUID+46, -1),
+(@SGGUID+11, @CGUID+47, -1),
+(@SGGUID+11, @CGUID+48, -1),
+
+(@SGGUID+12, @CGUID+66, -1),
+(@SGGUID+12, @CGUID+67, -1),
+(@SGGUID+12, @CGUID+68, -1),
+(@SGGUID+12, @CGUID+69, -1),
+(@SGGUID+12, @CGUID+70, -1),
+(@SGGUID+12, @CGUID+71, -1),
+(@SGGUID+12, @CGUID+72, -1),
+
+(@SGGUID+13, @CGUID+89, -1),
+(@SGGUID+13, @CGUID+90, -1),
+(@SGGUID+13, @CGUID+91, -1),
+(@SGGUID+13, @CGUID+92, -1),
+(@SGGUID+13, @CGUID+93, -1),
+(@SGGUID+13, @CGUID+94, -1),
+(@SGGUID+13, @CGUID+95, -1),
+
+(@SGGUID+14, @CGUID+236, -1),
+(@SGGUID+14, @CGUID+237, -1),
+(@SGGUID+14, @CGUID+238, -1),
+(@SGGUID+14, @CGUID+239, -1),
+
+(@SGGUID+15, @CGUID+240, -1),
+(@SGGUID+15, @CGUID+241, -1),
+(@SGGUID+15, @CGUID+242, -1),
+(@SGGUID+15, @CGUID+243, -1),
+
+(@SGGUID+16, @CGUID+244, -1),
+(@SGGUID+16, @CGUID+245, -1),
+(@SGGUID+16, @CGUID+246, -1),
+(@SGGUID+16, @CGUID+247, -1),
+
+(@SGGUID+17, @CGUID+248, -1),
+(@SGGUID+17, @CGUID+249, -1),
+(@SGGUID+17, @CGUID+250, -1),
+(@SGGUID+17, @CGUID+251, -1),
+(@SGGUID+17, @CGUID+252, -1),
+(@SGGUID+17, @CGUID+253, -1),
+
+(@SGGUID+18, @CGUID+254, -1),
+(@SGGUID+18, @CGUID+255, -1),
+(@SGGUID+18, @CGUID+256, -1),
+(@SGGUID+18, @CGUID+257, -1),
+(@SGGUID+18, @CGUID+258, -1),
+(@SGGUID+18, @CGUID+259, -1),
+
+(@SGGUID+19, @CGUID+260, -1),
+(@SGGUID+19, @CGUID+261, -1),
+(@SGGUID+19, @CGUID+262, -1),
+(@SGGUID+19, @CGUID+263, -1),
+(@SGGUID+19, @CGUID+264, -1),
+(@SGGUID+19, @CGUID+265, -1),
+
+(@SGGUID+20, @CGUID+266, -1),
+(@SGGUID+20, @CGUID+267, -1),
+(@SGGUID+20, @CGUID+268, -1),
+(@SGGUID+20, @CGUID+269, -1),
+(@SGGUID+20, @CGUID+270, -1),
+(@SGGUID+20, @CGUID+271, -1),
+
+(@SGGUID+21, @CGUID+272, -1),
+(@SGGUID+21, @CGUID+273, -1),
+(@SGGUID+21, @CGUID+274, -1),
+(@SGGUID+21, @CGUID+275, -1),
+(@SGGUID+21, @CGUID+276, -1),
+(@SGGUID+21, @CGUID+277, -1),
+
+(@SGGUID+22, @CGUID+278, -1),
+(@SGGUID+22, @CGUID+279, -1),
+(@SGGUID+22, @CGUID+280, -1),
+(@SGGUID+22, @CGUID+281, -1),
+(@SGGUID+22, @CGUID+282, -1),
+(@SGGUID+22, @CGUID+283, -1),
+
+(@SGGUID+23, @CGUID+284, -1),
+(@SGGUID+23, @CGUID+285, -1),
+(@SGGUID+23, @CGUID+286, -1),
+(@SGGUID+23, @CGUID+287, -1),
+(@SGGUID+23, @CGUID+288, -1),
+(@SGGUID+23, @CGUID+289, -1),
+
+(@SGGUID+24, @CGUID+290, -1),
+(@SGGUID+24, @CGUID+291, -1),
+(@SGGUID+24, @CGUID+292, -1),
+(@SGGUID+24, @CGUID+293, -1),
+(@SGGUID+24, @CGUID+294, -1),
+(@SGGUID+24, @CGUID+295, -1),
+
+(@SGGUID+25, @CGUID+296, -1),
+(@SGGUID+25, @CGUID+297, -1),
+(@SGGUID+25, @CGUID+298, -1),
+(@SGGUID+25, @CGUID+299, -1),
+(@SGGUID+25, @CGUID+300, -1),
+(@SGGUID+25, @CGUID+301, -1),
+
+(@SGGUID+26, @CGUID+302, -1),
+(@SGGUID+26, @CGUID+303, -1),
+(@SGGUID+26, @CGUID+304, -1),
+(@SGGUID+26, @CGUID+305, -1),
+(@SGGUID+26, @CGUID+306, -1),
+(@SGGUID+26, @CGUID+307, -1),
+
+(@SGGUID+27, @CGUID+13, -1),
+(@SGGUID+27, @CGUID+14, -1),
+
+(@SGGUID+28, @CGUID+15, -1),
+(@SGGUID+28, @CGUID+16, -1),
+
+(@SGGUID+29, @CGUID+49, -1),
+(@SGGUID+29, @CGUID+50, -1),
+(@SGGUID+29, @CGUID+51, -1),
+(@SGGUID+29, @CGUID+52, -1),
+(@SGGUID+29, @CGUID+53, -1),
+
+(@SGGUID+30, @CGUID+54, -1),
+(@SGGUID+30, @CGUID+55, -1),
+(@SGGUID+30, @CGUID+56, -1),
+
+(@SGGUID+31, @CGUID+57, -1),
+(@SGGUID+31, @CGUID+58, -1),
+(@SGGUID+31, @CGUID+59, -1),
+(@SGGUID+31, @CGUID+60, -1),
+(@SGGUID+31, @CGUID+61, -1),
+
+(@SGGUID+32, @CGUID+62, -1),
+(@SGGUID+32, @CGUID+63, -1),
+(@SGGUID+32, @CGUID+64, -1),
+(@SGGUID+32, @CGUID+65, -1),
+
+(@SGGUID+33, @CGUID+73, -1),
+(@SGGUID+33, @CGUID+74, -1),
+(@SGGUID+33, @CGUID+75, -1),
+(@SGGUID+33, @CGUID+76, -1),
+(@SGGUID+33, @CGUID+77, -1),
+
+(@SGGUID+34, @CGUID+78, -1),
+(@SGGUID+34, @CGUID+79, -1),
+(@SGGUID+34, @CGUID+80, -1),
+(@SGGUID+34, @CGUID+81, -1),
+(@SGGUID+34, @CGUID+82, -1),
+(@SGGUID+34, @CGUID+83, -1),
+
+(@SGGUID+35, @CGUID+84, -1),
+(@SGGUID+35, @CGUID+85, -1),
+(@SGGUID+35, @CGUID+86, -1),
+(@SGGUID+35, @CGUID+87, -1),
+(@SGGUID+35, @CGUID+88, -1),
+
+(@SGGUID+36, @CGUID+96, -1),
+(@SGGUID+36, @CGUID+97, -1),
+(@SGGUID+36, @CGUID+98, -1),
+(@SGGUID+36, @CGUID+99, -1),
+(@SGGUID+36, @CGUID+100, -1),
+(@SGGUID+36, @CGUID+101, -1),
+(@SGGUID+36, @CGUID+102, -1),
+
+(@SGGUID+37, @CGUID+126, -1),
+(@SGGUID+37, @CGUID+127, -1),
+
+(@SGGUID+38, @CGUID+128, -1),
+(@SGGUID+38, @CGUID+129, -1),
+
+(@SGGUID+39, @CGUID+130, -1),
+(@SGGUID+39, @CGUID+131, -1),
+(@SGGUID+39, @CGUID+132, -1),
+(@SGGUID+39, @CGUID+133, -1),
+(@SGGUID+39, @CGUID+134, -1),
+(@SGGUID+39, @CGUID+135, -1),
+
+(@SGGUID+40, @CGUID+136, -1),
+(@SGGUID+40, @CGUID+137, -1),
+(@SGGUID+40, @CGUID+138, -1),
+(@SGGUID+40, @CGUID+139, -1),
+(@SGGUID+40, @CGUID+140, -1),
+(@SGGUID+40, @CGUID+141, -1),
+
+(@SGGUID+41, @CGUID+142, -1),
+(@SGGUID+41, @CGUID+143, -1),
+
+(@SGGUID+42, @CGUID+144, -1),
+(@SGGUID+42, @CGUID+145, -1),
+(@SGGUID+42, @CGUID+146, -1),
+(@SGGUID+42, @CGUID+147, -1),
+(@SGGUID+42, @CGUID+148, -1),
+(@SGGUID+42, @CGUID+149, -1),
+
+(@SGGUID+43, @CGUID+150, -1),
+(@SGGUID+43, @CGUID+151, -1),
+(@SGGUID+43, @CGUID+152, -1),
+(@SGGUID+43, @CGUID+153, -1),
+(@SGGUID+43, @CGUID+154, -1),
+(@SGGUID+43, @CGUID+155, -1),
+
+(@SGGUID+44, @CGUID+156, -1),
+(@SGGUID+44, @CGUID+157, -1),
+(@SGGUID+44, @CGUID+158, -1),
+(@SGGUID+44, @CGUID+159, -1),
+(@SGGUID+44, @CGUID+160, -1),
+(@SGGUID+44, @CGUID+161, -1),
+
+(@SGGUID+45, @CGUID+162, -1),
+(@SGGUID+45, @CGUID+163, -1),
+(@SGGUID+45, @CGUID+164, -1),
+
+(@SGGUID+46, @CGUID+165, -1),
+(@SGGUID+46, @CGUID+166, -1),
+(@SGGUID+46, @CGUID+167, -1),
+(@SGGUID+46, @CGUID+168, -1),
+(@SGGUID+46, @CGUID+169, -1),
+(@SGGUID+46, @CGUID+170, -1),
+
+(@SGGUID+47, @CGUID+171, -1),
+(@SGGUID+47, @CGUID+172, -1),
+(@SGGUID+47, @CGUID+173, -1),
+(@SGGUID+47, @CGUID+174, -1),
+(@SGGUID+47, @CGUID+175, -1),
+(@SGGUID+47, @CGUID+176, -1),
+
+(@SGGUID+48, @CGUID+177, -1),
+(@SGGUID+48, @CGUID+178, -1),
+(@SGGUID+48, @CGUID+179, -1),
+(@SGGUID+48, @CGUID+180, -1),
+(@SGGUID+48, @CGUID+181, -1),
+(@SGGUID+48, @CGUID+182, -1),
+
+(@SGGUID+49, @CGUID+183, -1),
+(@SGGUID+49, @CGUID+184, -1),
+(@SGGUID+49, @CGUID+185, -1),
+(@SGGUID+49, @CGUID+186, -1),
+(@SGGUID+49, @CGUID+187, -1),
+(@SGGUID+49, @CGUID+188, -1),
+
+(@SGGUID+50, @CGUID+189, -1),
+(@SGGUID+50, @CGUID+190, -1),
+(@SGGUID+50, @CGUID+191, -1),
+(@SGGUID+50, @CGUID+192, -1),
+(@SGGUID+50, @CGUID+193, -1),
+(@SGGUID+50, @CGUID+194, -1),
+
+(@SGGUID+51, @CGUID+195, -1),
+(@SGGUID+51, @CGUID+196, -1),
+(@SGGUID+51, @CGUID+197, -1),
+(@SGGUID+51, @CGUID+198, -1),
+(@SGGUID+51, @CGUID+199, -1),
+(@SGGUID+51, @CGUID+200, -1),
+
+(@SGGUID+52, @CGUID+201, -1),
+(@SGGUID+52, @CGUID+202, -1),
+(@SGGUID+52, @CGUID+203, -1),
+(@SGGUID+52, @CGUID+204, -1),
+(@SGGUID+52, @CGUID+205, -1),
+(@SGGUID+52, @CGUID+206, -1),
+
+(@SGGUID+53, @CGUID+207, -1),
+(@SGGUID+53, @CGUID+208, -1),
+(@SGGUID+53, @CGUID+209, -1),
+(@SGGUID+53, @CGUID+210, -1),
+(@SGGUID+53, @CGUID+211, -1),
+(@SGGUID+53, @CGUID+212, -1),
+
+(@SGGUID+54, @CGUID+213, -1),
+(@SGGUID+54, @CGUID+214, -1),
+(@SGGUID+54, @CGUID+215, -1),
+(@SGGUID+54, @CGUID+216, -1),
+(@SGGUID+54, @CGUID+217, -1),
+(@SGGUID+54, @CGUID+218, -1),
+
+(@SGGUID+55, @CGUID+219, -1),
+(@SGGUID+55, @CGUID+220, -1),
+(@SGGUID+55, @CGUID+221, -1),
+(@SGGUID+55, @CGUID+222, -1),
+(@SGGUID+55, @CGUID+223, -1),
+(@SGGUID+55, @CGUID+224, -1),
+
+(@SGGUID+56, @CGUID+225, -1),
+(@SGGUID+56, @CGUID+226, -1),
+(@SGGUID+56, @CGUID+227, -1),
+(@SGGUID+56, @CGUID+228, -1),
+(@SGGUID+56, @CGUID+229, -1),
+(@SGGUID+56, @CGUID+230, -1),
+
+(@SGGUID+57, @CGUID+314, -1),
+(@SGGUID+57, @CGUID+315, -1),
+
+(@SGGUID+58, @CGUID+316, -1),
+(@SGGUID+58, @CGUID+317, -1),
+(@SGGUID+58, @CGUID+318, -1),
+
+(@SGGUID+59, @CGUID+319, -1),
+(@SGGUID+59, @CGUID+320, -1),
+(@SGGUID+59, @CGUID+321, -1),
+
+(@SGGUID+60, @CGUID+322, -1),
+(@SGGUID+60, @CGUID+323, -1),
+(@SGGUID+60, @CGUID+324, -1),
+(@SGGUID+60, @CGUID+325, -1),
+
+(@SGGUID+61, @CGUID+326, -1),
+(@SGGUID+61, @CGUID+327, -1),
+(@SGGUID+61, @CGUID+328, -1),
+
+(@SGGUID+62, @CGUID+329, -1),
+(@SGGUID+62, @CGUID+330, -1),
+(@SGGUID+62, @CGUID+331, -1),
+
+(@SGGUID+63, @CGUID+332, -1),
+(@SGGUID+63, @CGUID+333, -1),
+(@SGGUID+63, @CGUID+334, -1);
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+3, 1, 10, 0, @SGGUID+3, 2, 'Morphaz 5719 & Hazzas 5722 Patrol'),
+(@SGGUID+4, 6, 3, 0, @SGGUID+4, 2, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 000'),
+(@SGGUID+5, 6, 3, 0, @SGGUID+5, 2, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 001'),
+(@SGGUID+6, 6, 3, 0, @SGGUID+6, 2, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 002'),
+(@SGGUID+7, 6, 3, 0, @SGGUID+7, 2, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 003');
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+3, 'Sunken Temple - Morphaz 5719 & Hazzas 5722 Patrol'),
+(@SGGUID+4, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 000'),
+(@SGGUID+5, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 001'),
+(@SGGUID+6, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 002'),
+(@SGGUID+7, 'Sunken Temple - Atal\'ai Witch Doctor | Unliving Atal\'ai | Atal\'ai Slave (4) Patrol 003');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+3, 1, -649.6785, 131.59596, -90.82902, 100, 0, 0),
+(@SGGUID+3, 2, -665.83405, 131.50317, -90.82939, 100, 0, 0),
+(@SGGUID+3, 3, -673.3382, 107.93626, -90.83093, 100, 0, 0),
+(@SGGUID+3, 4, -673.3691, 83.96611, -90.83232, 100, 0, 0),
+(@SGGUID+3, 5, -665.69635, 60.20914, -90.83353, 100, 0, 0),
+(@SGGUID+3, 6, -649.8461, 60.03304, -90.833176, 100, 0, 0),
+(@SGGUID+3, 7, -641.7433, 84.016106, -90.834, 100, 0, 0),
+(@SGGUID+3, 8, -641.6724, 107.88358, -90.82973, 100, 0, 0),
+
+(@SGGUID+4, 1, -345.205, 125.52984, -148.77744, 100, 0, 0),
+(@SGGUID+4, 2, -350.33298, 145.77696, -148.76465, 100, 0, 0),
+(@SGGUID+4, 3, -385.99805, 160.52167, -128.89546, 100, 0, 0),
+(@SGGUID+4, 4, -388.63745, 167.9478, -128.89102, 100, 0, 0),
+(@SGGUID+4, 5, -386.9816, 173.78822, -128.8862, 100, 0, 0),
+(@SGGUID+4, 6, -380.19714, 174.63995, -128.89034, 100, 0, 0),
+(@SGGUID+4, 7, -347.71588, 162.1764, -109.06814, 100, 0, 0),
+(@SGGUID+4, 8, -346.0102, 149.08649, -109.06044, 100, 0, 0),
+(@SGGUID+4, 9, -353.11145, 147.21133, -109.06503, 100, 0, 0),
+(@SGGUID+4, 10, -384.63727, 159.53238, -89.2327, 100, 0, 0),
+(@SGGUID+4, 11, -389.87967, 165.9438, -89.22603, 100, 0, 0),
+(@SGGUID+4, 12, -387.91235, 173.36319, -89.22779, 100, 0, 0),
+(@SGGUID+4, 13, -380.86636, 173.94495, -89.22971, 100, 0, 0),
+(@SGGUID+4, 14, -381.89835, 174.16061, -89.22964, 100, 0, 0),
+(@SGGUID+4, 15, -388.0593, 171.27715, -89.227776, 100, 0, 0),
+(@SGGUID+4, 16, -390.1981, 165.95349, -89.225655, 100, 0, 0),
+(@SGGUID+4, 17, -384.5587, 159.64911, -89.23278, 100, 0, 0),
+(@SGGUID+4, 18, -353.11145, 147.21133, -109.06503, 100, 0, 0),
+(@SGGUID+4, 19, -346.0102, 149.08649, -109.06044, 100, 0, 0),
+(@SGGUID+4, 20, -347.71588, 162.1764, -109.06814, 100, 0, 0),
+(@SGGUID+4, 21, -381.73203, 175.45465, -128.88835, 100, 0, 0),
+(@SGGUID+4, 22, -387.3026, 173.76851, -128.88599, 100, 0, 0),
+(@SGGUID+4, 23, -389.35464, 166.6518, -128.89183, 100, 0, 0),
+(@SGGUID+4, 24, -385.15643, 159.90665, -128.89624, 100, 0, 0),
+(@SGGUID+4, 25, -353.12186, 146.65714, -148.74976, 100, 0, 0),
+(@SGGUID+4, 26, -345.04193, 125.06413, -148.77844, 100, 0, 0),
+
+(@SGGUID+5, 1, -378.07697, 7.080325, -148.67908, 100, 0, 0),
+(@SGGUID+5, 2, -364.0559, 21.66708, -148.66946, 100, 0, 0),
+(@SGGUID+5, 3, -368.82877, 56.807056, -128.8077, 100, 0, 0),
+(@SGGUID+5, 4, -366.4001, 62.857185, -128.71631, 100, 0, 0),
+(@SGGUID+5, 5, -358.5153, 63.914116, -128.75102, 100, 0, 0),
+(@SGGUID+5, 6, -353.64288, 59.75571, -128.81729, 100, 0, 0),
+(@SGGUID+5, 7, -350.13193, 32.057636, -108.96854, 100, 0, 0),
+(@SGGUID+5, 8, -349.04175, 22.976723, -108.97046, 100, 0, 0),
+(@SGGUID+5, 9, -352.26144, 18.522984, -108.96687, 100, 0, 0),
+(@SGGUID+5, 10, -359.9629, 17.336044, -108.96698, 100, 0, 0),
+(@SGGUID+5, 11, -364.3735, 24.93423, -108.97464, 100, 0, 0),
+(@SGGUID+5, 12, -369.64554, 56.027164, -89.13971, 100, 0, 0),
+(@SGGUID+5, 13, -366.4772, 62.77396, -89.13123, 100, 0, 0),
+(@SGGUID+5, 14, -358.8455, 64.96281, -89.13009, 100, 0, 0),
+(@SGGUID+5, 15, -354.44824, 62.358765, -89.13493, 100, 0, 0),
+(@SGGUID+5, 16, -358.74557, 65.70878, -89.12904, 100, 0, 0),
+(@SGGUID+5, 17, -366.3637, 64.57799, -89.12866, 100, 0, 0),
+(@SGGUID+5, 18, -370.0082, 60.052456, -89.13591, 100, 0, 0),
+(@SGGUID+5, 19, -368.9909, 52.73882, -89.134315, 100, 0, 0),
+(@SGGUID+5, 20, -364.24454, 24.724798, -108.97443, 100, 0, 0),
+(@SGGUID+5, 21, -360.1932, 19.98861, -108.96945, 100, 0, 0),
+(@SGGUID+5, 22, -350.87363, 21.272596, -108.969185, 100, 0, 0),
+(@SGGUID+5, 23, -349.77423, 30.82207, -108.96862, 100, 0, 0),
+(@SGGUID+5, 24, -355.36423, 62.348293, -128.77533, 100, 0, 0),
+(@SGGUID+5, 25, -360.29648, 64.63991, -128.7399, 100, 0, 0),
+(@SGGUID+5, 26, -366.79044, 63.557407, -128.70078, 100, 0, 0),
+(@SGGUID+5, 27, -370.34293, 56.197697, -128.80576, 100, 0, 0),
+(@SGGUID+5, 28, -364.59708, 24.147257, -148.65654, 100, 0, 0),
+(@SGGUID+5, 29, -365.3268, 19.202902, -148.67828, 100, 0, 0),
+(@SGGUID+5, 30, -378.0221, 6.078281, -148.68353, 100, 0, 0),
+
+(@SGGUID+6, 1, -555.01794, 14.333408, -89.08648, 100, 0, 0),
+(@SGGUID+6, 2, -547.82294, 15.695077, -89.08036, 100, 0, 0),
+(@SGGUID+6, 3, -544.60284, 22.861689, -89.08309, 100, 0, 0),
+(@SGGUID+6, 4, -548.7252, 28.939505, -89.09685, 100, 0, 0),
+(@SGGUID+6, 5, -582.87616, 42.979652, -108.9261, 100, 0, 0),
+(@SGGUID+6, 6, -588.936, 40.459545, -108.92171, 100, 0, 0),
+(@SGGUID+6, 7, -591.8242, 33.365974, -108.923676, 100, 0, 0),
+(@SGGUID+6, 8, -585.8455, 27.55709, -108.929214, 100, 0, 0),
+(@SGGUID+6, 9, -554.3931, 13.877194, -128.76247, 100, 0, 0),
+(@SGGUID+6, 10, -547.80585, 15.426145, -128.75717, 100, 0, 0),
+(@SGGUID+6, 11, -544.5464, 22.56901, -128.75986, 100, 0, 0),
+(@SGGUID+6, 12, -549.6109, 28.964909, -128.76285, 100, 0, 0),
+(@SGGUID+6, 13, -581.65424, 43.101032, -148.62193, 100, 0, 0),
+(@SGGUID+6, 14, -588.09735, 63.27464, -148.63972, 100, 0, 0),
+(@SGGUID+6, 15, -581.65424, 43.101032, -148.62193, 100, 0, 0),
+(@SGGUID+6, 16, -549.6109, 28.964909, -128.76285, 100, 0, 0),
+(@SGGUID+6, 17, -545.48016, 22.51288, -128.76074, 100, 0, 0),
+(@SGGUID+6, 18, -548.1782, 15.134892, -128.7573, 100, 0, 0),
+(@SGGUID+6, 19, -555.1683, 14.884336, -128.76407, 100, 0, 0),
+(@SGGUID+6, 20, -585.71594, 27.380919, -108.92928, 100, 0, 0),
+(@SGGUID+6, 21, -591.20734, 33.094044, -108.924484, 100, 0, 0),
+(@SGGUID+6, 22, -588.81396, 40.45174, -108.92184, 100, 0, 0),
+(@SGGUID+6, 23, -580.8833, 42.22921, -108.928635, 100, 0, 0),
+(@SGGUID+6, 24, -547.54865, 28.10696, -89.09648, 100, 0, 0),
+(@SGGUID+6, 25, -545.22955, 22.592773, -89.0835, 100, 0, 0),
+(@SGGUID+6, 26, -547.86676, 15.214885, -89.08, 100, 0, 0),
+(@SGGUID+6, 27, -553.76904, 13.645298, -89.08465, 100, 0, 0),
+
+(@SGGUID+7, 1, -579.6525, 130.31882, -89.13575, 100, 0, 0),
+(@SGGUID+7, 2, -575.20337, 124.98059, -89.135826, 100, 0, 0),
+(@SGGUID+7, 3, -567.44495, 125.861, -89.136, 100, 0, 0),
+(@SGGUID+7, 4, -565.0456, 134.13553, -89.136086, 100, 0, 0),
+(@SGGUID+7, 5, -569.9164, 169.01262, -108.97502, 100, 0, 0),
+(@SGGUID+7, 6, -574.7649, 172.48795, -108.97116, 100, 0, 0),
+(@SGGUID+7, 7, -582.14435, 171.7046, -108.9727, 100, 0, 0),
+(@SGGUID+7, 8, -584.55774, 164.01901, -108.977776, 100, 0, 0),
+(@SGGUID+7, 9, -579.4428, 129.32625, -128.80223, 100, 0, 0),
+(@SGGUID+7, 10, -575.1472, 125.15134, -128.79997, 100, 0, 0),
+(@SGGUID+7, 11, -567.3237, 125.16972, -128.80447, 100, 0, 0),
+(@SGGUID+7, 12, -565.0516, 133.9017, -128.8137, 100, 0, 0),
+(@SGGUID+7, 13, -569.21423, 170.37636, -148.68138, 100, 0, 0),
+(@SGGUID+7, 14, -554.2734, 184.35686, -148.66695, 100, 0, 0),
+(@SGGUID+7, 15, -554.9069, 183.51509, -148.68452, 100, 0, 0),
+(@SGGUID+7, 16, -568.55634, 167.96725, -148.6685, 100, 0, 0),
+(@SGGUID+7, 17, -564.61926, 133.96246, -128.81299, 100, 0, 0),
+(@SGGUID+7, 18, -569.3324, 125.21017, -128.80338, 100, 0, 0),
+(@SGGUID+7, 19, -575.53064, 124.80553, -128.79938, 100, 0, 0),
+(@SGGUID+7, 20, -580.07764, 129.97487, -128.8026, 100, 0, 0),
+(@SGGUID+7, 21, -584.6524, 163.88332, -108.97781, 100, 0, 0),
+(@SGGUID+7, 22, -574.519, 173.56453, -108.969826, 100, 0, 0),
+(@SGGUID+7, 23, -569.2759, 167.45772, -108.97687, 100, 0, 0),
+(@SGGUID+7, 24, -564.4496, 132.4459, -89.13609, 100, 0, 0),
+(@SGGUID+7, 25, -567.9051, 128.10909, -89.136, 100, 0, 0),
+(@SGGUID+7, 26, -575.8123, 126.61334, -89.13582, 100, 0, 0),
+(@SGGUID+7, 27, -580.27576, 130.42735, -89.135735, 100, 0, 0);
 
 -- =========
 -- DBSCRIPTS
