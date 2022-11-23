@@ -13,17 +13,17 @@ DELETE FROM creature_battleground WHERE guid BETWEEN 112000 AND 112009;
 DELETE FROM creature_linking WHERE guid BETWEEN 112000 AND 112009
  OR master_guid BETWEEN 112000 AND 112009;
 DELETE FROM creature WHERE guid BETWEEN 112000 AND 112009;
-INSERT INTO creature (guid, id, map, spawnmask, phasemask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) values
-(112000,12352,0,1,1,0,0,1640.14,-5467.21,97.83,1.15839,180,180,0,0,0,0,0,0),
-(112001,12352,0,1,1,0,0,1638.76,-5466.3,97.7965,1.15839,180,180,0,0,0,0,0,0),
-(112002,12352,0,1,1,0,0,1636.83,-5467.03,98.3487,1.37436,180,180,0,0,0,0,0,0),
-(112003,12352,0,1,1,0,0,1640.8,-5468.42,98.0504,1.24477,180,180,0,0,0,0,0,0),
-(112004,12352,0,1,1,0,0,1640.3,-5469.83,98.5054,1.0414,180,180,0,0,0,0,0,0),
-(112005,12352,0,1,1,0,0,1636.94,-5468.06,98.5386,0.927513,180,180,0,0,0,0,0,0),
-(112006,12352,0,1,1,0,0,1639.53,-5470.85,98.8409,1.12386,180,180,0,0,0,0,0,0),
-(112007,12352,0,1,1,0,0,1637.89,-5470.61,98.9737,1.10815,180,180,0,0,0,0,0,0),
-(112008,12352,0,1,1,0,0,1636.58,-5469.1,98.8369,1.09245,180,180,0,0,0,0,0,0),
-(112009,12339,0,1,1,0,0,1638.35,-5469.5,98.6581,1.26412,180,180,0,0,0,0,0,0);
+INSERT INTO creature (guid, id, map, spawnmask, modelid, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) values
+(112000,12352,0,1,0,1640.14,-5467.21,97.83,1.15839,180,180,0,0,0,0,0,0),
+(112001,12352,0,1,0,1638.76,-5466.3,97.7965,1.15839,180,180,0,0,0,0,0,0),
+(112002,12352,0,1,0,1636.83,-5467.03,98.3487,1.37436,180,180,0,0,0,0,0,0),
+(112003,12352,0,1,0,1640.8,-5468.42,98.0504,1.24477,180,180,0,0,0,0,0,0),
+(112004,12352,0,1,0,1640.3,-5469.83,98.5054,1.0414,180,180,0,0,0,0,0,0),
+(112005,12352,0,1,0,1636.94,-5468.06,98.5386,0.927513,180,180,0,0,0,0,0,0),
+(112006,12352,0,1,0,1639.53,-5470.85,98.8409,1.12386,180,180,0,0,0,0,0,0),
+(112007,12352,0,1,0,1637.89,-5470.61,98.9737,1.10815,180,180,0,0,0,0,0,0),
+(112008,12352,0,1,0,1636.58,-5469.1,98.8369,1.09245,180,180,0,0,0,0,0,0),
+(112009,12339,0,1,0,1638.35,-5469.5,98.6581,1.26412,180,180,0,0,0,0,0,0);
 DELETE FROM `spawn_group` WHERE id IN (19996);
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (19996, 'Eastern Plaguelands - Demetria 12339 & 9 Scarlet Troopers 12352 - spawn with q.6148', 0, 0, 20505, 0x01|0x02|0x08);
@@ -159,3 +159,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 DELETE FROM `dbscripts_on_creature_death` WHERE `id` IN (12339);
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (12339,60000,53,0,0,0,0,0,0,30011,0,0,0,0,0,0,0,'Set worldstate variable to 0');
+
+-- Factions
+UPDATE `creature_template` SET `Faction` = 89 WHERE `entry` = 12352; -- Scarlet Trooper
+UPDATE `creature_template` SET `Faction` = 89 WHERE `entry` = 12339; -- Demetria
+
