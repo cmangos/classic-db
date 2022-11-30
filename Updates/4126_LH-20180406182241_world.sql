@@ -34,6 +34,8 @@ UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 1
 -- Dustwind Turban and Gauntlets of the Immovable are in opposite groups
 -- Southwind Helm and Chitinous Shoulderguards are in opposite groups
 -- Gauntlets of Southwind and Obsidian Scaled Leggings are in opposite groups
+UPDATE `creature_loot_template` SET `groupid` = 2 WHERE `entry` = 15340 AND `item` IN (21471,21472,21474,21476,21475,21477,21473);
+UPDATE `creature_loot_template` SET `groupid` = 3 WHERE `entry` = 15340 AND `item` IN (21467,21479,21455,21469,21470,21468);
 -- https://www.wowhead.com/tbc/npc=15341/general-rajaxx - https://youtu.be/iBLtfWsG68E?t=1022 drape 2 books 1 item
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 10 WHERE `entry` = 15341 AND `item` IN (21492,21493);
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 10 WHERE `entry` = 15341 AND `item` IN (20884,20888);
@@ -43,7 +45,14 @@ UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 10 WHERE `entry` = 1
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 15348 AND `item` IN (20885,20889);
 -- Enchanting Formulas seem to have SKILL_ENCHANTING restriction as their chance drops over time and they are soulbound
 -- 203	7	333	1	0	0	0	Has Skill ID 333, Minimum Skill Value 1
-UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 5, `condition_id` = 203 WHERE `entry` IN (15339,15340,15341,15348,15369,15370) AND `mincountOrRef` = -34024 AND `groupid` = 1; -- higher chance for formulas
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 5, `condition_id` = 0 WHERE `entry` IN (15339,15340,15341,15348,15369,15370) AND `mincountOrRef` = -34024 AND `groupid` = 1; -- higher chance for formulas
+-- 'creature_loot_template' entry 15340 mincountOrRef -34024 < 0 and has condition 203 that requires a player and is not supported, skipped
+-- 'creature_loot_template' entry 15341 mincountOrRef -34024 < 0 and has condition 203 that requires a player and is not supported, skipped
+-- 'creature_loot_template' entry 15348 mincountOrRef -34024 < 0 and has condition 203 that requires a player and is not supported, skipped
+-- 'creature_loot_template' entry 15369 mincountOrRef -34024 < 0 and has condition 203 that requires a player and is not supported, skipped
+-- 'creature_loot_template' entry 15370 mincountOrRef -34024 < 0 and has condition 203 that requires a player and is not supported, skipped
+-- 'creature_loot_template' entry 15339 mincountOrRef -34024 < 0 and has condition 203 that requires a player and is not supported, skipped
+UPDATE `reference_loot_template` SET `condition_id` = 203 WHERE `entry` = 34024 AND `groupid` = 1;
 UPDATE `creature_loot_template` SET `maxcount` = 1 WHERE `entry` = 15348 AND `mincountOrRef` = -34024 AND `groupid` = 2; -- 1 book not 2
 -- https://www.wowhead.com/tbc/npc=15369/ayamiss-the-hunter - https://web.archive.org/web/20060831114303/http://wow.allakhazam.com/db/mob.html?wmob=15369
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 0 WHERE `entry` = 15369 AND `item` IN (21480,21481,21482,21483,21484); -- race restriced are halfed due to alliance/horde raid distribution
