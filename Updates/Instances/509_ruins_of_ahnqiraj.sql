@@ -942,10 +942,10 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@WGUID+003, 06, -9656.4970703125, 1670.7694091796875, 21.86398506164550781, 100, 0, 0);
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-(@WGUID+000, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 000'),
-(@WGUID+001, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 001'),
-(@WGUID+002, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 002'),
-(@WGUID+003, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 003');
+(@WGUID+000, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 000'),
+(@WGUID+001, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 001'),
+(@WGUID+002, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 002'),
+(@WGUID+003, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 003');
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
@@ -1497,10 +1497,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- =======
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGUID+000, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 000', 0, 0, 6504, 1),
-(@SGUID+001, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 001', 0, 0, 6504, 1),
-(@SGUID+002, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 002', 0, 0, 6504, 1),
-(@SGUID+003, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 003', 0, 0, 6504, 1);
+(@SGUID+000, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 000', 0, 0, 6504, 1),
+(@SGUID+001, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 001', 0, 0, 6504, 1),
+(@SGUID+002, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 002', 0, 0, 6504, 1),
+(@SGUID+003, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 003', 0, 0, 6504, 1);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGUID+000, @CGUID+0400, 0, 0),
@@ -1528,10 +1528,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGUID+003, @CGUID+0434, 4, 0);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGUID+000, 4, 6, 0, @WGUID+000, 2, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 000'),
-(@SGUID+001, 4, 6, 0, @WGUID+001, 4, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 001'),
-(@SGUID+002, 4, 6, 0, @WGUID+002, 4, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 002'),
-(@SGUID+003, 4, 6, 0, @WGUID+003, 4, 'Ruins of AhnQiraj - Hive\'Zara Stinger (5) Patrol 003');
+(@SGUID+000, 4, 6, 0, @WGUID+000, 2, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 000'),
+(@SGUID+001, 4, 6, 0, @WGUID+001, 4, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 001'),
+(@SGUID+002, 4, 6, 0, @WGUID+002, 4, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 002'),
+(@SGUID+003, 4, 6, 0, @WGUID+003, 4, 'Ruins of Ahn\'Qiraj - Hive\'Zara Stinger (5) Patrol 003');
 
 -- =========
 -- DBSCRIPTS
