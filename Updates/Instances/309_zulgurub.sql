@@ -1640,8 +1640,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+63, 4, 'Zul''Gurub - Mountain Silversage (180166)'),
 (@PGUID+64, 5, 'Zul''Gurub - Golden Sansam (180167)'),
 (@PGUID+65, 5, 'Zul''Gurub - Dreamfoil (180168)'),
-(@PGUID+71, 4, 'Zul''Gurub - Muddy Churning Waters (180369)'),
-(@PGUID+81, 6, 'Zul''Gurub - Full Jug (180392)');
+(@PGUID+71, 4, 'Zul''Gurub - Muddy Churning Waters (180369)');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
@@ -1670,8 +1669,7 @@ INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `descripti
 (180166, @PGUID+63, 0, 'Zul''Gurub - Mountain Silversage (180166)'),
 (180167, @PGUID+64, 0, 'Zul''Gurub - Golden Sansam (180167)'),
 (180168, @PGUID+65, 0, 'Zul''Gurub - Dreamfoil (180168)'),
-(180369, @PGUID+71, 0, 'Zul''Gurub - Muddy Churning Waters (180369)'),
-(180392, @PGUID+81, 0, 'Zul''Gurub - Full Jug (180392)');
+(180369, @PGUID+71, 0, 'Zul''Gurub - Muddy Churning Waters (180369)');
 
 -- ============
 -- SPAWN GROUPS
