@@ -15509,7 +15509,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('453501','4535','4','0','100','0','0','0','0','0','0','0','11','8260','0','0','0','0','0','0','0','0','0','0','Tamed Battleboar - Cast Rushing Charge on Aggro'),
 -- Kraul Bat (4538) - NSR
 -- Greater Kraul Bat 4539
-('453901','4539','9','0','100','1025','0','10','8000','13000','0','0','11','8281','17','0','0','0','0','0','0','0','0','0','Greater Kraul Bat - Cast Sonic Burst'),
+('453901','4539','0','0','100','1025','5000','15000','15000','30000','0','0','11','8281','17','0','0','0','0','0','0','0','0','0','Greater Kraul Bat - Cast Sonic Burst'),
 -- Blood of Agamaggan
 ('454101','4541','9','0','100','1025','0','20','8000','15000','0','0','11','8282','4','32','0','0','0','0','0','0','0','0','Blood of Agamaggan - Cast Curse of Blood'),
 -- Quilguard Champion
