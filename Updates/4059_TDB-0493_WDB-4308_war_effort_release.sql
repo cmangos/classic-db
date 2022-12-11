@@ -378,7 +378,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+41, 180810, 1, 1, -7419.87,  819.94, -3.50, 0, 0, 0, 0, 0, 7200, 7200, 100, 1);
 
 DELETE FROM `game_event_gameobject` WHERE `guid` BETWEEN @OGUID AND @OGUID+41;
-INSERT INTO game_event_gameobject SELECT guid, 123 FROM gameobject WHERE guid BETWEEN @CGUID + 1 AND @CGUID + 41; -- AQ War Effort Phase 4 10 Hour War
+INSERT INTO `game_event_gameobject` SELECT `guid`, 123 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+1 AND @OGUID+41; -- AQ War Effort Phase 4 10 Hour War
 
 SET @CGUID := 155200;
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+63;
