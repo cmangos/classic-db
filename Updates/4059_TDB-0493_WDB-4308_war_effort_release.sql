@@ -481,8 +481,8 @@ UPDATE `npc_gossip` SET `npc_guid` =  @CAGUID+36 WHERE `npc_guid` = 85607; -- 85
 -- spawns around crystals
 -- ======================
 SET @CGUID := 155200; -- 155301
-DELETE FROM `game_event_creature` WHERE `guid` IN (SELECT `guid` FROM `creature` WHERE `id` IN (15414,15421,15422,15423,15424,15740,15741,15742,15743,15744,15747,15748,15749,15750,15751,15752,15753,15754,15756,15757,15758,15759,15806,15807,15808,15810,15811,15812,15813,15814,15815,15816,15817,15818));
-DELETE FROM `creature` WHERE `id` IN (15414,15421,15422,15423,15424,15740,15741,15742,15743,15744,15747,15748,15749,15750,15751,15752,15753,15754,15756,15757,15758,15759,15806,15807,15808,15810,15811,15812,15813,15814,15815,15816,15817,15818,15853,15861);
+DELETE FROM `game_event_creature` WHERE `guid` IN (SELECT `guid` FROM `creature` WHERE `id` IN (15414,15421,15422,15423,15424,15743,15744,15747,15748,15749,15750,15751,15752,15753,15754,15756,15757,15758,15759,15806,15807,15808,15810,15811,15812,15813,15814,15815,15816,15817,15818));
+DELETE FROM `creature` WHERE `id` IN (15414,15421,15422,15423,15424,15743,15744,15747,15748,15749,15750,15751,15752,15753,15754,15756,15757,15758,15759,15806,15807,15808,15810,15811,15812,15813,15814,15815,15816,15817,15818,15853,15861);
 DELETE FROM `creature` WHERE `id` = 15341 AND `map` = 1;
 DELETE FROM game_event_creature WHERE guid BETWEEN @CGUID+101 AND @CGUID+797;
 DELETE FROM creature WHERE guid BETWEEN @CGUID+101 AND @CGUID+797;
@@ -1375,6 +1375,27 @@ UPDATE `creature_template` SET `Faction` = 370 WHERE `entry` IN (
 15816, -- Qiraji Major He'al-ie	35
 15817 -- Qiraji Brigadier General Pax-lish	35
 );
+
+-- more stats sync between classicmangos and tbcmangos
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='14720'; -- High Overlord Saurfang (200H)(Damage Multiplier also wrong? tbc has 60)
+UPDATE `creature_template` SET `DamageMultiplier`='3', `SkinningLootId`='15414' WHERE `entry`='15414'; -- Qiraji Wasp (3.4H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3' WHERE `entry`='15421'; -- Qiraji Drone (1.4H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3' WHERE `entry`='15422'; -- Qiraji Tank (4.4H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='0.6' WHERE `entry`='15423'; -- Kaldorei Infantry (5.5H)(2P)(1D)(1A)
+UPDATE `creature_template` SET `MinLevel`='60', `MaxLevel`='60' WHERE `entry`='15426'; -- Ahn'Qiraj Trigger (1.35H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `MinLevel`='61', `MaxLevel`='62' WHERE `entry`='15743'; -- Colossal Anubisath Warbringer (110H)(1P)(22D)(1A)
+UPDATE `creature_template` SET `MaxLevel`='62', `DamageMultiplier`='5' WHERE `entry`='15744'; -- Imperial Qiraji Destroyer (75H)(20P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.3' WHERE `entry`='15751'; -- Anubisath Warbringer (8H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='1.2', `ArmorMultiplier`='0.884239' WHERE `entry`='15752'; -- Silithid Flayer (2H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='5' WHERE `entry`='15754'; -- Greater Anubisath Warbringer (10H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3' WHERE `entry`='15756'; -- Greater Silithid Flayer (4H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3' WHERE `entry`='15759'; -- Supreme Silithid Flayer (5H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='4' WHERE `entry`='15806'; -- Qiraji Lieutenant (10H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='4' WHERE `entry`='15812'; -- Qiraji Officer (7H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='13' WHERE `entry`='15818'; -- Lieutenant General Nokhor (150H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `MinLevel`='59', `DamageMultiplier`='7', `MinLootGold`='0', `MaxLootGold`='0' WHERE `entry`='15853'; -- Orgrimmar Elite Infantryman (25H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3' WHERE `entry`='15861'; -- Ironforge Infantryman (25H)(1P)(1D)(1A)
+UPDATE `creature_template` SET `ExtraFlags`='64' WHERE `entry`='15878'; -- Warcaller Finster (1H)(1P)(1D)(1A)
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1574001,1574101,1574201);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
