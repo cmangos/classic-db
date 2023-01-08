@@ -2803,6 +2803,21 @@ function auto_script_install_world()
   true
 }
 
+# apply core updates using config file settings and normal user
+function auto_script_apply_core_update()
+{
+  show_mysql_settings
+  echo
+  echo "Applying all the latest core updates..."
+
+  if ! apply_core_update; then
+    false
+    return
+  fi
+
+  true
+}
+
 # do a backup
 function auto_script_backup()
 {
@@ -2924,6 +2939,14 @@ fi
 # check if user only want to install world db using config
 if [[ "$1" = "-World" ]]; then
   if ! auto_script_install_world; then
+    exit 1
+  fi
+
+  exit 0
+fi
+# only apply core updates using config
+if [[ "$1" = "-UpdateCore" ]]; then
+  if ! auto_script_apply_core_update; then
     exit 1
   fi
 
