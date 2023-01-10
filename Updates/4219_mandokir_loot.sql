@@ -1,6 +1,7 @@
 
 DELETE FROM `creature_loot_template` WHERE (`entry` = '11382') and (`item` = '34088');
 DELETE FROM `reference_loot_template` WHERE (`entry` = '34088');
+DELETE FROM `reference_loot_template_names` WHERE `entry` = 34088; -- Zul'Gurub (Boss Loot) - Bloodlord Mandokir - Epic Items (Group 1)
 
 UPDATE `creature_loot_template` SET `groupid` = '2' WHERE (`entry` = '11382') and (`item` = '19872'); -- Swift Razzashi Raptor
 
