@@ -188,12 +188,35 @@ jobs:
           Start-Sleep -s 10
           cd "${{github.workspace}}"
 
+      - name: Download sqlite3
+        run: |
+          choco install sqlite
+
+      - name: Download gawk
+        run: |
+          choco install gawk
+
+      - name: Checkout mysql2sqlite
+        uses: actions/checkout@v2
+        with:
+          repository: dumblob/mysql2sqlite
+          path: ${{env.CORE_FOLDER}}/mysql2sqlite
+
+      - name: Convert to sqlite
+        run: |
+          $finalFullDBFolder="${{github.workspace}}\sql"
+          gawk -f "${{env.CORE_FOLDER}}/mysql2sqlite/mysql2sqlite" "${finalFullDBFolder}\${{env.WORLD_DB_NAME}}.sql" | sqlite3 "${{env.FINAL_SQL_FOLDER}}\${{env.WORLD_DB_NAME}}.sqlite"
+          gawk -f "${{env.CORE_FOLDER}}/mysql2sqlite/mysql2sqlite" "${finalFullDBFolder}\${{env.CHAR_DB_NAME}}.sql" | sqlite3 "${{env.FINAL_SQL_FOLDER}}\${{env.CHAR_DB_NAME}}.sqlite"
+          gawk -f "${{env.CORE_FOLDER}}/mysql2sqlite/mysql2sqlite" "${finalFullDBFolder}\${{env.REALM_DB_NAME}}.sql" | sqlite3 "${{env.FINAL_SQL_FOLDER}}\${{env.REALM_DB_NAME}}.sqlite"
+          gawk -f "${{env.CORE_FOLDER}}/mysql2sqlite/mysql2sqlite" "${finalFullDBFolder}\${{env.LOGS_DB_NAME}}.sql" | sqlite3 "${{env.FINAL_SQL_FOLDER}}\${{env.LOGS_DB_NAME}}.sqlite"
+
       - name: Preparing assets
         run: |
           md -Force "${{github.workspace}}\releases"
           7z a -tzip "${{github.workspace}}\releases\${{env.EXPENSION_NAME}}-db-mysql-server.zip" "${{env.WORK_FOLDER}}"
           7z a -tzip "${{github.workspace}}\releases\${{env.EXPENSION_NAME}}-world-db.zip" "${{env.FINAL_SQL_FOLDER}}\${{env.WORLD_DB_NAME}}.sql"
           7z a -tzip "${{github.workspace}}\releases\${{env.EXPENSION_NAME}}-all-db.zip" "${{env.FINAL_SQL_FOLDER}}\*.sql"
+          7z a -tzip "${{github.workspace}}\releases\${{env.EXPENSION_NAME}}-sqlite-db.zip" "${{env.FINAL_SQL_FOLDER}}\*.sqlite"
 
       - name: Get current date
         id: date
