@@ -3018,7 +3018,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Brown Steed (14561) - NSR
 -- Sergeant Hartman
 ('1519901','15199','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sergeant Hartman - Flee at 15% HP'),
--- Rousch (16090) - NSR
+-- Rousch 16090
+('1609001','16090','1','0','100','1','60000','60000','600000','600000','0','0','47','8','0','0','0','0','0','0','0','0','0','0','Rousch - Set UNIT_STAND_STATE_KNEEL OOC'),
+('1609002','16090','1','0','100','1','180000','180000','600000','600000','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Rousch - Set UNIT_STAND_STATE_STAND OOC'),
 -- Advisor Duskingdawn (17092) - NSR
 -- Forsaken Raider (17108) - NSR
 -- Huraan (17218) - NSR
