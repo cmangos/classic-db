@@ -61,7 +61,9 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (12797, 0, 0, 1, 0, 0, NULL), -- Grunt Korf
 (12798, 0, 0, 1, 0, 0, NULL), -- Grunt Bek'rah
 (14581, 0, 0, 0, 0, 0, NULL); -- Sergeant Thunderhorn
+-- (19848, 0, 0, 1, 0, 0, NULL), -- Harbinger Ennarth
 -- (19850, 0, 0, 1, 0, 0, NULL), -- Councilor Arial D'Anastasis
+-- (23446, 0, 0, 1, 0, 0, NULL), -- Lieutenant Tristia
 -- (23447, 0, 0, 0, 0, 0, NULL), -- Sergeant Kien
 -- (24520, 0, 0, 0, 0, 0, NULL), -- Doris Volanthius
 -- (24667, 0, 0, 0, 0, 0, NULL), -- Sergeant Thunderhorn
@@ -69,9 +71,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 -- (26396, 0, 0, 0, 0, 0, NULL), -- Sergeant Thunderhorn
 -- (26397, 0, 0, 0, 0, 0, NULL), -- Lady Palanseer
 -- (26398, 0, 0, 0, 0, 0, NULL); -- Doris Volanthius
-
--- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
--- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Alliance Classic Version
@@ -100,6 +99,27 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@HCGUID+11, 12798, 450, 238.214, 73.3759, 25.7981, 1.18682, 180, 300, 0, 0), -- Grunt Bek'rah
 (@HCGUID+12, 14581, 450, 244.059, 103.591, 25.8036, 4.66003, 180, 300, 0, 0); -- Sergeant Thunderhorn <Weapons Quartermaster>
 
+-- Alliance TBC Version
+-- (@ACGUID+1, 12777, 449, -6.9852, -6.68433, 5.57096, 1.25664, 180, 300, 0, 0), -- Captain Dirgehammer <Armor Quartermaster>
+-- (@ACGUID+2, 12778, 449, -2.79471, 29.6844, 1.18142, 6.05629, 180, 300, 0, 0), -- Lieutenant Rachel Vaccar
+-- (@ACGUID+3, 12779, 449, -0.992282, 31.6972, 1.09809, 5.00614, 180, 300, 0, 0), -- Archmage Gaiman
+-- (@ACGUID+4, 12780, 449, 2.65049, 29.7101, 1.18142, 3.4383, 180, 300, 0, 0), -- Sergeant Major Skyshadow
+-- (@ACGUID+5, 12781, 449, -3.68559, 15.1514, -0.172549, 5.49779, 180, 300, 0, 0), -- Master Sergeant Biggins <Officer Accessories Quartermaster>
+-- (@ACGUID+6, 12782, 449, 7.67861, 33.5746, 1.13917, 3.75246, 180, 300, 0, 0), -- Captain O'Neal <Weapons Quartermaster> - 26394 in wotlk static
+-- (@ACGUID+7, 12783, 449, 6.30864, 34.9575, 1.13917, 4.85202, 180, 300, 0, 0), -- Lieutenant Karter <Mount Vendor>
+-- (@ACGUID+8, 12784, 449, 7.16394, 4.2682, -0.172551, 0.087266, 180, 300, 0, 0), -- Lieutenant Jackspring <Weapons Quartermaster>
+-- (@ACGUID+9, 12785, 449, -9.11894, -4.26696, 5.57096, 0.139626, 180, 300, 0, 0), -- Sergeant Major Clate <Armor Quartermaster>
+-- (@ACGUID+10, 12786, 449, -2.74466, 3.60577, -0.172551, 0.05236, 180, 300, 0, 0), -- Guard Quine
+-- (@ACGUID+11, 12787, 449, 2.04541, 3.63727, -0.172552, 3.10669, 180, 300, 0, 0), -- Guard Hammon
+-- TBC+
+-- (@ACGUID+21, 19848, 449, 1.56239, 32.0995, 1.18142, 4.20624, 180, 300, 0, 0), -- Harbinger Ennarth
+-- (@ACGUID+22, 23446, 449, -7.53458, 34.93, 1.13917, 5.37561, 180, 300, 0, 0), -- Lieutenant Tristia <Armor Quartermaster>
+-- (@ACGUID+23, 24670, 449, -7.53458, 34.93, 1.13917, 5.37561, 180, 300, 0, 0), -- Lieutenant Tristia <Armor Quartermaster>
+-- Captain O'Neal <Weapons Quartermaster> 24671
+-- Captain Dirgehammer <Armor Quartermaster> 24672
+-- Captain Dirgehammer <Armor Quartermaster> 26393
+-- Captain O'Neal <Weapons Quartermaster> 26394
+-- (@ACGUID+24, 26395, 449, -7.53458, 34.93, 1.13917, 5.37561, 180, 300, 0, 0), -- Lieutenant Tristia <Armor Quartermaster>
 -- Horde TBC Version
 -- (@HCGUID+1, 12788, 450, 239.065, 84.6268, 24.7756, 0.124754, 180, 300, 0, 0), -- Legionnaire Teena
 -- (@HCGUID+2, 12789, 450, 243.494, 89.6673, 24.7757, 4.6133, 180, 300, 0, 0), -- Blood Guard Hini'wana
@@ -124,19 +144,47 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- (@HCGUID+24, 26398, 450, 257.869, 90.6915, 25.7206, 3.71126, 180, 300, 0, 0); -- Doris Volanthius <Armor Quartermaster>
 
 -- WotLK+
--- Lady Palanseer 32382
--- Lady Palanseer 34039
--- Lady Palanseer 34040
--- Lady Palanseer 34043
--- Sergeant Thunderhorn 32383
--- Sergeant Thunderhorn 34036
--- Sergeant Thunderhorn 34037
--- Sergeant Thunderhorn 34038
--- Sergeant Kien 32384
--- Doris Volanthius 32385
--- Doris Volanthius 34058
--- Doris Volanthius 34059
--- Doris Volanthius 34060
+-- Captain O'Neal <Jewelcrafting Quartermaster> 32379
+-- Captain O'Neal <Jewelcrafting Quartermaster> 34079
+-- Captain O'Neal <Jewelcrafting Quartermaster> 34080
+-- Captain O'Neal <Jewelcrafting Quartermaster> 34081
+
+-- Lieutenant Tristia <Veteran Armor Quartermaster> 32380
+-- Lieutenant Tristia <Veteran Armor Quartermaster> 34076
+-- Lieutenant Tristia <Veteran Armor Quartermaster> 34077
+-- Lieutenant Tristia <Veteran Armor Quartermaster> 34078
+
+-- Captain Dirgehammer <Apprentice Armor Quartermaster> 32381
+-- Captain Dirgehammer <Apprentice Armor Quartermaster> 34073
+-- Captain Dirgehammer <Apprentice Armor Quartermaster> 34074
+-- Captain Dirgehammer <Apprentice Armor Quartermaster> 34075
+
+-- Lady Palanseer <Jewelcrafting Quartermaster> 32382
+-- Lady Palanseer <Jewelcrafting Quartermaster> 34039
+-- Lady Palanseer <Jewelcrafting Quartermaster> 34040
+-- Lady Palanseer <Jewelcrafting Quartermaster> 34043
+
+-- Sergeant Thunderhorn <Apprentice Armor Quartermaster> 32383
+-- Sergeant Thunderhorn <Apprentice Armor Quartermaster> 34036
+-- Sergeant Thunderhorn <Apprentice Armor Quartermaster> 34037
+-- Sergeant Thunderhorn <Apprentice Armor Quartermaster> 34038
+
+-- Doris Volanthius <Veteran Armor Quartermaster> 32385
+-- Doris Volanthius <Veteran Armor Quartermaster> 34058
+-- Doris Volanthius <Veteran Armor Quartermaster> 34059
+-- Doris Volanthius <Veteran Armor Quartermaster> 34060
+
+-- Knight-Lieutenant Moonstrike <Armor Quartermaster> 32834
+-- Knight-Lieutenant Moonstrike <Armor Quartermaster> 34082
+-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> 34083
+-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> 34084
+
+-- Blood Guard Zar'shi <Armor Quartermaster> 32832
+-- Blood Guard Zar'shi <Northrend Armor Quartermaster> 34061
+-- Blood Guard Zar'shi <Northrend Armor Quartermaster> 34062
+-- Blood Guard Zar'shi <Northrend Armor Quartermaster> 34063
+
+-- Sergeant Kien <Jewelcrafting Quartermaster> 32384 ???
 
 -- ===========
 -- GAMEOBJECTS
@@ -178,43 +226,29 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- ======
 
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+-- (@ACGUID+22, 54), -- Lieutenant Tristia - Arena PvP Season 2
+-- (@ACGUID+23, 55), -- Lieutenant Tristia - Arena PvP Season 3
+-- (@ACGUID+24, 56), -- Lieutenant Tristia - Arena PvP Season 4
+
 -- (@HCGUID+22, 54), -- Sergeant Kien - Arena PvP Season 2
 -- (@HCGUID+23, 55), -- Doris Volanthius - Arena PvP Season 3
 -- (@HCGUID+24, 56); -- Doris Volanthius - Arena PvP Season 4
 
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `vendor_id`, `spell_start`, `spell_end`, `event`) VALUES
+-- (@ACGUID+1, 0, 0, 0, 544, 0, 0, 54), -- Captain Dirgehammer - Arena PvP Season 2
+-- (@ACGUID+1, 24672, 0, 0, 0, 0, 0, 55), -- Captain Dirgehammer - Arena PvP Season 3
+-- (@ACGUID+1, 26393, 0, 0, 0, 0, 0, 56), -- Captain Dirgehammer - Arena PvP Season 4
+
+-- (@ACGUID+6, 24671, 0, 0, 0, 0, 0, 55), -- Captain O'Neal - Arena PvP Season 3
+-- (@ACGUID+6, 26394, 0, 0, 0, 0, 0, 56), -- Captain O'Neal - Arena PvP Season 4
+
 -- (@HCGUID+5, 0, 0, 0, 545, 0, 0, 54), -- Lady Palanseer - Arena PvP Season 2
 -- (@HCGUID+5, 24668, 0, 0, 0, 0, 0, 55), -- Lady Palanseer - Arena PvP Season 3
 -- (@HCGUID+5, 26397, 0, 0, 0, 0, 0, 56), -- Lady Palanseer - Arena PvP Season 4
 
--- (@HCGUID+13, 24667, 0, 0, 0, 0, 0, 55), -- Sergeant Thunderhorn - Arena PvP Season 3
--- (@HCGUID+13, 26396, 0, 0, 0, 0, 0, 56); -- Sergeant Thunderhorn - Arena PvP Season 4
+-- (@HCGUID+12, 24667, 0, 0, 0, 0, 0, 55), -- Sergeant Thunderhorn - Arena PvP Season 3
+-- (@HCGUID+12, 26396, 0, 0, 0, 0, 0, 56); -- Sergeant Thunderhorn - Arena PvP Season 4
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
-
--- =======
--- POOLING
--- =======
-
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
--- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-
--- =========
--- DBSCRIPTS
--- =========
-
--- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
 
