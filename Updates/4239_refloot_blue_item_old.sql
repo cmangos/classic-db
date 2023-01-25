@@ -1762,68 +1762,74 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- Bonus: Some Instance Blue Item Refloots
 -- =======================================
 
--- 30001	Shadowfang Keep - Zone Drop
+-- 30001	Shadowfang Keep - Zone Drop - 11 items
 DELETE FROM `creature_loot_template` WHERE `item` IN (1483,3194,1974,1484,2807,1318,1482,1935,2205,1489,2292);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30001, -30001, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+SELECT `entry`, 30001, -30001, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (
 3864,3866,3863,3868,3877,3855,3886,3873,3914,3859,3865,3875,2529,3887,3850,4278,3861,3927,3857,3853,3862,3851,4274,4275,4279,3854,14682);
 
--- 30002	Blackfathom Deeps - Zone Drop
+-- 30002	Blackfathom Deeps - Zone Drop - 11 items
 DELETE FROM `creature_loot_template` WHERE `item` IN (2567,2271,1486,3415,1481,3413,1491,3417,3416,1454,3414);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30002, -30002, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+SELECT `entry`, 30002, -30002, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (
 4824,4827,4814,4821,4822,4805,4799,4798,4809,4978,4825,4807,4819,4823,4820,4812,4887,4811,4803,12902,4818,4829,4789,4813,4815,4832,4788,4810,4802,12876);
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 0.1 WHERE `MinCountOrRef` = -30002 AND `entry` IN (4788,4789,4802,4803);
 
--- 30003	Razorfen Kraul - Zone Drop
+-- 30003	Razorfen Kraul - Zone Drop - 10 items
 DELETE FROM `creature_loot_template` WHERE `item` IN (2549,1978,1727,1975,1976,2039,2264,4438,1488,776);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30003, -30003, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+SELECT `entry`, 30003, -30003, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (
 4511,4424,4522,4427,4523,4516,4435,4442,45184623,4519,4440,6168,4428,4538,4532,4525,4520,4512,4438,4531,4436,4515,4517,4539,6035,4530,4514,4437,4420,4518,4623);
 
--- 30004	Gnomeregan - Zone Drop
+-- 30004	Gnomeregan - Zone Drop - 10 items
 DELETE FROM `creature_loot_template` WHERE `item` IN (9486,9488,9487,9490,9509,9485,9508,9489,9510,9491);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30004, -30004, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+SELECT `entry`, 30004, -30004, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (
 6213,6392,6232,6215,6223,6220,6233,6227,6234,6225,6391,7800,6230,6208,6207,6211,6231,6226,6212,6206,6235,6329,7079,6210,6407);
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 0.1 WHERE `MinCountOrRef` = -30004 AND `entry` IN (6231,6207,6208,6210,6213);
 
--- 30005	Scarlet Monastery (Graveyard / Library / Armory / Cathedral) - Zone Drop
-DELETE FROM `creature_loot_template` WHERE `item` IN (9486,9488,9487,9490,9509,9485,9508,9489,9510,9491);
+-- 30005	Scarlet Monastery (Graveyard / Library / Armory / Cathedral) - Zone Drop - 23 items (maybe split inbetween parts of Scarlet Monastery?)
+DELETE FROM `creature_loot_template` WHERE `item` IN (1992,2262,5756,5819,7727,7728,7729,7730,7736,7752,7753,7754,7755,7757,7758,7759,7760,7761,7786,7787,8225,8226,10332);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30005, -30005, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
-6426,4543,3975,3977,4303,4288,4302,3976,4298,4289,4290,4295,4286,4304,6487,6427,4542,3974,4296,4301,4299,4297,4291,4287,4540,4292,4294,4300,4308,4283,4293,4306,14693);
+SELECT `entry`, 30005, -30005, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (
+6426,4543,3975,3977,4303,4288,4302,3976,4298,4289,4290,4295,4286,4304,6487,6427,4542,3974,4296,4301,4299,4297,4291,4287,4540,4292,4294,4300,4293,4306,14693);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30005, -30005, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (4280,4281,4282,4284,4285); -- outside
+SELECT `entry`, 30005, -30005, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (4280,4281,4282,4284,4285,4308,4283); -- outside & nonelites
 
--- 30006	Razorfen Downs - Zone Drop
+-- 30006	Razorfen Downs - Zone Drop - 11 items
 DELETE FROM `creature_loot_template` WHERE `item` IN (10584,10582,10571,10573,10578,10567,10583,10570,10572,10574,10581);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30006, -30006, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+SELECT `entry`, 30006, -30006, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (
 7349,7352,7337,7351,7332,7341,7328,7327,7348,7347,7342,7353,7329,7873,7345,7355,7335,7874,7358,7872,12865,14686);
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 0.1 WHERE `MinCountOrRef` = -30006 AND `entry` IN (7349,12865,7874,7873,7872);
 
--- 30007	Uldaman - Zone Drop
+-- 30007	Uldaman - Zone Drop - 23 items (maybe split inbetween parts of the instance)
 DELETE FROM `creature_loot_template` WHERE `item` IN (9428,9406,9384,9386,9420,9391,9381,9393,9396,9397,9392,9383,9426,9424,9427,9432,9431,9422,9429,9425,9423,9465,9430);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30007, -30007, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+SELECT `entry`, 30007, -30007, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (
 4863,4852,4851,4860,4845,4856,4846,4844,7030,4850,4861,4847,7022,7012,7228,7206,4853,7290,7321,4855,4854,7320,4848,4849,4857,4872,7023,7091);
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 0.1 WHERE `MinCountOrRef` = -30007 AND `entry` IN (4844,4872,7012,4856,7091,4851,4845,4846);
 
--- 30008	Zul'Farrak - Zone Drop
+-- 30008	Zul'Farrak - Zone Drop - 11 items
 DELETE FROM `creature_loot_template` WHERE `item` IN (9512,9511,5616,9482,9480,2040,6440,9481,9483,862,9484);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30008, -30008, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (7797,7795,7608,7606,7274,7796,7273,7604,7267,7272,8127,7275,7605,10082,7271);
+SELECT `entry`, 30008, -30008, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (7797,7795,7608,7606,7274,7796,7273,7604,7267,7272,8127,7275,7605,10082,7271);
 
--- 30009	Sunken Temple (Temple of Atal'Hakkar) - Zone Drop
+-- 30009	Sunken Temple (Temple of Atal'Hakkar) - Zone Drop - 12 items (already have 0.25%)
+DELETE FROM `reference_loot_template` WHERE `item` IN (10634,10631,10627,10624,10623,10628,10625,10632,10629,10626,10633,10630) AND `entry` = 60251; -- NPC LOOT (Blue World Drop) - (Item Levels: 42-49) - (NPC Levels: 45-46)
 DELETE FROM `creature_loot_template` WHERE `item` IN (10634,10631,10627,10624,10623,10628,10625,10632,10629,10626,10633,10630);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 30009, -30009, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (5225,5224,5263,5235); -- outside
 
--- 30010	Blackrock Depths - Zone Drop
+-- 30010	Blackrock Depths - Zone Drop - 13 items
 DELETE FROM `creature_loot_template` WHERE `item` IN (12542,12531,12528,12549,12527,12550,12535,12546,12555,12552,12551,12547,12532);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 30010, -30010, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+SELECT `entry`, 30010, -30010, 0.25, 0, 1 FROM `creature_template` WHERE `entry` IN (
 9678,8894,8903,8893,8895,9554,9032,9029,8899,10043,8891,8892,9041,8907,8908,8898,9541,8983,8890,8911,8905,8910,8914,8912,9018,
-9019,9033,8889,8909,9056,9017,8906,9026,9442,9441,9681,9319,9680,9445,9024,9016,9042,9025,9437,9438,9439,9476,9677,
+9019,9033,8889,8909,9056,9017,8906,9026,9442,9441,9681,9319,9680,9445,9024,9016,9042,9025,9437,9438,9439,9476,9677
 -- tbc+
-24818,24819);
+-- ,24818,24819);
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 0.1 WHERE `MinCountOrRef` = -30010 AND `entry` IN (24818,24819);
 
 -- 30011	Dire Maul (East / West) - Zone Drop - Unique Items
 DELETE FROM `reference_loot_template` WHERE `entry` = 30011;
