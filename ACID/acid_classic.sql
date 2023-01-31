@@ -10319,7 +10319,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Worb Strongstitch (8159) - NSR
 -- Screecher Spirit 8612
 ('861201','8612','11','0','100','0','0','0','0','0','0','0','11','7741','15','0','0','0','0','0','0','0','0','0','Screecher Spirit - Cast Summoned Demon on Spawn'),
--- Miblon Snarltooth (9467) - NSR
+-- Miblon Snarltooth 9467
+('946701','9467','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Miblon Snarltooth - Set Phase 1 on Spawn'),
+('946702','9467','30','5','100','1','5','9467','0','0','0','0','22','2','0','0','53','9996','0','0','0','0','0','0','Miblon Snarltooth - Set Phase 2 and START_RELAY_SCRIPT on Receive AI Event Custom A (Phase 1)'),
+('946703','9467','30','3','100','1','6','9467','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Miblon Snarltooth - Set Phase 1 on Receive AI Event Custom B (Phase 2)'),
 -- Raschal the Courier (9546) - NSR
 -- Cawind Trueaim 9548
 ('954801','9548','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Cawind Trueaim - Enable Range Mode on Aggro'),
