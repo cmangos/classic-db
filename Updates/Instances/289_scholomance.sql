@@ -782,18 +782,12 @@ DELETE FROM `dbscripts_on_go_template_use` WHERE `id` = 175617;
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (175617,5000,11,@OGUID+49,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'Open Door (177370)');
 
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-
-DELETE FROM dbscripts_on_event WHERE id IN (5438,5439,8438);
+DELETE FROM dbscripts_on_event WHERE id IN (5438,5439);
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (5438, 1000, 9, @OGUID+46, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn gobject'),
-(5439, 1000, 9, @OGUID+45, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn gobject'),
--- q.7269 Imp Delivery
-(8438, 0, 10, 14500, 180000, 0, 0, 0, 0, 0, 0, 0, 0, 38.4345, 156.93, 83.545, 1.40746, 'Spawn J''eevee (Scholomance)'),
-(8438, 1000, 0, 0, 0, 0, 14500, 40, 0, 9769, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 1 (Scholomance)'),
-(8438, 3000, 20, 2, 0, 0, 14500, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee set waypoint movement (Scholomance)'),
-(8438, 40000, 8, 14500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee give quest credit (Scholomance)');
+(5439, 1000, 9, @OGUID+45, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn gobject');
 
+-- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
