@@ -776,7 +776,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('290703','2907','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Dustbelcher Mystic - Cast Lightning Bolt'),
 -- Grawl (2908) - NSR
 -- Prospector Ryedol (2910) - NSR
--- Fam'retor Guardian (2919) - NSR
+-- Fam'retor Guardian 2919
+('291901','2919','4','0','25','0','0','0','0','0','0','0','1','976','0','0','0','0','0','0','0','0','0','0','Fam''retor Guardian - Say on Aggro'),
 -- Lucien Tosselwrench (2920) - NSR
 -- Lotwil Veriatus     (2921) - NSR
 -- Servo 2922 - NSR
