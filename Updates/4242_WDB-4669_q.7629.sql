@@ -36,6 +36,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1450002,3000,0,0,0,0,0,0,0,9771,0,0,0,0,0,0,0,'J\eevee say 3 (Scholomance)'),
 (1450003,1000,1,36,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'J\eevee - emote (Scholomance)'),
 (1450003,2000,0,0,0,0,0,0,0,9742,0,0,0,0,0,0,0,'J\eevee say 4 (Scholomance)'),
-(1450003,7000,15,41232,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'J\eevee cast teleport (Scholomance)'),
+(1450003,7000,15,7791,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'J\eevee cast teleport (Scholomance)'), -- https://github.com/vmangos/core/commit/643a12647d1ed5168645461b95e5f0907de9f702#diff-ad81af42411e8dbe3a839c669b1de6de8d410970b6dfd2ed0d91a6473e4fa086R21
 (1450003,7001,20,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'J\eevee idle (Scholomance)'),
 (1450003,8000,18,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'J\eevee despawn self (Scholomance)');
