@@ -29,7 +29,7 @@
 
 -- 60200	NPC LOOT (Blue World Drop) - (Item Levels: 20) - (NPC Levels: 18-20)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 60200, -60200, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+SELECT `entry`, 60200, -60200, 0.05, 0, 1 FROM `creature_template` WHERE `entry` IN (
 125, -- https://www.wowhead.com/classic/npc=125
 213, -- https://www.wowhead.com/classic/npc=213
 217, -- https://www.wowhead.com/classic/npc=217/venom-web-spider
@@ -124,6 +124,7 @@ SELECT `entry`, 60202, -60202, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60203	NPC LOOT (Blue World Drop) - (Item Levels: 20-23) - (NPC Levels: 21-22)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60203, -60203, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+12123, -- Reef Shark (21-22) - https://web.archive.org/web/20071102202425/http://wow.allakhazam.com/db/mob.html?wmob=12123
 445, -- https://www.wowhead.com/classic/npc=445/redridge-alpha
 3424, -- Thunderhawk Cloudscraper	20	22 - https://web.archive.org/web/20071102184752/http://wow.allakhazam.com/db/mob.html?wmob=3424
 3928, -- Rotting Slime	20	22 - https://web.archive.org/web/20071029165107/http://wow.allakhazam.com/db/mob.html?wmob=3928
@@ -187,6 +188,7 @@ SELECT `entry`, 60206, -60206, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60207	NPC LOOT (Blue World Drop) - (Item Levels: 21-26) - (NPC Levels: 23-24)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60207, -60207, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+1400, -- Wetlands Crocolisk (23-24) - https://web.archive.org/web/20071030141341/http://wow.allakhazam.com/db/mob.html?wmob=1400
 1042, -- Red Whelp	23	24 - https://web.archive.org/web/20071102113615/http://wow.allakhazam.com/db/mob.html?wmob=1042
 1400, -- Wetlands Crocolisk	23	24 - https://web.archive.org/web/20071030141341/http://wow.allakhazam.com/db/mob.html?wmob=1400
 2384, -- Starving Mountain Lion	23	24 - https://web.archive.org/web/20071026090808/http://wow.allakhazam.com/db/mob.html?wmob=2384
@@ -401,6 +403,7 @@ SELECT `entry`, 60222, -60222, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60223	NPC LOOT (Blue World Drop) - (Item Levels: 29-34) - (NPC Levels: 31-32)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60223, -60223, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+5185, -- Hammerhead Shark (31-32) - https://web.archive.org/web/20071101052639/http://wow.allakhazam.com/db/mob.html?wmob=5185
 2271, -- https://www.wowhead.com/tbc/npc=2271
 4154, -- Salt Flats Scavenger	30	32 - https://web.archive.org/web/20071105074709/http://wow.allakhazam.com/db/mob.html?wmob=4154
 4689, -- Starving Bonepaw	30	32 - https://web.archive.org/web/20071105092058/http://wow.allakhazam.com/db/mob.html?wmob=4689
@@ -462,8 +465,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 
 -- 60228	NPC LOOT (Blue World Drop) - (Item Levels: 32-36) - (NPC Levels: 34)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 60228, -60228, 0.1, 0, 1 FROM `creature_template` WHERE `entry` =
-7333; -- Withered Battle Boar	34	34 - https://web.archive.org/web/20071105011429/http://wow.allakhazam.com/db/mob.html?wmob=7333
+SELECT `entry`, 60228, -60228, 0.1, 0, 1 FROM `creature_template` WHERE `entry` = 7333; -- Withered Battle Boar	34	34 - https://web.archive.org/web/20071105011429/http://wow.allakhazam.com/db/mob.html?wmob=7333
 
 -- 60229	NPC LOOT (Blue World Drop) - (Item Levels: 32-36) - (NPC Levels: 34-35)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
@@ -493,8 +495,12 @@ SELECT `entry`, 60230, -60230, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 7349; -- Tomb Fiend	35	35
 
 -- 60231	NPC LOOT (Blue World Drop) - (Item Levels: 33-38) - (NPC Levels: 35-36)
+DELETE FROM `creature_loot_template` WHERE `entry` = 4299 AND `mincountOrRef` = -60228;
+DELETE FROM `creature_loot_template` WHERE `entry` = 7078 AND `mincountOrRef` = -60232;
+DELETE FROM `creature_loot_template` WHERE `entry` = 7335 AND `mincountOrRef` = -60230;
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60231, -60231, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+4346, -- Noxious Flayer (35-36) - https://www.wowhead.com/tbc/npc=4346/noxious-flayer#drops;mode:normal
 686, -- https://www.wowhead.com/classic/npc=686
 2253, -- https://www.wowhead.com/classic/npc=2253
 4299, -- https://www.wowhead.com/classic/npc=4299
@@ -566,6 +572,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60235	NPC LOOT (Blue World Drop) - (Item Levels: 35-40) - (NPC Levels: 37-38)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60235, -60235, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+4414, -- Darkfang Venomspitter (37-38) -- 36-37 tbc+ - https://web.archive.org/web/20071104160328/http://wow.allakhazam.com/db/mob.html?wmob=4414
 4298, -- 36-37 tbc+ https://www.wowhead.com/classic/npc=4298
 684, -- Shadowmaw Panther	37	38 - https://web.archive.org/web/20071030074630/http://wow.allakhazam.com/db/mob.html?wmob=684
 772, -- Stranglethorn Tigress	37	38 - https://web.archive.org/web/20071031091802/http://wow.allakhazam.com/db/mob.html?wmob=772
@@ -597,8 +604,10 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 (60236, 13042, 0, 1, 1, 1, 0, 'Sword of the Magistrate');
 
 -- 60237	NPC LOOT (Blue World Drop) - (Item Levels: 36-41) - (NPC Levels: 38-39)
+DELETE FROM `creature_loot_template` WHERE `entry` = 7346 AND `mincountOrRef` = -60232;
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60237, -60237, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+4348, -- Noxious Shredder (38-39) - https://www.wowhead.com/tbc/npc=4348/noxious-shredder#drops
 7346, -- 36-37 tbc+ - https://www.wowhead.com/tbc/npc=7346
 2735, -- Lesser Rock Elemental	37	39 - https://web.archive.org/web/20071026072406/http://wow.allakhazam.com/db/mob.html?wmob=2735
 2830, -- Buzzard	37	39 - https://web.archive.org/web/20071031104515/http://wow.allakhazam.com/db/mob.html?wmob=2830
@@ -641,7 +650,6 @@ SELECT `entry`, 60239, -60239, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 92, -- Rock Elemental	39	40 - https://web.archive.org/web/20070825002405/http://wow.allakhazam.com/db/mob.html?wmob=92
 690, -- Cold Eye Basilisk	39	40 - https://web.archive.org/web/20070825131442/http://wow.allakhazam.com/db/mob.html?wmob=690
 4685, -- Ley Hunter	39	40 - https://web.archive.org/web/20071101053856/http://wow.allakhazam.com/db/mob.html?wmob=4685
-2473, -- Granistad	40	40 exclude? keep edgecases. . . - https://web.archive.org/web/20080101014300/http://wow.allakhazam.com:80/db/mob.html?wmob=2473
 4863, -- Jadespine Basilisk	39	40 -- 37-38 tbc+ - https://web.archive.org/web/20071017042459/http://wow.allakhazam.com/db/mob.html?wmob=4863
 7022); -- Venomlash Scorpid	39	40 -- 37-38 tbc+ - https://web.archive.org/web/20071017042552/http://wow.allakhazam.com/db/mob.html?wmob=7022
 REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
@@ -654,8 +662,11 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 (60239, 13132, 0, 1, 1, 1, 0, 'Skeletal Shoulders');
 
 -- 60240	NPC LOOT (Blue World Drop) - (Item Levels: 38-42) - (NPC Levels: 40)
+DELETE FROM `creature_loot_template` WHERE `entry` = 2473 AND `mincountOrRef` = -60239;
+DELETE FROM `creature_loot_template` WHERE `entry` = 2474 AND `mincountOrRef` = -60242;
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60240, -60240, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+2347, -- Wild Gryphon, -- 40, -- 40 - https://web.archive.org/web/20080102133734/http://wow.allakhazam.com/db/mob.html?wmob=2347
 728, -- Bhag'thera	40	40 - https://web.archive.org/web/20071011003358/http://wow.allakhazam.com/db/mob.html?wmob=728
 2473, -- Granistad	40	40 - https://web.archive.org/web/20071101083219/http://wow.allakhazam.com/db/mob.html?wmob=2473
 2474, -- Kurdros	40	40 - https://web.archive.org/web/20071102180334/http://wow.allakhazam.com/db/mob.html?wmob=2474
@@ -668,6 +679,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60241	NPC LOOT (Blue World Drop) - (Item Levels: 38-43) - (NPC Levels: 40-41)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60241, -60241, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+4393, -- Acidic Swamp Ooze, -- 39, -- 41 - https://web.archive.org/web/20071225143912/http://wow.allakhazam.com/db/mob.html?wmob=4393
 2831, -- Giant Buzzard	39	41 - https://web.archive.org/web/20071231140530/http://wow.allakhazam.com/db/mob.html?wmob=2831
 687, -- Jungle Stalker	40	41 - https://web.archive.org/web/20071224112953/http://wow.allakhazam.com/db/mob.html?wmob=687
 1557, -- Elder Mistvale Gorilla	40	41 - https://web.archive.org/web/20071217112601/http://wow.allakhazam.com/db/mob.html?wmob=1557
@@ -695,15 +707,13 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 (60241, 1715, 0, 1, 1, 1, 0, 'Polished Jazeraint Armor');
 
 -- 60242	NPC LOOT (Blue World Drop) - (Item Levels: 39-43) - (NPC Levels: 41)
-REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 60242, -60242, 0.1, 0, 1 FROM `creature_template` WHERE `entry` =
-2474; -- Kurdros	40	40 - https://web.archive.org/web/20071102180334/http://wow.allakhazam.com/db/mob.html?wmob=2474
 REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 (60242, 13068, 0, 1, 1, 1, 0, 'Obsidian Greaves');
 
 -- 60243	NPC LOOT (Blue World Drop) - (Item Levels: 39-44) - (NPC Levels: 41-42)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60243, -60243, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+4400, -- Mudrock Snapjaw (41-42) - https://web.archive.org/web/20071105022837/http://wow.allakhazam.com/db/mob.html?wmob=4400
 2657, -- Trained Razorbeak	40	42 - https://web.archive.org/web/20071227070132/http://wow.allakhazam.com/db/mob.html?wmob=2657
 11685, -- Maraudine Priest	40	42 - https://web.archive.org/web/20071230131738/http://wow.allakhazam.com/db/mob.html?wmob=11685
 1087, -- Sawtooth Snapper	41	42 - https://web.archive.org/web/20071230031735/http://wow.allakhazam.com/db/mob.html?wmob=1087
@@ -725,6 +735,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60245	NPC LOOT (Blue World Drop) - (Item Levels: 40-45) - (NPC Levels: 42-43)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60245, -60245, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+4399, -- Mudrock Borer (42-43) - https://web.archive.org/web/20071229171837/http://wow.allakhazam.com/db/mob.html?wmob=4399
 2725, -- Scalding Whelp	41	43 - https://web.archive.org/web/20071227202159/http://wow.allakhazam.com/db/mob.html?wmob=2725
 5307, -- Vale Screecher	41	43 - https://web.archive.org/web/20071217211443/http://wow.allakhazam.com/db/mob.html?wmob=5307
 5428, -- Roc	41	43 - https://web.archive.org/web/20080103195830/http://wow.allakhazam.com/db/mob.html?wmob=5428
@@ -760,8 +771,8 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60247	NPC LOOT (Blue World Drop) - (Item Levels: 41-46) - (NPC Levels: 43-44)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60247, -60247, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
-2691, -- https://www.wowhead.com/classic/npc=2691
-11790, -- 42-43 tbc+ https://www.wowhead.com/tbc/npc=11790
+2691, -- https://web.archive.org/web/20071227070144/http://wow.allakhazam.com/db/mob.html?wmob=2691
+11790, -- 42-43 tbc+ https://web.archive.org/web/20080106091355/http://wow.allakhazam.com/db/mob.html?wmob=11790
 2736, -- Greater Rock Elemental	42	44 - https://web.archive.org/web/20071214012405/http://wow.allakhazam.com/db/mob.html?wmob=2736
 2924, -- Silvermane Wolf	43	44 - https://web.archive.org/web/20071227070203/http://wow.allakhazam.com/db/mob.html?wmob=2924
 5287, -- Longtooth Howler	43	44 - https://web.archive.org/web/20080105073607/http://wow.allakhazam.com/db/mob.html?wmob=5287
@@ -790,16 +801,15 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 DELETE FROM `creature_loot_template` WHERE `entry` = 5295 AND `mincountOrRef` = -60257;
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60249, -60249, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
-2928, -- https://www.wowhead.com/classic/npc=2928
-5650, -- https://www.wowhead.com/tbc/npc=5650
-7856, -- https://www.wowhead.com/tbc/npc=7856
+2928, -- https://web.archive.org/web/20080115141239/http://wow.allakhazam.com/db/mob.html?wmob=2928
+5650, -- https://web.archive.org/web/20071225214515/http://wow.allakhazam.com/db/mob.html?wmob=5650
+7856, -- https://web.archive.org/web/20071229073834/http://wow.allakhazam.com/db/mob.html?wmob=7856
 8337, -- Dark Iron Steelshifter	42	45 - https://web.archive.org/web/20080102062158/http://wow.allakhazam.com/db/mob.html?wmob=8337
 2658, -- Razorbeak Gryphon	43	45 - https://web.archive.org/web/20071227070137/http://wow.allakhazam.com/db/mob.html?wmob=2658
 2726, -- Scorched Guardian	43	45 - https://web.archive.org/web/20080111155301/http://wow.allakhazam.com/db/mob.html?wmob=2726
 5278, -- Sprite Darter	43	45 - https://web.archive.org/web/20080103074959/http://wow.allakhazam.com/db/mob.html?wmob=5278
 5429, -- Fire Roc	43	45 - https://web.archive.org/web/20080112092259/http://wow.allakhazam.com/db/mob.html?wmob=5429
 5856, -- Glassweb Spider	43	45 - https://web.archive.org/web/20080502023710/http://wow.allakhazam.com/db/mob.html?wmob=5856
-7789, -- Sandfury Cretin	43	45 - https://web.archive.org/web/20080103200034/http://wow.allakhazam.com/db/mob.html?wmob=7789
 8667, -- Gusting Vortex	43	45 - https://web.archive.org/web/20071226152728/http://wow.allakhazam.com/db/mob.html?wmob=8667
 2686, -- Witherbark Broodguard	44	45 - https://web.archive.org/web/20080102003848/http://wow.allakhazam.com/db/mob.html?wmob=2686
 5245, -- Zukk'ash Wasp	44	45 - https://web.archive.org/web/20080105004013/http://wow.allakhazam.com/db/mob.html?wmob=5245
@@ -821,8 +831,10 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 
 -- 60250	NPC LOOT (Blue World Drop) - (Item Levels: 43-47) - (NPC Levels: 45)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
-SELECT `entry`, 60249, -60249, 0.1, 0, 1 FROM `creature_template` WHERE `entry` =
-2919; -- Fam'retor Guardian	45	45 - https://web.archive.org/web/20080101142340/http://wow.allakhazam.com/db/mob.html?wmob=2919
+SELECT `entry`, 60249, -60249, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+2919, -- Fam'retor Guardian	45	45 - https://web.archive.org/web/20080101142340/http://wow.allakhazam.com/db/mob.html?wmob=2919
+4339, -- Brimgore, -- 45, -- 45 -- 41-41 tbc+ - https://web.archive.org/web/20071230091900/http://wow.allakhazam.com/db/mob.html?wmob=4339
+4841); -- Deadmire, -- 45, -- 45 -- 41-41 tbc+ - https://web.archive.org/web/20071222030013/http://wow.allakhazam.com/db/mob.html?wmob=4841 kek droprate
 
 -- 60251	NPC LOOT (Blue World Drop) - (Item Levels: 43-48) - (NPC Levels: 45-46)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
@@ -869,6 +881,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60253	NPC LOOT (Blue World Drop) - (Item Levels: 44-49) - (NPC Levels: 46-47)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60253, -60253, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+5434, -- Coral Shark (46-47) - https://web.archive.org/web/20080104181513/http://wow.allakhazam.com/db/mob.html?wmob=5434
 5465, -- Land Rager	45	47 - https://web.archive.org/web/20080104223309/http://wow.allakhazam.com/db/mob.html?wmob=5465
 5843, -- Slave Worker	45	47 - https://web.archive.org/web/20071230035021/http://wow.allakhazam.com/db/mob.html?wmob=5843
 5850, -- Blazing Elemental	45	47 - https://web.archive.org/web/20071226222250/http://wow.allakhazam.com/db/mob.html?wmob=5850
@@ -902,7 +915,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60254, -60254, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
 8120, -- Sul'lithuz Abomination	47	47 - https://web.archive.org/web/20080103200045/http://wow.allakhazam.com/db/mob.html?wmob=8120
-14661); -- Stinglasher	47	47
+14661); -- Stinglasher	47	47 - https://web.archive.org/web/20071216060047/http://wow.allakhazam.com/db/mob.html?wmob=14661
 
 -- 60255	NPC LOOT (Blue World Drop) - (Item Levels: 45-50) - (NPC Levels: 47-48)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
@@ -1023,6 +1036,7 @@ SELECT `entry`, 60260, -60260, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 8196); -- Occulus	50	50 - https://web.archive.org/web/20071028110421/http://wow.allakhazam.com/db/mob.html?wmob=8196
 
 -- 60261	NPC LOOT (Blue World Drop) - (Item Levels: 48-53) - (NPC Levels: 50-51)
+DELETE FROM `creature_loot_template` WHERE `entry` = 6002 AND `mincountOrRef` = -60259;
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60261, -60261, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
 3094, -- Unseen	49	51 - https://web.archive.org/web/20071102213917/http://wow.allakhazam.com/db/mob.html?wmob=3094
@@ -1049,6 +1063,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60263	NPC LOOT (Blue World Drop) - (Item Levels: 49-54) - (NPC Levels: 51-52)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60263, -60263, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+12124, -- Great Shark (51-52) - https://web.archive.org/web/20071227065524/http://wow.allakhazam.com/db/mob.html?wmob=12124
 9554, -- Hammered Patron	48	52 - https://web.archive.org/web/20071031050519/http://wow.allakhazam.com/db/mob.html?wmob=9554
 6347, -- Young Wavethrasher	51	52 - https://web.archive.org/web/20071029230328/http://wow.allakhazam.com/db/mob.html?wmob=6347
 9545, -- Grim Patron	48	52 - https://web.archive.org/web/20071031040505/http://wow.allakhazam.com/db/mob.html?wmob=9545
@@ -1100,6 +1115,8 @@ SELECT `entry`, 60264, -60264, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60265	NPC LOOT (Blue World Drop) - (Item Levels: 50-55) - (NPC Levels: 52-53)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60265, -60265, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+13396, -- Irondeep Miner (52-53) - https://web.archive.org/web/20080104022314/http://wow.allakhazam.com/db/mob.html?wmob=13396
+
 6501, -- Stegodon	52	53 - https://web.archive.org/web/20071028074916/http://wow.allakhazam.com/db/mob.html?wmob=6501
 7098, -- Ironbeak Screecher	52	53 - https://web.archive.org/web/20071026064454/http://wow.allakhazam.com/db/mob.html?wmob=7098
 10982, -- Whitewhisker Vermin	52	53 - https://web.archive.org/web/20071031090616/http://wow.allakhazam.com/db/mob.html?wmob=10982
@@ -1334,7 +1351,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60274	NPC LOOT (Blue World Drop) - (Item Levels: 55-59) - (NPC Levels: 57)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60274, -60274, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
-13335, -- Veteran Mountaineer	57	57
+13335, -- Veteran Mountaineer	57	57 - https://web.archive.org/web/20051202182137/http://wow.allakhazam.com/db/mob.html?wmob=13335
 12127, -- Stormpike Guardsman	57	57 - https://web.archive.org/web/20071031090656/http://wow.allakhazam.com/db/mob.html?wmob=12127
 13336, -- Veteran Sentinel	57	57 - https://web.archive.org/web/20070109002246/http://wow.allakhazam.com/db/mob.html?wmob=13336
 13337, -- Veteran Warrior	57	57 - https://web.archive.org/web/20070117032938/http://wow.allakhazam.com/db/mob.html?wmob=13337#
@@ -1390,6 +1407,8 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60276	NPC LOOT (Blue World Drop) - (Item Levels: 56-60) - (NPC Levels: 58) - VANILLA NPC ONLY
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60276, -60276, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+
+
 13218, -- https://www.wowhead.com/wotlk/npc=13218/grunnda-wolfheart
 10663, -- Manaclaw	58	58 - https://web.archive.org/web/20071013201531/http://wow.allakhazam.com/db/mob.html?wmob=10663
 10807, -- Brumeran	58	58 - https://web.archive.org/web/20071014003944/http://wow.allakhazam.com/db/mob.html?wmob=10807
@@ -1464,6 +1483,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60278	NPC LOOT (Blue World Drop) - (Item Levels: 56-60) - (NPC Levels: 59) - VANILLA NPC ONLY
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60278, -60278, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+13296, -- Lieutenant Largent (59-59) - https://web.archive.org/web/20071031062521/http://wow.allakhazam.com/db/mob.html?wmob=13296
 14188, -- https://web.archive.org/web/20071230204544/http://wow.allakhazam.com/db/mob.html?wmob=14188
 12158, -- Winterax Hunter	59	59 - https://web.archive.org/web/20060524162759/http://wow.allakhazam.com/db/mob.html?wmob=12158
 13137, -- Lieutenant Rugba	59	59 - https://web.archive.org/web/20060307185021/http://wow.allakhazam.com/db/mob.html?wmob=13137
@@ -1494,6 +1514,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 (60278, 23203, 0, 1, 1, 1, 4, 'Libram of Fervor'); -- Alliance Player in classic only
 
 -- 60279	NPC LOOT (Blue World Drop) - (Item Levels: 56-60) - (NPC Levels: 59-60) - VANILLA NPC ONLY
+DELETE FROM `creature_loot_template` WHERE `entry` = 11883 AND `mincountOrRef` = -60280;
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60279, -60279, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
 10996, -- Fallen Hero	58	60 - https://web.archive.org/web/20060307182825/http://wow.allakhazam.com/db/mob.html?wmob=10996
@@ -1536,6 +1557,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60280	NPC LOOT (Blue World Drop) - (Item Levels: 56-60) - (NPC Levels: 60) - VANILLA NPC ONLY
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60280, -60280, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+13617, -- Stormpike Stable Master (60-60) - https://web.archive.org/web/20071231183300/http://wow.allakhazam.com/db/mob.html?wmob=13617
 7846, -- Teremus the Devourer	60	60 - https://web.archive.org/web/20071022030105/http://wow.allakhazam.com/db/mob.html?wmob=7846
 8718, -- Manahound	60	60 - https://web.archive.org/web/20071013134949/http://wow.allakhazam.com/db/mob.html?wmob=8718
 10737, -- Shy-Rotam	60	60 - https://web.archive.org/web/20071028091209/http://wow.allakhazam.com/db/mob.html?wmob=10737
@@ -1604,6 +1626,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60281	NPC LOOT (Blue World Drop) - (Item Levels: 56-60) - (NPC Levels: 60-61) - VANILLA NPC ONLY
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60281, -60281, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+4366, -- Strashaz Serpent Guard (59-61) - https://web.archive.org/web/20080104175133/http://wow.allakhazam.com/db/mob.html?wmob=4366
 4374, -- Strashaz Hydra	59	61 - https://web.archive.org/web/20071030001836/http://wow.allakhazam.com/db/mob.html?wmob=4374
 13798, -- Jotek	60	61 - https://web.archive.org/web/20071031062721/http://wow.allakhazam.com/db/mob.html?wmob=13798
 10488, -- Risen Construct	58	61 - https://web.archive.org/web/20071103223010/http://wow.allakhazam.com/db/mob.html?wmob=10488
@@ -1706,6 +1729,8 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60284	NPC LOOT (Blue World Drop) - (Item Levels: 56-60) - (NPC Levels: 62-63) - VANILLA NPC ONLY
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60284, -60284, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+5312, -- Lethlas (62-62) - https://web.archive.org/web/20071228102755/http://wow.allakhazam.com/db/mob.html?wmob=5312
+12498, -- Dreamstalker (62-62) - https://web.archive.org/web/20071228052346/http://wow.allakhazam.com/db/mob.html?wmob=12498
 12129, -- Onyxian Warder	60	63 - https://web.archive.org/web/20071014002949/http://wow.allakhazam.com/db/mob.html?wmob=12129
 5314, -- Phantim	62	62 - https://web.archive.org/web/20071028141731/http://wow.allakhazam.com/db/mob.html?wmob=5314
 5718, -- Rothos	62	62 - https://web.archive.org/web/20071013201657/http://wow.allakhazam.com/db/mob.html?wmob=5718
@@ -2049,13 +2074,4 @@ DELETE FROM `creature_loot_template` WHERE `mincountOrRef` = -24021; -- all have
 -- Now part of RefLoots
 DELETE FROM `creature_loot_template` WHERE `item` = 9719 AND `comments` = 'Broken Blade of Heroes';
 DELETE FROM `creature_loot_template` WHERE `item` = 13068 AND `comments` = 'Obsidian Greaves';
-
--- Cleanup
-UPDATE reference_loot_template SET comments='';
-UPDATE reference_loot_template ct JOIN item_template it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE reference_loot_template ct JOIN reference_loot_template_names rltn ON rltn.entry = -ct.MinCountOrRef AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
-
-UPDATE creature_loot_template SET comments='';
-UPDATE creature_loot_template ct JOIN item_template it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE creature_loot_template ct JOIN reference_loot_template_names rltn ON rltn.entry = -ct.MinCountOrRef AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
 
