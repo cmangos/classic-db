@@ -1109,6 +1109,9 @@ UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60305
 12216 -- 60305	-60304	Poison Sprite	42	43	NPC LOOT (Purple World Drop) - (Item Levels: 41-43) - (NPC Levels: 42)
 );
 
+UPDATE `creature_loot_template` SET `item` = 60306, `mincountOrRef` = -60306 WHERE `item` = 60305 AND `entry` =
+2549; -- 60305	-60304	Garr Salthoof	41	43	NPC LOOT (Purple World Drop) - (Item Levels: 41-43) - (NPC Levels: 42)
+
 -- 60307	NPC LOOT (Purple World Drop) - (Item Levels: 42-45) - (NPC Levels: 43-44)
 UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60307 AND `entry` IN (
 4505, -- 60307	-60303	Bloodsail Deckhand	43	44	NPC LOOT (Purple World Drop) - (Item Levels: 40-45) - (NPC Levels: 41-42)
@@ -1133,11 +1136,17 @@ UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60311
 12223 -- 60311	-60309	Cavern Lurker	45	46	NPC LOOT (Purple World Drop) - (Item Levels: 41-48) - (NPC Levels: 44-45)
 );
 
+UPDATE `creature_loot_template` SET `item` = 60312, `mincountOrRef` = -60312 WHERE `item` = 60311 AND `entry` =
+2550; -- 60311	-60304	Captain Stillwater	45	46	NPC LOOT (Purple World Drop) - (Item Levels: 41-43) - (NPC Levels: 42)
+
 -- 60312	NPC LOOT (Purple World Drop) - (Item Levels: 45-47) - (NPC Levels: 46)
 UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60312 AND `entry` IN (
 7796, -- 60312	-60310	Nekrum Gutchewer	46	46	NPC LOOT (Purple World Drop) - (Item Levels: 44-46) - (NPC Levels: 45)
 7797 -- 60312	-60310	Ruuzlu	46	46	NPC LOOT (Purple World Drop) - (Item Levels: 44-46) - (NPC Levels: 45)
 );
+
+UPDATE `creature_loot_template` SET `item` = 60311, `mincountOrRef` = -60311 WHERE `item` = 60312 AND `entry` =
+7796; -- 60312	-60310	Nekrum Gutchewer	46	46	NPC LOOT (Purple World Drop) - (Item Levels: 44-46) - (NPC Levels: 45)
 
 -- 60313	NPC LOOT (Purple World Drop) - (Item Levels: 45-48) - (NPC Levels: 46-47)
 UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60313 AND `entry` IN (
@@ -1146,6 +1155,9 @@ UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60313
 12221, -- 60313	-60307	Noxious Slime	46	47	NPC LOOT (Purple World Drop) - (Item Levels: 41-47) - (NPC Levels: 43-44)
 12224 -- 60313	-60310	Cavern Shambler	46	47	NPC LOOT (Purple World Drop) - (Item Levels: 44-46) - (NPC Levels: 45)
 );
+
+UPDATE `creature_loot_template` SET `item` = 60314, `mincountOrRef` = -60314 WHERE `item` = 60313 AND `entry` =
+2548; -- 60313	-60304	Captain Keelhaul	46	47	NPC LOOT (Purple World Drop) - (Item Levels: 41-43) - (NPC Levels: 42)
 
 -- 60314	NPC LOOT (Purple World Drop) - (Item Levels: 46-48) - (NPC Levels: 47)
 UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60314 AND `entry` IN (
@@ -1205,7 +1217,7 @@ UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60325
 8894 -- 60325	-60321	Anvilrage Medic	52	53	NPC LOOT (Purple World Drop) - (Item Levels: 48-54) - (NPC Levels: 50-51)
 );
 -- 60326	NPC LOOT (Purple World Drop) - (Item Levels: 52-54) - (NPC Levels: 53)
-UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60326 AND `entry` =
+UPDATE `creature_loot_template` SET `item` = 60331, `mincountOrRef` = -60331 WHERE `item` = 60326 AND `entry` =
 13149; -- 60326	-60331	Syndicate Brigand	53	53	NPC LOOT (Purple World Drop) - (Item Levels: 52-59) - (NPC Levels: 55-56)
 
 -- 60327	NPC LOOT (Purple World Drop) - (Item Levels: 52-55) - (NPC Levels: 53-54)
@@ -1248,7 +1260,7 @@ UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60333
 13776; -- 60333	-60332	Corporal Teeka Bloodsnarl	56	57	NPC LOOT (Purple World Drop) - (Item Levels: 54-59) - (NPC Levels: 56)
 
 -- 60340	NPC LOOT (Purple World Drop) - (Item Levels: 59-61) - (NPC Levels: 60) - VANILLA NPC ONLY
-UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60340 AND `entry` =
+UPDATE `creature_loot_template` SET `item` = 60337, `mincountOrRef` = -60337 WHERE `item` = 60340 AND `entry` =
 13957; -- 60340	-60337	Winterax Warrior	60	60	NPC LOOT (Purple World Drop) - (Item Levels: 55-62) - (NPC Levels: 58-59) - VANILLA NPC ONLY
 
 -- ==================================================================================

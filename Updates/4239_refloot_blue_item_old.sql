@@ -1872,11 +1872,310 @@ UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 0.6, `groupid` = 9 W
 
 -- ==================================================================================
 -- classicmangos only fixes due to item/mincountOrRef being async (level diff and loot not being adjusted correctly - only blue refloots)
--- SELECT clt.entry,clt.item,clt.mincountOrRef,ct.name,ct.minlevel,ct.maxlevel,comments FROM creature_loot_template clt left join creature_template ct on clt.entry=ct.entry where (clt.mincountorref between -60344 AND -60300) AND clt.item != -clt.mincountorref order by clt.entry;
+-- SELECT clt.entry,clt.item,clt.mincountOrRef,ct.name,ct.minlevel,ct.maxlevel,comments FROM creature_loot_template clt left join creature_template ct on clt.entry=ct.entry
+-- where (clt.mincountorref between -60284 AND -60200) AND clt.item != -clt.mincountorref order by clt.entry;
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60201 AND `entry` IN (
+5763); -- 60201	-60200	Nightmare Ectoplasm	20	21	NPC LOOT (Blue World Drop) - (Item Levels: 20-23) - (NPC Levels: 18-20)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60203 AND `entry` IN (
+4789, -- 60203	-60202	Fallenroot Rogue	21	22	NPC LOOT (Blue World Drop) - (Item Levels: 20-23) - (NPC Levels: 21)
+4803); -- 60203	-60202	Blackfathom Oracle	21	22	NPC LOOT (Blue World Drop) - (Item Levels: 20-23) - (NPC Levels: 21)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60205 AND `entry` IN (
+4807); -- 60205	-60204	Blackfathom Myrmidon	22	23	NPC LOOT (Blue World Drop) - (Item Levels: 21-25) - (NPC Levels: 22)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60207 AND `entry` IN (
+1706, -- 60207	-60206	Defias Prisoner	23	24	NPC LOOT (Blue World Drop) - (Item Levels: 21-25) - (NPC Levels: 23)
+4798, -- 60207	-60205	Fallenroot Shadowstalker	23	24	NPC LOOT (Blue World Drop) - (Item Levels: 20-26) - (NPC Levels: 22-23)
+4805); -- 60207	-60205	Blackfathom Sea Witch	23	24	NPC LOOT (Blue World Drop) - (Item Levels: 20-26) - (NPC Levels: 22-23)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60208 AND `entry` IN (
+1947); -- 60208	-60200	Thule Ravenclaw	24	24	NPC LOOT (Blue World Drop) - (Item Levels: 20-23) - (NPC Levels: 18-20)
+UPDATE `creature_loot_template` SET `item` = -mincountOrRef WHERE `mincountOrRef` = -60208 AND `entry` IN (
+3392); -- 60212	-60208	Prospector Khazgorm	26	26	NPC LOOT (Blue World Drop) - (Item Levels: 22-27) - (NPC Levels: 24)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60209 AND `entry` IN (
+1708, -- 60209	-60207	Defias Inmate	24	25	NPC LOOT (Blue World Drop) - (Item Levels: 21-27) - (NPC Levels: 23-24)
+1711, -- 60209	-60207	Defias Convict	24	25	NPC LOOT (Blue World Drop) - (Item Levels: 21-27) - (NPC Levels: 23-24)
+4799, -- 60209	-60205	Fallenroot Hellcaller	24	25	NPC LOOT (Blue World Drop) - (Item Levels: 20-26) - (NPC Levels: 22-23)
+4809, -- 60209	-60205	Twilight Acolyte	24	25	NPC LOOT (Blue World Drop) - (Item Levels: 20-26) - (NPC Levels: 22-23)
+4812); -- 60209	-60205	Twilight Loreseeker	24	25	NPC LOOT (Blue World Drop) - (Item Levels: 20-26) - (NPC Levels: 22-23)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60210 AND `entry` IN (
+518); -- 60210	-60200	Yowler	25	25	NPC LOOT (Blue World Drop) - (Item Levels: 20-23) - (NPC Levels: 18-20)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60211 AND `entry` IN (
+1715, -- 60211	-60208	Defias Insurgent	25	26	NPC LOOT (Blue World Drop) - (Item Levels: 22-27) - (NPC Levels: 24)
+4436, -- 60211	-60210	Razorfen Quilguard	25	26	NPC LOOT (Blue World Drop) - (Item Levels: 23-28) - (NPC Levels: 25)
+4437, -- 60211	-60210	Razorfen Warden	25	26	NPC LOOT (Blue World Drop) - (Item Levels: 23-28) - (NPC Levels: 25)
+4530, -- 60211	-60210	Razorfen Handler	25	26	NPC LOOT (Blue World Drop) - (Item Levels: 23-28) - (NPC Levels: 25)
+4810, -- 60211	-60206	Twilight Reaver	25	26	NPC LOOT (Blue World Drop) - (Item Levels: 21-25) - (NPC Levels: 23)
+4811); -- 60211	-60206	Twilight Aquamancer	25	26	NPC LOOT (Blue World Drop) - (Item Levels: 21-25) - (NPC Levels: 23)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60212 AND `entry` IN (
+1663); -- 60212	-60210	Dextren Ward	26	26	NPC LOOT (Blue World Drop) - (Item Levels: 23-28) - (NPC Levels: 25)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60213 AND `entry` IN (
+1034, -- 60213	-60207	Dragonmaw Raider	26	27	NPC LOOT (Blue World Drop) - (Item Levels: 21-27) - (NPC Levels: 23-24)
+4517, -- 60213	-60210	Death's Head Priest	26	27	NPC LOOT (Blue World Drop) - (Item Levels: 23-28) - (NPC Levels: 25)
+4813, -- 60213	-60206	Twilight Shadowmage	26	27	NPC LOOT (Blue World Drop) - (Item Levels: 21-25) - (NPC Levels: 23)
+4814); -- 60213	-60206	Twilight Elementalist	26	27	NPC LOOT (Blue World Drop) - (Item Levels: 21-25) - (NPC Levels: 23)
+
+UPDATE `creature_loot_template` SET `item` = 60215, `mincountOrRef` = -60215 WHERE `item` = 60214 AND `entry` =
+1057; -- 60214	-60207	Dragonmaw Bonewarder	27	27	NPC LOOT (Blue World Drop) - (Item Levels: 21-27) - (NPC Levels: 23-24)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60215 AND `entry` IN (
+1035, -- 60215	-60207	Dragonmaw Swamprunner	27	28	NPC LOOT (Blue World Drop) - (Item Levels: 21-27) - (NPC Levels: 23-24)
+4442, -- 60215	-60211	Razorfen Defender	27	28	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+4516, -- 60215	-60211	Death's Head Adept	27	28	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+4523, -- 60215	-60211	Razorfen Groundshaker	27	28	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+6218); -- 60215	-60212	Irradiated Slime	27	28	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60216 AND `entry` IN (
+6168); -- 60216	-60212	Roogug	28	28	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60217 AND `entry` IN (
+1036, -- 60217	-60209	Dragonmaw Centurion	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 21-28) - (NPC Levels: 24-25)
+1038, -- 60217	-60207	Dragonmaw Shadowwarder	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 21-27) - (NPC Levels: 23-24)
+4515, -- 60217	-60211	Death's Head Acolyte	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+4519, -- 60217	-60211	Death's Head Seer	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+4522, -- 60217	-60211	Razorfen Dustweaver	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+4531, -- 60217	-60211	Razorfen Beast Trainer	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+6035, -- 60217	-60211	Razorfen Stalker	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+6219, -- 60217	-60213	Corrosive Lurker	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 23-30) - (NPC Levels: 26-27)
+6223, -- 60217	-60213	Leprous Defender	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 23-30) - (NPC Levels: 26-27)
+7603); -- 60217	-60213	Leprous Assistant	28	29	NPC LOOT (Blue World Drop) - (Item Levels: 23-30) - (NPC Levels: 26-27)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60218 AND `entry` IN (
+1716, -- 60218	-60210	Bazil Thredd	29	29	NPC LOOT (Blue World Drop) - (Item Levels: 23-28) - (NPC Levels: 25)
+4440); -- 60218	-60211	Razorfen Totemic	29	29	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60219 AND `entry` IN (
+4438, -- 60219	-60211	Razorfen Spearhide	29	30	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+4518, -- 60219	-60211	Death's Head Sage	29	30	NPC LOOT (Blue World Drop) - (Item Levels: 22-29) - (NPC Levels: 25-26)
+6222, -- 60219	-60213	Leprous Technician	29	30	NPC LOOT (Blue World Drop) - (Item Levels: 23-30) - (NPC Levels: 26-27)
+6224); -- 60219	-60213	Leprous Machinesmith	29	30	NPC LOOT (Blue World Drop) - (Item Levels: 23-30) - (NPC Levels: 26-27)
+
+UPDATE `creature_loot_template` SET `item` = -mincountOrRef WHERE `mincountOrRef` = -60220 AND `entry` IN (
+300); -- 60226	-60220	Zzarc' Vul	30	30	NPC LOOT (Blue World Drop) - (Item Levels: 28-33) - (NPC Levels: 30)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60220 AND `entry` IN (
+1037); -- 60220	-60209	Dragonmaw Battlemaster	30	30	NPC LOOT (Blue World Drop) - (Item Levels: 21-28) - (NPC Levels: 24-25)
+
+UPDATE `creature_loot_template` SET `item` = 60221, `mincountOrRef` = -60221 WHERE `item` = 60220 AND `entry` =
+6230; -- 60220	-60214	Peacekeeper Security Suit	30	30	NPC LOOT (Blue World Drop) - (Item Levels: 25-29) - (NPC Levels: 27)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60221 AND `entry` IN (
+4525, -- 60221	-60212	Razorfen Earthbreaker	30	31	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+4532, -- 60221	-60212	Razorfen Beastmaster	30	31	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+4538, -- 60221	-60212	Kraul Bat	30	31	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+4623); -- 60221	-60212	Quilguard Champion	30	31	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60222 AND `entry` IN (
+314, -- 60222	-60220	Eliza	31	31	NPC LOOT (Blue World Drop) - (Item Levels: 28-33) - (NPC Levels: 30)
+4427); -- 60222	-60212	Ward Guardian	31	31	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60224 AND `entry` IN (
+2091, -- 60224	-60212	Chieftain Nek'rosh	32	32	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+4539); -- 60224	-60212	Greater Kraul Bat	32	32	NPC LOOT (Blue World Drop) - (Item Levels: 24-28) - (NPC Levels: 26)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60225 AND `entry` IN (
+6212, -- 60225	-60214	Dark Iron Agent	32	33	NPC LOOT (Blue World Drop) - (Item Levels: 25-29) - (NPC Levels: 27)
+6232); -- 60225	-60214	Arcane Nullifier X-21	32	33	NPC LOOT (Blue World Drop) - (Item Levels: 25-29) - (NPC Levels: 27)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60228 AND `entry` IN (
+1364); -- 60228	-60222	Balgaras the Foul	34	34	NPC LOOT (Blue World Drop) - (Item Levels: 29-33) - (NPC Levels: 31)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60229 AND `entry` IN (
+4291); -- 60229	-60228	Scarlet Diviner	34	35	NPC LOOT (Blue World Drop) - (Item Levels: 32-36) - (NPC Levels: 34)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60230 AND `entry` IN (
+522); -- 60230	-60220	Mor'Ladim	35	35	NPC LOOT (Blue World Drop) - (Item Levels: 28-33) - (NPC Levels: 30)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60231 AND `entry` IN (
+4286, -- 60231	-60230	Scarlet Soldier	35	36	NPC LOOT (Blue World Drop) - (Item Levels: 33-37) - (NPC Levels: 35)
+4297); -- 60231	-60230	Scarlet Conjuror	35	36	NPC LOOT (Blue World Drop) - (Item Levels: 33-37) - (NPC Levels: 35)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60232 AND `entry` IN (
+12865); -- 60232	-60230	Ambassador Malcin	36	36	NPC LOOT (Blue World Drop) - (Item Levels: 33-37) - (NPC Levels: 35)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60233 AND `entry` IN (
+4289, -- 60233	-60231	Scarlet Evoker	36	37	NPC LOOT (Blue World Drop) - (Item Levels: 33-39) - (NPC Levels: 35-36)
+4845); -- 60233	-60231	Shadowforge Ruffian	36	37	NPC LOOT (Blue World Drop) - (Item Levels: 33-39) - (NPC Levels: 35-36)
+
+UPDATE `creature_loot_template` SET `item` = 60232, `mincountOrRef` = -60232 WHERE `item` = 60234 AND `entry` =
+4132; -- 60234	-60232	Silithid Ravager	37	37	NPC LOOT (Blue World Drop) - (Item Levels: 34-38) - (NPC Levels: 36)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60235 AND `entry` IN (
+4295, -- 60235	-60232	Scarlet Myrmidon	37	38	NPC LOOT (Blue World Drop) - (Item Levels: 34-38) - (NPC Levels: 36)
+4363, -- 60235	-60233	Mirefin Oracle	37	38	NPC LOOT (Blue World Drop) - (Item Levels: 34-40) - (NPC Levels: 36-37)
+4852); -- 60235	-60234	Stonevault Oracle	37	38	NPC LOOT (Blue World Drop) - (Item Levels: 35-40) - (NPC Levels: 37)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60236 AND `entry` IN (
+2932, -- 60236	-60234	Magregan Deepshadow	38	38	NPC LOOT (Blue World Drop) - (Item Levels: 35-40) - (NPC Levels: 37)
+14230); -- 60236	-60234	Burgle Eye	38	38	NPC LOOT (Blue World Drop) - (Item Levels: 35-40) - (NPC Levels: 37)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60237 AND `entry` IN (
+2584); -- 60237	-60235	Stromgarde Defender	38	39	NPC LOOT (Blue World Drop) - (Item Levels: 35-41) - (NPC Levels: 37-38)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60239 AND `entry` IN (
+2585, -- 60239	-60237	Stromgarde Vindicator	39	40	NPC LOOT (Blue World Drop) - (Item Levels: 35-42) - (NPC Levels: 38-39)
+2892, -- 60239	-60235	Stonevault Seer	39	40	NPC LOOT (Blue World Drop) - (Item Levels: 35-41) - (NPC Levels: 37-38)
+4302, -- 60239	-60238	Scarlet Champion	39	40	NPC LOOT (Blue World Drop) - (Item Levels: 37-42) - (NPC Levels: 39)
+4303, -- 60239	-60238	Scarlet Abbot	39	40	NPC LOOT (Blue World Drop) - (Item Levels: 37-42) - (NPC Levels: 39)
+4401, -- 60239	-60231	Muckshell Clacker	39	40	NPC LOOT (Blue World Drop) - (Item Levels: 33-39) - (NPC Levels: 35-36)
+4847, -- 60239	-60237	Shadowforge Relic Hunter	39	40	NPC LOOT (Blue World Drop) - (Item Levels: 35-42) - (NPC Levels: 38-39)
+6733); -- 60239	-60235	Stonevault Basher	39	40	NPC LOOT (Blue World Drop) - (Item Levels: 35-41) - (NPC Levels: 37-38)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60241 AND `entry` IN (
+7030); -- 60241	-60237	Shadowforge Geologist	40	41	NPC LOOT (Blue World Drop) - (Item Levels: 35-42) - (NPC Levels: 38-39)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60243 AND `entry` IN (
+4403); -- 60243	-60231	Muckshell Pincer	41	42	NPC LOOT (Blue World Drop) - (Item Levels: 33-39) - (NPC Levels: 35-36)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60244 AND `entry` IN (
+7023); -- 60244	-60240	Obsidian Sentinel	42	42	NPC LOOT (Blue World Drop) - (Item Levels: 38-43) - (NPC Levels: 40)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60245 AND `entry` IN (
+1563, -- 60245	-60241	Bloodsail Swashbuckler	41	43	NPC LOOT (Blue World Drop) - (Item Levels: 37-44) - (NPC Levels: 40-41)
+1564, -- 60245	-60241	Bloodsail Warlock	41	43	NPC LOOT (Blue World Drop) - (Item Levels: 37-44) - (NPC Levels: 40-41)
+4404, -- 60245	-60231	Muckshell Scrabbler	42	43	NPC LOOT (Blue World Drop) - (Item Levels: 33-39) - (NPC Levels: 35-36)
+12216); -- 60245	-60244	Poison Sprite	42	43	NPC LOOT (Blue World Drop) - (Item Levels: 40-44) - (NPC Levels: 42)
+
+UPDATE `creature_loot_template` SET `item` = 60246, `mincountOrRef` = -60246 WHERE `item` = 60245 AND `entry` =
+2549; -- 60245	-60244	Garr Salthoof	41	43	NPC LOOT (Blue World Drop) - (Item Levels: 40-44) - (NPC Levels: 42)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60247 AND `entry` IN (
+4506, -- 60247	-60241	Bloodsail Swabby	42	44	NPC LOOT (Blue World Drop) - (Item Levels: 37-44) - (NPC Levels: 40-41)
+4505, -- 60247	-60243	Bloodsail Deckhand	43	44	NPC LOOT (Blue World Drop) - (Item Levels: 39-45) - (NPC Levels: 41-42)
+4848, -- 60247	-60237	Shadowforge Darkcaster	43	44	NPC LOOT (Blue World Drop) - (Item Levels: 35-42) - (NPC Levels: 38-39)
+4849, -- 60247	-60237	Shadowforge Archaeologist	43	44	NPC LOOT (Blue World Drop) - (Item Levels: 35-42) - (NPC Levels: 38-39)
+7091, -- 60247	-60237	Shadowforge Ambusher	43	44	NPC LOOT (Blue World Drop) - (Item Levels: 35-42) - (NPC Levels: 38-39)
+7290); -- 60247	-60237	Shadowforge Sharpshooter	43	44	NPC LOOT (Blue World Drop) - (Item Levels: 35-42) - (NPC Levels: 38-39)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60248 AND `entry` IN (
+14236); -- 60248	-60234	Lord Angler	44	44	NPC LOOT (Blue World Drop) - (Item Levels: 35-40) - (NPC Levels: 37)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60249 AND `entry` IN (
+1565, -- 60249	-60243	Bloodsail Sea Dog	43	45	NPC LOOT (Blue World Drop) - (Item Levels: 39-45) - (NPC Levels: 41-42)
+11791, -- 60249	-60246	Putridus Trickster	43	45	NPC LOOT (Blue World Drop) - (Item Levels: 41-45) - (NPC Levels: 43)
+1653); -- 60249	-60243	Bloodsail Elder Magus	44	45	NPC LOOT (Blue World Drop) - (Item Levels: 39-45) - (NPC Levels: 41-42)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60251 AND `entry` IN (
+7246, -- 60251	-60247	Sandfury Shadowhunter	45	46	NPC LOOT (Blue World Drop) - (Item Levels: 40-47) - (NPC Levels: 43-44)
+7247, -- 60251	-60249	Sandfury Soul Eater	45	46	NPC LOOT (Blue World Drop) - (Item Levels: 41-48) - (NPC Levels: 44-45)
+11793, -- 60251	-60250	Celebrian Dryad	45	46	NPC LOOT (Blue World Drop) - (Item Levels: 43-47) - (NPC Levels: 45)
+12222, -- 60251	-60247	Creeping Sludge	45	46	NPC LOOT (Blue World Drop) - (Item Levels: 40-47) - (NPC Levels: 43-44)
+12223); -- 60251	-60249	Cavern Lurker	45	46	NPC LOOT (Blue World Drop) - (Item Levels: 41-48) - (NPC Levels: 44-45)
+
+UPDATE `creature_loot_template` SET `item` = 60252, `mincountOrRef` = -60252 WHERE `item` = 60251 AND `entry` =
+2550; -- 60251	-60244	Captain Stillwater	45	46	NPC LOOT (Blue World Drop) - (Item Levels: 40-44) - (NPC Levels: 42)
+
+UPDATE `creature_loot_template` SET `item` = 60251, `mincountOrRef` = -60251 WHERE `item` = 60252 AND `entry` =
+7796; -- 60252	-60250	Nekrum Gutchewer	46	46	NPC LOOT (Blue World Drop) - (Item Levels: 43-47) - (NPC Levels: 45)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60252 AND `entry` IN (
+7797); -- 60252	-60250	Ruuzlu	46	46	NPC LOOT (Blue World Drop) - (Item Levels: 43-47) - (NPC Levels: 45)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60253 AND `entry` IN (
+11794, -- 60253	-60250	Sister of Celebrian	45	47	NPC LOOT (Blue World Drop) - (Item Levels: 43-47) - (NPC Levels: 45)
+12221, -- 60253	-60247	Noxious Slime	46	47	NPC LOOT (Blue World Drop) - (Item Levels: 40-47) - (NPC Levels: 43-44)
+12224); -- 60253	-60250	Cavern Shambler	46	47	NPC LOOT (Blue World Drop) - (Item Levels: 43-47) - (NPC Levels: 45)
+
+UPDATE `creature_loot_template` SET `item` = 60254, `mincountOrRef` = -60254 WHERE `item` = 60253 AND `entry` =
+2548; -- 60253	-60244	Captain Keelhaul	46	47	NPC LOOT (Blue World Drop) - (Item Levels: 40-44) - (NPC Levels: 42)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60254 AND `entry` IN (
+818, -- 60254	-60250	Mai'Zoth	47	47	NPC LOOT (Blue World Drop) - (Item Levels: 43-47) - (NPC Levels: 45)
+1492); -- 60254	-60244	Gorlash	47	47	NPC LOOT (Blue World Drop) - (Item Levels: 40-44) - (NPC Levels: 42)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60255 AND `entry` IN (
+5860); -- 60255	-60247	Twilight Dark Shaman	47	48	NPC LOOT (Blue World Drop) - (Item Levels: 40-47) - (NPC Levels: 43-44)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60256 AND `entry` IN (
+2546); -- 60256	-60244	Fleet Master Firallon	48	48	NPC LOOT (Blue World Drop) - (Item Levels: 40-44) - (NPC Levels: 42)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60257 AND `entry` IN (
+12206); -- 60257	-60254	Primordial Behemoth	48	49	NPC LOOT (Blue World Drop) - (Item Levels: 45-49) - (NPC Levels: 47)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60259 AND `entry` IN (
+5862); -- 60259	-60249	Twilight Geomancer	49	50	NPC LOOT (Blue World Drop) - (Item Levels: 41-48) - (NPC Levels: 44-45)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60261 AND `entry` IN (
+8419); -- 60261	-60251	Twilight Idolater	49	51	NPC LOOT (Blue World Drop) - (Item Levels: 42-49) - (NPC Levels: 45-46)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60262 AND `entry` IN (
+1559); -- 60262	-60244	King Mukla	51	51	NPC LOOT (Blue World Drop) - (Item Levels: 40-44) - (NPC Levels: 42)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60263 AND `entry` IN (
+8892); -- 60263	-60261	Anvilrage Footman	51	52	NPC LOOT (Blue World Drop) - (Item Levels: 48-54) - (NPC Levels: 50-51)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60264 AND `entry` IN (
+1494, -- 60264	-60244	Negolash	52	52	NPC LOOT (Blue World Drop) - (Item Levels: 40-44) - (NPC Levels: 42)
+8391, -- 60264	-60252	Lathoric the Black	52	52	NPC LOOT (Blue World Drop) - (Item Levels: 44-49) - (NPC Levels: 46)
+8400); -- 60264	-60252	Obsidion	52	52	NPC LOOT (Blue World Drop) - (Item Levels: 44-49) - (NPC Levels: 46)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60265 AND `entry` IN (
+8893, -- 60265	-60260	Anvilrage Soldier	52	53	NPC LOOT (Blue World Drop) - (Item Levels: 48-52) - (NPC Levels: 50)
+8894); -- 60265	-60261	Anvilrage Medic	52	53	NPC LOOT (Blue World Drop) - (Item Levels: 48-54) - (NPC Levels: 50-51)
+
+UPDATE `creature_loot_template` SET `item` = 60271, `mincountOrRef` = -60271 WHERE `item` = 60266 AND `entry` =
+13149; -- 60266	-60271	Syndicate Brigand	53	53	NPC LOOT (Blue World Drop) - (Item Levels: 53-59) - (NPC Levels: 55-56)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60267 AND `entry` IN (
+8896, -- 60267	-60261	Shadowforge Peasant	52	54	NPC LOOT (Blue World Drop) - (Item Levels: 48-54) - (NPC Levels: 50-51)
+8897, -- 60267	-60262	Doomforge Craftsman	52	54	NPC LOOT (Blue World Drop) - (Item Levels: 49-53) - (NPC Levels: 51)
+8895, -- 60267	-60262	Anvilrage Officer	53	54	NPC LOOT (Blue World Drop) - (Item Levels: 49-53) - (NPC Levels: 51)
+9445); -- 60267	-60264	Dark Guard	53	54	NPC LOOT (Blue World Drop) - (Item Levels: 50-54) - (NPC Levels: 52)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60269 AND `entry` IN (
+8898, -- 60269	-60267	Anvilrage Marshal	54	55	NPC LOOT (Blue World Drop) - (Item Levels: 50-57) - (NPC Levels: 53-54)
+8899, -- 60269	-60267	Doomforge Dragoon	54	55	NPC LOOT (Blue World Drop) - (Item Levels: 50-57) - (NPC Levels: 53-54)
+8900); -- 60269	-60268	Doomforge Arcanasmith	54	55	NPC LOOT (Blue World Drop) - (Item Levels: 52-57) - (NPC Levels: 54)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60270 AND `entry` IN (
+9437, -- 60270	-60266	Dark Keeper Vorfalk	55	55	NPC LOOT (Blue World Drop) - (Item Levels: 51-55) - (NPC Levels: 53)
+9438, -- 60270	-60266	Dark Keeper Bethek	55	55	NPC LOOT (Blue World Drop) - (Item Levels: 51-55) - (NPC Levels: 53)
+9439, -- 60270	-60266	Dark Keeper Uggel	55	55	NPC LOOT (Blue World Drop) - (Item Levels: 51-55) - (NPC Levels: 53)
+9441, -- 60270	-60266	Dark Keeper Zimrel	55	55	NPC LOOT (Blue World Drop) - (Item Levels: 51-55) - (NPC Levels: 53)
+9442, -- 60270	-60266	Dark Keeper Ofgut	55	55	NPC LOOT (Blue World Drop) - (Item Levels: 51-55) - (NPC Levels: 53)
+9443, -- 60270	-60266	Dark Keeper Pelver	55	55	NPC LOOT (Blue World Drop) - (Item Levels: 51-55) - (NPC Levels: 53)
+9476); -- 60270	-60268	Watchman Doomgrip	55	55	NPC LOOT (Blue World Drop) - (Item Levels: 52-57) - (NPC Levels: 54)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60271 AND `entry` IN (
+8902, -- 60271	-60263	Shadowforge Citizen	54	56	NPC LOOT (Blue World Drop) - (Item Levels: 47-55) - (NPC Levels: 51-52)
+8903, -- 60271	-60270	Anvilrage Captain	55	56	NPC LOOT (Blue World Drop) - (Item Levels: 51-58) - (NPC Levels: 55)
+8904, -- 60271	-60269	Shadowforge Senator	55	56	NPC LOOT (Blue World Drop) - (Item Levels: 51-58) - (NPC Levels: 54-55)
+8907, -- 60271	-60268	Wrath Hammer Construct	55	56	NPC LOOT (Blue World Drop) - (Item Levels: 52-57) - (NPC Levels: 54)
+8908); -- 60271	-60270	Molten War Golem	55	56	NPC LOOT (Blue World Drop) - (Item Levels: 51-58) - (NPC Levels: 55)
+
+UPDATE `creature_loot_template` SET `mincountOrRef` = -item WHERE `item` = 60273 AND `entry` IN (
+13776); -- 60273	-60272	Corporal Teeka Bloodsnarl	56	57	NPC LOOT (Blue World Drop) - (Item Levels: 54-59) - (NPC Levels: 56)
+
+UPDATE `creature_loot_template` SET `item` = 60279, `mincountOrRef` = -60279 WHERE `item` = 60275 AND `entry` =
+7072; -- 60275	-60279	Cursed Justicar	57	58	NPC LOOT (Blue World Drop) - (Item Levels: 56-65) - (NPC Levels: 59-60) - VANILLA NPC ONLY
+
+UPDATE `creature_loot_template` SET `item` = 60277, `mincountOrRef` = -60277 WHERE `item` = 60280 AND `entry` =
+13957; -- 60280	-60277	Winterax Warrior	60	60	NPC LOOT (Blue World Drop) - (Item Levels: 55-65) - (NPC Levels: 58-59) - VANILLA NPC ONLY
 
 -- ==================================================================================
 
 -- Correct wrong Levels for classicmangos diffed with tbcmangos/ccsdb
+UPDATE `creature_template` SET `minlevel` = 24, `maxlevel` = 24 WHERE `entry` = 3392; -- Prospector Khazgorm	26	26
+UPDATE `creature_template` SET `minlevel` = 27, `maxlevel` = 28 WHERE `entry` = 1057; -- Dragonmaw Bonewarder	27	27
+UPDATE `creature_template` SET `minlevel` = 30, `maxlevel` = 31 WHERE `entry` = 6230; -- Peacekeeper Security Suit	30	30
+UPDATE `creature_template` SET `minlevel` = 36, `maxlevel` = 36 WHERE `entry` = 4132; -- Silithid Ravager 37	37
+UPDATE `creature_template` SET `minlevel` = 43, `maxlevel` = 43 WHERE `entry` = 2549; -- Garr Salthoof	41	43
+UPDATE `creature_template` SET `minlevel` = 43, `maxlevel` = 44 WHERE `entry` = 4506; -- Bloodsail Swabby	42	44
+UPDATE `creature_template` SET `minlevel` = 44, `maxlevel` = 45 WHERE `entry` = 1565; -- Bloodsail Sea Dog	43	45
+UPDATE `creature_template` SET `minlevel` = 44, `maxlevel` = 45 WHERE `entry` = 11791; -- Putridus Trickster	43	45
+UPDATE `creature_template` SET `minlevel` = 46, `maxlevel` = 46 WHERE `entry` = 2550; -- Captain Stillwater	45	46
+UPDATE `creature_template` SET `minlevel` = 45, `maxlevel` = 46 WHERE `entry` = 7796; -- Nekrum Gutchewer	46	46
+UPDATE `creature_template` SET `minlevel` = 47, `maxlevel` = 47 WHERE `entry` = 2548; -- Captain Keelhaul	46	47
+UPDATE `creature_template` SET `minlevel` = 55, `maxlevel` = 56 WHERE `entry` = 13149; -- Syndicate Brigand	53	53
+UPDATE `creature_template` SET `minlevel` = 59, `maxlevel` = 60 WHERE `entry` = 7072; -- Cursed Justicar	57	58
+UPDATE `creature_template` SET `minlevel` = 58, `maxlevel` = 59 WHERE `entry` = 13957; -- Winterax Warrior	60	60
 UPDATE `creature_template` SET `minlevel` = 35, `maxlevel` = 37 WHERE `entry` = 2906; -- Dustbelcher Warrior (36-37)
 UPDATE `creature_template` SET `minlevel` = 47, `maxlevel` = 50 WHERE `entry` = 5276; -- Sprite Dragon (47-48)
 UPDATE `creature_template` SET `minlevel` = 49, `maxlevel` = 51 WHERE `entry` = 6002; -- Nethergarde Riftwatcher (50-50)
