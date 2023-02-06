@@ -861,6 +861,8 @@ SELECT `entry`, 60339, -60339, 0.004, 0, 1 FROM `creature_template` WHERE `entry
 11881, -- Twilight Geolord 58	60 - https://web.archive.org/web/20071225143014/http://wow.allakhazam.com/db/mob.html?wmob=11881
 11882, -- Twilight Stonecaller 59	60 - https://web.archive.org/web/20071225143019/http://wow.allakhazam.com/db/mob.html?wmob=11882
 11883, -- Twilight Master 59	60 - https://web.archive.org/web/20071225154959/http://wow.allakhazam.com/db/mob.html?wmob=11883
+12379, -- 69-70 tbc+ https://web.archive.org/web/20060831064316/http://wow.allakhazam.com/db/mob.html?wmob=12379
+12377, -- 69-70 tbc+ https://web.archive.org/web/20060831113722/http://wow.allakhazam.com/db/mob.html?wmob=12377
 12380, -- Unliving Resident	59	60 -- 69-70 tbc+ - https://web.archive.org/web/20060831043708/http://wow.allakhazam.com/db/mob.html?wmob=12380
 7370, -- Restless Shade	58	60 - 68 69 tbc+ - https://web.archive.org/web/20080101044455/http://wow.allakhazam.com/db/mob.html?wmob=7370
 12378); -- Damned Soul 59	60 - 68 69 tbc+ - https://web.archive.org/web/20080104022253/http://wow.allakhazam.com/db/mob.html?wmob=12378
