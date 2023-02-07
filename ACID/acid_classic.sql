@@ -14967,25 +14967,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Irradiated Horror (3.3.5a Official Data)
 ('622001','6220','11','0','100','0','0','0','0','0','0','0','11','21862','0','1','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Radiation Visual on Spawn'),
 ('622002','6220','0','0','100','1025','15600','19300','9700','21700','0','0','11','8211','1','0','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Chain Burn'),
--- Leprous Technician 6222 (3.3.5a Official Data) - OOC Tune Up Spell Casts are Rough Scripted
+-- Leprous Technician 6222 - creature_spell_list - OOC Tune Up Spell Casts are Rough Scripted
 ('622201','6222','8','0','100','0','9798','-1','0','0','0','0','1','3367','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Emote on Radiation Spellhit'),
 ('622202','6222','1','0','100','1','10000','45000','30000','70000','0','0','11','10348','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Cast Tune Up OOC'),
 ('622203','6222','4','0','10','0','0','0','0','0','0','0','54','0','0','3','0','0','0','0','0','0','0','0','Leprous Technician - Random Say on Aggro'),
 ('622204','6222','4','0','100','0','0','0','0','0','0','0','57','2','35','0','39','10','0','0','0','0','0','0','Leprous Technician - Enable Range Mode and Call For Help on Aggro'),
 ('622205','6222','14','0','100','1057','1200','15','28900','28900','0','0','11','10732','12','0','11','10345','12','0','0','0','0','0','Leprous Technician - Random Cast Supercharge or Rebuild on Mechanical Friendly Missing HP'),
-('622206','6222','9','0','100','1025','5','30','1200','2500','0','0','11','13398','1','256','0','0','0','0','0','0','0','0','Leprous Technician - Cast Throw Wrench'),
--- Leprous Defender 6223 (3.3.5a Official Data) - CURRENT MULTISHOT TIMERS ARE ROUGH SCRIPTED BASED ON STRANGE OFFICIAL DATA
+-- Leprous Defender 6223 - creature_spell_list - CURRENT MULTISHOT TIMERS ARE ROUGH SCRIPTED BASED ON STRANGE OFFICIAL DATA
 ('622301','6223','8','0','100','0','9798','-1','0','0','0','0','1','3367','0','0','0','0','0','0','0','0','0','0','Leprous Defender - Emote on Radiation Spellhit'),
 ('622302','6223','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Leprous Defender - Enable Range Mode on Aggro'),
 ('622303','6223','0','0','100','1025','0','10000','30000','45000','0','0','11','14443','4','0','0','0','0','0','0','0','0','0','Leprous Defender - Cast Multi-Shot'),
-('622304','6223','9','0','100','1025','5','30','2000','2700','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Leprous Defender - Cast Shoot'),
--- Leprous Machinesmith 6224 (3.3.5a Official Data) - OOC Tune Up Spell Casts are Rough Scripted
+-- Leprous Machinesmith 6224 - creature_spell_list - OOC Tune Up Spell Casts are Rough Scripted
 ('622401','6224','8','0','100','0','9798','-1','0','0','0','0','1','3367','0','0','0','0','0','0','0','0','0','0','Leprous Machinesmith - Emote on Radiation Spellhit'),
 ('622402','6224','1','0','100','1','10000','45000','30000','70000','0','0','11','10348','0','0','0','0','0','0','0','0','0','0','Leprous Machinesmith - Cast Tune Up OOC'),
 ('622403','6224','4','0','10','0','0','0','0','0','0','0','54','0','0','3','0','0','0','0','0','0','0','0','Leprous Machinesmith - Random Say on Aggro'),
 ('622404','6224','4','0','100','0','0','0','0','0','0','0','57','2','35','0','39','10','0','0','0','0','0','0','Leprous Machinesmith - Enable Range Mode and Call For Help on Aggro'),
 ('622405','6224','14','0','100','1057','1200','15','28900','28900','0','0','11','10732','12','0','11','10345','12','0','0','0','0','0','Leprous Machinesmith - Random Cast Supercharge or Rebuild on Mechanical Friendly Missing HP'),
-('622406','6224','9','0','100','1025','5','30','1200','2500','0','0','11','13398','1','256','0','0','0','0','0','0','0','0','Leprous Machinesmith - Cast Throw Wrench'),
 -- Mechano-Tank 6225 (3.3.5a Offical Data)
 ('622501','6225','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Mechano-Tank - Enable Range Mode on Aggro'),
 ('622502','6225','9','0','100','1025','5','30','1200','3700','0','0','11','10346','1','256','0','0','0','0','0','0','0','0','Mechano-Tank - Cast Machine Gun'),
