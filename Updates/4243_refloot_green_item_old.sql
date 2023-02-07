@@ -40,6 +40,24 @@
 -- 60100	NPC LOOT (Green World Drop) - (Item Levels: 7-12) - (NPC Levels: 8)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60100, -60100, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+40, -- (6-7) - https://web.archive.org/web/20060627091423/http://wow.allakhazam.com/db/mob.html?wmob=40
+285, -- (6-7) - https://web.archive.org/web/20060627092608/http://wow.allakhazam.com/db/mob.html?wmob=285
+735, -- (6-7) - https://web.archive.org/web/20060630081211/http://wow.allakhazam.com/db/mob.html?wmob=735
+1135, -- (6-7) - https://web.archive.org/web/20060625091841/http://wow.allakhazam.com/db/mob.html?wmob=1135
+1526, -- (6-7) - https://web.archive.org/web/20060630081159/http://wow.allakhazam.com/db/mob.html?wmob=1526
+1934, -- (6-7) - https://web.archive.org/web/20060714150535/http://wow.allakhazam.com/db/mob.html?wmob=1934
+1941, -- (6-7) - https://web.archive.org/web/20060715211438/http://wow.allakhazam.com/db/mob.html?wmob=1941
+2004, -- https://www.wowhead.com/classic/npc=2004/dark-sprite
+2008, -- https://www.wowhead.com/classic/npc=2008/gnarlpine-warrior
+2152, -- https://www.wowhead.com/classic/npc=2152/gnarlpine-ambusher
+2950, -- https://www.wowhead.com/wotlk/npc=2950/palemane-skinner
+2976, -- https://www.wowhead.com/classic/npc=2976/venture-co-laborer
+3103, -- https://www.wowhead.com/classic/npc=3103/makrura-clacker
+3104, -- https://www.wowhead.com/classic/npc=3104/makrura-shellhide
+3111, -- https://www.wowhead.com/classic/npc=3111/razormane-quilboar
+3119, -- https://www.wowhead.com/classic/npc=3119/kolkar-drudge
+3129, -- https://www.wowhead.com/classic/npc=3129/kul-tiras-marine
+7235, -- https://www.wowhead.com/classic/npc=7235/gnarlpine-mystic
 1126, -- Large Crag Boar (6-7) - https://web.archive.org/web/20071102173813/http://wow.allakhazam.com/db/mob.html?wmob=1126
 1138, -- Snow Tracker Wolf (6-7) - https://web.archive.org/web/20071116001231/http://wow.allakhazam.com/db/mob.html?wmob=1138
 1553, -- Greater Duskbat (6-7) - https://web.archive.org/web/20071109115901/http://wow.allakhazam.com/db/mob.html?wmob=1553
@@ -49,6 +67,24 @@ SELECT `entry`, 60100, -60100, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60100	NPC LOOT (Green World Drop) - (Item Levels: 7-12) - (NPC Levels: 8)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60100, -60100, 0.50, 0, 1 FROM `creature_template` WHERE `entry` IN (
+390, -- (7) - https://web.archive.org/web/20060523032934/http://wow.allakhazam.com/db/mob.html?wmob=390
+476, -- (7-8) - https://web.archive.org/web/20060624040140/http://wow.allakhazam.com/db/mob.html?wmob=476
+524, -- (7-8) - https://web.archive.org/web/20060507042121/http://wow.allakhazam.com/db/mob.html?wmob=524
+2005, -- https://www.wowhead.com/classic/npc=2005/vicious-grell
+2009, -- https://www.wowhead.com/classic/npc=2009/gnarlpine-shaman
+2010, -- https://www.wowhead.com/classic/npc=2010/gnarlpine-defender
+2025, -- https://www.wowhead.com/classic/npc=2025/timberling-bark-ripper
+2951, -- https://www.wowhead.com/classic/npc=2951/palemane-poacher
+2959, -- https://www.wowhead.com/classic/npc=2959/prairie-stalker
+2962, -- https://www.wowhead.com/classic/npc=2962/windfury-harpy
+2977, -- https://www.wowhead.com/classic/npc=2977/venture-co-taskmaster
+2989, -- https://www.wowhead.com/classic/npc=2989/baeldun-digger
+3112, -- https://www.wowhead.com/classic/npc=3112/razormane-scout
+3115, -- https://www.wowhead.com/classic/npc=3115/dustwind-harpy
+3116, -- https://www.wowhead.com/classic/npc=3116/dustwind-pillager
+3120, -- https://www.wowhead.com/classic/npc=3120/kolkar-outrunner
+3121, -- https://www.wowhead.com/classic/npc=3121/durotar-tiger
+14428, -- https://www.wowhead.com/classic/npc=14428/uruson
 3122, -- Bloodtalon Taillasher (6-8) - https://web.archive.org/web/20071102180357/http://wow.allakhazam.com/db/mob.html?wmob=3122
 1127, -- Elder Crag Boar (7-8) - https://web.archive.org/web/20071102173818/http://wow.allakhazam.com/db/mob.html?wmob=1127
 1131, -- Winter Wolf (7-8) - https://web.archive.org/web/20071116035529/http://wow.allakhazam.com/db/mob.html?wmob=1131
@@ -340,9 +376,19 @@ SELECT `entry`, 60125, -60125, 5, 0, 1 FROM `creature_template` WHERE `entry` IN
 7170); -- Thragomm (19-21)
 
 -- 60126	NPC LOOT (Green World Drop) - (Item Levels: 20-24) - (NPC Levels: 21)
+REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
+SELECT `entry`, 60126, -60126, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+1920, -- https://web.archive.org/web/20060708173201/http://wow.allakhazam.com/db/mob.html?wmob=1920
+2332, -- https://www.wowhead.com/classic/npc=2332/valdred-moray
+3436, -- https://www.wowhead.com/classic/npc=3436/kuz
+3879 -- https://www.wowhead.com/classic/npc=3879/dark-strand-assassin
+);
+
 -- 60127	NPC LOOT (Green World Drop) - (Item Levels: 20-25) - (NPC Levels: 21-22)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60127, -60127, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+4789, -- https://www.wowhead.com/classic/npc=4789/fallenroot-rogue
+4803, -- https://www.wowhead.com/classic/npc=4803/blackfathom-oracle
 3424, -- Thunderhawk Cloudscraper (20-22) - https://web.archive.org/web/20071102184752/http://wow.allakhazam.com/db/mob.html?wmob=3424
 12123); -- Reef Shark (21-22) - https://web.archive.org/web/20071102202425/http://wow.allakhazam.com/db/mob.html?wmob=12123
 
@@ -2116,6 +2162,10 @@ UPDATE `creature_template` SET `MinLevel` = 61, `MaxLevel` = 61 WHERE `entry` = 
 -- UPDATE `creature_template` SET `MinLevel` = 72, `MaxLevel` = 72 WHERE `entry` = 22641;
 -- UPDATE `creature_template` SET `MinLevel` = 62, `MaxLevel` = 62, `HeroicEntry` = 22644 WHERE `entry` = 11948; -- Vanndar Stormpike (73-73)
 -- UPDATE `creature_template` SET `MinLevel` = 72, `MaxLevel` = 72 WHERE `entry` = 22644;
+
+-- Rename Refloots due to newly added items
+UPDATE `reference_loot_template_names` SET `name` = 'NPC LOOT (Green World Drop) - (Item Levels: 7-12) - (NPC Levels: 6-8)' WHERE `entry` = 60100;
+UPDATE `reference_loot_template_names` SET `name` = 'NPC LOOT (Green World Drop) - (Item Levels: 61-65) - (NPC Levels: 62-63) - VANILLA NPC ONLY' WHERE `entry` = 60298;
 
 -- Additional Fixes
 UPDATE `creature_template` SET `SchoolImmuneMask` = 4 WHERE `entry` = 4339; -- Brimgore (45-45)
