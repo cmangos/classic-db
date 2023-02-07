@@ -2214,12 +2214,3 @@ AND `mincountOrRef` = 1 AND `entry` != 645; -- seemingly high unique chance
 -- 29000	Scarlet Commander Rodrick	56	56
 -- 29076	Scarlet Courier	56	56
 
--- Cleanup move to next file.
-UPDATE reference_loot_template SET comments='';
-UPDATE reference_loot_template ct JOIN item_template it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE reference_loot_template ct JOIN reference_loot_template_names rltn ON rltn.entry = -ct.MinCountOrRef AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
-
-UPDATE creature_loot_template SET comments='';
-UPDATE creature_loot_template ct JOIN item_template it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
-UPDATE creature_loot_template ct JOIN reference_loot_template_names rltn ON rltn.entry = -ct.MinCountOrRef AND ct.MinCountOrRef < 0 SET ct.comments = CONCAT(ct.comments, "", rltn.name);
-
