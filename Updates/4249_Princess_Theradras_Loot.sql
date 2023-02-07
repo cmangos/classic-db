@@ -8,9 +8,9 @@ UPDATE `creature_loot_template` SET `maxcount` = 1 WHERE `entry` = 12201 AND `mi
 DELETE FROM `reference_loot_template` WHERE `entry` = 35009 AND `item` IN (17707,17710,17711,17715,17766);
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 -- classic only
-(12201, 60262, 0.1, 0, 1, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 49-53) - (NPC Levels: 51)'),
-(12201, 60322, 0.01, 0, 1, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 50-52) - (NPC Levels: 51)'),
-(12201, 60008, 6, 0, 1, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 51-60) - (NPC Levels: 51-63) - VANILLA NPC ONLY'),
+(12201, 60262, 0.1, 0, -60262, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 49-53) - (NPC Levels: 51)'),
+(12201, 60322, 0.01, 0, -60322, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 50-52) - (NPC Levels: 51)'),
+(12201, 60008, 6, 0, -60008, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 51-60) - (NPC Levels: 51-63) - VANILLA NPC ONLY'),
 -- classic+
 -- blue grp 1
 (12201, 17707, 0, 1, 1, 1, 0, 'Gemshard Heart'),
@@ -22,9 +22,9 @@ REPLACE INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 (12201, 5758, 0.25, 0, 1, 1, 0, 'Mithril Lockbox'),
 (12201, 4554, 3, 0, 1, 1, 0, 'Shiny Polished Stone');
 -- tbc+
--- (12201, 60256, 0.1, 0, 1, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 46-50) - (NPC Levels: 48)'),
--- (12201, 60316, 0.01, 0, 1, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 47-49) - (NPC Levels: 48)'),
--- (12201, 60007, 6, 0, 1, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 41-50) - (NPC Levels: 41-50)');
+-- (12201, 60256, 0.1, 0, -60256, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 46-50) - (NPC Levels: 48)'),
+-- (12201, 60316, 0.01, 0, -60316, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 47-49) - (NPC Levels: 48)'),
+-- (12201, 60007, 6, 0, -60007, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 41-50) - (NPC Levels: 41-50)');
 
 -- classic only
 REPLACE INTO `reference_loot_template` (`item`, `entry`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
