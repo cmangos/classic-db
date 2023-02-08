@@ -6612,8 +6612,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Commander Ashlam Valorfist (10838) - NSR
 -- Argent Officer Pureheart (10840) - NSR
 -- Argent Quartermaster Lightspark (10857) - NSR
--- Rotting Worm
-('1092501','10925','11','0','100','0','0','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Rotting Worm - Cast Thrash on Spawn'),
+-- Rotting Worm 10925
+('1092501','10925','0','0','100','1025','5000','20000','5000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Rotting Worm - Cast Thrash'),
 -- Marlene Redpath (10927) - NSR
 -- Joseph Redpath (10936) - NSR
 -- Decrepit Guardian 10943 - attack closest eligable target on spawn?
