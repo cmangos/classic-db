@@ -40,6 +40,11 @@
 -- 60100	NPC LOOT (Green World Drop) - (Item Levels: 7-12) - (NPC Levels: 8)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60100, -60100, 0.1, 0, 1 FROM `creature_template` WHERE `entry` IN (
+1520, -- https://www.wowhead.com/classic/npc=1520/rattlecage-soldier
+1526, -- https://www.wowhead.com/classic/npc=1526/ravaged-corpse
+1531, -- https://www.wowhead.com/classic/npc=1531/lost-soul
+1535, -- https://www.wowhead.com/classic/npc=1535/scarlet-warrior
+1674, -- https://www.wowhead.com/classic/npc=1674/rot-hide-gnoll
 40, -- (6-7) - https://web.archive.org/web/20060627091423/http://wow.allakhazam.com/db/mob.html?wmob=40
 285, -- (6-7) - https://web.archive.org/web/20060627092608/http://wow.allakhazam.com/db/mob.html?wmob=285
 735, -- (6-7) - https://web.archive.org/web/20060630081211/http://wow.allakhazam.com/db/mob.html?wmob=735
@@ -67,6 +72,12 @@ SELECT `entry`, 60100, -60100, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60100	NPC LOOT (Green World Drop) - (Item Levels: 7-12) - (NPC Levels: 8)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60100, -60100, 0.50, 0, 1 FROM `creature_template` WHERE `entry` IN (
+1527, -- https://www.wowhead.com/classic/npc=1527/hungering-dead
+1536, -- https://www.wowhead.com/classic/npc=1536/scarlet-missionary
+1543, -- https://www.wowhead.com/classic/npc=1543/vile-fin-puddlejumper
+1675, -- https://www.wowhead.com/classic/npc=1675/rot-hide-mongrel
+1196, -- https://web.archive.org/web/20080104234221/http://wow.allakhazam.com/db/mob.html?wmob=1196
+1120, -- https://web.archive.org/web/20071225204227/http://wow.allakhazam.com/db/mob.html?wmob=1120
 390, -- (7) - https://web.archive.org/web/20060523032934/http://wow.allakhazam.com/db/mob.html?wmob=390
 476, -- (7-8) - https://web.archive.org/web/20060624040140/http://wow.allakhazam.com/db/mob.html?wmob=476
 524, -- (7-8) - https://web.archive.org/web/20060507042121/http://wow.allakhazam.com/db/mob.html?wmob=524
@@ -378,6 +389,7 @@ SELECT `entry`, 60125, -60125, 5, 0, 1 FROM `creature_template` WHERE `entry` IN
 -- 60126	NPC LOOT (Green World Drop) - (Item Levels: 20-24) - (NPC Levels: 21)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60126, -60126, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+1399, -- https://web.archive.org/web/20071226220308/http://wow.allakhazam.com/db/mob.html?wmob=1399
 1920, -- https://web.archive.org/web/20060708173201/http://wow.allakhazam.com/db/mob.html?wmob=1920
 2332, -- https://www.wowhead.com/classic/npc=2332/valdred-moray
 3436, -- https://www.wowhead.com/classic/npc=3436/kuz
@@ -1160,6 +1172,7 @@ SELECT `entry`, 60194, -60194, 1, 0, 1 FROM `creature_template` WHERE `entry` =
 
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60194, -60194, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+8578, -- https://web.archive.org/web/20071212140812/http://wow.allakhazam.com/db/mob.html?wmob=8578
 2707, -- Shadra (55-55) - https://web.archive.org/web/20071225191048/http://wow.allakhazam.com/db/mob.html?wmob=2707
 6140, -- Hetaera (55-55) - https://web.archive.org/web/20071229234800/http://wow.allakhazam.com/db/mob.html?wmob=6140
 11196, -- Shatterspear Drummer (52-58) -- 55 - https://web.archive.org/web/20080109181356/http://wow.allakhazam.com/db/mob.html?wmob=11196
@@ -1207,6 +1220,7 @@ SELECT `entry`, 60196, -60196, 1, 0, 1 FROM `creature_template` WHERE `entry` IN
 
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60196, -60196, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+9027, -- 52 52 tbc+ https://web.archive.org/web/20071225083015/http://wow.allakhazam.com/db/mob.html?wmob=9027
 9376, -- Blazerunner	56	56 - https://web.archive.org/web/20071027062811/http://wow.allakhazam.com/db/mob.html?wmob=9376
 10041, -- Gorishi Hive Queen	56	56 - https://web.archive.org/web/20071031014839/http://wow.allakhazam.com/db/mob.html?wmob=10041
 10662, -- Spellmaw	56	56 - https://web.archive.org/web/20071018132707/http://wow.allakhazam.com/db/mob.html?wmob=10662
@@ -1484,6 +1498,7 @@ SELECT `entry`, 60294, -60294, 1, 0, 1 FROM `creature_template` WHERE `entry` IN
 
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60294, -60294, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+11120, -- https://web.archive.org/web/20071222062337/http://wow.allakhazam.com/db/mob.html?wmob=11120
 1756, -- https://web.archive.org/web/20080112145852/http://wow.allakhazam.com/db/mob.html?wmob=1756
 11804, -- Twilight Keeper Havunth (60-60) - https://web.archive.org/web/20071026023502/http://wow.allakhazam.com/db/mob.html?wmob=11804
 14454, -- The Windreaver (60-60) - https://web.archive.org/web/20080118044309/http://wow.allakhazam.com/db/mob.html?wmob=14454

@@ -588,6 +588,8 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60330	NPC LOOT (Purple World Drop) - (Item Levels: 54-56) - (NPC Levels: 55)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60330, -60330, 0.004, 0, 1 FROM `creature_template` WHERE `entry` IN ( -- 11 Items
+9017, -- 53 53 tbc+ https://web.archive.org/web/20071224093552/http://wow.allakhazam.com/db/mob.html?wmob=9017
+9502, -- https://web.archive.org/web/20071230010052/http://wow.allakhazam.com/db/mob.html?wmob=9502
 10919, -- Shatterspear Troll	52	58 -- use 55 due to scrolls III - https://web.archive.org/web/20071030063647/http://wow.allakhazam.com/db/mob.html?wmob=10919
 2931, -- Zaricotl	55	55 - https://web.archive.org/web/20071102041204/http://wow.allakhazam.com/db/mob.html?wmob=2931
 9622, -- U'cha	55	55 - https://web.archive.org/web/20071103054414/http://wow.allakhazam.com/db/mob.html?wmob=9622
@@ -804,6 +806,7 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60338	NPC LOOT (Purple World Drop) - (Item Levels: 58-60) - (NPC Levels: 59)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60338, -60338, 0.004, 0, 1 FROM `creature_template` WHERE `entry` IN ( -- 11 Items
+9237, -- 58 58 tbc+ https://web.archive.org/web/20080112092350/http://wow.allakhazam.com/db/mob.html?wmob=9237
 1845, -- https://www.wowhead.com/wotlk/npc=1845/high-protector-tarsen
 10738, -- https://www.wowhead.com/wotlk/npc=10738/high-chief-winterfall
 12158, -- Winterax Hunter	59	59 - https://web.archive.org/web/20060524162759/http://wow.allakhazam.com/db/mob.html?wmob=12158
@@ -967,6 +970,8 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60342	NPC LOOT (Purple World Drop) - (Item Levels: 59-64) - (NPC Levels: 61) - VANILLA NPC ONLY
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60342, -60342, 0.01, 0, 1 FROM `creature_template` WHERE `entry` IN ( -- 12 Items
+1853, -- https://web.archive.org/web/20071218195824/http://wow.allakhazam.com/db/mob.html?wmob=1853
+10503, -- https://web.archive.org/web/20071225212324/http://wow.allakhazam.com/db/mob.html?wmob=10503
 1846, -- https://www.wowhead.com/wotlk/npc=1846/high-protector-lorik
 1852, -- https://www.wowhead.com/wotlk/npc=1852/araj-the-summoner
 12476, -- https://www.wowhead.com/classic/npc=12476/emeraldon-oracle
@@ -1042,6 +1047,8 @@ REPLACE INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 -- 60344	NPC LOOT (Purple World Drop) - (Item Levels: 59-65) - (NPC Levels: 62-63) - VANILLA NPC ONLY
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60344, -60344, 0.01, 0, 1 FROM `creature_template` WHERE `entry` IN ( -- 12 Items
+6109, -- https://web.archive.org/web/20071218195911/http://wow.allakhazam.com/db/mob.html?wmob=6109
+10429, -- https://web.archive.org/web/20071229110227/http://wow.allakhazam.com/db/mob.html?wmob=10429
 5312, -- Lethlas (62-62) - https://web.archive.org/web/20071228102755/http://wow.allakhazam.com/db/mob.html?wmob=5312
 12498, -- Dreamstalker (62-62) - https://web.archive.org/web/20071228052346/http://wow.allakhazam.com/db/mob.html?wmob=12498
 12477, -- https://www.wowhead.com/classic/npc=12477/verdantine-boughguard
