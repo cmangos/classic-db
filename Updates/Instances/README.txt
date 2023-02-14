@@ -33,6 +33,7 @@ Tables which usually contain the relevant data:
 - creature_linking
 - dbscript*
 - gameobject
+- gameobject_addon
 - pool_creature/gameobject
 - gameobject/creature_battleground
 
