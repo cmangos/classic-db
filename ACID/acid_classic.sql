@@ -5694,10 +5694,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Decrepit Darkhound (1547) - NSR
 -- Cursed Darkhound (1548) - NSR
 -- Ravenous Darkhound (1549) - NSR
--- Greater Duskbat
-('155301','1553','9','0','100','1025','0','5','7000','12000','0','0','11','3242','1','0','0','0','0','0','0','0','0','0','Greater Duskbat - Cast Ravage'),
--- Vampiric Duskbat
-('155401','1554','9','0','100','1025','0','5','7000','12000','0','0','11','3242','1','0','0','0','0','0','0','0','0','0','Vampiric Duskbat - Cast Ravage'),
+-- Greater Duskbat 1553
+('155301','1553','0','0','100','1025','0','15000','20000','30000','0','0','11','3242','1','0','0','0','0','0','0','0','0','0','Greater Duskbat - Cast Ravage'),
+-- Vampiric Duskbat 1554
+('155401','1554','0','0','100','1025','0','15000','20000','30000','0','0','11','3242','1','0','0','0','0','0','0','0','0','0','Vampiric Duskbat - Cast Ravage'),
 -- Vicious Night Web Spider
 ('155501','1555','11','0','100','0','0','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Vicious Night Web Spider - Cast Poison Proc on Spawn'),
 -- Yvette Farthing (1560) - NSR
