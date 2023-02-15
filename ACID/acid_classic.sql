@@ -17658,8 +17658,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Onyxia's Lair (Pre 3.2.2a Version)
 -- =================================
 -- Onyxia 10184 - boss_onyxia
--- Onyxian Whelp
+-- Onyxian Whelp 11262
 ('1126201','11262','29','0','100','0','0','0','0','0','0','0','11','15750','0','0','0','0','0','0','0','0','0','0','Onyxian Whelp - Cast Rookery Whelp Spawn-in Spell on Spawn'),
+('1126202','11262','29','0','100','0','1000','1000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Onyxian Whelp - Zone Combat Pulse on Generic Timer'),
 -- Onyxia Warder
 ('1212901','12129','0','0','100','1025','1000','1000','12000','12000','0','0','11','20203','0','0','0','0','0','0','0','0','0','0','Onyxia Warder - Cast Fire Nova'),
 ('1212902','12129','0','0','90','1025','5000','5000','20000','20000','0','0','11','18958','1','0','0','0','0','0','0','0','0','0','Onyxia Warder - Cast Flame Lash'),
