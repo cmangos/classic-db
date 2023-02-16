@@ -15,8 +15,8 @@ UPDATE creature_template_spells SET spell5=0 WHERE spell5 IN (1,3,4);
 UPDATE creature_template_spells SET spell6=0 WHERE spell6 IN (1,3,4);
 UPDATE creature_template_spells SET spell7=0 WHERE spell7 IN (1,3,4);
 UPDATE creature_template_spells SET spell8=0 WHERE spell8 IN (1,3,4);
-UPDATE creature_template_spells SET spell9=0 WHERE spell7 IN (1,3,4);
-UPDATE creature_template_spells SET spell10=0 WHERE spell8 IN (1,3,4);
+UPDATE creature_template_spells SET spell9=0 WHERE spell9 IN (1,3,4);
+UPDATE creature_template_spells SET spell10=0 WHERE spell10 IN (1,3,4);
 
 -- Remove Trash which is done mostly by aura passive parent spells
 UPDATE `creature_template_spells` SET `spell1` = 0 WHERE `spell1` = 3391;
@@ -27,8 +27,8 @@ UPDATE `creature_template_spells` SET `spell5` = 0 WHERE `spell5` = 3391;
 UPDATE `creature_template_spells` SET `spell6` = 0 WHERE `spell6` = 3391;
 UPDATE `creature_template_spells` SET `spell7` = 0 WHERE `spell7` = 3391;
 UPDATE `creature_template_spells` SET `spell8` = 0 WHERE `spell8` = 3391;
-UPDATE `creature_template_spells` SET `spell9` = 0 WHERE `spell7` = 3391;
-UPDATE `creature_template_spells` SET `spell10` = 0 WHERE `spell8` = 3391;
+UPDATE `creature_template_spells` SET `spell9` = 0 WHERE `spell9` = 3391;
+UPDATE `creature_template_spells` SET `spell10` = 0 WHERE `spell10` = 3391;
 
 -- Remove Dazed 1604, which is caused by auto attacking
 UPDATE `creature_template_spells` SET `spell1` = 0 WHERE `spell1` = 1604;
@@ -39,8 +39,8 @@ UPDATE `creature_template_spells` SET `spell5` = 0 WHERE `spell5` = 1604;
 UPDATE `creature_template_spells` SET `spell6` = 0 WHERE `spell6` = 1604;
 UPDATE `creature_template_spells` SET `spell7` = 0 WHERE `spell7` = 1604;
 UPDATE `creature_template_spells` SET `spell8` = 0 WHERE `spell8` = 1604;
-UPDATE `creature_template_spells` SET `spell9` = 0 WHERE `spell7` = 1604;
-UPDATE `creature_template_spells` SET `spell10` = 0 WHERE `spell8` = 1604;
+UPDATE `creature_template_spells` SET `spell9` = 0 WHERE `spell9` = 1604;
+UPDATE `creature_template_spells` SET `spell10` = 0 WHERE `spell10` = 1604;
 
 -- Remove wrong charm immunities from Gnomeregan npcs
 UPDATE `creature_template` SET `mechanicimmunemask`=`mechanicimmunemask`&~1 WHERE `entry` IN (6232,6207,6206,6211,6215,6219,6212,6220,6329,6218,7603,6223,6224,6222,6234,6233,6226,6227,6225,7849,6230,7915);
