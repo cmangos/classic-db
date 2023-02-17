@@ -778,7 +778,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (8889, 0, 0, 1, 0, 0, NULL), -- Anvilrage Overseer
-(8890, 0, 0, 1, 0, 0, NULL), -- Anvilrage Warden
+(8890, 0, 0, 1, 0, 0, '3417'), -- Anvilrage Warden
 (8891, 0, 0, 1, 0, 0, NULL), -- Anvilrage Guardsman
 (8892, 0, 0, 1, 0, 0, NULL), -- Anvilrage Footman
 (8893, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Soldier
@@ -793,11 +793,11 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (8902, 0, 0, 1, 0, 0, NULL), -- Shadowforge Citizen
 (8903, 0, 0, 1, 0, 0, NULL), -- Anvilrage Captain
 (8904, 0, 0, 1, 0, 0, NULL), -- Shadowforge Senator
-(8905, 0, 0, 1, 0, 0, NULL), -- Warbringer Construct
-(8906, 0, 0, 1, 0, 0, '15088'), -- Ragereaver Golem
-(8907, 0, 0, 1, 0, 0, NULL), -- Wrath Hammer Construct
+(8905, 0, 0, 1, 0, 0, NULL), -- Warbringer Construct s.10255
+(8906, 0, 0, 1, 0, 0, '15088'), -- Ragereaver Golem s.10255
+(8907, 0, 0, 1, 0, 0, NULL), -- Wrath Hammer Construct s.10255
 (8908, 0, 0, 1, 0, 0, '13377 15506'), -- Molten War Golem
-(8909, 0, 0, 1, 0, 0, NULL), -- Fireguard
+(8909, 0, 0, 1, 0, 0, '11966'), -- Fireguard
 (8910, 0, 0, 1, 0, 0, NULL), -- Blazing Fireguard
 (8911, 0, 0, 1, 0, 0, '3417'), -- Fireguard Destroyer
 (8912, 0, 0, 1, 0, 0, '13616'), -- Twilight's Hammer Torturer
@@ -806,25 +806,28 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (8915, 0, 0, 1, 0, 0, NULL), -- Twilight's Hammer Ambassador
 (8916, 0, 0, 1, 0, 0, '13864'), -- Arena Spectator
 (8920, 0, 0, 1, 0, 0, NULL), -- Weapon Technician
-(8921, 0, 0, 1, 0, 0, '8279'), -- Bloodhound
-(8922, 0, 0, 1, 0, 0, '8279'), -- Bloodhound Mastiff
-(8923, 0, 0, 1, 0, 0, NULL), -- Panzor the Invincible
+(8921, 0, 0, 1, 0, 0, '8278 8279'), -- Bloodhound
+(8922, 0, 0, 1, 0, 0, '8278 8279'), -- Bloodhound Mastiff
+(8923, 0, 0, 1, 0, 0, '9941'), -- Panzor the Invincible
+(8926, 0, 0, 1, 0, 0, '8601'), -- Deep Stinger
 (8929, 0, 0, 1, 0, 0, NULL), -- Princess Moira Bronzebeard
+(8933, 0, 0, 1, 0, 0, '13299'), -- Cave Creeper
 (8982, 0, 0, 1, 0, 0, '10255'), -- Ironhand Guardian
 (8983, 0, 0, 1, 0, 0, NULL), -- Golem Lord Argelmach
-(9016, 0, 0, 1, 0, 0, NULL), -- Bael'Gar
+(9016, 0, 0, 1, 0, 0, '23378'), -- Bael'Gar
 (9017, 0, 0, 1, 0, 0, NULL), -- Lord Incendius
 (9018, 0, 0, 1, 0, 0, NULL), -- High Interrogator Gerstahn
-(9019, 0, 0, 1, 0, 0, NULL), -- Emperor Dagran Thaurissan
+(9019, 0, 0, 1, 0, 0, '15641'), -- Emperor Dagran Thaurissan
 (9020, 0, 0, 1, 0, 0, NULL), -- Commander Gor'shak
 (9021, 0, 0, 1, 0, 0, NULL), -- Kharan Mighthammer
 (9022, 0, 0, 1, 0, 0, NULL), -- Dughal Stormwing
 (9023, 0, 0, 1, 0, 0, NULL), -- Marshal Windsor
 (9024, 0, 8, 1, 0, 0, '15288'), -- Pyromancer Loregrain
 (9025, 0, 0, 1, 0, 0, NULL), -- Lord Roccor
-(9033, 0, 0, 1, 0, 0, NULL), -- General Angerforge
-(9034, 0, 0, 1, 0, 0, NULL), -- Hate'rel
-(9035, 0, 0, 1, 0, 0, NULL), -- Anger'rel
+(9032, 0, 0, 1, 0, 0, '13767'), -- Hedrum the Creeper
+(9033, 0, 0, 1, 0, 0, '15088 15097'), -- General Angerforge
+(9034, 0, 0, 1, 0, 0, '15088'), -- Hate'rel
+(9035, 0, 0, 1, 0, 0, '15097'), -- Anger'rel
 (9036, 0, 0, 1, 0, 0, NULL), -- Vile'rel
 (9037, 0, 0, 1, 0, 0, NULL), -- Gloom'rel
 (9038, 0, 0, 1, 0, 0, '12544'), -- Seeth'rel
@@ -833,31 +836,37 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (9041, 0, 0, 1, 0, 0, '12544'), -- Warder Stilgiss
 (9042, 0, 0, 1, 0, 0, '8876'), -- Verek
 (9056, 0, 0, 1, 0, 0, NULL), -- Fineous Darkvire
-(9156, 0, 0, 1, 0, 0, NULL), -- Ambassador Flamelash
+(9156, 0, 0, 1, 0, 0, '15573'), -- Ambassador Flamelash
 (9319, 0, 0, 1, 0, 0, NULL), -- Houndmaster Grebmar
+(9398, 0, 0, 1, 0, 0, '8876'), -- Twilight's Hammer Executioner
+(9436, 0, 0, 1, 0, 0, '15650'), -- Spawn of Bael'Gar
 (9499, 0, 0, 1, 0, 0, '13787'), -- Plugger Spazzring
 (9500, 0, 0, 1, 0, 0, NULL), -- Mistress Nagmara
-(9502, 0, 0, 1, 0, 0, NULL), -- Phalanx
+(9502, 0, 0, 1, 0, 0, NULL), -- Phalanx s.10255
 (9503, 0, 0, 1, 0, 0, NULL), -- Private Rocknot
+(9542, 0, 0, 1, 0, 0, '10848 9617 9036'), -- Franclorn's Spirit
 (9543, 0, 0, 1, 0, 0, NULL), -- Ribbly Screwspigot
 (9545, 0, 0, 1, 0, 0, NULL), -- Grim Patron
 (9547, 0, 0, 1, 0, 0, NULL), -- Guzzling Patron
-(9554, 0, 0, 1, 10, 0, '14869'), -- Hammered Patron
+(9554, 0, 0, 1, 10, 0, '3417 14869'), -- Hammered Patron
 (9677, 0, 0, 1, 0, 0, '8876'), -- Ograbisi
 (9678, 0, 0, 1, 0, 0, NULL), -- Shill Dinger
 (9679, 0, 0, 1, 0, 0, NULL), -- Tobias Seecher
-(9680, 0, 0, 1, 0, 0, NULL), -- Crest Killer
+(9680, 0, 0, 1, 0, 0, '13767 3417'), -- Crest Killer
 (9681, 0, 0, 1, 0, 0, NULL), -- Jaz
 (9938, 0, 0, 1, 0, 0, NULL), -- Magmus
 (9956, 0, 0, 1, 0, 0, NULL), -- Shadowforge Flame Keeper
 (10043, 0, 0, 1, 0, 0, '13299'), -- Ribbly's Crony
+(10096, 0, 0, 1, 0, 0, NULL), -- High Justice Grimstone s.15742 rp
 (10116, 0, 0, 1, 0, 0, NULL), -- Slave
 (10117, 0, 7, 1, 0, 0, NULL), -- Tortured Slave
 (12944, 0, 0, 1, 0, 0, NULL), -- Lokhtos Darkbargainer
 (15549, 0, 0, 1, 0, 0, '25824'), -- Elder Morndeep
+(16051, 0, 0, 1, 0, 0, '12360'), -- Snokh Blackspine
 (16079, 0, 0, 1, 0, 0, NULL); -- Theldren Trigger
 
 -- TBC+
+-- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 -- (28067, 0, 0, 1, 69, 0, '50976'); -- Dark Iron Brewer
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
@@ -2824,7 +2833,7 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- (@CGUID+1330, 26);
 
 INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
-(@CGUID+998, 0, 15735, 0, 0, 0, 2); -- Emperor Dagran Thaurissan (Feast of Winter Veil)
+(@CGUID+998, 0, 0, 0, 26212, 0, 2); -- Emperor Dagran Thaurissan (Feast of Winter Veil) - modelid 15775  prev. 15735
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- TBC+
