@@ -1521,10 +1521,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(178905, 0, 10, 13696, 60000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'summon Noxxious Scion'),
-(178905, 0, 10, 13696, 60000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'summon Noxxious Scion'),
-(178905, 0, 10, 13696, 60000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'summon Noxxious Scion'),
-
 (178965, 0, 47, 3, 0, 0, 13716, 50, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras interrupt channeled spell (Celebras Waiting 21916)'),
 (178965, 0, 9, @OGUID+25, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - summon Celebras Blue Aura (178964)'),
 (178965, 1000, 0, 0, 0, 0, 0, 0, 0, 8949, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - force Player to say'),
