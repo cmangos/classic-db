@@ -200,12 +200,87 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `cond
 (74,3602,0,0,2,0,'Knitted Belt'),
 (74,3603,0,0,5,0,'Knitted Bracers');
 
+-- Antonio Perelli 844
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 844;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(844,785,2,7200,15,0,'Mageroyal'),
+(844,858,3,7200,10,0,'Lesser Healing Potion'),
+(844,2449,3,7200,14,0,'Earthroot'),
+(844,2453,2,7200,17,0,'Bruiseweed'),
+(844,3355,1,7200,16,0,'Wild Steelbloom'),
+(844,3356,1,7200,18,0,'Kingsblood'),
+(844,3357,1,7200,19,0,'Liferoot'),
+(844,3371,0,0,1,0,'Empty Vial'),
+(844,3372,0,0,2,0,'Leaded Vial'),
+(844,4777,2,86400,11,0,'Ironwood Maul'),
+(844,4778,2,86400,9,0,'Heavy Spiked Mace'),
+(844,4794,1,86400,6,0,'Wolf Bracers'),
+(844,4795,1,86400,7,0,'Bear Bracers'),
+(844,4796,1,86400,8,0,'Owl Bracers'),
+(844,4817,2,86400,12,0,'Blessed Claymore'),
+(844,4818,2,86400,13,0,'Executioner\s Sword'),
+(844,8925,0,0,3,0,'Crystal Vial'),
+(844,18256,0,0,4,0,'Imbued Vial');
+
+-- Lizzarik 3658
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 3658;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(3658,851,0,0,1,0,'Cutlass'),
+(3658,852,0,0,5,0,'Mace'),
+(3658,853,0,0,3,0,'Hatchet'),
+(3658,854,0,0,8,0,'Quarter Staff'),
+(3658,858,3,9000,9,0,'Lesser Healing Potion'),
+(3658,1196,0,0,4,0,'Tabar'),
+(3658,1197,0,0,6,0,'Giant Mace'),
+(3658,1198,0,0,2,0,'Claymore'),
+(3658,2207,0,0,7,0,'Jambiya'),
+(3658,2455,3,9000,10,0,'Minor Mana Potion'),
+(3658,4765,2,14400,13,0,'Enamelled Broadsword'),
+(3658,4766,2,14400,11,0,'Feral Blade'),
+(3658,4777,2,14400,14,0,'Ironwood Maul'),
+(3658,4778,2,14400,12,0,'Heavy Spiked Mace');
+
+-- Trayexir 10369
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 10369;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(10369,2488,0,0,7,0,'Gladius'),
+(10369,2489,0,0,8,0,'Two-handed Sword'),
+(10369,2490,0,0,9,0,'Tomahawk'),
+(10369,2491,0,0,10,0,'Large Axe'),
+(10369,2492,0,0,11,0,'Cudgel'),
+(10369,2493,0,0,12,0,'Wooden Mallet'),
+(10369,2494,0,0,13,0,'Stiletto'),
+(10369,2495,0,0,14,0,'Walking Stick'),
+(10369,2506,0,0,5,0,'Hornwood Recurve Bow'),
+(10369,2507,0,0,6,0,'Laminated Recurve Bow'),
+(10369,2512,0,0,3,0,'Rough Arrow'),
+(10369,2515,0,0,4,0,'Sharp Arrow'),
+(10369,5439,0,0,1,0,'Small Quiver'),
+(10369,11362,0,0,2,0,'Medium Quiver');
+
+-- Zansoa 5942
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 5942;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(5942,6256,0,0,3,0,'Fishing Pole'),
+(5942,6326,0,0,1,0,'Recipe: Slitherskin Mackerel'),
+(5942,6365,1,7200,8,0,'Strong Fishing Pole'),
+(5942,6368,0,0,2,0,'Recipe: Rainbow Fin Albacore'),
+(5942,6529,0,0,4,0,'Shiny Bauble'),
+(5942,6530,0,0,5,0,'Nightcrawlers'),
+(5942,6532,0,0,6,0,'Bright Baubles'),
+(5942,6533,2,9000,7,0,'Aquadynamic Fish Attractor');
+
 -- ------------------------
 -- Templates
+-- Weapons/armor
 -- group moved to templates
 DELETE FROM `npc_vendor` WHERE entry IN (1249,2046,3613,5106) AND `item` IN (1201,2392,2393,2394,2395,2396,2397,17186);
 DELETE FROM `npc_vendor_template` WHERE entry IN (233,1000); -- 233 had 2392,2393,2394,2395,2396,2397 was assigned to 1240,1249,3613,5106,17930
-INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES 
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
 (1000,1201,0,0,8,0,'Dull Heater Shield'),
 (1000,2392,0,0,1,0,'Light Mail Armor'),
 (1000,2393,0,0,2,0,'Light Mail Belt'),
@@ -225,4 +300,139 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `cond
 (1240,2395,0,0,4,0,'Light Mail Boots'),
 (1240,2396,0,0,5,0,'Light Mail Bracers'),
 (1240,2397,0,0,6,0,'Light Mail Gloves');
+
+-- group moved to templates
+DELETE FROM `npc_vendor` WHERE entry IN (54,1273,1698,2136,2265,3077,3163,3609,2404) AND `item` IN (2488,2489,2490,2491,2492,2493,2494,2495); -- 2404; -- no vendor
+DELETE FROM `npc_vendor_template` WHERE entry IN (4,321,1001);
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES 
+(1001,2488,0,0,1,0,'Gladius'),
+(1001,2489,0,0,2,0,'Two-handed Sword'),
+(1001,2490,0,0,3,0,'Tomahawk'),
+(1001,2491,0,0,4,0,'Large Axe'),
+(1001,2492,0,0,5,0,'Cudgel'),
+(1001,2493,0,0,6,0,'Wooden Mallet'),
+(1001,2494,0,0,7,0,'Stiletto'),
+(1001,2495,0,0,8,0,'Walking Stick');
+UPDATE `creature_template` SET `VendorTemplateId` = 1001 WHERE `entry` IN (54,1273,1698,2136,2265,3077,3163,3609);
+
+-- General goods
+-- group moved to templates - items with different entries
+-- 2946	Balanced Throwing Dagger
+-- 2947	Small Throwing Knife
+-- 3111	Crude Throwing Axe
+-- 3131	Weighted Throwing Axe
+DELETE FROM `npc_vendor` WHERE entry IN (151,1691,2134,3076,3164,3186,3608) AND `item` IN (159,2512,2516,4470,4471,4496,4498,5042,3111,2946,2947,3131);
+DELETE FROM `npc_vendor_template` WHERE entry IN (430,1100);
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES 
+(1100,159,0,0,2,0,'Refreshing Spring Water'),
+(1100,2512,0,0,4,0,'Rough Arrow'),
+(1100,2516,0,0,5,0,'Light Shot'),
+(1100,4470,0,0,6,0,'Simple Wood'),
+(1100,4471,0,0,7,0,'Simple Wood'),
+(1100,4496,0,0,1,0,'Small Brown Pouch'),
+(1100,4498,0,0,3,0,'Brown Leather Satchel'),
+(1100,5042,0,0,8,0,'Red Ribboned Wrapping Paper'),
+(1100,3111,0,0,9,0,'Crude Throwing Axe'),
+(1100,2946,0,0,12,0,'Balanced Throwing Dagger'),
+(1100,2947,0,0,11,0,'Light Throwing Knife'),
+(1100,3131,0,0,10,0,'Weighted Throwing Axe');
+UPDATE `creature_template` SET `VendorTemplateId` = 1100 WHERE `entry` IN (151,1691,2134,3076,3164,3186,3608);
+
+-- group moved to templates
+DELETE FROM `npc_vendor` WHERE entry IN (1692,3168,3614);
+DELETE FROM `npc_vendor_template` WHERE entry = 1101;
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(1101,2320,0,0,8,0,'Coarse Thread'),
+(1101,2324,0,0,14,0,'Bleach'),
+(1101,2604,0,0,13,0,'Red Dye'),
+(1101,2678,0,0,6,0,'Mild Spices'),
+(1101,2880,0,0,9,0,'Weak Flux'),
+(1101,2901,0,0,2,0,'Mining Pick'),
+(1101,3371,0,0,10,0,'Empty Vial'),
+(1101,4289,0,0,11,0,'Salt'),
+(1101,5956,0,0,3,0,'Blacksmith Hammer'),
+(1101,6217,0,0,5,0,'Copper Rod'),
+(1101,6256,0,0,4,0,'Fishing Pole'),
+(1101,6260,0,0,15,0,'Blue Dye'),
+(1101,6529,0,0,12,0,'Shiny Bauble'),
+(1101,7005,0,0,1,0,'Skinning Knife'),
+(1101,10648,0,0,16,0,'Common Parchment'),
+(1101,30817,0,0,7,0,'Simple Flour'),
+(1101,39354,0,0,17,0,'Light Parchment');
+UPDATE `creature_template` SET `VendorTemplateId` = 1101 WHERE `entry` IN (1692,3168,3614);
+
+-- group moved to templates
+DELETE FROM `npc_vendor` WHERE entry IN (1250,1692,2118,3081,3168,3187,3614,4194) AND `item` IN (2320,2324,2604,2678,2880,2901,3371,4289,5956,6217,6256,6260,6529,7005);
+DELETE FROM `npc_vendor_template` WHERE entry IN (112,1101);
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES 
+(1101,2320,0,0,8,0,'Coarse Thread'),
+(1101,2324,0,0,14,0,'Bleach'),
+(1101,2604,0,0,13,0,'Red Dye'),
+(1101,2678,0,0,6,0,'Mild Spices'),
+(1101,2880,0,0,9,0,'Weak Flux'),
+(1101,2901,0,0,2,0,'Mining Pick'),
+(1101,3371,0,0,10,0,'Empty Vial'),
+(1101,4289,0,0,11,0,'Salt'),
+(1101,5956,0,0,3,0,'Blacksmith Hammer'),
+(1101,6217,0,0,5,0,'Copper Rod'),
+(1101,6256,0,0,4,0,'Fishing Pole'),
+(1101,6260,0,0,15,0,'Blue Dye'),
+(1101,6529,0,0,12,0,'Shiny Bauble'),
+(1101,7005,0,0,1,0,'Skinning Knife');
+-- (1101,10648,0,0,16,0,'Common Parchment'), -- Blank Parchment, other vendor in classic/tbc
+-- (1101,30817,0,0,7,0,0,'Simple Flour'); -- tbc+
+-- (1101,39354,0,0,17,0,'Light Parchment'); -- wotlk+
+UPDATE `creature_template` SET `VendorTemplateId` = 1101 WHERE `entry` IN (1250,1692,2118,3081,3168,3187,3614,4194);
+
+-- Food
+-- group moved to templates
+DELETE FROM `npc_vendor` WHERE entry IN (2365,2814,3025,3089,3312,3368,3489,3705,3933,3935,3960,4954,5124,5870) AND `item` IN (117,2287,3770,3771,4599,8952);
+DELETE FROM `npc_vendor_template` WHERE entry IN (425,1200);
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES 
+(1200,117,0,0,1,0,'Tough Jerky'),
+(1200,2287,0,0,2,0,'Haunch of Meat'),
+(1200,3770,0,0,3,0,'Mutton Chop'),
+(1200,3771,0,0,4,0,'Wild Hog Shank'),
+(1200,4599,0,0,5,0,'Cured Ham Steak'),
+(1200,8952,0,0,6,0,'Roasted Quail');
+UPDATE `creature_template` SET `VendorTemplateId` = 1200 WHERE `entry` IN (2365,2814,3025,3089,3312,3368,3489,3705,3933,3935,3960,4954,5124,5870);
+
+-- group moved to templates
+DELETE FROM `npc_vendor` WHERE entry IN (258,955,1328,1697,5112,5140) AND `item` IN (159,1179,1205,1645,1708,2593,2594,2595,2596,2723,8766);
+DELETE FROM `npc_vendor_template` WHERE entry IN (404,1201);
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES 
+(1201,159,0,0,6,0,'Refreshing Spring Water'),
+(1201,1179,0,0,7,0,'Ice Cold Milk'),
+(1201,1205,0,0,8,0,'Melon Juice'),
+(1201,1645,0,0,10,0,'Moonberry Juice'),
+(1201,1708,0,0,9,0,'Sweet Nectar'),
+(1201,2593,0,0,2,0,'Flask of Port'),
+(1201,2594,0,0,4,0,'Flagon of Mead'),
+(1201,2595,0,0,5,0,'Jug of Bourbon'),
+(1201,2596,0,0,3,0,'Skin of Dwarven Stout'),
+(1201,2723,0,0,1,0,'Bottle of Pinot Noir'),
+(1201,8766,0,0,11,0,'Morning Glory Dew');
+UPDATE `creature_template` SET `VendorTemplateId` = 1201 WHERE `entry` IN (258,955,1328,1697,5112,5140,19617);
+
+-- group moved to templates
+DELETE FROM `npc_vendor` WHERE entry IN (982,2388,3411,3621,3881,3882,4169,4782,4875,4879,4963,5611,6928,6929,7485,7731,7733,8125,9356,11118,12196) AND `item` IN (117,159,1179,1205,1645,1708,2287,3770,3771,4599,8766,8952);
+DELETE FROM `npc_vendor_template` WHERE entry IN (410,1202);
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES 
+(1202,117,0,0,1,0,'Tough Jerky'),
+(1202,159,0,0,7,0,'Refreshing Spring Water'),
+(1202,1179,0,0,8,0,'Ice Cold Milk'),
+(1202,1205,0,0,9,0,'Melon Juice'),
+(1202,1645,0,0,11,0,'Moonberry Juice'),
+(1202,1708,0,0,10,0,'Sweet Nectar'),
+(1202,2287,0,0,2,0,'Haunch of Meat'),
+(1202,3770,0,0,3,0,'Mutton Chop'),
+(1202,3771,0,0,4,0,'Wild Hog Shank'),
+(1202,4599,0,0,5,0,'Cured Ham Steak'),
+(1202,8766,0,0,12,0,'Morning Glory Dew'),
+(1202,8952,0,0,6,0,'Roasted Quail');
+UPDATE `creature_template` SET `VendorTemplateId` = 1202 WHERE `entry` IN (982,2388,3411,3621,3881,3882,4169,4782,4875,4879,4963,5611,6928,6929,7485,7731,7733,8125,9356,11118,12196);
+
+-- not a vendor - https://www.wowhead.com/wotlk/npc=4963/mikhail#comments:id=525125
+DELETE FROM `npc_vendor` WHERE `entry` = 4963;
+UPDATE `creature_template` SET `VendorTemplateId` = 0 WHERE `entry` = 4963;
 
