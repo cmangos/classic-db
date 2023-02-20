@@ -1,0 +1,86 @@
+-- Tower in Northern Barrens
+
+-- Mutated Venture Co. Drone 7310
+UPDATE creature SET spawndist=7, MovementType=1 WHERE guid IN (15075,15076);
+
+-- Venture Co. Drone 7067
+UPDATE creature SET position_x = 1204.107, position_y = -2936.0366, position_z = 91.791664, spawndist = 0, MovementType = 0 WHERE guid = 15095;
+UPDATE creature SET position_x = 1204.107, position_y = -2936.0366, position_z = 91.791664, spawndist = 0, MovementType = 0 WHERE guid = 15094;
+
+DELETE FROM creature_movement WHERE id IN (15094,15095);
+-- remove from linking
+DELETE FROM `creature_linking` WHERE master_guid IN (15094,15095);
+
+-- moved to spawn_groups
+DELETE FROM `spawn_group` WHERE id = 19986;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(19986, 'Barrens - Venture Co. Drone 7067 x2 - Patrol', 0, 0, 0, 1);
+
+DELETE FROM `spawn_group_spawn` WHERE id = 19986;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(19986, 15095, 0),
+(19986, 15094, 1);
+
+DELETE FROM `spawn_group_formation` WHERE id = 19986;
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(19986, 1, 4, 0, 19986, 4, 'Barrens - Venture Co. Drone 7067 x2 - Patrol');
+DELETE FROM `waypoint_path_name` WHERE PathId = 19986;
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(19986,'Barrens - Venture Co. Drone 7067 x2 - Patrol');
+DELETE FROM `waypoint_path` WHERE PathId = 19986;
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(19986,1,1204.107,-2936.0366,91.791664,100,3000,0),
+(19986,2,1204.1736,-2942.3406,91.791664,100,0,0),
+(19986,3,1206.2141,-2946.8337,91.791664,100,0,0),
+(19986,4,1208.0824,-2951.3677,91.791664,100,0,0),
+(19986,5,1209.1042,-2953.9658,91.791664,100,0,0),
+(19986,6,1212.4221,-2958.0063,91.791664,100,0,0),
+(19986,7,1215.1992,-2959.3445,91.9755,100,0,0),
+(19986,8,1219.6766,-2960.0945,91.791664,100,0,0),
+(19986,9,1222.1876,-2960.7395,91.791664,100,0,0),
+(19986,10,1226.9395,-2960.0618,91.791664,100,0,0),
+(19986,11,1230.1438,-2958.3633,91.791664,100,0,0),
+(19986,12,1232.992,-2956.1692,91.791664,100,0,0),
+(19986,13,1236.2178,-2953.2024,91.791664,100,0,0),
+(19986,14,1238.5945,-2949.9548,91.791664,100,0,0),
+(19986,15,1239.5532,-2948.298,91.791664,100,3000,0);
+
+-- Venture Co. Patroller 7308
+UPDATE creature SET position_x = 1219.9712, position_y = -2921.0486, position_z = 107.07902, spawndist = 0, MovementType = 2 WHERE guid = 15071;
+UPDATE creature SET position_x = 1222.2346, position_y = -2913.4192, position_z = 107.05825, spawndist = 0, MovementType = 2 WHERE guid = 15070;
+-- waypoints
+DELETE FROM creature_movement WHERE id IN (15071,15070);
+INSERT INTO creature_movement (`id`, `point`, `positionx`, `positiony`, `positionz`, `orientation`, `waittime`, `scriptid`) VALUES
+-- 15071
+(15071,1,1219.9712,-2921.0486,107.07902,100,0,0),
+(15071,2,1222.7045,-2917.7373,107.13307,100,0,0),
+(15071,3,1226.2665,-2914.9932,107.15731,100,0,0),
+(15071,4,1230.4869,-2916.0056,107.209625,100,0,0),
+(15071,5,1234.3363,-2917.205,107.171486,100,0,0),
+(15071,6,1235.8229,-2921.4648,107.19078,100,0,0),
+(15071,7,1236.1244,-2923.7603,107.22068,100,0,0),
+(15071,8,1233.838,-2927.4805,107.199646,100,0,0),
+(15071,9,1230.7213,-2929.7864,107.150986,100,0,0),
+(15071,10,1225.9384,-2930.0918,107.20878,100,0,0),
+(15071,11,1223.4194,-2929.1477,107.19924,100,0,0),
+(15071,12,1220.5221,-2924.9097,107.07234,100,0,0),
+-- 15070
+(15070,1,1222.2346,-2913.4192,107.05825,100,0,0),
+(15070,2,1218.8186,-2916.5852,107.078964,100,0,0),
+(15070,3,1216.2983,-2919.14,107.03105,100,0,0),
+(15070,4,1216.8662,-2923.156,107.02403,100,0,0),
+(15070,5,1217.202,-2926.3586,107.01666,100,0,0),
+(15070,6,1218.8988,-2931.0852,107.05731,100,0,0),
+(15070,7,1223.0626,-2932.841,107.07088,100,0,0),
+(15070,8,1225.6158,-2933.762,107.09749,100,0,0),
+(15070,9,1230.7496,-2934.9158,107.1449,100,0,0),
+(15070,10,1232.6292,-2932.4575,107.14823,100,0,0),
+(15070,11,1236.8115,-2929.3137,107.11569,100,0,0),
+(15070,12,1238.8789,-2927.525,107.168846,100,0,0),
+(15070,13,1238.9832,-2923.4583,107.21108,100,0,0),
+(15070,14,1237.9032,-2918.399,107.10255,100,0,0),
+(15070,15,1237.7615,-2916.074,107.08725,100,0,0),
+(15070,16,1234.5751,-2913.6917,107.06771,100,0,0),
+(15070,17,1230.1871,-2912.4285,107.09743,100,0,0),
+(15070,18,1227.0123,-2911.3389,107.039566,100,0,0);
+
