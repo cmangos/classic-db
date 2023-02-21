@@ -274,6 +274,52 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `cond
 (5942,6532,0,0,6,0,'Bright Baubles'),
 (5942,6533,2,9000,7,0,'Aquadynamic Fish Attractor');
 
+-- Tharynn Bouden 66 - (17 items in classic)
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 66;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(66,2320,0,0,8,0,'Coarse Thread'),
+(66,2324,0,0,14,0,'Bleach'),
+(66,2604,0,0,13,0,'Red Dye'),
+(66,2678,0,0,6,0,'Mild Spices'),
+(66,2880,0,0,9,0,'Weak Flux'),
+(66,2901,0,0,2,0,'Mining Pick'),
+(66,3371,0,0,10,0,'Empty Vial'),
+(66,4289,0,0,11,0,'Salt'),
+(66,5956,0,0,3,0,'Blacksmith Hammer'),
+(66,6217,0,0,5,0,'Copper Rod'),
+(66,6256,0,0,4,0,'Fishing Pole'),
+(66,6260,0,0,15,0,'Blue Dye'),
+(66,6270,1,9000,0,0,'Pattern: Blue Linen Vest'), -- 1	9000 already
+(66,6325,0,0,18,0,'Recipe: Brilliant Smallfish'),
+(66,6328,0,0,19,0,'Recipe: Longjaw Mud Snapper'),
+(66,6529,0,0,12,0,'Shiny Bauble'),
+(66,7005,0,0,1,0,'Skinning Knife');
+-- (66,30817,0,0,7,0,'Simple Flour');
+
+-- Barkeep Dobbins 465 - 18 items in classic
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 465;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(465,159,0,0,2,0,'Refreshing Spring Water'),
+(465,414,0,0,14,0,'Dalaran Sharp'),
+(465,422,0,0,15,0,'Dwarven Mild'),
+(465,1179,0,0,3,0,'Ice Cold Milk'),
+(465,1205,0,0,4,0,'Melon Juice'),
+(465,1645,0,0,6,0,'Moonberry Juice'),
+(465,1707,0,0,16,0,'Stormwind Brie'),
+(465,1708,0,0,5,0,'Sweet Nectar'),
+(465,1939,0,0,1,0,'Skin of Sweet Rum'),
+(465,2070,0,0,13,0,'Darnassian Bleu'),
+(465,2593,0,0,9,0,'Flask of Port'),
+(465,2594,0,0,11,0,'Flagon of Mead'),
+(465,2595,0,0,12,0,'Jug of Bourbon'),
+(465,2596,0,0,10,0,'Skin of Dwarven Stout'),
+(465,2723,0,0,8,0,'Bottle of Pinot Noir'),
+(465,3927,0,0,17,0,'Fine Aged Cheddar'),
+(465,8766,0,0,7,0,'Morning Glory Dew'),
+(465,8932,0,0,18,0,'Alterac Swiss');
+
 -- ------------------------
 -- Templates
 -- Weapons/armor
