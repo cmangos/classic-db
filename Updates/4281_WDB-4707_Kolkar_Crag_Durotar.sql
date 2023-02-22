@@ -39,7 +39,7 @@ INSERT INTO creature_movement (`id`, `point`, `positionx`, `positiony`, `positio
 (6592,12,-1016.3214,-4424.8374,26.221434,100,0,0),
 (6592,13,-1010.3958,-4422.237,26.490477,100,2000,0),
 -- 12926
-(12926,1,-946.34204,-4497.454,28.634068,100,1000,21),
+(12926,1,-946.34204,-4497.454,28.634068,100,1,312001),
 (12926,2,-957.75714,-4500.8384,25.858488,100,0,0),
 (12926,3,-966.61316,-4506.733,25.733488,100,0,0),
 (12926,4,-972.24384,-4511.816,25.965178,100,0,0),
@@ -50,4 +50,8 @@ INSERT INTO creature_movement (`id`, `point`, `positionx`, `positiony`, `positio
 (12926,9,-990.051,-4564.4106,25.936129,100,0,0),
 (12926,10,-989.3495,-4570.9473,25.681177,100,0,0),
 (12926,11,-988.3284,-4581.595,27.092667,100,60000,0);
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 312001;
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
+(312001, 0, 0, 20, 1, 5, 24000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kolkar Outrunner 3120 - MovementType 1 and Spawndist 5 (24secs)');
 

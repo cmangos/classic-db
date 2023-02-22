@@ -5,7 +5,7 @@ DELETE FROM gossip_menu WHERE entry IN (1801,1802);
 INSERT INTO gossip_menu (entry,text_id) VALUES
 (1801,2434),
 (1802,2433);
-DELETE FROM `conditions` WHERE `condition_entry` = 283; -- 283	9	3909	0	0	0	0	Quest ID 3909 Taken was linked to 1802	2434
+-- DELETE FROM `conditions` WHERE `condition_entry` = 283; -- 283	9	3909	0	0	0	0	Quest ID 3909 Taken was linked to 1802	2434
 
 DELETE FROM gossip_menu_option WHERE menu_id IN (1801,1802);
 INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
