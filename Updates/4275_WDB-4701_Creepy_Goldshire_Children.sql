@@ -9,7 +9,7 @@ INSERT INTO game_event_time VALUES
 -- Creepy Goldshire Children - RP
 DELETE FROM `spawn_group` WHERE id = 19989;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(19989, 'Elwynn Forest - Goldshire - Creepy Goldshire Children - Day RP', 0, 0, 9108, 0x02);
+(19989, 'Elwynn Forest - Goldshire - Creepy Goldshire Children - Day RP', 0, 0, 9108, 10);
 
 DELETE FROM `spawn_group_spawn` WHERE id = 19989;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
