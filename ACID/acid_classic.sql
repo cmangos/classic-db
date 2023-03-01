@@ -4239,8 +4239,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('135001','1350','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Theresa Moulaine - Summon Stormwind City Guard on Aggro'),
 -- Brother Cassius
 ('135101','1351','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Cassius - Summon Stormwind City Guard on Aggro'),
--- Adam (1366) - NSR
--- Billy (1367) - NSR
+-- Adam 1366
+('136601','1366','30','0','80','1','5','1367','0','0','0','0','53','9994','0','0','0','0','0','0','0','0','0','0','Adam - (80% chance) START_RELAY_SCRIPT on Receive AI Event Custom A'),
+-- Billy 1367
+('136701','1367','1','0','100','1','30000','60000','55000','120000','0','0','54','0','0','28','45','5','50','0','0','0','0','0','Billy - START_RELAY_SCRIPT (Random) and Send Event A on OOC Timer'),
 -- Justin 1368
 ('136801','1368','1','0','100','1','30000','60000','30000','60000','0','0','53','4','0','0','0','0','0','0','0','0','0','0','Justin - Start Relay Script OOC'),
 -- Brandon (1370) - NSR
