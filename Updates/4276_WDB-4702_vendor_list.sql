@@ -369,6 +369,29 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `cond
 (1257,18256,0,0,27,0,'Imbued Vial'),
 (1257,21177,0,0,22,0,'Symbol of Kings');
 
+-- Kathrum Axehand 5509
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 5509;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(5509,2522,0,0,1,0,'Crescent Axe'),
+(5509,2523,0,0,3,0,'Bullova'),
+(5509,2530,0,0,2,0,'Francisca'),
+(5509,2531,0,0,4,0,'Great Axe');
+
+-- Catherine Leland 5494
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 5494;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(5494,6256,0,0,4,0,'Fishing Pole'),
+(5494,6325,0,0,1,0,'Recipe: Brilliant Smallfish'),
+(5494,6330,0,0,3,0,'Recipe: Bristle Whisker Catfish'),
+(5494,6365,1,7200,8,0,'Strong Fishing Pole'),
+(5494,6368,0,0,2,0,'Recipe: Rainbow Fin Albacore'),
+(5494,6529,0,0,5,0,'Shiny Bauble'),
+(5494,6530,0,0,6,0,'Nightcrawlers'),
+(5494,6532,0,0,7,0,'Bright Baubles'),
+(5494,6533,2,3600,9,0,'Aquadynamic Fish Attractor');
+
 -- ------------------------
 -- Templates
 -- Weapons/armor
