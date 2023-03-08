@@ -494,7 +494,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+156, 10, -8898.99, 2022.11, 20.8047, 0, 0, 0),
 (@CGUID+156, 11, -8863.61, 2021.74, 20.8047, 0, 0, 0),
 (@CGUID+156, 12, -8823.65, 2020.32, 22.7897, 0, 0, 0),
-(@CGUID+160, 1, -8605.82, 1458.3, 32.032, 0, 0, 1534301),
+(@CGUID+160, 1, -8605.82, 1458.3, 32.032, 0, 1, 5),
 (@CGUID+160, 2, -8585.67, 1436.71, 32.0647, 0, 0, 0),
 (@CGUID+160, 3, -8554.36, 1453.02, 32.4456, 0, 0, 0),
 (@CGUID+160, 4, -8531.38, 1409.84, 32.032, 0, 0, 0),
@@ -514,7 +514,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+160, 18, -8571.97, 1465.18, 32.032, 0, 0, 0),
 (@CGUID+160, 19, -8599.51, 1480.4, 32.614, 0, 0, 0),
 (@CGUID+160, 20, -8571.97, 1465.18, 32.032, 0, 0, 0),
-(@CGUID+161, 1, -8634.81, 1443.31, 32.485, 0, 0, 1534301),
+(@CGUID+161, 1, -8634.81, 1443.31, 32.485, 0, 1, 5),
 (@CGUID+161, 2, -8648.35, 1429.66, 32.2874, 0, 0, 0),
 (@CGUID+161, 3, -8649.21, 1411.48, 32.2743, 0, 0, 0),
 (@CGUID+161, 4, -8637.67, 1396.44, 32.0447, 0, 0, 0),
@@ -538,7 +538,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+161, 22, -8599.31, 1415.22, 32.4136, 0, 0, 0),
 (@CGUID+161, 23, -8601.86, 1433.28, 32.6127, 0, 0, 0),
 (@CGUID+161, 24, -8614.91, 1446.67, 32.0648, 0, 0, 0),
-(@CGUID+162, 1, -8586.89, 1427.87, 33.0639, 0, 0, 1534301),
+(@CGUID+162, 1, -8586.89, 1427.87, 33.0639, 0, 1, 5),
 (@CGUID+162, 2, -8589.12, 1433.89, 32.5621, 0, 0, 0),
 (@CGUID+162, 3, -8600.3, 1448.62, 32.0154, 0, 0, 0),
 (@CGUID+162, 4, -8617.88, 1455.27, 32.032, 0, 0, 0),
@@ -550,7 +550,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+162, 10, -8611.6, 1388.22, 32.032, 0, 0, 0),
 (@CGUID+162, 11, -8596.27, 1397.88, 32.4044, 0, 0, 0),
 (@CGUID+162, 12, -8588.44, 1415.01, 32.0373, 0, 0, 0),
-(@CGUID+163, 1, -8707.97, 1495.3, 32.032, 0, 0, 1534301),
+(@CGUID+163, 1, -8707.97, 1495.3, 32.032, 0, 1, 5),
 (@CGUID+163, 2, -8683.52, 1489.15, 32.0319, 0, 0, 0),
 (@CGUID+163, 3, -8652.9, 1459.57, 32.0319, 0, 0, 0),
 (@CGUID+163, 4, -8624.12, 1441.95, 32.864, 0, 0, 0),
@@ -584,7 +584,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+163, 32, -8674.11, 1424.48, 32.032, 0, 0, 0),
 (@CGUID+163, 33, -8676.5, 1465.33, 32.0313, 0, 0, 0),
 (@CGUID+163, 34, -8707.97, 1495.3, 32.032, 0, 0, 0),
-(@CGUID+164, 1, -8677.87, 1540.74, 31.9674, 0, 0, 1534301),
+(@CGUID+164, 1, -8677.87, 1540.74, 31.9674, 0, 1, 5),
 (@CGUID+164, 2, -8698.72, 1557.43, 31.9674, 0, 0, 0),
 (@CGUID+164, 3, -8711.35, 1570.33, 26.1765, 0, 0, 0),
 (@CGUID+164, 4, -8727.42, 1587.9, 21.5113, 0, 0, 0),
@@ -600,7 +600,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+164, 14, -8620.83, 1486.3, 31.9437, 0, 0, 0),
 (@CGUID+164, 15, -8631.43, 1513.66, 31.9515, 0, 0, 0),
 (@CGUID+164, 16, -8652.03, 1526.24, 32.032, 0, 0, 0),
-(@CGUID+165, 1, -8643.2, 1418.83, 32.9521, 0, 0, 1534301),
+(@CGUID+165, 1, -8643.2, 1418.83, 32.9521, 0, 1, 5),
 (@CGUID+165, 2, -8623.28, 1444.95, 32.4501, 0, 0, 0),
 (@CGUID+165, 3, -8614.85, 1438.85, 32.6825, 0, 0, 0),
 (@CGUID+165, 4, -8600.55, 1419.44, 32.2653, 0, 0, 0),
@@ -1540,9 +1540,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id=1534301;
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1534301, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AQ20 - Qiraji Swarmguard');
+-- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (15338, 1000, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops small obsidian chunk'), -- Obsidian Destroyer
