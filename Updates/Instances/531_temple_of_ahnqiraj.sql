@@ -1555,8 +1555,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+16, 180745, 531, -8652.2, 2020.92, 108.577, 0.244346, 0, 0, 0.121869, 0.992546, 7200, 7200), -- Grasp of C'Thun
 (@OGUID+17, 180745, 531, -8663.34, 2029.9, 108.577, 4.45059, 0, 0, -0.793353, 0.608762, 7200, 7200); -- Grasp of C'Thun
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+1, 100, 1);
+INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
+(@OGUID+1, 1);
 
 -- ======
 -- EVENTS

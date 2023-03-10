@@ -735,8 +735,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+72, 181096, 289, -3.82, 141.88, 83.9, 0, 0, 0, 0, 0, 180, 180), -- Brazier of Invocation Spell Focus 20 yd
 (@OGUID+73, 179746, 289, 139.496, 174.816, 95.5388, 3.60657, 0, 0, 0.973096, -0.2304, 300, 300); -- The Great Ossuary
 
+INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
+(@OGUID+20, 0);
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+20, 100, 0),
 (@OGUID+70, 0, -1),
 (@OGUID+71, 0, -1),
 (@OGUID+72, 0, -1),
