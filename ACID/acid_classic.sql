@@ -18858,7 +18858,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stoneclaw Totem IV 3913 - TotemAI
 -- Sentry Totem 3968 - npc_sentry_totem
 -- Silithid Swarm 4196
-('419601','4196','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Set ReactState Defensive on Spawn'),
+('419601','4196','11','0','100','0','0','0','0','0','0','0','11','6590','0','34','50','1','0','0','0','0','0','0','Silithid Swarm - Cast Silithid Swarm Passive, Set ReactState Defensive on Spawn'),
 ('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
 -- Archery Target 5202
 ('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
