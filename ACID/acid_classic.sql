@@ -18805,9 +18805,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Salome (11776) - Critter
 -- Plagueland Termite 12120 - Critter
 -- Voice of Elune 12152 - Critter
--- Sickly Gazelle 12296 - spell_dummy_npc - Critter
+-- Sickly Gazelle 12296
+('1229601','12296','8','0','100','0','19512','-1','0','0','0','0','28','0','19502','0','33','12297','6','0','53','26','0','0','Sickly Gazelle - Remove aura and Kill Credit and START_RELAY_SCRIPT on Spell Hit'),
 -- Cured Gazelle 12297 - Critter
--- Sickly Deer (12298) - spell_dummy_npc - Critter
+-- Sickly Deer 12298
+('1229801','12298','8','0','100','0','19512','-1','0','0','0','0','28','0','19502','0','33','12299','6','0','53','27','0','0','Sickly Deer - Remove aura and Kill Credit and START_RELAY_SCRIPT on Spell Hit'),
 -- Cured Deer 12299 - Critter
 -- Nibbles 12383 - Critter
 -- Wisp (Ghost Visual Only) 12861 - Critter
