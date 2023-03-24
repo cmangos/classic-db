@@ -528,11 +528,11 @@ DELETE FROM creature_battleground WHERE guid IN (14031,14029,14030,14027);
 DELETE FROM creature_linking WHERE guid IN (14031,14029,14030,14027)
  OR master_guid IN (14031,14029,14030,14027);
 DELETE FROM creature WHERE guid IN (14031,14029,14030,14027);
-INSERT INTO creature (guid, id, map, spawnmask, phasemask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) values
-(14031,3236,1,1,1,-1556.86,-1962.77,91.6663,3.20061,300,300,0,0),
-(14029,3236,1,1,1,-1556.86,-1962.77,91.6663,3.20061,300,300,0,0),
-(14030,3236,1,1,1,-1556.86,-1962.77,91.6663,3.20061,300,300,0,0),
-(14027,3236,1,1,1,-1556.86,-1962.77,91.6663,3.20061,300,300,0,0);
+INSERT INTO creature (guid, id, map, spawnmask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) values
+(14031,3236,1,1,-1556.86,-1962.77,91.6663,3.20061,300,300,0,0),
+(14029,3236,1,1,-1556.86,-1962.77,91.6663,3.20061,300,300,0,0),
+(14030,3236,1,1,-1556.86,-1962.77,91.6663,3.20061,300,300,0,0),
+(14027,3236,1,1,-1556.86,-1962.77,91.6663,3.20061,300,300,0,0);
 -- moved to spawn_groups
 DELETE FROM `spawn_group` WHERE id = 19972;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
@@ -590,3 +590,8 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`Positi
 (19972,36,-2014.142,-2488.8018,93.97186,100,0,0),
 (19972,37,-2017.5295,-2516.6477,93.83863,100,0,0),
 (19972,38,-1985.4017,-2522.5613,95.47508,100,0,0);
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 21;
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
+(21, 0, 0, 20, 1, 5, 24000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GENERIC - Change Movement To 1 - Random (30secs TEMP) (around current location)');
+
