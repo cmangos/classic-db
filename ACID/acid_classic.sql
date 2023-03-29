@@ -19012,6 +19012,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Might of Kalimdor Marshal 15851
 -- Might of Kalimdor Major 15865
 -- Might of Kalimdor Archmage 15867
+-- Vanquished Tentacle 15901
+('1590101','15901','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Vanquished Tentacle - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
+('1590102','15901','11','0','100','0','0','0','0','0','0','0','11','26262','0','0','0','0','0','0','0','0','0','0','Vanquished Tentacle - Cast Birth on Spawn'),
 -- Darnassus Reveler 15905
 ('1590501','15905','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Darnassus Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Ironforge Reveler 15906
