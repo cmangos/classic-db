@@ -2576,12 +2576,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kyle (800) - NSR
 -- Eric (801) - NSR
 -- Jay (802) - NSR
--- Dana (804) - NSR
+-- Dana 804
+('80401','804','30','0','100','1','5','805','0','0','0','0','64','0','0','0','0','0','0','0','0','0','0','0','Dana - Stop following master on Receive AI Event Custom A'),
+('80402','804','30','0','100','1','6','805','0','0','0','0','64','1','0','0','0','0','0','0','0','0','0','0','Dana - Start following master on Receive AI Event Custom B'),
 -- Cameron (805) - NSR
--- John (806) - NSR
--- Lisa (807) - NSR
--- Aaron (810) - NSR
--- Jose (811) - NSR
+-- John 806
+('80601','806','30','0','100','1','5','805','0','0','0','0','64','0','0','0','0','0','0','0','0','0','0','0','John - Stop following master on Receive AI Event Custom A'),
+('80602','806','30','0','100','1','6','805','0','0','0','0','64','1','0','0','0','0','0','0','0','0','0','0','John - Start following master on Receive AI Event Custom B'),
+-- Lisa 807
+('80701','807','30','0','100','1','5','805','0','0','0','0','64','0','0','0','0','0','0','0','0','0','0','0','Lisa - Stop following master on Receive AI Event Custom A'),
+('80702','807','30','0','100','1','6','805','0','0','0','0','64','1','0','0','0','0','0','0','0','0','0','0','Lisa - Start following master on Receive AI Event Custom B'),
+-- Aaron 810
+('81001','810','30','0','100','1','5','805','0','0','0','0','64','0','0','0','0','0','0','0','0','0','0','0','Aaron - Stop following master on Receive AI Event Custom A'),
+('81002','810','30','0','100','1','6','805','0','0','0','0','64','1','0','0','0','0','0','0','0','0','0','0','Aaron - Start following master on Receive AI Event Custom B'),
+-- Jose 811
+('81101','811','30','0','100','1','5','805','0','0','0','0','64','0','0','0','0','0','0','0','0','0','0','0','Jose - Stop following master on Receive AI Event Custom A'),
+('81102','811','30','0','100','1','6','805','0','0','0','0','64','1','0','0','0','0','0','0','0','0','0','0','Jose - Start following master on Receive AI Event Custom B'),
 -- Young Forest Bear (822) - NSR
 -- Deputy Willem (823) - NSR
 -- Antonio Perelli (844) - NSR

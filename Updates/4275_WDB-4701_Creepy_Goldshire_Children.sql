@@ -1,16 +1,18 @@
 -- Game Event - DayTime 7AM to 7PM
-DELETE FROM game_event WHERE entry IN (400);
+-- Game Event - DayTime 7AM to 12AM
+DELETE FROM game_event WHERE entry IN (400,401);
 INSERT INTO game_event(entry, schedule_type, occurence, length, holiday, linkedTo, description) VALUES
-('400', '1', '1440', '780', '0', '0', 'DayTime 7AM to 8PM');
-DELETE FROM game_event_time WHERE entry IN (400);
+('400', '1', '1440', '780', '0', '0', 'DayTime 7AM to 8PM'),
+('401', '1', '1440', '300', '0', '0', 'DayTime 7AM to 12AM');
+DELETE FROM game_event_time WHERE entry IN (400,401);
 INSERT INTO game_event_time VALUES
-('400', '2006-01-01 07:00:00', '2035-12-30 20:00:00');
+('400', '2006-01-01 07:00:00', '2035-12-30 20:00:00'),
+('401', '2006-01-01 07:00:00', '2035-12-30 12:00:00');
 
 -- Creepy Goldshire Children - RP
 DELETE FROM `spawn_group` WHERE id = 19989;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(19989, 'Elwynn Forest - Goldshire - Creepy Goldshire Children - Day RP', 0, 0, 9108, 10);
-
+(19989, 'Elwynn Forest - Goldshire - Creepy Goldshire Children - Day RP', 0, 0, 9110, 10);
 DELETE FROM `spawn_group_spawn` WHERE id = 19989;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (19989, 79638, 0), -- Cameron 805
@@ -19,26 +21,22 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (19989, 79642, 3), -- Lisa 807
 (19989, 79643, 4), -- Aaron 810
 (19989, 79641, 5); -- Jose 811
-
-DELETE FROM conditions WHERE condition_entry IN (9108);
+DELETE FROM conditions WHERE condition_entry IN (9108,9110);
 INSERT INTO conditions (condition_entry, `type`, value1, value2, value3, flags, comments) VALUES
-(9108, 12, 400, 0, 0, 0, '');
-
+(9108, 12, 400, 0, 0, 0, ''),
+(9110, 12, 401, 0, 0, 0, '');
 DELETE FROM worldstate_name WHERE Id=19989;
 INSERT INTO worldstate_name(Id, Name) VALUES
 (19989,'Elwynn Forest - Goldshire - Creepy Goldshire Children - Day RP');
-
 DELETE FROM `spawn_group_formation` WHERE id = 19989;
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (19989, 6, 3, 0, 19989, 2, 'Elwynn Forest - Goldshire - Creepy Goldshire Children - Day RP');
-
 DELETE FROM `waypoint_path_name` WHERE PathId = 19989;
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (19989,'Elwynn Forest - Goldshire - Creepy Goldshire Children - Day RP');
-
 DELETE FROM `waypoint_path` WHERE PathId = 19989;
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
-(19989,1,-9373.37,-67.39773,69.30243,1.132,1,5), -- run
+(19989,1,-9373.37,-67.39773,69.30243,1.132,100,80504),
 (19989,2,-9377.875,-73.22725,69.354004,100,0,0),
 (19989,3,-9391.488,-68.817276,64.554,100,0,0),
 (19989,4,-9378.353,-73.96658,64.554,100,0,0),
@@ -171,20 +169,19 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`Positi
 (19989,131,-9378.614,-74.08203,69.354,100,0,0),
 (19989,132,-9375.098,-69.84104,69.354004,100,0,0),
 (19989,133,-9372.997,-66.33648,69.354004,100,0,0),
-(19989,134,-9373.5205,-67.71767,69.354004,1.117,1000,80503);
-
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (80501,80502,80503);
+(19989,134,-9373.5205,-67.71767,69.354004,1.117,18000001,80503); -- 5hrs
+DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 80501 AND 80504;
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (80501,0,20,1,3,865000,0,0,12,0,0,0,0,0,0,0,0,'Change Movement To 1 - Random (865secs TEMP) (around current location)'),
 (80502,0,20,1,3,595000,0,0,12,0,0,0,0,0,0,0,0,'Change Movement To 1 - Random (595secs TEMP) (around current location)'),
-(80503,1,20,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'idle'),
-(80503,10,51,151,19989,0,0,0,0,0,0,0,0,0,0,0,0,'disband formation'),
+(80503,10,35,5,100,0,0,0,0,0,0,0,0,0,0,0,0,'Send Event 5'),
 (80503,100,3,0,0,0,804,50,7,0,0,0,0,-9377.477,-67.8297,69.354004,0.29670596122741699,'Dana 804 - move'),
 (80503,101,3,0,0,0,806,50,7,0,0,0,0,-9375.019,-62.765915,69.354004,5.201081275939941406,'John 806 - move'),
 (80503,101,3,0,0,0,807,50,7,0,0,0,0,-9371.019,-71.20387,69.354004,1.93731546401977539,'Lisa 807 - move'),
 (80503,101,3,0,0,0,810,50,7,0,0,0,0,-9372.405,-65.68452,69.354,4.206243515014648437,'Aaron 810 - move'),
-(80503,101,3,0,0,0,811,50,7,0,0,0,0,-9368.688,-66.58949,69.354004,3.141592741012573242,'Jose 811 - move');
-
+(80503,101,3,0,0,0,811,50,7,0,0,0,0,-9368.688,-66.58949,69.354004,3.141592741012573242,'Jose 811 - move'),
+(80504,1,35,6,100,0,0,0,0,0,0,0,0,0,0,0,0,'Send Event 6'),
+(80504,2,25,1,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'RUN - ON');
 -- Kids spawn loc corrected + make them active
 UPDATE creature SET position_x = -9373.37, position_y = -67.39773, position_z = 69.30243, orientation = 1.132178544998168945, spawndist = 0, MovementType = 0 WHERE id IN (804,805,806,807,810,811);
 UPDATE creature_template SET ExtraFlags = ExtraFlags|4096 WHERE entry IN (804,805,806,807,810,811);
