@@ -4300,10 +4300,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('144401','1444','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Brother Kristoff - Summon Stormwind City Guard on Aggro'),
 -- Morgg Stormshot
 ('147201','1472','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Morgg Stormshot - Summon Stormwind City Guard on Aggro'),
--- Christoph Faral  (HAS SERIES IF SPEECH SAYS)
-('147701','1477','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Christoph Faral - Summon Stormwind City Guard on Aggro'),
--- Aedis Brom  (HAS SERIES IF SPEECH SAYS)
-('147801','1478','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Aedis Brom - Summon Stormwind City Guard on Aggro'),
+-- Christoph Faral 1477
+('147701','1477','30','0','100','1','5','1478','0','0','0','0','64','0','0','0','0','0','0','0','0','0','0','0','Christoph Faral - Stop following master on Receive AI Event Custom A'),
+('147702','1477','30','0','100','1','6','1478','0','0','0','0','64','1','0','0','0','0','0','0','0','0','0','0','Christoph Faral - Start following master on Receive AI Event Custom B'),
+('147703','1477','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Christoph Faral - Summon Stormwind City Guard on Aggro'),
+-- Aedis Brom 1478
+('147801','1478','1','0','100','1','60000','140000','60000','140000','0','0','53','-33','0','0','0','0','0','0','0','0','0','0','Aedis Brom - START_RELAY_SCRIPT (Random) on OOC Timer'),
+('147802','1478','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Aedis Brom - Summon Stormwind City Guard on Aggro'),
 -- Baros Alexston
 ('164601','1646','4','0','100','0','0','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Baros Alexston - Summon Stormwind City Guard on Aggro'),
 -- Defias Prisoner (1706) - ALREADY SCRIPTED IN STOCKADE
