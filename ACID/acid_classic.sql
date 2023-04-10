@@ -11414,7 +11414,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ====================
 -- Stonetalon Mountains
 -- ====================
--- Compact Harvest Reaper (2676) - NSR
+-- Compact Harvest Reaper (2676)
+('267601','2676','29','0','100','0','600000','600000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Compact Harvest Reaper - Kill self after 10m'),
 -- Denni'ka
 ('341101','3411','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Denni''ka - Flee at 15% HP'),
 -- Serpentbloom Snake (3680) - NSR
@@ -18854,6 +18855,25 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('267403','2674','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Advanced Target Dummy - Despawn 0 on Death'),
 -- Explosive Sheep 2675
 ('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
+<<<<<<< HEAD:ACID/acid_classic.sql
+=======
+('267502','2675','29','0','100','0','180000','180000','0','0','0','0','11','8329','0','0','0','0','0','0','0','0','0','0','Explosive Sheep - Kill self after 3m'),
+-- Love Fool 16111
+('1611101','16111','29','0','100','0','15000','15000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Love Fool - Despawn after 15s'),
+-- Healing Ward V 2992 - TotemAI
+-- Healing Stream Totem 3527 - TotemAI
+-- Healing Ward 3560 - TotemAI
+-- Mana Spring Totem 3573 - TotemAI
+-- Stoneclaw Totem 3579 - TotemAI
+-- Healing Ward IV 3844 - TotemAI
+-- Searing Totem II 3902 - TotemAI
+-- Searing Totem III 3903 - TotemAI
+-- Searing Totem IV 3904 - TotemAI
+-- Healing Stream Totem II 3906 - TotemAI
+-- Healing Stream Totem III 3907 - TotemAI
+-- Healing Stream Totem IV 3908 - TotemAI
+-- Healing Stream Totem V 3909 - TotemAI
+>>>>>>> 9be139ded ([ACID] "Tempfix" some item spawned creatures not despawning after x seconds. (#1123)):ACID/acid_tbc.sql
 -- Stoneclaw Totem II 3911 - TotemAI
 -- Stoneclaw Totem III 3912 - TotemAI
 -- Stoneclaw Totem IV 3913 - TotemAI
