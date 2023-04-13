@@ -5158,6 +5158,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Exzhal 14910 - NSR
 -- Zandalar Enforcer 14911 - NSR
 -- Captured Hakkari Zealot 14912 - NSR
+-- Pat's Hellfire Guy 15073
+('1507301','15073','1','0','100','0','10000','10000','0','0','0','0','11','24207','0','0','53','30','0','0','0','0','0','0','Pat\'s Hellfire Guy - Cast 24207 and START_RELAY_SCRIPT on OOC Timer'),
 -- Booty Bay Reveler 15723
 ('1572301','15723','1','0','100','1','15000','15000','15000','15000','0','0','10','1','4','11','0','0','0','0','0','0','0','0','Booty Bay Reveler - Random EMOTE_ONESHOT_TALK, EMOTE_ONESHOT_CHEER, EMOTE_ONESHOT_CHEER'),
 ('1572302','15723','22','0','100','1','34','0','0','0','0','0','11','26035','6','0','5','94','0','0','0','0','0','0','Booty Bay Reveler - Cast Celebrate Good Times!, EMOTE_ONESHOT_DANCE on TEXTEMOTE_DANCE'),
