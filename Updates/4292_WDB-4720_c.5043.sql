@@ -64,12 +64,13 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 
 DELETE FROM `waypoint_path` WHERE PathId = 19981;
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
-(19981,1,-8764.87,847.11,87.2577,3.86765,1000,504301),
+(19981,1,-8764.87,847.11,87.2577,3.86765,1000,504301), -- keep old script incase classic works different.
 (19981,2,-8789.37,827.108,97.6443,100,1000,2); -- 20 in wotlkmangos, missing update to make 2 truly generic
 
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 504301 AND 504305;
 -- 16	10836	Defias Rioter - Open Cell Door Sound
--- 25	1	Defias Rioter - Set Run Mode On
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
+(504301, 1000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Defias Rioter - Set Run Mode On');
 -- 16	10837	Defias Rioter - Close Cell Door Sound
 -- 15	37718
 -- INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
