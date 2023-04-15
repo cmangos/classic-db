@@ -20,7 +20,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (10508, 5760, 0.379, 0, 1, 1, 0, 'Eternium Lockbox'),
 (10508, 7910, 0.15, 0, 1, 1, 0, 'Star Ruby'),
 (10508, 7909, 0.15, 0, 1, 1, 0, 'Aquamarine'),
-(10508, 20400, 0.01, 0, 1, 1, 6012, 'Pumpkin Bag'), -- points towards Pumpkin Bag not being part of a Refloot due to seasonal item, he does not drop other bags!
+(10508, 20400, 0.01, 0, 1, 1, 162, 'Pumpkin Bag'), -- points towards Pumpkin Bag not being part of a Refloot due to seasonal item, he does not drop other bags!
 (10508, 35029, 100, 1, -35029, 1, 0, 'Scholomance (Boss Loot) - Ras Frostwhisper - Blue Items (Group 1)'),
 (10508, 35030, 100, 1, -35030, 1, 0, 'Scholomance (Boss Loot) - Ras Frostwhisper - Blue Items (Group 2)'),
 (10508, 60008, 3, 0, -60008, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 51-60) - (NPC Levels: 51-63) - VANILLA NPC ONLY'),
