@@ -187,3 +187,6 @@ INSERT INTO creature_spawn_entry (guid,entry) VALUES
 (8308,435),(8308,4463),(8308,615), -- Blackrock Champion 435 & Blackrock Shadowcaster 436 & Blackrock Tracker 615
 (17903,435),(17903,4463),(17903,615), -- Blackrock Champion 435 & Blackrock Shadowcaster 436 & Blackrock Tracker 615
 (17572,435),(17572,4463),(17572,615); -- Blackrock Champion 435 & Blackrock Shadowcaster 436 & Blackrock Tracker 615
+
+UPDATE `creature_template` SET `SpeedWalk` = 1 WHERE `entry` = 584; -- Kazon
+
