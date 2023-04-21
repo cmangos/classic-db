@@ -1402,45 +1402,53 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`Positi
 (19956,34,-1099.12,-1933.05,91.6911,100,0,0),
 (19956,35,-1068.17,-1929.04,91.9064,100,5000,21);
 
--- Brokespear 5838
+-- https://www.wowhead.com/wotlk/npc=5838/brokespear (5 nodes)
 -- missing added
-DELETE FROM creature_addon WHERE guid IN (13235);
-DELETE FROM creature_movement WHERE id IN (13235);
-DELETE FROM game_event_creature WHERE guid IN (13235);
-DELETE FROM game_event_creature_data WHERE guid IN (13235);
-DELETE FROM creature_battleground WHERE guid IN (13235);
-DELETE FROM creature_linking WHERE guid IN (13235)
- OR master_guid IN (13235);
-DELETE FROM creature WHERE guid IN (13235);
+DELETE FROM creature_addon WHERE guid IN (13235,191514,191515,191516);
+DELETE FROM creature_movement WHERE id IN (13235,191514,191515,191516);
+DELETE FROM game_event_creature WHERE guid IN (13235,191514,191515,191516);
+DELETE FROM game_event_creature_data WHERE guid IN (13235,191514,191515,191516);
+DELETE FROM creature_battleground WHERE guid IN (13235,191514,191515,191516);
+DELETE FROM creature_linking WHERE guid IN (13235,191514,191515,191516)
+ OR master_guid IN (13235,191514,191515,191516);
+DELETE FROM creature WHERE guid IN (13235,191514,191515,191516);
 INSERT INTO creature (guid, id, map, spawnmask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) values
-(13235,5838,1,1,-1397.823,-2750.0356,91.77308,2.042035102844238281,7200,10800,0,0);
+(191514,5838,1,1,-1528.44, -2889.18, 91.7501, 3.38594,7200,10800,0,0),
+(191515,5838,1,1,-1092.85, -2792.2, 91.7559, 3.9968,7200,10800,0,0),
+(191516,5838,1,1,-1342.71, -3125.48, 91.758, 0.331613,7200,10800,0,0),
+(13235,5838,1,1,-1397.823, -2750.0356, 91.77308,2.042035102844238281,7200,10800,0,0); -- 7200	10800
 -- moved to spawn_groups
 DELETE FROM `spawn_group` WHERE id = 19955;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (19955, 'Barrens - Brokespear 5838 - Rare', 0, 1, 0, 0);
 DELETE FROM `spawn_group_spawn` WHERE id = 19955;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(19955, 191514, -1),
+(19955, 191515, -1),
+(19955, 191516, -1),
 (19955, 20685, -1),
 (19955, 13235, -1);
 
--- Stonearm 5837
+-- Stonearm 5837 - https://www.wowhead.com/wotlk/npc=5837/stonearm#map (3-4 nodes)
 -- missing added
-DELETE FROM creature_addon WHERE guid IN (13236);
-DELETE FROM creature_movement WHERE id IN (13236);
-DELETE FROM game_event_creature WHERE guid IN (13236);
-DELETE FROM game_event_creature_data WHERE guid IN (13236);
-DELETE FROM creature_battleground WHERE guid IN (13236);
-DELETE FROM creature_linking WHERE guid IN (13236)
- OR master_guid IN (13236);
-DELETE FROM creature WHERE guid IN (13236);
+DELETE FROM creature_addon WHERE guid IN (13236,191513);
+DELETE FROM creature_movement WHERE id IN (13236,191513);
+DELETE FROM game_event_creature WHERE guid IN (13236,191513);
+DELETE FROM game_event_creature_data WHERE guid IN (13236,191513);
+DELETE FROM creature_battleground WHERE guid IN (13236,191513);
+DELETE FROM creature_linking WHERE guid IN (13236,191513)
+ OR master_guid IN (13236,191513);
+DELETE FROM creature WHERE guid IN (13236,191513);
 INSERT INTO creature (guid, id, map, spawnmask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) values
-(13236,5837,1,1,-232.9636,-1656.993,91.776634,5.951572895050048828,5400,9000,0,0);
+(191513,5837,1,1,61.6054, -2104.23, 91.75, 1.67552,5400,9000,0,0),
+(13236,5837,1,1,-232.9636,-1656.993,91.776634,5.951572895050048828,5400,9000,0,0); -- 5400	9000
 -- moved to spawn_groups
 DELETE FROM `spawn_group` WHERE id = 19954;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(19954, 'Barrens - Brokespear 5838 - Rare', 0, 1, 0, 0);
+(19954, 'Barrens - Stonearm 5837 - Rare', 0, 1, 0, 0);
 DELETE FROM `spawn_group_spawn` WHERE id = 19954;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(19954, 191513, -1),
 (19954, 20635, -1),
 (19954, 13236, -1);
 
