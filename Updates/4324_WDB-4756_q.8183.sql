@@ -105,3 +105,6 @@ DELETE FROM worldstate_name WHERE Id=19951;
 INSERT INTO worldstate_name(Id, Name) VALUES
 (19951,'Stranglethorn Vale - Yoyamba Isle - o.180402 spawn with q.8183');
 
+-- Correct UnitFlags & NpcFlags for Heart of Hakkar 15069 & Pat's Hellfire Guy 15073
+UPDATE `creature_template` SET `UnitFlags` = 33555200, `NpcFlags` = 0 WHERE `entry` IN (15069,15073);
+
