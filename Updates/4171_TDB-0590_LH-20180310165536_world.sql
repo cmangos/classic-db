@@ -41,5 +41,19 @@ REPLACE INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 -- https://www.wowhead.com/tbc/item=20951/narains-scrying-goggles
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance`=-1 WHERE `item`=20951; -- 1% or 5% befor
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
-(11667, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'); -- vmangos
+(11667, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- vmangos
+
+(11658, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- cmangos, but with 1% chance instead of 2% in tbc/wotlkmangos - Molten Giant
+(11659, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Molten Destroyer
+(11662, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Flamewaker Priest
+(11663, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Flamewaker Healer (missing in vmangos)
+(11664, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Flamewaker Elite (missing in vmangos)
+(11665, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Lava Annihilator
+(11666, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Firewalker
+(11668, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Firelord
+(11673, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Ancient Core Hound
+(12076, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Lava Elemental
+(12100, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Lava Reaver
+(12101, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'), -- Lava Surger
+(12119, 20951, -1, 0, 1, 1, 0, 'Narain\'s Scrying Goggles'); -- Flamewaker Protector
 
