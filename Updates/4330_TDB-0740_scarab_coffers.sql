@@ -97,8 +97,3 @@ UPDATE `creature_template` SET `CorpseDecay` = 5 WHERE `entry` = 15317;
 UPDATE `creature_template` SET `CorpseDecay` = 5 WHERE `entry` = 15316;
 UPDATE `creature_template` SET `Detection` = 50 WHERE `entry` = 15312;
 
--- maybe more missing (more missing probably)
-DELETE FROM `dbscripts_on_creature_death` WHERE `id` = 15311;
-INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
-(15311, 1000, 0, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anubisath Warder - Cast Drop Obsidian on Death');
-
