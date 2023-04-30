@@ -26,7 +26,7 @@ UPDATE creature SET position_x = -8764.87, position_y = 847.11, position_z = 87.
 
 DELETE FROM `creature_spawn_data_template` WHERE `entry` IN (9999);
 INSERT INTO `creature_spawn_data_template` (`entry`, `SpawnFlags`, `RelayId`) VALUES
-(9999,1,30510);
+(9999,1,30510); -- set active
 
 DELETE FROM `creature_spawn_data` WHERE guid BETWEEN 138550 AND 138553;
 INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES 
@@ -72,13 +72,13 @@ DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 504301 AND 504305;
 -- 25	1	Defias Rioter - Set Run Mode On
 -- 16	10837	Defias Rioter - Close Cell Door Sound
 -- 15	37718
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(504301,1,31,5043,50,0,0,0,0,0,0,0,0,0,0,0,0,'search for 5043'),
-(504301,100,16,10836,0,0,4995,50,7,0,0,0,0,0,0,0,0,'buddy - Play Sound');
+-- INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+-- (504301,1,31,5043,50,0,0,0,0,0,0,0,0,0,0,0,0,'search for 5043'),
+-- (504301,100,16,10836,0,0,4995,50,7,0,0,0,0,0,0,0,0,'buddy - Play Sound'); -- Table `dbscripts_on_creature_movement` using nonexistent sound (id: 10836) in SCRIPT_COMMAND_PLAY_SOUND for script id 504301
 
 DELETE FROM dbscripts_on_creature_death WHERE id IN (5043);
 INSERT INTO dbscripts_on_creature_death (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(5043,1,21,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'unactive'),
-(5043,2,31,5043,50,0,0,0,0x08,0,0,0,0,0,0,0,0,'search for 5043 - terminate if alive'),
-(5043,100,16,10837,0,0,4995,50,7,0,0,0,0,0,0,0,0,'buddy - Play sound');
+(5043,1,21,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'unactive');
+-- (5043,2,31,5043,50,0,0,0,0x08,0,0,0,0,0,0,0,0,'search for 5043 - terminate if alive'),
+-- (5043,100,16,10837,0,0,4995,50,7,0,0,0,0,0,0,0,0,'buddy - Play sound'); -- Table `dbscripts_on_creature_death` using nonexistent sound (id: 10837) in SCRIPT_COMMAND_PLAY_SOUND for script id 5043
 
