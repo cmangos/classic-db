@@ -18855,8 +18855,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('267403','2674','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Advanced Target Dummy - Despawn 0 on Death'),
 -- Explosive Sheep 2675
 ('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
-<<<<<<< HEAD:ACID/acid_classic.sql
-=======
 ('267502','2675','29','0','100','0','180000','180000','0','0','0','0','11','8329','0','0','0','0','0','0','0','0','0','0','Explosive Sheep - Kill self after 3m'),
 -- Love Fool 16111
 ('1611101','16111','29','0','100','0','15000','15000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Love Fool - Despawn after 15s'),
@@ -18873,7 +18871,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Healing Stream Totem III 3907 - TotemAI
 -- Healing Stream Totem IV 3908 - TotemAI
 -- Healing Stream Totem V 3909 - TotemAI
->>>>>>> 9be139ded ([ACID] "Tempfix" some item spawned creatures not despawning after x seconds. (#1123)):ACID/acid_tbc.sql
 -- Stoneclaw Totem II 3911 - TotemAI
 -- Stoneclaw Totem III 3912 - TotemAI
 -- Stoneclaw Totem IV 3913 - TotemAI
