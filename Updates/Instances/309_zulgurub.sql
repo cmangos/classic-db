@@ -930,8 +930,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0430, 11370, 309, -12286.3, -1645.34, 133.649, 5.16617, 7200, 7200, 0, 0), -- Razzashi Broodwidow
 (@CGUID+0431, 11370, 309, -12312.8, -1686.91, 131.308, 4.6604, 7200, 7200, 5, 1), -- Razzashi Broodwidow
 (@CGUID+0433, 11371, 309, -11649.5, -1565.6, 41.0883, 2.75762, 7200, 7200, 0, 0), -- Razzashi Serpent
-(@CGUID+0434, 11371, 309, -11583.6, -1805.16, 43.5651, 4.66155, 7200, 7200, 5, 1), -- Razzashi Serpent
-(@CGUID+0435, 11371, 309, -11583, -1793.24, 50.0265, 4.66155, 7200, 7200, 5, 1), -- Razzashi Serpent
 (@CGUID+0436, 11371, 309, -11927, -1385.89, 82.0706, 3.57792, 7200, 7200, 3, 1), -- Razzashi Serpent
 (@CGUID+0437, 0, 309, -11866.1230468750, -1312.9659423828125, 78.2720336914062500, 4.363323211669921875, 21600, 21600, 0, 0), -- Razzashi Serpent, Razzashi Adder
 (@CGUID+0441, 11371, 309, -11959.6, -1549.34, 40.7841, 2.26893, 7200, 7200, 0, 0), -- Razzashi Serpent
@@ -1346,7 +1344,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0987, 14750, 309, -12288.9111328125, -1472.4573974609375, 130.6835479736328125, 2.386638879776000976, 21600, 21600, 0, 0), -- Gurubashi Bat Rider
 -- Zul\'Gurub -- Razzashi Serpent | Razzashi Adder (2) Patrol 003
 (@CGUID+0990, 0, 309, -11549.2207031250, -1848.9637451171875, 84.33419799804687500, 4.140111923217773437, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
-(@CGUID+0991, 0, 309, -11550.9501953125, -1852.1029052734375, 84.03659820556640625, 1.087337136268615722, 21600, 21600, 0, 0); -- Razzashi Serpent / Razzashi Adder
+(@CGUID+0991, 0, 309, -11550.9501953125, -1852.1029052734375, 84.03659820556640625, 1.087337136268615722, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
+-- Zul\'Gurub -- Razzashi Serpent | Razzashi Adder (2) Patrol 004
+(@CGUID+0434, 0, 309, -11536.6259765625, -1782.0689697265625, 70.86794281005859375, 2.080583095550537109, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
+(@CGUID+0435, 0, 309, -11538.3984375000, -1780.2098388671875, 69.33707427978515625, 5.453408718109130859, 21600, 21600, 0, 0); -- Razzashi Serpent / Razzashi Adder
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+0437, 11371), (@CGUID+0437, 11372), -- Razzashi Serpent, Razzashi Adder
@@ -1697,6 +1698,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+0030, 'Zul\'Gurub - Zul\'Gurub - Bat (8) Patrol 000', '0', '0', '0', '1'),
 (@GROUP_ID+0031, 'Zul\'Gurub - Zul\'Gurub - Bat (8) Patrol 001', '0', '0', '0', '1'),
 (@GROUP_ID+0032, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003', '0', '0', '0', '1'),
+(@GROUP_ID+0033, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004', '0', '0', '0', '1'),
 -- gameobject
 (@GROUP_ID+1001, 'Zul\'Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '0', '0', '0');
 
@@ -1720,7 +1722,10 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@GROUP_ID+1001, 180229, 0, 0, 0), -- Jinxed Hoodoo Pile (s.24184)
 -- Razzashi Serpent | Razzashi Adder (2) Patrol 002
 (@GROUP_ID+0032, 11371, 0, 2, 0),
-(@GROUP_ID+0032, 11372, 0, 2, 0);
+(@GROUP_ID+0032, 11372, 0, 2, 0),
+-- Razzashi Serpent | Razzashi Adder (2) Patrol 003
+(@GROUP_ID+0033, 11371, 0, 2, 0),
+(@GROUP_ID+0033, 11372, 0, 2, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+000, @CGUID+468, 0, 00), -- Razzashi Serpent, Razzashi Adder
@@ -1794,8 +1799,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+0031, @CGUID+0985, 5, 50), -- Bloodseeker Bat (chance not confirmed, nor if it's this slot)
 (@GROUP_ID+0031, @CGUID+0986, 6, 00), -- Gurubashi Bat Rider
 (@GROUP_ID+0031, @CGUID+0987, 7, 00), -- Gurubashi Bat Rider
+-- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003
 (@GROUP_ID+0032, @CGUID+0990, 0, 00), -- Razzashi Serpent, Razzashi Adder
-(@GROUP_ID+0032, @CGUID+0991, 1, 00); -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0032, @CGUID+0991, 1, 00), -- Razzashi Serpent, Razzashi Adder
+-- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004
+(@GROUP_ID+0033, @CGUID+0434, 0, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0033, @CGUID+0435, 1, 00); -- Razzashi Serpent, Razzashi Adder
 
 INSERT INTO `spawn_group_spawn` (`guid`, `Id`) SELECT `guid`, @GROUP_ID+1001 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
 
@@ -1810,7 +1819,8 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@GROUP_ID+021, '3', '02', '0', @PATH_ID+0011, 4, 'Zul\'Gurub - Troll (3) Patrol 001'),
 (@GROUP_ID+030, '0', '10', '0', @PATH_ID+0020, 2, 'Zul\'Gurub - Bat (8) Patrol 000'),
 (@GROUP_ID+031, '0', '10', '0', @PATH_ID+0021, 2, 'Zul\'Gurub - Bat (8) Patrol 001'),
-(@GROUP_ID+032, '1', '03', '0', @PATH_ID+0022, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003');
+(@GROUP_ID+032, '1', '03', '0', @PATH_ID+0022, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003'),
+(@GROUP_ID+033, '1', '03', '0', @PATH_ID+0023, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@PATH_ID+0000,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
@@ -1823,7 +1833,8 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@PATH_ID+0011,'Zul\'Gurub - Troll (3) Patrol 001'),
 (@PATH_ID+0020,'Zul\'Gurub - Bat (8) Patrol 000'),
 (@PATH_ID+0021,'Zul\'Gurub - Bat (8) Patrol 001'),
-(@PATH_ID+0022,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002');
+(@PATH_ID+0022,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003'),
+(@PATH_ID+0023,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@PATH_ID+0000, 01, -11863.7529296875, -1313.4700927734375, 78.72680664062500000, 100, 0, 0),
@@ -1992,7 +2003,19 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+0022, 11, -11608.3085937500, -1796.7623291015625, 41.13563919067382812, 100, 0, 0),
 (@PATH_ID+0022, 12, -11630.7119140625, -1786.9908447265625, 42.43837356567382812, 100, 0, 0),
 (@PATH_ID+0022, 13, -11649.7910156250, -1801.5214843750000, 42.69132614135742187, 100, 0, 0),
-(@PATH_ID+0022, 14, -11654.5478515625, -1810.3747558593750, 42.80949020385742187, 100, 0, 0);
+(@PATH_ID+0022, 14, -11654.5478515625, -1810.3747558593750, 42.80949020385742187, 100, 0, 0),
+
+(@PATH_ID+0023, 01, -11536.7304687500, -1781.8819580078125, 70.68698883056640625, 100, 0, 0),
+(@PATH_ID+0023, 02, -11544.3046875000, -1787.8140869140625, 65.44748687744140625, 100, 0, 0),
+(@PATH_ID+0023, 03, -11556.8349609375, -1795.5504150390625, 57.54587554931640625, 100, 0, 0),
+(@PATH_ID+0023, 04, -11567.0283203125, -1793.9372558593750, 55.09878540039062500, 100, 0, 0),
+(@PATH_ID+0023, 05, -11578.6259765625, -1785.7139892578125, 50.36611938476562500, 100, 0, 0),
+(@PATH_ID+0023, 06, -11587.0253906250, -1803.8789062500000, 42.81508255004882812, 100, 0, 0),
+(@PATH_ID+0023, 07, -11586.2783203125, -1814.2578125000000, 41.64906692504882812, 100, 0, 0),
+(@PATH_ID+0023, 08, -11597.1523437500, -1830.3585205078125, 40.87318801879882812, 100, 0, 0),
+(@PATH_ID+0023, 09, -11612.7236328125, -1838.1774902343750, 42.92127609252929687, 100, 0, 0),
+(@PATH_ID+0023, 10, -11612.6054687500, -1854.1682128906250, 42.94056320190429687, 100, 0, 0),
+(@PATH_ID+0023, 11, -11623.0214843750, -1860.6818847656250, 45.10950851440429687, 100, 0, 0);
 
 -- =========
 -- DBSCRIPTS
