@@ -930,7 +930,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0430, 11370, 309, -12286.3, -1645.34, 133.649, 5.16617, 7200, 7200, 0, 0), -- Razzashi Broodwidow
 (@CGUID+0431, 11370, 309, -12312.8, -1686.91, 131.308, 4.6604, 7200, 7200, 5, 1), -- Razzashi Broodwidow
 (@CGUID+0433, 11371, 309, -11649.5, -1565.6, 41.0883, 2.75762, 7200, 7200, 0, 0), -- Razzashi Serpent
-(@CGUID+0436, 11371, 309, -11927, -1385.89, 82.0706, 3.57792, 7200, 7200, 3, 1), -- Razzashi Serpent
 (@CGUID+0437, 0, 309, -11866.1230468750, -1312.9659423828125, 78.2720336914062500, 4.363323211669921875, 21600, 21600, 0, 0), -- Razzashi Serpent, Razzashi Adder
 (@CGUID+0441, 11371, 309, -11959.6, -1549.34, 40.7841, 2.26893, 7200, 7200, 0, 0), -- Razzashi Serpent
 (@CGUID+0446, 11371, 309, -11885, -1368.42, 68.8007, 5.53269, 7200, 7200, 3, 1), -- Razzashi Serpent
@@ -946,13 +945,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0463, 11371, 309, -11544.7, -1788.09, 65.0068, 3.6944, 7200, 7200, 5, 1), -- Razzashi Serpent
 (@CGUID+0464, 11371, 309, -11556, -1795.03, 57.8967, 0.552799, 7200, 7200, 5, 1), -- Razzashi Serpent
 (@CGUID+0466, 11372, 309, -11643, -1573.21, 39.7114, 4.88692, 7200, 7200, 0, 0), -- Razzashi Adder
-(@CGUID+0467, 11372, 309, -11932.7, -1394.57, 80.4193, 3.90086, 7200, 7200, 3, 1), -- Razzashi Adder
 (@CGUID+0468, 0, 309, -11862.1572265625, -1317.2054443359375, 79.0371551513671875, 4.153883457183837890, 21600, 21600, 0, 0), -- Razzashi Serpent, Razzashi Adder
 (@CGUID+0470, 11372, 309, -11966.8, -1552.08, 41.2712, 0, 7200, 7200, 5, 1), -- Razzashi Adder
 (@CGUID+0477, 11372, 309, -11884.3, -1379.01, 66.4316, 3.36848, 7200, 7200, 3, 1), -- Razzashi Adder
 (@CGUID+0478, 11372, 309, -11556.7, -1487.4, 68.982, 6.24828, 7200, 7200, 0, 0), -- Razzashi Adder
-(@CGUID+0479, 11372, 309, -11934.3, -1328.75, 78.7419, 2.72271, 7200, 7200, 0, 0), -- Razzashi Adder
-(@CGUID+0480, 11372, 309, -11925.9, -1337.49, 78.4218, 3.38594, 7200, 7200, 0, 0), -- Razzashi Adder
 (@CGUID+0482, 11372, 309, -11741.8, -1323.33, 63.4595, 0.471239, 7200, 7200, 0, 0), -- Razzashi Adder
 (@CGUID+0483, 11372, 309, -11737.5, -1329.37, 63.4688, 2.02458, 7200, 7200, 0, 0), -- Razzashi Adder
 (@CGUID+0484, 11372, 309, -11727.9, -1338.77, 63.8019, 2.79253, 7200, 7200, 0, 0), -- Razzashi Adder
@@ -1287,6 +1283,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0822, 15111, 309, -11885.8408203125, -1877.8155517578125, 63.58702087402343750, 2.809980154037475585, 21600, 21600, 0, 0), -- Mad Servant
 (@CGUID+0823, 15111, 309, -11884.8408203125, -1876.8155517578125, 63.58702087402343750, 0.000000000000000000, 21600, 21600, 0, 0), -- Mad Servant
 (@CGUID+0824, 15111, 309, -11883.8408203125, -1875.8155517578125, 63.58702087402343750, 0.000000000000000000, 21600, 21600, 0, 0), -- Mad Servant
+-- Zul\'Gurub -- Razzashi Serpent | Razzashi Adder (2) Wandering 000
+(@CGUID+0479, 0, 309, -11934.2529296875, -1328.7517089843750, 78.74189758300781250, 2.722713708877563476, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
+(@CGUID+0480, 0, 309, -11925.9404296875, -1337.4871826171875, 78.42181396484375000, 3.385938644409179687, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
+-- Zul\'Gurub -- Razzashi Serpent | Razzashi Adder (2) Wandering 001
+(@CGUID+0436, 0, 309, -11932.4501953125, -1395.3247070312500, 80.41854858398437500, 0.733038306236267089, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
+(@CGUID+0467, 0, 309, -11926.9863281250, -1385.8947753906250, 82.07057952880859375, 3.577924966812133789, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
 -- Razzashi Serpent | Razzashi Adder (4) Wandering 000
 (@CGUID+0900, 0, 309, -12083.1191406250, -1694.7313232421875, 47.53757095336914062, 0.331612557172775268, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
 (@CGUID+0901, 0, 309, -12068.8173828125, -1701.6119384765625, 45.43975830078125000, 0.628318548202514648, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
@@ -1699,10 +1701,18 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+0031, 'Zul\'Gurub - Zul\'Gurub - Bat (8) Patrol 001', '0', '0', '0', '1'),
 (@GROUP_ID+0032, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003', '0', '0', '0', '1'),
 (@GROUP_ID+0033, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004', '0', '0', '0', '1'),
+(@GROUP_ID+0034, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000', '0', '0', '0', '1'),
+(@GROUP_ID+0035, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001', '0', '0', '0', '1'),
 -- gameobject
 (@GROUP_ID+1001, 'Zul\'Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '0', '0', '0');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+-- Razzashi Serpent | Razzashi Adder (2) Wandering 000
+(@GROUP_ID+0034, 11371, 0, 2, 0),
+(@GROUP_ID+0034, 11372, 0, 2, 0),
+-- Razzashi Serpent | Razzashi Adder (2) Wandering 001
+(@GROUP_ID+0035, 11371, 0, 2, 0),
+(@GROUP_ID+0035, 11372, 0, 2, 0),
 -- Razzashi Serpent | Razzashi Adder (4) Wandering 000
 (@GROUP_ID+0010, 11371, 1, 3, 0),
 (@GROUP_ID+0010, 11372, 1, 3, 0),
@@ -1804,7 +1814,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+0032, @CGUID+0991, 1, 00), -- Razzashi Serpent, Razzashi Adder
 -- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004
 (@GROUP_ID+0033, @CGUID+0434, 0, 00), -- Razzashi Serpent, Razzashi Adder
-(@GROUP_ID+0033, @CGUID+0435, 1, 00); -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0033, @CGUID+0435, 1, 00), -- Razzashi Serpent, Razzashi Adder
+-- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000
+(@GROUP_ID+0034, @CGUID+0479, 0, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0034, @CGUID+0480, 1, 00), -- Razzashi Serpent, Razzashi Adder
+-- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001
+(@GROUP_ID+0035, @CGUID+0436, 0, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0035, @CGUID+0467, 1, 00); -- Razzashi Serpent, Razzashi Adder
 
 INSERT INTO `spawn_group_spawn` (`guid`, `Id`) SELECT `guid`, @GROUP_ID+1001 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
 
