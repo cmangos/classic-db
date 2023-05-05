@@ -96,4 +96,10 @@ UPDATE `creature_template` SET `Detection` = 50 WHERE `entry` = 15509;
 UPDATE `creature_template` SET `CorpseDecay` = 5 WHERE `entry` = 15317;
 UPDATE `creature_template` SET `CorpseDecay` = 5 WHERE `entry` = 15316;
 UPDATE `creature_template` SET `Detection` = 50 WHERE `entry` = 15312;
+UPDATE `creature_template` SET `Detection` = 50 WHERE `entry` = 15233; -- Vekniss Guardian - Increased Aggro Radius'); - https://youtu.be/_MTgbediN0c?t=335
+UPDATE `creature_template` SET `Detection` = 30 WHERE `entry` = 15262; -- Obsidian Eradicator - Increased Aggro Radius'); - https://youtu.be/_MTgbediN0c?t=25
+UPDATE `creature_template` SET `Detection` = 50 WHERE `entry` = 15230; -- Vekniss Warrior - Increased Aggro Radius'); - using same as Guardian (same modelsize etc) vmangos 40
+UPDATE `creature_template` SET `Detection` = 50 WHERE `entry` = 15277; -- Anubisath Defender - Increased Aggro Radius'); - https://youtu.be/_MTgbediN0c?t=2515
+UPDATE `creature_template` SET `Detection` = 35 WHERE `entry` = 15229; -- Vekniss Soldier - Increased Aggro Radius'); - use vmangos value
+UPDATE `creature_template` SET `Detection` = 50 WHERE `entry` = 15240; -- Vekniss Hive Crawler - Increased Aggro Radius'); - https://youtu.be/_MTgbediN0c?t=1575
 
