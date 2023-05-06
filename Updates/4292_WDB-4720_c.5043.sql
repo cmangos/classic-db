@@ -24,13 +24,13 @@ DELETE FROM `game_event_creature` WHERE guid BETWEEN 138550 AND 138553;
 DELETE FROM `creature_movement` WHERE id BETWEEN 138550 AND 138553;
 UPDATE creature SET position_x = -8764.87, position_y = 847.11, position_z = 87.2577, spawndist = 0, MovementType = 0, spawntimesecsmin = 600, spawntimesecsmax = 600 WHERE guid IN (138550,138551,138552,138553); -- make sure they will spawn only once during 10min event
 
-DELETE FROM `creature_spawn_data_template` WHERE `entry` IN (9999);
+DELETE FROM `creature_spawn_data_template` WHERE `entry` IN (9989);
 INSERT INTO `creature_spawn_data_template` (`entry`, `SpawnFlags`, `RelayId`) VALUES
-(9999,1,30510); -- set active
+(9989,1,30510); -- set active
 
 DELETE FROM `creature_spawn_data` WHERE guid BETWEEN 138550 AND 138553;
 INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES 
-(138550,9999),(138551,9999),(138552,9999),(138553,9999);
+(138550,9989),(138551,9989),(138552,9989),(138553,9989);
 
 DELETE FROM `dbscripts_on_relay` WHERE `id` IN (30502,30503,30600);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
