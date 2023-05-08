@@ -1576,27 +1576,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+225, 0, 309, -11781.8701171875, -1621.9085693359375, 21.14900398254394531, -3.12412309646606445, 0, 0, -0.99996185302734375, 0.008734640665352344, 259200, 259200), -- Jinxed Hoodoo Pile
 (@OGUID+226, 0, 309, -12357.8701171875, -1836.308837890625, 130.8646392822265625, 0.453785032033920288, 0, 0, 0.224950790405273437, 0.974370121955871582, 259200, 259200), -- Jinxed Hoodoo Pile
 (@OGUID+227, 0, 309, -11974.7861328125, -1474.543701171875, 79.98345184326171875, 2.932138919830322265, 0, 0, 0.994521141052246093, 0.104535527527332305, 259200, 259200), -- Jinxed Hoodoo Pile
--- 228 - 229
--- Zul'Gurub & Altar of Hir'eek - 1
-(@OGUID+230, 180215, 309, -11994.2, -1458.62, 83.1144, 5.044, 0, 0, -0.580703, 0.814116, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+231, 180215, 309, -12063.5, -1437.4, 130.23, 1.25664, 0, 0, 0.587785, 0.809017, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+232, 180215, 309, -12241.8525390625, -1488.2923583984375, 131.5126495361328125, 1.588249683380126953, 0, 0, 0.713250458240509033, 0.700909256935119628, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+233, 180215, 309, -12310.1, -1465.36, 130.6, 3.9619, 0, 0, -0.91706, 0.39875, 259200, 259200), -- Hakkari Thorium Vein
--- Hakkari Grounds - 2
-(@OGUID+234, 180215, 309, -12406.4, -1838, 135.3, 1.52754, 0, 0, 0, 0, 259200, 259200), -- Hakkari Thorium Vein						//xyz guessed
-(@OGUID+235, 180215, 309, -12145.4, -1941.74, 134.893, 1.8675, 0, 0, 0.803857, 0.594823, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+236, 180215, 309, -12177.3, -1910.15, 130.807, 1.93731, 0, 0, 0.824125, 0.566408, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+237, 180215, 309, -12398.2, -1934.43, 133.233, 0.733038, 0, 0, 0.358368, 0.933581, 259200, 259200), -- Hakkari Thorium Vein
--- Zanza's Rise & Zul'Gurub - 3
-(@OGUID+238, 180215, 309, -11998.046875, -1843.457275390625, 60.41311264038085937, -0.41887885332107543, 0, 0, 0.207911610603332519, -0.97814762592315673, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+239, 180215, 309, -11927.7021484375, -1756.9566650390625, 50.15846633911132812, 3.141592741012573242, 0, 0, 1, -0.00000004371138828, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+240, 180215, 309, -11803.5, -1905.71, 52.927, 2.54818, 0, 0, 0.956305, 0.292372, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+241, 180215, 309, -11546.4, -1745.06, 40.1541, 1.3439, 0, 0, 0.622514, 0.782609, 259200, 259200), -- Hakkari Thorium Vein
--- Zul'Gurub & The Bloodfire Pit - 4
-(@OGUID+242, 180215, 309, -11647.4, -1476.96, 50.3857, 4.31097, 0, 0, -0.833885, 0.551938, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+243, 180215, 309, -11549.5, -1489.06, 73.2133, 3.71755, 0, 0, -0.958819, 0.284016, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+244, 180215, 309, -11599, -1217.44, 80.3655, 1.72787, 0, 0, 0.760405, 0.649449, 259200, 259200), -- Hakkari Thorium Vein
-(@OGUID+245, 180215, 309, -11545.6, -1237.46, 79.2193, 2.37364, 0, 0, 0.927183, 0.374608, 259200, 259200), -- Hakkari Thorium Vein
+-- 228 - 245
 -- Muddy Churning Waters
 (@OGUID+246, 180369, 309, -11780.9853515625, -1425.22509765625, 10.46028041839599609, -0.73303824663162231, 0, 0, 0.358367919921875, -0.93358045816421508, 259200, 259200), -- Muddy Churning Waters - zg
 (@OGUID+247, 180369, 309, -11841.12109375, -1506.41796875, 10.46028041839599609, -0.92502433061599731, 0, 0, 0.446197748184204101, -0.89493441581726074, 259200, 259200), -- Muddy Churning Waters - aotbg
@@ -1618,7 +1598,27 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+269, 180392, 309, -11692.1767578125, -1769.6417236328125, 12.592315673828125, 0.523598790168762207, 0, 0, 0.258819043636322021, 0.965925812721252441, 10, 10), -- Full Jug
 (@OGUID+270, 180386, 309, -11516.2421875, -1648.1376953125, 49.53345108032226562, 1.666788697242736816, 0, 0, 0.740217864513397216, 0.6723671555519104, 600, 600), -- Gong
 (@OGUID+271, 180497, 309, -11501.8935546875, -1614.798828125, 44.57218170166015625, 1.57952284812927246, 0, 0, 0.710185348987579345, 0.704014778137207031, 600, 600), -- Forcefield
-(@OGUID+272, 180526, 309, -11569.19921875, -1627.87451171875, 41.27669906616210937, 0.008725880645215511, 0, 0, 0.004362926352769136, 0.999990463256835937, 600, 600); -- Gong of Bethekk
+(@OGUID+272, 180526, 309, -11569.19921875, -1627.87451171875, 41.27669906616210937, 0.008725880645215511, 0, 0, 0.004362926352769136, 0.999990463256835937, 600, 600), -- Gong of Bethekk
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 000
+(@OGUID+0300, 0, 309, -12310.1220703125, -1465.3640136718750, 130.6002044677734375, 3.961898565292358398, 0, 0, -0.91705989837646484, 0.398749500513076782, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0301, 0, 309, -12063.4775390625, -1437.3966064453125, 130.2297821044921875, 1.256635904312133789, 0, 0, 0.587784767150878906, 0.809017360210418701, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0302, 0, 309, -11994.1826171875, -1458.6176757812500, 83.11444854736328125, 5.044002056121826171, 0, 0, -0.58070278167724609, 0.814115643501281738, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0303, 0, 309, -12241.8525390625, -1488.2923583984375, 131.5126495361328125, 1.588248729705810546, 0, 0, 0.713250160217285156, 0.700909554958343505, 604800, 604800), -- Hakkari Thorium Vein
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 001
+(@OGUID+0310, 0, 309, -12398.2011718750, -1934.4305419921875, 133.2330322265625000, 0.733038187026977539, 0, 0, 0.358367919921875000, 0.933580458164215087, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0311, 0, 309, -12145.3847656250, -1941.7357177734375, 134.8932342529296875, 1.867502212524414062, 0, 0, 0.803856849670410156, 0.594822824001312255, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0312, 0, 309, -12406.1650390625, -1837.8758544921875, 135.8400573730468750, 1.274088263511657714, 0, 0, 0.594821929931640625, 0.803857445716857910, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0313, 0, 309, -12177.2714843750, -1910.1519775390625, 130.8068542480468750, 1.937312245368957519, 0, 0, 0.824125289916992187, 0.566407561302185058, 604800, 604800), -- Hakkari Thorium Vein
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 002
+(@OGUID+0320, 0, 309, -11549.4941406250, -1489.0610351562500, 73.21334075927734375, 3.717553615570068359, 0, 0, -0.95881938934326171, 0.284016460180282592, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0321, 0, 309, -11803.4824218750, -1905.7117919921875, 52.92700958251953125, 2.548179388046264648, 0, 0, 0.956304550170898437, 0.292372345924377441, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0322, 0, 309, -11546.4208984375, -1745.0648193359375, 40.15413284301757812, 1.343901276588439941, 0, 0, 0.622513771057128906, 0.782608807086944580, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0323, 0, 309, -11998.0468750000, -1843.4572753906250, 60.41311264038085937, 5.864306926727294921, 0, 0, -0.20791149139404296, 0.978147625923156738, 604800, 604800), -- Hakkari Thorium Vein
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 003
+(@OGUID+0330, 0, 309, -11545.5927734375, -1237.4613037109375, 79.21926879882812500, 2.373644113540649414, 0, 0, 0.927183151245117187, 0.374608308076858520, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0331, 0, 309, -11927.7021484375, -1756.9566650390625, 50.15846633911132812, 3.141592741012573242, 0, 0, -1.00000000000000000, 0.000000000000000000, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0332, 0, 309, -11599.0000000000, -1217.4381103515625, 80.36554718017578125, 1.727874636650085449, 0, 0, 0.760405540466308593, 0.649448513984680175, 604800, 604800), -- Hakkari Thorium Vein
+(@OGUID+0333, 0, 309, -11647.3632812500, -1476.9616699218750, 50.38566970825195312, 4.310965538024902343, 0, 0, -0.83388519287109375, 0.551937937736511230, 604800, 604800); -- Hakkari Thorium Vein
 
 -- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
@@ -1637,10 +1637,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+51, 1, 'Zul''Gurub - Hakkari Thorium Vein (180215) #1'),
-(@PGUID+52, 1, 'Zul''Gurub - Hakkari Thorium Vein (180215) #2'),
-(@PGUID+53, 1, 'Zul''Gurub - Hakkari Thorium Vein (180215) #3'),
-(@PGUID+54, 1, 'Zul''Gurub - Hakkari Thorium Vein (180215) #4'),
 (@PGUID+61, 2, 'Zul''Gurub - Sungrass (180164)'),
 (@PGUID+62, 3, 'Zul''Gurub - Purple Lotus (180165)'),
 (@PGUID+63, 4, 'Zul''Gurub - Mountain Silversage (180166)'),
@@ -1650,24 +1646,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+230, @PGUID+51, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+231, @PGUID+51, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+232, @PGUID+51, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+233, @PGUID+51, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+234, @PGUID+52, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+235, @PGUID+52, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+236, @PGUID+52, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+237, @PGUID+52, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+238, @PGUID+53, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+239, @PGUID+53, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+240, @PGUID+53, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+241, @PGUID+53, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+242, @PGUID+54, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+243, @PGUID+54, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+244, @PGUID+54, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)'),
-(@OGUID+245, @PGUID+54, 0, 'Zul''Gurub - Hakkari Thorium Vein (180215)');
+-- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (180164, @PGUID+61, 0, 'Zul''Gurub - Sungrass (180164)'),
@@ -1704,7 +1683,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+0034, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000', '0', '0', '0', '1'),
 (@GROUP_ID+0035, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001', '0', '0', '0', '1'),
 -- gameobject
-(@GROUP_ID+1001, 'Zul\'Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '0', '0', '0');
+(@GROUP_ID+1001, 'Zul\'Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '1', '0', '0'),
+(@GROUP_ID+1002, 'Zul\'Gurub - Hakkari Thorium Vein (1) Ore 000', '1', '1', '0', '0'),
+(@GROUP_ID+1003, 'Zul\'Gurub - Hakkari Thorium Vein (1) Ore 001', '1', '1', '0', '0'),
+(@GROUP_ID+1004, 'Zul\'Gurub - Hakkari Thorium Vein (1) Ore 002', '1', '1', '0', '0'),
+(@GROUP_ID+1005, 'Zul\'Gurub - Hakkari Thorium Vein (1) Ore 003', '1', '1', '0', '0');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Razzashi Serpent | Razzashi Adder (2) Wandering 000
@@ -1735,7 +1718,15 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@GROUP_ID+0032, 11372, 0, 2, 0),
 -- Razzashi Serpent | Razzashi Adder (2) Patrol 003
 (@GROUP_ID+0033, 11371, 0, 2, 0),
-(@GROUP_ID+0033, 11372, 0, 2, 0);
+(@GROUP_ID+0033, 11372, 0, 2, 0),
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 000
+(@GROUP_ID+1002, 180215, 0, 0, 0),
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 001
+(@GROUP_ID+1003, 180215, 0, 0, 0),
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 002
+(@GROUP_ID+1004, 180215, 0, 0, 0),
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 003
+(@GROUP_ID+1005, 180215, 0, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+000, @CGUID+468, 0, 00), -- Razzashi Serpent, Razzashi Adder
@@ -1820,7 +1811,27 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+0034, @CGUID+0480, 1, 00), -- Razzashi Serpent, Razzashi Adder
 -- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001
 (@GROUP_ID+0035, @CGUID+0436, 0, 00), -- Razzashi Serpent, Razzashi Adder
-(@GROUP_ID+0035, @CGUID+0467, 1, 00); -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0035, @CGUID+0467, 1, 00), -- Razzashi Serpent, Razzashi Adder
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 000
+(@GROUP_ID+1002, @OGUID+0300, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1002, @OGUID+0301, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1002, @OGUID+0302, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1002, @OGUID+0303, -1, 00),  -- Hakkari Thorium Vein
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 001
+(@GROUP_ID+1003, @OGUID+0310, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1003, @OGUID+0311, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1003, @OGUID+0312, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1003, @OGUID+0313, -1, 00),  -- Hakkari Thorium Vein
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 002
+(@GROUP_ID+1004, @OGUID+0320, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1004, @OGUID+0321, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1004, @OGUID+0322, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1004, @OGUID+0323, -1, 00),  -- Hakkari Thorium Vein
+-- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 003
+(@GROUP_ID+1005, @OGUID+0330, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1005, @OGUID+0331, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1005, @OGUID+0332, -1, 00),  -- Hakkari Thorium Vein
+(@GROUP_ID+1005, @OGUID+0333, -1, 00);  -- Hakkari Thorium Vein
 
 INSERT INTO `spawn_group_spawn` (`guid`, `Id`) SELECT `guid`, @GROUP_ID+1001 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
 
