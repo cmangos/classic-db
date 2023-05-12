@@ -55,8 +55,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGUID + 017, 'Loch Modan - Tunnel Rat Geomancer | Tunnel Rat Digger (1) Wandering 014', 0, 0, 0, 0, 0),
 (@SGUID + 018, 'Loch Modan - Tunnel Rat Geomancer | Tunnel Rat Digger (1) Wandering 015', 0, 0, 0, 0, 0),
 (@SGUID + 019, 'Loch Modan - Tunnel Rat Surveyor (1) Wandering 000', 0, 0, 0, 0, 0),
-(@SGUID + 020, 'Loch Modan - Tunnel Rat Surveyor (1) Wandering 000', 0, 0, 0, 0, 0),
-(@SGUID + 021, 'Loch Modan - Tunnel Rat Surveyor (1) Wandering 000', 0, 0, 0, 0, 0),
+(@SGUID + 020, 'Loch Modan - Tunnel Rat Surveyor (1) Wandering 001', 0, 0, 0, 0, 0),
+(@SGUID + 021, 'Loch Modan - Tunnel Rat Surveyor (1) Wandering 002', 0, 0, 0, 0, 0),
 (@SGUID + 022, 'Loch Modan - Grizlak (1) Wandering 000', 0, 0, 0, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
