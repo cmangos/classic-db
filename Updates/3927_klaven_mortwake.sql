@@ -180,7 +180,7 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, priority, command, datalo
 ('705201', '7000', '0', '0', '0', '0', '0','0', '3126', '0', '0','0','0', '0','Defias Patrol - Jill - Say text'),
 ('705201', '12000', '0', '25', '1', '0', '7052', '25', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Set Run'),
 ('705201', '12000', '1', '20', '2', '1', '7052', '25', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Move'),
-('705202', '0', '0', '32', '1', '0', '0','0', '', '0', '0','0','0', '0','Defias Patrol - Raven - Pause Waypoint'),
+('705202', '0', '0', '32', '1', '0', '0','0', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Pause Waypoint'),
 ('705202', '2000', '0', '1', '6', '0', '0','0', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Emote Question'),
 ('705202', '2000', '1', '0', '0', '0', '0','0', '3127', '0', '0','0','0', '0','Defias Patrol - Raven - Say text'),
 ('705202', '5000', '0', '3', '0', '0', '7052','20', '0', '0', '0','0','0', '1.44862','Defias Patrol - Jill - Facing'),
