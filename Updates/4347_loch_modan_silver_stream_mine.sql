@@ -6,7 +6,7 @@ DELETE FROM `pool_creature_template` WHERE (`id` = 1425);
 UPDATE `creature_template` SET `SpeedWalk` = 1 WHERE (`Entry` IN (1175, 1177, 1425));
 DELETE FROM `pool_template` WHERE (`entry` = 1086);
 
-SET @CGUID := 99140;
+SET @CGUID := 140146;
 SET @SGUID := 126;
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES

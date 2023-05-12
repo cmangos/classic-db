@@ -6,7 +6,7 @@ DELETE FROM `creature` WHERE (`guid` IN (20973, 20976, 20978, 20979, 20980, 2098
 DELETE FROM `creature_movement` WHERE (`id` IN (21740, 21749));
 UPDATE `creature` SET `MovementType` = 0 WHERE (`guid` IN (21740, 21749));
 
-SET @CGUID := 99040;
+SET @CGUID := 140059;
 SET @SGUID := 10138;
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
