@@ -19554,17 +19554,6 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 UPDATE creature_template SET AIName= '' WHERE AIName= 'EventAI';
 UPDATE creature_template SET ScriptName= '' WHERE ScriptName= 'generic_creature';
 
--- Workaround for Critters that should not flee
-UPDATE creature_template SET AIName='EventAI' WHERE Entry IN (
--- Critters in order to avoid fleeing
-6145, -- School of Fish
-9600, -- Parrot
-10510, -- Plagued Slime
-13321, -- Frog
-15010, -- Jungle Toad
-16998 -- Mr. Bigglesworth
-);
-
 -- ================================================
 -- Define ACID Full Release Script Creature Entries
 -- ================================================
