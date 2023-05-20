@@ -13271,7 +13271,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('937601','9376','11','0','100','0','0','0','0','0','0','0','11','13913','0','0','0','0','0','0','0','0','0','0','Blazerunner - Cast Blazerunner Aura on Spawn'),
 ('937602','9376','0','0','100','1025','4000','8000','10000','16000','0','0','11','17277','0','0','0','0','0','0','0','0','0','0','Blazerunner - Cast Blast Wave'),
 -- Gorishi Egg 9496
-('949601','9496','11','0','100','0','0','0','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Gorishi Egg - Stop Melee and Stop Movement on Spawn'),
+('949601','9496','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Gorishi Egg - Set ReactState Passive on Spawn'),
 ('949602','9496','29','0','100','0','8000','8000','0','0','0','0','11','14206','0','0','37','0','0','0','41','1000','0','0','Gorishi Egg - Cast Summon Gorishi Grub and Die and Delayed Despawn on Generic Timer'),
 -- U'cha
 ('962201','9622','9','0','100','1025','0','5','5000','9000','0','0','11','8374','1','0','0','0','0','0','0','0','0','0','U''cha - Cast Arcing Smash'),
@@ -15132,7 +15132,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('803502','8035','29','0','100','0','0','0','0','0','0','0','1','3541','0','0','0','0','0','0','0','0','0','0','Dark Iron Land Mine - Emote on Generic Timer'),
 ('803503','8035','29','0','100','0','5000','5000','0','0','0','0','1','3542','0','0','0','0','0','0','0','0','0','0','Dark Iron Land Mine - Emote on Generic Timer'),
 ('803504','8035','29','0','100','0','10000','10000','0','0','0','0','1','3543','0','0','22','1','0','0','0','0','0','0','Dark Iron Land Mine - Emote and Set Phase 1 on Generic Timer'),
-('803505','8035','10','5','100','0','0','5','0','0','0','0','11','4043','15','0','41','10000','0','0','37','0','0','0','Dark Iron Land Mine - Cast Detonation and Delayed Despawn OOC LOS (Phase 1)'),
+('803505','8035','10','5','100','0','0','5','0','0','0','0','11','4043','15','0','0','0','0','0','37','0','0','0','Dark Iron Land Mine - Cast Detonation, Die OOC LOS (Phase 1)'),
 -- Sprok (8320) - NSR
 -- Tink Sprocketwhistle (Rough Scripted Data)
 ('967601','9676','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Tink Sprocketwhistle - Flee at 15% HP'),
@@ -17600,7 +17600,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Unholy Swords 16216 - creature_spell_list
 -- Tesla Coil 16218 - npc_tesla_coil
 -- Eye Stalk 16236
-('1623601','16236','11','0','100','0','0','0','0','0','0','0','21','0','0','0','11','26586','0','1','0','0','0','0','Eye Stalk - Prevent Combat Movement and Cast Birth on Spawn'),
+('1623601','16236','11','0','100','0','0','0','0','0','0','0','11','26586','0','1','0','0','0','0','0','0','0','0','Eye Stalk - Cast Birth on Spawn'),
 ('1623602','16236','1','0','100','0','2000','30000','0','0','0','0','11','28819','0','1','0','0','0','0','0','0','0','0','Eye Stalk - Cast Submerge Visual OOC'),
 ('1623603','16236','0','0','85','1025','0','0','11000','11000','0','0','11','29407','1','0','0','0','0','0','0','0','0','0','Eye Stalk - Cast Mind Flay'),
 ('1623604','16236','9','0','100','1','36','90','2000','2000','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Eye Stalk - Evade'),
@@ -18900,17 +18900,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infernal 89
 ('8901','89','11','0','100','0','0','0','0','0','0','0','11','22707','0','2','11','19483','0','34','0','0','0','0','Infernal - Cast Root and Immolation on Spawn'),
 -- Imp 416 - PetAI
+-- Combat Dummy 1921 - NSR
 -- Searing Totem 2523 - TotemAI
 -- Earthbind Totem 2630 - TotemAI
 -- Ward of Laze 2667 - TotemAI
 -- Target Dummy 2673
-('267301','2673','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
-('267302','2673','11','0','100','0','0','0','0','0','0','0','11','4044','0','34','11','27791','0','34','0','0','0','0','Target Dummy - Cast Target Dummy Passive, Suicide on Spawn'),
-('267303','2673','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Target Dummy - Despawn 0 on Death'),
+('267301','2673','11','0','100','0','0','0','0','0','0','0','11','4044','0','34','11','27791','0','34','0','0','0','0','Target Dummy - Cast Target Dummy Passive, Suicide on Spawn'),
 -- Advanced Target Dummy 2674
-('267401','2674','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Advanced Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
 ('267402','2674','11','0','100','0','0','0','0','0','0','0','11','4048','0','34','11','27791','0','34','0','0','0','0','Advanced Target Dummy - Cast Advanced Target Dummy Passive, Suicide on Spawn'),
-('267403','2674','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Advanced Target Dummy - Despawn 0 on Death'),
 -- Explosive Sheep 2675
 ('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
 ('267502','2675','29','0','100','0','180000','180000','0','0','0','0','11','8329','0','0','0','0','0','0','0','0','0','0','Explosive Sheep - Kill self after 3m'),
@@ -18936,8 +18933,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Silithid Swarm 4196
 ('419601','4196','11','0','100','0','0','0','0','0','0','0','11','6590','0','34','50','1','0','0','0','0','0','0','Silithid Swarm - Cast Silithid Swarm Passive, Set ReactState Defensive on Spawn'),
 ('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
--- Archery Target 5202
-('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
+-- Archery Target 5202 - NSR
+-- Practice Target 5674 - NSR
 -- Summoned Voidwalker 5676
 ('567601','5676','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','1','1987','0','0','0','0','0','0','Summoned Voidwalker - Cast Summoned Demon, Say on Spawn'),
 ('567602','5676','29','0','100','0','1000','1000','0','0','0','0','2','14','0','0','55','11','0','0','0','0','0','0','Summoned Voidwalker - Set Faction Monster, Attack Spawner (Player) on Generic Timer'),
@@ -18955,13 +18952,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Healer 6491
 ('649101','6491','11','0','100','0','0','0','0','0','0','0','11','10848','0','0','11','9036','0','0','0','0','0','0','Spirit Healer - Cast Shroud of Death and Cast Ghost on Spawn'),
 -- Goblin Land Mine 7527 - s.4100,10837,21688
-('752701','7527','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Goblin Land Mine - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
-('752702','7527','11','0','100','0','0','0','0','0','0','0','11','11816','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Cast Land Mine Arming on Spawn'),
-('752703','7527','29','0','100','0','100','100','0','0','0','0','1','3541','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
-('752704','7527','29','0','100','0','5000','5000','0','0','0','0','1','3542','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
-('752705','7527','29','0','100','0','10000','10000','0','0','0','0','1','3543','0','0','22','1','0','0','28','0','11816','0','Goblin Land Mine - Say and Set Phase 1 and remove aura on Generic Timer'),
-('752706','7527','9','1','100','0','0','8','0','0','0','0','11','4043','0','0','37','0','0','0','0','0','0','0','Goblin Land Mine - Cast Detonation and Die (Phase 1'),
-('752707','7527','6','0','100','0','0','0','0','0','0','0','41','1000','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Despawn 0 on Death'),
+('752701','7527','11','0','100','0','0','0','0','0','0','0','11','11816','0','34','50','0','0','0','0','0','0','0','Goblin Land Mine - Cast Land Mine Arming, Set ReactState Passive on Spawn'),
+('752702','7527','29','0','100','0','100','100','0','0','0','0','1','3541','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
+('752703','7527','29','0','100','0','5000','5000','0','0','0','0','1','3542','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
+('752704','7527','29','0','100','0','10000','10000','0','0','0','0','1','3543','0','0','22','1','0','0','28','0','11816','0','Goblin Land Mine - Say and Set Phase 1 and remove aura on Generic Timer'),
+('752705','7527','9','1','100','0','0','8','0','0','0','0','11','4043','0','0','37','0','0','0','0','0','0','0','Goblin Land Mine - Cast Detonation and Die (Phase 1'),
 -- Eranikus the Chained 8506
 ('850601','8506','11','0','100','0','0','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
 -- Battle Chicken 8836
@@ -18990,9 +18985,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1212501','12125','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Mammoth Shark - Cast Thrash on Spawn'),
 -- Ice Totem 12141 - TotemAI
 -- Masterwork Target Dummy 12426
-('1242601','12426','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Masterwork Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
-('1242602','12426','11','0','100','0','0','0','0','0','0','0','11','19809','0','34','11','27791','0','34','0','0','0','0','Masterwork Target Dummy - Cast Masterwork Target Dummy Passive, Suicide on Spawn'),
-('1242603','12426','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Masterwork Target Dummy - Despawn 0 on Death'),
+('1242601','12426','11','0','100','0','0','0','0','0','0','0','11','19809','0','34','11','27791','0','34','0','0','0','0','Masterwork Target Dummy - Cast Masterwork Target Dummy Passive, Suicide on Spawn'),
 -- Imp Minion 12922
 ('1292201','12922','11','0','100','0','0','0','0','0','0','0','57','3','20','0','0','0','0','0','0','0','0','0','Imp Minion - Enable No Melee Mode on Aggro'),
 ('1292202','12922','4','0','10','0','0','0','0','0','0','0','54','0','0','1','0','0','0','0','0','0','0','0','Imp Minion - Random Say on Aggro'),
