@@ -769,7 +769,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+304, 0, 8, 1, 0, 0, ''); -- Lady Anacondra, Druid of the Fang
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
-(3636, 0, 0, 1, 0, 0, '8876'), -- Deviate Ravager
+(3636, 0, 0, 1, 0, 0, '3417'), -- Deviate Ravager
 (3637, 0, 0, 1, 0, 0, NULL), -- Deviate Guardian
 (3640, 0, 0, 1, 0, 0, '7940'), -- Evolving Ectoplasm
 (3653, 0, 0, 1, 0, 0, NULL), -- Kresh

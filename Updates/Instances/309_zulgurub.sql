@@ -445,7 +445,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11374, 0, 0, 1, 0, 0, '18943 18950'), -- Hooktooth Frenzy
 (11380, 0, 0, 1, 10, 0, NULL), -- Jin'do the Hexxer
 (11382, 15271, 0, 1, 0, 0, NULL), -- Bloodlord Mandokir
-(11387, 0, 0, 1, 0, 0, NULL), -- Sandfury Speaker
+(11387, 0, 0, 1, 0, 0, '3417'), -- Sandfury Speaker
 (11388, 0, 8, 1, 0, 0, NULL), -- Witherbark Speaker
 (11389, 0, 8, 1, 0, 0, NULL), -- Bloodscalp Speaker
 (11390, 0, 8, 1, 0, 0, NULL), -- Skullsplitter Speaker
