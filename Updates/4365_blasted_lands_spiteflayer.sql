@@ -15,7 +15,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGUID + 000, 'Blasted Lands - Mojo the Twisted (1) Placeholder 000', 0, 1, 0, 0, 0),
 (@SGUID + 001, 'Blasted Lands - Magronos the Unyielding (1) Placeholder 000', 0, 1, 0, 0, 0),
 (@SGUID + 002, 'Blasted Lands - Akubar the Seer (1) Placeholder 000', 0, 1, 0, 0, 0),
-(@SGUID + 003, 'Blasted Lands - Spiteflayer (1) Patrol 000', 0, 1, 0, 0, 0),
+(@SGUID + 003, 'Blasted Lands - Spiteflayer (1) Rare 000', 0, 1, 0, 0, 0),
 (@SGUID + 004, 'Blasted Lands - Ravage (1) Placeholder 000', 0, 1, 0, 0, 0),
 (@SGUID + 005, 'Blasted Lands - Clack the Reaver (1) Placeholder 000', 0, 1, 0, 0, 0),
 (@SGUID + 006, 'Blasted Lands - Deatheye (1) Placeholder 000', 0, 1, 0, 0, 0),
