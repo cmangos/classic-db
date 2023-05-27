@@ -143,3 +143,21 @@ INSERT INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `Posit
 (@CGUID + 013, 18, -11055.3740234375, -2735.161865234375, 9.889304161071777343, 100, 0, 0),
 (@CGUID + 013, 19, -11075.1787109375, -2743.744873046875, 10.05155372619628906, 100, 0, 0),
 (@CGUID + 013, 20, -11099.5947265625, -2743.920410156250, 15.01981544494628906, 100, 0, 0);
+
+-- Add CREATURE_EXTRA_FLAG_DYNGUID and align respawntimer for remaining/other creatures in that area that are not spawn_group
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576 WHERE `entry` IN (5979,5981,5982,5983,5984,5985,5988,5990,5991,5992,5993);
+REPLACE INTO `creature_template_addon` (`entry`, `sheath_state`, `auras`) VALUES (5993, 1, '12896'),(5992, 1, '12898 11966');
+UPDATE `creature` SET `spawntimesecsmin` = 300, `spawntimesecsmax` = 300 WHERE `id` IN ( -- 66/68 tbc due to extra two 5983, which should have path, down from 450 450
+5979, -- https://www.wowhead.com/tbc/npc=5979/wretched-lost-one
+5981, -- https://www.wowhead.com/tbc/npc=5981/portal-seeker
+5982, -- https://www.wowhead.com/tbc/npc=5982/black-slayer#comments:id=191992
+5983, -- https://www.wowhead.com/tbc/npc=5983/bonepicker#comments:id=191992
+5984, -- https://www.wowhead.com/tbc/npc=5984/starving-snickerfang
+5985, -- https://www.wowhead.com/tbc/npc=5985/snickerfang-hyena
+5988, -- https://www.wowhead.com/tbc/npc=5988/scorpok-stinger
+5990, -- https://www.wowhead.com/tbc/npc=5990/redstone-basilisk
+5991, -- https://www.wowhead.com/tbc/npc=5991/redstone-crystalhide
+5992, -- https://www.wowhead.com/tbc/npc=5992/ashmane-boar
+5993 -- https://www.wowhead.com/tbc/npc=5993/helboar#abilities
+);
+
