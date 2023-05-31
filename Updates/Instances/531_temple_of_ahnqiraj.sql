@@ -1849,7 +1849,7 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@GROUP_ID+10);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
-(@GROUP_ID+10, 42, 4823, 0, 0, 0, 0, 'Temple of Ahn\'Qiraj - Battleguard Sartura - Trash Respawn');
+(@GROUP_ID+10, 42, 4823, 1, 0, 0, 0, 'Temple of Ahn\'Qiraj - Battleguard Sartura - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
