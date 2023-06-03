@@ -8,6 +8,7 @@ EndDBScriptData */
 SET @CGUID := 4800000; -- creatures
 SET @OGUID := 4800000; -- gameobjects
 SET @PGUID := 45500; -- pools
+SET @SGGUID := 4800000;
 
 -- =========
 -- CREATURES
@@ -370,14 +371,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+11, 0, 48, -401.417633056640625, 46.93177413940429687, -47.7133941650390625, 2.268925428390502929, 0, 0, 0.906307220458984375, 0.422619491815567016, 86400, 86400), -- Tin Vein, Silver Vein
 (@OGUID+12, 0, 48, -351.981, 402.932, -53.4195, 5.42798, 0, 0, -0.414693, 0.909962, 86400, 86400), -- Tin Vein, Silver Vein
 (@OGUID+13, 0, 48, -479.65679931640625, 295.416290283203125, -64.3415145874023437, 4.886923789978027343, 0, 0, -0.64278697967529296, 0.766044974327087402, 86400, 86400), -- Tin Vein, Silver Vein
--- 1732/1733 - 2045
-(@OGUID+16, 2045, 48, -345.1505, -10.19844, -70.49845, 0.9075713, 0, 0, 0.438371, 0.898794, 86400, 86400), -- Stranglekelp (The Drowned Sacellum)
-(@OGUID+17, 2045, 48, -327.89556884765625, 75.12955474853515625, -61.5880393981933593, 2.687806606292724609, 0, 0, 0.974370002746582031, 0.224951311945915222, 86400, 86400), -- Stranglekelp (The Drowned Sacellum)
-(@OGUID+18, 2045, 48, -328.71136474609375, 211.0756378173828125, -69.6184844970703125, 5.567600727081298828, 0, 0, -0.35020732879638671, 0.936672210693359375, 86400, 86400), -- Stranglekelp (The Pool of Ask''ar)
-(@OGUID+19, 2045, 48, -494.5922, 106.9269, -73.50796, 1.762782, 0, 0, 0.771624, 0.636079, 86400, 86400), -- Stranglekelp (The Pool of Ask''ar)
-(@OGUID+20, 2045, 48, -517.09942626953125, 165.3185882568359375, -75.1650466918945312, 3.194002151489257812, 0, 0, -0.99965667724609375, 0.026201646775007247, 86400, 86400), -- Stranglekelp (The Pool of Ask''ar)
-(@OGUID+21, 2045, 48, -726.4299, -159.3403, -56.59599, -0.5934122, 0, 0, -0.292372, 0.956305, 86400, 86400), -- Stranglekelp (The Forgotten Pool)
-(@OGUID+22, 2045, 48, -805.26544189453125, -30.2196693420410156, -35.9841156005859375, 0.994837164878845214, 0, 0, 0.477158546447753906, 0.878817260265350341, 86400, 86400), -- Stranglekelp (Moonshrine Ruins)
+-- 1732/1733 - 13949
 (@OGUID+23, 13949, 48, -330.544, 212.014, -69.706, 2.80998, 0, 0, 0.986286, 0.165048, 0, 0), -- Pitted Iron Chest
 (@OGUID+24, 21117, 48, -818.3607177734375, -200.647247314453125, -25.7910709381103515, 4.712389945983886718, 0, 0, -0.70710659027099609, 0.707106947898864746, 7200, 7200), -- Portal of Aku'Mai
 (@OGUID+25, 21118, 48, -813.47, -158.535, -24.5271, -1.51844, 0, 0, 0.688354, -0.725374, 7200, 7200), -- Fire of Aku'mai
@@ -434,7 +428,25 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+79, 19018, 48, -781.432, -165.561, -47.9078, -0.453786, 0, 0, 0.224951, -0.97437, 86400, 86400), -- Giant Clam
 (@OGUID+80, 19018, 48, -760.68328857421875, -155.533584594726562, -51.5061683654785156, 0.471238493919372558, 0, 0, 0.233445167541503906, 0.972369968891143798, 86400, 86400), -- Giant Clam
 (@OGUID+81, 19018, 48, -790.217041015625, -176.526947021484375, -45.1691703796386718, 2.199114561080932617, 0, 0, 0.8910064697265625, 0.453990638256072998, 86400, 86400), -- Giant Clam
-(@OGUID+82, 19018, 48, -770.51202392578125, -189.07220458984375, -48.8139495849609375, 5.777040958404541015, 0, 0, -0.25037956237792968, 0.968147754669189453, 86400, 86400); -- Giant Clam
+(@OGUID+82, 19018, 48, -770.51202392578125, -189.07220458984375, -48.8139495849609375, 5.777040958404541015, 0, 0, -0.25037956237792968, 0.968147754669189453, 86400, 86400), -- Giant Clam
+-- 19018 - 2045
+ -- Stranglekelp (The Drowned Sacellum)
+(@OGUID+101, 2045, 48, -345.1505, -10.19844, -70.49845, 0.9075713, 0, 0, 0.438371, 0.898794, 86400, 86400), -- Stranglekelp
+(@OGUID+102, 2045, 48, -327.89556884765625, 75.12955474853515625, -61.5880393981933593, 2.687806606292724609, 0, 0, 0.974370002746582031, 0.224951311945915222, 86400, 86400), -- Stranglekelp
+(@OGUID+103, 2045, 48, -309.303, 63.7334, -64.3376, 4.55531, 0, 0, -0.760406, 0.649449, 86400, 86400), -- Stranglekelp
+ -- Stranglekelp (The Pool of Ask''ar)
+(@OGUID+111, 2045, 48, -328.71136474609375, 211.0756378173828125, -69.6184844970703125, 5.567600727081298828, 0, 0, -0.35020732879638671, 0.936672210693359375, 86400, 86400), -- Stranglekelp
+(@OGUID+112, 2045, 48, -494.5922, 106.9269, -73.50796, 1.762782, 0, 0, 0.771624, 0.636079, 86400, 86400), -- Stranglekelp
+(@OGUID+113, 2045, 48, -517.09942626953125, 165.3185882568359375, -75.1650466918945312, 3.194002151489257812, 0, 0, -0.99965667724609375, 0.026201646775007247, 86400, 86400), -- Stranglekelp
+(@OGUID+114, 2045, 48, -514.723, 271.829, -65.7819, 0.698131, 0, 0, 0.34202, 0.939693, 86400, 86400), -- Stranglekelp
+(@OGUID+115, 2045, 48, -481.444, 316.269, -63.7996, 3.54302, 0, 0, -0.979924, 0.19937, 86400, 86400), -- Stranglekelp
+(@OGUID+116, 2045, 48, -430.732, 88.3405, -67.4654, 3.4383, 0, 0, -0.989016, 0.147811, 86400, 86400), -- Stranglekelp
+(@OGUID+117, 2045, 48, -330.049, 313.491, -58.8919, 4.24115, 0, 0, -0.85264, 0.522499, 86400, 86400), -- Stranglekelp
+ -- Stranglekelp (Moonshrine Ruins & The Forgotten Pool)
+(@OGUID+121, 2045, 48, -805.26544189453125, -30.2196693420410156, -35.9841156005859375, 0.994837164878845214, 0, 0, 0.477158546447753906, 0.878817260265350341, 86400, 86400), -- Stranglekelp
+(@OGUID+122, 2045, 48, -855.667, -98.7892, -36.3917, 2.91469, 0, 0, 0.993571, 0.113208, 86400, 86400), -- Stranglekelp
+(@OGUID+123, 2045, 48, -726.4299, -159.3403, -56.59599, -0.5934122, 0, 0, -0.292372, 0.956305, 86400, 86400), -- Stranglekelp
+(@OGUID+124, 2045, 48, -804.739, -142.515, -38.9533, 3.14159, 0, 0, -1, 0, 86400, 86400); -- Stranglekelp
 
 -- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
@@ -450,9 +462,31 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+101, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp Pool', 1, 1, 0, 0),
+(@SGGUID+102, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp Pool', 1, 2, 0, 0),
+(@SGGUID+103, 'Blackfathom Deeps (Moonshrine Ruins & The Forgotten Pool) - Stranglekelp Pool', 1, 1, 0, 0);
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+101, @OGUID+101, -1, 0),
+(@SGGUID+101, @OGUID+102, -1, 0),
+(@SGGUID+101, @OGUID+103, -1, 0),
+
+(@SGGUID+102, @OGUID+111, -1, 0),
+(@SGGUID+102, @OGUID+112, -1, 0),
+(@SGGUID+102, @OGUID+113, -1, 0),
+(@SGGUID+102, @OGUID+114, -1, 0),
+(@SGGUID+102, @OGUID+115, -1, 0),
+(@SGGUID+102, @OGUID+116, -1, 0),
+(@SGGUID+102, @OGUID+117, -1, 0),
+
+(@SGGUID+103, @OGUID+121, -1, 0),
+(@SGGUID+103, @OGUID+122, -1, 0),
+(@SGGUID+103, @OGUID+123, -1, 0),
+(@SGGUID+103, @OGUID+124, -1, 0);
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
@@ -462,9 +496,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- =======
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+63, @PGUID+62, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp Pool'),
-(@PGUID+64, @PGUID+62, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp Pool'),
-(@PGUID+65, @PGUID+62, 0, 'Blackfathom Deeps (The Forgotten Pool) - Stranglekelp Pool'),
 (@PGUID+91, @PGUID+90, 0, 'Blackfathom Deeps - Chest Pool'),
 (@PGUID+92, @PGUID+90, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Chest Pool');
 
@@ -472,11 +503,6 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Blackfathom Deeps - Lorgus Jett (12902)'),
 (@PGUID+51, 2, 'Blackfathom Deeps - Master Mineral Pool'),
 (@PGUID+61, 2, 'Blackfathom Deeps - Bruiseweed (1622)'),
-(@PGUID+62, 4, 'Blackfathom Deeps - Master Stranglekelp Pool'),
-(@PGUID+63, 1, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp Pool'),
-(@PGUID+64, 2, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp Pool'),
-(@PGUID+65, 1, 'Blackfathom Deeps (The Forgotten Pool) - Stranglekelp Pool'),
-(@PGUID+66, 1, 'Blackfathom Deeps (Moonshrine Ruins) - Stranglekelp Pool'),
 (@PGUID+70, 1, 'Blackfathom Deeps - Weapon Crate & Armor Crate Pool'),
 (@PGUID+71, 2, 'Blackfathom Deeps (The Drowned Sacellum) - Giant Clam (19018)'),
 (@PGUID+72, 4, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
@@ -500,13 +526,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+3, @PGUID+61, 0, 'Blackfathom Deeps - Bruiseweed (1622)'),
 (@OGUID+4, @PGUID+61, 0, 'Blackfathom Deeps - Bruiseweed (1622)'),
 (@OGUID+5, @PGUID+61, 0, 'Blackfathom Deeps - Bruiseweed (1622)'),
-(@OGUID+16, @PGUID+63, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp (2045)'),
-(@OGUID+17, @PGUID+63, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp (2045)'),
-(@OGUID+18, @PGUID+64, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp (2045)'),
-(@OGUID+19, @PGUID+64, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp (2045)'),
-(@OGUID+20, @PGUID+64, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp (2045)'),
-(@OGUID+21, @PGUID+65, 0, 'Blackfathom Deeps (The Forgotten Pool) - Stranglekelp (2045)'),
-(@OGUID+22, @PGUID+66, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Stranglekelp (2045)'),
 (@OGUID+30, @PGUID+70, 0, 'Blackfathom Deeps - Weapon Crate, Armor Crate (3689,3702)'),
 (@OGUID+31, @PGUID+70, 0, 'Blackfathom Deeps - Weapon Crate, Armor Crate (3689,3702)'),
 (@OGUID+32, @PGUID+70, 0, 'Blackfathom Deeps - Weapon Crate, Armor Crate (3689,3702)'),
