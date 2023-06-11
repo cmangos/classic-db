@@ -1032,7 +1032,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+91, 19019, 36, -214.701339721679687, -545.25909423828125, 19.30647087097167968, -1.37880921363830566, 0, 0, -0.636077880859375, 0.771624863147735595, 86400, 86400), -- Box of Assorted Parts
 (@OGUID+92, 19019, 36, -170.766006469726562, -588.50836181640625, 19.32762527465820312, 2.775068521499633789, 0, 0, 0.983254432678222656, 0.182238012552261352, 86400, 86400), -- Box of Assorted Parts
 (@OGUID+93, 19019, 36, -141.932510375976562, -770.300537109375, 2.44695901870727539, 0.017452461645007133, 0, 0, 0.008726119995117187, 0.999961912631988525, 86400, 86400), -- Box of Assorted Parts
-(@OGUID+94, 19019, 36, -236.247, -560.498, 19.3065, -0.401426, 0, 0, 0.199368, -0.979925, 86400, 86400), -- Box of Assorted Parts
+(@OGUID+94, 19019, 36, -236.247, -560.498, 19.3065, 5.88176, 0, 0, -0.199368, 0.979925, 86400, 86400), -- Box of Assorted Parts
 (@OGUID+95, 19019, 36, -123.417701721191406, -705.9969482421875, 8.442322731018066406, 0.802850902080535888, 0, 0, 0.390730857849121093, 0.920504987239837646, 86400, 86400), -- Box of Assorted Parts
 (@OGUID+96, 19019, 36, -200.773605346679687, -574.158935546875, 20.97682380676269531, 0.767943859100341796, 0, 0, 0.374606132507324218, 0.927184045314788818, 86400, 86400), -- Box of Assorted Parts
 (@OGUID+97, 19019, 36, -185.015792846679687, -692.18609619140625, 8.819413185119628906, -1.41371512413024902, 0, 0, -0.64944744110107421, 0.760406434535980224, 86400, 86400), -- Box of Assorted Parts
@@ -1145,7 +1145,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 
 (@SGUID + 02, 'The Deadmines - Tin Vein | Silver Vein (1) Ore 000', 1, 1, 0, 0),
 (@SGUID + 03, 'The Deadmines - Tin Vein | Silver Vein (1) Ore 001', 1, 1, 0, 0),
-(@SGUID + 04, 'The Deadmines - Tin Vein | Silver Vein (1) Ore 002', 1, 1, 0, 0);
+(@SGUID + 04, 'The Deadmines - Tin Vein | Silver Vein (1) Ore 002', 1, 1, 0, 0),
+
+(@SGUID + 102, 'The Deadmines - Box of Assorted Parts (19019)', 1, 6, 0, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -1172,7 +1174,17 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@SGUID + 04, @OGUID + 150, -1), -- Tin Vein | Silver Vein
 (@SGUID + 04, @OGUID + 151, -1), -- Tin Vein | Silver Vein
-(@SGUID + 04, @OGUID + 152, -1); -- Tin Vein | Silver Vein
+(@SGUID + 04, @OGUID + 152, -1), -- Tin Vein | Silver Vein
+
+(@SGUID + 102, @OGUID+91, -1), -- Box of Assorted Parts
+(@SGUID + 102, @OGUID+92, -1), -- Box of Assorted Parts
+(@SGUID + 102, @OGUID+93, -1), -- Box of Assorted Parts
+(@SGUID + 102, @OGUID+94, -1), -- Box of Assorted Parts
+(@SGUID + 102, @OGUID+95, -1), -- Box of Assorted Parts
+(@SGUID + 102, @OGUID+96, -1), -- Box of Assorted Parts
+(@SGUID + 102, @OGUID+97, -1), -- Box of Assorted Parts
+(@SGUID + 102, @OGUID+98, -1), -- Box of Assorted Parts
+(@SGUID + 102, @OGUID+99, -1); -- Box of Assorted Parts
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGUID + 00, 1731, 0, 0, 0), -- Copper Vein
