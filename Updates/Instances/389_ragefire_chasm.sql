@@ -141,57 +141,18 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11834, 0, 7, 1, 0, 0, NULL); -- Maur Grimtotem
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+1, @CGUID+34, 3), -- Ragefire Trogg -> Ragefire Shaman
-(@CGUID+3, @CGUID+32, 3), -- Ragefire Trogg -> Ragefire Shaman
-(@CGUID+11, @CGUID+10, 3), -- Ragefire Trogg -> Ragefire Trogg
-(@CGUID+14, @CGUID+13, 3), -- Ragefire Trogg -> Ragefire Trogg
-(@CGUID+18, @CGUID+25, 3), -- Ragefire Trogg -> Ragefire Trogg
-(@CGUID+22, @CGUID+43, 3), -- Ragefire Trogg -> Ragefire Shaman
-(@CGUID+23, @CGUID+19, 3), -- Ragefire Trogg -> Ragefire Trogg
-(@CGUID+24, @CGUID+43, 3), -- Ragefire Trogg -> Ragefire Shaman
-(@CGUID+26, @CGUID+17, 3), -- Ragefire Trogg -> Ragefire Trogg
-(@CGUID+27, @CGUID+40, 3), -- Ragefire Trogg -> Ragefire Shaman
-(@CGUID+29, @CGUID+28, 3), -- Ragefire Trogg -> Ragefire Trogg
-(@CGUID+30, @CGUID+32, 3), -- Ragefire Shaman -> Ragefire Shaman
-(@CGUID+33, @CGUID+4, 3), -- Ragefire Shaman -> Ragefire Trogg
-(@CGUID+36, @CGUID+7, 3), -- Ragefire Shaman -> Ragefire Trogg
-(@CGUID+37, @CGUID+16, 3), -- Ragefire Shaman -> Ragefire Trogg
-(@CGUID+38, @CGUID+19, 3), -- Ragefire Shaman -> Ragefire Trogg
-(@CGUID+39, @CGUID+13, 3), -- Ragefire Shaman -> Ragefire Trogg
-(@CGUID+42, @CGUID+17, 3), -- Ragefire Shaman -> Ragefire Trogg
-(@CGUID+70, @CGUID+119, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+72, @CGUID+119, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+74, @CGUID+123, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+75, @CGUID+122, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+76, @CGUID+123, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+78, @CGUID+77, 3), -- Searing Blade Cultist -> Searing Blade Cultist
-(@CGUID+79, @CGUID+122, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+81, @CGUID+82, 3), -- Searing Blade Cultist -> Searing Blade Cultist
-(@CGUID+83, @CGUID+84, 3), -- Searing Blade Cultist -> Searing Blade Cultist
-(@CGUID+86, @CGUID+126, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+87, @CGUID+126, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+89, @CGUID+128, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+90, @CGUID+88, 3), -- Searing Blade Cultist -> Searing Blade Cultist
-(@CGUID+92, @CGUID+127, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+93, @CGUID+128, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+94, @CGUID+127, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+95, @CGUID+96, 3), -- Searing Blade Cultist -> Searing Blade Cultist
-(@CGUID+97, @CGUID+68, 3), -- Searing Blade Enforcer -> Searing Blade Cultist
-(@CGUID+99, @CGUID+69, 3), -- Searing Blade Enforcer -> Searing Blade Cultist
-(@CGUID+100, @CGUID+68, 3), -- Searing Blade Enforcer -> Searing Blade Cultist
-(@CGUID+101, @CGUID+69, 3), -- Searing Blade Enforcer -> Searing Blade Cultist
-(@CGUID+104, @CGUID+103, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
+(@CGUID+100, @CGUID+97, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
 (@CGUID+105, @CGUID+106, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
 (@CGUID+109, @CGUID+108, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
-(@CGUID+110, @CGUID+111, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
-(@CGUID+112, @CGUID+118, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
 (@CGUID+113, @CGUID+114, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
+(@CGUID+116, @CGUID+117, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
+(@CGUID+75, @CGUID+122, 3), -- Searing Blade Cultist -> Searing Blade Warlock
+(@CGUID+79, @CGUID+122, 3), -- Searing Blade Cultist -> Searing Blade Warlock
+(@CGUID+86, @CGUID+126, 3), -- Searing Blade Cultist -> Searing Blade Warlock
+(@CGUID+87, @CGUID+126, 3), -- Searing Blade Cultist -> Searing Blade Warlock
+(@CGUID+112, @CGUID+118, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
 (@CGUID+115, @CGUID+118, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
-(@CGUID+117, @CGUID+116, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
-(@CGUID+120, @CGUID+71, 3), -- Searing Blade Warlock -> Searing Blade Cultist
-(@CGUID+121, @CGUID+73, 3), -- Searing Blade Warlock -> Searing Blade Cultist
-(@CGUID+124, @CGUID+77, 3), -- Searing Blade Warlock -> Searing Blade Cultist
-(@CGUID+125, @CGUID+80, 3); -- Searing Blade Warlock -> Searing Blade Cultist
+(@CGUID+83, @CGUID+84, 3); -- Searing Blade Cultist -> Searing Blade Cultist
 
 -- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
@@ -287,7 +248,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+89, 11322, 389, -360.933, 179.061, -22.1946, 0.722725, 7200, 7200, 2, 1), -- Searing Blade Cultist
 (@CGUID+90, 11322, 389, -374.127, 201.24, -21.801, 4.50295, 7200, 7200, 2, 1), -- Searing Blade Cultist
 (@CGUID+91, 11322, 389, -400.436, 216.18, -1.01054, 0.794809, 7200, 7200, 2, 1), -- Searing Blade Cultist
-(@CGUID+92, 11322, 389, -387.038, 259.729, -4.84658, 3.08605, 7200, 7200, 2, 1), -- Searing Blade Cultist
+(@CGUID+92, 11322, 389, -388.12, 259.82, -4.8465, 3.08605, 7200, 7200, 1, 1), -- Searing Blade Cultist
 (@CGUID+93, 11322, 389, -367.06, 173.695, -22.0076, 3.50908, 7200, 7200, 2, 1), -- Searing Blade Cultist
 (@CGUID+94, 11322, 389, -392.023, 244.262, -4.84661, 2.50107, 7200, 7200, 2, 1), -- Searing Blade Cultist
 (@CGUID+95, 11322, 389, -385.157, 156.603, 7.7385, 0.844909, 7200, 7200, 2, 1), -- Searing Blade Cultist
@@ -314,16 +275,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+116, 11323, 389, -404.929, 181.384, 6.57811, 1.91986, 7200, 7200, 0, 0), -- Searing Blade Enforcer
 (@CGUID+117, 11323, 389, -412.364, 177.342, 6.70869, 1.36136, 7200, 7200, 0, 0), -- Searing Blade Enforcer
 (@CGUID+118, 11323, 389, -334.419, 216.177, -20.6274, 0.357766, 7200, 7200, 0, 0), -- Searing Blade Enforcer
-(@CGUID+119, 11324, 389, -261.428, 94.8909, -24.9335, 3.9619, 7200, 7200, 4, 1), -- Searing Blade Warlock
-(@CGUID+120, 11324, 389, -183.648, 160.15, -25.2199, 2.14356, 7200, 7200, 2, 1), -- Searing Blade Warlock
-(@CGUID+121, 11324, 389, -297.067, 154.025, -25.1295, 3.14651, 7200, 7200, 2, 1), -- Searing Blade Warlock
-(@CGUID+122, 11324, 389, -284.913, 216.073, -25.0184, 2.53073, 7200, 7200, 5, 1), -- Searing Blade Warlock
-(@CGUID+123, 11324, 389, -299.173, 199.104, -24.7852, 3.08923, 7200, 7200, 2, 1), -- Searing Blade Warlock
+(@CGUID+119, 11324, 389, -261.428, 94.8909, -24.9335, 3.9619, 7200, 7200, 1, 1), -- Searing Blade Warlock
+(@CGUID+120, 11324, 389, -183.648, 160.15, -25.2199, 2.14356, 7200, 7200, 1, 1), -- Searing Blade Warlock
+(@CGUID+121, 11324, 389, -297.067, 154.025, -25.1295, 3.14651, 7200, 7200, 1, 1), -- Searing Blade Warlock
+(@CGUID+122, 11324, 389, -284.913, 216.073, -25.0184, 2.53073, 7200, 7200, 1, 1), -- Searing Blade Warlock
+(@CGUID+123, 11324, 389, -299.173, 199.104, -24.7852, 3.08923, 7200, 7200, 1, 1), -- Searing Blade Warlock
 (@CGUID+124, 11324, 389, -231.167, 212.064, -24.9235, 5.09528, 7200, 7200, 1, 1), -- Searing Blade Warlock
-(@CGUID+125, 11324, 389, -316.556, 222.633, -22.1718, 4.07439, 7200, 7200, 2, 1), -- Searing Blade Warlock
-(@CGUID+126, 11324, 389, -375.796, 256.279, -4.84658, 5.98416, 7200, 7200, 2, 1), -- Searing Blade Warlock
-(@CGUID+127, 11324, 389, -385.122, 239.621, -4.84661, 4.5914, 7200, 7200, 2, 1), -- Searing Blade Warlock
-(@CGUID+128, 11324, 389, -367.19, 180.435, -22.1573, 1.02974, 7200, 7200, 2, 1), -- Searing Blade Warlock
+(@CGUID+125, 11324, 389, -316.556, 222.633, -22.1718, 4.07439, 7200, 7200, 1, 1), -- Searing Blade Warlock
+(@CGUID+126, 11324, 389, -375.796, 256.279, -4.84658, 5.98416, 7200, 7200, 1, 1), -- Searing Blade Warlock
+(@CGUID+127, 11324, 389, -385.122, 239.621, -4.84661, 4.5914, 7200, 7200, 1, 1), -- Searing Blade Warlock
+(@CGUID+128, 11324, 389, -367.19, 180.435, -22.1573, 1.02974, 7200, 7200, 1, 1), -- Searing Blade Warlock
 (@CGUID+129, 11517, 389, -147.548, 38.7127, -38.8039, 4.39823, 36000, 36000, 2, 1), -- Oggleflint
 (@CGUID+130, 11518, 389, -376.811, 209.224, -21.801, 5.91667, 36000, 36000, 0, 0), -- Jergosh the Invoker
 (@CGUID+131, 11519, 389, -384.867, 146.045, 7.82184, 2.51327, 36000, 36000, 0, 0), -- Bazzalan
