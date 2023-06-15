@@ -1951,6 +1951,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Clarise Gnarltree (3136) - NSR
 -- Matt Johnson (3137) - NSR
 -- Scott Carevin (3138) - NSR
+-- Morgan Ladimore 3301
+('330101','3301','1','0','100','0','0','0','0','0','0','0','53','32','0','0','0','0','0','0','0','0','0','0','Morgan Ladimore - START_RELAY_SCRIPT on Spawn'),
 -- Apothecary Faustin (5414) - NSR
 -- Deathstalker Zraedus (5418) - NSR
 -- Watchmaster Sorigal (5464) - NSR
