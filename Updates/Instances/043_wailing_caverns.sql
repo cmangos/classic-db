@@ -1104,26 +1104,23 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+303, 0, 43, -70.7889, 120.073, -89.6736, 0.785398, 86400, 86400, 0, 2), -- Lady Anacondra, Druid of the Fang
 (@CGUID+304, 0, 43, 43.24, 183.35, -88.6997, 5.55015, 86400, 86400, 0, 2), -- Lady Anacondra, Druid of the Fang
 (@CGUID+305, 0, 43, 10.1058, 289.975, -87.0198, 4.00662, 7200, 7200, 5, 1), -- Deviate Ravager, Deviate Guardian
-(@CGUID+306, 0, 43, 11.7688, 223.809, -84.1545, 4.75451, 7200, 7200, 5, 1); -- Deviate Ravager, Deviate Guardian
-
--- not sure when these spawn yet
-/*
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 111.285, 242.52, -95.9905, 0.663225);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 111.296, 238.501, -96.0623, 5.58505);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 111.452, 241.298, -95.999, 0);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 112.094, 245.325, -95.9806, 0.575959);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 112.296, 239.501, -96.0623, 0);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 113.263, 236.279, -96.0552, 0.645772);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 113.659, 243.389, -95.9557, 0);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 115.691, 237.448, -95.9311, 0);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 115.694, 242.171, -95.934, 4.90438);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 116.693, 245.718, -95.9496, 0);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 117.184, 244.08, -95.9088, 4.01426);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 117.511, 234.925, -95.8972, 0);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 120.03, 240.33, -96.0139, 0);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 120.491, 236.706, -96.0467, 2.14675);
-INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES (5914, 43, 121.513, 243.038, -96.2626, 0);
-*/
+(@CGUID+306, 0, 43, 11.7688, 223.809, -84.1545, 4.75451, 7200, 7200, 5, 1), -- Deviate Ravager, Deviate Guardian
+-- Mutanus the Devourer 3654 - Naralex's Nightmare s.7967 spawns visible with aura
+(@CGUID+401, 5914, 43, 111.285, 242.52, -95.9905, 0.663225, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+402, 5914, 43, 111.296, 238.501, -96.0623, 5.58505, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+403, 5914, 43, 111.452, 241.298, -95.999, 0, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+404, 5914, 43, 112.094, 245.325, -95.9806, 0.575959, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+405, 5914, 43, 112.296, 239.501, -96.0623, 0, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+406, 5914, 43, 113.263, 236.279, -96.0552, 0.645772, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+407, 5914, 43, 113.659, 243.389, -95.9557, 0, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+408, 5914, 43, 115.691, 237.448, -95.9311, 0, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+409, 5914, 43, 115.694, 242.171, -95.934, 4.90438, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+410, 5914, 43, 116.693, 245.718, -95.9496, 0, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+411, 5914, 43, 117.184, 244.08, -95.9088, 4.01426, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+412, 5914, 43, 117.511, 234.925, -95.8972, 0, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+413, 5914, 43, 120.03, 240.33, -96.0139, 0, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+414, 5914, 43, 120.491, 236.706, -96.0467, 2.14675, 300, 300, 1, 1), -- Deviate Nightmare
+(@CGUID+415, 5914, 43, 121.513, 243.038, -96.2626, 0, 300, 300, 1, 1); -- Deviate Nightmare
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+41, 3636), (@CGUID+41, 3637), -- Deviate Ravager, Deviate Guardian
