@@ -121,19 +121,19 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID + 14, 0, 0, 1, -8204.61328125, -1857.447509765625, 141.4976348876953125, 4.991643905639648437, 0, 0, -0.60181427001953125, 0.798636078834533691, 900, 1800);
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGUID + 10, 'Burning Steppes - Rich Thorium Vein | Truesilver Deposit | Dark Iron Deposit (1) Ore 001', '1', '1', '0', '0');
+(@SGUID + 01, 'Burning Steppes - Rich Thorium Vein | Truesilver Deposit | Dark Iron Deposit (1) Ore 001', '1', '1', '0', '0');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGUID + 10, @OGUID + 10, '-1'),
-(@SGUID + 10, @OGUID + 11, '-1'),
-(@SGUID + 10, @OGUID + 12, '-1'),
-(@SGUID + 10, @OGUID + 13, '-1'),
-(@SGUID + 10, @OGUID + 14, '-1');
+(@SGUID + 01, @OGUID + 10, '-1'),
+(@SGUID + 01, @OGUID + 11, '-1'),
+(@SGUID + 01, @OGUID + 12, '-1'),
+(@SGUID + 01, @OGUID + 13, '-1'),
+(@SGUID + 01, @OGUID + 14, '-1');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGUID + 10, '175404', '0', '0', '0'),
-(@SGUID + 10, '2047', '0', '0', '5'),
-(@SGUID + 10, '165658', '0', '0', '20');
+(@SGUID + 01, '175404', '0', '0', '0'),
+(@SGUID + 01, '2047', '0', '0', '5'),
+(@SGUID + 01, '165658', '0', '0', '20');
 
 -- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -145,19 +145,19 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID + 24, 0, 0, 1, -7685, -1650.9273681640625, 144.5593414306640625, 0.296705186367034912, 0, 0, 0.147809028625488281, 0.989015936851501464, 900, 1800);
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGUID + 20, 'Burning Steppes - Rich Thorium Vein | Truesilver Deposit | Dark Iron Deposit (1) Ore 002', '1', '1', '0', '0');
+(@SGUID + 02, 'Burning Steppes - Rich Thorium Vein | Truesilver Deposit | Dark Iron Deposit (1) Ore 002', '1', '1', '0', '0');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGUID + 20, @OGUID + 20, '-1'),
-(@SGUID + 20, @OGUID + 21, '-1'),
-(@SGUID + 20, @OGUID + 22, '-1'),
-(@SGUID + 20, @OGUID + 23, '-1'),
-(@SGUID + 20, @OGUID + 24, '-1');
+(@SGUID + 02, @OGUID + 20, '-1'),
+(@SGUID + 02, @OGUID + 21, '-1'),
+(@SGUID + 02, @OGUID + 22, '-1'),
+(@SGUID + 02, @OGUID + 23, '-1'),
+(@SGUID + 02, @OGUID + 24, '-1');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGUID + 20, '175404', '0', '0', '0'),
-(@SGUID + 20, '2047', '0', '0', '5'),
-(@SGUID + 20, '165658', '0', '0', '20');
+(@SGUID + 02, '175404', '0', '0', '0'),
+(@SGUID + 02, '2047', '0', '0', '5'),
+(@SGUID + 02, '165658', '0', '0', '20');
 
 -- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -169,19 +169,19 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID + 34, 0, 0, 1, -7611.1396484375, -2387.104736328125, 137.6763458251953125, 6.14356088638305664, 0, 0, -0.06975555419921875, 0.997564136981964111, 900, 1800);
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGUID + 30, 'Burning Steppes - Rich Thorium Vein | Truesilver Deposit | Dark Iron Deposit (1) Ore 003', '1', '1', '0', '0');
+(@SGUID + 03, 'Burning Steppes - Rich Thorium Vein | Truesilver Deposit | Dark Iron Deposit (1) Ore 003', '1', '1', '0', '0');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGUID + 30, @OGUID + 30, '-1'),
-(@SGUID + 30, @OGUID + 31, '-1'),
-(@SGUID + 30, @OGUID + 32, '-1'),
-(@SGUID + 30, @OGUID + 33, '-1'),
-(@SGUID + 30, @OGUID + 34, '-1');
+(@SGUID + 03, @OGUID + 30, '-1'),
+(@SGUID + 03, @OGUID + 31, '-1'),
+(@SGUID + 03, @OGUID + 32, '-1'),
+(@SGUID + 03, @OGUID + 33, '-1'),
+(@SGUID + 03, @OGUID + 34, '-1');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGUID + 30, '175404', '0', '0', '0'),
-(@SGUID + 30, '2047', '0', '0', '5'),
-(@SGUID + 30, '165658', '0', '0', '20');
+(@SGUID + 03, '175404', '0', '0', '0'),
+(@SGUID + 03, '2047', '0', '0', '5'),
+(@SGUID + 03, '165658', '0', '0', '20');
 
 -- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -192,15 +192,15 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID + 43, 0, 0, 1, -7651.11572265625, -3066.22998046875, 135.6034088134765625, 3.612837791442871093, 0, 0, -0.97236919403076171, 0.233448356389999389, 900, 1800);
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGUID + 40, 'Burning Steppes - Rich Thorium Vein | Truesilver Deposit | Dark Iron Deposit (1) Ore 004', '1', '1', '0', '0');
+(@SGUID + 04, 'Burning Steppes - Rich Thorium Vein | Truesilver Deposit | Dark Iron Deposit (1) Ore 004', '1', '1', '0', '0');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGUID + 40, @OGUID + 40, '-1'),
-(@SGUID + 40, @OGUID + 41, '-1'),
-(@SGUID + 40, @OGUID + 42, '-1'),
-(@SGUID + 40, @OGUID + 43, '-1');
+(@SGUID + 04, @OGUID + 40, '-1'),
+(@SGUID + 04, @OGUID + 41, '-1'),
+(@SGUID + 04, @OGUID + 42, '-1'),
+(@SGUID + 04, @OGUID + 43, '-1');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGUID + 40, '175404', '0', '0', '0'),
-(@SGUID + 40, '2047', '0', '0', '5'),
-(@SGUID + 40, '165658', '0', '0', '20');
+(@SGUID + 04, '175404', '0', '0', '0'),
+(@SGUID + 04, '2047', '0', '0', '5'),
+(@SGUID + 04, '165658', '0', '0', '20');
