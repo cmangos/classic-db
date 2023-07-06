@@ -115,7 +115,7 @@ INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `group
 (16883, 24232, 5, 2, 2, 2, 0, 'Shabby Knot'),
 (16883, 24282, 1, 2, 1, 1, 0, 'Rogue''s Diary'),
 -- tbc+
-(16883, 27729, 0.5, 0, 1, 1, 0, 'Humanoid Skull'),
+-- (16883, 27729, 0.5, 0, 1, 1, 0, 'Humanoid Skull'),
 
 -- refloot
 (16883, 1, 0.1, 1, -16883, 1, 0, ''), -- daggers
