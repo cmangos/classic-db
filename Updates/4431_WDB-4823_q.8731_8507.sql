@@ -68,7 +68,7 @@ INSERT INTO creature_movement_template (Entry, Point, PositionX, PositionY, Posi
 (15620,13,-7549.347,699.26483,-23.908577,100,0,0),
 (15620,14,-7549.4707,704.62756,-20.83761,100,0,0),
 (15620,15,-7550.3,712.328,-16.426,100,100,1562001),
-(15620,16,-7548.16,722.592,-16.3067,100,1000,20);
+(15620,16,-7548.16,722.592,-16.3067,100,1000,2);
 
 DELETE FROM dbscripts_on_creature_movement WHERE id = 1562001;
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
