@@ -9,6 +9,7 @@ SET @CGUID := 7000000; -- creatures
 SET @OGUID := 7000000; -- gameobjects
 SET @PGUID := 45600; -- pools
 SET @SGGUID:= 7000000;
+SET @CONDITION :=700000;
 
 -- =========
 -- CREATURES
@@ -758,8 +759,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+0, 'Uldaman - Cleft Scorpid (10) - Annora', '0', '10', '0', '3'),
-(@SGGUID+1, 'Uldaman - Annora (11073)', '0', '1', '12002', '0');
+(@SGGUID+0, 'Uldaman - Cleft Scorpid (10) - Annora', 0, 10, 0, 3),
+(@SGGUID+1, 'Uldaman - Annora (11073)', 0, 1, @CONDITION+1, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -801,5 +802,13 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@CONDITION+1);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
+(@CONDITION+1, 42, @CONDITION+1, 1, 1, 0, 0, 'Uldaman - Spawn Annora');
+
+DELETE FROM `worldstate_name` WHERE `Id` IN (@CONDITION+1);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
+(@CONDITION+1, 'Uldaman - Spawn Annora');
 
 

@@ -214,6 +214,10 @@ INSERT INTO creature_spawn_data_template (entry, SpawnFlags,RelayId,Name) VALUES
 (88,1,20663,'- SPAWN FLAG RUN, RelayId 20663');
 
 -- Ironforge Brigade Footman 15442
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 1066;
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
+(1066, 0, 0, 1, 66, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GENERIC EMOTE - EMOTE_ONESHOT_SALUTE');
+
 -- path 1
 DELETE FROM creature_movement_template WHERE entry IN (15442);
 INSERT INTO creature_movement_template (entry, pathId, point, positionx, positiony, positionz, orientation, waittime, scriptid) VALUES
