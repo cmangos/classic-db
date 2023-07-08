@@ -842,15 +842,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 -- ==================
 -- Blackrock Mountain
+-- The Molten Span
+-- Blackrock Spire (Outside)
 -- ==================
--- Bloodhound (8921) - ALREADY SCRIPTED IN BLACKROCK DEPTHS
+-- Franclorn Forgewright 8888 - spell_dummy_npc
+('888801','8888','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','9617','0','34','11','9036','0','34','Franclorn Forgewright - Cast Shroud of Death, Ghost Visual, Ghost on Spawn'),
+-- Franclorn's Spirit 9542
+('954201','9542','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','9617','0','34','11','9036','0','34','Franclorn''s Spirit - Cast Shroud of Death, Ghost Visual, Ghost on Spawn'),
 -- Scarshield Sentry 9044
 ('904401','9044','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Enable Range Mode on Aggro'),
 ('904402','9044','0','0','100','1025','7000','12000','10000','16000','0','0','11','14897','1','1024','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Slowing Poison'),
 ('904403','9044','0','0','100','1025','7000','11000','11000','15000','0','0','11','14443','4','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Multi-Shot'),
 ('904404','9044','9','0','100','1025','5','35','2300','3900','0','0','11','6660','4','256','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Shoot'),
--- Scarshield Legionnaire (9097) - ALREADY SCRIPTED IN BLACKROCK SPIRE
--- Lava Spawn (12265) - ALREADY SCRIPTED IN MOLTEN CORE
 
 
 
@@ -5354,7 +5357,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Breyk
 ('602601','6026','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Breyk - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Lost One Rift Traveler 6913
-('691301','6913','6','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Lost One Rift Traveler - Despawn on Death'),
+('691301','6913','11','0','100','0','0','0','0','0','0','0','11','9617','0','34','0','0','0','0','0','0','0','0','Lost One Rift Traveler - Cast Ghost Visual on Spawn'),
+('691302','6913','6','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Lost One Rift Traveler - Despawn on Death'),
 -- Innkeeper Karakul (6930) - npc_innkeeper
 -- Swamp Spirit (6932) - NSR
 -- Fallen Hero of the Horde (7572) - NSR
@@ -12126,7 +12130,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Riding Horse (8883) - NSR
 -- Skeletal Mount (8884) - NSR
 -- Riding Raptor (8885) - NSR
--- Gaeriyan (9299) - NSR
+-- Gaeriyan 9299 - spell_dummy_npc
+('929901','9299','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','9617','0','34','11','9036','0','34','Gaeriyan - Cast Shroud of Death, Ghost Visual, Ghost on Spawn'),
 -- Ground Pounder (9396) - NSR
 -- Living Storm (4.0.3 Official Data)
 ('939701','9397','1','0','100','1','1000','1000','600000','600000','0','0','11','12550','0','1','0','0','0','0','0','0','0','0','Living Storm - Cast Lightning Shield on Spawn'),
@@ -12390,6 +12395,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('731801','7318','0','0','100','1025','0','0','300000','300000','0','0','11','7090','0','32','0','0','0','0','0','0','0','0','Rageclaw - Cast Bear Form'),
 ('731802','7318','0','0','100','1025','9000','18000','10000','20000','0','0','11','12161','1','0','0','0','0','0','0','0','0','0','Rageclaw - Cast Maul'),
 -- Lady Sathrah 7319
+-- Spirit of Sathrah 7411
+('741101','7411','11','0','100','0','0','0','0','0','0','0','11','9617','0','34','0','0','0','0','0','0','0','0','Spirit of Sathrah - Cast Ghost Visual on Spawn'),
 -- Daryn Lightwind 7907
 -- Erelas Ambersky 7916
 -- Tyrande Whisperwind 7999
@@ -16712,6 +16719,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('844002','8440','0','0','100','1025','10000','15000','15000','20000','0','0','11','6607','1','0','0','0','0','0','0','0','0','0','Avatar of Hakkar - Cast Lash'),
 ('844003','8440','0','0','100','1025','5000','10000','10000','15000','0','0','11','12888','5','512','0','0','0','0','0','0','0','0','Avatar of Hakkar - Cast Cause Insanity'),
 ('844004','8440','8','0','100','1','12623','-1','2000','2000','0','0','34','4','4','0','0','0','0','0','0','0','0','0','Shade of Hakkar - Set Instance Data on Suppression Spellhit'),
+('844005','8440','11','0','100','0','0','0','0','0','0','0','11','9617','0','34','0','0','0','0','0','0','0','0','Avatar of Hakkar - Cast Ghost Visual on Spawn'),
 -- Avatar of Hakkar 8443
 ('844301','8443','29','0','100','0','1000','1000','0','0','0','0','1','4546','0','0','0','0','0','0','0','0','0','0','Avatar of Hakkar - Yell on Generic Timer'),
 ('844302','8443','29','0','100','0','3000','3000','0','0','0','0','38','0','0','0','39','40','0','0','0','0','0','0','Avatar of Hakkar - Zone Combat Pulse, Call For Help on Generic Timer'),
@@ -19093,6 +19101,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1292202','12922','4','0','10','0','0','0','0','0','0','0','54','0','0','1','0','0','0','0','0','0','0','0','Imp Minion - Random Say on Aggro'),
 ('1292203','12922','0','0','100','1025','1000','2000','2000','3000','0','0','11','20801','1','256','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
 -- Dire Maul Crystal Totem 13916 - NSR
+-- Eskhandar 14306
+('1430601','14306','11','0','100','0','0','0','0','0','0','0','11','22650','0','34','0','0','0','0','0','0','0','0','Eskhandar - Cast Ghost Visual on Spawn'),
 -- Thornling 14362
 ('1436201','14362','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','23973','0','0','0','0','0','0','Thornling - Set ReactState Passive and Cast Root Self on Spawn'),
 ('1436202','14362','29','0','100','0','2000','2000','0','0','0','0','1','9374','0','0','11','22788','0','0','0','0','0','0','Thornling - Text Emote and Cast Grow on Generic Timer'),
