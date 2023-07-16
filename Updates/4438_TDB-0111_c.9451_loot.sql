@@ -175,11 +175,11 @@ INSERT INTO `reference_loot_template_names` (`entry`, `name`) VALUES
 DELETE FROM `reference_loot_template` WHERE `entry` = 50498;
 INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 -- world loot? - 0.1896 sum
-(50498, 11736, 0.0211, 0, 1, 1, 0, 'Libram of Resilience'),
-(50498, 11733, 0.0316, 0, 1, 1, 0, 'Libram of Constitution'),
-(50498, 11737, 0.0105, 0, 1, 1, 0, 'Libram of Voracity'),
-(50498, 11732, 0.0632, 0, 1, 1, 0, 'Libram of Rumination'),
-(50498, 11734, 0.0632, 0, 1, 1, 0, 'Libram of Tenacity');
+(50498, 11736, 0, 1, 1, 1, 0, 'Libram of Resilience'),
+(50498, 11733, 0, 1, 1, 1, 0, 'Libram of Constitution'),
+(50498, 11737, 0, 1, 1, 1, 0, 'Libram of Voracity'),
+(50498, 11732, 0, 1, 1, 1, 0, 'Libram of Rumination'),
+(50498, 11734, 0, 1, 1, 1, 0, 'Libram of Tenacity');
 
 -- End of migration.
 
