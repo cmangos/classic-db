@@ -142,19 +142,27 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+100, @CGUID+97, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
+(@CGUID+70, @CGUID+119, 3), -- Searing Blade Cultist -> Searing Blade Warlock
+(@CGUID+72, @CGUID+119, 3), -- Searing Blade Cultist -> Searing Blade Warlock
 (@CGUID+105, @CGUID+106, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
 (@CGUID+109, @CGUID+108, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
-(@CGUID+113, @CGUID+114, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
-(@CGUID+116, @CGUID+117, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
+(@CGUID+71, @CGUID+120, 3), -- Searing Blade Cultist -> Searing Blade Warlock
+(@CGUID+73, @CGUID+121, 3), -- Searing Blade Cultist -> Searing Blade Warlock
 (@CGUID+75, @CGUID+122, 3), -- Searing Blade Cultist -> Searing Blade Warlock
 (@CGUID+79, @CGUID+122, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+86, @CGUID+126, 3), -- Searing Blade Cultist -> Searing Blade Warlock
-(@CGUID+87, @CGUID+126, 3), -- Searing Blade Cultist -> Searing Blade Warlock
+(@CGUID+80, @CGUID+125, 3), -- Searing Blade Cultist -> Searing Blade Warlock
 (@CGUID+112, @CGUID+118, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
 (@CGUID+115, @CGUID+118, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
-(@CGUID+83, @CGUID+84, 3); -- Searing Blade Cultist -> Searing Blade Cultist
+(@CGUID+83, @CGUID+84, 3), -- Searing Blade Cultist -> Searing Blade Cultist
+(@CGUID+113, @CGUID+114, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
+(@CGUID+116, @CGUID+117, 3), -- Searing Blade Enforcer -> Searing Blade Enforcer
+(@CGUID+86, @CGUID+126, 3), -- Searing Blade Cultist -> Searing Blade Warlock
+(@CGUID+87, @CGUID+126, 3); -- Searing Blade Cultist -> Searing Blade Warlock
 
--- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
+INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
+(11318, 389, 11517, 3, 15),
+(11319, 389, 11517, 3, 15),
+(11322, 389, 11518, 3, 15);
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 11318, 389, -157.268, -21.7249, -57.2708, 5.39606, 7200, 7200, 2, 1), -- Ragefire Trogg
