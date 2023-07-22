@@ -2453,7 +2453,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kobold Vermin 6 (2.4.2 Official Data)
 ('601','6','4','0','10','0','0','0','0','0','0','0','1','1868','1864','0','0','0','0','0','0','0','0','0','Kobold Vermin - Random Say on Aggro'),
 -- Forest Spider (2.4.2 Official Data)
-('3001','30','11','0','100','0','0','0','0','0','0','0','11','11959','0','1','0','0','0','0','0','0','0','0','Forest Spider - Cast Poison Proc on Spawn'),
+('3001','30','11','0','100','0','0','0','0','0','0','0','11','11959','0','34','0','0','0','0','0','0','0','0','Forest Spider - Cast Poison Proc on Spawn'),
 -- Defias Thug 38
 ('3801','38','4','0','30','0','0','0','0','0','0','0','54','0','0','35','0','0','0','0','0','0','0','0','Defias Thug - Random Say on Aggro'),
 ('3802','38','30','0','100','1','5','38','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Defias Thug - Set Phase 1 on Receive AI Event Custom A'),
@@ -2462,7 +2462,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('4001','40','4','0','30','0','0','0','0','0','0','0','1','1868','0','0','0','0','0','0','0','0','0','0','Kobold Miner - Random Say on Aggro'),
 ('4002','40','0','0','100','1025','4000','14100','38000','42000','0','0','11','6016','1','0','0','0','0','0','0','0','0','0','Kobold Miner - Cast Pierce Armor'),
 -- Mine Spider (2.4.2 Official Data)
-('4301','43','11','0','100','0','0','0','0','0','0','0','11','11959','0','1','0','0','0','0','0','0','0','0','Mine Spider - Cast Poison Proc on Spawn'),
+('4301','43','1','0','100','0','1000','1000','0','0','0','0','11','11959','0','32','0','0','0','0','0','0','0','0','Mine Spider - Cast Poison Proc OOC'),
 -- Murloc Forager (2.4.2 Official Data)
 ('4601','46','2','0','100','1024','40','0','0','0','0','0','11','3368','0','0','0','0','0','0','0','0','0','0','Murloc Forager - Drink Minor Potion at 40% HP'),
 -- Corina Steele (54) - NSR
@@ -2482,17 +2482,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('7902','79','0','0','100','1025','2000','4000','18000','29000','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Narg the Taskmaster - Cast Battleshout'),
 -- Kobold Labourer 80 (2.4.2 Official Data)
 ('8001','80','4','0','10','0','0','0','0','0','0','0','1','1868','1864','0','0','0','0','0','0','0','0','0','Kobold Labourer - Random Say on Aggro'),
--- Defias Cutpurse (2.4.2 Official Data)
-('9401','94','33','0','100','1025','0','0','2400','7900','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab on Facing Target Back'),
+-- Defias Cutpurse 94
+('9401','94','4','0','25','0','0','0','0','0','0','0','54','0','0','36','0','0','0','0','0','0','0','0','Defias Cutpurse - Random Say on Aggro'),
+('9402','94','33','0','100','1025','0','0','2400','7900','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab on Facing Target Back'),
 -- Riverpaw Runt (2.4.2 Official Data)
 ('9701','97','4','0','30','0','0','0','0','0','0','0','1','1871','1870','0','0','0','0','0','0','0','0','0','Riverpaw Runt - Random Say on Aggro'),
 ('9702','97','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Riverpaw Runt - Flee at 15% HP'),
 -- Morgaine the Sly (2.4.2 Official Data)
-('9901','99','11','0','100','0','0','0','0','0','0','0','11','11959','0','1','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Poison Proc on Spawn'),
+('9901','99','11','0','100','0','0','0','0','0','0','0','11','11959','0','34','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Poison Proc on Spawn'),
 ('9902','99','33','0','100','1025','1','0','16300','16300','0','0','11','1776','1','0','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Gouge on Facing Target'),
 ('9903','99','33','0','100','1025','0','0','3400','5400','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Backstab on Facing Target Back'),
 -- Gruff Swiftbite 100
 ('10001','100','11','0','100','0','0','0','0','0','0','0','11','3417','0','34','0','0','0','0','0','0','0','0','Gruff Swiftbite - Cast Thrash on Spawn'),
+('10002','100','4','0','20','0','0','0','0','0','0','0','1','1871','1870','0','0','0','0','0','0','0','0','0','Gruff Swiftbite - Say on Aggro'),
 -- Garrick Padfoot (2.4.2 Official Data)
 ('10301','103','4','0','100','0','0','0','0','0','0','0','11','7164','0','0','0','0','0','0','0','0','0','0','Garrick Padfoot - Cast Defensive Stance on Aggro'),
 ('10302','103','0','0','100','0','1000','1000','0','0','0','0','54','0','0','35','0','0','0','0','0','0','0','0','Garrick Padfoot - Random Say on Aggro'),
@@ -2556,7 +2558,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drusilla La Salle (459) - NSR
 -- Barkeep Dobbins (465) - NSR
 -- Mother Fang (2.4.2 Official Data)
-('47101','471','11','0','100','0','0','0','0','0','0','0','11','11919','0','1','0','0','0','0','0','0','0','0','Mother Fang - Cast Poison Proc on Spawn'),
+('47101','471','1','0','100','0','1000','1000','0','0','0','0','11','11919','0','32','0','0','0','0','0','0','0','0','Mother Fang - Cast Poison Proc OOC'),
 ('47102','471','0','0','100','1025','6700','6700','22900','30900','0','0','11','12023','1','0','0','0','0','0','0','0','0','0','Mother Fang - Cast Web'),
 -- Fedfennel
 ('47201','472','0','0','100','1025','1000','5000','12000','16000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Fedfennel - Cast Demoralizing Shout'),
@@ -2576,7 +2578,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('47603','476','27','0','100','1','12544','1','5000','5000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Frost Armor on Missing Buff'),
 ('47604','476','9','0','100','1025','0','40','3600','4800','0','0','11','20793','1','256','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Fireball'),
 -- Riverpaw Outrunner (2.4.2 Official Data)
-('47801','478','11','0','100','0','0','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Riverpaw Outrunner - Cast Thrash on Spawn'),
+('47801','478','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Riverpaw Outrunner - Cast Thrash OOC'),
 ('47802','478','4','0','20','0','0','0','0','0','0','0','1','1871','1870','0','0','0','0','0','0','0','0','0','Riverpaw Outrunner - Random Say on Aggro'),
 -- Smith Argus (514) - NSR
 -- Rockhide Boar (2.4.2 Official Data)
@@ -2646,7 +2648,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stormwind Guard (1423) - guard_elwynnforest
 -- Tomas (1430) - NSR
 -- Adele Fielder (1632) - NSR
--- Northshire Guard (1642) - NSR
+-- Northshire Guard 1642
+('164201','1642','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Northshire Guard - Cast Invisibility and Stealth Detection OOC'),
 -- Quartermaster Hicks (1645) - NSR
 -- Terry Palin (1650) - NSR
 -- Lee Brown (1651) - NSR
@@ -2668,7 +2671,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Riding White Stallion (5403) - NSR
 -- Pinto (5405) - NSR
 -- Palomino (5406) - NSR
--- Clara Charles - NSR
+-- Clara Charles (5917) - NSR
 -- Dead-Tooth Jack (6093) - NSR
 -- Remen Marcot (6121) - NSR
 -- Henze Faulk (6172) - npc_redemption_target
@@ -2683,7 +2686,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Erma (6749) - NSR
 -- Falkhaan Isenstrider (6774) - NSR
 -- Melika Isenstrider (6778) - NSR
--- Defias Dockmaster 6846 (2.4.2 Official Data)
+-- Defias Dockmaster 6846 - Say on Detect Invisibility
 ('684601','6846','4','0','100','0','0','0','0','0','0','0','1','2867','0','0','0','0','0','0','0','0','0','0','Defias Dockmaster - Say on Aggro'),
 ('684602','6846','0','0','100','0','1500','1500','0','0','0','0','32','6866','1','4','32','6866','1','5','32','6866','1','6','Defias Dockmaster - Spawn 3 Defias Bodyguards 6866 on Aggro'),
 -- Defias Bodyguard 6866 (2.4.2 Official Data)
@@ -2707,7 +2710,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chestnut Mare (12375) - NSR
 -- Brown Horse (12376) - NSR
 -- Guard Roberts (12423) - npc_garments_of_quests
--- Reginald Windsor (12580) - NSR
+-- Reginald Windsor (12580) - npc_reginald_windsor
 -- Mercutio (12581) - NSR
 -- James Clark (13159) - NSR
 -- Rogue Black Drake (14388) - ALREADY SCRIPTED IN ANOTHER ZONE
@@ -6763,7 +6766,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ========
 -- Westfall
 -- ========
--- Harvest Golem
+-- Harvest Golem 36
 ('3601','36','0','0','100','1025','7100','18600','22200','34500','0','0','11','8014','1','32','0','0','0','0','0','0','0','0','Harvest Golem - Cast Tetanus'),
 -- Defias Smuggler 95 (2.4.3 Official Data)
 ('9501','95','4','0','5','0','0','0','0','0','0','0','54','0','0','36','0','0','0','0','0','0','0','0','Defias Smuggler - Say on Aggro'),
@@ -6804,8 +6807,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('12601','126','0','0','85','1025','6600','9800','24500','32900','0','0','11','7357','1','0','0','0','0','0','0','0','0','0','Murloc Coastrunner - Cast Poisonous Stab'),
 ('12602','126','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Murloc Coastrunner - Flee at 15% HP'),
 -- Murloc Tidehunter 127 (2.4.3 Official Data)
-('12701','127','0','0','100','1025','2000','7300','17200','31400','0','0','11','11831','17','0','0','0','0','0','0','0','0','0','Murloc Tidehunter - Cast Frost Nova'),
-('12702','127','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Murloc Tidehunter - Flee at 15% HP'),
+('12701','127','11','0','100','0','0','0','0','0','0','0','11','3616','0','34','0','0','0','0','0','0','0','0','Murloc Tidehunter - Cast Poison Proc on Spawn'),
+('12702','127','0','0','100','1025','2000','7300','17200','31400','0','0','11','11831','17','0','0','0','0','0','0','0','0','0','Murloc Tidehunter - Cast Frost Nova'),
+('12703','127','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Murloc Tidehunter - Flee at 15% HP'),
 -- Great Fleshripper (2.4.3 Official Data)
 ('15401','154','0','0','90','1025','5900','16200','20300','28200','0','0','11','12166','1','0','0','0','0','0','0','0','0','0','Great Fleshripper - Cast Muscle Tear'),
 -- Goretusk (2.4.3 Official Data)
@@ -6859,6 +6863,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('45805','458','9','0','100','1025','5','30','2900','4800','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Murloc Hunter - Cast Throw'),
 -- Vultros (2.4.3 Official Data)
 ('46201','462','0','0','100','1025','3800','6800','8000','17700','0','0','11','5708','1','0','0','0','0','0','0','0','0','0','Vultros - Cast Swoop'),
+-- The Defias Traitor 467 - npc_defias_traitor
 -- Rusty Harvest Golem (2.4.3 Official Data)
 ('48001','480','0','0','100','1025','7100','18600','22200','34500','0','0','11','8014','1','32','0','0','0','0','0','0','0','0','Rusty Harvest Golem - Cast Tetanus'),
 -- Defias Footpad (2.4.3 Official Data)
@@ -6886,7 +6891,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('50403','504','33','0','100','1025','0','0','2400','7300','0','0','11','2589','1','0','0','0','0','0','0','0','0','0','Defias Trapper - Cast Backstab on Facing Target Back'),
 ('50404','504','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Defias Trapper - Flee at 15% HP'),
 -- Sergeant Brashclaw (2.4.3 Official Data)
-('50601','506','11','0','100','0','0','0','0','0','0','0','11','7095','0','1','0','0','0','0','0','0','0','0','Sergeant Brashclaw - Cast Knockdown Proc on Spawn'),
+('50601','506','1','0','100','0','1000','1000','0','0','0','0','11','7095','0','32','0','0','0','0','0','0','0','0','Sergeant Brashclaw - Cast Knockdown Proc OOC'),
 ('50602','506','4','0','15','0','0','0','0','0','0','0','1','1871','1870','0','0','0','0','0','0','0','0','0','Sergeant Brashclaw - Random Say on Aggro'),
 ('50603','506','0','0','90','1025','500','1100','30500','38300','0','0','11','3136','0','0','0','0','0','0','0','0','0','0','Sergeant Brashclaw - Cast Frenzied Command'),
 ('50604','506','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','21','1','0','0','Sergeant Brashclaw - Flee at 15% HP'),
@@ -6897,7 +6902,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('51304','513','28','3','100','1','11971','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Murloc Netter - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('51305','513','0','0','100','1025','11000','13900','20500','33000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Murloc Netter - Cast Net'),
 ('51306','513','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Murloc Netter - Flee at 15% HP'),
-('51307','513','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Murloc Netter - Set Phase to 0 on Evade'),
+('51307','513','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Murloc Netter - Set Phase 0 on Evade'),
 -- Murloc Raider (2.4.3 Official Data)
 ('51501','515','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Murloc Raider - Flee at 15% HP'),
 -- Murloc Oracle 517 (2.4.3 Official Data)
@@ -6935,7 +6940,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('59004','590','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Defias Looter - Flee at 15% HP'),
 -- Defias Henchman (2.4.3 Official Data)
 ('59401','594','4','0','15','0','0','0','0','0','0','0','54','0','0','36','0','0','0','0','0','0','0','0','Defias Henchman - Random Say on Aggro'),
-('59402','594','13','0','100','1025','3200','13800','0','0','0','0','11','8242','1','0','0','0','0','0','0','0','0','0','Defias Henchman- Cast Shield Slam on Target Spell Casting'),
+('59402','594','13','0','100','1025','3200','13800','0','0','0','0','11','8242','1','0','0','0','0','0','0','0','0','0','Defias Henchman- Cast Shield Slam on Target Casting'),
 ('59403','594','0','0','100','1024','3600','18800','0','0','0','0','11','3248','0','0','0','0','0','0','0','0','0','0','Defias Henchman- Cast Improved Blocking'),
 ('59404','594','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Defias Henchman - Flee at 15% HP'),
 -- Brainwashed Noble 596
@@ -7018,7 +7023,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('341701','3417','11','0','100','0','0','0','0','0','0','0','11','5111','0','34','0','0','0','0','0','0','0','0','Living Flame - Cast Living Flame Passive on Spawn'),
 -- Defias Raider (2.4.3 Official Data)
 ('618001','6180','4','0','15','0','0','0','0','0','0','0','1','1866','1865','1867','0','0','0','0','0','0','0','0','Defias Raider - Random Say on Aggro'),
-('618002','6180','11','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Defias Raider - Defias Raider - Cast Battle Stance on Spawn'),
+('618002','6180','11','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Defias Raider - Cast Battle Stance on Spawn'),
 ('618003','6180','0','0','100','1025','5000','7500','12500','15000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Defias Raider - Cast Heroic Strike'),
 -- Daphne Stilwell 6182 - npc_daphne_stilwell
 -- Klaven Mortwake 7053 - npc_foreman_klaven_mortwake
