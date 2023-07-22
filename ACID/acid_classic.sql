@@ -9952,10 +9952,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('987701','9877','0','0','100','1025','9000','13000','19000','22000','0','0','11','11962','1','0','0','0','0','0','0','0','0','0','Prince Xavalis - Cast Immolate'),
 ('987702','9877','0','0','100','1025','6000','24000','20000','30000','0','0','11','13578','15','0','0','0','0','0','0','0','0','0','Prince Xavalis - Cast Jadefire'),
 -- Entropic Beast 9878
-('987801','9878','9','0','100','1025','0','30','25000','28000','0','0','11','15661','4','0','0','0','0','0','0','0','0','0','Entropic Beast - Cast Immolate'),
-('987802','9878','0','0','100','1025','8000','24000','25000','28000','0','0','11','15661','4','0','0','0','0','0','0','0','0','0','Entropic Beast - Cast Immolate'),
--- Entropic Horror 9879 - SpellId guessed by dmg
+('987801','9878','0','0','100','1025','6000','24000','25000','28000','0','0','11','15661','4','0','0','0','0','0','0','0','0','0','Entropic Beast - Cast Immolate'),
+-- Entropic Horror 9879
 ('987901','9879','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Entropic Horror - Cast Fire Shield on Spawn'),
+-- Common Kitten 9937 - npc_kitten
 -- Winna Hazzard (9996) - NSR
 -- Corrupted Saber 10042 - npc_corrupt_saber
 -- Trull Failbane (10306) - NSR
@@ -9967,7 +9967,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greta Mosshoof (10922) - NSR
 -- Tenell Leafrunner (10923) - NSR
 -- Ivy Leafrunner (10924) - NSR
--- Captured Arko'narin (11016) - NSR
+-- Captured Arko'narin (11016) - npc_captured_arkonarin
 -- Arko'narin
 ('1101801','11018','0','0','100','1025','5000','8000','9000','13000','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','Arko''narin - Cast Mortal Strike'),
 ('1101802','11018','9','0','100','1025','0','5','12000','15000','0','0','11','18819','1','0','0','0','0','0','0','0','0','0','Arko''narin - Cast Holy Cleave'),
