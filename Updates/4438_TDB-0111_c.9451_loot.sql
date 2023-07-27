@@ -11,6 +11,12 @@ DELETE FROM `creature_loot_template` WHERE `item` = 7911; -- Truesilver Ore
 DELETE FROM `creature_loot_template` WHERE `item` = 12365; -- Dense Stone
 DELETE FROM `creature_loot_template` WHERE `item` = 12698; -- https://www.wowhead.com/classic/item=12698/plans-dawnbringer-shoulders#comments
 
+-- Table 'creature_loot_template' entry 4661 (creature entry) not exist but used as loot id in DB.
+-- Table 'creature_loot_template' entry 9598 (creature entry) not exist but used as loot id in DB.
+-- Table 'creature_loot_template' entry 10260 (creature entry) not exist but used as loot id in DB.
+-- Table 'creature_loot_template' entry 10619 (creature entry) not exist but used as loot id in DB.
+UPDATE `creature_template` SET `LootId` = 0 WHERE `entry` IN (4661,9598,10260,10619);
+
 -- https://github.com/cmangos/tbc-db/commit/c3979a1e768be9cfa559df918a723fd60a7b8629 - might be more in wotlk, or not.
 -- https://www.wowhead.com/wotlk/item=13463/dreamfoil#dropped-by
 DELETE FROM `creature_loot_template` WHERE `item` = 13463 AND `entry` NOT IN ( -- 32 left, 207 deleted. - wowhead has 32, slightly different and also corrupted again.
@@ -160,14 +166,14 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 (50557, 16253, 0, 1, 1, 1, 0, 'Formula: Enchant Chest - Greater Stats'),
 (50557, 12728, 0, 1, 1, 1, 0, 'Plans: Invulnerable Mail'),
 (50557, 22390, 0, 1, 1, 1, 0, 'Plans: Persuader'),
-(50557, 22389, 0, 1, 1, 1, 0, 'Plans: Sageblade'),
+(50557, 22389, 0, 1, 1, 1, 0, 'Plans: Sageblade');
 -- tbc+
-(50557, 21944, 0, 1, 1, 1, 0, 'Design: Truesilver Boar'),
-(50557, 21945, 0, 1, 1, 1, 0, 'Design: The Aquamarine Ward'),
-(50557, 21947, 0, 1, 1, 1, 0, 'Design: Gem Studded Band'),
-(50557, 21949, 0, 1, 1, 1, 0, 'Design: Ruby Serpent'),
-(50557, 21953, 0, 1, 1, 1, 0, 'Design: Emerald Owl'),
-(50557, 12698, 0, 1, 1, 1, 0, 'Plans: Dawnbringer Shoulders');
+-- (50557, 21944, 0, 1, 1, 1, 0, 'Design: Truesilver Boar'),
+-- (50557, 21945, 0, 1, 1, 1, 0, 'Design: The Aquamarine Ward'),
+-- (50557, 21947, 0, 1, 1, 1, 0, 'Design: Gem Studded Band'),
+-- (50557, 21949, 0, 1, 1, 1, 0, 'Design: Ruby Serpent'),
+-- (50557, 21953, 0, 1, 1, 1, 0, 'Design: Emerald Owl'),
+-- (50557, 12698, 0, 1, 1, 1, 0, 'Plans: Dawnbringer Shoulders');
 
 DELETE FROM `reference_loot_template_names` WHERE `entry` = 50498;
 INSERT INTO `reference_loot_template_names` (`entry`, `name`) VALUES

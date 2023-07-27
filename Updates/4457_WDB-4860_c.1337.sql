@@ -38,3 +38,7 @@ INSERT INTO creature_movement_template (Entry, Point, PositionX, PositionY, Posi
 (1337,31,-5311.7876,-2982.2444,340.4289 ,100,0,0),
 (1337,32,-5305.8457,-2984.9478,340.72406,100,100,7); -- pause wp
 
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 7;
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
+(7, 0, 0, 32, 1, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GENERIC - Waypoint Pause');
+
