@@ -1,4 +1,5 @@
 -- Stormwind Orphan 14496
+UPDATE `creature_template` SET `MinLevel` = 1 WHERE `entry` = 14496;
 UPDATE creature SET position_x = -8605.174, position_y = 727.18976, position_z = 101.953995, spawndist = 0, MovementType = 0 WHERE guid IN (79804,79803,79812);
 DELETE FROM `spawn_group` WHERE id = 19948;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
