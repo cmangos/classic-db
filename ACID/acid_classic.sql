@@ -14213,9 +14213,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('968001','9680','11','0','100','0','0','0','0','0','0','0','11','13767','0','34','11','3417','0','34','0','0','0','0','Crest Killer - Cast Hate to Zero, Thrash on Spawn'),
 -- Jaz (9681)
 -- Marshal Reginald Windsor (9682)
--- Magmus 9938
-('993801','9938','0','0','100','1025','8000','8000','6000','6000','0','0','11','15668','17','0','0','0','0','0','0','0','0','0','Magmus - Cast Fiery Burst'),
-('993802','9938','2','0','100','1025','51','0','8000','8000','0','0','11','15593','0','0','0','0','0','0','0','0','0','0','Magmus - Cast War Stomp'),
+-- Magmus 9938 - creature_spell_list
 -- Shadowforge Flame Keeper 9956
 ('995601','9956','4','0','100','0','0','0','0','0','0','0','57','2','25','0','11','9128','0','0','0','0','0','0','Shadowforge Flame Keeper - Enable Range Mode and Cast Battle Shout on Aggro'),
 ('995602','9956','9','0','100','1025','0','5','12000','15000','0','0','11','9080','1','0','0','0','0','0','0','0','0','0','Shadowforge Flame Keeper - Cast Hamstring'),
