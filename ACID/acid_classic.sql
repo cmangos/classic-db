@@ -1745,9 +1745,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bone Chewer (3.0.3 Official Data)
 ('21001','210','1','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Bone Chewer - Cast Birth on Spawn'),
 ('21002','210','0','0','100','1025','2000','12100','46200','66200','0','0','11','6016','1','0','0','0','0','0','0','0','0','0','Bone Chewer - Cast Pierce Armor'),
--- Splinter Fist Warrior (3.0.3 Official Data)
+-- Splinter Fist Warrior 212 - creature_spell_list
 ('21201','212','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Splinter Fist Warrior - Random Say on Aggro'),
-('21202','212','0','0','100','1025','500','3700','1000','9800','0','0','11','5242','0','32','0','0','0','0','0','0','0','0','Splinter Fist Warrior - Cast Battle Shout'),
 -- Starving Dire Wolf (213) - NSR
 -- Defias Night Runner 215
 ('21501','215','1','0','75','1','1000','1000','60000','600000','0','0','11','7939','0','34','11','22766','0','34','0','0','0','0','Defias Night Runner - Cast Sneak OOC'),
@@ -1786,8 +1785,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jitters (3.0.3 Official Data)
 ('28801','288','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Jitters - Flee at 15% HP'),
 -- Abercrombie (289) - NSR
--- Zzarc' Vul (3.0.3 Official Data)
-('30001','300','0','0','100','1025','4800','14500','11900','25400','0','0','11','8716','1','0','0','0','0','0','0','0','0','0','Zzarc'' Vul - Cast Low Swipe'),
+-- Zzarc' Vul 300 - creature_spell_list
+('30001','300','4','0','15','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Zzarc\' Vul - Say on Aggro'),
 -- Blind Mary (302) - NSR
 -- Sven Yorgen (311) - NSR
 -- Eliza 314 (3.0.3 Official Data)
@@ -1875,16 +1874,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Watcher Dodds
 ('88801','888','11','0','100','0','0','0','0','0','0','0','18','512','0','0','0','0','0','0','0','0','0','0','Watcher Dodds - Set UnitFlag IMMUNE_TO_NPC on Spawn'),
 ('88802','888','21','0','100','0','0','0','0','0','0','0','18','512','0','0','0','0','0','0','0','0','0','0','Watcher Dodds - Restore UnitFlag IMMUNE_TO_NPC on Reached Home'),
--- Splinter Fist Ogre (3.0.3 Official Data)
+-- Splinter Fist Ogre 889
 ('88901','889','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Splinter Fist Ogre - Random Say on Aggro'),
--- Splinter Fist Fire Weaver 891 (3.0.3 Official Data)
+-- Splinter Fist Fire Weaver 891 - creature_spell_list
+('89102','891','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Splinter Fist Fire Weaver - Enable Range Mode on Spawn'),
 ('89101','891','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Splinter Fist Fire Weaver - Say on Aggro'),
-('89102','891','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Splinter Fist Fire Weaver - Enable Range Mode on Aggro'),
-('89103','891','0','0','100','1025','1600','4700','18400','19100','0','0','11','20296','1','32','0','0','0','0','0','0','0','0','Splinter Fist Fire Weaver - Cast Flamestrike'),
-('89104','891','9','0','100','1025','0','40','3300','5200','0','0','11','19816','1','256','0','0','0','0','0','0','0','0','Splinter Fist Fire Weaver - Cast Fireball'),
--- Splinter Fist Taskmaster (3.0.3 Official Data)
+-- Splinter Fist Taskmaster 892 - creature_spell_list
 ('89201','892','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Splinter Fist Taskmaster - Random Say on Aggro'),
-('89202','892','0','0','100','1025','800','3100','1500','5000','0','0','11','3631','0','32','0','0','0','0','0','0','0','0','Splinter Fist Taskmaster - Cast Battle Fury'),
 -- Lars (893) - NSR
 -- Nightbane Worgen (898) - NSR
 -- Defias Night Blade (3.0.3 Official Data)
@@ -1925,9 +1921,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('120005','1200','2','0','100','0','15','0','0','0','0','0','28','0','8909','0','22','2','0','0','0','0','0','0','Morbent Fel - Remove Unholy Shield and Set Phase 2 at 15% HP'),
 -- Watcher Sarys (1203) - NSR
 -- Watcher Corwin (1204) - NSR
--- Splinter Fist Firemonger (3.0.3 Official Data)
+-- Splinter Fist Firemonger 1251 - creature_spell_list
 ('125101','1251','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Splinter Fist Firemonger - Random Say on Aggro'),
-('125102','1251','0','0','100','1025','1300','5300','61600','71200','0','0','11','184','0','0','0','0','0','0','0','0','0','0','Splinter Fist Firemonger - Cast Fire Shield II'),
+('125102','1251','8','0','100','1025','0','4','15000','30000','0','0','11','4979','0','32','0','0','0','0','0','0','0','0','Splinter Fist Firemonger - Cast Fire Ward on Fire Spellhit'),
 -- Black Ravager Mastiff (3.0.3 Official Data)
 ('125801','1258','0','0','100','1025','6300','8900','30200','47300','0','0','11','3149','0','0','0','0','0','0','0','0','0','0','Black Ravager Mastiff - Cast Furious Howl'),
 ('125802','1258','0','0','100','1025','9000','12800','15900','25400','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Black Ravager Mastiff - Cast Rend'),
@@ -1935,10 +1931,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('127001','1270','1','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Fetid Corpse - Cast Birth on Spawn'),
 ('127002','1270','0','0','100','1025','2200','18500','120200','125700','0','0','11','7102','4','0','0','0','0','0','0','0','0','0','Fetid Corpse - Cast Contagion of Rot'),
 -- Watcher Cutford (1436) - NSR
--- Splinter Fist Enslaver 1487 (3.0.3 Official Data)
-('148701','1487','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Splinter Fist Enslaver - Enable Range Mode on Aggro'),
-('148702','1487','0','0','100','1025','0','3200','21100','42100','0','0','11','6533','1','1024','0','0','0','0','0','0','0','0','Splinter Fist Enslaver - Cast Net'),
-('148703','1487','9','0','100','1025','5','30','3400','5100','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Splinter Fist Enslaver - Cast Throw'),
+-- Splinter Fist Enslaver 1487 - creature_spell_list
+('148701','1487','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Splinter Fist Enslaver - Enable Range Mode on Spawn'),
+('148702','1487','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Splinter Fist Enslaver - Random Say on Aggro'),
 -- Lohgan Eva (1672) - NSR
 -- Alyssa Eva (1673) - NSR
 -- Finbus Geargrind (1676) - NSR
