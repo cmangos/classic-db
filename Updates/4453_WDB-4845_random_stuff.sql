@@ -58,7 +58,7 @@ INSERT INTO `questgiver_greeting` VALUES (7907, 0, ' ', 0, 0);
 INSERT INTO `questgiver_greeting` VALUES (11036, 0, 'Through knowledge, may we find salvation.', 1, 0);
 
 -- Arcanist Helion
-INSERT INTO `questgiver_greeting` VALUES (15297, 0, 'Knowledge is power - TRUE power, my young friend.  You''ll be wise to acquire as much of it as you can, and pay proper heed to those who have already done so.', 0, 0);
+-- INSERT INTO `questgiver_greeting` VALUES (15297, 0, 'Knowledge is power - TRUE power, my young friend.  You''ll be wise to acquire as much of it as you can, and pay proper heed to those who have already done so.', 0, 0);
 
 -- Keeper of the Rolls
 INSERT INTO `questgiver_greeting` VALUES (16281, 0, 'The Argent Dawn will turn away none who are willing to sacrifice for our cause.', 1, 0);
