@@ -6,7 +6,7 @@ DBComment:
 * Investigate Muddy Churning Waters (180369) pooling
 * Investigate Herb (180164,180165,180166,180167,180168) pooling
 * Edge of Madness 4x3 Mad Servant Patrols, out one run on, three others walk (Imp Patrols)
-* @GROUP_ID+1001, 'Zul\'Gurub - Jinxed Hoodoo Pile (180228,180229) - mincount maxcount?
+* @GROUP_ID+1001, 'Zul''Gurub - Jinxed Hoodoo Pile (180228,180229) - mincount maxcount?
 EndDBScriptData */
 
 SET @CGUID := 3090000; -- creatures
@@ -839,12 +839,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0327, 11361, 309, -11809.5, -1810.02, 51.5274, 1.90241, 7200, 7200, 0, 0), -- Zulian Tiger
 (@CGUID+0328, 11361, 309, -11940.9, -1763.15, 52.483, 0.453786, 7200, 7200, 0, 0), -- Zulian Tiger
 (@CGUID+0329, 11361, 309, -11939.3, -1750.69, 52.8272, 0.017453, 7200, 7200, 0, 0), -- Zulian Tiger
-(@CGUID+0330, 11365, 309, -11612.2, -1568.49, 39.3195, 4.82779, 7200, 7200, 5, 1), -- Zulian Panther
-(@CGUID+0331, 11365, 309, -11612.3, -1565.29, 39.1839, 5.05803, 7200, 7200, 5, 1), -- Zulian Panther
-(@CGUID+0332, 11365, 309, -11614.8, -1566.55, 38.8881, 5.0655, 7200, 7200, 5, 1), -- Zulian Panther
-(@CGUID+0333, 11365, 309, -11632, -1683.5, 39.8163, 4.72216, 7200, 7200, 5, 1), -- Zulian Panther
-(@CGUID+0334, 11365, 309, -11630.6, -1680.17, 39.2641, 4.72213, 7200, 7200, 5, 1), -- Zulian Panther
-(@CGUID+0335, 11365, 309, -11633.4, -1680.15, 39.1681, 4.72213, 7200, 7200, 5, 1), -- Zulian Panther
 (@CGUID+0336, 11365, 309, -11526.2, -1683.66, 49.2104, 6.04566, 7200, 7200, 0, 0), -- Zulian Panther
 (@CGUID+0337, 11365, 309, -11525, -1685.19, 49.7388, 0.083731, 7200, 7200, 5, 1), -- Zulian Panther
 (@CGUID+0338, 11365, 309, -11524.2, -1683.65, 49.4405, 5.89116, 7200, 7200, 5, 1), -- Zulian Panther
@@ -885,9 +879,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0373, 11365, 309, -11522.6, -1636.72, 49.5283, 2.2845, 7200, 7200, 5, 1), -- Zulian Panther
 (@CGUID+0374, 11365, 309, -11520.7, -1639.37, 49.5312, 6.22186, 7200, 7200, 5, 1), -- Zulian Panther
 (@CGUID+0375, 11365, 309, -11514.8, -1632.89, 49.5414, 0.632592, 7200, 7200, 5, 1), -- Zulian Panther
-(@CGUID+0376, 11365, 309, -11568.5, -1559.21, 49.7218, 1.88666, 7200, 7200, 5, 1), -- Zulian Panther
-(@CGUID+0377, 11365, 309, -11559.7, -1565.21, 49.5515, 2.87652, 7200, 7200, 5, 1), -- Zulian Panther
-(@CGUID+0378, 11365, 309, -11559.4, -1563.97, 49.5531, 3.03895, 7200, 7200, 5, 1), -- Zulian Panther
 (@CGUID+0379, 11365, 309, -11511.2, -1580.07, 71.4067, 2.33874, 7200, 7200, 0, 0), -- Zulian Panther
 (@CGUID+0380, 11365, 309, -11523.6, -1573.28, 71.4067, 3.76991, 7200, 7200, 0, 0), -- Zulian Panther
 (@CGUID+0381, 11365, 309, -11525.1, -1582.7, 71.4067, 5.5676, 7200, 7200, 0, 0), -- Zulian Panther
@@ -1283,10 +1274,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0822, 15111, 309, -11885.8408203125, -1877.8155517578125, 63.58702087402343750, 2.809980154037475585, 21600, 21600, 0, 0), -- Mad Servant
 (@CGUID+0823, 15111, 309, -11884.8408203125, -1876.8155517578125, 63.58702087402343750, 0.000000000000000000, 21600, 21600, 0, 0), -- Mad Servant
 (@CGUID+0824, 15111, 309, -11883.8408203125, -1875.8155517578125, 63.58702087402343750, 0.000000000000000000, 21600, 21600, 0, 0), -- Mad Servant
--- Zul\'Gurub -- Razzashi Serpent | Razzashi Adder (2) Wandering 000
+-- Zul''Gurub -- Razzashi Serpent | Razzashi Adder (2) Wandering 000
 (@CGUID+0479, 0, 309, -11934.2529296875, -1328.7517089843750, 78.74189758300781250, 2.722713708877563476, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
 (@CGUID+0480, 0, 309, -11925.9404296875, -1337.4871826171875, 78.42181396484375000, 3.385938644409179687, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
--- Zul\'Gurub -- Razzashi Serpent | Razzashi Adder (2) Wandering 001
+-- Zul''Gurub -- Razzashi Serpent | Razzashi Adder (2) Wandering 001
 (@CGUID+0436, 0, 309, -11932.4501953125, -1395.3247070312500, 80.41854858398437500, 0.733038306236267089, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
 (@CGUID+0467, 0, 309, -11926.9863281250, -1385.8947753906250, 82.07057952880859375, 3.577924966812133789, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
 -- Razzashi Serpent | Razzashi Adder (4) Wandering 000
@@ -1318,15 +1309,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0943, 0, 309, -11988.3740234375, -1829.0006103515625, 58.43753814697265625, 1.204277157783508300, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
 (@CGUID+0944, 0, 309, -11993.5029296875, -1837.6894531250000, 57.74435806274414062, 0.000000000000000000, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
 (@CGUID+0945, 0, 309, -11988.5810546875, -1822.8231201171875, 58.61273193359375000, 3.647738218307495117, 21600, 21600, 3, 1), -- Razzashi Serpent / Razzashi Adder
--- Zul\'Gurub - Troll (3) Patrol 000
+-- Zul''Gurub - Troll (3) Patrol 000
 (@CGUID+0950, 11351, 309, -12209.6992187500, -1459.6898193359375, 131.1045532226562500, 5.338116168975830078, 21600, 21600, 0, 0), -- Gurubashi Headhunter
 (@CGUID+0951, 11351, 309, -12205.9433593750, -1459.9007568359375, 131.3079376220703125, 4.590448379516601562, 21600, 21600, 0, 0), -- Gurubashi Headhunter
 (@CGUID+0952, 11831, 309, -12208.6884765625, -1463.4533691406250, 131.1935882568359375, 1.065640449523925781, 21600, 21600, 0, 0), -- Hakkari Witch Doctor
--- Zul\'Gurub - Troll (3) Patrol 001
+-- Zul''Gurub - Troll (3) Patrol 001
 (@CGUID+0960, 11831, 309, -12315.8095703125, -1444.6771240234375, 130.6948242187500000, 4.357125759124755859, 21600, 21600, 0, 0), -- Hakkari Witch Doctor
 (@CGUID+0961, 11831, 309, -12318.9228515625, -1449.4129638671875, 130.7590484619140625, 2.111848354339599609, 21600, 21600, 0, 0), -- Hakkari Witch Doctor
 (@CGUID+0962, 11351, 309, -12320.0292968750, -1445.1849365234375, 130.8789520263671875, 4.468042850494384765, 21600, 21600, 0, 0), -- Gurubashi Headhunter
--- Zul\'Gurub - Bat (8) Patrol 000
+-- Zul''Gurub - Bat (8) Patrol 000
 (@CGUID+0970, 11368, 309, -12237.5214843750, -1402.2976074218750, 131.0046234130859375, 5.748809337615966796, 21600, 21600, 0, 0), -- Bloodseeker Bat
 (@CGUID+0971, 11368, 309, -12215.3720703125, -1425.9145507812500, 130.6835327148437500, 2.093881607055664062, 21600, 21600, 0, 0), -- Bloodseeker Bat
 (@CGUID+0972, 11368, 309, -12220.1777343750, -1417.3699951171875, 131.0138854980468750, 2.200775861740112304, 21600, 21600, 0, 0), -- Bloodseeker Bat
@@ -1335,7 +1326,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0975, 11368, 309, -12214.3720703125, -1424.9145507812500, 130.6835327148437500, 1.860992312431335449, 21600, 21600, 0, 0), -- Bloodseeker Bat
 (@CGUID+0976, 14750, 309, -12239.4052734375, -1414.3970947265625, 130.6951446533203125, 0.303890645503997802, 21600, 21600, 0, 0), -- Gurubashi Bat Rider
 (@CGUID+0977, 14750, 309, -12209.1357421875, -1423.8873291015625, 130.6835327148437500, 2.313260316848754882, 21600, 21600, 0, 0), -- Gurubashi Bat Rider
--- Zul\'Gurub - Bat (8) Patrol 001
+-- Zul''Gurub - Bat (8) Patrol 001
 (@CGUID+0980, 11368, 309, -12304.8251953125, -1449.7393798828125, 130.6904449462890625, 4.482231616973876953, 21600, 21600, 0, 0), -- Bloodseeker Bat
 (@CGUID+0981, 11368, 309, -12293.5146484375, -1461.5032958984375, 130.6835327148437500, 2.571098566055297851, 21600, 21600, 0, 0), -- Bloodseeker Bat
 (@CGUID+0982, 11368, 309, -12288.8037109375, -1480.1812744140625, 130.6835327148437500, 2.268963813781738281, 21600, 21600, 0, 0), -- Bloodseeker Bat
@@ -1344,12 +1335,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0985, 11368, 309, -12303.4199218750, -1447.0107421875000, 130.6835327148437500, 5.163874149322509765, 21600, 21600, 0, 0), -- Bloodseeker Bat
 (@CGUID+0986, 14750, 309, -12301.9238281250, -1467.1900634765625, 131.0992584228515625, 2.049895286560058593, 21600, 21600, 0, 0), -- Gurubashi Bat Rider
 (@CGUID+0987, 14750, 309, -12288.9111328125, -1472.4573974609375, 130.6835479736328125, 2.386638879776000976, 21600, 21600, 0, 0), -- Gurubashi Bat Rider
--- Zul\'Gurub -- Razzashi Serpent | Razzashi Adder (2) Patrol 003
-(@CGUID+0990, 0, 309, -11549.2207031250, -1848.9637451171875, 84.33419799804687500, 4.140111923217773437, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
-(@CGUID+0991, 0, 309, -11550.9501953125, -1852.1029052734375, 84.03659820556640625, 1.087337136268615722, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
--- Zul\'Gurub -- Razzashi Serpent | Razzashi Adder (2) Patrol 004
-(@CGUID+0434, 0, 309, -11536.6259765625, -1782.0689697265625, 70.86794281005859375, 2.080583095550537109, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
-(@CGUID+0435, 0, 309, -11538.3984375000, -1780.2098388671875, 69.33707427978515625, 5.453408718109130859, 21600, 21600, 0, 0); -- Razzashi Serpent / Razzashi Adder
+-- Zul''Gurub -- Razzashi Serpent | Razzashi Adder (2) Patrol 003
+(@CGUID+0990, 0, 309, -11549.2207031250, -1848.9637451171875, 84.334197998046875000, 4.140111923217773437, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
+(@CGUID+0991, 0, 309, -11550.9501953125, -1852.1029052734375, 84.036598205566406250, 1.087337136268615722, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
+-- Zul''Gurub -- Razzashi Serpent | Razzashi Adder (2) Patrol 004
+(@CGUID+0434, 0, 309, -11536.6259765625, -1782.0689697265625, 70.867942810058593750, 2.080583095550537109, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
+(@CGUID+0435, 0, 309, -11538.3984375000, -1780.2098388671875, 69.337074279785156250, 5.453408718109130859, 21600, 21600, 0, 0), -- Razzashi Serpent / Razzashi Adder
+-- Zul''Gurub -- Zulian Panther (3) Patrol 000
+(@CGUID+0333, 0, 309, -11635.1650390625, -1612.2094726562500, 40.757427215576171870, 1.496905326843261718, 21600, 21600, 0, 0), -- Zulian Panther
+(@CGUID+0334, 0, 309, -11633.7460937500, -1629.2441406250000, 41.210441589355468750, 0.034906584769487380, 21600, 21600, 0, 0), -- Zulian Panther
+(@CGUID+0335, 0, 309, -11636.5380859375, -1619.7567138671875, 40.030929565429687500, 5.829399585723876953, 21600, 21600, 0, 0), -- Zulian Panther
+-- Zul''Gurub -- Zulian Panther (3) Patrol 001
+(@CGUID+0376, 0, 309, -11637.2197265625, -1658.8735351562500, 40.488574981689453128, 5.420167922973632812, 21600, 21600, 0, 0), -- Zulian Panther
+(@CGUID+0377, 0, 309, -11637.2812500000, -1666.6124267578125, 40.171134948730468750, 5.166174411773681640, 21600, 21600, 0, 0), -- Zulian Panther
+(@CGUID+0378, 0, 309, -11639.8476562500, -1662.9742431640625, 40.027671813964843750, 3.316125631332397460, 21600, 21600, 0, 0), -- Zulian Panther
+-- Zul''Gurub -- Zulian Panther (3) Patrol 002
+(@CGUID+0330, 0, 309, -11557.2636718750, -1523.5804443359375, 52.030876159667968750, 1.236941456794738769, 21600, 21600, 0, 0), -- Zulian Panther
+(@CGUID+0331, 0, 309, -11558.4316406250, -1521.1265869140625, 52.596446990966796870, 0.443607687950134277, 21600, 21600, 0, 0), -- Zulian Panther
+(@CGUID+0332, 0, 309, -11560.4443359375, -1516.1149902343750, 53.925300598144531250, 5.467591285705566406, 21600, 21600, 0, 0); -- Zulian Panther
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+0437, 11371), (@CGUID+0437, 11372), -- Razzashi Serpent, Razzashi Adder
@@ -1599,22 +1602,22 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+270, 180386, 309, -11516.2421875, -1648.1376953125, 49.53345108032226562, 1.666788697242736816, 0, 0, 0.740217864513397216, 0.6723671555519104, 600, 600), -- Gong
 (@OGUID+271, 180497, 309, -11501.8935546875, -1614.798828125, 44.57218170166015625, 1.57952284812927246, 0, 0, 0.710185348987579345, 0.704014778137207031, 600, 600), -- Forcefield
 (@OGUID+272, 180526, 309, -11569.19921875, -1627.87451171875, 41.27669906616210937, 0.008725880645215511, 0, 0, 0.004362926352769136, 0.999990463256835937, 600, 600), -- Gong of Bethekk
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 000
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 000
 (@OGUID+0300, 0, 309, -12310.1220703125, -1465.3640136718750, 130.6002044677734375, 3.961898565292358398, 0, 0, -0.91705989837646484, 0.398749500513076782, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0301, 0, 309, -12063.4775390625, -1437.3966064453125, 130.2297821044921875, 1.256635904312133789, 0, 0, 0.587784767150878906, 0.809017360210418701, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0302, 0, 309, -11994.1826171875, -1458.6176757812500, 83.11444854736328125, 5.044002056121826171, 0, 0, -0.58070278167724609, 0.814115643501281738, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0303, 0, 309, -12241.8525390625, -1488.2923583984375, 131.5126495361328125, 1.588248729705810546, 0, 0, 0.713250160217285156, 0.700909554958343505, 604800, 604800), -- Hakkari Thorium Vein
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 001
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 001
 (@OGUID+0310, 0, 309, -12398.2011718750, -1934.4305419921875, 133.2330322265625000, 0.733038187026977539, 0, 0, 0.358367919921875000, 0.933580458164215087, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0311, 0, 309, -12145.3847656250, -1941.7357177734375, 134.8932342529296875, 1.867502212524414062, 0, 0, 0.803856849670410156, 0.594822824001312255, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0312, 0, 309, -12406.1650390625, -1837.8758544921875, 135.8400573730468750, 1.274088263511657714, 0, 0, 0.594821929931640625, 0.803857445716857910, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0313, 0, 309, -12177.2714843750, -1910.1519775390625, 130.8068542480468750, 1.937312245368957519, 0, 0, 0.824125289916992187, 0.566407561302185058, 604800, 604800), -- Hakkari Thorium Vein
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 002
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 002
 (@OGUID+0320, 0, 309, -11549.4941406250, -1489.0610351562500, 73.21334075927734375, 3.717553615570068359, 0, 0, -0.95881938934326171, 0.284016460180282592, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0321, 0, 309, -11803.4824218750, -1905.7117919921875, 52.92700958251953125, 2.548179388046264648, 0, 0, 0.956304550170898437, 0.292372345924377441, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0322, 0, 309, -11546.4208984375, -1745.0648193359375, 40.15413284301757812, 1.343901276588439941, 0, 0, 0.622513771057128906, 0.782608807086944580, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0323, 0, 309, -11998.0468750000, -1843.4572753906250, 60.41311264038085937, 5.864306926727294921, 0, 0, -0.20791149139404296, 0.978147625923156738, 604800, 604800), -- Hakkari Thorium Vein
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 003
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 003
 (@OGUID+0330, 0, 309, -11545.5927734375, -1237.4613037109375, 79.21926879882812500, 2.373644113540649414, 0, 0, 0.927183151245117187, 0.374608308076858520, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0331, 0, 309, -11927.7021484375, -1756.9566650390625, 50.15846633911132812, 3.141592741012573242, 0, 0, -1.00000000000000000, 0.000000000000000000, 604800, 604800), -- Hakkari Thorium Vein
 (@OGUID+0332, 0, 309, -11599.0000000000, -1217.4381103515625, 80.36554718017578125, 1.727874636650085449, 0, 0, 0.760405540466308593, 0.649448513984680175, 604800, 604800), -- Hakkari Thorium Vein
@@ -1661,71 +1664,80 @@ INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `descripti
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID+0000, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000', '0', '0', '0', '1'),
-(@GROUP_ID+0001, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001', '0', '0', '0', '1'),
-(@GROUP_ID+0002, 'Zul\'Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000', '0', '0', '0', '1'),
-(@GROUP_ID+0003, 'Zul\'Gurub - Gurubashi Berserker (1) Patrol 000', '0', '0', '0', '0'),
-(@GROUP_ID+0004, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002', '0', '0', '0', '1'),
-(@GROUP_ID+0005, 'Zul\'Gurub - Mad Servant (3) Patrol 000', '0', '0', '0', '1'),
-(@GROUP_ID+0006, 'Zul\'Gurub - Mad Servant (3) Patrol 001', '0', '0', '0', '1'),
-(@GROUP_ID+0007, 'Zul\'Gurub - Gurubashi Berserker (1) Patrol 001', '0', '0', '0', '0'),
-(@GROUP_ID+0010, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 000', '0', '0', '0', '1'),
-(@GROUP_ID+0011, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 001', '0', '0', '0', '1'),
-(@GROUP_ID+0012, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 002', '0', '0', '0', '1'),
-(@GROUP_ID+0013, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 000', '0', '0', '0', '1'),
-(@GROUP_ID+0014, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 001', '0', '0', '0', '1'),
-(@GROUP_ID+0020, 'Zul\'Gurub - Zul\'Gurub - Troll (3) Patrol 000', '0', '0', '0', '1'),
-(@GROUP_ID+0021, 'Zul\'Gurub - Zul\'Gurub - Troll (3) Patrol 001', '0', '0', '0', '1'),
-(@GROUP_ID+0030, 'Zul\'Gurub - Zul\'Gurub - Bat (8) Patrol 000', '0', '0', '0', '1'),
-(@GROUP_ID+0031, 'Zul\'Gurub - Zul\'Gurub - Bat (8) Patrol 001', '0', '0', '0', '1'),
-(@GROUP_ID+0032, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003', '0', '0', '0', '1'),
-(@GROUP_ID+0033, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004', '0', '0', '0', '1'),
-(@GROUP_ID+0034, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000', '0', '0', '0', '1'),
-(@GROUP_ID+0035, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001', '0', '0', '0', '1'),
+(@GROUP_ID+0000, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+0001, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001', '0', '0', '0', '1'),
+(@GROUP_ID+0002, 'Zul''Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+0003, 'Zul''Gurub - Gurubashi Berserker (1) Patrol 000', '0', '0', '0', '0'),
+(@GROUP_ID+0004, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002', '0', '0', '0', '1'),
+(@GROUP_ID+0005, 'Zul''Gurub - Mad Servant (3) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+0006, 'Zul''Gurub - Mad Servant (3) Patrol 001', '0', '0', '0', '1'),
+(@GROUP_ID+0007, 'Zul''Gurub - Gurubashi Berserker (1) Patrol 001', '0', '0', '0', '0'),
+(@GROUP_ID+0010, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 000', '0', '0', '0', '1'),
+(@GROUP_ID+0011, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 001', '0', '0', '0', '1'),
+(@GROUP_ID+0012, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 002', '0', '0', '0', '1'),
+(@GROUP_ID+0013, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 000', '0', '0', '0', '1'),
+(@GROUP_ID+0014, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 001', '0', '0', '0', '1'),
+(@GROUP_ID+0020, 'Zul''Gurub - Zul''Gurub - Troll (3) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+0021, 'Zul''Gurub - Zul''Gurub - Troll (3) Patrol 001', '0', '0', '0', '1'),
+(@GROUP_ID+0030, 'Zul''Gurub - Zul''Gurub - Bat (8) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+0031, 'Zul''Gurub - Zul''Gurub - Bat (8) Patrol 001', '0', '0', '0', '1'),
+(@GROUP_ID+0032, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003', '0', '0', '0', '1'),
+(@GROUP_ID+0033, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004', '0', '0', '0', '1'),
+(@GROUP_ID+0034, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000', '0', '0', '0', '1'),
+(@GROUP_ID+0035, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001', '0', '0', '0', '1'),
+(@GROUP_ID+0036, 'Zul''Gurub - Zulian Panther (3) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+0037, 'Zul''Gurub - Zulian Panther (3) Patrol 001', '0', '0', '0', '1'),
+(@GROUP_ID+0038, 'Zul''Gurub - Zulian Panther (3) Patrol 002', '0', '0', '0', '1'),
 -- gameobject
-(@GROUP_ID+1001, 'Zul\'Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '1', '0', '0'),
-(@GROUP_ID+1002, 'Zul\'Gurub - Hakkari Thorium Vein (1) Ore 000', '1', '1', '0', '0'),
-(@GROUP_ID+1003, 'Zul\'Gurub - Hakkari Thorium Vein (1) Ore 001', '1', '1', '0', '0'),
-(@GROUP_ID+1004, 'Zul\'Gurub - Hakkari Thorium Vein (1) Ore 002', '1', '1', '0', '0'),
-(@GROUP_ID+1005, 'Zul\'Gurub - Hakkari Thorium Vein (1) Ore 003', '1', '1', '0', '0');
+(@GROUP_ID+1001, 'Zul''Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '1', '0', '0'),
+(@GROUP_ID+1002, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 000', '1', '1', '0', '0'),
+(@GROUP_ID+1003, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 001', '1', '1', '0', '0'),
+(@GROUP_ID+1004, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 002', '1', '1', '0', '0'),
+(@GROUP_ID+1005, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 003', '1', '1', '0', '0');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- Razzashi Serpent | Razzashi Adder (2) Wandering 000
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000
 (@GROUP_ID+0034, 11371, 0, 2, 0),
 (@GROUP_ID+0034, 11372, 0, 2, 0),
--- Razzashi Serpent | Razzashi Adder (2) Wandering 001
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001
 (@GROUP_ID+0035, 11371, 0, 2, 0),
 (@GROUP_ID+0035, 11372, 0, 2, 0),
--- Razzashi Serpent | Razzashi Adder (4) Wandering 000
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 000
 (@GROUP_ID+0010, 11371, 1, 3, 0),
 (@GROUP_ID+0010, 11372, 1, 3, 0),
--- Razzashi Serpent | Razzashi Adder (4) Wandering 001
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 001
 (@GROUP_ID+0011, 11371, 1, 3, 0),
 (@GROUP_ID+0011, 11372, 1, 3, 0),
--- Razzashi Serpent | Razzashi Adder (4) Wandering 002
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 002
 (@GROUP_ID+0012, 11371, 1, 3, 0),
 (@GROUP_ID+0012, 11372, 1, 3, 0),
--- Razzashi Serpent | Razzashi Adder (6) Wandering 000
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 000
 (@GROUP_ID+0013, 11371, 2, 4, 0),
 (@GROUP_ID+0013, 11372, 2, 4, 0),
--- Razzashi Serpent | Razzashi Adder (6) Wandering 001
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 001
 (@GROUP_ID+0014, 11371, 2, 4, 0),
 (@GROUP_ID+0014, 11372, 2, 4, 0),
 (@GROUP_ID+1001, 180228, 0, 0, 66), -- Jinxed Hoodoo Pile (without trap)
 (@GROUP_ID+1001, 180229, 0, 0, 0), -- Jinxed Hoodoo Pile (s.24184)
--- Razzashi Serpent | Razzashi Adder (2) Patrol 002
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002
 (@GROUP_ID+0032, 11371, 0, 2, 0),
 (@GROUP_ID+0032, 11372, 0, 2, 0),
--- Razzashi Serpent | Razzashi Adder (2) Patrol 003
+--  Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003
 (@GROUP_ID+0033, 11371, 0, 2, 0),
 (@GROUP_ID+0033, 11372, 0, 2, 0),
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 000
+--  Zul''Gurub - Zulian Panther (3) Patrol 000
+(@GROUP_ID+0036, 11365, 3, 3, 0),
+--  Zul''Gurub - Zulian Panther (3) Patrol 001
+(@GROUP_ID+0037, 11365, 3, 3, 0),
+--  Zul''Gurub - Zulian Panther (3) Patrol 002
+(@GROUP_ID+0038, 11365, 3, 3, 0),
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 000
 (@GROUP_ID+1002, 180215, 0, 0, 0),
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 001
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 001
 (@GROUP_ID+1003, 180215, 0, 0, 0),
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 002
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 002
 (@GROUP_ID+1004, 180215, 0, 0, 0),
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 003
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 003
 (@GROUP_ID+1005, 180215, 0, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
@@ -1745,44 +1757,44 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+006, @CGUID+820, 1, 00), -- Mad Servant
 (@GROUP_ID+006, @CGUID+821, 2, 00), -- Mad Servant
 (@GROUP_ID+007, @CGUID+188, 0, 00), -- Gurubashi Berserker
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 000
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 000
 (@GROUP_ID+0010, @CGUID+0900, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0010, @CGUID+0901, 1, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0010, @CGUID+0902, 2, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0010, @CGUID+0903, 3, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 001
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 001
 (@GROUP_ID+0011, @CGUID+0910, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0011, @CGUID+0911, 1, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0011, @CGUID+0912, 2, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0011, @CGUID+0913, 3, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 002
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (4) Wandering 002
 (@GROUP_ID+0012, @CGUID+0920, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0012, @CGUID+0921, 1, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0012, @CGUID+0922, 2, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0012, @CGUID+0923, 3, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 000
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 000
 (@GROUP_ID+0013, @CGUID+0930, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0013, @CGUID+0931, 1, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0013, @CGUID+0932, 2, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0013, @CGUID+0933, 3, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0013, @CGUID+0934, 4, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0013, @CGUID+0935, 5, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 001
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 001
 (@GROUP_ID+0014, @CGUID+0940, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0014, @CGUID+0941, 1, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0014, @CGUID+0942, 2, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0014, @CGUID+0943, 3, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0014, @CGUID+0944, 4, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0014, @CGUID+0945, 5, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Troll (3) Patrol 000
+-- Zul''Gurub - Troll (3) Patrol 000
 (@GROUP_ID+0020, @CGUID+0950, 0, 00), -- Hakkari Witch Doctor
 (@GROUP_ID+0020, @CGUID+0951, 1, 00), -- Hakkari Witch Doctor
 (@GROUP_ID+0020, @CGUID+0952, 2, 00), -- Gurubashi Headhunter
--- Zul\'Gurub - Troll (3) Patrol 001
+-- Zul''Gurub - Troll (3) Patrol 001
 (@GROUP_ID+0021, @CGUID+0960, 0, 00), -- Gurubashi Headhunter
 (@GROUP_ID+0021, @CGUID+0961, 1, 00), -- Gurubashi Headhunter
 (@GROUP_ID+0021, @CGUID+0962, 2, 00), -- Hakkari Witch Doctor
--- Zul\'Gurub - Bat (8) Patrol 000
+-- Zul''Gurub - Bat (8) Patrol 000
 (@GROUP_ID+0030, @CGUID+0970, 0, 00), -- Bloodseeker Bat
 (@GROUP_ID+0030, @CGUID+0971, 1, 00), -- Bloodseeker Bat
 (@GROUP_ID+0030, @CGUID+0972, 2, 00), -- Bloodseeker Bat
@@ -1791,7 +1803,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+0030, @CGUID+0975, 5, 50), -- Bloodseeker Bat (chance not confirmed, nor if it's this slot)
 (@GROUP_ID+0030, @CGUID+0976, 6, 00), -- Gurubashi Bat Rider
 (@GROUP_ID+0030, @CGUID+0977, 7, 00), -- Gurubashi Bat Rider
--- Zul\'Gurub - Bat (8) Patrol 001
+-- Zul''Gurub - Bat (8) Patrol 001
 (@GROUP_ID+0031, @CGUID+0980, 0, 00), -- Bloodseeker Bat
 (@GROUP_ID+0031, @CGUID+0981, 1, 00), -- Bloodseeker Bat
 (@GROUP_ID+0031, @CGUID+0982, 2, 00), -- Bloodseeker Bat
@@ -1800,34 +1812,46 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+0031, @CGUID+0985, 5, 50), -- Bloodseeker Bat (chance not confirmed, nor if it's this slot)
 (@GROUP_ID+0031, @CGUID+0986, 6, 00), -- Gurubashi Bat Rider
 (@GROUP_ID+0031, @CGUID+0987, 7, 00), -- Gurubashi Bat Rider
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003
 (@GROUP_ID+0032, @CGUID+0990, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0032, @CGUID+0991, 1, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004
 (@GROUP_ID+0033, @CGUID+0434, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0033, @CGUID+0435, 1, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000
 (@GROUP_ID+0034, @CGUID+0479, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0034, @CGUID+0480, 1, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001
+-- Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 001
 (@GROUP_ID+0035, @CGUID+0436, 0, 00), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+0035, @CGUID+0467, 1, 00), -- Razzashi Serpent, Razzashi Adder
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 000
+-- Zul''Gurub - Zulian Panther (3) Patrol 000
+(@GROUP_ID+0036, @CGUID+0333, 0, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0036, @CGUID+0334, 1, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0036, @CGUID+0335, 2, 00), -- Razzashi Serpent, Razzashi Adder
+-- Zul''Gurub - Zulian Panther (3) Patrol 001
+(@GROUP_ID+0037, @CGUID+0376, 0, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0037, @CGUID+0377, 1, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0037, @CGUID+0378, 2, 00), -- Razzashi Serpent, Razzashi Adder
+-- Zul''Gurub - Zulian Panther (3) Patrol 002
+(@GROUP_ID+0038, @CGUID+0330, 0, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0038, @CGUID+0331, 1, 00), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0038, @CGUID+0332, 2, 00), -- Razzashi Serpent, Razzashi Adder
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 000
 (@GROUP_ID+1002, @OGUID+0300, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1002, @OGUID+0301, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1002, @OGUID+0302, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1002, @OGUID+0303, -1, 00),  -- Hakkari Thorium Vein
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 001
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 001
 (@GROUP_ID+1003, @OGUID+0310, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1003, @OGUID+0311, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1003, @OGUID+0312, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1003, @OGUID+0313, -1, 00),  -- Hakkari Thorium Vein
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 002
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 002
 (@GROUP_ID+1004, @OGUID+0320, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1004, @OGUID+0321, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1004, @OGUID+0322, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1004, @OGUID+0323, -1, 00),  -- Hakkari Thorium Vein
--- Zul\'Gurub - Hakkari Thorium Vein (1) Ore 003
+-- Zul''Gurub - Hakkari Thorium Vein (1) Ore 003
 (@GROUP_ID+1005, @OGUID+0330, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1005, @OGUID+0331, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1005, @OGUID+0332, -1, 00),  -- Hakkari Thorium Vein
@@ -1836,32 +1860,38 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 INSERT INTO `spawn_group_spawn` (`guid`, `Id`) SELECT `guid`, @GROUP_ID+1001 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@GROUP_ID+000, '2', '02', '0', @PATH_ID+0, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
-(@GROUP_ID+001, '2', '02', '0', @PATH_ID+1, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001'),
-(@GROUP_ID+002, '2', '02', '0', @PATH_ID+2, 4, 'Zul\'Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000'),
-(@GROUP_ID+004, '2', '02', '0', @PATH_ID+4, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002'),
-(@GROUP_ID+005, '1', '03', '0', @PATH_ID+5, 2, 'Zul\'Gurub - Mad Servant (3) Patrol 000'),
-(@GROUP_ID+006, '1', '03', '0', @PATH_ID+6, 2, 'Zul\'Gurub - Mad Servant (3) Patrol 001'),
-(@GROUP_ID+020, '3', '02', '0', @PATH_ID+0010, 4, 'Zul\'Gurub - Troll (3) Patrol 000'),
-(@GROUP_ID+021, '3', '02', '0', @PATH_ID+0011, 4, 'Zul\'Gurub - Troll (3) Patrol 001'),
-(@GROUP_ID+030, '0', '10', '0', @PATH_ID+0020, 2, 'Zul\'Gurub - Bat (8) Patrol 000'),
-(@GROUP_ID+031, '0', '10', '0', @PATH_ID+0021, 2, 'Zul\'Gurub - Bat (8) Patrol 001'),
-(@GROUP_ID+032, '1', '03', '0', @PATH_ID+0022, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003'),
-(@GROUP_ID+033, '1', '03', '0', @PATH_ID+0023, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004');
+(@GROUP_ID+000, '2', '02', '0', @PATH_ID+0000, 4, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
+(@GROUP_ID+001, '2', '02', '0', @PATH_ID+0001, 4, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001'),
+(@GROUP_ID+002, '2', '02', '0', @PATH_ID+0002, 4, 'Zul''Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000'),
+(@GROUP_ID+004, '2', '02', '0', @PATH_ID+0004, 4, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002'),
+(@GROUP_ID+005, '1', '03', '0', @PATH_ID+0005, 2, 'Zul''Gurub - Mad Servant (3) Patrol 000'),
+(@GROUP_ID+006, '1', '03', '0', @PATH_ID+0006, 2, 'Zul''Gurub - Mad Servant (3) Patrol 001'),
+(@GROUP_ID+020, '3', '02', '0', @PATH_ID+0010, 4, 'Zul''Gurub - Troll (3) Patrol 000'),
+(@GROUP_ID+021, '3', '02', '0', @PATH_ID+0011, 4, 'Zul''Gurub - Troll (3) Patrol 001'),
+(@GROUP_ID+030, '0', '10', '0', @PATH_ID+0020, 2, 'Zul''Gurub - Bat (8) Patrol 000'),
+(@GROUP_ID+031, '0', '10', '0', @PATH_ID+0021, 2, 'Zul''Gurub - Bat (8) Patrol 001'),
+(@GROUP_ID+032, '1', '03', '0', @PATH_ID+0022, 4, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003'),
+(@GROUP_ID+033, '1', '03', '0', @PATH_ID+0023, 4, 'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004'),
+(@GROUP_ID+036, '3', '02', '0', @PATH_ID+0024, 4, 'Zul''Gurub - Zulian Panther (3) Patrol 000'),
+(@GROUP_ID+037, '3', '02', '0', @PATH_ID+0025, 2, 'Zul''Gurub - Zulian Panther (3) Patrol 001'),
+(@GROUP_ID+038, '3', '02', '0', @PATH_ID+0026, 4, 'Zul''Gurub - Zulian Panther (3) Patrol 002');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-(@PATH_ID+0000,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
-(@PATH_ID+0001,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001'),
-(@PATH_ID+0002,'Zul\'Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000'),
-(@PATH_ID+0004,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002'),
-(@PATH_ID+0005,'Zul\'Gurub - Mad Servant (3) Patrol 000'),
-(@PATH_ID+0006,'Zul\'Gurub - Mad Servant (3) Patrol 001'),
-(@PATH_ID+0010,'Zul\'Gurub - Troll (3) Patrol 000'),
-(@PATH_ID+0011,'Zul\'Gurub - Troll (3) Patrol 001'),
-(@PATH_ID+0020,'Zul\'Gurub - Bat (8) Patrol 000'),
-(@PATH_ID+0021,'Zul\'Gurub - Bat (8) Patrol 001'),
-(@PATH_ID+0022,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003'),
-(@PATH_ID+0023,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004');
+(@PATH_ID+0000,'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
+(@PATH_ID+0001,'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001'),
+(@PATH_ID+0002,'Zul''Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000'),
+(@PATH_ID+0004,'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002'),
+(@PATH_ID+0005,'Zul''Gurub - Mad Servant (3) Patrol 000'),
+(@PATH_ID+0006,'Zul''Gurub - Mad Servant (3) Patrol 001'),
+(@PATH_ID+0010,'Zul''Gurub - Troll (3) Patrol 000'),
+(@PATH_ID+0011,'Zul''Gurub - Troll (3) Patrol 001'),
+(@PATH_ID+0020,'Zul''Gurub - Bat (8) Patrol 000'),
+(@PATH_ID+0021,'Zul''Gurub - Bat (8) Patrol 001'),
+(@PATH_ID+0022,'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003'),
+(@PATH_ID+0023,'Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 004'),
+(@PATH_ID+0024,'Zul''Gurub - Zulian Panther (3) Patrol 000'),
+(@PATH_ID+0025,'Zul''Gurub - Zulian Panther (3) Patrol 001'),
+(@PATH_ID+0026,'Zul''Gurub - Zulian Panther (3) Patrol 002');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@PATH_ID+0000, 01, -11863.7529296875, -1313.4700927734375, 78.72680664062500000, 100, 0, 0),
@@ -2042,7 +2072,48 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+0023, 08, -11597.1523437500, -1830.3585205078125, 40.87318801879882812, 100, 0, 0),
 (@PATH_ID+0023, 09, -11612.7236328125, -1838.1774902343750, 42.92127609252929687, 100, 0, 0),
 (@PATH_ID+0023, 10, -11612.6054687500, -1854.1682128906250, 42.94056320190429687, 100, 0, 0),
-(@PATH_ID+0023, 11, -11623.0214843750, -1860.6818847656250, 45.10950851440429687, 100, 0, 0);
+(@PATH_ID+0023, 11, -11623.0214843750, -1860.6818847656250, 45.10950851440429687, 100, 0, 0),
+
+(@PATH_ID+0024, 01, -11634.1269531250, -1598.2363281250000, 39.14191818237304687, 100, 0, 0),
+(@PATH_ID+0024, 02, -11632.1718750000, -1624.0839843750000, 39.87689971923828125, 100, 0, 0),
+(@PATH_ID+0024, 03, -11631.5732421875, -1646.1881103515625, 38.94508743286132812, 100, 0, 0),
+(@PATH_ID+0024, 04, -11632.0664062500, -1671.7193603515625, 41.19049072265625000, 100, 0, 0),
+(@PATH_ID+0024, 05, -11631.8398437500, -1696.8825683593750, 40.05401611328125000, 100, 0, 0),
+
+(@PATH_ID+0025, 01, -11629.8916015625, -1667.4483642578125, 41.13385009765625000, 100, 0, 0),
+(@PATH_ID+0025, 02, -11626.5332031250, -1644.3599853515625, 39.07936477661132812, 100, 0, 0),
+(@PATH_ID+0025, 03, -11615.7099609375, -1624.0926513671875, 39.27216339111328125, 100, 0, 0),
+(@PATH_ID+0025, 04, -11590.8740234375, -1621.3721923828125, 48.73896026611328125, 100, 0, 0),
+(@PATH_ID+0025, 05, -11581.0634765625, -1641.8532714843750, 49.52446746826171875, 100, 0, 0),
+(@PATH_ID+0025, 06, -11567.5214843750, -1667.5407714843750, 49.72083663940429687, 100, 0, 0),
+(@PATH_ID+0025, 07, -11553.5830078125, -1692.6387939453125, 50.86830520629882812, 100, 0, 0),
+(@PATH_ID+0025, 08, -11519.3798828125, -1674.3471679687500, 49.72084045410156250, 100, 0, 0),
+(@PATH_ID+0025, 09, -11477.0097656250, -1671.6424560546875, 49.72083663940429687, 100, 0, 0),
+(@PATH_ID+0025, 10, -11462.7431640625, -1648.2841796875000, 49.72084045410156250, 100, 0, 0),
+(@PATH_ID+0025, 11, -11462.5673828125, -1620.9614257812500, 49.72083282470703125, 100, 0, 0),
+(@PATH_ID+0025, 12, -11462.6298828125, -1594.6408691406250, 49.63734436035156250, 100, 0, 0),
+(@PATH_ID+0025, 13, -11465.4423828125, -1568.8903808593750, 49.63734054565429687, 100, 0, 0),
+(@PATH_ID+0025, 14, -11487.8798828125, -1566.2319335937500, 49.62094879150390625, 100, 0, 0),
+(@PATH_ID+0025, 15, -11513.9414062500, -1568.0570068359375, 49.63734817504882812, 100, 0, 0),
+(@PATH_ID+0025, 16, -11547.5537109375, -1566.8209228515625, 49.69098663330078125, 100, 0, 0),
+(@PATH_ID+0025, 17, -11572.3818359375, -1554.7301025390625, 50.69623565673828125, 100, 0, 0),
+(@PATH_ID+0025, 18, -11581.8984375000, -1588.2259521484375, 50.05463409423828125, 100, 0, 0),
+(@PATH_ID+0025, 19, -11577.3447265625, -1606.2500000000000, 48.54853057861328125, 100, 0, 0),
+(@PATH_ID+0025, 20, -11586.5556640625, -1616.7745361328125, 49.72083663940429687, 100, 0, 0),
+(@PATH_ID+0025, 21, -11615.3691406250, -1621.9932861328125, 39.39179229736328125, 100, 0, 0),
+(@PATH_ID+0025, 22, -11616.8828125000, -1653.8944091796875, 38.84010696411132812, 100, 0, 0),
+(@PATH_ID+0025, 23, -11609.1953125000, -1682.1885986328125, 39.02716064453125000, 100, 0, 0),
+(@PATH_ID+0025, 24, -11625.4951171875, -1686.3771972656250, 39.85919189453125000, 100, 0, 0),
+
+(@PATH_ID+0026, 01, -11553.6464843750, -1513.1582031250000, 56.56540679931640625, 100, 0, 0),
+(@PATH_ID+0026, 02, -11568.2333984375, -1517.8378906250000, 52.54633331298828125, 100, 0, 0),
+(@PATH_ID+0026, 03, -11586.3515625000, -1515.1041259765625, 50.52826690673828125, 100, 0, 0),
+(@PATH_ID+0026, 04, -11596.5576171875, -1508.7161865234375, 48.42060089111328125, 100, 0, 0),
+(@PATH_ID+0026, 05, -11608.4033203125, -1513.7017822265625, 44.82685089111328125, 100, 0, 0),
+(@PATH_ID+0026, 06, -11627.7841796875, -1526.7974853515625, 41.41840362548828125, 100, 0, 0),
+(@PATH_ID+0026, 07, -11622.7578125000, -1546.7374267578125, 40.30229949951171875, 100, 0, 0),
+(@PATH_ID+0026, 08, -11612.3134765625, -1567.4998779296875, 39.30536651611328125, 100, 0, 0),
+(@PATH_ID+0026, 09, -11610.1884765625, -1585.9324951171875, 39.10199737548828125, 100, 0, 0);
 
 -- =========
 -- DBSCRIPTS
