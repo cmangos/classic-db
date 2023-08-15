@@ -1533,6 +1533,9 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+108, 15246),(@CGUID+108, 15250), -- Qiraji Mindslayer, Qiraji Slayer
 (@CGUID+109, 15246),(@CGUID+109, 15250); -- Qiraji Mindslayer, Qiraji Slayer
 
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (1523001, 30598, 'Vekniss Warrior (15230) - RelayScript (30598)');
+REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 1523001 FROM `creature` WHERE `guid` BETWEEN @CGUID+7 AND @CGUID+12;
+
 -- ===========
 -- GAMEOBJECTS
 -- ===========
