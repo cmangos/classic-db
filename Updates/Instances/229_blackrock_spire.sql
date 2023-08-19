@@ -745,7 +745,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10299, 0, 8, 1, 0, 0, NULL), -- Scarshield Infiltrator
 (10316, 0, 0, 1, 0, 0, NULL), -- Blackhand Incarcerator
 (10317, 0, 0, 1, 0, 0, NULL), -- Blackhand Elite
-(10318, 0, 0, 1, 0, 0, '22766'), -- Blackhand Assassin
+(10318, 0, 0, 1, 0, 0, NULL), -- Blackhand Assassin
 (10319, 0, 0, 1, 0, 0, NULL), -- Blackhand Iron Guard
 (10363, 0, 0, 1, 0, 0, NULL), -- General Drakkisath
 (10366, 0, 0, 1, 0, 0, NULL), -- Rage Talon Dragon Guard

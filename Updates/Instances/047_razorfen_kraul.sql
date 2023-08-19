@@ -555,7 +555,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (4623, 0, 0, 1, 0, 0, NULL), -- Quilguard Champion
 (4625, 0, 0, 1, 0, 0, '7083'), -- Death's Head Ward Keeper
 (4842, 0, 0, 1, 0, 0, NULL), -- Earthcaller Halmgar
-(6035, 0, 0, 1, 0, 0, '7939 22766'), -- Razorfen Stalker
+(6035, 0, 0, 1, 0, 0, NULL), -- Razorfen Stalker
 (6168, 0, 0, 1, 0, 0, NULL); -- Roogug
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES

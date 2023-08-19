@@ -94,8 +94,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (4787, 0, 7, 1, 0, 0, NULL), -- Argent Guard Thaelrid
-(4789, 0, 0, 1, 0, 0, '7939 22766'), -- Fallenroot Rogue
-(4798, 0, 0, 1, 0, 0, '7939 22766'), -- Fallenroot Shadowstalker
+(4789, 0, 0, 1, 0, 0, NULL), -- Fallenroot Rogue
+(4798, 0, 0, 1, 0, 0, NULL), -- Fallenroot Shadowstalker
 (4799, 0, 0, 1, 0, 0, NULL), -- Fallenroot Hellcaller
 (4805, 0, 0, 1, 0, 0, '12544'), -- Blackfathom Sea Witch
 (4807, 0, 0, 1, 0, 0, NULL), -- Blackfathom Myrmidon

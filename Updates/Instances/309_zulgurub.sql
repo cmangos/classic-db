@@ -448,13 +448,13 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (14883, 0, 0, 1, 10, 0, NULL), -- Voodoo Slave
 (15042, 0, 0, 1, 0, 0, NULL), -- Zanza the Restless
 (15043, 0, 0, 1, 0, 0, NULL), -- Zulian Crocolisk
-(15067, 0, 0, 1, 0, 0, '22766'), -- Zulian Stalker
+(15067, 0, 0, 1, 0, 0, '7939 22766'), -- Zulian Stalker
 (15082, 0, 0, 1, 0, 0, '25039'), -- Gri'lek
 (15083, 0, 0, 1, 0, 0, '25039'), -- Hazza'rah
 (15084, 0, 0, 1, 0, 0, '25039'), -- Renataki
 (15085, 0, 0, 1, 0, 0, '25039'), -- Wushoolay
 (15091, 0, 0, 1, 0, 0, NULL), -- Zul'Gurub Panther Trigger
-(15101, 0, 0, 1, 0, 0, '8876'), -- Zulian Prowler
+(15101, 0, 0, 1, 0, 0, '7939 22766'), -- Zulian Prowler
 (15111, 0, 0, 1, 0, 0, NULL), -- Mad Servant
 (15114, 0, 0, 1, 0, 0, '8876'); -- Gahz'ranka
 
