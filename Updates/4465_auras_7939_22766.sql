@@ -38,6 +38,22 @@ UPDATE `creature_template_addon` SET `auras` = NULL WHERE `entry` = 10318; -- se
 UPDATE `creature_template_addon` SET `auras` = NULL WHERE `entry` = 11723;
 UPDATE `creature_template_addon` SET `auras` = NULL WHERE `entry` = 11730;
 UPDATE `creature_template_addon` SET `auras` = '7939 22766' WHERE `entry` = 15101;
+UPDATE `creature_template_addon` SET `auras` = '7939 22766 3417' WHERE `entry` = 2522;
+UPDATE `creature_template_addon` SET `auras` = '7939 22766 10022' WHERE `entry` = 4850;
+/*
+ServerToClient: SMSG_AURA_UPDATE (0x0496) Length: 23 ConnIdx: 0 Time: 02/13/2009 06:15:05.000 Number: 1885223
+GUID: Full: 0xF130003ADB00048B Type: Creature Entry: 15067 Low: 1163
+[0] Slot: 0
+[0] Spell ID: 7939 (7939)
+[0] Flags: 25 (EffectIndex0, NotCaster, Positive)
+[0] Level: 61
+[0] Charges: 0
+[1] Slot: 1
+[1] Spell ID: 22766 (22766)
+[1] Flags: 27 (EffectIndex0, EffectIndex1, NotCaster, Positive)
+[1] Level: 61
+[1] Charges: 0
+*/
 
 -- tbc+
 UPDATE `creature_template_addon` SET `auras` = '7939 22766' WHERE `entry` = 16928; -- Stonescythe Ambusher
