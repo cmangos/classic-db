@@ -6421,9 +6421,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Riverpaw Gnoll (2.4.3 Official Data)
 ('11701','117','4','0','15','0','0','0','0','0','0','0','1','1871','1870','0','0','0','0','0','0','0','0','0','Riverpaw Gnoll - Random Say on Aggro'),
 ('11702','117','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Riverpaw Gnoll - Flee at 15% HP'),
--- Defias Pathstalker (2.4.3 Official Data)
+-- Defias Pathstalker 121
 ('12101','121','4','0','15','0','0','0','0','0','0','0','54','0','0','36','0','0','0','0','0','0','0','0','Defias Pathstalker - Random Say on Aggro'),
-('12102','121','33','0','65','1025','0','0','4800','4900','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Defias Pathstalker - Cast Backstab on Facing Target Back'),
+('12102','121','33','0','100','1025','0','0','2000','10000','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Defias Pathstalker - Cast Backstab on Facing Target Back'),
 ('12103','121','0','0','100','1025','0','10000','25200','39100','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Defias Pathstalker- Cast Shield Bash'),
 ('12104','121','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Defias Pathstalker - Flee at 15% HP'),
 -- Defias Highwayman (2.4.3 Official Data)
