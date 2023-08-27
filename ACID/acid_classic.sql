@@ -776,6 +776,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('290701','2907','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Dustbelcher Mystic - Enable Range Mode on Aggro'),
 ('290702','2907','0','0','100','1024','14800','30400','0','0','0','0','11','13281','1','0','0','0','0','0','0','0','0','0','Dustbelcher Mystic - Cast Earth Shock'),
 ('290703','2907','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Dustbelcher Mystic - Cast Lightning Bolt'),
+('290704','2907','4','0','10','0','0','0','0','0','0','0','1','1925','1926','0','0','0','0','0','0','0','0','0','Dustbelcher Mystic - Random Say on Aggro'),
 -- Grawl (2908) - NSR
 -- Prospector Ryedol (2910) - NSR
 -- Fam'retor Guardian 2919
