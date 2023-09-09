@@ -10,3 +10,8 @@ DELETE FROM `creature` WHERE `id` = 68 AND `guid` = 2473; -- not perm spawn
 DELETE FROM `creature` WHERE `id` = 68 AND `guid` = 190; -- not perm spawn
 DELETE FROM `creature` WHERE `id` = 68 AND `guid` = 189; -- not perm spawn
 
+-- `game_event_creature_data` guid (189) does not exist in `creature`
+-- `game_event_creature_data` guid (190) does not exist in `creature`
+-- `game_event_creature_data` guid (2473) does not exist in `creature`
+DELETE FROM `game_event_creature_data` WHERE `guid` IN (189,190,2473); -- s.27654 event 8
+
