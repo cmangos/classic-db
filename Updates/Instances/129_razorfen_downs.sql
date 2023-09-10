@@ -160,7 +160,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (7352, 0, 0, 1, 0, 0, '12529'), -- Frozen Soul
 (7353, 0, 0, 1, 0, 0, '12529'), -- Freezing Spirit
 (7354, 0, 0, 1, 0, 0, NULL), -- Ragglesnout
-(7355, 0, 0, 1, 0, 0, '8876 12254'), -- Tuten'kash
+(7355, 0, 0, 1, 0, 0, '12254'), -- Tuten'kash
 (7356, 0, 0, 1, 0, 0, '12947'), -- Plaguemaw the Rotting
 (7357, 0, 0, 1, 10, 0, NULL), -- Mordresh Fire Eye
 (7358, 0, 0, 1, 0, 0, NULL), -- Amnennar the Coldbringer
