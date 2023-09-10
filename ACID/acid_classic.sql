@@ -5147,7 +5147,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('691301','6913','11','0','100','0','0','0','0','0','0','0','11','9617','0','34','0','0','0','0','0','0','0','0','Lost One Rift Traveler - Cast Ghost Visual on Spawn'),
 ('691302','6913','6','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Lost One Rift Traveler - Despawn on Death'),
 -- Innkeeper Karakul (6930) - npc_innkeeper
--- Swamp Spirit (6932) - NSR
+-- Swamp Spirit 6932
+('693201','6932','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Swamp Spirit - Cast Illusion Passive on Spawn'),
 -- Fallen Hero of the Horde (7572) - NSR
 -- Dispatch Commander Ruag (7623) - NSR
 -- Bengor
@@ -6326,9 +6327,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1102303','11023','9','0','100','1025','0','5','13000','16000','0','0','11','9080','1','0','0','0','0','0','0','0','0','0','Weldon Barov - Cast Hamstring'),
 ('1102304','11023','0','0','100','1025','8000','13000','13000','16000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Weldon Barov - Cast Cleave'),
 ('1102305','11023','4','0','100','0','0','0','0','0','0','0','1','7979','0','0','0','0','0','0','0','0','0','0','Weldon Barov - Yell on Aggro'),
--- Illusory Wraith (11027) - NSR
+-- Illusory Wraith 11027
+('1102701','11027','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Illusory Wraith - Cast Illusion Passive on Spawn'),
 -- High Priestess MacDonnell
-('1105301','11053','16','0','100','1024','10938','10','0','0','0','0','11','10938','12','0','0','0','0','0','0','0','0','0','High Priestess MacDonnell - Cast Power Word: Fortitude on Friendlies'),
+('1105301','11053','16','0','100','1024','10938','10','0','0','0','0','11','10938','12','0','0','0','0','0','0','0','0','0','High Priestess MacDonnell - Cast Power Word: Fortitude on Friendly Missing Buff'),
 ('1105302','11053','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','High Priestess MacDonnell - Flee at 15% HP'),
 -- Alchemist Arbington (11056) - npcs_dithers_and_arbington
 -- Cauldron Lord Bilemaw 11075
@@ -15568,7 +15570,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('649001','6490','0','0','100','1025','30000','30000','30000','30000','0','0','11','5137','1','0','0','0','0','0','0','0','0','0','Azshir the Sleepless - Cast Call of the Grave'),
 ('649002','6490','0','0','100','1025','20000','20000','20000','20000','0','0','11','7399','1','0','0','0','0','0','0','0','0','0','Azshir the Sleepless - Cast Terrify'),
 ('649003','6490','2','0','100','1025','50','0','20000','20000','0','0','11','9373','4','0','0','0','0','0','0','0','0','0','Azshir the Sleepless - Cast Soul Siphon'),
--- Illusionary Phantasm (6493) - NSR
+-- Illusionary Phantasm 6493
+('649301','6493','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Illusionary Phantasm - Cast Illusion Passive on Spawn'),
 -- Suffering Victim
 ('654701','6547','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Suffering Victim - Set Stand State to Stand on Aggro'),
 -- Scarlet Trainee (6575) - mob_scarlet_trainee
@@ -15740,8 +15743,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1126101','11261','9','0','100','1025','0','5','6000','12000','0','0','11','16509','1','32','0','0','0','0','0','0','0','0','Doctor Theolen Krastinov - Cast Rend'),
 ('1126102','11261','0','0','100','1025','9000','14000','9000','16000','0','0','11','18103','1','0','13','-75','1','0','0','0','0','0','Doctor Theolen Krastinov - Cast Backhand and Reduce Aggro on Target'),
 ('1126103','11261','2','0','100','1025','30','0','120000','120000','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','Doctor Theolen Krastinov - Cast Frenzy and Emote at 30% HP'),
--- Spectral Projection (11263)
-('1126301','11263','8','0','100','0','17652','-1','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Spectral Projection - Self Kill on Spell Hit'),
+-- Spectral Projection 11263
+('1126301','11263','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Spectral Projection - Cast Illusion Passive on Spawn'),
+('1126302','11263','8','0','100','0','17652','-1','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Spectral Projection - Die on Spell Hit'),
 -- Dark Shade (11284)
 -- Illusion of Jandice Barov (SD2 Backport) (INCORRECT SPELL ID)
 ('1143901','11439','0','0','100','1025','2000','8000','5000','8000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Illusion of Jandice Barov - Cast Cleave'),
@@ -15891,6 +15895,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Arugal's Voidwalker (4627) - mob_arugal_voidwalker
 -- Wolfguard Worg (3.0.3 Official Data)
 ('505801','5058','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Wolfguard Worg - Flee at 15% HP'),
+-- Lupine Delusion 5097
+('509701','5097','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Lupine Delusion - Cast Illusion Passive on Spawn'),
 -- Arugal 10000 - npc_arugal
 -- Sever 14682 - creature_spell_list
 ('1468201','14682','11','0','100','0','0','0','0','0','0','0','11','28126','0','34','0','0','0','0','0','0','0','0','Sever - Cast Spirit Particles (purple) on Spawn'),
