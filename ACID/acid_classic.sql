@@ -8923,9 +8923,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('588401','5884','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Mai''ah - Flee at 15% HP'),
 -- Canaga Earthcaller
 ('588701','5887','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Canaga Earthcaller - Flee at 15% HP'),
+-- Mesa Earth Spirit 5889
+('588901','5889','11','0','100','0','0','0','0','0','0','0','11','8203','0','34','0','0','0','0','0','0','0','0','Mesa Earth Spirit - Cast Elemental Spirit Invisibility on Spawn'),
 -- Redrock Earth Spirit 5890 - NSR
--- Minor Manifestation of Earth (5891) - NSR
--- Minor Manifestation of Fire (5893) - NSR
+-- Minor Manifestation of Earth 5891
+('589101','5891','11','0','100','0','0','0','0','0','0','0','11','8203','0','34','0','0','0','0','0','0','0','0','Minor Manifestation of Earth - Cast Elemental Spirit Invisibility on Spawn'),
+-- Minor Manifestation of Fire 5893
+('589301','5893','11','0','100','0','0','0','0','0','0','0','11','8203','0','34','0','0','0','0','0','0','0','0','Minor Manifestation of Fire - Cast Elemental Spirit Invisibility on Spawn'),
+-- Fire Spirit 5896
+('589601','5896','11','0','100','0','0','0','0','0','0','0','11','8203','0','34','0','0','0','0','0','0','0','0','Fire Spirit - Cast Elemental Spirit Invisibility on Spawn'),
 -- Telf Joolam
 ('590001','5900','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Telf Joolam - Flee at 15% HP'),
 -- Lau'Tiki
