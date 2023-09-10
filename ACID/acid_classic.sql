@@ -7345,11 +7345,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('427304','4273','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Keeper Ordanus - Cast Lightning Bolt'),
 -- Caelyb (3.3.0 Official Data)
 ('432001','4320','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Caelyb - Flee at 15% HP'),
--- Feero Ironhand (4484) - NSR
+-- Feero Ironhand (4484) - npc_feero_ironhand
 -- Sargath (4509) - NSR
 -- Geltharis
 ('461901','4619','2','0','100','1025','20','0','15000','25000','0','0','11','6925','0','0','0','0','0','0','0','0','0','0','Geltharis - Cast Gift of the Xavian at 20% HP'),
--- Illusionary Nightmare (4785) - NSR
+-- Illusionary Nightmare 4785
+('478501','4785','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Illusionary Nightmare - Cast Illusion Passive on Spawn'),
 -- Fallenroot Rogue 4789
 ('478901','4789','1','0','75','1','1000','1000','600000','3600000','0','0','11','7939','0','34','11','22766','0','34','0','0','0','0','Fallenroot Rogue - Cast Sneak OOC'),
 ('478902','4789','33','0','100','1025','0','0','9000','12000','0','0','11','6595','1','0','0','0','0','0','0','0','0','0','Fallenroot Rogue - Cast Exploit Weakness on Facing Target Back'),
