@@ -11980,8 +11980,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blackmoss the Fetid 3535
 -- Tallonkai Swiftroot 3567
 -- Mist (3568) - npc_mist
--- Bogling
-('356901','3569','4','0','60','0','0','0','0','0','0','0','1','1176','0','0','0','0','0','0','0','0','0','0','Bogling - Say on Aggro'),
+-- Bogling 3569
+('356901','3569','11','0','100','0','0','0','0','0','0','0','11','5667','0','34','0','0','0','0','0','0','0','0','Bogling - Cast Bogling Passive on Spawn'),
+('356902','3569','4','0','60','0','0','0','0','0','0','0','1','1176','0','0','0','0','0','0','0','0','0','0','Bogling - Say on Aggro'),
 -- Teldrassil Sentinel (3571) - guard_teldrassil
 -- Lyrai 3587
 -- Khardan Proudblade 3588
