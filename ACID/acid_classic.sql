@@ -1652,7 +1652,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('637602','6376','1','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Wren Darkspring - Cast Summon Imp OOC'),
 -- Hands Springsprocket (6782) - NSR
 -- Tannok Frosthammer (6806) - NSR
--- Onin MacHammar (6886) - NSR
+-- Onin MacHammar 6886
+('688601','6886','1','0','100','1','1000','1000','5000','5000','0','0','11','6408','0','34','0','0','0','0','0','0','0','0','Onin MacHammar - Cast Faded OOC'),
 -- Gnomeregan Evacuee 7843
 ('784301','7843','1','0','100','0','1000','1000','0','0','0','0','11','7165','0','32','0','0','0','0','0','0','0','0','Gnomeregan Evacuee - Cast Battle Stance OOC'),
 ('784302','7843','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Gnomeregan Evacuee - Enable Range Mode on Aggro'),
