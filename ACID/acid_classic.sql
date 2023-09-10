@@ -1174,8 +1174,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('702901','7029','30','0','100','0','5','7029','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Blackrock Battlemaster - Set Phase 1 on Receive AI Event Custom A'),
 ('702902','7029','1','1','100','1','1000','6000','8000','18000','0','0','53','-20055','0','0','0','0','0','0','0','0','0','0','Blackrock Battlemaster - Random Script on OOC Timer (Phase 1)'),
 -- Obsidian Elemental (7031) - NSR
--- Obsidian Elemental (7031) - NSR
--- Greater Obsidian Elemental (7032) - NSR
+-- Greater Obsidian Elemental 7032
+('703201','7032','11','0','100','0','0','0','0','0','0','0','11','9941','0','34','0','0','0','0','0','0','0','0','Greater Obsidian Elemental - Cast Spell Reflection on Spawn'),
 -- Firegut Ogre (3.1.3 Official Data)
 ('703301','7033','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Firegut Ogre - Random Say on Aggro'),
 ('703302','7033','0','0','100','1025','10500','21500','16600','31500','0','0','11','13382','1','0','0','0','0','0','0','0','0','0','Firegut Ogre - Cast Torch'),
@@ -13649,7 +13649,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodhound Mastiff 8922
 ('892201','8922','0','0','100','1025','5700','5900','2000','12100','0','0','11','7140','4','0','0','0','0','0','0','0','0','0','Bloodhound Mastiff - Cast Expose Weakness'),
 ('892202','8922','0','0','100','1025','8000','11000','9000','12000','0','0','11','15608','1','0','0','0','0','0','0','0','0','0','Bloodhound Mastiff - Cast Ravenous Claw'),
--- Panzor the Invincible (8923)
+-- Panzor the Invincible 8923
+('892301','8923','11','0','100','0','0','0','0','0','0','0','11','9941','0','34','0','0','0','0','0','0','0','0','Panzor the Invincible - Cast Spell Reflection on Spawn'),
 -- Dredge Worm 8925
 ('892501','8925','4','0','100','0','0','0','0','0','0','0','11','14535','0','1','0','0','0','0','0','0','0','0','Dredge Worm - Cast Dredge Sickness on Aggro'),
 ('892503','8925','9','0','100','1025','0','30','5000','8000','0','0','11','6917','1','0','0','0','0','0','0','0','0','0','Dredge Worm - Cast Venom Spit'),
