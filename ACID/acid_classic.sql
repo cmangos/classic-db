@@ -4049,7 +4049,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('212004','2120','9','0','100','1025','0','40','3600','4800','0','0','11','20792','1','256','0','0','0','0','0','0','0','0','Archmage Ataeric - Cast Frostbolt'),
 -- Shadow Priest Allister (2121) - NSR
 -- Edwin Harly (2140) - NSR
--- Reef Frenzy (2173) - NSR
+-- Reef Frenzy 2173
+('217301','2173','11','0','100','0','0','0','0','0','0','0','11','5888','0','34','0','0','0','0','0','0','0','0','Reef Frenzy - Cast Darkshore Frenzy on Spawn'),
 -- Karos Razok
 ('222601','2226','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','4561','0','0','0','0','0','0','Karos Razok - Cast Summon Enraged Felbat on Aggro'),
 -- Ravenclaw Regent
