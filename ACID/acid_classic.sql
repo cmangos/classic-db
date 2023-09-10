@@ -15633,7 +15633,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1047702','10477','5','0','100','1024','0','0','1','0','0','0','11','17616','6','0','0','0','0','0','0','0','0','0','Scholomance Necromancer - Cast Corpse Explosion on Player Kill'),
 ('1047703','10477','2','0','100','1025','30','0','28000','28000','0','0','11','12020','1','32','0','0','0','0','0','0','0','0','Scholomance Necromancer - Cast Call of the Grave at 30% HP'),
 ('1047704','10477','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Scholomance Necromancer - Flee at 15% HP'),
--- Splintered Skeleton (10478)
+-- Splintered Skeleton 10478
+('1047801','10478','11','0','100','0','0','0','0','0','0','0','11','11838','0','34','0','0','0','0','0','0','0','0','Splintered Skeleton - Cast Hate to Zero on Spawn'),
 -- Unstable Corpse (3.0.3 Official Data - Logs Only)
 ('1048001','10480','0','0','100','1025','7000','19000','18000','35000','0','0','11','18270','1','0','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Dark Plague'),
 ('1048002','10480','6','0','100','0','0','0','0','0','0','0','11','17689','0','7','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Disease Burst on Death'),
@@ -17133,10 +17134,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1445602','14456','0','0','100','1025','9000','13000','11000','14000','0','0','11','15284','4','0','0','0','0','0','0','0','0','0','Blackwing Guardsman - Cast Cleave'),
 ('1445603','14456','0','0','100','1025','11000','15000','12000','16000','0','0','11','23967','4','0','0','0','0','0','0','0','0','0','Blackwing Guardsman - Cast Dragonbane'),
 -- Ebonroc (14601) - boss_ebonroc
--- Bone Construct
-('1460501','14605','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Bone Construct - Set in Combat with Zone on Spawn'),
+-- Bone Construct 14605
+('1460501','14605','11','0','100','0','0','0','0','0','0','0','38','0','0','0','11','11838','0','34','0','0','0','0','Bone Construct - Zone Combat Pulse, Cast Hate to Zero on Spawn'),
 ('1460502','14605','33','0','100','1025','0','0','5000','8000','0','0','11','8355','1','0','0','0','0','0','0','0','0','0','Bone Construct - Cast Exploit Weakness on Facing Target Back'),
 ('1460503','14605','21','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Bone Construct - Forced Despawn on Reached Home'),
+-- Corrupted Fire Nova Totem V 14662 - TotemAI
+-- Corrupted Stoneskin Totem VI 14663 - TotemAI
+-- Corrupted Healing Stream Totem V 14664 - TotemAI
+-- Corrupted Windfury Totem III 14666 - TotemAI
+-- Corrupted Totem 14667 - TotemAI
 -- Corrupted Infernal
 ('1466801','14668','11','0','100','0','0','0','0','0','0','0','11','22703','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Inferno Effect on Spawn'),
 ('1466802','14668','0','0','100','1024','1000','1000','0','0','0','0','11','12743','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Immolation'),
