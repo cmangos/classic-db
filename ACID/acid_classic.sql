@@ -4428,6 +4428,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shailiea 7295
 -- Thelman Slatefist (7410) - NSR
 -- Tyrion 7766
+-- Priestess Tyriona 7779
+('777901','7779','11','0','100','0','0','0','0','0','0','0','11','11048','0','34','0','0','0','0','0','0','0','0','Priestess Tyriona - Cast Perm. Illusion Bishop Tyriona on Spawn'),
 -- Hank the Hammer 7798
 -- Brother Sarno 7917
 ('791701','7917','10','0','100','1','1','5','30000','60000','1','0','59','6','0','0','54','3988','6','0','0','0','0','0','Brother Sarno - Set Facing and Say OOC LOS'),
