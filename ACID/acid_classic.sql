@@ -14905,8 +14905,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('784906','7849','0','0','100','0','7000','7000','0','0','0','0','20','1','0','0','21','1','0','0','25','0','0','0','Mobile Alert System - Enable Melee and Combat Movement and Flee'),
 -- Kernobee (7850) - NSR
 -- Alarm-a-bomb 2600 (7897) - NSR
--- Walking Bomb (3.3.5a Official Data)
-('791501','7915','9','0','100','1024','0','5','0','0','0','0','11','11504','0','6','0','0','0','0','0','0','0','0','Walking Bomb - Cast Walking Bomb Effect'),
+-- Walking Bomb 7915
+('791501','7915','11','0','100','0','0','0','0','0','0','0','11','11830','0','34','0','0','0','0','0','0','0','0','Walking Bomb - Cast Walking Bomb Passive Proc (100%) on Spawn'),
 -- Blastmaster Emi Shortfuse (7998) - npc_blastmaster_emi_shortfuse
 -- Dark Iron Land Mine 8035
 ('803501','8035','11','0','100','0','0','0','0','0','0','0','11','11816','0','0','11','10831','0','0','50','0','0','0','Dark Iron Land Mine - Cast Land Mine Arming and Reflection Field and Set ReactState Passive on Spawn'),
