@@ -11724,7 +11724,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Treasure Hunting Buccaneer (4.0.3 Official Data)
 ('790201','7902','4','0','100','0','0','0','0','0','0','0','1','3932','3931','0','0','0','0','0','0','0','0','0','Treasure Hunting Buccaneer - Random Say on Aggro'),
 ('790202','7902','9','0','100','1025','0','5','8200','18100','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Treasure Hunting Buccaneer - Cast Strike'),
--- Stone Watcher of Norgannon (7918) - npc_stone_watcher_of_norgannon
+-- Stone Watcher of Norgannon (7918) - GossipHello_npc_stone_watcher_of_norgannon
+('791801','7918','11','0','100','0','0','0','0','0','0','0','11','11011','0','34','0','0','0','0','0','0','0','0','Stone Watcher of Norgannon - Cast Stone Watcher of Norgannon Passive on Spawn'),
 -- Qizzik (8124) - NSR
 -- Dirge Quikcleave (8125) - NSR
 -- Nixx Sprocketspring (8126) - NSR
@@ -16682,7 +16683,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('709102','7091','0','0','100','1025','7100','13300','7200','16900','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Shadowforge Ambusher - Cast Shield Bash'),
 ('709103','7091','0','0','100','1025','12800','22500','24100','40300','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Shadowforge Ambusher - Cast Disarm'),
 ('709104','7091','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Shadowforge Ambusher - Flee at 15% HP'),
--- Lore Keeper of Norgannon (7172) - NSR
+-- Lore Keeper of Norgannon 7172
+('717201','7172','11','0','100','0','0','0','0','0','0','0','11','11011','0','34','0','0','0','0','0','0','0','0','Lore Keeper of Norgannon - Cast Stone Watcher of Norgannon Passive on Spawn'),
 -- Stonevault Ambusher (3.3.5a Official Data)
 ('717501','7175','33','0','100','1025','0','0','5000','9000','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Stonevault Ambusher - Cast Backstab on Facing Target Back'),
 ('717502','7175','2','0','100','1024','50','0','0','0','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Stonevault Ambusher - Cast Enrage at 50% HP'),
