@@ -1099,7 +1099,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('830403','8304','2','0','100','1025','30','0','30000','35000','0','0','11','21049','0','0','0','0','0','0','0','0','0','0','Dreadscorn - Cast Bloodlust at 30% HP'),
 -- Alexandra Constantine
 ('860901','8609','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','4566','0','0','0','0','0','0','Alexandra Constantine - Cast Summon Enraged Gryphon and Yell on Aggro'),
--- Infernal Servant (8616) - NSR
+-- Infernal Servant 8616
+('861601','8616','11','0','100','0','0','0','0','0','0','0','11','12743','0','34','0','0','0','0','0','0','0','0','Infernal Servant - Cast Immolation  on Spawn'),
 -- Felbeast (3.3.0a Official Data)
 ('867501','8675','0','0','100','1025','10100','16100','16800','24400','0','0','11','13321','1','0','0','0','0','0','0','0','0','0','Felbeast - Cast Mana Burn'),
 -- Dreadlord 8716
