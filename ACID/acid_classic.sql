@@ -1175,7 +1175,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blackrock Battlemaster 7029
 ('702901','7029','30','0','100','0','5','7029','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Blackrock Battlemaster - Set Phase 1 on Receive AI Event Custom A'),
 ('702902','7029','1','1','100','1','1000','6000','8000','18000','0','0','53','-20055','0','0','0','0','0','0','0','0','0','0','Blackrock Battlemaster - Random Script on OOC Timer (Phase 1)'),
--- Obsidian Elemental (7031) - NSR
+-- Obsidian Elemental 7031
+('703101','7031','11','0','100','0','0','0','0','0','0','0','11','9941','0','34','0','0','0','0','0','0','0','0','Obsidian Elemental - Cast Spell Reflection on Spawn'),
 -- Greater Obsidian Elemental 7032
 ('703201','7032','11','0','100','0','0','0','0','0','0','0','11','9941','0','34','0','0','0','0','0','0','0','0','Greater Obsidian Elemental - Cast Spell Reflection on Spawn'),
 -- Firegut Ogre (3.1.3 Official Data)
