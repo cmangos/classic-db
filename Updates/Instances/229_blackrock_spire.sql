@@ -683,7 +683,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+331, 0, 1, 1, 0, 0, NULL), -- Bannok Grimaxe
 (@CGUID+332, 0, 1, 1, 0, 0, NULL), -- Bannok Grimaxe
 (@CGUID+381, 0, 1, 1, 0, 0, NULL), -- Bloodaxe Warmonger
-(@CGUID+391, 0, 0, 1, 0, 0, '6606'), -- Ghok Bashguud
+(@CGUID+391, 0, 0, 1, 0, 0, '16093'), -- Ghok Bashguud
 (@CGUID+523, 0, 1, 1, 0, 0, NULL), -- Blackhand Assassin (should not be stealthed? -> remove stealth from acid)
 (@CGUID+524, 0, 1, 1, 0, 0, NULL), -- Blackhand Assassin (should not be stealthed? -> remove stealth from acid)
 (@CGUID+541, 0, 1, 1, 0, 0, NULL); -- Blackhand Iron Guard
