@@ -17545,7 +17545,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ruins of Ahn'Qiraj
 -- ==================
 -- Vile Scarab (15168) - NSR
--- Hive'Zara Drone (15318) - NSR
+-- Hive'Zara Drone 15318
+('1531801','15318','11','0','100','0','0','0','0','0','0','0','11','9205','0','34','0','0','0','0','0','0','0','0','Hive''Zara Drone - Cast Hate to Zero on Spawn'),
 -- Hive'Zara Collector
 ('1531901','15319','9','0','100','1025','0','30','10000','16000','0','0','11','12252','1','0','0','0','0','0','0','0','0','0','Hive''Zara Collector - Cast Web Spray'),
 ('1531902','15319','0','0','100','1025','7000','11000','12000','15000','0','0','11','3589','17','0','0','0','0','0','0','0','0','0','Hive''Zara Collector - Cast Deafening Screech'),
