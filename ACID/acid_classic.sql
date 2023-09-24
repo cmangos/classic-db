@@ -13822,7 +13822,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Twilight's Hammer Executioner 9398
 ('939801','9398','0','0','100','1025','1000','16300','250000','255000','0','0','11','3631','0','0','0','0','0','0','0','0','0','0','Twilight''s Hammer Executioner - Cast Battle Fury'),
 ('939802','9398','0','0','100','1025','3000','5000','13000','24000','0','0','11','13459','1','32','0','0','0','0','0','0','0','0','Twilight''s Hammer Executioner - Cast Decimate'),
--- Spawn of Bael'Gar (9436)
+-- Spawn of Bael'Gar 9436
+('943601','9436','11','0','100','1025','0','0','0','0','0','0','11','15650','0','34','0','0','0','0','0','0','0','0','Spawn of Bael''Gar - Cast Flame Attack Visual on Spawn'),
 -- Dark Keeper Vorfalk 9437
 ('943701','9437','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Dark Keeper Vorfalk - Enable Range Mode on Aggro'),
 ('943702','9437','0','0','100','1025','6000','9000','7000','12000','0','0','11','15306','4','0','0','0','0','0','0','0','0','0','Dark Keeper Vorfalk - Cast Shock'),
