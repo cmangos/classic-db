@@ -3,6 +3,7 @@ DBName: Stratholme
 DBScriptName: instance_stratholme
 DB%Complete: 75
 DBComment:
+The Unforgiven seems to be scripted with spawn_group and areatrigger, not with sneak auras.
 EndDBScriptData */
 
 SET @CGUID := 3290000; -- creatures
@@ -523,7 +524,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10382, 0, 0, 1, 0, 0, '16142 18950'), -- Mangled Cadaver
 (10384, 0, 0, 1, 0, 0, NULL), -- Spectral Citizen
 (10385, 0, 0, 1, 0, 0, NULL), -- Ghostly Citizen
-(10387, 0, 0, 1, 0, 0, '22766'), -- Vengeful Phantom
+(10387, 0, 0, 1, 0, 0, NULL), -- Vengeful Phantom
 (10390, 0, 0, 1, 0, 0, NULL), -- Skeletal Guardian
 (10391, 0, 0, 1, 0, 0, NULL), -- Skeletal Berserker
 (10393, 0, 0, 1, 0, 0, NULL), -- Skul
@@ -558,7 +559,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10440, 0, 0, 0, 0, 0, '17467'), -- Baron Rivendare
 (10463, 0, 0, 1, 0, 0, NULL), -- Shrieking Banshee
 (10464, 0, 0, 1, 0, 0, NULL), -- Wailing Banshee
-(10516, 0, 0, 1, 0, 0, '22766'), -- The Unforgiven
+(10516, 0, 0, 1, 0, 0, NULL), -- The Unforgiven
 (10558, 0, 0, 1, 0, 0, NULL), -- Hearthsinger Forresten
 (10808, 0, 0, 1, 0, 0, '12787'), -- Timmy the Cruel
 (10809, 0, 0, 1, 0, 0, NULL), -- Stonespine
@@ -569,7 +570,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11032, 0, 0, 1, 0, 0, NULL), -- Malor the Zealous
 (11043, 0, 0, 1, 0, 0, '8876'), -- Crimson Monk
 (11082, 0, 0, 1, 0, 0, NULL), -- Stratholme Courier
-(11143, 0, 0, 1, 0, 0, '3417'), -- Postmaster Malown
+(11143, 0, 0, 1, 0, 0, NULL), -- Postmaster Malown
 (14646, 0, 0, 1, 0, 0, NULL), -- Stratholme Trigger
 (16046, 0, 0, 1, 0, 0, NULL), -- Jarien and Sothos Trigger
 (16100, 0, 0, 1, 0, 0, NULL); -- Ysida's Trigger
