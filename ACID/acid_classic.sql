@@ -17506,7 +17506,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mutated Grub 16297
 ('1629701','16297','0','0','90','1025','0','0','4000','4000','0','0','11','30109','0','0','0','0','0','0','0','0','0','0','Mutated Grub - Cast Slime Burst'),
 -- Zombie Chow 16360
-('1636001','16360','0','0','100','1025','5000','9000','12000','17000','0','0','11','29306','1','0','0','0','0','0','0','0','0','0','Zombie Chow - Cast Infected Wound'),
+('1636001','16360','11','0','100','0','0','0','0','0','0','0','11','29307','0','34','0','0','0','0','0','0','0','0','Zombie Chow - Cast Infected Wound on Spawn'),
 -- Grobbulus Cloud 16363
 ('1636301','16363','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','28158','0','0','11','19951','0','32','Grobbulus Cloud - Set Passive State and Cast Poison and Cast Pacify Self on Spawn'),
 -- Master Craftsman Omarion 16365
