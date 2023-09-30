@@ -2424,16 +2424,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- The Cleaner (14503) - npc_the_cleaner
 -- Terrordale Spirit
 ('1456401','14564','0','0','100','1025','1000','3000','8000','11000','0','0','11','7713','0','0','0','0','0','0','0','0','0','0','Crimson Bodyguard - Cast Wailing Dead'),
--- Scarlet Inquisitor (15162) - NSR
+-- Scarlet Inquisitor 15162
+('1516201','15162','11','0','100','0','0','0','0','0','0','0','11','11984','0','34','0','0','0','0','0','0','0','0','Scarlet Inquisitor - Cast Immolate on Spawn'),
 -- Elder Snowcrown (15566) - NSR
 -- Elder Windrun (15592) - NSR
--- Korfax','Champion of the Light
+-- Anthion Harmon 16016
+('1601601','16016','11','0','100','0','0','0','0','0','0','0','11','27614','0','34','11','27978','0','34','0','0','0','0','Anthion Harmon - Cast Dungeon Set 2.0 Ghosts, Shroud of Death on Spawn'),
+-- Korfax','Champion of the Light 16112
 ('1611201','16112','9','0','100','1025','0','5','5000','8000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Korfax - Cast Strike'),
 -- Father Inigo Montoy (16113) - NSR
 -- Scarlet Commander Marjhan (16114) - Complex Storyline of Says Required
 -- Commander Eligor Dawnbringer (16115) - Complex Storyline of Says Required
 -- Archmage Angela Dosantos (16116) - Complex Storyline of Says Required
--- Plagued Swine
+-- Plagued Swine 16117
 ('1611701','16117','9','0','100','1025','0','8','10000','15000','0','0','11','3385','0','0','0','0','0','0','0','0','0','0','Plagued Swine - Cast Boar Charge'),
 -- Rohan the Assassin (16131) - NSR
 -- Huntsman Leopold (16132) - NSR
@@ -17352,9 +17355,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tomb Horror 15979
 ('1597901','15979','0','0','75','1025','2000','2000','4000','4000','0','0','11','28614','4','0','0','0','0','0','0','0','0','0','Tomb Horror - Cast Point Spike'),
 ('1597902','15979','0','0','75','1025','5000','5000','8000','8000','0','0','11','28615','0','0','0','0','0','0','0','0','0','0','Tomb Horror - Cast Volley Spike'),
--- Naxxramas Cultist 15980
+-- Naxxramas Cultist 15980 - s.21157
 ('1598001','15980','0','0','75','1025','3000','3000','5000','5000','0','0','11','28447','0','0','0','0','0','0','0','0','0','0','Naxxramas Cultist - Cast Shadow Burst'),
--- Naxxramas Acolyte 15981
+-- Naxxramas Acolyte 15981 - s.21157
 ('1598101','15981','0','0','100','1025','2000','2000','5000','5000','0','0','11','28450','0','0','0','0','0','0','0','0','0','0','Naxxramas Acolyte - Cast Arcane Explosion'),
 ('1598102','15981','0','0','100','1025','4000','4000','6000','6000','0','0','11','28448','1','0','0','0','0','0','0','0','0','0','Naxxramas Acolyte - Cast Shadow Bolt Volley'),
 -- Sapphiron 15989 - boss_sapphiron
