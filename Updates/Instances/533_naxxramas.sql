@@ -921,7 +921,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (16381, 0, 7, 1, 0, 0, NULL), -- Archmage Tarsis Kir-Moldir
 (16400, 0, 0, 1, 0, 0, '28370'), -- Toxic Tunnel
 (16446, 0, 0, 1, 0, 0, NULL), -- Plagued Gargoyle
-(16447, 0, 0, 1, 0, 0, '19818'), -- Plagued Ghoul
+(16447, 0, 0, 1, 0, 0, NULL), -- Plagued Ghoul
 (16448, 0, 0, 1, 0, 0, NULL), -- Plagued Deathhound
 (16449, 0, 0, 1, 0, 0, NULL), -- Spirit of Naxxramas
 (16451, 0, 0, 1, 0, 0, NULL), -- Deathknight Vindicator
