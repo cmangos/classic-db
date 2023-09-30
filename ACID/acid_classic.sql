@@ -2226,26 +2226,30 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1082802','10828','0','0','100','1025','3000','5000','15000','20000','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','High General Abbendis - Cast Battle Shout'),
 ('1082803','10828','0','0','100','1025','10000','13000','20000','30000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','High General Abbendis - Cast Demoralizing Shout'),
 ('1082804','10828','0','0','100','1025','5000','7000','6000','9000','0','0','11','17143','1','0','0','0','0','0','0','0','0','0','High General Abbendis - Cast Holy Strike'),
--- Pamela Redpath (10926) - NSR
--- Joseph Redpath (10936) - NSR
--- Captain Redpath
-('1093701','10937','0','0','100','1025','5000','7000','8000','10000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Captain Redpath - Cast Cleave'),
-('1093702','10937','0','0','100','1025','8000','10000','14000','18000','0','0','11','6253','1','0','0','0','0','0','0','0','0','0','Captain Redpath - Cast Backhand'),
-('1093703','10937','0','0','100','1025','3000','5000','15000','20000','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Captain Redpath - Cast Battle Shout'),
+-- Pamela Redpath 10926
+('1092601','10926','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Pamela Redpath - Cast Spirit Particles on Spawn'),
+-- Captain Redpath 10937
+('1093701','10937','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Captain Redpath - Cast Spirit Particles on Spawn'),
+('1093702','10937','0','0','100','1025','5000','7000','8000','10000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Captain Redpath - Cast Cleave'),
+('1093703','10937','0','0','100','1025','8000','10000','14000','18000','0','0','11','6253','1','0','0','0','0','0','0','0','0','0','Captain Redpath - Cast Backhand'),
+('1093704','10937','0','0','100','1025','3000','5000','15000','20000','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Captain Redpath - Cast Battle Shout'),
 -- Redpath the Corrupted
 ('1093801','10938','0','0','100','1025','3000','5000','5000','7000','0','0','11','15580','1','0','0','0','0','0','0','0','0','0','Redpath the Corrupted - Cast Strike'),
 ('1093802','10938','0','0','100','1025','8000','10000','14000','18000','0','0','11','6253','1','0','0','0','0','0','0','0','0','0','Redpath the Corrupted - Cast Backhand'),
 ('1093803','10938','0','0','100','1025','3000','5000','15000','20000','0','0','11','16244','0','0','0','0','0','0','0','0','0','0','Redpath the Corrupted - Cast Demoralizing Shout'),
 ('1093804','10938','0','0','100','1025','5000','7000','9000','14000','0','0','11','12542','5','0','0','0','0','0','0','0','0','0','Redpath the Corrupted - Cast Fear'),
 -- Marduk the Black (10939) - NSR
--- Ghost of the Past
-('1094001','10940','4','0','100','0','0','0','0','0','0','0','1','6260','0','0','0','0','0','0','0','0','0','0','Ghost of the Past - Say on Aggro'),
-('1094002','10940','0','0','100','1025','3000','6000','12000','15000','0','0','11','15089','1','0','0','0','0','0','0','0','0','0','Ghost of the Past - Cast Frost Shock'),
--- Davil Lightfire
-('1094401','10944','4','0','100','0','0','0','0','0','0','0','11','17232','0','0','0','0','0','0','0','0','0','0','Davil Lightfire - Cast Devotion Aura on Aggro'),
-('1094402','10944','0','0','100','1025','5000','7000','8000','10000','0','0','11','17284','1','0','0','0','0','0','0','0','0','0','Davil Lightfire - Cast Holy Strike'),
-('1094403','10944','0','0','100','1025','8000','11000','15000','20000','0','0','11','13005','4','0','0','0','0','0','0','0','0','0','Davil Lightfire - Cast Hammer of Justice'),
--- Davil Crokford (10945) - NSR
+-- Ghost of the Past 10940
+('1094001','10940','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Ghost of the Past - Cast Spirit Particles on Spawn'),
+('1094002','10940','4','0','100','0','0','0','0','0','0','0','1','6260','0','0','0','0','0','0','0','0','0','0','Ghost of the Past - Say on Aggro'),
+('1094003','10940','0','0','100','1025','3000','6000','12000','15000','0','0','11','15089','1','0','0','0','0','0','0','0','0','0','Ghost of the Past - Cast Frost Shock'),
+-- Davil Lightfire 10944
+('1094401','10944','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Davil Lightfire - Cast Spirit Particles on Spawn'),
+('1094402','10944','4','0','100','0','0','0','0','0','0','0','11','17232','0','0','0','0','0','0','0','0','0','0','Davil Lightfire - Cast Devotion Aura on Aggro'),
+('1094403','10944','0','0','100','1025','5000','7000','8000','10000','0','0','11','17284','1','0','0','0','0','0','0','0','0','0','Davil Lightfire - Cast Holy Strike'),
+('1094404','10944','0','0','100','1025','8000','11000','15000','20000','0','0','11','13005','4','0','0','0','0','0','0','0','0','0','Davil Lightfire - Cast Hammer of Justice'),
+-- Davil Crokford 10945
+('1094501','10945','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Davil Crokford - Cast Spirit Particles on Spawn'),
 -- Horgus the Ravager
 ('1094601','10946','11','0','100','0','0','0','0','0','0','0','11','8876','0','1','0','0','0','0','0','0','0','0','Horgus the Ravager - Cast Thrash on Spawn'),
 ('1094602','10946','1','0','100','0','2000','2000','0','0','0','0','11','17467','0','1','0','0','0','0','0','0','0','0','Horgus the Ravager - Cast Unholy Aura on Spawn'),
@@ -2285,16 +2289,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Caretaker Alen (11038) - NSR
 -- Duke Nicholas Zverenhoff (11039) - NSR
 -- Carlin Redpath (11063) - NSR
--- Darrowshire Spirit (SD2 Backport)
-('1106401','11064','11','0','100','0','0','0','0','0','0','0','11','17321','0','0','0','0','0','0','0','0','0','0','Darrowshire Spirit - Cast Spirit Spawn-in on Spawn'),
+-- Darrowshire Spirit 11064
+('1106401','11064','11','0','100','0','0','0','0','0','0','0','11','17321','0','0','11','17327','0','34','0','0','0','0','Darrowshire Spirit - Cast Spirit Spawn-in, Spirit Particles on Spawn'),
 -- Argent Rider 11102
 ('1110201','11102','36','0','100','1025','0','0','0','0','0','0','11','26229','1','0','0','0','0','0','0','0','0','0','Argent Rider - Cast Summon Player on Unreachable'),
 -- Egan (11140) - NSR
 -- Spectral Betrayer
 ('1128801','11288','0','0','100','1025','3000','5000','7000','10000','0','0','11','5337','1','0','0','0','0','0','0','0','0','0','Spectral Betrayer - Cast Wither Strike'),
--- Spectral Defender
-('1128901','11289','0','0','100','1025','3000','5000','5000','8000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Spectral Defender - Cast Strike'),
-('1128902','11289','0','0','100','1025','5000','7000','7000','10000','0','0','11','12169','0','0','0','0','0','0','0','0','0','0','Spectral Defender - Cast Shield Block'),
+-- Spectral Defender 11289
+('1128901','11289','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Spectral Defender - Cast Spirit Particles on Spawn'),
+('1128902','11289','0','0','100','1025','3000','5000','5000','8000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Spectral Defender - Cast Strike'),
+('1128903','11289','0','0','100','1025','5000','7000','7000','10000','0','0','11','12169','0','0','0','0','0','0','0','0','0','0','Spectral Defender - Cast Shield Block'),
 -- Mossflayer Zombie 11290
 ('1129001','11290','0','0','100','1025','4000','6000','9000','12000','0','0','11','4974','1','0','0','0','0','0','0','0','0','0','Mossflayer Zombie - Cast Wither Touch'),
 ('1129002','11290','0','0','100','1025','5000','10000','9000','15000','0','0','11','3234','1','0','0','0','0','0','0','0','0','0','Mossflayer Zombie - Cast Disease Touch'),
@@ -2303,7 +2308,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1129102','11291','0','0','100','1025','5000','10000','8000','14000','0','0','11','11428','1','0','0','0','0','0','0','0','0','0','Unliving Mossflayer - Cast Knockdown'),
 -- Quartermaster Miranda Breechlock (11536) - NSR
 -- Spectral Marauder (11620) - NSR
--- Spectral Corpse (11621) - NSR
+-- Spectral Corpse 11621
+('1162101','11621','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Spectral Corpse - Cast Spirit Particles on Spawn'),
 -- Kriss Goldenlight (11704) - NSR
 -- Adon (11706) - NSR
 -- Mirador (11710) - NSR
@@ -2453,8 +2459,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Craftsman Wilhelm (16376) - NSR
 -- Emissary Whitebeard (17069) - NSR
 -- Emissary Gormok (17072) - NSR
--- William Kielar
-('1720901','17209','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','4566','0','0','0','0','0','0','William Kielar - Cast Summon Enraged Gryphon and Yell on Aggro'),
+-- William Kielar 17209
+('1720901','17209','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','William Kielar - Cast Spirit Particles on Spawn'),
+('1720902','17209','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','4566','0','0','0','0','0','0','William Kielar - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Lordaeron Commander (17635) - NSR
 -- Lordaeron Soldier (17647) - NSR
 -- Scourge Siege Engineer (17878) - NSR
@@ -5774,6 +5781,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lieutenant Sanders
 ('1315801','13158','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Lieutenant Sanders - Flee at 15% HP'),
 -- Purple Skeletal Warhorse (14558) - NSR
+-- The Banshee Queen 15193
+('1519301','15193','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','The Banshee Queen - Cast Spirit Particles on Spawn'),
 -- Wickerman Guardian
 ('1519501','15195','11','0','100','0','0','0','0','0','0','0','11','12187','0','0','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Disease Cloud on Spawn'),
 ('1519502','15195','9','0','100','1025','0','5','8000','12000','0','0','11','18368','1','0','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Strike'),
@@ -6331,8 +6340,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Quartermaster Lightspark (10857) - NSR
 -- Rotting Worm 10925
 ('1092501','10925','0','0','100','1025','5000','20000','5000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Rotting Worm - Cast Thrash'),
--- Marlene Redpath (10927) - NSR
--- Joseph Redpath (10936) - NSR
+-- Marlene Redpath 10927
+('1092701','10927','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Marlene Redpath - Cast Spirit Particles on Spawn'),
+-- Joseph Redpath 10936
+('1093601','10936','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Joseph Redpath - Cast Spirit Particles on Spawn'),
 -- Decrepit Guardian 10943 - attack closest eligable target on spawn?
 ('1094301','10943','11','0','100','0','0','0','0','0','0','0','11','26047','0','0','1','6282','0','0','0','0','0','0','Decrepit Guardian - Cast Birth, Say on Spawn'),
 ('1094302','10943','9','0','100','1025','0','30','16000','24000','0','0','11','16333','4','0','0','0','0','0','0','0','0','0','Decrepit Guardian - Cast Debilitating Touch'),
@@ -6383,8 +6394,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rory (11285) - NSR
 -- Magistrate Marduke (11286) - NSR
 -- Baker Masterson (11287) - NSR
--- Darrowshire Poltergeist
-('1129601','11296','11','0','100','0','0','0','0','0','0','0','50','0','0','0','54','0','0','5','0','0','0','0','Darrowshire Poltergeist - Set Passive State and Random Say on Spawn'),
+-- Darrowshire Poltergeist 11296
+('1129601','11296','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','18348','0','34','11','18383','0','34','Darrowshire Poltergeist - Cast Spirit Particles, Poltergeist Periodic Schedule, Poltergeist Despawn Schedule on Spawn'),
+('1129602','11296','11','0','100','0','0','0','0','0','0','0','50','0','0','0','54','0','0','5','0','0','0','0','Darrowshire Poltergeist - Set Passive State and Random Say on Spawn'),
 -- Joseph Dirte (11316) - NSR
 -- Alexia Ironknife (11609) - NSR
 -- Kirsta Deepshadow (11610) - NSR
@@ -10174,8 +10186,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Moonglade Warden (11822) - NSR
 -- Keeper Remulos (11832) - MIGHT REQUIRE C++ SCRIPTING
 -- Umber (11939) - NSR
--- Great Bear Spirit (11956) - npc_great_bear_spirit
--- Great Cat Spirit (11957) - NSR
+-- Great Bear Spirit 11956
+('1195601','11956','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Great Bear Spirit - Cast Spirit Particles on Spawn'),
+-- Great Cat Spirit 11957
+('1195701','11957','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Great Cat Spirit - Cast Spirit Particles on Spawn'),
 -- Dargon (12019) - NSR
 -- Daeolyn Summerleaf 12021
 -- Lorelae Wintersong 12022
@@ -10187,9 +10201,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Loganaar 12042
 -- Faustron
 ('1274001','12740','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Faustron - Cast Summon Enraged Wyvern and Yell on Aggro'),
--- Minion of Omen
-('1546601','15466','8','0','100','1','26636','-1','0','0','0','0','11','25495','0','1','0','0','0','0','0','0','0','0','Minion of Omen - Cast Firework Effect, Lunar Festival Minion on Spell Hit'),
--- Omen
+-- Minion of Omen 15466
+('1546601','15466','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Minion of Omen - Cast Spirit Particles on Spawn'),
+('1546602','15466','8','0','100','1','26636','-1','0','0','0','0','11','25495','0','1','0','0','0','0','0','0','0','0','Minion of Omen - Cast Firework Effect, Lunar Festival Minion on Spell Hit'),
+-- Omen 15467
 ('1546701','15467','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Omen - Set Phase 1 on Aggro'),
 ('1546702','15467','0','0','100','1025','4000','7000','7000','9000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Omen - Cast Cleave'),
 ('1546703','15467','8','5','100','1','26374','-1','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Omen - Set Phase 2 on Spell Hit (Phase 1)'),
@@ -12631,7 +12646,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lunaclaw
 ('1213801','12138','11','0','100','0','0','0','0','0','0','0','11','12787','0','1','0','0','0','0','0','0','0','0','Lunaclaw - Cast Thrash on Spawn'),
 ('1213802','12138','6','0','100','0','0','0','0','0','0','0','11','18986','0','7','0','0','0','0','0','0','0','0','Lunaclaw - Cast Lunaclaw Spirit on Death'),
--- Lunaclaw Spirit (12144) - npc_lunaclaw_spirit
+-- Lunaclaw Spirit 12144
+('1214401','12144','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Lunaclaw Spirit - Cast Spirit Particles on Spawn'),
 -- Burning Blade Toxicologist
 ('1231901','12319','4','0','100','0','0','0','0','0','0','0','11','696','0','0','54','7579','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Demon Skin and Say on Aggro'),
 ('1231902','12319','0','0','100','1025','5000','11000','14000','25000','0','0','11','11962','1','0','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Immolate'),
@@ -14759,9 +14775,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Xorothian Dreadsteed
 ('1450201','14502','0','0','100','1024','1000','1000','0','0','0','0','11','16636','1','0','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Cast Berserker Charge on Aggro'),
 ('1450202','14502','0','0','100','1025','4000','8000','20000','25000','0','0','11','22713','4','0','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Cast Flame Buffet'),
-('1450203','14502','6','0','100','0','0','0','0','0','0','0','11','23159','0','7','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Cast Summon Dreadsteed Spirit on Death'),
-('1450204','14502','2','0','100','0','50','0','0','0','0','0','12','14506','1','30000','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Summon Lord Hel''nurath at 50% HP'),
--- Dreadsteed Spirit (14504) - NSR
+('1450203','14502','2','0','100','0','50','0','0','0','0','0','12','14506','1','30000','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Spawn Lord Hel''nurath at 50% HP'),
+('1450204','14502','6','0','100','0','0','0','0','0','0','0','11','23159','0','7','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Cast Summon Dreadsteed Spirit on Death'),
+-- Dreadsteed Spirit 14504
+('1450401','14504','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Dreadsteed Spirit - Cast Spirit Particles on Spawn'),
 -- Lord Hel'nurath
 ('1450601','14506','0','0','100','1025','5000','9000','22000','25000','0','0','11','17146','1','0','0','0','0','0','0','0','0','0','Lord Hel''nurath - Cast Shadow Word: Pain'),
 ('1450602','14506','0','0','100','1025','11000','14000','14000','20000','0','0','11','23224','1','0','0','0','0','0','0','0','0','0','Lord Hel''nurath - Cast Veil of Shadow'),
@@ -14769,7 +14786,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1450604','14506','0','0','100','1025','9000','13000','14000','17000','0','0','11','20989','5','0','0','0','0','0','0','0','0','0','Lord Hel''nurath - Cast Sleep'),
 ('1450605','14506','4','0','100','0','0','0','0','0','0','0','1','9727','0','0','0','0','0','0','0','0','0','0','Lord Hel''nurath - Yell on Aggro'),
 -- Ancient Equine Spirit 14566
-('1456601','14566','11','0','100','0','0','0','0','0','0','0','1','9763','0','0','0','0','0','0','0','0','0','0','Ancient Equine Spirit - Emote on Spawn'),
+('1456601','14566','11','0','100','0','0','0','0','0','0','0','1','9763','0','0','11','17327','0','34','0','0','0','0','Ancient Equine Spirit - Emote, Cast Spirit Particles on Spawn'),
 -- Revanchion 14690
 ('1469001','14690','1','0','100','1','1000','1000','1800000','1800000','0','0','11','12544','0','32','11','28126','0','34','11','16331','0','34','Revanchion - Cast Frost Armor, Spirit Particles (purple), Incorporeal Defense OOC'),
 ('1469002','14690','0','0','100','1025','7000','12000','14000','19000','0','0','11','14907','17','0','0','0','0','0','0','0','0','0','Revanchion - Cast Frost Nova'),
@@ -15782,7 +15799,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1126301','11263','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Spectral Projection - Cast Illusion Passive on Spawn'),
 ('1126302','11263','8','0','100','0','17652','-1','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Spectral Projection - Die on Spell Hit'),
 -- Dark Shade (11284)
--- Illusion of Jandice Barov (SD2 Backport) (INCORRECT SPELL ID)
+-- Illusion of Jandice Barov (SD2 Backport) (INCORRECT SPELL ID) - s.17772
 ('1143901','11439','0','0','100','1025','2000','8000','5000','8000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Illusion of Jandice Barov - Cast Cleave'),
 -- Necrofiend (3.0.3 Official Data - Logs Only)
 ('1155101','11551','11','0','100','0','0','0','0','0','0','0','11','10022','0','1','0','0','0','0','0','0','0','0','Necrofiend - Cast Deadly Poison on Spawn'),
@@ -18882,7 +18899,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thunder Bluff Reveler 15719
 ('1571901','15719','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Thunder Bluff Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Timbermaw Ancestor 15720
-('1572001','15720','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Enable Range Mode on Aggro'),
+('1572001','15720','11','0','100','0','0','0','0','0','0','0','57','2','35','0','11','17327','0','34','0','0','0','0','Timbermaw Ancestor - Enable Range Mode, Cast Spirit Particles on Spawn'),
 ('1572002','15720','14','0','100','1025','1000','40','8000','10000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Healing Wave on Friendly Missing HP'),
 ('1572003','15720','0','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Chain Lightning'),
 -- Winter Reveler
