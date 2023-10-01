@@ -790,7 +790,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Magregan Deepshadow (3.1.1 Official Data) - ADD TO SCRIPT TRACKING
 ('293201','2932','0','0','100','1025','7600','18600','22500','31800','0','0','11','17207','0','0','0','0','0','0','0','0','0','0','Magregan Deepshadow - Cast Whirlwind'),
 -- Boss Tho'grun 2944
-('294401','2944','4','0','15','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Boss Tho''grun - Say on Aggro'),
+('294401','2944','4','0','15','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Boss Tho\'grun - Say on Aggro'),
 -- Murdaloc (3.1.1 Official Data)
 ('294501','2945','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Murdaloc - Flee at 15% HP'),
 -- Martek the Exiled (4618) - NSR
@@ -2508,8 +2508,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Narg the Taskmaster (2.4.2 Official Data)
 ('7901','79','4','0','30','0','0','0','0','0','0','0','1','1868','0','0','0','0','0','0','0','0','0','0','Narg the Taskmaster - Random Say on Aggro'),
 ('7902','79','0','0','100','1025','2000','4000','18000','29000','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Narg the Taskmaster - Cast Battleshout'),
--- Kobold Labourer 80 (2.4.2 Official Data)
-('8001','80','4','0','10','0','0','0','0','0','0','0','1','1868','1864','0','0','0','0','0','0','0','0','0','Kobold Labourer - Random Say on Aggro'),
+-- Kobold Laborer 80
+('8001','80','4','0','10','0','0','0','0','0','0','0','1','1868','1864','0','0','0','0','0','0','0','0','0','Kobold Laborer - Random Say on Aggro'),
 -- Defias Cutpurse 94
 ('9401','94','4','0','25','0','0','0','0','0','0','0','54','0','0','36','0','0','0','0','0','0','0','0','Defias Cutpurse - Random Say on Aggro'),
 ('9402','94','33','0','100','1025','0','0','2400','7900','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab on Facing Target Back'),
