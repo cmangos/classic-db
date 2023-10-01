@@ -2358,10 +2358,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infected Mossflayer 12261 - s.13483 classic only
 ('1226101','12261','11','0','100','0','0','0','0','0','0','0','11','13483','0','34','0','0','0','0','0','0','0','0','Infected Mossflayer - Cast Wither Touch on Spawn'),
 ('1226102','12261','9','0','100','1025','0','5','6000','9000','0','0','11','11428','1','0','0','0','0','0','0','0','0','0','Infected Mossflayer - Cast Knockdown'),
--- Ziggurat Protector
-('1226201','12262','0','0','100','1025','1000','3000','9000','12000','0','0','11','18328','0','0','0','0','0','0','0','0','0','0','Ziggurat Protector - Cast Incapacitating Shout'),
--- Slaughterhouse Protector
-('1226301','12263','0','0','100','1025','1000','3000','9000','12000','0','0','11','18328','0','0','0','0','0','0','0','0','0','0','Slaughterhouse Protector - Cast Incapacitating Shout'),
+-- Ziggurat Protector 12262
+('1226201','12262','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Ziggurat Protector - Cast Invisibility and Stealth Detection on Spawn'),
+('1226202','12262','0','0','100','1025','1000','3000','9000','12000','0','0','11','18328','0','0','0','0','0','0','0','0','0','0','Ziggurat Protector - Cast Incapacitating Shout'),
+-- Slaughterhouse Protector 12263
+('1226301','12263','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Slaughterhouse Protector - Cast Invisibility and Stealth Detection on Spawn'),
+('1226302','12263','0','0','100','1025','1000','3000','9000','12000','0','0','11','18328','0','0','0','0','0','0','0','0','0','0','Slaughterhouse Protector - Cast Incapacitating Shout'),
 -- Quel\'Lithien Protector 12322
 ('1232201','12322','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Quel''Lithien Protector - Enable Range Mode on Aggro'),
 ('1232202','12322','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Quel''Lithien Protector - Flee at 15% HP'),
@@ -2464,8 +2466,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Craftsman Wilhelm (16376) - NSR
 -- Emissary Whitebeard (17069) - NSR
 -- Emissary Gormok (17072) - NSR
--- William Kielar 17209
-('1720901','17209','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','William Kielar - Cast Spirit Particles on Spawn'),
+-- William Kielar 17209 - NPC_SPECTRAL_FLIGHT_MASTER
 ('1720902','17209','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','4566','0','0','0','0','0','0','William Kielar - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Lordaeron Commander (17635) - NSR
 -- Lordaeron Soldier (17647) - NSR
@@ -10229,6 +10230,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lunar Festival Vendor 15898
 -- Fariel Starsong 15909
 -- Lunar Festival Sentinel 15961
+('1596101','15961','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Lunar Festival Sentinel - Cast Invisibility and Stealth Detection on Spawn');
 
 
 
@@ -11248,7 +11250,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1590303','15903','30','0','100','1','9','15449','0','0','0','0','53','54','0','0','0','0','0','0','0','0','0','0','Sergeant Carnes - START_RELAY_SCRIPT on Receive AI Event Custom D'),
 -- Dirk Thunderwood 16091
 -- Cenarion Hold Reservist 16139
-('1613901','16139','36','0','100','1025','0','0','0','0','0','0','11','26229','1','0','0','0','0','0','0','0','0','0','Cenarion Hold Reservist - Cast Summon Player on Unreachable'),
+('1613901','16139','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Cenarion Hold Reservist - Cast Invisibility and Stealth Detection on Spawn'),
+('1613902','16139','36','0','100','1025','0','0','0','0','0','0','11','26229','1','0','0','0','0','0','0','0','0','0','Cenarion Hold Reservist - Cast Summon Player on Unreachable'),
 -- Garon Hutchins 16543
 -- Chief Expeditionary Requisitioner Enkles 17068
 -- Apothecary Quinard 17070
@@ -11257,15 +11260,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scout Bloodfist 17081
 -- Rifleman Torrig 17082
 -- Alliance Silithyst Sentinel 17765
-('1776501','17765','4','0','100','0','0','30','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
-('1776502','17765','9','0','100','1025','0','5','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Mortal Strike'),
-('1776503','17765','0','0','100','1025','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Incapacitating Shout'),
-('1776504','17765','13','0','100','1025','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel -  Cast Shield Bash on Target Casting'),
+('1776501','17765','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Invisibility and Stealth Detection on Spawn'),
+('1776502','17765','4','0','100','0','0','30','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
+('1776503','17765','9','0','100','1025','0','5','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Mortal Strike'),
+('1776504','17765','0','0','100','1025','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Incapacitating Shout'),
+('1776505','17765','13','0','100','1025','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Shield Bash on Target Casting'),
 -- Horde Silithyst Sentinel 17766
-('1776601','17766','4','0','100','0','0','30','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
-('1776602','17766','9','0','100','1025','0','5','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Mortal Strike'),
-('1776603','17766','0','0','100','1025','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Incapacitating Shout'),
-('1776604','17766','13','0','100','1025','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel -  Cast Shield Bash on Target Casting'),
+('1776601','17766','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Invisibility and Stealth Detection on Spawn'),
+('1776602','17766','4','0','100','0','0','30','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
+('1776603','17766','9','0','100','1025','0','5','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Mortal Strike'),
+('1776604','17766','0','0','100','1025','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Incapacitating Shout'),
+('1776605','17766','13','0','100','1025','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Shield Bash on Target Casting'),
 
 
 
@@ -16009,7 +16014,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mangled Cadaver 10382 (3.0.8 Official Data)
 ('1038201','10382','11','0','100','0','0','0','0','0','0','0','11','16142','0','0','0','0','0','0','0','0','0','0','Mangled Cadaver - Cast Cadaver Worms on Spawn'),
 -- Broken Cadaver 10383
-('1038301','10383','11','0','100','0','0','0','0','0','0','0','11','16310','0','34','11','16140','0','34','0','0','0','0','Broken Cadaver - Cast Cadaver Stun and Exploding Cadaver on Spawn'),
+('1038301','10383','11','0','100','0','0','0','0','0','0','0','11','16310','0','34','11','16140','0','34','11','18950','0','34','Broken Cadaver - Cast Cadaver Stun, Exploding Cadaver, Invisibility and Stealth Detection on Spawn'),
 ('1038302','10383','1','0','100','0','1000','1000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Broken Cadaver - Zone Combat Pulse OOC'),
 ('1038303','10383','0','0','100','1024','2000','2000','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Broken Cadaver - Cast Invisibility and Stealth Detection'),
 -- Spectral Citizen (10384) - mobs_spectral_ghostly_citizen
@@ -17537,16 +17542,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Plague Gargoyle 16446
 ('1644601','16446','0','0','100','1025','0','0','10000','10000','0','0','11','29325','0','0','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Acid Volley'),
 ('1644602','16446','2','0','75','1025','50','0','30000','30000','0','0','11','28995','0','0','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Stoneskin'),
-('1644603','16446','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Invisibility and Stealth Detection on Spawn'),
+('1644603','16446','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Invisibility and Stealth Detection on Spawn'),
 -- Plagued Ghoul 16447
 ('1644701','16447','2','0','100','1024','30','0','0','0','0','0','11','24318','0','0','1','2384','0','0','0','0','0','0','Plagued Ghoul - Cast Enrage at 30% HP'),
 ('1644702','16447','0','0','100','1025','5000','15000','9000','18000','0','0','11','29915','1','0','0','0','0','0','0','0','0','0','Plagued Ghoul - Cast Flesh Rot'),
 ('1644703','16447','0','0','100','1025','3000','5000','8000','12000','0','0','11','13738','1','0','0','0','0','0','0','0','0','0','Plagued Ghoul - Cast Rend'),
 -- Plagued Deathhound 16448
-('1644801','16448','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Plagued Deathhound - Cast Invisibility and Stealth Detection on Spawn'),
+('1644801','16448','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Plagued Deathhound - Cast Invisibility and Stealth Detection on Spawn'),
 ('1644802','16448','0','0','100','1025','6000','12000','9000','16000','0','0','11','30121','1','0','0','0','0','0','0','0','0','0','Plagued Deathhound - Cast Forceful Howl'),
 -- Spirit of Naxxramas 16449
-('1644901','16449','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Spirit of Naxxramas - Cast Invisibility and Stealth Detection on Spawn'),
+('1644901','16449','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Spirit of Naxxramas - Cast Invisibility and Stealth Detection on Spawn'),
 -- Deathknight Vindicator 16451
 ('1645101','16451','0','0','90','1025','0','0','8000','8000','0','0','11','28413','1','0','0','0','0','0','0','0','0','0','Deathknight Vindicator - Cast Aura of Agony'),
 ('1645102','16451','0','0','95','1025','1000','1000','4000','4000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Deathknight Vindicator - Cast Cleave'),
@@ -17644,14 +17649,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1532701','15327','0','0','100','1025','2000','4000','5000','7000','0','0','11','24150','15','0','0','0','0','0','0','0','0','0','Hive''Zara Stinger - Cast Stinger Charge Primer'),
 -- Silicate Feeder
 ('1533301','15333','6','0','100','0','0','0','0','0','0','0','11','17742','0','7','0','0','0','0','0','0','0','0','Silicate Feeder - Cast Cloud of Disease on Death'),
--- Flesh Hunter
-('1533501','15335','11','0','100','0','0','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Flesh Hunter - Cast Thrash on Spawn'),
+-- Flesh Hunter 15335 - s.3391 manually casted
+('1533501','15335','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Flesh Hunter - Cast Invisibility and Stealth Detection on Spawn'),
 ('1533502','15335','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Flesh Hunter - Set Phase 1 on Aggro'),
 ('1533503','15335','9','5','100','1025','0','45','5000','7000','0','0','11','25424','1','0','0','0','0','0','0','0','0','0','Flesh Hunter - Cast Poison Bolt (Phase 1)'),
 ('1533504','15335','24','5','100','1','25424','5','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Flesh Hunter - Set Phase 2 on Target Max Poison Bolt Aura Stack (Phase 1)'),
 ('1533505','15335','28','3','100','1','25424','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Flesh Hunter - Set Phase 1 on Target Missing Poison Bolt Aura Stack (Phase 2)'),
 ('1533506','15335','9','0','100','1025','0','10','21000','24000','0','0','11','25371','1','0','0','0','0','0','0','0','0','0','Flesh Hunter - Cast Consume'),
-('1533507','15335','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flesh Hunter - Set Phase to 0 on Evade'),
+('1533507','15335','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flesh Hunter - Set Phase 0 on Evade'),
+('1533508','15335','0','0','100','1025','5000','20000','10000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Flesh Hunter - Cast Thrash'),
 -- Hive'Zara Tail Lasher
 ('1533601','15336','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Hive''Zara Tail Lasher - Set Phase 1 on Aggro'),
 ('1533602','15336','9','5','100','1025','0','5','6000','9000','0','0','11','25645','1','0','0','0','0','0','0','0','0','0','Hive''Zara Tail Lasher - Cast Poison (Phase 1)'),
@@ -17800,12 +17806,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1524005','15240','9','0','100','1025','0','40','9000','14000','0','0','11','25809','4','32','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Cast Crippling Poison'),
 ('1524006','15240','0','0','100','1025','9000','15000','12000','16000','0','0','11','25810','4','32','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Cast Mind-numbing Poison'),
 ('1524007','15240','0','0','100','1025','7000','11000','10000','14000','0','0','11','26601','1','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Cast Poison Bolt'),
-('1524008','15240','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Set Phase to 0 on Evade'),
--- Qiraji Mindslayer
-('1524601','15246','0','0','100','1025','3000','5000','12000','17000','0','0','11','26044','4','0','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Mind Flay'),
-('1524602','15246','0','0','100','1025','15000','18000','10000','15000','0','0','11','26079','5','0','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Cause Insanity'),
-('1524603','15246','0','0','100','1025','9000','13000','13000','16000','0','0','11','26049','0','0','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Mana Burn'),
-('1524604','15246','9','0','100','1025','0','20','3000','5000','0','0','11','26048','1','0','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Mind Blast'),
+('1524008','15240','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Set Phase 0 on Evade'),
+-- Qiraji Mindslayer 15246
+('1524601','15246','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Invisibility and Stealth Detection on Spawn'),
+('1524602','15246','0','0','100','1025','3000','5000','12000','17000','0','0','11','26044','4','0','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Mind Flay'),
+('1524603','15246','0','0','100','1025','15000','18000','10000','15000','0','0','11','26079','5','0','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Cause Insanity'),
+('1524604','15246','0','0','100','1025','9000','13000','13000','16000','0','0','11','26049','0','0','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Mana Burn'),
+('1524605','15246','9','0','100','1025','0','20','3000','5000','0','0','11','26048','1','0','0','0','0','0','0','0','0','0','Qiraji Mindslayer - Cast Mind Blast'),
 -- Qiraji Brainwasher
 ('1524701','15247','0','0','100','1025','5000','8000','16000','21000','0','0','11','26079','5','0','0','0','0','0','0','0','0','0','Qiraji Brainwasher - Cast Cause Insanity'),
 ('1524702','15247','0','0','100','1025','3000','5000','9000','13000','0','0','11','26046','0','0','0','0','0','0','0','0','0','0','Qiraji Brainwasher - Cast Mana Burn'),
@@ -17859,9 +17866,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Qiraji Scorpion
 ('1531701','15317','9','0','100','1025','0','5','5000','9000','0','0','11','6016','4','32','0','0','0','0','0','0','0','0','Qiraji Scorpion - Cast Pierce Armor'),
 ('1531702','15317','0','0','100','1025','5000','9000','6000','12000','0','0','11','26050','4','0','0','0','0','0','0','0','0','0','Qiraji Scorpion - Cast Acid Spit'),
--- Giant Eye Tentacle (SD2 Backport)
-('1533401','15334','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','11','26478','0','0','Giant Eye Tentacle - Set Combat Movement and Auto Attack false and Cast Ground Rupture on Spawn'),
-('1533402','15334','0','0','100','1025','0','1000','2000','3000','0','0','11','26134','8','0','0','0','0','0','0','0','0','0','Giant Eye Tentacle - Cast Eye Beam'),
+-- Giant Eye Tentacle 15334
+('1533401','15334','11','0','100','0','0','0','0','0','0','0','61','1','0','0','11','26478','15','0','11','18950','0','34','Giant Eye Tentacle - Set Immobilized State, Cast Ground Rupture on Spawn'),
+('1533402','15334','0','0','100','1025','1000','2000','2000','3000','0','0','11','26134','8','0','0','0','0','0','0','0','0','0','Giant Eye Tentacle - Cast Eye Beam'),
 -- Merithra of the Dream (15378) - NSR
 -- Caelestrasz (15379) - NSR
 -- Arygos (15380) - NSR
@@ -18305,15 +18312,25 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lieutenant Rugba 13137
 -- Lieutenant Spencer 13138
 -- Commander Randolph 13139
+('1313901','13139','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Dardosh - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
+('1313902','13139','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Dardosh - Cast Cleave'),
 -- Commander Dardosh 13140
+('1314001','13140','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Dardosh - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
+('1314002','13140','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Dardosh - Cast Cleave'),
 -- Lieutenant Stronghoof 13143
 -- Lieutenant Vol'talar 13144
 -- Lieutenant Grummus 13145
 -- Lieutenant Murp 13146
 -- Lieutenant Lewis 13147
 -- Commander Malgor 13152
+('1315201','13152','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Malgor - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
+('1315202','13152','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Malgor - Cast Cleave'),
 -- Commander Mulfort 13153
+('1315301','13153','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Mulfort - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
+('1315302','13153','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Mulfort - Cast Cleave'),
 -- Commander Louis Philips 13154
+('1315401','13154','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Louis Philips - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
+('1315402','13154','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Louis Philips - Cast Cleave'),
 -- Aerie Gryphon (13161) - NSR
 -- Smith Regzar (13176) - Special Script Required (Unsure how it should work)
 -- War Rider (13178) - NSR
@@ -18379,8 +18396,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1331704','13317','28','3','100','1','15572','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Coldmine Miner - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1331705','13317','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Coldmine Miner - Set Phase 0 on Evade'),
 -- Commander Mortimer 13318
+('1331801','13318','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Mortimer - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
+('1331802','13318','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Mortimer - Cast Cleave'),
 -- Commander Duffy 13319
+('1331901','13319','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Duffy - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
+('1331902','13319','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Duffy - Cast Cleave'),
 -- Commander Karl Philips 13320
+('1332001','13320','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Karl Philips - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
+('1332002','13320','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Karl Philips - Cast Cleave'),
 -- Seasoned Guardsman (13324) - NSR
 -- Seasoned Defender 13326
 ('1332601','13326','11','0','100','0','0','0','0','0','0','0','11','5301','0','34','0','0','0','0','0','0','0','0','Seasoned Defender - Cast Defensive State (DND) on Spawn'),
@@ -18600,9 +18623,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Athramanis (14187) - NSR
 -- Dirk Swindle (14188) - NSR
 -- Frostwolf Bloodhound 14282
-('1428201','14282','11','0','100','0','0','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Frostwolf Bloodhound - Cast Thrash on Spawn'),
--- Stormpike Owl
-('1428301','14283','11','0','100','0','0','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Stormpike Owl - Cast Thrash on Spawn'),
+('1428201','14282','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Frostwolf Bloodhound - Cast Invisibility and Stealth Detection on Spawn'),
+-- Stormpike Owl 14283
+('1428301','14283','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Stormpike Owl - Cast Invisibility and Stealth Detection on Spawn'),
 -- Stormpike Battleguard 14284
 ('1428401','14284','11','0','100','0','0','0','0','0','0','0','11','12782','0','34','0','0','0','0','0','0','0','0','Stormpike Battleguard - Cast Shield Spike on Spawn'),
 ('1428402','14284','4','0','100','0','0','0','0','0','0','0','11','22120','1','0','0','0','0','0','0','0','0','0','Stormpike Battleguard - Cast Charge on Aggro'),
@@ -19012,12 +19035,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scourge Invasion Minion, spawner, Ghoul/Skeleton 16338 - scourge_invasion_minion_spawner
 -- Argent Messenger 16359
 -- Argent Sentry 16378
-('1637801','16378','4','0','100','0','0','0','0','0','0','0','11','25821','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Charge on Aggro'),
-('1637802','16378','0','0','100','1025','4000','6000','7000','9000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Mortal Strike'),
-('1637803','16378','0','0','100','1025','1000','3000','9000','12000','0','0','11','18328','0','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Incapacitating Shout'),
-('1637804','16378','9','0','100','1025','0','5','8000','14000','0','0','11','15618','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Snap Kick'),
-('1637805','16378','9','0','100','1025','20','45','2300','3900','0','0','11','23337','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Shoot'),
-('1637806','16378','36','0','100','1025','0','0','0','0','0','0','11','26229','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Summon Player on Unreachable'),
+('1637801','16378','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Argent Sentry - Cast Invisibility and Stealth Detection on Spawn'),
+('1637802','16378','4','0','100','0','0','0','0','0','0','0','11','25821','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Charge on Aggro'),
+('1637803','16378','0','0','100','1025','4000','6000','7000','9000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Mortal Strike'),
+('1637804','16378','0','0','100','1025','1000','3000','9000','12000','0','0','11','18328','0','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Incapacitating Shout'),
+('1637805','16378','9','0','100','1025','0','5','8000','14000','0','0','11','15618','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Snap Kick'),
+('1637806','16378','9','0','100','1025','20','45','2300','3900','0','0','11','23337','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Shoot'),
+('1637807','16378','36','0','100','1025','0','0','0','0','0','0','11','26229','1','0','0','0','0','0','0','0','0','0','Argent Sentry - Cast Summon Player on Unreachable'),
 -- Argent Dawn Initiate 16384
 -- Argent Dawn Paladin 16395
 -- Stormwind Elite Guard 16396
