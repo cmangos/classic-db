@@ -150,7 +150,7 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime`=2800 WHERE `entry` = 4857; 
 UPDATE `creature_template` SET `MeleeBaseAttackTime`=2000 WHERE `entry` = 4860; -- Stone Steward
 UPDATE `creature_template` SET `MeleeBaseAttackTime`=2000 WHERE `entry` = 4958; -- Haunting Spirit
 UPDATE `creature_template` SET `MeleeBaseAttackTime`=2000 WHERE `entry` = 4971; -- Slim's Friend
-UPDATE `creature_template_addon` SET `auras` = '8601' WHERE entry` = 4971; -- no s.3616
+UPDATE `creature_template_addon` SET `auras` = '8601' WHERE `entry` = 4971; -- no s.3616
 UPDATE `creature_template` SET `MeleeBaseAttackTime`=2000 WHERE `entry` = 4977; -- Murkshallow Softshell
 UPDATE `creature_template` SET `MeleeBaseAttackTime`=2000 WHERE `entry` = 5044; -- Theramore Skirmisher
 UPDATE `creature_template` SET `MeleeBaseAttackTime`=2000 WHERE `entry` = 5045; -- Private Hallan
