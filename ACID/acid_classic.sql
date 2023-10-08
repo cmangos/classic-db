@@ -10224,7 +10224,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Eranikus the Redeemed 15628 - NSR
 -- Nightmare Phantasm 15629
 ('1562901','15629','5','0','100','1025','0','0','0','0','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Swell of Souls on kill'),
-('1562902','15629','0','0','100','1025','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley');
+('1562902','15629','0','0','100','1025','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley'),
 -- Tyrande 15633 - NSR
 -- Valadar Starsong 15864
 -- Lunar Festival Vendor 15898
