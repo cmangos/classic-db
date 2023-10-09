@@ -1,2 +1,0 @@
-
-DELETE FROM `creature` WHERE (`guid` IN (86282, 53602, 53609, 53625, 53626));

@@ -7,7 +7,7 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE_ZIP="ClassicDB_1_12_z2793.sql.gz"
+FULLDB_FILE_ZIP="ClassicDB_1_12_1_z2815.sql.gz"
 FULLDB_FILE=${FULLDB_FILE_ZIP%.gz}
 NEXT_MILESTONES="0.19 0.20"
 
