@@ -2004,7 +2004,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Eastern Plaguelands
 -- ===================
 -- Tirion Fordring (1855) - npc_tirion_fordring
--- Suffering Victim (6547) - NSR
 -- Skeletal Servant (8477) - NSR
 -- Blighted Surge 8519
 ('851901','8519','4','0','100','0','0','0','0','0','0','0','57','2','25','0','11','16563','0','34','0','0','0','0','Blighted Surge - Enable Range Mode, Cast Drowning Death on Aggro'),
@@ -15467,8 +15466,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Herod (3975) - boss_herod (Whirlwind is on a Timer NOT HP% Triggered + Yell With Each Cast) (Enrage @ 50% HP and Yell + Going into Frenzy Emote)
 -- Scarlet Commander Mograine (3976) - boss_scarlet_commander_mograine
 -- High Inquisitor Whitemane (3977) - boss_high_inquisitor_whitemane
--- Vorrel Sengutz
-('398101','3981','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Vorrel Sengutz - Set Stand State on Aggro'),
+-- Vorrel Sengutz 3981
+('398101','3981','1','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Vorrel Sengutz - Set ReactState Passive OOC'),
+('398102','3981','4','0','100','0','0','0','0','0','0','0','47','0','0','0','50','2','0','0','0','0','0','0','Vorrel Sengutz - Set Stand State Stand, ReactState Aggressive on Aggro'),
 -- Interrogator Vishas (3.0.3 and 4.3.4 Official Data)
 ('398301','3983','11','0','100','0','0','0','0','0','0','0','11','8981','0','1','0','0','0','0','0','0','0','0','Interrogator Vishas - Cast Immolate on Spawn'),
 ('398302','3983','4','0','100','0','0','0','0','0','0','0','1','6204','0','0','0','0','0','0','0','0','0','0','Interrogator Vishas - Yell on Aggro'),
@@ -15644,8 +15644,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('649003','6490','2','0','100','1025','50','0','20000','20000','0','0','11','9373','4','0','0','0','0','0','0','0','0','0','Azshir the Sleepless - Cast Soul Siphon'),
 -- Illusionary Phantasm 6493
 ('649301','6493','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Illusionary Phantasm - Cast Illusion Passive on Spawn'),
--- Suffering Victim
-('654701','6547','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Suffering Victim - Set Stand State to Stand on Aggro'),
+-- Suffering Victim 6547
+('654701','6547','1','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Suffering Victim - Set ReactState Passive OOC'),
+('654702','6547','4','0','100','0','0','0','0','0','0','0','47','0','0','0','50','2','0','0','0','0','0','0','Suffering Victim - Set Stand State Stand, ReactState Aggressive on Aggro'),
 -- Scarlet Trainee (6575) - mob_scarlet_trainee
 -- Scorn 14693
 ('1469301','14693','11','0','100','0','0','0','0','0','0','0','11','28126','0','34','0','0','0','0','0','0','0','0','Scorn - Cast Spirit Particles (purple) on Spawn'),
