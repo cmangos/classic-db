@@ -7389,8 +7389,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('432001','4320','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Caelyb - Flee at 15% HP'),
 -- Feero Ironhand (4484) - npc_feero_ironhand
 -- Sargath (4509) - NSR
--- Geltharis
-('461901','4619','2','0','100','1025','20','0','15000','25000','0','0','11','6925','0','0','0','0','0','0','0','0','0','0','Geltharis - Cast Gift of the Xavian at 20% HP'),
+-- Geltharis 4619 - NSR
 -- Illusionary Nightmare 4785
 ('478501','4785','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Illusionary Nightmare - Cast Illusion Passive on Spawn'),
 -- Fallenroot Rogue 4789
