@@ -3667,6 +3667,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('71202','712','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Redridge Thrasher - Flee at 15% HP'),
 -- Servant of Ilgalar 819 (2.4.3 Official Data)
 ('81901','819','0','0','100','1025','600','8800','27300','37300','0','0','11','8129','16','0','0','0','0','0','0','0','0','0','Servant of Ilgalar - Cast Mana Burn on Random Mana User'),
+-- Bailiff Conacher 900
+('90001','900','22','0','100','1','17','4','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Bailiff Conacher - Bow Emote on Receive Emote'),
 -- Guard Howe 903
 ('90301','903','1','0','100','1','25000','25000','180000','180000','0','0','1','51','52','53','0','0','0','0','0','0','0','0','Guard Howe - Say OOC'),
 -- Ariena Stormfeather (2.4.3 Official Data)
