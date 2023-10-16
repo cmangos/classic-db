@@ -13989,28 +13989,25 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tortured Slave 10117
 ('1011701','10117','1','0','100','1','5000','25000','9000','14000','0','0','5','18','0','0','1','5460','5458','5459','0','0','0','0','Tortured Slave - Cry Emote and Random Emote Text OOC'),
 ('1011702','10117','1','0','100','1','18000','35000','9000','14000','0','0','5','20','0','0','1','5460','5458','5459','0','0','0','0','Tortured Slave - Beg Emote and Text Emote'),
--- Arcanite Dragonling (12473)
+-- Arcanite Dragonling (12473) - creature_spell_list
 -- Lokhtos Darkbargainer (12944) - npc_lokhtos_darkbargainer
 -- Elder Morndeep (15549)
--- Lefty (16049)
--- Rotfang 16050 - Bestiary: Sinister Strike, Eviscerate, Vanish, Slowing Poison, Kick, Kidney Shot, Gouge, Drink Healing Potion
--- Snokh Blackspine (16051)
--- Malgen Longspear 16052 - Freezing Trap?
+-- Lefty (16049) - creature_spell_list
+-- Rotfang 16050 - creature_spell_list
+-- Snokh Blackspine (16051) - creature_spell_list
+('1605101','16051','4','0','100','0','0','0','0','0','0','0','57','1','25','0','0','0','0','0','0','0','0','0','Snokh Blackspine - Enable Range Mode on Aggro'),
+-- Malgen Longspear 16052 - creature_spell_list
 ('1605201','16052','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Malgen Longspear - Enable Range Mode on Aggro'),
 ('1605202','16052','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Malgen Longspear - Flee at 15% HP'),
-('1605203','16052','2','0','100','1025','25','0','15300','22900','0','0','11','15503','0','0','0','0','0','0','0','0','0','0','Malgen Longspear - Cast Drink Healing Potion below 25% HP'),
-('1605204','16052','9','0','80','1025','5','35','12000','16000','0','0','11','27632','4','544','0','0','0','0','0','0','0','0','Malgen Longspear - Cast Aimed Shot'),
-('1605205','16052','9','0','80','1025','5','35','9000','13000','0','0','11','27634','4','544','0','0','0','0','0','0','0','0','Malgen Longspear - Cast Concussive Shot'),
-('1605206','16052','9','0','80','1025','5','30','7000','12000','0','0','11','18651','4','544','0','0','0','0','0','0','0','0','Malgen Longspear - Cast Multi-Shot'),
-('1605207','16052','9','0','80','1025','0','5','7000','12000','0','0','11','27633','1','0','0','0','0','0','0','0','0','0','Malgen Longspear - Cast Wing Clip'),
-('1605208','16052','9','0','100','1025','5','30','2200','4700','0','0','11','16100','1','256','0','0','0','0','0','0','0','0','Malgen Longspear - Cast Shoot'),
--- Korv (16053)
--- Rezznik (16054)
--- Va'jashni (16055)
--- Volida (16058)
--- Theldren (16059)
+-- Korv (16053) - creature_spell_list
+-- Rezznik (16054) - creature_spell_list
+-- Va'jashni (16055) - creature_spell_list
+-- Volida (16058) - creature_spell_list
+('1605801','16058','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Volida - Enable Range Mode on Aggro'),
+-- Theldren (16059) - creature_spell_list
+('1605901','16059','4','0','100','0','0','0','0','0','0','0','1','11953','11952','0','0','0','0','0','0','0','0','0','Theldren - Say on Aggro'),
 -- Theldren Trigger 16079 - npc_theldren_trigger
--- Gnashjaw (16095)
+-- Gnashjaw (16095) - creature_spell_list
 
 
 
