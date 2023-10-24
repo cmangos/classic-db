@@ -586,6 +586,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`Positi
 
 -- Gordok Hyena Pack 8
 SET @NPC := 51371;
+DELETE FROM `creature` WHERE `guid` IN (@NPC,@NPC+1,@NPC+2);
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@NPC, 12418, 1, -4446.51, 1122.8, 126.278, 1.20334, 300, 300, 0, 0),
 (@NPC+1, 12418, 1, -4446.51, 1122.8, 126.278, 1.20334, 300, 300, 0, 0), -- classic only
