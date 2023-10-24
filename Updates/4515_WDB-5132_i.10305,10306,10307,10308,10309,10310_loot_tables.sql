@@ -16,3 +16,8 @@ UPDATE `reference_loot_template_names` SET `name` = 'NPC LOOT (White World Drop)
 UPDATE `reference_loot_template_names` SET `name` = 'NPC LOOT (White World Drop) - (Scrolls III) - (NPC Levels 40-55)' WHERE `entry` = 50602;
 UPDATE `reference_loot_template_names` SET `name` = 'NPC LOOT (White World Drop) - (Scrolls IV) - (NPC Levels 55-62)' WHERE `entry` = 50603;
 
+-- Table 'creature_loot_template' entry 1497 (creature entry) not exist but used as loot id in DB.
+-- Table 'creature_loot_template' entry 3663 (creature entry) not exist but used as loot id in DB.
+-- Table 'creature_loot_template' entry 11806 (creature entry) not exist but used as loot id in DB.
+UPDATE `creature_template` SET `LootId` = 0 WHERE `entry` IN (1497,3663,11806);
+
