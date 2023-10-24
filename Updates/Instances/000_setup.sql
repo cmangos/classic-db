@@ -39,9 +39,9 @@ DELETE FROM waypoint_path WHERE `PathId` BETWEEN 1090000 AND 5299999 OR `PathId`
 DELETE FROM waypoint_path_name WHERE `PathId` BETWEEN 1090000 AND 5299999 OR `PathId` BETWEEN 5310000 AND 5709999 OR `PathId` BETWEEN 5720000 AND 6089999 OR `PathId` BETWEEN 6100000 AND 9009999;
 
 DELETE FROM creature_movement WHERE id IN (SELECT guid FROM tmp_creature);
-DELETE FROM creature_movement_template WHERE entry IN (SELECT id FROM tmp_creature WHERE id NOT IN (12999,21075,23033,24110)); -- Exclude NPCs spawned in both instance and open world
+DELETE FROM creature_movement_template WHERE entry IN (SELECT id FROM tmp_creature WHERE id NOT IN (12999,15378,15379,15380,21075,23033,24110)); -- Exclude NPCs spawned in both instance and open world
 DELETE FROM creature_addon WHERE guid IN (SELECT guid FROM tmp_creature);
-DELETE FROM creature_template_addon WHERE entry IN (SELECT id FROM tmp_creature WHERE id NOT IN(2267,9699,15475,17378,21075)); -- Exclude NPCs spawned in both instance and open world
+DELETE FROM creature_template_addon WHERE entry IN (SELECT id FROM tmp_creature WHERE id NOT IN(2267,9699,15378,15379,15380,15475,17378,21075)); -- Exclude NPCs spawned in both instance and open world
 DELETE FROM game_event_creature WHERE guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM game_event_creature_data WHERE guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature_linking WHERE guid IN (SELECT guid FROM tmp_creature) OR master_guid IN (SELECT guid FROM tmp_creature);
