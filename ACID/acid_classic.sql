@@ -522,7 +522,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('275501','2755','0','0','100','1025','5000','15000','20000','20000','0','0','11','4938','17','0','0','0','0','0','0','0','0','0','Myzrael - Cast Myzrael Earthquake'),
 ('275502','2755','0','0','100','1024','300000','360000','0','0','0','0','11','4937','15','0','0','0','0','0','0','0','0','0','Myzrael - Cast Summon Prismatic Exiles'),
 ('275503','2755','0','0','100','1025','0','12000','6000','24000','0','0','11','10388','15','0','0','0','0','0','0','0','0','0','Myzrael - Cast Summon Prismatic Exile'),
--- Burning Exile (2760) - NSR
+-- Burning Exile 2760
+('276001','2760','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Burning Exile - Cast Fire Shield on Spawn'),
 -- Cresting Exile 2761 (3.0.9 Official Data)
 ('276101','2761','1','0','100','1','1000','1000','1800000','1800000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Cresting Exile - Cast Frost Armor on Spawn'),
 ('276102','2761','0','0','100','1025','0','10000','25600','32300','0','0','11','865','17','0','0','0','0','0','0','0','0','0','Cresting Exile - Cast Frost Nova'),
@@ -1225,8 +1226,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('704303','7043','9','0','100','1025','0','20','2400','4700','0','0','11','9574','1','256','0','0','0','0','0','0','0','0','Flamescale Wyrmkin - Cast Flame Buffet'),
 -- Black Drake (3.1.3 Official Data)
 ('704401','7044','0','0','100','1025','6100','12800','7200','15700','0','0','11','8873','1','0','0','0','0','0','0','0','0','0','Black Drake - Cast Flame Breath'),
--- Scalding Drake (3.1.3 Official Data)
-('704501','7045','0','0','100','1025','800','5200','8400','17600','0','0','11','9573','1','0','0','0','0','0','0','0','0','0','Scalding Drake - Cast Flame Breath'),
+-- Scalding Drake 7045
+('704501','7045','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Scalding Drake - Cast Fire Shield on Spawn'),
+('704502','7045','0','0','100','1025','800','5200','8400','17600','0','0','11','9573','1','0','0','0','0','0','0','0','0','0','Scalding Drake - Cast Flame Breath'),
 -- Searscale Drake (3.1.3 Official Data)
 ('704601','7046','0','0','100','1025','10900','17200','8400','18100','0','0','11','8873','1','0','0','0','0','0','0','0','0','0','Searscale Drake - Cast Flame Breath'),
 -- Black Broodling 7047 (3.1.3 Official Data)
@@ -3735,7 +3737,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dark Iron Taskmaster
 ('584601','5846','0','0','100','1025','1000','3000','10000','15000','0','0','11','5115','15','0','0','0','0','0','0','0','0','0','Dark Iron Taskmaster - Cast Battle Command'),
 ('584602','5846','6','0','100','0','0','0','0','0','0','0','11','12613','0','7','0','0','0','0','0','0','0','0','Dark Iron Taskmaser - Cast Dark Iron Taskmaster Death on Death'),
--- Blazing Elemental (5850) - NSR
+-- Blazing Elemental 5850
+('585001','5850','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Blazing Elemental - Cast Fire Shield on Spawn'),
 -- Inferno Elemental
 ('585201','5852','9','0','100','1025','0','5','7000','11000','0','0','11','10733','1','0','0','0','0','0','0','0','0','0','Inferno Elemental - Cast Flame Spray'),
 -- Tempered War Golem (5853) - NSR
@@ -3762,7 +3765,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('586204','5862','9','0','100','1025','0','30','14000','21000','0','0','11','11990','4','0','0','0','0','0','0','0','0','0','Twilight Geomancer - Cast Rain of Fire'),
 ('586205','5862','9','0','100','1025','0','40','3400','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Twilight Geomancer - Cast Fireball'),
 -- Sarah Tanner (7868) - npc_prof_leather
--- Rekk'tilac (8277) - NSR
+-- Rekk'tilac 8277
+('827701','8277','11','0','100','0','0','0','0','0','0','0','11','10022','0','34','11','11966','0','34','0','0','0','0','Rekk''tilac - Cast Deadly Poison, Fire Shield on Spawn'),
 -- Smoldar
 ('827801','8278','9','0','100','1025','0','5','17000','21000','0','0','11','5213','1','0','0','0','0','0','0','0','0','0','Smoldar - Cast Molten Metal'),
 -- Faulty War Golem (8279) - NSR
@@ -7417,9 +7421,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Diathorus the Seeker (3.3.0 Official Data) - Exact % Values Are Unknown
 ('607201','6072','2','0','100','1025','75','0','22100','32600','0','0','11','18557','1','0','0','0','0','0','0','0','0','0','Diathorus the Seeker - Cast Drain Life at 75% HP'),
 ('607202','6072','2','0','100','0','50','0','0','0','0','0','39','20','0','0','1','1064','0','0','0','0','0','0','Diathorus the Seeker - Call For Help and Emote at 50% HP'),
--- Searing Infernal (3.3.0 Official Data)
-('607301','6073','1','0','100','1','1000','1000','600000','600000','0','0','11','18968','0','0','0','0','0','0','0','0','0','0','Searing Infernal - Cast Fire Shield on Spawn'),
-('607302','6073','27','0','100','1','18968','1','15000','30000','0','0','11','18968','0','0','0','0','0','0','0','0','0','0','Searing Infernal - Cast Fire Shield on Missing Buff'),
+-- Searing Infernal 6073
+('607301','6073','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Searing Infernal - Cast Fire Shield on Spawn'),
 -- Astranaar Sentinel (6087) - NSR
 -- Roaming Felguard (3.3.0 Official Data)
 ('611501','6115','9','0','100','1025','0','5','8400','15500','0','0','11','11428','1','0','0','0','0','0','0','0','0','0','Roaming Felguard - Cast Knockdown'),
@@ -9564,11 +9567,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Toxic Horror
 ('713201','7132','9','0','100','1025','0','5','8000','16000','0','0','11','7947','1','0','0','0','0','0','0','0','0','0','Toxic Horror - Cast Localized Toxin'),
 ('713202','7132','0','0','100','1025','6000','9000','12000','18000','0','0','11','13582','4','32','0','0','0','0','0','0','0','0','Toxic Horror - Cast Deadly Poison'),
--- Infernal Bodyguard
-('713501','7135','0','0','100','1025','5000','9000','10000','13000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Infernal Bodyguard - Cast Uppercut'),
--- Infernal Sentry (7136) - NSR
--- Immolatus
-('713701','7137','9','0','100','1025','0','8','10000','14000','0','0','11','10101','1','0','0','0','0','0','0','0','0','0','Immolatus - Cast Knock Away'),
+-- Infernal Bodyguard 7135
+('713501','7135','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Infernal Bodyguard - Cast Fire Shield on Spawn'),
+('713502','7135','0','0','100','1025','5000','9000','10000','13000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Infernal Bodyguard - Cast Uppercut'),
+-- Infernal Sentry 7136
+('713601','7136','11','0','100','0','0','0','0','0','0','0','11','8278','0','34','11','8279','0','34','11','11966','0','34','Infernal Sentry - Cast Invisibility Detection, Stealth Detection, Fire Shield on Spawn'),
+-- Immolatus 7137
+('713701','7137','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Immolatus - Cast Fire Shield on Spawn'),
+('713702','7137','9','0','100','1025','0','8','10000','14000','0','0','11','10101','1','0','0','0','0','0','0','0','0','0','Immolatus - Cast Knock Away'),
 -- Irontree Wanderer (7138) - NSR
 -- Irontree Stomper
 ('713901','7139','9','0','100','1025','0','5','9000','16000','0','0','11','45','0','0','0','0','0','0','0','0','0','0','Irontree Stomper - Cast War Stomp'),
@@ -10990,8 +10996,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1520001','15200','0','0','100','1025','4000','15800','9700','19400','0','0','11','15654','1','32','0','0','0','0','0','0','0','0','Twilight Keeper Mayna - Cast Shadow Word: Pain'),
 ('1520002','15200','0','0','100','1025','15000','18000','15000','18000','0','0','11','17165','4','0','0','0','0','0','0','0','0','0','Twilight Keeper Mayna - Cast Mind Flay'),
 ('1520003','15200','0','0','100','1025','9000','11000','19000','24000','0','0','11','22884','0','0','0','0','0','0','0','0','0','0','Twilight Keeper Mayna - Cast Psychic Scream'),
--- Twilight Flamereaver
-('1520101','15201','11','0','100','0','0','0','0','0','0','0','11','15733','0','1','0','0','0','0','0','0','0','0','Twilight Flamereaver - Cast Immolate on Spawn'),
+-- Twilight Flamereaver 15201
+('1520101','15201','11','0','100','0','0','0','0','0','0','0','11','15733','0','34','11','11966','0','34','0','0','0','0','Twilight Flamereaver - Cast Immolate, Fire Shield on Spawn'),
 -- Vyral the Vile 15202
 ('1520201','15202','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Vyral the Vile - Enable Range Mode on Aggro'),
 ('1520202','15202','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Vyral the Vile - Flee at 15% HP'),
@@ -13034,6 +13040,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('651902','6519','2','0','100','1024','40','0','0','0','0','0','11','11640','0','0','0','0','0','0','0','0','0','0','Tar Lord - Cast Renew at 40% HP'),
 -- Scorching Elemental 6520
 ('652001','6520','0','0','100','1025','3000','6000','3000','6000','0','0','11','13878','1','0','0','0','0','0','0','0','0','0','Scorching Elemental - Cast Scorch'),
+-- Living Blaze 6521
+('652101','6521','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Living Blaze - Cast Fire Shield on Spawn'),
 -- Tar Creeper 6527
 ('652701','6527','0','0','100','1025','5000','9000','8000','14000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Tar Creeper - Cast Trample'),
 -- Gorishi Wasp 6551
@@ -13648,7 +13656,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Molten War Golem 8908
 ('890801','8908','11','0','100','0','0','0','0','0','0','0','11','13377','0','34','0','0','0','0','0','0','0','0','Molten War Golem - Cast Fire Shield on Spawn'),
 -- Fireguard 8909
-('890901','8909','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Fireguard - Enable Range Mode on Aggro'),
+('890901','8909','11','0','100','0','0','0','0','0','0','0','57','2','35','0','11','11966','0','34','0','0','0','0','Fireguard - Enable Range Mode, Cast Fire Shield on Spawn'),
 ('890902','8909','9','0','100','1025','0','40','3600','4900','0','0','11','14034','1','256','0','0','0','0','0','0','0','0','Fireguard - Cast Fireball'),
 -- Blazing Fireguard 8910
 ('891001','8910','0','0','100','1025','9000','11000','11000','18000','0','0','11','20787','4','32','0','0','0','0','0','0','0','0','Blazing Fireguard - Cast Immolate'),
@@ -16940,7 +16948,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Verdan the Everliving
 ('577501','5775','9','0','100','1025','0','8','13000','16000','0','0','11','8142','0','0','0','0','0','0','0','0','0','0','Verdan the Everliving - Cast Grasping Vines'),
 -- Deviate Faerie Dragon (5912) - NSR
--- Deviate Nightmare (5914) - NSR
+-- Deviate Nightmare 5914
+('591401','5914','11','0','100','0','0','0','0','0','0','0','11','8149','0','34','0','0','0','0','0','0','0','0','Deviate Nightmare - Cast Super Invis on Spawn'),
 -- Deviate Python (8886) - NSR
 
 
@@ -17126,6 +17135,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1242201','12422','9','0','100','1025','0','5','5000','7000','0','0','11','15580','1','0','0','0','0','0','0','0','0','0','Death Talon Dragonspawn - Cast Strike'),
 ('1242202','12422','0','0','100','1025','9000','13000','11000','14000','0','0','11','15284','4','0','0','0','0','0','0','0','0','0','Death Talon Dragonspawn - Cast Cleave'),
 ('1242203','12422','0','0','100','1025','11000','15000','12000','16000','0','0','11','23967','4','0','0','0','0','0','0','0','0','0','Death Talon Dragonspawn - Cast Dragonbane'),
+-- Monster Generator (Blackwing) 12434 - s.8149
 -- Razorgore the Untamed (12435) - boss_razorgore
 -- Blackwing Spellbinder
 ('1245701','12457','9','0','100','1025','0','30','7000','11000','0','0','11','22275','4','0','0','0','0','0','0','0','0','0','Blackwing Spellbinder - Cast Flamestrike'),
@@ -17215,19 +17225,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1430201','14302','9','0','100','1025','0','15','5000','8000','0','0','11','22560','1','0','0','0','0','0','0','0','0','0','Chromatic Drakonid - Cast Brood Power: Black'),
 ('1430202','14302','6','0','100','0','0','0','0','0','0','0','11','23363','0','1','41','1000','0','0','0','0','0','0','Chromatic Drakonid - Cast Summon Drakonid Corpse Trigger and Despawn on Death'),
 ('1430203','14302','21','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Chromatic Drakonid - Forced Despawn on Reached Home'),
--- Black Drakonid Spawner
+-- Black Drakonid Spawner - s.8149
 ('1430701','14307','11','0','100','0','0','0','0','0','0','0','11','22653','0','1','0','0','0','0','0','0','0','0','Black Drakonid Spawner - Cast Drakonid Spawner on Spawn'),
 ('1430702','14307','1','0','100','1','1000','1000','60000','60000','0','0','11','22680','0','1','0','0','0','0','0','0','0','0','Black Drakonid Spawner - Cast Spawn Chromatic Drakonid'),
--- Red Drakonid Spawner
+-- Red Drakonid Spawner - s.8149
 ('1430901','14309','11','0','100','0','0','0','0','0','0','0','11','22653','0','1','0','0','0','0','0','0','0','0','Red Drakonid Spawner - Cast Drakonid Spawner on Spawn'),
 ('1430902','14309','1','0','100','1','1000','1000','60000','60000','0','0','11','22680','0','1','0','0','0','0','0','0','0','0','Red Drakonid Spawner - Cast Spawn Chromatic Drakonid'),
--- Green Drakonid Spawner
+-- Green Drakonid Spawner - s.8149
 ('1431001','14310','11','0','100','0','0','0','0','0','0','0','11','22653','0','1','0','0','0','0','0','0','0','0','Green Drakonid Spawner - Cast Drakonid Spawner on Spawn'),
 ('1431002','14310','1','0','100','1','1000','1000','60000','60000','0','0','11','22680','0','1','0','0','0','0','0','0','0','0','Green Drakonid Spawner - Cast Spawn Chromatic Drakonid'),
--- Bronze Drakonid Spawner
+-- Bronze Drakonid Spawner - s.8149
 ('1431101','14311','11','0','100','0','0','0','0','0','0','0','11','22653','0','1','0','0','0','0','0','0','0','0','Bronze Drakonid Spawner - Cast Drakonid Spawner on Spawn'),
 ('1431102','14311','1','0','100','1','1000','1000','60000','60000','0','0','11','22680','0','1','0','0','0','0','0','0','0','0','Bronze Drakonid Spawner - Cast Spawn Chromatic Drakonid'),
--- Blue Drakonid Spawner
+-- Blue Drakonid Spawner - s.8149
 ('1431201','14312','11','0','100','0','0','0','0','0','0','0','11','22653','0','1','0','0','0','0','0','0','0','0','Blue Drakonid Spawner - Cast Drakonid Spawner on Spawn'),
 ('1431202','14312','1','0','100','1','1000','1000','60000','60000','0','0','11','22680','0','1','0','0','0','0','0','0','0','0','Blue Drakonid Spawner - Cast Spawn Chromatic Drakonid'),
 -- Master Elemental Shaper Krixix (14401) - NSR
@@ -17245,7 +17255,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Corrupted Stoneskin Totem VI 14663 - TotemAI
 -- Corrupted Healing Stream Totem V 14664 - TotemAI
 -- Corrupted Windfury Totem III 14666 - TotemAI
--- Corrupted Totem 14667 - TotemAI
+-- Corrupted Totem 14667 - TotemAI - s.8149
 -- Corrupted Infernal
 ('1466801','14668','11','0','100','0','0','0','0','0','0','0','11','22703','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Inferno Effect on Spawn'),
 ('1466802','14668','0','0','100','1024','1000','1000','0','0','0','0','11','12743','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Immolation'),
