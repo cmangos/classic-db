@@ -556,6 +556,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10436, 0, 0, 1, 0, 0, NULL), -- Baroness Anastari
 (10437, 0, 0, 1, 0, 0, NULL), -- Nerub'enkan
 (10438, 0, 0, 1, 0, 0, NULL), -- Maleki the Pallid
+(10439, 0, 0, 1, 0, 0, '15088'), -- Ramstein the Gorger
 (10440, 0, 0, 0, 0, 0, '17467'), -- Baron Rivendare
 (10463, 0, 0, 1, 0, 0, NULL), -- Shrieking Banshee
 (10464, 0, 0, 1, 0, 0, NULL), -- Wailing Banshee
