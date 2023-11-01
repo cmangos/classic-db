@@ -847,7 +847,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (15516, 0, 0, 1, 0, 0, NULL), -- Battleguard Sartura
 (15543, 0, 0, 1, 0, 0, NULL), -- Princess Yauj
 (15544, 0, 0, 1, 0, 0, NULL), -- Vem
-(15589, 0, 0, 1, 0, 0, NULL), -- Eye of C'Thun
+(15589, 0, 0, 1, 0, 0, '18950'), -- Eye of C'Thun
 (15727, 0, 0, 1, 0, 0, NULL), -- C'Thun
 (15896, 0, 0, 1, 0, 0, NULL), -- C'Thun Portal
 (15933, 0, 0, 1, 0, 0, '25786 26575'), -- Poison Cloud
