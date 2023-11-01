@@ -414,6 +414,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (14880, 0, 0, 1, 0, 0, NULL), -- Razzashi Skitterer
 (14882, 0, 0, 1, 10, 0, '8876'), -- Atal'ai Mistress
 (14883, 0, 0, 1, 10, 0, NULL), -- Voodoo Slave
+(15041, 0, 0, 1, 0, 0, '24087'), -- Spawn of Mar'li
 (15042, 0, 0, 1, 0, 0, NULL), -- Zanza the Restless
 (15043, 0, 0, 1, 0, 0, NULL), -- Zulian Crocolisk
 (15067, 0, 0, 1, 0, 0, '7939 22766'), -- Zulian Stalker
