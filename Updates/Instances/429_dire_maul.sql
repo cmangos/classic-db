@@ -6,7 +6,6 @@ DBComment:
 * Resolve 179547 / 179548
 * Fix Whip Lasher 2x-4x, Groups, creature_groups min/max
 * herbs might also have minmax values for spawns
-* Death Lash 13285 - s.22351 instead of s.25640, changed at some point?
 * 14690 movement, spawns at supposedly old position of Magister Kalendris
 EndDBScriptData */
 
@@ -957,7 +956,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (13197, 0, 0, 1, 0, 0, NULL), -- Fel Lash
 (13276, 0, 0, 1, 0, 0, NULL), -- Wildspawn Imp
 (13280, 0, 0, 1, 0, 0, NULL), -- Hydrospawn
-(13285, 0, 0, 1, 0, 0, '8876 16428 25640'), -- Death Lash
+(13285, 0, 0, 1, 0, 0, '8876 16428 22351'), -- Death Lash
 (13916, 0, 0, 1, 0, 1024, NULL), -- Dire Maul Crystal Totem
 (14303, 0, 0, 1, 0, 0, '22696'), -- Petrified Guardian
 (14308, 0, 0, 1, 0, 0, NULL), -- Ferra
