@@ -18672,6 +18672,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stormpike Stable Master (13617) - NSR
 -- Stabled Frostwolf (13618) - NSR
 -- Stabled Alterac Ram (13676) - NSR
+-- PvP Graveyard Credit Marker 13756 - s.22483
+-- PvP Tower Credit Marker 13778 - s.22483
+-- PvP Mine Credit Marker 13796 - s.22483
+-- Herald 14848 - s.22483
 -- Mountaineer Boombellow 13797
 ('1379701','13797','4','0','100','0','0','0','0','0','0','0','11','22120','1','0','0','0','0','0','0','0','0','0','Mountaineer Boombellow - Cast Charge on Aggro'),
 ('1379702','13797','0','0','100','1025','4000','6000','7000','9000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Mountaineer Boombellow - Cast Strike'),
