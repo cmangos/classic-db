@@ -7666,7 +7666,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('614301','6143','9','0','100','1025','0','10','9000','13000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Servant of Arkkoroc - Cast Trample'),
 -- Son of Arkkoroc
 ('614401','6144','9','0','100','1025','0','8','12000','16000','0','0','11','10101','1','0','0','0','0','0','0','0','0','0','Son of Arkkoroc - Cast Knock Away'),
--- Cliff Breaker (6146) - NSR
+-- Cliff Breaker 6146
+('614601','6146','11','0','100','0','0','0','0','0','0','0','11','12552','0','34','0','0','0','0','0','0','0','0','Cliff Breaker - Cast Cripple on Spawn'),
 -- Cliff Thunderer
 ('614701','6147','0','0','100','1025','7000','10000','11000','14000','0','0','11','8147','0','0','0','0','0','0','0','0','0','0','Cliff Thunderer - Cast Thunderclap'),
 -- Cliff Walker
@@ -10818,8 +10819,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Earth Elemental 329
 -- Hive'Ashi Stinger 11698
 -- Hive'Ashi Worker 11721
--- Hive'Ashi Defender
-('1172201','11722','0','0','100','1025','2000','12000','36200','46300','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Hive''Ashi Defender - Cast Disarm'),
+-- Hive'Ashi Defender 11722
+('1172201','11722','11','0','100','0','0','0','0','0','0','0','11','12552','0','34','0','0','0','0','0','0','0','0','Cliff Breaker - Cast Cripple on Spawn'),
+('1172202','11722','0','0','100','1025','2000','12000','36200','46300','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Hive''Ashi Defender - Cast Disarm'),
 -- Hive'Ashi Sandstalker 11723
 ('1172301','11723','1','0','25','1','1000','1000','600000','3600000','0','0','11','7939','0','34','11','22766','0','34','0','0','0','0','Hive''Ashi Sandstalker - Cast Sneak OOC'),
 -- Hive'Ashi Swarmer 11724
