@@ -12997,8 +12997,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Whulwert Copperpinch 13431
 -- Seersa Copperpinch 13432
 -- Hunter Sagewind 14440
+('1444001','14440','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Sagewind - Cast Invisibility and Stealth Detection OOC'),
 -- Hunter Ragetotem 14441
+('1444101','14441','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Ragetotem - Cast Invisibility and Stealth Detection OOC'),
 -- Hunter Thunderhorn 14442
+('1444201','14442','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Thunderhorn - Cast Invisibility and Stealth Detection OOC'),
 -- Rumstag Proudstrider 14728
 -- Maxima Blastenheimer 15303
 -- Horde Warbringer 15350
@@ -18381,9 +18384,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Commander Louis Philips 13154
 ('1315401','13154','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Louis Philips - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
 ('1315402','13154','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Louis Philips - Cast Cleave'),
--- Aerie Gryphon (13161) - NSR
+-- Aerie Gryphon (13161) - s.21190
 -- Smith Regzar (13176) - Special Script Required (Unsure how it should work)
--- War Rider (13178) - NSR
+-- War Rider (13178) - s.21190
 -- Wing Commander Guse 13179
 ('1317901','13179','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Wing Commander Guse - Set Phase 1 on Aggro'),
 ('1317902','13179','9','5','100','1025','0','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Wing Commander Guse - Cast Sunder Armor (Phase 1)'),
@@ -18754,16 +18757,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1477703','14777','0','0','100','1025','2000','4000','14000','20000','0','0','11','23511','0','0','0','0','0','0','0','0','0','0','West Frostwolf Warmaster - Cast Demoralizing Shout'),
 ('1477704','14777','0','0','100','1025','11000','14000','9000','13000','0','0','11','13736','0','0','0','0','0','0','0','0','0','0','West Frostwolf Warmaster - Cast Whirlwind'),
 ('1477705','14777','2','0','100','1025','30','0','120000','120000','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','West Frostwolf Warmaster - Cast Enrage at 30% HP'),
--- Guse's War Rider 14943
+-- Guse's War Rider 14943 - s.21190
 ('1494301','14943','0','0','100','1025','3000','5000','6000','9000','0','0','11','15285','1','0','0','0','0','0','0','0','0','0','Guse''s War Rider - Cast Fireball Volley'),
 ('1494302','14943','0','0','100','1025','8000','11000','12000','17000','0','0','11','21188','4','0','11','23969','0','0','0','0','0','0','Guse''s War Rider - Cast Stun Bomb Attack and Throw Liquid Fire'),
--- Jeztor's War Rider (14944) - NSR
--- Mulverick's War Rider (14945) - NSR
--- Slidore's Gryphon 14946
+-- Jeztor's War Rider (14944) - s.21190
+-- Mulverick's War Rider (14945) - s.21190
+-- Slidore's Gryphon 14946 - s.21190
 ('1494601','14946','0','0','100','1025','3000','5000','6000','9000','0','0','11','15285','1','0','0','0','0','0','0','0','0','0','Slidore''s Gryphon - Cast Fireball Volley'),
 ('1494602','14946','0','0','100','1025','8000','11000','12000','17000','0','0','11','21188','4','0','11','23969','0','0','0','0','0','0','Slidore''s Gryphon - Cast Stun Bomb Attack and Throw Liquid Fire');
--- Ichman's Gryphon (14947) - NSR
--- Vipore's Gryphon (14948) - NSR
+-- Ichman's Gryphon (14947) - s.21190
+-- Vipore's Gryphon (14948) - s.21190
 
 
 
