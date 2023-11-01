@@ -916,7 +916,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11446, 0, 0, 1, 0, 0, NULL), -- Gordok Spirit
 (11451, 0, 0, 1, 0, 0, NULL), -- Wildspawn Satyr
 (11452, 0, 0, 1, 0, 0, '13299'), -- Wildspawn Rogue
-(11453, 0, 0, 1, 0, 0, NULL), -- Wildspawn Trickster
+(11453, 0, 0, 1, 0, 0, '4086'), -- Wildspawn Trickster
 (11454, 0, 0, 1, 0, 0, NULL), -- Wildspawn Betrayer
 (11455, 0, 0, 1, 0, 0, '22418'), -- Wildspawn Felsworn
 (11456, 0, 0, 1, 0, 0, '7939 22766 8601 18950'), -- Wildspawn Shadowstalker

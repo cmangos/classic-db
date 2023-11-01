@@ -246,7 +246,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11551, 0, 0, 1, 0, 0, '10022'), -- Necrofiend
 (11582, 0, 0, 1, 0, 0, NULL), -- Scholomance Dark Summoner
 (11622, 0, 0, 1, 0, 0, NULL), -- Rattlegore
-(14861, 0, 0, 1, 0, 0, NULL), -- Blood Steward of Kirtonos
+(14861, 0, 0, 1, 0, 0, '4086'), -- Blood Steward of Kirtonos
 (16047, 0, 0, 1, 0, 0, NULL); -- Kormok Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
