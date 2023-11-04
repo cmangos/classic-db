@@ -788,8 +788,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Servo 2922 - NSR
 -- Zaricotl (3.1.1 Official Data)
 ('293101','2931','5','0','100','0','0','0','1','0','0','0','1','907','0','0','0','0','0','0','0','0','0','0','Zaricotl - Text Emote on Player Kill'),
--- Magregan Deepshadow (3.1.1 Official Data) - ADD TO SCRIPT TRACKING
+-- Magregan Deepshadow 2932 - s.8820 classic only - ADD TO SCRIPT TRACKING
 ('293201','2932','0','0','100','1025','7600','18600','22500','31800','0','0','11','17207','0','0','0','0','0','0','0','0','0','0','Magregan Deepshadow - Cast Whirlwind'),
+('293202','2932','0','0','100','1025','10000','20000','10000','20000','0','0','11','8820','1','0','0','0','0','0','0','0','0','0','Magregan Deepshadow - Cast Slam'),
 -- Boss Tho'grun 2944
 ('294401','2944','4','0','15','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Boss Tho\'grun - Say on Aggro'),
 -- Murdaloc (3.1.1 Official Data)
