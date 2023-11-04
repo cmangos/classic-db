@@ -4064,10 +4064,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('198304','1983','29','0','100','0','299000','299000','0','0','0','0','54','500','0','0','0','0','0','0','0','0','0','0','Nightlash - Say on OOC Timer'),
 -- Haggard Refugee (4.0.1 Official Data)
 ('205301','2053','0','0','100','1025','12600','26300','28100','36200','0','0','11','3261','1','0','0','0','0','0','0','0','0','0','Haggard Refugee - Cast Ignite'),
--- Sickly Refugee (4.0.1 Official Data)
-('205401','2054','0','0','100','1025','3200','9700','12100','19400','0','0','11','101','1','0','0','0','0','0','0','0','0','0','Sickly Refugee - Cast Trip'),
+-- Sickly Refugee 2054
+('205401','2054','0','0','100','1025','8000','16000','12100','19400','0','0','11','101','1','0','0','0','0','0','0','0','0','0','Sickly Refugee - Cast Trip'),
 ('205402','2054','33','0','100','1025','1','0','19100','32100','0','0','11','1776','1','0','0','0','0','0','0','0','0','0','Sickly Refugee - Cast Gouge on Facing Target'),
 ('205403','2054','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sickly Refugee - Flee at 15% HP'),
+('205404','2054','33','0','80','1025','0','0','5000','10000','0','0','11','2589','1','0','0','0','0','0','0','0','0','0','Sickly Refugee - Cast Backstab on Facing Target Back'),
 -- Ravenclaw Apparition (2056) - NSR (THERE IS A SERIES OF TALK SEQUENCES BUT UNSURE HOW TO HANDLE THEM AT THIS TIME)
 -- Deathstalker Faerleia (2058) - npc_deathstalker_faerleia
 -- Councilman Smithers 2060
@@ -12029,7 +12030,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Nightsaber (2033) - NSR
 -- Feral Nightsaber
 ('203401','2034','9','0','100','1025','0','5','10000','16000','0','0','11','12166','1','0','0','0','0','0','0','0','0','0','Feral Nightsaber - Cast Muscle Tear'),
--- Lord Melenas
+-- Lord Melenas - s.9033
 ('203801','2038','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Lord Melenas - Set Phase 1 on Aggro'),
 ('203802','2038','2','5','100','1025','20','0','12000','18000','0','0','11','774','0','0','0','0','0','0','0','0','0','0','Lord Melenas - Cast Rejuvenation at 20% HP (Phase 1)'),
 ('203803','2038','2','5','100','1024','66','0','0','0','0','0','11','5759','0','0','22','2','0','0','0','0','0','0','Lord Melenas - Cast Cat Form and Set Phase 2 at 66% HP (Phase 1)'),
@@ -18909,6 +18910,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infernal 89
 ('8901','89','11','0','100','0','0','0','0','0','0','0','11','22707','0','2','11','19483','0','34','0','0','0','0','Infernal - Cast Root and Immolation on Spawn'),
 -- Imp 416 - PetAI
+-- Succubus 1863 - s.6358
 -- Combat Dummy 1921 - NSR
 -- Searing Totem 2523 - TotemAI
 -- Earthbind Totem 2630 - TotemAI
