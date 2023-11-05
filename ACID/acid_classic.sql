@@ -6418,20 +6418,31 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Defender (11194) - NSR
 -- Eva Sarkhoff (11216) - NSR
 -- Lucien Sarkhoff (11217) - NSR
--- Caer Darrow Citizen (11277) - NSR
--- Magnus Frostwake (11278) - NSR
--- Caer Darrow Guardsman (11279) - NSR
--- Caer Darrow Cannoneer (11280) - NSR
--- Caer Darrow Horseman (11281) - NSR
--- Melia (11282) - NSR
--- Sammy (11283) - NSR
--- Rory (11285) - NSR
--- Magistrate Marduke (11286) - NSR
--- Baker Masterson (11287) - NSR
+-- Caer Darrow Citizen 11277
+('1127701','11277','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Caer Darrow Citizen - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
+-- Magnus Frostwake 11278
+('1127801','11278','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Magnus Frostwake - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
+-- Caer Darrow Guardsman 11279
+('1127901','11279','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Caer Darrow Guardsman - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
+-- Caer Darrow Cannoneer 11280
+('1128001','11280','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Caer Darrow Cannoneer - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
+-- Caer Darrow Horseman 11281
+('1128101','11281','11','0','100','0','0','0','0','0','0','0','11','17622','0','34','0','0','0','0','0','0','0','0','Caer Darrow Horseman - Cast Caer Darrow Ghosts on Spawn'),
+-- Melia 11282
+('1128201','11282','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Melia - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
+-- Sammy 11283
+('1128301','11283','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Sammy - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
+-- Rory 11285
+('1128501','11285','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Rory - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
+-- Magistrate Marduke 11286
+('1128601','11286','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Magistrate Marduke - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
+-- Baker Masterson 11287
+('1128701','11287','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Baker Masterson - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
 -- Darrowshire Poltergeist 11296
 ('1129601','11296','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','18348','0','34','11','18383','0','34','Darrowshire Poltergeist - Cast Spirit Particles, Poltergeist Periodic Schedule, Poltergeist Despawn Schedule on Spawn'),
 ('1129602','11296','11','0','100','0','0','0','0','0','0','0','50','0','0','0','54','0','0','5','0','0','0','0','Darrowshire Poltergeist - Set Passive State and Random Say on Spawn'),
--- Joseph Dirte (11316) - NSR
+-- Joseph Dirte 11316
+('1131601','11316','11','0','100','0','0','0','0','0','0','0','11','10848','0','34','11','17622','0','34','0','0','0','0','Joseph Dirte - Cast Shroud of Death, Caer Darrow Ghosts on Spawn'),
 -- Alexia Ironknife (11609) - NSR
 -- Kirsta Deepshadow (11610) - NSR
 -- Cavalier Durgen 11611
@@ -9008,6 +9019,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('589101','5891','11','0','100','0','0','0','0','0','0','0','11','8203','0','34','0','0','0','0','0','0','0','0','Minor Manifestation of Earth - Cast Elemental Spirit Invisibility on Spawn'),
 -- Minor Manifestation of Fire 5893
 ('589301','5893','11','0','100','0','0','0','0','0','0','0','11','8203','0','34','0','0','0','0','0','0','0','0','Minor Manifestation of Fire - Cast Elemental Spirit Invisibility on Spawn'),
+('589302','5893','0','0','100','1024','5000','10000','0','0','0','0','11','134','0','0','0','0','0','0','0','0','0','0','Minor Manifestation of Fire - Cast Fire Shield'),
+('589303','5893','0','0','100','1025','2000','2000','22000','33000','0','0','11','8050','1','0','0','0','0','0','0','0','0','0','Minor Manifestation of Fire - Cast Flame Shock'),
 -- Fire Spirit 5896
 ('589601','5896','11','0','100','0','0','0','0','0','0','0','11','8203','0','34','0','0','0','0','0','0','0','0','Fire Spirit - Cast Elemental Spirit Invisibility on Spawn'),
 -- Telf Joolam
