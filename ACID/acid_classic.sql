@@ -17106,8 +17106,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('812706','8127','2','0','100','1024','25','0','0','0','0','0','1','4178','0','0','11','11894','0','0','11','11894','0','0','Antu''sul - Yell and Cast 2 Antu''sul''s Minions at 25% HP'),
 ('812707','8127','2','0','100','1024','20','0','0','0','0','0','11','11895','0','0','0','0','0','0','0','0','0','0','Antu''sul - Cast Healing Wave of Antu''sul at 20% HP'),
 -- Sul'lithuz Hatchling (8130) - NSR
--- Sul'lithuz Broodling (4.0.1 Official Data)
-('813801','8138','11','0','100','0','0','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Sul''lithuz Broodling - Cast Thrash on Spawn'),
+-- Sul'lithuz Broodling 8138 - s.3391 manually casted
+('813801','8138','11','0','100','0','0','0','0','0','0','0','11','7276','0','34','0','0','0','0','0','0','0','0','Sul''lithuz Broodling - Cast Thrash on Spawn'),
+('813802','8138','0','0','100','1025','5000','20000','10000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Sul''lithuz Broodling - Cast Thrash'),
 -- Servant of Antu'sul (4.0.1 Official Data)
 ('815601','8156','0','0','100','1025','5600','16100','22900','36200','0','0','11','11020','1','32','0','0','0','0','0','0','0','0','Servant of Antu''sul - Cast Petrify'),
 -- Sandfury Acolyte 8876 (4.0.1 Official Data)
