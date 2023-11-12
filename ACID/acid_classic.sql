@@ -16842,17 +16842,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Digmaster Shovelphlange 7057
 ('705701','7057','4','0','100','0','0','0','0','0','0','0','11','7164','0','0','0','0','0','0','0','0','0','0','Digmaster Shovelphlange - Cast Defensive Stance on Aggro'),
 ('705702','7057','28','0','100','1025','8380','5','10000','10000','0','0','11','8380','1','0','0','0','0','0','0','0','0','0','Digmaster Shovelphlange - Cast Sunder Armor on Target Missing Aura Stack'),
--- Earthen Guardian
+-- Earthen Guardian 7076
 ('707601','7076','11','0','100','0','0','0','0','0','0','0','11','10255','0','0','0','0','0','0','0','0','0','0','Earthen Guardian - Cast Stoned on Spawn'),
 ('707602','7076','0','0','100','1025','5000','9000','7000','14000','0','0','11','17207','0','0','0','0','0','0','0','0','0','0','Earthen Guardian - Cast Whirlwind'),
-('707603','7076','21','0','100','0','0','0','0','0','0','0','11','10255','0','0','0','0','0','0','0','0','0','0','Earthen Guardian - Cast Stoned on Reached Home'),
-('707604','7076','6','0','100','0','0','0','0','0','0','0','11','10666','0','2','0','0','0','0','0','0','0','0','Earthen Guardian - Cast Earthen Guards Destroyed on Death'),
--- Earthen Hallshaper
-('707701','7077','11','0','100','0','0','0','0','0','0','0','11','10255','0','0','0','0','0','0','0','0','0','0','Earthen Hallshaper - Cast Stoned on Spawn'),
-('707702','7077','21','0','100','0','0','0','0','0','0','0','11','10255','0','0','0','0','0','0','0','0','0','0','Earthen Hallshaper - Cast Stoned on Reached Home'),
-('707703','7077','6','0','100','0','0','0','0','0','0','0','11','10666','0','2','0','0','0','0','0','0','0','0','Earthen Hallshaper - Cast Earthen Guards Destroyed on Death'),
--- Cleft Scorpid (3.3.5a Official Data)
-('707801','7078','11','0','100','0','0','0','0','0','0','0','11','3616','0','1','0','0','0','0','0','0','0','0','Cleft Scorpid - Cast Poison Proc on Spawn'),
+('707603','7076','6','0','100','0','0','0','0','0','0','0','11','10666','0','2','0','0','0','0','0','0','0','0','Earthen Guardian - Cast Earthen Guards Destroyed on Death'),
+('707604','7076','21','0','100','0','0','0','0','0','0','0','11','10255','0','0','0','0','0','0','0','0','0','0','Earthen Guardian - Cast Stoned on Reached Home'),
+-- Earthen Hallshaper 7077 - EffectDummyCreature_npc_vault_warder
+('707701','7077','1','0','100','0','1000','1000','0','0','0','0','11','10255','0','32','0','0','0','0','0','0','0','0','Earthen Hallshaper - Cast Stoned OOC'),
+('707702','7077','6','0','100','0','0','0','0','0','0','0','11','10666','0','2','0','0','0','0','0','0','0','0','Earthen Hallshaper - Cast Earthen Guards Destroyed on Death'),
+-- Cleft Scorpid 7078
+('707801','7078','11','0','100','0','0','0','0','0','0','0','11','7276','0','34','0','0','0','0','0','0','0','0','Cleft Scorpid - Cast Poison Proc on Spawn'),
 -- Shadowforge Ambusher (4.0.1 Official Data)
 ('709101','7091','0','0','100','1025','1000','3000','180000','185000','0','0','11','7164','0','0','0','0','0','0','0','0','0','0','Shadowforge Ambusher - Cast Defensive Stance on Aggro'),
 ('709102','7091','0','0','100','1025','7100','13300','7200','16900','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Shadowforge Ambusher - Cast Shield Bash'),
