@@ -146,7 +146,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (4304, 0, 0, 1, 0, 0, NULL), -- Scarlet Tracking Hound
 (4306, 0, 0, 1, 0, 0, '9276'), -- Scarlet Torturer
 (4308, 0, 0, 1, 0, 0, NULL), -- Unfettered Spirit
-(4540, 0, 0, 1, 0, 0, '8876'), -- Scarlet Monk
+(4540, 0, 0, 1, 0, 0, NULL), -- Scarlet Monk
 (4542, 0, 0, 1, 0, 0, NULL), -- High Inquisitor Fairbanks
 (4543, 0, 0, 1, 0, 0, NULL), -- Bloodmage Thalnos
 (6426, 0, 0, 1, 0, 0, NULL), -- Anguished Dead

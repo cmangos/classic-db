@@ -939,7 +939,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11480, 0, 0, 1, 0, 0, NULL), -- Arcane Aberration
 (11483, 0, 0, 1, 0, 0, NULL), -- Mana Remnant
 (11484, 0, 0, 1, 0, 0, NULL), -- Residual Monstrosity
-(11486, 0, 0, 1, 0, 0, '8876'), -- Prince Tortheldrin
+(11486, 0, 0, 1, 0, 0, NULL), -- Prince Tortheldrin
 (11487, 0, 8, 1, 0, 0, '21157'), -- Magister Kalendris
 (11488, 0, 0, 1, 0, 0, NULL), -- Illyanna Ravenoak
 (11489, 0, 0, 1, 0, 0, NULL), -- Tendris Warpwood

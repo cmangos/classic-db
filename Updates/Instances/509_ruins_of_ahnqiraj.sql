@@ -917,7 +917,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (15325, 0, 0, 1, 0, 0, NULL), -- Hive'Zara Wasp
 (15327, 0, 0, 1, 0, 0, NULL), -- Hive'Zara Stinger
 (15333, 0, 0, 1, 0, 0, NULL), -- Silicate Feeder
-(15335, 0, 0, 1, 0, 0, '8876 18950'), -- Flesh Hunter
+(15335, 0, 0, 1, 0, 0, '18950'), -- Flesh Hunter
 (15336, 0, 0, 1, 0, 0, NULL), -- Hive'Zara Tail Lasher
 (15338, 0, 0, 1, 0, 0, '19818'), -- Obsidian Destroyer
 (15339, 0, 0, 1, 0, 0, '25176 19818'), -- Ossirian the Unscarred

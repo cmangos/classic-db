@@ -569,7 +569,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10917, 0, 0, 1, 0, 0, NULL), -- Aurius
 (10997, 0, 0, 1, 0, 0, NULL), -- Cannon Master Willey
 (11032, 0, 0, 1, 0, 0, NULL), -- Malor the Zealous
-(11043, 0, 0, 1, 0, 0, '8876'), -- Crimson Monk
+(11043, 0, 0, 1, 0, 0, NULL), -- Crimson Monk
 (11082, 0, 0, 1, 0, 0, NULL), -- Stratholme Courier
 (11143, 0, 0, 1, 0, 0, NULL), -- Postmaster Malown
 (14646, 0, 0, 1, 0, 0, NULL), -- Stratholme Trigger

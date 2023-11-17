@@ -566,7 +566,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11792, 0, 0, 1, 0, 0, '7939 22766 21061'), -- Putridus Shadowstalker
 (11793, 0, 0, 1, 0, 0, '8601'), -- Celebrian Dryad
 (11794, 0, 0, 1, 0, 0, NULL), -- Sister of Celebrian
-(12201, 0, 0, 1, 0, 0, '8876'), -- Princess Theradras
+(12201, 0, 0, 1, 0, 0, NULL), -- Princess Theradras
 (12203, 0, 0, 1, 0, 0, NULL), -- Landslide
 (12206, 0, 0, 1, 0, 0, NULL), -- Primordial Behemoth
 (12207, 0, 0, 1, 0, 0, '21788'), -- Thessala Hydra

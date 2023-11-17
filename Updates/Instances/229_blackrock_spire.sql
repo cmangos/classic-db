@@ -690,7 +690,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (9045, 0, 0, 1, 0, 0, NULL), -- Scarshield Acolyte
-(9096, 0, 0, 1, 0, 0, '3417'), -- Rage Talon Dragonspawn
+(9096, 0, 0, 1, 0, 0, NULL), -- Rage Talon Dragonspawn
 (9097, 0, 0, 1, 0, 0, NULL), -- Scarshield Legionnaire
 (9098, 0, 0, 1, 0, 0, NULL), -- Scarshield Spellbinder
 (9196, 0, 0, 1, 0, 0, NULL), -- Highlord Omokk
@@ -718,12 +718,12 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (9264, 0, 0, 1, 0, 0, NULL), -- Firebrand Pyromancer
 (9265, 0, 0, 1, 0, 0, NULL), -- Smolderthorn Shadow Hunter
 (9266, 0, 0, 1, 0, 0, NULL), -- Smolderthorn Witch Doctor
-(9267, 0, 0, 1, 0, 0, '8876'), -- Smolderthorn Axe Thrower
+(9267, 0, 0, 1, 0, 0, NULL), -- Smolderthorn Axe Thrower
 (9268, 0, 0, 1, 0, 0, NULL), -- Smolderthorn Berserker
 (9269, 0, 0, 1, 0, 0, NULL), -- Smolderthorn Seer
 (9416, 0, 0, 1, 0, 0, NULL), -- Scarshield Worg
 (9568, 0, 0, 1, 0, 0, NULL), -- Overlord Wyrmthalak
-(9583, 0, 0, 1, 0, 0, ''), -- Bloodaxe Veteran
+(9583, 0, 0, 1, 0, 0, NULL), -- Bloodaxe Veteran
 (9596, 0, 0, 1, 0, 0, NULL), -- Bannok Grimaxe
 (9692, 0, 0, 1, 0, 0, NULL), -- Bloodaxe Raider
 (9693, 0, 0, 1, 0, 0, NULL), -- Bloodaxe Evoker
@@ -739,7 +739,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (9819, 0, 0, 1, 0, 0, NULL), -- Blackhand Veteran
 (10083, 0, 0, 1, 0, 0, NULL), -- Rage Talon Flamescale
 (10177, 0, 0, 1, 0, 0, NULL), -- Spire Scarab
-(10220, 0, 0, 1, 0, 0, '8876'), -- Halycon
+(10220, 0, 0, 1, 0, 0, NULL), -- Halycon
 (10221, 0, 0, 1, 0, 0, NULL), -- Bloodaxe Worg Pup
 (10257, 0, 0, 1, 0, 0, NULL), -- Bijou
 (10299, 0, 8, 1, 0, 0, NULL), -- Scarshield Infiltrator

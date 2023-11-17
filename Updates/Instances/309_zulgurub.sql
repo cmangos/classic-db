@@ -380,7 +380,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11352, 0, 0, 1, 0, 0, NULL), -- Gurubashi Berserker
 (11353, 0, 0, 1, 0, 0, NULL), -- Gurubashi Blood Drinker
 (11356, 0, 0, 1, 0, 0, NULL), -- Gurubashi Champion
-(11357, 0, 0, 1, 0, 0, '8876'), -- Son of Hakkar
+(11357, 0, 0, 1, 0, 0, NULL), -- Son of Hakkar
 (11359, 0, 0, 1, 0, 0, NULL), -- Soulflayer
 (11360, 0, 0, 1, 0, 0, NULL), -- Zulian Cub
 (11361, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
@@ -388,7 +388,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11368, 0, 0, 1, 0, 0, '18950'), -- Bloodseeker Bat
 (11370, 0, 0, 1, 0, 0, NULL), -- Razzashi Broodwidow
 (11371, 0, 0, 1, 0, 0, NULL), -- Razzashi Serpent
-(11372, 0, 0, 1, 0, 0, '8876'), -- Razzashi Adder
+(11372, 0, 0, 1, 0, 0, NULL), -- Razzashi Adder
 (11373, 0, 0, 1, 0, 0, NULL), -- Razzashi Cobra
 (11374, 0, 0, 1, 0, 0, '18943 18950'), -- Hooktooth Frenzy
 (11380, 0, 0, 1, 10, 0, NULL), -- Jin'do the Hexxer
@@ -407,12 +407,12 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (14532, 0, 0, 1, 0, 0, '8601'), -- Razzashi Venombrood
 (14750, 0, 0, 1, 0, 0, NULL), -- Gurubashi Bat Rider
 (14758, 0, 0, 1, 0, 0, NULL), -- Zul'Gurub Trigger
-(14821, 0, 0, 1, 0, 0, '8876'), -- Razzashi Raptor
+(14821, 0, 0, 1, 0, 0, NULL), -- Razzashi Raptor
 (14825, 0, 0, 1, 10, 0, NULL), -- Withered Mistress
 (14826, 0, 0, 1, 10, 0, NULL), -- Sacrificed Troll
 (14834, 0, 0, 1, 0, 0, NULL), -- Hakkar - 'auras' boss_hakkar.cpp
 (14880, 0, 0, 1, 0, 0, NULL), -- Razzashi Skitterer
-(14882, 0, 0, 1, 10, 0, '8876'), -- Atal'ai Mistress
+(14882, 0, 0, 1, 10, 0, NULL), -- Atal'ai Mistress
 (14883, 0, 0, 1, 10, 0, NULL), -- Voodoo Slave
 (15041, 0, 0, 1, 0, 0, '24087'), -- Spawn of Mar'li
 (15042, 0, 0, 1, 0, 0, NULL), -- Zanza the Restless
@@ -425,7 +425,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (15091, 0, 0, 1, 0, 0, NULL), -- Zul'Gurub Panther Trigger
 (15101, 0, 0, 1, 0, 0, '7939 22766'), -- Zulian Prowler
 (15111, 0, 0, 1, 0, 0, NULL), -- Mad Servant
-(15114, 0, 0, 1, 0, 0, '8876'); -- Gahz'ranka
+(15114, 0, 0, 1, 0, 0, NULL); -- Gahz'ranka
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Hakkar temple northern soulflayer pack

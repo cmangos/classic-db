@@ -623,7 +623,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (7246, 0, 0, 1, 0, 0, NULL), -- Sandfury Shadowhunter
 (7247, 0, 0, 1, 0, 0, NULL), -- Sandfury Soul Eater
 (7267, 0, 0, 1, 0, 0, '11838'), -- Chief Ukorz Sandscalp
-(7268, 0, 0, 1, 0, 0, '7276 8876'), -- Sandfury Guardian
+(7268, 0, 0, 1, 0, 0, '7276'), -- Sandfury Guardian
 (7269, 0, 0, 1, 0, 0, NULL), -- Scarab
 (7271, 0, 0, 1, 193, 0, NULL), -- Witch Doctor Zum'rah
 (7272, 0, 0, 1, 0, 0, NULL), -- Theka the Martyr

@@ -58,7 +58,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (1663, 0, 0, 1, 0, 0, '7165'), -- Dextren Ward
 (1666, 0, 0, 1, 0, 0, '3418'), -- Kam Deepfury
-(1696, 0, 0, 1, 0, 0, '8876'), -- Targorr the Dread
+(1696, 0, 0, 1, 0, 0, NULL), -- Targorr the Dread
 (1706, 0, 0, 1, 0, 0, NULL), -- Defias Prisoner
 (1707, 0, 0, 1, 0, 0, NULL), -- Defias Captive
 (1708, 0, 0, 1, 0, 0, '7165'), -- Defias Inmate

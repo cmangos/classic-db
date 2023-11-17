@@ -138,7 +138,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (4852, 0, 0, 1, 0, 0, NULL), -- Stonevault Oracle
 (4853, 0, 0, 1, 0, 0, NULL), -- Stonevault Geomancer
 (4854, 0, 0, 1, 0, 0, NULL), -- Grimlok
-(4855, 0, 0, 1, 0, 0, '8876'), -- Stonevault Brawler
+(4855, 0, 0, 1, 0, 0, NULL), -- Stonevault Brawler
 (4857, 0, 0, 1, 0, 0, '10255'), -- Stone Keeper
 (4860, 0, 0, 1, 0, 0, NULL), -- Stone Steward
 (4861, 0, 0, 1, 0, 0, NULL), -- Shrike Bat
@@ -162,7 +162,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (7290, 0, 0, 1, 0, 0, NULL), -- Shadowforge Sharpshooter
 (7291, 0, 0, 1, 0, 0, NULL), -- Galgann Firehammer
 (7309, 0, 0, 1, 0, 0, '10255'), -- Earthen Custodian
-(7320, 0, 0, 1, 0, 0, '8876'), -- Stonevault Mauler
+(7320, 0, 0, 1, 0, 0, NULL), -- Stonevault Mauler
 (7321, 0, 0, 1, 0, 0, NULL), -- Stonevault Flameweaver
 (7396, 0, 0, 1, 0, 0, '7165'), -- Earthen Stonebreaker
 (7397, 0, 0, 1, 0, 0, NULL), -- Earthen Stonecarver

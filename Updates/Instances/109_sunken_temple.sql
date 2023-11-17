@@ -192,7 +192,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (5228, 0, 0, 1, 0, 0, NULL), -- Saturated Ooze
 (5256, 0, 0, 1, 0, 0, NULL), -- Atal'ai Warrior
 (5259, 0, 0, 1, 0, 0, NULL), -- Atal'ai Witch Doctor
-(5267, 0, 0, 1, 0, 0, '8247 8876'), -- Unliving Atal'ai
+(5267, 0, 0, 1, 0, 0, '8247'), -- Unliving Atal'ai
 (5270, 0, 0, 1, 0, 0, NULL), -- Atal'ai Corpse Eater
 (5271, 0, 0, 1, 0, 0, NULL), -- Atal'ai Deathwalker
 (5273, 0, 0, 1, 0, 0, NULL), -- Atal'ai High Priest
@@ -201,7 +201,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (5283, 0, 0, 1, 0, 0, NULL), -- Nightmare Wanderer
 (5291, 0, 0, 1, 0, 0, NULL), -- Hakkari Frostwing
 (5708, 0, 0, 1, 0, 0, NULL), -- Spawn of Hakkar
-(5709, 0, 0, 1, 0, 0, '12535 8876'), -- Shade of Eranikus
+(5709, 0, 0, 1, 0, 0, '12535'), -- Shade of Eranikus
 (5710, 0, 0, 1, 0, 0, '13540'), -- Jammal'an the Prophet
 (5711, 0, 0, 1, 0, 0, NULL), -- Ogom the Wretched
 (5712, 0, 0, 1, 0, 0, '13540'), -- Zolo

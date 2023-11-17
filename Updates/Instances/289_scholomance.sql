@@ -226,7 +226,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10485, 0, 0, 1, 0, 0, NULL), -- Risen Aberration
 (10486, 0, 0, 1, 0, 0, NULL), -- Risen Warrior
 (10487, 0, 0, 1, 0, 0, NULL), -- Risen Protector
-(10488, 0, 0, 1, 0, 0, '8876'), -- Risen Construct
+(10488, 0, 0, 1, 0, 0, NULL), -- Risen Construct
 (10489, 0, 0, 1, 0, 0, NULL), -- Risen Guard
 (10491, 0, 0, 1, 0, 0, NULL), -- Risen Bonewarder
 (10495, 0, 0, 1, 0, 0, NULL), -- Diseased Ghoul
