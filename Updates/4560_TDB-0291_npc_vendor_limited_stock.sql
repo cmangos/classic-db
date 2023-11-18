@@ -104,7 +104,7 @@ REPLACE INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`) VALUES
 UPDATE `npc_vendor` SET `incrtime` = 3600 WHERE `entry` = 3367 AND `item` = 20856;
 REPLACE INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`) VALUES
 (3410, 11303, 2, 9000),(3410, 11306, 1, 9000),(3410, 11307, 1, 9000);
-UPDATE `creature_template` SET `NpcFlags` = 2 WHERE `entry` = 3443;
+UPDATE `creature_template` SET `NpcFlags` = 2, `GossipMenuId` = 0 WHERE `entry` = 3443;
 DELETE FROM `npc_vendor` WHERE `entry` = 3443;
 UPDATE `npc_vendor` SET `maxcount` = 2 WHERE `entry` = 3479 AND `item` IN (4765,4766);
 REPLACE INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`) VALUES
