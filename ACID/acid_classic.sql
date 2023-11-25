@@ -1694,7 +1694,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tristane Shadowstone (11807) - NSR
 -- Mortar Team Target Dummy 11875
 -- Yori Crackhelm (11941) - NSR
--- Stormpike Mountaineer (12047) - NSR
+-- Stormpike Mountaineer 12047
+('1204701','12047','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Stormpike Mountaineer - Enable Range Mode on Spawn'),
+('1204702','12047','0','0','100','1025','7000','21000','12000','24000','0','0','11','15495','1','0','0','0','0','0','0','0','0','0','Stormpike Mountaineer - Cast Explosive Shot'),
+('1204703','12047','9','0','100','1025','5','30','2000','3000','0','0','11','15547','1','256','0','0','0','0','0','0','0','0','Stormpike Mountaineer - Cast Shoot'),
 -- Blue Mechanostrider (12363) - NSR
 -- Red Mechanostrider (12365) - NSR
 -- Unpainted Mechanostrider X (12366) - NSR
