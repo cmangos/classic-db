@@ -18578,7 +18578,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Veteran Guardsman 13333
 ('1333301','13333','0','0','100','1025','0','5000','20000','30000','0','0','11','22120','1','0','0','0','0','0','0','0','0','0','Veteran Guardsman - Cast Charge'),
 ('1333302','13333','0','0','100','1025','5000','15000','6000','12000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Veteran Guardsman - Cast Strike'),
--- Veteran Legionnaire (13334) - NSR
+-- Veteran Legionnaire 13334
+('1333401','13334','0','0','100','1025','0','15000','15000','30000','0','0','11','11977','1','0','0','0','0','0','0','0','0','0','Veteran Legionnaire - Cast Rend'),
 -- Veteran Mountaineer (13335) - NSR
 -- Stormpike Bowman 13358 - No Main Spell in Melee Range
 ('1335801','13358','4','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Stormpike Bowman - Disable Combat Movement on Aggro'),
