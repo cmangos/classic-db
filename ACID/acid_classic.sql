@@ -3308,6 +3308,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lunar Festival Vendor 15898
 -- Tormek Stoneriver 16009
 -- Deliana 16013
+('1601301','16013','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Deliana - Enable Range Mode on Spawn'),
+('1601302','16013','9','0','100','1025','0','40','3000','4000','0','0','11','15228','1','256','0','0','0','0','0','0','0','0','Deliana - Cast Fireball'),
 -- Garel Redrock 16070
 -- Festival Loremaster 16817
 -- Ironforge Firebreather
