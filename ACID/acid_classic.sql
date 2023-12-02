@@ -18628,7 +18628,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Champion Guardsman 13424
 ('1342401','13424','0','0','100','1025','0','5000','20000','30000','0','0','11','22120','1','0','0','0','0','0','0','0','0','0','Champion Guardsman - Cast Charge'),
 ('1342402','13424','0','0','100','1025','5000','15000','6000','12000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Champion Guardsman - Cast Strike'),
--- Champion Legionnaire (13425) - NSR
+-- Champion Legionnaire 13425
+('1342501','13425','0','0','100','1025','0','15000','15000','30000','0','0','11','11977','1','0','0','0','0','0','0','0','0','0','Champion Legionnaire - Cast Rend'),
 -- Wing Commander Ichman 13437
 ('1343701','13437','1','0','100','0','1000','1000','0','0','0','0','11','16380','0','0','0','0','0','0','0','0','0','0','Wing Commander Ichman - Cast Greater Invisibility on Spawn'),
 ('1343702','13437','4','0','100','0','0','0','0','0','0','0','28','0','16380','0','0','0','0','0','0','0','0','0','Wing Commander Ichman - Remove Greater Invisibility on Aggro'),
