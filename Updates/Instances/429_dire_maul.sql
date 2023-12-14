@@ -3023,7 +3023,7 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 DELETE FROM `dbscripts_on_quest_end` WHERE `id` IN (1193,5525);
 INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- A Broken Trap
-(1193, 0, 9, @OGUID+40, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn Fixed trap'),
+(1193, 0, 9, @OGUID+49, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn Fixed trap'),
 -- Free Knot!
 (5525, 0, 0, 0, 0, 0, 0, 0, 0, 9346, 0, 0, 0, 0, 0, 0, 0, 'Knot Thimblejack'),
 (5525, 0, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'remove flag'),
