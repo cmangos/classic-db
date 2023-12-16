@@ -536,7 +536,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10407, 0, 0, 1, 0, 0, '8876 18950'), -- Fleshflayer Ghoul
 (10408, 0, 0, 1, 0, 0, NULL), -- Rockwing Gargoyle
 (10409, 0, 0, 1, 0, 0, NULL), -- Rockwing Screecher
-(10411, 0, 0, 1, 0, 0, '16380'), -- Eye of Naxxramas
+(10411, 0, 0, 1, 0, 0, '8278 8279 16380'), -- Eye of Naxxramas
 (10412, 0, 0, 1, 0, 0, NULL), -- Crypt Crawler
 (10413, 0, 0, 1, 0, 0, '16428'), -- Crypt Beast
 (10414, 0, 0, 1, 0, 0, '8876 16345'), -- Patchwork Horror
