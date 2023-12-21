@@ -1611,13 +1611,22 @@ function apply_full_content_db()
 
 function create_db_user_and_set_privileges()
 {
+  local sqlcreate=()
   if [[ "$1" = true ]]; then
     clear
 
     if [[ "$STATUS_USER_SUCCESS" = true ]]; then
-      echo "Warning: User already exist, you will reset all privileges to default!"
+      local user_lowCase=$(echo "$MYSQL_USERNAME" | tr '[:upper:]' '[:lower:]')
+      if [ "$user_lowCase" == "root" ]; then
+        echo "Error: 'root' is not supported as an username. Please choose a safer one."
+        false
+        return
+      fi
+      echo "Warning: User already exists; only privileges for required database will be added!"
+    else
+      sqlcreate+=("$SQL_CREATE_DATABASE_USER")
     fi
-    if [ ! -z $DB_CHARDB_VERSION ] OR [ ! -z $DB_REALMDB_VERSION ] OR [ ! -z $DB_WORLDDB_VERSION ] OR [ ! -z $DB_LOGSDB_VERSION ];then
+    if [[ ! -z $DB_CHARDB_VERSION ]] || [[ ! -z $DB_REALMDB_VERSION ]] || [[ ! -z $DB_WORLDDB_VERSION ]] || [[ ! -z $DB_LOGSDB_VERSION ]]; then
       echo "Warning: At least one database contains some data that you are about to reset to default!"
     fi
     if ! are_you_sure "CreateAll"; then
@@ -1626,9 +1635,7 @@ function create_db_user_and_set_privileges()
     fi
   fi
 
-  echo -n "> Creating $MYSQL_USERNAME user in database ... "
-  local sqlcreate=("$SQL_DROP_DATABASE_USER")
-  sqlcreate+=("$SQL_CREATE_DATABASE_USER")
+  echo -n "> Setting $MYSQL_USERNAME user in database ... "
   sqlcreate+=("$SQL_GRANT_TO_WORLD_DATABASE")
   sqlcreate+=("$SQL_GRANT_TO_CHAR_DATABASE")
   sqlcreate+=("$SQL_GRANT_TO_REALM_DATABASE")
@@ -1659,7 +1666,15 @@ function delete_all_databases_and_user
     fi
   fi
   echo -n "> Deleting all current cmangos database and current user in database..."
-  local sqlcreate=("$SQL_DROP_DATABASE_USER")
+
+  local sqlcreate=()
+
+  # Check if MYSQL_USERNAME is not 'root' before adding SQL_DROP_DATABASE_USER
+  local user_lowCase=$(echo "$MYSQL_USERNAME" | tr '[:upper:]' '[:lower:]')
+  if [ "$user_lowCase" != "root" ]; then
+    sqlcreate+=("$SQL_DROP_DATABASE_USER")
+  fi
+
   sqlcreate+=("$SQL_DROP_WORLD_DB")
   sqlcreate+=("$SQL_DROP_CHAR_DB")
   sqlcreate+=("$SQL_DROP_REALM_DB")
