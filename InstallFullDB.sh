@@ -1773,7 +1773,7 @@ function create_and_fill_char_db()
     fi
   fi
 
-  if [ "${STATUS_CHAR_DB_FOUND}" -eq true ] AND [ ! -z $DB_CHARDB_VERSION ]; then
+  if [ "${STATUS_CHAR_DB_FOUND}" = true ] && [ ! -z $DB_CHARDB_VERSION ]; then
     backup_create "CHAR"
   fi
 
@@ -1799,7 +1799,7 @@ function create_and_fill_realm_db()
     fi
   fi
 
-  if [ "${STATUS_REALM_DB_FOUND}" -eq true ] AND [ ! -z $DB_REALMDB_VERSION ]; then
+  if [ "${STATUS_REALM_DB_FOUND}" = true ] && [ ! -z $DB_REALMDB_VERSION ]; then
     backup_create "REALM"
   fi
 
