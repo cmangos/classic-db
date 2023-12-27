@@ -64,3 +64,11 @@ INSERT INTO creature_spawn_entry (guid,entry) VALUES
 (1212,674),(1212,676),(1212,677),
 (1208,676),(1208,677); -- except 674
 UPDATE creature SET id = 0 WHERE guid IN (1207,1212,1208);
+
+-- creature_addon related fixes
+DELETE FROM creature_addon WHERE guid IN (SELECT `guid` FROM `creature` WHERE `id` IN (674,675,676,677)); -- all unique ids removed
+DELETE FROM creature_addon WHERE guid IN (1207,1208,1200,1207,1212,2241,2316); -- no longer needed, only 3 miners do not dig
+INSERT INTO creature_addon (guid,sheath_state,emote) VALUES (1200, 1, 0),(1207, 1, 0),(1212, 1, 0); -- randomized no longer only Miner, with spawndist, other a miner that does not dig.
+DELETE FROM `creature_template_addon` WHERE `entry` IN (674,675,676,677); -- classicmangos has the best default solution for the smallest amount of lines
+INSERT INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
+(674, 0, 0, 1, 233, 0, NULL),(675, 0, 0, 1, 0, 0, NULL),(676, 0, 0, 1, 0, 0, NULL),(677, 0, 0, 1, 0, 0, '12544');
