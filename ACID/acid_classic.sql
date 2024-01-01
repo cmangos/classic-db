@@ -11296,6 +11296,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1561504','15615','30','0','100','1','5','15612','0','0','0','0','53','35','0','0','0','0','0','0','0','0','0','0','Shadow Priestess Shai - START_RELAY_SCRIPT on Receive AI Event Custom A'),
 ('1561505','15615','30','0','100','1','6','15620','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Shadow Priestess Shai - Attack source on Receive AI Event Custom B'),
 ('1561506','15615','30','0','100','1','8','15620','0','0','0','0','53','51','0','0','0','0','0','0','0','0','0','0','Shadow Priestess Shai - START_RELAY_SCRIPT on Receive AI Event Custom C'),
+('1561507','15615','0','0','100','1025','15000','30000','70000','90000','0','0','11','19285','4','32','0','0','0','0','0','0','0','0','Shadow Priestess Shai - Cast Hex of Weakness'),
 -- Orgrimmar Legion Grunt 15616
 ('1561601','15616','30','0','100','1','5','15612','0','0','0','0','58','0','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Grunt - START_RELAY_SCRIPT on Receive AI Event Custom A'),
 ('1561602','15616','30','0','100','1','6','15620','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Grunt - Attack source on Receive AI Event Custom B'),
