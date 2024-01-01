@@ -11266,6 +11266,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1554203','15542','0','0','100','1025','9000','15000','14000','18000','0','0','11','23600','0','0','0','0','0','0','0','0','0','0','Twilight Marauder - Cast Piercing Howl'),
 ('1554204','15542','1','0','100','1','5000','5000','15000','15000','0','0','43','0','14337','0','0','0','0','0','0','0','0','0','Twilight Marauder - Mount OOC'),
 -- Cenarion Outrider 15545
+('1554501','15545','0','0','100','1025','3000','15000','30000','60000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Cenarion Outrider - Cast Demoralizing Shout'),
 -- Elder Primestone 15570
 -- Elder Bladesing 15599
 -- Cenarion Scout Landion 15609
