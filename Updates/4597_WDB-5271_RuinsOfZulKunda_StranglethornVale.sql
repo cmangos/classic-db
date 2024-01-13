@@ -456,3 +456,18 @@ UPDATE `creature` SET `id` = 0 WHERE guid IN (
 2498,2501,2508,2509,2514);
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576 WHERE `entry` IN (588,595,701);
 
+-- randomization of groups
+INSERT INTO worldstate_name VALUES
+(330001,'Custom - STV - Group 01'),
+(330002,'Custom - STV - Group 02');
+INSERT INTO conditions(condition_entry, type, value1, value2, value3) VALUES
+(9900,42,330001,1,0),
+(9901,42,330001,1,1),
+(9902,42,330002,1,0),
+(9903,42,330002,1,1);
+
+UPDATE spawn_group SET WorldState=9900 WHERE Id IN(19905);
+UPDATE spawn_group SET WorldState=9901 WHERE Id IN(19906);
+UPDATE spawn_group SET WorldState=9902 WHERE Id IN(19903);
+UPDATE spawn_group SET WorldState=9903 WHERE Id IN(19900);
+
