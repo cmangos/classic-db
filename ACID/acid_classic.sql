@@ -2461,8 +2461,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rohan the Assassin (16131) - NSR
 -- Huntsman Leopold (16132) - NSR
 -- Mataus the Wrathcaster (16133) - NSR
--- Rimblat Earthshatter (16134) - NSR
--- Rayne (16135) - NSR
+-- Rimblat Earthshatter 16134
+('1613401','16134','1','0','100','1','30000','300000','600000','900000','0','0','53','85','0','0','0','0','0','0','0','0','0','0','Rimblat Earthshatter - START_RELAY_SCRIPT on OOC Timer'),
+-- Rayne 16135
+('1613501','16135','30','0','100','0','5','16134','0','0','0','0','53','86','0','0','0','0','0','0','0','0','0','0','Rayne - START_RELAY_SCRIPT on Receive AI Event Custom A'),
 -- Necrotic Shard (16136) - NSR
 -- Damaged Necrotic Shard (16172) - NSR
 -- Nerubian Overseer
