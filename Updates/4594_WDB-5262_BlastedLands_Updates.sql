@@ -69,21 +69,21 @@ INSERT INTO creature (guid, id, map, spawnMask, position_x, position_y, position
 
 -- Felguard Elite 8717 & Manahound 8718
 UPDATE creature SET position_x = -12049.108, position_y = -2688.916, position_z = -15.1847, spawndist = 0, movementtype = 0 WHERE guid IN (2652,2653,2654);
-DELETE FROM `spawn_group` WHERE id = 19907;
+DELETE FROM `spawn_group` WHERE id IN (96,19907);
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (19907, 'Blasted Lands - Felguard Elite 8717 & Manahound 8718 x2 - Patrol 1', 0, 0, 0, 0x01);
-DELETE FROM `spawn_group_spawn` WHERE id = 19907;
+DELETE FROM `spawn_group_spawn` WHERE id IN (96,19907);
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (19907, 2652, 0),
 (19907, 2653, 1),
 (19907, 2654, 2);
-DELETE FROM `spawn_group_formation` WHERE id = 19907;
+DELETE FROM `spawn_group_formation` WHERE id IN (96,19907);
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (19907, 3, 4, 0, 19907, 4, 'Blasted Lands - Felguard Elite 8717 & Manahound 8718 x2 - Patrol 1');
-DELETE FROM `waypoint_path_name` WHERE PathId = 19907;
+DELETE FROM `waypoint_path_name` WHERE PathId IN (10,19907); -- 10	Blasted Lands - Felguard Elite (3) Patrol 001
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (19907,'Blasted Lands - Felguard Elite 8717 & Manahound 8718 x2 - Patrol 1');
-DELETE FROM `waypoint_path` WHERE PathId = 19907;
+DELETE FROM `waypoint_path` WHERE PathId IN (10,19907);
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (19907,1 ,-12049.108,-2688.916,-15.1847,100,1000,0), -- may not be first one - missing data
 (19907,2 ,-12066.638,-2677.1897,-17.734993,100,0,0),
@@ -104,7 +104,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`Positi
 (19907,17,-12275.004,-2681.0186,3.3380785 ,100,0,0),
 (19907,18,-12253.709,-2688.5603,5.1798754 ,100,0,0),
 (19907,19,-12245.828,-2712.8213,9.152658  ,100,0,0),
-(19907,20,-12197.875,-2730.1118,10.567487,100,1000,0); -- somehow has 22 points now?
+(19907,20,-12197.875,-2730.1118,10.567487,100,1000,0);
 
 -- Nethergarde Cleric 6000
 UPDATE creature SET position_x = -10893.877, position_y = -3254.511, position_z = 67.38293, spawndist = 0, MovementType = 4 WHERE guid = 2976; -- linear
