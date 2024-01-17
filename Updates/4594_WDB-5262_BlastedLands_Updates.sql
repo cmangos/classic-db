@@ -1,5 +1,27 @@
 -- Blasted Lands - Updates
 
+-- Felguard Sentry 6011 & Felhound 6010
+-- This is WOTLK (TDB - need to confirm) only update ... as data we had was from Classic era or.. custom made
+-- IM going to use waypoint_path id = group id - to keep sync with all work i did before
+
+-- Align with WDB so even if paths, spawns are different data aligns.
+UPDATE `waypoint_path` SET `PathId` = 149 WHERE `PathId` = 11;
+UPDATE `waypoint_path_name` SET `PathId` = 149 WHERE `PathId` = 11;
+
+UPDATE `waypoint_path` SET `PathId` = 150 WHERE `PathId` = 12;
+UPDATE `waypoint_path_name` SET `PathId` = 150 WHERE `PathId` = 12;
+
+UPDATE `waypoint_path` SET `PathId` = 151 WHERE `PathId` = 13;
+UPDATE `waypoint_path_name` SET `PathId` = 151 WHERE `PathId` = 13;
+
+UPDATE `waypoint_path` SET `PathId` = 152 WHERE `PathId` = 14;
+UPDATE `waypoint_path_name` SET `PathId` = 152 WHERE `PathId` = 14;
+
+UPDATE `waypoint_path` SET `PathId` = 153 WHERE `PathId` = 15;
+UPDATE `waypoint_path_name` SET `PathId` = 153 WHERE `PathId` = 15;
+
+UPDATE `spawn_group_formation` SET `PathId` = `Id` WHERE `Id` IN (149,150,151,152,153);
+
 -- Helboar 5993
 -- poss corrected
 UPDATE creature SET position_x = -11759.515625, position_y = -3019.687988, position_z = 25.533550 WHERE guid = 3842;
