@@ -34,10 +34,10 @@ INSERT INTO npc_vendor (entry, item, maxcount, incrtime, slot, condition_id, com
 (1448,2519,0,0,26,0,'Heavy Shot'),
 (1448,3033,0,0,27,0,'Solid Shot'),
 (1448,4470,0,0,28,0,'Simple Wood'), -- Removed in WoTLK 3.1.3
-(1448,4471,0,0,29,0,'Flint and Tinder'); -- Removed in ???
--- (1448,3107,0,0,28,0,'Keen Throwing Knife'), -- 25873 tbc+
--- (1448,3108,0,0,29,0,'Heavy Throwing Dagger'), -- 29009 tbc+
--- (1448,3135,0,0,30,0,'Sharp Throwing Axe'), -- 29008 tbc+
--- (1448,3137,0,0,31,0,'Deadly Throwing Axe'), -- 25875 tbc+
+(1448,4471,0,0,29,0,'Flint and Tinder'), -- Removed in ???
+(1448,3107,0,0,28,0,'Keen Throwing Knife'), -- 25873 tbc+
+(1448,3108,0,0,29,0,'Heavy Throwing Dagger'), -- 29009 tbc+
+(1448,3135,0,0,30,0,'Sharp Throwing Axe'), -- 29008 tbc+
+(1448,3137,0,0,31,0,'Deadly Throwing Axe'); -- 25875 tbc+
 -- (1448,20970,1,3600,32,0,'Design: Pendant of the Agate Shield'); -- tbc+ (tbc timer taken - https://www.wowhead.com/tbc/item=20970/design-pendant-of-the-agate-shield#comments:id=5203951)
 
