@@ -216,13 +216,13 @@ DELETE FROM creature where guid IN (42597);
 INSERT INTO creature (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
 (42597,950,0,1,-10900.865,-3623.7715,15.969727,0,300,300,3,1);
 UPDATE creature SET spawndist = 3, MovementType = 1 WHERE guid = 43596;
-DELETE FROM `spawn_group` WHERE id = 19898;
+DELETE FROM `spawn_group` WHERE id = 19895;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(19898, 'Swamp of Sorrows - Swamp Talker 950', 0, 1, 0, 0); -- 1 spawn max
-DELETE FROM `spawn_group_spawn` WHERE id = 19898;
+(19895, 'Swamp of Sorrows - Swamp Talker 950', 0, 1, 0, 0); -- 1 spawn max
+DELETE FROM `spawn_group_spawn` WHERE id = 19895;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(19898, 42597,-1),
-(19898, 43596,-1);
+(19895, 42597,-1),
+(19895, 43596,-1);
 
 -- Stonard Explorer 862
 UPDATE creature SET position_x = -10099.414062, position_y = -3408.704834, position_z = 22.169235, spawndist = 40, MovementType = 1 WHERE guid = 38858; -- confirmed
