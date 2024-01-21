@@ -721,7 +721,7 @@ function change_mysql_settings()
     read -e -p    "Enter core path................current($CORE_PATH).: " cpath
     change_db_name
     echo -e "Choose YES or NO for following options"
-    read -e -p    "LOCALE(default:NO).............current($LOCALES).: " loc
+    read -e -p    "LOCALE(default:YES).............current($LOCALES).: " loc
     read -e -p    "DEV_UPDATES(default:NO)........current($DEV_UPDATES).: " dev
     read -e -p    "AHBOT(default:NO)..............current($AHBOT).: " ahb
     read -e -p    "MANGOSBOTS_DB(default:NO)...........current($MANGOSBOTS_DB).: " bot
