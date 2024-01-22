@@ -12917,8 +12917,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('415801','4158','12','0','100','1025','20','0','30000','30000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Salt Flats Vulture - Cast Execute when Target HP below 20%'),
 -- Pesterhide Snarler 4249
 ('424901','4249','0','0','100','1025','5000','10000','12000','16000','0','0','11','6576','5','0','0','0','0','0','0','0','0','0','Pesterhide Snarler - Cast Intimidating Growl'),
+-- Goblin Racer 4251
+('425101','4251','29','0','100','33','1','1','5000','5000','0','0','11','6600','0','0','11','6601','0','0','11','6600','0','0','Goblin Racer - Randomized Cast Salt Flats Racer Spells on Generic Timer'),
+-- Gnome Racer 4252
+('425201','4252','29','0','100','33','1','1','5000','5000','0','0','11','6600','0','0','11','6601','0','0','11','6600','0','0','Gnome Racer - Randomized Cast Salt Flats Racer Spells on Generic Timer'),
 -- Nyse 4317
 ('431701','4317','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Nyse - Cast Summon Enraged Wyvern and Yell on Aggro'),
+-- Race Master Kronkrider 4419
+('441901','4419','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Race Master Kronkrider - Set Phase 1 on Spawn'),
+('441902','4419','1','0','100','1','30000','300000','900000','15000000','0','0','53','9988','0','0','0','0','0','0','0','0','0','0','Race Master Kronkrider - START_RELAY_SCRIPT on OOC Timer'),
+('441903','4419','30','3','100','1','5','4251','0','0','0','0','1','1522','0','0','22','1','0','0','0','0','0','0','Race Master Kronkrider - Say and Set Phase 1 on Receive AI Event Custom A (Phase 2)'),
+('441904','4419','30','3','100','1','6','4252','0','0','0','0','1','1518','0','0','22','1','0','0','0','0','0','0','Race Master Kronkrider - Say and Set Phase 1 on Receive AI Event Custom B (Phase 2)'),
 -- Goblin Pit Crewman 4429
 ('442901','4429','30','0','100','1','5','4496','0','0','0','0','11','20436','0','0','0','0','0','0','0','0','0','0','Goblin Pit Crewman - Cast Drunken Pit Crew on Receive AI Event Custom A (q.1121)'),
 -- Gnome Pit Crewman 4430
