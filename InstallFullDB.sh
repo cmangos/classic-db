@@ -2880,6 +2880,9 @@ function show_help
   echo "   -World"
   echo "    Install world db only using none root user defined in $CONFIG_FILE"
   echo
+  echo "   -UpdateCore"
+  echo "    Install core updates only using none root user defined in $CONFIG_FILE"
+  echo
   echo "   -InstallAll rootuser rootpass"
   echo "    Install all db by droping previous ones and recreate them from scratch"
   echo "    Require root access with arg1 as root username and arg2 as root password"
