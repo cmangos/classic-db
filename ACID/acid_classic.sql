@@ -19206,6 +19206,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Superior Healing Ward 10218 - TotemAI
 -- Mana Tide Totem 10467 - TotemAI
 -- Flametongue Totem IV 10557 - TotemAI
+-- Shahram 10718
+('1071801','10718','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','50','0','0','0','Shahram - Prevent Movement, Prevent Melee, and Set ReactState Passive on Spawn'),
+('1071802','10718','11','0','100','0','0','0','0','0','0','0','41','8000','0','0','64','0','0','0','31','1','2','0','Shahram - Delayed Despawn, Disable Follow Movement, and Set Random Phase 1-2 on Spawn'),
+('1071803','10718','29','5','100','32','1000','3000','0','0','0','0','11','16597','15','0','11','16596','15','0','11','16600','15','0','Shahram - Cast Curse of Shahram, Flames of Shahram, or Might of Shahram on Generic Timer (Phase 1)'),
+('1071804','10718','29','3','100','32','1000','3000','0','0','0','0','11','16599','15','0','11','16601','15','0','11','16598','15','0','Shahram - Cast Blessing of Shahram, Fist of Shahram, or Will of Shahram on Generic Timer (Phase 2)'),
 -- Succubus Minion 10928 - NSR
 -- Crimson Cannon 11199
 ('1119901','11199','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Crimson Cannon - Prevent Movement and Prevent Melee on Spawn'),
