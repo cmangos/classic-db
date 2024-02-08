@@ -59,7 +59,6 @@ WORLD_DB_NAME_DEFAULT="${EXPANSION_LC}mangos"
 REALM_DB_NAME_DEFAULT="${EXPANSION_LC}realmd"
 CHAR_DB_NAME_DEFAULT="${EXPANSION_LC}characters"
 LOGS_DB_NAME_DEFAULT="${EXPANSION_LC}logs"
-MANGOSBOTS_DB_NAME_DEFAULT="${EXPANSION_LC}mangosbots"
 MYSQL_PATH_DEFAULT=""
 CORE_PATH_DEFAULT=""
 MYSQL_DUMP_PATH_DEFAULT=""
@@ -80,7 +79,6 @@ WORLD_DB_NAME="${WORLD_DB_NAME_DEFAULT}"
 REALM_DB_NAME="${REALM_DB_NAME_DEFAULT}"
 CHAR_DB_NAME="${CHAR_DB_NAME_DEFAULT}"
 LOGS_DB_NAME="${LOGS_DB_NAME_DEFAULT}"
-MANGOSBOTS_DB_NAME="${MANGOSBOTS_DB_NAME_DEFAULT}"
 MYSQL_PATH="${MYSQL_PATH_DEFAULT}"
 CORE_PATH="${CORE_PATH_DEFAULT}"
 MYSQL_DUMP_PATH="${MYSQL_DUMP_PATH_DEFAULT}"
@@ -210,15 +208,13 @@ function set_sql_queries
   SQL_CREATE_CHAR_DB="CREATE DATABASE \`$CHAR_DB_NAME\` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"
   SQL_CREATE_REALM_DB="CREATE DATABASE \`$REALM_DB_NAME\` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"
   SQL_CREATE_LOGS_DB="CREATE DATABASE \`$LOGS_DB_NAME\` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"
-  SQL_CREATE_MANGOSBOTS_DB="CREATE DATABASE \`$MANGOSBOTS_DB_NAME\` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"
 
   # create database user and grant privileges
   SQL_CREATE_DATABASE_USER="CREATE USER IF NOT EXISTS '$MYSQL_USERNAME'@'$MYSQL_USERIP' IDENTIFIED BY '$MYSQL_PASSWORD';"
   SQL_GRANT_TO_WORLD_DATABASE="GRANT INDEX, SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON \`$WORLD_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';"
-  SQL_GRANT_TO_CHAR_DATABASE=("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$CHAR_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
+  SQL_GRANT_TO_CHAR_DATABASE=("GRANT INDEX, SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$CHAR_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
   SQL_GRANT_TO_REALM_DATABASE=("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$REALM_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
   SQL_GRANT_TO_LOGS_DATABASE=("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$LOGS_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
-  SQL_GRANT_TO_MANGOSBOTS_DATABASE=("GRANT INDEX, SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$MANGOSBOTS_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
 
   # delete user
   SQL_DROP_DATABASE_USER="DROP USER IF EXISTS '$MYSQL_USERNAME'@'$MYSQL_USERIP';"
@@ -228,7 +224,6 @@ function set_sql_queries
   SQL_DROP_CHAR_DB="DROP DATABASE IF EXISTS \`$CHAR_DB_NAME\`;"
   SQL_DROP_REALM_DB="DROP DATABASE IF EXISTS \`$REALM_DB_NAME\`;"
   SQL_DROP_LOGS_DB="DROP DATABASE IF EXISTS \`$LOGS_DB_NAME\`;"
-  SQL_DROP_MANGOSBOTS_DB="DROP DATABASE IF EXISTS \`$MANGOSBOTS_DB_NAME\`;"
 
   # query realm list
   SQL_QUERY_REALM_LIST="SELECT * FROM realmlist;"
@@ -281,7 +276,6 @@ function save_settings()
   allsettings+=("REALM_DB_NAME=\"$REALM_DB_NAME\"")
   allsettings+=("CHAR_DB_NAME=\"$CHAR_DB_NAME\"")
   allsettings+=("LOGS_DB_NAME=\"$LOGS_DB_NAME\"")
-  allsettings+=("MANGOSBOTS_DB_NAME=\"$MANGOSBOTS_DB_NAME\"")
   allsettings+=("")
   allsettings+=("## Define your mysql program if this differs")
   allsettings+=("MYSQL_PATH=\"$MYSQL_PATH\"")
@@ -637,7 +631,6 @@ function show_db_name()
   echo -e "Character database name.: $CHAR_DB_NAME"
   echo -e "Realm database name.....: $REALM_DB_NAME"
   echo -e "Logs database name......: $LOGS_DB_NAME"
-  echo -e "Mangosbots database name: $MANGOSBOTS_DB_NAME"
 }
 
 function show_mysql_settings()
@@ -653,7 +646,7 @@ function show_mysql_settings()
   echo -e "LOCALES.................: $LOCALES"
   echo -e "DEV_UPDATES.............: $DEV_UPDATES"
   echo -e "AHBOT...................: $AHBOT"
-  echo -e "MANGOSBOTS_DB.................: $MANGOSBOTS_DB"
+  echo -e "MANGOSBOTS_DB...........: $MANGOSBOTS_DB"
 }
 
 # arg1 = arg2 (if arg2 is empty then arg1 = arg3, if arg3 is empty do nothing)
@@ -708,7 +701,7 @@ function change_mysql_settings()
     read -e -p    "LOCALE(default:YES).............: " -i "$LOCALES" LOCALES
     read -e -p    "DEV_UPDATES(default:NO).........: " -i "$DEV_UPDATES" DEV_UPDATES
     read -e -p    "AHBOT(default:NO)...............: " -i "$AHBOT" AHBOT
-    read -e -p    "MANGOSBOTS_DB(default:NO)............: " -i "$MANGOSBOTS_DB" MANGOSBOTS_DB
+    read -e -p    "MANGOSBOTS_DB(default:NO).......: " -i "$MANGOSBOTS_DB" MANGOSBOTS_DB
   else
     read -e -p    "Enter MySQL host...............current($MYSQL_HOST).: " mhost
     read -e -p    "Enter MySQL port...............current($MYSQL_PORT).: " mport
@@ -724,7 +717,7 @@ function change_mysql_settings()
     read -e -p    "LOCALE(default:YES).............current($LOCALES).: " loc
     read -e -p    "DEV_UPDATES(default:NO)........current($DEV_UPDATES).: " dev
     read -e -p    "AHBOT(default:NO)..............current($AHBOT).: " ahb
-    read -e -p    "MANGOSBOTS_DB(default:NO)...........current($MANGOSBOTS_DB).: " bot
+    read -e -p    "MANGOSBOTS_DB(default:NO)......current($MANGOSBOTS_DB).: " bot
 
     assign_new_value 'MYSQL_HOST' "${mhost}"
     assign_new_value 'MYSQL_PORT' "${mport}"
@@ -750,7 +743,6 @@ function change_mysql_settings()
   if [[ "$CHAR_DB_NAME" = "" ]]; then CHAR_DB_NAME="${CHAR_DB_NAME_DEFAULT}"; fi
   if [[ "$REALM_DB_NAME" = "" ]]; then REALM_DB_NAME="${REALM_DB_NAME_DEFAULT}"; fi
   if [[ "$LOGS_DB_NAME" = "" ]]; then LOGS_DB_NAME="${LOGS_DB_NAME_DEFAULT}"; fi
-  if [[ "$MANGOSBOTS_DB_NAME" = "" ]]; then MANGOSBOTS_DB_NAME="${MANGOSBOTS_DB_NAME_DEFAULT}"; fi
   LOCALES="$(tr [a-z] [A-Z] <<< "$LOCALES")"
   DEV_UPDATES="$(tr [a-z] [A-Z] <<< "$DEV_UPDATES")"
   AHBOT="$(tr [a-z] [A-Z] <<< "$AHBOT")"
@@ -890,16 +882,6 @@ function check_dbs_accessibility()
     get_current_db_version "$LOGS_DB_NAME" "logs_db_version"
     DB_LOGSDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_LOGS_DB_FOUND=true
-  fi
-
-  if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$MANGOSBOTS_DB_NAME' db access, please wait...          "; fi
-  ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$MANGOSBOTS_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
-  if [[ $? != 0 ]]
-  then
-    UNAVAILABLE_DB+=("$MANGOSBOTS_DB_NAME")
-  else
-    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
-    STATUS_MANGOSBOTS_DB_FOUND=true
   fi
 
   if [[ "$showstatus" = true ]]; then
@@ -1492,51 +1474,15 @@ function apply_mangosbots_db
     true
     return
   fi
-
-  echo "> Trying to apply mangosbots db sql..."
-  if ! execute_sql_file "$MANGOSBOTS_DB_NAME" "${CORE_PATH}/src/modules/Bots/sql/playerbot/playerbot.sql"; then
-    echo "FAILED!"
-    echo ">>> $ERRORS"
-    false
-    return
-  fi
-
-  echo "> Trying to apply mangosbots help texts..."
-  if ! execute_sql_file "$MANGOSBOTS_DB_NAME" "${CORE_PATH}/src/modules/Bots/sql/playerbot/ai_playerbot_help_texts.sql"; then
-    echo "FAILED!"
-    echo ">>> $ERRORS"
-    false
-    return
-  fi
-
-  echo "> Trying to apply mangosbots expansion specific files..."
-  BOT_EXP_PREFIX="vanilla";
+  
+  BOT_EXP_PREFIX="classic";
   if [ "$EXPANSION" = "TBC" ]; then
     BOT_EXP_PREFIX="tbc";
   fi
   if [ "$EXPANSION" = "WoTLK" ]; then
     BOT_EXP_PREFIX="wotlk";
   fi
-
-  if ! execute_sql_file "$MANGOSBOTS_DB_NAME" "${CORE_PATH}/src/modules/Bots/sql/playerbot/ai_playerbot_weightscales_${BOT_EXP_PREFIX}.sql"; then
-    echo "FAILED!"
-    echo ">>> $ERRORS"
-    false
-    return
-  fi
-  if ! execute_sql_file "$MANGOSBOTS_DB_NAME" "${CORE_PATH}/src/modules/Bots/sql/playerbot/nodes_${BOT_EXP_PREFIX}.sql"; then
-    echo "FAILED!"
-    echo ">>> $ERRORS"
-    false
-    return
-  fi
-  if ! execute_sql_file "$MANGOSBOTS_DB_NAME" "${CORE_PATH}/src/modules/Bots/sql/playerbot/zone_level_${BOT_EXP_PREFIX}.sql"; then
-    echo "FAILED!"
-    echo ">>> $ERRORS"
-    false
-    return
-  fi
-
+  
   echo "> Trying to apply mangosbots sql mods for world db..."
   for UPDATEFILE in ${CORE_PATH}/src/modules/Bots/sql/world/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
@@ -1547,7 +1493,17 @@ function apply_mangosbots_db
       fi
     fi
   done
-
+  
+  for UPDATEFILE in ${CORE_PATH}/src/modules/Bots/sql/world/${BOT_EXP_PREFIX}/*.sql; do
+    if [ -e "$UPDATEFILE" ]; then
+      local fName=$(basename "$UPDATEFILE")
+      if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
+        false
+        return
+      fi
+    fi
+  done
+  
   echo "> Trying to apply mangosbots sql mods for characters db..."
   for UPDATEFILE in ${CORE_PATH}/src/modules/Bots/sql/characters/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
@@ -1752,7 +1708,6 @@ function create_db_user_and_set_privileges()
   sqlcreate+=("$SQL_GRANT_TO_CHAR_DATABASE")
   sqlcreate+=("$SQL_GRANT_TO_REALM_DATABASE")
   sqlcreate+=("$SQL_GRANT_TO_LOGS_DATABASE")
-  sqlcreate+=("$SQL_GRANT_TO_MANGOSBOTS_DATABASE")
   export MYSQL_PWD="$ROOTPASSWORD"
   for sql in "${sqlcreate[@]}"
   do
@@ -1818,7 +1773,6 @@ function create_database()
     "CHAR") dbname="${CHAR_DB_NAME}"; createSql="$SQL_CREATE_CHAR_DB"; dropSql="$SQL_DROP_CHAR_DB";;
     "REALM") dbname="${REALM_DB_NAME}"; createSql="$SQL_CREATE_REALM_DB"; dropSql="$SQL_DROP_REALM_DB";;
     "LOGS") dbname="${LOGS_DB_NAME}"; createSql="$SQL_CREATE_LOGS_DB"; dropSql="$SQL_DROP_LOGS_DB";;
-    "MANGOSBOTS") dbname="${MANGOSBOTS_DB_NAME}"; createSql="$SQL_CREATE_MANGOSBOTS_DB"; dropSql="$SQL_DROP_MANGOSBOTS_DB";;
   esac
 
   echo -n "> Creating $dbname database ... "
@@ -1959,8 +1913,6 @@ function create_and_fill_mangosbots_db()
       return
     fi
   fi
-
-  create_database "MANGOSBOTS"
 
   echo "SUCCESS"
 
@@ -2914,10 +2866,6 @@ function auto_script_create_all_db_and_user()
     return
   fi
   if ! create_database "LOGS"; then
-    false
-    return
-  fi
-  if ! create_database "MANGOSBOTS"; then
     false
     return
   fi
