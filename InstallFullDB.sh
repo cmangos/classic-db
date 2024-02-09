@@ -2899,6 +2899,21 @@ function auto_script_install_world()
   true
 }
 
+# apply core updates using config file settings and normal user
+function auto_script_apply_core_update()
+{
+  show_mysql_settings
+  echo
+  echo "Applying all the latest core updates..."
+
+  if ! apply_core_update; then
+    false
+    return
+  fi
+
+  true
+}
+
 # do a backup
 function auto_script_backup()
 {
@@ -2961,6 +2976,9 @@ function show_help
   echo "   -World"
   echo "    Install world db only using none root user defined in $CONFIG_FILE"
   echo
+  echo "   -UpdateCore"
+  echo "    Install core updates only using none root user defined in $CONFIG_FILE"
+  echo
   echo "   -InstallAll rootuser rootpass"
   echo "    Install all db by droping previous ones and recreate them from scratch"
   echo "    Require root access with arg1 as root username and arg2 as root password"
@@ -3020,6 +3038,14 @@ fi
 # check if user only want to install world db using config
 if [[ "$1" = "-World" ]]; then
   if ! auto_script_install_world; then
+    exit 1
+  fi
+
+  exit 0
+fi
+# only apply core updates using config
+if [[ "$1" = "-UpdateCore" ]]; then
+  if ! auto_script_apply_core_update; then
     exit 1
   fi
 

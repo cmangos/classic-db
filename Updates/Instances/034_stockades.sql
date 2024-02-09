@@ -271,7 +271,8 @@ INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
 (@OGUID+04, 75295), (@OGUID+04, 75298), -- Large Iron Bound Chest, Large Solid Chest
 (@OGUID+11, 75295), (@OGUID+11, 75298), -- Large Iron Bound Chest, Large Solid Chest
 (@OGUID+12, 75295), (@OGUID+12, 75298), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+13, 75295), (@OGUID+13, 75298); -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+13, 75295), (@OGUID+13, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+14, 75295), (@OGUID+14, 75298); -- Large Iron Bound Chest, Large Solid Chest
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES
 -- West Wing
@@ -282,7 +283,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- East Wing
 (@OGUID+11, 0, 34, 92.3032073974609375, -56.1772651672363281, -34.856231689453125, -0.20943944156169891, 0, 0, -0.10452842712402343, 0.994521915912628173, 86400, 86400), -- Large Iron Bound Chest, Large Solid Chest
 (@OGUID+12, 0, 34, 151.6896514892578125, -65.130950927734375, -34.856231689453125, -1.18682324886322021, 0, 0, -0.55919265747070312, 0.829037725925445556, 86400, 86400), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+13, 0, 34, 90.59210205078125, -145.882415771484375, -33.9395675659179687, 1.448622107505798339, 0, 0, 0.662619590759277343, 0.748956084251403808, 86400, 86400); -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+13, 0, 34, 90.59210205078125, -145.882415771484375, -33.9395675659179687, 1.448622107505798339, 0, 0, 0.662619590759277343, 0.748956084251403808, 86400, 86400), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+14, 0, 34, 146.967, -121.079, -33.9396, 3.50812, 0, 0, -0.983254, 0.182238, 86400, 86400); -- Large Iron Bound Chest, Large Solid Chest
 
 -- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
@@ -325,7 +327,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+04, @PGUID+91, 0, 'The Stockade (West Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
 (@OGUID+11, @PGUID+92, 0, 'The Stockade (East Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
 (@OGUID+12, @PGUID+92, 0, 'The Stockade (East Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
-(@OGUID+13, @PGUID+92, 0, 'The Stockade (East Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)');
+(@OGUID+13, @PGUID+92, 0, 'The Stockade (East Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+14, @PGUID+92, 0, 'The Stockade (East Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 

@@ -585,7 +585,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('283501','2835','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','4566','0','0','0','0','0','0','Cedrik Prose - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Urda 2851
 ('285101','2851','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Urda - Cast Summon Enraged Wyvern and Yell on Aggro'),
--- Prismatic Exile 2887
+-- Prismatic Exile 2887 - s.10389
 ('288701','2887','0','0','100','1','3300','3500','10500','16500','0','0','31','1','5','0','0','0','0','0','0','0','0','0','Prismatic Exile - Set random phase'),
 ('288702','2887','0','29','100','1025','0','50','5500','5500','0','0','11','4933','0','0','57','1','35','0','0','0','0','0','Prismatic Exile - Cast Prismatic Form : Fire and Enable Caster Mode (Phase 1)'),
 ('288703','2887','9','29','100','1025','0','40','3000','5000','0','0','11','11921','1','258','0','0','0','0','0','0','0','0','Prismatic Exile - Cast Fireball (Phase 1)'),
@@ -861,10 +861,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('904402','9044','0','0','100','1025','7000','12000','10000','16000','0','0','11','14897','1','1024','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Slowing Poison'),
 ('904403','9044','0','0','100','1025','7000','11000','11000','15000','0','0','11','14443','4','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Multi-Shot'),
 ('904404','9044','9','0','100','1025','5','35','2300','3900','0','0','11','6660','4','256','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Shoot'),
-('904405','-3332','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Scarshield Sentry - (50% chance) Say on OOC Timer'),
-('904406','-3336','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Scarshield Sentry - (50% chance) Say on OOC Timer'),
-('904407','-3338','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Scarshield Sentry - (50% chance) Say on OOC Timer'),
-('904408','-3341','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Scarshield Sentry - (50% chance) Say on OOC Timer'),
+('904405','-3332','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry (Guid EAI) - (50% chance) Say on OOC Timer'),
+('904406','-3336','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry (Guid EAI) - (50% chance) Say on OOC Timer'),
+('904407','-3338','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry (Guid EAI) - (50% chance) Say on OOC Timer'),
+('904408','-3341','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry (Guid EAI) - (50% chance) Say on OOC Timer'),
 
 
 
@@ -6424,25 +6424,32 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1105302','11053','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','High Priestess MacDonnell - Flee at 15% HP'),
 -- Alchemist Arbington (11056) - npcs_dithers_and_arbington
 -- Cauldron Lord Bilemaw 11075 - s.3391 manually casted
-('1107501','11075','11','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','1','6546','0','0','Cauldron Lord Bilemaw - Cast Birth, Emote on Spawn'),
+('1107501','11075','11','0','100','0','0','0','0','0','0','0','11','10389','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Spawn Smoke on Spawn'),
 ('1107502','11075','4','0','100','0','0','0','0','0','0','0','1','6494','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Say on Aggro'),
 ('1107503','11075','0','0','100','1025','0','10000','18000','22000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Rend'),
 ('1107504','11075','0','0','100','1025','0','20000','7000','12000','0','0','11','3427','4','32','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Infected Wound'),
 ('1107505','11075','0','0','100','1025','5000','20000','5000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Cauldron Lord Bilemaw - Cast Thrash'),
 -- Cauldron Lord Razarch 11076
-('1107601','11076','4','0','100','0','0','0','0','0','0','0','57','2','35','0','1','6496','0','0','0','0','0','0','Cauldron Lord Razarch - Enable Range Mode and Say on Aggro'),
-('1107602','11076','0','0','100','1025','11000','15000','20000','25000','0','0','11','17204','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Summon Skeleton'),
-('1107603','11076','2','0','100','1025','50','0','14000','18000','0','0','11','17173','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Drain Life'),
-('1107604','11076','9','0','100','1025','0','40','3400','4800','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Shadow Bolt'),
+('1107601','11076','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Enable Range Mode on Spawn'),
+('1107602','11076','4','0','100','0','0','0','0','0','0','0','1','6496','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Say on Aggro'),
+('1107603','11076','0','0','100','1025','8000','15000','20000','25000','0','0','11','17204','15','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Summon Skeleton'),
+('1107604','11076','2','0','100','1025','50','0','14000','18000','0','0','11','17173','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Drain Life at 50% HP'),
+('1107605','11076','0','0','100','1281','0','0','3400','4800','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Shadow Bolt (Range Mode)'),
+('1107606','11076','0','0','100','1537','0','0','5000','20000','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Cauldron Lord Razarch - Cast Shadow Bolt (Melee Mode)'),
 -- Cauldron Lord Malvinious 11077
-('1107701','11077','4','0','100','0','0','0','0','0','0','0','57','2','35','0','1','6495','0','0','0','0','0','0','Cauldron Lord Malvinious - Enable Range Mode and Say on Aggro'),
-('1107702','11077','0','0','100','1025','11000','15000','20000','25000','0','0','11','17204','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Summon Skeleton'),
-('1107703','11077','2','0','100','1025','50','0','14000','18000','0','0','11','17173','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Drain Life'),
-('1107704','11077','9','0','100','1025','0','40','3400','4800','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt'),
--- Cauldron Lord Soulwrath
-('1107801','11078','0','0','100','1025','5000','8000','14000','19000','0','0','11','12946','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Putrid Stench'),
-('1107802','11078','9','0','100','1025','0','8','12000','15000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Uppercut'),
-('1107803','11078','4','0','100','0','0','0','0','0','0','0','1','6497','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Say on spawn'),
+('1107701','11077','11','0','100','0','0','0','0','0','0','0','57','2','35','0','11','10389','0','2','1','6546','0','0','Cauldron Lord Malvinious - Enable Range Mode, Cast Spawn Smoke, Emote on Spawn'),
+('1107702','11077','4','0','100','0','0','0','0','0','0','0','1','6495','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Say on Aggro'),
+('1107703','11077','0','0','100','1025','8000','15000','20000','25000','0','0','11','17204','15','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Summon Skeleton'),
+('1107704','11077','2','0','100','1025','50','0','14000','18000','0','0','11','17173','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Drain Life at 50% HP'),
+('1107705','11077','0','0','100','1281','0','0','3400','4800','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt (Range Mode)'),
+('1107706','11077','0','0','100','1537','0','0','5000','20000','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Cauldron Lord Malvinious - Cast Shadow Bolt (Melee Mode)'),
+-- Cauldron Lord Soulwrath 11078 - s.9204
+('1107801','11078','11','0','100','0','0','0','0','0','0','0','11','10389','0','2','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Spawn Smoke on Spawn'),
+('1107802','11078','11','0','100','0','0','0','0','0','0','0','1','6497','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Say on Aggro'),
+('1107803','11078','0','0','100','1025','5000','8000','14000','19000','0','0','11','12946','0','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Putrid Stench'),
+('1107804','11078','0','0','100','1025','8000','12000','12000','20000','0','0','11','10101','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Knock Away'),
+('1107805','11078','0','0','100','1025','10000','15000','12000','20000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Cauldron Lord Soulwrath - Cast Uppercut'),
+-- The Scourge Cauldron 11152 - npc_the_scourge_cauldron
 -- Argent Defender (11194) - NSR
 -- Eva Sarkhoff (11216) - NSR
 -- Lucien Sarkhoff (11217) - NSR
@@ -11206,35 +11213,35 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1544103','15441','30','0','100','1','5','15441','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman - Set Phase 1 on Receive AI Event Custom A (summoned unit only)'),
 ('1544104','15441','30','0','100','1','8','15449','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman - Attack source on Receive AI Event Custom C'),
 ('1544105','15441','30','1','100','1','9','15449','0','0','0','0','41','20000','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman - Despawn (delayed) on Receive AI Event Custom D (Phase 1)'),
-('1544106','-42904','30','0','100','1','5','15443','0','0','0','0','53','57','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544107','-42904','30','0','100','1','9','15449','0','0','0','0','53','58','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
-('1544108','-42905','30','0','100','1','5','15443','0','0','0','0','53','59','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544109','-42905','30','0','100','1','9','15449','0','0','0','0','53','60','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
-('1544110','-42906','30','0','100','1','5','15443','0','0','0','0','53','61','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544111','-42906','30','0','100','1','9','15449','0','0','0','0','53','62','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
-('1544112','-42907','30','0','100','1','5','15443','0','0','0','0','53','63','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544113','-42907','30','0','100','1','9','15449','0','0','0','0','53','64','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
-('1544114','-42908','30','0','100','1','5','15443','0','0','0','0','53','65','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544115','-42908','30','0','100','1','9','15449','0','0','0','0','53','66','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
-('1544116','-42909','30','0','100','1','5','15443','0','0','0','0','53','67','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544117','-42909','30','0','100','1','9','15449','0','0','0','0','53','68','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
-('1544118','-42910','30','0','100','1','5','15443','0','0','0','0','53','69','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544119','-42910','30','0','100','1','9','15449','0','0','0','0','53','70','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Rifleman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544106','-42904','30','0','100','1','5','15443','0','0','0','0','53','57','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544107','-42904','30','0','100','1','9','15449','0','0','0','0','53','58','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544108','-42905','30','0','100','1','5','15443','0','0','0','0','53','59','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544109','-42905','30','0','100','1','9','15449','0','0','0','0','53','60','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544110','-42906','30','0','100','1','5','15443','0','0','0','0','53','61','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544111','-42906','30','0','100','1','9','15449','0','0','0','0','53','62','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544112','-42907','30','0','100','1','5','15443','0','0','0','0','53','63','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544113','-42907','30','0','100','1','9','15449','0','0','0','0','53','64','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544114','-42908','30','0','100','1','5','15443','0','0','0','0','53','65','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544115','-42908','30','0','100','1','9','15449','0','0','0','0','53','66','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544116','-42909','30','0','100','1','5','15443','0','0','0','0','53','67','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544117','-42909','30','0','100','1','9','15449','0','0','0','0','53','68','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544118','-42910','30','0','100','1','5','15443','0','0','0','0','53','69','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544119','-42910','30','0','100','1','9','15449','0','0','0','0','53','70','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
 -- Ironforge Brigade Footman 15442
 ('1544201','15442','30','0','100','1','5','15442','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman - Set Phase 1 on Receive AI Event Custom A (summoned unit only)'),
 ('1544202','15442','30','0','100','1','8','15449','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman - Attack source on Receive AI Event Custom C'),
 ('1544203','15442','30','1','100','1','5','15443','0','0','0','0','53','71','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom A (Phase 1)'),
 ('1544204','15442','30','1','100','1','6','15440','0','0','0','0','53','72','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom B (Phase 1)'),
 ('1544205','15442','30','1','100','1','9','15449','0','0','0','0','53','73','0','0','41','20000','0','0','0','0','0','0','Ironforge Brigade Footman - START_RELAY_SCRIPT and Despawn (delayed) on Receive AI Event Custom D (Phase 1)'),
-('1544206','-42911','30','0','100','1','5','15443','0','0','0','0','53','74','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544207','-42911','30','0','100','1','6','15440','0','0','0','0','53','75','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom B'),
-('1544208','-42911','30','0','100','1','9','15449','0','0','0','0','53','76','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
-('1544209','-42912','30','0','100','1','5','15443','0','0','0','0','53','77','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544210','-42912','30','0','100','1','6','15440','0','0','0','0','53','78','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom B'),
-('1544211','-42912','30','0','100','1','9','15449','0','0','0','0','53','79','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
-('1544212','-42913','30','0','100','1','5','15443','0','0','0','0','53','80','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1544213','-42913','30','0','100','1','6','15440','0','0','0','0','53','81','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom B'),
-('1544214','-42913','30','0','100','1','9','15449','0','0','0','0','53','82','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Ironforge Brigade Footman - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544206','-42911','30','0','100','1','5','15443','0','0','0','0','53','74','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544207','-42911','30','0','100','1','6','15440','0','0','0','0','53','75','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom B'),
+('1544208','-42911','30','0','100','1','9','15449','0','0','0','0','53','76','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544209','-42912','30','0','100','1','5','15443','0','0','0','0','53','77','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544210','-42912','30','0','100','1','6','15440','0','0','0','0','53','78','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom B'),
+('1544211','-42912','30','0','100','1','9','15449','0','0','0','0','53','79','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
+('1544212','-42913','30','0','100','1','5','15443','0','0','0','0','53','80','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1544213','-42913','30','0','100','1','6','15440','0','0','0','0','53','81','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom B'),
+('1544214','-42913','30','0','100','1','9','15449','0','0','0','0','53','82','0','0','0','0','0','0','0','0','0','0','Ironforge Brigade Footman (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom D'),
 -- Janela Stouthammer 15443
 ('1544301','15443','30','0','100','1','8','15449','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Janela Stouthammer - Attack source on Receive AI Event Custom C'),
 ('1544302','15443','30','0','100','1','9','15449','0','0','0','0','53','84','0','0','0','0','0','0','0','0','0','0','Janela Stouthammer - START_RELAY_SCRIPT on Receive AI Event Custom D'),
@@ -11305,20 +11312,20 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1561701','15617','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower - Enable Range Mode on Aggro'),
 ('1561702','15617','9','0','100','1025','5','30','2300','3900','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower - Cast Throw'),
 ('1561703','15617','30','0','100','1','6','15620','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower - Attack source on Receive AI Event Custom B'),
-('1561704','-42737','30','0','100','1','5','15612','0','0','0','0','53','36','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1561705','-42737','30','0','100','1','8','15620','0','0','0','0','53','37','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom C'),
-('1561706','-42738','30','0','100','1','5','15612','0','0','0','0','53','38','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1561707','-42738','30','0','100','1','8','15620','0','0','0','0','53','39','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom C'),
-('1561708','-42739','30','0','100','1','5','15612','0','0','0','0','53','40','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1561709','-42739','30','0','100','1','8','15620','0','0','0','0','53','41','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom C'),
-('1561710','-42740','30','0','100','1','5','15612','0','0','0','0','53','42','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1561711','-42740','30','0','100','1','8','15620','0','0','0','0','53','43','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom C'),
-('1561712','-42741','30','0','100','1','5','15612','0','0','0','0','53','44','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1561713','-42741','30','0','100','1','8','15620','0','0','0','0','53','45','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom C'),
-('1561714','-42742','30','0','100','1','5','15612','0','0','0','0','53','46','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1561715','-42742','30','0','100','1','8','15620','0','0','0','0','53','47','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom C'),
-('1561716','-42743','30','0','100','1','5','15612','0','0','0','0','53','48','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom A'),
-('1561717','-42743','30','0','100','1','8','15620','0','0','0','0','53','49','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Orgrimmar Legion Axe Thrower - START_RELAY_SCRIPT on Receive AI Event Custom C'),
+('1561704','-42737','30','0','100','1','5','15612','0','0','0','0','53','36','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1561705','-42737','30','0','100','1','8','15620','0','0','0','0','53','37','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
+('1561706','-42738','30','0','100','1','5','15612','0','0','0','0','53','38','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1561707','-42738','30','0','100','1','8','15620','0','0','0','0','53','39','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
+('1561708','-42739','30','0','100','1','5','15612','0','0','0','0','53','40','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1561709','-42739','30','0','100','1','8','15620','0','0','0','0','53','41','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
+('1561710','-42740','30','0','100','1','5','15612','0','0','0','0','53','42','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1561711','-42740','30','0','100','1','8','15620','0','0','0','0','53','43','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
+('1561712','-42741','30','0','100','1','5','15612','0','0','0','0','53','44','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1561713','-42741','30','0','100','1','8','15620','0','0','0','0','53','45','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
+('1561714','-42742','30','0','100','1','5','15612','0','0','0','0','53','46','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1561715','-42742','30','0','100','1','8','15620','0','0','0','0','53','47','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
+('1561716','-42743','30','0','100','1','5','15612','0','0','0','0','53','48','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
+('1561717','-42743','30','0','100','1','8','15620','0','0','0','0','53','49','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
 -- Hive'Regal Hunter-Killer 15620
 ('1562001','15620','0','0','100','1025','1000','9000','12000','20000','0','0','11','25821','4','512','0','0','0','0','0','0','0','0','Hive\'Regal Hunter-Killer - Cast Charge'),
 ('1562002','15620','0','0','100','1025','2000','5000','5000','9000','0','0','11','15584','1','0','0','0','0','0','0','0','0','0','Hive\'Regal Hunter-Killer - Cast Cleave'),
@@ -12763,8 +12770,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Manifestation of Water (11256) - NSR
 -- Koiter 12034 - NSR
 -- Lunaclaw 12138 - s.3391 manually casted
-('1213801','12138','6','0','100','0','0','0','0','0','0','0','11','18986','0','7','0','0','0','0','0','0','0','0','Lunaclaw - Cast Lunaclaw Spirit on Death'),
-('1213802','12138','0','0','100','1025','5000','20000','5000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Lunaclaw - Cast Thrash'),
+('1213801','12138','4','0','100','0','0','0','0','0','0','0','11','10389','0','2','0','0','0','0','0','0','0','0','Lunaclaw - Cast Spawn Smoke on Spawn'),
+('1213802','12138','6','0','100','0','0','0','0','0','0','0','11','18986','0','7','0','0','0','0','0','0','0','0','Lunaclaw - Cast Lunaclaw Spirit on Death'),
+('1213803','12138','0','0','100','1025','5000','20000','5000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Lunaclaw - Cast Thrash'),
 -- Lunaclaw Spirit 12144
 ('1214401','12144','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','17321','0','2','0','0','0','0','Lunaclaw Spirit - Cast Spirit Particles, Spirit Spawn-in on Spawn'),
 -- Burning Blade Toxicologist
@@ -14090,9 +14098,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==============================================
 -- Scarshield Grunt 9043
 ('904301','9043','9','0','100','1025','0','5','6000','9000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Scarshield Grunt - Cast Strike'),
-('904302','-3331','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Scarshield Grunt - (50% chance) Say on OOC Timer'),
-('904303','-3335','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Scarshield Grunt - (50% chance) Say on OOC Timer'),
-('904304','-3340','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','(Guid EAI) Scarshield Grunt - (50% chance) Say on OOC Timer'),
+('904302','-3331','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Scarshield Grunt (Guid EAI) - (50% chance) Say on OOC Timer'),
+('904303','-3335','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Scarshield Grunt (Guid EAI) - (50% chance) Say on OOC Timer'),
+('904304','-3340','1','0','50','1','0','4000','4000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Scarshield Grunt (Guid EAI) - (50% chance) Say on OOC Timer'),
 -- Scarshield Acolyte 9045
 ('904501','9045','4','0','100','0','0','0','0','0','0','0','47','0','0','0','28','0','12380','0','0','0','0','0','Scarshield Acolyte - Set Stand State and Remove Aura on Aggro'),
 ('904502','9045','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Scarshield Acolyte - Flee at 15% HP'),
@@ -17820,12 +17828,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1534105','15341','0','0','100','1025','600000','600000','120000','120000','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','General Rajaxx - Cast Frenzy after 10 Minutes'),
 ('1534106','15341','6','0','100','0','0','0','0','0','0','0','1','11434','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Yell on Death'),
 ('1534107','15341','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','0','0','0','0','0','0','0','0','General Rajaxx - Cast Double Attack on Spawn'),
-('1534108','-155940','29','0','100','1','0','0','300000','300000','0','0','54','11429','0','0','18','832','0','0','0','0','0','0','(Guid EAI) General Rajaxx (War Effort) - Yell, Set UnitFlags on Spawn'),
+('1534108','-155940','29','0','100','1','0','0','300000','300000','0','0','54','11429','0','0','18','832','0','0','0','0','0','0','General Rajaxx (War Effort) (Guid EAI) - Yell, Set UnitFlags on Spawn'),
 -- Qiraji Swarmguard
 ('1534301','15343','9','0','100','1025','0','5','8000','12000','0','0','11','25174','4','0','0','0','0','0','0','0','0','0','Qiraji Swarmguard - Cast Sundering Cleave'),
 -- Swarmguard Needler
 ('1534401','15344','9','0','100','1025','0','5','5000','8000','0','0','11','15584','1','0','0','0','0','0','0','0','0','0','Swarmguard Needler - Cast Cleave'),
 -- Kurinnaxx (15348) - boss_kurinnaxx
+-- Anubisath Guardian (15355) - mob_anubisath_guardian
 -- Ayamiss the Hunter (15369) - boss_ayamiss
 -- Buru the Gorger (15370) - SD2 REQUESTED SCRIPTS REMOVED
 -- Colonel Zerran
