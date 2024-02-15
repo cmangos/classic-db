@@ -65,7 +65,7 @@ MYSQL_DUMP_PATH_DEFAULT=""
 LOCALES_DEFAULT="YES"
 DEV_UPDATES_DEFAULT="NO"
 AHBOT_DEFAULT="NO"
-MANGOSBOTS_DB_DEFAULT="NO"
+PLAYERBOTS_DB_DEFAULT="NO"
 FORCE_WAIT_DEFAULT="YES"
 
 # variables assigned and read from $CONFIG_FILE
@@ -84,7 +84,7 @@ CORE_PATH="${CORE_PATH_DEFAULT}"
 MYSQL_DUMP_PATH="${MYSQL_DUMP_PATH_DEFAULT}"
 LOCALES="${LOCALES_DEFAULT}"
 DEV_UPDATES="${DEV_UPDATES_DEFAULT}"
-MANGOSBOTS_DB="${MANGOSBOTS_DB_DEFAULT}"
+PLAYERBOTS_DB="${PLAYERBOTS_DB_DEFAULT}"
 AHBOT="${AHBOT_DEFAULT}"
 FORCE_WAIT="${FORCE_WAIT_DEFAULT}"
 
@@ -302,8 +302,8 @@ function save_settings()
   allsettings+=("AHBOT=\"$AHBOT\"")
   allsettings+=("")
   allsettings+=("## Define if the 'src/modules/Bots/sql' directory for processing development SQL files needs to be used")
-  allsettings+=("##   Set the variable to \"YES\" to use the mangosbots directory")
-  allsettings+=("MANGOSBOTS_DB=\"$MANGOSBOTS_DB\"")
+  allsettings+=("##   Set the variable to \"YES\" to use the playerbots directory")
+  allsettings+=("PLAYERBOTS_DB=\"$PLAYERBOTS_DB\"")
   allsettings+=("")
   allsettings+=("# Enjoy using the tool")
 
@@ -646,7 +646,7 @@ function show_mysql_settings()
   echo -e "LOCALES.................: $LOCALES"
   echo -e "DEV_UPDATES.............: $DEV_UPDATES"
   echo -e "AHBOT...................: $AHBOT"
-  echo -e "MANGOSBOTS_DB...........: $MANGOSBOTS_DB"
+  echo -e "PLAYERBOTS_DB...........: $PLAYERBOTS_DB"
 }
 
 # arg1 = arg2 (if arg2 is empty then arg1 = arg3, if arg3 is empty do nothing)
@@ -701,7 +701,7 @@ function change_mysql_settings()
     read -e -p    "LOCALE(default:YES).............: " -i "$LOCALES" LOCALES
     read -e -p    "DEV_UPDATES(default:NO).........: " -i "$DEV_UPDATES" DEV_UPDATES
     read -e -p    "AHBOT(default:NO)...............: " -i "$AHBOT" AHBOT
-    read -e -p    "MANGOSBOTS_DB(default:NO).......: " -i "$MANGOSBOTS_DB" MANGOSBOTS_DB
+    read -e -p    "PLAYERBOTS_DB(default:NO).......: " -i "$PLAYERBOTS_DB" PLAYERBOTS_DB
   else
     read -e -p    "Enter MySQL host...............current($MYSQL_HOST).: " mhost
     read -e -p    "Enter MySQL port...............current($MYSQL_PORT).: " mport
@@ -717,7 +717,7 @@ function change_mysql_settings()
     read -e -p    "LOCALE(default:YES).............current($LOCALES).: " loc
     read -e -p    "DEV_UPDATES(default:NO)........current($DEV_UPDATES).: " dev
     read -e -p    "AHBOT(default:NO)..............current($AHBOT).: " ahb
-    read -e -p    "MANGOSBOTS_DB(default:NO)......current($MANGOSBOTS_DB).: " bot
+    read -e -p    "PLAYERBOTS_DB(default:NO)......current($PLAYERBOTS_DB).: " bot
 
     assign_new_value 'MYSQL_HOST' "${mhost}"
     assign_new_value 'MYSQL_PORT' "${mport}"
@@ -729,7 +729,7 @@ function change_mysql_settings()
     assign_new_value 'CORE_PATH' "${cpath}"
     assign_new_value 'LOCALES' "${loc}"
     assign_new_value 'DEV_UPDATES' "${dev}"
-    assign_new_value 'MANGOSBOTS_DB' "${bot}"
+    assign_new_value 'PLAYERBOTS_DB' "${bot}"
     assign_new_value 'AHBOT' "${ahb}"
   fi
 
@@ -1468,9 +1468,9 @@ function apply_dev_content
 }
 
 # Apply playerbot sql files
-function apply_mangosbots_db
+function apply_playerbots_db
 {
-  if [ "$MANGOSBOTS_DB" != "YES" ]; then
+  if [ "$PLAYERBOTS_DB" != "YES" ]; then
     true
     return
   fi
@@ -1483,7 +1483,7 @@ function apply_mangosbots_db
     BOT_EXP_PREFIX="wotlk";
   fi
   
-  echo "> Trying to apply mangosbots sql mods for world db..."
+  echo "> Trying to apply playerbots sql mods for world db..."
   for UPDATEFILE in ${CORE_PATH}/src/modules/Bots/sql/world/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
       local fName=$(basename "$UPDATEFILE")
@@ -1504,7 +1504,7 @@ function apply_mangosbots_db
     fi
   done
   
-  echo "> Trying to apply mangosbots sql mods for characters db..."
+  echo "> Trying to apply playerbots sql mods for characters db..."
   for UPDATEFILE in ${CORE_PATH}/src/modules/Bots/sql/characters/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
       local fName=$(basename "$UPDATEFILE")
@@ -1900,9 +1900,9 @@ function create_and_fill_logs_db()
   true
 }
 
-function create_and_fill_mangosbots_db()
+function create_and_fill_playerbots_db()
 {
-  if [ "$MANGOSBOTS_DB" != "YES" ]; then
+  if [ "$PLAYERBOTS_DB" != "YES" ]; then
     true
     return
   fi
@@ -1916,7 +1916,7 @@ function create_and_fill_mangosbots_db()
 
   echo "SUCCESS"
 
-  if ! apply_mangosbots_db; then
+  if ! apply_playerbots_db; then
     false
     return
   fi
@@ -1950,7 +1950,7 @@ function create_all_databases_and_user()
     return
   fi
 
-  if ! create_and_fill_mangosbots_db; then
+  if ! create_and_fill_playerbots_db; then
     return
   fi
 
@@ -2573,7 +2573,7 @@ function advanced_db_install_menu()
     echo "> 5) Create and fill logs database"
     echo "> 6) Create 'core user' for db and set its default privileges"
     echo "> 7) Delete all databases and users"
-	echo "> 8) Create and fill mangosbots db"
+	echo "> 8) Create and fill playerbots db"
     echo "> 9) Return to previous menu"
     echo
     read -n 1 -e -p "Please enter your choice.....: " CHOICE
@@ -2586,7 +2586,7 @@ function advanced_db_install_menu()
       "5") create_and_fill_logs_db true; wait_key;;
       "6") create_db_user_and_set_privileges true; wait_key;;
       "7") delete_all_databases_and_user true; wait_key;;
-      "8") create_and_fill_mangosbots_db true; wait_key;;
+      "8") create_and_fill_playerbots_db true; wait_key;;
       *) break;;
     esac
   done
@@ -2811,7 +2811,7 @@ function auto_script_create_all()
     return
   fi
 
-  if ! create_and_fill_mangosbots_db; then
+  if ! create_and_fill_playerbots_db; then
     false
     return
   fi
