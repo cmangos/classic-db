@@ -301,7 +301,7 @@ function save_settings()
   allsettings+=("## Set the variable to \"YES\" to import AHBot sql.")
   allsettings+=("AHBOT=\"$AHBOT\"")
   allsettings+=("")
-  allsettings+=("## Define if the 'src/modules/Bots/sql' directory for processing development SQL files needs to be used")
+  allsettings+=("## Define if the 'src/modules/playerbots/sql' directory for processing development SQL files needs to be used")
   allsettings+=("##   Set the variable to \"YES\" to use the playerbots directory")
   allsettings+=("PLAYERBOTS_DB=\"$PLAYERBOTS_DB\"")
   allsettings+=("")
@@ -1484,7 +1484,7 @@ function apply_playerbots_db
   fi
   
   echo "> Trying to apply playerbots sql mods for world db..."
-  for UPDATEFILE in ${CORE_PATH}/src/modules/Bots/sql/world/*.sql; do
+  for UPDATEFILE in ${CORE_PATH}/src/modules/playerbots/sql/world/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
       local fName=$(basename "$UPDATEFILE")
       if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
@@ -1494,7 +1494,7 @@ function apply_playerbots_db
     fi
   done
   
-  for UPDATEFILE in ${CORE_PATH}/src/modules/Bots/sql/world/${BOT_EXP_PREFIX}/*.sql; do
+  for UPDATEFILE in ${CORE_PATH}/src/modules/playerbots/sql/world/${BOT_EXP_PREFIX}/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
       local fName=$(basename "$UPDATEFILE")
       if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
@@ -1505,7 +1505,7 @@ function apply_playerbots_db
   done
   
   echo "> Trying to apply playerbots sql mods for characters db..."
-  for UPDATEFILE in ${CORE_PATH}/src/modules/Bots/sql/characters/*.sql; do
+  for UPDATEFILE in ${CORE_PATH}/src/modules/playerbots/sql/characters/*.sql; do
     if [ -e "$UPDATEFILE" ]; then
       local fName=$(basename "$UPDATEFILE")
       if ! execute_sql_file "$CHAR_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
