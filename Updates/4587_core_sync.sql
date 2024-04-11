@@ -1,0 +1,3 @@
+ALTER TABLE db_version CHANGE COLUMN required_z2815_01_mangos_pursuit required_z2816_01_mangos_precision_decimal bit;
+
+

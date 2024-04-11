@@ -7,7 +7,7 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE_ZIP="ClassicDB_1_12_z2793.sql.gz"
+FULLDB_FILE_ZIP="ClassicDB_1_12_1_z2815.sql.gz"
 FULLDB_FILE=${FULLDB_FILE_ZIP%.gz}
 NEXT_MILESTONES="0.19 0.20"
 
@@ -65,6 +65,7 @@ MYSQL_DUMP_PATH_DEFAULT=""
 LOCALES_DEFAULT="YES"
 DEV_UPDATES_DEFAULT="NO"
 AHBOT_DEFAULT="NO"
+PLAYERBOTS_DB_DEFAULT="NO"
 FORCE_WAIT_DEFAULT="YES"
 
 # variables assigned and read from $CONFIG_FILE
@@ -83,6 +84,7 @@ CORE_PATH="${CORE_PATH_DEFAULT}"
 MYSQL_DUMP_PATH="${MYSQL_DUMP_PATH_DEFAULT}"
 LOCALES="${LOCALES_DEFAULT}"
 DEV_UPDATES="${DEV_UPDATES_DEFAULT}"
+PLAYERBOTS_DB="${PLAYERBOTS_DB_DEFAULT}"
 AHBOT="${AHBOT_DEFAULT}"
 FORCE_WAIT="${FORCE_WAIT_DEFAULT}"
 
@@ -209,8 +211,8 @@ function set_sql_queries
 
   # create database user and grant privileges
   SQL_CREATE_DATABASE_USER="CREATE USER IF NOT EXISTS '$MYSQL_USERNAME'@'$MYSQL_USERIP' IDENTIFIED BY '$MYSQL_PASSWORD';"
-  SQL_GRANT_TO_WORLD_DATABASE="GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON \`$WORLD_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';"
-  SQL_GRANT_TO_CHAR_DATABASE=("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$CHAR_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
+  SQL_GRANT_TO_WORLD_DATABASE="GRANT INDEX, SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES, EXECUTE, ALTER ROUTINE, CREATE ROUTINE ON \`$WORLD_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';"
+  SQL_GRANT_TO_CHAR_DATABASE=("GRANT INDEX, SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$CHAR_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
   SQL_GRANT_TO_REALM_DATABASE=("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$REALM_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
   SQL_GRANT_TO_LOGS_DATABASE=("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON \`$LOGS_DB_NAME\`.* TO '$MYSQL_USERNAME'@'$MYSQL_USERIP';")
 
@@ -298,6 +300,10 @@ function save_settings()
   allsettings+=("## Define if AHBot SQL updates need to be applied (by default, assumes the core is built without AHBot)")
   allsettings+=("## Set the variable to \"YES\" to import AHBot sql.")
   allsettings+=("AHBOT=\"$AHBOT\"")
+  allsettings+=("")
+  allsettings+=("## Define if the 'src/modules/PlayerBots/sql' directory for processing development SQL files needs to be used")
+  allsettings+=("##   Set the variable to \"YES\" to use the playerbots directory")
+  allsettings+=("PLAYERBOTS_DB=\"$PLAYERBOTS_DB\"")
   allsettings+=("")
   allsettings+=("# Enjoy using the tool")
 
@@ -640,6 +646,7 @@ function show_mysql_settings()
   echo -e "LOCALES.................: $LOCALES"
   echo -e "DEV_UPDATES.............: $DEV_UPDATES"
   echo -e "AHBOT...................: $AHBOT"
+  echo -e "PLAYERBOTS_DB...........: $PLAYERBOTS_DB"
 }
 
 # arg1 = arg2 (if arg2 is empty then arg1 = arg3, if arg3 is empty do nothing)
@@ -694,6 +701,7 @@ function change_mysql_settings()
     read -e -p    "LOCALE(default:YES).............: " -i "$LOCALES" LOCALES
     read -e -p    "DEV_UPDATES(default:NO).........: " -i "$DEV_UPDATES" DEV_UPDATES
     read -e -p    "AHBOT(default:NO)...............: " -i "$AHBOT" AHBOT
+    read -e -p    "PLAYERBOTS_DB(default:NO).......: " -i "$PLAYERBOTS_DB" PLAYERBOTS_DB
   else
     read -e -p    "Enter MySQL host...............current($MYSQL_HOST).: " mhost
     read -e -p    "Enter MySQL port...............current($MYSQL_PORT).: " mport
@@ -706,9 +714,10 @@ function change_mysql_settings()
     read -e -p    "Enter core path................current($CORE_PATH).: " cpath
     change_db_name
     echo -e "Choose YES or NO for following options"
-    read -e -p    "LOCALE(default:YES)............current($LOCALES).: " loc
+    read -e -p    "LOCALE(default:YES).............current($LOCALES).: " loc
     read -e -p    "DEV_UPDATES(default:NO)........current($DEV_UPDATES).: " dev
     read -e -p    "AHBOT(default:NO)..............current($AHBOT).: " ahb
+    read -e -p    "PLAYERBOTS_DB(default:NO)......current($PLAYERBOTS_DB).: " bot
 
     assign_new_value 'MYSQL_HOST' "${mhost}"
     assign_new_value 'MYSQL_PORT' "${mport}"
@@ -720,6 +729,7 @@ function change_mysql_settings()
     assign_new_value 'CORE_PATH' "${cpath}"
     assign_new_value 'LOCALES' "${loc}"
     assign_new_value 'DEV_UPDATES' "${dev}"
+    assign_new_value 'PLAYERBOTS_DB' "${bot}"
     assign_new_value 'AHBOT' "${ahb}"
   fi
 
@@ -1457,6 +1467,58 @@ function apply_dev_content
   true
 }
 
+# Apply playerbot sql files
+function apply_playerbots_db
+{
+  if [ "$PLAYERBOTS_DB" != "YES" ]; then
+    true
+    return
+  fi
+  
+  BOT_EXP_PREFIX="classic";
+  if [ "$EXPANSION" = "TBC" ]; then
+    BOT_EXP_PREFIX="tbc";
+  fi
+  if [ "$EXPANSION" = "WoTLK" ]; then
+    BOT_EXP_PREFIX="wotlk";
+  fi
+  
+  echo "> Trying to apply playerbots sql mods for world db..."
+  for UPDATEFILE in ${CORE_PATH}/src/modules/PlayerBots/sql/world/*.sql; do
+    if [ -e "$UPDATEFILE" ]; then
+      local fName=$(basename "$UPDATEFILE")
+      if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
+        false
+        return
+      fi
+    fi
+  done
+  
+  for UPDATEFILE in ${CORE_PATH}/src/modules/PlayerBots/sql/world/${BOT_EXP_PREFIX}/*.sql; do
+    if [ -e "$UPDATEFILE" ]; then
+      local fName=$(basename "$UPDATEFILE")
+      if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
+        false
+        return
+      fi
+    fi
+  done
+  
+  echo "> Trying to apply playerbots sql mods for characters db..."
+  for UPDATEFILE in ${CORE_PATH}/src/modules/PlayerBots/sql/characters/*.sql; do
+    if [ -e "$UPDATEFILE" ]; then
+      local fName=$(basename "$UPDATEFILE")
+      if ! execute_sql_file "$CHAR_DB_NAME" "$UPDATEFILE" "  - Applying $fName"; then
+        false
+        return
+      fi
+    fi
+  done
+
+  echo
+  true
+}
+
 # Content db installation
 function apply_content_db()
 {
@@ -1611,13 +1673,28 @@ function apply_full_content_db()
 
 function create_db_user_and_set_privileges()
 {
+  local sqlcreate=()
+
   if [[ "$1" = true ]]; then
     clear
+  fi
 
-    if [[ "$STATUS_USER_SUCCESS" = true ]]; then
-      echo "Warning: User already exist, you will reset all privileges to default!"
+  if [[ "$STATUS_USER_SUCCESS" = true ]]; then
+    local user_lowCase=$(echo "$MYSQL_USERNAME" | tr '[:upper:]' '[:lower:]')
+    if [ "$user_lowCase" == "root" ]; then
+      echo "Error: 'root' is not supported as an username. Please choose a safer one."
+      false
+      return
     fi
-    if [ ! -z $DB_CHARDB_VERSION ] OR [ ! -z $DB_REALMDB_VERSION ] OR [ ! -z $DB_WORLDDB_VERSION ] OR [ ! -z $DB_LOGSDB_VERSION ];then
+    if [[ "$1" = true ]]; then
+      echo "Warning: User already exists; only privileges for required database will be added!"
+    fi
+  else
+    sqlcreate+=("$SQL_CREATE_DATABASE_USER")
+  fi
+
+  if [[ "$1" = true ]]; then
+    if [[ ! -z $DB_CHARDB_VERSION ]] || [[ ! -z $DB_REALMDB_VERSION ]] || [[ ! -z $DB_WORLDDB_VERSION ]] || [[ ! -z $DB_LOGSDB_VERSION ]]; then
       echo "Warning: At least one database contains some data that you are about to reset to default!"
     fi
     if ! are_you_sure "CreateAll"; then
@@ -1626,9 +1703,7 @@ function create_db_user_and_set_privileges()
     fi
   fi
 
-  echo -n "> Creating $MYSQL_USERNAME user in database ... "
-  local sqlcreate=("$SQL_DROP_DATABASE_USER")
-  sqlcreate+=("$SQL_CREATE_DATABASE_USER")
+  echo -n "> Setting $MYSQL_USERNAME user in database ... "
   sqlcreate+=("$SQL_GRANT_TO_WORLD_DATABASE")
   sqlcreate+=("$SQL_GRANT_TO_CHAR_DATABASE")
   sqlcreate+=("$SQL_GRANT_TO_REALM_DATABASE")
@@ -1659,7 +1734,15 @@ function delete_all_databases_and_user
     fi
   fi
   echo -n "> Deleting all current cmangos database and current user in database..."
-  local sqlcreate=("$SQL_DROP_DATABASE_USER")
+
+  local sqlcreate=()
+
+  # Check if MYSQL_USERNAME is not 'root' before adding SQL_DROP_DATABASE_USER
+  local user_lowCase=$(echo "$MYSQL_USERNAME" | tr '[:upper:]' '[:lower:]')
+  if [ "$user_lowCase" != "root" ]; then
+    sqlcreate+=("$SQL_DROP_DATABASE_USER")
+  fi
+
   sqlcreate+=("$SQL_DROP_WORLD_DB")
   sqlcreate+=("$SQL_DROP_CHAR_DB")
   sqlcreate+=("$SQL_DROP_REALM_DB")
@@ -1752,7 +1835,7 @@ function create_and_fill_char_db()
     fi
   fi
 
-  if [ "${STATUS_CHAR_DB_FOUND}" -eq true ] AND [ ! -z $DB_CHARDB_VERSION ]; then
+  if [ "${STATUS_CHAR_DB_FOUND}" = true ] && [ ! -z $DB_CHARDB_VERSION ]; then
     backup_create "CHAR"
   fi
 
@@ -1778,7 +1861,7 @@ function create_and_fill_realm_db()
     fi
   fi
 
-  if [ "${STATUS_REALM_DB_FOUND}" -eq true ] AND [ ! -z $DB_REALMDB_VERSION ]; then
+  if [ "${STATUS_REALM_DB_FOUND}" = true ] && [ ! -z $DB_REALMDB_VERSION ]; then
     backup_create "REALM"
   fi
 
@@ -1817,6 +1900,29 @@ function create_and_fill_logs_db()
   true
 }
 
+function create_and_fill_playerbots_db()
+{
+  if [ "$PLAYERBOTS_DB" != "YES" ]; then
+    true
+    return
+  fi
+
+  if [[ "$1" = true ]]; then
+    clear
+    if ! are_you_sure "Mangosbots"; then
+      return
+    fi
+  fi
+
+  echo "SUCCESS"
+
+  if ! apply_playerbots_db; then
+    false
+    return
+  fi
+  true
+}
+
 function create_all_databases_and_user()
 {
   clear
@@ -1841,6 +1947,10 @@ function create_all_databases_and_user()
   fi
 
   if ! create_and_fill_logs_db; then
+    return
+  fi
+
+  if ! create_and_fill_playerbots_db; then
     return
   fi
 
@@ -2463,6 +2573,7 @@ function advanced_db_install_menu()
     echo "> 5) Create and fill logs database"
     echo "> 6) Create 'core user' for db and set its default privileges"
     echo "> 7) Delete all databases and users"
+	echo "> 8) Create and fill playerbots db"
     echo "> 9) Return to previous menu"
     echo
     read -n 1 -e -p "Please enter your choice.....: " CHOICE
@@ -2475,6 +2586,7 @@ function advanced_db_install_menu()
       "5") create_and_fill_logs_db true; wait_key;;
       "6") create_db_user_and_set_privileges true; wait_key;;
       "7") delete_all_databases_and_user true; wait_key;;
+      "8") create_and_fill_playerbots_db true; wait_key;;
       *) break;;
     esac
   done
@@ -2699,6 +2811,11 @@ function auto_script_create_all()
     return
   fi
 
+  if ! create_and_fill_playerbots_db; then
+    false
+    return
+  fi
+
   if ! apply_core_update; then
     false
     return
@@ -2782,6 +2899,21 @@ function auto_script_install_world()
   true
 }
 
+# apply core updates using config file settings and normal user
+function auto_script_apply_core_update()
+{
+  show_mysql_settings
+  echo
+  echo "Applying all the latest core updates..."
+
+  if ! apply_core_update; then
+    false
+    return
+  fi
+
+  true
+}
+
 # do a backup
 function auto_script_backup()
 {
@@ -2844,6 +2976,9 @@ function show_help
   echo "   -World"
   echo "    Install world db only using none root user defined in $CONFIG_FILE"
   echo
+  echo "   -UpdateCore"
+  echo "    Install core updates only using none root user defined in $CONFIG_FILE"
+  echo
   echo "   -InstallAll rootuser rootpass"
   echo "    Install all db by droping previous ones and recreate them from scratch"
   echo "    Require root access with arg1 as root username and arg2 as root password"
@@ -2903,6 +3038,14 @@ fi
 # check if user only want to install world db using config
 if [[ "$1" = "-World" ]]; then
   if ! auto_script_install_world; then
+    exit 1
+  fi
+
+  exit 0
+fi
+# only apply core updates using config
+if [[ "$1" = "-UpdateCore" ]]; then
+  if ! auto_script_apply_core_update; then
     exit 1
   fi
 

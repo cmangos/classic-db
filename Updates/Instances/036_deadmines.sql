@@ -689,7 +689,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (622, 0, 0, 1, 0, 0, NULL), -- Goblin Engineer
 (634, 0, 0, 1, 0, 0, NULL), -- Defias Overseer
 (636, 0, 0, 1, 0, 0, '6408'), -- Defias Blackguard
-(639, 0, 0, 1, 0, 0, '12787'), -- Edwin VanCleef
+(639, 0, 0, 1, 0, 0, NULL), -- Edwin VanCleef
 (641, 0, 0, 1, 234, 0, NULL), -- Goblin Woodcarver
 (642, 0, 0, 1, 0, 0, NULL), -- Sneed's Shredder
 (644, 0, 0, 1, 0, 0, NULL), -- Rhahk'Zor

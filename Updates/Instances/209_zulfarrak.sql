@@ -623,7 +623,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (7246, 0, 0, 1, 0, 0, NULL), -- Sandfury Shadowhunter
 (7247, 0, 0, 1, 0, 0, NULL), -- Sandfury Soul Eater
 (7267, 0, 0, 1, 0, 0, '11838'), -- Chief Ukorz Sandscalp
-(7268, 0, 0, 1, 0, 0, '7276 8876'), -- Sandfury Guardian
+(7268, 0, 0, 1, 0, 0, '7276'), -- Sandfury Guardian
 (7269, 0, 0, 1, 0, 0, NULL), -- Scarab
 (7271, 0, 0, 1, 193, 0, NULL), -- Witch Doctor Zum'rah
 (7272, 0, 0, 1, 0, 0, NULL), -- Theka the Martyr
@@ -639,7 +639,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (8120, 0, 0, 1, 0, 0, NULL), -- Sul'lithuz Abomination
 (8127, 0, 0, 1, 0, 0, NULL), -- Antu'sul
 (8130, 0, 0, 1, 0, 0, NULL), -- Sul'lithuz Hatchling
-(8138, 0, 0, 1, 0, 0, '7276 8876'), -- Sul'lithuz Broodling
+(8138, 0, 0, 1, 0, 0, '7276'), -- Sul'lithuz Broodling
 (10080, 0, 0, 1, 0, 0, NULL), -- Sandarr Dunereaver
 (10081, 0, 0, 1, 0, 0, '12254'), -- Dustwraith
 (10082, 0, 0, 1, 0, 0, NULL), -- Zerillis
