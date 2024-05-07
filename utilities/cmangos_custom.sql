@@ -125,11 +125,11 @@ UPDATE item_template SET class=0, subclass=3 WHERE entry=5514;
 -- -------------------------------
 
 -- Fix a few model IDs found in sniffs from patch 1.13 but not present in patch 1.12 DBCs
-UPDATE creature_template SET ModelId2=0 WHERE Entry IN (3651, 16979); -- [UNUSED] Kolkar Observer ; Midsummer Merchant
-UPDATE creature_template SET ModelId3=13132, ModelId4=0 WHERE Entry=11446;  -- Gordok Spirit
+UPDATE creature_template SET DisplayId2=0 WHERE Entry IN (3651, 16979); -- [UNUSED] Kolkar Observer ; Midsummer Merchant
+UPDATE creature_template SET DisplayId3=13132, DisplayId4=0 WHERE Entry=11446;  -- Gordok Spirit
 
 -- modelids with probability = 0
-UPDATE creature_template SET `modelid2` = 0, `modelid3` = 0, `modelid4` = 0 WHERE `entry` IN (
+UPDATE creature_template SET `DisplayId2` = 0, `DisplayId3` = 0, `DisplayId4` = 0 WHERE `entry` IN (
 5764 -- Guardian of B
 );
 
