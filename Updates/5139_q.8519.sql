@@ -482,3 +482,34 @@ INSERT INTO worldstate_name(Id, Name) VALUES
 DELETE FROM conditions WHERE condition_entry IN (2100, 2101);
 INSERT INTO conditions (condition_entry, type, VALUE1, VALUE2, VALUE3, VALUE4, flags, comments) VALUES (2100,12,124,0,0,0,0,"Game Event 124 Active");
 INSERT INTO conditions (condition_entry, type, VALUE1, VALUE2, VALUE3, VALUE4, flags, comments) VALUES (2101,-2,2099,2100,0,0,0,"Game Event 123 or 124 Active");
+
+/*AQ Gate*/
+DELETE FROM `gameobject_addon` WHERE `guid` in (111, 113, 115);
+INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`, `StringId`) VALUES (111, 100, -1, 0);
+INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`, `StringId`) VALUES (115, 100, -1, 0);
+INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`, `StringId`) VALUES (113, 100, -1, 0);
+
+DELETE FROM `gameobject_template` WHERE `entry` in (180606, 180607, 180608);
+INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `faction`, `flags`, `ExtraFlags`, `size`, `data0`, `data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`, `data12`, `data13`, `data14`, `data15`, `data16`, `data17`, `data18`, `data19`, `data20`, `data21`, `data22`, `data23`, `CustomData1`, `mingold`, `maxgold`, `StringId`, `ScriptName`) VALUES (180606, 0, 4132, 'Prismatic Barrier', 114, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `faction`, `flags`, `ExtraFlags`, `size`, `data0`, `data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`, `data12`, `data13`, `data14`, `data15`, `data16`, `data17`, `data18`, `data19`, `data20`, `data21`, `data22`, `data23`, `CustomData1`, `mingold`, `maxgold`, `StringId`, `ScriptName`) VALUES (180607, 0, 4133, 'Ancient Roots', 114, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `faction`, `flags`, `ExtraFlags`, `size`, `data0`, `data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`, `data12`, `data13`, `data14`, `data15`, `data16`, `data17`, `data18`, `data19`, `data20`, `data21`, `data22`, `data23`, `CustomData1`, `mingold`, `maxgold`, `StringId`, `ScriptName`) VALUES (180608, 0, 4134, 'Glyphs of Warding', 114, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+
+DELETE FROM `gameobject` WHERE `guid` in (111, 113, 115);
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES (111, 180606, 1, 1, -8138.58, 1525.42, 17.2999, 6.23083, 0, 0, -0.0118117, 0.99993, 10, 10);
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES (115, 180607, 1, 1, -8140.18, 1525.19, 17.4548, 6.23083, 0, 0, -0.0118117, 0.99993, 10, 10);
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES (113, 180608, 1, 1, -8138.68, 1525.46, 17.3969, 6.23083, 0, 0, -0.0118117, 0.99993, 10, 10);
+
+
+/*Setting an invisible wall as DisplayId for the gate clone object - in order to keep out players during RP story when gate is closed on the present (quest 8519)*/
+UPDATE gameobject_template SET type = 5, displayid = 6391, size = 2 WHERE entry = 176146; 
+UPDATE gameobject SET position_z = 6.3 WHERE guid = 66334; 
+/*Gate of AQ despawn after Gong Quest event done*/
+DELETE FROM `game_event_gameobject` WHERE  `guid` in (66334, 111, 113, 115);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (66334, -123);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (66334, -124);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (111, -123);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (111, -124);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (113, -123);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (113, -124);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (115, -123);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (115, -124);
