@@ -94,7 +94,7 @@ INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, d
 (8519,102,10,15380,300000,0,0,0,0x08,0,0,0,10,-8034.1147,1537.5312,2.6927361,5.829399585723876953,'summon 15380'), -- NPCFLags = 0
 (8519,103,10,15381,500000,0,0,0,6|0x08,0,0,0,102,-8028.71,1538.7001,2.6927342,3.700098037719726562,'summon 15381'), -- path2+run
 (8519,104,10,15382,300000,0,0,0,0x08,0,0,0,10,-8028.2134,1535.341,2.6927342,3.001966238021850585,'summon 15382'), -- NPCFLags = 0
-(8519,105,16,8493,0,0,0,0,0x08,0,0,0,0,0,0,0,0,'Play Music');
+(8519,105,16,8493,0,0,0,0,0,0,0,0,0,0,0,0,0,'Play Music');
 UPDATE quest_template SET StartScript = 8519 WHERE entry = 8519;
 -- Anachronos the Ancient 15381
 DELETE FROM creature_movement_template WHERE entry = 15381;
