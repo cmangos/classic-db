@@ -1645,7 +1645,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+555, 11484, 429, -20.562, 700.975, -24.6149, 3.4988, 7200, 7200, 0, 0), -- Residual Monstrosity
 (@CGUID+556, 11486, 429, 132.626, 625.913, -48.3836, 4.62512, 7200, 7200, 0, 0), -- Prince Tortheldrin
 (@CGUID+557, 11487, 429, 33.14, 575.552, -4.31052, 4.53786, 7200, 7200, 0, 0), -- Magister Kalendris
-(@CGUID+558, 11488, 429, -84.3469, 543.958, 28.6151, 0.838618, 7200, 7200, 0, 0), -- Illyanna Ravenoak
+(@CGUID+558, 11488, 429, -98.0222, 502.121, 28.6001, 0.0, 7200, 7200, 0, 0), -- Illyanna Ravenoak
 (@CGUID+559, 11489, 429, 14.3925, 475.848, -23.3028, 1.55431, 10800, 10800, 7, 1), -- Tendris Warpwood
 (@CGUID+560, 11490, 429, -34.983, -448, -37.8785, 0.191986, 1000000, 1000000, 0, 0), -- Zevrim Thornhoof
 (@CGUID+561, 11491, 429, -72.1719, -283.252, -57.7497, 4.08407, 1000000, 1000000, 0, 0), -- Old Ironbark
@@ -2595,7 +2595,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+0, 'DM North - Gordok Mastiff Patrol #1', 0, 0, 0, 1),
 (@GROUP_ID+1, 'DM North - Gordok Mastiff Patrol #2', 0, 0, 0, 1),
 (@GROUP_ID+2, 'DM North - Gordok Mastiff Patrol #3', 0, 0, 0, 1),
-(@GROUP_ID+3, 'DM North - Gordok Mastiff Patrol #4', 0, 0, 0, 1);
+(@GROUP_ID+3, 'DM North - Gordok Mastiff Patrol #4', 0, 0, 0, 1),
+(@GROUP_ID+4, 'DM West - Illyanna Ravenoak + Ferra', 0, 0, 0, 1);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -2614,19 +2615,24 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@GROUP_ID+3, @CGUID+759, 0),
 (@GROUP_ID+3, @CGUID+760, 1),
-(@GROUP_ID+3, @CGUID+761, 2);
+(@GROUP_ID+3, @CGUID+761, 2),
+
+(@GROUP_ID+4, @CGUID+558, 0),
+(@GROUP_ID+4, @CGUID+911, 1);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@GROUP_ID+0, 4, 4, 0, @PATH_ID+0, 2, 'DM North - Gordok Mastiff Patrol #1'),
 (@GROUP_ID+1, 4, 4, 0, @PATH_ID+1, 2, 'DM North - Gordok Mastiff Patrol #2'),
 (@GROUP_ID+2, 4, 4, 0, @PATH_ID+2, 2, 'DM North - Gordok Mastiff Patrol #3'),
-(@GROUP_ID+3, 3, 4, 0, @PATH_ID+3, 2, 'DM North - Gordok Mastiff Patrol #4');
+(@GROUP_ID+3, 3, 4, 0, @PATH_ID+3, 2, 'DM North - Gordok Mastiff Patrol #4'),
+(@GROUP_ID+4, 3, 3, 0, @PATH_ID+4, 2, 'DM West - Illyanna Ravenoak + Ferra');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@PATH_ID+0,'DM North - Gordok Mastiff Patrol #1'),
 (@PATH_ID+1,'DM North - Gordok Mastiff Patrol #2'),
 (@PATH_ID+2,'DM North - Gordok Mastiff Patrol #3'),
-(@PATH_ID+3,'DM North - Gordok Mastiff Patrol #4');
+(@PATH_ID+3,'DM North - Gordok Mastiff Patrol #4'),
+(@PATH_ID+4,'DM West - Illyanna Ravenoak + Ferra');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 (@PATH_ID+0, 1, 468.33, 3.67, -3.9162, 100, 0, 0, ''),
@@ -2712,7 +2718,20 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+3, 17, 843.37, 516.75, 36.41, 100, 0, 0, ''),
 (@PATH_ID+3, 18, 815.88, 521.46, 36.46, 100, 0, 0, ''),
 (@PATH_ID+3, 19, 791.38, 507.63, 36.37, 100, 0, 0, ''),
-(@PATH_ID+3, 20, 780.8722, 483.79593, 36.04934, 100, 0, 0, ''); -- incomplete path
+(@PATH_ID+3, 20, 780.8722, 483.79593, 36.04934, 100, 0, 0, ''), -- incomplete path
+
+(@PATH_ID+4, 1, -98.0222, 502.121, 28.6096, 100, 0, 0, ''),
+(@PATH_ID+4, 2, -100.348, 526.156, 28.6143, 100, 0, 0, ''),
+(@PATH_ID+4, 3, -84.3469, 543.958, 28.6151, 100, 0, 0, ''),
+(@PATH_ID+4, 4, -65.3083, 534.258, 28.6151, 100, 0, 0, ''),
+(@PATH_ID+4, 5, -56.6959, 550.353, 28.6071, 100, 0, 0, ''),
+(@PATH_ID+4, 6, -29.8931, 535.266, 28.6013, 100, 0, 0, ''),
+(@PATH_ID+4, 7, -56.6959, 550.353, 28.6071, 100, 0, 0, ''),
+(@PATH_ID+4, 8, -65.3083, 534.258, 28.6151, 100, 0, 0, ''),
+(@PATH_ID+4, 9, -84.3469, 543.958, 28.6151, 100, 0, 0, ''),
+(@PATH_ID+4, 10, -100.348, 526.156, 28.6143, 100, 0, 0, ''),
+(@PATH_ID+4, 11, -98.0222, 502.121, 28.6096, 100, 0, 0, ''),
+(@PATH_ID+4, 12, -74.7268, 481.869, 28.6047, 100, 0, 0, '');
 
 -- =========
 -- DBSCRIPTS
