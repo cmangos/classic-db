@@ -3540,14 +3540,14 @@ UPDATE `creature_template` SET `MinLootGold`='56', `MaxLootGold`='278' WHERE `en
 -- World Bosses (Expansion specific money?)
 UPDATE `creature` SET `spawntimesecsmin` = 900, `spawntimesecsmax` = 2700 WHERE `id` IN (1748,2784,3057,4949,4968,7937,7999,10181);
 -- classic 250000 - 500000, wotlk 1000000 to 1500000 suggestion.
-UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WHERE `entry`='1748'; -- Highlord Bolvar Fordragon (1785MinG) (2336MaxG) https://www.wowhead.com/tbc/npc=1748/highlord-bolvar-fordragon
-UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WHERE `entry`='2784'; -- King Magni Bronzebeard (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=2784/king-magni-bronzebeard
-UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WHERE `entry`='3057'; -- Cairne Bloodhoof (6205MinG) (8108MaxG) https://www.wowhead.com/tbc/npc=3057/cairne-bloodhoof
-UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WHERE `entry`='4949'; -- Thrall (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=4949/thrall
-UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WHERE `entry`='4968'; -- Lady Jaina Proudmoore (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=4968/lady-jaina-proudmoore
-UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WHERE `entry`='7937'; -- High Tinker Mekkatorque (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=7937/high-tinker-mekkatorque
-UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WHERE `entry`='7999'; -- Tyrande Whisperwind (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=7999/tyrande-whisperwind
-UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WHERE `entry`='10181'; -- Lady Sylvanas Windrunner (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=10181/lady-sylvanas-windrunner
+UPDATE `creature_template` SET `MinLootGold`='250000', `MaxLootGold`='500000' WHERE `entry`='1748'; -- Highlord Bolvar Fordragon (1785MinG) (2336MaxG) https://www.wowhead.com/tbc/npc=1748/highlord-bolvar-fordragon
+UPDATE `creature_template` SET `MinLootGold`='250000', `MaxLootGold`='500000' WHERE `entry`='2784'; -- King Magni Bronzebeard (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=2784/king-magni-bronzebeard
+UPDATE `creature_template` SET `MinLootGold`='250000', `MaxLootGold`='500000' WHERE `entry`='3057'; -- Cairne Bloodhoof (6205MinG) (8108MaxG) https://www.wowhead.com/tbc/npc=3057/cairne-bloodhoof
+UPDATE `creature_template` SET `MinLootGold`='250000', `MaxLootGold`='500000' WHERE `entry`='4949'; -- Thrall (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=4949/thrall
+UPDATE `creature_template` SET `MinLootGold`='250000', `MaxLootGold`='500000' WHERE `entry`='4968'; -- Lady Jaina Proudmoore (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=4968/lady-jaina-proudmoore
+UPDATE `creature_template` SET `MinLootGold`='250000', `MaxLootGold`='500000' WHERE `entry`='7937'; -- High Tinker Mekkatorque (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=7937/high-tinker-mekkatorque
+UPDATE `creature_template` SET `MinLootGold`='250000', `MaxLootGold`='500000' WHERE `entry`='7999'; -- Tyrande Whisperwind (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=7999/tyrande-whisperwind
+UPDATE `creature_template` SET `MinLootGold`='250000', `MaxLootGold`='500000' WHERE `entry`='10181'; -- Lady Sylvanas Windrunner (0MinG) (0MaxG) https://www.wowhead.com/tbc/npc=10181/lady-sylvanas-windrunner
 
 -- tbc+
 -- UPDATE `creature_template` SET `MinLootGold`='957', `MaxLootGold`='1288' WHERE `entry`='1410'; -- Firewing Bloodwarder (957MinG) (1288MaxG)
@@ -3577,13 +3577,13 @@ UPDATE `creature_template` SET `MinLootGold`='500000', `MaxLootGold`='750000' WH
 -- UPDATE `creature_template` SET `MinLevel` = 70, `MaxLevel` = 70 WHERE `entry` = 22593;
 
 -- diffing npcs with "strange" MeleeBaseAttackTime with tbcmangos (later udpate, all good)
-UPDATE `creature_template` SET `MaxLootGold`='541', WHERE `entry`='11803'; -- Twilight Keeper Exeter (137MinG)(184MaxG)
-UPDATE `creature_template` SET `MaxLootGold`='874', WHERE `entry`='11804'; -- Twilight Keeper Havunth (125MinG)(168MaxG)
-UPDATE `creature_template` SET `MaxLootGold`='903', WHERE `entry`='11880'; -- Twilight Avenger (131MinG)(842MaxG)
-UPDATE `creature_template` SET `MaxLootGold`='962', WHERE `entry`='11881'; -- Twilight Geolord (136MinG)(911MaxG)
-UPDATE `creature_template` SET `MaxLootGold`='786', WHERE `entry`='11882'; -- Twilight Stonecaller (119MinG)(161MaxG)
-UPDATE `creature_template` SET `MaxLootGold`='1040', WHERE `entry`='11883'; -- Twilight Master (120MinG)(549MaxG)
-UPDATE `creature_template` SET `MaxLootGold`='900', WHERE `entry`='14479'; -- Twilight Lord Everun (120MinG)(162MaxG)
-UPDATE `creature_template` SET `MinLootGold`='294', WHERE `entry`='15541'; -- Twilight Marauder Morna (567MinG)(745MaxG)
-UPDATE `creature_template` SET `MaxLootGold`='758', WHERE `entry`='15542'; -- Twilight Marauder (136MinG)(182MaxG)
+UPDATE `creature_template` SET `MaxLootGold`='541' WHERE `entry`='11803'; -- Twilight Keeper Exeter (137MinG)(184MaxG)
+UPDATE `creature_template` SET `MaxLootGold`='874' WHERE `entry`='11804'; -- Twilight Keeper Havunth (125MinG)(168MaxG)
+UPDATE `creature_template` SET `MaxLootGold`='903' WHERE `entry`='11880'; -- Twilight Avenger (131MinG)(842MaxG)
+UPDATE `creature_template` SET `MaxLootGold`='962' WHERE `entry`='11881'; -- Twilight Geolord (136MinG)(911MaxG)
+UPDATE `creature_template` SET `MaxLootGold`='786' WHERE `entry`='11882'; -- Twilight Stonecaller (119MinG)(161MaxG)
+UPDATE `creature_template` SET `MaxLootGold`='1040' WHERE `entry`='11883'; -- Twilight Master (120MinG)(549MaxG)
+UPDATE `creature_template` SET `MaxLootGold`='900' WHERE `entry`='14479'; -- Twilight Lord Everun (120MinG)(162MaxG)
+UPDATE `creature_template` SET `MinLootGold`='294' WHERE `entry`='15541'; -- Twilight Marauder Morna (567MinG)(745MaxG)
+UPDATE `creature_template` SET `MaxLootGold`='758' WHERE `entry`='15542'; -- Twilight Marauder (136MinG)(182MaxG)
 

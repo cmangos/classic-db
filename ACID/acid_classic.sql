@@ -3943,7 +3943,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rot Hide Mystic
 ('177301','1773','0','0','100','1025','7200','20900','35700','44500','0','0','11','3237','1','32','0','0','0','0','0','0','0','0','Rot Hide Mystic - Cast Curse of Thule'),
 ('177302','1773','14','0','100','1025','150','40','24400','32900','0','0','11','332','12','0','0','0','0','0','0','0','0','0','Rot Hide Mystic - Cast Healing Wave on Friendlies'),
-('177303','1773','6','0','10','0','0','0','0','0','0','0','53','1','0','0','0','0','0','0','0','0','0','0','Rot Hide Mystic  - START_RELAY_SCRIPT on Death (10% chance)'),
+('177303','1773','6','0','10','0','0','0','0','0','0','0','53','1','0','0','0','0','0','0','0','0','0','0','Rot Hide Mystic - START_RELAY_SCRIPT on Death (10% chance)'),
 -- Ferocious Grizzled Bear (1778) - NSR
 -- Moonrage Glutton (3.3.5a Official Data)
 ('177901','1779','0','0','100','1025','5700','10100','13100','21800','0','0','11','6958','4','0','0','0','0','0','0','0','0','0','Moonrage Glutton - Cast Blood Leech'),
@@ -4450,7 +4450,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Acolyte Dellis 5386
 -- Furen Longbeard 5413
 -- Wu Shen 5479
+('547901','5479','1','0','100','1','5000','5000','10000','10000','0','0','53','30000','0','0','0','0','0','0','0','0','0','0','Wu Shen - GENERIC - emote 1 OOC'),
 -- Ilsa Corbin 5480
+('548001','5480','1','0','100','1','10000','10000','10000','10000','0','0','53','30000','0','0','0','0','0','0','0','0','0','0','Ilsa Corbin - GENERIC - emote 1 OOC'),
 -- Stephen Ryback 5482
 -- Erika Tate 5483
 -- Brother Benjamin 5484
@@ -11595,9 +11597,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ziz Fizziks (4201) - NSR
 -- Gerenzo Wrenchwhistle 4202
 ('420201','4202','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Gerenzo Wrenchwhistle - Flee at 15% HP'),
--- Deepmoss Hatchling
-('426301','4263','2','0','30','1024','30','0','0','0','0','0','11','6536','0','0','1','1414','0','0','0','0','0','0','Deepmoss Hatchling - Cast Summon Deepmoss Matriarch, Emote at 30% HP'),
--- Deepmoss Matriarch (4264) - NSR
+-- Deepmoss Hatchling 4263
+('426301','4263','2','0','30','1024','30','0','0','0','0','0','11','6536','0','0','1','1414','0','0','0','0','0','0','Deepmoss Hatchling - (30% Chance) Cast Summon Deepmoss Matriarch, Emote at 30% HP'),
+-- Deepmoss Matriarch 4264
+('426401','4264','11','0','100','0','0','0','0','0','0','0','1','1415','0','0','0','0','0','0','0','0','0','0','Deepmoss Matriarch - Emote on Spawn'),
 -- Piznik (4276) - NSR
 -- Tharm
 ('431201','4312','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Tharm - Cast Summon Enraged Wyvern and Yell on Aggro'),
@@ -12020,11 +12023,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 -- ==========
 -- Teldrassil
+-- Darnassus
 -- ==========
 -- Treant (1964) - NSR
 -- Young Thistle Boar (1984) - NSR
 -- Thistle Boar (1985) - NSR
--- Webwood Spider (1986) - NSR
+-- Webwood Spider 1986
+('198601','1986','11','0','100','0','0','0','0','0','0','0','11','6752','0','34','0','0','0','0','0','0','0','0','Webwood Spider - Cast Weak Poison Proc OOC'),
 -- Grell (1988) - NSR
 -- Grellkin (1989) - NSR
 -- Tarindrella
@@ -12036,12 +12041,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Strigid Owl (1995) - NSR
 -- Strigid Screecher (1996) - NSR
 -- Strigid Hunter (1997) - NSR
--- Webwood Lurker
-('199801','1998','0','0','100','1025','0','10000','40000','45000','0','0','11','4167','1','0','0','0','0','0','0','0','0','0','Webwood Lurker - Cast Web'),
--- Webwood Venomfang (1999) - NSR
+-- Webwood Lurker 1998
+('199801','1998','11','0','100','0','0','0','0','0','0','0','11','11959','0','34','0','0','0','0','0','0','0','0','Webwood Lurker - Cast Poison Proc on Spawn'),
+-- Webwood Venomfang 1999
+('199901','1999','1','0','100','0','1000','1000','0','0','0','0','11','11959','0','32','0','0','0','0','0','0','0','0','Webwood Venomfang - Cast Poison Proc OOC'),
 -- Webwood Silkspinner
 ('200001','2000','9','0','100','1025','0','30','12000','17000','0','0','11','12023','1','0','0','0','0','0','0','0','0','0','Webwood Silkspinner - Cast Web'),
--- Giant Webwood Spider (2001) - NSR
+-- Giant Webwood Spider 2001
+('200101','2001','0','0','100','1025','3000','7000','13000','17000','0','0','11','11918','1','0','0','0','0','0','0','0','0','0','Giant Webwood Spider - Cast Poison'),
 -- Rascal Sprite 2002
 ('200201','2002','0','0','100','1025','5000','12000','30000','40000','0','0','11','6950','4','32','0','0','0','0','0','0','0','0','Rascal Sprite - Cast Faerie Fire'),
 -- Shadow Sprite 2003
@@ -12061,7 +12068,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('200801','2008','9','0','100','1025','0','5','7000','12000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Gnarlpine Warrior - Cast Strike'),
 ('200802','2008','8','0','100','0','5628','-1','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Gnarlpine Warrior - Emote on Gnarlpine Vengeance Spellhit'),
 -- Gnarlpine Shaman
-('200901','2009','14','0','100','1025','70','40','15000','21000','0','0','11','332','12','0','0','0','0','0','0','0','0','0','Gnarlpine Shaman - Cast Healing Wave on Friendlies'),
+('200901','2009','14','0','100','1025','70','40','15000','21000','0','0','11','332','12','0','0','0','0','0','0','0','0','0','Gnarlpine Shaman - Cast Healing Wave on Friendly Missing HP'),
 ('200902','2009','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Gnarlpine Shaman - Flee at 15% HP'),
 ('200903','2009','8','0','100','0','5628','-1','0','0','0','0','1','1191','0','0','0','0','0','0','0','0','0','0','Gnarlpine Warrior - Emote on Gnarlpine Vengeance Spellhit'),
 -- Gnarlpine Defender
@@ -12097,7 +12104,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('201901','2019','4','0','15','0','0','0','0','0','0','0','1','2231','2230','2229','0','0','0','0','0','0','0','0','Bloodfeather Fury - Say on Aggro'),
 ('201902','2019','2','0','100','1025','50','0','14000','18000','0','0','11','5515','0','0','0','0','0','0','0','0','0','0','Bloodfeather Fury - Cast Savagery at 50% HP'),
 ('201903','2019','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Bloodfeather Fury - Flee at 15% HP'),
- -- Bloodfeather Wind Witch
+-- Bloodfeather Wind Witch
 ('202001','2020','4','0','15','0','0','0','0','0','0','0','1','2231','2230','2229','0','0','0','0','0','0','0','0','Bloodfeather Wind Witch - Say on Aggro'),
 ('202002','2020','9','0','100','1025','0','5','11000','16000','0','0','11','6982','0','0','0','0','0','0','0','0','0','0','Bloodfeather Wind Witch - Cast Gust of Wind'),
 -- Bloodfeather Matriarch 2021
@@ -12210,7 +12217,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Narret Shadowgrove 3614
 -- Vesprystus
 ('383801','3838','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','4566','0','0','0','0','0','0','Vesprystus - Cast Summon Enraged Hippogryph on Aggro'),
--- Darnassus Sentinel (4262) - guard_darnassus
+-- Darnassus Sentinel 4262 - guard_darnassus
 -- Nyoma 4265
 -- Danlyia 4266
 -- Darnassian Protector 4423
@@ -12221,7 +12228,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vorlus Vilehoof 6128
 -- Zarrin 6286
 -- Radnaal Maneweaver 6287
--- Innkeeper Salienne  - npc_innkeeper
+-- Innkeeper Salienne - npc_innkeeper
 ('673501','6735','22','0','100','1','34','546','0','0','0','0','5','94','0','0','15','8357','6','0','1','10787','0','0','Innkeeper Saelienne - Emote and Gives Quest Credit on Received Emote'),
 -- Innkeeper Keldamyr (6736) - npc_innkeeper
 -- Porthannius 6780
@@ -12261,16 +12268,20 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gnarlpine Instigator 11690
 -- Orenthil Whisperwind 11942
 -- Shadowglen Sentinel 12160
+('1216001','12160','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Shadowglen Sentinel - Cast Invisibility and Stealth Detection OOC'),
 -- Sentinel Shaya (12429) - npc_garments_of_quests
--- Huntress Skymane
-('1437801','14378','28','0','100','1025','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
-('1437802','14378','0','0','100','1025','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Hooked Net'),
--- Huntress Ravenoak
-('1437901','14379','28','0','100','1025','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
-('1437902','14379','0','0','100','1025','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Hooked Net'),
--- Huntress Leafrunner
-('1438001','14380','28','0','100','1025','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
-('1438002','14380','0','0','100','1025','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Hooked Net'),
+-- Huntress Skymane 14378
+('1437801','14378','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Invisibility and Stealth Detection OOC'),
+('1437802','14378','28','0','100','1025','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1437803','14378','0','0','100','1025','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Hooked Net'),
+-- Huntress Ravenoak 14379
+('1437901','14379','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Invisibility and Stealth Detection OOC'),
+('1437902','14379','28','0','100','1025','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1437903','14379','0','0','100','1025','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Hooked Net'),
+-- Huntress Leafrunner 14380
+('1438001','14380','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Invisibility and Stealth Detection OOC'),
+('1438002','14380','28','0','100','1025','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1438003','14380','0','0','100','1025','0','3000','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Hooked Net'),
 -- Uruson
 ('1442801','14428','0','0','100','1025','3000','6000','30000','38000','0','0','11','15971','0','0','0','0','0','0','0','0','0','0','Uruson - Cast Demoralizing Roar'),
 -- Grimmaw 14429
@@ -13361,7 +13372,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('744901','7449','0','0','75','1025','5000','15000','30000','45000','0','0','11','3132','1','0','0','0','0','0','0','0','0','0','Chillwind Ravager - Cast Chilling Breath'),
 ('744902','7449','2','0','100','1024','25','0','0','0','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Chillwind Ravager - Cast Enrage at 25% HP'),
 -- Ragged Owlbeast 7450
-('745001','7450','9','0','100','1025','0','5','3000','6000','0','0','11','15848','1','32','0','0','0','0','0','0','0','0','Ragged Owlbeast - Cast Festering Rash'),
+('745001','7450','0','0','100','1025','7000','21000','25000','30000','0','0','11','15848','1','32','0','0','0','0','0','0','0','0','Ragged Owlbeast - Cast Festering Rash'),
 -- Raging Owlbeast 7451
 ('745101','7451','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Raging Owlbeast - Cast Enrage at 30% HP'),
 ('745102','7451','9','0','100','1025','0','5','13000','18000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Raging Owlbeast - Cast Rend'),
@@ -17303,9 +17314,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blackwing Spellbinder
 ('1245701','12457','9','0','100','1025','0','30','7000','11000','0','0','11','22275','4','0','0','0','0','0','0','0','0','0','Blackwing Spellbinder - Cast Flamestrike'),
 ('1245702','12457','0','0','100','1025','6000','9000','11000','15000','0','0','11','22274','5','32','0','0','0','0','0','0','0','0','Blackwing Spellbinder - Cast Greater Polymorph'),
--- Blackwing Taskmaster
-('1245801','12458','9','0','100','1025','0','20','5000','8000','0','0','11','17289','4','0','0','0','0','0','0','0','0','0','Blackwing Taskmaster - Cast Shadow Shock'),
-('1245802','12458','0','0','100','1025','11000','19000','16000','21000','0','0','11','22458','0','0','0','0','0','0','0','0','0','0','Blackwing Taskmaster - Cast Healing Circle'),
+-- Blackwing Taskmaster 12458
+('1245801','12458','0','0','100','1025','4000','8000','3000','9000','0','0','11','17289','4','512','0','0','0','0','0','0','0','0','Blackwing Taskmaster - Cast Shadow Shock'),
+('1245802','12458','0','0','100','1025','0','15000','18000','24000','0','0','11','22458','15','0','0','0','0','0','0','0','0','0','Blackwing Taskmaster - Cast Healing Circle'),
 -- Blackwing Warlock 12459
 ('1245901','12459','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Blackwing Warlock - Enable Range Mode on Aggro'),
 ('1245902','12459','6','0','100','0','0','0','0','0','0','0','45','0','40','0','0','0','0','0','0','0','0','0','Blackwing Warlock - Send AI Event 0 on Death'),
@@ -19067,7 +19078,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hare (5951) - Critter
 -- School of Fish (6145) - Critter
 -- Mouse 6271 - Critter
- -- Cat (6368) - Critter
+-- Cat (6368) - Critter
 -- Huge Toad (6653) - Critter
 -- Crab 6827 - Critter
 -- A 7186 - Critter
