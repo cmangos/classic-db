@@ -4,6 +4,9 @@ on:
   schedule:
     # every day at 6am
     - cron:  '0 6 * * *'
+  push:
+    branches:
+      - "*"
 
 env:
   MYSQL_BIN_NAME: "mysql-8.0.28-winx64"
@@ -28,6 +31,7 @@ jobs:
           $projectNames = "${{github.repository}}".Split("/")[1]
           $expansion="${projectNames}".Split("-")[0]
           echo "LAST_BACKUP_ADR=https://github.com/cmangos/${expansion}-db/releases/download/latest/${expansion}-all-backups.tar.gz" >> $env:GITHUB_ENV
+          echo "BOTS_REPO=cmangos/playerbots" >> $env:GITHUB_ENV
           echo "CORE_REPO=cmangos/mangos-${expansion}" >> $env:GITHUB_ENV
           echo "CORE_FOLDER=${{github.workspace}}\mangos-${expansion}" >> $env:GITHUB_ENV
           echo "DB_FOLDER=${{github.workspace}}\${expansion}-db" >> $env:GITHUB_ENV
@@ -50,6 +54,16 @@ jobs:
         with:
           repository: ${{env.CORE_REPO}}
           path: ${{env.CORE_FOLDER}}
+
+      - name: Create modules folder
+        run: |
+          mkdir -p ${{env.CORE_FOLDER}}/src/modules
+
+      - name: Checkout PlayerBots
+        uses: actions/checkout@v2
+        with:
+          repository: ${{env.BOTS_REPO}}
+          path: ${{env.CORE_FOLDER}}/src/modules/PlayerBots
 
       - name: Cache MySQL Official .zip
         uses: actions/cache@v2
@@ -225,7 +239,7 @@ jobs:
       - name: Upload Snapshot
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.PUSH_RELEASE_TOKEN }}"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: false
           title: "Development Build(${{ steps.date.outputs.date }})"
