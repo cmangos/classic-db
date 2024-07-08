@@ -8808,8 +8808,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('309901','3099','9','0','100','1024','0','20','0','0','0','0','11','3385','0','0','0','0','0','0','0','0','0','0','Dire Mottled Boar - Cast Boar Charge'),
 -- Elder Mottled Boar
 ('310001','3100','9','0','100','1024','0','20','0','0','0','0','11','3385','0','0','0','0','0','0','0','0','0','0','Elder Mottled Boar - Cast Boar Charge'),
--- Vile Familiar 3101
-('310101','3101','0','0','50','1025','15000','40000','35000','45000','0','0','11','11921','1','0','0','0','0','0','0','0','0','0','Vile Familiar - Cast Fireball'),
+-- Vile Familiar 3101 - spell_list
+-- Felstalker (3102) - NSR
 -- Makrura Clacker
 ('310301','3103','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Makrura Clacker - Flee at 15% HP'),
 -- Makrura Shellhide
