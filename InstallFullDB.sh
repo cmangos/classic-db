@@ -1470,10 +1470,10 @@ function apply_dev_content
 # Apply playerbot sql files
 function apply_playerbots_db
 {
-  # if [ "$PLAYERBOTS_DB" != "YES" ]; then
-  #   true
-  #   return
-  # fi
+  if [ "$PLAYERBOTS_DB" != "YES" ]; then
+    true
+    return
+  fi
   
   BOT_EXP_PREFIX="classic";
   if [ "$EXPANSION" = "TBC" ]; then
@@ -1902,10 +1902,10 @@ function create_and_fill_logs_db()
 
 function create_and_fill_playerbots_db()
 {
-  # if [ "$PLAYERBOTS_DB" != "YES" ]; then
-  #   true
-  #   return
-  # fi
+  if [ "$PLAYERBOTS_DB" != "YES" ]; then
+    true
+    return
+  fi
 
   if [[ "$1" = true ]]; then
     clear
@@ -3020,6 +3020,7 @@ set_sql_queries
 
 # check if user just want fast db installation
 if [[ "$1" = "-InstallAll" ]]; then
+  PLAYERBOTS_DB="YES"
   if ! auto_script_create_all $2 $3 $4; then
     exit 1
   fi
