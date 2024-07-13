@@ -4,9 +4,6 @@ on:
   schedule:
     # every day at 6am
     - cron:  '0 6 * * *'
-  push:
-    branches:
-      - "*"
 
 env:
   MYSQL_BIN_NAME: "mysql-8.0.28-winx64"
@@ -234,12 +231,12 @@ jobs:
 
       - name: Get Current Date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "date=$(date + '%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: Upload Snapshot
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          repo_token: "${{ secrets.PUSH_RELEASE_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: false
           title: "Development Build(${{ steps.date.outputs.date }})"
