@@ -308,6 +308,14 @@ REPLACE INTO `creature_spawn_entry` (`guid`, `entry`) VALUES (42970, 11880),(429
 -- Delete duplicate Twilight Avenger/Geolord 9
 DELETE FROM `creature` WHERE `guid`=43041;
 
+-- Remove unneeded creature_addon
+-- Creature (GUID: 43036) does not exist but has a record in `creature_addon`
+-- Creature (GUID: 43041) does not exist but has a record in `creature_addon`
+-- SELECT * FROM creature_addon where guid IN (SELECT guid FROM creature where id IN (11880,11881,11882,11803,11804,11883)) and `stand_state` = 0 and `emote` = 0;
+DELETE FROM `creature_addon` WHERE `guid` IN (42999,43002,43004,43005,43006,43007,43008,43009,43010,43011,43012,43013,43014,43015,43016,43017,43018,43019,43021,
+43022,43023,43026,43027,43029,43031,43032,43033,43034,43036,43037,43038,43039,43041,43042,43043);
+REPLACE INTO `creature_template_addon` (`entry`, `sheath_state`) VALUES (11881, 1);
+
 -- Twilight Avenger/Geolord 10
 UPDATE `creature` SET `id` = 0, `spawndist`=15,`MovementType`=1,`position_x`=-7052.05,`position_y`=1118.47,`position_z`=4.94603,`orientation`=0 WHERE `guid`=42997;
 REPLACE INTO `creature_spawn_entry` (`guid`, `entry`) VALUES (42997, 11880),(42997, 11881);
