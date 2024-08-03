@@ -19,7 +19,32 @@ UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` 
 -- Bristleback Shaman 2953 - https://www.wowhead.com/classic/npc=2953/bristleback-shaman
 UPDATE `creature_template` SET `SpellList` = 295301, `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 2953;
 -- Bristleback Battleboar 2954 - https://www.wowhead.com/classic/npc=2954/bristleback-battleboar
-UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 2954;
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SkinningLootId` = 0, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 2954;
+-- Plainstrider 2955 - https://www.wowhead.com/tbc/npc=2955/plainstrider
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SkinningLootId` = 0, `SpeedWalk` = (1.66667 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 2955;
+-- Adult Plainstrider 2956 - https://www.wowhead.com/tbc/npc=2956/adult-plainstrider
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (1.66667 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 2956;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 2956 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 2956 AND `item` = 2318; -- Light Leather
+-- Elder Plainstrider 2957 - https://www.wowhead.com/wotlk/npc=2957/elder-plainstrider
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (1.66667 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 2957;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 2957 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 2957 AND `item` = 2318; -- Light Leather
+-- Prairie Wolf 2958
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 2958;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 2958 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 2958 AND `item` = 2318; -- Light Leather
+-- Prairie Stalker 2959
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 2959;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 2959 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 2959 AND `item` = 2318; -- Light Leather
+-- Prairie Wolf Alpha 2960
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 2960;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 2960 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 2960 AND `item` = 2318; -- Light Leather
+DELETE FROM `creature_loot_template` WHERE `item` IN (117,118,159,1210,2070,2589,4536) AND `entry` = 2960;
+-- Mountain Cougar 2961
+UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SkinningLootId` = 0, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 2961;
 -- Windfury Harpy 2962 - https://www.wowhead.com/classic/npc=2962/windfury-harpy
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (3.47222 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 2962;
 -- Windfury Wind Witch 2963 - https://www.wowhead.com/classic/npc=2963/windfury-wind-witch
@@ -63,6 +88,8 @@ UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` 
 UPDATE `creature_spell_list` SET `InitialMin` = 2000, `InitialMax` = 21000, `RepeatMax` = 24000 WHERE `Id` = 299001 AND `Position` = 0; -- Mulgore - Bael'dun Appraiser - Lesser Heal on Friendly Missing 50% including self
 -- Flatland Cougar 3035 - https://www.wowhead.com/classic/npc=3035/flatland-cougar
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 3035;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 3035 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 3035 AND `item` = 2318; -- Light Leather
 -- Supervisor Fizsprocket 3051 - https://www.wowhead.com/classic/npc=3051/supervisor-fizsprocket
 UPDATE `creature` SET `spawndist` = 3, `MovementType` = 1 WHERE `id` = 3051;
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 3051;
@@ -82,6 +109,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 DELETE FROM `creature_loot_template` WHERE `entry` = 3056 AND `item` = 4854; -- NPC LOOT (Rare NPC Loot) - Ghost Howl - Special Items
 -- Arra'chea 3058 - https://www.wowhead.com/classic/npc=3058/arrachea
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 3058;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 3058 AND `item` = 2318; -- Light Leather
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 35 WHERE `entry` = 3058 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 5 WHERE `entry` = 3058 AND `item` = 783; -- Light Hide
 -- Lanka Farshot 3061
 UPDATE `creature_template` SET `SpellList` = 306101, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 3061;
 -- Mazzranache 3068 - https://www.wowhead.com/classic/npc=3068/mazzranache - https://www.youtube.com/watch?v=b8CWNQZ1RaQ&t=15s
@@ -100,6 +130,9 @@ UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` 
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 3232;
 -- Flatland Prowler 3566 - https://www.wowhead.com/classic/npc=3566/flatland-prowler
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6 / 7) WHERE `entry` = 3566;
+DELETE FROM `creature_loot_template` WHERE `item` IN (117,118,159,2589) AND `entry` = 3566;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 3566 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 3566 AND `item` = 2318; -- Light Leather
 -- Sister Hatelash 5785 - https://www.wowhead.com/classic/npc=5785/sister-hatelash
 UPDATE `creature_template` SET `SpellList` = 578501, `SpeedWalk` = (3.47222 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 5785;
 DELETE FROM `creature` WHERE `id` = 5785 AND `guid` IN (26051,26052); -- 26055
@@ -149,6 +182,8 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 10 WHERE `entry` = 5787 AND `item` = 60002; -- NPC LOOT (Grey World Drop) - (Item Levels: 11-15) - (NPC Levels: 11-15) (70% - ~45%)
 -- The Rake 5807 - https://www.wowhead.com/classic/npc=5807/the-rake - respawntime seems strange.
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (10 / 7), `MovementType` = 2 WHERE `entry` = 5807;
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 60 WHERE `entry` = 5807 AND `item` = 2934; -- Ruined Leather Scraps
+UPDATE `skinning_loot_template` SET `ChanceOrQuestChance` = 40 WHERE `entry` = 5807 AND `item` = 2318; -- Light Leather
 -- https://web.archive.org/web/20060718112125/http://wow.allakhazam.com/db/mob.html?wmob=5807
 UPDATE `reference_loot_template` SET `ChanceOrQuestChance` = 0, `groupid` = 1 WHERE `entry` = 65110 AND `item` = 17922; -- Lionfur Armor
 DELETE FROM `reference_loot_template` WHERE `entry` = 65110 AND `item` IN (60103);
@@ -177,11 +212,15 @@ UPDATE `creature` SET `spawntimesecsmin` = 240, `spawntimesecsmax` = 360 WHERE `
 2952, -- Bristleback Quilboar 250	250
 2953, -- Bristleback Shaman 250	250
 2954, -- Bristleback Battleboar 250	250
+2956, -- Adult Plainstrider 250	250
+2957, -- Elder Plainstrider 250	250
+2958, -- Prairie Wolf 250 250
+2959, -- Prairie Stalker 250 250
+2960, -- Prairie Wolf Alpha 250 250
 2962, -- Windfury Harpy 250	250
 2963, -- Windfury Wind Witch 250	250
 2964, -- Windfury Sorceress 250	250
 2965, -- Windfury Matriarch 250	250
-2966, -- Battleboar 155	155
 2969, -- Wiry Swoop 250	250
 2970, -- Swoop 250	250
 2971, -- Taloned Swoop 250	250
@@ -198,6 +237,11 @@ UPDATE `creature` SET `spawntimesecsmin` = 240, `spawntimesecsmax` = 360 WHERE `
 3232, -- Bristleback Interloper 250	250
 3566, -- Flatland Prowler 250	250
 8554); -- Chief Sharptusk Thornmantle 250	250
+
+UPDATE `creature` SET `spawntimesecsmin` = 180, `spawntimesecsmax` = 240 WHERE `id` IN (
+2955, -- Plainstrider 155 155
+2961, -- Mountain Cougar 155 155
+2966); -- Battleboar 155	155
 
 -- Kodo Calf 2972
 -- Kodo Bull 2973

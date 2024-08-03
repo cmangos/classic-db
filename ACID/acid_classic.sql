@@ -10410,7 +10410,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Venture Co. Laborer
 ('297601','2976','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Venture Co. Laborer - Flee at 15% HP'),
 -- Venture Co. Taskmaster 2977
-('297701','2977','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Venture Co. Taskmaster - Flee at 15% HP'),
+('297701','2977','11','0','100','0','0','0','0','0','0','0','11','5680','0','34','0','0','0','0','0','0','0','0','Venture Co. Taskmaster - Cast Torch Burn on Spawn'),
+('297702','2977','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Venture Co. Taskmaster - Flee at 15% HP'),
 -- Venture Co. Worker
 ('297801','2978','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Venture Co. Worker - Flee at 15% HP'),
 -- Venture Co. Supervisor 2979
@@ -10605,7 +10606,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lhara (14846) - NSR
 -- Professor Thaddeus Paleo (14847) - NSR
 -- Darkmoon Faire Carnie (14849) - NSR
--- FlikFlik 14860
+-- Flik 14860
 ('1486001','14860','1','0','100','1','50000','90000','50000','300000','0','0','54','0','0','899','0','0','0','0','0','0','0','0','Flik - Random Say OOC'),
 -- Khaz Modan Ram (14864) - NSR
 -- Felinni (14865) - NSR
