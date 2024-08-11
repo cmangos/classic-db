@@ -443,14 +443,14 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (14283, 0, 0, 1, 0, 0, '18950'), -- Stormpike Owl
 (14284, 0, 0, 1, 0, 0, '12782'), -- Stormpike Battleguard
 (14285, 0, 0, 1, 0, 0, '12782'), -- Frostwolf Battleguard
-(14762, 0, 0, 1, 0, 0, '45828'), -- Dun Baldar North Marshal
-(14763, 0, 0, 1, 0, 0, '45829'), -- Dun Baldar South Marshal
-(14764, 0, 0, 1, 0, 0, '45831'), -- Icewing Marshal
-(14765, 0, 0, 1, 0, 0, '45830'), -- Stonehearth Marshal
-(14772, 0, 0, 1, 0, 0, '45826'), -- East Frostwolf Warmaster
-(14773, 0, 0, 1, 0, 0, '45822'), -- Iceblood Warmaster
-(14776, 0, 0, 1, 0, 0, '45823'), -- Tower Point Warmaster
-(14777, 0, 0, 1, 0, 0, '45824'); -- West Frostwolf Warmaster
+(14762, 0, 0, 1, 0, 0, ''), -- Dun Baldar North Marshal (Adjusted for classic)
+(14763, 0, 0, 1, 0, 0, ''), -- Dun Baldar South Marshal (Adjusted for classic)
+(14764, 0, 0, 1, 0, 0, ''), -- Icewing Marshal (Adjusted for classic)
+(14765, 0, 0, 1, 0, 0, ''), -- Stonehearth Marshal (Adjusted for classic)
+(14772, 0, 0, 1, 0, 0, ''), -- East Frostwolf Warmaster (Adjusted for classic)
+(14773, 0, 0, 1, 0, 0, ''), -- Iceblood Warmaster (Adjusted for classic)
+(14776, 0, 0, 1, 0, 0, ''), -- Tower Point Warmaster (Adjusted for classic)
+(14777, 0, 0, 1, 0, 0, ''); -- West Frostwolf Warmaster (Adjusted for classic)
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+642, @CGUID+387, 515), -- Stormpike Owl -> Stormpike Guardsman
@@ -1846,7 +1846,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1786, 11840, 30, -1485.83, -426.824, 70.3539, 5.26827, 300, 300, 2, 1), -- Wildpaw Alpha
 (@CGUID+1787, 11840, 30, -1550.894, -361.3882, 66.58133, 4.401934, 300, 300, 2, 1), -- Wildpaw Alpha
 (@CGUID+1788, 11840, 30, -1538.105, -358.4388, 64.60719, 0.359198, 300, 300, 2, 1), -- Wildpaw Alpha
--- (@CGUID+1789 - 1799
+-- (@CGUID+1789 - 1793
+(@CGUID+1794, 12051, 30, -707.419983, -439.816010, 85.974800, 0, 300, 300, 0, 0), -- Frostwolf Legionnaire Patrol (Either one big Path or split in two for 1993,1992)
+(@CGUID+1795, 12051, 30, -708.989990, -437.691010, 86.214500, 0, 300, 300, 0, 0), -- Frostwolf Legionnaire Patrol (prolly starts in frostwolf village though)
+(@CGUID+1796, 12051, 30, -1267.32, -587.066, 54.8743, 1.13446, 300, 300, 0, 0), -- Frostwolf Legionnaire
+(@CGUID+1797, 12051, 30, -1254.03, -587.41, 55.3577, 1.88496, 300, 300, 0, 0), -- Frostwolf Legionnaire
+(@CGUID+1798, 12051, 30, -1254.31, -629.738, 52.9046, 0.558505, 300, 300, 0, 0), -- Frostwolf Legionnaire
+(@CGUID+1799, 12051, 30, -1238.08, -641.841, 53.8959, 1.67552, 300, 300, 0, 0), -- Frostwolf Legionnaire
 -- Alliance Side
 -- (@CGUID+1800 - 1810
 (@CGUID+1811, 10986, 30, 267.8507, -313.2709, -18.41218, 3.425254, 300, 300, 2, 1), -- Snowblind Harpy
@@ -1908,16 +1914,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1987, 13778, 30, 704.947, -18.67008, 91.93361, 2.670354, 300, 300, 0, 0), -- PvP Tower Credit Marker
 (@CGUID+1988, 13778, 30, 704.5838, -18.19016, 91.8703, 6.265732, 300, 300, 0, 0), -- PvP Tower Credit Marker
 (@CGUID+1989, 13796, 30, 704.1282, -17.59928, 91.78996, 3.839724, 300, 300, 0, 0), -- PvP Mine Credit Marker
-(@CGUID+1991, 23472, 30, 5190.468, 2906.853, 410.2329, 5.375614, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC)
-(@CGUID+1992, 19871, 30, 5276.769, 3051.355, 438.5827, 3.211406, 300, 300, 0, 0), -- World Trigger (Not Immune NPC)
-(@CGUID+1993, 19871, 30, 5159.208, 2938.436, 439.9297, 0.6457718, 300, 300, 0, 0), -- World Trigger (Not Immune NPC)
+-- (@CGUID+1991, 23472, 30, 5190.468, 2906.853, 410.2329, 5.375614, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC) (Adjusted for classic)
+-- (@CGUID+1992, 19871, 30, 5276.769, 3051.355, 438.5827, 3.211406, 300, 300, 0, 0), -- World Trigger (Not Immune NPC) (Adjusted for classic)
+-- (@CGUID+1993, 19871, 30, 5159.208, 2938.436, 439.9297, 0.6457718, 300, 300, 0, 0), -- World Trigger (Not Immune NPC) (Adjusted for classic)
 (@CGUID+1994, 15214, 30, 1623.939, -96.56581, 12.50112, 4.485496, 300, 300, 0, 0), -- Invisible Stalker
-(@CGUID+1995, 23472, 30, 1441.079, -240.5939, 35.34715, 4.031711, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC)
-(@CGUID+1996, 23472, 30, 1193.757, 69.94054, 58.1295, 2.495821, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC)
+-- (@CGUID+1995, 23472, 30, 1441.079, -240.5939, 35.34715, 4.031711, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC) (Adjusted for classic)
+-- (@CGUID+1996, 23472, 30, 1193.757, 69.94054, 58.1295, 2.495821, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC) (Adjusted for classic)
 (@CGUID+1997, 15214, 30, 1230.2, -67.94097, 83.77162, 4.08407, 300, 300, 0, 0), -- Invisible Stalker
-(@CGUID+1998, 23472, 30, 1043.523, -87.85069, 87.19695, 2.96706, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC)
-(@CGUID+1999, 23472, 30, 1227.886, -235.4575, 60.11116, 3.403392, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC)
-(@CGUID+2000, 22515, 30, 711.0102, -13.61388, 50.21867, 4.276057, 300, 300, 0, 0), -- World Trigger
+-- (@CGUID+1998, 23472, 30, 1043.523, -87.85069, 87.19695, 2.96706, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC) (Adjusted for classic)
+-- (@CGUID+1999, 23472, 30, 1227.886, -235.4575, 60.11116, 3.403392, 300, 300, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC) (Adjusted for classic)
+-- (@CGUID+2000, 22515, 30, 711.0102, -13.61388, 50.21867, 4.276057, 300, 300, 0, 0), -- World Trigger
 (@CGUID+2001, 14848, 30, 699.2739, -17.63607, 90.39349, 3.473205, 300, 300, 0, 0), -- Herald
 (@CGUID+2002, 14848, 30, -1357.466, -253.098, 120.9885, 5.131268, 300, 300, 0, 0), -- Herald
 (@CGUID+2003, 14848, 30, -539.2852, -168.2434, 115.0156, 1.53589, 300, 300, 2, 1), -- Herald
@@ -2021,7 +2027,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+3020, 13297, 30, 75.567902, -392.531006, 45.155300, 0, 604800, 604800, 0, 4), -- Lieutenant Stouthandle
 (@CGUID+3021, 13298, 30, 14.7054, -278.976, 16.1597, 6.10865, 604800, 604800, 0, 0), -- Lieutenant Greywand
 (@CGUID+3022, 13299, 30, 173.699997, -403.769012, 42.668301, 0, 604800, 604800, 0, 4), -- Lieutenant Lonadin
-(@CGUID+3023, 13300, 30, -110.296997, -541.583008, 45.447300, 0, 604800, 604800, 0, 4); -- Lieutenant Mancuso
+(@CGUID+3023, 13300, 30, -110.296997, -541.583008, 45.447300, 0, 604800, 604800, 0, 4), -- Lieutenant Mancuso
 (@CGUID+3024, 13318, 30, 595.380981, -87.928398, 39.291000, 0, 604800, 604800, 0, 4), -- Commander Mortimer
 (@CGUID+3025, 13319, 30, 672.408, -286.799, 29.7551, 3.61283, 604800, 604800, 0, 0), -- Commander Duffy
 (@CGUID+3026, 13320, 30, 214.099, -373.896, 56.4709, 2.26893, 604800, 604800, 0, 0), -- Commander Karl Philips
@@ -2533,7 +2539,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+189, 179446, 30, -1297.869384765625, -266.7623291015625, 127.7958297729492187, 0.069813162088394165, 0, 0, 0.034899495542049407, 0.999390840530395507, 0, 0), -- [PH] Alliance H1 Tower Pre-Banner BIG (180423)
 (@OGUID+190, 180418, 30, -202.6107,-112.778,78.48716,-1.151916, 0, 0, 0, 0, 0, 0), -- Snowfall Banner
 (@OGUID+191, 180424, 30, 780.487, -493.024, 99.9553, 3.0976, 0, 0, 0, 0, 60, 60), -- Alterac Valley Gate
-(@OGUID+192, 180424, 30, -1375.19, -538.981, 55.2824, 0.72178, 0, 0, 0, 0, 60, 60), -- Alterac Valley Gate
+(@OGUID+192, 180424, 30, -870.94396972656250000000, -558.57800292968750000000, 57.26279830932617000000, 2.16421008110046400000, 0, 0, 0.8829470276832581, 0.4694730043411255, 60, 60), -- Alterac Valley Gate (Adjusted for classic)
 (@OGUID+193, 180654, 30, 713.369, -457.524, 68.5122, 0.173563, 0, 0, 0, 0, 600, 600), -- Hardpacked Snowdrift
 (@OGUID+194, 180654, 30, 663.165, -258.335, 14.6348, 4.77835, 0, 0, 0, 0, 600, 600), -- Hardpacked Snowdrift
 (@OGUID+195, 180654, 30, 383.217, -370.09, -18.2239, 5.40746, 0, 0, 0, 0, 600, 600), -- Hardpacked Snowdrift
