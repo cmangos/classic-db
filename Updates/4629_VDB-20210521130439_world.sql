@@ -77,7 +77,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (329601, 1, 8599, 0, 5364, 0, 0, 100, 1, 0, 0, 600000, 600000, 'Orgrimmar - Orgrimmar Grunt - Enrage below 30');
 DELETE FROM `creature_spell_list_entry` WHERE `Id` = 329601;
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(329601, 'Orgrimmar - Orgrimmar Grunt 2641', 0, 0);
+(329601, 'Orgrimmar - Orgrimmar Grunt 3296', 0, 0);
 DELETE FROM `creature_template_spells` WHERE `entry` = 3296;
 
 -- Nether Sorceress is using wrong spell id for Lash of Pain.
