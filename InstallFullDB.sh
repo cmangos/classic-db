@@ -3020,6 +3020,7 @@ set_sql_queries
 
 # check if user just want fast db installation
 if [[ "$1" = "-InstallAll" ]]; then
+  PLAYERBOTS_DB="YES"
   if ! auto_script_create_all $2 $3 $4; then
     exit 1
   fi

@@ -28,6 +28,7 @@ jobs:
           $projectNames = "${{github.repository}}".Split("/")[1]
           $expansion="${projectNames}".Split("-")[0]
           echo "LAST_BACKUP_ADR=https://github.com/cmangos/${expansion}-db/releases/download/latest/${expansion}-all-backups.tar.gz" >> $env:GITHUB_ENV
+          echo "BOTS_REPO=cmangos/playerbots" >> $env:GITHUB_ENV
           echo "CORE_REPO=cmangos/mangos-${expansion}" >> $env:GITHUB_ENV
           echo "CORE_FOLDER=${{github.workspace}}\mangos-${expansion}" >> $env:GITHUB_ENV
           echo "DB_FOLDER=${{github.workspace}}\${expansion}-db" >> $env:GITHUB_ENV
@@ -50,6 +51,16 @@ jobs:
         with:
           repository: ${{env.CORE_REPO}}
           path: ${{env.CORE_FOLDER}}
+
+      - name: Create modules folder
+        run: |
+          mkdir -p ${{env.CORE_FOLDER}}/src/modules
+
+      - name: Checkout PlayerBots
+        uses: actions/checkout@v2
+        with:
+          repository: ${{env.BOTS_REPO}}
+          path: ${{env.CORE_FOLDER}}/src/modules/PlayerBots
 
       - name: Cache MySQL Official .zip
         uses: actions/cache@v2
@@ -220,7 +231,7 @@ jobs:
 
       - name: Get Current Date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "date=$(date + '%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: Upload Snapshot
         uses: "marvinpinto/action-automatic-releases@latest"
