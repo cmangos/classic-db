@@ -75,6 +75,7 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`positionx`,`positiony
 -- 0x204CB0002008040000055E000034BDE4 .go xyz -7025.515 -3491.132 9.274621
 
 -- Pathing for Greater Firebird Entry: 8207
+UPDATE `creature_template` SET `SpeedWalk` = 1.4 WHERE `entry` = 8207; -- 2.17
 SET @NPC := 8207;
 UPDATE `creature` SET `spawndist`=0,`movementtype`=2,`position_x`=-7710.758,`position_y`=-3956.6245,`position_z`=9.728199 WHERE `guid`=51827;
 DELETE FROM `creature_movement_template` WHERE `entry`=@NPC;
