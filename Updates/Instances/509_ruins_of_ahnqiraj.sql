@@ -1050,6 +1050,13 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+275, @CGUID+276, 1155); -- Spitting Scarab -> Spitting Scarab
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
+(15385, 509, 15341, 1, 0), -- Colonel Zerran -> General Rajaxx
+(15386, 509, 15341, 1, 0), -- Major Yeggeth -> General Rajaxx
+(15388, 509, 15341, 1, 0), -- Major Pakkon -> General Rajaxx
+(15389, 509, 15341, 1, 0), -- Captain Drenn -> General Rajaxx
+(15390, 509, 15341, 1, 0), -- Captain Xurrem -> General Rajaxx
+(15391, 509, 15341, 1, 0), -- Captain Qeez -> General Rajaxx
+(15392, 509, 15341, 1, 0), -- Captain Tuubid -> General Rajaxx
 (15318, 509, 15369, 1024, 0), -- Hive'Zara Drone -> Ayamiss the Hunter
 (15319, 509, 15369, 1024, 0), -- Hive'Zara Collector -> Ayamiss the Hunter
 (15336, 509, 15369, 1024, 0), -- Hive'Zara Tail Lasher -> Ayamiss the Hunter
