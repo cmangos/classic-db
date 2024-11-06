@@ -16112,8 +16112,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('387501','3875','0','0','100','1025','9200','13200','4000','6000','0','0','11','7057','4','32','0','0','0','0','0','0','0','0','Haunted Servitor - Cast Haunting Spirits'),
 -- Wailing Guardsman (3.0.3 Official Data)
 ('387701','3877','0','0','100','1025','0','7200','1200','12200','0','0','11','7074','0','32','0','0','0','0','0','0','0','0','Wailing Guardsman - Cast Screams of the Past'),
--- Razorclaw the Butcher (3.0.3 Official Data)
-('388601','3886','9','0','100','1025','0','5','2800','9700','0','0','11','7485','1','0','0','0','0','0','0','0','0','0','Razorclaw the Butcher - Cast Butcher Drain'),
+-- Razorclaw the Butcher 3886
+('388601','3886','11','0','100','0','0','0','0','0','0','0','11','7486','0','34','0','0','0','0','0','0','0','0','Razorclaw the Butcher - Cast Butcher Drain on Spawn'),
 -- Baron Silverlaine (3.0.3 Official Data)
 ('388701','3887','0','0','100','1025','1000','1000','22300','35100','0','0','11','7068','1','0','0','0','0','0','0','0','0','0','Baron Silverlaine - Cast Veil of Shadow'),
 -- Rethilgore (3.0.3 Official Data)
