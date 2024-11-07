@@ -151,7 +151,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (7011, 0, 0, 1, 0, 0, '7165'), -- Earthen Rocksmasher
 (7012, 0, 0, 1, 0, 0, NULL), -- Earthen Sculptor
 (7022, 0, 0, 1, 0, 0, NULL), -- Venomlash Scorpid
-(7023, 0, 0, 1, 0, 0, NULL), -- Obsidian Sentinel
+(7023, 0, 0, 1, 0, 0, '9941'), -- Obsidian Sentinel
 (7030, 0, 0, 1, 0, 0, NULL), -- Shadowforge Geologist
 (7076, 0, 0, 1, 0, 0, '10255'), -- Earthen Guardian
 (7077, 0, 0, 1, 0, 0, '10255'), -- Earthen Hallshaper

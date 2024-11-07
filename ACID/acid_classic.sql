@@ -16930,6 +16930,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('702303','7023','2','0','100','1024','60','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','3263','0','0','Obsidian Sentinel - Summon Obsidian Shard and Cast Splintered Obsidian at 60% HP'),
 ('702304','7023','2','0','100','1024','40','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','3263','0','0','Obsidian Sentinel - Summon Obsidian Shard and Cast Splintered Obsidian at 40% HP'),
 ('702305','7023','2','0','100','1024','20','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','3263','0','0','Obsidian Sentinel - Summon Obsidian Shard and Cast Splintered Obsidian at 20% HP'),
+('702306','7023','11','0','100','0','0','0','0','0','0','0','11','9941','0','34','0','0','0','0','0','0','0','0','Obsidian Sentinel - Cast Spell Reflection on Spawn'),
 -- Shadowforge Geologist (4.0.1 Official Data)
 ('703001','7030','0','0','100','1025','8900','13900','22500','34900','0','0','11','3356','1','0','0','0','0','0','0','0','0','0','Shadowforge Geologist - Cast Flame Lash'),
 ('703002','7030','0','0','100','1025','11100','22200','33700','54200','0','0','11','8814','1','0','0','0','0','0','0','0','0','0','Shadowforge Geologist - Cast Flame Spike'),
