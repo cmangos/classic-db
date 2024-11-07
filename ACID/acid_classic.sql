@@ -16492,6 +16492,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =========================================
 -- Outside
 -- =======
+-- Fungal Ooze 5235
+('523501','5235','11','0','100','0','0','0','0','0','0','0','11','12002','0','34','0','0','0','0','0','0','0','0','Fungal Ooze - Cast Plague Cloud on Spawn'),
 -- Cursed Atal'ai 5243
 ('524301','5243','2','0','100','1024','30','0','0','0','0','0','11','12020','1','0','0','0','0','0','0','0','0','0','Cursed Atal''ai - Cast Call of the Grave at 30% HP'),
 -- Enthralled Atal'ai 5261
