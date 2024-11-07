@@ -19232,7 +19232,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1071804','10718','29','3','100','32','1000','3000','0','0','0','0','11','16599','15','0','11','16601','15','0','11','16598','15','0','Shahram - Cast Blessing of Shahram, Fist of Shahram, or Will of Shahram on Generic Timer (Phase 2)'),
 -- Succubus Minion 10928 - NSR
 -- Crimson Cannon 11199
-('1119901','11199','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Crimson Cannon - Prevent Movement and Prevent Melee on Spawn'),
+('1119901','11199','11','0','100','0','0','0','0','0','0','0','11','17507','0','34','21','0','0','0','20','0','0','0','Crimson Cannon - Cast Passive Root, Prevent Movement, Prevent Melee on Spawn'),
 ('1119902','11199','9','0','100','1025','0','40','1000','1500','0','0','11','17501','1','0','0','0','0','0','0','0','0','0','Crimson Cannon - Cast Cannon Fire'),
 -- Doomguard 11859
 ('1185901','11859','0','0','100','1025','0','0','30000','30000','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
