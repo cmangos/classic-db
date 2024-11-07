@@ -15551,7 +15551,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Razorfen Earthbreaker
 ('452501','4525','9','0','100','1025','0','25','13000','18000','0','0','11','8046','4','0','0','0','0','0','0','0','0','0','Razorfen Earthbreaker - Cast Earth Shock'),
 ('452502','4525','0','0','100','1025','0','10000','20000','35000','0','0','11','8272','4','32','0','0','0','0','0','0','0','0','Razorfen Earthbreaker - Cast Mind Tremor'),
--- Wind Howler (4526) - NSR
+-- Wind Howler 4526
+('452601','4526','11','0','100','0','0','0','0','0','0','0','11','8273','0','34','0','0','0','0','0','0','0','0','Wind Howler - Cast Bonus Dodge on Spawn'),
 -- Stone Rumbler (4528) - NSR
 -- Razorfen Handler 4530
 ('453001','4530','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Razorfen Handler - Despawn Guardians on OOC'),
