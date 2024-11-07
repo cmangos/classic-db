@@ -156,6 +156,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (7076, 0, 0, 1, 0, 0, '10255'), -- Earthen Guardian
 (7077, 0, 0, 1, 0, 0, '10255'), -- Earthen Hallshaper
 (7078, 0, 0, 1, 0, 0, '7276'), -- Cleft Scorpid
+(7172, 0, 0, 1, 0, 0, '11011'), -- Lore Keeper of Norgannon
 (7175, 0, 0, 1, 0, 0, NULL), -- Stonevault Ambusher
 (7206, 0, 0, 1, 0, 0, NULL), -- Ancient Stone Keeper
 (7226, 0, 0, 1, 0, 0, '10092'), -- Sand Storm
