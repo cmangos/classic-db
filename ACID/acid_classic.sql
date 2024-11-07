@@ -8637,7 +8637,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('564303','5643','0','0','100','1025','9000','15000','18000','21000','0','0','11','15798','4','0','0','0','0','0','0','0','0','0','Tyranis Malem - Cast Moonfire'),
 ('564304','5643','9','0','100','1025','0','40','3400','4800','0','0','11','9739','1','256','0','0','0','0','0','0','0','0','Tyranis Malem - Cast Wrath'),
 -- Dalinda Malem (5644) - NSR
--- Warug's Target Dummy (5723) - NSR
+-- Warug's Target Dummy 5723
+('572301','5723','11','0','100','0','0','0','0','0','0','0','11','4048','0','34','0','0','0','0','0','0','0','0','Warug\'s Target Dummy - Cast Advanced Target Dummy Passive on Spawn'),
 -- Corporal Melkins
 ('575201','5752','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Corporal Melkins - Flee at 15% HP'),
 -- Lord Azrethoc 5760
