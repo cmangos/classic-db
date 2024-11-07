@@ -14317,7 +14317,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('970705','9707','30','0','100','0','0','9257','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Scarshield Portal - Forced Despawn on Receive AI Event 0'),
 -- Burning Imp 9708
 ('970801','9708','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Burning Imp - Forced Despawn on Evade'),
-('970802','9708','11','0','100','0','0','0','0','0','0','0','38','0','0','0','19','256','0','0','0','0','0','0','Burning Imp - Zone Combat Pulse and Remove UnitFlag 256 on Spawn'),
+('970802','9708','11','0','100','0','0','0','0','0','0','0','38','0','0','0','19','256','0','0','11','11984','0','34','Burning Imp - Zone Combat Pulse, Remove UnitFlag 256, Cast Immolate on Spawn'),
 -- Bloodaxe Warmonger 9716
 ('971601','9716','2','0','100','1024','30','0','0','0','0','0','11','8269','0','0','1','2384','0','0','0','0','0','0','Bloodaxe Warmonger - Cast Enrage at 30% HP'),
 ('971602','9716','2','0','100','1024','50','0','0','0','0','0','39','25','0','0','1','1064','0','0','0','0','0','0','Bloodaxe Warmonger - Call For Help, Emote at 50% HP'),
