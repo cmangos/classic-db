@@ -159,6 +159,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (7172, 0, 0, 1, 0, 0, '11011'), -- Lore Keeper of Norgannon
 (7175, 0, 0, 1, 0, 0, NULL), -- Stonevault Ambusher
 (7206, 0, 0, 1, 0, 0, NULL), -- Ancient Stone Keeper
+(7209, 0, 0, 1, 0, 0, '10074'), -- Obsidian Shard
 (7226, 0, 0, 1, 0, 0, '10092'), -- Sand Storm
 (7290, 0, 0, 1, 0, 0, NULL), -- Shadowforge Sharpshooter
 (7291, 0, 0, 1, 0, 0, NULL), -- Galgann Firehammer

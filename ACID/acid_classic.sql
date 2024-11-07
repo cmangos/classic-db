@@ -16960,7 +16960,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('717502','7175','2','0','100','1024','50','0','0','0','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Stonevault Ambusher - Cast Enrage at 50% HP'),
 -- Ancient Stone Keeper (4.0.1 Official Data)
 ('720601','7206','0','0','100','1025','4300','7800','30100','45400','0','0','11','10132','0','0','0','0','0','0','0','0','0','0','Ancient Stone Keeper - Cast Sand Storms'),
--- Obsidian Shard (7209) - NSR
+-- Obsidian Shard 7209
+('720901','7209','11','0','100','0','0','0','0','0','0','0','11','10074','0','34','0','0','0','0','0','0','0','0','Obsidian Shard - Cast Spell Reflection on Spawn'),
 -- Sand Storm (3.3.5a Official Data)
 ('722601','7226','11','0','100','0','0','0','0','0','0','0','11','10092','0','0','0','0','0','0','0','0','0','0','Sand Storm - Cast Sand Storm on Spawn'),
 -- Ironaya (3.3.5a Official Data)
