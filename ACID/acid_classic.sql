@@ -15990,8 +15990,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1126301','11263','11','0','100','0','0','0','0','0','0','0','11','7131','0','34','0','0','0','0','0','0','0','0','Spectral Projection - Cast Illusion Passive on Spawn'),
 ('1126302','11263','8','0','100','0','17652','-1','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Spectral Projection - Die on Spell Hit'),
 -- Dark Shade (11284)
--- Illusion of Jandice Barov (SD2 Backport) (INCORRECT SPELL ID) - s.17772
-('1143901','11439','0','0','100','1025','2000','8000','5000','8000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Illusion of Jandice Barov - Cast Cleave'),
+-- Illusion of Jandice Barov 11439
+('1143901','11439','11','0','100','0','0','0','0','0','0','0','11','17772','15','34','0','0','0','0','0','0','0','0','Illusion of Jandice Barov - Cast Spread on Spawn'),
 -- Necrofiend (3.0.3 Official Data - Logs Only)
 ('1155101','11551','11','0','100','0','0','0','0','0','0','0','11','10022','0','1','0','0','0','0','0','0','0','0','Necrofiend - Cast Deadly Poison on Spawn'),
 ('1155102','11551','0','0','100','1025','6500','13100','20700','33900','0','0','11','15474','0','0','0','0','0','0','0','0','0','0','Necrofiend - Cast Web Explosion'),
