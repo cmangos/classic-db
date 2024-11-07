@@ -168,7 +168,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (7321, 0, 0, 1, 0, 0, NULL), -- Stonevault Flameweaver
 (7396, 0, 0, 1, 0, 0, '7165'), -- Earthen Stonebreaker
 (7397, 0, 0, 1, 0, 0, NULL), -- Earthen Stonecarver
-(7405, 0, 0, 1, 0, 0, '3616'), -- Deadly Cleft Scorpid
+(7405, 0, 0, 1, 0, 0, '7276'), -- Deadly Cleft Scorpid
 (10120, 0, 0, 1, 0, 0, '10255'), -- Vault Warder
 (11073, 0, 0, 1, 0, 0, NULL); -- Annora
 
