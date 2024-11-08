@@ -15945,7 +15945,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1050504','10505','0','0','100','1025','14000','19000','12000','18000','0','0','11','13747','5','0','0','0','0','0','0','0','0','0','Instructor Malicia - Cast Slow'),
 ('1050505','10505','14','0','100','1025','1200','40','14000','21000','0','0','11','17843','12','0','0','0','0','0','0','0','0','0','Instructor Malicia - Cast Flash Heal on Friendlies'),
 ('1050506','10505','2','0','100','1025','50','0','7000','12000','0','0','11','15586','0','0','0','0','0','0','0','0','0','0','Instructor Malicia - Cast Heal at 50% HP'),
--- Kirtonos the Herald (3.0.3 Official Data - Logs Only)
+-- Kirtonos the Herald 10506 - s.18116
 ('1050601','10506','4','0','100','0','0','0','0','0','0','0','1','5788','0','0','22','1','0','0','0','0','0','0','Kirtonos the Herald - Emote and Set Phase 1 on Aggro'),
 ('1050602','10506','0','5','100','1025','10000','16100','9700','33600','0','0','11','18144','1','0','0','0','0','0','0','0','0','0','Kirtonos the Herald - Cast Swoop (Phase 1)'),
 ('1050603','10506','0','5','100','1025','14100','32400','56100','79500','0','0','11','6016','1','0','0','0','0','0','0','0','0','0','Kirtonos the Herald - Cast Pierce Armor (Phase 1)'),
@@ -18553,9 +18553,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Commander Louis Philips 13154
 ('1315401','13154','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','21130','0','34','0','0','0','0','Commander Louis Philips - Cast Invisibility and Stealth Detection, Grip of Command on Spawn'),
 ('1315402','13154','0','0','100','1025','0','10000','10000','20000','0','0','11','15663','1','0','0','0','0','0','0','0','0','0','Commander Louis Philips - Cast Cleave'),
--- Aerie Gryphon (13161) - s.21190
+-- Aerie Gryphon 13161
+('1316101','13161','11','0','100','0','0','0','0','0','0','0','11','21190','0','34','0','0','0','0','0','0','0','0','Aerie Gryphon - Cast Aerie Gryphon Speed Buff on Spawn'),
 -- Smith Regzar (13176) - Special Script Required (Unsure how it should work)
--- War Rider (13178) - s.21190
+-- War Rider 13178
+('1317801','13178','11','0','100','0','0','0','0','0','0','0','11','21190','0','34','0','0','0','0','0','0','0','0','War Rider - Cast Aerie Gryphon Speed Buff on Spawn'),
 -- Wing Commander Guse 13179
 ('1317901','13179','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Wing Commander Guse - Set Phase 1 on Aggro'),
 ('1317902','13179','9','5','100','1025','0','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Wing Commander Guse - Cast Sunder Armor (Phase 1)'),
