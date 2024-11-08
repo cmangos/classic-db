@@ -14100,7 +14100,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tortured Slave 10117
 ('1011701','10117','1','0','100','1','5000','25000','9000','14000','0','0','5','18','0','0','1','5460','5458','5459','0','0','0','0','Tortured Slave - Cry Emote and Random Emote Text OOC'),
 ('1011702','10117','1','0','100','1','18000','35000','9000','14000','0','0','5','20','0','0','1','5460','5458','5459','0','0','0','0','Tortured Slave - Beg Emote and Text Emote'),
--- Arcanite Dragonling (12473) - creature_spell_list
+-- Arcanite Dragonling 12473 - creature_spell_list
+('1247301','12473','11','0','100','0','0','0','0','0','0','0','11','23052','0','34','0','0','0','0','0','0','0','0','Arcanite Dragonling - Cast Arcanite Dragonling on Spawn'),
 -- Lokhtos Darkbargainer (12944) - npc_lokhtos_darkbargainer
 -- Elder Morndeep (15549)
 -- Lefty (16049) - creature_spell_list
