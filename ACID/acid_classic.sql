@@ -18272,9 +18272,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1488304','14883','9','0','100','1025','0','35','2500','3000','0','0','11','24668','1','256','0','0','0','0','0','0','0','0','Voodoo Slave - Cast Shadow Bolt'),
 -- Frenzied Bloodseeker Bat 14965
 ('1496501','14965','29','0','100','0','1000','1000','0','0','0','0','28','0','23973','0','0','0','0','0','0','0','0','0','Frenzied Bloodseeker Bat - Remove Root Self on Generic Timer'),
--- Shade of Jin'do (SD2 Backport)
-('1498601','14986','11','0','100','0','0','0','0','0','0','0','11','24307','0','0','0','0','0','0','0','0','0','0','Shade of Jin''do - Cast Shade of Jin''do Passive on Spawn'),
-('1498602','14986','0','0','100','1025','1000','1000','2000','2000','0','0','11','19460','1','0','0','0','0','0','0','0','0','0','Shade of Jin''do - Cast Shadow Shock'),
+-- Shade of Jin'do 14986 - s.23878
+('1498601','14986','11','0','100','0','0','0','0','0','0','0','11','24307','0','34','11','24313','0','34','0','0','0','0','Shade of Jin''do - Cast Shade of Jin''do Passive, Shade Visual on Spawn'),
+('1498602','14986','0','0','100','1025','5000','10000','5000','10000','0','0','11','24458','1','0','0','0','0','0','0','0','0','0','Shade of Jin''do - Cast Shadow Shock'),
 -- Powerful Healing Ward 14987 - creature_spell_list
 -- Ohgan 14988 - mob_ohgan - creature_spell_list
 -- Poisonous Cloud 14989
