@@ -19475,6 +19475,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1643202','16432','12','0','100','1025','20','0','30000','30000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Undercity Elite Guardian - Cast Execute at 20% Target HP'),
 -- Spectral Spirit 16437 - Recheck Timers
 ('1643701','16437','0','0','100','1025','0','0','5000','10000','0','0','11','28265','1','0','0','0','0','0','0','0','0','0','Spectral Spirit - Cast Scourge Strike'),
+('1643702','16437','11','0','100','0','0','0','0','0','0','0','11','28126','0','34','0','0','0','0','0','0','0','0','Spectral Spirit - Cast Spirit Particles (purple) on Spawn'),
 -- Skeletal Trooper 16438 - creature_spell_list (Recheck Timers)
 ('1643801','16438','0','0','100','1025','0','0','5000','10000','0','0','11','28265','1','0','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Scourge Strike'),
 ('1643802','16438','0','0','100','1025','1000','9000','9000','18000','0','0','11','589','1','32','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Shadow Word: Pain (Rank 1)'),
