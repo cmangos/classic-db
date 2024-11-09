@@ -14116,6 +14116,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Korv (16053) - creature_spell_list
 -- Rezznik (16054) - creature_spell_list
 -- Va'jashni (16055) - creature_spell_list
+('1605501','16055','11','0','100','0','0','0','0','0','0','0','11','15326','0','34','0','0','0','0','0','0','0','0','Va''jashni - Cast Blackout (Rank 5) on Spawn'),
 -- Volida (16058) - creature_spell_list
 ('1605801','16058','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Volida - Enable Range Mode on Aggro'),
 -- Theldren (16059) - creature_spell_list
