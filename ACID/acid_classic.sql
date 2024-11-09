@@ -19479,6 +19479,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Skeletal Trooper 16438 - creature_spell_list (Recheck Timers)
 ('1643801','16438','0','0','100','1025','0','0','5000','10000','0','0','11','28265','1','0','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Scourge Strike'),
 ('1643802','16438','0','0','100','1025','1000','9000','9000','18000','0','0','11','589','1','32','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Shadow Word: Pain (Rank 1)'),
+('1643803','16438','11','0','100','0','0','0','0','0','0','0','11','28126','0','34','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Spirit Particles (purple) on Spawn'),
 -- Mouth of Kel'Thuzad 16995 - scourge_invasion_mouth
 
 
