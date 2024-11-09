@@ -17428,9 +17428,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Corrupted Stoneskin Totem VI 14663 - TotemAI
 -- Corrupted Healing Stream Totem V 14664 - TotemAI
 -- Corrupted Windfury Totem III 14666 - TotemAI
--- Corrupted Totem 14667 - TotemAI - s.8149
--- Corrupted Infernal
-('1466801','14668','11','0','100','0','0','0','0','0','0','0','11','22703','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Inferno Effect on Spawn'),
+-- Corrupted Totem 14667 - TotemAI
+-- Corrupted Infernal 14668
+('1466801','14668','11','0','100','0','0','0','0','0','0','0','11','22703','0','0','11','19432','0','34','0','0','0','0','Corrupted Infernal - Cast Inferno Effect, Tamed Pet Passive (DND) on Spawn'),
 ('1466802','14668','0','0','100','1024','1000','1000','0','0','0','0','11','12743','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Immolation'),
 ('1466803','14668','6','0','100','0','0','0','0','0','0','0','41','4000','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Despawn on Death'),
 
