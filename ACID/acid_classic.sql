@@ -18279,6 +18279,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ohgan 14988 - mob_ohgan - creature_spell_list
 -- Poisonous Cloud 14989
 ('1498901','14989','11','0','100','0','0','0','0','0','0','0','11','24320','0','0','0','0','0','0','0','0','0','0','Poisonous Cloud - Cast Poisonous Blood on Spawn'),
+-- Voodoo Spirit 15009
+('1500901','15009','11','0','100','0','0','0','0','0','0','0','11','24051','0','34','0','0','0','0','0','0','0','0','Voodoo Spirit - Cast Spirit Burst on Spawn'),
 -- Spawn of Mar'li
 ('1504101','15041','0','0','100','1025','5000','15000','10000','20000','0','0','11','24097','1','0','0','0','0','0','0','0','0','0','Spawn of Mar''li - Cast Poison'),
 -- Zulian Crocolisk
