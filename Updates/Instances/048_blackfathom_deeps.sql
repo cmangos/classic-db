@@ -84,10 +84,10 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+85, 0, 0, 0, 0, 0, NULL), -- Twilight Acolyte
 (@CGUID+94, 0, 0, 0, 0, 0, NULL), -- Twilight Reaver
 (@CGUID+95, 0, 8, 1, 0, 0, NULL), -- Twilight Reaver
-(@CGUID+96, 0, 0, 1, 0, 0, '8734'), -- Twilight Reaver
-(@CGUID+102, 0, 0, 1, 0, 0, '8734'), -- Twilight Aquamancer
-(@CGUID+105, 0, 0, 1, 0, 0, '8734'), -- Twilight Loreseeker
-(@CGUID+112, 0, 0, 1, 0, 0, '8734'), -- Twilight Loreseeker
+(@CGUID+102, 0, 0, 1, 0, 0, '8734'), -- creature_spawn_entry
+(@CGUID+105, 0, 0, 1, 0, 0, '8734'), -- creature_spawn_entry
+(@CGUID+112, 0, 0, 1, 0, 0, '8734'), -- creature_spawn_entry
+(@CGUID+113, 0, 0, 1, 0, 0, '8734'), -- creature_spawn_entry
 (@CGUID+118, 0, 0, 0, 0, 0, NULL), -- Twilight Shadowmage
 (@CGUID+120, 0, 0, 0, 0, 0, NULL), -- Twilight Shadowmage
 (@CGUID+208, 0, 0, 0, 0, 0, NULL); -- Old Serra'kis
@@ -229,18 +229,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+99, 4811, 48, -748.753, 5.72824, -29.9157, 0.506145, 7200, 7200, 0, 0), -- Twilight Aquamancer
 (@CGUID+100, 4811, 48, -798.48, -54.9876, -29.5982, 0.191986, 7200, 7200, 0, 0), -- Twilight Aquamancer
 (@CGUID+101, 4811, 48, -764.725, -61.6536, -29.8474, 1.5708, 7200, 7200, 0, 0), -- Twilight Aquamancer
-(@CGUID+102, 4811, 48, -722.212, -105.695, -29.9737, 1.18682, 7200, 7200, 0, 0), -- Twilight Aquamancer
+(@CGUID+102, 0, 48, -722.212, -105.695, -29.9737, 1.18682, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+103, 4811, 48, -822.218, -54.7079, -29.5982, 6.14356, 7200, 7200, 0, 0), -- Twilight Aquamancer
 (@CGUID+104, 4811, 48, -816.204, -55.4134, -29.5982, 3.87463, 7200, 7200, 0, 0), -- Twilight Aquamancer
-(@CGUID+105, 4812, 48, -694.532, -30.0734, -29.95, 1.32645, 7200, 7200, 0, 0), -- Twilight Loreseeker
+(@CGUID+105, 0, 48, -694.532, -30.0734, -29.95, 1.32645, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+106, 4812, 48, -719.863, 4.31058, -29.95, 2.93215, 7200, 7200, 0, 0), -- Twilight Loreseeker
 (@CGUID+107, 4812, 48, -722.41, -79.0308, -37.659, 5.28835, 7200, 7200, 0, 0), -- Twilight Loreseeker
 (@CGUID+108, 4812, 48, -764.633, -54.1033, -29.8464, 5.39307, 7200, 7200, 0, 0), -- Twilight Loreseeker
 (@CGUID+109, 4812, 48, -798.28, -57.0101, -29.6816, 6.23816, 7200, 7200, 0, 0), -- Twilight Loreseeker
 (@CGUID+110, 4812, 48, -801.936, -59.8917, -29.5982, 4.50295, 7200, 7200, 0, 0), -- Twilight Loreseeker
 (@CGUID+111, 4812, 48, -721.848, -78.6776, -37.7371, 1.54094, 7200, 7200, 0, 0), -- Twilight Loreseeker
-(@CGUID+112, 4812, 48, -822.119, -79.9384, -29.6178, 1.15192, 7200, 7200, 0, 0), -- Twilight Loreseeker
-(@CGUID+113, 4812, 48, -818.036, -75.3462, -29.6361, 2.84489, 7200, 7200, 0, 0), -- Twilight Loreseeker
+(@CGUID+112, 0, 48, -822.119, -79.9384, -29.6178, 1.15192, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+113, 0, 48, -822.184998, -60.354698, -29.5982, 0.645772, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+114, 4813, 48, -799.32, -108.703, -25.7868, 3.10669, 7200, 7200, 0, 0), -- Twilight Shadowmage
 (@CGUID+115, 4813, 48, -813.087, -99.3175, -25.6698, 3.68265, 7200, 7200, 0, 0), -- Twilight Shadowmage
 (@CGUID+116, 4813, 48, -819.479, -132.687, -25.7867, 3.42085, 7200, 7200, 0, 0), -- Twilight Shadowmage
@@ -344,6 +344,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+214, 12902, 48, -475.542, -87.0594, -40.0059, 2.96706, 86400, 86400, 0, 0), -- Lorgus Jett
 (@CGUID+215, 12902, 48, -622.355, -10.3501, -22.777, 4.90438, 86400, 86400, 0, 0), -- Lorgus Jett
 (@CGUID+216, 12902, 48, -764.025, 4.23592, -28.7869, 6.12611, 86400, 86400, 0, 0); -- Lorgus Jett
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+102, 4809), (@CGUID+102, 4810), (@CGUID+102, 4811), (@CGUID+102, 4812), -- Twilight Acolyte, Twilight Reaver, Twilight Aquamancer, Twilight Loreseeker
+(@CGUID+105, 4809), (@CGUID+105, 4810), (@CGUID+105, 4811), (@CGUID+105, 4812), -- Twilight Acolyte, Twilight Reaver, Twilight Aquamancer, Twilight Loreseeker
+(@CGUID+112, 4809), (@CGUID+112, 4810), (@CGUID+112, 4811), (@CGUID+112, 4812), -- Twilight Acolyte, Twilight Reaver, Twilight Aquamancer, Twilight Loreseeker
+(@CGUID+113, 4809), (@CGUID+113, 4810), (@CGUID+113, 4811), (@CGUID+113, 4812); -- Twilight Acolyte, Twilight Reaver, Twilight Aquamancer, Twilight Loreseeker
 
 -- ===========
 -- GAMEOBJECTS
