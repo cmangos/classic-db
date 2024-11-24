@@ -19228,6 +19228,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('752705','7527','9','1','100','0','0','8','0','0','0','0','11','4043','0','0','37','0','0','0','0','0','0','0','Goblin Land Mine - Cast Detonation and Die (Phase 1'),
 -- Eranikus the Chained 8506
 ('850601','8506','11','0','100','0','0','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
+-- Mithril Dragonling 8615
+('861501','8615','11','0','100','0','0','0','0','0','0','0','11','23050','0','34','0','0','0','0','0','0','0','0','Mithril Dragonling - Cast Mithril Mechanical Dragonling on Spawn'),
 -- Battle Chicken 8836
 ('883601','8836','0','0','70','1025','5000','10000','15000','20000','0','0','11','13168','0','0','0','0','0','0','0','0','0','0','Battle Chicken - Cast Chicken Fury'),
 ('883602','8836','0','2','18','1025','8000','8000','8000','8000','0','0','11','23060','0','0','22','1','0','0','0','0','0','0','Battle Chicken - Cast Battle Squawk and Set Phase 1'),
