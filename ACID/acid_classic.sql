@@ -6210,7 +6210,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('180901','1809','0','0','100','1025','0','10000','6000','9000','0','0','11','5708','1','0','0','0','0','0','0','0','0','0','Carrion Vulture - Cast Swoop'),
 -- Rotting Behemoth
 ('181201','1812','0','0','100','1025','0','10000','420000','420000','0','0','11','3256','1','0','0','0','0','0','0','0','0','0','Rotting Behemoth - Cast Plague Cloud'),
--- Decaying Horror (1813) - NSR
+-- Decaying Horror 1813
+('181301','1813','6','0','100','0','0','0','0','0','0','0','11','17052','0','0','0','0','0','0','0','0','0','0','Decaying Horror - Cast Decay on Death'),
 -- Diseased Black Bear
 ('181501','1815','9','0','100','1025','0','5','9000','14000','0','0','11','3427','4','32','0','0','0','0','0','0','0','0','Diseased Black Bear - Cast Infected Wound'),
 -- Diseased Grizzly
