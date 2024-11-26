@@ -436,7 +436,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 322501;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(322501, 1, 3385, 0, -1, 2, 0, 100, 0, 0, 10000, 10000, 20000, 'Corrupted Mottled Boar - Boar Charge - self');
+(322501, 1, 3385, 0, -1, 2, 0, 100, 0, 0, 10000, 10000, 20000, 'Corrupted Mottled Boar - Boar Charge - self'),
+(322501, 2, 6818, 0, -1, 130, 0, 100, 0, 0, 10000, 10000, 25000, 'Corrupted Mottled Boar - Corrupted Intellect - top aggro aura not present');
 
 UPDATE `creature_template` SET `SpellList` = 322501 WHERE `entry` = 3225;
 
@@ -449,7 +450,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` = 322601;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(322601, 1, 5413, 0, -1, 130, 0, 100, 0, 0, 10000, 10000, 25000, 'Corrupted Scorpid - Noxious Catalyst - top aggro aura not present');
+(322601, 1, 5413, 0, -1, 130, 0, 100, 0, 0, 10000, 10000, 25000, 'Corrupted Scorpid - Noxious Catalyst - top aggro aura not present'),
+(322601, 2, 11918, 0, -1, 130, 0, 100, 0, 0, 10000, 10000, 25000, 'Corrupted Scorpid - Poison - top aggro aura not present');
 
 UPDATE `creature_template` SET `SpellList` = 322601 WHERE `entry` = 3226;
 
