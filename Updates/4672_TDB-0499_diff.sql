@@ -1535,3 +1535,51 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = '1500', `RangedBaseAttack
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2600', `RangedBaseAttackTime` = '2600' WHERE `entry` = 16103;
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = '1500', `RangedBaseAttackTime` = '1500' WHERE `entry` = 16119;
 
+-- resync MeleeBaseAttackTime with classic
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='106'; -- Kodo Beast
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '1500', `RangedBaseAttackTime` = '1500' WHERE `entry`='1199'; -- Juvenile Snow Leopard
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='2801'; -- Tresa MacGregor
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='4490'; -- Grenka Bloodscreech
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '1500', `RangedBaseAttackTime` = '1500' WHERE `entry`='4526'; -- Wind Howler
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='5809'; -- Watch Commander Zalaphil
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='9462'; -- Chieftain Bloodmaw
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '1500', `RangedBaseAttackTime` = '1500' WHERE `entry`='10447'; -- Chromatic Dragonspawn
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='10579'; -- Kirtonos the Herald (Spell Visual)
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2600', `RangedBaseAttackTime` = '2600' WHERE `entry`='10814'; -- Chromatic Elite Guard
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='10984'; -- Winterax Berserker
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='11280'; -- Caer Darrow Cannoneer
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='11316'; -- Joseph Dirte
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='11679'; -- Winterax Witch Doctor
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='12157'; -- Winterax Shadow Hunter
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='12158'; -- Winterax Hunter
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '1500', `RangedBaseAttackTime` = '1500' WHERE `entry`='12159'; -- Korrak the Bloodrager
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='13149'; -- Syndicate Brigand
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='13150'; -- Syndicate Agent
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='13151'; -- Syndicate Master Ryson
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='13378'; -- Frostwolf Shredder Unit
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='13416'; -- Stormpike Shredder Unit
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='13446'; -- Field Marshal Teravaine
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='13957'; -- Winterax Warrior
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16042'; -- Lord Valthalak
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '1200', `RangedBaseAttackTime` = '1200' WHERE `entry`='16066'; -- Spectral Assassin
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16230'; -- Cultist Engineer
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16298'; -- Spectral Soldier
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16299'; -- Skeletal Shocktrooper
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16336'; -- Scourge Invasion Minion, spawner, Ghost/Skeleton
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16338'; -- Scourge Invasion Minion, spawner, Ghoul/Skeleton
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16382'; -- Patchwork Terror
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16383'; -- Flameshocker
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16384'; -- Argent Dawn Initiate
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16386'; -- Necropolis Relay
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16394'; -- Pallid Horror
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16395'; -- Argent Dawn Paladin
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16396'; -- Stormwind Elite Guard
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16398'; -- Necropolis Proxy
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16401'; -- Necropolis
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16431'; -- Cracked Necrotic Crystal
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16531'; -- Faint Necrotic Crystal
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16786'; -- Argent Quartermaster
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='16787'; -- Argent Outfitter
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='17719'; -- Ironforge Gryphon Rider
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = '2000', `RangedBaseAttackTime` = '2000' WHERE `entry`='17720'; -- Orgrimmar Wyvern Rider
+
