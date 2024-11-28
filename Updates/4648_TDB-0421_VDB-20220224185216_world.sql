@@ -11,14 +11,14 @@ UPDATE `creature_template` SET `GossipMenuId` = 3803 WHERE `entry` = 10684;
 DELETE FROM `gossip_menu` WHERE `entry` = 3803;
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `condition_id`) VALUES
 (3803, 4635, 0),
-(3803, 4636, 9040);
+(3803, 4636, 9045);
 
 DELETE FROM `npc_text_broadcast_text` WHERE `id` = 4636 AND `BroadcastTextID0` = 7309;
 INSERT INTO `npc_text_broadcast_text` (`ID`, `BroadcastTextID0`, `Prob0`) VALUES (4636, 7309, 1);
 
--- 9040: Target Has Done Quest 5248
-DELETE FROM `conditions` WHERE `condition_entry` = 9040;
-INSERT INTO `conditions` (`condition_entry`, `type`, `value1`) VALUES (9040, 8, 5248);
+-- 9045: Target Has Done Quest 5248
+DELETE FROM `conditions` WHERE `condition_entry` = 9045;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`) VALUES (9045, 8, 5248);
 
 -- ----------------------------------------------------------------------
 
