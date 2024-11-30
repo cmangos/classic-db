@@ -119,9 +119,9 @@ UPDATE `creature_template_addon` SET `auras` = '8247' WHERE `entry` = 4248;
 UPDATE `creature_template_addon` SET `auras` = '' WHERE `entry` = 4329; -- 18968 tbc+ 2602 classic
 UPDATE `creature_template_addon` SET `auras` = '' WHERE `entry` = 4331; -- 18968 tbc+ 2602 classic
 UPDATE `creature_template_addon` SET `auras` = '' WHERE `entry` = 4334; -- 18968 tbc+ 2602 classic
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (4329, 0, 0, 1, 0, 0, '2602'); -- 18968 tbc+ 2602 classic
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (4331, 0, 0, 1, 0, 0, '2602'); -- 18968 tbc+ 2602 classic
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (4334, 0, 0, 1, 0, 0, '2602'); -- 18968 tbc+ 2602 classic
+-- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (4329, 0, 0, 1, 0, 0, '2602'); -- 18968 tbc+ 2602 classic
+-- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (4331, 0, 0, 1, 0, 0, '2602'); -- 18968 tbc+ 2602 classic
+-- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (4334, 0, 0, 1, 0, 0, '2602'); -- 18968 tbc+ 2602 classic
 UPDATE `creature_template_addon` SET `auras` = '' WHERE `entry` = 4347; -- 744 manually casted, not s.3616
 UPDATE `creature_template_addon` SET `auras` = '9463' WHERE `entry` = 4358;
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (4358, 0, 0, 1, 0, 0, '9463');
@@ -160,7 +160,7 @@ UPDATE `creature_template_addon` SET `auras` = '9036 10848' WHERE `entry` = 6491
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (6491, 0, 0, 0, 0, 0, '9036 10848');
 -- Creature (Entry: 6492) has spell 9095 defined in `auras` field in `creature_template_addon, but spell has cast time. Use it in AI instead.
 UPDATE `creature_template_addon` SET `auras` = '9093' WHERE `entry` = 6492; -- s.9095 new missing
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (6492, 0, 0, 0, 0, 0, '9093 9095');
+-- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES (6492, 0, 0, 0, 0, 0, '9093 9095');
 UPDATE `creature_template_addon` SET `auras` = '14133' WHERE `entry` = 6556;
 UPDATE `creature_template_addon` SET `auras` = '' WHERE `entry` = 7028; -- some some s.8734 others s.12380
 UPDATE `creature` SET `MovementType` = 2 WHERE `guid` IN (3278,3279,3277,3276,3275);
