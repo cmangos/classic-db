@@ -12600,8 +12600,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sarilus Foulborne 3986
 ('398601','3986','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Sarilus Foulborne - Enable Range Mode on Aggro'),
 ('398602','3986','0','0','100','1025','8000','10000','25000','25000','0','0','11','6490','15','0','0','0','0','0','0','0','0','0','Sarilus Foulborne - Cast Sarilus''s Elementals'),
-('398603','3986','0','0','100','1281','0','0','3000','4000','0','0','11','9672','1','256','0','0','0','0','0','0','0','0','Sarilus Foulborne - Cast Frostbolt (Range Mode)'),
-('398604','3986','0','0','100','1537','0','0','5000','20000','0','0','11','9672','1','256','0','0','0','0','0','0','0','0','Sarilus Foulborne - Cast Frostbolt (Melee Mode)'),
+('398603','3986','0','0','100','1281','0','0','3000','4000','0','0','11','20806','1','256','0','0','0','0','0','0','0','0','Sarilus Foulborne - Cast Frostbolt (Range Mode)'),
+('398604','3986','0','0','100','1537','0','0','5000','20000','0','0','11','20806','1','256','0','0','0','0','0','0','0','0','Sarilus Foulborne - Cast Frostbolt (Melee Mode)'),
 -- Hecklefang Hyena 4127 - NSR
 -- Hecklefang Stalker 4128 - NSR
 -- Hecklefang Snarler 4129 - NSR
