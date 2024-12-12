@@ -2621,8 +2621,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fedfennel
 ('47201','472','0','0','100','1025','1000','5000','12000','16000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Fedfennel - Cast Demoralizing Shout'),
 ('47202','472','0','0','100','1025','9000','14000','45000','50000','0','0','11','3238','0','0','0','0','0','0','0','0','0','0','Fedfennel - Cast Nimble Reflexes'),
--- Morgan the Collector (2.4.2 Official Data)
+-- Morgan the Collector 473
 ('47301','473','33','0','100','1025','1','0','11900','13900','0','0','11','1776','1','0','0','0','0','0','0','0','0','0','Morgan the Collector - Cast Gouge on Facing Target'),
+('47302','473','33','0','100','1025','0','0','5000','10000','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Morgan the Collector - Cast Backstab on Facing Target Back'),
 -- Defias Rogue Wizard 474 (2.4.2 Official Data)
 ('47401','474','4','0','20','0','0','0','0','0','0','0','54','0','0','37','0','0','0','0','0','0','0','0','Defias Rogue Wizard - Say on Aggro'),
 ('47402','474','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Defias Rogue Wizard - Enable Range Mode on Aggro'),
