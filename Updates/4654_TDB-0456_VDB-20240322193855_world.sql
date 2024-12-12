@@ -210,8 +210,8 @@ SET @NPC := 12397;
 DELETE FROM `creature` WHERE `id` = 12397;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (156950, 12397, 0, 1, -12241.29980468750000000000, -2432.10009765625000000000, 2.93935990333557130000, 3.26503992080688480000, 172800, 345600, 0, 2);
-DELETE FROM `game_event_creature` WHERE `guid` = 156950; -- tbc+
-INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (156950, 100); -- Before the Storm - Expansion Launch event
+-- DELETE FROM `game_event_creature` WHERE `guid` = 156950; -- tbc+
+-- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (156950, 100); -- Before the Storm - Expansion Launch event
 UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-12226.763,`position_y`=-2433.5713,`position_z`=1.7650497 WHERE `guid`=156950;
 DELETE FROM `creature_movement_template` WHERE `entry`=@NPC;
 INSERT INTO `creature_movement_template` (`entry`,`point`,`positionx`,`positiony`,`positionz`,`orientation`,`waittime`,`scriptid`) VALUES
@@ -568,7 +568,7 @@ UPDATE `creature_template` SET `SpeedWalk` = 1 WHERE `entry` = 15530; -- Twiligh
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `UnitFlags` = 0, `MinLootGold` = 294 WHERE `entry` = 15541; -- Twilight Marauder Morna
 UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|1048576, `MaxLootGold` = 758 WHERE `entry` = 15542; -- Twilight Marauder
 
-UPDATE `creature_template` SET `UnitFlags` = `UnitFlags`|32768 WHERE `entry` IN (11803,11804,15200,15308,15541); -- tbc+
+-- UPDATE `creature_template` SET `UnitFlags` = `UnitFlags`|32768 WHERE `entry` IN (11803,11804,15200,15308,15541); -- tbc+
 
 -- Pathing for Twilight Keeper Mayna Entry: 15200
 SET @NPC := 15200;
