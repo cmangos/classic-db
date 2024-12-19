@@ -9295,7 +9295,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Acidic Swamp Ooze 4393
 ('439301','4393','11','0','100','0','0','0','0','0','0','0','11','3338','0','34','0','0','0','0','0','0','0','0','Acidic Swamp Ooze - Cast Rancid Ooze on Spawn'),
 -- Bubbling Swamp Ooze  (4394) - NSR
--- Mudrock Spikeshell (4397) - NSR
+-- Mudrock Tortoise 4396 - NSR
+-- Mudrock Spikeshell 4397
+('439701','4397','11','0','100','0','0','0','0','0','0','0','11','9464','0','34','0','0','0','0','0','0','0','0','Mudrock Spikeshell - Cast Barbs on Spawn'),
+-- Mudrock Burrower 4398 - NSR
+-- Mudrock Borer 4399 - NSR
+-- Mudrock Snapjaw 4400
+('440001','4400','12','0','100','1025','20','0','10000','15000','0','0','11','7938','1','0','0','0','0','0','0','0','0','0','Mudrock Snapjaw - Cast Fatal Bite at Target 20% HP'),
 -- Muckshell Clacker
 ('440101','4401','9','0','100','1025','0','5','20000','25000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Muckshell Clacker - Cast Tendon Rip'),
 -- Muckshell Snapclaw 4402
