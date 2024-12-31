@@ -254,45 +254,6 @@ UPDATE `creature_template` SET `CharmedSpellList`='2154705' WHERE `entry`='21547
 UPDATE `creature_template` SET `CharmedSpellList`='2217505' WHERE `entry`='22175'; -- Apexis Flayer
 UPDATE `creature_template` SET `CharmedSpellList`='2225405' WHERE `entry`='22254'; -- Wrath Corruptor
 
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1564505 spell 29098 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1616205 spell 29098 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1631705 spell 29067 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1633105 spell 25602 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1633705 spell 28902 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1634505 spell 28902 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1634605 spell 29044 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1646905 spell 31394 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1692905 spell 33911 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1696605 spell 32717 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1696705 spell 32720 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1718405 spell 31272 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1718405 spell 32131 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1718705 spell 31270 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1719505 spell 31273 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1732005 spell 32967 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1732205 spell 31282 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1732805 spell 31290 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1733305 spell 31295 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1760405 spell 31827 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1812105 spell 35195 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1812105 spell 35194 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1831305 spell 25603 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1895205 spell 34113 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1964305 spell 38391 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1964305 spell 35914 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1964305 spell 35917 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1966805 spell 63619 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1977905 spell 36645 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 1977905 spell 35918 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 2020705 spell 37847 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 2045805 spell 36513 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 2069405 spell 32129 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 2069405 spell 32690 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 2154705 spell 35096 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 2154705 spell 34809 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 2217505 spell 40770 does not exist. Skipping.
-2024-12-31 23:41:18 LoadCreatureSpellLists: Invalid creature_spell_list 2225405 spell 32063 does not exist. Skipping.
-
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (605,8005,9405,9505,10305,11605,12105,12205,20505,20605,25705,28505,42205,42905,43105,43205,43605,44005,44805,44905,45005,45305,47305,47405,48105,48505,48605,50105,50205,50405,51805,53305,
 56805,58305,58905,59005,66705,67005,67105,67205,67605,73205,73505,78005,78105,78205,78305,78405,80805,81305,88005,88105,89105,89205,92005,93705,93805,93905,94005,94105,94205,94305,94605,97805,97905,102805,105905,109605,112105,112405,114205,
 125105,150705,156205,166705,190705,237705,255305,256705,263905,264205,264305,264405,264505,264605,264705,264805,292805,292905,374205,398306,398605,400305,406505,428005,428205,428305,429306,446205,446305,446705,465105,465705,465805,466805,
