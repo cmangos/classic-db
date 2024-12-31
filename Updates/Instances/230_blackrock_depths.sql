@@ -717,11 +717,9 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+325, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
 (@CGUID+326, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
 (@CGUID+327, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+329, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
 (@CGUID+331, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
 (@CGUID+332, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
 (@CGUID+333, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+334, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
 (@CGUID+613, 0, 0, 1, 0, 0, '13864'), -- Shadowforge Citizen
 (@CGUID+614, 0, 0, 1, 0, 0, '13864'), -- Shadowforge Citizen
 (@CGUID+619, 0, 0, 1, 0, 0, '13864'), -- Shadowforge Citizen
@@ -1450,12 +1448,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+326, 8899, 230, 1396.71, -731.332, -91.8982, 0.122173, 7200, 7200, 0, 0), -- Doomforge Dragoon
 (@CGUID+327, 8899, 230, 682.865, -9.60982, -59.9754, 2.56563, 7200, 7200, 0, 0), -- Doomforge Dragoon
 (@CGUID+328, 8899, 230, 732.85, -14.5486, -46.0667, 0.401426, 7200, 7200, 0, 0), -- Doomforge Dragoon
-(@CGUID+329, 8899, 230, 762.155, -49.4341, -46.1504, 1.91986, 7200, 7200, 0, 0), -- Doomforge Dragoon
+(@CGUID+329, 0, 230, 762.155, -49.4341, -46.1504, 1.91986, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+330, 8899, 230, 737.059, -16.7554, -46.1504, 1.8675, 7200, 7200, 0, 0), -- Doomforge Dragoon
 (@CGUID+331, 8899, 230, 1380.99, -793.052, -92.6402, 5.88176, 7200, 7200, 10, 1), -- Doomforge Dragoon
 (@CGUID+332, 8899, 230, 1408.95, -743.275, -85.0691, 5.61996, 7200, 7200, 0, 0), -- Doomforge Dragoon
 (@CGUID+333, 8899, 230, 1406.38, -791.195, -85.0604, 5.32325, 7200, 7200, 0, 0), -- Doomforge Dragoon
-(@CGUID+334, 8899, 230, 755.36, -52.1277, -46.1504, 2.11185, 7200, 7200, 0, 0), -- Doomforge Dragoon
+(@CGUID+334, 0, 230, 755.36, -52.1277, -46.1504, 2.11185, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+335, 8900, 230, 936.359, -285.072, -49.8526, 4.20624, 7200, 7200, 0, 0), -- Doomforge Arcanasmith
 (@CGUID+336, 8900, 230, 929.067, -287.174, -49.8526, 6.0912, 7200, 7200, 0, 0), -- Doomforge Arcanasmith
 (@CGUID+337, 8900, 230, 1186.99, -165.436, -74.2779, 2.87979, 7200, 7200, 0, 0), -- Doomforge Arcanasmith
@@ -2276,6 +2274,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- (@CGUID+1328, 27890, 230, 418.818, 4.4148, -70.9833, 0.767945, 7200, 7200, 0, 0), -- Brewfest - Direbrew Mole Machine Loc bunny
 -- (@CGUID+1329, 27890, 230, 901.349, -143.915, -49.673, 0.436332, 7200, 7200, 0, 0), -- Brewfest - Direbrew Mole Machine Loc bunny
 -- (@CGUID+1330, 28067, 230, 891.229, -174.558, -43.8419, 0.401426, 7200, 7200, 0, 0); -- Dark Iron Brewer
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+329, 8898),(@CGUID+329, 8899), -- Anvilrage Marshal, Doomforge Dragoon
+(@CGUID+334, 8898),(@CGUID+334, 8899); -- Anvilrage Marshal, Doomforge Dragoon
 
 -- ===========
 -- GAMEOBJECTS
