@@ -1050,13 +1050,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+275, @CGUID+276, 1155); -- Spitting Scarab -> Spitting Scarab
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(15385, 509, 15341, 1, 0), -- Colonel Zerran -> General Rajaxx
-(15386, 509, 15341, 1, 0), -- Major Yeggeth -> General Rajaxx
-(15388, 509, 15341, 1, 0), -- Major Pakkon -> General Rajaxx
-(15389, 509, 15341, 1, 0), -- Captain Drenn -> General Rajaxx
-(15390, 509, 15341, 1, 0), -- Captain Xurrem -> General Rajaxx
-(15391, 509, 15341, 1, 0), -- Captain Qeez -> General Rajaxx
-(15392, 509, 15341, 1, 0), -- Captain Tuubid -> General Rajaxx
 (15318, 509, 15369, 1024, 0), -- Hive'Zara Drone -> Ayamiss the Hunter
 (15319, 509, 15369, 1024, 0), -- Hive'Zara Collector -> Ayamiss the Hunter
 (15336, 509, 15369, 1024, 0), -- Hive'Zara Tail Lasher -> Ayamiss the Hunter
@@ -1542,6 +1535,87 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@WGUID+003, 04, -9641.1113281250, 1606.5909423828125, 21.51151657104492187, 100, 0, 0),
 (@WGUID+003, 05, -9644.0732421875, 1631.9780273437500, 21.73661422729492187, 100, 0, 0),
 (@WGUID+003, 06, -9656.4970703125, 1670.7694091796875, 21.86398506164550781, 100, 0, 0);
+
+DELETE FROM string_id WHERE Id BETWEEN 5090004 AND 5090011;
+INSERT INTO string_id(Id, Name) VALUES
+(5090004,'AQ20_RAJAXX'),
+(5090005,'AQ20_QEEZ'),
+(5090006,'AQ20_TUUBID'),
+(5090007,'AQ20_DRENN'),
+(5090008,'AQ20_XURREM'),
+(5090009,'AQ20_YEGGETH'),
+(5090010,'AQ20_PAKKON'),
+(5090011,'AQ20_ZERRAN');
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `WorldStateExpression`, `Flags`, `StringId`) VALUES
+(@SGUID+004, 'Ruins of Ahn\'Qiraj - Rajaxx', 0, 0, 0, 3365, 0, @SGUID+004),
+(@SGUID+005, 'Ruins of Ahn\'Qiraj - Qeez', 0, 0, 0, 3365, 0, @SGUID+005),
+(@SGUID+006, 'Ruins of Ahn\'Qiraj - Tuubid', 0, 0, 0, 3365, 0, @SGUID+006),
+(@SGUID+007, 'Ruins of Ahn\'Qiraj - Drenn', 0, 0, 0, 3365, 0, @SGUID+007),
+(@SGUID+008, 'Ruins of Ahn\'Qiraj - Xurrem', 0, 0, 0, 3365, 0, @SGUID+008),
+(@SGUID+009, 'Ruins of Ahn\'Qiraj - Yeggeth', 0, 0, 0, 3365, 0, @SGUID+009),
+(@SGUID+010, 'Ruins of Ahn\'Qiraj - Pakkon', 0, 0, 0, 3365, 0, @SGUID+010),
+(@SGUID+011, 'Ruins of Ahn\'Qiraj - Zerran', 0, 0, 0, 3365, 0, @SGUID+011);
+
+INSERT INTO spawn_group_linked_group(Id, LinkedId) VALUES
+(@SGUID+004, @SGUID+005),
+(@SGUID+004, @SGUID+006),
+(@SGUID+004, @SGUID+007),
+(@SGUID+004, @SGUID+008),
+(@SGUID+004, @SGUID+009),
+(@SGUID+004, @SGUID+010),
+(@SGUID+004, @SGUID+011);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGUID+004, @CGUID+159, 0, 0), -- Rajaxx
+(@SGUID+005, @CGUID+224, 0, 0), -- Qeez
+(@SGUID+005, @CGUID+204, 0, 0),
+(@SGUID+005, @CGUID+167, 0, 0),
+(@SGUID+005, @CGUID+201, 0, 0),
+(@SGUID+005, @CGUID+203, 0, 0),
+(@SGUID+005, @CGUID+166, 0, 0),
+(@SGUID+006, @CGUID+225, 0, 0), -- Tuubid
+(@SGUID+006, @CGUID+208, 0, 0),
+(@SGUID+006, @CGUID+207, 0, 0),
+(@SGUID+006, @CGUID+206, 0, 0),
+(@SGUID+006, @CGUID+175, 0, 0),
+(@SGUID+006, @CGUID+173, 0, 0),
+(@SGUID+006, @CGUID+172, 0, 0),
+(@SGUID+007, @CGUID+222, 0, 0), -- Drenn
+(@SGUID+007, @CGUID+170, 0, 0),
+(@SGUID+007, @CGUID+169, 0, 0),
+(@SGUID+007, @CGUID+168, 0, 0),
+(@SGUID+007, @CGUID+171, 0, 0),
+(@SGUID+007, @CGUID+205, 0, 0),
+(@SGUID+007, @CGUID+174, 0, 0),
+(@SGUID+008, @CGUID+223, 0, 0), -- Xurrem
+(@SGUID+008, @CGUID+209, 0, 0),
+(@SGUID+008, @CGUID+210, 0, 0),
+(@SGUID+008, @CGUID+213, 0, 0),
+(@SGUID+008, @CGUID+179, 0, 0),
+(@SGUID+008, @CGUID+181, 0, 0),
+(@SGUID+008, @CGUID+182, 0, 0),
+(@SGUID+009, @CGUID+200, 0, 0), -- Yeggeth
+(@SGUID+009, @CGUID+176, 0, 0),
+(@SGUID+009, @CGUID+177, 0, 0),
+(@SGUID+009, @CGUID+178, 0, 0),
+(@SGUID+009, @CGUID+211, 0, 0),
+(@SGUID+009, @CGUID+180, 0, 0),
+(@SGUID+009, @CGUID+212, 0, 0),
+(@SGUID+010, @CGUID+221, 0, 0), -- Pakkon
+(@SGUID+010, @CGUID+186, 0, 0),
+(@SGUID+010, @CGUID+218, 0, 0),
+(@SGUID+010, @CGUID+187, 0, 0),
+(@SGUID+010, @CGUID+217, 0, 0),
+(@SGUID+010, @CGUID+219, 0, 0),
+(@SGUID+010, @CGUID+220, 0, 0),
+(@SGUID+011, @CGUID+199, 0, 0), -- Zerran
+(@SGUID+011, @CGUID+183, 0, 0),
+(@SGUID+011, @CGUID+184, 0, 0),
+(@SGUID+011, @CGUID+185, 0, 0),
+(@SGUID+011, @CGUID+214, 0, 0),
+(@SGUID+011, @CGUID+215, 0, 0),
+(@SGUID+011, @CGUID+216, 0, 0);
 
 -- =========
 -- DBSCRIPTS
