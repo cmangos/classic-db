@@ -203,7 +203,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 (1144505, 6, 22575, 0, -1, 0, 0, 100, 1, 0, 0, 11092, 11857, 'Gordok Captain - Shadow Shock'),
 (1144505, 5, 12542, 0, -1, 0, 0, 100, 1, 0, 0, 12522, 14256, 'Gordok Captain - Fear'),
-(1144505, 4, 87185, 0, -1, 0, 0, 100, 1, 0, 0, 10031, 11629, 'Gordok Captain - Demoralizing Roar'), -- 87185
+(1144505, 4, 16244, 0, -1, 0, 0, 100, 1, 0, 0, 10031, 11629, 'Gordok Captain - Demoralizing Roar'), -- 87185
 (1144505, 3, 22574, 0, -1, 0, 0, 100, 1, 0, 0, 5589, 7636, 'Gordok Captain - Dark Strike'),
 (1144505, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Gordok Captain - Attack'),
 
