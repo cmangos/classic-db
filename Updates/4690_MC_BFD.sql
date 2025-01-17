@@ -28,9 +28,9 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 (483105, 'Vanilla - Lady Sarevess', 0, 0),
 (481505, 'Vanilla - Murkshallow Snapclaw', 0, 0),
 (481805, 'Vanilla - Blindlight Murloc', 0, 0),
-
-(480901, 'Blackfathom Deeps - Twilight Acolyte', 0, 0),
-(482001, 'Blackfathom Deeps - Blindlight Oracle', 0, 0);
+-- LoadCreatureSpellLists: Invalid creature_spell_list 482001 list, spell 9532 has ranged spell flag but ChanceRangedAttack is 0. Skipping.
+(480901, 'Blackfathom Deeps - Twilight Acolyte', 75, 0),
+(482001, 'Blackfathom Deeps - Blindlight Oracle', 50, 75);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (481405,481305,481105,481205,480905,481005,1290205,624305,482005,481905,483105,481505,481805,480901,482001);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (481105, 3, 9672, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Twilight Aquamancer - Frostbolt'),
 (481105, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Twilight Aquamancer - Attack'),
 (481205, 4, 8365, 0, -1, 0, 0, 100, 1, 0, 0, 10006, 13510, 'Twilight Loreseeker - Enlarge'),
-(481205, 3, 25603, 0, -1, 0, 0, 100, 1, 0, 0, 11647, 16577, 'Twilight Loreseeker - Slow'),
+(481205, 3, 18972, 0, -1, 0, 0, 100, 1, 0, 0, 11647, 16577, 'Twilight Loreseeker - Slow'), -- LoadCreatureSpellLists: Invalid creature_spell_list 481205 spell 25603 does not exist. Skipping.
 (481205, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Twilight Loreseeker - Attack'),
 (480905, 4, 8362, 0, -1, 0, 0, 100, 1, 0, 0, 16315, 19958, 'Twilight Acolyte - Renew'),
 (480905, 0, 2, 0, -1, 0, 0, 100, 1, 0, 0, 0, 0, 'Twilight Acolyte - Attack'),
