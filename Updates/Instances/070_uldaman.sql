@@ -172,7 +172,12 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10120, 0, 0, 1, 0, 0, '10255'), -- Vault Warder
 (11073, 0, 0, 1, 0, 0, NULL); -- Annora
 
--- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+223, @CGUID+222, 3), -- Stonevault Ambusher -> Stonevault Ambusher
+(@CGUID+224, @CGUID+222, 3), -- Stonevault Ambusher -> Stonevault Ambusher
+(@CGUID+225, @CGUID+222, 3), -- Stonevault Ambusher -> Stonevault Ambusher
+(@CGUID+226, @CGUID+222, 3), -- Stonevault Ambusher -> Stonevault Ambusher
+(@CGUID+227, @CGUID+222, 3); -- Stonevault Ambusher -> Stonevault Ambusher
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (7076, 70, 2748, 20, 0), -- Earthen Guardian -> Archaedas
