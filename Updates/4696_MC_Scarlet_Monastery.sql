@@ -22,7 +22,6 @@ UPDATE `creature_template` SET `CharmedSpellList`='657505', `MechanicImmuneMask`
 UPDATE `creature_template` SET `SpellList` = 430201, `CharmedSpellList`='430205', `MechanicImmuneMask` = `MechanicImmuneMask`&~1 WHERE `entry`='4302'; -- https://www.wowhead.com/classic/npc=4302/scarlet-champion
 UPDATE `creature_template` SET `SpellList` = 429301, `CharmedSpellList`='429305', `MechanicImmuneMask` = `MechanicImmuneMask`&~1 WHERE `entry`='4293'; -- https://www.wowhead.com/classic/npc=4293/scarlet-scryer
 UPDATE `creature_template` SET `SpellList` = 398301, `CharmedSpellList`='398305', `MechanicImmuneMask` = `MechanicImmuneMask`&~1 WHERE `entry`='3983'; -- https://www.wowhead.com/classic/npc=3983/interrogator-vishas
-UPDATE `creature_template` SET `SpellList` = 1469301 WHERE `entry`='14693'; -- https://www.wowhead.com/classic/npc=14693/scorn
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (430605,428305,430305,430105,429405,430005,429805,429505,429205,429005,428905,429705,428605,429905,429105,454005,428805,429605,428705,657505,430205,429305,398305,
 430301,430101,429401,430001,429801,429201,429001,428901,429701,428601,429901,429101,454001,428801,429601,428701,430201,429301,398301);
