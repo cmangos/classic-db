@@ -7484,10 +7484,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blackfathom Tide Priestess 4802 - creature_spell_list
 ('480201','4802','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Blackfathom Tide Priestess - Enable Range Mode on Spawn'),
 ('480202','4802','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Blackfathom Tide Priestess - Flee at 15% HP'),
--- Blackfathom Oracle 4803
+-- Blackfathom Oracle 4803 - creature_spell_list
 ('480301','4803','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Blackfathom Oracle - Flee at 15% HP'),
-('480302','4803','14','0','100','1025','280','40','18000','24000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Blackfathom Oracle - Cast Healing Wave on Friendly Missing HP'),
-('480303','4803','0','0','100','1025','3000','6000','25000','30000','0','0','11','8363','1','0','0','0','0','0','0','0','0','0','Blackfathom Oracle - Cast Parasite'),
 -- Phantim 5314
 ('531401','5314','0','0','100','1025','3000','6000','7000','10000','0','0','11','20667','1','0','0','0','0','0','0','0','0','0','Phantim - Cast Corrosive Acid Breath'),
 -- Burkrum (6028) - NSR
