@@ -214,7 +214,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+22, 4850, 70, -332, 112.267, -54.0304, 5.06145, 7200, 7200, 2, 1), -- Stonevault Cave Lurker
 (@CGUID+23, 4850, 70, -338.709, 139.708, -49.575, 4.29351, 7200, 7200, 3, 1), -- Stonevault Cave Lurker
 (@CGUID+24, 4850, 70, -305.035, 131.561, -46.5367, 3.56047, 7200, 7200, 0, 0), -- Stonevault Cave Lurker
-(@CGUID+25, 4851, 70, -228.116, 177.455, -44.6301, 3.06182, 7200, 7200, 2, 1), -- Stonevault Rockchewer
+(@CGUID+25, 0, 70, -228.116, 177.455, -44.6301, 3.06182, 86400, 86400, 3, 1), -- spawn_group
 (@CGUID+26, 4851, 70, -280.755, 79.9444, -48.7191, 5.88176, 7200, 7200, 3, 1), -- Stonevault Rockchewer
 (@CGUID+27, 4851, 70, -178.939, 169.876, -47.3264, 0.802851, 7200, 7200, 2, 1), -- Stonevault Rockchewer
 (@CGUID+28, 4851, 70, -176.355, 61.1042, -48.7257, 6.16101, 7200, 7200, 3, 1), -- Stonevault Rockchewer
@@ -233,7 +233,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+41, 4851, 70, -244.22, 90.1088, -48.0306, 3.45953, 7200, 7200, 2, 1), -- Stonevault Rockchewer
 (@CGUID+42, 4851, 70, -212.481, 88.8378, -48.0205, 3.08739, 7200, 7200, 2, 1), -- Stonevault Rockchewer
 (@CGUID+43, 4851, 70, -230.612, 129.842, -46.6282, 1.46608, 7200, 7200, 2, 1), -- Stonevault Rockchewer
-(@CGUID+44, 4852, 70, -233.511, 170.852, -44.6301, 2.58106, 7200, 7200, 2, 1), -- Stonevault Oracle
+(@CGUID+44, 0, 70, -233.511, 170.852, -44.6301, 2.58106, 86400, 86400, 3, 1), -- spawn_group
 (@CGUID+45, 4852, 70, -266.266, 90.8042, -48.711, 0.575959, 7200, 7200, 2, 1), -- Stonevault Oracle
 (@CGUID+46, 4852, 70, -174.321, 165.9, -47.3283, 4.43314, 7200, 7200, 3, 1), -- Stonevault Oracle
 (@CGUID+47, 4852, 70, -245.23, 96.0977, -48.0381, 6.00393, 7200, 7200, 2, 1), -- Stonevault Oracle
@@ -313,7 +313,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+121, 6906, 70, -353.007, 117.186, -44.3684, 0.523599, 43200, 43200, 0, 0), -- Baelog
 (@CGUID+122, 6907, 70, -358.335, 118.947, -44.3836, 0.942478, 43200, 43200, 0, 0), -- Eric "The Swift"
 (@CGUID+123, 6908, 70, -356.985, 132.094, -47.6973, 1.3439, 43200, 43200, 0, 0), -- Olaf
-(@CGUID+124, 6910, 70, -225.598, 161.224, -44.5463, 0.034907, 43200, 43200, 0, 0), -- Revelosh
+(@CGUID+124, 0, 70, -225.598, 161.224, -44.5463, 0.034907, 86400, 86400, 3, 1), -- spawn_group
 (@CGUID+125, 6912, 70, -176.003, 169.17, -47.3276, 2.68781, 7200, 7200, 0, 0), -- Remains of a Paladin
 (@CGUID+126, 7011, 70, -72.984, 219.844, -49.7103, 0.11546, 7200, 7200, 2, 1), -- Earthen Rocksmasher
 (@CGUID+127, 7011, 70, -81.0191, 225.437, -49.7123, 5.79837, 7200, 7200, 3, 1), -- Earthen Rocksmasher
@@ -771,9 +771,13 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+0, 'Uldaman - Cleft Scorpid (10) - Annora', 0, 10, 0, 3),
-(@SGGUID+1, 'Uldaman - Annora (11073)', 0, 1, @CONDITION+1, 0);
+(@SGGUID+1, 'Uldaman - Annora (11073)', 0, 1, @CONDITION+1, 0),
+(@SGGUID+2, 'Uldaman - Revelosh | Stonevault Rockchewer | Stonevault Oracle (3)', 0, 3, 0, 1);
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+2, 4851, 1, 1, 0), -- Stonevault Rockchewer
+(@SGGUID+2, 4852, 1, 1, 0), -- Stonevault Oracle
+(@SGGUID+2, 6910, 1, 1, 0); -- Revelosh
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+0, @CGUID+200, '0'), -- Cleft Scorpid
@@ -786,7 +790,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+0, @CGUID+207, '0'), -- Cleft Scorpid
 (@SGGUID+0, @CGUID+208, '0'), -- Cleft Scorpid
 (@SGGUID+0, @CGUID+209, '0'), -- Cleft Scorpid
-(@SGGUID+1, @CGUID+324, '0'); -- Annora
+(@SGGUID+1, @CGUID+324, '0'), -- Annora
+(@SGGUID+2, @CGUID+25, '0'), -- Revelosh
+(@SGGUID+2, @CGUID+44, '0'), -- Revelosh
+(@SGGUID+2, @CGUID+124, '0'); -- Revelosh
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
