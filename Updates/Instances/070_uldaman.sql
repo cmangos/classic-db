@@ -185,7 +185,9 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (7076, 70, 2748, 20, 0), -- Earthen Guardian -> Archaedas
 (7077, 70, 2748, 20, 0), -- Earthen Hallshaper -> Archaedas
 (7309, 70, 2748, 20, 0), -- Earthen Custodian -> Archaedas
-(10120, 70, 2748, 20, 0); -- Vault Warder -> Archaedas
+(10120, 70, 2748, 20, 0), -- Vault Warder -> Archaedas
+(6907, 70, 6906, 3, 0), -- Eric "The Swift" -> Baelog
+(6908, 70, 6906, 3, 0); -- Olaf -> Baelog
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 2748, 70, 104.338, 272.31, -51.6959, 3.64774, 43200, 43200, 0, 0), -- Archaedas
