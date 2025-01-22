@@ -18063,8 +18063,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1531701','15317','9','0','100','1025','0','5','5000','9000','0','0','11','6016','4','32','0','0','0','0','0','0','0','0','Qiraji Scorpion - Cast Pierce Armor'),
 ('1531702','15317','0','0','100','1025','5000','9000','6000','12000','0','0','11','26050','4','0','0','0','0','0','0','0','0','0','Qiraji Scorpion - Cast Acid Spit'),
 -- Giant Eye Tentacle 15334
-('1533401','15334','11','0','100','0','0','0','0','0','0','0','61','1','0','0','11','26478','15','0','11','18950','0','34','Giant Eye Tentacle - Set Immobilized State, Cast Ground Rupture on Spawn'),
-('1533402','15334','0','0','100','1025','1000','2000','2000','3000','0','0','11','26134','8','0','0','0','0','0','0','0','0','0','Giant Eye Tentacle - Cast Eye Beam'),
+('1533401','15334','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','57','1','20','0','Giant Eye Tentacle - Set Immobilized State, Prevent Melee and Ranged Mode'),
+('1533402','15334','29','0','100','0','2000','2000','0','0','0','0','11','26478','0','0','0','0','0','0','0','0','0','0','Giant Eye Tentacle - Cast Ground Rupture on Generic Timer'),
 -- Merithra of the Dream (15378) - NSR
 -- Caelestrasz (15379) - NSR
 -- Arygos (15380) - NSR
@@ -18091,20 +18091,21 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dirt Mound 15712 - npc_ouro_mound
 -- Ouro Trigger 15717 - npc_ouro_trigger
 -- Ouro Scarab 15718 - npc_ouro_scarab
--- Claw Tentacle (SD2 Backport)
-('1572501','15725','11','0','100','0','0','0','0','0','0','0','21','0','0','0','11','26139','0','0','0','0','0','0','Claw Tentacle - Set Combat Movement false and Cast Ground Rupture on Spawn'),
+-- Claw Tentacle 15725
+('1572501','15725','11','0','100','0','0','0','0','0','0','0','61','1','0','0','0','0','0','0','0','0','0','0','Claw Tentacle - Set Immobilized State'),
 ('1572502','15725','0','0','100','1025','2000','3000','5000','6000','0','0','11','26211','1','0','0','0','0','0','0','0','0','0','Claw Tentacle - Cast Hamstring'),
--- Eye Tentacle 15726 - s.26139,26143,26396,26404,26586
-('1572601','15726','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','26139','0','0','11','26586','0','0','Eye Tentacle - Set ReactState Passive, Cast Ground Rupture, Birth on Spawn'),
-('1572602','15726','29','0','100','0','2000','2000','0','0','0','0','50','2','0','0','21','0','0','0','0','0','0','0','Eye Tentacle - Set ReactState Aggressive, Disable Combat Movement on Generic Timer'),
-('1572603','15726','0','0','100','1025','0','0','1000','1000','0','0','11','26143','4','512','0','0','0','0','0','0','0','0','Eye Tentacle - Cast Mind Flay'),
+('1572503','15725','6','0','100','0','0','0','0','0','0','0','11','26404','0','0','0','0','0','0','0','0','0','0','Claw Tentacle - Despawn Tent Port On Death'),
+-- Eye Tentacle 15726
+('1572601','15726','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','57','1','20','0','Eye Tentacle - Set Immobilized State, Prevent melee and Ranged Mode'),
+('1572602','15726','6','0','100','0','0','0','0','0','0','0','11','26404','0','0','0','0','0','0','0','0','0','0','Eye Tentacle - Despawn Tent Port On Death'),
 -- C'Thun (15727) - boss_cthun
 -- Giant Claw Tentacle (15728) - mob_giant_claw_tentacle
 -- Exit Trigger - 15800
 ('1580001','15800','11','0','100','0','0','0','0','0','0','0','11','26271','0','0','0','0','0','0','0','0','0','0','Exit Trigger - Cast Rocky Ground Impact on Spawn'),
 ('1580002','15800','0','0','100','0','2000','2000','0','0','0','0','11','26224','15','66','0','0','0','0','0','0','0','0','Exit Trigger - Cast Exit Stomach'),
 -- Flesh Tentacle (SD2 Backport)
-('1580201','15802','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Flesh Tentacle - Set Combat Movement false on Spawn'),
+('1580201','15802','11','0','100','0','0','0','0','0','0','0','21','0','0','0','11','26262','0','0','0','0','0','0','Flesh Tentacle - Set Combat Movement false and Birth on Spawn'),
+('1580202','15802','6','0','100','0','0','0','0','0','0','0','11','26271','0','0','0','0','0','0','0','0','0','0','Flesh Tentacle - Rocky Ground Impact On Death'),
 -- C'Thun Portal - 15896
 ('1589601','15896','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','2','0','0','0','0','C''Thun Portal - Set React Passive on Spawn'),
 -- Tentacle Portal - 15904
