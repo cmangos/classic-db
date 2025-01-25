@@ -43,7 +43,7 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 (484705, 'Vanilla - Shadowforge Relic Hunter', 0, 0),
 (730905, 'Vanilla - Earthen Custodian', 0, 0),
 (485405, 'Vanilla - Grimlok', 0, 0),
-(485401, 'Uldaman - Grimlok', 75, 0),
+(485401, 'Uldaman - Grimlok', 50, 75),
 (485201, 'Uldaman - Stonevault Oracle', 75, 0);
 -- (2483005, 'Vanilla - Stonevault Pillager', 0, 0), -- tbc+
 
