@@ -8,6 +8,7 @@ EndDBScriptData */
 SET @CGUID := 3300000; -- creatures
 SET @OGUID := 3300000; -- gameobjects
 SET @PGUID := 45000; -- pools
+SET @SGGUID := 3300000;
 
 -- =========
 -- CREATURES
@@ -504,8 +505,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+86, @CGUID+74, 3), -- Lupine Horror -> Bleak Worg
 (@CGUID+77, @CGUID+74, 3), -- Slavering Worg -> Bleak Worg
 (@CGUID+143, @CGUID+74, 3), -- Wolfguard Worg -> Bleak Worg
-(@CGUID+97, @CGUID+141, 3), -- Blood Seeker -> Odo the Blindwatcher
-(@CGUID+96, @CGUID+141, 3), -- Vile Bat -> Odo the Blindwatcher
 (@CGUID+93, @CGUID+95, 3), -- Fel Steed/Shadow Charger -> Fel Steed/Shadow Charger
 (@CGUID+94, @CGUID+95, 3); -- Fel Steed/Shadow Charger -> Fel Steed/Shadow Charger
 
@@ -609,11 +608,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+90, 3863, 33, -128.064, 2186.77, 113.215, 2.67035, 7200, 7200, 2, 1), -- Lupine Horror
 (@CGUID+91, 3863, 33, -150.907, 2182.17, 99.9595, 1.01229, 7200, 7200, 2, 1), -- Lupine Horror
 (@CGUID+92, 3863, 33, -118.109, 2152.18, 101.603, 5.72468, 7200, 7200, 2, 1), -- Lupine Horror
-(@CGUID+93, 0, 33, -234.131, 2236.26, 79.8619, 0.296706, 7200, 7200, 0, 0), -- see creature_spawn_entry
-(@CGUID+94, 0, 33, -223.612, 2245.72, 79.8583, 5.13127, 7200, 7200, 0, 0), -- see creature_spawn_entry
-(@CGUID+95, 0, 33, -217.135, 2247.13, 79.8579, 4.88692, 7200, 7200, 0, 0), -- see creature_spawn_entry
-(@CGUID+96, 3866, 33, -243.174, 2126.93, 100.112, 6.07375, 7200, 7200, 0, 0), -- Vile Bat
-(@CGUID+97, 3868, 33, -248.788, 2122.86, 100.112, 1.58825, 7200, 7200, 0, 0), -- Blood Seeker
+(@CGUID+93, 0, 33, -234.131, 2236.26, 79.8619, 0.296706, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+94, 0, 33, -223.612, 2245.72, 79.8583, 5.13127, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+95, 0, 33, -217.135, 2247.13, 79.8579, 4.88692, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+96, 0, 33, -243.174, 2126.93, 100.112, 6.07375, 86400, 86400, 1, 1), -- spawn_group
+(@CGUID+97, 0, 33, -248.788, 2122.86, 100.112, 1.58825, 86400, 86400, 1, 1), -- spawn_group
 (@CGUID+98, 3872, 33, -192.012, 2124.54, 97.3899, 4.29002, 86400, 86400, 0, 2), -- Deathsworn Captain
 (@CGUID+99, 3873, 33, -205.822, 2105.25, 97.3899, 1.07407, 7200, 7200, 3, 1), -- Tormented Officer
 (@CGUID+100, 3873, 33, -241.873, 2111.72, 97.4733, 5.86999, 7200, 7200, 0, 2), -- Tormented Officer
@@ -657,7 +656,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+138, 4274, 33, -135.609, 2168.66, 128.779, 2.86234, 43200, 43200, 3, 1), -- Fenrus the Devourer
 (@CGUID+139, 4275, 33, -76.7541, 2152.41, 155.792, 2.49582, 43200, 43200, 0, 0), -- Archmage Arugal
 (@CGUID+140, 4278, 33, -222.592, 2259.44, 102.839, 3.47321, 7200, 7200, 0, 0), -- Commander Springvale
-(@CGUID+141, 4279, 33, -236.708, 2146.08, 100.112, 4.46804, 43200, 43200, 0, 0), -- Odo the Blindwatcher
+(@CGUID+141, 0, 33, -236.708, 2146.08, 100.112, 4.46804, 86400, 86400, 1, 1), -- spawn_group
 (@CGUID+142, 4444, 33, -217.991, 2150.77, 81.1327, 2.79253, 7200, 7200, 0, 0), -- Deathstalker Vincent
 (@CGUID+143, 5058, 33, -149.213, 2163.18, 155.762, 0.10472, 7200, 7200, 0, 0), -- Wolfguard Worg
 (@CGUID+144, 10000, 33, -219.345, 2154.02, 81.2098, 5.58505, 43200, 43200, 0, 0), -- Arugal
@@ -751,9 +750,15 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+1, 'Shadowfang Keep - Odo the Blindwatcher (3)', 0, 0, 0, 1);
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+1, 3866, 0, 2, 0),(@SGGUID+1, 3868, 0, 2, 0),(@SGGUID+1, 4279, 1, 1, 0); -- Vile Bat, Blood Seeker, Odo the Blindwatcher
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID+97, -1, 0),(@SGGUID+1, @CGUID+96, -1, 0),(@SGGUID+1, @CGUID+141, -1, 0); -- Odo the Blindwatcher
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
