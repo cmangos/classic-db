@@ -101,6 +101,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (10524, 10, -8385.653,445.6149,122.39286, 100, 0, 0),
 (10524, 11, -8388.917,453.05283,123.95904,3.804817676544189453, 1000, 175601); -- Spawn Point, change to idle and Active object off
 
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 9;
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
+(9, 0, 0, 21, 1, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GENERIC - Set Active Object On');
 
 -- Movement Script
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (175401, 175402, 175403, 175404, 175501, 175601, 885601, 885602, 885603, 885604); -- -41
