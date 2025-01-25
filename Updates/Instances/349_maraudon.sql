@@ -798,8 +798,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+183, 11792, 349, 837.646, -346.113, -52.0496, 0.163293, 7200, 7200, 0, 2), -- Putridus Shadowstalker
 (@CGUID+184, 11793, 349, 1045.99, -368.822, -36.2759, 1.82739, 7200, 7200, 0, 0), -- Celebrian Dryad
 (@CGUID+185, 11793, 349, 1043.05, -368.435, -36.3261, 1.83132, 7200, 7200, 0, 0), -- Celebrian Dryad
-(@CGUID+186, 11793, 349, 903.121, -326.834, -49.6053, 4.88513, 7200, 7200, 5, 1), -- Celebrian Dryad
-(@CGUID+187, 11793, 349, 901.704, -330.173, -49.4676, 4.89489, 7200, 7200, 5, 1), -- Celebrian Dryad
+(@CGUID+186, 11793, 349, 904.66425, -258.0873, -46.232998, 0, 7200, 7200, 0, 0), -- Celebrian Dryad
+(@CGUID+187, 11793, 349, 904.66425, -258.0873, -46.232998, 0, 7200, 7200, 0, 0), -- Celebrian Dryad
 (@CGUID+188, 11793, 349, 806.328, 72.7586, -86.7958, 5.1642, 7200, 7200, 0, 2), -- Celebrian Dryad
 (@CGUID+189, 11793, 349, 801.315, 81.004, -86.6453, 4.8359, 7200, 7200, 2, 1), -- Celebrian Dryad
 (@CGUID+190, 11794, 349, 945.434, -157.025, -60.1186, 0.41063, 7200, 7200, 0, 0), -- Sister of Celebrian
@@ -1444,23 +1444,29 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) SE
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+0, 'Maraudon - Sister of Celebrian (2) Patrol 000', 0, 0, 0, 1),
-(@SGGUID+1, 'Maraudon - Sister of Celebrian (2) Patrol 001', 0, 0, 0, 1);
+(@SGGUID+1, 'Maraudon - Sister of Celebrian (2) Patrol 001', 0, 0, 0, 1),
+(@SGGUID+2, 'Maraudon - Celebrian Dryad (2) Patrol 000', 0, 0, 0, 1),
+(@SGGUID+3, 'Maraudon - Celebrian Dryad (2) Patrol 001', 0, 0, 0, 1);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGGUID+0, @CGUID+191, 0),
-(@SGGUID+0, @CGUID+190, 1),
-(@SGGUID+1, @CGUID+196, 0),
-(@SGGUID+1, @CGUID+197, 1);
+(@SGGUID+0, @CGUID+191, 0),(@SGGUID+0, @CGUID+190, 1),
+(@SGGUID+1, @CGUID+196, 0),(@SGGUID+1, @CGUID+197, 1),
+(@SGGUID+2, @CGUID+184, 0),(@SGGUID+2, @CGUID+185, 1),
+(@SGGUID+3, @CGUID+186, 0),(@SGGUID+3, @CGUID+187, 1);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+0, 2, 3, 0, @SGGUID+0, 2, 'Maraudon - Sister of Celebrian (2) Patrol 000'),
-(@SGGUID+1, 2, 3, 0, @SGGUID+1, 2, 'Maraudon - Sister of Celebrian (2) Patrol 001');
+(@SGGUID+1, 2, 3, 0, @SGGUID+1, 2, 'Maraudon - Sister of Celebrian (2) Patrol 001'),
+(@SGGUID+2, 2, 3, 0, @SGGUID+2, 2, 'Maraudon - Celebrian Dryad (2) Patrol 000'),
+(@SGGUID+3, 2, 3, 0, @SGGUID+3, 4, 'Maraudon - Celebrian Dryad (2) Patrol 001');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+0,'Maraudon - Sister of Celebrian (2) Patrol 000'),
-(@SGGUID+1,'Maraudon - Sister of Celebrian (2) Patrol 001');
+(@SGGUID+1,'Maraudon - Sister of Celebrian (2) Patrol 001'),
+(@SGGUID+2,'Maraudon - Celebrian Dryad (2) Patrol 000'),
+(@SGGUID+3,'Maraudon - Celebrian Dryad (2) Patrol 001');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+0, 1, 948.271, -147.406, -60.1059, 100, 0, 0),
@@ -1493,7 +1499,48 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+1, 13, 863.519, -96.0914, -87.2029, 100, 0, 0),
 (@SGGUID+1, 14, 871.267, -114.204, -87.0528, 100, 0, 0),
 (@SGGUID+1, 15, 869.764, -145.975, -86.9794, 100, 0, 0),
-(@SGGUID+1, 16, 866.584, -173.106, -87.2064, 100, 0, 0);
+(@SGGUID+1, 16, 866.584, -173.106, -87.2064, 100, 0, 0),
+
+(@SGGUID+2, 1, 1047.43, -367.2843, -36.42132, 100, 0, 0),
+-- gap
+(@SGGUID+2, 2, 1000.924, -337.4811, -42.52024, 100, 0, 0),
+(@SGGUID+2, 3, 995.4847, -317.2607, -45.30277, 100, 0, 0),
+(@SGGUID+2, 4, 972.6862, -294.4879, -45.51888, 100, 0, 0),
+(@SGGUID+2, 5, 952.6755, -277.4811, -45.77525, 100, 0, 0),
+(@SGGUID+2, 6, 934.0554, -258.0643, -46.05173, 100, 0, 0),
+(@SGGUID+2, 7, 928.1927, -235.79, -46.53157, 100, 0, 0),
+(@SGGUID+2, 8, 945.84625, -223.23616, -46.554672, 100, 0, 0),
+(@SGGUID+2, 9, 958.8796, -216.6811, -46.55466, 100, 0, 0),
+(@SGGUID+2, 10, 982.788, -232.2301, -48.72901, 100, 0, 0),
+(@SGGUID+2, 11, 992.1092, -246.4848, -45.71144, 100, 0, 0),
+(@SGGUID+2, 12, 993.2321, -258.9849, -45.71144, 100, 0, 0),
+(@SGGUID+2, 13, 979.4579, -270.8702, -45.71145, 100, 0, 0),
+(@SGGUID+2, 14, 973.5368, -284.1732, -45.51946, 100, 0, 0),
+(@SGGUID+2, 15, 988.5011, -301.8313, -45.79437, 100, 0, 0),
+(@SGGUID+2, 16, 1001.578, -321.8604, -44.62534, 100, 0, 0),
+(@SGGUID+2, 17, 1006.375, -347.6244, -41.28379, 100, 0, 0),
+(@SGGUID+2, 18, 1026.262, -347.6605, -40.58857, 100, 0, 0),
+(@SGGUID+2, 19, 1040.822, -348.7808, -38.76598, 100, 0, 0),
+
+(@SGGUID+3, 1, 904.66425, -258.0873, -46.232998, 100, 0, 0),
+(@SGGUID+3, 2, 891.2799, -266.49417, -45.409153, 100, 0, 0),
+(@SGGUID+3, 3, 886.99756, -276.40646, -45.926804, 100, 0, 0),
+(@SGGUID+3, 4, 893.3802, -290.364, -46.049274, 100, 0, 0),
+(@SGGUID+3, 5, 895.71216, -300.05695, -46.2387, 100, 0, 0),
+(@SGGUID+3, 6, 898.93536, -315.17178, -48.841454, 100, 0, 0),
+(@SGGUID+3, 7, 902.0239, -331.90744, -49.603344, 100, 0, 0),
+(@SGGUID+3, 8, 916.6536, -336.07257, -49.23876, 100, 0, 0),
+(@SGGUID+3, 9, 929.5967, -345.11758, -50.01567, 100, 0, 0),
+(@SGGUID+3, 10, 938.93555, -360.7778, -50.428635, 100, 0, 0),
+(@SGGUID+3, 11, 961.2805, -373.7062, -49.82215, 100, 0, 0),
+(@SGGUID+3, 12, 986.0679, -379.3607, -50.03362, 100, 0, 0),
+(@SGGUID+3, 13, 987.5509, -356.9252, -52.1513, 100, 0, 0),
+(@SGGUID+3, 14, 992.7377, -328.7814, -64.65433, 100, 0, 0),
+(@SGGUID+3, 15, 1010.175, -309.1725, -71.60934, 100, 0, 0),
+(@SGGUID+3, 16, 1027.403, -298.7389, -71.97888, 100, 0, 0),
+(@SGGUID+3, 17, 1045.871, -309.2404, -72.6834, 100, 0, 0),
+(@SGGUID+3, 18, 1060.738, -319.8722, -72.56205, 100, 0, 0),
+(@SGGUID+3, 19, 1073.857, -288.9158, -72.62457, 100, 0, 0);
 
 -- =========
 -- DBSCRIPTS
