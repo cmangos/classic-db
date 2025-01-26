@@ -12332,8 +12332,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('325402','3254','0','0','100','1025','11000','21000','13000','19000','0','0','11','6607','1','0','0','0','0','0','0','0','0','0','Sunscale Lashtail - Cast Lash'),
 -- Sunscale Screecher 3255
 ('325501','3255','2','0','100','0','30','0','0','0','0','0','39','30','0','0','1','2081','0','0','0','0','0','0','Sunscale Screecher - Call For Help and Emote at 30% HP'),
--- Sunscale Scytheclaw 3256 - s.3391 manually casted
-('325601','3256','0','0','100','1025','5000','20000','5000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Sunscale Scytheclaw - Cast Thrash'),
+-- Sunscale Scytheclaw 3256 - spell_list
 -- Ishamuhale 3257
 -- Bristleback Hunter 3258
 ('325801','3258','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Bristleback Hunter - Enable Range Mode on Aggro'),
