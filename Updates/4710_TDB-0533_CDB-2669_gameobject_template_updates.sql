@@ -565,7 +565,8 @@ INSERT INTO `gameobject_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 (18036, 22809, 0, 2, 1, 1, 0, 'Maul of the Redeemed Crusader'),
 (18036, 22811, 0, 2, 1, 1, 0, 'Soulstring'),
 (18036, 23025, 0, 2, 1, 1, 0, 'Seal of the Damned'),
-(18036, 23027, 0, 2, 1, 1, 0, 'Warmth of Forgiveness');
+(18036, 23027, 0, 2, 1, 1, 0, 'Warmth of Forgiveness'),
+(18036, 23071, 0, 2, 1, 1, 0, 'Leggings of Apocalypse');
 UPDATE `gameobject_template` SET `data4`='0' WHERE `entry`='181444'; -- Kel'Thuzad Trigger
 UPDATE `gameobject_template` SET `data3`='0' WHERE `entry`='181510'; -- Plague Fissure
 UPDATE `gameobject_template` SET `data3`='0' WHERE `entry`='181511'; -- Plague Fissure
