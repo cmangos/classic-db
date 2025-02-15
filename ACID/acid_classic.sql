@@ -7740,7 +7740,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('613102','6131','0','0','100','1025','9000','12000','15000','18000','0','0','11','12557','0','0','0','0','0','0','0','0','0','0','Draconic Mageweaver - Cast Cone of Cold'),
 ('613103','6131','9','0','100','1025','0','40','3400','4800','0','0','11','9672','1','256','0','0','0','0','0','0','0','0','Draconic Mageweaver - Cast Frostbolt'),
 -- Lord Arkkoroc (6134) - NSR
--- Arkkoran Clacker (6135) - NSR
+-- Arkkoran Clacker 6135
+('613501','6135','2','0','100','0','25','0','0','0','0','0','39','15','0','0','1','1064','0','0','0','0','0','0','Arkkoran Clacker - Call For Help at 25% HP'),
 -- Arkkoran Muckdweller 6136
 ('613601','6136','11','0','100','0','0','0','0','0','0','0','11','11964','0','34','0','0','0','0','0','0','0','0','Arkkoran Muckdweller - Cast Fevered Fatigue on Spawn'),
 -- Arkkoran Pincer
