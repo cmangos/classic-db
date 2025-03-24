@@ -6,8 +6,8 @@ on:
       - "*"
 
 env:
-  MYSQL_BIN_NAME: "mysql-8.0.28-winx64"
-  MYSQL_BASE_PREBUILD_ADR: "https://dev.mysql.com/get/Downloads/MySQL-8.0/"
+  MYSQL_BIN_NAME: "mysql-8.0.41-winx64"
+  MYSQL_BASE_PREBUILD_ADR: "https://cdn.mysql.com/Downloads/MySQL-8.0/"
   MYSQL_BIN_EXT: ".zip"
   MYSQL_FINAL_SERVER_FOLDER: "mysql-server"
   MYSQL_DEFAULT_ROOT: "cmangos"
