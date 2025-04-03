@@ -1,0 +1,26 @@
+-- Takk the Leaper
+-- UpdateType: CreateObject1
+-- Object Guid: Full: 0x2045A8002005B48000000D00002F4E55 Creature/0 R4458/S13 Map: 1 Entry: 5842 Low: 3100245
+-- WalkSpeed: 2.5
+-- RunSpeed: 10
+-- UNIT_FIELD_LEVEL: 19
+-- UNIT_FIELD_FACTIONTEMPLATE: 48/6.7E-44 (48)
+-- UNIT_FIELD_FLAGS: 64
+-- UNIT_FIELD_FLAGS_2: 2048
+-- UNIT_FIELD_BASEATTACKTIME: 2000
+-- UNIT_FIELD_BASEATTACKTIME + 1: 2000
+-- UNIT_FIELD_BOUNDINGRADIUS: 1.073
+-- UNIT_FIELD_COMBATREACH: 1.5
+-- UNIT_FIELD_DISPLAYID: 1337
+-- UNIT_FIELD_DISPLAY_SCALE: 1065353216/1
+-- UNIT_FIELD_NATIVEDISPLAYID: 1337
+-- UNIT_FIELD_NATIVE_X_DISPLAY_SCALE: 1065353216/1
+
+-- Takk the Leaper passive
+-- ('584201','5842','1','0','100','0','1000','1000','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Takk the Leaper - Cast Battle Stance OOC'),
+-- ('584202','5842','4','0','100','0','0','0','0','0','0','0','11','6268','1','0','0','0','0','0','0','0','0','0','Takk the Leaper - Cast Rushing Charge'),
+-- CastID: Full: 0xBC45A8002014A90700000D00002F4E58 Cast/7 R4458/S13 Map: 1 Entry: 21156 Low: 3100248
+-- SpellID: 21156 (21156)
+-- UnitGUID: Full: 0x2045A8002005B48000000D00002F4E55 Creature/0 R4458/S13 Map: 1 Entry: 5842 Low: 3100245
+UPDATE `creature_template_addon` SET `auras` = '21156' WHERE `entry` = 5842;
+
