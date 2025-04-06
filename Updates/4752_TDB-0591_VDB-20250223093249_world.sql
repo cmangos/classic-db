@@ -40,7 +40,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- Alliance Chest
 (300474, 3715, 1, 2529.93, 1941.3, 348.085, -2.09439, 0, 0, 0.866025, -0.5, 300, 900); -- Stonetalon Mountains (The Talon Den)
 
-INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES (300344, 3695); -- missing food crate option
+REPLACE INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES (300344, 3695); -- missing food crate option
 
 DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 300450 AND 300474;
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `description`) VALUES 
@@ -68,7 +68,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `description`) VALUES
 (300471, 31310, 'Darkshore (Mist''s Edge) - Battered Chest (106319)'), -- Darkshore (Mist's Edge) - Chest Pool
 (300472, 31116, 'Eastern Plaguelands (Plaguewood) - Solid Chest (153453)'), -- Eastern Plaguelands (Plaguewood) - Chest Pool
 (300473, 31144, 'Winterspring (The Ruins of Kel''Theril) - Solid Chest (153454)'), -- Winterspring (The Ruins of Kel'Theril) - Chest Pool
-(300474, 31306, 'Stonetalon Mountains (The Talon Den) - Tattered Chest (3715)'), -- Stonetalon Mountains (The Talon Den) - Chest Pool
+(300474, 31306, 'Stonetalon Mountains (The Talon Den) - Tattered Chest (3715)'); -- Stonetalon Mountains (The Talon Den) - Chest Pool
 
 DELETE FROM `pool_template` WHERE `entry` IN (31345,31346,31238);
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
