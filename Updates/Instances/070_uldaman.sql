@@ -5,8 +5,8 @@ DB%Complete: 85
 DBComment: scorpids and big packs to spawn_group
 EndDBScriptData */
 
-SET @CGUID := 7000000; -- creatures
-SET @OGUID := 7000000; -- gameobjects
+SET @CGUID := 700000; -- creatures
+SET @OGUID := 700000; -- gameobjects
 SET @PGUID := 45600; -- pools
 SET @SGGUID:= 7000000; -- spawn_group
 SET @CONDITION :=700000; -- conditions

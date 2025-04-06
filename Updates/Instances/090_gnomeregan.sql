@@ -6,8 +6,8 @@ DBComment:
 Add additional RP Scripts in The Clean Zone
 EndDBScriptData */
 
-SET @CGUID := 9000000; -- creatures
-SET @OGUID := 9000000; -- gameobjects
+SET @CGUID := 900000; -- creatures
+SET @OGUID := 900000; -- gameobjects
 SET @PGUID := 45700; -- pools
 
 -- =========
