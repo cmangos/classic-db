@@ -232,7 +232,7 @@ jobs:
 
       - name: Get Current Date
         id: date
-        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        run: echo "date=$(date +'%Y-%m-%d')" >> $env:GITHUB_OUTPUT
 
       - name: Upload Snapshot
         uses: "marvinpinto/action-automatic-releases@latest"
