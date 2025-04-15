@@ -4488,7 +4488,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('674001','6740','22','0','100','1','41','548','0','0','0','0','5','23','0','0','15','8356','6','0','1','10789','0','0','Innkeeper Allison - Emote and Gives Quest Credit on Received Emote'),
 -- Renzik "The Shiv" 6946
 -- Doc Mixilpixil 7207
-('720701','7207','22','0','100','1','61','9011','0','0','0','0','53','9003','0','0','15','2608','6','0','0','0','0','0','Doc Mixilpixil - Start Relay Script and Quest Complete (2608) on Receive Emote'),
+('720701','7207','30','0','100','1','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Doc Mixilpixi - Set Phase 1 on ReceiveEventAI A'),
+('720702','7207','22','5','100','1','61','9011','0','0','0','0','53','720702','7','0','0','0','0','0','0','0','0','0','Doc Mixilpixil - Start Relay Script on Receive Emote'),
+('720703','7207','1','5','100','1','180000','180000','180000','180000','0','0','53','720701','0','0','22','0','0','0','0','0','0','0','Doc Mixilpixi - Start RelayScript and set Phase 0 (Phase 1)'),
 -- Borgus Steelhand 7232
 -- Shailiea 7295
 -- Thelman Slatefist (7410) - NSR
