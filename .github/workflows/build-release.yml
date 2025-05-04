@@ -245,7 +245,7 @@ jobs:
 
   notify-success:
     name: Send Notification to Discord on Success
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: none
 
@@ -280,7 +280,7 @@ jobs:
 
   notify-failure:
     name: Send Notification to Discord on Failure
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: none
     if: failure()
