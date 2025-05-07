@@ -7681,10 +7681,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Splintertree Guard (12903) - NSR
 -- Chief Murgut (3.3.0 Official Data)
 ('1291801','12918','4','0','100','0','0','0','0','0','0','0','1','8350','0','0','0','0','0','0','0','0','0','0','Chief Murgut - Say on Aggro'),
-('1291802','12918','6','0','100','0','0','0','0','0','0','0','11','20818','0','7','1','8351','0','0','0','0','0','0','Chief Murgut - Cast Summon Foulweald Totem Basket and Say on Death'),
--- Enraged Foulweald (3.3.0 Official Data)
+('1291802','12918','1','0','100','1','300000','300000','300000','300000','0','0','53','1291801','0','0','41','0','0','0','0','0','0','0','Chief Murgut - Despawn OOC'),
+('1291803','12918','6','0','100','0','0','0','0','0','0','0','11','20818','0','7','1','8351','0','0','53','1291801','0','0','Chief Murgut - Cast Summon Foulweald Totem Basket and start relayscript and Say on Death'),
+-- Enraged Foulweald
 ('1292101','12921','1','0','100','0','1000','1000','0','0','0','0','11','6821','0','32','0','0','0','0','0','0','0','0','Enraged Foulweald - Cast Corrupted Strength Passive OOC'),
-('1292102','12921','8','0','100','0','20746','-1','0','0','0','0','11','20786','0','1','1','8398','0','0','0','0','0','0','Enraged Foulweald - Cast Destroy Karang''s Banner and Emote on Cast Summon Karang''s Banner Aura Spellhit'),
+('1292102','12921','30','0','100','0','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Enraged Foulweald - set Phase 1 on Receive Event AI A'),
+('1292103','12921','1','5','100','0','1000','1000','0','0','0','0','41','1000','0','0','0','0','0','0','0','0','0','0','Enraged Foulweald - ForceDespawn OOC (Phase 1)'),
 -- Vorsha the Lasher 12940 - s.3391 manually casted
 ('1294001','12940','0','0','100','1025','0','10000','11200','19500','0','0','11','6607','1','0','0','0','0','0','0','0','0','0','Vorsha the Lasher - Cast Lash'),
 ('1294002','12940','0','0','100','1025','5000','20000','5000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Vorsha the Lasher - Cast Thrash'),
