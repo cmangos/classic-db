@@ -8,7 +8,7 @@ EndDBScriptData */
 SET @CGUID := 700000; -- creatures
 SET @OGUID := 700000; -- gameobjects
 SET @PGUID := 45600; -- pools
-SET @SGGUID:= 7000000; -- spawn_group
+SET @SGGUID:= 700000; -- spawn_group
 SET @CONDITION :=700000; -- conditions
 
 -- =========
