@@ -39,16 +39,17 @@ jobs:
           echo "CHAR_DB_NAME=${expansion}characters" >> $env:GITHUB_ENV
           echo "REALM_DB_NAME=${expansion}realmd" >> $env:GITHUB_ENV
           echo "LOGS_DB_NAME=${expansion}logs" >> $env:GITHUB_ENV
+          echo "BUILD_DATE=$(date +'%Y-%m-%d')" >> $env:GITHUB_ENV
           md -Force "${{env.CACHED_FOLDER}}"
           md -Force "${{env.WORK_FOLDER}}"
 
       - name: Checkout DB
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: ${{env.DB_FOLDER}}
 
       - name: Checkout CORE
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: ${{env.CORE_REPO}}
           path: ${{env.CORE_FOLDER}}
@@ -209,7 +210,7 @@ jobs:
           choco install gawk
 
       - name: Checkout mysql2sqlite
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: dumblob/mysql2sqlite
           path: ${{env.CORE_FOLDER}}/mysql2sqlite
@@ -230,22 +231,18 @@ jobs:
           7z a -tzip "${{github.workspace}}\releases\${{env.EXPANSION_NAME}}-all-db.zip" "${{env.FINAL_SQL_FOLDER}}\*.sql"
           7z a -tzip "${{github.workspace}}\releases\${{env.EXPANSION_NAME}}-sqlite-db.zip" "${{env.FINAL_SQL_FOLDER}}\*.sqlite"
 
-      - name: Get Current Date
-        id: date
-        run: echo "date=$(date +'%Y-%m-%d')" >> $env:GITHUB_OUTPUT
-
       - name: Upload Snapshot
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.PUSH_RELEASE_TOKEN }}"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: false
-          title: "Development Build(${{ steps.date.outputs.date }})"
+          title: "Development Build(${{env.BUILD_DATE}})"
           files: releases
 
   notify-success:
     name: Send Notification to Discord on Success
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: none
 
@@ -280,7 +277,7 @@ jobs:
 
   notify-failure:
     name: Send Notification to Discord on Failure
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: none
     if: failure()
