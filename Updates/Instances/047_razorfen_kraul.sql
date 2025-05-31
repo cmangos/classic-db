@@ -583,10 +583,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+27, 4437, 47, 2163.72, 1852.09, 56.9746, 3.05433, 7200, 7200, 0, 0), -- Razorfen Warden
 (@CGUID+28, 4438, 47, 2205.98, 1644.75, 85.927, 4.76475, 86400, 86400, 0, 0), -- Razorfen Spearhide
 (@CGUID+29, 4438, 47, 2198.4, 1642.08, 86.0778, 4.93928, 86400, 86400, 0, 0), -- Razorfen Spearhide
-(@CGUID+30, 4440, 47, 2183.11, 1596.42, 79.9248, 5.85803, 7200, 7200, 2, 1), -- Razorfen Totemic
-(@CGUID+31, 4440, 47, 2177.46, 1638.82, 81.1093, 3.66033, 7200, 7200, 0, 0), -- Razorfen Totemic
-(@CGUID+32, 0, 47, 2143.63, 1430.93, 75.9218, 2.32917, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+33, 4440, 47, 2145.96, 1931.02, 67.293, 1.00215, 7200, 7200, 2, 1), -- Razorfen Totemic
+(@CGUID+30, 0, 47, 2183.11, 1596.42, 79.9248, 5.85803, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+31, 0, 47, 2177.46, 1638.82, 81.1093, 3.66033, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+32, 0, 47, 2143.63, 1430.93, 75.9218, 2.32917, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+33, 0, 47, 2145.96, 1931.02, 67.293, 1.00215, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+34, 4442, 47, 2020.39, 1493.41, 74.5037, 1.79769, 7200, 7200, 6, 1), -- Razorfen Defender
 (@CGUID+35, 4442, 47, 2088.563, 1550.666, 81.383, 3.71137, 7200, 7200, 0, 2), -- Razorfen Defender
 (@CGUID+36, 4442, 47, 2101.38, 1594.22, 80.493, 2.3911, 7200, 7200, 1, 1), -- Razorfen Defender
@@ -656,13 +656,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+100, 4517, 47, 2193.06, 1836.15, 60.3219, 3.77636, 7200, 7200, 5, 1), -- Death's Head Priest
 (@CGUID+101, 4517, 47, 2187.822, 1834.436, 60.13253, 3.70765, 7200, 7200, 0, 2), -- Death's Head Priest
 (@CGUID+102, 4517, 47, 2190.8, 1862.36, 58.5014, 2.33087, 7200, 7200, 2, 1), -- Death's Head Priest
-(@CGUID+103, 4518, 47, 2072.74, 1728.61, 77.0211, 1.3439, 7200, 7200, 0, 0), -- Death's Head Sage
-(@CGUID+104, 4518, 47, 2128.07, 1619.58, 81.6695, 5.20059, 7200, 7200, 0, 0), -- Death's Head Sage
-(@CGUID+105, 4518, 47, 2132.76, 1613.51, 81.8362, 0.340052, 7200, 7200, 0, 0), -- Death's Head Sage
-(@CGUID+106, 4518, 47, 2207.6, 1611.83, 81.6424, 4.99159, 7200, 7200, 2, 1), -- Death's Head Sage
-(@CGUID+107, 4518, 47, 2213.49, 1602.72, 81.305, 5.09984, 7200, 7200, 2, 1), -- Death's Head Sage
-(@CGUID+108, 4518, 47, 2129.74, 1707.63, 80.1145, 4.31096, 7200, 7200, 1, 1), -- Death's Head Sage
-(@CGUID+109, 4518, 47, 2141.91, 1918.87, 66.5693, 4.34914, 7200, 7200, 0, 0), -- Death's Head Sage
+(@CGUID+103, 0, 47, 2072.74, 1728.61, 77.0211, 1.3439, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+104, 0, 47, 2128.07, 1619.58, 81.6695, 5.20059, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+105, 0, 47, 2132.76, 1613.51, 81.8362, 0.340052, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+106, 0, 47, 2207.6, 1611.83, 81.6424, 4.99159, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+107, 0, 47, 2213.49, 1602.72, 81.305, 5.09984, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+108, 0, 47, 2129.74, 1707.63, 80.1145, 4.31096, 7200, 7200, 1, 1), -- creature_spawn_entry
+(@CGUID+109, 0, 47, 2141.91, 1918.87, 66.5693, 4.34914, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+110, 4519, 47, 2103.36, 1601.37, 80.8787, 4.44461, 7200, 7200, 1, 1), -- Death's Head Seer
 (@CGUID+111, 4519, 47, 2092.09, 1556.07, 81.2769, 2.55439, 7200, 7200, 5, 1), -- Death's Head Seer
 (@CGUID+112, 4519, 47, 2106.03, 1551.15, 81.6238, 2.23835, 7200, 7200, 1, 1), -- Death's Head Seer
@@ -680,13 +680,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+124, 0, 47, 2135.65, 1493.45, 73.0833, 0.447883, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+125, 0, 47, 2078.71, 1443.38, 66.6624, 1.18513, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+126, 0, 47, 2143.27, 1450.44, 77.9961, 3.27257, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+127, 0, 47, 2155.1, 1429.69, 74.3329, 4.68963, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+127, 0, 47, 2155.1, 1429.69, 74.3329, 4.68963, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+128, 0, 47, 2154.74, 1414.62, 74.248, 2.00713, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+129, 4525, 47, 2117.18, 1693.67, 80.5766, 5.96903, 7200, 7200, 0, 0), -- Razorfen Earthbreaker
-(@CGUID+130, 4525, 47, 2065.17, 1733.95, 76.6257, 0.349066, 7200, 7200, 0, 0), -- Razorfen Earthbreaker
-(@CGUID+131, 4525, 47, 2122.63, 1707.94, 80.495, 4.83456, 7200, 7200, 0, 0), -- Razorfen Earthbreaker
-(@CGUID+132, 4525, 47, 2189.81, 1608.4, 80.4038, 2.44378, 7200, 7200, 0, 0), -- Razorfen Earthbreaker
-(@CGUID+133, 4525, 47, 2182.19, 1623.39, 81.4333, 5.16836, 7200, 7200, 0, 0), -- Razorfen Earthbreaker
+(@CGUID+129, 0, 47, 2117.18, 1693.67, 80.5766, 5.96903, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+130, 0, 47, 2065.17, 1733.95, 76.6257, 0.349066, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+131, 0, 47, 2122.63, 1707.94, 80.495, 4.83456, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+132, 0, 47, 2189.81, 1608.4, 80.4038, 2.44378, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+133, 0, 47, 2182.19, 1623.39, 81.4333, 5.16836, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+134, 4530, 47, 2012.42, 1518.29, 79.6513, 0.626741, 7200, 7200, 3, 1), -- Razorfen Handler
 (@CGUID+135, 4530, 47, 2015.55, 1537.19, 80.89, 1.04361, 7200, 7200, 3, 1), -- Razorfen Handler
 (@CGUID+136, 4530, 47, 2000.33, 1558.83, 82.009, 0.571824, 7200, 7200, 0, 0), -- Razorfen Handler
@@ -694,7 +694,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+138, 4531, 47, 2104.29, 1469.47, 73.7013, 5.53269, 7200, 7200, 0, 0), -- Razorfen Beast Trainer
 (@CGUID+139, 4531, 47, 2101.57, 1450.09, 73.8959, 1.93731, 7200, 7200, 0, 0), -- Razorfen Beast Trainer
 (@CGUID+140, 4532, 47, 2146.03, 1614.74, 81.6781, 4.85866, 7200, 7200, 0, 0), -- Razorfen Beastmaster
-(@CGUID+141, 4532, 47, 2138.38, 1630.94, 81.7384, 1.32335, 7200, 7200, 0, 0), -- Razorfen Beastmaster
+(@CGUID+141, 0, 47, 2138.38, 1630.94, 81.7384, 1.32335, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+142, 4532, 47, 2154.73, 1494.14, 67.932, 0.186359, 7200, 7200, 0, 0), -- Razorfen Beastmaster
 (@CGUID+143, 4538, 47, 2078.21, 1962.31, 63.0147, 5.65254, 7200, 7200, 3, 1), -- Kraul Bat
 (@CGUID+144, 4538, 47, 2056.44, 1920.13, 69.4711, 2.73908, 7200, 7200, 3, 1), -- Kraul Bat
@@ -740,8 +740,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+184, 4625, 47, 2069.23, 2015.3, 64.0441, 2.40855, 7200, 7200, 0, 0), -- Death's Head Ward Keeper
 (@CGUID+185, 4625, 47, 2063.81, 2008.77, 64.2132, 2.47837, 7200, 7200, 0, 0), -- Death's Head Ward Keeper
 (@CGUID+186, 4842, 47, 2117.18, 1693.67, 80.5766, 5.96903, 86400, 86400, 0, 0), -- Earthcaller Halmgar
-(@CGUID+187, 6035, 47, 2066.02, 1742.89, 76.7197, 0.174533, 7200, 7200, 0, 0), -- Razorfen Stalker
-(@CGUID+188, 6035, 47, 2133.73, 1699, 80.8284, 3.01942, 7200, 7200, 0, 0), -- Razorfen Stalker
+(@CGUID+187, 0, 47, 2066.02, 1742.89, 76.7197, 0.174533, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+188, 0, 47, 2133.73, 1699, 80.8284, 3.01942, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+189, 6035, 47, 2160.86, 1929.84, 65.8223, 0.855211, 7200, 7200, 0, 0), -- Razorfen Stalker
 (@CGUID+190, 6035, 47, 2152.86, 1926.615, 66.59495, 5.78799, 7200, 7200, 0, 2), -- Razorfen Stalker
 (@CGUID+191, 6168, 47, 2142.99, 1581.57, 80.3842, 3.08923, 36000, 36000, 0, 0), -- Roogug
@@ -749,7 +749,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+193, 0, 47, 2191.84, 1498.61, 73.4284, 2.04204, 7200, 7200, 0, 0); -- creature_spawn_entry (not always active or patrol)
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+30, 4440), (@CGUID+30, 4525), -- Razorfen Totemic, Razorfen Earthbreaker
+(@CGUID+31, 4440), (@CGUID+31, 4525), -- Razorfen Totemic, Razorfen Earthbreaker
 (@CGUID+32, 4440), (@CGUID+32, 4522), (@CGUID+32, 4523), -- Razorfen Totemic, Razorfen Dustweaver, Razorfen Groundshaker
+(@CGUID+33, 4440), (@CGUID+33, 4525), -- Razorfen Totemic, Razorfen Earthbreaker
 (@CGUID+40, 4442), (@CGUID+40, 4522), (@CGUID+40, 4523),-- Razorfen Defender, Razorfen Dustweaver
 (@CGUID+42, 4442), (@CGUID+42, 4523), -- Razorfen Defender, Razorfen Groundshaker
 (@CGUID+47, 4442), (@CGUID+47, 4523), -- Razorfen Defender, Razorfen Groundshaker
@@ -760,6 +763,13 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+96, 4516), (@CGUID+96, 4523), -- Death's Head Adept, Razorfen Groundshaker
 (@CGUID+97, 4516), (@CGUID+97, 4523), -- Death's Head Adept, Razorfen Groundshaker
 (@CGUID+98, 4516), (@CGUID+98, 4523), -- Death's Head Adept, Razorfen Groundshaker
+(@CGUID+103, 4518), (@CGUID+103, 4525), -- Death's Head Sage, Razorfen Earthbreaker
+(@CGUID+104, 4518), (@CGUID+104, 4525), -- Death's Head Sage, Razorfen Earthbreaker
+(@CGUID+105, 4518), (@CGUID+105, 4525), -- Death's Head Sage, Razorfen Earthbreaker
+(@CGUID+106, 4518), (@CGUID+106, 4525), -- Death's Head Sage, Razorfen Earthbreaker
+(@CGUID+107, 4518), (@CGUID+107, 4525), -- Death's Head Sage, Razorfen Earthbreaker
+(@CGUID+108, 4518), (@CGUID+108, 4525), -- Death's Head Sage, Razorfen Earthbreaker
+(@CGUID+109, 4518), (@CGUID+109, 4525), -- Death's Head Sage, Razorfen Earthbreaker
 (@CGUID+118, 4520), (@CGUID+118, 4522), (@CGUID+118, 4523), -- Razorfen Geomancer, Razorfen Dustweaver, Razorfen Groundshaker
 (@CGUID+119, 4522), -- Razorfen Dustweaver
 (@CGUID+120, 4522), (@CGUID+120, 4523), -- Razorfen Dustweaver, Razorfen Groundshaker
@@ -771,6 +781,13 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+126, 4522), (@CGUID+126, 4523), -- Razorfen Dustweaver, Razorfen Groundshaker
 (@CGUID+127, 4522), (@CGUID+127, 4523), -- Razorfen Dustweaver, Razorfen Groundshaker
 (@CGUID+128, 4523), -- Razorfen Groundshaker
+(@CGUID+129, 4525), -- Razorfen Earthbreaker
+(@CGUID+130, 4525), -- Razorfen Earthbreaker
+(@CGUID+131, 4525), -- Razorfen Earthbreaker
+(@CGUID+133, 4525), -- Razorfen Earthbreaker
+(@CGUID+141, 4525), (@CGUID+141, 4532), -- Razorfen Earthbreaker, Razorfen Beastmaster
+(@CGUID+187, 4525), (@CGUID+187, 6035), -- Razorfen Stalker, Razorfen Earthbreaker
+(@CGUID+188, 4525), (@CGUID+188, 6035), -- Razorfen Stalker, Razorfen Earthbreaker
 (@CGUID+193, 4523); -- Razorfen Groundshaker
 
 -- ===========
