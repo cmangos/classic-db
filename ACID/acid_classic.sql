@@ -5384,8 +5384,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Savage Owlbeast (2929) - NSR
 -- Gorkas
 ('431401','4314','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Gorkas - Cast Summon Enraged Wyvern and Yell on Aggro'),
--- Vilebranch Warrior
-('446501','4465','9','0','100','1025','0','5','5000','9000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Vilebranch Warrior - Cast Strike'),
+-- Vilebranch Warrior 4465 - s.12057 classic only
+('446501','4465','0','0','100','1025','5000','20000','5000','20000','0','0','11','12057','1','0','0','0','0','0','0','0','0','0','Vilebranch Warrior - Cast Strike'),
 ('446502','4465','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Vilebranch Warrior - Flee at 15% HP'),
 -- Vilebranch Scalper
 ('446601','4466','12','0','100','1025','20','0','18000','26000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Vilebranch Scalper - Cast Execute at 20% Target HP'),
