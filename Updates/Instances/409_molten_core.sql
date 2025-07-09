@@ -486,7 +486,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (12101, 0, 0, 1, 0, 0, NULL), -- Lava Surger
 (12118, 0, 0, 1, 0, 0, NULL), -- Lucifron
 (12119, 0, 0, 1, 0, 0, NULL), -- Flamewaker Protector
-(12143, 0, 0, 1, 0, 0, '19818 21857'), -- Son of Flame
+(12143, 0, 0, 1, 0, 0, '21857'), -- Son of Flame
 (12259, 0, 0, 1, 0, 0, NULL), -- Gehennas
 (12264, 0, 0, 1, 0, 0, NULL); -- Shazzrah
 
