@@ -835,6 +835,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (15312, 0, 0, 1, 0, 0, '19818'), -- Obsidian Nullifier
 (15316, 0, 0, 1, 0, 0, NULL), -- Qiraji Scarab
 (15317, 0, 0, 1, 0, 0, NULL), -- Qiraji Scorpion
+(15334, 0, 0, 1, 0, 0, '18950'), -- Giant Eye Tentacle
 (15378, 0, 0, 1, 0, 0, NULL), -- Merithra of the Dream
 (15379, 0, 0, 1, 0, 0, NULL), -- Caelestrasz
 (15380, 0, 0, 1, 0, 0, NULL), -- Arygos
@@ -1865,14 +1866,13 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1530001, 13000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - waypoint movement'),
 (1530001, 14000, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - resume waypoint movement');
 
--- maybe more missing (more missing probably)
 DELETE FROM `dbscripts_on_creature_death` WHERE `id` IN (15262,15264,15277,15311,15312);
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(15262, 1000, 0, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Obsidian Eradicator - Cast Drop Small Obsidian Chunk on Death'),
-(15264, 1000, 0, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anubisath Sentinel - Cast Drop Small Obsidian Chunk on Death'),
-(15277, 1000, 0, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anubisath Defender - Cast Drop Large Obsidian Chunk on Death'),
-(15311, 1000, 0, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anubisath Warder - Cast Drop Large Obsidian Chunk on Death'),
-(15312, 1000, 0, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Obsidian Nullifier - Cast Drop Large Obsidian Chunk on Death');
+(15262, 1000, 0, 15, 27628, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Obsidian Eradicator - Cast Drop Obsidian (Small Obsidian Chunk 1-3)'),
+(15264, 1000, 0, 15, 27628, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anubisath Sentinel - Cast Drop Obsidian (Small Obsidian Chunk 1-3)'),
+(15277, 1000, 0, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anubisath Defender - Cast Drop Obsidian (Large Obsidian Chunk 1)'),
+(15311, 1000, 0, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anubisath Warder - Cast Drop Obsidian (Large Obsidian Chunk 1)'),
+(15312, 1000, 0, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Obsidian Nullifier - Cast Drop Obsidian (Large Obsidian Chunk 1)'); -- // confirm
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
