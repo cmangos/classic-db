@@ -9475,8 +9475,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('495103','4951','30','0','100','1','5','4951','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Theramore Practicing Guard - Evade on Receive AI Event Custom A'),
 ('495104','4951','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Theramore Practicing Guard - Flee at 15% HP'),
 -- Theramore Combat Dummy 4952
-('495201','4952','11','0','100','0','0','0','0','0','0','0','61','1','0','0','42','1','0','0','20','0','0','0','Theramore Combat Dummy - Set Immobilized State and Set Invincible and Prevent Melee on Spawn'),
-('495202','4952','30','0','100','1','5','4951','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Theramore Combat Dummy - Evade on Receive AI Event Custom A'),
+('495201','4952','30','0','100','1','5','4951','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Theramore Combat Dummy - Evade on Receive AI Event Custom A'),
 -- Commander Samaul
 ('496401','4964','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Commander Samaul - Flee at 15% HP'),
 -- Pained (4965) - NSR
