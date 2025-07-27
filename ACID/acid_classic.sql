@@ -17950,10 +17950,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1645302','16453','0','0','100','1025','5000','15000','20000','40000','0','0','11','28431','4','512','0','0','0','0','0','0','0','0','Necro Stalker - Cast Poison Charge'),
 -- Blizzard 16474 - NSR
 -- Web Wrap 16486 - npc_web_wrap
--- Naxxramas Follower 16505
-('1650501','16505','0','0','100','1025','1000','21000','10000','30000','0','0','11','22886','5','512','0','0','0','0','0','0','0','0','Naxxramas Follower - Cast Berserker Charge'),
-('1650502','16505','0','0','100','1025','4000','16000','15000','30000','0','0','11','30225','17','0','0','0','0','0','0','0','0','0','Naxxramas Follower - Cast Silence'),
--- Naxxramas Worshipper 16506 - s.30025
+-- Naxxramas Follower 16505 - creature_spell_list
+-- Naxxramas Worshipper 16506 - charmed creature_spell_list
 -- Crypt Guard 16573 - s.15579 classic only
 ('1657301','16573','0','0','100','1024','0','0','0','0','0','0','11','28969','4','32','0','0','0','0','0','0','0','0','Crypt Guard - Cast Acid Spit on Aggro'),
 ('1657302','16573','0','0','100','1025','4000','6000','4000','7000','0','0','11','28969','1','0','0','0','0','0','0','0','0','0','Crypt Guard - Cast Acid Spit'),
