@@ -133,7 +133,7 @@ INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orien
 SET @MOVID = 4602;
 DELETE FROM creature WHERE guid = @MOVID;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
-(@MOVID, 14529, 0, 1, '-8379.346', '-987.76196', '187.36035', 5.8294, 600,600, 0, 2);
+(@MOVID, 14529, 0, 1, '-8379.346', '-987.76196', '187.36035', 5.8294, 10800,10800, 0, 2);
 -- GUID: Full: 0x20516400000E304000007B0000612033 Creature/0 R5209/S123 Map: 0 (Eastern Kingdoms) Entry: 14529 (Franklin the Friendly) Low: 6365235
 DELETE FROM creature_movement WHERE id = @MOVID;
 INSERT INTO creature_movement (Id, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
