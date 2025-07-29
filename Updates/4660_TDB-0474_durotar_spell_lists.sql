@@ -329,7 +329,7 @@ DELETE FROM `creature_spell_list` WHERE `Id` = 319701;
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (319701, 1, 5262, 0, -1, 2, 0, 100, 0, 0, 11000, 16000, 22000, 'Burning Blade Fanatic - Fanatic Blade - self');
 
-UPDATE `creature_template` SET `SpellList` = 319601 WHERE `entry` = 3197;
+UPDATE `creature_template` SET `SpellList` = 319701 WHERE `entry` = 3197;
 
 -- Burning Blade Apprentice
 DELETE FROM `creature_template_spells` WHERE `entry` = 3198;

@@ -136,16 +136,16 @@ UPDATE broadcast_text SET ChatTypeID=1, SoundEntriesID1=8866, EmoteID1=0 WHERE I
 UPDATE broadcast_text SET ChatTypeID=1, SoundEntriesID1=8864, EmoteID1=0 WHERE Id=13083;
 
 INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
-('1650501', 'Naxxramas Follower', '0', '0'),
-('1650601', 'Naxxramas Worshipper', '0', '0'),
-('1650602', 'Naxxramas Worshipper - Charmed', '0', '0'),
+('1650501', 'Naxxramas - Naxxramas Follower', '0', '0'),
+('1650605', 'Naxxramas - Naxxramas Worshipper - Charmed', '0', '0'),
+('1680305', 'Naxxramas - Deathknight Understudy - Charmed', '0', '0'),
 ('1592801', 'Naxxramas - Thaddius', '0', '0'),
 ('1592901', 'Naxxramas - Stalagg', '0', '0'),
 ('1593001', 'Naxxramas - Feugen', '0', '0'),
-('1593100', 'Naxxramas - Grobbulus', '0', '0'),
+('1593101', 'Naxxramas - Grobbulus', '0', '0'),
 ('1593201', 'Naxxramas - Gluth', '0', '0'),
 ('1593601', 'Naxxramas - Heigan', '0', '0'),
-('1595200', 'Naxxramas - Maexxna', '0', '0'),
+('1595201', 'Naxxramas - Maexxna', '0', '0'),
 ('1595301', 'Naxxramas - Faerlina', '0', '0'),
 ('1595401', 'Naxxramas - Noth', '0', '0'),
 ('1595601', 'Naxxramas - Anub\'Rekhan', '0', '0'),
@@ -164,8 +164,8 @@ INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRange
 ('1606401', 'Naxxramas - Thane Korthazz', '0', '0'),
 ('1606501', 'Naxxramas - Lady Blaumeux', '0', '0');
 
-UPDATE creature_template SET SpellList=entry*100+1 WHERE entry IN(16505,16506,15928,15929,15930,15931,15932,15936,15952,15953,15954,15956,15989,15990,16011,16028,16060,16061,16062,16063,16064,16065);
-UPDATE creature_template SET CharmedSpellList=entry*100+2 WHERE entry IN(16506,16803);
+UPDATE creature_template SET SpellList=entry*100+1 WHERE entry IN(16505,15928,15929,15930,15931,15932,15936,15952,15953,15954,15956,15989,15990,16011,16028,16060,16061,16062,16063,16064,16065);
+UPDATE creature_template SET CharmedSpellList=entry*100+5 WHERE entry IN(16506,16803);
 
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1595601', '1', '28783', '0', '-1', '100', '0', '100', '2', '15000', '15000', '12000', '18000', 'Anub\'Rekhan - Impale'),
@@ -177,7 +177,7 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1595301', '3', '28798', '0', '-1', '2', '23010', '100', '0', '60000', '60000', '60000', '60000', 'Faerlina - Enrage');
 
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
-('1650602', '1', '28732', '0', '-1', '0', '0', '100', '0', '0', '0', '0', '0', 'Naxxramas Worshipper - Widow''s Embrace'),
+('1650605', '1', '28732', '0', '-1', '0', '0', '100', '0', '0', '0', '0', '0', 'Naxxramas Worshipper - Widow''s Embrace'),
 ('1650501', '1', '22886', '0', '-1', '101', '0', '100', '0', '1000','21000','10000','30000', 'Naxxramas Follower - Berserker Charge'),
 ('1650501', '2', '30225', '0', '-1', '0', '0', '100', '0', '4000','16000','15000','30000', 'Naxxramas Follower - Silence');
 
@@ -227,11 +227,11 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1606001', '1', '29317', '0', '-1', '1', '0', '100', '1', '2500', '2500', '1000', '1000', 'Gothik - Shadowbolt');
 
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
-('1593100', '0', '28157', '0', '-1', '0', '0', '100', '1', '20000', '30000', '20000', '30000', 'Grobbulus - Slime Spray'),
-('1593100', '1', '28240', '0', '-1', '0', '0', '100', '1', '20000', '25000', '15000', '15000', 'Grobbulus - Poison Cloud'),
-('1593100', '2', '28169', '0', '1105', '101', '0', '100', '1', '13000', '13000', '13000', '13000', 'Grobbulus - Mutating Injection Above 30%'),
-('1593100', '3', '28169', '0', '1128', '101', '0', '100', '1', '0', '0', '7000', '7000', 'Grobbulus - Mutating Injection Below 30%'),
-('1593100', '4', '26662', '0', '-1', '0', '0', '100', '1', '720000', '720000', '720000', '720000', 'Grobbulus - Berserk (12min)');
+('1593101', '0', '28157', '0', '-1', '0', '0', '100', '1', '20000', '30000', '20000', '30000', 'Grobbulus - Slime Spray'),
+('1593101', '1', '28240', '0', '-1', '0', '0', '100', '1', '20000', '25000', '15000', '15000', 'Grobbulus - Poison Cloud'),
+('1593101', '2', '28169', '0', '1105', '101', '0', '100', '1', '13000', '13000', '13000', '13000', 'Grobbulus - Mutating Injection Above 30%'),
+('1593101', '3', '28169', '0', '1128', '101', '0', '100', '1', '0', '0', '7000', '7000', 'Grobbulus - Mutating Injection Below 30%'),
+('1593101', '4', '26662', '0', '-1', '0', '0', '100', '1', '720000', '720000', '720000', '720000', 'Grobbulus - Berserk (12min)');
 
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1593601', '0', '29310', '0', '-1', '0', '0', '100', '0', '5000', '5000', '10000', '10000', 'Heigan - Mana Burn'),
@@ -274,12 +274,12 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1598902', '1', '28526', '0', '-1', '0', '0', '100', '0', '2000', '2000', '3000', '3000', 'Sapphiron - Icebolt');
 
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
-('1595200', '0', '28673', '0', '-1', '0', '0', '100', '1', '20000', '20000', '40000', '40000', 'Maexxna - Web Wrap'),
-('1595200', '1', '29484', '0', '-1', '0', '0', '100', '1', '40000', '40000', '40000', '40000', 'Maexxna - Web Spray'),
-('1595200', '2', '28741', '0', '-1', '0', '0', '100', '1', '10000', '20000', '10000', '20000', 'Maexxna - Poison Shock'),
-('1595200', '3', '28776', '0', '-1', '1', '0', '100', '1', '20000', '30000', '10000', '30000', 'Maexxna - Necrotic Poison'),
-('1595200', '4', '29434', '0', '-1', '0', '0', '100', '1', '30000', '30000', '40000', '40000', 'Maexxna - Summon Spiderlings'),
-('1595200', '5', '28747', '0', '1128', '0', '0', '100', '100', '0', '0', '600000', '600000', 'Maexxna - Enrage below 30%');
+('1595201', '0', '28673', '0', '-1', '0', '0', '100', '1', '20000', '20000', '40000', '40000', 'Maexxna - Web Wrap'),
+('1595201', '1', '29484', '0', '-1', '0', '0', '100', '1', '40000', '40000', '40000', '40000', 'Maexxna - Web Spray'),
+('1595201', '2', '28741', '0', '-1', '0', '0', '100', '1', '10000', '20000', '10000', '20000', 'Maexxna - Poison Shock'),
+('1595201', '3', '28776', '0', '-1', '1', '0', '100', '1', '20000', '30000', '10000', '30000', 'Maexxna - Necrotic Poison'),
+('1595201', '4', '29434', '0', '-1', '0', '0', '100', '1', '30000', '30000', '40000', '40000', 'Maexxna - Summon Spiderlings'),
+('1595201', '5', '28747', '0', '1128', '0', '0', '100', '100', '0', '0', '600000', '600000', 'Maexxna - Enrage below 30%');
 
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1592901', '0', '28134', '0', '-1', '0', '0', '100', '0', '10000', '15000', '10000', '15000', 'Stalagg - Powersurge'),
@@ -303,8 +303,8 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1599001', '5', '28408', '0', '-1', '0', '0', '100', '0', '60000', '120000', '60000', '220000', 'KelThuzad - Chains of Kelthuzad');
 
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
-('1680301', '1', '29060', '0', '-1', '0', '0', '100', '0', '0','0','0','0', 'Deathknight Understudy - Berserker Charge'),
-('1680301', '2', '29061', '0', '-1', '0', '0', '100', '0', '0','0','0','0', 'Deathknight Understudy - Silence');
+('1680305', '1', '29060', '0', '-1', '0', '0', '100', '0', '0','0','60000','60000', 'Deathknight Understudy - Taunt'),
+('1680305', '2', '29061', '0', '-1', '0', '0', '100', '0', '0','0','30000','30000', 'Deathknight Understudy - Shield Wall');
 
 DELETE FROM creature_template_spells WHERE entry IN(16506,16803);
 
