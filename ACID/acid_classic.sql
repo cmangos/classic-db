@@ -13069,7 +13069,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('431701','4317','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Nyse - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Race Master Kronkrider 4419
 ('441901','4419','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Race Master Kronkrider - Set Phase 1 on Spawn'),
-('441902','4419','1','0','100','1','30000','300000','900000','15000000','0','0','53','9988','0','0','0','0','0','0','0','0','0','0','Race Master Kronkrider - START_RELAY_SCRIPT on OOC Timer'),
+('441902','4419','1','0','100','1','30000','300000','900000','1500000','0','0','53','9988','0','0','0','0','0','0','0','0','0','0','Race Master Kronkrider - START_RELAY_SCRIPT on OOC Timer'),
 ('441903','4419','30','3','100','1','5','4251','0','0','0','0','1','1522','0','0','22','1','0','0','0','0','0','0','Race Master Kronkrider - Say and Set Phase 1 on Receive AI Event Custom A (Phase 2)'),
 ('441904','4419','30','3','100','1','6','4252','0','0','0','0','1','1518','0','0','22','1','0','0','0','0','0','0','Race Master Kronkrider - Say and Set Phase 1 on Receive AI Event Custom B (Phase 2)'),
 -- Goblin Pit Crewman 4429
