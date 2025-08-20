@@ -41,5 +41,7 @@ INSERT INTO creature_movement_template (`Entry`, `PathId`, `Point`, `PositionX`,
 (12138,2,2,-2452.8245,-1625.3053,92.02587,100,0,0),
 (12138,2,3,-2498.009,-1631.7184,91.79168,100,100,20);
 
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES (20, 0, 0, 20, 1, 5, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GENERIC - Change Movement To 1 - Random (STATE) (around current location)');
+
 -- update for Moonkin Stone Aura 177644
 UPDATE gameobject SET spawntimesecsmin = -120, spawntimesecsmax = -120 WHERE guid = 15727;
