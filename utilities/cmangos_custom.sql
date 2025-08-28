@@ -28,6 +28,9 @@
 -- Make Moonwell GO server-side (visible by GM only)
 UPDATE gameobject_template SET data3=1 WHERE entry IN (177272, 177273, 177274, 177275, 177276, 177277, 177278, 177279, 177280, 177281);
 
+-- Witherbark Totem Bundle 174764 - only visible by GM
+UPDATE gameobject_template SET data3=1 WHERE entry=174764;
+
 -- Make Incantion of Celebras Trap only visible by GM
 UPDATE gameobject_template SET data8=1 WHERE entry=178963;
 
