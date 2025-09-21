@@ -162,7 +162,11 @@ INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRange
 ('1606201', 'Naxxramas - Highlord Mograine', '0', '0'),
 ('1606301', 'Naxxramas - Sir Zeliek', '0', '0'),
 ('1606401', 'Naxxramas - Thane Korthazz', '0', '0'),
-('1606501', 'Naxxramas - Lady Blaumeux', '0', '0');
+('1606501', 'Naxxramas - Lady Blaumeux', '0', '0'),
+('1606202', 'Naxxramas - Highlord Mograine Enrage', '0', '0'),
+('1606302', 'Naxxramas - Sir Zeliek Enrage', '0', '0'),
+('1606402', 'Naxxramas - Thane Korthazz Enrage', '0', '0'),
+('1606502', 'Naxxramas - Lady Blaumeux Enrage', '0', '0');
 
 UPDATE creature_template SET SpellList=entry*100+1 WHERE entry IN(16505,15928,15929,15930,15931,15932,15936,15952,15953,15954,15956,15989,15990,16011,16028,16060,16061,16062,16063,16064,16065);
 UPDATE creature_template SET CharmedSpellList=entry*100+5 WHERE entry IN(16506,16803);
@@ -189,10 +193,8 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1606401', '1', '28884', '0', '-1', '1', '0', '100', '0', '20000', '20000', '20000', '20000', 'Thane Korthazz - Meteor'),
 ('1606401', '2', '26662', '0', '-1', '0', '0', '100', '0', '2000000', '2000000', '300000', '300000', 'Thane Korthazz - Berserk'),
 ('1606501', '0', '28833', '0', '-1', '0', '0', '100', '0', '20000', '20000', '12000', '12000', 'Lady Blaumeux - Mark of Blaumeux'),
-('1606501', '1', '57374', '0', '-1', '1', '0', '100', '0', '10000', '10000', '2000', '3000', 'Lady Blaumeux - Shadow Bolt'),
-('1606501', '2', '28863', '0', '-1', '100', '0', '100', '0', '12000', '12000', '12000', '12000', 'Lady Blaumeux - Void Zone'),
-('1606501', '3', '26662', '0', '-1', '0', '0', '100', '0', '2000000', '2000000', '300000', '300000', 'Lady Blaumeux - Berserk'),
-('1606501', '4', '57381', '0', '925', '0', '0', '100', '0', '15000', '15000', '5000', '5000', 'Lady Blaumeux - Unyielding Pain'),
+('1606501', '1', '28863', '0', '-1', '100', '0', '100', '0', '12000', '12000', '12000', '12000', 'Lady Blaumeux - Void Zone'),
+('1606501', '2', '26662', '0', '-1', '0', '0', '100', '0', '2000000', '2000000', '300000', '300000', 'Lady Blaumeux - Berserk'),
 ('1606201', '0', '28834', '0', '-1', '0', '0', '100', '0', '20000', '20000', '12000', '12000', 'Highlord Mograine - Mark of Mograine'),
 ('1606201', '1', '28882', '0', '-1', '1', '0', '100', '0', '15000', '15000', '15000', '15000', 'Highlord Mograine - Righteous Fire'),
 ('1606201', '2', '26662', '0', '-1', '0', '0', '100', '0', '2000000', '2000000', '300000', '300000', 'Highlord Mograine - Berserk');
@@ -207,10 +209,8 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1606402', '1', '28884', '0', '-1', '1', '0', '100', '0', '0', '0', '20000', '20000', 'Thane Korthazz Enrage - Meteor'),
 ('1606402', '2', '26662', '0', '-1', '0', '0', '100', '0', '0', '0', '300000', '300000', 'Thane Korthazz Enrage - Berserk'),
 ('1606502', '0', '28833', '0', '-1', '0', '0', '100', '0', '0', '0', '1000', '1000', 'Lady Blaumeux Enrage - Mark of Blaumeux'),
-('1606502', '1', '57374', '0', '-1', '1', '0', '100', '0', '0', '0', '2000', '3000', 'Lady Blaumeux Enrage - Shadow Bolt'),
-('1606502', '2', '28863', '0', '-1', '100', '0', '100', '0', '0', '0', '15000', '15000', 'Lady Blaumeux Enrage - Void Zone'),
-('1606502', '3', '26662', '0', '-1', '0', '0', '100', '0', '0', '0', '300000', '300000', 'Lady Blaumeux Enrage - Berserk'),
-('1606502', '4', '57381', '0', '925', '0', '0', '100', '0', '0', '0', '5000', '5000', 'Lady Blaumeux Enrage - Unyielding Pain'),
+('1606502', '1', '28863', '0', '-1', '100', '0', '100', '0', '0', '0', '15000', '15000', 'Lady Blaumeux Enrage - Void Zone'),
+('1606502', '2', '26662', '0', '-1', '0', '0', '100', '0', '0', '0', '300000', '300000', 'Lady Blaumeux Enrage - Berserk'),
 ('1606202', '0', '28834', '0', '-1', '0', '0', '100', '0', '0', '0', '1000', '1000', 'Highlord Mograine Enrage - Mark of Mograine'),
 ('1606202', '1', '28882', '0', '-1', '1', '0', '100', '0', '0', '0', '15000', '15000', 'Highlord Mograine Enrage - Righteous Fire'),
 ('1606202', '2', '26662', '0', '-1', '0', '0', '100', '0', '0', '0', '300000', '300000', 'Highlord Mograine Enrage - Berserk');
@@ -246,7 +246,7 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1601101', '5', '30281', '0', '-1', '0', '0', '100', '10', '30000', '30000', '30000', '30000', 'Loatheb - Decurse'),
 ('1601102', '1', '29865', '0', '-1', '0', '0', '100', '10', '0', '0', '12000', '12000', 'Loatheb - Poison Aura'),
 ('1601102', '2', '29234', '0', '-1', '0', '0', '100', '10', '0', '0', '12000', '12000', 'Loatheb - Summon Spore'),
-('1601102', '3', '55593', '0', '-1', '0', '0', '100', '0', '0', '0', '60000', '60000', 'Loatheb - Corrupted Mind'),
+('1601102', '3', '29201', '0', '-1', '0', '0', '100', '0', '0', '0', '60000', '60000', 'Loatheb - Corrupted Mind'),
 ('1601102', '4', '29204', '0', '-1', '0', '0', '100', '10', '0', '0', '15000', '15000', 'Loatheb - Inevitable Doom(P2)'),
 ('1601102', '5', '30281', '0', '-1', '0', '0', '100', '10', '30000', '30000', '30000', '30000', 'Loatheb - Decurse');
 
