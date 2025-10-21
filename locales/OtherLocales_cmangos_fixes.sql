@@ -20,6 +20,7 @@ UPDATE `locales_creature` SET `name_loc3`='Weissager Nobundo' WHERE `entry`=1720
 UPDATE `locales_creature` SET `subname_loc3`='Reitlehrer' WHERE `entry`=20500; -- Olrokk Riding Trainer
 UPDATE `locales_creature` SET `name_loc3`='Ilsa Trubelbräu', `subname_loc3`='Reitlehrerin' WHERE `entry`=20511; -- Ilsa TrubelbrÃ¤u Riding Trainer
 UPDATE `locales_creature` SET `subname_loc3`='Reitlehrerin' WHERE `entry`=20914; -- Aalun Riding Trainer
+UPDATE `locales_creature` SET `name_loc3`='Brunnenbehüter Solanian' WHERE `entry`=15295; -- wrong name "Verderbnis" eng: Well Watcher Solanian
 
 -- Zeppelin Master in Durotar, Tirisfal and Gromgol
 UPDATE `locales_creature` SET `subname_loc3`='Zeppelinmeister' WHERE `entry`=3149 OR `entry`=3150 OR `entry`=9564 OR `entry`=9566 OR `entry`=12137 OR `entry`=12136; 
@@ -47,7 +48,19 @@ Update `locales_quest` SET `Title_loc3`='Kehrt zum Wegekreuz zurück', `Details_
 Update `locales_quest` SET `Title_loc3`='Ruf des Wassers', `Details_loc3`='Es ist schlimmer als ich befürchtet hatte. Die Verunreinigung ist hartnäckig und könnte, wenn man nicht rechtzeitig handelt, ungehindert in die Ströme des Meeres fließen und sich somit in ganz Azeroth ausbreiten!$B$BWir brauchen eine Probe reinsten Wassers, um diesem Übel entgegenzuwirken. Auf dem nahegelegenen Kontinent Kalimdor gibt es ein Waldgebiet namens Eschental. Unweit seiner südwestlichen Begrenzung findet Ihr die Sternenstaubruinen.$B$BNehmt diesen Botabeutel und füllt ihn mit Wasser aus dem Brunnen auf der kleinen Insel im Zentrum der Ruinen. Beeilt Euch, $N!', `Objectives_loc3`='Füllt den leeren Botabeutel und kehrt anschließend zu Aqueous im versteckten Riff bei der Blutmythosinsel zurück.', `RequestItemsText_loc3`='Habt Ihr das reine Wasser von den Ruinen?', `OfferRewardText_loc3`='Wasser schwindet schnell, vereinigt man aber genug davon, bildet es eine unaufhaltsame Kraft. Es spült Erde und Feuer hinfort und bahnt sich auch durch die Luft seinen Weg.$B$BWir sind diese unaufhaltsame Kraft, $N, nicht diejenigen, die die Blutmythosinsel vergiftet haben!' WHERE `entry`=9504;
 -- ID 9509 Call of Water
 Update `locales_quest` SET `Title_loc3`='Ruf des Wassers', `Details_loc3`='Ich habe etwas von dem Wasser aus dem Eschental beiseite gelegt, jedoch nicht, weil ich an Euren Fähigkeiten, die Situation in den Griff zu bekommen, gezweifelt habe. Im Gegenteil, ich wusste, dass Ihr Erfolg haben würdet. Ich wollte lediglich sicherstellen, dass Ihr etwas Besonderes habt, das Ihr zurück zu Nobundo bringen könnt.$B$BHier, $N, nehmt dieses Fläschchen mit reinstem Wasser. Die Erstellung eines mächtigen Wassertotems ist Euch dadurch gewiss.$B$BWeissager Nobundo erwartet Eure Rückkehr bei der Exodar.', `Objectives_loc3`='Nehmt das Fläschchen mit reinstem Wasser zu Weissager Nobundo innerhalb der Exodar auf der Azurmythosinsel.', `RequestItemsText_loc3`='Die Elemente haben mir von großen Taten erzählt, die Ihr vollbracht habt. Kommt, sprecht mit mir.', `OfferRewardText_loc3`='Ihr habt eine Weisheit an den Tag gelegt, die Eurem Alter vorauseilt, $N. Ich kann spüren, dass das Element des Wassers mit Euch zufrieden ist. Es ist eine Ehre für mich, wenn ich das reine Wasser, das Ihr mir gebracht habt, in Euer neues Wassertotem einfließen lassen kann.$B$BVergesst niemals die Lehren des Wassers und Ihr werdet das Element mit der Zeit noch besser verstehen und zu meistern lernen.' WHERE `entry`=9509;
-
+-- ID 10068 Well Watcher Solanian
+Update `locales_quest` SET `Title_loc2`='Veilleur du puits Solanian', `Title_loc3`='Brunnenbehüter Solanian', `Title_loc5`='Solanian a la Aguja del Sol', `Title_loc6`='Solanian a la Aguja del Sol'  WHERE `entry`=10068;
+-- ID 10069 Well Watcher Solanian
+Update `locales_quest` SET `Title_loc2`='Veilleur du puits Solanian', `Title_loc3`='Brunnenbehüter Solanian', `Title_loc5`='Solanian a la Aguja del Sol', `Title_loc6`='Solanian a la Aguja del Sol' WHERE `entry`=10069;
+-- ID 10070 Well Watcher Solanian
+Update `locales_quest` SET `Title_loc2`='Veilleur du puits Solanian', `Title_loc3`='Brunnenbehüter Solanian', `Title_loc5`='Solanian a la Aguja del Sol', `Title_loc6`='Solanian a la Aguja del Sol' WHERE `entry`=10070;
+-- ID 10071 Well Watcher Solanian
+Update `locales_quest` SET `Title_loc2`='Veilleur du puits Solanian', `Title_loc3`='Brunnenbehüter Solanian', `Title_loc5`='Solanian a la Aguja del Sol', `Title_loc6`='Solanian a la Aguja del Sol' WHERE `entry`=10071;
+-- ID 10072 Well Watcher Solanian
+Update `locales_quest` SET `Title_loc2`='Veilleur du puits Solanian', `Title_loc3`='Brunnenbehüter Solanian', `Title_loc5`='Solanian a la Aguja del Sol', `Title_loc6`='Solanian a la Aguja del Sol' WHERE `entry`=10072;
+-- ID 10073 Well Watcher Solanian
+Update `locales_quest` SET `Title_loc2`='Veilleur du puits Solanian', `Title_loc3`='Brunnenbehüter Solanian', `Title_loc5`='Solanian a la Aguja del Sol', `Title_loc6`='Solanian a la Aguja del Sol' WHERE `entry`=10073;
+  
 -- ============================================================
 -- locales_item
 -- ============================================================
