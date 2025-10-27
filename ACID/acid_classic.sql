@@ -12719,8 +12719,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Horde Guard 3501 - NSR
 -- Ratchet Bruiser 3502 - guard_contested & creature_spell_list
 ('350201','3502','11','0','100','0','0','0','0','0','0','0','57','2','20','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Enable Range Mode on Spawn'),
--- Silithid Protector 3503
-('350301','3503','11','0','100','0','0','0','0','0','0','0','1','1080','0','0','0','0','0','0','0','0','0','0','Silithid Protector - Emote on Spawn'),
+-- Silithid Protector
+('350301','3503','11','0','100','0','0','0','0','0','0','0','1','1080','0','0','50','1','0','0','0','0','0','0','Silithid Protector - Emote and ReactDefensive on Spawn'),
+('350302','3503','29','0','100','0','2000','2000','0','0','0','0','2','16','0','0','50','2','0','0','0','0','0','0','Silithid Protector - Change Faction and ReactAggresive Generic'),
 -- Devrak 3615
 ('361501','3615','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Devrak - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Deviate Stalker 3634
