@@ -3,7 +3,7 @@ name: Build Release
 on:
   schedule:
     # every day at 6am
-    - cron:  '0 6 * * *'
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 env:
@@ -270,7 +270,7 @@ jobs:
             - **Exported SQL:** [Download SQL File](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPANSION_NAME}}-all-db.zip)
             - **Exported World SQL:** [Download SQL File](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPANSION_NAME}}-world-db.zip)
             - **[Preconfigured MySQL Server (Windows x64 Release)](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPANSION_NAME}}-db-mysql-server.zip)**
-            
+
             You may apply the exported and world SQL files directly to their respective databases. The `root` MySQL user password is `cmangos` - **do not forget** to change that! If you find any bugs or issues please report them [here](https://github.com/cmangos/issues/issues/new/choose).
           footer: Created by the CMaNGOS Team!
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
