@@ -708,8 +708,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crag Coyote (2727) - NSR
 -- Feral Crag Coyote 2728 - s.3391 manually casted
 ('272801','2728','0','0','100','1025','5000','20000','5000','20000','0','0','11','3391','15','0','0','0','0','0','0','0','0','0','Feral Crag Coyote - Cast Thrash'),
--- Elder Crag Coyote (3.1.1 Official Data)
-('272901','2729','1','0','5','1','30000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Elder Crag Coyote - Howl and Emote OOC'),
+-- Elder Crag Coyote 2729 - NSR
 -- Rabid Crag Coyote (3.1.1 Official Data)
 ('273001','2730','0','0','100','1025','10200','13900','18000','32300','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Rabid Crag Coyote - Cast Infected Wound'),
 ('273002','2730','0','0','100','1025','5900','19400','34200','62000','0','0','11','3150','4','32','0','0','0','0','0','0','0','0','Rabid Crag Coyote - Cast Rabies'),
@@ -2523,8 +2522,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('6101','61','4','0','40','0','0','0','0','0','0','0','54','0','0','36','0','0','0','0','0','0','0','0','Thuros Lightfingers - Random Say on Aggro'),
 ('6102','61','33','0','100','1025','0','0','3400','5400','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Thuros Lightfingers - Cast Backstab on Facing Target Back'),
 -- Tharynn Bouden (66) - NSR
--- Diseased Timber Wolf
-('6901','69','1','0','10','1','60000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Diseased Timber Wolf - Howl and Emote OOC'),
+-- Diseased Timber Wolf 69 - NSR
 -- Kurran Steele (74) - NSR
 -- Janos Hammerknuckle (78) - NSR
 -- Narg the Taskmaster (2.4.2 Official Data)
@@ -2583,8 +2581,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Marshal Haggard (294) - NSR
 -- Innkeeper Farley (2.4.2 Official Data)
 ('29501','295','1','0','40','1','30000','75000','600000','720000','0','0','1','84','85','86','0','0','0','0','0','0','0','0','Innkeeper Farley - Random OOC Say'),
--- Diseased Young Wolf (2.4.2 Official Data)
-('29901','299','1','0','10','1','30000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Diseased Young Wolf - Howl and Emote OOC'),
+-- Diseased Young Wolf 299 - NSR
 -- Pinto (307) - NSR
 -- Theocritus (313) - NSR
 -- Goldtooth (2.4.2 Official Data)
@@ -2705,8 +2702,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Quartermaster Hicks (1645) - NSR
 -- Terry Palin (1650) - NSR
 -- Lee Brown (1651) - NSR
--- Gray Forest Wolf
-('192201','1922','1','0','10','1','120000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Gray Forest Wolf - Howl and Emote OOC'),
+-- Gray Forest Wolf 1922 - NSR
 -- Servant of Azora (1949) - NSR
 -- Eastvale Lumberjack (1975) - NSR
 -- Forlorn Spirit 2044 - spell_list
@@ -5625,10 +5621,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('150701','1507','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Scarlet Initiate - Enable Range Mode on Aggro'),
 ('150702','1507','27','0','100','1','12544','1','15000','30000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Scarlet Initiate - Cast Frost Armor on Missing Buff'),
 ('150703','1507','9','0','100','1025','0','40','3400','4800','0','0','11','20793','1','256','0','0','0','0','0','0','0','0','Scarlet Initiate - Cast Fireball'),
--- Young Scavenger
-('150801','1508','1','0','10','1','30000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Young Scavenger - Howl and Emote OOC'),
--- Ragged Scavenger
-('150901','1509','1','0','10','1','30000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Ragged Scavenger - Howl and Emote OOC'),
+-- Young Scavenger 1508 - NSR
+-- Ragged Scavenger 1509 - NSR
 -- Duskbat (1512) - NSR
 -- Mangy Duskbat (1513) - NSR
 -- Executor Zygand (1515) - NSR
@@ -6815,8 +6809,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('83201','832','0','0','100','1025','0','10000','14000','26900','0','0','11','6982','17','0','0','0','0','0','0','0','0','0','Dust Devil - Cast Gust of Wind'),
 -- Coyote Packleader (2.4.3 Official Data)
 ('83301','833','0','0','100','1025','4600','14100','34500','59900','0','0','11','3149','0','0','0','0','0','0','0','0','0','0','Coyote Packleader - Cast Furious Howl'),
--- Coyote (2.4.3 Official Data)
-('83401','834','1','0','10','1','30000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Coyote - Howl and Emote OOC'),
+-- Coyote 834 - NSR
 -- Ghoul - Rotten Ghoul 846
 ('84601','846','11','0','100','0','0','0','0','0','0','0','11','11959','0','34','0','0','0','0','0','0','0','0','Rotten Ghoul - Cast Poison Proc on Spawn'),
 -- Scout Galiaan 878
@@ -10019,8 +10012,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sprite Darter 5278
 ('527801','5278','18','0','100','1025','100','10','7000','11000','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Sprite Darter - Cast Mana Burn on Target Mana User'),
 -- Longtooth Runner (5286) - NSR
--- Longtooth Howler
-('528701','5287','2','0','100','0','20','0','0','0','0','0','4','1018','0','0','5','15','0','0','39','30','0','0','Longtooth Howler - Howl and Emote and Call For Help at 20% HP'),
+-- Longtooth Howler 5287
+('528701','5287','2','0','100','0','20','0','0','0','0','0','39','30','0','0','1','1064','0','0','0','0','0','0','Longtooth Howler - Call For Help, Emote at 20% HP'),
 -- Rabid Longtooth
 ('528801','5288','0','0','100','1025','0','10000','30000','35000','0','0','11','3150','4','32','0','0','0','0','0','0','0','0','Rabid Longtooth - Cast Rabies'),
 -- Feral Scar Yeti (5292) - NSR
@@ -10456,13 +10449,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('295701','2957','0','0','100','1025','0','15000','19000','24000','0','0','11','7272','17','0','0','0','0','0','0','0','0','0','Elder Plainstrider - Cast Dust Cloud'),
 ('295702','2957','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Elder Plainstrider - Flee at 15% HP'),
 -- Prairie Wolf 2958
-('295801','2958','1','0','5','1','60000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Prairie Wolf - Howl and Emote OOC'),
-('295802','2958','0','0','100','1025','0','10000','45000','45000','0','0','11','5781','1','0','0','0','0','0','0','0','0','0','Prairie Wolf - Cast Threatening Growl'),
--- Prairie Stalker 2959
-('295901','2959','1','0','5','1','60000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Prairie Stalker - Howl and Emote OOC'),
+('295801','2958','0','0','100','1025','0','20000','45000','45000','0','0','11','5781','1','0','0','0','0','0','0','0','0','0','Prairie Wolf - Cast Threatening Growl'),
+-- Prairie Stalker 2959 - NSR
 -- Prairie Wolf Alpha 2960
-('296001','2960','1','0','5','1','60000','600000','120000','600000','0','0','4','1018','0','0','5','15','0','0','0','0','0','0','Prairie Wolf Alpha - Howl and Emote OOC'),
-('296002','2960','0','0','100','1025','0','10000','45000','45000','0','0','11','5781','1','0','0','0','0','0','0','0','0','0','Prairie Wolf Alpha - Cast Threatening Growl'),
+('296001','2960','0','0','100','1025','0','20000','45000','45000','0','0','11','5781','1','0','0','0','0','0','0','0','0','0','Prairie Wolf Alpha - Cast Threatening Growl'),
 -- Mountain Cougar (2961) - NSR
 -- Windfury Harpy 2962
 ('296201','2962','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Windfury Harpy - Flee at 15% HP'),
