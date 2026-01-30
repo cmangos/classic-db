@@ -1155,12 +1155,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+358, 9696, 229, -165.692, -329.882, 64.4008, 4.79843, 7200, 7200, 0, 0), -- Bloodaxe Worg
 (@CGUID+359, 9696, 229, -48.098, -329.209, 71.0323, 3.07178, 10800, 10800, 0, 0), -- Bloodaxe Worg
 (@CGUID+360, 9696, 229, -48.495, -335.444, 71.0313, 2.23402, 10800, 10800, 0, 0), -- Bloodaxe Worg
-(@CGUID+361, 9701, 229, -77.2828, -324.738, 59.1126, 4.99164, 7200, 7200, 2, 1), -- Spire Scorpid
-(@CGUID+362, 9701, 229, -80.2467, -313.909, 59.7635, 0.45379, 7200, 7200, 2, 1), -- Spire Scorpid
-(@CGUID+363, 9701, 229, -80.8737, -298.923, 61.8178, 5.18363, 7200, 7200, 2, 1), -- Spire Scorpid
-(@CGUID+364, 9701, 229, -109.429, -324.918, 64.3253, 0.03491, 7200, 7200, 2, 1), -- Spire Scorpid
-(@CGUID+365, 9701, 229, -112.332, -331.009, 63.2146, 3.07178, 7200, 7200, 2, 1), -- Spire Scorpid
-(@CGUID+366, 9701, 229, -112.9, -323.074, 64.3181, 5.41052, 7200, 7200, 2, 1), -- Spire Scorpid
+(@CGUID+361, 0, 229, -77.2828, -324.738, 59.1126, 4.99164, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+362, 0, 229, -80.2467, -313.909, 59.7635, 0.45379, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+363, 0, 229, -80.8737, -298.923, 61.8178, 5.18363, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+364, 0, 229, -109.429, -324.918, 64.3253, 0.03491, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+365, 0, 229, -112.332, -331.009, 63.2146, 3.07178, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+366, 0, 229, -112.9, -323.074, 64.3181, 5.41052, 30, 60, 2, 1), -- creature_spawn_entry
 (@CGUID+367, 9716, 229, -166.83, -328.162, 64.4017, 1.72829, 7200, 7200, 0, 2), -- Bloodaxe Warmonger
 (@CGUID+368, 9716, 229, -168.363, -416.843, 76.1473, 1.57277, 7200, 7200, 2, 1), -- Bloodaxe Warmonger
 (@CGUID+369, 9716, 229, -168.491, -410.858, 76.1473, 4.65782, 7200, 7200, 2, 1), -- Bloodaxe Warmonger
@@ -1265,20 +1265,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+468, 10083, 229, 81.0064, -284.353, 91.5332, 5.95157, 10800, 10800, 1, 1), -- Rage Talon Flamescale
 (@CGUID+469, 10083, 229, 74.9968, -316.266, 91.5203, 1.44344, 10800, 10800, 1, 1), -- Rage Talon Flamescale
 (@CGUID+470, 10083, 229, 102.802, -332.121, 106.519, 2.21657, 10800, 10800, 0, 0), -- Rage Talon Flamescale
-(@CGUID+471, 10177, 229, -66.8659, -352.762, 54.4785, 1.0821, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+472, 10177, 229, -68.8686, -343.093, 55.116, 1.81514, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+473, 10177, 229, -73.5343, -331.947, 56.8824, 3.94444, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+474, 10177, 229, -72.0317, -347.075, 54.8219, 1.36136, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+475, 10177, 229, -71.569, -358.213, 54.5978, 2.3911, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+476, 10177, 229, -75.4103, -341.562, 55.3937, 4.90438, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+477, 10177, 229, -79.7917, -328.192, 58.547, 5.95157, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+478, 10177, 229, -102.763, -349.062, 60.7782, 1.51844, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+479, 10177, 229, -108.382, -341.04, 61.1785, 1.64061, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+480, 10177, 229, -107.424, -351.94, 59.7058, 4.4855, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+481, 10177, 229, -112.261, -336.356, 62.3371, 4.92183, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+482, 10177, 229, -110.012, -356.647, 58.5433, 4.36332, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+483, 10177, 229, -111.704, -348.742, 60.0788, 0.82031, 7200, 7200, 2, 1), -- Spire Scarab
-(@CGUID+484, 10177, 229, -108.927, -364.601, 56.6248, 1.0472, 7200, 7200, 2, 1), -- Spire Scarab
+(@CGUID+471, 0, 229, -66.8659, -352.762, 54.4785, 1.0821, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+472, 0, 229, -68.8686, -343.093, 55.116, 1.81514, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+473, 0, 229, -73.5343, -331.947, 56.8824, 3.94444, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+474, 0, 229, -72.0317, -347.075, 54.8219, 1.36136, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+475, 0, 229, -71.569, -358.213, 54.5978, 2.3911, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+476, 0, 229, -75.4103, -341.562, 55.3937, 4.90438, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+477, 0, 229, -79.7917, -328.192, 58.547, 5.95157, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+478, 0, 229, -102.763, -349.062, 60.7782, 1.51844, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+479, 0, 229, -108.382, -341.04, 61.1785, 1.64061, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+480, 0, 229, -107.424, -351.94, 59.7058, 4.4855, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+481, 0, 229, -112.261, -336.356, 62.3371, 4.92183, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+482, 0, 229, -110.012, -356.647, 58.5433, 4.36332, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+483, 0, 229, -111.704, -348.742, 60.0788, 0.82031, 30, 60, 2, 1), -- creature_spawn_entry
+(@CGUID+484, 0, 229, -108.927, -364.601, 56.6248, 1.0472, 30, 60, 2, 1), -- creature_spawn_entry
 (@CGUID+485, 10220, 229, -193.914, -338.148, 64.4879, 0.657799, 1000000, 1000000, 0, 0), -- Halycon
 (@CGUID+486, 10221, 229, -195.348, -325.77, 64.4244, 1.59871, 3600, 3600, 3, 1), -- Bloodaxe Worg Pup
 (@CGUID+487, 10221, 229, -195.647, -320.721, 64.4244, 4.7403, 3600, 3600, 3, 1), -- Bloodaxe Worg Pup
@@ -1395,6 +1395,28 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+598, 15560, 229, 31.5467, -401.319, 48.6986, 1.68414, 25, 25, 0, 0), -- Elder Stonefort
 (@CGUID+599, 16044, 229, -15.9034, -455.282, -18.6442, 3.15971, 450, 450, 0, 0), -- Mor Grayhoof Trigger
 (@CGUID+600, 16048, 229, 44.7101, -536.049, 110.936, 1.56143, 450, 450, 0, 0); -- Lord Valthalak Trigger
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+361, 9701), (@CGUID+361, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+362, 9701), (@CGUID+362, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+363, 9701), (@CGUID+363, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+364, 9701), (@CGUID+364, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+365, 9701), (@CGUID+365, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+366, 9701), (@CGUID+366, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+471, 9701), (@CGUID+471, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+472, 9701), (@CGUID+472, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+473, 9701), (@CGUID+473, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+474, 9701), (@CGUID+474, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+475, 9701), (@CGUID+475, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+476, 9701), (@CGUID+476, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+477, 9701), (@CGUID+477, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+478, 9701), (@CGUID+478, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+479, 9701), (@CGUID+479, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+480, 9701), (@CGUID+480, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+481, 9701), (@CGUID+481, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+482, 9701), (@CGUID+482, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+483, 9701), (@CGUID+483, 10177), -- Spire Scorpid, Spire Scarab
+(@CGUID+484, 9701), (@CGUID+484, 10177); -- Spire Scorpid, Spire Scarab
 
 -- ===========
 -- GAMEOBJECTS
