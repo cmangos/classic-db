@@ -1,13 +1,14 @@
 /* DBScriptData
 DBName: The Stockade
 DBScriptName: -
-DB%Complete: 86
+DB%Complete: 87
 DBComment:
 EndDBScriptData */
 
 SET @CGUID := 3400000; -- creatures
 SET @OGUID := 3400000; -- gameobjects
 SET @PGUID := 45100; -- pools
+SET @SGGUID := 3400000; -- spawn_group
 
 -- =========
 -- CREATURES
@@ -86,7 +87,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+14, 1706), (@CGUID+14, 1707), (@CGUID+14, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+15, 1706), (@CGUID+15, 1707), (@CGUID+15, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+16, 1706), (@CGUID+16, 1707), (@CGUID+16, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
-(@CGUID+17, 1706), (@CGUID+17, 1707), -- Defias Prisoner, Defias Captive
+(@CGUID+17, 1706), (@CGUID+17, 1707), (@CGUID+17, 1711), -- Defias Prisoner, Defias Captive, Defias Convict
 (@CGUID+18, 1706), (@CGUID+18, 1707), -- Defias Prisoner, Defias Captive
 (@CGUID+19, 1706), (@CGUID+19, 1707), -- Defias Prisoner, Defias Captive
 (@CGUID+20, 1706), (@CGUID+20, 1707), -- Defias Prisoner, Defias Captive
@@ -105,25 +106,19 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+33, 1706), (@CGUID+33, 1707), (@CGUID+33, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+34, 1706), (@CGUID+34, 1707), (@CGUID+34, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+35, 1706), (@CGUID+35, 1707), (@CGUID+35, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
-(@CGUID+36, 1708), (@CGUID+36, 1711), (@CGUID+36, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+37, 1708), (@CGUID+37, 1711), -- Defias Inmate, Defias Convict
 (@CGUID+38, 1706), (@CGUID+38, 1707), (@CGUID+38, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+39, 1706), (@CGUID+39, 1707), (@CGUID+39, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+40, 1706), (@CGUID+40, 1707), (@CGUID+40, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+41, 1706), (@CGUID+41, 1707), (@CGUID+41, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
-(@CGUID+42, 1708), (@CGUID+42, 1711), (@CGUID+42, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+43, 1708), (@CGUID+43, 1711), -- Defias Inmate, Defias Convict
-(@CGUID+44, 1708), (@CGUID+44, 1711), (@CGUID+44, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+45, 1706), (@CGUID+45, 1707), (@CGUID+45, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+46, 1706), (@CGUID+46, 1708), -- Defias Prisoner, Defias Inmate
 (@CGUID+47, 1706), (@CGUID+47, 1707), (@CGUID+47, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
-(@CGUID+48, 1708), (@CGUID+48, 1711), (@CGUID+48, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+49, 1706), (@CGUID+49, 1707), (@CGUID+49, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+50, 1706), (@CGUID+50, 1707), (@CGUID+50, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+51, 1706), (@CGUID+51, 1707), (@CGUID+51, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+52, 1706), (@CGUID+52, 1707), (@CGUID+52, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
-(@CGUID+53, 1708), (@CGUID+53, 1711), (@CGUID+53, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
-(@CGUID+54, 1708), (@CGUID+54, 1711), (@CGUID+54, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+55, 1706), (@CGUID+55, 1707), (@CGUID+55, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+56, 1706), (@CGUID+56, 1707), (@CGUID+56, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+57, 1706), (@CGUID+57, 1708), -- Defias Prisoner, Defias Inmate
@@ -136,19 +131,9 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+64, 1706), (@CGUID+64, 1707), (@CGUID+64, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+65, 1706), (@CGUID+65, 1707), (@CGUID+65, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
 (@CGUID+66, 1706), (@CGUID+66, 1707), (@CGUID+66, 1708), -- Defias Prisoner, Defias Captive, Defias Inmate
-(@CGUID+67, 1708), (@CGUID+67, 1711), (@CGUID+67, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+68, 1708), (@CGUID+68, 1711), -- Defias Inmate, Defias Convict
-(@CGUID+69, 1708), (@CGUID+69, 1711), (@CGUID+69, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
-(@CGUID+70, 1708), (@CGUID+70, 1711), (@CGUID+70, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+71, 1708), (@CGUID+71, 1711), -- Defias Inmate, Defias Convict
-(@CGUID+72, 1708), (@CGUID+72, 1711), (@CGUID+72, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
-(@CGUID+73, 1708), (@CGUID+73, 1711), (@CGUID+73, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
-(@CGUID+74, 1708), (@CGUID+74, 1711), (@CGUID+74, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
-(@CGUID+75, 1708), (@CGUID+75, 1711), (@CGUID+75, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
-(@CGUID+76, 1708), (@CGUID+76, 1711), (@CGUID+76, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+77, 1708), (@CGUID+77, 1711), -- Defias Inmate, Defias Convict
-(@CGUID+78, 1708), (@CGUID+78, 1711), (@CGUID+78, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
-(@CGUID+79, 1708), (@CGUID+79, 1711), (@CGUID+79, 1715), -- Defias Inmate, Defias Convict, Defias Insurgent
 (@CGUID+80, 1708), (@CGUID+80, 1711); -- Defias Inmate, Defias Convict
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
@@ -187,25 +172,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+33, 0, 34, 148.538, 103.18, -35.1896, 4.52629, 7200, 7200, 5, 1), -- creature_spawn_entry
 (@CGUID+34, 0, 34, 147.452, 111.814, -35.1896, 3.40928, 7200, 7200, 5, 1), -- creature_spawn_entry
 (@CGUID+35, 0, 34, 192.771, 91.34, -33.8562, 5.44344, 7200, 7200, 2, 1), -- creature_spawn_entry
-(@CGUID+36, 0, 34, 117.7, -45.8883, -34.7729, 2.96333, 7200, 7200, 3, 1), -- creature_spawn_entry
+(@CGUID+36, 0, 34, 117.7, -45.8883, -34.7729, 2.96333, 7200, 7200, 3, 1), -- spawn_group_entry
 (@CGUID+37, 0, 34, 75.49965, 0.029221, -25.606234, 3.49974, 7200, 7200, 0, 2), -- creature_spawn_entry
 (@CGUID+38, 0, 34, 128.622, 49.0336, -33.8562, 4.17134, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+39, 0, 34, 105.4, 70.095, -34.7729, 2.75762, 7200, 7200, 3, 1), -- creature_spawn_entry
 (@CGUID+40, 0, 34, 100.916, 53.2517, -34.7729, 2.70526, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+41, 0, 34, 100.564, 44.3137, -34.7729, 2.30383, 7200, 7200, 2, 1), -- creature_spawn_entry
-(@CGUID+42, 0, 34, 123.368, -61.7398, -33.8562, 3.01942, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+42, 0, 34, 123.368, -61.7398, -33.8562, 3.01942, 7200, 7200, 2, 1), -- spawn_group_entry
 (@CGUID+43, 0, 34, 96.4198, -54.7564, -34.7729, 2.51327, 7200, 7200, 3, 1), -- creature_spawn_entry
-(@CGUID+44, 0, 34, 82.6119, -94.8407, -33.8562, 5.54853, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+44, 0, 34, 82.6119, -94.8407, -33.8562, 5.54853, 7200, 7200, 2, 1), -- spawn_group_spawn
 (@CGUID+45, 0, 34, 121.623, 74.722, -34.7729, 0.645772, 7200, 7200, 3, 1), -- creature_spawn_entry
 (@CGUID+46, 0, 34, 108.0577163696289062, 80.03609466552734375, -34.856231689453125, 4.546633243560791015, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+47, 0, 34, 145.489, 43.3674, -34.7729, 4.00042, 7200, 7200, 5, 1), -- creature_spawn_entry
-(@CGUID+48, 0, 34, 113.3332672119140625, -85.4646987915039062, -33.856231689453125, 2.478367567062377929, 7200, 7200, 1, 1), -- creature_spawn_entry
+(@CGUID+48, 0, 34, 113.3332672119140625, -85.4646987915039062, -33.856231689453125, 2.478367567062377929, 7200, 7200, 1, 1), -- spawn_group_spawn
 (@CGUID+49, 0, 34, 159.931, 39.9643, -34.8562, 0.52169, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+50, 0, 34, 151.641, 60.1077, -34.7729, 2.38636, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+51, 0, 34, 161.133, 54.0252, -34.8562, 4.38428, 7200, 7200, 3, 1), -- creature_spawn_entry
 (@CGUID+52, 0, 34, 144.1897735595703125, 84.32425689697265625, -33.9395637512207031, 5.601512432098388671, 7200, 7200, 3, 1), -- creature_spawn_entry
-(@CGUID+53, 0, 34, 152.804, -69.5129, -34.7729, 4.67092, 7200, 7200, 4, 1), -- creature_spawn_entry
-(@CGUID+54, 0, 34, 150.261, -76.7672, -34.8562, 2.28934, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+53, 0, 34, 152.804, -69.5129, -34.7729, 4.67092, 7200, 7200, 4, 1), -- spawn_group_spawn
+(@CGUID+54, 0, 34, 150.261, -76.7672, -34.8562, 2.28934, 7200, 7200, 2, 1), -- spawn_group_spawn
 (@CGUID+55, 0, 34, 171.119, 93.3214, -33.8562, 4.20114, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+56, 0, 34, 155.673, 99.6374, -35.1896, 4.85931, 7200, 7200, 5, 1), -- creature_spawn_entry
 (@CGUID+57, 0, 34, 123.941, 119.574, -33.8562, 3.60874, 7200, 7200, 3, 1), -- creature_spawn_entry
@@ -218,19 +203,19 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+64, 0, 34, 171.059, 142.025, -33.9396, 4.49541, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+65, 0, 34, 168.6239013671875, 145.95428466796875, -33.8562355041503906, 2.757620096206665039, 7200, 7200, 3, 1), -- creature_spawn_entry
 (@CGUID+66, 0, 34, 176.087, 142.688, -33.8562, 2.28023, 7200, 7200, 2, 1), -- creature_spawn_entry
-(@CGUID+67, 0, 34, 141.424, -120.264, -33.9396, 1.87443, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+67, 0, 34, 141.424, -120.264, -33.9396, 1.87443, 7200, 7200, 2, 1), -- spawn_group_spawn
 (@CGUID+68, 0, 34, 139.681, -128.899, -33.8562, 2.90953, 7200, 7200, 2, 1), -- creature_spawn_entry
-(@CGUID+69, 0, 34, 70.595, -83.9379, -33.8562, 4.83093, 7200, 7200, 3, 1), -- creature_spawn_entry
-(@CGUID+70, 0, 34, 111.721, -41.2636, -34.7729, 2.05949, 7200, 7200, 1, 1), -- creature_spawn_entry
+(@CGUID+69, 0, 34, 70.595, -83.9379, -33.8562, 4.83093, 7200, 7200, 3, 1), -- spawn_group_spawn
+(@CGUID+70, 0, 34, 111.721, -41.2636, -34.7729, 2.05949, 7200, 7200, 1, 1), -- spawn_group_spawn
 (@CGUID+71, 0, 34, 129.19832, 25.995808, -30.882986, 1.50148, 7200, 7200, 0, 2), -- creature_spawn_entry
-(@CGUID+72, 0, 34, 128.277130126953125, -46.9650917053222656, -33.9395637512207031, 3.596912622451782226, 7200, 7200, 5, 1), -- creature_spawn_entry
-(@CGUID+73, 0, 34, 94.8542, -60.1856, -34.7729, 2.61799, 7200, 7200, 2, 1), -- creature_spawn_entry
-(@CGUID+74, 0, 34, 66.9717, -90.2606, -33.8562, 5.39307, 7200, 7200, 5, 1), -- creature_spawn_entry
-(@CGUID+75, 0, 34, 104.11, -55.8138, -34.7729, 4.83456, 7200, 7200, 2, 1), -- creature_spawn_entry
-(@CGUID+76, 0, 34, 124.69061279296875, -68.8522796630859375, -33.856231689453125, 1.669126391410827636, 7200, 7200, 2, 1), -- creature_spawn_entry
+(@CGUID+72, 0, 34, 128.277130126953125, -46.9650917053222656, -33.9395637512207031, 3.596912622451782226, 7200, 7200, 5, 1), -- spawn_group_spawn
+(@CGUID+73, 0, 34, 94.8542, -60.1856, -34.7729, 2.61799, 7200, 7200, 2, 1), -- spawn_group_spawn
+(@CGUID+74, 0, 34, 66.9717, -90.2606, -33.8562, 5.39307, 7200, 7200, 5, 1), -- spawn_group_spawn
+(@CGUID+75, 0, 34, 104.11, -55.8138, -34.7729, 4.83456, 7200, 7200, 2, 1), -- spawn_group_spawn
+(@CGUID+76, 0, 34, 124.69061279296875, -68.8522796630859375, -33.856231689453125, 1.669126391410827636, 7200, 7200, 2, 1), -- spawn_group_spawn
 (@CGUID+77, 0, 34, 138.566, -48.0856, -34.7729, 0.529011, 7200, 7200, 3, 1), -- creature_spawn_entry
-(@CGUID+78, 0, 34, 155.148, -52.0394, -34.8562, 3.07747, 7200, 7200, 3, 1), -- creature_spawn_entry
-(@CGUID+79, 0, 34, 126.276, -116.828, -33.9396, 2.39055, 7200, 7200, 4, 1), -- creature_spawn_entry
+(@CGUID+78, 0, 34, 155.148, -52.0394, -34.8562, 3.07747, 7200, 7200, 3, 1), -- spawn_group_spawn
+(@CGUID+79, 0, 34, 126.276, -116.828, -33.9396, 2.39055, 7200, 7200, 4, 1), -- spawn_group_spawn
 (@CGUID+80, 0, 34, 95.3684, -128.729, -33.9396, 2.07435, 7200, 7200, 3, 1), -- creature_spawn_entry
 (@CGUID+81, 1715, 34, 77.8325, -88.7943, -33.8562, 1.87365, 7200, 7200, 3, 1), -- Defias Insurgent
 (@CGUID+82, 1715, 34, 128.39493, -36.251293, -33.939564, 3.46348, 7200, 7200, 0, 2), -- Defias Insurgent
@@ -300,9 +285,32 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+1, 'The Stockade - Quell The Uprising q.387 - Defias Inmate, Defias Convict, Defias Insurgent', '0', '0', '0', '0');
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+1, 1708, 4, 4, 0), -- Defias Inmate
+(@SGGUID+1, 1711, 8, 8, 0), -- Defias Convict
+(@SGGUID+1, 1715, 4, 4, 0); -- Defias Insurgent
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID+36, -1, 0),
+(@SGGUID+1, @CGUID+42, -1, 0),
+(@SGGUID+1, @CGUID+44, -1, 0),
+(@SGGUID+1, @CGUID+48, -1, 0),
+(@SGGUID+1, @CGUID+53, -1, 0),
+(@SGGUID+1, @CGUID+54, -1, 0),
+(@SGGUID+1, @CGUID+67, -1, 0),
+(@SGGUID+1, @CGUID+69, -1, 0),
+(@SGGUID+1, @CGUID+70, -1, 0),
+(@SGGUID+1, @CGUID+72, -1, 0),
+(@SGGUID+1, @CGUID+73, -1, 0),
+(@SGGUID+1, @CGUID+74, -1, 0),
+(@SGGUID+1, @CGUID+75, -1, 0),
+(@SGGUID+1, @CGUID+76, -1, 0),
+(@SGGUID+1, @CGUID+78, -1, 0),
+(@SGGUID+1, @CGUID+79, -1, 0);
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
