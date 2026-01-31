@@ -1244,7 +1244,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+23, 178905, 349, 983.297, -67.8987, -62.0587, 4.10153, 0, 0, -0.887011, 0.461749, 3600, 3600), -- Vylestem Vine
 (@OGUID+24, 178905, 349, 960.397, -10.6216, -62.9832, 0.820303, 0, 0, 0.398748, 0.91706, 3600, 3600), -- Vylestem Vine
 (@OGUID+25, 178964, 349, 650.848, 74.0184, -86.8285, 6.26573, 0, 0, -0.00872612, 0.999962, -20, -20), -- Celebras Blue Aura
-(@OGUID+26, 178965, 349, 652.431, 74.7087, -85.3355, 6.16101, 0, 0, -0.0610485, 0.998135, -3600, -3600), -- Incantation of Celebras
+(@OGUID+26, 178965, 349, 652.431, 74.7087, -85.3355, 6.16101, 0, 0, -0.0610485, 0.998135, -20, -20), -- Incantation of Celebras
 (@OGUID+27, 1734, 349, 591.887, -392.592, -52.0194, 0, 0, 0, 0, 1, 86400, 86400), -- Gold Vein
 (@OGUID+28, 1734, 349, -157.535, -284.373, -170.383, 2.35619, 0, 0, 0.923879, 0.382686, 86400, 86400), -- Gold Vein
 (@OGUID+29, 0, 349, 291.651, -49.0027, -130.93, 1.5708, 0, 0, 0.707107, 0.707107, 86400, 86400), -- Gold Vein
@@ -1580,22 +1580,23 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
+DELETE FROM `dbscripts_on_go_template_use` WHERE `id` = 178965;
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (178965, 0, 47, 3, 0, 0, 13716, 50, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras interrupt channeled spell (Celebras Waiting 21916)'),
 (178965, 0, 9, @OGUID+25, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - summon Celebras Blue Aura (178964)'),
 (178965, 1000, 0, 0, 0, 0, 0, 0, 0, 8949, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - force Player to say'),
-(178965, 3000, 0, 0, 0, 0, 13716, 50, 7, 8949, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras Say'),
-(178965, 3500, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Despawn Self on Use'); -- Not working at the moment, possibly requires core update
+(178965, 3000, 0, 0, 0, 0, 13716, 50, 7, 8949, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras Say');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
+DELETE FROM `dbscripts_on_spell` WHERE `id` = 21917;
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(21917, 25000, 7, 7046, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras Stone Trap - Give quest completion');
+(21917, 9000, 7, 7046, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras Stone Trap - Give quest completion');
 
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM dbscripts_on_quest_start WHERE id=7046;
+DELETE FROM `dbscripts_on_quest_start` WHERE `id` = 7046;
 INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (7046, 0, 0, 0, 0, 0, 0, 0, 0, 8952, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
 (7046, 1000, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Remove flags Quest Gossip'),
