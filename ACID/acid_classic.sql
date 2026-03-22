@@ -11120,6 +11120,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hive'Zora Egg 12276 - NO_MELEE_FLEE
 -- Zannok Hidepiercer 12956
 -- Hive'Ashi Drone 13136
+('1313601','13136','11','0','100','0','0','0','0','0','0','0','11','10389','0','34','0','0','0','0','0','0','0','0','Hive''Ashi Drone - Cast Spawn Smoke on Spawn'),
 -- Layo Starstrike 13220
 -- Hive'Ashi Ambusher 13301
 ('1330101','13301','11','0','100','0','0','0','0','0','0','0','1','8675','0','0','0','0','0','0','0','0','0','0','Hive''Ashi Ambusher - Emote on Spawn'),
