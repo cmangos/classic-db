@@ -11,10 +11,10 @@
 -- deduce proper core behaviour from them.
 -- 
 -- Possible but non-exhaustive reasons for these updates to be needed:
---	- CMaNGOS core does not properly handle the data these updates are fixing (yet)
---	- Official/sniff data are from a different expansion/patch and were possibly changed since Classic
---	- Official/sniff data from client are different from what they are server-side
---	- Data or their parsing were wrong
+-- CMaNGOS core does not properly handle the data these updates are fixing (yet)
+-- Official/sniff data are from a different expansion/patch and were possibly changed since Classic
+-- Official/sniff data from client are different from what they are server-side
+-- Data or their parsing were wrong
 
 
 -- ============================================================
@@ -140,6 +140,15 @@ UPDATE item_template SET class=0, subclass=3 WHERE entry=5514;
 -- Fix a few model IDs found in sniffs from patch 1.13 but not present in patch 1.12 DBCs
 UPDATE creature_template SET DisplayId2=0 WHERE Entry IN (3651, 16979); -- [UNUSED] Kolkar Observer ; Midsummer Merchant
 UPDATE creature_template SET DisplayId3=13132, DisplayId4=0 WHERE Entry=11446;  -- Gordok Spirit
+
+-- Displayid
+UPDATE `creature_template` SET `DisplayIdProbability1` = 100, `DisplayIdProbability2` = 0 WHERE `entry` IN (
+16995 -- Mouth of Kel'Thuzad
+);
+
+-- -------------------------------
+
+UPDATE `creature_template` SET `name` = 'Redeemed Spirit of Earth' WHERE `entry` = 21739; -- Redeemed Spriit of Earth
 
 -- -------------------------------
 -- Quest custom changes
