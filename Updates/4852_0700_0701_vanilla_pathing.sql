@@ -3437,7 +3437,7 @@ SET @MOVID=156139; -- formation
 SET @CGUID=@CGUID+1;
 DELETE FROM creature WHERE guid IN(@MOVID);
 INSERT INTO creature(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
-(@MOVID, '3737', '1', '1', '3041.809', '471.78738', '5.4188557', '0', '300', '300', '0', '2'); -- '7815.905', '-4443.398', '667.3878'
+(@MOVID, '3737', '1', '1', '3041.809', '471.78738', '5.4188557', '0', '300', '300', '0', '0'); -- '7815.905', '-4443.398', '667.3878'
 -- GUID: Full: 0x205660002003A64000006800017C1F88 Creature/0 R5528/S104 Map: 1 (Kalimdor) Entry: 3737 (Saltspittle Puddlejumper) Low: 24911752
 
 DELETE FROM spawn_group WHERE Id = 9100;
