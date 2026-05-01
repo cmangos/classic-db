@@ -9,21 +9,26 @@ INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, d
 -- 1st wave
 (1090,17000,53,0,0,0,0,0,0,19888,1,0,0,0,0,0,0,'Set worldstate variable to 1'), -- activate wave 1
 -- 2nd wave
-(1090,108000,34,944,1090,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
-(1090,109000,34,945,1090,0,0,0,0x04,0,0,0,0,0,0,0,0,'Stop script if source is dead'),
+-- Table `dbscripts_on_quest_start` has datalong = 944 in SCRIPT_COMMAND_TERMINATE_COND for script id 1090, but this condition_id does not exist, skipping
+-- Table `dbscripts_on_quest_start` has datalong = 944 in SCRIPT_COMMAND_TERMINATE_COND for script id 1090, but this condition_id does not exist, skipping
+-- Table `dbscripts_on_quest_start` has datalong = 944 in SCRIPT_COMMAND_TERMINATE_COND for script id 1090, but this condition_id does not exist, skipping
+-- 944	36	0	60	0	0	0	Player is Dead OR NOT Within 60y of Source -> 317 in classicmangos
+-- 945	36	3	0	0	0	0	Creature Source is Dead -> 318 in classicmangos
+(1090,108000,34,317,1090,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
+(1090,109000,34,318,1090,0,0,0,0x04,0,0,0,0,0,0,0,0,'Stop script if source is dead'),
 (1090,109500,53,0,0,0,0,0,0,19888,0,0,0,0,0,0,0,'Set worldstate variable to 0'),
 (1090,110000,53,0,0,0,0,0,0,19889,1,0,0,0,0,0,0,'Set worldstate variable to 1'), -- activate wave 2
 (1090,113000,0,0,0,0,0,0,0x04,1431,0,0,0,0,0,0,0,'say'), -- 01:56
 -- 3rd wave
-(1090,203000,34,944,1090,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
-(1090,204000,34,945,1090,0,0,0,0x04,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
+(1090,203000,34,317,1090,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
+(1090,204000,34,318,1090,0,0,0,0x04,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
 (1090,204500,53,0,0,0,0,0,0,19889,0,0,0,0,0,0,0,'Set worldstate variable to 0'),
 (1090,204600,53,0,0,0,0,0,0,19890,1,0,0,0,0,0,0,'Set worldstate variable to 1'), -- activate wave 3
 (1090,215000,0,0,0,0,0,0,0x04,1432,0,0,0,0,0,0,0,'say'), -- 03:34
 -- final
 (1090,302000,53,0,0,0,0,0,0,19890,0,0,0,0,0,0,0,'Set worldstate variable to 0'),
-(1090,303000,34,944,1090,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
-(1090,304000,34,945,1090,0,0,0,0x04,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
+(1090,303000,34,317,1090,0,0,0,0,0,0,0,0,0,0,0,0,'Stop script if player is dead or out of range'),
+(1090,304000,34,318,1090,0,0,0,0x04,0,0,0,0,0,0,0,0,'Stop script if npc is dead'),
 (1090,305000,7,1090,0,0,0,0,0,0,0,0,0,0,0,0,0,'quest complete'),
 (1090,305001,0,0,0,0,0,0,0x04,1434,0,0,0,0,0,0,0,'say'), -- 05:04
 (1090,305002,22,35,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'set default faction'), -- 05:04
