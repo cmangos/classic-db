@@ -1278,7 +1278,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (760701, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Stop Movement'),
 (760702, 0, 1, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Emote Cheer'),
 (760706, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Set Run On'),
-(760707, 0, 0, 0, 0, 0, 0, 0, 0, 3744, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Say Event Begin'),
+(760707, 0, 0, 0, 0, 0, 0, 0, 0, 3744, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Say Event Begin'), -- Oh no!  Here they come!
 (760710, 0, 29, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Enable Gossip'),
 (760710, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Pause Movement'),
 (760711, 0, 29, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Disable Gossip'),
@@ -1406,22 +1406,22 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 (2609, 100000, 10, 7789, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1897.06, 1216.08, 8.87, 3.12, 'Spawn Sandfury Cretin'),
 (2609, 100000, 10, 7789, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1878.07, 1216.37, 8.93, 1.59, 'Spawn Sandfury Cretin'),
 (2609, 100000, 10, 7789, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1891.6, 1209.43, 8.87, 1.59, 'Spawn Sandfury Cretin'),
-(2609, 250000, 10, 8877, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1878.94, 1200.57, 8.96, 2.6, 'Spawn Sandfury Zealot'),
-(2609, 250000, 25, 0, 0, 0, 7607, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Set Run Off'),
-(2609, 250000, 32, 0, 0, 0, 7604, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Start WP Movement'),
-(2609, 250000, 0, 0, 0, 0, 7604, 150, 4, 3745, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Yell At Movement Start'),
-(2609, 250000, 32, 0, 0, 0, 7605, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Raven - Start WP Movement'),
-(2609, 250000, 32, 0, 0, 0, 7606, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Oro Eyegouge - Start WP Movement'),
-(2609, 250000, 32, 0, 0, 0, 7607, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Start WP Movement'),
-(2609, 250000, 32, 0, 0, 0, 7608, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Murta Grimgut - Start WP Movement'),
-(2609, 250000, 10, 8876, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1888.45, 1200.17, 8.96, 1.11, 'Spawn Sandfury Acolyte'),
-(2609, 250000, 10, 8876, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1890.55, 1199.94, 8.96, 4.46, 'Spawn Sandfury Acolyte'),
-(2609, 250000, 10, 8876, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1876.98, 1199.94, 8.96, 2.19, 'Spawn Sandfury Acolyte'),
-(2609, 250000, 10, 8876, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1873.31, 1197.55, 8.96, 4.6, 'Spawn Sandfury Acolyte'),
-(2609, 250000, 10, 8877, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1895.16, 1198.05, 8.96, 1.51, 'Spawn Sandfury Zealot'),
-(2609, 250000, 10, 7796, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1882.32, 1201.45, 8.96, 6.05, 'Spawn Nekrum Gutchewer'),
-(2609, 250000, 10, 7275, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1883.98, 1201.66, 8.96, 1.71, 'Spawn Shadowpriest Sezz''ziz'),
-(2609, 250000, 10, 8877, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1874.74, 1199.03, 8.96, 2.53, 'Spawn Sandfury Zealot');
+(2609, 300000, 10, 8877, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1878.94, 1200.57, 8.96, 2.6, 'Spawn Sandfury Zealot'),
+(2609, 300000, 25, 0, 0, 0, 7607, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Set Run Off'),
+(2609, 300000, 32, 0, 0, 0, 7604, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Start WP Movement'),
+(2609, 300000, 0, 0, 0, 0, 7604, 150, 4, 3745, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Say At Movement Start'), -- Let's move forward!
+(2609, 300000, 32, 0, 0, 0, 7605, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Raven - Start WP Movement'),
+(2609, 300000, 32, 0, 0, 0, 7606, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Oro Eyegouge - Start WP Movement'),
+(2609, 300000, 32, 0, 0, 0, 7607, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Start WP Movement'),
+(2609, 300000, 32, 0, 0, 0, 7608, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Murta Grimgut - Start WP Movement'),
+(2609, 300000, 10, 8876, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1888.45, 1200.17, 8.96, 1.11, 'Spawn Sandfury Acolyte'),
+(2609, 300000, 10, 8876, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1890.55, 1199.94, 8.96, 4.46, 'Spawn Sandfury Acolyte'),
+(2609, 300000, 10, 8876, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1876.98, 1199.94, 8.96, 2.19, 'Spawn Sandfury Acolyte'),
+(2609, 300000, 10, 8876, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1873.31, 1197.55, 8.96, 4.6, 'Spawn Sandfury Acolyte'),
+(2609, 300000, 10, 8877, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1895.16, 1198.05, 8.96, 1.51, 'Spawn Sandfury Zealot'),
+(2609, 300000, 10, 7796, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1882.32, 1201.45, 8.96, 6.05, 'Spawn Nekrum Gutchewer'),
+(2609, 300000, 10, 7275, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1883.98, 1201.66, 8.96, 1.71, 'Spawn Shadowpriest Sezz''ziz'),
+(2609, 300000, 10, 8877, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1874.74, 1199.03, 8.96, 2.53, 'Spawn Sandfury Zealot');
 
 DELETE FROM `dbscripts_on_spell` WHERE `id` = 11365;
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
