@@ -173,16 +173,17 @@ UPDATE spell_template SET AttributesEx=AttributesEx|0x00000800 WHERE Id IN( -- S
 6533,12024,14030, -- "Net" Spells
 13737,15708,16856,17547,19643,24573,29572,31911,32736,35054,37335,39171,40220,43441,43529,44268, -- "Mortal Strike" Spells
 15971,32918, -- "Demoralizing" Spells
-30931,32064, -- "Battle Shout" Spells
+30931,32064,42247, -- "Battle Shout" Spells
 5708,18144,23919,37012, -- "Swoop" Spells
 30803,30804,30805,30806,30807, -- "Unleashed Rage" Spells
+3589,7074, -- Deafening Screech,Screams of the Past (AoE Silence)
 
 -- Single Spells
-3589, -- Deafening Screech
 6562, -- Heroic Presence (Racial Passive)
 9612, -- Ink Spray
 34410, -- Hellscream's Warsong
 37695, -- Stanky
-38775 -- Force of Neltharaku
+38775, -- Force of Neltharaku
+40625 -- Apexis Emanations
 );
 
