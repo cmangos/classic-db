@@ -176,7 +176,7 @@ UPDATE spell_template SET AttributesEx=AttributesEx|0x00000800 WHERE Id IN( -- S
 30931,32064,42247, -- "Battle Shout" Spells
 5708,18144,23919,37012, -- "Swoop" Spells
 30803,30804,30805,30806,30807, -- "Unleashed Rage" Spells
-3589,7074, -- Deafening Screech,Screams of the Past (AoE Silence)
+3589,7074,8281,23918,29904,39052,64140 -- Deafening Screech,Screams of the Past,Sonic Burst (AoE Silence)
 
 -- Single Spells
 6562, -- Heroic Presence (Racial Passive)
