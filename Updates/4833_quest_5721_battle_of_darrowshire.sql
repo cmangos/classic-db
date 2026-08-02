@@ -10,6 +10,8 @@
 
 -- 1. Event Manager NPC (invisible controller)
 -- ============================================================================
+-- DELETE-first for idempotency (re-running this file must not fail)
+DELETE FROM `creature_template` WHERE `Entry` = 18200;
 INSERT INTO `creature_template` (
     `Entry`, `Name`, `SubName`, `MinLevel`, `MaxLevel`,
     `DisplayId1`, `DisplayId2`, `DisplayId3`, `DisplayId4`,
