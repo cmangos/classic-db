@@ -6602,7 +6602,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1161401','11614','0','0','100','1025','5000','15000','8000','18000','0','0','11','13692','1','0','0','0','0','0','0','0','0','0','Bloodshot - Cast Dire Growl'),
 -- Nathaniel Dumah (11616) - NSR
 -- Myranda the Hag (11872) - npc_myranda_the_hag
--- Spectral Attendant (11873) - NSR
+-- Spectral Attendant 11873
+('1187301','11873','0','0','100','1025','7000','21000','18000','24000','0','0','11','11443','4','544','0','0','0','0','0','0','0','0','Spectral Attendant - Cast Cripple'),
+('1187302','11873','0','0','100','1025','6000','18000','12000','24000','0','0','11','11981','16','512','0','0','0','0','0','0','0','0','Spectral Attendant - Cast Mana Burn on Random Player Mana User'),
+('1187303','11873','0','0','100','1025','5000','20000','10000','20000','0','0','11','13860','1','0','0','0','0','0','0','0','0','0','Spectral Attendant - Cast Mind Blast'),
 -- Artist Renfray 11936
 ('1193601','11936','1','0','100','1','30000','60000','60000','120000','0','0','1','7272','7274','7273','0','0','0','0','0','0','0','0','Artist Renfray - Random Say OOC'),
 -- Lord Tirion Fordring 12126 - npc_tirion_fordring
