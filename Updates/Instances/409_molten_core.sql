@@ -1043,3 +1043,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
 
+-- =========
+-- NPC TEXT
+-- =========
+
+INSERT IGNORE INTO `npc_text` (`ID`, `text0_0`, `text0_1`, `lang0`, `prob0`) VALUES
+(4995, 'You have proven your worth, $N. I... submit. The Firelord awaits those bold enough to challenge him. Seek his lair if you dare.', '', 0, 1),
+(5011, 'Ragnaros has returned to his full power. No mortal has ever faced him and survived. Are you truly prepared for what lies ahead?', '', 0, 1),
+(5012, 'Then I shall summon him. Prepare yourselves -- there is no turning back once the Firelord awakens.', '', 0, 1);
+
