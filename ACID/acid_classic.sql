@@ -19242,7 +19242,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Black Sheep 1932 - Critter
 -- Sheep (1933) - NO_MELEE_FLEE
 -- Ram 2098 - NO_MELEE_FLEE
--- Black Rat (2110) - Critter
+-- Black Rat 2110
+('211001','2110','4','0','100','0','0','0','0','0','0','0','65','0','0','0','0','0','0','0','0','0','0','0','Black Rat - Retreat on Aggro'),
 -- Cow (2442) - NO_MELEE_FLEE
 -- Mechanical Squirrel (2671) - NO_MELEE_FLEE
 -- Prairie Dog (2620) - Critter
@@ -19253,7 +19254,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Biletoad 3835 - Critter
 ('383501','3835','6','0','75','0','0','0','0','0','0','0','11','10251','7','7','0','0','0','0','0','0','0','0','Biletoad - Cast Biletoad Infection on Death'),
 -- Rat (4075) - Critter
--- Roach (4076) - Critter
+-- Roach 4076
+('407601','4076','4','0','100','0','0','0','0','0','0','0','65','0','0','0','0','0','0','0','0','0','0','0','Roach - Retreat on Aggro'),
 -- Gazelle 4166 - Critter
 -- Moccasin (4953) - Critter
 -- Steed 5689 - Critter
