@@ -199,12 +199,13 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1606201', '1', '28882', '0', '-1', '1', '0', '100', '0', '15000', '15000', '15000', '15000', 'Highlord Mograine - Righteous Fire'),
 ('1606201', '2', '26662', '0', '-1', '0', '0', '100', '0', '2000000', '2000000', '300000', '300000', 'Highlord Mograine - Berserk');
 
+-- 25104,28835,28836,28883,29061
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1606302', '0', '28835', '0', '-1', '0', '0', '100', '0', '0', '0', '1000', '1000', 'Sir Zeliek Enrage - Mark of Zeliek'),
-('1606302', '1', '57376', '0', '-1', '1', '0', '100', '0', '0', '0', '2000', '3000', 'Sir Zeliek Enrage - Holy Bolt'),
+-- ('1606302', '1', '57376', '0', '-1', '1', '0', '100', '0', '0', '0', '2000', '3000', 'Sir Zeliek Enrage - Holy Bolt'),
 ('1606302', '2', '28883', '0', '-1', '100', '0', '100', '0', '0', '0', '15000', '15000', 'Sir Zeliek Enrage - Holy Wrath'),
 ('1606302', '3', '26662', '0', '-1', '0', '0', '100', '0', '0', '0', '300000', '300000', 'Sir Zeliek Enrage - Berserk'),
-('1606302', '4', '57377', '0', '925', '0', '0', '100', '0', '0', '0', '5000', '5000', 'Sir Zeliek Enrage - Condemnation'),
+-- ('1606302', '4', '57377', '0', '925', '0', '0', '100', '0', '0', '0', '5000', '5000', 'Sir Zeliek Enrage - Condemnation'),
 ('1606402', '0', '28832', '0', '-1', '0', '0', '100', '0', '0', '0', '1000', '1000', 'Thane Korthazz Enrage - Mark of Korthazz'),
 ('1606402', '1', '28884', '0', '-1', '1', '0', '100', '0', '0', '0', '20000', '20000', 'Thane Korthazz Enrage - Meteor'),
 ('1606402', '2', '26662', '0', '-1', '0', '0', '100', '0', '0', '0', '300000', '300000', 'Thane Korthazz Enrage - Berserk'),
