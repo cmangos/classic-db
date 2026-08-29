@@ -331,6 +331,12 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (11073, 0, 0, 1, 0, 0, NULL); -- Annora
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+-- Ancient Stone Keeper Split-Trash-Pack
+(@CGUID+143, @CGUID+142, 3), -- Earthen Rocksmasher -> Earthen Rocksmasher
+(@CGUID+144, @CGUID+142, 3), -- Earthen Rocksmasher -> Earthen Rocksmasher
+(@CGUID+145, @CGUID+142, 3), -- Earthen Rocksmasher -> Earthen Rocksmasher
+(@CGUID+160, @CGUID+142, 3), -- Earthen Sculptor -> Earthen Rocksmasher
+(@CGUID+161, @CGUID+142, 3), -- Earthen Sculptor -> Earthen Rocksmasher
 (@CGUID+223, @CGUID+222, 3), -- Stonevault Ambusher -> Stonevault Ambusher
 (@CGUID+224, @CGUID+222, 3), -- Stonevault Ambusher -> Stonevault Ambusher
 (@CGUID+225, @CGUID+222, 3), -- Stonevault Ambusher -> Stonevault Ambusher
