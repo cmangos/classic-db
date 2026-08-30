@@ -13120,6 +13120,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('443001','4430','30','0','100','1','5','4495','0','0','0','0','11','20436','0','0','0','0','0','0','0','0','0','0','Gnome Pit Crewman - Cast Drunken Pit Crew on Receive AI Event Custom A (q.1120)'),
 -- Grenka Bloodscreech 4490
 ('449001','4490','0','0','100','1025','0','15000','12000','30000','0','0','11','3589','17','0','0','0','0','0','0','0','0','0','Grenka Bloodscreech - Cast Deafening Screech'),
+('449002','4490','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Grenka Bloodscreech - Flee at 15% HP'),
 -- Minor Manifestation of Air 5902 - NSR
 -- Achellios the Banished 5933
 ('593301','5933','0','0','100','1025','0','10000','120000','120000','0','0','11','6192','0','0','0','0','0','0','0','0','0','0','Achellios the Banished - Cast Battle Shout'),
