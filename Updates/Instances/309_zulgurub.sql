@@ -607,7 +607,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0143, 11350, 309, -11693.6, -1940.73, 56.9141, 1.72788, 7200, 7200, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+0144, 11350, 309, -11903.7, -1327.2, 77.621, 0.750492, 7200, 7200, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+0145, 11350, 309, -11910.8, -1322.43, 77.5587, 0.680678, 7200, 7200, 0, 0), -- Gurubashi Axe Thrower
-(@CGUID+0146, 11350, 309, -11981.4, -1707.25, 32.3669, 2.80998, 7200, 7200, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+0147, 11350, 309, -11875.6, -1415.3, 61.1701, 5.5676, 7200, 7200, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+0148, 11350, 309, -12055.0107421875, -1737.7178955078125, 52.92274093627929687, 3.351032257080078125, 21600, 21600, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+0149, 11350, 309, -11969.4, -1557.64, 40.2843, 1.11701, 7200, 7200, 0, 0), -- Gurubashi Axe Thrower
@@ -942,7 +941,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0527, 11374, 309, -11819.9, -1448.73, -11.6653, 0.506145, 7200, 7200, 15, 1), -- Hooktooth Frenzy
 (@CGUID+0528, 11380, 309, -11515.8, -1275.48, 79.6621, 3.15905, 259200, 259200, 0, 0), -- Jin'do the Hexxer
 (@CGUID+0529, 11382, 309, -12167.8, -1927.25, 153.73, 3.76991, 259200, 259200, 0, 0), -- Bloodlord Mandokir
-(@CGUID+0530, 11387, 309, -11981.1, -1705.5, 32.3669, 3.19395, 7200, 7200, 0, 0), -- Sandfury Speaker
 (@CGUID+0531, 11388, 309, -12326.4, -1586.32, 132.436, 1.62316, 7200, 7200, 0, 0), -- Witherbark Speaker
 (@CGUID+0532, 11389, 309, -11783.5, -1671.14, 21.2324, 1.91986, 7200, 7200, 0, 0), -- Bloodscalp Speaker
 (@CGUID+0533, 11390, 309, -11790.3, -1671.5, 21.2324, 1.01229, 7200, 7200, 0, 0), -- Skullsplitter Speaker
@@ -956,7 +954,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0541, 11830, 309, -11789.1, -1664.91, 21.2324, 4.5204, 7200, 7200, 0, 0), -- Hakkari Priest
 (@CGUID+0542, 11830, 309, -11784.9, -1664.88, 21.2324, 4.92183, 7200, 7200, 0, 0), -- Hakkari Priest
 (@CGUID+0543, 11830, 309, -11666.8, -1545.98, 42.7417, 6.19592, 7200, 7200, 0, 0), -- Hakkari Priest
-(@CGUID+0544, 11830, 309, -11987.5, -1705.43, 32.3669, 0, 7200, 7200, 0, 0), -- Hakkari Priest
 (@CGUID+0545, 11830, 309, -11867.9, -1420.47, 61.0251, 2.68781, 7200, 7200, 0, 0), -- Hakkari Priest
 (@CGUID+0546, 0, 309, -12051.0429687500, -1736.5230712890625, 52.04886627197265625, 0.191986218094825744, 21600, 21600, 0, 0), -- Gurubashi Axe Thrower, Hakkari Priest
 (@CGUID+0547, 11830, 309, -11964.8, -1549.77, 41.5586, 4.11898, 7200, 7200, 0, 0), -- Hakkari Priest
@@ -1325,7 +1322,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+0702, 0, 309, -11580.6123046875, -1268.9251708984375, 77.579238891601562500, 4.581816196441650390, 21600, 21600, 0, 0), -- Withered Mistress
 (@CGUID+0703, 0, 309, -11580.4716796875, -1271.1423339843750, 77.577072143554687500, 4.799655437469482421, 21600, 21600, 0, 0), -- Withered Mistress
 (@CGUID+0704, 0, 309, -11580.3652343750, -1273.1625976562500, 77.578483581542968750, 4.817108631134033203, 21600, 21600, 0, 0), -- Withered Mistress
-(@CGUID+0705, 0, 309, -11580.3457031250, -1274.9625244140625, 77.578948974609375000, 4.904375076293945312, 21600, 21600, 0, 0); -- Withered Mistress
+(@CGUID+0705, 0, 309, -11580.3457031250, -1274.9625244140625, 77.578948974609375000, 4.904375076293945312, 21600, 21600, 0, 0), -- Withered Mistress
+-- Zul''Gurub - Sandfury Speaker | Gurubashi Axe Thrower | Hakkari Priest (3) Static
+(@CGUID+0146, 0, 309, -11981.4, -1707.25, 32.3669, 2.80998, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+0530, 0, 309, -11981.1, -1705.5, 32.3669, 3.19395, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+0544, 0, 309, -11987.5, -1705.43, 32.3669, 0, 7200, 7200, 0, 0); -- spawn_group_entry
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+0437, 11371), (@CGUID+0437, 11372), -- Razzashi Serpent, Razzashi Adder
@@ -1671,6 +1672,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+0046, 'Zul''Gurub - Undead Troll (4) Patrol 001', '0', '0', '0', '0'),
 (@GROUP_ID+0047, 'Zul''Gurub - Gurubashi Berserker (1) Patrol 004', '0', '0', '0', '0'),
 (@GROUP_ID+0048, 'Zul''Gurub - Gurubashi Berserker (1) Patrol 005', '0', '0', '0', '0'),
+(@GROUP_ID+0049, 'Zul''Gurub - Sandfury Speaker | Gurubashi Axe Thrower | Hakkari Priest (3) Static', '0', '0', '0', '0'),
 -- gameobject
 (@GROUP_ID+1001, 'Zul''Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '1', '0', '0'),
 (@GROUP_ID+1002, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 000', '1', '1', '0', '0'),
@@ -1700,8 +1702,6 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 -- Zul''Gurub - Razzashi Serpent | Razzashi Adder (6) Wandering 001
 (@GROUP_ID+0014, 11371, 2, 4, 0),
 (@GROUP_ID+0014, 11372, 2, 4, 0),
-(@GROUP_ID+1001, 180228, 0, 0, 66), -- Jinxed Hoodoo Pile (without trap)
-(@GROUP_ID+1001, 180229, 0, 0, 0), -- Jinxed Hoodoo Pile (s.24184)
 -- Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 003
 (@GROUP_ID+0032, 11371, 0, 2, 0),
 (@GROUP_ID+0032, 11372, 0, 2, 0),
@@ -1738,6 +1738,14 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@GROUP_ID+0045, 14825, 4, 4, 0),
 -- Zul''Gurub - Undead Troll (4) Patrol 001
 (@GROUP_ID+0046, 14825, 4, 4, 0),
+-- Zul''Gurub - Sandfury Speaker | Gurubashi Axe Thrower | Hakkari Priest (3) Static
+(@GROUP_ID+0049, 11350, 1, 1, 0), -- Gurubashi Axe Thrower
+(@GROUP_ID+0049, 11387, 1, 1, 0), -- Sandfury Speaker
+(@GROUP_ID+0049, 11830, 1, 1, 0), -- Hakkari Priest
+-- gameobject
+-- Zul''Gurub - Jinxed Hoodoo Pile (180228,180229)
+(@GROUP_ID+1001, 180228, 0, 0, 66), -- Jinxed Hoodoo Pile (without trap)
+(@GROUP_ID+1001, 180229, 0, 0, 0), -- Jinxed Hoodoo Pile (s.24184)
 -- Zul''Gurub - Hakkari Thorium Vein (1) Ore 000
 (@GROUP_ID+1002, 180215, 0, 0, 0),
 -- Zul''Gurub - Hakkari Thorium Vein (1) Ore 001
@@ -1875,6 +1883,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+0047, @CGUID+0193, 0, 00), -- Gurubashi Berserker
 -- Zul''Gurub - Gurubashi Berserker (1) Patrol 005
 (@GROUP_ID+0048, @CGUID+0182, 0, 00), -- Gurubashi Berserker
+-- Zul''Gurub - Sandfury Speaker | Gurubashi Axe Thrower | Hakkari Priest (3) Static
+(@GROUP_ID+0049, @CGUID+0146, 0, 00), -- spawn_group_entry
+(@GROUP_ID+0049, @CGUID+0530, 1, 00), -- spawn_group_entry
+(@GROUP_ID+0049, @CGUID+0544, 2, 00), -- spawn_group_entry
+-- gameobject
 -- Zul''Gurub - Hakkari Thorium Vein (1) Ore 000
 (@GROUP_ID+1002, @OGUID+0300, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1002, @OGUID+0301, -1, 00),  -- Hakkari Thorium Vein
