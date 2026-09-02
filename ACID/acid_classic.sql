@@ -19366,9 +19366,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Earthbind Totem 2630 - TotemAI
 -- Ward of Laze 2667 - TotemAI
 -- Target Dummy 2673 - NO_MELEE_FLEE
-('267301','2673','11','0','100','0','0','0','0','0','0','0','11','4044','0','34','11','27791','0','34','0','0','0','0','Target Dummy - Cast Target Dummy Passive, Suicide on Spawn'),
--- Advanced Target Dummy 2674 - npc_advanced_target_dummy/NO_MELEE_FLEE
-('267402','2674','11','0','100','0','0','0','0','0','0','0','11','4048','0','34','11','27791','0','34','0','0','0','0','Advanced Target Dummy - Cast Advanced Target Dummy Passive, Suicide on Spawn'),
+('267301','2673','11','0','100','0','0','0','0','0','0','0','11','4507','15','0','11','4044','0','34','11','27791','0','34','Target Dummy - Cast Target Dummy Spawn Effect, Target Dummy Passive, Suicide on Spawn'),
+('267302','2673','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Target Dummy - Set REACT_PASSIVE on Spawn'),
+-- Advanced Target Dummy 2674 - NO_MELEE_FLEE
+('267401','2674','11','0','100','0','0','0','0','0','0','0','11','4507','15','0','11','4048','0','34','11','27791','0','34','Advanced Target Dummy - Cast Cast Target Dummy Spawn Effect, Advanced Target Dummy Passive, Suicide on Spawn'),
+('267402','2674','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Advanced Target Dummy - Set REACT_PASSIVE on Spawn'),
 -- Explosive Sheep 2675
 ('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
 ('267502','2675','29','0','100','0','180000','180000','0','0','0','0','11','8329','0','0','0','0','0','0','0','0','0','0','Explosive Sheep - Kill self after 3m'),
