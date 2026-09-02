@@ -19504,7 +19504,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1212501','12125','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Mammoth Shark - Cast Thrash on Spawn'),
 -- Ice Totem 12141 - TotemAI
 -- Masterwork Target Dummy 12426
-('1242601','12426','11','0','100','0','0','0','0','0','0','0','11','19809','0','34','11','27791','0','34','0','0','0','0','Masterwork Target Dummy - Cast Masterwork Target Dummy Passive, Suicide on Spawn'),
+('1242601','12426','11','0','100','0','0','0','0','0','0','0','11','4507','15','0','11','19809','0','34','11','27791','0','34','Masterwork Target Dummy - Cast Target Dummy Spawn Effect, Masterwork Target Dummy Passive, Suicide on Spawn'),
+('1242602','12426','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Masterwork Target Dummy - Set REACT_PASSIVE on Spawn'),
 -- Imp Minion 12922 - NO_MELEE_FLEE
 ('1292201','12922','11','0','100','0','0','0','0','0','0','0','57','3','20','0','0','0','0','0','0','0','0','0','Imp Minion - Enable No Melee Mode on Aggro'),
 ('1292202','12922','4','0','10','0','0','0','0','0','0','0','54','0','0','1','0','0','0','0','0','0','0','0','Imp Minion - Random Say on Aggro'),
