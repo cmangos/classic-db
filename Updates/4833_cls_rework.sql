@@ -27,7 +27,7 @@ ALTER TABLE `spell_threat` ADD COLUMN `inverseEffectMask` INT UNSIGNED DEFAULT '
 
 ALTER TABLE db_version CHANGE COLUMN required_z2833_01_mangos_spell_threat_mask required_z2834_01_mangos_spillover_rename bit;
 
-ALTER TABLE `quest_template` RENAME COLUMN `ReputationSpilloverMask` TO `RewFactionFlags`;
+ALTER TABLE `quest_template` CHANGE `ReputationSpilloverMask` `RewFactionFlags` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0';
 
 ALTER TABLE db_version CHANGE COLUMN required_z2834_01_mangos_spillover_rename required_z2835_01_mangos_pet_spell_lists bit;
 
