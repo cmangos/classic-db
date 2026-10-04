@@ -7505,10 +7505,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('392403','3924','14','0','100','1025','400','40','19500','35500','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Thistlefur Shaman - Cast Healing Wave on Friendlies'),
 ('392404','3924','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Thistlefur Shaman - Flee at 15% HP'),
 ('392405','3924','6','0','100','0','0','0','0','0','0','0','11','8603','15','0','0','0','0','0','0','0','0','0','Thistlefur Shaman - Cast Thistlefur Death on Death'),
--- Thistlefur Avenger (3.3.0 Official Data)
-('392501','3925','11','0','100','0','0','0','0','0','0','0','11','6813','0','1','0','0','0','0','0','0','0','0','Thistlefur Avenger - Cast Coat of Thistlefur on Spawn'),
-('392502','3925','2','0','30','1024','30','0','0','0','0','0','11','8602','0','0','0','0','0','0','0','0','0','0','Thistlefur Avenger - Cast Vengeance at 30% HP'),
-('392503','3925','6','0','100','0','0','0','0','0','0','0','11','8603','15','0','0','0','0','0','0','0','0','0','Thistlefur Avenger - Cast Thistlefur Death on Death'),
+-- Thistlefur Avenger 3925
+('392501','3925','1','0','100','0','0','0','0','0','0','0','11','6813','0','32','0','0','0','0','0','0','0','0','Thistlefur Avenger - Cast Coat of Thistlefur OOC'),
+('392502','3925','6','0','100','0','0','0','0','0','0','0','11','8603','15','0','0','0','0','0','0','0','0','0','Thistlefur Avenger - Cast Thistlefur Death on Death'),
 -- Thistlefur Pathfinder 3926 (3.3.0 Official Data)
 ('392601','3926','1','0','100','0','0','0','0','0','0','0','11','6813','0','32','0','0','0','0','0','0','0','0','Thistlefur Pathfinder - Cast Coat of Thistlefur OOC'),
 ('392602','3926','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Thistlefur Pathfinder - Enable Range Mode on Aggro'),
@@ -11091,14 +11090,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jarund Stoutstrider 11805
 -- Twilight Avenger 11880
 ('1188001','11880','2','0','100','1025','40','0','120000','120000','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Twilight Avenger - Cast Enrage at 40% HP'),
-('1188002','11880','14','0','100','1024','499','20','0','0','0','0','11','8602','0','0','1','1151','0','0','0','0','0','0','Twilight Avenger - Cast Vengeance on Friendly Low HP'),
-('1188003','11880','2','0','30','1024','30','0','0','0','0','0','11','8602','0','0','0','0','0','0','0','0','0','0','Twilight Avenger - Cast Vengeance at 30% HP'),
+('1188002','11880','30','0','100','1','5','11881','0','0','0','0','11','8602','0','0','1','1151','0','0','0','0','0','0','Twilight Avenger - Cast Vengeance on Receiving AIEventA'),
 -- Twilight Geolord 11881
 ('1188101','11881','11','0','100','0','0','0','0','0','0','0','57','2','15','0','0','0','0','0','0','0','0','0','Twilight Geolord - Enable Range Mode on Spawn'),
 ('1188102','11881','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Twilight Geolord - Flee at 15% HP'),
 ('1188103','11881','0','0','100','1025','6000','18000','8000','24000','0','0','11','13728','4','0','0','0','0','0','0','0','0','0','Twilight Geolord - Cast Earth Shock'),
 ('1188104','11881','0','0','100','1281','0','0','2000','3000','0','0','11','9483','1','256','0','0','0','0','0','0','0','0','Twilight Geolord - Cast Boulder (Range Mode)'),
 ('1188105','11881','0','0','100','1537','0','0','5000','10000','0','0','11','9483','1','256','0','0','0','0','0','0','0','0','Twilight Geolord - Cast Boulder (Melee Mode)'),
+('1188106','11881','6','0','100','0','0','0','0','0','0','0','45','5','10','0','0','0','0','0','0','0','0','0','Twilight Geolord - Throw AIEventA on Death'),
 -- Twilight Stonecaller 11882
 ('1188201','11882','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Twilight Stonecaller - Despawn Guardians on OOC'),
 ('1188202','11882','1','0','100','0','2000','2000','0','0','0','0','11','19704','0','0','0','0','0','0','0','0','0','0','Twilight Stonecaller - Cast Summon Earth Elemental on OOC'),
@@ -11119,9 +11118,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tortured Druid
 ('1217801','12178','2','0','100','1024','25','0','0','0','0','0','11','23381','0','0','0','0','0','0','0','0','0','0','Tortured Druid - Cast Healing Touch When Below 25% HP'),
 ('1217802','12178','0','0','100','1025','0','13200','29300','31400','0','0','11','23380','1','0','0','0','0','0','0','0','0','0','Tortured Druid - Cast Moonfire'),
-('1217803','12178','6','0','75','0','0','0','0','0','0','0','11','21327','0','2','1','8619','0','0','0','0','0','0','Tortured Druid - Cast Hive Ashi Drone on death'),
+('1217803','12178','6','0','75','0','0','0','0','0','0','0','11','21327','0','2','1','8619','0','0','0','0','0','0','Tortured Druid - Cast Hive Ashi Drone on Death'),
 -- Tortured Sentinel
-('1217901','12179','6','0','75','0','0','0','0','0','0','0','11','21327','0','2','1','8619','0','0','0','0','0','0','Tortured Sentinel - Cast Hive Ashi Drone on death'),
+('1217901','12179','6','0','75','0','0','0','0','0','0','0','11','21327','0','2','1','8619','0','0','0','0','0','0','Tortured Sentinel - Cast Hive Ashi Drone on Death'),
 -- Shade of Ambermoon 12199
 -- Hive'Zora Egg 12276 - NO_MELEE_FLEE
 -- Zannok Hidepiercer 12956
@@ -11130,8 +11129,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Layo Starstrike 13220
 -- Hive'Ashi Ambusher 13301
 ('1330101','13301','11','0','100','0','0','0','0','0','0','0','1','8675','0','0','0','0','0','0','0','0','0','0','Hive''Ashi Ambusher - Emote on Spawn'),
--- Highlord Demitrian 14347   npc_highlord_demitrian
--- Prince Thunderaan
+-- Highlord Demitrian 14347 - npc_highlord_demitrian
+-- Prince Thunderaan 14435
 ('1443501','14435','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Prevent Combat Movement on Spawn'),
 ('1443502','14435','4','0','100','0','0','0','0','0','0','0','1','9572','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Yell on Aggro'),
 ('1443503','14435','0','0','100','1025','9000','13000','16000','20000','0','0','11','23009','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Cast Tendrils of Air'),
@@ -11169,7 +11168,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1447902','14479','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Twilight Lord Everun - Flee at 15% HP'),
 ('1447903','14479','0','0','100','1025','0','0','5400','25300','0','0','11','17439','1','0','0','0','0','0','0','0','0','0','Twilight Lord Everun - Cast Shadow Shock'),
 ('1447904','14479','9','0','100','1025','0','40','2400','3800','0','0','11','19816','1','256','0','0','0','0','0','0','0','0','Twilight Lord Everun - Cast Fireball'),
--- Solenor the Slayer 14530
+-- Solenor the Slayer 14530 - npc_solenor
 -- Nelson the Nice 14536 - npc_solenor
 -- Creeping Doom 14761
 -- Emissary Roman'khan 14862
@@ -11202,8 +11201,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Windcaller Proudhorn 15191
 -- Hermit Ortell 15194
 -- Deathclasp 15196
-('1519601','15196','0','0','100','1025','8000','8000','15000','25000','0','0','11','3609','1','0','0','0','0','0','0','0','0','0','Deathclasp - Cast Paralyzing Poison'),
-('1519602','15196','0','0','100','1025','15000','15000','10000','20000','0','0','11','18670','1','0','0','0','0','0','0','0','0','0','Deathclasp - Cast Knock Away'),
+('1519601','15196','11','0','100','0','0','0','0','0','0','0','11','13299','0','34','0','0','0','0','0','0','0','0','Deathclasp - Cast Poison Proc on Spawn'),
+('1519602','15196','0','0','100','1025','8000','8000','15000','25000','0','0','11','3609','1','0','0','0','0','0','0','0','0','0','Deathclasp - Cast Paralyzing Poison'),
+('1519603','15196','0','0','100','1025','15000','15000','10000','20000','0','0','11','18670','1','0','0','0','0','0','0','0','0','0','Deathclasp - Cast Knock Away'),
 -- Twilight Keeper Mayna
 ('1520001','15200','0','0','100','1025','4000','15800','9700','19400','0','0','11','15654','1','32','0','0','0','0','0','0','0','0','Twilight Keeper Mayna - Cast Shadow Word: Pain'),
 ('1520002','15200','0','0','100','1025','15000','18000','15000','18000','0','0','11','17165','4','0','0','0','0','0','0','0','0','0','Twilight Keeper Mayna - Cast Mind Flay'),
@@ -11241,7 +11241,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1520604','15206','0','0','100','1025','3000','6000','6000','12000','0','0','11','13339','1','0','0','0','0','0','0','0','0','0','The Duke of Cynders - Cast Fire Blast'),
 -- The Duke of Fathoms 15207 - s.8876 unconfirmed
 ('1520701','15207','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','The Duke of Fathoms - Cast Elemental Spawn-In on Spawn'),
-('1520702','15207','4','0','100','0','0','0','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','The Duke of Fathoms - Cast Thrash on Aggro'),
+('1520702','15207','4','0','100','0','0','0','0','0','0','0','11','8876','0','34','0','0','0','0','0','0','0','0','The Duke of Fathoms - Cast Thrash on Aggro'),
 ('1520703','15207','0','0','100','1025','8000','15000','11000','16000','0','0','11','16790','4','0','0','0','0','0','0','0','0','0','The Duke of Fathoms - Cast Knockdown'),
 ('1520704','15207','0','0','100','1025','8000','10000','18000','20000','0','0','11','18670','1','0','0','0','0','0','0','0','0','0','The Duke of Fathoms - Cast Knock Away'),
 -- The Duke of Shards 15208 - s.15588,18368 classic only
@@ -11458,7 +11458,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1561715','-42742','30','0','100','1','8','15620','0','0','0','0','53','47','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
 ('1561716','-42743','30','0','100','1','5','15612','0','0','0','0','53','48','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom A'),
 ('1561717','-42743','30','0','100','1','8','15620','0','0','0','0','53','49','0','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower (Guid EAI) - START_RELAY_SCRIPT on Receive AI Event Custom C'),
--- Hive'Regal Hunter-Killer 15620
+-- Hive'Regal Hunter-Killer 15620 - s.15584 classic only
 ('1562001','15620','0','0','100','1025','1000','9000','12000','20000','0','0','11','25821','4','512','0','0','0','0','0','0','0','0','Hive\'Regal Hunter-Killer - Cast Charge'),
 ('1562002','15620','0','0','100','1025','2000','5000','5000','9000','0','0','11','15584','1','0','0','0','0','0','0','0','0','0','Hive\'Regal Hunter-Killer - Cast Cleave'),
 ('1562003','15620','0','0','100','1025','10000','20000','18000','32000','0','0','11','25815','0','0','0','0','0','0','0','0','0','0','Hive\'Regal Hunter-Killer - Cast Frightening Shriek'),
@@ -13501,13 +13501,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frostsaber Cub 7430
 ('743001','7430','2','0','100','0','30','0','0','0','0','0','39','25','0','0','1','1064','0','0','0','0','0','0','Frostsaber Cub - Call For Help, Emote at 30% HP'),
 ('743002','7430','6','0','100','0','0','0','0','0','0','0','11','15782','15','0','0','0','0','0','0','0','0','0','Frostsaber Cub - Cast Frostsaber Cub Death on Death'),
--- Frostsaber 7431
+-- Frostsaber 7431 - NSR
 -- Frostsaber Stalker 7432
 ('743201','7432','1','0','100','1','1000','1000','5000','5000','0','0','11','7939','0','32','11','22766','0','32','0','0','0','0','Frostsaber Stalker - Cast Sneak OOC'),
--- Frostsaber Huntress
-('743301','7433','2','0','100','1025','50','0','120000','120000','0','0','11','15716','0','0','1','1191','0','0','0','0','0','0','Frostsaber Huntress - Cast Enrage at 50% HP'),
-('743302','7433','0','0','100','1025','7000','9000','16000','21000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Frostsaber Huntress - Cast Rend'),
--- Frostsaber Pride Watcher - 7434
+-- Frostsaber Huntress 7433
+('743301','7433','0','0','100','1025','6000','9000','14000','21000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Frostsaber Huntress - Cast Rend'),
+-- Frostsaber Pride Watcher 7434 - NSR
 -- Cobalt Wyrmkin
 ('743501','7435','0','0','100','1025','6500','9700','7700','9700','0','0','11','15580','1','0','0','0','0','0','0','0','0','0','Cobalt Wyrmkin - Cast Strike'),
 ('743502','7435','0','0','100','1025','2000','4000','14000','18000','0','0','11','9080','1','0','0','0','0','0','0','0','0','0','Cobalt Wyrmkin - Cast Hamstring'),
@@ -13585,7 +13584,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('745901','7459','11','0','100','0','0','0','0','0','0','0','11','15876','0','34','0','0','0','0','0','0','0','0','Ice Thistle Matriarch - Cast Ice Blast on Spawn'),
 ('745902','7459','9','0','100','1025','10','60','7000','9000','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Ice Thistle Matriarch - Cast Rushing Charge'),
 -- Ice Thistle Patriarch 7460
-('746001','7460','0','0','100','1025','1500','7800','10800','20500','0','0','11','3131','1','0','0','0','0','0','0','0','0','0','Ice Thistle Patriarch - Cast Frost Breath'),
+('746001','7460','11','0','100','0','0','0','0','0','0','0','11','15876','0','34','0','0','0','0','0','0','0','0','Ice Thistle Patriarch - Cast Ice Blast on Spawn'),
+('746002','7460','0','0','100','1025','1500','7800','10800','20500','0','0','11','3131','1','0','0','0','0','0','0','0','0','0','Ice Thistle Patriarch - Cast Frost Breath'),
 -- Hederine Initiate 7461
 ('746101','7461','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Hederine Initiate - Enable Range Mode on Aggro'),
 ('746102','7461','0','0','100','1025','14000','28000','24000','30000','0','0','11','15859','2','0','0','0','0','0','0','0','0','0','Hederine Initiate - Cast Dominate Mind'),
@@ -13636,10 +13636,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jaron Stoneshaper 10301
 -- Storm Shadowhoof 10303
 -- Umi Rumplesnicker 10305
--- Witch Doctor Mau'ari 10307   npc_witch_doctor_mauari
+-- Witch Doctor Mau'ari 10307 - npc_witch_doctor_mauari
 -- Gregor Greystone 10431
 -- Felnok Steelspring 10468
--- Rivern Frostwind 10618   npc_rivern_frostwind
+-- Rivern Frostwind 10618 - npc_rivern_frostwind
 -- Glacier 10619
 -- Malyfous Darkhammer 10637
 -- Cobalt Whelp 10659
@@ -13689,7 +13689,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Haleh 10929
 -- Legacki 10978
 -- Wynd Nightchaser 11079
--- Innkeeper Vizzie 11118   npc_innkeeper
+-- Innkeeper Vizzie 11118 - npc_innkeeper
 -- Azzleby 11119
 -- Maethrya 11138
 ('1113801','11138','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','4566','0','0','0','0','0','0','Maethrya - Cast Summon Enraged Hippogryph on Aggro'),
@@ -13705,9 +13705,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Qia 11189
 -- Everlook Bruiser 11190 - guard_contested & creature_spell_list
 ('1119001','11190','11','0','100','0','0','0','0','0','0','0','57','2','20','0','0','0','0','0','0','0','0','0','Everlook Bruiser - Enable Range Mode on Spawn'),
--- Lilith the Lithe 11191   npc_prof_blacksmith
--- Kilram 11192   npc_prof_blacksmith
--- Seril Scourgebane 11193   npc_prof_blacksmith
+-- Lilith the Lithe 11191 - npc_prof_blacksmith
+-- Kilram 11192 - npc_prof_blacksmith
+-- Seril Scourgebane 11193 - npc_prof_blacksmith
 -- Jack Sterling 11546
 -- Salfa 11556
 -- Jessica Redpath 11629
