@@ -1219,8 +1219,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES
-(@OGUID+1, 178559, 349, 937.838, -378.811, -50.3032, 3.04558, 0, 0, 0.998848, 0.0479871, 3600, 3600), -- Larva Spewer
-(@OGUID+2, 178560, 349, 650.99, 74.458, -86.8651, 1.45735, 0, 0, 0.665882, 0.746057, 3600, 3600), -- Doodad_MaraudonStaffCreator01
+(@OGUID+1, 178559, 349, 937.838, -378.811, -50.3032, 3.04558, 0, 0, 0.998848, 0.0479871, 0, 0), -- Larva Spewer
+(@OGUID+2, 178560, 349, 650.99, 74.458, -86.8651, 1.45735, 0, 0, 0.665882, 0.746057, 0, 0), -- Doodad_MaraudonStaffCreator01
 (@OGUID+3, 178561, 349, 1060.74, -268.217, -73.4903, 4.7473, -0.000000953674, 0.000000953674, -0.694657, 0.719341, 3600, 3600), -- Spore Tree
 (@OGUID+4, 178562, 349, 1114.76, -261.923, -78.7819, 0.44688, 0.0237236, 0.0212755, 0.221052, 0.974741, 3600, 3600), -- Spore Tree
 (@OGUID+5, 178563, 349, 1077.81, -208.096, -74.1736, 0.445057, 0, 0.000000953674, 0.220696, 0.975343, 3600, 3600), -- Spore Tree
