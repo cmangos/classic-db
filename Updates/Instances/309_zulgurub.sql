@@ -1635,26 +1635,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- =======
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+61, 2, 'Zul''Gurub - Sungrass (180164)'),
-(@PGUID+62, 3, 'Zul''Gurub - Purple Lotus (180165)'),
-(@PGUID+63, 4, 'Zul''Gurub - Mountain Silversage (180166)'),
-(@PGUID+64, 5, 'Zul''Gurub - Golden Sansam (180167)'),
-(@PGUID+65, 5, 'Zul''Gurub - Dreamfoil (180168)'),
-(@PGUID+71, 4, 'Zul''Gurub - Muddy Churning Waters (180369)');
-
+-- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-(180164, @PGUID+61, 0, 'Zul''Gurub - Sungrass (180164)'),
-(180165, @PGUID+62, 0, 'Zul''Gurub - Purple Lotus (180165)'),
-(180166, @PGUID+63, 0, 'Zul''Gurub - Mountain Silversage (180166)'),
-(180167, @PGUID+64, 0, 'Zul''Gurub - Golden Sansam (180167)'),
-(180168, @PGUID+65, 0, 'Zul''Gurub - Dreamfoil (180168)'),
-(180369, @PGUID+71, 0, 'Zul''Gurub - Muddy Churning Waters (180369)');
+-- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- ============
 -- SPAWN GROUPS
@@ -1701,7 +1686,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+1002, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 000', '1', '1', '0', '0'),
 (@GROUP_ID+1003, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 001', '1', '1', '0', '0'),
 (@GROUP_ID+1004, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 002', '1', '1', '0', '0'),
-(@GROUP_ID+1005, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 003', '1', '1', '0', '0');
+(@GROUP_ID+1005, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 003', '1', '1', '0', '0'),
+(@GROUP_ID+1006, 'Zul''Gurub - Sungrass', '1', '1', '2', '0'),
+(@GROUP_ID+1007, 'Zul''Gurub - Purple Lotus', '1', '1', '3', '0'),
+(@GROUP_ID+1008, 'Zul''Gurub - Mountain Silversage', '1', '1', '4', '0'),
+(@GROUP_ID+1009, 'Zul''Gurub - Golden Sansam', '1', '1', '5', '0'),
+(@GROUP_ID+1010, 'Zul''Gurub - Dreamfoil', '1', '1', '5', '0'),
+(@GROUP_ID+1011, 'Zul''Gurub - Muddy Churning Waters', '1', '1', '4', '0');
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Zul''Gurub - Razzashi Serpent | Razzashi Adder (2) Wandering 000
@@ -1930,7 +1921,82 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+1005, @OGUID+0330, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1005, @OGUID+0331, -1, 00),  -- Hakkari Thorium Vein
 (@GROUP_ID+1005, @OGUID+0332, -1, 00),  -- Hakkari Thorium Vein
-(@GROUP_ID+1005, @OGUID+0333, -1, 00);  -- Hakkari Thorium Vein
+(@GROUP_ID+1005, @OGUID+0333, -1, 00),  -- Hakkari Thorium Vein
+-- Zul''Gurub - Sungrass
+(@GROUP_ID+1006, @OGUID+131, -1, 00),
+(@GROUP_ID+1006, @OGUID+132, -1, 00),
+(@GROUP_ID+1006, @OGUID+133, -1, 00),
+(@GROUP_ID+1006, @OGUID+134, -1, 00),
+(@GROUP_ID+1006, @OGUID+135, -1, 00),
+(@GROUP_ID+1006, @OGUID+136, -1, 00),
+(@GROUP_ID+1006, @OGUID+137, -1, 00),
+-- Zul''Gurub - Purple Lotus
+(@GROUP_ID+1007, @OGUID+141, -1, 00),
+(@GROUP_ID+1007, @OGUID+142, -1, 00),
+(@GROUP_ID+1007, @OGUID+143, -1, 00),
+(@GROUP_ID+1007, @OGUID+144, -1, 00),
+(@GROUP_ID+1007, @OGUID+145, -1, 00),
+(@GROUP_ID+1007, @OGUID+146, -1, 00),
+(@GROUP_ID+1007, @OGUID+147, -1, 00),
+(@GROUP_ID+1007, @OGUID+148, -1, 00),
+(@GROUP_ID+1007, @OGUID+149, -1, 00),
+-- Zul''Gurub - Mountain Silversage
+(@GROUP_ID+1008, @OGUID+151, -1, 00),
+(@GROUP_ID+1008, @OGUID+152, -1, 00),
+(@GROUP_ID+1008, @OGUID+153, -1, 00),
+(@GROUP_ID+1008, @OGUID+154, -1, 00),
+(@GROUP_ID+1008, @OGUID+155, -1, 00),
+(@GROUP_ID+1008, @OGUID+156, -1, 00),
+(@GROUP_ID+1008, @OGUID+157, -1, 00),
+(@GROUP_ID+1008, @OGUID+158, -1, 00),
+(@GROUP_ID+1008, @OGUID+159, -1, 00),
+(@GROUP_ID+1008, @OGUID+160, -1, 00),
+(@GROUP_ID+1008, @OGUID+161, -1, 00),
+(@GROUP_ID+1008, @OGUID+162, -1, 00),
+-- Zul''Gurub - Golden Sansam
+(@GROUP_ID+1009, @OGUID+171, -1, 00),
+(@GROUP_ID+1009, @OGUID+172, -1, 00),
+(@GROUP_ID+1009, @OGUID+173, -1, 00),
+(@GROUP_ID+1009, @OGUID+174, -1, 00),
+(@GROUP_ID+1009, @OGUID+175, -1, 00),
+(@GROUP_ID+1009, @OGUID+176, -1, 00),
+(@GROUP_ID+1009, @OGUID+177, -1, 00),
+(@GROUP_ID+1009, @OGUID+178, -1, 00),
+(@GROUP_ID+1009, @OGUID+179, -1, 00),
+(@GROUP_ID+1009, @OGUID+180, -1, 00),
+(@GROUP_ID+1009, @OGUID+181, -1, 00),
+(@GROUP_ID+1009, @OGUID+182, -1, 00),
+(@GROUP_ID+1009, @OGUID+183, -1, 00),
+(@GROUP_ID+1009, @OGUID+184, -1, 00),
+(@GROUP_ID+1009, @OGUID+185, -1, 00),
+(@GROUP_ID+1009, @OGUID+186, -1, 00),
+(@GROUP_ID+1009, @OGUID+187, -1, 00),
+-- Zul''Gurub - Dreamfoil
+(@GROUP_ID+1010, @OGUID+191, -1, 00),
+(@GROUP_ID+1010, @OGUID+192, -1, 00),
+(@GROUP_ID+1010, @OGUID+193, -1, 00),
+(@GROUP_ID+1010, @OGUID+194, -1, 00),
+(@GROUP_ID+1010, @OGUID+195, -1, 00),
+(@GROUP_ID+1010, @OGUID+196, -1, 00),
+(@GROUP_ID+1010, @OGUID+197, -1, 00),
+(@GROUP_ID+1010, @OGUID+198, -1, 00),
+(@GROUP_ID+1010, @OGUID+199, -1, 00),
+(@GROUP_ID+1010, @OGUID+200, -1, 00),
+(@GROUP_ID+1010, @OGUID+201, -1, 00),
+(@GROUP_ID+1010, @OGUID+202, -1, 00),
+(@GROUP_ID+1010, @OGUID+203, -1, 00),
+(@GROUP_ID+1010, @OGUID+204, -1, 00),
+(@GROUP_ID+1010, @OGUID+205, -1, 00),
+(@GROUP_ID+1010, @OGUID+206, -1, 00),
+(@GROUP_ID+1010, @OGUID+207, -1, 00),
+-- Zul''Gurub - Muddy Churning Waters
+(@GROUP_ID+1011, @OGUID+0256, -1, 00),
+(@GROUP_ID+1011, @OGUID+0257, -1, 00),
+(@GROUP_ID+1011, @OGUID+0258, -1, 00),
+(@GROUP_ID+1011, @OGUID+0259, -1, 00),
+(@GROUP_ID+1011, @OGUID+0260, -1, 00),
+(@GROUP_ID+1011, @OGUID+0261, -1, 00),
+(@GROUP_ID+1011, @OGUID+0262, -1, 00);
 
 INSERT INTO `spawn_group_spawn` (`guid`, `Id`) SELECT `guid`, @GROUP_ID+1001 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
 
