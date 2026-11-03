@@ -1,0 +1,72 @@
+-- ============================================================================
+-- Battle of Darrowshire — Quest 5721
+-- SQL for CMaNGOS classicmangos database
+-- ============================================================================
+-- v3: all event dialogue uses RETAIL broadcast_text IDs already present in the
+-- base DB (verified against the z2815 dump: 7227, 7343-7358, 7366-7369,
+-- 7397-7403, 7407, 7471). The Pamela reunion lines (7399-7402) ship in the
+-- base DB with the authentic client texts in Text1, which the core uses for
+-- female speakers, so no broadcast_text rows are touched by this file.
+-- ============================================================================
+
+-- 1. Event Manager NPC (invisible controller)
+-- ============================================================================
+-- DELETE-first for idempotency (re-running this file must not fail)
+DELETE FROM `creature_template` WHERE `Entry` = 18200;
+INSERT INTO `creature_template` (
+    `Entry`, `Name`, `SubName`, `MinLevel`, `MaxLevel`,
+    `DisplayId1`, `DisplayId2`, `DisplayId3`, `DisplayId4`,
+    `DisplayIdProbability1`, `DisplayIdProbability2`, `DisplayIdProbability3`, `DisplayIdProbability4`,
+    `Faction`, `Scale`, `Family`, `CreatureType`, `InhabitType`, `RegenerateStats`,
+    `RacialLeader`, `NpcFlags`, `UnitFlags`, `DynamicFlags`, `ExtraFlags`,
+    `CreatureTypeFlags`, `StaticFlags1`, `StaticFlags2`, `StaticFlags3`, `StaticFlags4`,
+    `SpeedWalk`, `SpeedRun`, `Detection`, `CallForHelp`, `Pursuit`, `Leash`, `Timeout`,
+    `UnitClass`, `Rank`,
+    `HealthMultiplier`, `PowerMultiplier`, `DamageMultiplier`, `DamageVariance`, `ArmorMultiplier`,
+    `ExperienceMultiplier`,
+    `StrengthMultiplier`, `AgilityMultiplier`, `StaminaMultiplier`, `IntellectMultiplier`, `SpiritMultiplier`,
+    `MinLevelHealth`, `MaxLevelHealth`, `MinLevelMana`, `MaxLevelMana`,
+    `MinMeleeDmg`, `MaxMeleeDmg`, `MinRangedDmg`, `MaxRangedDmg`,
+    `Armor`, `MeleeAttackPower`, `RangedAttackPower`,
+    `MeleeBaseAttackTime`, `RangedBaseAttackTime`, `DamageSchool`,
+    `MinLootGold`, `MaxLootGold`, `LootId`, `PickpocketLootId`, `SkinningLootId`,
+    `KillCredit1`, `KillCredit2`, `MechanicImmuneMask`, `SchoolImmuneMask`,
+    `ResistanceHoly`, `ResistanceFire`, `ResistanceNature`, `ResistanceFrost`, `ResistanceShadow`, `ResistanceArcane`,
+    `PetSpellDataId`, `MovementType`, `TrainerType`, `TrainerSpell`, `TrainerClass`, `TrainerRace`, `TrainerTemplateId`,
+    `VendorTemplateId`, `GossipMenuId`, `InteractionPauseTimer`, `CorpseDecay`,
+    `SpellList`, `CharmedSpellList`,
+    `StringId1`, `StringId2`, `EquipmentTemplateId`, `Civilian`,
+    `AIName`, `ScriptName`
+) VALUES (
+    18200, 'Darrowshire Event Manager', '', 1, 1,
+    11686, 0, 0, 0,
+    100, 0, 0, 0,
+    35, 1, 0, 10, 3, 0,
+    0, 0, 33555200, 0, 0,
+    0, 0, 0, 0, 0,
+    1, 1.14286, 18, 0, 0, 0, 0,
+    1, 0,
+    1, 1, 1, 1, 1,
+    0.5,
+    1, 1, 1, 1, 1,
+    1, 1, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0,
+    2000, 2000, 0,
+    0, 0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0,
+    0, 0, -1, 0,
+    0, 0,
+    0, 0, 0, 0,
+    '', 'npc_darrowshire_event_manager'
+);
+
+-- 2. GO trigger ScriptName
+-- ============================================================================
+UPDATE `gameobject_template` SET `ScriptName` = 'go_darrowshire_trigger' WHERE `entry` = 177526;
+
+-- 3. Joseph Redpath ScriptName (GossipMenuId 3861 is already set in the base DB)
+-- ============================================================================
+UPDATE `creature_template` SET `ScriptName` = 'npc_joseph_redpath' WHERE `Entry` = 10936;
