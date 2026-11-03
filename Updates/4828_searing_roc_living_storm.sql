@@ -1,6 +1,6 @@
 DELETE FROM `creature` WHERE (`guid` IN ('22730', '22735', '23410' , '23411'));
 
-SET @CGUID := 22780;
+SET @CGUID := 23426; -- guid conflict with tbc+
 SET @SGUID := 11110;
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES

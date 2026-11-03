@@ -1,5 +1,5 @@
 DELETE FROM `creature` WHERE (`guid` IN ('23119', '23120', '23121', '23122', '23123', '23124'));
-DELETE FROM `creature_movement` WHERE (`id` IN ('23121'));
+DELETE FROM `creature_movement` WHERE (`id` IN ('23119','23120')); -- Table creature_template for this entry(0) guid(23120) was not found!
 
 SET @CGUID := 23119;
 SET @SGUID := 11104;
