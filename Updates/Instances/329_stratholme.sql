@@ -2105,9 +2105,12 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM `dbscripts_on_event` WHERE `id` IN (5300, 5301, 5258, 11206);
-INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+INSERT INTO `dbscripts_on_event` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
 -- q.5305 Sweet Serenity
-(5300, 0, 10, 11120, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 3571.19, -3003.701, 125.0014, 0.4708226, 'Summon Crimson Hammersmith'),
+(5300, 0, 0, 31, 11120, 100, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 11120 - terminate if found'),
+(5300, 0, 1, 10, 11120, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3571.1982421875, -3003.716064453125, 125.0013427734375, 0.465496420860290527, 0, 0, 'Summon Crimson Hammersmith'), -- convert to spawn_group at some point
+(5300, 86400000, 2, 31, 11120, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 11120 - terminate if not found'); -- failsave for overspawn
+INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- q.5307 Corruption
 (5301, 0, 10, 11121, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 3820.68, -3706.187, 143.5117, 1.523680, 'Summon Black Guard Swordsmith'), -- position guessed
 
