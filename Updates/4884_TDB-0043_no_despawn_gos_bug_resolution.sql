@@ -9,3 +9,13 @@ AND (NOT ((type = 0 AND data3!=0) OR (type=1 AND data4!=0) OR (type=10 AND data1
 -- is despawn at action
 AND (NOT ((type = 3 AND data3 != 0) OR (type = 10 AND data5 != 0))));
 
+UPDATE `gameobject_template` SET `data5` = 0 WHERE `entry` = 3524;
+-- Table `gameobject` have gameobject (GUID: 15687 Entry: 3524) with `spawntimesecs` (0) value, but gameobejct marked as despawnable at action.
+UPDATE `gameobject_template` SET `data5` = 0 WHERE `entry` = 142189;
+-- Table `gameobject` have gameobject (GUID: 170136 Entry: 142189) with `spawntimesecs` (0) value, but gameobejct marked as despawnable at action.
+-- Table `gameobject` have gameobject (GUID: 170135 Entry: 142189) with `spawntimesecs` (0) value, but gameobejct marked as despawnable at action.
+-- Table `gameobject` have gameobject (GUID: 170134 Entry: 142189) with `spawntimesecs` (0) value, but gameobejct marked as despawnable at action.
+-- Table `gameobject` have gameobject (GUID: 170133 Entry: 142189) with `spawntimesecs` (0) value, but gameobejct marked as despawnable at action.
+-- Table `gameobject` have gameobject (GUID: 170132 Entry: 142189) with `spawntimesecs` (0) value, but gameobejct marked as despawnable at action.
+-- Table `gameobject` have gameobject (GUID: 170131 Entry: 142189) with `spawntimesecs` (0) value, but gameobejct marked as despawnable at action.
+
