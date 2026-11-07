@@ -3,7 +3,6 @@ DBName: Zul'Gurub
 DBScriptName: instance_zulgurub
 DB%Complete: 82
 DBComment:
-* Investigate Muddy Churning Waters (180369) pooling
 * Investigate Herb (180164,180165,180166,180167,180168) pooling
 * Investigate Respawn Times further (patrols or wildlife might have faster respawn)
 * Edge of Madness 4x3 Mad Servant Patrols, out one run on, three others walk (Imp Patrols)
@@ -1990,13 +1989,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@GROUP_ID+1010, @OGUID+206, -1, 00),
 (@GROUP_ID+1010, @OGUID+207, -1, 00),
 -- Zul''Gurub - Muddy Churning Waters
-(@GROUP_ID+1011, @OGUID+0256, -1, 00),
-(@GROUP_ID+1011, @OGUID+0257, -1, 00),
-(@GROUP_ID+1011, @OGUID+0258, -1, 00),
-(@GROUP_ID+1011, @OGUID+0259, -1, 00),
-(@GROUP_ID+1011, @OGUID+0260, -1, 00),
-(@GROUP_ID+1011, @OGUID+0261, -1, 00),
-(@GROUP_ID+1011, @OGUID+0262, -1, 00);
+(@GROUP_ID+1011, @OGUID+246, -1, 00),
+(@GROUP_ID+1011, @OGUID+247, -1, 00),
+(@GROUP_ID+1011, @OGUID+248, -1, 00),
+(@GROUP_ID+1011, @OGUID+249, -1, 00),
+(@GROUP_ID+1011, @OGUID+250, -1, 00),
+(@GROUP_ID+1011, @OGUID+251, -1, 00),
+(@GROUP_ID+1011, @OGUID+252, -1, 00);
 
 INSERT INTO `spawn_group_spawn` (`guid`, `Id`) SELECT `guid`, @GROUP_ID+1001 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+211 AND @OGUID+227; -- Jinxed Hoodoo Pile
 
