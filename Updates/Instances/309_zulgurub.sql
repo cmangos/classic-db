@@ -6,7 +6,7 @@ DBComment:
 * Investigate Herb (180164,180165,180166,180167,180168) pooling
 * Investigate Respawn Times further (patrols or wildlife might have faster respawn)
 * Edge of Madness 4x3 Mad Servant Patrols, out one run on, three others walk (Imp Patrols)
-* @GROUP_ID+1001, 'Zul''Gurub - Jinxed Hoodoo Pile (180228,180229) - mincount maxcount?
+* @GROUP_ID+1001, 'Zul''Gurub - Jinxed Hoodoo Pile (180228,180229) - mincount maxcount? -> Setting max for now
 * Group setups are not completely random, entries and slots should be set combinations
     static and patrolling groups around entrance
         A)  1. Gurubashi Axe Thrower
@@ -1681,7 +1681,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+0048, 'Zul''Gurub - Gurubashi Berserker (1) Patrol 005', '0', '0', '0', '0'),
 (@GROUP_ID+0049, 'Zul''Gurub - Sandfury Speaker | Gurubashi Axe Thrower | Hakkari Priest (3) Static', '0', '0', '0', '0'),
 -- gameobject
-(@GROUP_ID+1001, 'Zul''Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '1', '0', '0'),
+(@GROUP_ID+1001, 'Zul''Gurub - Jinxed Hoodoo Pile (180228,180229)', '1', '17', '0', '0'),
 (@GROUP_ID+1002, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 000', '1', '1', '0', '0'),
 (@GROUP_ID+1003, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 001', '1', '1', '0', '0'),
 (@GROUP_ID+1004, 'Zul''Gurub - Hakkari Thorium Vein (1) Ore 002', '1', '1', '0', '0'),
@@ -1757,7 +1757,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@GROUP_ID+0049, 11830, 1, 1, 0), -- Hakkari Priest
 -- gameobject
 -- Zul''Gurub - Jinxed Hoodoo Pile (180228,180229)
-(@GROUP_ID+1001, 180228, 0, 0, 66), -- Jinxed Hoodoo Pile (without trap)
+(@GROUP_ID+1001, 180228, 0, 0, 50), -- Jinxed Hoodoo Pile (without trap)
 (@GROUP_ID+1001, 180229, 0, 0, 0), -- Jinxed Hoodoo Pile (s.24184)
 -- Zul''Gurub - Hakkari Thorium Vein (1) Ore 000
 (@GROUP_ID+1002, 180215, 0, 0, 0),
