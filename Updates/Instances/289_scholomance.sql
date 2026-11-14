@@ -211,7 +211,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+355, 0, 0, 1, 0, 0, '17467'); -- Lord Alexei Barov
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
-(10432, 0, 0, 1, 0, 0, NULL), -- Vectus
+(10432, 0, 0, 1, 0, 0, '13377'), -- Vectus
 (10433, 0, 0, 1, 0, 0, NULL), -- Marduk Blackpool
 (10469, 0, 0, 1, 0, 0, NULL), -- Scholomance Adept
 (10470, 0, 0, 1, 0, 0, NULL), -- Scholomance Neophyte
@@ -222,7 +222,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10477, 0, 0, 1, 0, 0, NULL), -- Scholomance Necromancer
 (10478, 0, 0, 1, 0, 0, NULL), -- Splintered Skeleton
 (10480, 0, 0, 1, 0, 0, NULL), -- Unstable Corpse
-(10481, 0, 0, 1, 0, 0, NULL), -- Reanimated Corpse
+(10481, 0, 0, 1, 0, 0, '12038'), -- Reanimated Corpse
 (10485, 0, 0, 1, 0, 0, NULL), -- Risen Aberration
 (10486, 0, 0, 1, 0, 0, NULL), -- Risen Warrior
 (10487, 0, 0, 1, 0, 0, NULL), -- Risen Protector
