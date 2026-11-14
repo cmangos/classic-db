@@ -572,7 +572,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (12207, 0, 0, 1, 0, 0, '21788'), -- Thessala Hydra
 (12216, 0, 0, 1, 0, 0, NULL), -- Poison Sprite
 (12217, 0, 0, 1, 0, 0, NULL), -- Corruptor
-(12218, 0, 0, 1, 0, 0, NULL), -- Vile Larva
+(12218, 0, 0, 1, 0, 0, '7276'), -- Vile Larva
 (12219, 0, 0, 1, 0, 0, '8876'), -- Barbed Lasher
 (12220, 0, 0, 1, 0, 0, '8876'), -- Constrictor Vine
 (12221, 0, 0, 1, 0, 0, NULL), -- Noxious Slime

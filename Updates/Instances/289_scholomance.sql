@@ -229,7 +229,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (10488, 0, 0, 1, 0, 0, NULL), -- Risen Construct
 (10489, 0, 0, 1, 0, 0, NULL), -- Risen Guard
 (10491, 0, 0, 1, 0, 0, NULL), -- Risen Bonewarder
-(10495, 0, 0, 1, 0, 0, NULL), -- Diseased Ghoul
+(10495, 0, 0, 1, 0, 0, '8247'), -- Diseased Ghoul
 (10498, 0, 0, 1, 0, 0, NULL), -- Spectral Tutor
 (10499, 0, 0, 1, 0, 0, NULL), -- Spectral Researcher
 (10500, 0, 0, 1, 0, 0, NULL), -- Spectral Teacher
